@@ -96,6 +96,7 @@ window.Quarto = {
 };
 </script>
 <link href="../styles.css" rel="stylesheet"/>
+<link href="../visual-update.css" rel="stylesheet"/>
 
 <link href="../interactive/core-reading.css" rel="stylesheet"/>
 <style>.reference-image-note{display:block;padding:18px;background:#f4f6f7;color:#536575;font:14px/1.8 sans-serif;border-left:3px solid #9badb9}.public-edition-note{margin-top:3em;font-size:.85em}</style></head>
@@ -286,6 +287,12 @@ window.Quarto = {
 </li>
 <li class="sidebar-item">
 <div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="../visual-update.html">
+<span class="menu-text">看图、听一段，再动手</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../resources.html">
 <span class="menu-text">数字资源索引</span></a>
 </div>
@@ -351,6 +358,16 @@ window.Quarto = {
 <a href="../interactive/learning-map.html?chapter=ch03">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery">
+<summary>
+从本章的 7 幅新图开始
+</summary>
+<div class="priority-thumb-grid">
+<a href="#fig-priority-F13"><img alt="车轮下面，桥面板靠哪些构件支承？" loading="lazy" src="../assets/publication/priority-40/F13.svg"/><span>车轮下面，桥面板靠哪些构件支承？</span></a><a href="#fig-priority-F14"><img alt="一块板能向两边传力，取成梁以后保留了什么？" loading="lazy" src="../assets/publication/priority-40/F14.svg"/><span>一块板能向两边传力，取成梁以后保留了什么？</span></a><a href="#fig-priority-F15"><img alt="只用力的平衡，什么时候能算出每个支点分担？" loading="lazy" src="../assets/publication/priority-40/F15.svg"/><span>只用力的平衡，什么时候能算出每个支点分担？</span></a><a href="#fig-priority-F16"><img alt="车偏到一侧，总重量怎样分到五根梁？" loading="lazy" src="../assets/publication/priority-40/F16.svg"/><span>车偏到一侧，总重量怎样分到五根梁？</span></a><a href="#fig-priority-F17"><img alt="某根梁的活载增量为负，就已经离开支承了吗？" loading="lazy" src="../assets/publication/priority-40/F17.svg"/><span>某根梁的活载增量为负，就已经离开支承了吗？</span></a><a href="#fig-priority-F18"><img alt="把两跨接成一根梁，弯矩和下沉会怎样改变？" loading="lazy" src="../assets/publication/priority-40/F18.svg"/><span>把两跨接成一根梁，弯矩和下沉会怎样改变？</span></a><a href="#fig-priority-F19"><img alt="桥还没碰到下一个支点，悬空越长会怎样？" loading="lazy" src="../assets/publication/priority-40/F19.svg"/><span>桥还没碰到下一个支点，悬空越长会怎样？</span></a>
+</div>
+</details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 <h2 class="anchored">
 本章的核心思考
 </h2>
@@ -580,15 +597,38 @@ M07　箱梁挖空与截面效率
 </section>
 <section class="level4" data-number="4.2.0.2" id="连续梁">
 <h4 class="anchored" data-anchor-id="连续梁" data-number="4.2.0.2"><span class="header-section-number">4.2.0.2</span> 连续梁</h4>
+<!-- PRIORITY-FIGURE F18 START -->
+<div alt="把两跨接成一根梁，弯矩和下沉会怎样改变？。统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F18">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F18-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="把两跨接成一根梁，弯矩和下沉会怎样改变？。统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。" class="img-fluid figure-img" src="../assets/publication/priority-40/F18.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F18-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.2: 统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+两跨等跨、EI恒定、两跨全布均载；不是任意车辆位置的包络；中支点不沉降；不计收缩徐变、温度或预应力；解析式第一跨w=q(L³x−3Lx³+2x⁴)/(48EI)，第二跨镜像
+</p>
+<p>
+课程组原创参数绘图 · F18 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F18.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F18.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F18 END -->
 <p>连续梁的梁体跨越两个以上桥孔并在中间支点保持连续。支点负弯矩使跨中正弯矩减小，结构变形曲线更平顺，但体系属于超静定结构，温度、收缩徐变、预应力、支座位移和基础沉降均可能形成附加效应。连续梁的边跨长度、支点区刚度和施工顺序会改变恒载与可变作用的分配，因而总体设计应同时考虑跨径比例、梁高变化和施工可行性。</p>
-<p><a class="quarto-xref" href="#fig-ch03-continuous-layout">图 <span>4.2</span></a> 展示连续梁常见跨径布置示意。</p>
+<p><a class="quarto-xref" href="#fig-ch03-continuous-layout">图 <span>4.3</span></a> 展示连续梁常见跨径布置示意。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-continuous-layout">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-continuous-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.2: 连续梁常见跨径布置示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.3: 连续梁常见跨径布置示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-continuous-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.2: 连续梁常见跨径布置示意
+图 4.3: 连续梁常见跨径布置示意
 </figcaption>
 </figure>
 </div>
@@ -748,28 +788,28 @@ M07　箱梁挖空与截面效率
 <h4 class="anchored" data-anchor-id="板式肋式和箱式截面" data-number="4.3.0.1"><span class="header-section-number">4.3.0.1</span> 板式、肋式和箱式截面</h4>
 <p>梁桥横截面可概括为板式、T形或I形肋式、箱形以及钢—混凝土组合截面。选择截面时应同时比较材料利用、结构高度、横向连接、抗扭需求、预制运输、模板施工、检修空间和耐久性，而不能只以跨径给出单一答案。</p>
 <p>板式截面构造简单、建筑高度较小，适于较小跨径或装配式空心板体系。T梁和I梁将材料集中在翼缘与腹板位置，便于预制标准化；桥面板、湿接缝和横隔构件使多片梁形成整体。箱梁具有闭合薄壁截面，抗扭性能和横向整体性较好，适于较宽桥面、曲线桥、斜桥及需要较大悬臂板的布置，但箱内构造、施工、通风排水和检查维护也更复杂。</p>
-<p><a class="quarto-xref" href="#fig-ch03-assembled-sections">图 <span>4.3</span></a> 展示装配式梁桥横截面的连接形式。</p>
+<p><a class="quarto-xref" href="#fig-ch03-assembled-sections">图 <span>4.4</span></a> 展示装配式梁桥横截面的连接形式。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-assembled-sections">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-assembled-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.3: 装配式梁桥横截面的连接形式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.4: 装配式梁桥横截面的连接形式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-assembled-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.3: 装配式梁桥横截面的连接形式
+图 4.4: 装配式梁桥横截面的连接形式
 </figcaption>
 </figure>
 </div>
 <div class="source-note">
 <p><strong>图源（内部初稿）。</strong> 在线教材项目 <code>longyu8101/qlgc</code>，原图2-3-2“装配式T形梁桥横截面（仅示1/2）”，文件 <code>source/_static/fig/2-3-2.jpg</code>，<a class="uri" href="https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/2-3-2.jpg">https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/2-3-2.jpg</a>。用于识别主梁、翼板、横隔梁及现浇层的连接关系；正式出版拟统一重绘线型和标注。</p>
 </div>
-<p><a class="quarto-xref" href="#fig-ch03-box-sections">图 <span>4.4</span></a> 展示单箱单室、单箱双室与单箱多室截面。</p>
+<p><a class="quarto-xref" href="#fig-ch03-box-sections">图 <span>4.5</span></a> 展示单箱单室、单箱双室与单箱多室截面。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-box-sections">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-box-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.4: 单箱单室、单箱双室与单箱多室截面。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.5: 单箱单室、单箱双室与单箱多室截面。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.4: 单箱单室、单箱双室与单箱多室截面
+图 4.5: 单箱单室、单箱双室与单箱多室截面
 </figcaption>
 </figure>
 </div>
@@ -780,14 +820,14 @@ M07　箱梁挖空与截面效率
 <section class="level4" data-number="4.3.0.2" id="桥宽箱室与腹板数量">
 <h4 class="anchored" data-anchor-id="桥宽箱室与腹板数量" data-number="4.3.0.2"><span class="header-section-number">4.3.0.2</span> 桥宽、箱室与腹板数量</h4>
 <p>桥面较宽时，可以增加单箱的箱室或腹板数量，也可以采用分离式多箱。腹板增多能够缩短顶、底板的横向受力跨度，并为预应力、剪力和局部荷载提供传力路径；但同时增加自重、模板和施工工作量。腹板过少则会提高横向板弯曲、截面畸变和局部受力要求。截面布置应在纵向弯曲效率、横向受力、扭转、施工与维护之间取得平衡。</p>
-<p><a class="quarto-xref" href="#fig-ch03-box-width">图 <span>4.5</span></a> 展示箱形截面布置随桥面宽度变化的示意。</p>
+<p><a class="quarto-xref" href="#fig-ch03-box-width">图 <span>4.6</span></a> 展示箱形截面布置随桥面宽度变化的示意。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-box-width">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-box-width-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.5: 箱形截面布置随桥面宽度变化的示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.6: 箱形截面布置随桥面宽度变化的示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-width-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.5: 箱形截面布置随桥面宽度变化的示意
+图 4.6: 箱形截面布置随桥面宽度变化的示意
 </figcaption>
 </figure>
 </div>
@@ -850,7 +890,7 @@ q_T=\frac{T}{2A_m},\qquad \tau_T(s)=\frac{q_T}{t(s)},
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/box-girder.svg" style="width:90.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-tradeoff-fallback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.6: 固定外轮廓下箱梁空腔、面积与惯性矩比较
+图 4.7: 固定外轮廓下箱梁空腔、面积与惯性矩比较
 </figcaption>
 </figure>
 </div>
@@ -862,14 +902,14 @@ q_T=\frac{T}{2A_m},\qquad \tau_T(s)=\frac{q_T}{t(s)},
 <section class="level4" data-number="4.3.0.5" id="标准梁型不是比例缩放">
 <h4 class="anchored" data-anchor-id="标准梁型不是比例缩放" data-number="4.3.0.5"><span class="header-section-number">4.3.0.5</span> 标准梁型不是比例缩放</h4>
 <p>预制梁型往往形成按梁高、翼缘宽度、腹板和适用条件分级的截面族。跨度或设计作用提高时，梁型变化通常不是把一个截面等比例放大，而是同时调整梁高、翼缘、腹板、材料强度、预应力布置和梁间距。数字教材可将标准图样作为“参数族”的证据页，再用本书自建模型解释各参数对自重、刚度和施工的影响。</p>
-<p><a class="quarto-xref" href="#fig-ch03-wsdot-girder-family">图 <span>4.7</span></a> 展示WSDOT预应力混凝土I梁与宽翼缘梁截面族。</p>
+<p><a class="quarto-xref" href="#fig-ch03-wsdot-girder-family">图 <span>4.8</span></a> 展示WSDOT预应力混凝土I梁与宽翼缘梁截面族。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-wsdot-girder-family">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-wsdot-girder-family-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.7: WSDOT预应力混凝土I梁与宽翼缘梁截面族。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.8: WSDOT预应力混凝土I梁与宽翼缘梁截面族。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-wsdot-girder-family-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.7: WSDOT预应力混凝土I梁与宽翼缘梁截面族
+图 4.8: WSDOT预应力混凝土I梁与宽翼缘梁截面族
 </figcaption>
 </figure>
 </div>
@@ -879,18 +919,41 @@ q_T=\frac{T}{2A_m},\qquad \tau_T(s)=\frac{q_T}{t(s)},
 </section>
 <section class="level3" data-number="4.3.1" id="桥面板横隔构件与局部受力">
 <h3 class="anchored" data-anchor-id="桥面板横隔构件与局部受力" data-number="4.3.1"><span class="header-section-number">4.3.1</span> 桥面板、横隔构件与局部受力</h3>
+<!-- PRIORITY-FIGURE F13 START -->
+<div alt="车轮下面，桥面板靠哪些构件支承？。轴测整桥以5根纵向主梁、3道跨内横隔板和两端横梁定位桥面板的空间支承。透明桥面仅为揭示内部构造；车辆轮载向下。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F13">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="车轮下面，桥面板靠哪些构件支承？。轴测整桥以5根纵向主梁、3道跨内横隔板和两端横梁定位桥面板的空间支承。透明桥面仅为揭示内部构造；车辆轮载向下。" class="img-fluid figure-img" src="../assets/publication/priority-40/F13.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.9: 轴测整桥以5根纵向主梁、3道跨内横隔板和两端横梁定位桥面板的空间支承。透明桥面仅为揭示内部构造；车辆轮载向下。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+所有几何为明确教学例；纵横比例由坐标统一投影；横隔板为有高度的实体连接，不是路面横线；此图不计算荷载分担或板内应力
+</p>
+<p>
+课程组原创参数绘图 · F13 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F13.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F13.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F13 END -->
 <p>桥面板一方面直接承受轮载并将其横向分配给腹板或主梁，另一方面作为主梁截面的翼缘参与纵向受力。对于组合结构，还应明确施工阶段钢梁单独受力与桥面板形成组合后的截面差异。桥面板悬臂段、腹板间板带以及轮载邻近区域属于局部分析对象，其计算尺度不同于整桥纵向分析。</p>
 <p>横隔梁或横隔板的主要作用包括：在支承和锚固区域组织集中力传递；提高横向连接刚度；约束箱形截面畸变；在施工阶段保持构件稳定和几何位置。横隔构件并非数量越多越好，设置位置、刚度和开孔应根据支点、曲线与斜交条件、施工方法、预应力锚固和检查通行要求确定。</p>
 <p>桥面板的计算应先确定板带的支承关系。位于两腹板之间的顶板可表现为横向连续板；伸出外腹板的悬臂板还承受栏杆、防撞护栏和轮载局部作用；支点横隔板附近，荷载会在板、腹板和横隔构件之间形成三维扩散。桥面板作为主梁翼缘参与纵向弯曲，并不意味着其横向局部效应可以忽略。总体梁模型、横向板带模型和局部板壳模型应采用相容的作用与边界，并通过截面合力相互核对。</p>
 <p>对装配式梁桥，横向连接刚度是“单梁”与“整体桥面”之间的关键。湿接缝、铰缝、横隔梁和现浇层尚未形成时，单片梁分别承担自重和施工荷载；连接形成后，后续桥面恒载与车辆作用才由多梁共同分配。既有桥评估还需设置连接刚度折减或局部失效工况，比较外梁效应、相邻梁挠度差和桥面板局部响应，而不能继续沿用完好整体的横向分布系数。</p>
-<p><a class="quarto-xref" href="#fig-ch03-diaphragm-types">图 <span>4.8</span></a> 展示箱梁横隔构件的三种构造形式。</p>
+<p><a class="quarto-xref" href="#fig-ch03-diaphragm-types">图 <span>4.10</span></a> 展示箱梁横隔构件的三种构造形式。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-diaphragm-types">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-diaphragm-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.8: 箱梁横隔构件的三种构造形式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.10: 箱梁横隔构件的三种构造形式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-diaphragm-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.8: 箱梁横隔构件的三种构造形式
+图 4.10: 箱梁横隔构件的三种构造形式
 </figcaption>
 </figure>
 </div>
@@ -912,14 +975,14 @@ V_g(x)=\frac{gL}{2}-gx,
 M_g(x)=\frac{gLx}{2}-\frac{gx^2}{2}=\frac{gx(L-x)}{2}.
 \]</span></p>
 <p>其跨中弯矩为 <span class="math inline">\(gL^2/8\)</span>，支点剪力绝对值为 <span class="math inline">\(gL/2\)</span>。这些结果不仅用于初步估算，也是有限元模型最直接的平衡校核。若模型中自重由软件自动生成，应核对材料重度、截面面积、重力方向和重复施加情况，并检查全部竖向支反力之和是否等于总竖向荷载。</p>
-<p><a class="quarto-xref" href="#fig-ch03-dead-load-freebody">图 <span>4.9</span></a> 展示均布永久作用下简支梁的截面内力图式。</p>
+<p><a class="quarto-xref" href="#fig-ch03-dead-load-freebody">图 <span>4.11</span></a> 展示均布永久作用下简支梁的截面内力图式。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-dead-load-freebody">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-dead-load-freebody-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.9: 均布永久作用下简支梁的截面内力图式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.11: 均布永久作用下简支梁的截面内力图式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-dead-load-freebody-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.9: 均布永久作用下简支梁的截面内力图式
+图 4.11: 均布永久作用下简支梁的截面内力图式
 </figcaption>
 </figure>
 </div>
@@ -975,7 +1038,7 @@ S(x_0)=\sum_{k=1}^{r}P_k\eta(x_0+d_k),
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/influence.svg" style="width:88.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-influence-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.10: 简支梁固定响应的影响线静态基准图
+图 4.12: 简支梁固定响应的影响线静态基准图
 </figcaption>
 </figure>
 </div>
@@ -985,14 +1048,14 @@ S(x_0)=\sum_{k=1}^{r}P_k\eta(x_0+d_k),
 <p>连续梁某一截面的弯矩影响线通常跨越多跨并具有正负区段。可采用机动法判断形状，再用力法、位移法或数值模型求纵标。移动荷载遍历规定路径后，对每一截面记录最大值与最小值，可形成内力包络。包络线不是某一个荷载位置下的弯矩图，而是不同加载位置产生的控制值集合。</p>
 <p>连续梁应至少建立三类典型影响线：跨中正弯矩影响线、内支点负弯矩影响线和支点剪力影响线。求某跨跨中最大正弯矩时，车辆通常优先布置在该跨的正区，但相邻跨是否加载取决于其影响线纵标符号；求内支点最大负弯矩时，支点两侧跨往往共同贡献负效应，其他跨的正区或负区仍需按目标极值取舍。教学页面应允许学生先勾选拟加载区，再显示计算结果，以检验其对符号和组合的理解。</p>
 <p>内力包络应与构造位置联系。跨中最大正弯矩控制底缘受拉或相应预应力布置；内支点负弯矩控制顶缘受拉、支点区底板压应力及钢束转向；支点剪力与扭矩控制腹板和横隔构件；施工阶段的最大正、负弯矩位置可能与运营阶段不同。包络图因此不仅是结果曲线，还应携带“工况—阶段—车辆位置—控制截面”的元数据。</p>
-<p><a class="quarto-xref" href="#fig-ch03-envelope">图 <span>4.11</span></a> 展示梁桥弯矩与剪力包络线示意。</p>
+<p><a class="quarto-xref" href="#fig-ch03-envelope">图 <span>4.13</span></a> 展示梁桥弯矩与剪力包络线示意。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-envelope">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-envelope-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.11: 梁桥弯矩与剪力包络线示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.13: 梁桥弯矩与剪力包络线示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-envelope-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.11: 梁桥弯矩与剪力包络线示意
+图 4.13: 梁桥弯矩与剪力包络线示意
 </figcaption>
 </figure>
 </div>
@@ -1017,14 +1080,14 @@ S(x_0)=\sum_{k=1}^{r}P_k\eta(x_0+d_k),
 S_i=P\eta_i(x,y)\approx P\eta_{1}(x)\eta_{2,i}(y),
 \]</span></p>
 <p>其中 <span class="math inline">\(\eta_1(x)\)</span> 为单梁指定响应的纵向影响线，<span class="math inline">\(\eta_{2,i}(y)\)</span> 表示荷载沿横桥向移动时分配给第 <span class="math inline">\(i\)</span> 片梁的比例。该分解把“哪一片梁分到多少荷载”与“荷载沿纵向放在哪里最不利”分别处理，但前提是所采用的横向分布模型能够反映桥面结构的主要横向刚度特征。</p>
-<p><a class="quarto-xref" href="#fig-ch03-spatial-decomposition">图 <span>4.12</span></a> 展示空间受力向纵向与横向计算的分解。</p>
+<p><a class="quarto-xref" href="#fig-ch03-spatial-decomposition">图 <span>4.14</span></a> 展示空间受力向纵向与横向计算的分解。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-spatial-decomposition">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-spatial-decomposition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.12: 空间受力向纵向与横向计算的分解。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.14: 空间受力向纵向与横向计算的分解。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-spatial-decomposition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.12: 空间受力向纵向与横向计算的分解
+图 4.14: 空间受力向纵向与横向计算的分解
 </figcaption>
 </figure>
 </div>
@@ -1058,19 +1121,19 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/transverse.svg" style="width:88.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-transverse-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.13: 四片主梁刚性横梁教学模型的横向反力分配
+图 4.15: 四片主梁刚性横梁教学模型的横向反力分配
 </figcaption>
 </figure>
 </div>
 <p>对横向刚度沿纵向变化的桥梁，支点截面、横隔梁附近和跨中截面的分配规律可能不同。支点附近的竖向力更直接进入支座，杠杆近似可能具有较清楚的静力图式；跨中位置则受桥面板、横隔构件、主梁弯曲与扭转共同影响。曲线桥、斜桥、宽箱梁、刚度不等的边梁及连接损伤桥梁，还可能出现弯扭耦合或不对称分配，应优先采用梁格、板壳或经验证的专门方法。</p>
-<p><a class="quarto-xref" href="#fig-ch03-wheel-distribution">图 <span>4.14</span></a> 展示车轮荷载经横向分布后作用于指定主梁。</p>
+<p><a class="quarto-xref" href="#fig-ch03-wheel-distribution">图 <span>4.16</span></a> 展示车轮荷载经横向分布后作用于指定主梁。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-wheel-distribution">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-wheel-distribution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.14: 车轮荷载经横向分布后作用于指定主梁。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.16: 车轮荷载经横向分布后作用于指定主梁。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-wheel-distribution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.14: 车轮荷载经横向分布后作用于指定主梁
+图 4.16: 车轮荷载经横向分布后作用于指定主梁
 </figcaption>
 </figure>
 </div>
@@ -1082,14 +1145,14 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 <h4 class="anchored" data-anchor-id="杠杆原理法" data-number="4.5.0.3"><span class="header-section-number">4.5.0.3</span> 杠杆原理法</h4>
 <p>当荷载位于支点附近，竖向作用可通过端横隔构件或相邻主梁较直接地传至支座。杠杆原理法把横向结构简化为在主梁位置支承的连续或分段刚性构件，以静力平衡求各支点反力，再将反力影响线作为主梁横向分布影响线。</p>
 <p>采用该方法时应先画横向计算图式，标出主梁位置、车轮位置和桥面边界；再移动单位荷载获得目标主梁反力影响线；最后按规范规定的车辆横向位置加载。该方法的适用位置和精度与横向连接形式有关，不能因计算简便而推广到任意跨中截面。</p>
-<p>对无中间横隔梁的装配式箱梁，在初步分析中可假定单个箱形截面不发生横向变形，并将该箱梁范围内的横向影响线竖标取为1；接缝刚度、桥面整体化和箱体实际扭转仍会改变荷载分布。<a class="quarto-xref" href="#fig-ch03-box-lever">图 <span>4.15</span></a> 展示了这种近似的基本图形。</p>
+<p>对无中间横隔梁的装配式箱梁，在初步分析中可假定单个箱形截面不发生横向变形，并将该箱梁范围内的横向影响线竖标取为1；接缝刚度、桥面整体化和箱体实际扭转仍会改变荷载分布。<a class="quarto-xref" href="#fig-ch03-box-lever">图 <span>4.17</span></a> 展示了这种近似的基本图形。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-box-lever">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-box-lever-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.15: 无中间横隔梁装配式箱梁的横向影响线示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.17: 无中间横隔梁装配式箱梁的横向影响线示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-lever-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.15: 无中间横隔梁装配式箱梁的横向影响线示意
+图 4.17: 无中间横隔梁装配式箱梁的横向影响线示意
 </figcaption>
 </figure>
 </div>
@@ -1115,14 +1178,14 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 +\frac{e k_i y_i}{\sum_j k_jy_j^2}.
 \]</span></p>
 <p>该式仍应满足 <span class="math inline">\(\sum\eta_i=1\)</span> 和 <span class="math inline">\(\sum\eta_i y_i=e\)</span>。这里的 <span class="math inline">\(k_i\)</span> 不是任意调整系数，而应由相同边界和相同纵向位置下的主梁变形特性确定。若主梁扭转、桥面板剪切变形或横隔构件柔度不可忽略，“横截面保持直线”的前提失效，应改用更合适的空间模型。</p>
-<p><a class="quarto-xref" href="#fig-ch03-eccentric-compression">图 <span>4.16</span></a> 展示偏心压力法的空间模型与主梁反力分配。</p>
+<p><a class="quarto-xref" href="#fig-ch03-eccentric-compression">图 <span>4.18</span></a> 展示偏心压力法的空间模型与主梁反力分配。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-eccentric-compression">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-eccentric-compression-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.16: 偏心压力法的空间模型与主梁反力分配。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.18: 偏心压力法的空间模型与主梁反力分配。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-eccentric-compression-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.16: 偏心压力法的空间模型与主梁反力分配
+图 4.18: 偏心压力法的空间模型与主梁反力分配
 </figcaption>
 </figure>
 </div>
@@ -1197,14 +1260,14 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 <h2 class="anchored" data-anchor-id="预应力长期效应与线形控制" data-number="4.6"><span class="header-section-number">4.6</span> 预应力、长期效应与线形控制</h2>
 <p>预应力通过预先施加的轴力及其偏心改变截面应力和结构变形。对梁体纵向坐标 <span class="math inline">\(x\)</span>，若有效预应力为 <span class="math inline">\(P_e\)</span>、钢束相对截面形心的偏心距为 <span class="math inline">\(e_p(x)\)</span>，截面上的预应力效应可分解为轴力 <span class="math inline">\(P_e\)</span> 与弯矩 <span class="math inline">\(P_e e_p(x)\)</span>。在等效荷载概念下，曲线钢束对梁体产生与曲率有关的横向作用；钢束转折点和锚固端还产生集中作用。该表达用于理解钢束线形与内力的联系，实际计算应考虑摩阻、锚具变形、弹性压缩、收缩徐变和钢筋松弛等损失，并执行现行规范。</p>
 <p>连续梁的钢束线形通常与正、负弯矩区相协调：支点区钢束偏向截面上部，跨中区钢束偏向下部；施工阶段用束与成桥运营阶段用束可能承担不同任务。钢束布置还受到锚固空间、管道曲率、净距、局部承压、施工张拉和灌浆可达性的限制。</p>
-<p><a class="quarto-xref" href="#fig-ch03-tendon-layout">图 <span>4.17</span></a> 展示不同施工体系下连续梁预应力筋布置示意。</p>
+<p><a class="quarto-xref" href="#fig-ch03-tendon-layout">图 <span>4.19</span></a> 展示不同施工体系下连续梁预应力筋布置示意。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch03-tendon-layout">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch03-tendon-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 4.17: 不同施工体系下连续梁预应力筋布置示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 4.19: 不同施工体系下连续梁预应力筋布置示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-tendon-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.17: 不同施工体系下连续梁预应力筋布置示意
+图 4.19: 不同施工体系下连续梁预应力筋布置示意
 </figcaption>
 </figure>
 </div>
@@ -2346,6 +2409,29 @@ D\nabla^4 w=p(x,y),
 </section>
 <section class="level4" data-number="4.10.1.3" id="横向板带与连续板">
 <h4 class="anchored" data-anchor-id="横向板带与连续板" data-number="4.10.1.3"><span class="header-section-number">4.10.1.3</span> 横向板带与连续板</h4>
+<!-- PRIORITY-FIGURE F14 START -->
+<div alt="一块板能向两边传力，取成梁以后保留了什么？。俯视四边简支板与侧视两端简支板带分别展示保留的运动和支承。两图不宣称自动等价，也没有用未经计算的彩色云图表示应力。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F14">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="一块板能向两边传力，取成梁以后保留了什么？。俯视四边简支板与侧视两端简支板带分别展示保留的运动和支承。两图不宣称自动等价，也没有用未经计算的彩色云图表示应力。" class="img-fluid figure-img" src="../assets/publication/priority-40/F14.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.20: 俯视四边简支板与侧视两端简支板带分别展示保留的运动和支承。两图不宣称自动等价，也没有用未经计算的彩色云图表示应力。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+纯几何及传力方向示意，无板有限元结果；方板和板带为教学几何；Pb分配与等效宽度必须另行确定
+</p>
+<p>
+课程组原创参数绘图 · F14 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F14.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F14.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F14 END -->
 <p>在规则多梁桥中，可沿横向取单位宽度或有效宽度板带建立初步模型。板带跨于相邻腹板或主梁之间，支点弯矩和跨中弯矩取决于连续性。外侧悬臂板从外梁腹板伸至护栏或缘石，根部负弯矩、端部荷载和防撞构造需要单独计算。</p>
 <p>板带法的许可包括：几何和支承近似规则、主要作用在板带方向分配、纵向耦合可按采用方法处理。斜交、强横隔、局部开孔、宽跨比异常或轮载靠近自由边时，应升级板壳。板壳结果可沿设计截面积分为单位宽度弯矩，需说明局部坐标和平均宽度。</p>
 </section>
@@ -2430,6 +2516,29 @@ E_v(s)=\sum_{i=1}^{n}P_i\eta_E(s+d_i),
 <p>横向分布把桥面上的偏心作用分配给多片主梁、箱室或支承。它不是一个独立于纵向结构的固定比例，而与主梁、桥面板、横梁、横隔、扭转刚度、支承和作用位置共同相关。传统简化方法的价值在于建立力矩平衡和参数趋势，梁格与板壳用于处理超出简化许可的空间效应。</p>
 <section class="level4" data-number="4.10.3.1" id="杠杆法的物理基础">
 <h4 class="anchored" data-anchor-id="杠杆法的物理基础" data-number="4.10.3.1"><span class="header-section-number">4.10.3.1</span> 杠杆法的物理基础</h4>
+<!-- PRIORITY-FIGURE F15 START -->
+<div alt="只用力的平衡，什么时候能算出每个支点分担？。两支点静定板段用相反力臂计算反力；若保留三支承连续横梁，则需额外的变形协调。图中特别区分简化后的图式和未释放的连续图式。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F15">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="只用力的平衡，什么时候能算出每个支点分担？。两支点静定板段用相反力臂计算反力；若保留三支承连续横梁，则需额外的变形协调。图中特别区分简化后的图式和未释放的连续图式。" class="img-fluid figure-img" src="../assets/publication/priority-40/F15.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.21: 两支点静定板段用相反力臂计算反力；若保留三支承连续横梁，则需额外的变形协调。图中特别区分简化后的图式和未释放的连续图式。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+左图荷载位于两支点之间；外悬臂另画图式；图为教学静力关系，不规定规范杠杆法的使用位置或系数
+</p>
+<p>
+课程组原创参数绘图 · F15 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F15.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F15.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F15 END -->
 <p>当横向联系只在局部支承或端部起作用，或研究靠近支点的反力分配时，可把横向结构简化为支承在若干主梁上的横向梁。对落在相邻两条理想支承线之间的集中力<span class="math inline">\(P\)</span>，两反力由</p>
 <p><span class="math display">\[
 R_1+R_2=P,
@@ -2441,6 +2550,29 @@ R_1a_1=R_2a_2
 </section>
 <section class="level4" data-number="4.10.3.2" id="刚性横梁与偏心受压思路">
 <h4 class="anchored" data-anchor-id="刚性横梁与偏心受压思路" data-number="4.10.3.2"><span class="header-section-number">4.10.3.2</span> 刚性横梁与偏心受压思路</h4>
+<!-- PRIORITY-FIGURE F16 START -->
+<div alt="车偏到一侧，总重量怎样分到五根梁？。平均分担24 kN/梁与偏心分量−24、−12、0、12、24 kN相加，得到0、12、24、36、48 kN。合力和合矩均与外作用一致。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F16">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="车偏到一侧，总重量怎样分到五根梁？。平均分担24 kN/梁与偏心分量−24、−12、0、12、24 kN相加，得到0、12、24、36、48 kN。合力和合矩均与外作用一致。" class="img-fluid figure-img" src="../assets/publication/priority-40/F16.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.22: 平均分担24 kN/梁与偏心分量−24、−12、0、12、24 kN相加，得到0、12、24、36、48 kN。合力和合矩均与外作用一致。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+刚性横梁与等刚度；忽略扭转柔度、板局部和横隔离散；向下位移为正，图中只示意放大的线性位移趋势
+</p>
+<p>
+课程组原创参数绘图 · F16 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F16.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F16.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F16 END -->
 <p>若横向构件足够刚，各主梁在同一截面处可近似具有共同竖向平移加绕纵向轴的刚体转动。第<span class="math inline">\(i\)</span>片梁的反力可分为合力平移项与偏心扭转项。对于等竖向刚度、梁位坐标<span class="math inline">\(a_i\)</span>以刚度中心为原点的教学模型，常写成</p>
 <p><span class="math display">\[
 R_i=P\left(\frac{1}{n}+\frac{ea_i}{\sum_{j=1}^{n}a_j^2}\right),
@@ -2625,6 +2757,29 @@ q_p(x)=P\frac{\mathrm d^2e}{\mathrm dx^2},
 </section>
 <section class="level4" data-number="4.10.6.4" id="顶推施工">
 <h4 class="anchored" data-anchor-id="顶推施工" data-number="4.10.6.4"><span class="header-section-number">4.10.6.4</span> 顶推施工</h4>
+<!-- PRIORITY-FIGURE F19 START -->
+<div alt="桥还没碰到下一个支点，悬空越长会怎样？。悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F19">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="桥还没碰到下一个支点，悬空越长会怎样？。悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。" class="img-fluid figure-img" src="../assets/publication/priority-40/F19.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.23: 悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+每个阶段梁尾恰在后支点、支点距12 m；这是教学静定截取，不冒充真实完整顶推系统；均布自重；未接触前方支点；无导梁、摩擦、支点高差或非线性；显示的是阶段内力，非设计安全系数
+</p>
+<p>
+课程组原创参数绘图 · F19 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F19.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F19.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F19 END -->
 <p>顶推过程中同一截面交替经历正、负弯矩，导梁、临时墩和滑移支承影响反力。成桥截面设计可能受施工阶段重复应力控制。模型需随推进位置更新支承关系和悬臂长度；钢束或临时加固按阶段激活。</p>
 <p>顶推步长既要捕捉支承越过截面时的峰值，也要与实际推进路径一致。可先用影响线或粗步长定位，再细化关键位置。摩擦和支承高差可能引起水平力与扭转，需在专项模型中处理。</p>
 </section>
@@ -2884,6 +3039,29 @@ M_{\mathrm{tot}}=2625\ \mathrm{kN\cdot m}.
 </section>
 <section class="level4" data-number="4.10.10.3" id="不等刚度横向相容">
 <h4 class="anchored" data-anchor-id="不等刚度横向相容" data-number="4.10.10.3"><span class="header-section-number">4.10.10.3</span> 不等刚度横向相容</h4>
+<!-- PRIORITY-FIGURE F17 START -->
+<div alt="某根梁的活载增量为负，就已经离开支承了吗？。已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F17">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="某根梁的活载增量为负，就已经离开支承了吗？。已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。" class="img-fluid figure-img" src="../assets/publication/priority-40/F17.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.24: 已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+此Ri为横向分配模型的反力；真实支座接触须定义对应对象并求总状态；若总接触力不满足单向接触，需重建模型，不可直接将负值截零；不在图中声称该简化模型已验证真实支座安全
+</p>
+<p>
+课程组原创参数绘图 · F17 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F17.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F17.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F17 END -->
 <!-- FORMULA-SCAFFOLD ch03 START -->
 <div class="formula-scaffold">
 <p><strong>先看这个问题。</strong> 横向联系足够刚时，各梁的连接点仍排成一条直线。这条线既能一起下沉，也能倾斜。先看两种变化，再求每根梁分担多少。</p>
@@ -4041,7 +4219,7 @@ J(\boldsymbol\theta)=
 
 <script>
 (()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);route.addEventListener('click',event=>{const link=event.target.closest('.priority-chapter-gallery a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;set('reference');requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));});const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
 
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

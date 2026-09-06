@@ -1,0 +1,40 @@
+{
+  "id": "F26",
+  "title": "合龙以后，桥还是刚才那个受力体系吗？",
+  "chapter": 6,
+  "heading": "合龙与体系转换",
+  "caption": "合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。",
+  "assumptions": [
+    "示意图不含变形和内力结果",
+    "施工荷载、临时边界和初始状态需按阶段定义",
+    "图中塔基仅作支承定位，不指定实际构造"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F26.svg",
+  "png": "assets/publication/priority-40/F26.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "合龙前中间断开、合龙后连接激活",
+    "两幅荷载方向向下",
+    "无预填施工弯矩或索力"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch05.qmd",
+  "heading_line": 196,
+  "calculation_data": {},
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视并复查：修正竖向塔柱的地面固定符号；合龙前断开、合龙后连接。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "afe03160f4b84dcd0b46f6d049d7844b621a38ff056afb58c069777f0b004374",
+    "png": "42c1b0e1ebe55f3158c0bf2e04ccf1480cb715f1045940c3d7ebc1c910a1f0ff"
+  }
+}

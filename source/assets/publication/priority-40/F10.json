@@ -1,0 +1,82 @@
+{
+  "id": "F10",
+  "title": "想让同一截面的剪力最大，荷载该放在哪一边？",
+  "chapter": 3,
+  "heading": "车辆最不利布载与影响线接口",
+  "caption": "固定截面剪力影响线在C处有单位跃变。覆盖右侧正区得到+54 kN，覆盖左侧负区得到−24 kN。改变目标符号，需要改变加载区段。",
+  "assumptions": [
+    "向下均布荷载可独立覆盖任意同号区，非规范车道加载规则",
+    "在C左、右紧邻取不同极限值；不为恰落C的集中力指定唯一剪力值"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F10.svg",
+  "png": "assets/publication/priority-40/F10.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    {
+      "name": "求最大正剪力",
+      "value": 54.0,
+      "expected": 54.00000000000001,
+      "tolerance": 1e-09,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "求最小负剪力",
+      "value": -24.0,
+      "expected": -24.0,
+      "tolerance": 1e-09,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大并复看：两幅加载分别覆盖正、负区；C处两极限纵标、无量纲说明、剪力正号定义和有号面积均明确。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch02.qmd",
+  "heading_line": 524,
+  "figure_kind": "calculated",
+  "technical_review": "formula_assertions_passed",
+  "visual_review_notes": "逐张放大并复看：两幅加载分别覆盖正、负区；C处两极限纵标、无量纲说明、剪力正号定义和有号面积均明确。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "2e0fe8c4d2408d8ee40bd06c91c3e68f22e5b10ee853449f7269be3aec4a0cae",
+    "png": "b9833f7f7101974decf53d3452c3870fcaea975624e7e7b305d6c57e2a5522c8"
+  },
+  "calculation_data": {
+    "L_m": 30,
+    "target_x_m": 12,
+    "q_kN_per_m": 10,
+    "negative_loading_m": [
+      0,
+      12
+    ],
+    "positive_loading_m": [
+      12,
+      30
+    ],
+    "negative_eta_area_m": -2.4,
+    "positive_eta_area_m": 5.4,
+    "V_min_kN": -24,
+    "V_max_kN": 54,
+    "sign": "V_C = R_A - sum of loads left of C; positive shear points down on cut face of left segment"
+  },
+  "diagram_kind": "analytical_teaching_example",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

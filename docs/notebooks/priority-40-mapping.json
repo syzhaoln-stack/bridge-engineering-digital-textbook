@@ -1,0 +1,1123 @@
+{
+  "schema_version": 1,
+  "source_manifest": "assets/publication/priority-40/manifest.json",
+  "source_manifest_sha256": "3e8ae8525c5e1879cbdf89afdbfe7979ac1057728be2bb7b788d15e4feab1498",
+  "mapping_rule": "按问题与力学原理关联；图与单元模型不同的，逐条声明差别，不把示意或其他算例数值作为当前交互计算结果。",
+  "figures": [
+    {
+      "id": "F01",
+      "title": "车的重量，最后传到了哪里？",
+      "path": "assets/publication/priority-40/F01.png",
+      "svg": "assets/publication/priority-40/F01.svg",
+      "caption": "由车辆、桥面板、主梁、支座、墩台、基础到地基的竖向传力路径。基础处向上箭头表示地基对基础的反力。",
+      "assumptions": [
+        "非实桥构造图；不表示材料应力和反力大小",
+        "桥台用简化端支承体表现，未绘台背土和附属设施"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch01.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "cb52426ccaccca63d41b47fb93b0c7243916e942920282c9501aa6a6e1099541",
+        "png": "9be0eded4ed27679f53f68d59aa0010d4cd7d529f0be5634f723e0a8cbb53f7c"
+      },
+      "unit_ids": [
+        "C01U01",
+        "C04U01"
+      ],
+      "unit_notes": {
+        "C01U01": "先追踪车辆到地基的传力，再在选定梁段上检查合力与合矩。图只示传力方向，不表示反力大小。",
+        "C04U01": "把反力计算放回整桥传力路径：选定梁段的支承反力，还会继续传到墩台、基础和地基。"
+      }
+    },
+    {
+      "id": "F02",
+      "title": "同样向下的重量，为什么需要不同的支承？",
+      "path": "assets/publication/priority-40/F02.png",
+      "svg": "assets/publication/priority-40/F02.svg",
+      "caption": "同一竖向均布荷载下，理想梁以弯曲平衡，抛物线拱需要向内水平反力，抛物线索需要向外水平反力。相同的反力量级不代表结构性能相同。",
+      "assumptions": [
+        "荷载沿水平投影均布；几何小斜率不是H公式必需条件",
+        "图示轴线与指定荷载相配；偏载后不能继续假定拱内无弯矩"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch01.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "f4aa4025105e4777b30b7b3d6159304c4e2a0f26711e8692d0c025884d2f2e2b",
+        "png": "22a0718f702ada5a0b992d3d326ce52e5f34bc671c03793cc29c6c3f5dfafe58"
+      },
+      "unit_ids": [
+        "C01U02",
+        "C05U06",
+        "C07U04"
+      ],
+      "unit_notes": {
+        "C01U02": "同样的向下荷载，梁、拱、索需要的支承反力方向不同。先辨认方向，再调整本单元的拱高。",
+        "C05U06": "用同一均布荷载比较拱与索的对应平衡形态；水平反力方向和轴力符号不能混用。",
+        "C07U04": "拱与索可以类比平衡几何，受压构件的稳定要求仍须另查。"
+      }
+    },
+    {
+      "id": "F03",
+      "title": "把一座桥原样放大两倍，还能照搬原来的判断吗？",
+      "path": "assets/publication/priority-40/F03.png",
+      "svg": "assets/publication/priority-40/F03.svg",
+      "caption": "几何相似、材料和重度相同的梁，将尺度乘2后面积、自重和二次矩分别乘4、8和16，而自重弯曲应力乘2。",
+      "assumptions": [
+        "只比较给定简支等截面梁与自重；不含车辆、风、稳定或施工",
+        "所有尺寸同时缩放，不能用于只增跨度或只增板宽的情形"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch01.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "cffa5c7b50e8f41edb640bf23e50f871dfcf70f865f0a8acbae746749eb503a8",
+        "png": "d2a4ec1b07218b865753b98e381fa2d355ae7e54748abf6777ea6f066db095b4"
+      },
+      "unit_ids": [
+        "C01U04",
+        "C01U05",
+        "C01U06"
+      ],
+      "unit_notes": {
+        "C01U04": "同形放大两倍时，长度、面积、体积分别变为2、4、8倍。",
+        "C01U05": "图中I按四次方增长；这不等于整梁的荷载—位移刚度也按四次方增长，还要计入跨度。",
+        "C01U06": "本图和本单元都讨论几何相似、自重条件；图中应力与单元中的挠度是不同输出。"
+      }
+    },
+    {
+      "id": "F04",
+      "title": "同一个偏心压力，为什么一边压得更多？",
+      "path": "assets/publication/priority-40/F04.png",
+      "svg": "assets/publication/priority-40/F04.svg",
+      "caption": "把同一偏心压力分为中心压力和等效弯矩。三幅应力箭头使用同一比例；正值为压应力，负值为拉应力。",
+      "assumptions": [
+        "教学参数；不计开裂与材料非线性",
+        "应力图为截面计算，不是极限承载力验算"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch02-foundations.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "6cd936faea56ce40dccd501e54db6ea8b64380fd8cbe285de62d0aaa3ff71fe9",
+        "png": "fef313b8d9026954b89f9052a62271b5df02afe18be16eb090a4db48e35c49aa"
+      },
+      "unit_ids": [
+        "C02U01",
+        "C02U10",
+        "C05U03"
+      ],
+      "unit_notes": {
+        "C02U01": "把偏心压力等价拆为中心压力与弯矩，再相加同一截面的应力。",
+        "C02U10": "用线弹性未开裂截面展示叠加；开裂、脱空或大变形后不直接沿用这组线性关系。",
+        "C05U03": "把拱的整体N、M带到截面上理解平均压应力与弯曲修正；图为矩形截面算例。"
+      }
+    },
+    {
+      "id": "F05",
+      "title": "压力移到哪里，截面边缘才开始出现拉应力？",
+      "path": "assets/publication/priority-40/F05.png",
+      "svg": "assets/publication/priority-40/F05.svg",
+      "caption": "移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。",
+      "assumptions": [
+        "只讨论单向偏心，双向偏心核心为菱形",
+        "出现拉区后若材料开裂，不再沿用完整弹性应力图作为实际状态"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch02-foundations.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "5b65db8a9fcffe8bbd7c1f17bd94cfe93385aba075df765e35da067e5c017c50",
+        "png": "04701842098c2586332946d215254c5adf997bf167d1ec051c7fbb2053da7608"
+      },
+      "unit_ids": [
+        "C02U02",
+        "C02U03",
+        "C05U04"
+      ],
+      "unit_notes": {
+        "C02U02": "中间三分之一带对应本方向的截面核心，边缘零应力由线性应力图得到。",
+        "C02U03": "越出核心出现的是本线弹性模型的拉应力；图中的位置不是钢筋混凝土大、小偏心受压分界。",
+        "C05U04": "用截面核心解释压力合力位置与无拉应力条件，限于图示矩形、未开裂线弹性截面。"
+      }
+    },
+    {
+      "id": "F06",
+      "title": "同一块板竖着放、横着放，为什么弯起来不一样？",
+      "path": "assets/publication/priority-40/F06.png",
+      "svg": "assets/publication/priority-40/F06.svg",
+      "caption": "明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。",
+      "assumptions": [
+        "均质线弹性；关于相同方向的形心轴",
+        "不据此判定整体最优；还需考虑侧向稳定、剪切和构造"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch02-foundations.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "e920dcde7c0fc3e1feb2efac99e4267c484fc4f8f7b19ef0276dc639400d77f6",
+        "png": "f66eeab0d0828723bd7a9c42f377dad22a038aab2c7f9cf20810e0c590314482"
+      },
+      "unit_ids": [
+        "C02U05",
+        "C01U09"
+      ],
+      "unit_notes": {
+        "C02U05": "矩形绕哪根轴弯曲决定I的取值。图把同一截面转向；单元调高度时面积也会改变，两种操作条件不同。",
+        "C01U09": "比较截面尺寸前先指明弯曲轴；图中是面积不变的转向比较，不直接当成单元加高后的数值。"
+      }
+    },
+    {
+      "id": "F07",
+      "title": "同样长的压杆，端部能不能转动有多大影响？",
+      "path": "assets/publication/priority-40/F07.png",
+      "svg": "assets/publication/priority-40/F07.svg",
+      "caption": "实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。",
+      "assumptions": [
+        "三种理想边界：不计局部屈曲、初始缺陷和屈服",
+        "真实塔柱/拱肋和弹性连接不应仅按外观选择K"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch02-foundations.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "795f7a6f644c11e801dae6420a791d46118dd40b9dc728142546af59908c8810",
+        "png": "072206b762b60576bd94694bd75a88a299cd408425e05aeaa60302d3f85f48a3"
+      },
+      "unit_ids": [
+        "C02U06",
+        "C06U09"
+      ],
+      "unit_notes": {
+        "C02U06": "把实际长度L、计算长度KL和端部约束分清，再比较理想欧拉临界力。",
+        "C06U09": "施工时临时支承改变约束和计算长度；图为理想直压杆端部比较，不是整座斜拉桥稳定计算。"
+      }
+    },
+    {
+      "id": "F08",
+      "title": "普通钢筋和预应力，分别在什么时候开始起作用？",
+      "path": "assets/publication/priority-40/F08.png",
+      "svg": "assets/publication/priority-40/F08.svg",
+      "caption": "左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。",
+      "assumptions": [
+        "两侧表达不同机制，不作等配筋等成本比较",
+        "实际预应力还包括偏心、束形、损失、施工阶段和次内力",
+        "不能把钢筋出现拉力等同于必然已有可见裂缝"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch02-foundations.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "709d86be5d1a00a729a656edf415d80545c818edfbf94e6199c3e59da4d88ec4",
+        "png": "90bb732c61abc8af6f4690a730fdb2004d112b781ae2ddcce0fe3bd58e66e6d1"
+      },
+      "unit_ids": [
+        "C02U07",
+        "C04U07"
+      ],
+      "unit_notes": {
+        "C02U07": "普通钢筋随变形受力，预应力先改变初始应力状态。图右侧采用中心预压力，单元还可包含偏心作用。",
+        "C04U07": "先看中心预压与外弯矩叠加，再讨论单元中的偏心预压力；不能把两种偏心条件下的数值混用。"
+      }
+    },
+    {
+      "id": "F09",
+      "title": "同一辆车换个位置，跨中弯矩会怎样变？",
+      "path": "assets/publication/priority-40/F09.png",
+      "svg": "assets/publication/priority-40/F09.svg",
+      "caption": "移动力相同，跨中弯矩随影响线纵标变化。6 m、15 m、24 m三个位置分别得到300、750、300 kN·m。",
+      "assumptions": [
+        "线弹性简支梁；固定跨中正弯矩为目标",
+        "不含动力放大或车辆规范模型"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch02.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "d493a0a655a0acf9b1b2b997666707b903fa0f7566b2971ec775693d925a2141",
+        "png": "88c38c183967c2507885cc905d5321ff7901a3e5332a0c7743ee6048d7cb253d"
+      },
+      "unit_ids": [
+        "C04U04",
+        "C03U08"
+      ],
+      "unit_notes": {
+        "C04U04": "先在简支梁跨中读移动荷载纵标；核心单元使用的连续梁图式与本图不同，迁移的是固定输出、移动输入的思路。",
+        "C03U08": "横坐标表示荷载位置。本图是简支梁跨中弯矩，核心候选采用另一梁图式，纵标和数值要分别计算。"
+      }
+    },
+    {
+      "id": "F10",
+      "title": "想让同一截面的剪力最大，荷载该放在哪一边？",
+      "path": "assets/publication/priority-40/F10.png",
+      "svg": "assets/publication/priority-40/F10.svg",
+      "caption": "固定截面剪力影响线在C处有单位跃变。覆盖右侧正区得到+54 kN，覆盖左侧负区得到−24 kN。改变目标符号，需要改变加载区段。",
+      "assumptions": [
+        "向下均布荷载可独立覆盖任意同号区，非规范车道加载规则",
+        "在C左、右紧邻取不同极限值；不为恰落C的集中力指定唯一剪力值"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch02.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "2e0fe8c4d2408d8ee40bd06c91c3e68f22e5b10ee853449f7269be3aec4a0cae",
+        "png": "b9833f7f7101974decf53d3452c3870fcaea975624e7e7b305d6c57e2a5522c8"
+      },
+      "unit_ids": [
+        "C03U09"
+      ],
+      "unit_notes": {
+        "C03U09": "用简支梁固定截面的剪力影响线观察正负区段；核心单元是连续梁弯矩响应，布载原则相通，但跃变和数值不能照搬。"
+      }
+    },
+    {
+      "id": "F11",
+      "title": "两根车轴一起上桥，怎样把各自的作用加起来？",
+      "path": "assets/publication/priority-40/F11.png",
+      "svg": "assets/publication/priority-40/F11.svg",
+      "caption": "两轴保持实际间距，在同一目标截面的影响线上分别读取纵标，再以轴重乘纵标后相加。120 kN轴贡献660，180 kN轴贡献1350 kN·m。",
+      "assumptions": [
+        "线性叠加；两个贡献必须来自同一车辆位置",
+        "本图暂不加均布作用，正文加q后总数另算"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch02.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "21f5bc0ebe5637f772835c47164c5af86c09f8012376846fb23a35ca058b5545",
+        "png": "d0bc7a97ef6c1bcf39e5247f7d7fa93509fd4b47e71387fb656205f1ba4446c6"
+      },
+      "unit_ids": [
+        "C04U04"
+      ],
+      "unit_notes": {
+        "C04U04": "由单个移动荷载扩展到两轴：保持轴距，分别读纵标后按轴重叠加。本图仍是简支梁算例，不是当前连续梁结果。"
+      }
+    },
+    {
+      "id": "F12",
+      "title": "平均抗力比平均作用大，为什么还不能只看两个平均数？",
+      "path": "assets/publication/priority-40/F12.png",
+      "svg": "assets/publication/priority-40/F12.svg",
+      "caption": "联合正态教学模型以g=R−S转化为一维余量分布；红色尾部为g<0的概率。联合图的阴影只是失效域，不是按几何面积计算概率。",
+      "assumptions": [
+        "所有统计参数为正文教学值，非测量样本",
+        "线性极限状态与指定联合正态假设；不可将此Pf迁移到实际桥梁"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch02.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "1d587c4175d21aecc635fd07e1e2f185e48f9cf5e111e7a111857cd806f4e337",
+        "png": "24d889f2037d0988bf84062aacfcb4f0a651785c681444a3e271f9e1a4ad4d5f"
+      },
+      "unit_ids": [
+        "C03U05",
+        "C03U06",
+        "C03U07",
+        "C03U10",
+        "C10U09"
+      ],
+      "unit_notes": {
+        "C03U05": "在联合正态假设内，用余量g=R−S连接平均值与失效概率。",
+        "C03U06": "均值差相同时，余量分布的宽度也影响负尾部概率。",
+        "C03U07": "R与S的相关项进入余量方差；联合图阴影的几何面积不是失效概率。",
+        "C03U10": "提高抗力均值会移动余量分布；先核对变化方向，再解释概率。",
+        "C10U09": "方案平均性能相同仍可有不同负尾部概率，比较时需同时声明离散性与相关假设。"
+      }
+    },
+    {
+      "id": "F13",
+      "title": "车轮下面，桥面板靠哪些构件支承？",
+      "path": "assets/publication/priority-40/F13.png",
+      "svg": "assets/publication/priority-40/F13.svg",
+      "caption": "轴测整桥以5根纵向主梁、3道跨内横隔板和两端横梁定位桥面板的空间支承。透明桥面仅为揭示内部构造；车辆轮载向下。",
+      "assumptions": [
+        "所有几何为明确教学例；纵横比例由坐标统一投影",
+        "横隔板为有高度的实体连接，不是路面横线",
+        "此图不计算荷载分担或板内应力"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "567564c649bd48db6d4de2500eaceb65d987720a67755f9eb3b3db07c7e21c02",
+        "png": "37e987309f7eaa3be606f2a47c54cfb8b24362ecbe00558ffdb4898d1b124909"
+      },
+      "unit_ids": [
+        "C04U05"
+      ],
+      "unit_notes": {
+        "C04U05": "先在空间图里找到桥面板、五根纵梁和横隔板，再讨论横向分担。图是五梁构造定位，独立交互是四梁归一模型。"
+      }
+    },
+    {
+      "id": "F14",
+      "title": "一块板能向两边传力，取成梁以后保留了什么？",
+      "path": "assets/publication/priority-40/F14.png",
+      "svg": "assets/publication/priority-40/F14.svg",
+      "caption": "俯视四边简支板与侧视两端简支板带分别展示保留的运动和支承。两图不宣称自动等价，也没有用未经计算的彩色云图表示应力。",
+      "assumptions": [
+        "纯几何及传力方向示意，无板有限元结果",
+        "方板和板带为教学几何；Pb分配与等效宽度必须另行确定"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "843a8d861cbc66ba9691e8108958688d26eb9dc3d546096ed2e73bd8c9d3759e",
+        "png": "462a45a278e56ce373f97e124b465e6c138e686392391b5bd6bcbca660ceafef"
+      },
+      "unit_ids": [
+        "C11U01"
+      ],
+      "unit_notes": {
+        "C11U01": "为什么选梁模型，要看希望保留哪种传力与变形。四边简支板与两端简支板带并不自动等价。"
+      }
+    },
+    {
+      "id": "F15",
+      "title": "只用力的平衡，什么时候能算出每个支点分担？",
+      "path": "assets/publication/priority-40/F15.png",
+      "svg": "assets/publication/priority-40/F15.svg",
+      "caption": "两支点静定板段用相反力臂计算反力；若保留三支承连续横梁，则需额外的变形协调。图中特别区分简化后的图式和未释放的连续图式。",
+      "assumptions": [
+        "左图荷载位于两支点之间；外悬臂另画图式",
+        "图为教学静力关系，不规定规范杠杆法的使用位置或系数"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "fc58a9d0baa0ff059ba086479095f6b88367c47dee87bbb77862ad2b99d888b5",
+        "png": "de22e5d0c7fc761dd8490360a2fea3a9d0fa75071c783bbd76b941a9d815ca35"
+      },
+      "unit_ids": [
+        "C04U06",
+        "C11U04"
+      ],
+      "unit_notes": {
+        "C04U06": "两支点可仅靠平衡求分担；保留更多支承时还要补充变形协调。图的板段不是独立页的四梁模型。",
+        "C11U04": "矩阵背后既有平衡也有协调。图用两支点与三支承板段说明，本单元用并联弹簧作更小的模型。"
+      }
+    },
+    {
+      "id": "F16",
+      "title": "车偏到一侧，总重量怎样分到五根梁？",
+      "path": "assets/publication/priority-40/F16.png",
+      "svg": "assets/publication/priority-40/F16.svg",
+      "caption": "平均分担24 kN/梁与偏心分量−24、−12、0、12、24 kN相加，得到0、12、24、36、48 kN。合力和合矩均与外作用一致。",
+      "assumptions": [
+        "刚性横梁与等刚度；忽略扭转柔度、板局部和横隔离散",
+        "向下位移为正，图中只示意放大的线性位移趋势"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "04b5dca4a22edebab7908d3a74e0fc009c5ec0a098d2e5a9e1367dda2cac7345",
+        "png": "3d6cbfcd65fdb1d0fb32e960f7ea938fdc7c3c825c1b23ff5b4dd86c83715190"
+      },
+      "unit_ids": [
+        "C04U05"
+      ],
+      "unit_notes": {
+        "C04U05": "本图与五梁Notebook使用同一120 kN、e=2.4 m算例。独立页是四梁归一模型，不能逐根照抄0、12、24、36、48 kN。"
+      }
+    },
+    {
+      "id": "F17",
+      "title": "某根梁的活载增量为负，就已经离开支承了吗？",
+      "path": "assets/publication/priority-40/F17.png",
+      "svg": "assets/publication/priority-40/F17.svg",
+      "caption": "已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。",
+      "assumptions": [
+        "此Ri为横向分配模型的反力；真实支座接触须定义对应对象并求总状态",
+        "若总接触力不满足单向接触，需重建模型，不可直接将负值截零",
+        "不在图中声称该简化模型已验证真实支座安全"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "074783fd938e7e22e3ec8abaf897bdc1f5a44b09fe880e01c8f211174c28e3b7",
+        "png": "76eaae54c411c0c5e4140edc6e4d7b178f765daf94a79eb029237b90656b2c7f"
+      },
+      "unit_ids": [
+        "C04U10",
+        "C08U08"
+      ],
+      "unit_notes": {
+        "C04U10": "先区分活载增量与计入恒载的总反力，再判断实际支承接触。图的五梁数字不等于核心四梁归一输出。",
+        "C08U08": "负活载增量不自动等于总反力脱空；若另建只能承压的接触模型，必须重求接触区，不能直接删负数。"
+      }
+    },
+    {
+      "id": "F18",
+      "title": "把两跨接成一根梁，弯矩和下沉会怎样改变？",
+      "path": "assets/publication/priority-40/F18.png",
+      "svg": "assets/publication/priority-40/F18.svg",
+      "caption": "统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。",
+      "assumptions": [
+        "两跨等跨、EI恒定、两跨全布均载；不是任意车辆位置的包络",
+        "中支点不沉降；不计收缩徐变、温度或预应力",
+        "解析式第一跨w=q(L³x−3Lx³+2x⁴)/(48EI)，第二跨镜像"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "8a8b75c49e6a2563c98ec897590dda0c893f704335c00325bcce04ee69ec49f0",
+        "png": "a984e58c0886261ae85b3cce9b627344519d3c618787f9c62423c1d32b753453"
+      },
+      "unit_ids": [
+        "C04U02",
+        "C11U05"
+      ],
+      "unit_notes": {
+        "C04U02": "连接条件改变时，弯矩与下沉一起改变。图比较两跨独立简支和连续梁；本单元改变的是简支梁荷载。",
+        "C11U05": "图用两跨连续性展示边界改变后的响应；当前单元用温度约束作另一种边界比较，两者不是同一算例。"
+      }
+    },
+    {
+      "id": "F19",
+      "title": "桥还没碰到下一个支点，悬空越长会怎样？",
+      "path": "assets/publication/priority-40/F19.png",
+      "svg": "assets/publication/priority-40/F19.svg",
+      "caption": "悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。",
+      "assumptions": [
+        "每个阶段梁尾恰在后支点、支点距12 m；这是教学静定截取，不冒充真实完整顶推系统",
+        "均布自重；未接触前方支点；无导梁、摩擦、支点高差或非线性",
+        "显示的是阶段内力，非设计安全系数"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "918ddcf5eef347880fc9a2bdf8e15eabec82922d8aecd945ed3d2615ef33c818",
+        "png": "a843e78b19a2d5dc940449fabc38ba9736335ab41ee2ac0ac4ae2254d195f114"
+      },
+      "unit_ids": [
+        "C06U09"
+      ],
+      "unit_notes": {
+        "C06U09": "同样需要按施工阶段重新建模：图检验悬出阶段弯矩，本单元检验临时支承下的屈曲临界力，两种验算要分别做。"
+      }
+    },
+    {
+      "id": "F20",
+      "title": "把拱压低，拱脚要多推多少？",
+      "path": "assets/publication/priority-40/F20.png",
+      "svg": "assets/publication/priority-40/F20.svg",
+      "caption": "相同跨度和竖向均布荷载下，三铰抛物线拱矢高由20 m增至30 m，水平推力由16.2 MN降至10.8 MN；竖向反力不变。",
+      "assumptions": [
+        "三铰、等高拱脚",
+        "抛物线拱轴",
+        "均布荷载以水平投影计",
+        "一阶静力"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch04.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "8611ab9f8d7048a228c423b9090d02d08d30cd52f9562572e49b750af02d5584",
+        "png": "49153a770ae4f9867957b3c7598ea18d0cee25c44fad8de1e44769c5f4258655"
+      },
+      "unit_ids": [
+        "C05U01",
+        "C05U05"
+      ],
+      "unit_notes": {
+        "C05U01": "在给定均布荷载下，用水平推力乘拱高理解对梁式弯矩的抵消。",
+        "C05U05": "保持跨度和竖向均布荷载不变，改变矢高，比较水平推力。图与交互参数量级不同，以各自标注为准。"
+      }
+    },
+    {
+      "id": "F21",
+      "title": "压力线离开拱轴，弯矩从哪里来？",
+      "path": "assets/publication/priority-40/F21.png",
+      "svg": "assets/publication/priority-40/F21.svg",
+      "caption": "同一左半跨均布荷载下，压力线作图与拱轴出现偏离。在左四分点，竖向差6 m对应M=HΔy=40.5 MN·m；沿截面法向计算的压力中心偏心为M/N，二者不可混用。",
+      "assumptions": [
+        "仅该三铰拱、该荷载",
+        "y_p=M0/H为图解关系",
+        "N为局部轴向分量；不判定截面是否满足承载要求"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch04.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "a2ec027c78afbd137b1280dc316265ecbde8e635fb08587250719269bf0fd79d",
+        "png": "fdef5d85db3f2869c808c2e3039fa697038608b9b5ebc518226fad24f9b2ab99"
+      },
+      "unit_ids": [
+        "C05U03"
+      ],
+      "unit_notes": {
+        "C05U03": "压力线与拱轴的竖向差可用于HΔy；截面法向偏心则是M/N。图专门区分这两个距离。"
+      }
+    },
+    {
+      "id": "F22",
+      "title": "荷载只放一半，拱就一定更轻松吗？",
+      "path": "assets/publication/priority-40/F22.png",
+      "svg": "assets/publication/priority-40/F22.svg",
+      "caption": "抛物线拱在满跨均布荷载下弯矩为零；仅在左半跨加载会形成一正一负的弯矩。总竖向荷载减小并不意味着每个截面弯矩减小。",
+      "assumptions": [
+        "无自重以外另加项，比较的q相同",
+        "拱轴与边界保持不变",
+        "一阶三铰拱"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch04.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "7dfa382468b14221fa96f954026ddd7be786f8a6d03b6565bf629b0b83f4cf68",
+        "png": "3f6155aab21b1b4cdbb438d3f70bb3e7e26a239b66e521bc252fc838158dc591"
+      },
+      "unit_ids": [
+        "C05U02",
+        "C05U10",
+        "C07U10"
+      ],
+      "unit_notes": {
+        "C05U02": "只在指定均布荷载下合理的拱轴，遇到半跨加载仍会弯曲。",
+        "C05U10": "半跨加载使总荷载变小，却产生满跨均布工况没有的弯矩；比较目标量要逐项定义。",
+        "C07U10": "本单元明确借固定合理拱轴作反例。不能把图中的刚性拱变形约束直接当成柔索找形条件。"
+      }
+    },
+    {
+      "id": "F23",
+      "title": "桥墩“动了十毫米”，到底是哪一种动？",
+      "path": "assets/publication/priority-40/F23.png",
+      "svg": "assets/publication/priority-40/F23.svg",
+      "caption": "相同“10 mm”可以是共同沉降、差异沉降或相对水平张开。必须先定义运动对象、方向与边界，再计算三铰、两铰或无铰拱的附加响应。",
+      "assumptions": [
+        "规定运动输入示意，不含响应计算",
+        "共同平移判断忽略地基额外约束、动力和几何变化",
+        "具体内力取决于结构边界与刚度"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch04.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "1fb11140840c5c16602ec491e9216450fd3287336ceaf5229e730667d71f42b5",
+        "png": "da359ca4216a14a2169b8f82890b781d34dc366be31882070356b6cc019416a1"
+      },
+      "unit_ids": [
+        "C11U05"
+      ],
+      "unit_notes": {
+        "C11U05": "声明位移边界时要说清对象、方向和相对关系。图是支承沉降或张开，当前单元是均匀温升约束，不混用数值。"
+      }
+    },
+    {
+      "id": "F24",
+      "title": "车的重量，怎样经过拉索到达桥塔？",
+      "path": "assets/publication/priority-40/F24.png",
+      "svg": "assets/publication/priority-40/F24.svg",
+      "caption": "双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。",
+      "assumptions": [
+        "构件定位与分力示意，无全桥数值结果",
+        "只展示一根索的作用方向，不据箭头比例量取索力",
+        "索为受拉构件"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch05.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "616709bc3d9dc43c3a84313eda8706f10de2872875a3b40840d57e9656b295a7",
+        "png": "74dd9732af1481669bb31c5aa1d265220dd9568d97fbbc7eab5d2745e9ff98a0"
+      },
+      "unit_ids": [
+        "C06U01",
+        "C06U06"
+      ],
+      "unit_notes": {
+        "C06U01": "先定位梁、索、塔的传力关系，再把单根斜索的竖向与水平分量拆开。",
+        "C06U06": "在相同竖向承载需求下，把斜索变平会增大索力与水平分量；图是参数化机制示意。"
+      }
+    },
+    {
+      "id": "F25",
+      "title": "只调一组索，怎样得到矩阵的一列？",
+      "path": "assets/publication/priority-40/F25.png",
+      "svg": "assets/publication/priority-40/F25.svg",
+      "caption": "固定模型状态和输出定义，仅将第二索组增大1 MN时，三项响应增量就是影响矩阵第二列；矩阵沿用正文明确声明的教学测试数据，构件定位图不冒充矩阵来源模型。",
+      "assumptions": [
+        "教学构造矩阵，不是具体桥的计算",
+        "列为索组增量，行依次为弯矩、位移、反力",
+        "仅线性局部影响，不直接用于调索设计"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch05.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "c7c54ca1a3d2d7e2943a9a27a6f8c11de5b3d8f3aebbf0a53a1c6945d78f432b",
+        "png": "6a2eb1dcd7644bea3599628618f84b05f59cf301738ec0766afad43dfc9825a2"
+      },
+      "unit_ids": [
+        "C06U02",
+        "C06U03",
+        "C11U10"
+      ],
+      "unit_notes": {
+        "C06U02": "固定模型状态，只改变一个控制量，就得到一列影响响应。图的三输出矩阵与核心二输出教学矩阵数值不同。",
+        "C06U03": "不同控制量对应不同影响列，要同时看多个响应。图使用正文的三输出教学测试数据，不是当前二输出矩阵。",
+        "C11U10": "从单位响应到影响矩阵，是优化和反算的前提。图的矩阵来自明确教学数据，构件定位图不是它的求解来源。"
+      }
+    },
+    {
+      "id": "F26",
+      "title": "合龙以后，桥还是刚才那个受力体系吗？",
+      "path": "assets/publication/priority-40/F26.png",
+      "svg": "assets/publication/priority-40/F26.svg",
+      "caption": "合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。",
+      "assumptions": [
+        "示意图不含变形和内力结果",
+        "施工荷载、临时边界和初始状态需按阶段定义",
+        "图中塔基仅作支承定位，不指定实际构造"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch05.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "afe03160f4b84dcd0b46f6d049d7844b621a38ff056afb58c069777f0b004374",
+        "png": "42c1b0e1ebe55f3158c0bf2e04ccf1480cb715f1045940c3d7ebc1c910a1f0ff"
+      },
+      "unit_ids": [
+        "C05U08",
+        "C06U09"
+      ],
+      "unit_notes": {
+        "C05U08": "合龙会改变允许的运动及连接关系；图为悬臂合龙示意，当前单元用受约束热变形类比锁定自由变形。",
+        "C06U09": "合龙前后体系不同，施工阶段应重新声明支承和连接；不能只把成桥图式一次加载。"
+      }
+    },
+    {
+      "id": "F27",
+      "title": "悬索桥的重量，最后交给了谁？",
+      "path": "assets/publication/priority-40/F27.png",
+      "svg": "assets/publication/priority-40/F27.svg",
+      "caption": "地锚式悬索桥中，桥面经加劲梁、吊索和主缆传力，索塔与锚碇共同承担主缆传来的作用。自锚式的主缆水平分力路径不同，不能套用本图。",
+      "assumptions": [
+        "地锚式",
+        "构件和受力方向示意，非数值分析",
+        "索塔、锚碇和基础均须另行设计"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch06.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "f81dd2de180e84ff751b4ffb24eb710179ccf689370b39917aa77e0004fa4e96",
+        "png": "2c24db4715d79367eee5bf379be680543fed4f0faae569a8620190906878da57"
+      },
+      "unit_ids": [
+        "C07U05",
+        "C07U07"
+      ],
+      "unit_notes": {
+        "C07U05": "地锚式悬索桥的力经加劲梁、吊索和主缆传走，不能由主缆受拉推出加劲梁没有弯矩。",
+        "C07U07": "跟随主缆水平作用追踪到锚碇和基础。本图是地锚式，自锚式水平力路径不同。"
+      }
+    },
+    {
+      "id": "F28",
+      "title": "缆索垂得更深，锚碇要拉住的力会变多少？",
+      "path": "assets/publication/priority-40/F28.png",
+      "svg": "assets/publication/priority-40/F28.svg",
+      "caption": "在水平投影均布荷载的理想索模型中，垂度由40 m增至80 m，水平分力H从50 MN减至25 MN，竖向分力仍各20 MN。H是水平分量，不是支点索力总值。",
+      "assumptions": [
+        "抛物线索，等高支点",
+        "不含弹性伸长和索自重沿索长差异",
+        "图示纵横比不供量图"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch06.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "37705a3bd14cbd3294f0fb10e4f58ef7c359602a6e0399f9c41d39ed9f6ac0de",
+        "png": "a09010c289484b65361b31df2ba4c22f37698a6492777bfd011e95772ed648ba"
+      },
+      "unit_ids": [
+        "C07U01",
+        "C07U02",
+        "C05U06"
+      ],
+      "unit_notes": {
+        "C07U01": "先固定端点与水平投影均布荷载，再联系索垂度和水平分力H；H不是支点总索力。",
+        "C07U02": "比较垂度时同时看水平分力和竖向分力；不能把小垂度当作免费的性能提升。",
+        "C05U06": "用柔索平衡与合理拱作对应比较；几何关系可类比，受拉与受压的后续验算不同。"
+      }
+    },
+    {
+      "id": "F29",
+      "title": "一根绳拉紧以后，为什么更难横向拨动？",
+      "path": "assets/publication/priority-40/F29.png",
+      "svg": "assets/publication/priority-40/F29.svg",
+      "caption": "同长、同一小横向荷载下，提高初张力会提高拉直绳的横向切线刚度，线性扰动位移近似反比于初张力。图示变形放大20倍，斜拉方向只作示意。",
+      "assumptions": [
+        "只适用于初始拉直且有恒定预张力的绳",
+        "小斜率、忽略荷载引起的张力增量",
+        "没有将直绳结果当作全桥初应力有限元结果"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch06.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "e815318ada454900cda24b379ae15ae3ee40fc6f26f65c17e759c3252dc51fd4",
+        "png": "c88e5adeea6e58a206d2ed253e3303370ab26000f730c82c17eee4b590d903f3"
+      },
+      "unit_ids": [
+        "C09U04"
+      ],
+      "unit_notes": {
+        "C09U04": "先看初张力怎样改变绳的横向切线刚度，再联系质量固定时频率随√k变化。本图只算静力小扰动，没有给出振动频率。"
+      }
+    },
+    {
+      "id": "F30",
+      "title": "温度一样升高，为什么有的伸长、有的受压？",
+      "path": "assets/publication/priority-40/F30.png",
+      "svg": "assets/publication/priority-40/F30.svg",
+      "caption": "同样均匀温升下，自由伸缩产生7.2 mm轴向伸长；完全限制该伸长则在本一维弹性模型中产生72 MPa压应力、1440 kN压力。支座约束改变的是允许发生的运动。",
+      "assumptions": [
+        "轴向杆模型，不模拟桥面温度梯度",
+        "均匀温升、常材料参数、小变形",
+        "自由端无摩阻；受约束端刚性"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch07.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "cb85bda31ea49793a92cc8f49755fa2fc19317f833dadeb3409a81886dfe7466",
+        "png": "08dfa60b274544f56976092a35ec8b3e8c73bc87c99a8d3f5ff613d74a8c3837"
+      },
+      "unit_ids": [
+        "C01U03",
+        "C02U08",
+        "C08U01",
+        "C08U02"
+      ],
+      "unit_notes": {
+        "C01U03": "相同温升下，自由伸长与完全约束产生不同响应，边界是问题的一部分。",
+        "C02U08": "自由热应变可以存在而不产生内力；图对照一维自由与完全约束两种极端。",
+        "C08U01": "支座允许怎样的平移，决定热伸长能否发生；图只是一维轴向对照。",
+        "C08U02": "同一温升下同时列自由伸长与完全约束压应力，但二者属于不同边界，不能同时套到同一根梁。"
+      }
+    },
+    {
+      "id": "F31",
+      "title": "“固定支座”到底固定了哪些方向？",
+      "path": "assets/publication/priority-40/F31.png",
+      "svg": "assets/publication/priority-40/F31.svg",
+      "caption": "理想固定、纵向活动和多向活动支座的平移约束对照。青色双箭头代表可移动方向，红色标记代表被约束的平移；固定支座不等于梁固端。",
+      "assumptions": [
+        "仅列平移自由度，不规定θx/θy/θz全部锁死",
+        "压紧接触、忽略摩阻的理想化",
+        "x沿桥轴、y横桥向、z竖直"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch07.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "781abb553e89af6a135d7dc349102e7640759f9e29590e24288cac3f08fa3028",
+        "png": "9c71da6af44c40dae36c23de1e7c3cce9b8bbc3aeed554d4fc28b07abf731aec"
+      },
+      "unit_ids": [
+        "C08U01"
+      ],
+      "unit_notes": {
+        "C08U01": "辨认固定、纵向活动和多向活动支座的平移自由度；固定支座不是梁端固结。"
+      }
+    },
+    {
+      "id": "F32",
+      "title": "基础把桥的重量交给哪一层土？",
+      "path": "assets/publication/priority-40/F32.png",
+      "svg": "assets/publication/priority-40/F32.svg",
+      "caption": "浅基础与桩基础的竖向荷载路径对照。桩基础通过桩侧摩阻及桩端阻力传力；箭头只示方向，实际分担与群桩效应取决于土层、桩、承台和荷载状态。",
+      "assumptions": [
+        "中心竖向受压",
+        "土反力方向示意，未指定分配百分比",
+        "不代表水平受力、负摩阻或抗拔情景"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch07.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "12879ffd6831a5f8990dbd8c4b01d03322abb4a124f1decce43b61ba1bd9436c",
+        "png": "7adccbc652b70c1b7031fae67bda8e3c8f40ad3c180a99be6a925816e0ab4b01"
+      },
+      "unit_ids": [
+        "C08U06"
+      ],
+      "unit_notes": {
+        "C08U06": "先找到地基参与传力的位置，再讨论把基础柔度与墩柱柔度串联。图中箭头只示方向，不能从箭头长短反求刚度或分担。"
+      }
+    },
+    {
+      "id": "F33",
+      "title": "风速翻倍，推桥面的力也只翻倍吗？",
+      "path": "assets/publication/priority-40/F33.png",
+      "svg": "assets/publication/priority-40/F33.svg",
+      "caption": "固定气密度、阻力系数和面积时，风速10、20、40 m/s对应静力阻力0.735、2.940、11.760 kN；速度翻倍，动压和阻力均变为4倍。蓝色箭头示来流，橙色箭头示阻力。",
+      "assumptions": [
+        "ρ、C_D、A固定",
+        "静力阻力D=½ρU²C_DA",
+        "未引入任何桥型专用系数或规范风速"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch09-wind.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "cb48d9e09ea5202aa90db3a782d1d7d0f84e169b1188adba77f0a1834ab716f3",
+        "png": "679c31596d61c902c0ef9320167d4b1cd4dd94a0b3455fd6f659d488a06279c1"
+      },
+      "unit_ids": [
+        "C09U01",
+        "C09U03"
+      ],
+      "unit_notes": {
+        "C09U01": "固定空气密度、迎风面积和阻力系数时，风速翻倍，静力阻力变为四倍。",
+        "C09U03": "图中的平方律以阻力系数固定为条件；本单元改变系数时，要重新比较力的大小。"
+      }
+    },
+    {
+      "id": "F34",
+      "title": "同样大小的周期力，为什么能激起更大的振动？",
+      "path": "assets/publication/priority-40/F34.png",
+      "svg": "assets/publication/priority-40/F34.svg",
+      "caption": "单自由度简谐稳态响应随频率比与阻尼改变。阻尼比0.02、0.05、0.10在r=1时的位移放大系数分别为25、10、5；该模型不直接描述桥梁颤振。",
+      "assumptions": [
+        "线性单自由度，简谐力恒幅",
+        "已达稳态，不是启动瞬态",
+        "ζ>0；忽略非线性"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch09-wind.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "b232494b7d7eae9128fa96c98f2886d5c45f5790f760d5aff7b60113e801b3f4",
+        "png": "6a9f001199eec372fca5f079d040994425f9c0a0e86496745cc6db138bfe3226"
+      },
+      "unit_ids": [
+        "C09U05",
+        "C09U06",
+        "C07U09",
+        "C06U08",
+        "C10U03"
+      ],
+      "unit_notes": {
+        "C09U05": "单自由度稳态频响随频率比变化，响应峰值还受阻尼影响。",
+        "C09U06": "在相同简谐稳态模型下比较阻尼，不能由此声称增加了静力刚度或解释了颤振。",
+        "C07U09": "把周期荷载与更大的静力区别开：频率比和阻尼共同控制稳态放大。",
+        "C06U08": "图显示阻尼如何影响共振附近响应，与改变静力刚度是不同操作。",
+        "C10U03": "可迁移的是单自由度频响与阻尼的关系，不是把同一简谐谱当成不同灾种的真实作用。"
+      }
+    },
+    {
+      "id": "F35",
+      "title": "桥面两边一起动，和一上一下，是同一种振动吗？",
+      "path": "assets/publication/priority-40/F35.png",
+      "svg": "assets/publication/priority-40/F35.svg",
+      "caption": "参数化桥面带的纯竖弯与纯扭转形状对照，以及同一横截面的观察方式。真实桥梁可能有耦合模态；需同一断面同步测量才可用两侧位移分解。",
+      "assumptions": [
+        "示意模态形状，无特征值求解",
+        "小转角且横截面近似刚体",
+        "非畸变截面；没有声称现实模态均为纯弯/纯扭"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch09-wind.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "6570218a38ba70329df5cf13e107e18fbb97777590321c0835361f64fca18b0b",
+        "png": "01b6bd0f3ac8218f42d2c2e53a988ed3f9e30036aa59211bd49b79ea8c06fdf2"
+      },
+      "unit_ids": [
+        "C09U04"
+      ],
+      "unit_notes": {
+        "C09U04": "从单个频率继续问“怎样动”：本单元是单自由度质量—刚度关系，图扩展到纯竖弯与纯扭转形状，不能凭一个频率判定振型。"
+      }
+    },
+    {
+      "id": "F36",
+      "title": "少了十分之一厚度，梁就只软十分之一吗？",
+      "path": "assets/publication/priority-40/F36.png",
+      "svg": "assets/publication/priority-40/F36.svg",
+      "caption": "同宽矩形钢条上下表面减薄的几何比较：高度减少10%，面积减少10%，惯性矩减少27.1%，同边界同荷载下线弹性挠度增加约37.2%。防护列只是指定剩余厚度的比较，不是预报寿命。",
+      "assumptions": [
+        "矩形截面，宽度与E保持不变",
+        "仅上下表面均匀损失，不模拟点蚀、疲劳或局部屈曲",
+        "维护列为假设状态，不表示涂层能恢复已损失钢材"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch10-lifecycle.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "d1fa806503284191dffa12b369c7b1bc1ef6de22b3289be5c380198a077eee63",
+        "png": "067709a76c2fe4541e7dad8e2d5f85eb1ac700ef442d5dd03719fc795767c7ee"
+      },
+      "unit_ids": [
+        "C10U05",
+        "C02U05"
+      ],
+      "unit_notes": {
+        "C10U05": "损失位置影响几何性能。图削薄矩形外表面，核心演示挖去内部材料，两种截面变化不能直接共用数值。",
+        "C02U05": "矩形高度的三次方进入I，所以减薄10%不只减少10%抗弯刚度。图固定宽度，仍须区分面积、I与挠度。"
+      }
+    },
+    {
+      "id": "F37",
+      "title": "把地震力降下来，还要为哪一种变化留空间？",
+      "path": "assets/publication/priority-40/F37.png",
+      "svg": "assets/publication/priority-40/F37.svg",
+      "caption": "在本图明确指定的两组教学谱读数下，较长周期方案的等效力需求降低，但谱位移需求增大；隔震选择必须同时核查梁端位移、限位、管线和防落梁空间。图中的弹簧表示等效水平刚度。",
+      "assumptions": [
+        "m相同；使用指定Sa而非实际场地谱",
+        "线性谱等效示例，无滞回或多模态求解",
+        "惯性作用箭头仅表方向；应按实际绝对加速度取负向"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch10-lifecycle.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "aa84a32eaae2e10483c27bedc6c1f37e2246a459aaaf7ac3518f60010fd2ba0c",
+        "png": "61d24de58864d8db2a56b18fa3426485515d8823d1d3e29450d83218acded452"
+      },
+      "unit_ids": [
+        "C10U02"
+      ],
+      "unit_notes": {
+        "C10U02": "延伸到指定的两组教学反应谱读数，同时比较力和位移需求；核心简谐频响不能直接生成图中的地震谱值。"
+      }
+    },
+    {
+      "id": "F38",
+      "title": "电脑里的一个节点，对应桥上的什么位置？",
+      "path": "assets/publication/priority-40/F38.png",
+      "svg": "assets/publication/priority-40/F38.svg",
+      "caption": "同一20 m简支梁从构件轴线到四个梁单元、五个节点的映射；跨中集中力施加在节点3。节点既有位置也携带自由度，单元连接节点并使用材料与截面刚度。",
+      "assumptions": [
+        "平面梁离散示意，不含求解结果",
+        "支座与荷载位置由同一几何生成",
+        "θy仅作转动自由度图示，正负随坐标统一"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch10-fem.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "df9e56d62a6a0a7a680e80231fa7c5afbf2002c820d448e77cd76b582848e483",
+        "png": "1500633a6c0fa68641d5885e4ba9821cc0b498ca1fed5cc27d10ff8f49a7582f"
+      },
+      "unit_ids": [
+        "C11U02",
+        "C11U06"
+      ],
+      "unit_notes": {
+        "C11U02": "先把轴线、节点、自由度和荷载位置对应起来；图中的集中力恰在节点上，单元还讨论节点之间的荷载映射。",
+        "C11U06": "离散之前先确认荷载落在哪儿，再检查节点化后合力与合矩。图的节点不是任意摆放的图标。"
+      }
+    },
+    {
+      "id": "F39",
+      "title": "网格越来越细，为什么答案仍可能错？",
+      "path": "assets/publication/priority-40/F39.png",
+      "svg": "assets/publication/priority-40/F39.svg",
+      "caption": "以真实三次Hermite梁单元计算同一均布荷载：两端固支的错误边界也随网格加密收敛，但收敛值不等于任务要求的简支梁答案。",
+      "assumptions": [
+        "简支梁任务，两端固支为故障对照",
+        "均布q，常EI，忽略剪切变形",
+        "目标位移取x=0.37L并按形函数恢复"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch10-fem.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "a4e2a533325989a81cb59074adb6724f0796366146d00e9769f84042a7d5055f",
+        "png": "7c010d7b1611f56340653d91443f4f200ade4e782e2a115043b4a23ebbd74703"
+      },
+      "unit_ids": [
+        "C11U03",
+        "C11U05",
+        "C11U07",
+        "C01U10"
+      ],
+      "unit_notes": {
+        "C11U03": "图用真实梁FEM比较网格与边界；当前核心单元用函数插值看离散误差，进阶Notebook才组装梁FEM。",
+        "C11U05": "错误的两端固支梁也会数值收敛；图是梁FEM，当前核心温度约束模型说明同一种边界审查要求。",
+        "C11U07": "数值收敛与物理边界正确分开核对。图为梁FEM，当前核心为函数插值，两者的误差数据分别使用。",
+        "C01U10": "用独立简支解析解检查边界；当前核心插值演示中的误差减小，不自动证明这张梁图的物理模型。"
+      }
+    },
+    {
+      "id": "F40",
+      "title": "AI给了一个数，怎样知道它算的是你的问题？",
+      "path": "assets/publication/priority-40/F40.png",
+      "svg": "assets/publication/priority-40/F40.svg",
+      "caption": "同一等效梁任务的正确模型、弹性模量单位错误、两端固支边界错误对照。单位错的5882 mm只是超出小变形适用域的线性公式形式值，不能采纳；反力平衡也不能单独识别错误边界。",
+      "assumptions": [
+        "单根等效梁，暂不计自重",
+        "正确基准为线弹性小变形简支梁",
+        "单位故障仅为诊断；不把越域大位移当作物理预测"
+      ],
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "chapter_file": "chapters/ch10-fem.qmd",
+      "source_manifest": "assets/publication/priority-40/manifest.json",
+      "file_sha256": {
+        "svg": "2d6435b5c0da70df13bae6cc7c265f28699d81432aa0c19ff718600471bca1a0",
+        "png": "87b760504dd09ef20807b63241efef399f6c423f3865c132e24d2cad11dc45f7"
+      },
+      "unit_ids": [
+        "C11U09",
+        "C11U05"
+      ],
+      "unit_notes": {
+        "C11U09": "用独立梁算例检查单位与边界；本单元的尺度幂律提供另一种快速核对，不是图中错误草稿的同一计算。",
+        "C11U05": "反力平衡并不能单独识别错误边界；图中超出小变形范围的巨大位移只是线性公式形式值。"
+      }
+    }
+  ]
+}

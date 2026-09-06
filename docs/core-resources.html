@@ -28,7 +28,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta content="./" name="quarto:offset"/>
-<link href="./resources.html" rel="next"/>
+<link href="./visual-update.html" rel="next"/>
 <link href="./legacy-tools.html" rel="prev"/>
 <script defer="" src="site_libs/quarto-html/quarto-local.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -68,6 +68,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link href="styles.css" rel="stylesheet"/>
+<link href="visual-update.css" rel="stylesheet"/>
 
 <link href="interactive/core-reading.css" rel="stylesheet"/>
 <style>.reference-image-note{display:block;padding:18px;background:#f4f6f7;color:#536575;font:14px/1.8 sans-serif;border-left:3px solid #9badb9}.public-edition-note{margin-top:3em;font-size:.85em}</style></head>
@@ -254,6 +255,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link active" href="./core-resources.html">
 <span class="menu-text">核心视频与交互教学单元</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./visual-update.html">
+<span class="menu-text">看图、听一段，再动手</span></a>
 </div>
 </li>
 <li class="sidebar-item">
@@ -1142,7 +1149,7 @@ ul.task-list li input[type="checkbox"] {
 
 <script>
 (()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);route.addEventListener('click',event=>{const link=event.target.closest('.priority-chapter-gallery a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;set('reference');requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));});const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
 
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1552,8 +1559,8 @@ const bar=document.createElement('div');bar.className='reading-mode-bar';bar.inn
 </a>
 </div>
 <div class="nav-page nav-page-next">
-<a aria-label="数字资源索引" class="pagination-link" href="./resources.html">
-<span class="nav-page-text">数字资源索引</span> <i class="bi bi-arrow-right-short"></i>
+<a aria-label="看图、听一段，再动手" class="pagination-link" href="./visual-update.html">
+<span class="nav-page-text">看图、听一段，再动手</span> <i class="bi bi-arrow-right-short"></i>
 </a>
 </div>
 </nav>

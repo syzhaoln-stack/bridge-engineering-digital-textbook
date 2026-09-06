@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "unit_id": "C06U04",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C06U04",
+    "chapter": 6,
+    "chapter_title": "斜拉桥：耦合与控制",
+    "title": "影响列接近时，控制就不稳定",
+    "model": "conditioning",
+    "preset": "similarity",
+    "insight": "两个控制变量作用方向越接近，为实现某些目标所需调整量越大。",
+    "transfer": "加一个效果相同的控制变量能改善可控性吗？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C06U04.html",
+      "path": "interactive/lessons/C06U04.html"
+    },
+    "narration": [
+      "影响列接近时，控制就不稳定。先预测：改变两控制方向的接近程度 s，所需控制量绝对值会怎样变化？",
+      "现在保持其他条件不变，只改变两控制方向的接近程度 s。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "两个控制变量作用方向越接近，为实现某些目标所需调整量越大。",
+      "加一个效果相同的控制变量能改善可控性吗？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0,
+      "max": 0.98,
+      "start": 0.1,
+      "end": 0.9,
+      "step": 0.01,
+      "label": "两控制方向的接近程度 s",
+      "unit": "",
+      "output": "所需控制量绝对值",
+      "outunit": "",
+      "formula": "A=[[1,1],[1,2−s]]；A x=[0,1]ᵀ；|x|=1/(1−s)",
+      "boundary": "二阶教学反算模型；s趋近1时矩阵奇异，数值精度不能补足独立信息。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C06U04.mp4",
+        "href": "../assets/videos/core/C06U04.mp4",
+        "bytes": 3211484
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C06U04.vtt",
+        "href": "../assets/videos/core/C06U04.vtt",
+        "bytes": 783
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C06U04.jpg",
+        "href": "../assets/videos/core/posters/C06U04.jpg",
+        "bytes": 144180
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C06U04.txt",
+        "href": "../notebooks/course-data/C06U04.txt",
+        "bytes": 544
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C06U04.json",
+        "href": "../notebooks/course-data/C06U04.json",
+        "bytes": 19910
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C06U04",
+      "title": "影响列接近时，控制就不稳定",
+      "chapter": 6,
+      "fingerprint": "da3a9d1b2b08908fc9d6825be1c627b4ecd30acb2b070ebd8b3b3bd19f5f4b0f",
+      "duration": 50.566667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 150.9
+    },
+    "notebooks": [],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C06U04.json",
+      "render_sha256": "336cda1ba9f6669d03e4a89c7483800123d04ab2e9d7c112071935f9b3e35aad",
+      "render_copy_sha256": "336cda1ba9f6669d03e4a89c7483800123d04ab2e9d7c112071935f9b3e35aad"
+    },
+    "download_href": "../notebooks/course-packages/C06U04.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

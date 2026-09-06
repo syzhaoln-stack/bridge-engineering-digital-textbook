@@ -1,0 +1,330 @@
+{
+  "schema": "dialogue-manim-pilot/v1",
+  "date": "2026-09-07",
+  "count": 5,
+  "engine": "Manim Community 0.19.0; deterministic mechanics drawings",
+  "voices": [
+    "zh-CN-YunyangNeural",
+    "zh-CN-XiaoxiaoNeural"
+  ],
+  "voice_note": "Original scripted characters, AI synthesized voices; no voice impersonation.",
+  "seedance_used": false,
+  "videos": [
+    {
+      "id": "D01",
+      "title": "车放正中间，五根梁就一定平均分？",
+      "video": "assets/videos/dialogue-pilot/D01-dialogue.mp4",
+      "poster": "assets/videos/dialogue-pilot/D01-poster.jpg",
+      "duration_seconds": 171.370667,
+      "expected_audio_seconds": 171.338,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio_codec": "aac",
+      "size_bytes": 9511422,
+      "sha256": "6e4f8e8d5d6e44de89880399dcf8ea5d42084a64c07234c6057198f9f381dcb3",
+      "full_decode": "passed",
+      "captions": "burned in plus optional VTT; sentence timings based on per-turn audio",
+      "phases": [
+        {
+          "phase": "center",
+          "time_seconds": 1.65,
+          "frame": "tmp/dialogue-video-qa/D01-center.jpg"
+        },
+        {
+          "phase": "soft",
+          "time_seconds": 17.71,
+          "frame": "tmp/dialogue-video-qa/D01-soft.jpg"
+        },
+        {
+          "phase": "offset",
+          "time_seconds": 57.99,
+          "frame": "tmp/dialogue-video-qa/D01-offset.jpg"
+        },
+        {
+          "phase": "decompose",
+          "time_seconds": 79.61800000000001,
+          "frame": "tmp/dialogue-video-qa/D01-decompose.jpg"
+        },
+        {
+          "phase": "negative",
+          "time_seconds": 105.75800000000001,
+          "frame": "tmp/dialogue-video-qa/D01-negative.jpg"
+        },
+        {
+          "phase": "clip",
+          "time_seconds": 125.97,
+          "frame": "tmp/dialogue-video-qa/D01-clip.jpg"
+        },
+        {
+          "phase": "summary",
+          "time_seconds": 143.03799999999998,
+          "frame": "tmp/dialogue-video-qa/D01-summary.jpg"
+        }
+      ],
+      "visual_review": "passed: reviewed every phase extracted from final video; D04 load motion and subtitle punctuation rechecked",
+      "model": {
+        "P_kN": 120,
+        "L_m": 20,
+        "B_m": 10.8,
+        "d_m": 2.4,
+        "girder_positions_m": [
+          -4.8,
+          -2.4,
+          0,
+          2.4,
+          4.8
+        ],
+        "baseline_EI_kNm2": 3400000,
+        "description": "刚性横梁、竖向线性弹性主梁等效弹簧。仅计算此次车辆作用；图形示意并放大位移。"
+      },
+      "review_scope": "33 phase frames across five videos, visual inspection plus mechanical assertions and complete audio/video decode; no audience listening study"
+    },
+    {
+      "id": "D02",
+      "title": "把搁板放大一倍，为什么不是重一倍？",
+      "video": "assets/videos/dialogue-pilot/D02-dialogue.mp4",
+      "poster": "assets/videos/dialogue-pilot/D02-poster.jpg",
+      "duration_seconds": 93.376,
+      "expected_audio_seconds": 93.35,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio_codec": "aac",
+      "size_bytes": 4903157,
+      "sha256": "0a0eeb734bc3bc0adbec31ea1abffe976466c1f5475837fc5318f0882ea6e9c5",
+      "full_decode": "passed",
+      "captions": "burned in plus optional VTT; sentence timings based on per-turn audio",
+      "phases": [
+        {
+          "phase": "small",
+          "time_seconds": 1.65,
+          "frame": "tmp/dialogue-video-qa/D02-small.jpg"
+        },
+        {
+          "phase": "scale",
+          "time_seconds": 8.112,
+          "frame": "tmp/dialogue-video-qa/D02-scale.jpg"
+        },
+        {
+          "phase": "volume",
+          "time_seconds": 22.756,
+          "frame": "tmp/dialogue-video-qa/D02-volume.jpg"
+        },
+        {
+          "phase": "stress",
+          "time_seconds": 32.426,
+          "frame": "tmp/dialogue-video-qa/D02-stress.jpg"
+        },
+        {
+          "phase": "span",
+          "time_seconds": 55.038000000000004,
+          "frame": "tmp/dialogue-video-qa/D02-span.jpg"
+        },
+        {
+          "phase": "summary",
+          "time_seconds": 74.242,
+          "frame": "tmp/dialogue-video-qa/D02-summary.jpg"
+        }
+      ],
+      "visual_review": "passed: reviewed every phase extracted from final video; D04 load motion and subtitle punctuation rechecked",
+      "model": {
+        "description": "同材料线弹性简支梁，所有尺寸同比放大且仅自重；另例固定截面和线荷载，仅改变跨度。",
+        "scale": 2,
+        "checks": "checks-a.json"
+      },
+      "review_scope": "33 phase frames across five videos, visual inspection plus mechanical assertions and complete audio/video decode; no audience listening study"
+    },
+    {
+      "id": "D03",
+      "title": "本来怕被拉开，为什么还要先拉钢索？",
+      "video": "assets/videos/dialogue-pilot/D03-dialogue.mp4",
+      "poster": "assets/videos/dialogue-pilot/D03-poster.jpg",
+      "duration_seconds": 88.725333,
+      "expected_audio_seconds": 88.69,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio_codec": "aac",
+      "size_bytes": 5291072,
+      "sha256": "ab0721fab35f3c451984ba3f409497c041fd6f277fe9e26bb7185e219c8cb8f8",
+      "full_decode": "passed",
+      "captions": "burned in plus optional VTT; sentence timings based on per-turn audio",
+      "phases": [
+        {
+          "phase": "plain",
+          "time_seconds": 1.65,
+          "frame": "tmp/dialogue-video-qa/D03-plain.jpg"
+        },
+        {
+          "phase": "tendon",
+          "time_seconds": 9.815999999999999,
+          "frame": "tmp/dialogue-video-qa/D03-tendon.jpg"
+        },
+        {
+          "phase": "load",
+          "time_seconds": 29.188,
+          "frame": "tmp/dialogue-video-qa/D03-load.jpg"
+        },
+        {
+          "phase": "service",
+          "time_seconds": 44.066,
+          "frame": "tmp/dialogue-video-qa/D03-service.jpg"
+        },
+        {
+          "phase": "construction",
+          "time_seconds": 49.688,
+          "frame": "tmp/dialogue-video-qa/D03-construction.jpg"
+        },
+        {
+          "phase": "summary",
+          "time_seconds": 68.48400000000001,
+          "frame": "tmp/dialogue-video-qa/D03-summary.jpg"
+        }
+      ],
+      "visual_review": "passed: reviewed every phase extracted from final video; D04 load motion and subtitle punctuation rechecked",
+      "model": {
+        "description": "未开裂弹性截面应力，压为正；预压力偏在下方；施工与使用工况分别计算。",
+        "b_m": 0.3,
+        "h_m": 0.6,
+        "P_kN": 450,
+        "e_m": 0.15,
+        "service_M_kNm": 108,
+        "checks": "checks-b.json"
+      },
+      "review_scope": "33 phase frames across five videos, visual inspection plus mechanical assertions and complete audio/video decode; no audience listening study"
+    },
+    {
+      "id": "D04",
+      "title": "车越多，桥的每一处都更不利吗？",
+      "video": "assets/videos/dialogue-pilot/D04-dialogue.mp4",
+      "poster": "assets/videos/dialogue-pilot/D04-poster.jpg",
+      "duration_seconds": 86.314667,
+      "expected_audio_seconds": 86.29,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio_codec": "aac",
+      "size_bytes": 4640744,
+      "sha256": "5a96b1446ebdd1a8cd3e6473232ec1db5f57e0d0cce73d459a9624723823eb04",
+      "full_decode": "passed",
+      "captions": "burned in plus optional VTT; sentence timings based on per-turn audio",
+      "phases": [
+        {
+          "phase": "empty",
+          "time_seconds": 1.65,
+          "frame": "tmp/dialogue-video-qa/D04-empty.jpg"
+        },
+        {
+          "phase": "target",
+          "time_seconds": 9.048,
+          "frame": "tmp/dialogue-video-qa/D04-target.jpg"
+        },
+        {
+          "phase": "move",
+          "time_seconds": 21.238,
+          "frame": "tmp/dialogue-video-qa/D04-move.jpg"
+        },
+        {
+          "phase": "signs",
+          "time_seconds": 28.084,
+          "frame": "tmp/dialogue-video-qa/D04-signs.jpg"
+        },
+        {
+          "phase": "all",
+          "time_seconds": 43.082,
+          "frame": "tmp/dialogue-video-qa/D04-all.jpg"
+        },
+        {
+          "phase": "positive",
+          "time_seconds": 50.312000000000005,
+          "frame": "tmp/dialogue-video-qa/D04-positive.jpg"
+        },
+        {
+          "phase": "axles",
+          "time_seconds": 63.294000000000004,
+          "frame": "tmp/dialogue-video-qa/D04-axles.jpg"
+        },
+        {
+          "phase": "summary",
+          "time_seconds": 68.7,
+          "frame": "tmp/dialogue-video-qa/D04-summary.jpg"
+        }
+      ],
+      "visual_review": "passed: reviewed every phase extracted from final video; D04 load motion and subtitle punctuation rechecked",
+      "model": {
+        "description": "简支梁剪力影响线；左段右切面向下为正。独立可布均布荷载与整体移动的车辆分别讨论。",
+        "L_m": 10,
+        "a_m": 4,
+        "q_kN_per_m": 10,
+        "checks": "checks-a.json"
+      },
+      "review_scope": "33 phase frames across five videos, visual inspection plus mechanical assertions and complete audio/video decode; no audience listening study"
+    },
+    {
+      "id": "D05",
+      "title": "网格都这么细了，怎么还可能算错？",
+      "video": "assets/videos/dialogue-pilot/D05-dialogue.mp4",
+      "poster": "assets/videos/dialogue-pilot/D05-poster.jpg",
+      "duration_seconds": 79.658667,
+      "expected_audio_seconds": 79.618,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio_codec": "aac",
+      "size_bytes": 4682522,
+      "sha256": "904c569a1dd8af0e838b96de73a026d71431e35e10dd15e2194a53c0ab174351",
+      "full_decode": "passed",
+      "captions": "burned in plus optional VTT; sentence timings based on per-turn audio",
+      "phases": [
+        {
+          "phase": "coarse",
+          "time_seconds": 1.65,
+          "frame": "tmp/dialogue-video-qa/D05-coarse.jpg"
+        },
+        {
+          "phase": "two",
+          "time_seconds": 10.032,
+          "frame": "tmp/dialogue-video-qa/D05-two.jpg"
+        },
+        {
+          "phase": "converge",
+          "time_seconds": 27.508,
+          "frame": "tmp/dialogue-video-qa/D05-converge.jpg"
+        },
+        {
+          "phase": "wrong",
+          "time_seconds": 38.306000000000004,
+          "frame": "tmp/dialogue-video-qa/D05-wrong.jpg"
+        },
+        {
+          "phase": "ai",
+          "time_seconds": 55.662000000000006,
+          "frame": "tmp/dialogue-video-qa/D05-ai.jpg"
+        },
+        {
+          "phase": "summary",
+          "time_seconds": 66.56400000000001,
+          "frame": "tmp/dialogue-video-qa/D05-summary.jpg"
+        }
+      ],
+      "visual_review": "passed: reviewed every phase extracted from final video; D04 load motion and subtitle punctuation rechecked",
+      "model": {
+        "description": "Euler–Bernoulli梁，比较简支与两端固支；观察同一个x位置，有限元细化1至32单元。",
+        "L_m": 20,
+        "q_kN_per_m": 20,
+        "E_GPa": 34,
+        "I_m4": 0.1,
+        "observed_x_m": 7.4,
+        "checks": "checks-b.json"
+      },
+      "review_scope": "33 phase frames across five videos, visual inspection plus mechanical assertions and complete audio/video decode; no audience listening study"
+    }
+  ],
+  "sources": {
+    "dialogue_manim.py": "37c36571507636986ac3e23b8c6cf3b27567d345da5e203c815797f1f25e010d",
+    "diagram_a.py": "08d66bcfb3433e2c9c99f5108777e0b0946b10fc21d0beb4a83daa96cd364cf8",
+    "diagram_b.py": "9f15598d7cd435f885f57ad972fdc0c6f963a950880c80f1edcdd9d44a78601f",
+    "manim_helpers.py": "887ca727ce93adadd52c10734a692b3670ab08f16ae90bf7525ef6c4882f84df"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C07U10",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C07U10",
+    "chapter": 7,
+    "chapter_title": "悬索桥：找形与刚度",
+    "title": "用拱轴反例理解找形与使用状态",
+    "model": "arch",
+    "preset": "asymmetry",
+    "insight": "这里用固定合理拱轴承受非对称荷载作类比：一种荷载下的平衡形状，不能代替另一荷载下的状态。",
+    "transfer": "空缆与成桥状态为什么不能共用一组未解释的参数？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C07U10.html",
+      "path": "interactive/lessons/C07U10.html"
+    },
+    "narration": [
+      "用拱轴反例理解找形与使用状态。先预测：改变左右半跨荷载不对称度 a，最大绝对剩余弯矩会怎样变化？",
+      "现在保持其他条件不变，只改变左右半跨荷载不对称度 a。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "这里用固定合理拱轴承受非对称荷载作类比：一种荷载下的平衡形状，不能代替另一荷载下的状态。",
+      "空缆与成桥状态为什么不能共用一组未解释的参数？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0,
+      "max": 1,
+      "start": 0,
+      "end": 1,
+      "step": 0.01,
+      "label": "左右半跨荷载不对称度 a",
+      "unit": "",
+      "output": "最大绝对剩余弯矩",
+      "outunit": "",
+      "formula": "M(x)=M₀(x)−H y(x)，H=M₀(L/2)/f",
+      "boundary": "三铰抛物线拱、跨径1；左右均布荷载为1+a与1−a。非控制量f/L=0.2或a=0。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C07U10.mp4",
+        "href": "../assets/videos/core/C07U10.mp4",
+        "bytes": 3782238
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C07U10.vtt",
+        "href": "../assets/videos/core/C07U10.vtt",
+        "bytes": 875
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C07U10.jpg",
+        "href": "../assets/videos/core/posters/C07U10.jpg",
+        "bytes": 170635
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C07U10.txt",
+        "href": "../notebooks/course-data/C07U10.txt",
+        "bytes": 601
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C07U10.json",
+        "href": "../notebooks/course-data/C07U10.json",
+        "bytes": 171438
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C07U10",
+      "title": "用拱轴反例理解找形与使用状态",
+      "chapter": 7,
+      "fingerprint": "ec2022fd38567022f47344bdaab27f8b01ba37798ee5f2457ac6dbed5102966a",
+      "duration": 54.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 89.8
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F22.png",
+        "href": "../assets/publication/priority-40/F22.png",
+        "bytes": 160162,
+        "id": "F22",
+        "title": "荷载只放一半，拱就一定更轻松吗？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F22.svg",
+          "href": "../assets/publication/priority-40/F22.svg",
+          "bytes": 58305
+        },
+        "caption": "抛物线拱在满跨均布荷载下弯矩为零；仅在左半跨加载会形成一正一负的弯矩。总竖向荷载减小并不意味着每个截面弯矩减小。",
+        "assumptions": [
+          "无自重以外另加项，比较的q相同",
+          "拱轴与边界保持不变",
+          "一阶三铰拱"
+        ],
+        "mapping_note": "本单元明确借固定合理拱轴作反例。不能把图中的刚性拱变形约束直接当成柔索找形条件。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "7dfa382468b14221fa96f954026ddd7be786f8a6d03b6565bf629b0b83f4cf68",
+          "png": "3f6155aab21b1b4cdbb438d3f70bb3e7e26a239b66e521bc252fc838158dc591"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C07U10.json",
+      "render_sha256": "bfe5f3da136c6e804847ea425e2ab2191bbc98e96c1b6352408bf75bd8a71589",
+      "render_copy_sha256": "bfe5f3da136c6e804847ea425e2ab2191bbc98e96c1b6352408bf75bd8a71589"
+    },
+    "download_href": "../notebooks/course-packages/C07U10.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

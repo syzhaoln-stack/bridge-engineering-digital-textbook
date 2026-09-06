@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "created": "2026-09-06T16:14:47.679403+00:00",
+  "browser_python_execution": false,
+  "notebooks": [
+    {
+      "id": "A-transverse",
+      "title": "车靠边走，五根梁怎样重新分担？",
+      "unit_ids": [
+        "C04U05",
+        "C04U10",
+        "C02U01",
+        "C02U02",
+        "C02U03"
+      ],
+      "ipynb": "notebooks/A-transverse.ipynb",
+      "python": "notebooks/A-transverse.py",
+      "html": "notebooks/A-transverse.html",
+      "embed_cell": "fig-transverse",
+      "mapping_note": "五梁120 kN，与原核心四梁归一示例参数不同。",
+      "executed": true,
+      "code_cells": 6,
+      "error_count": 0,
+      "seconds": 5.92,
+      "outputs": [
+        "Python 3.13.5 ；NumPy 2.2.6\n",
+        "各梁位置/m： [-4.8 -2.4  0.   2.4  4.8] ；车位/m： 2.4\n",
+        "R / kN = [ 0. 12. 24. 36. 48.]\n最右梁分担比例 = 0.4\n合力 / kN = 120.0 ；力矩 / kN·m = 288.0\n",
+        "原双向模型 : [-12.   6.  24.  42.  60.] ；合力 120.0 ；力矩 432.0\n直接删负数 : [ 0.  6. 24. 42. 60.] ；合力 132.0 ；力矩 374.4\n另一个单向模型 : [ 0.  0. 10. 40. 70.] ；合力 120.0 ；力矩 432.0\n",
+        "e/h=1/6时，未开裂矩形截面的最小压应力 / MPa = 0.0\n自检通过：合力、合矩、两个已知工况和截面核心基准。\n"
+      ]
+    },
+    {
+      "id": "B-scaling",
+      "title": "跨度都变成两倍，为什么挠度有两种答案？",
+      "unit_ids": [
+        "C01U04",
+        "C01U05",
+        "C01U06",
+        "C01U07",
+        "C04U09"
+      ],
+      "ipynb": "notebooks/B-scaling.ipynb",
+      "python": "notebooks/B-scaling.py",
+      "html": "notebooks/B-scaling.html",
+      "embed_cell": "fig-scaling",
+      "mapping_note": "全尺寸自重与只增跨度、q不变是两组不同控制条件。",
+      "executed": true,
+      "code_cells": 5,
+      "error_count": 0,
+      "seconds": 4.62,
+      "outputs": [
+        "Python 3.13.5 ；NumPy 2.2.6\n",
+        "输出         全尺寸+自重 / 基准   只加跨度+固定q / 基准\n长度             2.0000           2.0000\n面积             4.0000           1.0000\n体积             8.0000           2.0000\n惯性矩           16.0000           1.0000\n总重或总载          8.0000           2.0000\n应力             2.0000           4.0000\n挠度             4.0000          16.0000\n挠跨比            2.0000           8.0000\n",
+        "自检通过：相似自重挠度4倍；只加跨度且q不变挠度16倍。\n当前A组 w/L = 0.001252 ；当前B组 w/L = 0.005009\n"
+      ]
+    },
+    {
+      "id": "C-beam-fem",
+      "title": "网格越来越细，能把错误的支座修好吗？",
+      "unit_ids": [
+        "C11U03",
+        "C11U05",
+        "C11U07"
+      ],
+      "ipynb": "notebooks/C-beam-fem.ipynb",
+      "python": "notebooks/C-beam-fem.py",
+      "html": "notebooks/C-beam-fem.html",
+      "embed_cell": "fig-fem",
+      "mapping_note": "本页组装梁FEM；原核心网格单元为函数插值演示。",
+      "executed": true,
+      "code_cells": 6,
+      "error_count": 0,
+      "seconds": 4.9,
+      "outputs": [
+        "Python 3.13.5 ；NumPy 2.2.6\n",
+        "节点位移/mm： [ 0.        8.731618 12.254902  8.731618  0.      ]\n两端竖向反力/N（向下为正）： [-200000. -200000.]\n两端广义力矩/N·m： [ 0. -0.]\n",
+        "单元数 | 最大节点误差/mm | 最大单元中点误差/mm\n    2 |                0 |          0.153186275\n    4 |   2.08166817e-14 |        0.00957414216\n    8 |   6.07153217e-14 |       0.000598383885\n   16 |   2.22911967e-12 |        3.7398995e-05\n",
+        "简支跨中 12.254902 mm；固支跨中 2.450980 mm；比值 5.000\n自检通过：力、力矩、位移解析解及固端力矩。\n"
+      ]
+    }
+  ]
+}

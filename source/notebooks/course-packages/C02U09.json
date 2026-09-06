@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "unit_id": "C02U09",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C02U09",
+    "chapter": 2,
+    "chapter_title": "力学基础的桥梁迁移",
+    "title": "质量、刚度与频率不是单独变化",
+    "model": "frequency",
+    "preset": "mass",
+    "insight": "刚度一定时，质量增加使频率按质量平方根的倒数下降。",
+    "transfer": "给桥面增加铺装可能改变哪个动力指标？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C02U09.html",
+      "path": "interactive/lessons/C02U09.html"
+    },
+    "narration": [
+      "质量、刚度与频率不是单独变化。先预测：改变质量/基准质量，频率相对值会怎样变化？",
+      "现在保持其他条件不变，只改变质量/基准质量。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "刚度一定时，质量增加使频率按质量平方根的倒数下降。",
+      "给桥面增加铺装可能改变哪个动力指标？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.25,
+      "max": 4,
+      "start": 1,
+      "end": 2,
+      "step": 0.01,
+      "label": "质量/基准质量",
+      "unit": "",
+      "output": "频率相对值",
+      "outunit": "倍",
+      "formula": "f=(1/2π)√(k/m)",
+      "boundary": "单自由度线性模型；只改变指定参数，其余参数不变。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C02U09.mp4",
+        "href": "../assets/videos/core/C02U09.mp4",
+        "bytes": 2916866
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C02U09.vtt",
+        "href": "../assets/videos/core/C02U09.vtt",
+        "bytes": 733
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C02U09.jpg",
+        "href": "../assets/videos/core/posters/C02U09.jpg",
+        "bytes": 126489
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C02U09.txt",
+        "href": "../notebooks/course-data/C02U09.txt",
+        "bytes": 494
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C02U09.json",
+        "href": "../notebooks/course-data/C02U09.json",
+        "bytes": 15842
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C02U09",
+      "title": "质量、刚度与频率不是单独变化",
+      "chapter": 2,
+      "fingerprint": "02ecb4c64d40bd27ab8fe3049c27303d79a1e05d86d802729b69679871e8b79c",
+      "duration": 45.866667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 68.9
+    },
+    "notebooks": [],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C02U09.json",
+      "render_sha256": "c7726bfe61715d1fb53dcec77f8c2275328e515a089a2fabea8abbc6a5790fce",
+      "render_copy_sha256": "c7726bfe61715d1fb53dcec77f8c2275328e515a089a2fabea8abbc6a5790fce"
+    },
+    "download_href": "../notebooks/course-packages/C02U09.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

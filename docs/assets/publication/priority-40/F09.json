@@ -1,0 +1,100 @@
+{
+  "id": "F09",
+  "title": "同一辆车换个位置，跨中弯矩会怎样变？",
+  "chapter": 3,
+  "heading": "影响线的计算对象",
+  "caption": "移动力相同，跨中弯矩随影响线纵标变化。6 m、15 m、24 m三个位置分别得到300、750、300 kN·m。",
+  "assumptions": [
+    "线弹性简支梁；固定跨中正弯矩为目标",
+    "不含动力放大或车辆规范模型"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F09.svg",
+  "png": "assets/publication/priority-40/F09.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    {
+      "name": "eta at left",
+      "value": 0.0,
+      "expected": 0.0,
+      "tolerance": 1e-08,
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "eta at right",
+      "value": 0.0,
+      "expected": 0.0,
+      "tolerance": 1e-08,
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "eta at midspan",
+      "value": 7.5,
+      "expected": 7.5,
+      "tolerance": 1e-08,
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "load at 6m statics",
+      "value": 300.0,
+      "expected": 300.0,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大并复看：固定目标C与移动力位置区分；η跨中标签移开跨度标签；三处读取的单位与结果相符。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch02.qmd",
+  "heading_line": 526,
+  "figure_kind": "calculated",
+  "technical_review": "formula_assertions_passed",
+  "visual_review_notes": "逐张放大并复看：固定目标C与移动力位置区分；η跨中标签移开跨度标签；三处读取的单位与结果相符。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "d493a0a655a0acf9b1b2b997666707b903fa0f7566b2971ec775693d925a2141",
+    "png": "88c38c183967c2507885cc905d5321ff7901a3e5332a0c7743ee6048d7cb253d"
+  },
+  "calculation_data": {
+    "L_m": 30,
+    "target_x_m": 15,
+    "P_kN": 100,
+    "positions_m": [
+      6,
+      15,
+      24
+    ],
+    "eta_m": [
+      3,
+      7.5,
+      3
+    ],
+    "M_kNm": [
+      300,
+      750,
+      300
+    ]
+  },
+  "diagram_kind": "analytical_teaching_example",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

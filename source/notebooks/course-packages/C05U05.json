@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "unit_id": "C05U05",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C05U05",
+    "chapter": 5,
+    "chapter_title": "拱桥：几何与力流",
+    "title": "矢跨比改变水平推力",
+    "model": "arch",
+    "preset": "rise",
+    "insight": "同跨度同均布荷载下，拱矢高降低，水平推力按矢高倒数增加。",
+    "transfer": "浅拱为什么对拱座条件更敏感？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C05U05.html",
+      "path": "interactive/lessons/C05U05.html"
+    },
+    "narration": [
+      "矢跨比改变水平推力。先预测：改变矢跨比 f/L，水平推力 H会怎样变化？",
+      "现在保持其他条件不变，只改变矢跨比 f/L。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "同跨度同均布荷载下，拱矢高降低，水平推力按矢高倒数增加。",
+      "浅拱为什么对拱座条件更敏感？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.08,
+      "max": 0.3,
+      "start": 0.1,
+      "end": 0.25,
+      "step": 0.01,
+      "label": "矢跨比 f/L",
+      "unit": "",
+      "output": "水平推力 H",
+      "outunit": "",
+      "formula": "M(x)=M₀(x)−H y(x)，H=M₀(L/2)/f",
+      "boundary": "三铰抛物线拱、跨径1；左右均布荷载为1+a与1−a。非控制量f/L=0.2或a=0。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C05U05.mp4",
+        "href": "../assets/videos/core/C05U05.mp4",
+        "bytes": 2900685
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C05U05.vtt",
+        "href": "../assets/videos/core/C05U05.vtt",
+        "bytes": 667
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C05U05.jpg",
+        "href": "../assets/videos/core/posters/C05U05.jpg",
+        "bytes": 126394
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C05U05.txt",
+        "href": "../notebooks/course-data/C05U05.txt",
+        "bytes": 463
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C05U05.json",
+        "href": "../notebooks/course-data/C05U05.json",
+        "bytes": 155039
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C05U05",
+      "title": "矢跨比改变水平推力",
+      "chapter": 5,
+      "fingerprint": "577398ac01fda14cb070d91929987bfea9eaeb975e79bc5c6a6907029fef385c",
+      "duration": 46.3,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 126.4
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F20.png",
+        "href": "../assets/publication/priority-40/F20.png",
+        "bytes": 160613,
+        "id": "F20",
+        "title": "把拱压低，拱脚要多推多少？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F20.svg",
+          "href": "../assets/publication/priority-40/F20.svg",
+          "bytes": 31265
+        },
+        "caption": "相同跨度和竖向均布荷载下，三铰抛物线拱矢高由20 m增至30 m，水平推力由16.2 MN降至10.8 MN；竖向反力不变。",
+        "assumptions": [
+          "三铰、等高拱脚",
+          "抛物线拱轴",
+          "均布荷载以水平投影计",
+          "一阶静力"
+        ],
+        "mapping_note": "保持跨度和竖向均布荷载不变，改变矢高，比较水平推力。图与交互参数量级不同，以各自标注为准。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "8611ab9f8d7048a228c423b9090d02d08d30cd52f9562572e49b750af02d5584",
+          "png": "49153a770ae4f9867957b3c7598ea18d0cee25c44fad8de1e44769c5f4258655"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C05U05.json",
+      "render_sha256": "c0509542dfed4e9957348725dd83a839e1b5c66d27afcf585dd00defa96c97be",
+      "render_copy_sha256": "c0509542dfed4e9957348725dd83a839e1b5c66d27afcf585dd00defa96c97be"
+    },
+    "download_href": "../notebooks/course-packages/C05U05.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

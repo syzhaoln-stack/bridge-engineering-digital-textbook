@@ -5,6 +5,9 @@
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry"><p>先从一个看得见的问题开始</p><h3>天热时桥要变长，能不能把两端都固定住？</h3><p>在均匀温度变形模式下，把左固定、右活动改成两端固定，再比较温度位移与约束轴力。</p><a href="../interactive/learning-map.html?chapter=ch07">看图进入实验 →</a></div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery"><summary>从本章的 3 幅新图开始</summary><div class="priority-thumb-grid"><a href="#fig-priority-F30"><img src="../assets/publication/priority-40/F30.svg" loading="lazy" alt="温度一样升高，为什么有的伸长、有的受压？"><span>温度一样升高，为什么有的伸长、有的受压？</span></a><a href="#fig-priority-F31"><img src="../assets/publication/priority-40/F31.svg" loading="lazy" alt="“固定支座”到底固定了哪些方向？"><span>“固定支座”到底固定了哪些方向？</span></a><a href="#fig-priority-F32"><img src="../assets/publication/priority-40/F32.svg" loading="lazy" alt="基础把桥的重量交给哪一层土？"><span>基础把桥的重量交给哪一层土？</span></a></div></details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 
 <h2>本章的核心思考</h2><p class="core-thesis">先说自由度，再说支座型号。</p><ol><li>画出温度自由变形与水平力路径。</li><li>用共同侧移与刚度分配解释墩台分工。</li><li>用偏心底压检验接触、脱空与边界变化。</li></ol><div class="core-analogy"><h3>跨课程类比</h3><p>热应变与协调 → 支承内力；偏心受压 → 基础底压</p><p><strong>反例与边界：</strong>释放约束有收益也有代价；土体和仅受压支承不能承担线性模型随意算出的拉力。</p></div><p>建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。</p><div class="core-unit-grid"><article><p class="core-tag">C08U01 · 课堂核心</p><h3>支座首先定义自由度</h3><p>支座释放位移可以减少温度内力，但还必须安排可靠的水平力路径。</p><p><a href="../interactive/core-learning.html?unit=C08U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C08U01&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C08U02 · 课前/课后迁移</p><h3>均匀温升：自由与完全约束</h3><p>温升增大时自由伸长与完全约束应力均线性增加，二者属于不同边界情形。</p><p><a href="../interactive/core-learning.html?unit=C08U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C08U02&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C08U03 · 课堂核心</p><h3>刚度分配解释多墩水平力</h3><p>共同侧移时，较硬的墩分担更多水平力。</p><p><a href="../interactive/core-learning.html?unit=C08U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C08U03&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C08U04 · 课堂核心</p><h3>偏心传力也发生在基础底面</h3><p>平均底压与偏心弯曲项叠加，压力合力位置改变接触状态。</p><p><a href="../interactive/core-learning.html?unit=C08U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C08U04&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C08U05 · 课前/课后迁移</p><h3>墩高通过三次方影响侧向刚度</h3><p>同截面悬臂墩柱的顶部侧向刚度为3EI除以H的三次方，墩高加倍时刚度降为八分之一。</p><p><a href="../interactive/core-learning.html?unit=C08U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C08U05&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C08U06 · 课前/课后迁移</p><h3>地基与墩柱串联共同变形</h3><p>总柔度是串联柔度之和，基础柔度可能控制整体变形。</p><p><a href="../interactive/core-learning.html?unit=C08U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C08U06&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C08U07 · 课前/课后迁移</p><h3>约束改变，内力就重新分配</h3><p>一个支承刚度改变，会影响整个离散支承体系的分配。</p><p><a href="../interactive/core-learning.html?unit=C08U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C08U07&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C08U08 · 课前/课后迁移</p><h3>脱空不是把负反力删掉</h3><p>负反力与只能受压的支承条件冲突，需要重新确定接触区。</p><p><a href="../interactive/core-learning.html?unit=C08U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C08U08&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C08U09 · 课前/课后迁移</p><h3>顶升用单位响应建立调整规律</h3><p>多个顶升点的位移调整同时影响各控制响应，适合用影响矩阵组织。</p><p><a href="../interactive/core-learning.html?unit=C08U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C08U09&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C08U10 · 课前/课后迁移</p><h3>同温差放大结构，力和应力不同步</h3><p>完全约束热应力不随几何尺度改变，但热轴力随面积增长。</p><p><a href="../interactive/core-learning.html?unit=C08U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C08U10&amp;view=video" target="_blank">观看短视频</a></p></article></div><p><a href="../core-thinking.html">返回全书核心思维与尺度规律</a> · <a href="../core-resources.html">查看110个教学单元总索引</a> · <a href="../interactive/thinking-analogies.html">打开跨课程并排类比</a></p></div>
 <!-- CORE-ROUTE END -->
@@ -111,6 +114,14 @@ $$F_i=\frac{k_i}{\sum_j k_j}F.$$
 支座和伸缩装置处于水、盐和杂物易聚集位置，是病害高发部位。设计应提供排水、检修、顶升和更换空间。墩台基础应结合氯盐、冻融、冲刷、碰撞和疲劳环境设置保护与监测措施。数字模型可关联构件编号、检查记录和更换方案，形成设计—运营数据连续性。
 
 ### 支承体系的自由度表达
+
+
+<!-- PRIORITY-FIGURE F31 START -->
+![理想固定、纵向活动和多向活动支座的平移约束对照。青色双箭头代表可移动方向，红色标记代表被约束的平移；固定支座不等于梁固端。](../assets/publication/priority-40/F31.svg){#fig-priority-F31 width=100% fig-alt="“固定支座”到底固定了哪些方向？。理想固定、纵向活动和多向活动支座的平移约束对照。青色双箭头代表可移动方向，红色标记代表被约束的平移；固定支座不等于梁固端。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>仅列平移自由度，不规定θx/θy/θz全部锁死；压紧接触、忽略摩阻的理想化；x沿桥轴、y横桥向、z竖直</p><p>课程组原创参数绘图 · F31 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F31.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F31.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F31 END -->
+
 
 #### 从名称到约束矩阵
 
@@ -437,6 +448,14 @@ $$
 
 #### 自由温度位移
 
+
+<!-- PRIORITY-FIGURE F30 START -->
+![同样均匀温升下，自由伸缩产生7.2 mm轴向伸长；完全限制该伸长则在本一维弹性模型中产生72 MPa压应力、1440 kN压力。支座约束改变的是允许发生的运动。](../assets/publication/priority-40/F30.svg){#fig-priority-F30 width=100% fig-alt="温度一样升高，为什么有的伸长、有的受压？。同样均匀温升下，自由伸缩产生7.2 mm轴向伸长；完全限制该伸长则在本一维弹性模型中产生72 MPa压应力、1440 kN压力。支座约束改变的是允许发生的运动。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>轴向杆模型，不模拟桥面温度梯度；均匀温升、常材料参数、小变形；自由端无摩阻；受约束端刚性</p><p>课程组原创参数绘图 · F30 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F30.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F30.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F30 END -->
+
+
 均匀温差下长度 $L$ 的自由伸缩为 $\Delta L=\alpha L\Delta T$。若固定点距梁端为 $L_1$，该梁端的自由位移近似为 $\alpha L_1\Delta T$。设置固定点的位置会改变两端伸缩量和伸缩装置需求；固定点靠近联中部可均衡两端位移，但需结合桥墩刚度和地形确定。
 
 温度梯度使梁截面产生曲率。支承允许转动时主要形成梁端转角和竖向变形，受到连续性和约束时会产生附加反力。均匀温度与温度梯度应作为不同作用项建立，不能由一个总温差覆盖。
@@ -733,6 +752,14 @@ $$p=\frac{N}{A}\pm\frac{M}{W}$$
 估算边缘压力；出现脱开或地基非线性时需采用更合理模型。
 
 #### 桩基础
+
+
+<!-- PRIORITY-FIGURE F32 START -->
+![浅基础与桩基础的竖向荷载路径对照。桩基础通过桩侧摩阻及桩端阻力传力；箭头只示方向，实际分担与群桩效应取决于土层、桩、承台和荷载状态。](../assets/publication/priority-40/F32.svg){#fig-priority-F32 width=100% fig-alt="基础把桥的重量交给哪一层土？。浅基础与桩基础的竖向荷载路径对照。桩基础通过桩侧摩阻及桩端阻力传力；箭头只示方向，实际分担与群桩效应取决于土层、桩、承台和荷载状态。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>中心竖向受压；土反力方向示意，未指定分配百分比；不代表水平受力、负摩阻或抗拔情景</p><p>课程组原创参数绘图 · F32 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F32.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F32.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F32 END -->
+
 
 桩基础通过桩侧摩阻和桩端阻力传递竖向荷载，并以桩身弯曲和土抗力承担水平荷载。群桩中的承台约束、桩距、土层、桩长和施工方法会影响群桩效应。竖向总承载力不能简单等于单桩承载力乘桩数；水平分析也需考虑不同深度土弹簧、循环退化和桩土相互作用。
 

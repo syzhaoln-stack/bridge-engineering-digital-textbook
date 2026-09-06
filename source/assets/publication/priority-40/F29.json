@@ -1,0 +1,53 @@
+{
+  "id": "F29",
+  "title": "一根绳拉紧以后，为什么更难横向拨动？",
+  "chapter": 7,
+  "heading": "几何刚度和切线响应",
+  "caption": "同长、同一小横向荷载下，提高初张力会提高拉直绳的横向切线刚度，线性扰动位移近似反比于初张力。图示变形放大20倍，斜拉方向只作示意。",
+  "assumptions": [
+    "只适用于初始拉直且有恒定预张力的绳",
+    "小斜率、忽略荷载引起的张力增量",
+    "没有将直绳结果当作全桥初应力有限元结果"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F29.svg",
+  "png": "assets/publication/priority-40/F29.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "δ为50/25 mm",
+    "2δ/L≤0.01",
+    "两侧竖向分力之和近似P"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch06.qmd",
+  "heading_line": 612,
+  "calculation_data": {
+    "T0_kN": [
+      50,
+      100
+    ],
+    "delta_mm": [
+      50,
+      25
+    ],
+    "tangent_stiffness_kN_per_m": [
+      20,
+      40
+    ]
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：T0两工况、位移放大说明、红色张力箭头沿各自示意绳线。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "e815318ada454900cda24b379ae15ae3ee40fc6f26f65c17e759c3252dc51fd4",
+    "png": "c88e5adeea6e58a206d2ed253e3303370ab26000f730c82c17eee4b590d903f3"
+  }
+}

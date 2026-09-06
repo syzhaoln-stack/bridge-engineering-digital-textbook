@@ -1,0 +1,48 @@
+{
+  "0": {
+    "reactions_kN": [
+      24.0,
+      24.0,
+      24.0,
+      24.0,
+      24.0
+    ],
+    "sum_kN": 120.0,
+    "moment_kNm": 0.0
+  },
+  "2.4": {
+    "reactions_kN": [
+      0.0,
+      11.999999999999998,
+      24.0,
+      36.0,
+      48.0
+    ],
+    "sum_kN": 120.0,
+    "moment_kNm": 288.0
+  },
+  "3.6": {
+    "reactions_kN": [
+      -12.0,
+      6.0,
+      24.0,
+      42.0,
+      60.0
+    ],
+    "sum_kN": 120.0,
+    "moment_kNm": 432.0
+  },
+  "soft-middle-share": 0.08045977011494253,
+  "influence": {
+    "positive_uniform_q10_kN": 18,
+    "negative_uniform_q10_kN": -8,
+    "all_uniform_q10_kN": 10,
+    "sign": "positive section shear downward on right face of left cut; V=RA-P_left"
+  },
+  "scaling": {
+    "all_linear_dimensions_2_weight": 8,
+    "stress": 2,
+    "deflection": 4,
+    "span_only_deflection": 16
+  }
+}

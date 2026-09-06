@@ -6,6 +6,10 @@
 
 ## 使用方式
 
+[本轮新增：40 幅图、5 段双人对话、100 个动手实验](visual-update.qmd){.btn .btn-primary}
+
+从一个问题开始，看图、听对话，再亲手改变条件。需要复算时，可打开配套的 3 份 Notebook，连着阅读文字、公式、代码和运行结果。
+
 全书采用“HTML主版本＋PDF配套版本”的双版本结构。HTML版本承载三维模型、参数滑块、影响线加载、概率分布和计算过程；PDF版本用于审阅、印刷与长期归档，保留相同编号的关键状态图、公式、数据表以及进入交互资源的链接或二维码。PDF阅读器对脚本和三维模型的支持不一致，因此不把PDF内嵌脚本作为主要实现方式。
 
 [从核心思维开始](core-thinking.qmd){.btn .btn-primary}　[每章10组视频与交互](core-resources.qmd){.btn .btn-outline-primary}　[跨课程并排类比](interactive/thinking-analogies.html){.btn .btn-outline-primary target="_blank"}

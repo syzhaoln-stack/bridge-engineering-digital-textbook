@@ -131,6 +131,7 @@ window.Quarto = {
 };
 </script>
 <link href="../styles.css" rel="stylesheet"/>
+<link href="../visual-update.css" rel="stylesheet"/>
 
 <link href="../interactive/core-reading.css" rel="stylesheet"/>
 <style>.reference-image-note{display:block;padding:18px;background:#f4f6f7;color:#536575;font:14px/1.8 sans-serif;border-left:3px solid #9badb9}.public-edition-note{margin-top:3em;font-size:.85em}</style></head>
@@ -321,6 +322,12 @@ window.Quarto = {
 </li>
 <li class="sidebar-item">
 <div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="../visual-update.html">
+<span class="menu-text">看图、听一段，再动手</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../resources.html">
 <span class="menu-text">数字资源索引</span></a>
 </div>
@@ -387,6 +394,16 @@ window.Quarto = {
 <a href="../interactive/learning-map.html?chapter=ch05">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery">
+<summary>
+从本章的 3 幅新图开始
+</summary>
+<div class="priority-thumb-grid">
+<a href="#fig-priority-F24"><img alt="车的重量，怎样经过拉索到达桥塔？" loading="lazy" src="../assets/publication/priority-40/F24.svg"/><span>车的重量，怎样经过拉索到达桥塔？</span></a><a href="#fig-priority-F25"><img alt="只调一组索，怎样得到矩阵的一列？" loading="lazy" src="../assets/publication/priority-40/F25.svg"/><span>只调一组索，怎样得到矩阵的一列？</span></a><a href="#fig-priority-F26"><img alt="合龙以后，桥还是刚才那个受力体系吗？" loading="lazy" src="../assets/publication/priority-40/F26.svg"/><span>合龙以后，桥还是刚才那个受力体系吗？</span></a>
+</div>
+</details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 <h2 class="anchored">
 本章的核心思考
 </h2>
@@ -579,30 +596,53 @@ M09　斜拉索影响矩阵与成桥状态
 </div>
 <section class="level2" data-number="6.1" id="结构组成体系选择与传力">
 <h2 class="anchored" data-anchor-id="结构组成体系选择与传力" data-number="6.1"><span class="header-section-number">6.1</span> 结构组成、体系选择与传力</h2>
+<!-- PRIORITY-FIGURE F24 START -->
+<div alt="车的重量，怎样经过拉索到达桥塔？。双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F24">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="车的重量，怎样经过拉索到达桥塔？。双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。" class="img-fluid figure-img" src="../assets/publication/priority-40/F24.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F24-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 6.1: 双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+构件定位与分力示意，无全桥数值结果；只展示一根索的作用方向，不据箭头比例量取索力；索为受拉构件
+</p>
+<p>
+课程组原创参数绘图 · F24 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F24.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F24.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F24 END -->
 <p>斜拉桥由主梁、斜拉索、桥塔、支承体系和基础组成。主梁承受局部弯曲并将荷载分配给斜拉索；斜拉索把竖向分力传至桥塔，同时对主梁产生轴向压力；桥塔再将竖向力和不平衡水平分力传至基础。索、塔、梁的相对刚度共同决定结构响应。</p>
 <p>索面可采用单索面、双索面或空间索面；索形可采用辐射形、竖琴形或扇形。塔梁连接和纵向约束可形成漂浮、半漂浮、塔梁固结或支承等体系。体系选择应结合跨径、桥宽、抗风抗震、温度位移、施工和维护条件。</p>
-<p>斜拉桥由桥面至基础的主要传力路径见 <a class="quarto-xref" href="#fig-ch05-load-path">图 <span>6.1</span></a>。</p>
+<p>斜拉桥由桥面至基础的主要传力路径见 <a class="quarto-xref" href="#fig-ch05-load-path">图 <span>6.2</span></a>。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch05-load-path">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch05-load-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 6.1: 斜拉桥作用传递路径。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 6.2: 斜拉桥作用传递路径。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-load-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 6.1: 斜拉桥作用传递路径
+图 6.2: 斜拉桥作用传递路径
 </figcaption>
 </figure>
 </div>
 <div class="source-note">
 <p><strong>图源（内部初稿）。</strong> 在线教材项目 <code>longyu8101/qlgc</code>，原图4-1-1“斜拉桥作用（荷载）传递路径示意”，文件 <code>source/_static/fig/4-1-1.png</code>，<a class="uri" href="https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/4-1-1.png">https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/4-1-1.png</a>。用于说明索—塔—梁传力；正式出版前核查许可或统一重绘。</p>
 </div>
-<p>主梁、斜拉索与桥塔的基本受力性质见 <a class="quarto-xref" href="#fig-ch05-member-force">图 <span>6.2</span></a>。</p>
+<p>主梁、斜拉索与桥塔的基本受力性质见 <a class="quarto-xref" href="#fig-ch05-member-force">图 <span>6.3</span></a>。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch05-member-force">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch05-member-force-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 6.2: 斜拉桥基本构件受力。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 6.3: 斜拉桥基本构件受力。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-member-force-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 6.2: 斜拉桥基本构件受力
+图 6.3: 斜拉桥基本构件受力
 </figcaption>
 </figure>
 </div>
@@ -639,28 +679,28 @@ M09　斜拉索影响矩阵与成桥状态
 <p><span class="math display">\[V_i=T_i\sin\theta_i,\qquad H_i=T_i\cos\theta_i.\]</span></p>
 <p>当所需竖向支承分量 <span class="math inline">\(V_i\)</span> 一定时，索力为 <span class="math inline">\(T_i=V_i/\sin\theta_i\)</span>。拉索较平缓时，<span class="math inline">\(\sin\theta_i\)</span> 减小，所需索力和作用于主梁的水平压力均会增大。这一基本关系说明，边跨布置、塔高和索距不能彼此独立选取。提高桥塔能够改善索的竖向支承效率，但会增加塔身、施工设备、风荷载与景观控制要求。</p>
 <p>主梁承受拉索锚点之间的局部弯曲，并承担各拉索水平分力累积形成的轴向压力；桥塔承担竖向压力和两侧拉索不平衡产生的弯矩；边跨与辅助墩对主跨荷载形成锚固和平衡作用。若边跨过短或压重不足，端支点可能出现上拔；若边跨刚度过大，则温度和体系变形可能在塔、梁和支点之间形成较大约束效应。</p>
-<p>多点弹性支承对主梁恒载弯矩分布的影响可通过 <a class="quarto-xref" href="#fig-ch05-moment-compare">图 <span>6.3</span></a> 与连续梁作定性比较。</p>
+<p>多点弹性支承对主梁恒载弯矩分布的影响可通过 <a class="quarto-xref" href="#fig-ch05-moment-compare">图 <span>6.4</span></a> 与连续梁作定性比较。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch05-moment-compare">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch05-moment-compare-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 6.3: 连续梁与斜拉桥恒载弯矩示意比较。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 6.4: 连续梁与斜拉桥恒载弯矩示意比较。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-moment-compare-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 6.3: 连续梁与斜拉桥恒载弯矩示意比较
+图 6.4: 连续梁与斜拉桥恒载弯矩示意比较
 </figcaption>
 </figure>
 </div>
 <div class="source-note">
 <p><strong>图源（内部初稿）。</strong> 在线教材项目 <code>longyu8101/qlgc</code>，原图4-1-3“连续梁桥和斜拉桥恒载弯矩图比较示意”，文件 <code>source/_static/fig/4-1-3.png</code>，<a class="uri" href="https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/4-1-3.png">https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/4-1-3.png</a>。用于定性比较多点弹性支承作用，不作为比例或数值依据。</p>
 </div>
-<p>索水平分力沿主梁逐段累积所形成的轴力变化趋势见 <a class="quarto-xref" href="#fig-ch05-girder-axial">图 <span>6.4</span></a>。</p>
+<p>索水平分力沿主梁逐段累积所形成的轴力变化趋势见 <a class="quarto-xref" href="#fig-ch05-girder-axial">图 <span>6.5</span></a>。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch05-girder-axial">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch05-girder-axial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 6.4: 斜拉桥主梁轴力分布示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 6.5: 斜拉桥主梁轴力分布示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-girder-axial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 6.4: 斜拉桥主梁轴力分布示意
+图 6.5: 斜拉桥主梁轴力分布示意
 </figcaption>
 </figure>
 </div>
@@ -746,6 +786,29 @@ M09　斜拉索影响矩阵与成桥状态
 </section>
 <section class="level4" data-number="6.3.5.3" id="合龙与体系转换">
 <h4 class="anchored" data-anchor-id="合龙与体系转换" data-number="6.3.5.3"><span class="header-section-number">6.3.5.3</span> 合龙与体系转换</h4>
+<!-- PRIORITY-FIGURE F26 START -->
+<div alt="合龙以后，桥还是刚才那个受力体系吗？。合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F26">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F26-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="合龙以后，桥还是刚才那个受力体系吗？。合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。" class="img-fluid figure-img" src="../assets/publication/priority-40/F26.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F26-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 6.6: 合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+示意图不含变形和内力结果；施工荷载、临时边界和初始状态需按阶段定义；图中塔基仅作支承定位，不指定实际构造
+</p>
+<p>
+课程组原创参数绘图 · F26 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F26.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F26.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F26 END -->
 <p>合龙把两个独立悬臂转化为连续体系，合龙温度、临时锁定、配重和焊接或浇筑顺序会形成锁定效应。合龙前应预测间隙、相对高差和转角；合龙后应检查体系转换引起的内力重分配。不能用成桥模型一次加载替代这一过程。</p>
 </section>
 </section>
@@ -861,25 +924,25 @@ M09　斜拉索影响矩阵与成桥状态
 </thead>
 <tbody>
 <tr class="odd">
-<td><a class="quarto-xref" href="#fig-ch05-load-path">图 <span>6.1</span></a></td>
+<td><a class="quarto-xref" href="#fig-ch05-load-path">图 <span>6.2</span></a></td>
 <td>斜拉桥传力路径</td>
 <td>在线教材图4-1-1</td>
 <td>核查许可或统一重绘</td>
 </tr>
 <tr class="even">
-<td><a class="quarto-xref" href="#fig-ch05-member-force">图 <span>6.2</span></a></td>
+<td><a class="quarto-xref" href="#fig-ch05-member-force">图 <span>6.3</span></a></td>
 <td>构件受力</td>
 <td>在线教材图4-1-2</td>
 <td>核查许可或统一重绘</td>
 </tr>
 <tr class="odd">
-<td><a class="quarto-xref" href="#fig-ch05-moment-compare">图 <span>6.3</span></a></td>
+<td><a class="quarto-xref" href="#fig-ch05-moment-compare">图 <span>6.4</span></a></td>
 <td>恒载弯矩比较</td>
 <td>在线教材图4-1-3</td>
 <td>重绘并保留适用假定</td>
 </tr>
 <tr class="even">
-<td><a class="quarto-xref" href="#fig-ch05-girder-axial">图 <span>6.4</span></a></td>
+<td><a class="quarto-xref" href="#fig-ch05-girder-axial">图 <span>6.5</span></a></td>
 <td>主梁轴力趋势</td>
 <td>在线教材图4-1-4</td>
 <td>重绘并补充符号与单位</td>
@@ -1050,7 +1113,7 @@ M09　斜拉索影响矩阵与成桥状态
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/staymatrix.svg" style="width:82.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-stay-matrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 6.5: 索力影响矩阵及选中索列的静态基准图
+图 6.7: 索力影响矩阵及选中索列的静态基准图
 </figcaption>
 </figure>
 </div>
@@ -1227,6 +1290,29 @@ V=qa=220\times12=2640\,\mathrm{kN}.
 </section>
 <section class="level4" data-number="6.7.10.4" id="第三步建立教学索力影响矩阵">
 <h4 class="anchored" data-anchor-id="第三步建立教学索力影响矩阵" data-number="6.7.10.4"><span class="header-section-number">6.7.10.4</span> 第三步：建立教学索力影响矩阵</h4>
+<!-- PRIORITY-FIGURE F25 START -->
+<div alt="只调一组索，怎样得到矩阵的一列？。固定模型状态和输出定义，仅将第二索组增大1 MN时，三项响应增量就是影响矩阵第二列；矩阵沿用正文明确声明的教学测试数据，构件定位图不冒充矩阵来源模型。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F25">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F25-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="只调一组索，怎样得到矩阵的一列？。固定模型状态和输出定义，仅将第二索组增大1 MN时，三项响应增量就是影响矩阵第二列；矩阵沿用正文明确声明的教学测试数据，构件定位图不冒充矩阵来源模型。" class="img-fluid figure-img" src="../assets/publication/priority-40/F25.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F25-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 6.8: 固定模型状态和输出定义，仅将第二索组增大1 MN时，三项响应增量就是影响矩阵第二列；矩阵沿用正文明确声明的教学测试数据，构件定位图不冒充矩阵来源模型。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+教学构造矩阵，不是具体桥的计算；列为索组增量，行依次为弯矩、位移、反力；仅线性局部影响，不直接用于调索设计
+</p>
+<p>
+课程组原创参数绘图 · F25 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F25.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F25.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F25 END -->
 <p>选取三个索组修正量 <span class="math inline">\(\Delta T_1,\Delta T_2,\Delta T_3\)</span>（MN），控制量为跨中弯矩 <span class="math inline">\(M_c\)</span>（MN·m）、塔顶纵向位移 <span class="math inline">\(u_t\)</span>（mm）和端支点反力 <span class="math inline">\(R_e\)</span>（MN）。构造用于程序测试的影响矩阵</p>
 <p><span class="math display">\[
 \boldsymbol A=
@@ -4062,7 +4148,7 @@ H_o=4800\ \mathrm{kN},
 
 <script>
 (()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);route.addEventListener('click',event=>{const link=event.target.closest('.priority-chapter-gallery a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;set('reference');requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));});const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
 
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

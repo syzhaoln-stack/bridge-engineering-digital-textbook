@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "unit_id": "C09U10",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C09U10",
+    "chapter": 9,
+    "chapter_title": "风与动力：无量纲判断",
+    "title": "从风洞到计算都要验证假定",
+    "model": "mesh",
+    "preset": "refinement",
+    "insight": "数值加密只检查离散误差，不能证明湍流模型与边界条件已经真实。",
+    "transfer": "网格收敛以后还需要哪一类试验对照？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C09U10.html",
+      "path": "interactive/lessons/C09U10.html"
+    },
+    "narration": [
+      "从风洞到计算都要验证假定。先预测：改变等分网格数 n，线性插值最大误差会怎样变化？",
+      "现在保持其他条件不变，只改变等分网格数 n。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "数值加密只检查离散误差，不能证明湍流模型与边界条件已经真实。",
+      "网格收敛以后还需要哪一类试验对照？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 2,
+      "max": 40,
+      "start": 4,
+      "end": 20,
+      "step": 1,
+      "label": "等分网格数 n",
+      "unit": "",
+      "output": "线性插值最大误差",
+      "outunit": "",
+      "formula": "对 u(x)=x²，均匀线性插值误差 max|e|=1/(4n²)",
+      "boundary": "解析函数的插值验证例，不是已经求解的实桥有限元结果；用于区分数值验证和物理确认。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C09U10.mp4",
+        "href": "../assets/videos/core/C09U10.mp4",
+        "bytes": 3696102
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C09U10.vtt",
+        "href": "../assets/videos/core/C09U10.vtt",
+        "bytes": 744
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C09U10.jpg",
+        "href": "../assets/videos/core/posters/C09U10.jpg",
+        "bytes": 154826
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C09U10.txt",
+        "href": "../notebooks/course-data/C09U10.txt",
+        "bytes": 505
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C09U10.json",
+        "href": "../notebooks/course-data/C09U10.json",
+        "bytes": 16443
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C09U10",
+      "title": "从风洞到计算都要验证假定",
+      "chapter": 9,
+      "fingerprint": "208e46d06590e7ca2d216fa5a851cabce2d5824176b3a7302d179cb9a0001899",
+      "duration": 46.966667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 159.1
+    },
+    "notebooks": [],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C09U10.json",
+      "render_sha256": "34e30ce2c9d6f55420a19e6c4add7583ca17b5adb20f621de229c900d6670e0a",
+      "render_copy_sha256": "34e30ce2c9d6f55420a19e6c4add7583ca17b5adb20f621de229c900d6670e0a"
+    },
+    "download_href": "../notebooks/course-packages/C09U10.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

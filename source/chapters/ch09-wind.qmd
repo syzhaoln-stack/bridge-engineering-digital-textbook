@@ -5,6 +5,9 @@
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry"><p>先从一个看得见的问题开始</p><h3>风速增加一倍，桥的晃动幅度也会增加一倍吗？</h3><p>选择一个现象并改变风速，观察平均偏移、晃动节奏和幅值怎样变化。</p><a href="../interactive/learning-map.html?chapter=ch09-wind">看图进入实验 →</a></div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery"><summary>从本章的 3 幅新图开始</summary><div class="priority-thumb-grid"><a href="#fig-priority-F33"><img src="../assets/publication/priority-40/F33.svg" loading="lazy" alt="风速翻倍，推桥面的力也只翻倍吗？"><span>风速翻倍，推桥面的力也只翻倍吗？</span></a><a href="#fig-priority-F34"><img src="../assets/publication/priority-40/F34.svg" loading="lazy" alt="同样大小的周期力，为什么能激起更大的振动？"><span>同样大小的周期力，为什么能激起更大的振动？</span></a><a href="#fig-priority-F35"><img src="../assets/publication/priority-40/F35.svg" loading="lazy" alt="桥面两边一起动，和一上一下，是同一种振动吗？"><span>桥面两边一起动，和一上一下，是同一种振动吗？</span></a></div></details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 
 <h2>本章的核心思考</h2><p class="core-thesis">用无量纲比值组织风与动力问题。</p><ol><li>声明气动系数条件，再用风速平方律。</li><li>用频比和阻尼比区分静力、共振与抑振。</li><li>用雷诺数、弗劳德数反问模型的相似条件。</li></ol><div class="core-analogy"><h3>跨课程类比</h3><p>动力学单自由度 → 桥梁模态响应；量纲分析 → 风洞相似</p><p><strong>反例与边界：</strong>简谐稳态不是地震反应谱；固定斯特劳哈尔数不能预测锁定幅值或颤振。</p></div><p>建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。</p><div class="core-unit-grid"><article><p class="core-tag">C09U01 · 课堂核心</p><h3>风力为什么跟风速平方有关</h3><p>固定气动系数、空气密度与迎风面积时，风力随风速平方变化。</p><p><a href="../interactive/core-learning.html?unit=C09U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U01&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C09U02 · 课前/课后迁移</p><h3>改变尺寸也改变受风面积</h3><p>保持面压力不变而几何相似放大时，线荷载随桥宽一次增长，而弯曲应力保持不变。</p><p><a href="../interactive/core-learning.html?unit=C09U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U02&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C09U03 · 课前/课后迁移</p><h3>气动系数是条件，不是常数真理</h3><p>系数变化能显著改变风力，固定系数平方律只是在指定条件下的模型。</p><p><a href="../interactive/core-learning.html?unit=C09U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U03&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C09U04 · 课前/课后迁移</p><h3>质量与刚度共同决定频率</h3><p>质量固定时，频率随刚度平方根增加。</p><p><a href="../interactive/core-learning.html?unit=C09U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U04&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C09U05 · 课堂核心</p><h3>共振用频率比辨认</h3><p>响应峰值靠近频比为一的位置，位置和高度还受阻尼影响。</p><p><a href="../interactive/core-learning.html?unit=C09U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U05&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C09U06 · 课前/课后迁移</p><h3>阻尼降低共振附近的稳态放大</h3><p>增加阻尼可以降低稳态放大峰，但静力柔度仍由刚度决定。</p><p><a href="../interactive/core-learning.html?unit=C09U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U06&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C09U07 · 课前/课后迁移</p><h3>涡脱落频率也有尺度关系</h3><p>固定斯特劳哈尔数的模型中，脱落频率与流速成正比、与特征尺寸成反比。</p><p><a href="../interactive/core-learning.html?unit=C09U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U07&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C09U08 · 课堂核心</p><h3>几何相似不等于动力相似</h3><p>在同流速下改变尺寸，会同时改变雷诺数与弗劳德数。</p><p><a href="../interactive/core-learning.html?unit=C09U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U08&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C09U09 · 课前/课后迁移</p><h3>气动措施与结构措施分开比较</h3><p>改变截面气动系数属于减小作用，增加结构阻尼属于改变响应。</p><p><a href="../interactive/core-learning.html?unit=C09U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U09&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C09U10 · 课前/课后迁移</p><h3>从风洞到计算都要验证假定</h3><p>数值加密只检查离散误差，不能证明湍流模型与边界条件已经真实。</p><p><a href="../interactive/core-learning.html?unit=C09U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U10&amp;view=video" target="_blank">观看短视频</a></p></article></div><p><a href="../core-thinking.html">返回全书核心思维与尺度规律</a> · <a href="../core-resources.html">查看110个教学单元总索引</a> · <a href="../interactive/thinking-analogies.html">打开跨课程并排类比</a></p></div>
 <!-- CORE-ROUTE END -->
@@ -160,6 +163,14 @@ $$
 
 #### 风速平方关系
 
+
+<!-- PRIORITY-FIGURE F33 START -->
+![固定气密度、阻力系数和面积时，风速10、20、40 m/s对应静力阻力0.735、2.940、11.760 kN；速度翻倍，动压和阻力均变为4倍。蓝色箭头示来流，橙色箭头示阻力。](../assets/publication/priority-40/F33.svg){#fig-priority-F33 width=100% fig-alt="风速翻倍，推桥面的力也只翻倍吗？。固定气密度、阻力系数和面积时，风速10、20、40 m/s对应静力阻力0.735、2.940、11.760 kN；速度翻倍，动压和阻力均变为4倍。蓝色箭头示来流，橙色箭头示阻力。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>ρ、C_D、A固定；静力阻力D=½ρU²C_DA；未引入任何桥型专用系数或规范风速</p><p>课程组原创参数绘图 · F33 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F33.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F33.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F33 END -->
+
+
 对给定参考面积和气动力系数，阻力可写为
 
 $$
@@ -276,6 +287,14 @@ MIT李彦杰的[受迫振动课](../course-guide.qmd#v02)提供课堂演示与�
 
 
 #### 单自由度模型
+
+
+<!-- PRIORITY-FIGURE F34 START -->
+![单自由度简谐稳态响应随频率比与阻尼改变。阻尼比0.02、0.05、0.10在r=1时的位移放大系数分别为25、10、5；该模型不直接描述桥梁颤振。](../assets/publication/priority-40/F34.svg){#fig-priority-F34 width=100% fig-alt="同样大小的周期力，为什么能激起更大的振动？。单自由度简谐稳态响应随频率比与阻尼改变。阻尼比0.02、0.05、0.10在r=1时的位移放大系数分别为25、10、5；该模型不直接描述桥梁颤振。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>线性单自由度，简谐力恒幅；已达稳态，不是启动瞬态；ζ&gt;0；忽略非线性</p><p>课程组原创参数绘图 · F34 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F34.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F34.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F34 END -->
+
 
 结构自由振动与受迫振动的基本方程为
 
@@ -970,6 +989,14 @@ $$
 因此风场空间相干与振型正负区域共同决定模态输入。一个长波、全相关脉动风可能在振型正负区间发生抵消；局部不相关风则以另一方式叠加。仅用跨中风速乘以全跨长度，不能表达这种空间滤波。
 
 #### 弯曲、扭转和耦合模态
+
+
+<!-- PRIORITY-FIGURE F35 START -->
+![参数化桥面带的纯竖弯与纯扭转形状对照，以及同一横截面的观察方式。真实桥梁可能有耦合模态；需同一断面同步测量才可用两侧位移分解。](../assets/publication/priority-40/F35.svg){#fig-priority-F35 width=100% fig-alt="桥面两边一起动，和一上一下，是同一种振动吗？。参数化桥面带的纯竖弯与纯扭转形状对照，以及同一横截面的观察方式。真实桥梁可能有耦合模态；需同一断面同步测量才可用两侧位移分解。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>示意模态形状，无特征值求解；小转角且横截面近似刚体；非畸变截面；没有声称现实模态均为纯弯/纯扭</p><p>课程组原创参数绘图 · F35 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F35.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F35.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F35 END -->
+
 
 桥面两侧同步测点可将竖向平动与扭转近似分解。设左右侧竖向位移为 $h_L,h_R$，两测点横向间距为 $b_s$，小转角下
 

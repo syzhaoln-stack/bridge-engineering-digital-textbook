@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "unit_id": "C11U09",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C11U09",
+    "chapter": 11,
+    "chapter_title": "建模、有限元与审计",
+    "title": "AI输出也必须经过方向与量纲检查",
+    "model": "scale",
+    "preset": "selfweight",
+    "insight": "用尺度指数和极限情形，可以快速发现漏掉长度因子的计算式。",
+    "transfer": "公式单位正确是否就足以证明模型正确？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C11U09.html",
+      "path": "interactive/lessons/C11U09.html"
+    },
+    "narration": [
+      "AI输出也必须经过方向与量纲检查。先预测：改变全尺寸放大比例 λ，自重挠度会怎样变化？",
+      "现在保持其他条件不变，只改变全尺寸放大比例 λ。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "用尺度指数和极限情形，可以快速发现漏掉长度因子的计算式。",
+      "公式单位正确是否就足以证明模型正确？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.5,
+      "max": 3,
+      "start": 1,
+      "end": 2,
+      "step": 0.01,
+      "label": "全尺寸放大比例 λ",
+      "unit": "",
+      "output": "自重挠度",
+      "outunit": "基准倍数",
+      "formula": "自重挠度 / 基准值 = λ^2",
+      "boundary": "全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。",
+      "power": 2
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C11U09.mp4",
+        "href": "../assets/videos/core/C11U09.mp4",
+        "bytes": 3200459
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C11U09.vtt",
+        "href": "../assets/videos/core/C11U09.vtt",
+        "bytes": 751
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C11U09.jpg",
+        "href": "../assets/videos/core/posters/C11U09.jpg",
+        "bytes": 142402
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C11U09.txt",
+        "href": "../notebooks/course-data/C11U09.txt",
+        "bytes": 512
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C11U09.json",
+        "href": "../notebooks/course-data/C11U09.json",
+        "bytes": 16487
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C11U09",
+      "title": "AI输出也必须经过方向与量纲检查",
+      "chapter": 11,
+      "fingerprint": "e5fd167bee53bafc8b20e4aa828983d18d8c60d743902049b2c64124c0429dfc",
+      "duration": 47.766667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 124.9
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F40.png",
+        "href": "../assets/publication/priority-40/F40.png",
+        "bytes": 198860,
+        "id": "F40",
+        "title": "AI给了一个数，怎样知道它算的是你的问题？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F40.svg",
+          "href": "../assets/publication/priority-40/F40.svg",
+          "bytes": 23709
+        },
+        "caption": "同一等效梁任务的正确模型、弹性模量单位错误、两端固支边界错误对照。单位错的5882 mm只是超出小变形适用域的线性公式形式值，不能采纳；反力平衡也不能单独识别错误边界。",
+        "assumptions": [
+          "单根等效梁，暂不计自重",
+          "正确基准为线弹性小变形简支梁",
+          "单位故障仅为诊断；不把越域大位移当作物理预测"
+        ],
+        "mapping_note": "用独立梁算例检查单位与边界；本单元的尺度幂律提供另一种快速核对，不是图中错误草稿的同一计算。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "2d6435b5c0da70df13bae6cc7c265f28699d81432aa0c19ff718600471bca1a0",
+          "png": "87b760504dd09ef20807b63241efef399f6c423f3865c132e24d2cad11dc45f7"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C11U09.json",
+      "render_sha256": "6ef409823fe4c31e0d1fd759b66a848ea9b625dfcf6aa2b58a632b88ecdd161d",
+      "render_copy_sha256": "6ef409823fe4c31e0d1fd759b66a848ea9b625dfcf6aa2b58a632b88ecdd161d"
+    },
+    "download_href": "../notebooks/course-packages/C11U09.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "D01",
+  "title": "车放正中间，五根梁就一定平均分？",
+  "purpose": "从生活直觉产生分歧，用图和计算发现遗漏条件，解释以后再引出术语。",
+  "roles": {
+    "zhou": {"name": "小周", "role": "替观众追问，直觉大胆但愿意改口", "voice": "zh-CN-YunyangNeural", "rate": "+2%"},
+    "ning": {"name": "阿宁", "role": "先解释看得见的变化，再给出术语", "voice": "zh-CN-XiaoxiaoNeural", "rate": "-1%"}
+  },
+  "model": {"P_kN": 120, "L_m": 20, "B_m": 10.8, "d_m": 2.4, "girder_positions_m": [-4.8, -2.4, 0, 2.4, 4.8], "baseline_EI_kNm2": 3400000, "description": "刚性横梁、竖向线性弹性主梁等效弹簧。仅计算此次车辆作用；图形示意并放大位移。"},
+  "turns": [
+    {"speaker":"zhou","scene":"center","text":"车停中间还不平均分？那对称性不是白学了？我搬桌子，东西放正中间，两边不就一样使劲？"},
+    {"speaker":"ning","scene":"center","text":"左右一样，这一步你没说错。可要是桌子中间那条腿，特别软呢？"},
+    {"speaker":"zhou","scene":"soft","text":"那它可能使不上劲。等等，左右一样，不等于五根都一样？行，换软。先别讲，让我看。"},
+    {"speaker":"ning","scene":"soft","text":"看，中间这一根，原来分到五分之一，现在不到一成。其余四根，各分到大约两成三。"},
+    {"speaker":"zhou","scene":"soft","text":"我有点不服。软的，不就该陷得更深吗？怎么反而分得少？"},
+    {"speaker":"ning","scene":"soft","text":"因为上边那道横向连接，把它们连着。我们先把它当成很难弯的横杆，不能让每根各沉各的。下沉同样一段，软的那根需要的力更小。这种抗变形的本领，叫刚度。"},
+    {"speaker":"zhou","scene":"offset","text":"好，五根先换回一样硬。我把车挪到右边，近处多出力，远处就摸鱼了？"},
+    {"speaker":"ning","scene":"offset","text":"先看比例。最右边，从两成变成四成。最左边，这次车辆带来的分担降到零。车还是那辆车，总重没变；多出来的，要从别处减。"},
+    {"speaker":"zhou","scene":"decompose","text":"这我熟！往一边偏，原来的平均那份还在，再加上一边多、一边少。跟偏心压一个截面，是不是一个思路？"},
+    {"speaker":"ning","scene":"decompose","text":"这条思路能借。我们把它叫作平均部分和弯曲增减的叠加。不过，一边算的是截面里各处的应力，一边算的是几根梁分到的力；还得分别说明材料、连接和变形条件。"},
+    {"speaker":"zhou","scene":"negative","text":"我再往外挪。怎么还有一根算出负数了？这账还能倒扣？这个数看着别扭，干脆改成零吧。"},
+    {"speaker":"ning","scene":"negative","text":"先别删。这是这次车压上去带来的变化，还没把桥本身的重量算进去。看到负增量，不等于真实支座已经离开。"},
+    {"speaker":"zhou","scene":"clip","text":"那我非要试试，只把负的删掉，别的都不动。"},
+    {"speaker":"ning","scene":"clip","text":"你看，加起来反而比车重还大。原来是一百二十千牛，改完变成一百三十二千牛，连力矩也对不上了。改结果，不能替代改模型。"},
+    {"speaker":"zhou","scene":"summary","text":"懂了。不是看着对称就随便平均，也不是看着不顺眼就删数。先问它们怎么连、软硬一样不一样，再看加起来对不对。"},
+    {"speaker":"ning","scene":"summary","text":"对。加起来对，叫平衡；连着的地方怎样一起动，叫变形协调；同样变形要多大的力，要看刚度。换成桌子、搁板或偏心受压，先借这几个问题，别急着照搬答案。"}
+  ],
+  "sources": ["chapters/ch03.qmd#横向分布与空间受力", "chapters/ch02-foundations.qmd", "https://blog.google/innovation-and-ai/products/notebooklm-audio-overviews/"],
+  "production_note": "原创双人教学剧本及合成声音，无真人声音模仿。图中的刚性横梁是教学简化，生活类比用于提问，不宣称与实际桌腿或全部桥梁同一模型。"
+}

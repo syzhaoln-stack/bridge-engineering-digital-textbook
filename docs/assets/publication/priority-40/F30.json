@@ -1,0 +1,44 @@
+{
+  "id": "F30",
+  "title": "温度一样升高，为什么有的伸长、有的受压？",
+  "chapter": 8,
+  "heading": "自由温度位移",
+  "caption": "同样均匀温升下，自由伸缩产生7.2 mm轴向伸长；完全限制该伸长则在本一维弹性模型中产生72 MPa压应力、1440 kN压力。支座约束改变的是允许发生的运动。",
+  "assumptions": [
+    "轴向杆模型，不模拟桥面温度梯度",
+    "均匀温升、常材料参数、小变形",
+    "自由端无摩阻；受约束端刚性"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F30.svg",
+  "png": "assets/publication/priority-40/F30.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "αLΔT=7.2 mm",
+    "EαΔT=72 MPa",
+    "N=EAαΔT=1440 kN"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch07.qmd",
+  "heading_line": 448,
+  "calculation_data": {
+    "free_elongation_mm": 7.2,
+    "restrained_stress_MPa": 72.0,
+    "restrained_force_kN": 1440.0
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：自由伸长的位移箭头与受约束压力分色，指数缺字已消除。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "cb85bda31ea49793a92cc8f49755fa2fc19317f833dadeb3409a81886dfe7466",
+    "png": "08dfa60b274544f56976092a35ec8b3e8c73bc87c99a8d3f5ff613d74a8c3837"
+  }
+}

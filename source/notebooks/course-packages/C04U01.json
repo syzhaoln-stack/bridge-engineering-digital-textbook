@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "unit_id": "C04U01",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C04U01",
+    "chapter": 4,
+    "chapter_title": "梁桥的核心判断",
+    "title": "从简支反力到梁的整体平衡",
+    "model": "reaction",
+    "preset": "position",
+    "insight": "移动荷载改变反力分配，平衡提供最快的独立核验。",
+    "transfer": "连续梁为什么不能只用两个平衡方程求反力？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C04U01.html",
+      "path": "interactive/lessons/C04U01.html"
+    },
+    "narration": [
+      "从简支反力到梁的整体平衡。先预测：改变荷载位置 a/L，右支点反力会怎样变化？",
+      "现在保持其他条件不变，只改变荷载位置 a/L。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "移动荷载改变反力分配，平衡提供最快的独立核验。",
+      "连续梁为什么不能只用两个平衡方程求反力？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.05,
+      "max": 0.95,
+      "start": 0.25,
+      "end": 0.75,
+      "step": 0.01,
+      "label": "荷载位置 a/L",
+      "unit": "",
+      "output": "右支点反力",
+      "outunit": "基准力",
+      "formula": "Rₐ=P(1−a/L)，Rᵦ=Pa/L",
+      "boundary": "简支梁、竖向集中力；图形变形不参与求解。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C04U01.mp4",
+        "href": "../assets/videos/core/C04U01.mp4",
+        "bytes": 2965408
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C04U01.vtt",
+        "href": "../assets/videos/core/C04U01.vtt",
+        "bytes": 721
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C04U01.jpg",
+        "href": "../assets/videos/core/posters/C04U01.jpg",
+        "bytes": 123388
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C04U01.txt",
+        "href": "../notebooks/course-data/C04U01.txt",
+        "bytes": 482
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C04U01.json",
+        "href": "../notebooks/course-data/C04U01.json",
+        "bytes": 18015
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C04U01",
+      "title": "从简支反力到梁的整体平衡",
+      "chapter": 4,
+      "fingerprint": "461abbd9739a546f794799b16644c3d714060bf016d87a936c7a277b38f729b8",
+      "duration": 46.866667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 77.1
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F01.png",
+        "href": "../assets/publication/priority-40/F01.png",
+        "bytes": 143824,
+        "id": "F01",
+        "title": "车的重量，最后传到了哪里？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F01.svg",
+          "href": "../assets/publication/priority-40/F01.svg",
+          "bytes": 18194
+        },
+        "caption": "由车辆、桥面板、主梁、支座、墩台、基础到地基的竖向传力路径。基础处向上箭头表示地基对基础的反力。",
+        "assumptions": [
+          "非实桥构造图；不表示材料应力和反力大小",
+          "桥台用简化端支承体表现，未绘台背土和附属设施"
+        ],
+        "mapping_note": "把反力计算放回整桥传力路径：选定梁段的支承反力，还会继续传到墩台、基础和地基。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "cb52426ccaccca63d41b47fb93b0c7243916e942920282c9501aa6a6e1099541",
+          "png": "9be0eded4ed27679f53f68d59aa0010d4cd7d529f0be5634f723e0a8cbb53f7c"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C04U01.json",
+      "render_sha256": "5164fa79e804d583911e8cc87931a9279b1b126b41b132110e5db9df50182302",
+      "render_copy_sha256": "5164fa79e804d583911e8cc87931a9279b1b126b41b132110e5db9df50182302"
+    },
+    "download_href": "../notebooks/course-packages/C04U01.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

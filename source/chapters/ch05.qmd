@@ -5,6 +5,9 @@
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry"><p>先从一个看得见的问题开始</p><h3>只调整一个地方，为什么别的位置也会跟着变？</h3><p>改变第一控制量，比较两个控制点的响应，留意没有直接调整的那一处。</p><a href="../interactive/learning-map.html?chapter=ch05">看图进入实验 →</a></div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery"><summary>从本章的 3 幅新图开始</summary><div class="priority-thumb-grid"><a href="#fig-priority-F24"><img src="../assets/publication/priority-40/F24.svg" loading="lazy" alt="车的重量，怎样经过拉索到达桥塔？"><span>车的重量，怎样经过拉索到达桥塔？</span></a><a href="#fig-priority-F25"><img src="../assets/publication/priority-40/F25.svg" loading="lazy" alt="只调一组索，怎样得到矩阵的一列？"><span>只调一组索，怎样得到矩阵的一列？</span></a><a href="#fig-priority-F26"><img src="../assets/publication/priority-40/F26.svg" loading="lazy" alt="合龙以后，桥还是刚才那个受力体系吗？"><span>合龙以后，桥还是刚才那个受力体系吗？</span></a></div></details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 
 <h2>本章的核心思考</h2><p class="core-thesis">斜拉桥的核心是耦合响应与可控性。</p><ol><li>用索倾角理解索力及其水平分量。</li><li>观察调整一根索对多个控制点的影响。</li><li>检查控制方向独立性，再谈优化和反算。</li></ol><div class="core-analogy"><h3>跨课程类比</h3><p>结构力学单位响应 → 索力影响矩阵；线性代数 → 可控性</p><p><strong>反例与边界：</strong>固定影响矩阵只在相应状态附近有效；不同施工阶段不能沿用未解释的同一矩阵。</p></div><p>建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。</p><div class="core-unit-grid"><article><p class="core-tag">C06U01 · 课堂核心</p><h3>拉索把竖向荷载传给塔与梁</h3><p>相同竖向分量下，索倾角减小会提高索力和水平分量。</p><p><a href="../interactive/core-learning.html?unit=C06U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U01&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C06U02 · 课堂核心</p><h3>调整一根索会影响多个输出</h3><p>索力增量通过影响矩阵同时改变多个控制点响应。</p><p><a href="../interactive/core-learning.html?unit=C06U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U02&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C06U03 · 课前/课后迁移</p><h3>成桥目标是多个条件的共同满足</h3><p>不同控制变量对应不同响应方向，必须同时查看耦合输出。</p><p><a href="../interactive/core-learning.html?unit=C06U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U03&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C06U04 · 课堂核心</p><h3>影响列接近时，控制就不稳定</h3><p>两个控制变量作用方向越接近，为实现某些目标所需调整量越大。</p><p><a href="../interactive/core-learning.html?unit=C06U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U04&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C06U05 · 课前/课后迁移</p><h3>主梁轴压仍要和弯矩共同判断</h3><p>索的水平分量产生轴压，不能因此省略主梁弯矩与稳定校核。</p><p><a href="../interactive/core-learning.html?unit=C06U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U05&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C06U06 · 课前/课后迁移</p><h3>索越平，水平力越大</h3><p>竖向承载需求固定时，降低倾角显著提高水平分量。</p><p><a href="../interactive/core-learning.html?unit=C06U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U06&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C06U07 · 课前/课后迁移</p><h3>温度与约束改变成桥状态</h3><p>温度变形能否自由发生由体系约束决定，成桥状态依赖相应条件。</p><p><a href="../interactive/core-learning.html?unit=C06U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U07&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C06U08 · 课前/课后迁移</p><h3>阻尼与刚度解决不同问题</h3><p>增加阻尼主要降低共振附近的动力放大，不能等同于提高静力刚度。</p><p><a href="../interactive/core-learning.html?unit=C06U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U08&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C06U09 · 课前/课后迁移</p><h3>施工阶段不能沿用成桥有效长度</h3><p>临时横向支承改变有效长度，从而显著改变理想临界力。</p><p><a href="../interactive/core-learning.html?unit=C06U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U09&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C06U10 · 课前/课后迁移</p><h3>调索必须留下输入输出证据</h3><p>保存调整前后响应和索力增量，才能判断模型预测是否得到验证。</p><p><a href="../interactive/core-learning.html?unit=C06U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U10&amp;view=video" target="_blank">观看短视频</a></p></article></div><p><a href="../core-thinking.html">返回全书核心思维与尺度规律</a> · <a href="../core-resources.html">查看110个教学单元总索引</a> · <a href="../interactive/thinking-analogies.html">打开跨课程并排类比</a></p></div>
 <!-- CORE-ROUTE END -->
@@ -19,6 +22,14 @@
 <div class="chapter-video-strip"><figure class="chapter-video-card"><video controls preload="metadata" playsinline poster="../assets/videos/manim/posters/M09_stay_matrix.png" src="../assets/videos/manim/M09_stay_matrix.mp4"></video><figcaption>M09　斜拉索影响矩阵与成桥状态</figcaption></figure></div>
 
 ## 结构组成、体系选择与传力
+
+
+<!-- PRIORITY-FIGURE F24 START -->
+![双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。](../assets/publication/priority-40/F24.svg){#fig-priority-F24 width=100% fig-alt="车的重量，怎样经过拉索到达桥塔？。双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>构件定位与分力示意，无全桥数值结果；只展示一根索的作用方向，不据箭头比例量取索力；索为受拉构件</p><p>课程组原创参数绘图 · F24 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F24.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F24.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F24 END -->
+
 
 
 
@@ -188,6 +199,14 @@ $$
 拉索无应力长度可理解为在规定参考温度和无轴力条件下的长度。现场量测索长受温度、索力、垂度和锚具位置影响，不能直接与无应力长度比较。施工控制通常以梁段标高、塔顶偏位、索力和环境温度为观测量，通过模型预测与实测差异修正后续指令。
 
 #### 合龙与体系转换
+
+
+<!-- PRIORITY-FIGURE F26 START -->
+![合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。](../assets/publication/priority-40/F26.svg){#fig-priority-F26 width=100% fig-alt="合龙以后，桥还是刚才那个受力体系吗？。合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>示意图不含变形和内力结果；施工荷载、临时边界和初始状态需按阶段定义；图中塔基仅作支承定位，不指定实际构造</p><p>课程组原创参数绘图 · F26 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F26.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F26.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F26 END -->
+
 
 合龙把两个独立悬臂转化为连续体系，合龙温度、临时锁定、配重和焊接或浇筑顺序会形成锁定效应。合龙前应预测间隙、相对高差和转角；合龙后应检查体系转换引起的内力重分配。不能用成桥模型一次加载替代这一过程。
 
@@ -597,6 +616,14 @@ $$
 该简支量级公式不含主梁连续、轴力和索弹性。参数化杆系模型应给出实际锚点间弯矩，并用表中量级检查结果方向。
 
 #### 第三步：建立教学索力影响矩阵
+
+
+<!-- PRIORITY-FIGURE F25 START -->
+![固定模型状态和输出定义，仅将第二索组增大1 MN时，三项响应增量就是影响矩阵第二列；矩阵沿用正文明确声明的教学测试数据，构件定位图不冒充矩阵来源模型。](../assets/publication/priority-40/F25.svg){#fig-priority-F25 width=100% fig-alt="只调一组索，怎样得到矩阵的一列？。固定模型状态和输出定义，仅将第二索组增大1 MN时，三项响应增量就是影响矩阵第二列；矩阵沿用正文明确声明的教学测试数据，构件定位图不冒充矩阵来源模型。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>教学构造矩阵，不是具体桥的计算；列为索组增量，行依次为弯矩、位移、反力；仅线性局部影响，不直接用于调索设计</p><p>课程组原创参数绘图 · F25 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F25.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F25.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F25 END -->
+
 
 选取三个索组修正量 $\Delta T_1,\Delta T_2,\Delta T_3$（MN），控制量为跨中弯矩 $M_c$（MN·m）、塔顶纵向位移 $u_t$（mm）和端支点反力 $R_e$（MN）。构造用于程序测试的影响矩阵
 

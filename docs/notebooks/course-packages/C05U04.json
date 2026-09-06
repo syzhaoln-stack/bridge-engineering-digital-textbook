@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "unit_id": "C05U04",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C05U04",
+    "chapter": 5,
+    "chapter_title": "拱桥：几何与力流",
+    "title": "无拉应力与压力线位置",
+    "model": "stress",
+    "preset": "core",
+    "insight": "未开裂矩形截面无拉应力要求压力合力位于核心内。",
+    "transfer": "压力线在厚度内是否必然意味着全截面受压？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C05U04.html",
+      "path": "interactive/lessons/C05U04.html"
+    },
+    "narration": [
+      "无拉应力与压力线位置。先预测：改变偏心比 e/h，最小边缘压应力会怎样变化？",
+      "现在保持其他条件不变，只改变偏心比 e/h。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "未开裂矩形截面无拉应力要求压力合力位于核心内。",
+      "压力线在厚度内是否必然意味着全截面受压？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0,
+      "max": 0.35,
+      "start": 0.05,
+      "end": 0.16666666666666666,
+      "step": 0.01,
+      "label": "偏心比 e/h",
+      "unit": "",
+      "output": "最小边缘压应力",
+      "outunit": "MPa",
+      "formula": "σmin=10(1−6e/h)，σmax=10(1+6e/h)",
+      "boundary": "压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C05U04.mp4",
+        "href": "../assets/videos/core/C05U04.mp4",
+        "bytes": 3113772
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C05U04.vtt",
+        "href": "../assets/videos/core/C05U04.vtt",
+        "bytes": 715
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C05U04.jpg",
+        "href": "../assets/videos/core/posters/C05U04.jpg",
+        "bytes": 137141
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C05U04.txt",
+        "href": "../notebooks/course-data/C05U04.txt",
+        "bytes": 476
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C05U04.json",
+        "href": "../notebooks/course-data/C05U04.json",
+        "bytes": 19416
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C05U04",
+      "title": "无拉应力与压力线位置",
+      "chapter": 5,
+      "fingerprint": "7e44c4e12f4cd228074a316999b95e1f8306579120ae704034d40410d51d18e9",
+      "duration": 44.6,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 75.7
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F05.png",
+        "href": "../assets/publication/priority-40/F05.png",
+        "bytes": 203069,
+        "id": "F05",
+        "title": "压力移到哪里，截面边缘才开始出现拉应力？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F05.svg",
+          "href": "../assets/publication/priority-40/F05.svg",
+          "bytes": 25563
+        },
+        "caption": "移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。",
+        "assumptions": [
+          "只讨论单向偏心，双向偏心核心为菱形",
+          "出现拉区后若材料开裂，不再沿用完整弹性应力图作为实际状态"
+        ],
+        "mapping_note": "用截面核心解释压力合力位置与无拉应力条件，限于图示矩形、未开裂线弹性截面。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "5b65db8a9fcffe8bbd7c1f17bd94cfe93385aba075df765e35da067e5c017c50",
+          "png": "04701842098c2586332946d215254c5adf997bf167d1ec051c7fbb2053da7608"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C05U04.json",
+      "render_sha256": "a50c1a5da21b0b84985becce4d156fa67a4efbb2a25113e8727bf11883cc23d4",
+      "render_copy_sha256": "a50c1a5da21b0b84985becce4d156fa67a4efbb2a25113e8727bf11883cc23d4"
+    },
+    "download_href": "../notebooks/course-packages/C05U04.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

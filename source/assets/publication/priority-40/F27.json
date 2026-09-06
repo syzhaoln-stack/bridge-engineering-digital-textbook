@@ -1,0 +1,40 @@
+{
+  "id": "F27",
+  "title": "悬索桥的重量，最后交给了谁？",
+  "chapter": 7,
+  "heading": "组成、体系与荷载路径",
+  "caption": "地锚式悬索桥中，桥面经加劲梁、吊索和主缆传力，索塔与锚碇共同承担主缆传来的作用。自锚式的主缆水平分力路径不同，不能套用本图。",
+  "assumptions": [
+    "地锚式",
+    "构件和受力方向示意，非数值分析",
+    "索塔、锚碇和基础均须另行设计"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F27.svg",
+  "png": "assets/publication/priority-40/F27.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "15根主跨吊索连到主缆与梁",
+    "锚碇受主缆拉力方向指向索塔",
+    "基础反力示意向上"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch06.qmd",
+  "heading_line": 21,
+  "calculation_data": {},
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：加劲梁、吊索、主缆、索塔、锚碇及基础力路可辨。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "f81dd2de180e84ff751b4ffb24eb710179ccf689370b39917aa77e0004fa4e96",
+    "png": "2c24db4715d79367eee5bf379be680543fed4f0faae569a8620190906878da57"
+  }
+}

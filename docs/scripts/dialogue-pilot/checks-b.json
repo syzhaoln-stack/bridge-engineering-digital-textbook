@@ -1,0 +1,213 @@
+{
+  "checked_at_utc": "2026-09-06T16:20:03.297865+00:00",
+  "source_sha256": "9f15598d7cd435f885f57ad972fdc0c6f963a950880c80f1edcdd9d44a78601f",
+  "passed": true,
+  "D03": {
+    "values": {
+      "plain": {
+        "top_MPa": 6.000000000000002,
+        "bottom_MPa": -6.000000000000002,
+        "axial_MPa": 0.0,
+        "prestress_bending_MPa": 0.0,
+        "external_bending_MPa": 6.000000000000002,
+        "A_m2": 0.18,
+        "I_m4": 0.0053999999999999986,
+        "W_m3": 0.017999999999999995,
+        "P_kN": 0,
+        "M_kNm": 108,
+        "e_m": 0.15
+      },
+      "prestress_only": {
+        "top_MPa": -1.2500000000000009,
+        "bottom_MPa": 6.250000000000001,
+        "axial_MPa": 2.5,
+        "prestress_bending_MPa": 3.750000000000001,
+        "external_bending_MPa": 0.0,
+        "A_m2": 0.18,
+        "I_m4": 0.0053999999999999986,
+        "W_m3": 0.017999999999999995,
+        "P_kN": 450,
+        "M_kNm": 0,
+        "e_m": 0.15
+      },
+      "service": {
+        "top_MPa": 4.750000000000001,
+        "bottom_MPa": 0.2499999999999991,
+        "axial_MPa": 2.5,
+        "prestress_bending_MPa": 3.750000000000001,
+        "external_bending_MPa": 6.000000000000002,
+        "A_m2": 0.18,
+        "I_m4": 0.0053999999999999986,
+        "W_m3": 0.017999999999999995,
+        "P_kN": 450,
+        "M_kNm": 108,
+        "e_m": 0.15
+      }
+    },
+    "sign": "compression positive, tendon below centroid",
+    "model_limit": "uncracked linear elastic stress demonstration; no losses/selfweight/crack or reinforcement design",
+    "external_moment_graphic": "opposing end couples, no unspecified vertical point-load/span introduced"
+  },
+  "D05": {
+    "N": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "ss_mm": [
+      9.141176470588238,
+      11.181254901960784,
+      11.262441176470608,
+      11.271970588235234,
+      11.271981464458907,
+      11.27198403032983
+    ],
+    "fixed_mm": [
+      0.0,
+      2.0400784313725486,
+      2.121264705882353,
+      2.1307941176470426,
+      2.1308049938725837,
+      2.1308075597411706
+    ],
+    "ss_exact_mm": 11.271984705882355,
+    "fixed_exact_mm": 2.1308082352941176,
+    "F39_match": true,
+    "reaction_balance_tolerance_N": 1e-05,
+    "free_DOF_residual_tolerance_N": 0.0001,
+    "deformation_magnification": 180,
+    "end_deflection_checks": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "phase_bounds": [
+    {
+      "id": "D03",
+      "phase": "plain",
+      "x_min": -6.339330876067677,
+      "x_max": 6.112187500000002,
+      "y_min": -2.015800795,
+      "y_max": 2.532910175,
+      "within_contract": true
+    },
+    {
+      "id": "D03",
+      "phase": "tendon",
+      "x_min": -6.33,
+      "x_max": 6.192597650000001,
+      "y_min": -2.015800795,
+      "y_max": 2.532910175,
+      "within_contract": true
+    },
+    {
+      "id": "D03",
+      "phase": "load",
+      "x_min": -6.339330876067677,
+      "x_max": 5.682597650000001,
+      "y_min": -2.015800795,
+      "y_max": 2.533203125,
+      "within_contract": true
+    },
+    {
+      "id": "D03",
+      "phase": "service",
+      "x_min": -6.339330876067677,
+      "x_max": 5.682597650000001,
+      "y_min": -2.015800795,
+      "y_max": 2.5334961000000003,
+      "within_contract": true
+    },
+    {
+      "id": "D03",
+      "phase": "construction",
+      "x_min": -6.33,
+      "x_max": 6.192597650000001,
+      "y_min": -2.015800795,
+      "y_max": 2.5341797,
+      "within_contract": true
+    },
+    {
+      "id": "D03",
+      "phase": "summary",
+      "x_min": -6.339330876067677,
+      "x_max": 6.3,
+      "y_min": -2.015800795,
+      "y_max": 2.5343750000000003,
+      "within_contract": true
+    },
+    {
+      "id": "D05",
+      "phase": "coarse",
+      "x_min": -6.199999999999999,
+      "x_max": 6.109999999999999,
+      "y_min": -2.139179675,
+      "y_max": 2.527519525,
+      "within_contract": true
+    },
+    {
+      "id": "D05",
+      "phase": "two",
+      "x_min": -6.199999999999999,
+      "x_max": 6.109999999999999,
+      "y_min": -2.139179675,
+      "y_max": 2.527519525,
+      "within_contract": true
+    },
+    {
+      "id": "D05",
+      "phase": "converge",
+      "x_min": -6.199999999999999,
+      "x_max": 6.109999999999999,
+      "y_min": -2.139179675,
+      "y_max": 2.527519525,
+      "within_contract": true
+    },
+    {
+      "id": "D05",
+      "phase": "wrong",
+      "x_min": -6.199999999999999,
+      "x_max": 6.1899999999999995,
+      "y_min": -2.139179675,
+      "y_max": 2.527519525,
+      "within_contract": true
+    },
+    {
+      "id": "D05",
+      "phase": "ai",
+      "x_min": -6.199999999999999,
+      "x_max": 6.1899999999999995,
+      "y_min": -2.139179675,
+      "y_max": 2.527519525,
+      "within_contract": true
+    },
+    {
+      "id": "D05",
+      "phase": "summary",
+      "x_min": -6.199999999999999,
+      "x_max": 6.109999999999999,
+      "y_min": -2.139179675,
+      "y_max": 2.527519525,
+      "within_contract": true
+    }
+  ],
+  "visual_status": "D03-plain filled moment arrowheads reviewed at 1280x720; prior root review of D03/D05 remains applicable to unchanged graphics.",
+  "moment_arrow_review": {
+    "status": "passed_visual_review",
+    "screenshot": "_checks/dialogue-b-arrow-review/images/D03-plain.png",
+    "resolution_px": [
+      1280,
+      720
+    ],
+    "filled_head_length_scene_units": 0.17,
+    "filled_head_width_scene_units": 0.14,
+    "left_end": "clockwise",
+    "right_end": "counterclockwise",
+    "scope": "Only moment() arrowhead changed; D03 plain reviewed at full frame, all 12 phase bounds and mechanical checks rerun."
+  }
+}

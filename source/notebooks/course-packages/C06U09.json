@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "unit_id": "C06U09",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C06U09",
+    "chapter": 6,
+    "chapter_title": "斜拉桥：耦合与控制",
+    "title": "施工阶段不能沿用成桥有效长度",
+    "model": "buckling",
+    "preset": "length",
+    "insight": "临时横向支承改变有效长度，从而显著改变理想临界力。",
+    "transfer": "拆除临时支架时最先复核哪些边界？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C06U09.html",
+      "path": "interactive/lessons/C06U09.html"
+    },
+    "narration": [
+      "施工阶段不能沿用成桥有效长度。先预测：改变有效长度/基准长度，欧拉临界力相对值会怎样变化？",
+      "现在保持其他条件不变，只改变有效长度/基准长度。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "临时横向支承改变有效长度，从而显著改变理想临界力。",
+      "拆除临时支架时最先复核哪些边界？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.5,
+      "max": 2,
+      "start": 1,
+      "end": 1.5,
+      "step": 0.01,
+      "label": "有效长度/基准长度",
+      "unit": "",
+      "output": "欧拉临界力相对值",
+      "outunit": "倍",
+      "formula": "Ncr=π²EI/(μL)²",
+      "boundary": "理想轴压直杆、线弹性，小挠度稳定基准；不代替实际拱或构件的非线性稳定分析。",
+      "power": -2
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C06U09.mp4",
+        "href": "../assets/videos/core/C06U09.mp4",
+        "bytes": 3189259
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C06U09.vtt",
+        "href": "../assets/videos/core/C06U09.vtt",
+        "bytes": 748
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C06U09.jpg",
+        "href": "../assets/videos/core/posters/C06U09.jpg",
+        "bytes": 138910
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C06U09.txt",
+        "href": "../notebooks/course-data/C06U09.txt",
+        "bytes": 509
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C06U09.json",
+        "href": "../notebooks/course-data/C06U09.json",
+        "bytes": 17109
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C06U09",
+      "title": "施工阶段不能沿用成桥有效长度",
+      "chapter": 6,
+      "fingerprint": "cb774c9fe88c3746e3395cb26febff1c92a4fe77fad8e691591372244716750c",
+      "duration": 47.466667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 136.7
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F07.png",
+        "href": "../assets/publication/priority-40/F07.png",
+        "bytes": 170314,
+        "id": "F07",
+        "title": "同样长的压杆，端部能不能转动有多大影响？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F07.svg",
+          "href": "../assets/publication/priority-40/F07.svg",
+          "bytes": 20434
+        },
+        "caption": "实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。",
+        "assumptions": [
+          "三种理想边界：不计局部屈曲、初始缺陷和屈服",
+          "真实塔柱/拱肋和弹性连接不应仅按外观选择K"
+        ],
+        "mapping_note": "施工时临时支承改变约束和计算长度；图为理想直压杆端部比较，不是整座斜拉桥稳定计算。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "795f7a6f644c11e801dae6420a791d46118dd40b9dc728142546af59908c8810",
+          "png": "072206b762b60576bd94694bd75a88a299cd408425e05aeaa60302d3f85f48a3"
+        }
+      },
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F19.png",
+        "href": "../assets/publication/priority-40/F19.png",
+        "bytes": 253306,
+        "id": "F19",
+        "title": "桥还没碰到下一个支点，悬空越长会怎样？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F19.svg",
+          "href": "../assets/publication/priority-40/F19.svg",
+          "bytes": 41885
+        },
+        "caption": "悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。",
+        "assumptions": [
+          "每个阶段梁尾恰在后支点、支点距12 m；这是教学静定截取，不冒充真实完整顶推系统",
+          "均布自重；未接触前方支点；无导梁、摩擦、支点高差或非线性",
+          "显示的是阶段内力，非设计安全系数"
+        ],
+        "mapping_note": "同样需要按施工阶段重新建模：图检验悬出阶段弯矩，本单元检验临时支承下的屈曲临界力，两种验算要分别做。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "918ddcf5eef347880fc9a2bdf8e15eabec82922d8aecd945ed3d2615ef33c818",
+          "png": "a843e78b19a2d5dc940449fabc38ba9736335ab41ee2ac0ac4ae2254d195f114"
+        }
+      },
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F26.png",
+        "href": "../assets/publication/priority-40/F26.png",
+        "bytes": 233818,
+        "id": "F26",
+        "title": "合龙以后，桥还是刚才那个受力体系吗？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F26.svg",
+          "href": "../assets/publication/priority-40/F26.svg",
+          "bytes": 23712
+        },
+        "caption": "合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。",
+        "assumptions": [
+          "示意图不含变形和内力结果",
+          "施工荷载、临时边界和初始状态需按阶段定义",
+          "图中塔基仅作支承定位，不指定实际构造"
+        ],
+        "mapping_note": "合龙前后体系不同，施工阶段应重新声明支承和连接；不能只把成桥图式一次加载。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "afe03160f4b84dcd0b46f6d049d7844b621a38ff056afb58c069777f0b004374",
+          "png": "42c1b0e1ebe55f3158c0bf2e04ccf1480cb715f1045940c3d7ebc1c910a1f0ff"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C06U09.json",
+      "render_sha256": "382ca3c41fef4fb167c4151dff57d6e8454c08577ef749e000d2f1384c41f852",
+      "render_copy_sha256": "382ca3c41fef4fb167c4151dff57d6e8454c08577ef749e000d2f1384c41f852"
+    },
+    "download_href": "../notebooks/course-packages/C06U09.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

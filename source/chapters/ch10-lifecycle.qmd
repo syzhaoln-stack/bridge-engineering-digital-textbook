@@ -5,6 +5,9 @@
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry"><p>先从一个看得见的问题开始</p><h3>今天看起来一样的两座桥，十几年后还会一样吗？</h3><p>保持读取时刻不变，改变劣化速率，比较剩余抗力和抗力余量。</p><a href="../interactive/learning-map.html?chapter=ch10-lifecycle">看图进入实验 →</a></div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery"><summary>从本章的 2 幅新图开始</summary><div class="priority-thumb-grid"><a href="#fig-priority-F36"><img src="../assets/publication/priority-40/F36.svg" loading="lazy" alt="少了十分之一厚度，梁就只软十分之一吗？"><span>少了十分之一厚度，梁就只软十分之一吗？</span></a><a href="#fig-priority-F37"><img src="../assets/publication/priority-40/F37.svg" loading="lazy" alt="把地震力降下来，还要为哪一种变化留空间？"><span>把地震力降下来，还要为哪一种变化留空间？</span></a></div></details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 
 <h2>本章的核心思考</h2><p class="core-thesis">把初始验算扩展成随时间更新的判断。</p><ol><li>分开初始余量与劣化速率。</li><li>比较循环幅值与累积次数的共同作用。</li><li>明确监测噪声怎样改变证据权重。</li></ol><div class="core-analogy"><h3>跨课程类比</h3><p>概率与统计 → 可靠度和证据更新；损伤累积 → 维护判断</p><p><strong>反例与边界：</strong>教学劣化律不是实桥寿命预测；数据更多也可能只是同一偏差被重复记录。</p></div><p>建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。</p><div class="core-unit-grid"><article><p class="core-tag">C10U01 · 课堂核心</p><h3>今天的余量不是全寿命余量</h3><p>简化劣化模型中抗力随时间降低，固定效应下余量逐步减小。</p><p><a href="../interactive/core-learning.html?unit=C10U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C10U01&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C10U02 · 课前/课后迁移</p><h3>抗震需求先区分静力与动力</h3><p>单自由度频响只解释动力敏感性，地震峰值还需相应时程或反应谱方法。</p><p><a href="../interactive/core-learning.html?unit=C10U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C10U02&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C10U03 · 课前/课后迁移</p><h3>同一阻尼措施跨灾种迁移有边界</h3><p>阻尼改变动力响应，但不同灾种的频谱和作用机制仍要分别考虑。</p><p><a href="../interactive/core-learning.html?unit=C10U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C10U03&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C10U04 · 课前/课后迁移</p><h3>劣化速率比初始值更值得追问</h3><p>初始抗力相同，劣化速率不同会导致显著不同的长期余量。</p><p><a href="../interactive/core-learning.html?unit=C10U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C10U04&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C10U05 · 课前/课后迁移</p><h3>截面损失要通过模型映射到性能</h3><p>面积损失与惯性矩损失并不总是同一比例，损失位置也重要。</p><p><a href="../interactive/core-learning.html?unit=C10U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C10U05&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C10U06 · 课堂核心</p><h3>疲劳由循环与幅值共同累积</h3><p>教学幂律模型中应力幅增加会使单次循环损伤快速增大。</p><p><a href="../interactive/core-learning.html?unit=C10U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C10U06&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C10U07 · 课堂核心</p><h3>新证据改变参数判断</h3><p>相同先验下，测量结果改变后验均值；测量不确定性控制更新幅度。</p><p><a href="../interactive/core-learning.html?unit=C10U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C10U07&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C10U08 · 课前/课后迁移</p><h3>监测精度决定证据的权重</h3><p>观测噪声越大，后验越依赖先验，不能把所有数据当成同等可靠。</p><p><a href="../interactive/core-learning.html?unit=C10U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C10U08&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C10U09 · 课前/课后迁移</p><h3>比较方案同时展示不确定性</h3><p>平均性能相同的方案，离散程度不同会改变模型中的可靠性。</p><p><a href="../interactive/core-learning.html?unit=C10U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C10U09&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C10U10 · 课前/课后迁移</p><h3>扩散时间也受尺寸平方控制</h3><p>固定扩散系数下，到达相似无量纲状态的时间随特征深度平方增加。</p><p><a href="../interactive/core-learning.html?unit=C10U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C10U10&amp;view=video" target="_blank">观看短视频</a></p></article></div><p><a href="../core-thinking.html">返回全书核心思维与尺度规律</a> · <a href="../core-resources.html">查看110个教学单元总索引</a> · <a href="../interactive/thinking-analogies.html">打开跨课程并排类比</a></p></div>
 <!-- CORE-ROUTE END -->
@@ -169,6 +172,14 @@ $$
 桥墩塑性铰区的截面、轴压水平、箍筋约束、纵筋锚固和搭接位置决定变形能力。支座、盖梁、桩基和防落梁装置需与预期机制协调。只完成弹性内力比较不能代替延性和构造设计。
 
 #### 减隔震与位移控制
+
+
+<!-- PRIORITY-FIGURE F37 START -->
+![在本图明确指定的两组教学谱读数下，较长周期方案的等效力需求降低，但谱位移需求增大；隔震选择必须同时核查梁端位移、限位、管线和防落梁空间。图中的弹簧表示等效水平刚度。](../assets/publication/priority-40/F37.svg){#fig-priority-F37 width=100% fig-alt="把地震力降下来，还要为哪一种变化留空间？。在本图明确指定的两组教学谱读数下，较长周期方案的等效力需求降低，但谱位移需求增大；隔震选择必须同时核查梁端位移、限位、管线和防落梁空间。图中的弹簧表示等效水平刚度。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>m相同；使用指定Sa而非实际场地谱；线性谱等效示例，无滞回或多模态求解；惯性作用箭头仅表方向；应按实际绝对加速度取负向</p><p>课程组原创参数绘图 · F37 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F37.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F37.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F37 END -->
+
 
 隔震装置降低体系水平刚度并延长周期，耗能装置增加等效阻尼，两者可降低部分构件力需求，但通常增加位移。理想化单自由度模型的周期为
 
@@ -524,6 +535,14 @@ $$
 锈胀裂缝和保护层剥落可能先影响耐久、外观和使用性能，随后影响黏结与截面。其发展具有空间离散性。以单个测点的腐蚀率代替整联桥，需要给出测点代表区和不利分位数；以最不利点代替全构件则可能过度保守。合理方法是把构件分区并为每区建立状态分布。
 
 #### 钢构件腐蚀至截面性能
+
+
+<!-- PRIORITY-FIGURE F36 START -->
+![同宽矩形钢条上下表面减薄的几何比较：高度减少10%，面积减少10%，惯性矩减少27.1%，同边界同荷载下线弹性挠度增加约37.2%。防护列只是指定剩余厚度的比较，不是预报寿命。](../assets/publication/priority-40/F36.svg){#fig-priority-F36 width=100% fig-alt="少了十分之一厚度，梁就只软十分之一吗？。同宽矩形钢条上下表面减薄的几何比较：高度减少10%，面积减少10%，惯性矩减少27.1%，同边界同荷载下线弹性挠度增加约37.2%。防护列只是指定剩余厚度的比较，不是预报寿命。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>矩形截面，宽度与E保持不变；仅上下表面均匀损失，不模拟点蚀、疲劳或局部屈曲；维护列为假设状态，不表示涂层能恢复已损失钢材</p><p>课程组原创参数绘图 · F36 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F36.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F36.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F36 END -->
+
 
 <!-- FORMULA-SCAFFOLD ch10-lifecycle START -->
 ::: {.formula-scaffold}

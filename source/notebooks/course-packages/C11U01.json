@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "unit_id": "C11U01",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C11U01",
+    "chapter": 11,
+    "chapter_title": "建模、有限元与审计",
+    "title": "从问题选择模型，而不是反过来",
+    "model": "beam",
+    "preset": "load",
+    "insight": "梁模型可以解释整体弯曲，却不能自动回答局部锚固应力问题。",
+    "transfer": "需要局部应力时应增加哪一类模型信息？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C11U01.html",
+      "path": "interactive/lessons/C11U01.html"
+    },
+    "narration": [
+      "从问题选择模型，而不是反过来。先预测：改变均布线荷载 q，跨中挠度会怎样变化？",
+      "现在保持其他条件不变，只改变均布线荷载 q。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "梁模型可以解释整体弯曲，却不能自动回答局部锚固应力问题。",
+      "需要局部应力时应增加哪一类模型信息？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 5,
+      "max": 50,
+      "start": 20,
+      "end": 40,
+      "step": 0.01,
+      "label": "均布线荷载 q",
+      "unit": "kN/m",
+      "output": "跨中挠度",
+      "outunit": "mm",
+      "formula": "I=bh³/12；δ=5qL⁴/(384EI)；Mmax=qL²/8",
+      "boundary": "简支矩形梁，E=30 GPa，b=0.6 m；非控制量L=20 m、h=1.2 m、q=20 kN/m。未计自重变化。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C11U01.mp4",
+        "href": "../assets/videos/core/C11U01.mp4",
+        "bytes": 3291817
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C11U01.vtt",
+        "href": "../assets/videos/core/C11U01.vtt",
+        "bytes": 735
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C11U01.jpg",
+        "href": "../assets/videos/core/posters/C11U01.jpg",
+        "bytes": 152649
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C11U01.txt",
+        "href": "../notebooks/course-data/C11U01.txt",
+        "bytes": 496
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C11U01.json",
+        "href": "../notebooks/course-data/C11U01.json",
+        "bytes": 19767
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C11U01",
+      "title": "从问题选择模型，而不是反过来",
+      "chapter": 11,
+      "fingerprint": "be84e91391a7055eb68447ffd467393dbf591fce94c20f95ccf1a17276091c5d",
+      "duration": 47.333333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 133.1
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F14.png",
+        "href": "../assets/publication/priority-40/F14.png",
+        "bytes": 253479,
+        "id": "F14",
+        "title": "一块板能向两边传力，取成梁以后保留了什么？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F14.svg",
+          "href": "../assets/publication/priority-40/F14.svg",
+          "bytes": 32574
+        },
+        "caption": "俯视四边简支板与侧视两端简支板带分别展示保留的运动和支承。两图不宣称自动等价，也没有用未经计算的彩色云图表示应力。",
+        "assumptions": [
+          "纯几何及传力方向示意，无板有限元结果",
+          "方板和板带为教学几何；Pb分配与等效宽度必须另行确定"
+        ],
+        "mapping_note": "为什么选梁模型，要看希望保留哪种传力与变形。四边简支板与两端简支板带并不自动等价。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "843a8d861cbc66ba9691e8108958688d26eb9dc3d546096ed2e73bd8c9d3759e",
+          "png": "462a45a278e56ce373f97e124b465e6c138e686392391b5bd6bcbca660ceafef"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C11U01.json",
+      "render_sha256": "26e9cd3717a0128d61baf3438ff312ca36e92d6db3a6d62ac8a28b8b0b297d3b",
+      "render_copy_sha256": "26e9cd3717a0128d61baf3438ff312ca36e92d6db3a6d62ac8a28b8b0b297d3b"
+    },
+    "download_href": "../notebooks/course-packages/C11U01.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

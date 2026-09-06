@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "unit_id": "C04U10",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C04U10",
+    "chapter": 4,
+    "chapter_title": "梁桥的核心判断",
+    "title": "横梁刚性假定也有失效边界",
+    "model": "transverse",
+    "preset": "edge",
+    "insight": "偏心加大可能算出负反力，若支承不能抗拔，线性全接触模型失效。",
+    "transfer": "应该截断负数还是重新求接触状态？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C04U10.html",
+      "path": "interactive/lessons/C04U10.html"
+    },
+    "narration": [
+      "横梁刚性假定也有失效边界。先预测：改变横向偏心 e，右边梁荷载分配系数会怎样变化？",
+      "现在保持其他条件不变，只改变横向偏心 e。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "偏心加大可能算出负反力，若支承不能抗拔，线性全接触模型失效。",
+      "应该截断负数还是重新求接触状态？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": -1.8,
+      "max": 1.8,
+      "start": 0,
+      "end": 1.4,
+      "step": 0.01,
+      "label": "横向偏心 e",
+      "unit": "相邻梁间距",
+      "output": "右边梁荷载分配系数",
+      "outunit": "",
+      "formula": "Ri=ki(a+b yi)；ΣRi=1；ΣRi yi=e",
+      "boundary": "四片梁y=[−1.5,−0.5,0.5,1.5]；刚性横梁、共同位移与转角。负反力提示仅受压支承模型应重建。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C04U10.mp4",
+        "href": "../assets/videos/core/C04U10.mp4",
+        "bytes": 3156126
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C04U10.vtt",
+        "href": "../assets/videos/core/C04U10.vtt",
+        "bytes": 738
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C04U10.jpg",
+        "href": "../assets/videos/core/posters/C04U10.jpg",
+        "bytes": 137544
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C04U10.txt",
+        "href": "../notebooks/course-data/C04U10.txt",
+        "bytes": 499
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C04U10.json",
+        "href": "../notebooks/course-data/C04U10.json",
+        "bytes": 19345
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C04U10",
+      "title": "横梁刚性假定也有失效边界",
+      "chapter": 4,
+      "fingerprint": "18f538cb49142046e04a251408c2e606323e379ae0a9fe5b563ab26d652be2d3",
+      "duration": 47.366667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 131.9
+    },
+    "notebooks": [
+      {
+        "id": "A-transverse",
+        "title": "车靠边走，五根梁怎样重新分担？",
+        "unit_ids": [
+          "C04U05",
+          "C04U10",
+          "C02U01",
+          "C02U02",
+          "C02U03"
+        ],
+        "ipynb": "notebooks/A-transverse.ipynb",
+        "python": "notebooks/A-transverse.py",
+        "html": "notebooks/A-transverse.html",
+        "embed_cell": "fig-transverse",
+        "mapping_note": "五梁120 kN，与原核心四梁归一示例参数不同。",
+        "executed": true,
+        "code_cells": 6,
+        "error_count": 0,
+        "seconds": 5.92
+      }
+    ],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F17.png",
+        "href": "../assets/publication/priority-40/F17.png",
+        "bytes": 179877,
+        "id": "F17",
+        "title": "某根梁的活载增量为负，就已经离开支承了吗？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F17.svg",
+          "href": "../assets/publication/priority-40/F17.svg",
+          "bytes": 22662
+        },
+        "caption": "已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。",
+        "assumptions": [
+          "此Ri为横向分配模型的反力；真实支座接触须定义对应对象并求总状态",
+          "若总接触力不满足单向接触，需重建模型，不可直接将负值截零",
+          "不在图中声称该简化模型已验证真实支座安全"
+        ],
+        "mapping_note": "先区分活载增量与计入恒载的总反力，再判断实际支承接触。图的五梁数字不等于核心四梁归一输出。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "074783fd938e7e22e3ec8abaf897bdc1f5a44b09fe880e01c8f211174c28e3b7",
+          "png": "76eaae54c411c0c5e4140edc6e4d7b178f765daf94a79eb029237b90656b2c7f"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C04U10.json",
+      "render_sha256": "1be5f32e372642e28971337d3d56cc89dad1ba368a5883a04b71b7a3431e3a34",
+      "render_copy_sha256": "1be5f32e372642e28971337d3d56cc89dad1ba368a5883a04b71b7a3431e3a34"
+    },
+    "download_href": "../notebooks/course-packages/C04U10.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

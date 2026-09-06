@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "unit_id": "C10U08",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C10U08",
+    "chapter": 10,
+    "chapter_title": "时间、不确定性与决策",
+    "title": "监测精度决定证据的权重",
+    "model": "bayes",
+    "preset": "noise",
+    "insight": "观测噪声越大，后验越依赖先验，不能把所有数据当成同等可靠。",
+    "transfer": "多个同源传感器能否视作完全独立证据？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C10U08.html",
+      "path": "interactive/lessons/C10U08.html"
+    },
+    "narration": [
+      "监测精度决定证据的权重。先预测：改变测量标准差 σe，后验均值会怎样变化？",
+      "现在保持其他条件不变，只改变测量标准差 σe。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "观测噪声越大，后验越依赖先验，不能把所有数据当成同等可靠。",
+      "多个同源传感器能否视作完全独立证据？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 2,
+      "max": 30,
+      "start": 5,
+      "end": 20,
+      "step": 0.01,
+      "label": "测量标准差 σe",
+      "unit": "",
+      "output": "后验均值",
+      "outunit": "",
+      "formula": "μ后=(100/10²+y/σe²)/(1/10²+1/σe²)",
+      "boundary": "正态先验μ=100、σ=10；单次独立正态观测；非控制量y=120或σe=5。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C10U08.mp4",
+        "href": "../assets/videos/core/C10U08.mp4",
+        "bytes": 3177252
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C10U08.vtt",
+        "href": "../assets/videos/core/C10U08.vtt",
+        "bytes": 733
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C10U08.jpg",
+        "href": "../assets/videos/core/posters/C10U08.jpg",
+        "bytes": 138197
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C10U08.txt",
+        "href": "../notebooks/course-data/C10U08.txt",
+        "bytes": 494
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C10U08.json",
+        "href": "../notebooks/course-data/C10U08.json",
+        "bytes": 17278
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C10U08",
+      "title": "监测精度决定证据的权重",
+      "chapter": 10,
+      "fingerprint": "be9f09d6ac87f137001fe4f5202aad34630bd43b7a9880e479e8a18a9298bfd9",
+      "duration": 46.033333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 128.9
+    },
+    "notebooks": [],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C10U08.json",
+      "render_sha256": "285de1700a2b19cbce995bcd155709413f2d4f47dba48fd3e1f7cf2dcdea3469",
+      "render_copy_sha256": "285de1700a2b19cbce995bcd155709413f2d4f47dba48fd3e1f7cf2dcdea3469"
+    },
+    "download_href": "../notebooks/course-packages/C10U08.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

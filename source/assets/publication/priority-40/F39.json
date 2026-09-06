@@ -1,0 +1,68 @@
+{
+  "id": "F39",
+  "title": "网格越来越细，为什么答案仍可能错？",
+  "chapter": 11,
+  "heading": "第三层：网格与目标响应",
+  "caption": "以真实三次Hermite梁单元计算同一均布荷载：两端固支的错误边界也随网格加密收敛，但收敛值不等于任务要求的简支梁答案。",
+  "assumptions": [
+    "简支梁任务，两端固支为故障对照",
+    "均布q，常EI，忽略剪切变形",
+    "目标位移取x=0.37L并按形函数恢复"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F39.svg",
+  "png": "assets/publication/priority-40/F39.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "所有网格竖向反力和=qL",
+    "自由DOF残差小于1e-4 N",
+    "32单元与各自解析值差<1e-5 mm"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch10-fem.qmd",
+  "heading_line": 1283,
+  "calculation_data": {
+    "N": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "ss_mm": [
+      9.141176470588238,
+      11.181254901960784,
+      11.262441176470608,
+      11.271970588235234,
+      11.271981464458907,
+      11.27198403032983
+    ],
+    "wrong_fixed_mm": [
+      0.0,
+      2.0400784313725486,
+      2.121264705882353,
+      2.1307941176470426,
+      2.1308049938725837,
+      2.1308075597411706
+    ],
+    "ss_exact_mm": 11.271984705882355,
+    "fixed_exact_mm": 2.1308082352941176,
+    "target_x_m": 7.4
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：任务与错误边界、收敛曲线、解析基准与单位均可读。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "a4e2a533325989a81cb59074adb6724f0796366146d00e9769f84042a7d5055f",
+    "png": "7c010d7b1611f56340653d91443f4f200ade4e782e2a115043b4a23ebbd74703"
+  }
+}

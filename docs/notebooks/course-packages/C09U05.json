@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C09U05",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C09U05",
+    "chapter": 9,
+    "chapter_title": "风与动力：无量纲判断",
+    "title": "共振用频率比辨认",
+    "model": "dynamic",
+    "preset": "frequency",
+    "insight": "响应峰值靠近频比为一的位置，位置和高度还受阻尼影响。",
+    "transfer": "激励频率固定时如何通过改变体系避开峰值？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C09U05.html",
+      "path": "interactive/lessons/C09U05.html"
+    },
+    "narration": [
+      "共振用频率比辨认。先预测：改变激励频率/固有频率 r，稳态动力放大系数会怎样变化？",
+      "现在保持其他条件不变，只改变激励频率/固有频率 r。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "响应峰值靠近频比为一的位置，位置和高度还受阻尼影响。",
+      "激励频率固定时如何通过改变体系避开峰值？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0,
+      "max": 2,
+      "start": 0.3,
+      "end": 1.2,
+      "step": 0.01,
+      "label": "激励频率/固有频率 r",
+      "unit": "",
+      "output": "稳态动力放大系数",
+      "outunit": "",
+      "formula": "D=1/√[(1−r²)²+(2ζr)²]",
+      "boundary": "单自由度线性简谐稳态力激励；非控制量r=0.98或ζ=0.03；不是地震反应谱。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C09U05.mp4",
+        "href": "../assets/videos/core/C09U05.mp4",
+        "bytes": 3198157
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C09U05.vtt",
+        "href": "../assets/videos/core/C09U05.vtt",
+        "bytes": 749
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C09U05.jpg",
+        "href": "../assets/videos/core/posters/C09U05.jpg",
+        "bytes": 133950
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C09U05.txt",
+        "href": "../notebooks/course-data/C09U05.txt",
+        "bytes": 510
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C09U05.json",
+        "href": "../notebooks/course-data/C09U05.json",
+        "bytes": 17740
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C09U05",
+      "title": "共振用频率比辨认",
+      "chapter": 9,
+      "fingerprint": "274dee665068f8217e8a138c1d468c07df0d0dd6e9fd3914ef7b1c83d3f81048",
+      "duration": 46.966667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 136.2
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F34.png",
+        "href": "../assets/publication/priority-40/F34.png",
+        "bytes": 212870,
+        "id": "F34",
+        "title": "同样大小的周期力，为什么能激起更大的振动？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F34.svg",
+          "href": "../assets/publication/priority-40/F34.svg",
+          "bytes": 27403
+        },
+        "caption": "单自由度简谐稳态响应随频率比与阻尼改变。阻尼比0.02、0.05、0.10在r=1时的位移放大系数分别为25、10、5；该模型不直接描述桥梁颤振。",
+        "assumptions": [
+          "线性单自由度，简谐力恒幅",
+          "已达稳态，不是启动瞬态",
+          "ζ>0；忽略非线性"
+        ],
+        "mapping_note": "单自由度稳态频响随频率比变化，响应峰值还受阻尼影响。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "b232494b7d7eae9128fa96c98f2886d5c45f5790f760d5aff7b60113e801b3f4",
+          "png": "6a9f001199eec372fca5f079d040994425f9c0a0e86496745cc6db138bfe3226"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C09U05.json",
+      "render_sha256": "8d6b740ff84691d69bae92196d04ca2270bd31b920f2e71622a971361da7403d",
+      "render_copy_sha256": "8d6b740ff84691d69bae92196d04ca2270bd31b920f2e71622a971361da7403d"
+    },
+    "download_href": "../notebooks/course-packages/C09U05.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

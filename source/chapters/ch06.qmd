@@ -5,6 +5,9 @@
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry"><p>先从一个看得见的问题开始</p><h3>把缆索拉得更平，桥两端要多用多少力？</h3><p>减小垂跨比，比较水平分力和支点索力。</p><a href="../interactive/learning-map.html?chapter=ch06">看图进入实验 →</a></div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery"><summary>从本章的 3 幅新图开始</summary><div class="priority-thumb-grid"><a href="#fig-priority-F27"><img src="../assets/publication/priority-40/F27.svg" loading="lazy" alt="悬索桥的重量，最后交给了谁？"><span>悬索桥的重量，最后交给了谁？</span></a><a href="#fig-priority-F28"><img src="../assets/publication/priority-40/F28.svg" loading="lazy" alt="缆索垂得更深，锚碇要拉住的力会变多少？"><span>缆索垂得更深，锚碇要拉住的力会变多少？</span></a><a href="#fig-priority-F29"><img src="../assets/publication/priority-40/F29.svg" loading="lazy" alt="一根绳拉紧以后，为什么更难横向拨动？"><span>一根绳拉紧以后，为什么更难横向拨动？</span></a></div></details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 
 <h2>本章的核心思考</h2><p class="core-thesis">找形不是画一条曲线，而是求一组平衡条件。</p><ol><li>区分沿水平投影均布荷载与沿索长自重。</li><li>同时比较垂度、张力和锚碇需求。</li><li>把地基、锚碇和主缆放回同一柔度链。</li></ol><div class="core-analogy"><h3>跨课程类比</h3><p>拱与索的对应平衡形 → 拉压体系比较；弹簧串联 → 体系柔度</p><p><strong>反例与边界：</strong>拱和索的力符号、稳定问题、施工状态不同；主缆受拉不意味着加劲梁无需弯曲验算。</p></div><p>建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。</p><div class="core-unit-grid"><article><p class="core-tag">C07U01 · 课堂核心</p><h3>索形由荷载与边界共同决定</h3><p>指定荷载模型和端点后，索的垂度与水平分力相互联系。</p><p><a href="../interactive/core-learning.html?unit=C07U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C07U01&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C07U02 · 课堂核心</p><h3>小垂度不是免费减小位移</h3><p>减小垂度会提高水平分力，锚碇和索的需求随之增加。</p><p><a href="../interactive/core-learning.html?unit=C07U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C07U02&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C07U03 · 课前/课后迁移</p><h3>主缆张力与截面应力分开看</h3><p>荷载增加会提高索力，截面应力还要除以有效面积。</p><p><a href="../interactive/core-learning.html?unit=C07U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C07U03&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C07U04 · 课前/课后迁移</p><h3>缆索与拱的类比保留了什么</h3><p>拱和索可以共用平衡几何的思路，但受压构件还必须检查稳定。</p><p><a href="../interactive/core-learning.html?unit=C07U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C07U04&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C07U05 · 课前/课后迁移</p><h3>吊索传力不等于加劲梁不受弯</h3><p>加劲梁仍承担荷载不均匀引起的弯曲，不能用主缆受拉替代梁的计算。</p><p><a href="../interactive/core-learning.html?unit=C07U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C07U05&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C07U06 · 课前/课后迁移</p><h3>几何放大后，频率下降</h3><p>几何、材料和质量分布相似时，梁型体系的频率随尺度倒数变化。</p><p><a href="../interactive/core-learning.html?unit=C07U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C07U06&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C07U07 · 课前/课后迁移</p><h3>锚碇是水平力的终点</h3><p>在给定垂度的柔索模型中，均布荷载增大会增加水平分力，力流必须闭合到锚碇和基础。</p><p><a href="../interactive/core-learning.html?unit=C07U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C07U07&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C07U08 · 课堂核心</p><h3>支承柔度参与体系刚度</h3><p>串联系统由较柔的环节控制整体位移，局部加硬可能收益有限。</p><p><a href="../interactive/core-learning.html?unit=C07U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C07U08&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C07U09 · 课前/课后迁移</p><h3>周期荷载不只是更大的静载</h3><p>接近固有频率时，稳态动力响应受频比和阻尼共同控制。</p><p><a href="../interactive/core-learning.html?unit=C07U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C07U09&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C07U10 · 课前/课后迁移</p><h3>用拱轴反例理解找形与使用状态</h3><p>这里用固定合理拱轴承受非对称荷载作类比：一种荷载下的平衡形状，不能代替另一荷载下的状态。</p><p><a href="../interactive/core-learning.html?unit=C07U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C07U10&amp;view=video" target="_blank">观看短视频</a></p></article></div><p><a href="../core-thinking.html">返回全书核心思维与尺度规律</a> · <a href="../core-resources.html">查看110个教学单元总索引</a> · <a href="../interactive/thinking-analogies.html">打开跨课程并排类比</a></p></div>
 <!-- CORE-ROUTE END -->
@@ -19,6 +22,14 @@
 <div class="chapter-video-strip"><figure class="chapter-video-card"><video controls preload="metadata" playsinline poster="../assets/videos/manim/posters/M10_suspension_sag.png" src="../assets/videos/manim/M10_suspension_sag.mp4"></video><figcaption>M10　悬索线型、矢跨比与水平分力</figcaption></figure></div>
 
 ## 组成、体系与荷载路径
+
+
+<!-- PRIORITY-FIGURE F27 START -->
+![地锚式悬索桥中，桥面经加劲梁、吊索和主缆传力，索塔与锚碇共同承担主缆传来的作用。自锚式的主缆水平分力路径不同，不能套用本图。](../assets/publication/priority-40/F27.svg){#fig-priority-F27 width=100% fig-alt="悬索桥的重量，最后交给了谁？。地锚式悬索桥中，桥面经加劲梁、吊索和主缆传力，索塔与锚碇共同承担主缆传来的作用。自锚式的主缆水平分力路径不同，不能套用本图。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>地锚式；构件和受力方向示意，非数值分析；索塔、锚碇和基础均须另行设计</p><p>课程组原创参数绘图 · F27 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F27.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F27.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F27 END -->
+
 
 
 
@@ -91,6 +102,14 @@ $$H=\frac{qL^2}{8f}.$$
 ### 主缆的基本平衡
 
 #### 抛物线近似
+
+
+<!-- PRIORITY-FIGURE F28 START -->
+![在水平投影均布荷载的理想索模型中，垂度由40 m增至80 m，水平分力H从50 MN减至25 MN，竖向分力仍各20 MN。H是水平分量，不是支点索力总值。](../assets/publication/priority-40/F28.svg){#fig-priority-F28 width=100% fig-alt="缆索垂得更深，锚碇要拉住的力会变多少？。在水平投影均布荷载的理想索模型中，垂度由40 m增至80 m，水平分力H从50 MN减至25 MN，竖向分力仍各20 MN。H是水平分量，不是支点索力总值。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>抛物线索，等高支点；不含弹性伸长和索自重沿索长差异；图示纵横比不供量图</p><p>课程组原创参数绘图 · F28 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F28.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F28.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F28 END -->
+
 
 在主跨水平投影跨度为 $L$、垂度为 $f$，且竖向荷载 $q$ 沿水平投影均匀分布的条件下，主缆近似抛物线。取跨中为坐标原点，缆线可写成
 
@@ -598,6 +617,14 @@ $$
 若把$H_g$误设为零，加劲梁将独自承担活载，往往夸大弯矩和位移；若把主缆视为固定不动的连续支点，又会低估体系变形。挠度理论的关键不是背记一个通解，而是识别三个共同量：主缆初始拉力、加劲梁弯曲刚度和索长相容。数字实验应允许逐项关闭这些机制，并用结果差异说明每项假定的后果。
 
 #### 几何刚度和切线响应
+
+
+<!-- PRIORITY-FIGURE F29 START -->
+![同长、同一小横向荷载下，提高初张力会提高拉直绳的横向切线刚度，线性扰动位移近似反比于初张力。图示变形放大20倍，斜拉方向只作示意。](../assets/publication/priority-40/F29.svg){#fig-priority-F29 width=100% fig-alt="一根绳拉紧以后，为什么更难横向拨动？。同长、同一小横向荷载下，提高初张力会提高拉直绳的横向切线刚度，线性扰动位移近似反比于初张力。图示变形放大20倍，斜拉方向只作示意。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>只适用于初始拉直且有恒定预张力的绳；小斜率、忽略荷载引起的张力增量；没有将直绳结果当作全桥初应力有限元结果</p><p>课程组原创参数绘图 · F29 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F29.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F29.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F29 END -->
+
 
 在离散模型中，恒载平衡状态的切线刚度可写为
 

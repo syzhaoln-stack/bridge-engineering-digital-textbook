@@ -131,6 +131,7 @@ window.Quarto = {
 };
 </script>
 <link href="../styles.css" rel="stylesheet"/>
+<link href="../visual-update.css" rel="stylesheet"/>
 
 <link href="../interactive/core-reading.css" rel="stylesheet"/>
 <style>.reference-image-note{display:block;padding:18px;background:#f4f6f7;color:#536575;font:14px/1.8 sans-serif;border-left:3px solid #9badb9}.public-edition-note{margin-top:3em;font-size:.85em}</style></head>
@@ -321,6 +322,12 @@ window.Quarto = {
 </li>
 <li class="sidebar-item">
 <div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="../visual-update.html">
+<span class="menu-text">看图、听一段，再动手</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../resources.html">
 <span class="menu-text">数字资源索引</span></a>
 </div>
@@ -386,6 +393,16 @@ window.Quarto = {
 <a href="../interactive/learning-map.html?chapter=ch10-fem">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery">
+<summary>
+从本章的 3 幅新图开始
+</summary>
+<div class="priority-thumb-grid">
+<a href="#fig-priority-F38"><img alt="电脑里的一个节点，对应桥上的什么位置？" loading="lazy" src="../assets/publication/priority-40/F38.svg"/><span>电脑里的一个节点，对应桥上的什么位置？</span></a><a href="#fig-priority-F39"><img alt="网格越来越细，为什么答案仍可能错？" loading="lazy" src="../assets/publication/priority-40/F39.svg"/><span>网格越来越细，为什么答案仍可能错？</span></a><a href="#fig-priority-F40"><img alt="AI给了一个数，怎样知道它算的是你的问题？" loading="lazy" src="../assets/publication/priority-40/F40.svg"/><span>AI给了一个数，怎样知道它算的是你的问题？</span></a>
+</div>
+</details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 <h2 class="anchored">
 本章的核心思考
 </h2>
@@ -728,6 +745,29 @@ M15　有限元模型层级与可验证性
 <p>有限元并不是与结构力学相互割裂的另一套计算方法。对由杆件组成的桥梁，位移法、矩阵位移法与有限元具有相同的基本骨架：选择能够描述结构运动的自由度，建立单元端力与端位移关系，将构件在共同节点处组装，施加边界与作用，求得节点位移，再由位移恢复构件内力。有限元把这一过程推广到板、壳、实体和其他连续体，并用插值函数近似单元内部的位移场。因此，学生掌握矩阵法，不只是为了完成一个数值算例，也是为了能够解释专业软件中节点、单元、局部坐标、总体组装和结果恢复的含义。</p>
 <section class="level4" data-number="11.3.0.1" id="自由度局部坐标与单元关系">
 <h4 class="anchored" data-anchor-id="自由度局部坐标与单元关系" data-number="11.3.0.1"><span class="header-section-number">11.3.0.1</span> 自由度、局部坐标与单元关系</h4>
+<!-- PRIORITY-FIGURE F38 START -->
+<div alt="电脑里的一个节点，对应桥上的什么位置？。同一20 m简支梁从构件轴线到四个梁单元、五个节点的映射；跨中集中力施加在节点3。节点既有位置也携带自由度，单元连接节点并使用材料与截面刚度。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F38">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F38-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="电脑里的一个节点，对应桥上的什么位置？。同一20 m简支梁从构件轴线到四个梁单元、五个节点的映射；跨中集中力施加在节点3。节点既有位置也携带自由度，单元连接节点并使用材料与截面刚度。" class="img-fluid figure-img" src="../assets/publication/priority-40/F38.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F38-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 11.1: 同一20 m简支梁从构件轴线到四个梁单元、五个节点的映射；跨中集中力施加在节点3。节点既有位置也携带自由度，单元连接节点并使用材料与截面刚度。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+平面梁离散示意，不含求解结果；支座与荷载位置由同一几何生成；θy仅作转动自由度图示，正负随坐标统一
+</p>
+<p>
+课程组原创参数绘图 · F38 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F38.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F38.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F38 END -->
 <p>以平面梁单元为例，节点<span class="math inline">\(i\)</span>和<span class="math inline">\(j\)</span>各具有轴向位移<span class="math inline">\(u_x\)</span>、竖向位移<span class="math inline">\(u_z\)</span>和绕<span class="math inline">\(y\)</span>轴转角<span class="math inline">\(\theta_y\)</span>，局部自由度向量为</p>
 <p><span class="math display">\[
 \boldsymbol d_e=
@@ -1447,7 +1487,7 @@ g_n\ge0,\qquad p_n\ge0,\qquad g_np_n=0,
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/loadmap.svg" style="width:88.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch11-load-mapping-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 11.1: 均布荷载向梁单元一致节点力映射的静态基准图
+图 11.2: 均布荷载向梁单元一致节点力映射的静态基准图
 </figcaption>
 </figure>
 </div>
@@ -1927,17 +1967,40 @@ m\ddot u+c\dot u+ku=p(t),
 </section>
 <section class="level4" data-number="11.6.0.3" id="第三层网格与目标响应">
 <h4 class="anchored" data-anchor-id="第三层网格与目标响应" data-number="11.6.0.3"><span class="header-section-number">11.6.0.3</span> 第三层：网格与目标响应</h4>
+<!-- PRIORITY-FIGURE F39 START -->
+<div alt="网格越来越细，为什么答案仍可能错？。以真实三次Hermite梁单元计算同一均布荷载：两端固支的错误边界也随网格加密收敛，但收敛值不等于任务要求的简支梁答案。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F39">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F39-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="网格越来越细，为什么答案仍可能错？。以真实三次Hermite梁单元计算同一均布荷载：两端固支的错误边界也随网格加密收敛，但收敛值不等于任务要求的简支梁答案。" class="img-fluid figure-img" src="../assets/publication/priority-40/F39.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F39-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 11.3: 以真实三次Hermite梁单元计算同一均布荷载：两端固支的错误边界也随网格加密收敛，但收敛值不等于任务要求的简支梁答案。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+简支梁任务，两端固支为故障对照；均布q，常EI，忽略剪切变形；目标位移取x=0.37L并按形函数恢复
+</p>
+<p>
+课程组原创参数绘图 · F39 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F39.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F39.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F39 END -->
 <p>网格收敛必须针对用于结论的响应。整体位移收敛不代表孔边应力、支座反力或屈曲特征值已收敛。设网格尺度为 <span class="math inline">\(h_j\)</span>，目标响应为 <span class="math inline">\(r_j\)</span>，可比较</p>
 <p><span class="math display">\[\varepsilon_j=\frac{|r_j-r_{j-1}|}{|r_j|}.\]</span></p>
 <p>容许差异由问题和设计阶段确定。收敛到错误边界或错误本构的解仍然错误，所以网格检查不能替代物理验证。</p>
-<p>简支梁目标响应随网格加密的收敛过程见 <a class="quarto-xref" href="#fig-ch10-mesh">图 <span>11.2</span></a>。</p>
+<p>简支梁目标响应随网格加密的收敛过程见 <a class="quarto-xref" href="#fig-ch10-mesh">图 <span>11.4</span></a>。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch10-mesh">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch10-mesh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch10/06-simply-supported-beam-mesh-convergence.svg" style="width:84.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch10-mesh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 11.2: 简支梁网格收敛教学图
+图 11.4: 简支梁网格收敛教学图
 </figcaption>
 </figure>
 </div>
@@ -2394,6 +2457,29 @@ J(\boldsymbol p)=
 <h2 class="anchored" data-anchor-id="ai技能程序审计与人工责任" data-number="11.9"><span class="header-section-number">11.9</span> AI技能、程序审计与人工责任</h2>
 <section class="level3" data-number="11.9.1" id="ai-check-case">
 <h3 class="anchored" data-anchor-id="ai-check-case" data-number="11.9.1"><span class="header-section-number">11.9.1</span> AI交来一份计算，先检查什么？</h3>
+<!-- PRIORITY-FIGURE F40 START -->
+<div alt="AI给了一个数，怎样知道它算的是你的问题？。同一等效梁任务的正确模型、弹性模量单位错误、两端固支边界错误对照。单位错的5882 mm只是超出小变形适用域的线性公式形式值，不能采纳；反力平衡也不能单独识别错误边界。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F40">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F40-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="AI给了一个数，怎样知道它算的是你的问题？。同一等效梁任务的正确模型、弹性模量单位错误、两端固支边界错误对照。单位错的5882 mm只是超出小变形适用域的线性公式形式值，不能采纳；反力平衡也不能单独识别错误边界。" class="img-fluid figure-img" src="../assets/publication/priority-40/F40.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F40-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 11.5: 同一等效梁任务的正确模型、弹性模量单位错误、两端固支边界错误对照。单位错的5882 mm只是超出小变形适用域的线性公式形式值，不能采纳；反力平衡也不能单独识别错误边界。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+单根等效梁，暂不计自重；正确基准为线弹性小变形简支梁；单位故障仅为诊断；不把越域大位移当作物理预测
+</p>
+<p>
+课程组原创参数绘图 · F40 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F40.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F40.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F40 END -->
 <p>假设你请AI协助编写一段梁的计算程序。它很快给出模型、变形图和数字。现在要决定：这份计算是否完成了你交给它的任务？本节先用一个能手算复核的小例，再把方法接到桥梁建模与设计中。</p>
 <p><strong>已有知识：</strong>简支梁的支反力、跨中位移和单位换算。<strong>本节要做到：</strong>能够区分“程序解出了方程”和“模型忠实表达了任务”，并用一个独立结果解释判断。</p>
 <p><a href="../interactive/ai-design-lab.html"><strong>选一份草稿，核对任务与计算</strong></a></p>
@@ -3569,7 +3655,7 @@ r(d_{s0}-\Delta d_s)}
 <td>保留可控建模偏差和闭式解对照</td>
 </tr>
 <tr class="even">
-<td><a class="quarto-xref" href="#fig-ch10-mesh">图 <span>11.2</span></a></td>
+<td><a class="quarto-xref" href="#fig-ch10-mesh">图 <span>11.4</span></a></td>
 <td>网格收敛</td>
 <td>课程组脚本与CSV</td>
 <td>标明目标响应和误差定义</td>
@@ -3769,7 +3855,7 @@ r(d_{s0}-\Delta d_s)}
 
 <script>
 (()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);route.addEventListener('click',event=>{const link=event.target.closest('.priority-chapter-gallery a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;set('reference');requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));});const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
 
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

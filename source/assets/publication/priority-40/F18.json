@@ -1,0 +1,116 @@
+{
+  "id": "F18",
+  "title": "把两跨接成一根梁，弯矩和下沉会怎样改变？",
+  "chapter": 4,
+  "heading": "连续梁",
+  "caption": "统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。",
+  "assumptions": [
+    "两跨等跨、EI恒定、两跨全布均载；不是任意车辆位置的包络",
+    "中支点不沉降；不计收缩徐变、温度或预应力",
+    "解析式第一跨w=q(L³x−3Lx³+2x⁴)/(48EI)，第二跨镜像"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F18.svg",
+  "png": "assets/publication/priority-40/F18.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    {
+      "name": "simple midspan M",
+      "value": 180.0,
+      "expected": 180.0,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "continuous interior M",
+      "value": -180.0,
+      "expected": -180.0,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "continuous positive M maximum",
+      "value": 101.25,
+      "expected": 101.25,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "simple max deflection",
+      "value": 4.5,
+      "expected": 4.5,
+      "tolerance": 1e-08,
+      "unit": "mm",
+      "passed": true
+    },
+    {
+      "name": "continuous endpoint deflection",
+      "value": 0.0,
+      "expected": 0.0,
+      "tolerance": 1e-12,
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "continuous middle slope",
+      "value": 0.0,
+      "expected": 0.0,
+      "tolerance": 1e-12,
+      "unit": "",
+      "passed": true
+    },
+    {
+      "name": "reaction sum",
+      "value": 240.0,
+      "expected": 240.0,
+      "tolerance": 1e-08,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大并复看：独立梁中间两个支承已分开，负弯矩标签避开支承，实际解析位移同一显示比例；去掉不准确的100倍放大声明。已看灰度。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch03.qmd",
+  "heading_line": 57,
+  "figure_kind": "calculated",
+  "technical_review": "formula_assertions_passed",
+  "visual_review_notes": "逐张放大并复看：独立梁中间两个支承已分开，负弯矩标签避开支承，实际解析位移同一显示比例；去掉不准确的100倍放大声明。已看灰度。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "8a8b75c49e6a2563c98ec897590dda0c893f704335c00325bcce04ee69ec49f0",
+    "png": "a984e58c0886261ae85b3cce9b627344519d3c618787f9c62423c1d32b753453"
+  },
+  "calculation_data": {
+    "span_L_m": 12,
+    "q_kN_per_m": 10,
+    "EI_kNm2": 600000,
+    "simple_Mmax_kNm": 180,
+    "continuous_interior_M_kNm": -180,
+    "continuous_Mpositive_max_kNm": 101.25,
+    "simple_wmax_mm": 4.5,
+    "continuous_wmax_mm": 1.871811626974409,
+    "display_note": "common enlarged plotting scale, not stated as a numerical physical magnification"
+  },
+  "diagram_kind": "analytical_teaching_example",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

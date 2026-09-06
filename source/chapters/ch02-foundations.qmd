@@ -5,6 +5,9 @@
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry"><p>先从一个看得见的问题开始</p><h3>同样用力，压在中间和压在边上有什么不同？</h3><p>在截面图上移动压力作用点，比较四个角点的应力。</p><a href="../interactive/learning-map.html?chapter=ch02-foundations">看图进入实验 →</a></div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery"><summary>从本章的 5 幅新图开始</summary><div class="priority-thumb-grid"><a href="#fig-priority-F04"><img src="../assets/publication/priority-40/F04.svg" loading="lazy" alt="同一个偏心压力，为什么一边压得更多？"><span>同一个偏心压力，为什么一边压得更多？</span></a><a href="#fig-priority-F05"><img src="../assets/publication/priority-40/F05.svg" loading="lazy" alt="压力移到哪里，截面边缘才开始出现拉应力？"><span>压力移到哪里，截面边缘才开始出现拉应力？</span></a><a href="#fig-priority-F06"><img src="../assets/publication/priority-40/F06.svg" loading="lazy" alt="同一块板竖着放、横着放，为什么弯起来不一样？"><span>同一块板竖着放、横着放，为什么弯起来不一样？</span></a><a href="#fig-priority-F07"><img src="../assets/publication/priority-40/F07.svg" loading="lazy" alt="同样长的压杆，端部能不能转动有多大影响？"><span>同样长的压杆，端部能不能转动有多大影响？</span></a><a href="#fig-priority-F08"><img src="../assets/publication/priority-40/F08.svg" loading="lazy" alt="普通钢筋和预应力，分别在什么时候开始起作用？"><span>普通钢筋和预应力，分别在什么时候开始起作用？</span></a></div></details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 
 <h2>本章的核心思考</h2><p class="core-thesis">用已学力学解释桥梁，不重新堆一套名词。</p><ol><li>把偏心力写成轴力与弯矩，重画应力分布。</li><li>区分核心条件、开裂与大/小偏心破坏。</li><li>用预应力、温度与稳定的反例检验线性叠加边界。</li></ol><div class="core-analogy"><h3>跨课程类比</h3><p>材料力学 N/A±M/W → 拱肋、主梁与基础的偏心效应</p><p><strong>反例与边界：</strong>平均受压不等于处处受压；处处受压也不等于稳定满足。</p></div><p>建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。</p><div class="core-unit-grid"><article><p class="core-tag">C02U01 · 课堂核心</p><h3>偏心荷载等价为轴力加弯矩</h3><p>平均压力与线性弯曲应力叠加，合力位置决定两边应力差。</p><p><a href="../interactive/core-learning.html?unit=C02U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C02U01&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C02U02 · 课堂核心</p><h3>截面核心是怎样出现的</h3><p>矩形截面偏心达到高度六分之一时，一侧边缘应力恰好为零。</p><p><a href="../interactive/core-learning.html?unit=C02U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C02U02&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C02U03 · 课前/课后迁移</p><h3>核心条件不等于大、小偏心分界</h3><p>越出核心仅说明未开裂线弹性计算出现拉应力，不能直接判定钢筋混凝土破坏类型。</p><p><a href="../interactive/core-learning.html?unit=C02U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C02U03&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C02U04 · 课前/课后迁移</p><h3>固定外包尺寸，比较空心截面效率</h3><p>把材料移离中性轴可以提高单位面积惯性矩，但薄壁局部问题需要另查。</p><p><a href="../interactive/core-learning.html?unit=C02U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C02U04&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C02U05 · 课前/课后迁移</p><h3>截面加高为什么比加宽敏感</h3><p>矩形惯性矩随高度三次方变化，随宽度一次变化。</p><p><a href="../interactive/core-learning.html?unit=C02U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C02U05&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C02U06 · 课前/课后迁移</p><h3>稳定是平衡路径问题</h3><p>有效长度加倍，欧拉临界力降为四分之一；强度够不等于稳定够。</p><p><a href="../interactive/core-learning.html?unit=C02U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C02U06&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C02U07 · 课堂核心</p><h3>预应力先改变初始状态</h3><p>预压力和偏心矩可抵消使用荷载的拉应力，也可能使另一侧出现新的控制条件。</p><p><a href="../interactive/core-learning.html?unit=C02U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C02U07&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C02U08 · 课前/课后迁移</p><h3>热胀受阻才产生温度内力</h3><p>自由热应变可以存在而不产生应力，约束程度决定转化出的内力。</p><p><a href="../interactive/core-learning.html?unit=C02U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C02U08&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C02U09 · 课前/课后迁移</p><h3>质量、刚度与频率不是单独变化</h3><p>刚度一定时，质量增加使频率按质量平方根的倒数下降。</p><p><a href="../interactive/core-learning.html?unit=C02U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C02U09&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C02U10 · 课前/课后迁移</p><h3>线性叠加的边界在哪里</h3><p>线弹性未开裂条件下可叠加轴力与弯矩；开裂、脱空或大变形后必须重建关系。</p><p><a href="../interactive/core-learning.html?unit=C02U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C02U10&amp;view=video" target="_blank">观看短视频</a></p></article></div><p><a href="../core-thinking.html">返回全书核心思维与尺度规律</a> · <a href="../core-resources.html">查看110个教学单元总索引</a> · <a href="../interactive/thinking-analogies.html">打开跨课程并排类比</a></p></div>
 <!-- CORE-ROUTE END -->
@@ -222,6 +225,24 @@ $$
 
 #### 轴力、偏心与截面核心
 
+
+
+
+
+<!-- PRIORITY-FIGURE F04 START -->
+![把同一偏心压力分为中心压力和等效弯矩。三幅应力箭头使用同一比例；正值为压应力，负值为拉应力。](../assets/publication/priority-40/F04.svg){#fig-priority-F04 width=100% fig-alt="同一个偏心压力，为什么一边压得更多？。把同一偏心压力分为中心压力和等效弯矩。三幅应力箭头使用同一比例；正值为压应力，负值为拉应力。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>教学参数；不计开裂与材料非线性；应力图为截面计算，不是极限承载力验算</p><p>课程组原创参数绘图 · F04 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F04.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F04.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F04 END -->
+
+
+<!-- PRIORITY-FIGURE F05 START -->
+![移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。](../assets/publication/priority-40/F05.svg){#fig-priority-F05 width=100% fig-alt="压力移到哪里，截面边缘才开始出现拉应力？。移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>只讨论单向偏心，双向偏心核心为菱形；出现拉区后若材料开裂，不再沿用完整弹性应力图作为实际状态</p><p>课程组原创参数绘图 · F05 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F05.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F05.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F05 END -->
+
+
 轴向力与弯矩共同作用，是拱肋、桥墩、索塔和预应力梁截面分析的共同入口。为便于判读，本小节以压应力和压力$N_c$为正，取$y,z$为截面主轴；并规定正$M_z$使$+y$侧压应力增加，正$M_y$使$+z$侧压应力增加。在线弹性、均质、完整截面和平截面假定下，双向偏心受压的应力为
 
 $$
@@ -318,6 +339,14 @@ $$
 梁式桥主梁、斜拉桥主梁、悬索桥加劲梁以及拱桥桥面梁均需通过截面配置形成所需弯曲刚度和抗力。截面形状的作用不只是“增加面积”，而是把材料布置到对目标内力更有效的位置，同时满足剪切、扭转、局部稳定、预应力布置、施工和维护要求。
 
 #### 形心、截面二次矩与截面模量
+
+
+<!-- PRIORITY-FIGURE F06 START -->
+![明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。](../assets/publication/priority-40/F06.svg){#fig-priority-F06 width=100% fig-alt="同一块板竖着放、横着放，为什么弯起来不一样？。明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>均质线弹性；关于相同方向的形心轴；不据此判定整体最优；还需考虑侧向稳定、剪切和构造</p><p>课程组原创参数绘图 · F06 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F06.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F06.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F06 END -->
+
 
 对于由若干简单区域组成的同一种材料截面，其形心坐标为
 
@@ -2038,6 +2067,14 @@ $Q_j$可以是力或力矩，$q_j$相应为位移或转角。令多个单位广�
 
 #### 第一级：理想临界值与数量级
 
+
+<!-- PRIORITY-FIGURE F07 START -->
+![实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。](../assets/publication/priority-40/F07.svg){#fig-priority-F07 width=100% fig-alt="同样长的压杆，端部能不能转动有多大影响？。实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>三种理想边界：不计局部屈曲、初始缺陷和屈服；真实塔柱/拱肋和弹性连接不应仅按外观选择K</p><p>课程组原创参数绘图 · F07 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F07.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F07.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F07 END -->
+
+
 理想两端铰接等截面压杆的Euler临界力为
 
 $$
@@ -2120,6 +2157,14 @@ $\sigma_{\mathrm{cr}}$单位Pa；$E$单位Pa；$\nu$无量纲；$t$为板厚、$
 预应力把钢束或其他张拉构件的力通过锚固和黏结传递给混凝土或组合结构。它既形成截面初始应力和变形，也可能在超静定体系中引起约束反力和次内力。预应力分析应沿“钢束几何—张拉与传递—有效力—结构阶段—截面响应—长期演化”建立状态链。
 
 #### 截面初始应力
+
+
+<!-- PRIORITY-FIGURE F08 START -->
+![左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。](../assets/publication/priority-40/F08.svg){#fig-priority-F08 width=100% fig-alt="普通钢筋和预应力，分别在什么时候开始起作用？。左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>两侧表达不同机制，不作等配筋等成本比较；实际预应力还包括偏心、束形、损失、施工阶段和次内力；不能把钢筋出现拉力等同于必然已有可见裂缝</p><p>课程组原创参数绘图 · F08 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F08.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F08.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F08 END -->
+
 
 在线弹性、平截面且忽略局部锚固效应的截面上，预应力合力$P$相对形心轴偏心$e$时，可写出轴向与弯曲应力贡献
 

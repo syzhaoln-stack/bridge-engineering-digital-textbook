@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C07U01",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C07U01",
+    "chapter": 7,
+    "chapter_title": "悬索桥：找形与刚度",
+    "title": "索形由荷载与边界共同决定",
+    "model": "cable",
+    "preset": "sag",
+    "insight": "指定荷载模型和端点后，索的垂度与水平分力相互联系。",
+    "transfer": "抛物线索与自重悬链线的荷载定义有什么区别？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C07U01.html",
+      "path": "interactive/lessons/C07U01.html"
+    },
+    "narration": [
+      "索形由荷载与边界共同决定。先预测：改变垂跨比 f/L，水平分力 H会怎样变化？",
+      "现在保持其他条件不变，只改变垂跨比 f/L。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "指定荷载模型和端点后，索的垂度与水平分力相互联系。",
+      "抛物线索与自重悬链线的荷载定义有什么区别？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.05,
+      "max": 0.25,
+      "start": 0.1,
+      "end": 0.2,
+      "step": 0.01,
+      "label": "垂跨比 f/L",
+      "unit": "",
+      "output": "水平分力 H",
+      "outunit": "",
+      "formula": "H=qL²/(8f)",
+      "boundary": "水平投影均布荷载q=1，L=1，理想柔索；不是沿索长自重的精确悬链线。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C07U01.mp4",
+        "href": "../assets/videos/core/C07U01.mp4",
+        "bytes": 2879121
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C07U01.vtt",
+        "href": "../assets/videos/core/C07U01.vtt",
+        "bytes": 723
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C07U01.jpg",
+        "href": "../assets/videos/core/posters/C07U01.jpg",
+        "bytes": 123517
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C07U01.txt",
+        "href": "../notebooks/course-data/C07U01.txt",
+        "bytes": 484
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C07U01.json",
+        "href": "../notebooks/course-data/C07U01.json",
+        "bytes": 16852
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C07U01",
+      "title": "索形由荷载与边界共同决定",
+      "chapter": 7,
+      "fingerprint": "fb7f9e7f8cdbd773845dfb26a26dae957724356bb641592ae54cf1c18b8fd8b0",
+      "duration": 47.233333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 126.7
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F28.png",
+        "href": "../assets/publication/priority-40/F28.png",
+        "bytes": 149720,
+        "id": "F28",
+        "title": "缆索垂得更深，锚碇要拉住的力会变多少？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F28.svg",
+          "href": "../assets/publication/priority-40/F28.svg",
+          "bytes": 25056
+        },
+        "caption": "在水平投影均布荷载的理想索模型中，垂度由40 m增至80 m，水平分力H从50 MN减至25 MN，竖向分力仍各20 MN。H是水平分量，不是支点索力总值。",
+        "assumptions": [
+          "抛物线索，等高支点",
+          "不含弹性伸长和索自重沿索长差异",
+          "图示纵横比不供量图"
+        ],
+        "mapping_note": "先固定端点与水平投影均布荷载，再联系索垂度和水平分力H；H不是支点总索力。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "37705a3bd14cbd3294f0fb10e4f58ef7c359602a6e0399f9c41d39ed9f6ac0de",
+          "png": "a09010c289484b65361b31df2ba4c22f37698a6492777bfd011e95772ed648ba"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C07U01.json",
+      "render_sha256": "e1606d124d56f07c479190a4d53c3f038d959c6cccbf676256862a842d3a88ef",
+      "render_copy_sha256": "e1606d124d56f07c479190a4d53c3f038d959c6cccbf676256862a842d3a88ef"
+    },
+    "download_href": "../notebooks/course-packages/C07U01.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

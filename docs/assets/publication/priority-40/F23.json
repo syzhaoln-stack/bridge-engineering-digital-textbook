@@ -1,0 +1,40 @@
+{
+  "id": "F23",
+  "title": "桥墩“动了十毫米”，到底是哪一种动？",
+  "chapter": 5,
+  "heading": "温度、收缩徐变与基础变位",
+  "caption": "相同“10 mm”可以是共同沉降、差异沉降或相对水平张开。必须先定义运动对象、方向与边界，再计算三铰、两铰或无铰拱的附加响应。",
+  "assumptions": [
+    "规定运动输入示意，不含响应计算",
+    "共同平移判断忽略地基额外约束、动力和几何变化",
+    "具体内力取决于结构边界与刚度"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F23.svg",
+  "png": "assets/publication/priority-40/F23.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "两端同移与相对位移分开",
+    "位移箭头未标成力",
+    "−5至+5的相对张开为10 mm"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch04.qmd",
+  "heading_line": 445,
+  "calculation_data": {},
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：三种位移输入各自标方向；明确不画未经计算的响应形状。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "1fb11140840c5c16602ec491e9216450fd3287336ceaf5229e730667d71f42b5",
+    "png": "da359ca4216a14a2169b8f82890b781d34dc366be31882070356b6cc019416a1"
+  }
+}

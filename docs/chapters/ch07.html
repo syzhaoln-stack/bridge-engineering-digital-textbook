@@ -96,6 +96,7 @@ window.Quarto = {
 };
 </script>
 <link href="../styles.css" rel="stylesheet"/>
+<link href="../visual-update.css" rel="stylesheet"/>
 
 <link href="../interactive/core-reading.css" rel="stylesheet"/>
 <style>.reference-image-note{display:block;padding:18px;background:#f4f6f7;color:#536575;font:14px/1.8 sans-serif;border-left:3px solid #9badb9}.public-edition-note{margin-top:3em;font-size:.85em}</style></head>
@@ -286,6 +287,12 @@ window.Quarto = {
 </li>
 <li class="sidebar-item">
 <div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="../visual-update.html">
+<span class="menu-text">看图、听一段，再动手</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../resources.html">
 <span class="menu-text">数字资源索引</span></a>
 </div>
@@ -350,6 +357,16 @@ window.Quarto = {
 <a href="../interactive/learning-map.html?chapter=ch07">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery">
+<summary>
+从本章的 3 幅新图开始
+</summary>
+<div class="priority-thumb-grid">
+<a href="#fig-priority-F30"><img alt="温度一样升高，为什么有的伸长、有的受压？" loading="lazy" src="../assets/publication/priority-40/F30.svg"/><span>温度一样升高，为什么有的伸长、有的受压？</span></a><a href="#fig-priority-F31"><img alt="“固定支座”到底固定了哪些方向？" loading="lazy" src="../assets/publication/priority-40/F31.svg"/><span>“固定支座”到底固定了哪些方向？</span></a><a href="#fig-priority-F32"><img alt="基础把桥的重量交给哪一层土？" loading="lazy" src="../assets/publication/priority-40/F32.svg"/><span>基础把桥的重量交给哪一层土？</span></a>
+</div>
+</details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 <h2 class="anchored">
 本章的核心思考
 </h2>
@@ -658,6 +675,29 @@ M11　温度变形与纵向约束
 <p>支座和伸缩装置处于水、盐和杂物易聚集位置，是病害高发部位。设计应提供排水、检修、顶升和更换空间。墩台基础应结合氯盐、冻融、冲刷、碰撞和疲劳环境设置保护与监测措施。数字模型可关联构件编号、检查记录和更换方案，形成设计—运营数据连续性。</p>
 <section class="level3" data-number="8.5.1" id="支承体系的自由度表达">
 <h3 class="anchored" data-anchor-id="支承体系的自由度表达" data-number="8.5.1"><span class="header-section-number">8.5.1</span> 支承体系的自由度表达</h3>
+<!-- PRIORITY-FIGURE F31 START -->
+<div alt="“固定支座”到底固定了哪些方向？。理想固定、纵向活动和多向活动支座的平移约束对照。青色双箭头代表可移动方向，红色标记代表被约束的平移；固定支座不等于梁固端。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F31">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F31-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="“固定支座”到底固定了哪些方向？。理想固定、纵向活动和多向活动支座的平移约束对照。青色双箭头代表可移动方向，红色标记代表被约束的平移；固定支座不等于梁固端。" class="img-fluid figure-img" src="../assets/publication/priority-40/F31.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F31-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 8.7: 理想固定、纵向活动和多向活动支座的平移约束对照。青色双箭头代表可移动方向，红色标记代表被约束的平移；固定支座不等于梁固端。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+仅列平移自由度，不规定θx/θy/θz全部锁死；压紧接触、忽略摩阻的理想化；x沿桥轴、y横桥向、z竖直
+</p>
+<p>
+课程组原创参数绘图 · F31 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F31.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F31.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F31 END -->
 <section class="level4" data-number="8.5.1.1" id="从名称到约束矩阵">
 <h4 class="anchored" data-anchor-id="从名称到约束矩阵" data-number="8.5.1.1"><span class="header-section-number">8.5.1.1</span> 从名称到约束矩阵</h4>
 <p>“固定支座”“单向活动支座”和“多向活动支座”描述的是功能，不直接等同于某一种产品。空间节点具有三个平移和三个转动自由度，支承布置应逐项说明哪些自由度被约束、哪些被释放、哪些由有限刚度或间隙控制。理想固定支座通常限制水平两个方向的相对位移并传递竖向反力，同时允许梁端转动；单向活动支座限制一个水平位移并释放另一个；多向活动支座释放两个水平位移。实际支座的转动、摩阻和剪切变形均有有限刚度。</p>
@@ -973,6 +1013,29 @@ g_nN_n=0,
 <h3 class="anchored" data-anchor-id="温度制动与水平力分配-1" data-number="8.5.3"><span class="header-section-number">8.5.3</span> 温度、制动与水平力分配</h3>
 <section class="level4" data-number="8.5.3.1" id="自由温度位移">
 <h4 class="anchored" data-anchor-id="自由温度位移" data-number="8.5.3.1"><span class="header-section-number">8.5.3.1</span> 自由温度位移</h4>
+<!-- PRIORITY-FIGURE F30 START -->
+<div alt="温度一样升高，为什么有的伸长、有的受压？。同样均匀温升下，自由伸缩产生7.2 mm轴向伸长；完全限制该伸长则在本一维弹性模型中产生72 MPa压应力、1440 kN压力。支座约束改变的是允许发生的运动。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F30">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F30-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="温度一样升高，为什么有的伸长、有的受压？。同样均匀温升下，自由伸缩产生7.2 mm轴向伸长；完全限制该伸长则在本一维弹性模型中产生72 MPa压应力、1440 kN压力。支座约束改变的是允许发生的运动。" class="img-fluid figure-img" src="../assets/publication/priority-40/F30.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F30-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 8.8: 同样均匀温升下，自由伸缩产生7.2 mm轴向伸长；完全限制该伸长则在本一维弹性模型中产生72 MPa压应力、1440 kN压力。支座约束改变的是允许发生的运动。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+轴向杆模型，不模拟桥面温度梯度；均匀温升、常材料参数、小变形；自由端无摩阻；受约束端刚性
+</p>
+<p>
+课程组原创参数绘图 · F30 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F30.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F30.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F30 END -->
 <p>均匀温差下长度 <span class="math inline">\(L\)</span> 的自由伸缩为 <span class="math inline">\(\Delta L=\alpha L\Delta T\)</span>。若固定点距梁端为 <span class="math inline">\(L_1\)</span>，该梁端的自由位移近似为 <span class="math inline">\(\alpha L_1\Delta T\)</span>。设置固定点的位置会改变两端伸缩量和伸缩装置需求；固定点靠近联中部可均衡两端位移，但需结合桥墩刚度和地形确定。</p>
 <p>温度梯度使梁截面产生曲率。支承允许转动时主要形成梁端转角和竖向变形，受到连续性和约束时会产生附加反力。均匀温度与温度梯度应作为不同作用项建立，不能由一个总温差覆盖。</p>
 </section>
@@ -1255,6 +1318,29 @@ EI\frac{\mathrm d^4w}{\mathrm dx^4}
 </section>
 <section class="level4" data-number="8.5.6.3" id="桩基础">
 <h4 class="anchored" data-anchor-id="桩基础" data-number="8.5.6.3"><span class="header-section-number">8.5.6.3</span> 桩基础</h4>
+<!-- PRIORITY-FIGURE F32 START -->
+<div alt="基础把桥的重量交给哪一层土？。浅基础与桩基础的竖向荷载路径对照。桩基础通过桩侧摩阻及桩端阻力传力；箭头只示方向，实际分担与群桩效应取决于土层、桩、承台和荷载状态。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F32">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F32-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="基础把桥的重量交给哪一层土？。浅基础与桩基础的竖向荷载路径对照。桩基础通过桩侧摩阻及桩端阻力传力；箭头只示方向，实际分担与群桩效应取决于土层、桩、承台和荷载状态。" class="img-fluid figure-img" src="../assets/publication/priority-40/F32.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F32-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 8.9: 浅基础与桩基础的竖向荷载路径对照。桩基础通过桩侧摩阻及桩端阻力传力；箭头只示方向，实际分担与群桩效应取决于土层、桩、承台和荷载状态。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+中心竖向受压；土反力方向示意，未指定分配百分比；不代表水平受力、负摩阻或抗拔情景
+</p>
+<p>
+课程组原创参数绘图 · F32 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F32.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F32.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F32 END -->
 <p>桩基础通过桩侧摩阻和桩端阻力传递竖向荷载，并以桩身弯曲和土抗力承担水平荷载。群桩中的承台约束、桩距、土层、桩长和施工方法会影响群桩效应。竖向总承载力不能简单等于单桩承载力乘桩数；水平分析也需考虑不同深度土弹簧、循环退化和桩土相互作用。</p>
 <p>高桩承台位于水中时，桩的自由长度和冲刷后无侧向支承长度增加，会降低水平刚度并提高弯矩。模型应以设计冲刷后的河床线确定土弹簧起始位置，并分析冲刷不确定性。</p>
 </section>
@@ -3758,7 +3844,7 @@ d(t)=a+bT_{\mathrm{eff}}(t)+\varepsilon(t),
 
 <script>
 (()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);route.addEventListener('click',event=>{const link=event.target.closest('.priority-chapter-gallery a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;set('reference');requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));});const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
 
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

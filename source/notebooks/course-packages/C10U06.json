@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "unit_id": "C10U06",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C10U06",
+    "chapter": 10,
+    "chapter_title": "时间、不确定性与决策",
+    "title": "疲劳由循环与幅值共同累积",
+    "model": "fatigue",
+    "preset": "amplitude",
+    "insight": "教学幂律模型中应力幅增加会使单次循环损伤快速增大。",
+    "transfer": "少量大幅循环能否忽略不计？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C10U06.html",
+      "path": "interactive/lessons/C10U06.html"
+    },
+    "narration": [
+      "疲劳由循环与幅值共同累积。先预测：改变应力幅/基准幅，累积损伤教学指标 D会怎样变化？",
+      "现在保持其他条件不变，只改变应力幅/基准幅。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "教学幂律模型中应力幅增加会使单次循环损伤快速增大。",
+      "少量大幅循环能否忽略不计？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.5,
+      "max": 2,
+      "start": 1,
+      "end": 1.5,
+      "step": 0.01,
+      "label": "应力幅/基准幅",
+      "unit": "",
+      "output": "累积损伤教学指标 D",
+      "outunit": "",
+      "formula": "N∝(Δσ)⁻³；固定循环数时 D=0.2(Δσ/Δσ₀)³",
+      "boundary": "教学S-N幂律加线性累积，幂指数3和基准损伤0.2为示例；实际细节与循环谱需另定。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C10U06.mp4",
+        "href": "../assets/videos/core/C10U06.mp4",
+        "bytes": 3128154
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C10U06.vtt",
+        "href": "../assets/videos/core/C10U06.vtt",
+        "bytes": 687
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C10U06.jpg",
+        "href": "../assets/videos/core/posters/C10U06.jpg",
+        "bytes": 142450
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C10U06.txt",
+        "href": "../notebooks/course-data/C10U06.txt",
+        "bytes": 484
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C10U06.json",
+        "href": "../notebooks/course-data/C10U06.json",
+        "bytes": 16925
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C10U06",
+      "title": "疲劳由循环与幅值共同累积",
+      "chapter": 10,
+      "fingerprint": "4d48742020d5537f38d91db1e83b6ccb4c805fad57ab9102d01e60f488dd9934",
+      "duration": 45.266667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 129.1
+    },
+    "notebooks": [],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C10U06.json",
+      "render_sha256": "840cc1502cf82204747929523690da849b890507ca65944ca42343e7878a3968",
+      "render_copy_sha256": "840cc1502cf82204747929523690da849b890507ca65944ca42343e7878a3968"
+    },
+    "download_href": "../notebooks/course-packages/C10U06.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

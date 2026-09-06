@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C06U03",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C06U03",
+    "chapter": 6,
+    "chapter_title": "斜拉桥：耦合与控制",
+    "title": "成桥目标是多个条件的共同满足",
+    "model": "matrix",
+    "preset": "second",
+    "insight": "不同控制变量对应不同响应方向，必须同时查看耦合输出。",
+    "transfer": "为什么一个控制点归零还不能结束调索？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C06U03.html",
+      "path": "interactive/lessons/C06U03.html"
+    },
+    "narration": [
+      "成桥目标是多个条件的共同满足。先预测：改变第二控制量 ΔT₂，第一控制点响应会怎样变化？",
+      "现在保持其他条件不变，只改变第二控制量 ΔT₂。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "不同控制变量对应不同响应方向，必须同时查看耦合输出。",
+      "为什么一个控制点归零还不能结束调索？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": -1,
+      "max": 1,
+      "start": 0,
+      "end": 0.8,
+      "step": 0.01,
+      "label": "第二控制量 ΔT₂",
+      "unit": "",
+      "output": "第一控制点响应",
+      "outunit": "",
+      "formula": "[r₁,r₂]ᵀ=[[1,.35],[.25,1]]·[ΔT₁,ΔT₂]ᵀ",
+      "boundary": "明确给定的教学影响矩阵；另一控制量为0.2；不代表具体实桥索力系数。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C06U03.mp4",
+        "href": "../assets/videos/core/C06U03.mp4",
+        "bytes": 2997803
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C06U03.vtt",
+        "href": "../assets/videos/core/C06U03.vtt",
+        "bytes": 748
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C06U03.jpg",
+        "href": "../assets/videos/core/posters/C06U03.jpg",
+        "bytes": 133474
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C06U03.txt",
+        "href": "../notebooks/course-data/C06U03.txt",
+        "bytes": 509
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C06U03.json",
+        "href": "../notebooks/course-data/C06U03.json",
+        "bytes": 19782
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C06U03",
+      "title": "成桥目标是多个条件的共同满足",
+      "chapter": 6,
+      "fingerprint": "4c6d992e0c2a947fb8e281c7552a9b5f0013851a2402d4e320065a2b555b6770",
+      "duration": 46.533333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 139.2
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F25.png",
+        "href": "../assets/publication/priority-40/F25.png",
+        "bytes": 203738,
+        "id": "F25",
+        "title": "只调一组索，怎样得到矩阵的一列？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F25.svg",
+          "href": "../assets/publication/priority-40/F25.svg",
+          "bytes": 22474
+        },
+        "caption": "固定模型状态和输出定义，仅将第二索组增大1 MN时，三项响应增量就是影响矩阵第二列；矩阵沿用正文明确声明的教学测试数据，构件定位图不冒充矩阵来源模型。",
+        "assumptions": [
+          "教学构造矩阵，不是具体桥的计算",
+          "列为索组增量，行依次为弯矩、位移、反力",
+          "仅线性局部影响，不直接用于调索设计"
+        ],
+        "mapping_note": "不同控制量对应不同影响列，要同时看多个响应。图使用正文的三输出教学测试数据，不是当前二输出矩阵。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "c7c54ca1a3d2d7e2943a9a27a6f8c11de5b3d8f3aebbf0a53a1c6945d78f432b",
+          "png": "6a2eb1dcd7644bea3599628618f84b05f59cf301738ec0766afad43dfc9825a2"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C06U03.json",
+      "render_sha256": "dc91eed3d58bafbad4463aebc8fa6ea50de9645a7737882d0e3c40a13c55df6a",
+      "render_copy_sha256": "dc91eed3d58bafbad4463aebc8fa6ea50de9645a7737882d0e3c40a13c55df6a"
+    },
+    "download_href": "../notebooks/course-packages/C06U03.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

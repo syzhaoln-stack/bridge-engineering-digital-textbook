@@ -3,6 +3,7 @@
 本仓库是本轮数字教材的独立版本，包含11个专业章节、交互实验与桥梁思维公众课样讲。它与[旧版《我所理解的桥梁工程》](https://github.com/syzhaoln-stack/bridge-engineering-textbook)分开维护；旧仓库保持原状。
 
 - [在线阅读整本教材](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/)
+- [新增40幅图、5段双人对话、100个独立交互及3本Notebook](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/visual-update.html)
 - [先试公众课第一讲](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/public-course.html)
 - [图片数量、来源与出版制作计划](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/publication-images.html)
 - [各章实验入口](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/learning-map.html)
@@ -13,7 +14,7 @@
 
 教材有11个专业章节；公众课有12讲提纲及第1讲样页，未录制12讲课程视频。已有关联教具可直接操作。几何展示、教学模型和工程设计结果各自说明适用范围。AI辅助CAD尚未形成新版教学单元，没有作为已完成功能列入。
 
-图片资料库统计为781个外部参考候选文件、31个自制静态图文件，另有125张视频海报。公开包不包含参考原图，只提供[元数据登记表](docs/assets/publication/image-reference-register.csv)和数量说明；正式出版采用数量尚未确定。
+原资料库统计为781个外部参考候选文件、31个自制静态图文件及125张视频海报。本轮另新增40幅原创参数图（SVG+PNG）、5个双人Manim样片和100个独立HTML实验页；100页复用29类模型，3本Notebook已执行验证。公开包不包含参考原图，只提供[元数据登记表](docs/assets/publication/image-reference-register.csv)和数量说明；正式出版采用数量尚未确定。
 
 ## 文件目录
 
@@ -28,4 +29,4 @@
 
 安装Quarto和Python后，运行`quarto render source --to html`；构建结果在`source/_site/`。当前Pages从`main`分支的`docs/`发布，更新时应先检查构建结果再同步到该目录。默认交互可本地运行；外部课程与投影工作台需要联网，部分正文公式使用在线MathJax。
 
-来源工作版本：`8ac8adaea7c5eff887333884bdb53bf78fdfce0a`。这是不携带内部资料与旧历史的公开导出，不能将此仓库的首次提交误认为教材首次写作。
+来源工作版本：`e4fbaa7b51f22c4c6e82fa121728a354b4a2898e`。这是不携带内部资料与旧历史的公开导出，不能将此仓库的首次提交误认为教材首次写作。

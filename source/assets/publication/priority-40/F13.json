@@ -1,0 +1,78 @@
+{
+  "id": "F13",
+  "title": "车轮下面，桥面板靠哪些构件支承？",
+  "chapter": 4,
+  "heading": "桥面板、横隔构件与局部受力",
+  "caption": "轴测整桥以5根纵向主梁、3道跨内横隔板和两端横梁定位桥面板的空间支承。透明桥面仅为揭示内部构造；车辆轮载向下。",
+  "assumptions": [
+    "所有几何为明确教学例；纵横比例由坐标统一投影",
+    "横隔板为有高度的实体连接，不是路面横线",
+    "此图不计算荷载分担或板内应力"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F13.svg",
+  "png": "assets/publication/priority-40/F13.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "geometry: 5 longitudinal girders, spacing 2.4 m",
+    "interior diaphragms at x=5,10,15 m; end members separate",
+    "L=20 m and B=10.8 m annotation endpoints match geometry",
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大并复看：统一20m×10.8m五梁例，3道跨内横隔板+2道端横梁，补5梁横断面及2.4m间距；L、B、支座引线清楚。构造为透视示意。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch03.qmd",
+  "heading_line": 260,
+  "figure_kind": "schematic",
+  "technical_review": "schematic_boundary_declared",
+  "visual_review_notes": "逐张放大并复看：统一20m×10.8m五梁例，3道跨内横隔板+2道端横梁，补5梁横断面及2.4m间距；L、B、支座引线清楚。构造为透视示意。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "567564c649bd48db6d4de2500eaceb65d987720a67755f9eb3b3db07c7e21c02",
+    "png": "37e987309f7eaa3be606f2a47c54cfb8b24362ecbe00558ffdb4898d1b124909"
+  },
+  "calculation_data": {
+    "L_m": 20,
+    "B_m": 10.8,
+    "d_m": 2.4,
+    "girder_y_m": [
+      -4.8,
+      -2.4,
+      0,
+      2.4,
+      4.8
+    ],
+    "interior_diaphragms_x_m": [
+      5,
+      10,
+      15
+    ],
+    "end_beams_x_m": [
+      0,
+      20
+    ],
+    "slab_h_m": 0.22,
+    "girder_depth_m": 1.2,
+    "vehicle_body_width_m": 2.2,
+    "vehicle_axle_spacing_m": 3.5,
+    "vehicle_note": "original teaching silhouette, not a regulation vehicle"
+  },
+  "diagram_kind": "schematic_geometry",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "F06",
+  "title": "同一块板竖着放、横着放，为什么弯起来不一样？",
+  "chapter": 2,
+  "heading": "形心、截面二次矩与截面模量",
+  "caption": "明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。",
+  "assumptions": [
+    "均质线弹性；关于相同方向的形心轴",
+    "不据此判定整体最优；还需考虑侧向稳定、剪切和构造"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F06.svg",
+  "png": "assets/publication/priority-40/F06.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    {
+      "name": "equal area",
+      "value": 0.12,
+      "expected": 0.12,
+      "tolerance": 1e-12,
+      "unit": "m²",
+      "passed": true
+    },
+    {
+      "name": "second moment ratio",
+      "value": 8.999999999999996,
+      "expected": 9.0,
+      "tolerance": 1e-09,
+      "unit": "",
+      "passed": true
+    },
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大检查：同一水平形心轴和面积可辨，立放/平放尺寸、Iy单位与9倍关系清楚。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch02-foundations.qmd",
+  "heading_line": 328,
+  "figure_kind": "calculated",
+  "technical_review": "formula_assertions_passed",
+  "visual_review_notes": "逐张放大检查：同一水平形心轴和面积可辨，立放/平放尺寸、Iy单位与9倍关系清楚。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "e920dcde7c0fc3e1feb2efac99e4267c484fc4f8f7b19ef0276dc639400d77f6",
+    "png": "f66eeab0d0828723bd7a9c42f377dad22a038aab2c7f9cf20810e0c590314482"
+  },
+  "calculation_data": {
+    "area_m2": 0.12,
+    "I_vertical_m4": 0.0036,
+    "I_horizontal_m4": 0.0004,
+    "ratio": 9
+  },
+  "diagram_kind": "analytical_teaching_example",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

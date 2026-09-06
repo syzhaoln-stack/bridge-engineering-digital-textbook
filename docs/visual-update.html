@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN" xml:lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta charset="utf-8"/>
+<meta content="quarto-1.9.38" name="generator"/>
+<meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>看图、听一段，再动手 – 桥梁工程智能设计</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta content="./" name="quarto:offset"/>
+<link href="./resources.html" rel="next"/>
+<link href="./core-resources.html" rel="prev"/>
+<script defer="" src="site_libs/quarto-html/quarto-local.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet"/>
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" id="quarto-text-highlighting-styles" rel="stylesheet"/>
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
+<link append-hash="true" data-mode="light" href="site_libs/bootstrap/bootstrap-c614dc152840027ed1d225942eae4f22.min.css" id="quarto-bootstrap" rel="stylesheet"/>
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link href="styles.css" rel="stylesheet"/>
+<link href="visual-update.css" rel="stylesheet"/>
+
+<link href="interactive/core-reading.css" rel="stylesheet"/>
+<style>.reference-image-note{display:block;padding:18px;background:#f4f6f7;color:#536575;font:14px/1.8 sans-serif;border-left:3px solid #9badb9}.public-edition-note{margin-top:3em;font-size:.85em}</style></head>
+<body class="nav-sidebar docked quarto-light">
+<div id="quarto-search-results"></div>
+<header class="headroom fixed-top" id="quarto-header">
+<nav class="quarto-secondary-nav">
+<div class="container-fluid d-flex">
+<button aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" class="quarto-btn-toggle btn" data-bs-target=".quarto-sidebar-collapse-item" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="button" type="button">
+<i class="bi bi-layout-text-sidebar-reverse"></i>
+</button>
+<nav aria-label="breadcrumb" class="quarto-page-breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./visual-update.html">看图、听一段，再动手</a></li></ol></nav>
+<a aria-controls="quarto-sidebar" aria-expanded="false" aria-label="展开或折叠侧边栏导航" class="flex-grow-1" data-bs-target=".quarto-sidebar-collapse-item" data-bs-toggle="collapse" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }" role="navigation">
+</a>
+<button aria-label="搜索" class="btn quarto-search-button" onclick="window.quartoOpenSearch();" type="button">
+<i class="bi bi-search"></i>
+</button>
+</div>
+</nav>
+</header>
+<!-- content -->
+<div class="quarto-container page-columns page-rows-contents page-layout-article" id="quarto-content">
+<!-- sidebar -->
+<nav class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto" id="quarto-sidebar">
+<div class="pt-lg-2 mt-2 text-left sidebar-header">
+<div class="sidebar-title mb-0 py-0">
+<a href="./">桥梁工程智能设计</a>
+</div>
+</div>
+<div class="mt-2 flex-shrink-0 align-items-center">
+<div class="sidebar-search">
+<div class="" id="quarto-search" title="搜索"></div>
+</div>
+</div>
+<div class="sidebar-menu-container">
+<ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./index.html">
+<span class="menu-text">前言</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./contents.html">
+<span class="menu-text">全书目录与学习路径</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./core-thinking.html">
+<span class="menu-text">学完桥梁工程，带走哪些思考方法</span></a>
+</div>
+</li>
+<li class="sidebar-item sidebar-item-section">
+<div class="sidebar-item-container">
+<a aria-expanded="true" class="sidebar-item-text sidebar-link text-start" data-bs-target="#quarto-sidebar-section-1" data-bs-toggle="collapse" role="navigation">
+<span class="menu-text">第一篇　基础、体系与作用</span></a>
+<a aria-expanded="true" aria-label="展开或折叠此栏" class="sidebar-item-toggle text-start" data-bs-target="#quarto-sidebar-section-1" data-bs-toggle="collapse" role="navigation">
+<i class="bi bi-chevron-right ms-2"></i>
+</a>
+</div>
+<ul class="collapse list-unstyled sidebar-section depth1 show" id="quarto-sidebar-section-1">
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./chapters/ch01.html">
+<span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">桥梁工程与智能设计概论</span></span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./chapters/ch02-foundations.html">
+<span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">桥梁结构概念与力学基础</span></span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./chapters/ch02.html">
+<span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">桥梁上的作用、作用组合与可靠度</span></span></a>
+</div>
+</li>
+</ul>
+</li>
+<li class="sidebar-item sidebar-item-section">
+<div class="sidebar-item-container">
+<a aria-expanded="true" class="sidebar-item-text sidebar-link text-start" data-bs-target="#quarto-sidebar-section-2" data-bs-toggle="collapse" role="navigation">
+<span class="menu-text">第二篇　桥型与构造</span></a>
+<a aria-expanded="true" aria-label="展开或折叠此栏" class="sidebar-item-toggle text-start" data-bs-target="#quarto-sidebar-section-2" data-bs-toggle="collapse" role="navigation">
+<i class="bi bi-chevron-right ms-2"></i>
+</a>
+</div>
+<ul class="collapse list-unstyled sidebar-section depth1 show" id="quarto-sidebar-section-2">
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./chapters/ch03.html">
+<span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">梁式桥设计与计算</span></span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./chapters/ch04.html">
+<span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">拱桥设计</span></span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./chapters/ch05.html">
+<span class="menu-text"><span class="chapter-number">6</span>  <span class="chapter-title">斜拉桥设计</span></span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./chapters/ch06.html">
+<span class="menu-text"><span class="chapter-number">7</span>  <span class="chapter-title">悬索桥设计</span></span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./chapters/ch07.html">
+<span class="menu-text"><span class="chapter-number">8</span>  <span class="chapter-title">支座、墩台与基础</span></span></a>
+</div>
+</li>
+</ul>
+</li>
+<li class="sidebar-item sidebar-item-section">
+<div class="sidebar-item-container">
+<a aria-expanded="true" class="sidebar-item-text sidebar-link text-start" data-bs-target="#quarto-sidebar-section-3" data-bs-toggle="collapse" role="navigation">
+<span class="menu-text">第三篇　专项性能与数字设计</span></a>
+<a aria-expanded="true" aria-label="展开或折叠此栏" class="sidebar-item-toggle text-start" data-bs-target="#quarto-sidebar-section-3" data-bs-toggle="collapse" role="navigation">
+<i class="bi bi-chevron-right ms-2"></i>
+</a>
+</div>
+<ul class="collapse list-unstyled sidebar-section depth1 show" id="quarto-sidebar-section-3">
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./chapters/ch09-wind.html">
+<span class="menu-text"><span class="chapter-number">9</span>  <span class="chapter-title">桥梁抗风与气动响应</span></span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./chapters/ch10-lifecycle.html">
+<span class="menu-text"><span class="chapter-number">10</span>  <span class="chapter-title">地震、耐久与全寿命评价</span></span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./chapters/ch10-fem.html">
+<span class="menu-text"><span class="chapter-number">11</span>  <span class="chapter-title">数字建模、有限元与智能设计</span></span></a>
+</div>
+</li>
+</ul>
+</li>
+<li class="sidebar-item sidebar-item-section">
+<div class="sidebar-item-container">
+<a aria-expanded="true" class="sidebar-item-text sidebar-link text-start" data-bs-target="#quarto-sidebar-section-4" data-bs-toggle="collapse" role="navigation">
+<span class="menu-text">拓展篇　从桥梁看世界</span></a>
+<a aria-expanded="true" aria-label="展开或折叠此栏" class="sidebar-item-toggle text-start" data-bs-target="#quarto-sidebar-section-4" data-bs-toggle="collapse" role="navigation">
+<i class="bi bi-chevron-right ms-2"></i>
+</a>
+</div>
+<ul class="collapse list-unstyled sidebar-section depth1 show" id="quarto-sidebar-section-4">
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./bridge-thinking.html">
+<span class="menu-text">从桥梁看世界：设计方法如何变成思考工具</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./course-guide.html">
+<span class="menu-text">从身边的物件，走进桥梁思维</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./legacy-tools.html">
+<span class="menu-text">从旧版接续的实验与游戏</span></a>
+</div>
+</li>
+</ul>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./core-resources.html">
+<span class="menu-text">核心视频与交互教学单元</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link active" href="./visual-update.html">
+<span class="menu-text">看图、听一段，再动手</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./resources.html">
+<span class="menu-text">数字资源索引</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./publication-images.html">
+<span class="menu-text">图片、参考资料与出版制作计划</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="./references.html">
+<span class="menu-text">参考文献与标准</span></a>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<div class="quarto-sidebar-collapse-item" data-bs-target=".quarto-sidebar-collapse-item" data-bs-toggle="collapse" id="quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+<div class="sidebar margin-sidebar" id="quarto-margin-sidebar">
+<nav class="toc-active" id="TOC" role="doc-toc">
+<h2 id="toc-title">目录</h2>
+<ul class="collapse">
+<li><a class="nav-link active" data-scroll-target="#dialogues" href="#dialogues" id="toc-dialogues">先听一段对话</a></li>
+<li><a class="nav-link" data-scroll-target="#选一个问题动手" href="#选一个问题动手" id="toc-选一个问题动手">选一个问题动手</a></li>
+<li><a class="nav-link" data-scroll-target="#forty-figures" href="#forty-figures" id="toc-forty-figures">翻看 40 幅新图</a></li>
+<li><a class="nav-link" data-scroll-target="#notebooks" href="#notebooks" id="toc-notebooks">边读边算</a></li>
+</ul>
+</nav>
+</div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+<header class="quarto-title-block default" id="title-block-header">
+<div class="quarto-title">
+<h1 class="title">看图、听一段，再动手</h1>
+</div>
+<div class="quarto-title-meta">
+</div>
+</header>
+<div class="visual-batch-hero">
+<p class="batch-kicker">
+桥梁思维 · 新一批图与实验
+</p>
+<p class="batch-lead">
+一辆车停在桥上，五根梁一定平均分吗？先听两个人争论，再亲手改变条件，看看自己的判断能不能站住。
+</p>
+<div class="batch-actions">
+<a class="batch-primary" href="#dialogues">先听一段对话</a><a href="interactive/course-package.html">选一个实验动手</a><a href="#forty-figures">翻看 40 幅新图</a><a href="#notebooks">边读边算</a>
+</div>
+</div>
+<section class="level2" id="dialogues">
+<h2 class="anchored" data-anchor-id="dialogues">先听一段对话</h2>
+<p>小周从生活里的经验出发，阿宁和他一起拆开看。有时直觉有道理，有时还少了一个条件。看完之后，换一个条件再试。</p>
+<section class="level3" id="d01">
+<h3 class="anchored" data-anchor-id="d01">车放正中间，五根梁就一定平均分？</h3>
+<video aria-label="车放正中间，五根梁就一定平均分？" class="dialogue-player" controls="" playsinline="" poster="assets/videos/dialogue-pilot/D01-poster.jpg" preload="metadata">
+<source src="assets/videos/dialogue-pilot/D01-dialogue.mp4" type="video/mp4"/>
+<track kind="captions" label="中文" src="assets/videos/dialogue-pilot/D01-dialogue.vtt" srclang="zh"/>
+<p><a href="assets/videos/dialogue-pilot/D01-dialogue.mp4">下载视频</a></p>
+<p class="batch-media-meta">
+2:51 · 双人合成声音 · <a href="interactive/lessons/C04U06.html">同主题实验（模型条件另列）→</a> · <a download="" href="assets/videos/dialogue-pilot/D01-dialogue.mp4">下载视频</a>
+</p>
+<details>
+<summary>
+读对话 / 看制作代码
+</summary>
+<p>
+<strong>小周：</strong>车停中间还不平均分？那对称性不是白学了？我搬桌子，东西放正中间，两边不就一样使劲？
+</p>
+<p>
+<strong>阿宁：</strong>左右一样，这一步你没说错。可要是桌子中间那条腿，特别软呢？
+</p>
+<p>
+<strong>小周：</strong>那它可能使不上劲。等等，左右一样，不等于五根都一样？行，换软。先别讲，让我看。
+</p>
+<p>
+<strong>阿宁：</strong>看，中间这一根，原来分到五分之一，现在不到一成。其余四根，各分到大约两成三。
+</p>
+<p>
+<strong>小周：</strong>我有点不服。软的，不就该陷得更深吗？怎么反而分得少？
+</p>
+<p>
+<strong>阿宁：</strong>因为上边那道横向连接，把它们连着。我们先把它当成很难弯的横杆，不能让每根各沉各的。下沉同样一段，软的那根需要的力更小。这种抗变形的本领，叫刚度。
+</p>
+<p>
+<strong>小周：</strong>好，五根先换回一样硬。我把车挪到右边，近处多出力，远处就摸鱼了？
+</p>
+<p>
+<strong>阿宁：</strong>先看比例。最右边，从两成变成四成。最左边，这次车辆带来的分担降到零。车还是那辆车，总重没变；多出来的，要从别处减。
+</p>
+<p>
+<strong>小周：</strong>这我熟！往一边偏，原来的平均那份还在，再加上一边多、一边少。跟偏心压一个截面，是不是一个思路？
+</p>
+<p>
+<strong>阿宁：</strong>这条思路能借。我们把它叫作平均部分和弯曲增减的叠加。不过，一边算的是截面里各处的应力，一边算的是几根梁分到的力；还得分别说明材料、连接和变形条件。
+</p>
+<p>
+<strong>小周：</strong>我再往外挪。怎么还有一根算出负数了？这账还能倒扣？这个数看着别扭，干脆改成零吧。
+</p>
+<p>
+<strong>阿宁：</strong>先别删。这是这次车压上去带来的变化，还没把桥本身的重量算进去。看到负增量，不等于真实支座已经离开。
+</p>
+<p>
+<strong>小周：</strong>那我非要试试，只把负的删掉，别的都不动。
+</p>
+<p>
+<strong>阿宁：</strong>你看，加起来反而比车重还大。原来是一百二十千牛，改完变成一百三十二千牛，连力矩也对不上了。改结果，不能替代改模型。
+</p>
+<p>
+<strong>小周：</strong>懂了。不是看着对称就随便平均，也不是看着不顺眼就删数。先问它们怎么连、软硬一样不一样，再看加起来对不对。
+</p>
+<p>
+<strong>阿宁：</strong>对。加起来对，叫平衡；连着的地方怎样一起动，叫变形协调；同样变形要多大的力，要看刚度。换成桌子、搁板或偏心受压，先借这几个问题，别急着照搬答案。
+</p>
+<p>
+<a href="scripts/dialogue-pilot/dialogue_manim.py">Manim 主场景</a> · <a href="scripts/dialogue-pilot/diagram_a.py">横向分布、尺度与加载图</a> · <a href="scripts/dialogue-pilot/diagram_b.py">预应力与有限元图</a> · <a href="scripts/dialogue-pilot/manim_helpers.py">公共绘图函数</a> · <a href="assets/videos/dialogue-pilot/D01-script.md">完整脚本</a>
+</p>
+</details>
+</video></section>
+<section class="level3" id="d02">
+<h3 class="anchored" data-anchor-id="d02">把搁板放大一倍，为什么不是重一倍？</h3>
+<video aria-label="把搁板放大一倍，为什么不是重一倍？" class="dialogue-player" controls="" playsinline="" poster="assets/videos/dialogue-pilot/D02-poster.jpg" preload="metadata">
+<source src="assets/videos/dialogue-pilot/D02-dialogue.mp4" type="video/mp4"/>
+<track kind="captions" label="中文" src="assets/videos/dialogue-pilot/D02-dialogue.vtt" srclang="zh"/>
+<p><a href="assets/videos/dialogue-pilot/D02-dialogue.mp4">下载视频</a></p>
+<p class="batch-media-meta">
+1:33 · 双人合成声音 · <a href="interactive/lessons/C01U06.html">同主题实验（模型条件另列）→</a> · <a download="" href="assets/videos/dialogue-pilot/D02-dialogue.mp4">下载视频</a>
+</p>
+<details>
+<summary>
+读对话 / 看制作代码
+</summary>
+<p>
+<strong>小周：</strong>一块搁板不够大，我照着原样放大一倍。料多用一倍，总该够了吧？
+</p>
+<p>
+<strong>阿宁：</strong>你说的放大，是只加长，还是长、宽、厚全都变成两倍？先拿两个盒子比一下。
+</p>
+<p>
+<strong>小周：</strong>全都两倍嘛，模样还一样。等等，这里面，能塞进去八个小盒子？
+</p>
+<p>
+<strong>阿宁：</strong>对。同样材料，体积变成八倍，自重也变成八倍。这只是重量，还不是它弯得怎样。
+</p>
+<p>
+<strong>小周：</strong>那它也变厚、变宽了，扛弯的本事肯定跟着涨。是不是正好抵消？
+</p>
+<p>
+<strong>阿宁：</strong>在这根只受自重的简支梁里，并没有抵消。按相同比例放大后，弯曲应力变成两倍，下沉量变成四倍。前提是材料相同，而且仍能用线弹性小变形来算。
+</p>
+<p>
+<strong>小周：</strong>我家的搁板一般不变厚，只是两个支架离远了。那还能套刚才的四倍吗？
+</p>
+<p>
+<strong>阿宁：</strong>不能。若截面和每米荷载不变，只把跨度加倍，下沉量会变成十六倍。你换了放大的方式，比较的就已经是另一个问题。
+</p>
+<p>
+<strong>小周：</strong>那问大桥有没有尺度问题，得先问到底什么变大、什么没变，不能只盯着长度。
+</p>
+<p>
+<strong>阿宁：</strong>是。先说清缩放条件，再看长度、面积、体积和响应各按什么比例变化。这种比较方法，叫尺度分析。
+</p>
+<p>
+<a href="scripts/dialogue-pilot/dialogue_manim.py">Manim 主场景</a> · <a href="scripts/dialogue-pilot/diagram_a.py">横向分布、尺度与加载图</a> · <a href="scripts/dialogue-pilot/diagram_b.py">预应力与有限元图</a> · <a href="scripts/dialogue-pilot/manim_helpers.py">公共绘图函数</a> · <a href="assets/videos/dialogue-pilot/D02-script.md">完整脚本</a>
+</p>
+</details>
+</video></section>
+<section class="level3" id="d03">
+<h3 class="anchored" data-anchor-id="d03">本来怕被拉开，为什么还要先拉钢索？</h3>
+<video aria-label="本来怕被拉开，为什么还要先拉钢索？" class="dialogue-player" controls="" playsinline="" poster="assets/videos/dialogue-pilot/D03-poster.jpg" preload="metadata">
+<source src="assets/videos/dialogue-pilot/D03-dialogue.mp4" type="video/mp4"/>
+<track kind="captions" label="中文" src="assets/videos/dialogue-pilot/D03-dialogue.vtt" srclang="zh"/>
+<p><a href="assets/videos/dialogue-pilot/D03-dialogue.mp4">下载视频</a></p>
+<p class="batch-media-meta">
+1:29 · 双人合成声音 · <a href="interactive/lessons/C04U07.html">同主题实验（模型条件另列）→</a> · <a download="" href="assets/videos/dialogue-pilot/D03-dialogue.mp4">下载视频</a>
+</p>
+<details>
+<summary>
+读对话 / 看制作代码
+</summary>
+<p>
+<strong>小周：</strong>混凝土怕拉开，我听明白了。可你又说，先使劲拉里面的钢索。这不是跟自己对着干吗？
+</p>
+<p>
+<strong>阿宁：</strong>先看谁在被拉。钢索拉长后，端头通过锚具把这股力传给梁，梁被往里压。钢索受拉，和混凝土受压，可以同时发生。
+</p>
+<p>
+<strong>小周：</strong>像把一排书两头夹紧，再托起来？钢索在使劲，书反而挤在一起？
+</p>
+<p>
+<strong>阿宁：</strong>可以借这个感觉，但真实梁还会弯。车压上来，下边有被拉开的趋势；提前形成的压力，可以抵消其中一部分。这种提前建立的受力状态，叫预应力。
+</p>
+<p>
+<strong>小周：</strong>那我把钢索拉得越紧，不就越保险？最好哪儿都不出现拉力。
+</p>
+<p>
+<strong>阿宁：</strong>先别只看车上桥以后。车还没来，梁也已经受到了这股力。索放得偏、拉得太大，另一边也可能先出现拉应力。
+</p>
+<p>
+<strong>小周：</strong>哦，使用时看着挺好，不代表施工时就没问题。那我得把两个时候都看一遍。
+</p>
+<p>
+<strong>阿宁：</strong>对。本例只对比两个明示的线弹性工况。设计还要看损失、裂缝、承载力和构造。普通钢筋主要在开裂后的受拉区承担拉力；预应力还主动改变了加载前的状态，不能当成只是多放几根钢筋。
+</p>
+<p>
+<a href="scripts/dialogue-pilot/dialogue_manim.py">Manim 主场景</a> · <a href="scripts/dialogue-pilot/diagram_a.py">横向分布、尺度与加载图</a> · <a href="scripts/dialogue-pilot/diagram_b.py">预应力与有限元图</a> · <a href="scripts/dialogue-pilot/manim_helpers.py">公共绘图函数</a> · <a href="assets/videos/dialogue-pilot/D03-script.md">完整脚本</a>
+</p>
+</details>
+</video></section>
+<section class="level3" id="d04">
+<h3 class="anchored" data-anchor-id="d04">车越多，桥的每一处都更不利吗？</h3>
+<video aria-label="车越多，桥的每一处都更不利吗？" class="dialogue-player" controls="" playsinline="" poster="assets/videos/dialogue-pilot/D04-poster.jpg" preload="metadata">
+<source src="assets/videos/dialogue-pilot/D04-dialogue.mp4" type="video/mp4"/>
+<track kind="captions" label="中文" src="assets/videos/dialogue-pilot/D04-dialogue.vtt" srclang="zh"/>
+<p><a href="assets/videos/dialogue-pilot/D04-dialogue.mp4">下载视频</a></p>
+<p class="batch-media-meta">
+1:26 · 双人合成声音 · <a href="interactive/lessons/C03U09.html">同主题实验（模型条件另列）→</a> · <a download="" href="assets/videos/dialogue-pilot/D04-dialogue.mp4">下载视频</a>
+</p>
+<details>
+<summary>
+读对话 / 看制作代码
+</summary>
+<p>
+<strong>小周：</strong>车越多，桥越累。要找最危险的时候，那就把能放车的地方全放满，还用算？
+</p>
+<p>
+<strong>阿宁：</strong>先指一个要看的地方。我们只看这根简支梁，距离左端四米的截面剪力，并约定图上的正方向。你把一个力从左边慢慢移过去。
+</p>
+<p>
+<strong>小周：</strong>刚过那条线，数就跳到另一边了？同一个东西往下压，怎么这边的影响还会换号？
+</p>
+<p>
+<strong>阿宁：</strong>因为我们盯着一个截面，并把梁在这里分开来画受力图。荷载在截面左边还是右边，进入哪一块的平衡式不同。把每个车位的影响连起来，就得到这张影响线。
+</p>
+<p>
+<strong>小周：</strong>所以如果我只想让这个正方向的剪力尽量大，把左边也塞满车，反而可能抵消一些？
+</p>
+<p>
+<strong>阿宁：</strong>对，在这里的独立可布均布荷载模型中，正号区加载，能把这个响应推大；负号区加载，会往另一个方向推。找最小值就反过来。
+</p>
+<p>
+<strong>小周：</strong>可真车的轮子连在一起，总不能想把哪个轮子放哪儿，就放哪儿吧？
+</p>
+<p>
+<strong>阿宁：</strong>这句很关键。影响线告诉你各处怎样影响指定响应；真实车辆还得整体移动，遵守轴距、车道和相应加载规则。找最不利，要先说清看什么，再说允许怎样摆。
+</p>
+<p>
+<a href="scripts/dialogue-pilot/dialogue_manim.py">Manim 主场景</a> · <a href="scripts/dialogue-pilot/diagram_a.py">横向分布、尺度与加载图</a> · <a href="scripts/dialogue-pilot/diagram_b.py">预应力与有限元图</a> · <a href="scripts/dialogue-pilot/manim_helpers.py">公共绘图函数</a> · <a href="assets/videos/dialogue-pilot/D04-script.md">完整脚本</a>
+</p>
+</details>
+</video></section>
+<section class="level3" id="d05">
+<h3 class="anchored" data-anchor-id="d05">网格都这么细了，怎么还可能算错？</h3>
+<video aria-label="网格都这么细了，怎么还可能算错？" class="dialogue-player" controls="" playsinline="" poster="assets/videos/dialogue-pilot/D05-poster.jpg" preload="metadata">
+<source src="assets/videos/dialogue-pilot/D05-dialogue.mp4" type="video/mp4"/>
+<track kind="captions" label="中文" src="assets/videos/dialogue-pilot/D05-dialogue.vtt" srclang="zh"/>
+<p><a href="assets/videos/dialogue-pilot/D05-dialogue.mp4">下载视频</a></p>
+<p class="batch-media-meta">
+1:20 · 双人合成声音 · <a href="interactive/lessons/C11U07.html">同主题实验（模型条件另列）→</a> · <a download="" href="assets/videos/dialogue-pilot/D05-dialogue.mp4">下载视频</a>
+</p>
+<details>
+<summary>
+读对话 / 看制作代码
+</summary>
+<p>
+<strong>小周：</strong>以前你嫌模型太粗。现在我把网格切得密密麻麻，结果都不怎么变了，这回总该信电脑了吧？
+</p>
+<p>
+<strong>阿宁：</strong>我们给它同一根梁、同一份荷载。左边允许梁端转动，右边把两头的转角也锁住。先猜，哪根更容易下沉？
+</p>
+<p>
+<strong>小周：</strong>当然是左边。像搁板搭在支架上，和两头死死夹住，能一样吗？
+</p>
+<p>
+<strong>阿宁：</strong>看，左边算到大约十一点二七毫米，右边只有二点一三毫米。网格越来越细，两边的结果都稳定下来了。
+</p>
+<p>
+<strong>小周：</strong>那右边是很稳定地，算了一个我根本没要它算的东西？精细地答错了题？
+</p>
+<p>
+<strong>阿宁：</strong>正是。网格收敛只说明这个模型的数值近似趋于稳定，不能替你证明支承、荷载和材料选对了。
+</p>
+<p>
+<strong>小周：</strong>那让人工智能写脚本，也一样。代码能跑、图也漂亮，只能说明它跑完了。还得问，它有没有把我的意思理解错。
+</p>
+<p>
+<strong>阿宁：</strong>所以先用能手算的小例子核对，再检查力和位移的条件，然后逐步加复杂性。计算越方便，越要讲清楚模型究竟代表什么。
+</p>
+<p>
+<a href="scripts/dialogue-pilot/dialogue_manim.py">Manim 主场景</a> · <a href="scripts/dialogue-pilot/diagram_a.py">横向分布、尺度与加载图</a> · <a href="scripts/dialogue-pilot/diagram_b.py">预应力与有限元图</a> · <a href="scripts/dialogue-pilot/manim_helpers.py">公共绘图函数</a> · <a href="assets/videos/dialogue-pilot/D05-script.md">完整脚本</a>
+</p>
+</details>
+</video></section>
+</section>
+<section class="level2" id="选一个问题动手">
+<h2 class="anchored" data-anchor-id="选一个问题动手">选一个问题动手</h2>
+<p><a class="btn btn-primary" href="interactive/course-package.html">进入 100 个交互实验</a></p>
+<p>先猜一个结果，改变参数，再比较眼前的变化。实验保留自由探索，做错后可以调整重试。每页都能查看模型条件和计算代码。</p>
+<details>
+<summary>
+资源数量怎么算？
+</summary>
+<p>
+本轮交付 100 个可独立打开的交互 HTML 页面，按教学问题区分。它们复用已有力学引擎，不能计作 100 套独立求解器。课程包保留 110 个编号单元的映射，其中另 10 个列为候选；原来的单人讲解视频保留，这次新增的是上面 5 个双人样片。
+</p>
+</details>
+</section>
+<section class="level2" id="forty-figures">
+<h2 class="anchored" data-anchor-id="forty-figures">翻看 40 幅新图</h2>
+<p>点图片看大图，点“回到正文”接着读。箭头表示作用或传递方向；曲线和数值图注明模型条件。下面的图均由参数与绘图程序生成，保留可继续编辑的 SVG 和 Python 源码。</p>
+<details class="batch-chapter" open="">
+<summary>
+第 1 章 · 3 幅
+</summary>
+<div class="batch-gallery">
+<article>
+<a href="assets/publication/priority-40/F01.svg" target="_blank"><img alt="车的重量，最后传到了哪里？" loading="lazy" src="assets/publication/priority-40/F01.svg"/></a>
+<h4 class="anchored">
+F01 · 车的重量，最后传到了哪里？
+</h4>
+<p>
+由车辆、桥面板、主梁、支座、墩台、基础到地基的竖向传力路径。基础处向上箭头表示地基对基础的反力。
+</p>
+<p>
+<a href="chapters/ch01.html#fig-priority-F01">回到正文</a> · <a download="" href="assets/publication/priority-40/F01.png">PNG</a> · <a download="" href="assets/publication/priority-40/F01.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F02.svg" target="_blank"><img alt="同样向下的重量，为什么需要不同的支承？" loading="lazy" src="assets/publication/priority-40/F02.svg"/></a>
+<h4 class="anchored">
+F02 · 同样向下的重量，为什么需要不同的支承？
+</h4>
+<p>
+同一竖向均布荷载下，理想梁以弯曲平衡，抛物线拱需要向内水平反力，抛物线索需要向外水平反力。相同的反力量级不代表结构性能相同。
+</p>
+<p>
+<a href="chapters/ch01.html#fig-priority-F02">回到正文</a> · <a download="" href="assets/publication/priority-40/F02.png">PNG</a> · <a download="" href="assets/publication/priority-40/F02.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F03.svg" target="_blank"><img alt="把一座桥原样放大两倍，还能照搬原来的判断吗？" loading="lazy" src="assets/publication/priority-40/F03.svg"/></a>
+<h4 class="anchored">
+F03 · 把一座桥原样放大两倍，还能照搬原来的判断吗？
+</h4>
+<p>
+几何相似、材料和重度相同的梁，将尺度乘2后面积、自重和二次矩分别乘4、8和16，而自重弯曲应力乘2。
+</p>
+<p>
+<a href="chapters/ch01.html#fig-priority-F03">回到正文</a> · <a download="" href="assets/publication/priority-40/F03.png">PNG</a> · <a download="" href="assets/publication/priority-40/F03.svg">SVG</a>
+</p>
+</article>
+</div>
+</details>
+<details class="batch-chapter">
+<summary>
+第 2 章 · 5 幅
+</summary>
+<div class="batch-gallery">
+<article>
+<a href="assets/publication/priority-40/F04.svg" target="_blank"><img alt="同一个偏心压力，为什么一边压得更多？" loading="lazy" src="assets/publication/priority-40/F04.svg"/></a>
+<h4 class="anchored">
+F04 · 同一个偏心压力，为什么一边压得更多？
+</h4>
+<p>
+把同一偏心压力分为中心压力和等效弯矩。三幅应力箭头使用同一比例；正值为压应力，负值为拉应力。
+</p>
+<p>
+<a href="chapters/ch02-foundations.html#fig-priority-F04">回到正文</a> · <a download="" href="assets/publication/priority-40/F04.png">PNG</a> · <a download="" href="assets/publication/priority-40/F04.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F05.svg" target="_blank"><img alt="压力移到哪里，截面边缘才开始出现拉应力？" loading="lazy" src="assets/publication/priority-40/F05.svg"/></a>
+<h4 class="anchored">
+F05 · 压力移到哪里，截面边缘才开始出现拉应力？
+</h4>
+<p>
+移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。
+</p>
+<p>
+<a href="chapters/ch02-foundations.html#fig-priority-F05">回到正文</a> · <a download="" href="assets/publication/priority-40/F05.png">PNG</a> · <a download="" href="assets/publication/priority-40/F05.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F06.svg" target="_blank"><img alt="同一块板竖着放、横着放，为什么弯起来不一样？" loading="lazy" src="assets/publication/priority-40/F06.svg"/></a>
+<h4 class="anchored">
+F06 · 同一块板竖着放、横着放，为什么弯起来不一样？
+</h4>
+<p>
+明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。
+</p>
+<p>
+<a href="chapters/ch02-foundations.html#fig-priority-F06">回到正文</a> · <a download="" href="assets/publication/priority-40/F06.png">PNG</a> · <a download="" href="assets/publication/priority-40/F06.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F07.svg" target="_blank"><img alt="同样长的压杆，端部能不能转动有多大影响？" loading="lazy" src="assets/publication/priority-40/F07.svg"/></a>
+<h4 class="anchored">
+F07 · 同样长的压杆，端部能不能转动有多大影响？
+</h4>
+<p>
+实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。
+</p>
+<p>
+<a href="chapters/ch02-foundations.html#fig-priority-F07">回到正文</a> · <a download="" href="assets/publication/priority-40/F07.png">PNG</a> · <a download="" href="assets/publication/priority-40/F07.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F08.svg" target="_blank"><img alt="普通钢筋和预应力，分别在什么时候开始起作用？" loading="lazy" src="assets/publication/priority-40/F08.svg"/></a>
+<h4 class="anchored">
+F08 · 普通钢筋和预应力，分别在什么时候开始起作用？
+</h4>
+<p>
+左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。
+</p>
+<p>
+<a href="chapters/ch02-foundations.html#fig-priority-F08">回到正文</a> · <a download="" href="assets/publication/priority-40/F08.png">PNG</a> · <a download="" href="assets/publication/priority-40/F08.svg">SVG</a>
+</p>
+</article>
+</div>
+</details>
+<details class="batch-chapter">
+<summary>
+第 3 章 · 4 幅
+</summary>
+<div class="batch-gallery">
+<article>
+<a href="assets/publication/priority-40/F09.svg" target="_blank"><img alt="同一辆车换个位置，跨中弯矩会怎样变？" loading="lazy" src="assets/publication/priority-40/F09.svg"/></a>
+<h4 class="anchored">
+F09 · 同一辆车换个位置，跨中弯矩会怎样变？
+</h4>
+<p>
+移动力相同，跨中弯矩随影响线纵标变化。6 m、15 m、24 m三个位置分别得到300、750、300 kN·m。
+</p>
+<p>
+<a href="chapters/ch02.html#fig-priority-F09">回到正文</a> · <a download="" href="assets/publication/priority-40/F09.png">PNG</a> · <a download="" href="assets/publication/priority-40/F09.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F10.svg" target="_blank"><img alt="想让同一截面的剪力最大，荷载该放在哪一边？" loading="lazy" src="assets/publication/priority-40/F10.svg"/></a>
+<h4 class="anchored">
+F10 · 想让同一截面的剪力最大，荷载该放在哪一边？
+</h4>
+<p>
+固定截面剪力影响线在C处有单位跃变。覆盖右侧正区得到+54 kN，覆盖左侧负区得到−24 kN。改变目标符号，需要改变加载区段。
+</p>
+<p>
+<a href="chapters/ch02.html#fig-priority-F10">回到正文</a> · <a download="" href="assets/publication/priority-40/F10.png">PNG</a> · <a download="" href="assets/publication/priority-40/F10.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F11.svg" target="_blank"><img alt="两根车轴一起上桥，怎样把各自的作用加起来？" loading="lazy" src="assets/publication/priority-40/F11.svg"/></a>
+<h4 class="anchored">
+F11 · 两根车轴一起上桥，怎样把各自的作用加起来？
+</h4>
+<p>
+两轴保持实际间距，在同一目标截面的影响线上分别读取纵标，再以轴重乘纵标后相加。120 kN轴贡献660，180 kN轴贡献1350 kN·m。
+</p>
+<p>
+<a href="chapters/ch02.html#fig-priority-F11">回到正文</a> · <a download="" href="assets/publication/priority-40/F11.png">PNG</a> · <a download="" href="assets/publication/priority-40/F11.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F12.svg" target="_blank"><img alt="平均抗力比平均作用大，为什么还不能只看两个平均数？" loading="lazy" src="assets/publication/priority-40/F12.svg"/></a>
+<h4 class="anchored">
+F12 · 平均抗力比平均作用大，为什么还不能只看两个平均数？
+</h4>
+<p>
+联合正态教学模型以g=R−S转化为一维余量分布；红色尾部为g&lt;0的概率。联合图的阴影只是失效域，不是按几何面积计算概率。
+</p>
+<p>
+<a href="chapters/ch02.html#fig-priority-F12">回到正文</a> · <a download="" href="assets/publication/priority-40/F12.png">PNG</a> · <a download="" href="assets/publication/priority-40/F12.svg">SVG</a>
+</p>
+</article>
+</div>
+</details>
+<details class="batch-chapter">
+<summary>
+第 4 章 · 7 幅
+</summary>
+<div class="batch-gallery">
+<article>
+<a href="assets/publication/priority-40/F13.svg" target="_blank"><img alt="车轮下面，桥面板靠哪些构件支承？" loading="lazy" src="assets/publication/priority-40/F13.svg"/></a>
+<h4 class="anchored">
+F13 · 车轮下面，桥面板靠哪些构件支承？
+</h4>
+<p>
+轴测整桥以5根纵向主梁、3道跨内横隔板和两端横梁定位桥面板的空间支承。透明桥面仅为揭示内部构造；车辆轮载向下。
+</p>
+<p>
+<a href="chapters/ch03.html#fig-priority-F13">回到正文</a> · <a download="" href="assets/publication/priority-40/F13.png">PNG</a> · <a download="" href="assets/publication/priority-40/F13.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F14.svg" target="_blank"><img alt="一块板能向两边传力，取成梁以后保留了什么？" loading="lazy" src="assets/publication/priority-40/F14.svg"/></a>
+<h4 class="anchored">
+F14 · 一块板能向两边传力，取成梁以后保留了什么？
+</h4>
+<p>
+俯视四边简支板与侧视两端简支板带分别展示保留的运动和支承。两图不宣称自动等价，也没有用未经计算的彩色云图表示应力。
+</p>
+<p>
+<a href="chapters/ch03.html#fig-priority-F14">回到正文</a> · <a download="" href="assets/publication/priority-40/F14.png">PNG</a> · <a download="" href="assets/publication/priority-40/F14.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F15.svg" target="_blank"><img alt="只用力的平衡，什么时候能算出每个支点分担？" loading="lazy" src="assets/publication/priority-40/F15.svg"/></a>
+<h4 class="anchored">
+F15 · 只用力的平衡，什么时候能算出每个支点分担？
+</h4>
+<p>
+两支点静定板段用相反力臂计算反力；若保留三支承连续横梁，则需额外的变形协调。图中特别区分简化后的图式和未释放的连续图式。
+</p>
+<p>
+<a href="chapters/ch03.html#fig-priority-F15">回到正文</a> · <a download="" href="assets/publication/priority-40/F15.png">PNG</a> · <a download="" href="assets/publication/priority-40/F15.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F16.svg" target="_blank"><img alt="车偏到一侧，总重量怎样分到五根梁？" loading="lazy" src="assets/publication/priority-40/F16.svg"/></a>
+<h4 class="anchored">
+F16 · 车偏到一侧，总重量怎样分到五根梁？
+</h4>
+<p>
+平均分担24 kN/梁与偏心分量−24、−12、0、12、24 kN相加，得到0、12、24、36、48 kN。合力和合矩均与外作用一致。
+</p>
+<p>
+<a href="chapters/ch03.html#fig-priority-F16">回到正文</a> · <a download="" href="assets/publication/priority-40/F16.png">PNG</a> · <a download="" href="assets/publication/priority-40/F16.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F17.svg" target="_blank"><img alt="某根梁的活载增量为负，就已经离开支承了吗？" loading="lazy" src="assets/publication/priority-40/F17.svg"/></a>
+<h4 class="anchored">
+F17 · 某根梁的活载增量为负，就已经离开支承了吗？
+</h4>
+<p>
+已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。
+</p>
+<p>
+<a href="chapters/ch03.html#fig-priority-F17">回到正文</a> · <a download="" href="assets/publication/priority-40/F17.png">PNG</a> · <a download="" href="assets/publication/priority-40/F17.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F18.svg" target="_blank"><img alt="把两跨接成一根梁，弯矩和下沉会怎样改变？" loading="lazy" src="assets/publication/priority-40/F18.svg"/></a>
+<h4 class="anchored">
+F18 · 把两跨接成一根梁，弯矩和下沉会怎样改变？
+</h4>
+<p>
+统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。
+</p>
+<p>
+<a href="chapters/ch03.html#fig-priority-F18">回到正文</a> · <a download="" href="assets/publication/priority-40/F18.png">PNG</a> · <a download="" href="assets/publication/priority-40/F18.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F19.svg" target="_blank"><img alt="桥还没碰到下一个支点，悬空越长会怎样？" loading="lazy" src="assets/publication/priority-40/F19.svg"/></a>
+<h4 class="anchored">
+F19 · 桥还没碰到下一个支点，悬空越长会怎样？
+</h4>
+<p>
+悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。
+</p>
+<p>
+<a href="chapters/ch03.html#fig-priority-F19">回到正文</a> · <a download="" href="assets/publication/priority-40/F19.png">PNG</a> · <a download="" href="assets/publication/priority-40/F19.svg">SVG</a>
+</p>
+</article>
+</div>
+</details>
+<details class="batch-chapter">
+<summary>
+第 5 章 · 4 幅
+</summary>
+<div class="batch-gallery">
+<article>
+<a href="assets/publication/priority-40/F20.svg" target="_blank"><img alt="把拱压低，拱脚要多推多少？" loading="lazy" src="assets/publication/priority-40/F20.svg"/></a>
+<h4 class="anchored">
+F20 · 把拱压低，拱脚要多推多少？
+</h4>
+<p>
+相同跨度和竖向均布荷载下，三铰抛物线拱矢高由20 m增至30 m，水平推力由16.2 MN降至10.8 MN；竖向反力不变。
+</p>
+<p>
+<a href="chapters/ch04.html#fig-priority-F20">回到正文</a> · <a download="" href="assets/publication/priority-40/F20.png">PNG</a> · <a download="" href="assets/publication/priority-40/F20.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F21.svg" target="_blank"><img alt="压力线离开拱轴，弯矩从哪里来？" loading="lazy" src="assets/publication/priority-40/F21.svg"/></a>
+<h4 class="anchored">
+F21 · 压力线离开拱轴，弯矩从哪里来？
+</h4>
+<p>
+同一左半跨均布荷载下，压力线作图与拱轴出现偏离。在左四分点，竖向差6 m对应M=HΔy=40.5 MN·m；沿截面法向计算的压力中心偏心为M/N，二者不可混用。
+</p>
+<p>
+<a href="chapters/ch04.html#fig-priority-F21">回到正文</a> · <a download="" href="assets/publication/priority-40/F21.png">PNG</a> · <a download="" href="assets/publication/priority-40/F21.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F22.svg" target="_blank"><img alt="荷载只放一半，拱就一定更轻松吗？" loading="lazy" src="assets/publication/priority-40/F22.svg"/></a>
+<h4 class="anchored">
+F22 · 荷载只放一半，拱就一定更轻松吗？
+</h4>
+<p>
+抛物线拱在满跨均布荷载下弯矩为零；仅在左半跨加载会形成一正一负的弯矩。总竖向荷载减小并不意味着每个截面弯矩减小。
+</p>
+<p>
+<a href="chapters/ch04.html#fig-priority-F22">回到正文</a> · <a download="" href="assets/publication/priority-40/F22.png">PNG</a> · <a download="" href="assets/publication/priority-40/F22.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F23.svg" target="_blank"><img alt="桥墩“动了十毫米”，到底是哪一种动？" loading="lazy" src="assets/publication/priority-40/F23.svg"/></a>
+<h4 class="anchored">
+F23 · 桥墩“动了十毫米”，到底是哪一种动？
+</h4>
+<p>
+相同“10 mm”可以是共同沉降、差异沉降或相对水平张开。必须先定义运动对象、方向与边界，再计算三铰、两铰或无铰拱的附加响应。
+</p>
+<p>
+<a href="chapters/ch04.html#fig-priority-F23">回到正文</a> · <a download="" href="assets/publication/priority-40/F23.png">PNG</a> · <a download="" href="assets/publication/priority-40/F23.svg">SVG</a>
+</p>
+</article>
+</div>
+</details>
+<details class="batch-chapter">
+<summary>
+第 6 章 · 3 幅
+</summary>
+<div class="batch-gallery">
+<article>
+<a href="assets/publication/priority-40/F24.svg" target="_blank"><img alt="车的重量，怎样经过拉索到达桥塔？" loading="lazy" src="assets/publication/priority-40/F24.svg"/></a>
+<h4 class="anchored">
+F24 · 车的重量，怎样经过拉索到达桥塔？
+</h4>
+<p>
+双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。
+</p>
+<p>
+<a href="chapters/ch05.html#fig-priority-F24">回到正文</a> · <a download="" href="assets/publication/priority-40/F24.png">PNG</a> · <a download="" href="assets/publication/priority-40/F24.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F25.svg" target="_blank"><img alt="只调一组索，怎样得到矩阵的一列？" loading="lazy" src="assets/publication/priority-40/F25.svg"/></a>
+<h4 class="anchored">
+F25 · 只调一组索，怎样得到矩阵的一列？
+</h4>
+<p>
+固定模型状态和输出定义，仅将第二索组增大1 MN时，三项响应增量就是影响矩阵第二列；矩阵沿用正文明确声明的教学测试数据，构件定位图不冒充矩阵来源模型。
+</p>
+<p>
+<a href="chapters/ch05.html#fig-priority-F25">回到正文</a> · <a download="" href="assets/publication/priority-40/F25.png">PNG</a> · <a download="" href="assets/publication/priority-40/F25.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F26.svg" target="_blank"><img alt="合龙以后，桥还是刚才那个受力体系吗？" loading="lazy" src="assets/publication/priority-40/F26.svg"/></a>
+<h4 class="anchored">
+F26 · 合龙以后，桥还是刚才那个受力体系吗？
+</h4>
+<p>
+合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。
+</p>
+<p>
+<a href="chapters/ch05.html#fig-priority-F26">回到正文</a> · <a download="" href="assets/publication/priority-40/F26.png">PNG</a> · <a download="" href="assets/publication/priority-40/F26.svg">SVG</a>
+</p>
+</article>
+</div>
+</details>
+<details class="batch-chapter">
+<summary>
+第 7 章 · 3 幅
+</summary>
+<div class="batch-gallery">
+<article>
+<a href="assets/publication/priority-40/F27.svg" target="_blank"><img alt="悬索桥的重量，最后交给了谁？" loading="lazy" src="assets/publication/priority-40/F27.svg"/></a>
+<h4 class="anchored">
+F27 · 悬索桥的重量，最后交给了谁？
+</h4>
+<p>
+地锚式悬索桥中，桥面经加劲梁、吊索和主缆传力，索塔与锚碇共同承担主缆传来的作用。自锚式的主缆水平分力路径不同，不能套用本图。
+</p>
+<p>
+<a href="chapters/ch06.html#fig-priority-F27">回到正文</a> · <a download="" href="assets/publication/priority-40/F27.png">PNG</a> · <a download="" href="assets/publication/priority-40/F27.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F28.svg" target="_blank"><img alt="缆索垂得更深，锚碇要拉住的力会变多少？" loading="lazy" src="assets/publication/priority-40/F28.svg"/></a>
+<h4 class="anchored">
+F28 · 缆索垂得更深，锚碇要拉住的力会变多少？
+</h4>
+<p>
+在水平投影均布荷载的理想索模型中，垂度由40 m增至80 m，水平分力H从50 MN减至25 MN，竖向分力仍各20 MN。H是水平分量，不是支点索力总值。
+</p>
+<p>
+<a href="chapters/ch06.html#fig-priority-F28">回到正文</a> · <a download="" href="assets/publication/priority-40/F28.png">PNG</a> · <a download="" href="assets/publication/priority-40/F28.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F29.svg" target="_blank"><img alt="一根绳拉紧以后，为什么更难横向拨动？" loading="lazy" src="assets/publication/priority-40/F29.svg"/></a>
+<h4 class="anchored">
+F29 · 一根绳拉紧以后，为什么更难横向拨动？
+</h4>
+<p>
+同长、同一小横向荷载下，提高初张力会提高拉直绳的横向切线刚度，线性扰动位移近似反比于初张力。图示变形放大20倍，斜拉方向只作示意。
+</p>
+<p>
+<a href="chapters/ch06.html#fig-priority-F29">回到正文</a> · <a download="" href="assets/publication/priority-40/F29.png">PNG</a> · <a download="" href="assets/publication/priority-40/F29.svg">SVG</a>
+</p>
+</article>
+</div>
+</details>
+<details class="batch-chapter">
+<summary>
+第 8 章 · 3 幅
+</summary>
+<div class="batch-gallery">
+<article>
+<a href="assets/publication/priority-40/F30.svg" target="_blank"><img alt="温度一样升高，为什么有的伸长、有的受压？" loading="lazy" src="assets/publication/priority-40/F30.svg"/></a>
+<h4 class="anchored">
+F30 · 温度一样升高，为什么有的伸长、有的受压？
+</h4>
+<p>
+同样均匀温升下，自由伸缩产生7.2 mm轴向伸长；完全限制该伸长则在本一维弹性模型中产生72 MPa压应力、1440 kN压力。支座约束改变的是允许发生的运动。
+</p>
+<p>
+<a href="chapters/ch07.html#fig-priority-F30">回到正文</a> · <a download="" href="assets/publication/priority-40/F30.png">PNG</a> · <a download="" href="assets/publication/priority-40/F30.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F31.svg" target="_blank"><img alt="“固定支座”到底固定了哪些方向？" loading="lazy" src="assets/publication/priority-40/F31.svg"/></a>
+<h4 class="anchored">
+F31 · “固定支座”到底固定了哪些方向？
+</h4>
+<p>
+理想固定、纵向活动和多向活动支座的平移约束对照。青色双箭头代表可移动方向，红色标记代表被约束的平移；固定支座不等于梁固端。
+</p>
+<p>
+<a href="chapters/ch07.html#fig-priority-F31">回到正文</a> · <a download="" href="assets/publication/priority-40/F31.png">PNG</a> · <a download="" href="assets/publication/priority-40/F31.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F32.svg" target="_blank"><img alt="基础把桥的重量交给哪一层土？" loading="lazy" src="assets/publication/priority-40/F32.svg"/></a>
+<h4 class="anchored">
+F32 · 基础把桥的重量交给哪一层土？
+</h4>
+<p>
+浅基础与桩基础的竖向荷载路径对照。桩基础通过桩侧摩阻及桩端阻力传力；箭头只示方向，实际分担与群桩效应取决于土层、桩、承台和荷载状态。
+</p>
+<p>
+<a href="chapters/ch07.html#fig-priority-F32">回到正文</a> · <a download="" href="assets/publication/priority-40/F32.png">PNG</a> · <a download="" href="assets/publication/priority-40/F32.svg">SVG</a>
+</p>
+</article>
+</div>
+</details>
+<details class="batch-chapter">
+<summary>
+第 9 章 · 3 幅
+</summary>
+<div class="batch-gallery">
+<article>
+<a href="assets/publication/priority-40/F33.svg" target="_blank"><img alt="风速翻倍，推桥面的力也只翻倍吗？" loading="lazy" src="assets/publication/priority-40/F33.svg"/></a>
+<h4 class="anchored">
+F33 · 风速翻倍，推桥面的力也只翻倍吗？
+</h4>
+<p>
+固定气密度、阻力系数和面积时，风速10、20、40 m/s对应静力阻力0.735、2.940、11.760 kN；速度翻倍，动压和阻力均变为4倍。蓝色箭头示来流，橙色箭头示阻力。
+</p>
+<p>
+<a href="chapters/ch09-wind.html#fig-priority-F33">回到正文</a> · <a download="" href="assets/publication/priority-40/F33.png">PNG</a> · <a download="" href="assets/publication/priority-40/F33.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F34.svg" target="_blank"><img alt="同样大小的周期力，为什么能激起更大的振动？" loading="lazy" src="assets/publication/priority-40/F34.svg"/></a>
+<h4 class="anchored">
+F34 · 同样大小的周期力，为什么能激起更大的振动？
+</h4>
+<p>
+单自由度简谐稳态响应随频率比与阻尼改变。阻尼比0.02、0.05、0.10在r=1时的位移放大系数分别为25、10、5；该模型不直接描述桥梁颤振。
+</p>
+<p>
+<a href="chapters/ch09-wind.html#fig-priority-F34">回到正文</a> · <a download="" href="assets/publication/priority-40/F34.png">PNG</a> · <a download="" href="assets/publication/priority-40/F34.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F35.svg" target="_blank"><img alt="桥面两边一起动，和一上一下，是同一种振动吗？" loading="lazy" src="assets/publication/priority-40/F35.svg"/></a>
+<h4 class="anchored">
+F35 · 桥面两边一起动，和一上一下，是同一种振动吗？
+</h4>
+<p>
+参数化桥面带的纯竖弯与纯扭转形状对照，以及同一横截面的观察方式。真实桥梁可能有耦合模态；需同一断面同步测量才可用两侧位移分解。
+</p>
+<p>
+<a href="chapters/ch09-wind.html#fig-priority-F35">回到正文</a> · <a download="" href="assets/publication/priority-40/F35.png">PNG</a> · <a download="" href="assets/publication/priority-40/F35.svg">SVG</a>
+</p>
+</article>
+</div>
+</details>
+<details class="batch-chapter">
+<summary>
+第 10 章 · 2 幅
+</summary>
+<div class="batch-gallery">
+<article>
+<a href="assets/publication/priority-40/F36.svg" target="_blank"><img alt="少了十分之一厚度，梁就只软十分之一吗？" loading="lazy" src="assets/publication/priority-40/F36.svg"/></a>
+<h4 class="anchored">
+F36 · 少了十分之一厚度，梁就只软十分之一吗？
+</h4>
+<p>
+同宽矩形钢条上下表面减薄的几何比较：高度减少10%，面积减少10%，惯性矩减少27.1%，同边界同荷载下线弹性挠度增加约37.2%。防护列只是指定剩余厚度的比较，不是预报寿命。
+</p>
+<p>
+<a href="chapters/ch10-lifecycle.html#fig-priority-F36">回到正文</a> · <a download="" href="assets/publication/priority-40/F36.png">PNG</a> · <a download="" href="assets/publication/priority-40/F36.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F37.svg" target="_blank"><img alt="把地震力降下来，还要为哪一种变化留空间？" loading="lazy" src="assets/publication/priority-40/F37.svg"/></a>
+<h4 class="anchored">
+F37 · 把地震力降下来，还要为哪一种变化留空间？
+</h4>
+<p>
+在本图明确指定的两组教学谱读数下，较长周期方案的等效力需求降低，但谱位移需求增大；隔震选择必须同时核查梁端位移、限位、管线和防落梁空间。图中的弹簧表示等效水平刚度。
+</p>
+<p>
+<a href="chapters/ch10-lifecycle.html#fig-priority-F37">回到正文</a> · <a download="" href="assets/publication/priority-40/F37.png">PNG</a> · <a download="" href="assets/publication/priority-40/F37.svg">SVG</a>
+</p>
+</article>
+</div>
+</details>
+<details class="batch-chapter">
+<summary>
+第 11 章 · 3 幅
+</summary>
+<div class="batch-gallery">
+<article>
+<a href="assets/publication/priority-40/F38.svg" target="_blank"><img alt="电脑里的一个节点，对应桥上的什么位置？" loading="lazy" src="assets/publication/priority-40/F38.svg"/></a>
+<h4 class="anchored">
+F38 · 电脑里的一个节点，对应桥上的什么位置？
+</h4>
+<p>
+同一20 m简支梁从构件轴线到四个梁单元、五个节点的映射；跨中集中力施加在节点3。节点既有位置也携带自由度，单元连接节点并使用材料与截面刚度。
+</p>
+<p>
+<a href="chapters/ch10-fem.html#fig-priority-F38">回到正文</a> · <a download="" href="assets/publication/priority-40/F38.png">PNG</a> · <a download="" href="assets/publication/priority-40/F38.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F39.svg" target="_blank"><img alt="网格越来越细，为什么答案仍可能错？" loading="lazy" src="assets/publication/priority-40/F39.svg"/></a>
+<h4 class="anchored">
+F39 · 网格越来越细，为什么答案仍可能错？
+</h4>
+<p>
+以真实三次Hermite梁单元计算同一均布荷载：两端固支的错误边界也随网格加密收敛，但收敛值不等于任务要求的简支梁答案。
+</p>
+<p>
+<a href="chapters/ch10-fem.html#fig-priority-F39">回到正文</a> · <a download="" href="assets/publication/priority-40/F39.png">PNG</a> · <a download="" href="assets/publication/priority-40/F39.svg">SVG</a>
+</p>
+</article>
+<article>
+<a href="assets/publication/priority-40/F40.svg" target="_blank"><img alt="AI给了一个数，怎样知道它算的是你的问题？" loading="lazy" src="assets/publication/priority-40/F40.svg"/></a>
+<h4 class="anchored">
+F40 · AI给了一个数，怎样知道它算的是你的问题？
+</h4>
+<p>
+同一等效梁任务的正确模型、弹性模量单位错误、两端固支边界错误对照。单位错的5882 mm只是超出小变形适用域的线性公式形式值，不能采纳；反力平衡也不能单独识别错误边界。
+</p>
+<p>
+<a href="chapters/ch10-fem.html#fig-priority-F40">回到正文</a> · <a download="" href="assets/publication/priority-40/F40.png">PNG</a> · <a download="" href="assets/publication/priority-40/F40.svg">SVG</a>
+</p>
+</article>
+</div>
+</details>
+</section>
+<section class="level2" id="notebooks">
+<h2 class="anchored" data-anchor-id="notebooks">边读边算</h2>
+<p>每份 Notebook 按“问题 → 图与公式 → 代码 → 结果 → 自己试一试”的顺序组织。网页可直接阅读已执行的结果；下载 <code>.ipynb</code> 后可在 Jupyter 中修改参数并重新运行。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>主题</th>
+<th>直接阅读</th>
+<th>下载运行</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>五根梁怎样分担车辆的重量？</td>
+<td><a href="notebooks/A-transverse.html">图文与已运行结果</a></td>
+<td><a href="notebooks/A-transverse.ipynb">Notebook</a> · <a href="notebooks/A-transverse.py">Python</a></td>
+</tr>
+<tr class="even">
+<td>“变大一倍”到底改变了什么？</td>
+<td><a href="notebooks/B-scaling.html">图文与已运行结果</a></td>
+<td><a href="notebooks/B-scaling.ipynb">Notebook</a> · <a href="notebooks/B-scaling.py">Python</a></td>
+</tr>
+<tr class="odd">
+<td>网格更细，为什么还要查支承？</td>
+<td><a href="notebooks/C-beam-fem.html">图文与已运行结果</a></td>
+<td><a href="notebooks/C-beam-fem.ipynb">Notebook</a> · <a href="notebooks/C-beam-fem.py">Python</a></td>
+</tr>
+</tbody>
+</table>
+<p>普通静态网页不会在后台运行 Python；不安装软件时，可以先使用上方对应的 HTML 实验。课程包中的数值模型与 Notebook 分别列出尺寸和假定，比较前先核对是否同一工况。</p>
+<details>
+<summary>
+制作与复核记录
+</summary>
+<p>
+40 幅原创图为本轮重点图试排稿，已插入对应章节并完成制作者逐图检查。5 部影片使用 Manim 的确定性图形和双人神经语音，保留分镜、逐句文稿、字幕和源码。本轮未使用 Seedance；生成式镜头可用于情境开场，力、位移与支承条件继续由计算和程序控制。
+</p>
+<p>
+<a href="assets/publication/priority-40/manifest.json">40 图清单与逐图条件</a> · <a href="interactive/course-package-data.json">教学单元资源清单</a> · <a href="notebooks/manifest.json">Notebook 执行记录</a> · <a href="assets/videos/dialogue-pilot/manifest.json">5 个视频与复核记录</a> · <a href="publication-images.html">参考图与出版制作说明</a>
+</p>
+</details>
+</section>
+<p class="public-edition-note"><a href="publication-images.html">公开预览 · 图片来源与版本说明</a></p></main> <!-- /main -->
+
+<script>
+(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);route.addEventListener('click',event=>{const link=event.target.closest('.priority-chapter-gallery a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;set('reference');requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));});const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+<div class="nav-page nav-page-previous">
+<a aria-label="核心视频与交互教学单元" class="pagination-link" href="./core-resources.html">
+<i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">核心视频与交互教学单元</span>
+</a>
+</div>
+<div class="nav-page nav-page-next">
+<a aria-label="数字资源索引" class="pagination-link" href="./resources.html">
+<span class="nav-page-text">数字资源索引</span> <i class="bi bi-arrow-right-short"></i>
+</a>
+</div>
+</nav>
+</div> <!-- /content -->
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

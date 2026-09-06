@@ -1,0 +1,154 @@
+{
+  "id": "F19",
+  "title": "桥还没碰到下一个支点，悬空越长会怎样？",
+  "chapter": 4,
+  "heading": "顶推施工",
+  "caption": "悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。",
+  "assumptions": [
+    "每个阶段梁尾恰在后支点、支点距12 m；这是教学静定截取，不冒充真实完整顶推系统",
+    "均布自重；未接触前方支点；无导梁、摩擦、支点高差或非线性",
+    "显示的是阶段内力，非设计安全系数"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F19.svg",
+  "png": "assets/publication/priority-40/F19.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    {
+      "name": "a=3: forces",
+      "value": 150.0,
+      "expected": 150.0,
+      "tolerance": 1e-08,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "a=3: moment about rear",
+      "value": 1125.0,
+      "expected": 1125.0,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "a=3: root M",
+      "value": -45.0,
+      "expected": -45.0,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "a=6: forces",
+      "value": 180.0,
+      "expected": 180.0,
+      "tolerance": 1e-08,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "a=6: moment about rear",
+      "value": 1620.0,
+      "expected": 1620.0,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "a=6: root M",
+      "value": -180.0,
+      "expected": -180.0,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "a=9: forces",
+      "value": 210.0,
+      "expected": 210.0,
+      "tolerance": 1e-08,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "a=9: moment about rear",
+      "value": 2205.0,
+      "expected": 2205.0,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "a=9: root M",
+      "value": -405.0,
+      "expected": -405.0,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大并复看：三个未接触阶段长度与位置可辨；反力文字移开支承斜线；根部与全梁控制量均标单位，短悬臂阶段没有误判根部控制。已看灰度。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch03.qmd",
+  "heading_line": 1769,
+  "figure_kind": "calculated",
+  "technical_review": "formula_assertions_passed",
+  "visual_review_notes": "逐张放大并复看：三个未接触阶段长度与位置可辨；反力文字移开支承斜线；根部与全梁控制量均标单位，短悬臂阶段没有误判根部控制。已看灰度。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "918ddcf5eef347880fc9a2bdf8e15eabec82922d8aecd945ed3d2615ef33c818",
+    "png": "a843e78b19a2d5dc940449fabc38ba9736335ab41ee2ac0ac4ae2254d195f114"
+  },
+  "calculation_data": {
+    "support_x_m": [
+      -12,
+      0
+    ],
+    "next_support_x_m": 12,
+    "cantilever_a_m": [
+      3,
+      6,
+      9
+    ],
+    "q_kN_per_m": 10,
+    "RA_kN": [
+      56.25,
+      45,
+      26.25
+    ],
+    "RB_kN": [
+      93.75,
+      135,
+      183.75
+    ],
+    "root_M_kNm": [
+      -45,
+      -180,
+      -405
+    ],
+    "whole_beam_abs_Mmax_kNm": [
+      158.203125,
+      180,
+      405
+    ]
+  },
+  "diagram_kind": "analytical_teaching_example",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

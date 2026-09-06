@@ -5,6 +5,9 @@
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry"><p>先从一个看得见的问题开始</p><h3>桥上只来了一侧的车，原来的拱形还合适吗？</h3><p>逐渐增大左右半跨荷载的不对称度，比较同一条拱轴上的剩余弯矩。</p><a href="../interactive/learning-map.html?chapter=ch04">看图进入实验 →</a></div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery"><summary>从本章的 4 幅新图开始</summary><div class="priority-thumb-grid"><a href="#fig-priority-F20"><img src="../assets/publication/priority-40/F20.svg" loading="lazy" alt="把拱压低，拱脚要多推多少？"><span>把拱压低，拱脚要多推多少？</span></a><a href="#fig-priority-F21"><img src="../assets/publication/priority-40/F21.svg" loading="lazy" alt="压力线离开拱轴，弯矩从哪里来？"><span>压力线离开拱轴，弯矩从哪里来？</span></a><a href="#fig-priority-F22"><img src="../assets/publication/priority-40/F22.svg" loading="lazy" alt="荷载只放一半，拱就一定更轻松吗？"><span>荷载只放一半，拱就一定更轻松吗？</span></a><a href="#fig-priority-F23"><img src="../assets/publication/priority-40/F23.svg" loading="lazy" alt="桥墩“动了十毫米”，到底是哪一种动？"><span>桥墩“动了十毫米”，到底是哪一种动？</span></a></div></details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 
 <h2>本章的核心思考</h2><p class="core-thesis">让几何贴近力流，同时保留弯曲与稳定判断。</p><ol><li>用 M=M₀−Hy 解释拱的水平推力。</li><li>改变荷载，检验合理拱轴的适用条件。</li><li>把整体内力转换为截面偏心，区分不同的无拉要求。</li></ol><div class="core-analogy"><h3>跨课程类比</h3><p>轴力＋弯矩 → 压力线偏心；柔索平衡 → 合理拱轴</p><p><strong>反例与边界：</strong>只在某种荷载下合理的拱轴，不会自动对半跨活载合理；纯压也可能失稳。</p></div><p>建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。</p><div class="core-unit-grid"><article><p class="core-tag">C05U01 · 课堂核心</p><h3>拱通过推力抵消梁式弯矩</h3><p>拱的水平推力乘以拱高，可以抵消对应梁的弯矩。</p><p><a href="../interactive/core-learning.html?unit=C05U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U01&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C05U02 · 课堂核心</p><h3>合理拱轴只对应指定荷载</h3><p>对称均布荷载下的合理拱轴，遇到不对称活载后会产生剩余弯矩。</p><p><a href="../interactive/core-learning.html?unit=C05U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U02&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C05U03 · 课前/课后迁移</p><h3>整体弯矩转成截面偏心</h3><p>用偏心等于弯矩除以轴力，把拱的整体受力转成局部截面应力问题。</p><p><a href="../interactive/core-learning.html?unit=C05U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U03&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C05U04 · 课堂核心</p><h3>无拉应力与压力线位置</h3><p>未开裂矩形截面无拉应力要求压力合力位于核心内。</p><p><a href="../interactive/core-learning.html?unit=C05U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U04&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C05U05 · 课前/课后迁移</p><h3>矢跨比改变水平推力</h3><p>同跨度同均布荷载下，拱矢高降低，水平推力按矢高倒数增加。</p><p><a href="../interactive/core-learning.html?unit=C05U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U05&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C05U06 · 课前/课后迁移</p><h3>拱与悬索是受力的对应形态</h3><p>在水平投影均布荷载模型中，悬索与合理拱均呈抛物线平衡关系，但轴力符号相反。</p><p><a href="../interactive/core-learning.html?unit=C05U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U06&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C05U07 · 课前/课后迁移</p><h3>拱肋变细，稳定不会自动跟上</h3><p>提高惯性矩可以提高理想压杆临界力，实际拱仍需检查空间稳定。</p><p><a href="../interactive/core-learning.html?unit=C05U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U07&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C05U08 · 课前/课后迁移</p><h3>合龙相当于锁定自由变形</h3><p>约束建立前后，同一自由变形会对应不同的内力。</p><p><a href="../interactive/core-learning.html?unit=C05U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U08&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C05U09 · 课前/课后迁移</p><h3>梁拱组合靠刚度分担作用</h3><p>共同变形的构件按刚度分担作用，不能仅凭名称判断谁承担更多荷载。</p><p><a href="../interactive/core-learning.html?unit=C05U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U09&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C05U10 · 课前/课后迁移</p><h3>半跨荷载是检验类比的反例</h3><p>荷载失去对称性时，剩余弯矩显现，必须保留弯曲验算。</p><p><a href="../interactive/core-learning.html?unit=C05U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U10&amp;view=video" target="_blank">观看短视频</a></p></article></div><p><a href="../core-thinking.html">返回全书核心思维与尺度规律</a> · <a href="../core-resources.html">查看110个教学单元总索引</a> · <a href="../interactive/thinking-analogies.html">打开跨课程并排类比</a></p></div>
 <!-- CORE-ROUTE END -->
@@ -126,6 +129,14 @@ $$
 
 #### 跨径、矢高与矢跨比
 
+
+<!-- PRIORITY-FIGURE F20 START -->
+![相同跨度和竖向均布荷载下，三铰抛物线拱矢高由20 m增至30 m，水平推力由16.2 MN降至10.8 MN；竖向反力不变。](../assets/publication/priority-40/F20.svg){#fig-priority-F20 width=100% fig-alt="把拱压低，拱脚要多推多少？。相同跨度和竖向均布荷载下，三铰抛物线拱矢高由20 m增至30 m，水平推力由16.2 MN降至10.8 MN；竖向反力不变。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>三铰、等高拱脚；抛物线拱轴；均布荷载以水平投影计；一阶静力</p><p>课程组原创参数绘图 · F20 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F20.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F20.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F20 END -->
+
+
 拱的计算跨径 $l$、计算矢高 $f$ 及矢跨比 $f/l$ 是总体布置的基本参数。矢高较小的坦拱有利于降低桥面或拱顶高度，但会提高水平推力和拱脚基础要求；矢高增大可减小推力，却可能增加结构高度、拱肋长度、风作用面积及施工难度。参数选择还需满足通航、行洪、道路纵坡、景观和施工场地条件。
 
 @fig-ch04-rise-span 展示拱桥跨径、矢高与拱轴线参数。
@@ -137,6 +148,14 @@ $$
 :::
 
 #### 压力线与合理拱轴
+
+
+<!-- PRIORITY-FIGURE F21 START -->
+![同一左半跨均布荷载下，压力线作图与拱轴出现偏离。在左四分点，竖向差6 m对应M=HΔy=40.5 MN·m；沿截面法向计算的压力中心偏心为M/N，二者不可混用。](../assets/publication/priority-40/F21.svg){#fig-priority-F21 width=100% fig-alt="压力线离开拱轴，弯矩从哪里来？。同一左半跨均布荷载下，压力线作图与拱轴出现偏离。在左四分点，竖向差6 m对应M=HΔy=40.5 MN·m；沿截面法向计算的压力中心偏心为M/N，二者不可混用。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>仅该三铰拱、该荷载；y_p=M0/H为图解关系；N为局部轴向分量；不判定截面是否满足承载要求</p><p>课程组原创参数绘图 · F21 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F21.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F21.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F21 END -->
+
 
 压力线是各截面内力合力作用点的连线。若截面轴力为 $N$、弯矩为 $M$，压力中心相对截面形心的偏心距为
 
@@ -430,6 +449,14 @@ $$
 
 ### 温度、收缩徐变与基础变位
 
+
+<!-- PRIORITY-FIGURE F23 START -->
+![相同“10 mm”可以是共同沉降、差异沉降或相对水平张开。必须先定义运动对象、方向与边界，再计算三铰、两铰或无铰拱的附加响应。](../assets/publication/priority-40/F23.svg){#fig-priority-F23 width=100% fig-alt="桥墩“动了十毫米”，到底是哪一种动？。相同“10 mm”可以是共同沉降、差异沉降或相对水平张开。必须先定义运动对象、方向与边界，再计算三铰、两铰或无铰拱的附加响应。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>规定运动输入示意，不含响应计算；共同平移判断忽略地基额外约束、动力和几何变化；具体内力取决于结构边界与刚度</p><p>课程组原创参数绘图 · F23 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F23.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F23.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F23 END -->
+
+
 均匀温差 $\Delta T$ 使自由构件产生热应变
 
 $$
@@ -565,6 +592,14 @@ $$
 三组几何均有 $Hy=243000\,\mathrm{kN\cdot m}$，故 $M=M^0-Hy=0$。这一核验同时检查几何生成、荷载方向、单位和弯矩符号。
 
 #### 第二步：半跨作用与压力线偏离
+
+
+<!-- PRIORITY-FIGURE F22 START -->
+![抛物线拱在满跨均布荷载下弯矩为零；仅在左半跨加载会形成一正一负的弯矩。总竖向荷载减小并不意味着每个截面弯矩减小。](../assets/publication/priority-40/F22.svg){#fig-priority-F22 width=100% fig-alt="荷载只放一半，拱就一定更轻松吗？。抛物线拱在满跨均布荷载下弯矩为零；仅在左半跨加载会形成一正一负的弯矩。总竖向荷载减小并不意味着每个截面弯矩减小。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>无自重以外另加项，比较的q相同；拱轴与边界保持不变；一阶三铰拱</p><p>课程组原创参数绘图 · F22 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F22.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F22.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F22 END -->
+
 
 将同一 $q$ 仅施加于左半跨。简支体系跨中弯矩为 $M_c^0=ql^2/16$，对 $f=24\,\mathrm m$，
 

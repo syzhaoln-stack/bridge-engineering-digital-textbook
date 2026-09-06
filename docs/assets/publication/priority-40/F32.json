@@ -1,0 +1,40 @@
+{
+  "id": "F32",
+  "title": "基础把桥的重量交给哪一层土？",
+  "chapter": 8,
+  "heading": "桩基础",
+  "caption": "浅基础与桩基础的竖向荷载路径对照。桩基础通过桩侧摩阻及桩端阻力传力；箭头只示方向，实际分担与群桩效应取决于土层、桩、承台和荷载状态。",
+  "assumptions": [
+    "中心竖向受压",
+    "土反力方向示意，未指定分配百分比",
+    "不代表水平受力、负摩阻或抗拔情景"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F32.svg",
+  "png": "assets/publication/priority-40/F32.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "外部作用向下、承压支承作用向上",
+    "基底接触与桩侧/桩端作用位置分开",
+    "未把单桩承载力简单乘桩数"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch07.qmd",
+  "heading_line": 745,
+  "calculation_data": {},
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：基底、桩侧与桩端土反力位置可辨，方向与中心受压情景一致。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "12879ffd6831a5f8990dbd8c4b01d03322abb4a124f1decce43b61ba1bd9436c",
+    "png": "7adccbc652b70c1b7031fae67bda8e3c8f40ad3c180a99be6a925816e0ab4b01"
+  }
+}

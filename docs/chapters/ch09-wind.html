@@ -131,6 +131,7 @@ window.Quarto = {
 };
 </script>
 <link href="../styles.css" rel="stylesheet"/>
+<link href="../visual-update.css" rel="stylesheet"/>
 
 <link href="../interactive/core-reading.css" rel="stylesheet"/>
 <style>.reference-image-note{display:block;padding:18px;background:#f4f6f7;color:#536575;font:14px/1.8 sans-serif;border-left:3px solid #9badb9}.public-edition-note{margin-top:3em;font-size:.85em}</style></head>
@@ -321,6 +322,12 @@ window.Quarto = {
 </li>
 <li class="sidebar-item">
 <div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="../visual-update.html">
+<span class="menu-text">看图、听一段，再动手</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../resources.html">
 <span class="menu-text">数字资源索引</span></a>
 </div>
@@ -386,6 +393,16 @@ window.Quarto = {
 <a href="../interactive/learning-map.html?chapter=ch09-wind">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery">
+<summary>
+从本章的 3 幅新图开始
+</summary>
+<div class="priority-thumb-grid">
+<a href="#fig-priority-F33"><img alt="风速翻倍，推桥面的力也只翻倍吗？" loading="lazy" src="../assets/publication/priority-40/F33.svg"/><span>风速翻倍，推桥面的力也只翻倍吗？</span></a><a href="#fig-priority-F34"><img alt="同样大小的周期力，为什么能激起更大的振动？" loading="lazy" src="../assets/publication/priority-40/F34.svg"/><span>同样大小的周期力，为什么能激起更大的振动？</span></a><a href="#fig-priority-F35"><img alt="桥面两边一起动，和一上一下，是同一种振动吗？" loading="lazy" src="../assets/publication/priority-40/F35.svg"/><span>桥面两边一起动，和一上一下，是同一种振动吗？</span></a>
+</div>
+</details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 <h2 class="anchored">
 本章的核心思考
 </h2>
@@ -698,6 +715,29 @@ T_u=\int_0^\infty \rho_{uu}(\tau)\,\mathrm d\tau,
 <h2 class="anchored" data-anchor-id="静风三分力攻角与数量级" data-number="9.3"><span class="header-section-number">9.3</span> 静风三分力、攻角与数量级</h2>
 <section class="level4" data-number="9.3.0.1" id="风速平方关系">
 <h4 class="anchored" data-anchor-id="风速平方关系" data-number="9.3.0.1"><span class="header-section-number">9.3.0.1</span> 风速平方关系</h4>
+<!-- PRIORITY-FIGURE F33 START -->
+<div alt="风速翻倍，推桥面的力也只翻倍吗？。固定气密度、阻力系数和面积时，风速10、20、40 m/s对应静力阻力0.735、2.940、11.760 kN；速度翻倍，动压和阻力均变为4倍。蓝色箭头示来流，橙色箭头示阻力。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F33">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F33-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="风速翻倍，推桥面的力也只翻倍吗？。固定气密度、阻力系数和面积时，风速10、20、40 m/s对应静力阻力0.735、2.940、11.760 kN；速度翻倍，动压和阻力均变为4倍。蓝色箭头示来流，橙色箭头示阻力。" class="img-fluid figure-img" src="../assets/publication/priority-40/F33.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F33-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 9.1: 固定气密度、阻力系数和面积时，风速10、20、40 m/s对应静力阻力0.735、2.940、11.760 kN；速度翻倍，动压和阻力均变为4倍。蓝色箭头示来流，橙色箭头示阻力。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+ρ、C_D、A固定；静力阻力D=½ρU²C_DA；未引入任何桥型专用系数或规范风速
+</p>
+<p>
+课程组原创参数绘图 · F33 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F33.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F33.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F33 END -->
 <p>对给定参考面积和气动力系数，阻力可写为</p>
 <p><span class="math display">\[
 D=\frac12\rho U^2C_DA,
@@ -805,14 +845,14 @@ C_M(\alpha_0+\Delta\alpha)
 \left.\frac{\mathrm dC_M}{\mathrm d\alpha}\right|_{\alpha_0}\Delta\alpha.
 \]</span></p>
 <p>若桥面扭转角改变有效攻角，力矩系数斜率便会形成随位移变化的气动力矩。斜率的符号和大小与本章的攻角、扭转角和力矩正方向有关；使用风洞报告数据时，应先画出方向示意图再代入公式。</p>
-<p>在气动力系数与参考面积不变的教学假定下，风速倍率与气动力倍率的平方关系见 <a class="quarto-xref" href="#fig-ch09-wind-square">图 <span>9.1</span></a>。</p>
+<p>在气动力系数与参考面积不变的教学假定下，风速倍率与气动力倍率的平方关系见 <a class="quarto-xref" href="#fig-ch09-wind-square">图 <span>9.2</span></a>。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch09-wind-square">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch09-wind-square-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch09/04-wind-speed-square-law.svg" style="width:82.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-wind-square-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 9.1: 风速平方关系的教学参数图
+图 9.2: 风速平方关系的教学参数图
 </figcaption>
 </figure>
 </div>
@@ -873,6 +913,29 @@ I_\theta\ddot\theta+C_\theta\dot\theta+
 </div>
 <section class="level4" data-number="9.4.0.1" id="单自由度模型">
 <h4 class="anchored" data-anchor-id="单自由度模型" data-number="9.4.0.1"><span class="header-section-number">9.4.0.1</span> 单自由度模型</h4>
+<!-- PRIORITY-FIGURE F34 START -->
+<div alt="同样大小的周期力，为什么能激起更大的振动？。单自由度简谐稳态响应随频率比与阻尼改变。阻尼比0.02、0.05、0.10在r=1时的位移放大系数分别为25、10、5；该模型不直接描述桥梁颤振。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F34">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F34-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="同样大小的周期力，为什么能激起更大的振动？。单自由度简谐稳态响应随频率比与阻尼改变。阻尼比0.02、0.05、0.10在r=1时的位移放大系数分别为25、10、5；该模型不直接描述桥梁颤振。" class="img-fluid figure-img" src="../assets/publication/priority-40/F34.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F34-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 9.3: 单自由度简谐稳态响应随频率比与阻尼改变。阻尼比0.02、0.05、0.10在r=1时的位移放大系数分别为25、10、5；该模型不直接描述桥梁颤振。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+线性单自由度，简谐力恒幅；已达稳态，不是启动瞬态；ζ&gt;0；忽略非线性
+</p>
+<p>
+课程组原创参数绘图 · F34 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F34.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F34.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F34 END -->
 <p>结构自由振动与受迫振动的基本方程为</p>
 <p><span class="math display">\[m\ddot x+c\dot x+kx=F(t).\]</span></p>
 <p>无阻尼固有圆频率和阻尼比为</p>
@@ -882,14 +945,14 @@ I_\theta\ddot\theta+C_\theta\dot\theta+
 <p><span class="math display">\[
 R_d=\frac{1}{\sqrt{(1-r^2)^2+(2\zeta r)^2}}.
 \]</span></p>
-<p>不同阻尼比下动力放大系数随频率比的变化见 <a class="quarto-xref" href="#fig-ch09-dynamic-amplification">图 <span>9.2</span></a>。</p>
+<p>不同阻尼比下动力放大系数随频率比的变化见 <a class="quarto-xref" href="#fig-ch09-dynamic-amplification">图 <span>9.4</span></a>。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch09-dynamic-amplification">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch09-dynamic-amplification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch09/05-single_dof_dynamic-amplification.svg" style="width:84.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-dynamic-amplification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 9.2: 不同阻尼下的单自由度动力放大
+图 9.4: 不同阻尼下的单自由度动力放大
 </figcaption>
 </figure>
 </div>
@@ -1115,14 +1178,14 @@ L_{se}\\M_{se}
 <section class="level3" data-number="9.5.1" id="塔科马海峡桥案例">
 <h3 class="anchored" data-anchor-id="塔科马海峡桥案例" data-number="9.5.1"><span class="header-section-number">9.5.1</span> 塔科马海峡桥案例</h3>
 <p>1940年塔科马海峡桥在投入使用数月后于风中倒塌，成为桥梁气动稳定研究的重要历史案例。教学中应区分事故前已观察到的竖向波动、倒塌当日的大幅扭转运动以及后续对气动弹性机制的认识发展，不能把全部现象简化为普通外力共振。</p>
-<p>倒塌当日桥面大幅扭转运动的历史影像帧见 <a class="quarto-xref" href="#fig-ch09-tacoma">图 <span>9.3</span></a>。</p>
+<p>倒塌当日桥面大幅扭转运动的历史影像帧见 <a class="quarto-xref" href="#fig-ch09-tacoma">图 <span>9.5</span></a>。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch09-tacoma">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch09-tacoma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 9.3: 塔科马海峡桥扭转运动的历史影像帧。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 9.5: 塔科马海峡桥扭转运动的历史影像帧。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-tacoma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 9.3: 塔科马海峡桥扭转运动的历史影像帧
+图 9.5: 塔科马海峡桥扭转运动的历史影像帧
 </figcaption>
 </figure>
 </div>
@@ -1804,6 +1867,29 @@ Q_r(t)
 </section>
 <section class="level4" data-number="9.8.4.2" id="弯曲扭转和耦合模态">
 <h4 class="anchored" data-anchor-id="弯曲扭转和耦合模态" data-number="9.8.4.2"><span class="header-section-number">9.8.4.2</span> 弯曲、扭转和耦合模态</h4>
+<!-- PRIORITY-FIGURE F35 START -->
+<div alt="桥面两边一起动，和一上一下，是同一种振动吗？。参数化桥面带的纯竖弯与纯扭转形状对照，以及同一横截面的观察方式。真实桥梁可能有耦合模态；需同一断面同步测量才可用两侧位移分解。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F35">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F35-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="桥面两边一起动，和一上一下，是同一种振动吗？。参数化桥面带的纯竖弯与纯扭转形状对照，以及同一横截面的观察方式。真实桥梁可能有耦合模态；需同一断面同步测量才可用两侧位移分解。" class="img-fluid figure-img" src="../assets/publication/priority-40/F35.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F35-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 9.6: 参数化桥面带的纯竖弯与纯扭转形状对照，以及同一横截面的观察方式。真实桥梁可能有耦合模态；需同一断面同步测量才可用两侧位移分解。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+示意模态形状，无特征值求解；小转角且横截面近似刚体；非畸变截面；没有声称现实模态均为纯弯/纯扭
+</p>
+<p>
+课程组原创参数绘图 · F35 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F35.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F35.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F35 END -->
 <p>桥面两侧同步测点可将竖向平动与扭转近似分解。设左右侧竖向位移为 <span class="math inline">\(h_L,h_R\)</span>，两测点横向间距为 <span class="math inline">\(b_s\)</span>，小转角下</p>
 <p><span class="math display">\[
 h_c=\frac{h_L+h_R}{2},
@@ -4906,19 +4992,19 @@ U_D=
 </thead>
 <tbody>
 <tr class="odd">
-<td><a class="quarto-xref" href="#fig-ch09-wind-square">图 <span>9.1</span></a></td>
+<td><a class="quarto-xref" href="#fig-ch09-wind-square">图 <span>9.2</span></a></td>
 <td>风速平方关系</td>
 <td>课程组脚本和CSV</td>
 <td>保留公式、单位及下载数据</td>
 </tr>
 <tr class="even">
-<td><a class="quarto-xref" href="#fig-ch09-dynamic-amplification">图 <span>9.2</span></a></td>
+<td><a class="quarto-xref" href="#fig-ch09-dynamic-amplification">图 <span>9.4</span></a></td>
 <td>单自由度动力放大</td>
 <td>课程组脚本和CSV</td>
 <td>明确不等同于颤振曲线</td>
 </tr>
 <tr class="odd">
-<td><a class="quarto-xref" href="#fig-ch09-tacoma">图 <span>9.3</span></a></td>
+<td><a class="quarto-xref" href="#fig-ch09-tacoma">图 <span>9.5</span></a></td>
 <td>历史扭转运动帧</td>
 <td>Barney Elliott影像，既有资料标记CC0</td>
 <td>复核元数据和署名</td>
@@ -5105,7 +5191,7 @@ U_D=
 
 <script>
 (()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);route.addEventListener('click',event=>{const link=event.target.closest('.priority-chapter-gallery a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;set('reference');requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));});const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
 
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

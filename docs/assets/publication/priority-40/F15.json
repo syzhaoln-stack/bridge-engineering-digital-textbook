@@ -1,0 +1,72 @@
+{
+  "id": "F15",
+  "title": "只用力的平衡，什么时候能算出每个支点分担？",
+  "chapter": 4,
+  "heading": "杠杆法的物理基础",
+  "caption": "两支点静定板段用相反力臂计算反力；若保留三支承连续横梁，则需额外的变形协调。图中特别区分简化后的图式和未释放的连续图式。",
+  "assumptions": [
+    "左图荷载位于两支点之间；外悬臂另画图式",
+    "图为教学静力关系，不规定规范杠杆法的使用位置或系数"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F15.svg",
+  "png": "assets/publication/priority-40/F15.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    {
+      "name": "sum reactions",
+      "value": 120.0,
+      "expected": 120.0,
+      "tolerance": 1e-08,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "moment about left",
+      "value": 96.0,
+      "expected": 96.0,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大检查：两端静定模型的距离与相反力臂正确；连续三支承明确仍需协调，未声称三未知仅靠两式可解。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch03.qmd",
+  "heading_line": 1523,
+  "figure_kind": "calculated",
+  "technical_review": "formula_assertions_passed",
+  "visual_review_notes": "逐张放大检查：两端静定模型的距离与相反力臂正确；连续三支承明确仍需协调，未声称三未知仅靠两式可解。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "fc58a9d0baa0ff059ba086479095f6b88367c47dee87bbb77862ad2b99d888b5",
+    "png": "de22e5d0c7fc761dd8490360a2fea3a9d0fa75071c783bbd76b941a9d815ca35"
+  },
+  "calculation_data": {
+    "P_kN": 120,
+    "a_m": 0.8,
+    "b_m": 1.6,
+    "R_left_kN": 80,
+    "R_right_kN": 40,
+    "right_panel": "continuous three-support model, not solved from statics alone"
+  },
+  "diagram_kind": "analytical_teaching_example",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

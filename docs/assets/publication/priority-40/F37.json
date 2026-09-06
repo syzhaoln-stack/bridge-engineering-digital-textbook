@@ -1,0 +1,55 @@
+{
+  "id": "F37",
+  "title": "把地震力降下来，还要为哪一种变化留空间？",
+  "chapter": 10,
+  "heading": "减隔震与位移控制",
+  "caption": "在本图明确指定的两组教学谱读数下，较长周期方案的等效力需求降低，但谱位移需求增大；隔震选择必须同时核查梁端位移、限位、管线和防落梁空间。图中的弹簧表示等效水平刚度。",
+  "assumptions": [
+    "m相同；使用指定Sa而非实际场地谱",
+    "线性谱等效示例，无滞回或多模态求解",
+    "惯性作用箭头仅表方向；应按实际绝对加速度取负向"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F37.svg",
+  "png": "assets/publication/priority-40/F37.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "F=mSa",
+    "Sd=Sa(T/2π)²",
+    "1000 t换算为1e6 kg"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch10-lifecycle.qmd",
+  "heading_line": 175,
+  "calculation_data": {
+    "scenarios": [
+      {
+        "T_s": 0.5,
+        "Sa_g": 0.4,
+        "F_kN": 3924.0,
+        "Sd_mm": 24.849020288283345
+      },
+      {
+        "T_s": 2.0,
+        "Sa_g": 0.15,
+        "F_kN": 1471.5,
+        "Sd_mm": 149.09412172970005
+      }
+    ]
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视并复查：等效水平弹簧连接至质量和地基，力与位移取舍并列。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "aa84a32eaae2e10483c27bedc6c1f37e2246a459aaaf7ac3518f60010fd2ba0c",
+    "png": "61d24de58864d8db2a56b18fa3426485515d8823d1d3e29450d83218acded452"
+  }
+}

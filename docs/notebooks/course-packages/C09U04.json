@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "unit_id": "C09U04",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C09U04",
+    "chapter": 9,
+    "chapter_title": "风与动力：无量纲判断",
+    "title": "质量与刚度共同决定频率",
+    "model": "frequency",
+    "preset": "stiffness",
+    "insight": "质量固定时，频率随刚度平方根增加。",
+    "transfer": "刚度加四倍是否意味着频率也加四倍？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C09U04.html",
+      "path": "interactive/lessons/C09U04.html"
+    },
+    "narration": [
+      "质量与刚度共同决定频率。先预测：改变刚度/基准刚度，频率相对值会怎样变化？",
+      "现在保持其他条件不变，只改变刚度/基准刚度。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "质量固定时，频率随刚度平方根增加。",
+      "刚度加四倍是否意味着频率也加四倍？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.25,
+      "max": 4,
+      "start": 1,
+      "end": 2,
+      "step": 0.01,
+      "label": "刚度/基准刚度",
+      "unit": "",
+      "output": "频率相对值",
+      "outunit": "倍",
+      "formula": "f=(1/2π)√(k/m)",
+      "boundary": "单自由度线性模型；只改变指定参数，其余参数不变。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C09U04.mp4",
+        "href": "../assets/videos/core/C09U04.mp4",
+        "bytes": 2843318
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C09U04.vtt",
+        "href": "../assets/videos/core/C09U04.vtt",
+        "bytes": 697
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C09U04.jpg",
+        "href": "../assets/videos/core/posters/C09U04.jpg",
+        "bytes": 117705
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C09U04.txt",
+        "href": "../notebooks/course-data/C09U04.txt",
+        "bytes": 458
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C09U04.json",
+        "href": "../notebooks/course-data/C09U04.json",
+        "bytes": 15698
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C09U04",
+      "title": "质量与刚度共同决定频率",
+      "chapter": 9,
+      "fingerprint": "0df8e023842434e6e1c72b2475af9afaeda7f81a1309c3c6d7d09dab34939e46",
+      "duration": 42.9,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 119.9
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F29.png",
+        "href": "../assets/publication/priority-40/F29.png",
+        "bytes": 165273,
+        "id": "F29",
+        "title": "一根绳拉紧以后，为什么更难横向拨动？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F29.svg",
+          "href": "../assets/publication/priority-40/F29.svg",
+          "bytes": 17283
+        },
+        "caption": "同长、同一小横向荷载下，提高初张力会提高拉直绳的横向切线刚度，线性扰动位移近似反比于初张力。图示变形放大20倍，斜拉方向只作示意。",
+        "assumptions": [
+          "只适用于初始拉直且有恒定预张力的绳",
+          "小斜率、忽略荷载引起的张力增量",
+          "没有将直绳结果当作全桥初应力有限元结果"
+        ],
+        "mapping_note": "先看初张力怎样改变绳的横向切线刚度，再联系质量固定时频率随√k变化。本图只算静力小扰动，没有给出振动频率。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "e815318ada454900cda24b379ae15ae3ee40fc6f26f65c17e759c3252dc51fd4",
+          "png": "c88e5adeea6e58a206d2ed253e3303370ab26000f730c82c17eee4b590d903f3"
+        }
+      },
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F35.png",
+        "href": "../assets/publication/priority-40/F35.png",
+        "bytes": 191870,
+        "id": "F35",
+        "title": "桥面两边一起动，和一上一下，是同一种振动吗？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F35.svg",
+          "href": "../assets/publication/priority-40/F35.svg",
+          "bytes": 22209
+        },
+        "caption": "参数化桥面带的纯竖弯与纯扭转形状对照，以及同一横截面的观察方式。真实桥梁可能有耦合模态；需同一断面同步测量才可用两侧位移分解。",
+        "assumptions": [
+          "示意模态形状，无特征值求解",
+          "小转角且横截面近似刚体",
+          "非畸变截面；没有声称现实模态均为纯弯/纯扭"
+        ],
+        "mapping_note": "从单个频率继续问“怎样动”：本单元是单自由度质量—刚度关系，图扩展到纯竖弯与纯扭转形状，不能凭一个频率判定振型。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "6570218a38ba70329df5cf13e107e18fbb97777590321c0835361f64fca18b0b",
+          "png": "01b6bd0f3ac8218f42d2c2e53a988ed3f9e30036aa59211bd49b79ea8c06fdf2"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C09U04.json",
+      "render_sha256": "dcade98d346dd176abc0f41dadf77973b3e442466b6d319587cb3561a849bd5a",
+      "render_copy_sha256": "dcade98d346dd176abc0f41dadf77973b3e442466b6d319587cb3561a849bd5a"
+    },
+    "download_href": "../notebooks/course-packages/C09U04.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

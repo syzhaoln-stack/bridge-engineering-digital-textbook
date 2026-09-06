@@ -96,6 +96,7 @@ window.Quarto = {
 };
 </script>
 <link href="../styles.css" rel="stylesheet"/>
+<link href="../visual-update.css" rel="stylesheet"/>
 
 <link href="../interactive/core-reading.css" rel="stylesheet"/>
 <style>.reference-image-note{display:block;padding:18px;background:#f4f6f7;color:#536575;font:14px/1.8 sans-serif;border-left:3px solid #9badb9}.public-edition-note{margin-top:3em;font-size:.85em}</style></head>
@@ -286,6 +287,12 @@ window.Quarto = {
 </li>
 <li class="sidebar-item">
 <div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="../visual-update.html">
+<span class="menu-text">看图、听一段，再动手</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../resources.html">
 <span class="menu-text">数字资源索引</span></a>
 </div>
@@ -351,6 +358,16 @@ window.Quarto = {
 <a href="../interactive/learning-map.html?chapter=ch02-foundations">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery">
+<summary>
+从本章的 5 幅新图开始
+</summary>
+<div class="priority-thumb-grid">
+<a href="#fig-priority-F04"><img alt="同一个偏心压力，为什么一边压得更多？" loading="lazy" src="../assets/publication/priority-40/F04.svg"/><span>同一个偏心压力，为什么一边压得更多？</span></a><a href="#fig-priority-F05"><img alt="压力移到哪里，截面边缘才开始出现拉应力？" loading="lazy" src="../assets/publication/priority-40/F05.svg"/><span>压力移到哪里，截面边缘才开始出现拉应力？</span></a><a href="#fig-priority-F06"><img alt="同一块板竖着放、横着放，为什么弯起来不一样？" loading="lazy" src="../assets/publication/priority-40/F06.svg"/><span>同一块板竖着放、横着放，为什么弯起来不一样？</span></a><a href="#fig-priority-F07"><img alt="同样长的压杆，端部能不能转动有多大影响？" loading="lazy" src="../assets/publication/priority-40/F07.svg"/><span>同样长的压杆，端部能不能转动有多大影响？</span></a><a href="#fig-priority-F08"><img alt="普通钢筋和预应力，分别在什么时候开始起作用？" loading="lazy" src="../assets/publication/priority-40/F08.svg"/><span>普通钢筋和预应力，分别在什么时候开始起作用？</span></a>
+</div>
+</details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 <h2 class="anchored">
 本章的核心思考
 </h2>
@@ -836,6 +853,52 @@ T=\int_A\left(y\tau_{xz}-z\tau_{xy}\right)\mathrm dA.
 </section>
 <section class="level4" data-number="2.3.0.3" id="轴力偏心与截面核心">
 <h4 class="anchored" data-anchor-id="轴力偏心与截面核心" data-number="2.3.0.3"><span class="header-section-number">2.3.0.3</span> 轴力、偏心与截面核心</h4>
+<!-- PRIORITY-FIGURE F04 START -->
+<div alt="同一个偏心压力，为什么一边压得更多？。把同一偏心压力分为中心压力和等效弯矩。三幅应力箭头使用同一比例；正值为压应力，负值为拉应力。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F04">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="同一个偏心压力，为什么一边压得更多？。把同一偏心压力分为中心压力和等效弯矩。三幅应力箭头使用同一比例；正值为压应力，负值为拉应力。" class="img-fluid figure-img" src="../assets/publication/priority-40/F04.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F04-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 2.1: 把同一偏心压力分为中心压力和等效弯矩。三幅应力箭头使用同一比例；正值为压应力，负值为拉应力。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+教学参数；不计开裂与材料非线性；应力图为截面计算，不是极限承载力验算
+</p>
+<p>
+课程组原创参数绘图 · F04 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F04.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F04.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F04 END -->
+<!-- PRIORITY-FIGURE F05 START -->
+<div alt="压力移到哪里，截面边缘才开始出现拉应力？。移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F05">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="压力移到哪里，截面边缘才开始出现拉应力？。移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。" class="img-fluid figure-img" src="../assets/publication/priority-40/F05.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F05-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 2.2: 移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+只讨论单向偏心，双向偏心核心为菱形；出现拉区后若材料开裂，不再沿用完整弹性应力图作为实际状态
+</p>
+<p>
+课程组原创参数绘图 · F05 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F05.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F05.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F05 END -->
 <p>轴向力与弯矩共同作用，是拱肋、桥墩、索塔和预应力梁截面分析的共同入口。为便于判读，本小节以压应力和压力<span class="math inline">\(N_c\)</span>为正，取<span class="math inline">\(y,z\)</span>为截面主轴；并规定正<span class="math inline">\(M_z\)</span>使<span class="math inline">\(+y\)</span>侧压应力增加，正<span class="math inline">\(M_y\)</span>使<span class="math inline">\(+z\)</span>侧压应力增加。在线弹性、均质、完整截面和平截面假定下，双向偏心受压的应力为</p>
 <p><span class="math display">\[
 \sigma_c(y,z)=\frac{N_c}{A}+\frac{M_z}{I_z}y+\frac{M_y}{I_y}z.
@@ -910,7 +973,7 @@ r_z^2=\frac{I_z}{A},\quad r_y^2=\frac{I_y}{A}.
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/bending.svg" style="width:88.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-bending-side-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 2.1: 简支梁集中作用下按受拉侧绘制的弯矩图
+图 2.3: 简支梁集中作用下按受拉侧绘制的弯矩图
 </figcaption>
 </figure>
 </div>
@@ -924,7 +987,7 @@ r_z^2=\frac{I_z}{A},\quad r_y^2=\frac{I_y}{A}.
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/eccentric.svg" style="width:88.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-eccentric-fallback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 2.2: 矩形截面核心、合力作用点与四角应力
+图 2.4: 矩形截面核心、合力作用点与四角应力
 </figcaption>
 </figure>
 </div>
@@ -968,6 +1031,29 @@ g(\mathbf X)=R(\mathbf X)-S(\mathbf X),
 </section>
 <section class="level4" data-number="2.4.0.2" id="形心截面二次矩与截面模量">
 <h4 class="anchored" data-anchor-id="形心截面二次矩与截面模量" data-number="2.4.0.2"><span class="header-section-number">2.4.0.2</span> 形心、截面二次矩与截面模量</h4>
+<!-- PRIORITY-FIGURE F06 START -->
+<div alt="同一块板竖着放、横着放，为什么弯起来不一样？。明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F06">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="同一块板竖着放、横着放，为什么弯起来不一样？。明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。" class="img-fluid figure-img" src="../assets/publication/priority-40/F06.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 2.5: 明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+均质线弹性；关于相同方向的形心轴；不据此判定整体最优；还需考虑侧向稳定、剪切和构造
+</p>
+<p>
+课程组原创参数绘图 · F06 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F06.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F06.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F06 END -->
 <p>对于由若干简单区域组成的同一种材料截面，其形心坐标为</p>
 <p><span class="math display">\[
 \bar y=\frac{\sum_i A_i y_i}{\sum_i A_i},\qquad
@@ -1202,7 +1288,7 @@ P_{\mathrm{cr}}=\frac{\pi^2EI}{(K L)^2},
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/buckling.svg" style="width:72.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-euler-modes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 2.3: 不同端部条件下的理想压杆屈曲形态
+图 2.6: 不同端部条件下的理想压杆屈曲形态
 </figcaption>
 </figure>
 </div>
@@ -1296,7 +1382,7 @@ q_p(x)\approx P\frac{\mathrm d^2e(x)}{\mathrm dx^2}.
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/prestress.svg" style="width:90.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-prestress-fallback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 2.4: 预应力钢束、等效作用与截面应力三种视图
+图 2.7: 预应力钢束、等效作用与截面应力三种视图
 </figcaption>
 </figure>
 </div>
@@ -1384,7 +1470,7 @@ f_n=\frac{1}{2\pi}\sqrt{\frac{k}{m}}.
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/modal.svg" style="width:70.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-modal-relation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 2.5: 单自由度质量—刚度—频率静态基准图
+图 2.8: 单自由度质量—刚度—频率静态基准图
 </figcaption>
 </figure>
 </div>
@@ -2655,6 +2741,29 @@ q_j=\frac{\partial U}{\partial Q_j}.
 <p>稳定问题研究的是平衡状态在扰动下能否保持，以及结构随作用增长如何偏离原平衡路径。桥梁中的受压杆、钢梁受压翼缘、箱梁腹板和顶底板、拱肋、塔柱以及施工阶段未闭合体系都可能受到稳定控制。稳定不是“再算一次应力”，因为临界状态取决于几何、边界、初始缺陷、残余应力、材料非线性和加载路径。</p>
 <section class="level4" data-number="2.9.4.1" id="第一级理想临界值与数量级">
 <h4 class="anchored" data-anchor-id="第一级理想临界值与数量级" data-number="2.9.4.1"><span class="header-section-number">2.9.4.1</span> 第一级：理想临界值与数量级</h4>
+<!-- PRIORITY-FIGURE F07 START -->
+<div alt="同样长的压杆，端部能不能转动有多大影响？。实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F07">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="同样长的压杆，端部能不能转动有多大影响？。实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。" class="img-fluid figure-img" src="../assets/publication/priority-40/F07.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 2.9: 实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+三种理想边界：不计局部屈曲、初始缺陷和屈服；真实塔柱/拱肋和弹性连接不应仅按外观选择K
+</p>
+<p>
+课程组原创参数绘图 · F07 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F07.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F07.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F07 END -->
 <p>理想两端铰接等截面压杆的Euler临界力为</p>
 <p><span class="math display">\[
 P_{\mathrm{cr}}=\frac{\pi^2EI}{L^2}.
@@ -2762,6 +2871,29 @@ k\frac{\pi^2E}{12(1-\nu^2)}
 <p>预应力把钢束或其他张拉构件的力通过锚固和黏结传递给混凝土或组合结构。它既形成截面初始应力和变形，也可能在超静定体系中引起约束反力和次内力。预应力分析应沿“钢束几何—张拉与传递—有效力—结构阶段—截面响应—长期演化”建立状态链。</p>
 <section class="level4" data-number="2.9.5.1" id="截面初始应力">
 <h4 class="anchored" data-anchor-id="截面初始应力" data-number="2.9.5.1"><span class="header-section-number">2.9.5.1</span> 截面初始应力</h4>
+<!-- PRIORITY-FIGURE F08 START -->
+<div alt="普通钢筋和预应力，分别在什么时候开始起作用？。左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F08">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F08-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="普通钢筋和预应力，分别在什么时候开始起作用？。左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。" class="img-fluid figure-img" src="../assets/publication/priority-40/F08.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F08-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 2.10: 左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+两侧表达不同机制，不作等配筋等成本比较；实际预应力还包括偏心、束形、损失、施工阶段和次内力；不能把钢筋出现拉力等同于必然已有可见裂缝
+</p>
+<p>
+课程组原创参数绘图 · F08 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F08.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F08.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F08 END -->
 <p>在线弹性、平截面且忽略局部锚固效应的截面上，预应力合力<span class="math inline">\(P\)</span>相对形心轴偏心<span class="math inline">\(e\)</span>时，可写出轴向与弯曲应力贡献</p>
 <p><span class="math display">\[
 \sigma_p(y)= -\frac{P}{A}-\frac{Pey}{I},
@@ -4214,7 +4346,7 @@ U=\int_0^{2L}\frac{M^2}{2EI}\,\mathrm dx.
 
 <script>
 (()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);route.addEventListener('click',event=>{const link=event.target.closest('.priority-chapter-gallery a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;set('reference');requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));});const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
 
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

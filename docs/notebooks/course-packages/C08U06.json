@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C08U06",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C08U06",
+    "chapter": 8,
+    "chapter_title": "支承、墩台与边界",
+    "title": "地基与墩柱串联共同变形",
+    "model": "springs",
+    "preset": "series",
+    "insight": "总柔度是串联柔度之和，基础柔度可能控制整体变形。",
+    "transfer": "只加固墩柱是否一定显著减少桥面位移？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C08U06.html",
+      "path": "interactive/lessons/C08U06.html"
+    },
+    "narration": [
+      "地基与墩柱串联共同变形。先预测：改变刚度比 k₁/k₂，总位移会怎样变化？",
+      "现在保持其他条件不变，只改变刚度比 k₁/k₂。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "总柔度是串联柔度之和，基础柔度可能控制整体变形。",
+      "只加固墩柱是否一定显著减少桥面位移？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.2,
+      "max": 5,
+      "start": 1,
+      "end": 3,
+      "step": 0.01,
+      "label": "刚度比 k₁/k₂",
+      "unit": "",
+      "output": "总位移",
+      "outunit": "基准位移",
+      "formula": "1/k总=1/k₁+1/k₂；u=P/k总",
+      "boundary": "两个线性弹簧串联，k₂=1，P=1。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C08U06.mp4",
+        "href": "../assets/videos/core/C08U06.mp4",
+        "bytes": 2733332
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C08U06.vtt",
+        "href": "../assets/videos/core/C08U06.vtt",
+        "bytes": 715
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C08U06.jpg",
+        "href": "../assets/videos/core/posters/C08U06.jpg",
+        "bytes": 120482
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C08U06.txt",
+        "href": "../notebooks/course-data/C08U06.txt",
+        "bytes": 476
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C08U06.json",
+        "href": "../notebooks/course-data/C08U06.json",
+        "bytes": 16506
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C08U06",
+      "title": "地基与墩柱串联共同变形",
+      "chapter": 8,
+      "fingerprint": "78259968570ef89f69c595795d7c282f500ca8ed080abd800ccf7874b8ee7f85",
+      "duration": 44.566667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 110.9
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F32.png",
+        "href": "../assets/publication/priority-40/F32.png",
+        "bytes": 115186,
+        "id": "F32",
+        "title": "基础把桥的重量交给哪一层土？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F32.svg",
+          "href": "../assets/publication/priority-40/F32.svg",
+          "bytes": 15598
+        },
+        "caption": "浅基础与桩基础的竖向荷载路径对照。桩基础通过桩侧摩阻及桩端阻力传力；箭头只示方向，实际分担与群桩效应取决于土层、桩、承台和荷载状态。",
+        "assumptions": [
+          "中心竖向受压",
+          "土反力方向示意，未指定分配百分比",
+          "不代表水平受力、负摩阻或抗拔情景"
+        ],
+        "mapping_note": "先找到地基参与传力的位置，再讨论把基础柔度与墩柱柔度串联。图中箭头只示方向，不能从箭头长短反求刚度或分担。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "12879ffd6831a5f8990dbd8c4b01d03322abb4a124f1decce43b61ba1bd9436c",
+          "png": "7adccbc652b70c1b7031fae67bda8e3c8f40ad3c180a99be6a925816e0ab4b01"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C08U06.json",
+      "render_sha256": "0ddabbb2a67af18a386e01688a704d051e9db50bd6eaae3a61a8f8a5f36c54ad",
+      "render_copy_sha256": "0ddabbb2a67af18a386e01688a704d051e9db50bd6eaae3a61a8f8a5f36c54ad"
+    },
+    "download_href": "../notebooks/course-packages/C08U06.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

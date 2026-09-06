@@ -1,0 +1,57 @@
+{
+  "id": "F33",
+  "title": "风速翻倍，推桥面的力也只翻倍吗？",
+  "chapter": 9,
+  "heading": "风速平方关系",
+  "caption": "固定气密度、阻力系数和面积时，风速10、20、40 m/s对应静力阻力0.735、2.940、11.760 kN；速度翻倍，动压和阻力均变为4倍。蓝色箭头示来流，橙色箭头示阻力。",
+  "assumptions": [
+    "ρ、C_D、A固定",
+    "静力阻力D=½ρU²C_DA",
+    "未引入任何桥型专用系数或规范风速"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F33.svg",
+  "png": "assets/publication/priority-40/F33.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "单位Pa×m²=N",
+    "10→20→40 m/s阻力每次×4"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch09-wind.qmd",
+  "heading_line": 167,
+  "calculation_data": {
+    "U_m_per_s": [
+      10,
+      20,
+      40
+    ],
+    "dynamic_pressure_Pa": [
+      61.25,
+      245,
+      980
+    ],
+    "drag_kN": [
+      0.735,
+      2.94,
+      11.76
+    ],
+    "CD": 1.2,
+    "A_m2": 10
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：动压坐标、来流/阻力箭头及三组单位读数可辨。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "cb48d9e09ea5202aa90db3a782d1d7d0f84e169b1188adba77f0a1834ab716f3",
+    "png": "679c31596d61c902c0ef9320167d4b1cd4dd94a0b3455fd6f659d488a06279c1"
+  }
+}

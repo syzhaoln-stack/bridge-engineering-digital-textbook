@@ -96,6 +96,7 @@ window.Quarto = {
 };
 </script>
 <link href="../styles.css" rel="stylesheet"/>
+<link href="../visual-update.css" rel="stylesheet"/>
 
 <link href="../interactive/core-reading.css" rel="stylesheet"/>
 <style>.reference-image-note{display:block;padding:18px;background:#f4f6f7;color:#536575;font:14px/1.8 sans-serif;border-left:3px solid #9badb9}.public-edition-note{margin-top:3em;font-size:.85em}</style></head>
@@ -286,6 +287,12 @@ window.Quarto = {
 </li>
 <li class="sidebar-item">
 <div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="../visual-update.html">
+<span class="menu-text">看图、听一段，再动手</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../resources.html">
 <span class="menu-text">数字资源索引</span></a>
 </div>
@@ -351,6 +358,16 @@ window.Quarto = {
 <a href="../interactive/learning-map.html?chapter=ch04">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery">
+<summary>
+从本章的 4 幅新图开始
+</summary>
+<div class="priority-thumb-grid">
+<a href="#fig-priority-F20"><img alt="把拱压低，拱脚要多推多少？" loading="lazy" src="../assets/publication/priority-40/F20.svg"/><span>把拱压低，拱脚要多推多少？</span></a><a href="#fig-priority-F21"><img alt="压力线离开拱轴，弯矩从哪里来？" loading="lazy" src="../assets/publication/priority-40/F21.svg"/><span>压力线离开拱轴，弯矩从哪里来？</span></a><a href="#fig-priority-F22"><img alt="荷载只放一半，拱就一定更轻松吗？" loading="lazy" src="../assets/publication/priority-40/F22.svg"/><span>荷载只放一半，拱就一定更轻松吗？</span></a><a href="#fig-priority-F23"><img alt="桥墩“动了十毫米”，到底是哪一种动？" loading="lazy" src="../assets/publication/priority-40/F23.svg"/><span>桥墩“动了十毫米”，到底是哪一种动？</span></a>
+</div>
+</details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 <h2 class="anchored">
 本章的核心思考
 </h2>
@@ -684,15 +701,38 @@ H=\frac{\displaystyle\int\frac{M^0y}{EI}\,\mathrm ds+\text{轴向变形及其他
 <h2 class="anchored" data-anchor-id="几何参数拱轴与压力线" data-number="5.2"><span class="header-section-number">5.2</span> 几何参数、拱轴与压力线</h2>
 <section class="level4" data-number="5.2.0.1" id="跨径矢高与矢跨比">
 <h4 class="anchored" data-anchor-id="跨径矢高与矢跨比" data-number="5.2.0.1"><span class="header-section-number">5.2.0.1</span> 跨径、矢高与矢跨比</h4>
+<!-- PRIORITY-FIGURE F20 START -->
+<div alt="把拱压低，拱脚要多推多少？。相同跨度和竖向均布荷载下，三铰抛物线拱矢高由20 m增至30 m，水平推力由16.2 MN降至10.8 MN；竖向反力不变。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F20">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="把拱压低，拱脚要多推多少？。相同跨度和竖向均布荷载下，三铰抛物线拱矢高由20 m增至30 m，水平推力由16.2 MN降至10.8 MN；竖向反力不变。" class="img-fluid figure-img" src="../assets/publication/priority-40/F20.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.3: 相同跨度和竖向均布荷载下，三铰抛物线拱矢高由20 m增至30 m，水平推力由16.2 MN降至10.8 MN；竖向反力不变。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+三铰、等高拱脚；抛物线拱轴；均布荷载以水平投影计；一阶静力
+</p>
+<p>
+课程组原创参数绘图 · F20 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F20.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F20.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F20 END -->
 <p>拱的计算跨径 <span class="math inline">\(l\)</span>、计算矢高 <span class="math inline">\(f\)</span> 及矢跨比 <span class="math inline">\(f/l\)</span> 是总体布置的基本参数。矢高较小的坦拱有利于降低桥面或拱顶高度，但会提高水平推力和拱脚基础要求；矢高增大可减小推力，却可能增加结构高度、拱肋长度、风作用面积及施工难度。参数选择还需满足通航、行洪、道路纵坡、景观和施工场地条件。</p>
-<p><a class="quarto-xref" href="#fig-ch04-rise-span">图 <span>5.3</span></a> 展示拱桥跨径、矢高与拱轴线参数。</p>
+<p><a class="quarto-xref" href="#fig-ch04-rise-span">图 <span>5.4</span></a> 展示拱桥跨径、矢高与拱轴线参数。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch04-rise-span">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch04-rise-span-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 5.3: 拱桥跨径、矢高与拱轴线参数。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 5.4: 拱桥跨径、矢高与拱轴线参数。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-rise-span-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.3: 拱桥跨径、矢高与拱轴线参数
+图 5.4: 拱桥跨径、矢高与拱轴线参数
 </figcaption>
 </figure>
 </div>
@@ -702,6 +742,29 @@ H=\frac{\displaystyle\int\frac{M^0y}{EI}\,\mathrm ds+\text{轴向变形及其他
 </section>
 <section class="level4" data-number="5.2.0.2" id="压力线与合理拱轴">
 <h4 class="anchored" data-anchor-id="压力线与合理拱轴" data-number="5.2.0.2"><span class="header-section-number">5.2.0.2</span> 压力线与合理拱轴</h4>
+<!-- PRIORITY-FIGURE F21 START -->
+<div alt="压力线离开拱轴，弯矩从哪里来？。同一左半跨均布荷载下，压力线作图与拱轴出现偏离。在左四分点，竖向差6 m对应M=HΔy=40.5 MN·m；沿截面法向计算的压力中心偏心为M/N，二者不可混用。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F21">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F21-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="压力线离开拱轴，弯矩从哪里来？。同一左半跨均布荷载下，压力线作图与拱轴出现偏离。在左四分点，竖向差6 m对应M=HΔy=40.5 MN·m；沿截面法向计算的压力中心偏心为M/N，二者不可混用。" class="img-fluid figure-img" src="../assets/publication/priority-40/F21.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F21-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.5: 同一左半跨均布荷载下，压力线作图与拱轴出现偏离。在左四分点，竖向差6 m对应M=HΔy=40.5 MN·m；沿截面法向计算的压力中心偏心为M/N，二者不可混用。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+仅该三铰拱、该荷载；y_p=M0/H为图解关系；N为局部轴向分量；不判定截面是否满足承载要求
+</p>
+<p>
+课程组原创参数绘图 · F21 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F21.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F21.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F21 END -->
 <p>压力线是各截面内力合力作用点的连线。若截面轴力为 <span class="math inline">\(N\)</span>、弯矩为 <span class="math inline">\(M\)</span>，压力中心相对截面形心的偏心距为</p>
 <p><span class="math display">\[
 e=\frac{M}{N}.
@@ -717,14 +780,14 @@ H=\frac{ql^2}{8f}.
 \]</span></p>
 <p>代入 <span class="math inline">\(M(x)=M^0(x)-Hy(x)\)</span> 可得全拱 <span class="math inline">\(M(x)=0\)</span>。这一结果成立于理想几何、指定荷载和三铰边界，用于揭示“荷载图式—压力线—拱轴线”的对应关系，不代表实际拱桥在全部作用下均为纯压。</p>
 <p>实腹式与空腹式拱桥的恒载分布不同。实腹填料使单位水平长度上的恒载通常由拱顶向拱脚变化；空腹式结构则把部分恒载集中在腹孔墩或立柱位置，其压力线呈分段变化。悬链线、抛物线和圆弧线的选择应与荷载分布、施工放样、结构形式和分析结果相结合。</p>
-<p><a class="quarto-xref" href="#fig-ch04-dead-load-pattern">图 <span>5.4</span></a> 展示实腹式与空腹式拱桥恒载分布示意。</p>
+<p><a class="quarto-xref" href="#fig-ch04-dead-load-pattern">图 <span>5.6</span></a> 展示实腹式与空腹式拱桥恒载分布示意。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch04-dead-load-pattern">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch04-dead-load-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 5.4: 实腹式与空腹式拱桥恒载分布示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 5.6: 实腹式与空腹式拱桥恒载分布示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-dead-load-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.4: 实腹式与空腹式拱桥恒载分布示意
+图 5.6: 实腹式与空腹式拱桥恒载分布示意
 </figcaption>
 </figure>
 </div>
@@ -743,14 +806,14 @@ H=\frac{ql^2}{8f}.
 <section class="level2" data-number="5.3" id="主拱吊杆系杆与桥面系">
 <h2 class="anchored" data-anchor-id="主拱吊杆系杆与桥面系" data-number="5.3"><span class="header-section-number">5.3</span> 主拱、吊杆、系杆与桥面系</h2>
 <p>主拱可采用整体板拱、箱形拱、分离式肋拱或格构拱。截面选择与材料、跨径、桥宽、施工方法和稳定要求相关。矩形截面构造直接但材料离形心较近；I形和箱形截面可提高弯曲与面外刚度的材料效率；管形与格构截面便于形成钢或钢管混凝土拱肋，但节点、焊接、灌注和防腐要求更高。</p>
-<p><a class="quarto-xref" href="#fig-ch04-rib-sections">图 <span>5.5</span></a> 展示拱肋常见截面形式。</p>
+<p><a class="quarto-xref" href="#fig-ch04-rib-sections">图 <span>5.7</span></a> 展示拱肋常见截面形式。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch04-rib-sections">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch04-rib-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 5.5: 拱肋常见截面形式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 5.7: 拱肋常见截面形式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-rib-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.5: 拱肋常见截面形式
+图 5.7: 拱肋常见截面形式
 </figcaption>
 </figure>
 </div>
@@ -758,14 +821,14 @@ H=\frac{ql^2}{8f}.
 <p><strong>图源（内部初稿）。</strong> 在线教材项目 <code>longyu8101/qlgc</code>，原图3-2-12“肋拱拱肋截面形式”，文件 <code>source/_static/fig/3-2-12.jpg</code>，<a class="uri" href="https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/3-2-12.jpg">https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/3-2-12.jpg</a>。用于矩形、I形、箱形和管形截面的识别，正式版拟增加局部轴和主要稳定方向后重绘。</p>
 </div>
 <p>钢管混凝土拱肋由钢管与核心混凝土共同受力。钢管可作为施工阶段的承重骨架和浇筑模板，核心混凝土有助于提高钢管局部稳定，钢管约束也会改变核心混凝土受力。其计算不能简单等同于钢管面积与混凝土面积的相加，应按现行钢管混凝土拱桥规范处理材料组合、界面共同工作、施工顺序、稳定、节点与灌注质量。</p>
-<p><a class="quarto-xref" href="#fig-ch04-cfst-sections">图 <span>5.6</span></a> 展示钢管混凝土拱肋的单肢、哑铃形和格构截面。</p>
+<p><a class="quarto-xref" href="#fig-ch04-cfst-sections">图 <span>5.8</span></a> 展示钢管混凝土拱肋的单肢、哑铃形和格构截面。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch04-cfst-sections">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch04-cfst-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 5.6: 钢管混凝土拱肋的单肢、哑铃形和格构截面。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 5.8: 钢管混凝土拱肋的单肢、哑铃形和格构截面。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-cfst-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.6: 钢管混凝土拱肋的单肢、哑铃形和格构截面
+图 5.8: 钢管混凝土拱肋的单肢、哑铃形和格构截面
 </figcaption>
 </figure>
 </div>
@@ -776,14 +839,14 @@ H=\frac{ql^2}{8f}.
 <section class="level3" data-number="5.3.1" id="吊杆立柱横梁与桥面系">
 <h3 class="anchored" data-anchor-id="吊杆立柱横梁与桥面系" data-number="5.3.1"><span class="header-section-number">5.3.1</span> 吊杆、立柱、横梁与桥面系</h3>
 <p>上承式拱桥的立柱或腹孔结构把桥面荷载传至主拱，除轴力外还可能因节点刚度、纵向变形和横向作用承受弯矩。中、下承式拱桥的吊杆连接拱肋与横梁，其拉力随吊杆间距、桥面刚度、拱肋刚度和荷载位置变化。柔性吊杆宜采用仅受拉单元模拟；若模型允许其受压，应检查是否产生非物理结果。</p>
-<p><a class="quarto-xref" href="#fig-ch04-hangers">图 <span>5.7</span></a> 展示刚性、半刚性与柔性吊杆截面示意。</p>
+<p><a class="quarto-xref" href="#fig-ch04-hangers">图 <span>5.9</span></a> 展示刚性、半刚性与柔性吊杆截面示意。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch04-hangers">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch04-hangers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 5.7: 刚性、半刚性与柔性吊杆截面示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 5.9: 刚性、半刚性与柔性吊杆截面示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-hangers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.7: 刚性、半刚性与柔性吊杆截面示意
+图 5.9: 刚性、半刚性与柔性吊杆截面示意
 </figcaption>
 </figure>
 </div>
@@ -829,14 +892,14 @@ H=\frac{ql^2}{8f}.
 <li><strong>悬臂拼装或浇筑</strong>由扣索、塔架和已成结构共同承担未闭合拱肋；扣索索力与节段安装误差直接影响合龙状态。</li>
 <li><strong>劲性骨架法</strong>先形成可自承的钢骨架，再分阶段浇筑或灌注混凝土；骨架与组合截面在不同阶段承担不同荷载。</li>
 </ol>
-<p><a class="quarto-xref" href="#fig-ch04-bare-arch-construction">图 <span>5.8</span></a> 展示支架施工与无支架吊装的裸拱阶段示例。</p>
+<p><a class="quarto-xref" href="#fig-ch04-bare-arch-construction">图 <span>5.10</span></a> 展示支架施工与无支架吊装的裸拱阶段示例。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch04-bare-arch-construction">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch04-bare-arch-construction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 5.8: 支架施工与无支架吊装的裸拱阶段示例。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 5.10: 支架施工与无支架吊装的裸拱阶段示例。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-bare-arch-construction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.8: 支架施工与无支架吊装的裸拱阶段示例
+图 5.10: 支架施工与无支架吊装的裸拱阶段示例
 </figcaption>
 </figure>
 </div>
@@ -850,28 +913,28 @@ H=\frac{ql^2}{8f}.
 <section class="level4" data-number="5.6.0.1" id="平面模型">
 <h4 class="anchored" data-anchor-id="平面模型" data-number="5.6.0.1"><span class="header-section-number">5.6.0.1</span> 平面模型</h4>
 <p>平面杆系模型适于理解拱轴、水平推力、面内弯矩和施工阶段基本规律。上承式拱桥应明确立柱与桥面梁的连接释放；中、下承式拱桥应明确吊杆仅受拉、横梁或桥面梁的连续方式；系杆拱还应把系杆与端部连接纳入模型。将全部交点设为刚接会高估体系刚度，将实际刚接误设为铰接则可能遗漏弯矩传递。</p>
-<p><a class="quarto-xref" href="#fig-ch04-fe-models">图 <span>5.9</span></a> 展示上承式、中承式和下承式拱桥的平面有限元模型。</p>
+<p><a class="quarto-xref" href="#fig-ch04-fe-models">图 <span>5.11</span></a> 展示上承式、中承式和下承式拱桥的平面有限元模型。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch04-fe-models">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch04-fe-models-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 5.9: 上承式、中承式和下承式拱桥的平面有限元模型。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 5.11: 上承式、中承式和下承式拱桥的平面有限元模型。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-fe-models-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.9: 上承式、中承式和下承式拱桥的平面有限元模型
+图 5.11: 上承式、中承式和下承式拱桥的平面有限元模型
 </figcaption>
 </figure>
 </div>
 <div class="source-note">
 <p><strong>图源（内部初稿）。</strong> 在线教材项目 <code>longyu8101/qlgc</code>，原图3-4-25“简单体系拱桥全桥有限元计算模型”，文件 <code>source/_static/fig/3-4-25.jpg</code>，<a class="uri" href="https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/3-4-25.jpg">https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/3-4-25.jpg</a>。用于识别单元、节点与连接释放，正式版拟由课程组三维模型自动生成统一示意图。</p>
 </div>
-<p>裸拱模型只包含主拱及当时实际存在的约束。拱脚固结或铰接应根据构造和基础条件确定；在无支架安装过程中，还可能存在扣索、缆风、临时横撑和非对称节段。<a class="quarto-xref" href="#fig-ch04-bare-model">图 <span>5.10</span></a> 仅表示最简平面边界，不能替代具体施工模型。</p>
+<p>裸拱模型只包含主拱及当时实际存在的约束。拱脚固结或铰接应根据构造和基础条件确定；在无支架安装过程中，还可能存在扣索、缆风、临时横撑和非对称节段。<a class="quarto-xref" href="#fig-ch04-bare-model">图 <span>5.12</span></a> 仅表示最简平面边界，不能替代具体施工模型。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch04-bare-model">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch04-bare-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<span class="reference-image-note">参考图位：图 5.10: 裸拱平面杆系模型及拱脚边界。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
+<span class="reference-image-note">参考图位：图 5.12: 裸拱平面杆系模型及拱脚边界。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-bare-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.10: 裸拱平面杆系模型及拱脚边界
+图 5.12: 裸拱平面杆系模型及拱脚边界
 </figcaption>
 </figure>
 </div>
@@ -1033,6 +1096,29 @@ J(\boldsymbol y)=
 </section>
 <section class="level3" data-number="5.7.5" id="温度收缩徐变与基础变位">
 <h3 class="anchored" data-anchor-id="温度收缩徐变与基础变位" data-number="5.7.5"><span class="header-section-number">5.7.5</span> 温度、收缩徐变与基础变位</h3>
+<!-- PRIORITY-FIGURE F23 START -->
+<div alt="桥墩“动了十毫米”，到底是哪一种动？。相同“10 mm”可以是共同沉降、差异沉降或相对水平张开。必须先定义运动对象、方向与边界，再计算三铰、两铰或无铰拱的附加响应。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F23">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="桥墩“动了十毫米”，到底是哪一种动？。相同“10 mm”可以是共同沉降、差异沉降或相对水平张开。必须先定义运动对象、方向与边界，再计算三铰、两铰或无铰拱的附加响应。" class="img-fluid figure-img" src="../assets/publication/priority-40/F23.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.13: 相同“10 mm”可以是共同沉降、差异沉降或相对水平张开。必须先定义运动对象、方向与边界，再计算三铰、两铰或无铰拱的附加响应。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+规定运动输入示意，不含响应计算；共同平移判断忽略地基额外约束、动力和几何变化；具体内力取决于结构边界与刚度
+</p>
+<p>
+课程组原创参数绘图 · F23 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F23.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F23.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F23 END -->
 <p>均匀温差 <span class="math inline">\(\Delta T\)</span> 使自由构件产生热应变</p>
 <p><span class="math display">\[
 \varepsilon_T=\alpha_T\Delta T,
@@ -1188,6 +1274,29 @@ M^0=\frac{qx(l-x)}{2}
 </section>
 <section class="level4" data-number="5.7.9.3" id="第二步半跨作用与压力线偏离">
 <h4 class="anchored" data-anchor-id="第二步半跨作用与压力线偏离" data-number="5.7.9.3"><span class="header-section-number">5.7.9.3</span> 第二步：半跨作用与压力线偏离</h4>
+<!-- PRIORITY-FIGURE F22 START -->
+<div alt="荷载只放一半，拱就一定更轻松吗？。抛物线拱在满跨均布荷载下弯矩为零；仅在左半跨加载会形成一正一负的弯矩。总竖向荷载减小并不意味着每个截面弯矩减小。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F22">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-priority-F22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img alt="荷载只放一半，拱就一定更轻松吗？。抛物线拱在满跨均布荷载下弯矩为零；仅在左半跨加载会形成一正一负的弯矩。总竖向荷载减小并不意味着每个截面弯矩减小。" class="img-fluid figure-img" src="../assets/publication/priority-40/F22.svg" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F22-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.14: 抛物线拱在满跨均布荷载下弯矩为零；仅在左半跨加载会形成一正一负的弯矩。总竖向荷载减小并不意味着每个截面弯矩减小。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+查看模型条件与绘图代码
+</summary>
+<p>
+无自重以外另加项，比较的q相同；拱轴与边界保持不变；一阶三铰拱
+</p>
+<p>
+课程组原创参数绘图 · F22 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a download="" href="../assets/publication/priority-40/F22.png">下载 PNG</a> · <a download="" href="../assets/publication/priority-40/F22.svg">下载 SVG</a>
+</p>
+</details>
+<!-- PRIORITY-FIGURE F22 END -->
 <p>将同一 <span class="math inline">\(q\)</span> 仅施加于左半跨。简支体系跨中弯矩为 <span class="math inline">\(M_c^0=ql^2/16\)</span>，对 <span class="math inline">\(f=24\,\mathrm m\)</span>，</p>
 <p><span class="math display">\[
 H=\frac{ql^2}{16f}=6750\,\mathrm{kN}.
@@ -4850,7 +4959,7 @@ J_j=(\boldsymbol y-\widehat{\boldsymbol y}_j)^{\mathsf T}
 
 <script>
 (()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);route.addEventListener('click',event=>{const link=event.target.closest('.priority-chapter-gallery a[href^="#"]');if(!link)return;const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;set('reference');requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}));});const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
 
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

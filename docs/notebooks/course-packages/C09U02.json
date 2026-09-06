@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "unit_id": "C09U02",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C09U02",
+    "chapter": 9,
+    "chapter_title": "风与动力：无量纲判断",
+    "title": "改变尺寸也改变受风面积",
+    "model": "scale",
+    "preset": "pressure",
+    "insight": "保持面压力不变而几何相似放大时，线荷载随桥宽一次增长，而弯曲应力保持不变。",
+    "transfer": "为什么不能把面压力直接当成线荷载？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C09U02.html",
+      "path": "interactive/lessons/C09U02.html"
+    },
+    "narration": [
+      "改变尺寸也改变受风面积。先预测：改变全尺寸放大比例 λ，固定面压力下的应力会怎样变化？",
+      "现在保持其他条件不变，只改变全尺寸放大比例 λ。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "保持面压力不变而几何相似放大时，线荷载随桥宽一次增长，而弯曲应力保持不变。",
+      "为什么不能把面压力直接当成线荷载？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.5,
+      "max": 3,
+      "start": 1,
+      "end": 2,
+      "step": 0.01,
+      "label": "全尺寸放大比例 λ",
+      "unit": "",
+      "output": "固定面压力下的应力",
+      "outunit": "基准倍数",
+      "formula": "固定面压力下的应力 / 基准值 = λ^0",
+      "boundary": "全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。",
+      "power": 0
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C09U02.mp4",
+        "href": "../assets/videos/core/C09U02.mp4",
+        "bytes": 3185060
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C09U02.vtt",
+        "href": "../assets/videos/core/C09U02.vtt",
+        "bytes": 814
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C09U02.jpg",
+        "href": "../assets/videos/core/posters/C09U02.jpg",
+        "bytes": 145050
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C09U02.txt",
+        "href": "../notebooks/course-data/C09U02.txt",
+        "bytes": 540
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C09U02.json",
+        "href": "../notebooks/course-data/C09U02.json",
+        "bytes": 13960
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C09U02",
+      "title": "改变尺寸也改变受风面积",
+      "chapter": 9,
+      "fingerprint": "8fc9a92efdfeeffe4bf10ac51f1c60e67679c878a73bf70ad18ebdd39550f415",
+      "duration": 49.466667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 128.5
+    },
+    "notebooks": [],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C09U02.json",
+      "render_sha256": "9dc60b3f204ee2d23a251f5dde595e8e78c6a013617182e5b0a7e57203061635",
+      "render_copy_sha256": "9dc60b3f204ee2d23a251f5dde595e8e78c6a013617182e5b0a7e57203061635"
+    },
+    "download_href": "../notebooks/course-packages/C09U02.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

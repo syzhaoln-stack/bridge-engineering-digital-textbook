@@ -5,6 +5,9 @@
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry"><p>先从一个看得见的问题开始</p><h3>把桥按原样放大两倍，它会下沉多少？</h3><p>把全尺寸放大比例从 1 调到 2，先比较自重造成的竖向位移。</p><a href="../interactive/learning-map.html?chapter=ch01">看图进入实验 →</a></div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery"><summary>从本章的 3 幅新图开始</summary><div class="priority-thumb-grid"><a href="#fig-priority-F01"><img src="../assets/publication/priority-40/F01.svg" loading="lazy" alt="车的重量，最后传到了哪里？"><span>车的重量，最后传到了哪里？</span></a><a href="#fig-priority-F02"><img src="../assets/publication/priority-40/F02.svg" loading="lazy" alt="同样向下的重量，为什么需要不同的支承？"><span>同样向下的重量，为什么需要不同的支承？</span></a><a href="#fig-priority-F03"><img src="../assets/publication/priority-40/F03.svg" loading="lazy" alt="把一座桥原样放大两倍，还能照搬原来的判断吗？"><span>把一座桥原样放大两倍，还能照搬原来的判断吗？</span></a></div></details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 
 <h2>本章的核心思考</h2><p class="core-thesis">先判断体系与尺度，再进入桥例。</p><ol><li>把桥梁简化为荷载、传力构件、连接与支承。</li><li>用合力、合矩检查简化是否保真。</li><li>声明尺度改变时保持什么，再判断控制指标。</li></ol><div class="core-analogy"><h3>跨课程类比</h3><p>材料力学的平衡与量纲 → 桥型选择与规模判断</p><p><strong>反例与边界：</strong>同一外形比例并不能保证应力、变形、频率或风洞相似。</p></div><p>建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。</p><div class="core-unit-grid"><article><p class="core-tag">C01U01 · 课堂核心</p><h3>移动荷载，先守住平衡</h3><p>荷载移动时左右反力改变，合力与合矩仍须守恒。</p><p><a href="../interactive/core-learning.html?unit=C01U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U01&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C01U02 · 课前/课后迁移</p><h3>从梁式弯曲到拱的轴向传力</h3><p>抬高拱轴可以减少给定均布荷载下所需水平推力，但拱脚仍要传递水平力。</p><p><a href="../interactive/core-learning.html?unit=C01U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U02&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C01U03 · 课前/课后迁移</p><h3>模型为何必须声明边界</h3><p>相同温升下，从自由伸长到完全约束，变形逐渐转换为内力。</p><p><a href="../interactive/core-learning.html?unit=C01U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U03&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C01U04 · 课堂核心</p><h3>长度、面积、体积不是同一种增长</h3><p>全尺寸放大时，长度、面积与体积分别按一次、二次和三次方变化。</p><p><a href="../interactive/core-learning.html?unit=C01U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U04&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C01U05 · 课前/课后迁移</p><h3>截面惯性矩不等于整体刚度</h3><p>惯性矩按四次方增长，但几何相似梁的横向位移刚度只按一次方增长。</p><p><a href="../interactive/core-learning.html?unit=C01U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U05&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C01U06 · 课堂核心</p><h3>自重为何惩罚大跨度</h3><p>相似放大时，自重应力随尺度一次增长，相对挠度也随一次增长。</p><p><a href="../interactive/core-learning.html?unit=C01U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U06&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C01U07 · 课前/课后迁移</p><h3>同样放大，换荷载便换结论</h3><p>保持集中力不变时，相似放大的应力反而按尺度平方的倒数下降。</p><p><a href="../interactive/core-learning.html?unit=C01U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U07&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C01U08 · 课前/课后迁移</p><h3>同一荷载，刚度决定分工</h3><p>并联弹簧位移相同，较硬的支承分到较多荷载。</p><p><a href="../interactive/core-learning.html?unit=C01U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U08&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C01U09 · 课前/课后迁移</p><h3>方案比较先看敏感性</h3><p>梁高增加同时改变惯性矩、应力与挠度，不能只比较一个尺寸。</p><p><a href="../interactive/core-learning.html?unit=C01U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U09&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C01U10 · 课前/课后迁移</p><h3>把复杂模型交给一个极限情形</h3><p>网格加密使数值误差减小，但不能证明原来的边界条件正确。</p><p><a href="../interactive/core-learning.html?unit=C01U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U10&amp;view=video" target="_blank">观看短视频</a></p></article></div><p><a href="../core-thinking.html">返回全书核心思维与尺度规律</a> · <a href="../core-resources.html">查看110个教学单元总索引</a> · <a href="../interactive/thinking-analogies.html">打开跨课程并排类比</a></p></div>
 <!-- CORE-ROUTE END -->
@@ -45,6 +48,14 @@
 
 #### 桥梁的基本组成
 
+
+<!-- PRIORITY-FIGURE F01 START -->
+![由车辆、桥面板、主梁、支座、墩台、基础到地基的竖向传力路径。基础处向上箭头表示地基对基础的反力。](../assets/publication/priority-40/F01.svg){#fig-priority-F01 width=100% fig-alt="车的重量，最后传到了哪里？。由车辆、桥面板、主梁、支座、墩台、基础到地基的竖向传力路径。基础处向上箭头表示地基对基础的反力。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>非实桥构造图；不表示材料应力和反力大小；桥台用简化端支承体表现，未绘台背土和附属设施</p><p>课程组原创参数绘图 · F01 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F01.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F01.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F01 END -->
+
+
 桥梁通常由上部结构、支承系统、下部结构、基础和附属设施组成。
 
 1. **上部结构**直接承受桥面上的交通作用及风、温度等环境作用，并跨越墩台之间的空间。梁桥的主梁、拱桥的主拱、斜拉桥的主梁—斜拉索—桥塔体系以及悬索桥的加劲梁—吊索—主缆体系，均属于上部承重结构。
@@ -82,6 +93,14 @@ $$
 当局部构件坐标与总体坐标不一致时，应在计算图式和数字模型中分别标明。所有输入参数均应同时记录数值、单位和正负号规定。
 
 ## 结构体系与传力
+
+
+<!-- PRIORITY-FIGURE F02 START -->
+![同一竖向均布荷载下，理想梁以弯曲平衡，抛物线拱需要向内水平反力，抛物线索需要向外水平反力。相同的反力量级不代表结构性能相同。](../assets/publication/priority-40/F02.svg){#fig-priority-F02 width=100% fig-alt="同样向下的重量，为什么需要不同的支承？。同一竖向均布荷载下，理想梁以弯曲平衡，抛物线拱需要向内水平反力，抛物线索需要向外水平反力。相同的反力量级不代表结构性能相同。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>荷载沿水平投影均布；几何小斜率不是H公式必需条件；图示轴线与指定荷载相配；偏载后不能继续假定拱内无弯矩</p><p>课程组原创参数绘图 · F02 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F02.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F02.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F02 END -->
+
 
 
 
@@ -1907,6 +1926,14 @@ $$
 ### 跨径尺度、施工形成与运维更换的联合判断
 
 #### 尺度判断从无量纲关系开始
+
+
+<!-- PRIORITY-FIGURE F03 START -->
+![几何相似、材料和重度相同的梁，将尺度乘2后面积、自重和二次矩分别乘4、8和16，而自重弯曲应力乘2。](../assets/publication/priority-40/F03.svg){#fig-priority-F03 width=100% fig-alt="把一座桥原样放大两倍，还能照搬原来的判断吗？。几何相似、材料和重度相同的梁，将尺度乘2后面积、自重和二次矩分别乘4、8和16，而自重弯曲应力乘2。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>只比较给定简支等截面梁与自重；不含车辆、风、稳定或施工；所有尺寸同时缩放，不能用于只增跨度或只增板宽的情形</p><p>课程组原创参数绘图 · F03 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F03.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F03.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F03 END -->
+
 
 桥梁尺度不是“跨度达到某值就换某桥型”的单阈值问题。跨径 $L$ 增大时，自重、弯矩、变形、稳定、动力和施工控制以不同规律增长；材料强度、结构高度、宽跨比、矢跨比、塔跨比和分段尺度共同影响可行性。方案阶段可使用无量纲比值发现趋势，但最终尺寸必须经过相应分析与规范验算。
 

@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "unit_id": "C08U10",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C08U10",
+    "chapter": 8,
+    "chapter_title": "支承、墩台与边界",
+    "title": "同温差放大结构，力和应力不同步",
+    "model": "scale",
+    "preset": "thermal",
+    "insight": "完全约束热应力不随几何尺度改变，但热轴力随面积增长。",
+    "transfer": "支座需求应比较力还是应力？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C08U10.html",
+      "path": "interactive/lessons/C08U10.html"
+    },
+    "narration": [
+      "同温差放大结构，力和应力不同步。先预测：改变全尺寸放大比例 λ，完全约束温度轴力会怎样变化？",
+      "现在保持其他条件不变，只改变全尺寸放大比例 λ。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "完全约束热应力不随几何尺度改变，但热轴力随面积增长。",
+      "支座需求应比较力还是应力？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.5,
+      "max": 3,
+      "start": 1,
+      "end": 2,
+      "step": 0.01,
+      "label": "全尺寸放大比例 λ",
+      "unit": "",
+      "output": "完全约束温度轴力",
+      "outunit": "基准倍数",
+      "formula": "完全约束温度轴力 / 基准值 = λ^2",
+      "boundary": "全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。",
+      "power": 2
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C08U10.mp4",
+        "href": "../assets/videos/core/C08U10.mp4",
+        "bytes": 3249894
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C08U10.vtt",
+        "href": "../assets/videos/core/C08U10.vtt",
+        "bytes": 708
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C08U10.jpg",
+        "href": "../assets/videos/core/posters/C08U10.jpg",
+        "bytes": 144663
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C08U10.txt",
+        "href": "../notebooks/course-data/C08U10.txt",
+        "bytes": 504
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C08U10.json",
+        "href": "../notebooks/course-data/C08U10.json",
+        "bytes": 16382
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C08U10",
+      "title": "同温差放大结构，力和应力不同步",
+      "chapter": 8,
+      "fingerprint": "829ecf74d8a85142fd436d6cd586ef782589eb0ee996b447dfe8572c72946078",
+      "duration": 46.866667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 132.1
+    },
+    "notebooks": [],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C08U10.json",
+      "render_sha256": "6dfb34d03da3f90cf95b3080b4cd74cc4926e1f63602655101bcbc430e0c51fa",
+      "render_copy_sha256": "6dfb34d03da3f90cf95b3080b4cd74cc4926e1f63602655101bcbc430e0c51fa"
+    },
+    "download_href": "../notebooks/course-packages/C08U10.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

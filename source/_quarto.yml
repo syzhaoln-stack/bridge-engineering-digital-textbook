@@ -8,6 +8,19 @@ project:
     - assets/videos/**
     - assets/generated/**
     - assets/publication/**
+    - notebooks/*.html
+    - notebooks/*.ipynb
+    - notebooks/*.py
+    - notebooks/*.js
+    - notebooks/*.json
+    - notebooks/course-data/**
+    - notebooks/course-packages/**
+    - notebooks/vendor/katex/**
+    - scripts/priority-figures/*.py
+    - scripts/dialogue-pilot/*.py
+    - scripts/dialogue-pilot/*.md
+    - scripts/dialogue-pilot/*.json
+    - scripts/dialogue-pilot/specs/**
     - favicon.ico
 
 book:
@@ -42,6 +55,7 @@ book:
         - course-guide.qmd
         - legacy-tools.qmd
     - core-resources.qmd
+    - visual-update.qmd
     - resources.qmd
     - publication-images.qmd
     - references.qmd
@@ -55,6 +69,7 @@ format:
     theme: default
     css:
       - styles.css
+      - visual-update.css
       - interactive/core-reading.css
     include-after-body:
       - includes/core-reading.html

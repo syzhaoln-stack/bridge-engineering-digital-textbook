@@ -1,0 +1,46 @@
+{
+  "id": "F34",
+  "title": "同样大小的周期力，为什么能激起更大的振动？",
+  "chapter": 9,
+  "heading": "单自由度模型",
+  "caption": "单自由度简谐稳态响应随频率比与阻尼改变。阻尼比0.02、0.05、0.10在r=1时的位移放大系数分别为25、10、5；该模型不直接描述桥梁颤振。",
+  "assumptions": [
+    "线性单自由度，简谐力恒幅",
+    "已达稳态，不是启动瞬态",
+    "ζ>0；忽略非线性"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F34.svg",
+  "png": "assets/publication/priority-40/F34.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "r=1时R=1/(2ζ)",
+    "未截平共振峰",
+    "归一分母为F0/k"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch09-wind.qmd",
+  "heading_line": 286,
+  "calculation_data": {
+    "amplification_at_r1": {
+      "0.02": 25.0,
+      "0.05": 10.0,
+      "0.1": 5.0
+    }
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视并复查：共振峰未截平，增补了实际可辨的并联阻尼器符号。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "b232494b7d7eae9128fa96c98f2886d5c45f5790f760d5aff7b60113e801b3f4",
+    "png": "6a9f001199eec372fca5f079d040994425f9c0a0e86496745cc6db138bfe3226"
+  }
+}

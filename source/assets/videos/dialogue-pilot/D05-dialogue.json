@@ -1,0 +1,261 @@
+{
+  "id": "D05",
+  "title": "网格都这么细了，怎么还可能算错？",
+  "purpose": "从生活直觉产生分歧，用图和计算发现遗漏条件，解释以后再引出术语。",
+  "roles": {
+    "zhou": {
+      "name": "小周",
+      "role": "替观众追问，直觉大胆但愿意改口",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+2%"
+    },
+    "ning": {
+      "name": "阿宁",
+      "role": "先解释看得见的变化，再给出术语",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-1%"
+    }
+  },
+  "model": {
+    "description": "Euler–Bernoulli梁，比较简支与两端固支；观察同一个x位置，有限元细化1至32单元。",
+    "L_m": 20,
+    "q_kN_per_m": 20,
+    "E_GPa": 34,
+    "I_m4": 0.1,
+    "observed_x_m": 7.4,
+    "checks": "checks-b.json"
+  },
+  "turns": [
+    {
+      "speaker": "zhou",
+      "scene": "coarse",
+      "text": "以前你嫌模型太粗。现在我把网格切得密密麻麻，结果都不怎么变了，这回总该信电脑了吧？"
+    },
+    {
+      "speaker": "ning",
+      "scene": "two",
+      "text": "我们给它同一根梁、同一份荷载。左边允许梁端转动，右边把两头的转角也锁住。先猜，哪根更容易下沉？"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "two",
+      "text": "当然是左边。像搁板搭在支架上，和两头死死夹住，能一样吗？"
+    },
+    {
+      "speaker": "ning",
+      "scene": "converge",
+      "text": "看，左边算到大约十一点二七毫米，右边只有二点一三毫米。网格越来越细，两边的结果都稳定下来了。"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "wrong",
+      "text": "那右边是很稳定地，算了一个我根本没要它算的东西？精细地答错了题？"
+    },
+    {
+      "speaker": "ning",
+      "scene": "wrong",
+      "text": "正是。网格收敛只说明这个模型的数值近似趋于稳定，不能替你证明支承、荷载和材料选对了。"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "ai",
+      "text": "那让人工智能写脚本，也一样。代码能跑、图也漂亮，只能说明它跑完了。还得问，它有没有把我的意思理解错。"
+    },
+    {
+      "speaker": "ning",
+      "scene": "summary",
+      "text": "所以先用能手算的小例子核对，再检查力和位移的条件，然后逐步加复杂性。计算越方便，越要讲清楚模型究竟代表什么。"
+    }
+  ],
+  "sources": [
+    "chapters/ch10-fem.qmd"
+  ],
+  "production_note": "原创双人教学剧本及合成声音，无真人声音模仿。Euler–Bernoulli梁，比较简支与两端固支；观察同一个x位置，有限元细化1至32单元。",
+  "timeline": [
+    {
+      "speaker": "zhou",
+      "scene": "coarse",
+      "text": "以前你嫌模型太粗。现在我把网格切得密密麻麻，结果都不怎么变了，这回总该信电脑了吧？",
+      "start_ms": 450,
+      "end_ms": 8562,
+      "duration_ms": 8112,
+      "audio_file": "turn-00.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "two",
+      "text": "我们给它同一根梁、同一份荷载。左边允许梁端转动，右边把两头的转角也锁住。先猜，哪根更容易下沉？",
+      "start_ms": 8832,
+      "end_ms": 19488,
+      "duration_ms": 10656,
+      "audio_file": "turn-01.mp3"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "two",
+      "text": "当然是左边。像搁板搭在支架上，和两头死死夹住，能一样吗？",
+      "start_ms": 19918,
+      "end_ms": 26038,
+      "duration_ms": 6120,
+      "audio_file": "turn-02.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "converge",
+      "text": "看，左边算到大约十一点二七毫米，右边只有二点一三毫米。网格越来越细，两边的结果都稳定下来了。",
+      "start_ms": 26308,
+      "end_ms": 36676,
+      "duration_ms": 10368,
+      "audio_file": "turn-03.mp3"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "wrong",
+      "text": "那右边是很稳定地，算了一个我根本没要它算的东西？精细地答错了题？",
+      "start_ms": 37106,
+      "end_ms": 43610,
+      "duration_ms": 6504,
+      "audio_file": "turn-04.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "wrong",
+      "text": "正是。网格收敛只说明这个模型的数值近似趋于稳定，不能替你证明支承、荷载和材料选对了。",
+      "start_ms": 43880,
+      "end_ms": 54032,
+      "duration_ms": 10152,
+      "audio_file": "turn-05.mp3"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "ai",
+      "text": "那让人工智能写脚本，也一样。代码能跑、图也漂亮，只能说明它跑完了。还得问，它有没有把我的意思理解错。",
+      "start_ms": 54462,
+      "end_ms": 65094,
+      "duration_ms": 10632,
+      "audio_file": "turn-06.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "summary",
+      "text": "所以先用能手算的小例子核对，再检查力和位移的条件，然后逐步加复杂性。计算越方便，越要讲清楚模型究竟代表什么。",
+      "start_ms": 65364,
+      "end_ms": 77388,
+      "duration_ms": 12024,
+      "audio_file": "turn-07.mp3"
+    }
+  ],
+  "captions": [
+    {
+      "start_ms": 450,
+      "end_ms": 2231,
+      "text": "小周：以前你嫌模型太粗。",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 2231,
+      "end_ms": 8562,
+      "text": "小周：现在我把网格切得密密麻麻，结果都不怎么变了，这回总该信电脑了吧？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 8832,
+      "end_ms": 12233,
+      "text": "阿宁：我们给它同一根梁、同一份荷载。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 12233,
+      "end_ms": 16994,
+      "text": "阿宁：左边允许梁端转动，右边把两头的转角也锁住。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 16994,
+      "end_ms": 19488,
+      "text": "阿宁：先猜，哪根更容易下沉？",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 19918,
+      "end_ms": 21229,
+      "text": "小周：当然是左边。",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 21229,
+      "end_ms": 26038,
+      "text": "小周：像搁板搭在支架上，和两头死死夹住，能一样吗？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 26308,
+      "end_ms": 32394,
+      "text": "阿宁：看，左边算到大约十一点二七毫米，右边只有二点一三毫米。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 32394,
+      "end_ms": 36676,
+      "text": "阿宁：网格越来越细，两边的结果都稳定下来了。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 37106,
+      "end_ms": 41984,
+      "text": "小周：那右边是很稳定地，算了一个我根本没要它算的东西？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 41984,
+      "end_ms": 43610,
+      "text": "小周：精细地答错了题？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 43880,
+      "end_ms": 44605,
+      "text": "阿宁：正是。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 44605,
+      "end_ms": 54032,
+      "text": "阿宁：网格收敛只说明这个模型的数值近似趋于稳定，不能替你证明支承、荷载和材料选对了。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 54462,
+      "end_ms": 57439,
+      "text": "小周：那让人工智能写脚本，也一样。",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 57439,
+      "end_ms": 61479,
+      "text": "小周：代码能跑、图也漂亮，只能说明它跑完了。",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 61479,
+      "end_ms": 65094,
+      "text": "小周：还得问，它有没有把我的意思理解错。",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 65364,
+      "end_ms": 72935,
+      "text": "阿宁：所以先用能手算的小例子核对，再检查力和位移的条件，然后逐步加复杂性。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 72935,
+      "end_ms": 77388,
+      "text": "阿宁：计算越方便，越要讲清楚模型究竟代表什么。",
+      "speaker": "ning"
+    }
+  ],
+  "duration_ms": 79618,
+  "audio_provider": "Edge online neural TTS via edge-tts",
+  "subtitle_timing": "sentence duration proportional within each independently synthesized turn; editorial timing draft"
+}

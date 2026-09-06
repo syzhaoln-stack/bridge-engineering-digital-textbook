@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "unit_id": "C04U05",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C04U05",
+    "chapter": 4,
+    "chapter_title": "梁桥的核心判断",
+    "title": "横向分配就是平均加偏心修正",
+    "model": "transverse",
+    "preset": "eccentricity",
+    "insight": "等刚度刚性横梁模型可拆成平均分配和偏心力矩分配。",
+    "transfer": "这与偏心受压的应力图为什么相像？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C04U05.html",
+      "path": "interactive/lessons/C04U05.html"
+    },
+    "narration": [
+      "横向分配就是平均加偏心修正。先预测：改变横向偏心 e，右边梁荷载分配系数会怎样变化？",
+      "现在保持其他条件不变，只改变横向偏心 e。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "等刚度刚性横梁模型可拆成平均分配和偏心力矩分配。",
+      "这与偏心受压的应力图为什么相像？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": -1.8,
+      "max": 1.8,
+      "start": 0,
+      "end": 1.4,
+      "step": 0.01,
+      "label": "横向偏心 e",
+      "unit": "相邻梁间距",
+      "output": "右边梁荷载分配系数",
+      "outunit": "",
+      "formula": "Ri=ki(a+b yi)；ΣRi=1；ΣRi yi=e",
+      "boundary": "四片梁y=[−1.5,−0.5,0.5,1.5]；刚性横梁、共同位移与转角。负反力提示仅受压支承模型应重建。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C04U05.mp4",
+        "href": "../assets/videos/core/C04U05.mp4",
+        "bytes": 3045057
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C04U05.vtt",
+        "href": "../assets/videos/core/C04U05.vtt",
+        "bytes": 723
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C04U05.jpg",
+        "href": "../assets/videos/core/posters/C04U05.jpg",
+        "bytes": 133381
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C04U05.txt",
+        "href": "../notebooks/course-data/C04U05.txt",
+        "bytes": 484
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C04U05.json",
+        "href": "../notebooks/course-data/C04U05.json",
+        "bytes": 19316
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C04U05",
+      "title": "横向分配就是平均加偏心修正",
+      "chapter": 4,
+      "fingerprint": "69dab6798fa0e3a911951d489700cf0e39448f5b4c6e217ab96e2d1dc682b092",
+      "duration": 45.833333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 80.7
+    },
+    "notebooks": [
+      {
+        "id": "A-transverse",
+        "title": "车靠边走，五根梁怎样重新分担？",
+        "unit_ids": [
+          "C04U05",
+          "C04U10",
+          "C02U01",
+          "C02U02",
+          "C02U03"
+        ],
+        "ipynb": "notebooks/A-transverse.ipynb",
+        "python": "notebooks/A-transverse.py",
+        "html": "notebooks/A-transverse.html",
+        "embed_cell": "fig-transverse",
+        "mapping_note": "五梁120 kN，与原核心四梁归一示例参数不同。",
+        "executed": true,
+        "code_cells": 6,
+        "error_count": 0,
+        "seconds": 5.92
+      }
+    ],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F13.png",
+        "href": "../assets/publication/priority-40/F13.png",
+        "bytes": 273830,
+        "id": "F13",
+        "title": "车轮下面，桥面板靠哪些构件支承？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F13.svg",
+          "href": "../assets/publication/priority-40/F13.svg",
+          "bytes": 35324
+        },
+        "caption": "轴测整桥以5根纵向主梁、3道跨内横隔板和两端横梁定位桥面板的空间支承。透明桥面仅为揭示内部构造；车辆轮载向下。",
+        "assumptions": [
+          "所有几何为明确教学例；纵横比例由坐标统一投影",
+          "横隔板为有高度的实体连接，不是路面横线",
+          "此图不计算荷载分担或板内应力"
+        ],
+        "mapping_note": "先在空间图里找到桥面板、五根纵梁和横隔板，再讨论横向分担。图是五梁构造定位，独立交互是四梁归一模型。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "567564c649bd48db6d4de2500eaceb65d987720a67755f9eb3b3db07c7e21c02",
+          "png": "37e987309f7eaa3be606f2a47c54cfb8b24362ecbe00558ffdb4898d1b124909"
+        }
+      },
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F16.png",
+        "href": "../assets/publication/priority-40/F16.png",
+        "bytes": 176393,
+        "id": "F16",
+        "title": "车偏到一侧，总重量怎样分到五根梁？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F16.svg",
+          "href": "../assets/publication/priority-40/F16.svg",
+          "bytes": 26141
+        },
+        "caption": "平均分担24 kN/梁与偏心分量−24、−12、0、12、24 kN相加，得到0、12、24、36、48 kN。合力和合矩均与外作用一致。",
+        "assumptions": [
+          "刚性横梁与等刚度；忽略扭转柔度、板局部和横隔离散",
+          "向下位移为正，图中只示意放大的线性位移趋势"
+        ],
+        "mapping_note": "本图与五梁Notebook使用同一120 kN、e=2.4 m算例。独立页是四梁归一模型，不能逐根照抄0、12、24、36、48 kN。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "04b5dca4a22edebab7908d3a74e0fc009c5ec0a098d2e5a9e1367dda2cac7345",
+          "png": "3d6cbfcd65fdb1d0fb32e960f7ea938fdc7c3c825c1b23ff5b4dd86c83715190"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C04U05.json",
+      "render_sha256": "265921a19c632829660c02cfee42ef944a9e4c70f3942172b000c0e4737c1cc9",
+      "render_copy_sha256": "265921a19c632829660c02cfee42ef944a9e4c70f3942172b000c0e4737c1cc9"
+    },
+    "download_href": "../notebooks/course-packages/C04U05.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

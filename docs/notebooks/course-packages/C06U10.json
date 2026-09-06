@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "unit_id": "C06U10",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C06U10",
+    "chapter": 6,
+    "chapter_title": "斜拉桥：耦合与控制",
+    "title": "调索必须留下输入输出证据",
+    "model": "matrix",
+    "preset": "first",
+    "insight": "保存调整前后响应和索力增量，才能判断模型预测是否得到验证。",
+    "transfer": "测量响应不符时怎样区分参数误差与测量误差？",
+    "priority": "课前/课后迁移",
+    "standalone": false,
+    "candidate_note": "调整一根索的影响矩阵路径已保留；候选补充记录习惯。",
+    "interaction": {
+      "href": "core-learning.html?unit=C06U10",
+      "path": "interactive/core-learning.html?unit=C06U10"
+    },
+    "narration": [
+      "调索必须留下输入输出证据。先预测：改变第一控制量 ΔT₁，第一控制点响应会怎样变化？",
+      "现在保持其他条件不变，只改变第一控制量 ΔT₁。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "保存调整前后响应和索力增量，才能判断模型预测是否得到验证。",
+      "测量响应不符时怎样区分参数误差与测量误差？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": -1,
+      "max": 1,
+      "start": 0,
+      "end": 0.8,
+      "step": 0.01,
+      "label": "第一控制量 ΔT₁",
+      "unit": "",
+      "output": "第一控制点响应",
+      "outunit": "",
+      "formula": "[r₁,r₂]ᵀ=[[1,.35],[.25,1]]·[ΔT₁,ΔT₂]ᵀ",
+      "boundary": "明确给定的教学影响矩阵；另一控制量为0.2；不代表具体实桥索力系数。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C06U10.mp4",
+        "href": "../assets/videos/core/C06U10.mp4",
+        "bytes": 3008617
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C06U10.vtt",
+        "href": "../assets/videos/core/C06U10.vtt",
+        "bytes": 760
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C06U10.jpg",
+        "href": "../assets/videos/core/posters/C06U10.jpg",
+        "bytes": 134871
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C06U10.txt",
+        "href": "../notebooks/course-data/C06U10.txt",
+        "bytes": 521
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C06U10.json",
+        "href": "../notebooks/course-data/C06U10.json",
+        "bytes": 19623
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C06U10",
+      "title": "调索必须留下输入输出证据",
+      "chapter": 6,
+      "fingerprint": "22daade79798fa57b38420f49158a1bf9e85debd15ec0f369d66138cefa08ffc",
+      "duration": 47.466667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 130.6
+    },
+    "notebooks": [],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C06U10.json",
+      "render_sha256": "2d0064356b3c72b5fa121e411e695d5cfa1a391b703a57ec55a5b1286346d219",
+      "render_copy_sha256": "2d0064356b3c72b5fa121e411e695d5cfa1a391b703a57ec55a5b1286346d219"
+    },
+    "download_href": "../notebooks/course-packages/C06U10.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

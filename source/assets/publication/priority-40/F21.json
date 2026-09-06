@@ -1,0 +1,45 @@
+{
+  "id": "F21",
+  "title": "压力线离开拱轴，弯矩从哪里来？",
+  "chapter": 5,
+  "heading": "压力线与合理拱轴",
+  "caption": "同一左半跨均布荷载下，压力线作图与拱轴出现偏离。在左四分点，竖向差6 m对应M=HΔy=40.5 MN·m；沿截面法向计算的压力中心偏心为M/N，二者不可混用。",
+  "assumptions": [
+    "仅该三铰拱、该荷载",
+    "y_p=M0/H为图解关系",
+    "N为局部轴向分量；不判定截面是否满足承载要求"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F21.svg",
+  "png": "assets/publication/priority-40/F21.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "四分点M=40500 kN·m",
+    "N=Hcosφ+V0sinφ",
+    "M=H(yp−ya)"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch04.qmd",
+  "heading_line": 143,
+  "calculation_data": {
+    "quarter_M_kNm": 40500.0,
+    "quarter_N_kN": 7269.97248963158,
+    "quarter_e_m": 5.570860145311556,
+    "quarter_vertical_gap_m": 6.0
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：拱轴/压力线图例、左半跨加载、Δy标注和e=M/N明确区分。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "a2ec027c78afbd137b1280dc316265ecbde8e635fb08587250719269bf0fd79d",
+    "png": "fdef5d85db3f2869c808c2e3039fa697038608b9b5ebc518226fad24f9b2ab99"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "unit_id": "C08U09",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C08U09",
+    "chapter": 8,
+    "chapter_title": "支承、墩台与边界",
+    "title": "顶升用单位响应建立调整规律",
+    "model": "matrix",
+    "preset": "second",
+    "insight": "多个顶升点的位移调整同时影响各控制响应，适合用影响矩阵组织。",
+    "transfer": "为什么只控制一个千斤顶行程可能不够？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C08U09.html",
+      "path": "interactive/lessons/C08U09.html"
+    },
+    "narration": [
+      "顶升用单位响应建立调整规律。先预测：改变第二控制量 ΔT₂，第一控制点响应会怎样变化？",
+      "现在保持其他条件不变，只改变第二控制量 ΔT₂。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "多个顶升点的位移调整同时影响各控制响应，适合用影响矩阵组织。",
+      "为什么只控制一个千斤顶行程可能不够？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": -1,
+      "max": 1,
+      "start": 0,
+      "end": 0.8,
+      "step": 0.01,
+      "label": "第二控制量 ΔT₂",
+      "unit": "",
+      "output": "第一控制点响应",
+      "outunit": "",
+      "formula": "[r₁,r₂]ᵀ=[[1,.35],[.25,1]]·[ΔT₁,ΔT₂]ᵀ",
+      "boundary": "明确给定的教学影响矩阵；另一控制量为0.2；不代表具体实桥索力系数。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C08U09.mp4",
+        "href": "../assets/videos/core/C08U09.mp4",
+        "bytes": 2983245
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C08U09.vtt",
+        "href": "../assets/videos/core/C08U09.vtt",
+        "bytes": 757
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C08U09.jpg",
+        "href": "../assets/videos/core/posters/C08U09.jpg",
+        "bytes": 135906
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C08U09.txt",
+        "href": "../notebooks/course-data/C08U09.txt",
+        "bytes": 518
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C08U09.json",
+        "href": "../notebooks/course-data/C08U09.json",
+        "bytes": 19797
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C08U09",
+      "title": "顶升用单位响应建立调整规律",
+      "chapter": 8,
+      "fingerprint": "67f2217279e88f6e81badc0489165997f1e4f60f70bc19e96aaeb8422a8689d2",
+      "duration": 47.066667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 67.1
+    },
+    "notebooks": [],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C08U09.json",
+      "render_sha256": "ee59964c39be9b3a0660bbfb5cd51d9ae8de05d963915d5ace651e6e3eba0482",
+      "render_copy_sha256": "ee59964c39be9b3a0660bbfb5cd51d9ae8de05d963915d5ace651e6e3eba0482"
+    },
+    "download_href": "../notebooks/course-packages/C08U09.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

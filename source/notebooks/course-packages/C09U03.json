@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C09U03",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C09U03",
+    "chapter": 9,
+    "chapter_title": "风与动力：无量纲判断",
+    "title": "气动系数是条件，不是常数真理",
+    "model": "wind",
+    "preset": "coefficient",
+    "insight": "系数变化能显著改变风力，固定系数平方律只是在指定条件下的模型。",
+    "transfer": "攻角或流动状态改变时要补充什么证据？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C09U03.html",
+      "path": "interactive/lessons/C09U03.html"
+    },
+    "narration": [
+      "气动系数是条件，不是常数真理。先预测：改变气动系数 C，风力 F会怎样变化？",
+      "现在保持其他条件不变，只改变气动系数 C。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "系数变化能显著改变风力，固定系数平方律只是在指定条件下的模型。",
+      "攻角或流动状态改变时要补充什么证据？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.2,
+      "max": 2,
+      "start": 1,
+      "end": 0.5,
+      "step": 0.01,
+      "label": "气动系数 C",
+      "unit": "",
+      "output": "风力 F",
+      "outunit": "kN",
+      "formula": "F=½ρU²AC",
+      "boundary": "ρ=1.225 kg/m³，A=100 m²；非控制量U=30 m/s或C=1；未模拟涡振、颤振。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C09U03.mp4",
+        "href": "../assets/videos/core/C09U03.mp4",
+        "bytes": 2933829
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C09U03.vtt",
+        "href": "../assets/videos/core/C09U03.vtt",
+        "bytes": 734
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C09U03.jpg",
+        "href": "../assets/videos/core/posters/C09U03.jpg",
+        "bytes": 133244
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C09U03.txt",
+        "href": "../notebooks/course-data/C09U03.txt",
+        "bytes": 495
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C09U03.json",
+        "href": "../notebooks/course-data/C09U03.json",
+        "bytes": 15272
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C09U03",
+      "title": "气动系数是条件，不是常数真理",
+      "chapter": 9,
+      "fingerprint": "7ab625871fd7bef074bce30c943993e44d693f74fb70b688632644ce17359a2d",
+      "duration": 46.966667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 128.2
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F33.png",
+        "href": "../assets/publication/priority-40/F33.png",
+        "bytes": 167490,
+        "id": "F33",
+        "title": "风速翻倍，推桥面的力也只翻倍吗？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F33.svg",
+          "href": "../assets/publication/priority-40/F33.svg",
+          "bytes": 19877
+        },
+        "caption": "固定气密度、阻力系数和面积时，风速10、20、40 m/s对应静力阻力0.735、2.940、11.760 kN；速度翻倍，动压和阻力均变为4倍。蓝色箭头示来流，橙色箭头示阻力。",
+        "assumptions": [
+          "ρ、C_D、A固定",
+          "静力阻力D=½ρU²C_DA",
+          "未引入任何桥型专用系数或规范风速"
+        ],
+        "mapping_note": "图中的平方律以阻力系数固定为条件；本单元改变系数时，要重新比较力的大小。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "cb48d9e09ea5202aa90db3a782d1d7d0f84e169b1188adba77f0a1834ab716f3",
+          "png": "679c31596d61c902c0ef9320167d4b1cd4dd94a0b3455fd6f659d488a06279c1"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C09U03.json",
+      "render_sha256": "c4d6c7bce89721ec3b2006dfd801153924915c4f8ffdcb41ee5ae82458e7358a",
+      "render_copy_sha256": "c4d6c7bce89721ec3b2006dfd801153924915c4f8ffdcb41ee5ae82458e7358a"
+    },
+    "download_href": "../notebooks/course-packages/C09U03.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

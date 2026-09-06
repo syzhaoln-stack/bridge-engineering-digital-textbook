@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "unit_id": "C03U08",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C03U08",
+    "chapter": 3,
+    "chapter_title": "作用、组合与可靠度",
+    "title": "移动荷载：固定输出再移动输入",
+    "model": "influence",
+    "preset": "point",
+    "insight": "影响线的横坐标是荷载位置，不是正在查看的截面位置。",
+    "transfer": "内力图和影响线的横坐标角色有何不同？",
+    "priority": "课前/课后迁移",
+    "standalone": false,
+    "candidate_note": "固定响应与移动单位荷载，在梁桥影响线单元继续练习。",
+    "interaction": {
+      "href": "core-learning.html?unit=C03U08",
+      "path": "interactive/core-learning.html?unit=C03U08"
+    },
+    "narration": [
+      "移动荷载：固定输出再移动输入。先预测：改变单位荷载位置 x/L，左跨跨中弯矩会怎样变化？",
+      "现在保持其他条件不变，只改变单位荷载位置 x/L。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "影响线的横坐标是荷载位置，不是正在查看的截面位置。",
+      "内力图和影响线的横坐标角色有何不同？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.01,
+      "max": 0.99,
+      "start": 0.25,
+      "end": 0.75,
+      "step": 0.01,
+      "label": "单位荷载位置 x/L",
+      "unit": "",
+      "output": "左跨跨中弯矩",
+      "outunit": "",
+      "formula": "M=Pη(x)",
+      "boundary": "等截面两跨连续梁，总长归一为1，左跨跨中观察；正为下缘受拉。单位荷载，不采用规范车辆模型。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C03U08.mp4",
+        "href": "../assets/videos/core/C03U08.mp4",
+        "bytes": 3435628
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C03U08.vtt",
+        "href": "../assets/videos/core/C03U08.vtt",
+        "bytes": 742
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C03U08.jpg",
+        "href": "../assets/videos/core/posters/C03U08.jpg",
+        "bytes": 150004
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C03U08.txt",
+        "href": "../notebooks/course-data/C03U08.txt",
+        "bytes": 503
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C03U08.json",
+        "href": "../notebooks/course-data/C03U08.json",
+        "bytes": 172322
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C03U08",
+      "title": "移动荷载：固定输出再移动输入",
+      "chapter": 3,
+      "fingerprint": "f734211fcec15fb9b5d0c4a36cbc2e68e32edae2177a6cab409747005317bd14",
+      "duration": 48.4,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 92.1
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F09.png",
+        "href": "../assets/publication/priority-40/F09.png",
+        "bytes": 142766,
+        "id": "F09",
+        "title": "同一辆车换个位置，跨中弯矩会怎样变？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F09.svg",
+          "href": "../assets/publication/priority-40/F09.svg",
+          "bytes": 31190
+        },
+        "caption": "移动力相同，跨中弯矩随影响线纵标变化。6 m、15 m、24 m三个位置分别得到300、750、300 kN·m。",
+        "assumptions": [
+          "线弹性简支梁；固定跨中正弯矩为目标",
+          "不含动力放大或车辆规范模型"
+        ],
+        "mapping_note": "横坐标表示荷载位置。本图是简支梁跨中弯矩，核心候选采用另一梁图式，纵标和数值要分别计算。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "d493a0a655a0acf9b1b2b997666707b903fa0f7566b2971ec775693d925a2141",
+          "png": "88c38c183967c2507885cc905d5321ff7901a3e5332a0c7743ee6048d7cb253d"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C03U08.json",
+      "render_sha256": "aecf256d2a64a3b5f6da662a865c0ddc17128f38abd2349b75be48e5758de35b",
+      "render_copy_sha256": "aecf256d2a64a3b5f6da662a865c0ddc17128f38abd2349b75be48e5758de35b"
+    },
+    "download_href": "../notebooks/course-packages/C03U08.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "unit_id": "C05U06",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C05U06",
+    "chapter": 5,
+    "chapter_title": "拱桥：几何与力流",
+    "title": "拱与悬索是受力的对应形态",
+    "model": "cable",
+    "preset": "sag",
+    "insight": "在水平投影均布荷载模型中，悬索与合理拱均呈抛物线平衡关系，但轴力符号相反。",
+    "transfer": "两者的稳定与支承需求为什么仍不同？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C05U06.html",
+      "path": "interactive/lessons/C05U06.html"
+    },
+    "narration": [
+      "拱与悬索是受力的对应形态。先预测：改变垂跨比 f/L，水平分力 H会怎样变化？",
+      "现在保持其他条件不变，只改变垂跨比 f/L。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "在水平投影均布荷载模型中，悬索与合理拱均呈抛物线平衡关系，但轴力符号相反。",
+      "两者的稳定与支承需求为什么仍不同？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.05,
+      "max": 0.25,
+      "start": 0.1,
+      "end": 0.2,
+      "step": 0.01,
+      "label": "垂跨比 f/L",
+      "unit": "",
+      "output": "水平分力 H",
+      "outunit": "",
+      "formula": "H=qL²/(8f)",
+      "boundary": "水平投影均布荷载q=1，L=1，理想柔索；不是沿索长自重的精确悬链线。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C05U06.mp4",
+        "href": "../assets/videos/core/C05U06.mp4",
+        "bytes": 3022906
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C05U06.vtt",
+        "href": "../assets/videos/core/C05U06.vtt",
+        "bytes": 782
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C05U06.jpg",
+        "href": "../assets/videos/core/posters/C05U06.jpg",
+        "bytes": 133113
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C05U06.txt",
+        "href": "../notebooks/course-data/C05U06.txt",
+        "bytes": 508
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C05U06.json",
+        "href": "../notebooks/course-data/C05U06.json",
+        "bytes": 16904
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C05U06",
+      "title": "拱与悬索是受力的对应形态",
+      "chapter": 5,
+      "fingerprint": "96e9deec5fa6f205821a41eb31dcc52b98b86f153f1b646465e0093a2c9b0976",
+      "duration": 49.8,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 128.8
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F02.png",
+        "href": "../assets/publication/priority-40/F02.png",
+        "bytes": 205889,
+        "id": "F02",
+        "title": "同样向下的重量，为什么需要不同的支承？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F02.svg",
+          "href": "../assets/publication/priority-40/F02.svg",
+          "bytes": 36208
+        },
+        "caption": "同一竖向均布荷载下，理想梁以弯曲平衡，抛物线拱需要向内水平反力，抛物线索需要向外水平反力。相同的反力量级不代表结构性能相同。",
+        "assumptions": [
+          "荷载沿水平投影均布；几何小斜率不是H公式必需条件",
+          "图示轴线与指定荷载相配；偏载后不能继续假定拱内无弯矩"
+        ],
+        "mapping_note": "用同一均布荷载比较拱与索的对应平衡形态；水平反力方向和轴力符号不能混用。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "f4aa4025105e4777b30b7b3d6159304c4e2a0f26711e8692d0c025884d2f2e2b",
+          "png": "22a0718f702ada5a0b992d3d326ce52e5f34bc671c03793cc29c6c3f5dfafe58"
+        }
+      },
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F28.png",
+        "href": "../assets/publication/priority-40/F28.png",
+        "bytes": 149720,
+        "id": "F28",
+        "title": "缆索垂得更深，锚碇要拉住的力会变多少？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F28.svg",
+          "href": "../assets/publication/priority-40/F28.svg",
+          "bytes": 25056
+        },
+        "caption": "在水平投影均布荷载的理想索模型中，垂度由40 m增至80 m，水平分力H从50 MN减至25 MN，竖向分力仍各20 MN。H是水平分量，不是支点索力总值。",
+        "assumptions": [
+          "抛物线索，等高支点",
+          "不含弹性伸长和索自重沿索长差异",
+          "图示纵横比不供量图"
+        ],
+        "mapping_note": "用柔索平衡与合理拱作对应比较；几何关系可类比，受拉与受压的后续验算不同。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "37705a3bd14cbd3294f0fb10e4f58ef7c359602a6e0399f9c41d39ed9f6ac0de",
+          "png": "a09010c289484b65361b31df2ba4c22f37698a6492777bfd011e95772ed648ba"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C05U06.json",
+      "render_sha256": "887e9df0f41f8a8ffe721922ff6ef5dbedd0ed0afa9d397ec88ad2a1fed45a91",
+      "render_copy_sha256": "887e9df0f41f8a8ffe721922ff6ef5dbedd0ed0afa9d397ec88ad2a1fed45a91"
+    },
+    "download_href": "../notebooks/course-packages/C05U06.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

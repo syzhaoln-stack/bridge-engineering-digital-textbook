@@ -5,6 +5,9 @@
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry"><p>先从一个看得见的问题开始</p><h3>车只停在一侧，用一根梁还能说明整个桥面的变形吗？</h3><p>从整桥进入轮下局部，把车横向挪到另一处，比较受载侧与另一侧的竖向位移。</p><a href="../interactive/learning-map.html?chapter=ch10-fem">看图进入实验 →</a></div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery"><summary>从本章的 3 幅新图开始</summary><div class="priority-thumb-grid"><a href="#fig-priority-F38"><img src="../assets/publication/priority-40/F38.svg" loading="lazy" alt="电脑里的一个节点，对应桥上的什么位置？"><span>电脑里的一个节点，对应桥上的什么位置？</span></a><a href="#fig-priority-F39"><img src="../assets/publication/priority-40/F39.svg" loading="lazy" alt="网格越来越细，为什么答案仍可能错？"><span>网格越来越细，为什么答案仍可能错？</span></a><a href="#fig-priority-F40"><img src="../assets/publication/priority-40/F40.svg" loading="lazy" alt="AI给了一个数，怎样知道它算的是你的问题？"><span>AI给了一个数，怎样知道它算的是你的问题？</span></a></div></details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 
 <h2>本章的核心思考</h2><p class="core-thesis">模型是可审计的推理链，不是软件截图。</p><ol><li>先守恒地映射荷载，再检查边界条件。</li><li>用解析基准与加密比较分离离散误差。</li><li>将数值验证、试验确认和参数反算分别说明。</li></ol><div class="core-analogy"><h3>跨课程类比</h3><p>平衡—协调—本构 → 矩阵组装；极限情形 → 程序审计</p><p><strong>反例与边界：</strong>网格收敛不能修复错误物理模型；增加小数位不能治愈病态或缺少独立信息。</p></div><p>建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。</p><div class="core-unit-grid"><article><p class="core-tag">C11U01 · 课前/课后迁移</p><h3>从问题选择模型，而不是反过来</h3><p>梁模型可以解释整体弯曲，却不能自动回答局部锚固应力问题。</p><p><a href="../interactive/core-learning.html?unit=C11U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C11U01&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C11U02 · 课堂核心</p><h3>最小模型也要保留力和矩</h3><p>节点化荷载必须保留合力和一阶矩，才能避免人为改变传力。</p><p><a href="../interactive/core-learning.html?unit=C11U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C11U02&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C11U03 · 课前/课后迁移</p><h3>离散细化改变误差而非物理对象</h3><p>本例线性插值误差随网格细化下降，可与已知二次函数直接对照。</p><p><a href="../interactive/core-learning.html?unit=C11U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C11U03&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C11U04 · 课前/课后迁移</p><h3>刚度矩阵由平衡与协调组成</h3><p>相同位移条件下弹簧力按刚度分配，说明矩阵关系有可追溯的物理来源。</p><p><a href="../interactive/core-learning.html?unit=C11U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C11U04&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C11U05 · 课堂核心</p><h3>边界错误可以伪装成漂亮结果</h3><p>错误释放或锁定自由度会改变内力，网格再细也不会修复边界。</p><p><a href="../interactive/core-learning.html?unit=C11U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C11U05&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C11U06 · 课前/课后迁移</p><h3>求解之前先检查守恒</h3><p>加载映射若破坏合力或合矩，求解器仍可能顺利得到错误结果。</p><p><a href="../interactive/core-learning.html?unit=C11U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C11U06&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C11U07 · 课堂核心</p><h3>数值收敛与模型正确分两步证明</h3><p>对已知解析函数的收敛检验只证明离散实现，应再对照独立物理证据。</p><p><a href="../interactive/core-learning.html?unit=C11U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C11U07&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C11U08 · 课前/课后迁移</p><h3>病态问题不会被更多小数解决</h3><p>控制方向接近时，小误差会造成较大的参数反算变化。</p><p><a href="../interactive/core-learning.html?unit=C11U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C11U08&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C11U09 · 课前/课后迁移</p><h3>AI输出也必须经过方向与量纲检查</h3><p>用尺度指数和极限情形，可以快速发现漏掉长度因子的计算式。</p><p><a href="../interactive/core-learning.html?unit=C11U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C11U09&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C11U10 · 课前/课后迁移</p><h3>从单位影响到优化与反算</h3><p>影响矩阵连接控制量与输出，优化之前要知道它的适用范围与条件数。</p><p><a href="../interactive/core-learning.html?unit=C11U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C11U10&amp;view=video" target="_blank">观看短视频</a></p></article></div><p><a href="../core-thinking.html">返回全书核心思维与尺度规律</a> · <a href="../core-resources.html">查看110个教学单元总索引</a> · <a href="../interactive/thinking-analogies.html">打开跨课程并排类比</a></p></div>
 <!-- CORE-ROUTE END -->
@@ -125,6 +128,14 @@ $$
 有限元并不是与结构力学相互割裂的另一套计算方法。对由杆件组成的桥梁，位移法、矩阵位移法与有限元具有相同的基本骨架：选择能够描述结构运动的自由度，建立单元端力与端位移关系，将构件在共同节点处组装，施加边界与作用，求得节点位移，再由位移恢复构件内力。有限元把这一过程推广到板、壳、实体和其他连续体，并用插值函数近似单元内部的位移场。因此，学生掌握矩阵法，不只是为了完成一个数值算例，也是为了能够解释专业软件中节点、单元、局部坐标、总体组装和结果恢复的含义。
 
 #### 自由度、局部坐标与单元关系
+
+
+<!-- PRIORITY-FIGURE F38 START -->
+![同一20 m简支梁从构件轴线到四个梁单元、五个节点的映射；跨中集中力施加在节点3。节点既有位置也携带自由度，单元连接节点并使用材料与截面刚度。](../assets/publication/priority-40/F38.svg){#fig-priority-F38 width=100% fig-alt="电脑里的一个节点，对应桥上的什么位置？。同一20 m简支梁从构件轴线到四个梁单元、五个节点的映射；跨中集中力施加在节点3。节点既有位置也携带自由度，单元连接节点并使用材料与截面刚度。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>平面梁离散示意，不含求解结果；支座与荷载位置由同一几何生成；θy仅作转动自由度图示，正负随坐标统一</p><p>课程组原创参数绘图 · F38 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F38.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F38.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F38 END -->
+
 
 以平面梁单元为例，节点$i$和$j$各具有轴向位移$u_x$、竖向位移$u_z$和绕$y$轴转角$\theta_y$，局部自由度向量为
 
@@ -1270,6 +1281,14 @@ $$\sum\mathbf R+\sum\mathbf P=\mathbf0,$$
 
 #### 第三层：网格与目标响应
 
+
+<!-- PRIORITY-FIGURE F39 START -->
+![以真实三次Hermite梁单元计算同一均布荷载：两端固支的错误边界也随网格加密收敛，但收敛值不等于任务要求的简支梁答案。](../assets/publication/priority-40/F39.svg){#fig-priority-F39 width=100% fig-alt="网格越来越细，为什么答案仍可能错？。以真实三次Hermite梁单元计算同一均布荷载：两端固支的错误边界也随网格加密收敛，但收敛值不等于任务要求的简支梁答案。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>简支梁任务，两端固支为故障对照；均布q，常EI，忽略剪切变形；目标位移取x=0.37L并按形函数恢复</p><p>课程组原创参数绘图 · F39 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F39.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F39.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F39 END -->
+
+
 网格收敛必须针对用于结论的响应。整体位移收敛不代表孔边应力、支座反力或屈曲特征值已收敛。设网格尺度为 $h_j$，目标响应为 $r_j$，可比较
 
 $$\varepsilon_j=\frac{|r_j-r_{j-1}|}{|r_j|}.$$
@@ -1612,6 +1631,14 @@ Skill统一采用$x$为桥向、$y$为横桥向、$z$为竖向。Three.js内部�
 ## AI技能、程序审计与人工责任
 
 ### AI交来一份计算，先检查什么？ {#ai-check-case}
+
+
+<!-- PRIORITY-FIGURE F40 START -->
+![同一等效梁任务的正确模型、弹性模量单位错误、两端固支边界错误对照。单位错的5882 mm只是超出小变形适用域的线性公式形式值，不能采纳；反力平衡也不能单独识别错误边界。](../assets/publication/priority-40/F40.svg){#fig-priority-F40 width=100% fig-alt="AI给了一个数，怎样知道它算的是你的问题？。同一等效梁任务的正确模型、弹性模量单位错误、两端固支边界错误对照。单位错的5882 mm只是超出小变形适用域的线性公式形式值，不能采纳；反力平衡也不能单独识别错误边界。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>单根等效梁，暂不计自重；正确基准为线弹性小变形简支梁；单位故障仅为诊断；不把越域大位移当作物理预测</p><p>课程组原创参数绘图 · F40 · <a href="../scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F40.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F40.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F40 END -->
+
 
 假设你请AI协助编写一段梁的计算程序。它很快给出模型、变形图和数字。现在要决定：这份计算是否完成了你交给它的任务？本节先用一个能手算复核的小例，再把方法接到桥梁建模与设计中。
 

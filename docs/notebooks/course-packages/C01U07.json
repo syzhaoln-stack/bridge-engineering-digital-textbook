@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "unit_id": "C01U07",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C01U07",
+    "chapter": 1,
+    "chapter_title": "体系与规模",
+    "title": "同样放大，换荷载便换结论",
+    "model": "scale",
+    "preset": "fixedforce",
+    "insight": "保持集中力不变时，相似放大的应力反而按尺度平方的倒数下降。",
+    "transfer": "这与自重主导情况为什么不矛盾？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C01U07.html",
+      "path": "interactive/lessons/C01U07.html"
+    },
+    "narration": [
+      "同样放大，换荷载便换结论。先预测：改变全尺寸放大比例 λ，固定集中力下的应力会怎样变化？",
+      "现在保持其他条件不变，只改变全尺寸放大比例 λ。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "保持集中力不变时，相似放大的应力反而按尺度平方的倒数下降。",
+      "这与自重主导情况为什么不矛盾？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.5,
+      "max": 3,
+      "start": 1,
+      "end": 2,
+      "step": 0.01,
+      "label": "全尺寸放大比例 λ",
+      "unit": "",
+      "output": "固定集中力下的应力",
+      "outunit": "基准倍数",
+      "formula": "固定集中力下的应力 / 基准值 = λ^-2",
+      "boundary": "全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。",
+      "power": -2
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C01U07.mp4",
+        "href": "../assets/videos/core/C01U07.mp4",
+        "bytes": 3159368
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C01U07.vtt",
+        "href": "../assets/videos/core/C01U07.vtt",
+        "bytes": 752
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C01U07.jpg",
+        "href": "../assets/videos/core/posters/C01U07.jpg",
+        "bytes": 144902
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C01U07.txt",
+        "href": "../notebooks/course-data/C01U07.txt",
+        "bytes": 513
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C01U07.json",
+        "href": "../notebooks/course-data/C01U07.json",
+        "bytes": 16634
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C01U07",
+      "title": "同样放大，换荷载便换结论",
+      "chapter": 1,
+      "fingerprint": "820700283b7054c144adfca326c0c28293c22cc1259986fc81537e010bc27033",
+      "duration": 47.2,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 78.7
+    },
+    "notebooks": [
+      {
+        "id": "B-scaling",
+        "title": "跨度都变成两倍，为什么挠度有两种答案？",
+        "unit_ids": [
+          "C01U04",
+          "C01U05",
+          "C01U06",
+          "C01U07",
+          "C04U09"
+        ],
+        "ipynb": "notebooks/B-scaling.ipynb",
+        "python": "notebooks/B-scaling.py",
+        "html": "notebooks/B-scaling.html",
+        "embed_cell": "fig-scaling",
+        "mapping_note": "全尺寸自重与只增跨度、q不变是两组不同控制条件。",
+        "executed": true,
+        "code_cells": 5,
+        "error_count": 0,
+        "seconds": 4.62
+      }
+    ],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C01U07.json",
+      "render_sha256": "f71f4e22f18cd19b7b7757176d73c910c62154b1b133528549da48a0acb4eb96",
+      "render_copy_sha256": "f71f4e22f18cd19b7b7757176d73c910c62154b1b133528549da48a0acb4eb96"
+    },
+    "download_href": "../notebooks/course-packages/C01U07.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

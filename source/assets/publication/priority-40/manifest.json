@@ -1,0 +1,2779 @@
+{
+  "schema": "priority-40/v1",
+  "date": "2026-09-07",
+  "count": 40,
+  "origin": "40 original parameterized diagrams; not reproduced scans",
+  "formats": [
+    "SVG",
+    "PNG 2400x1440"
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "title": "车的重量，最后传到了哪里？",
+      "chapter": 1,
+      "heading": "桥梁的基本组成",
+      "caption": "由车辆、桥面板、主梁、支座、墩台、基础到地基的竖向传力路径。基础处向上箭头表示地基对基础的反力。",
+      "assumptions": [
+        "非实桥构造图；不表示材料应力和反力大小",
+        "桥台用简化端支承体表现，未绘台背土和附属设施"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F01.svg",
+      "png": "assets/publication/priority-40/F01.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "load path is continuous from superstructure to ground",
+        "reaction and applied load directions distinguished",
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大检查：左跨车辆向下作用只追踪到左端和中间墩，地基反力向上；右跨不画这份车辆的传力箭头。构件引线与标签清楚。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch01.qmd",
+      "heading_line": 48,
+      "figure_kind": "schematic",
+      "technical_review": "schematic_boundary_declared",
+      "visual_review_notes": "逐张放大检查：左跨车辆向下作用只追踪到左端和中间墩，地基反力向上；右跨不画这份车辆的传力箭头。构件引线与标签清楚。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "cb52426ccaccca63d41b47fb93b0c7243916e942920282c9501aa6a6e1099541",
+        "png": "9be0eded4ed27679f53f68d59aa0010d4cd7d529f0be5634f723e0a8cbb53f7c"
+      },
+      "calculation_data": {
+        "diagram": "two independent simply supported spans, left span vehicle only"
+      },
+      "diagram_kind": "schematic_geometry",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F02",
+      "title": "同样向下的重量，为什么需要不同的支承？",
+      "chapter": 1,
+      "heading": "结构体系与传力",
+      "caption": "同一竖向均布荷载下，理想梁以弯曲平衡，抛物线拱需要向内水平反力，抛物线索需要向外水平反力。相同的反力量级不代表结构性能相同。",
+      "assumptions": [
+        "荷载沿水平投影均布；几何小斜率不是H公式必需条件",
+        "图示轴线与指定荷载相配；偏载后不能继续假定拱内无弯矩"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F02.svg",
+      "png": "assets/publication/priority-40/F02.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "each vertical reaction",
+          "value": 60.0,
+          "expected": 60.0,
+          "tolerance": 1e-09,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "arch/cable horizontal reaction",
+          "value": 60.0,
+          "expected": 60.0,
+          "tolerance": 1e-09,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "beam midspan moment",
+          "value": 180.0,
+          "expected": 180.0,
+          "tolerance": 1e-09,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大并复看：梁的长度标注与反力文字已分离；拱脚反力向内、索端反力向外且向上；载荷计量与量纲有声明。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch01.qmd",
+      "heading_line": 86,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大并复看：梁的长度标注与反力文字已分离；拱脚反力向内、索端反力向外且向上；载荷计量与量纲有声明。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "f4aa4025105e4777b30b7b3d6159304c4e2a0f26711e8692d0c025884d2f2e2b",
+        "png": "22a0718f702ada5a0b992d3d326ce52e5f34bc671c03793cc29c6c3f5dfafe58"
+      },
+      "calculation_data": {
+        "L_m": 12,
+        "q_kN_per_m": 10,
+        "f_m": 3,
+        "V_kN": 60,
+        "H_arch_cable_kN": 60,
+        "M_beam_midspan_kNm": 180
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F03",
+      "title": "把一座桥原样放大两倍，还能照搬原来的判断吗？",
+      "chapter": 1,
+      "heading": "尺度判断从无量纲关系开始",
+      "caption": "几何相似、材料和重度相同的梁，将尺度乘2后面积、自重和二次矩分别乘4、8和16，而自重弯曲应力乘2。",
+      "assumptions": [
+        "只比较给定简支等截面梁与自重；不含车辆、风、稳定或施工",
+        "所有尺寸同时缩放，不能用于只增跨度或只增板宽的情形"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F03.svg",
+      "png": "assets/publication/priority-40/F03.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "area scaling",
+          "value": 4.0,
+          "expected": 4.0,
+          "tolerance": 1e-08,
+          "unit": "",
+          "passed": true
+        },
+        {
+          "name": "I scaling",
+          "value": 16.0,
+          "expected": 16.0,
+          "tolerance": 1e-08,
+          "unit": "",
+          "passed": true
+        },
+        {
+          "name": "self-weight scaling",
+          "value": 8.0,
+          "expected": 8.0,
+          "tolerance": 1e-08,
+          "unit": "",
+          "passed": true
+        },
+        {
+          "name": "self-weight bending stress scaling",
+          "value": 2.0,
+          "expected": 2.0,
+          "tolerance": 1e-08,
+          "unit": "",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大检查：两倍几何相似尺寸与2/4/8/16的比例区分，载荷规则在图注写清。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch01.qmd",
+      "heading_line": 1927,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大检查：两倍几何相似尺寸与2/4/8/16的比例区分，载荷规则在图注写清。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "cffa5c7b50e8f41edb640bf23e50f871dfcf70f865f0a8acbae746749eb503a8",
+        "png": "d2a4ec1b07218b865753b98e381fa2d355ae7e54748abf6777ea6f066db095b4"
+      },
+      "calculation_data": {
+        "scale": [
+          1,
+          2
+        ],
+        "b_m": 0.3,
+        "h_m": 0.6,
+        "L_m": 6,
+        "unit_weight_kN_per_m3": 25,
+        "ratios": {
+          "length": 2,
+          "area": 4,
+          "self_weight": 8,
+          "second_moment": 16,
+          "self_weight_stress": 2
+        }
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F04",
+      "title": "同一个偏心压力，为什么一边压得更多？",
+      "chapter": 2,
+      "heading": "轴力、偏心与截面核心",
+      "caption": "把同一偏心压力分为中心压力和等效弯矩。三幅应力箭头使用同一比例；正值为压应力，负值为拉应力。",
+      "assumptions": [
+        "教学参数；不计开裂与材料非线性",
+        "应力图为截面计算，不是极限承载力验算"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F04.svg",
+      "png": "assets/publication/priority-40/F04.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "stress integral N",
+          "value": 600.0,
+          "expected": 600.0,
+          "tolerance": 1e-06,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "stress integral moment",
+          "value": 30.000059999999998,
+          "expected": 30.0,
+          "tolerance": 0.0001,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "top compression",
+          "value": 5.000000000000001,
+          "expected": 5.0,
+          "tolerance": 1e-09,
+          "unit": "MPa",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大并复看：应力数值统一两位小数；三幅使用同一比例，压正拉负，上下缘与z方向对应。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch02-foundations.qmd",
+      "heading_line": 229,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大并复看：应力数值统一两位小数；三幅使用同一比例，压正拉负，上下缘与z方向对应。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "6cd936faea56ce40dccd501e54db6ea8b64380fd8cbe285de62d0aaa3ff71fe9",
+        "png": "fef313b8d9026954b89f9052a62271b5df02afe18be16eb090a4db48e35c49aa"
+      },
+      "calculation_data": {
+        "b_m": 0.3,
+        "h_m": 0.6,
+        "N_kN": 600,
+        "e_m": 0.05,
+        "M_kNm": 30,
+        "area_m2": 0.18,
+        "I_m4": 0.0054,
+        "uniform_MPa": 3.3333333333333335,
+        "bending_edge_MPa": 1.6666666666666667,
+        "total_bottom_top_MPa": [
+          1.6666666666666667,
+          5
+        ]
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F05",
+      "title": "压力移到哪里，截面边缘才开始出现拉应力？",
+      "chapter": 2,
+      "heading": "轴力、偏心与截面核心",
+      "caption": "移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。",
+      "assumptions": [
+        "只讨论单向偏心，双向偏心核心为菱形",
+        "出现拉区后若材料开裂，不再沿用完整弹性应力图作为实际状态"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F05.svg",
+      "png": "assets/publication/priority-40/F05.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "edge stress sum e/h=0",
+          "value": 6.666666666666667,
+          "expected": 6.666666666666667,
+          "tolerance": 1e-09,
+          "unit": "MPa",
+          "passed": true
+        },
+        {
+          "name": "edge stress sum e/h=0.16666666666666666",
+          "value": 6.666666666666667,
+          "expected": 6.666666666666667,
+          "tolerance": 1e-09,
+          "unit": "MPa",
+          "passed": true
+        },
+        {
+          "name": "edge stress sum e/h=0.3333333333333333",
+          "value": 6.666666666666666,
+          "expected": 6.666666666666667,
+          "tolerance": 1e-09,
+          "unit": "MPa",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大检查：标题准确显示0、1/6、1/3；合力点、中间三分之一核心带和应力图对应；核心界限与RC大/小偏心已区分。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch02-foundations.qmd",
+      "heading_line": 229,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大检查：标题准确显示0、1/6、1/3；合力点、中间三分之一核心带和应力图对应；核心界限与RC大/小偏心已区分。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "5b65db8a9fcffe8bbd7c1f17bd94cfe93385aba075df765e35da067e5c017c50",
+        "png": "04701842098c2586332946d215254c5adf997bf167d1ec051c7fbb2053da7608"
+      },
+      "calculation_data": {
+        "e_over_h": [
+          0,
+          0.16666666666666666,
+          0.3333333333333333
+        ],
+        "b_m": 0.3,
+        "h_m": 0.6,
+        "N_kN": 600,
+        "bottom_MPa": [
+          3.3333333333333335,
+          0,
+          -3.3333333333333335
+        ],
+        "top_MPa": [
+          3.3333333333333335,
+          6.666666666666667,
+          10
+        ]
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F06",
+      "title": "同一块板竖着放、横着放，为什么弯起来不一样？",
+      "chapter": 2,
+      "heading": "形心、截面二次矩与截面模量",
+      "caption": "明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。",
+      "assumptions": [
+        "均质线弹性；关于相同方向的形心轴",
+        "不据此判定整体最优；还需考虑侧向稳定、剪切和构造"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F06.svg",
+      "png": "assets/publication/priority-40/F06.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "equal area",
+          "value": 0.12,
+          "expected": 0.12,
+          "tolerance": 1e-12,
+          "unit": "m²",
+          "passed": true
+        },
+        {
+          "name": "second moment ratio",
+          "value": 8.999999999999996,
+          "expected": 9.0,
+          "tolerance": 1e-09,
+          "unit": "",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大检查：同一水平形心轴和面积可辨，立放/平放尺寸、Iy单位与9倍关系清楚。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch02-foundations.qmd",
+      "heading_line": 328,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大检查：同一水平形心轴和面积可辨，立放/平放尺寸、Iy单位与9倍关系清楚。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "e920dcde7c0fc3e1feb2efac99e4267c484fc4f8f7b19ef0276dc639400d77f6",
+        "png": "f66eeab0d0828723bd7a9c42f377dad22a038aab2c7f9cf20810e0c590314482"
+      },
+      "calculation_data": {
+        "area_m2": 0.12,
+        "I_vertical_m4": 0.0036,
+        "I_horizontal_m4": 0.0004,
+        "ratio": 9
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F07",
+      "title": "同样长的压杆，端部能不能转动有多大影响？",
+      "chapter": 2,
+      "heading": "第一级：理想临界值与数量级",
+      "caption": "实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。",
+      "assumptions": [
+        "三种理想边界：不计局部屈曲、初始缺陷和屈服",
+        "真实塔柱/拱肋和弹性连接不应仅按外观选择K"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F07.svg",
+      "png": "assets/publication/priority-40/F07.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "Pcr K=1",
+          "value": 1754.5963379714412,
+          "expected": 1754.5963379714415,
+          "tolerance": 1e-06,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "Pcr K=2",
+          "value": 438.6490844928603,
+          "expected": 438.64908449286037,
+          "tolerance": 1e-06,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "Pcr K=0.5",
+          "value": 7018.385351885765,
+          "expected": 7018.385351885766,
+          "tolerance": 1e-06,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大检查：铰支/悬臂/双固结边界和模态分开，L与Le分别定义；改用0.000008避免字体缺字。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch02-foundations.qmd",
+      "heading_line": 2057,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大检查：铰支/悬臂/双固结边界和模态分开，L与Le分别定义；改用0.000008避免字体缺字。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "795f7a6f644c11e801dae6420a791d46118dd40b9dc728142546af59908c8810",
+        "png": "072206b762b60576bd94694bd75a88a299cd408425e05aeaa60302d3f85f48a3"
+      },
+      "calculation_data": {
+        "L_m": 3,
+        "E_Pa": 200000000000.0,
+        "I_m4": 8e-06,
+        "K": [
+          1,
+          2,
+          0.5
+        ],
+        "Pcr_kN": [
+          1754.5963379714415,
+          438.64908449286037,
+          7018.385351885766
+        ]
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F08",
+      "title": "普通钢筋和预应力，分别在什么时候开始起作用？",
+      "chapter": 2,
+      "heading": "截面初始应力",
+      "caption": "左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。",
+      "assumptions": [
+        "两侧表达不同机制，不作等配筋等成本比较",
+        "实际预应力还包括偏心、束形、损失、施工阶段和次内力",
+        "不能把钢筋出现拉力等同于必然已有可见裂缝"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F08.svg",
+      "png": "assets/publication/priority-40/F08.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "uniform prestress",
+          "value": 3.3333333333333335,
+          "expected": 3.3333333333333335,
+          "tolerance": 1e-10,
+          "unit": "MPa",
+          "passed": true
+        },
+        {
+          "name": "bending edge stress",
+          "value": 1.6666666666666665,
+          "expected": 1.6666666666666667,
+          "tolerance": 1e-10,
+          "unit": "MPa",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大检查：左侧机制示意与右侧截面数值例明确分开；预压初始值与加外弯矩后结果可读，不声称所有阶段无拉。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch02-foundations.qmd",
+      "heading_line": 2140,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大检查：左侧机制示意与右侧截面数值例明确分开；预压初始值与加外弯矩后结果可读，不声称所有阶段无拉。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "709d86be5d1a00a729a656edf415d80545c818edfbf94e6199c3e59da4d88ec4",
+        "png": "90bb732c61abc8af6f4690a730fdb2004d112b781ae2ddcce0fe3bd58e66e6d1"
+      },
+      "calculation_data": {
+        "right_calculated_example": {
+          "A_m2": 0.18,
+          "I_m4": 0.0054,
+          "h_m": 0.6,
+          "P_kN": 600,
+          "M_kNm": 30
+        },
+        "left_panel": "reinforcement mechanism only, not capacity calculation"
+      },
+      "diagram_kind": "mixed_mechanism_and_calculation",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F09",
+      "title": "同一辆车换个位置，跨中弯矩会怎样变？",
+      "chapter": 3,
+      "heading": "影响线的计算对象",
+      "caption": "移动力相同，跨中弯矩随影响线纵标变化。6 m、15 m、24 m三个位置分别得到300、750、300 kN·m。",
+      "assumptions": [
+        "线弹性简支梁；固定跨中正弯矩为目标",
+        "不含动力放大或车辆规范模型"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F09.svg",
+      "png": "assets/publication/priority-40/F09.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "eta at left",
+          "value": 0.0,
+          "expected": 0.0,
+          "tolerance": 1e-08,
+          "unit": "m",
+          "passed": true
+        },
+        {
+          "name": "eta at right",
+          "value": 0.0,
+          "expected": 0.0,
+          "tolerance": 1e-08,
+          "unit": "m",
+          "passed": true
+        },
+        {
+          "name": "eta at midspan",
+          "value": 7.5,
+          "expected": 7.5,
+          "tolerance": 1e-08,
+          "unit": "m",
+          "passed": true
+        },
+        {
+          "name": "load at 6m statics",
+          "value": 300.0,
+          "expected": 300.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大并复看：固定目标C与移动力位置区分；η跨中标签移开跨度标签；三处读取的单位与结果相符。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch02.qmd",
+      "heading_line": 526,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大并复看：固定目标C与移动力位置区分；η跨中标签移开跨度标签；三处读取的单位与结果相符。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "d493a0a655a0acf9b1b2b997666707b903fa0f7566b2971ec775693d925a2141",
+        "png": "88c38c183967c2507885cc905d5321ff7901a3e5332a0c7743ee6048d7cb253d"
+      },
+      "calculation_data": {
+        "L_m": 30,
+        "target_x_m": 15,
+        "P_kN": 100,
+        "positions_m": [
+          6,
+          15,
+          24
+        ],
+        "eta_m": [
+          3,
+          7.5,
+          3
+        ],
+        "M_kNm": [
+          300,
+          750,
+          300
+        ]
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F10",
+      "title": "想让同一截面的剪力最大，荷载该放在哪一边？",
+      "chapter": 3,
+      "heading": "车辆最不利布载与影响线接口",
+      "caption": "固定截面剪力影响线在C处有单位跃变。覆盖右侧正区得到+54 kN，覆盖左侧负区得到−24 kN。改变目标符号，需要改变加载区段。",
+      "assumptions": [
+        "向下均布荷载可独立覆盖任意同号区，非规范车道加载规则",
+        "在C左、右紧邻取不同极限值；不为恰落C的集中力指定唯一剪力值"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F10.svg",
+      "png": "assets/publication/priority-40/F10.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "求最大正剪力",
+          "value": 54.0,
+          "expected": 54.00000000000001,
+          "tolerance": 1e-09,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "求最小负剪力",
+          "value": -24.0,
+          "expected": -24.0,
+          "tolerance": 1e-09,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大并复看：两幅加载分别覆盖正、负区；C处两极限纵标、无量纲说明、剪力正号定义和有号面积均明确。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch02.qmd",
+      "heading_line": 524,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大并复看：两幅加载分别覆盖正、负区；C处两极限纵标、无量纲说明、剪力正号定义和有号面积均明确。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "2e0fe8c4d2408d8ee40bd06c91c3e68f22e5b10ee853449f7269be3aec4a0cae",
+        "png": "b9833f7f7101974decf53d3452c3870fcaea975624e7e7b305d6c57e2a5522c8"
+      },
+      "calculation_data": {
+        "L_m": 30,
+        "target_x_m": 12,
+        "q_kN_per_m": 10,
+        "negative_loading_m": [
+          0,
+          12
+        ],
+        "positive_loading_m": [
+          12,
+          30
+        ],
+        "negative_eta_area_m": -2.4,
+        "positive_eta_area_m": 5.4,
+        "V_min_kN": -24,
+        "V_max_kN": 54,
+        "sign": "V_C = R_A - sum of loads left of C; positive shear points down on cut face of left segment"
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F11",
+      "title": "两根车轴一起上桥，怎样把各自的作用加起来？",
+      "chapter": 3,
+      "heading": "新增完整计算单一：30 m简支梁的轴组与均布作用",
+      "caption": "两轴保持实际间距，在同一目标截面的影响线上分别读取纵标，再以轴重乘纵标后相加。120 kN轴贡献660，180 kN轴贡献1350 kN·m。",
+      "assumptions": [
+        "线性叠加；两个贡献必须来自同一车辆位置",
+        "本图暂不加均布作用，正文加q后总数另算"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F11.svg",
+      "png": "assets/publication/priority-40/F11.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "total moment",
+          "value": 2010.0,
+          "expected": 2010.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "static equilibrium crosscheck",
+          "value": 2010.0,
+          "expected": 2010.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "unit force ordinates",
+          "value": 2.0,
+          "expected": 2.0,
+          "tolerance": 1e-08,
+          "unit": "m",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大检查：双轴纵标与4m间距对齐；两项贡献分别显示，未把正文另设均布荷载混入2010结果。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch02.qmd",
+      "heading_line": 2094,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大检查：双轴纵标与4m间距对齐；两项贡献分别显示，未把正文另设均布荷载混入2010结果。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "21f5bc0ebe5637f772835c47164c5af86c09f8012376846fb23a35ca058b5545",
+        "png": "d0bc7a97ef6c1bcf39e5247f7d7fa93509fd4b47e71387fb656205f1ba4446c6"
+      },
+      "calculation_data": {
+        "L_m": 30,
+        "x_axles_m": [
+          11,
+          15
+        ],
+        "P_axles_kN": [
+          120,
+          180
+        ],
+        "eta_m": [
+          5.5,
+          7.5
+        ],
+        "M_contributions_kNm": [
+          660,
+          1350
+        ],
+        "M_total_kNm": 2010,
+        "uniform_load_included": false
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F12",
+      "title": "平均抗力比平均作用大，为什么还不能只看两个平均数？",
+      "chapter": 3,
+      "heading": "新增完整计算单五：相关性对线性可靠度的影响",
+      "caption": "联合正态教学模型以g=R−S转化为一维余量分布；红色尾部为g<0的概率。联合图的阴影只是失效域，不是按几何面积计算概率。",
+      "assumptions": [
+        "所有统计参数为正文教学值，非测量样本",
+        "线性极限状态与指定联合正态假设；不可将此Pf迁移到实际桥梁"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F12.svg",
+      "png": "assets/publication/priority-40/F12.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "sigma_g",
+          "value": 1148.9125293076058,
+          "expected": 1148.9125293076058,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "beta",
+          "value": 2.6111648393354674,
+          "expected": 2.611164839,
+          "tolerance": 1e-07,
+          "unit": "",
+          "passed": true
+        },
+        {
+          "name": "pdf mass on shown range",
+          "value": 0.999750724836593,
+          "expected": 0.9997509,
+          "tolerance": 5e-05,
+          "unit": "",
+          "passed": true
+        },
+        {
+          "name": "failure probability",
+          "value": 0.004511719409040167,
+          "expected": 0.0045119,
+          "tolerance": 1e-06,
+          "unit": "",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大并复看：概率参数文字移到曲线右侧，避免遮住曲线；R<S区域与一维红色概率尾部区分；非真实统计明确。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch02.qmd",
+      "heading_line": 2605,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大并复看：概率参数文字移到曲线右侧，避免遮住曲线；R<S区域与一维红色概率尾部区分；非真实统计明确。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "1d587c4175d21aecc635fd07e1e2f185e48f9cf5e111e7a111857cd806f4e337",
+        "png": "24d889f2037d0988bf84062aacfcb4f0a651785c681444a3e271f9e1a4ad4d5f"
+      },
+      "calculation_data": {
+        "mu_R_kNm": 10000,
+        "sigma_R_kNm": 1000,
+        "mu_S_kNm": 7000,
+        "sigma_S_kNm": 800,
+        "correlation": 0.2,
+        "mu_g_kNm": 3000,
+        "sigma_g_kNm": 1148.9125293076058,
+        "distribution": "teaching joint normal, not actual observations"
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F13",
+      "title": "车轮下面，桥面板靠哪些构件支承？",
+      "chapter": 4,
+      "heading": "桥面板、横隔构件与局部受力",
+      "caption": "轴测整桥以5根纵向主梁、3道跨内横隔板和两端横梁定位桥面板的空间支承。透明桥面仅为揭示内部构造；车辆轮载向下。",
+      "assumptions": [
+        "所有几何为明确教学例；纵横比例由坐标统一投影",
+        "横隔板为有高度的实体连接，不是路面横线",
+        "此图不计算荷载分担或板内应力"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F13.svg",
+      "png": "assets/publication/priority-40/F13.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "geometry: 5 longitudinal girders, spacing 2.4 m",
+        "interior diaphragms at x=5,10,15 m; end members separate",
+        "L=20 m and B=10.8 m annotation endpoints match geometry",
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大并复看：统一20m×10.8m五梁例，3道跨内横隔板+2道端横梁，补5梁横断面及2.4m间距；L、B、支座引线清楚。构造为透视示意。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "heading_line": 260,
+      "figure_kind": "schematic",
+      "technical_review": "schematic_boundary_declared",
+      "visual_review_notes": "逐张放大并复看：统一20m×10.8m五梁例，3道跨内横隔板+2道端横梁，补5梁横断面及2.4m间距；L、B、支座引线清楚。构造为透视示意。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "567564c649bd48db6d4de2500eaceb65d987720a67755f9eb3b3db07c7e21c02",
+        "png": "37e987309f7eaa3be606f2a47c54cfb8b24362ecbe00558ffdb4898d1b124909"
+      },
+      "calculation_data": {
+        "L_m": 20,
+        "B_m": 10.8,
+        "d_m": 2.4,
+        "girder_y_m": [
+          -4.8,
+          -2.4,
+          0,
+          2.4,
+          4.8
+        ],
+        "interior_diaphragms_x_m": [
+          5,
+          10,
+          15
+        ],
+        "end_beams_x_m": [
+          0,
+          20
+        ],
+        "slab_h_m": 0.22,
+        "girder_depth_m": 1.2,
+        "vehicle_body_width_m": 2.2,
+        "vehicle_axle_spacing_m": 3.5,
+        "vehicle_note": "original teaching silhouette, not a regulation vehicle"
+      },
+      "diagram_kind": "schematic_geometry",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F14",
+      "title": "一块板能向两边传力，取成梁以后保留了什么？",
+      "chapter": 4,
+      "heading": "横向板带与连续板",
+      "caption": "俯视四边简支板与侧视两端简支板带分别展示保留的运动和支承。两图不宣称自动等价，也没有用未经计算的彩色云图表示应力。",
+      "assumptions": [
+        "纯几何及传力方向示意，无板有限元结果",
+        "方板和板带为教学几何；Pb分配与等效宽度必须另行确定"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F14.svg",
+      "png": "assets/publication/priority-40/F14.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "plate has four explicitly marked simply supported edges",
+        "strip has two endpoint supports",
+        "no claimed equal numerical response between different boundary models",
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大并复看：四边支承与两端支承可辨；向下作用符号改为自绘圆叉，消除缺字；示意方向不冒充计算力流。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "heading_line": 1419,
+      "figure_kind": "schematic",
+      "technical_review": "schematic_boundary_declared",
+      "visual_review_notes": "逐张放大并复看：四边支承与两端支承可辨；向下作用符号改为自绘圆叉，消除缺字；示意方向不冒充计算力流。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "843a8d861cbc66ba9691e8108958688d26eb9dc3d546096ed2e73bd8c9d3759e",
+        "png": "462a45a278e56ce373f97e124b465e6c138e686392391b5bd6bcbca660ceafef"
+      },
+      "calculation_data": {
+        "plate_size_m": [
+          2.4,
+          2.4
+        ],
+        "plate_boundary": "four edges simply supported",
+        "strip_width_m": 1,
+        "strip_span_m": 2.4,
+        "strip_boundary": "two endpoints simply supported",
+        "P_strip": "not assumed equal to total plate load"
+      },
+      "diagram_kind": "schematic_geometry",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F15",
+      "title": "只用力的平衡，什么时候能算出每个支点分担？",
+      "chapter": 4,
+      "heading": "杠杆法的物理基础",
+      "caption": "两支点静定板段用相反力臂计算反力；若保留三支承连续横梁，则需额外的变形协调。图中特别区分简化后的图式和未释放的连续图式。",
+      "assumptions": [
+        "左图荷载位于两支点之间；外悬臂另画图式",
+        "图为教学静力关系，不规定规范杠杆法的使用位置或系数"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F15.svg",
+      "png": "assets/publication/priority-40/F15.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "sum reactions",
+          "value": 120.0,
+          "expected": 120.0,
+          "tolerance": 1e-08,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "moment about left",
+          "value": 96.0,
+          "expected": 96.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大检查：两端静定模型的距离与相反力臂正确；连续三支承明确仍需协调，未声称三未知仅靠两式可解。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "heading_line": 1523,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大检查：两端静定模型的距离与相反力臂正确；连续三支承明确仍需协调，未声称三未知仅靠两式可解。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "fc58a9d0baa0ff059ba086479095f6b88367c47dee87bbb77862ad2b99d888b5",
+        "png": "de22e5d0c7fc761dd8490360a2fea3a9d0fa75071c783bbd76b941a9d815ca35"
+      },
+      "calculation_data": {
+        "P_kN": 120,
+        "a_m": 0.8,
+        "b_m": 1.6,
+        "R_left_kN": 80,
+        "R_right_kN": 40,
+        "right_panel": "continuous three-support model, not solved from statics alone"
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F16",
+      "title": "车偏到一侧，总重量怎样分到五根梁？",
+      "chapter": 4,
+      "heading": "刚性横梁与偏心受压思路",
+      "caption": "平均分担24 kN/梁与偏心分量−24、−12、0、12、24 kN相加，得到0、12、24、36、48 kN。合力和合矩均与外作用一致。",
+      "assumptions": [
+        "刚性横梁与等刚度；忽略扭转柔度、板局部和横隔离散",
+        "向下位移为正，图中只示意放大的线性位移趋势"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F16.svg",
+      "png": "assets/publication/priority-40/F16.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "sum Ri",
+          "value": 120.0,
+          "expected": 120.0,
+          "tolerance": 1e-09,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "sum Ri yi",
+          "value": 288.0,
+          "expected": 288.0,
+          "tolerance": 1e-09,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "eccentric component sum",
+          "value": 0.0,
+          "expected": 0.0,
+          "tolerance": 1e-09,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大并复看：五梁结果0/12/24/36/48；力矩箭头修为顺时针，与右侧向下力及右沉趋势一致；负柱标签不挤入注脚。已看灰度联系表。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "heading_line": 1537,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大并复看：五梁结果0/12/24/36/48；力矩箭头修为顺时针，与右侧向下力及右沉趋势一致；负柱标签不挤入注脚。已看灰度联系表。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "04b5dca4a22edebab7908d3a74e0fc009c5ec0a098d2e5a9e1367dda2cac7345",
+        "png": "3d6cbfcd65fdb1d0fb32e960f7ea938fdc7c3c825c1b23ff5b4dd86c83715190"
+      },
+      "calculation_data": {
+        "girder_y_m": [
+          -4.8,
+          -2.4,
+          0,
+          2.4,
+          4.8
+        ],
+        "P_kN": 120,
+        "e_m": 2.4,
+        "average_R_kN": [
+          24,
+          24,
+          24,
+          24,
+          24
+        ],
+        "eccentric_R_kN": [
+          -24,
+          -12,
+          0,
+          12,
+          24
+        ],
+        "total_R_kN": [
+          0,
+          12,
+          24,
+          36,
+          48
+        ]
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F17",
+      "title": "某根梁的活载增量为负，就已经离开支承了吗？",
+      "chapter": 4,
+      "heading": "不等刚度横向相容",
+      "caption": "已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。",
+      "assumptions": [
+        "此Ri为横向分配模型的反力；真实支座接触须定义对应对象并求总状态",
+        "若总接触力不满足单向接触，需重建模型，不可直接将负值截零",
+        "不在图中声称该简化模型已验证真实支座安全"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F17.svg",
+      "png": "assets/publication/priority-40/F17.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "live sum",
+          "value": 120.0,
+          "expected": 120.0,
+          "tolerance": 1e-08,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "live moment",
+          "value": 432.0,
+          "expected": 432.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "total reaction",
+          "value": 420.0,
+          "expected": 420.0,
+          "tolerance": 1e-08,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "left total",
+          "value": 48.0,
+          "expected": 48.0,
+          "tolerance": 1e-08,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大检查：恒载、活载增量、总量三层分开；−12增量与+48总量不混；灰度仍可通过正负和位置判读。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "heading_line": 2094,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大检查：恒载、活载增量、总量三层分开；−12增量与+48总量不混；灰度仍可通过正负和位置判读。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "074783fd938e7e22e3ec8abaf897bdc1f5a44b09fe880e01c8f211174c28e3b7",
+        "png": "76eaae54c411c0c5e4140edc6e4d7b178f765daf94a79eb029237b90656b2c7f"
+      },
+      "calculation_data": {
+        "girder_y_m": [
+          -4.8,
+          -2.4,
+          0,
+          2.4,
+          4.8
+        ],
+        "P_kN": 120,
+        "e_m": 3.6,
+        "dead_R_kN": [
+          60,
+          60,
+          60,
+          60,
+          60
+        ],
+        "live_R_increment_kN": [
+          -12,
+          6,
+          24,
+          42,
+          60
+        ],
+        "total_R_kN": [
+          48,
+          66,
+          84,
+          102,
+          120
+        ]
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F18",
+      "title": "把两跨接成一根梁，弯矩和下沉会怎样改变？",
+      "chapter": 4,
+      "heading": "连续梁",
+      "caption": "统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。",
+      "assumptions": [
+        "两跨等跨、EI恒定、两跨全布均载；不是任意车辆位置的包络",
+        "中支点不沉降；不计收缩徐变、温度或预应力",
+        "解析式第一跨w=q(L³x−3Lx³+2x⁴)/(48EI)，第二跨镜像"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F18.svg",
+      "png": "assets/publication/priority-40/F18.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "simple midspan M",
+          "value": 180.0,
+          "expected": 180.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "continuous interior M",
+          "value": -180.0,
+          "expected": -180.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "continuous positive M maximum",
+          "value": 101.25,
+          "expected": 101.25,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "simple max deflection",
+          "value": 4.5,
+          "expected": 4.5,
+          "tolerance": 1e-08,
+          "unit": "mm",
+          "passed": true
+        },
+        {
+          "name": "continuous endpoint deflection",
+          "value": 0.0,
+          "expected": 0.0,
+          "tolerance": 1e-12,
+          "unit": "m",
+          "passed": true
+        },
+        {
+          "name": "continuous middle slope",
+          "value": 0.0,
+          "expected": 0.0,
+          "tolerance": 1e-12,
+          "unit": "",
+          "passed": true
+        },
+        {
+          "name": "reaction sum",
+          "value": 240.0,
+          "expected": 240.0,
+          "tolerance": 1e-08,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大并复看：独立梁中间两个支承已分开，负弯矩标签避开支承，实际解析位移同一显示比例；去掉不准确的100倍放大声明。已看灰度。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "heading_line": 57,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大并复看：独立梁中间两个支承已分开，负弯矩标签避开支承，实际解析位移同一显示比例；去掉不准确的100倍放大声明。已看灰度。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "8a8b75c49e6a2563c98ec897590dda0c893f704335c00325bcce04ee69ec49f0",
+        "png": "a984e58c0886261ae85b3cce9b627344519d3c618787f9c62423c1d32b753453"
+      },
+      "calculation_data": {
+        "span_L_m": 12,
+        "q_kN_per_m": 10,
+        "EI_kNm2": 600000,
+        "simple_Mmax_kNm": 180,
+        "continuous_interior_M_kNm": -180,
+        "continuous_Mpositive_max_kNm": 101.25,
+        "simple_wmax_mm": 4.5,
+        "continuous_wmax_mm": 1.871811626974409,
+        "display_note": "common enlarged plotting scale, not stated as a numerical physical magnification"
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F19",
+      "title": "桥还没碰到下一个支点，悬空越长会怎样？",
+      "chapter": 4,
+      "heading": "顶推施工",
+      "caption": "悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。",
+      "assumptions": [
+        "每个阶段梁尾恰在后支点、支点距12 m；这是教学静定截取，不冒充真实完整顶推系统",
+        "均布自重；未接触前方支点；无导梁、摩擦、支点高差或非线性",
+        "显示的是阶段内力，非设计安全系数"
+      ],
+      "source_script": "scripts/priority-figures/group_a.py",
+      "svg": "assets/publication/priority-40/F19.svg",
+      "png": "assets/publication/priority-40/F19.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        {
+          "name": "a=3: forces",
+          "value": 150.0,
+          "expected": 150.0,
+          "tolerance": 1e-08,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "a=3: moment about rear",
+          "value": 1125.0,
+          "expected": 1125.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "a=3: root M",
+          "value": -45.0,
+          "expected": -45.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "a=6: forces",
+          "value": 180.0,
+          "expected": 180.0,
+          "tolerance": 1e-08,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "a=6: moment about rear",
+          "value": 1620.0,
+          "expected": 1620.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "a=6: root M",
+          "value": -180.0,
+          "expected": -180.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "a=9: forces",
+          "value": 210.0,
+          "expected": 210.0,
+          "tolerance": 1e-08,
+          "unit": "kN",
+          "passed": true
+        },
+        {
+          "name": "a=9: moment about rear",
+          "value": 2205.0,
+          "expected": 2205.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "a=9: root M",
+          "value": -405.0,
+          "expected": -405.0,
+          "tolerance": 1e-08,
+          "unit": "kN·m",
+          "passed": true
+        },
+        {
+          "name": "visual inspection of final rendered PNG",
+          "passed": true,
+          "method": "individual enlarged view; corrected figures re-opened",
+          "notes": "逐张放大并复看：三个未接触阶段长度与位置可辨；反力文字移开支承斜线；根部与全梁控制量均标单位，短悬臂阶段没有误判根部控制。已看灰度。"
+        }
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch03.qmd",
+      "heading_line": 1769,
+      "figure_kind": "calculated",
+      "technical_review": "formula_assertions_passed",
+      "visual_review_notes": "逐张放大并复看：三个未接触阶段长度与位置可辨；反力文字移开支承斜线；根部与全梁控制量均标单位，短悬臂阶段没有误判根部控制。已看灰度。",
+      "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+      "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+      "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+      "file_sha256": {
+        "svg": "918ddcf5eef347880fc9a2bdf8e15eabec82922d8aecd945ed3d2615ef33c818",
+        "png": "a843e78b19a2d5dc940449fabc38ba9736335ab41ee2ac0ac4ae2254d195f114"
+      },
+      "calculation_data": {
+        "support_x_m": [
+          -12,
+          0
+        ],
+        "next_support_x_m": 12,
+        "cantilever_a_m": [
+          3,
+          6,
+          9
+        ],
+        "q_kN_per_m": 10,
+        "RA_kN": [
+          56.25,
+          45,
+          26.25
+        ],
+        "RB_kN": [
+          93.75,
+          135,
+          183.75
+        ],
+        "root_M_kNm": [
+          -45,
+          -180,
+          -405
+        ],
+        "whole_beam_abs_Mmax_kNm": [
+          158.203125,
+          180,
+          405
+        ]
+      },
+      "diagram_kind": "analytical_teaching_example",
+      "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+      "export_checks": {
+        "png_dimensions": [
+          2400,
+          1440
+        ],
+        "dpi": 200,
+        "svg_embedded_rasters": 0,
+        "source_heading_exact_match": true
+      }
+    },
+    {
+      "id": "F20",
+      "title": "把拱压低，拱脚要多推多少？",
+      "chapter": 5,
+      "heading": "跨径、矢高与矢跨比",
+      "caption": "相同跨度和竖向均布荷载下，三铰抛物线拱矢高由20 m增至30 m，水平推力由16.2 MN降至10.8 MN；竖向反力不变。",
+      "assumptions": [
+        "三铰、等高拱脚",
+        "抛物线拱轴",
+        "均布荷载以水平投影计",
+        "一阶静力"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F20.svg",
+      "png": "assets/publication/priority-40/F20.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "H=qL²/(8f)：16200/13500/10800 kN",
+        "竖向平衡2V=qL"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch04.qmd",
+      "heading_line": 131,
+      "calculation_data": {
+        "L_m": 120.0,
+        "q_kN_per_m": 180.0,
+        "f_m": [
+          20,
+          24,
+          30
+        ],
+        "H_kN": [
+          16200.0,
+          13500.0,
+          10800.0
+        ],
+        "V_kN": 10800.0
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：两端水平推力向内、竖向支反力向上；20/30m工况和数值可分辨。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "8611ab9f8d7048a228c423b9090d02d08d30cd52f9562572e49b750af02d5584",
+        "png": "49153a770ae4f9867957b3c7598ea18d0cee25c44fad8de1e44769c5f4258655"
+      }
+    },
+    {
+      "id": "F21",
+      "title": "压力线离开拱轴，弯矩从哪里来？",
+      "chapter": 5,
+      "heading": "压力线与合理拱轴",
+      "caption": "同一左半跨均布荷载下，压力线作图与拱轴出现偏离。在左四分点，竖向差6 m对应M=HΔy=40.5 MN·m；沿截面法向计算的压力中心偏心为M/N，二者不可混用。",
+      "assumptions": [
+        "仅该三铰拱、该荷载",
+        "y_p=M0/H为图解关系",
+        "N为局部轴向分量；不判定截面是否满足承载要求"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F21.svg",
+      "png": "assets/publication/priority-40/F21.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "四分点M=40500 kN·m",
+        "N=Hcosφ+V0sinφ",
+        "M=H(yp−ya)"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch04.qmd",
+      "heading_line": 143,
+      "calculation_data": {
+        "quarter_M_kNm": 40500.0,
+        "quarter_N_kN": 7269.97248963158,
+        "quarter_e_m": 5.570860145311556,
+        "quarter_vertical_gap_m": 6.0
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：拱轴/压力线图例、左半跨加载、Δy标注和e=M/N明确区分。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "a2ec027c78afbd137b1280dc316265ecbde8e635fb08587250719269bf0fd79d",
+        "png": "fdef5d85db3f2869c808c2e3039fa697038608b9b5ebc518226fad24f9b2ab99"
+      }
+    },
+    {
+      "id": "F22",
+      "title": "荷载只放一半，拱就一定更轻松吗？",
+      "chapter": 5,
+      "heading": "第二步：半跨作用与压力线偏离",
+      "caption": "抛物线拱在满跨均布荷载下弯矩为零；仅在左半跨加载会形成一正一负的弯矩。总竖向荷载减小并不意味着每个截面弯矩减小。",
+      "assumptions": [
+        "无自重以外另加项，比较的q相同",
+        "拱轴与边界保持不变",
+        "一阶三铰拱"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F22.svg",
+      "png": "assets/publication/priority-40/F22.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "满跨M全域≈0",
+        "半跨左右四分点M=±40500 kN·m",
+        "两工况RA+RB等于各自总荷载"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch04.qmd",
+      "heading_line": 581,
+      "calculation_data": {
+        "False": {
+          "H_kN": 13500.0,
+          "RA_kN": 10800.0,
+          "RB_kN": 10800.0,
+          "M_min_kNm": -2.9103830456733704e-11,
+          "M_max_kNm": 2.9103830456733704e-11
+        },
+        "True": {
+          "H_kN": 6750.0,
+          "RA_kN": 8100.0,
+          "RB_kN": 2700.0,
+          "M_min_kNm": -40500.0,
+          "M_max_kNm": 40500.0
+        }
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视并复查：已移开与横坐标重叠的结论文字；正负弯矩区和单位可读。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "7dfa382468b14221fa96f954026ddd7be786f8a6d03b6565bf629b0b83f4cf68",
+        "png": "3f6155aab21b1b4cdbb438d3f70bb3e7e26a239b66e521bc252fc838158dc591"
+      }
+    },
+    {
+      "id": "F23",
+      "title": "桥墩“动了十毫米”，到底是哪一种动？",
+      "chapter": 5,
+      "heading": "温度、收缩徐变与基础变位",
+      "caption": "相同“10 mm”可以是共同沉降、差异沉降或相对水平张开。必须先定义运动对象、方向与边界，再计算三铰、两铰或无铰拱的附加响应。",
+      "assumptions": [
+        "规定运动输入示意，不含响应计算",
+        "共同平移判断忽略地基额外约束、动力和几何变化",
+        "具体内力取决于结构边界与刚度"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F23.svg",
+      "png": "assets/publication/priority-40/F23.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "两端同移与相对位移分开",
+        "位移箭头未标成力",
+        "−5至+5的相对张开为10 mm"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch04.qmd",
+      "heading_line": 445,
+      "calculation_data": {},
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：三种位移输入各自标方向；明确不画未经计算的响应形状。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "1fb11140840c5c16602ec491e9216450fd3287336ceaf5229e730667d71f42b5",
+        "png": "da359ca4216a14a2169b8f82890b781d34dc366be31882070356b6cc019416a1"
+      }
+    },
+    {
+      "id": "F24",
+      "title": "车的重量，怎样经过拉索到达桥塔？",
+      "chapter": 6,
+      "heading": "结构组成、体系选择与传力",
+      "caption": "双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。",
+      "assumptions": [
+        "构件定位与分力示意，无全桥数值结果",
+        "只展示一根索的作用方向，不据箭头比例量取索力",
+        "索为受拉构件"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F24.svg",
+      "png": "assets/publication/priority-40/F24.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "斜索T的水平/竖向分量方向相容",
+        "轴测投影由同一坐标函数生成",
+        "两索面及塔梁连接位置明确"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch05.qmd",
+      "heading_line": 21,
+      "calculation_data": {},
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：双索面、桥塔、桥面定位及单索分力方向可辨；没有伪称全桥实算。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "616709bc3d9dc43c3a84313eda8706f10de2872875a3b40840d57e9656b295a7",
+        "png": "74dd9732af1481669bb31c5aa1d265220dd9568d97fbbc7eab5d2745e9ff98a0"
+      }
+    },
+    {
+      "id": "F25",
+      "title": "只调一组索，怎样得到矩阵的一列？",
+      "chapter": 6,
+      "heading": "第三步：建立教学索力影响矩阵",
+      "caption": "固定模型状态和输出定义，仅将第二索组增大1 MN时，三项响应增量就是影响矩阵第二列；矩阵沿用正文明确声明的教学测试数据，构件定位图不冒充矩阵来源模型。",
+      "assumptions": [
+        "教学构造矩阵，不是具体桥的计算",
+        "列为索组增量，行依次为弯矩、位移、反力",
+        "仅线性局部影响，不直接用于调索设计"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F25.svg",
+      "png": "assets/publication/priority-40/F25.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "A·[0,1,0]=[−1,−0.6,+0.3]",
+        "A·[1.5,1,0.5]=[−4.2,−0.4,+0.75]",
+        "各行单位单独标注"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch05.qmd",
+      "heading_line": 613,
+      "calculation_data": {
+        "A": [
+          [
+            -2.0,
+            -1.0,
+            -0.4
+          ],
+          [
+            0.5,
+            -0.6,
+            -1.1
+          ],
+          [
+            0.1,
+            0.3,
+            0.6
+          ]
+        ],
+        "increment_MN": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "response": [
+          -1.0,
+          -0.6,
+          0.3
+        ],
+        "row_units": [
+          "MN·m/MN",
+          "mm/MN",
+          "MN/MN"
+        ]
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视并复查：三列标题分别对齐；各行影响系数量纲和输出量纲分列。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "c7c54ca1a3d2d7e2943a9a27a6f8c11de5b3d8f3aebbf0a53a1c6945d78f432b",
+        "png": "6a2eb1dcd7644bea3599628618f84b05f59cf301738ec0766afad43dfc9825a2"
+      }
+    },
+    {
+      "id": "F26",
+      "title": "合龙以后，桥还是刚才那个受力体系吗？",
+      "chapter": 6,
+      "heading": "合龙与体系转换",
+      "caption": "合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。",
+      "assumptions": [
+        "示意图不含变形和内力结果",
+        "施工荷载、临时边界和初始状态需按阶段定义",
+        "图中塔基仅作支承定位，不指定实际构造"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F26.svg",
+      "png": "assets/publication/priority-40/F26.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "合龙前中间断开、合龙后连接激活",
+        "两幅荷载方向向下",
+        "无预填施工弯矩或索力"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch05.qmd",
+      "heading_line": 196,
+      "calculation_data": {},
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视并复查：修正竖向塔柱的地面固定符号；合龙前断开、合龙后连接。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "afe03160f4b84dcd0b46f6d049d7844b621a38ff056afb58c069777f0b004374",
+        "png": "42c1b0e1ebe55f3158c0bf2e04ccf1480cb715f1045940c3d7ebc1c910a1f0ff"
+      }
+    },
+    {
+      "id": "F27",
+      "title": "悬索桥的重量，最后交给了谁？",
+      "chapter": 7,
+      "heading": "组成、体系与荷载路径",
+      "caption": "地锚式悬索桥中，桥面经加劲梁、吊索和主缆传力，索塔与锚碇共同承担主缆传来的作用。自锚式的主缆水平分力路径不同，不能套用本图。",
+      "assumptions": [
+        "地锚式",
+        "构件和受力方向示意，非数值分析",
+        "索塔、锚碇和基础均须另行设计"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F27.svg",
+      "png": "assets/publication/priority-40/F27.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "15根主跨吊索连到主缆与梁",
+        "锚碇受主缆拉力方向指向索塔",
+        "基础反力示意向上"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch06.qmd",
+      "heading_line": 21,
+      "calculation_data": {},
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：加劲梁、吊索、主缆、索塔、锚碇及基础力路可辨。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "f81dd2de180e84ff751b4ffb24eb710179ccf689370b39917aa77e0004fa4e96",
+        "png": "2c24db4715d79367eee5bf379be680543fed4f0faae569a8620190906878da57"
+      }
+    },
+    {
+      "id": "F28",
+      "title": "缆索垂得更深，锚碇要拉住的力会变多少？",
+      "chapter": 7,
+      "heading": "抛物线近似",
+      "caption": "在水平投影均布荷载的理想索模型中，垂度由40 m增至80 m，水平分力H从50 MN减至25 MN，竖向分力仍各20 MN。H是水平分量，不是支点索力总值。",
+      "assumptions": [
+        "抛物线索，等高支点",
+        "不含弹性伸长和索自重沿索长差异",
+        "图示纵横比不供量图"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F28.svg",
+      "png": "assets/publication/priority-40/F28.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "H=qL²/(8f)",
+        "V=qL/2",
+        "T_s=sqrt(H²+V²)，未把H标成T"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch06.qmd",
+      "heading_line": 99,
+      "calculation_data": {
+        "L_m": 400.0,
+        "q_kN_per_m": 100.0,
+        "f_m": [
+          40.0,
+          80.0
+        ],
+        "H_kN": [
+          50000.0,
+          25000.0
+        ],
+        "V_kN": 20000.0,
+        "Ts_kN": [
+          53851.648071345044,
+          32015.621187164244
+        ]
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：索支点水平分力向外、竖向分力向上，40/80m垂度对照清楚。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "37705a3bd14cbd3294f0fb10e4f58ef7c359602a6e0399f9c41d39ed9f6ac0de",
+        "png": "a09010c289484b65361b31df2ba4c22f37698a6492777bfd011e95772ed648ba"
+      }
+    },
+    {
+      "id": "F29",
+      "title": "一根绳拉紧以后，为什么更难横向拨动？",
+      "chapter": 7,
+      "heading": "几何刚度和切线响应",
+      "caption": "同长、同一小横向荷载下，提高初张力会提高拉直绳的横向切线刚度，线性扰动位移近似反比于初张力。图示变形放大20倍，斜拉方向只作示意。",
+      "assumptions": [
+        "只适用于初始拉直且有恒定预张力的绳",
+        "小斜率、忽略荷载引起的张力增量",
+        "没有将直绳结果当作全桥初应力有限元结果"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F29.svg",
+      "png": "assets/publication/priority-40/F29.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "δ为50/25 mm",
+        "2δ/L≤0.01",
+        "两侧竖向分力之和近似P"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch06.qmd",
+      "heading_line": 612,
+      "calculation_data": {
+        "T0_kN": [
+          50,
+          100
+        ],
+        "delta_mm": [
+          50,
+          25
+        ],
+        "tangent_stiffness_kN_per_m": [
+          20,
+          40
+        ]
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：T0两工况、位移放大说明、红色张力箭头沿各自示意绳线。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "e815318ada454900cda24b379ae15ae3ee40fc6f26f65c17e759c3252dc51fd4",
+        "png": "c88e5adeea6e58a206d2ed253e3303370ab26000f730c82c17eee4b590d903f3"
+      }
+    },
+    {
+      "id": "F30",
+      "title": "温度一样升高，为什么有的伸长、有的受压？",
+      "chapter": 8,
+      "heading": "自由温度位移",
+      "caption": "同样均匀温升下，自由伸缩产生7.2 mm轴向伸长；完全限制该伸长则在本一维弹性模型中产生72 MPa压应力、1440 kN压力。支座约束改变的是允许发生的运动。",
+      "assumptions": [
+        "轴向杆模型，不模拟桥面温度梯度",
+        "均匀温升、常材料参数、小变形",
+        "自由端无摩阻；受约束端刚性"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F30.svg",
+      "png": "assets/publication/priority-40/F30.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "αLΔT=7.2 mm",
+        "EαΔT=72 MPa",
+        "N=EAαΔT=1440 kN"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch07.qmd",
+      "heading_line": 448,
+      "calculation_data": {
+        "free_elongation_mm": 7.2,
+        "restrained_stress_MPa": 72.0,
+        "restrained_force_kN": 1440.0
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：自由伸长的位移箭头与受约束压力分色，指数缺字已消除。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "cb85bda31ea49793a92cc8f49755fa2fc19317f833dadeb3409a81886dfe7466",
+        "png": "08dfa60b274544f56976092a35ec8b3e8c73bc87c99a8d3f5ff613d74a8c3837"
+      }
+    },
+    {
+      "id": "F31",
+      "title": "“固定支座”到底固定了哪些方向？",
+      "chapter": 8,
+      "heading": "支承体系的自由度表达",
+      "caption": "理想固定、纵向活动和多向活动支座的平移约束对照。青色双箭头代表可移动方向，红色标记代表被约束的平移；固定支座不等于梁固端。",
+      "assumptions": [
+        "仅列平移自由度，不规定θx/θy/θz全部锁死",
+        "压紧接触、忽略摩阻的理想化",
+        "x沿桥轴、y横桥向、z竖直"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F31.svg",
+      "png": "assets/publication/priority-40/F31.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "三个面板的ux/uy约束分别为(0,0)/(free,0)/(free,free)",
+        "无力或力矩箭头混入位移图例"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch07.qmd",
+      "heading_line": 123,
+      "calculation_data": {},
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：ux/uy缺字已消除；活动方向箭头不穿过下方说明。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "781abb553e89af6a135d7dc349102e7640759f9e29590e24288cac3f08fa3028",
+        "png": "9c71da6af44c40dae36c23de1e7c3cce9b8bbc3aeed554d4fc28b07abf731aec"
+      }
+    },
+    {
+      "id": "F32",
+      "title": "基础把桥的重量交给哪一层土？",
+      "chapter": 8,
+      "heading": "桩基础",
+      "caption": "浅基础与桩基础的竖向荷载路径对照。桩基础通过桩侧摩阻及桩端阻力传力；箭头只示方向，实际分担与群桩效应取决于土层、桩、承台和荷载状态。",
+      "assumptions": [
+        "中心竖向受压",
+        "土反力方向示意，未指定分配百分比",
+        "不代表水平受力、负摩阻或抗拔情景"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F32.svg",
+      "png": "assets/publication/priority-40/F32.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "外部作用向下、承压支承作用向上",
+        "基底接触与桩侧/桩端作用位置分开",
+        "未把单桩承载力简单乘桩数"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch07.qmd",
+      "heading_line": 745,
+      "calculation_data": {},
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：基底、桩侧与桩端土反力位置可辨，方向与中心受压情景一致。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "12879ffd6831a5f8990dbd8c4b01d03322abb4a124f1decce43b61ba1bd9436c",
+        "png": "7adccbc652b70c1b7031fae67bda8e3c8f40ad3c180a99be6a925816e0ab4b01"
+      },
+      "resolved_heading_occurrence": 1
+    },
+    {
+      "id": "F33",
+      "title": "风速翻倍，推桥面的力也只翻倍吗？",
+      "chapter": 9,
+      "heading": "风速平方关系",
+      "caption": "固定气密度、阻力系数和面积时，风速10、20、40 m/s对应静力阻力0.735、2.940、11.760 kN；速度翻倍，动压和阻力均变为4倍。蓝色箭头示来流，橙色箭头示阻力。",
+      "assumptions": [
+        "ρ、C_D、A固定",
+        "静力阻力D=½ρU²C_DA",
+        "未引入任何桥型专用系数或规范风速"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F33.svg",
+      "png": "assets/publication/priority-40/F33.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "单位Pa×m²=N",
+        "10→20→40 m/s阻力每次×4"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch09-wind.qmd",
+      "heading_line": 167,
+      "calculation_data": {
+        "U_m_per_s": [
+          10,
+          20,
+          40
+        ],
+        "dynamic_pressure_Pa": [
+          61.25,
+          245,
+          980
+        ],
+        "drag_kN": [
+          0.735,
+          2.94,
+          11.76
+        ],
+        "CD": 1.2,
+        "A_m2": 10
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：动压坐标、来流/阻力箭头及三组单位读数可辨。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "cb48d9e09ea5202aa90db3a782d1d7d0f84e169b1188adba77f0a1834ab716f3",
+        "png": "679c31596d61c902c0ef9320167d4b1cd4dd94a0b3455fd6f659d488a06279c1"
+      }
+    },
+    {
+      "id": "F34",
+      "title": "同样大小的周期力，为什么能激起更大的振动？",
+      "chapter": 9,
+      "heading": "单自由度模型",
+      "caption": "单自由度简谐稳态响应随频率比与阻尼改变。阻尼比0.02、0.05、0.10在r=1时的位移放大系数分别为25、10、5；该模型不直接描述桥梁颤振。",
+      "assumptions": [
+        "线性单自由度，简谐力恒幅",
+        "已达稳态，不是启动瞬态",
+        "ζ>0；忽略非线性"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F34.svg",
+      "png": "assets/publication/priority-40/F34.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "r=1时R=1/(2ζ)",
+        "未截平共振峰",
+        "归一分母为F0/k"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch09-wind.qmd",
+      "heading_line": 286,
+      "calculation_data": {
+        "amplification_at_r1": {
+          "0.02": 25.0,
+          "0.05": 10.0,
+          "0.1": 5.0
+        }
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视并复查：共振峰未截平，增补了实际可辨的并联阻尼器符号。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "b232494b7d7eae9128fa96c98f2886d5c45f5790f760d5aff7b60113e801b3f4",
+        "png": "6a9f001199eec372fca5f079d040994425f9c0a0e86496745cc6db138bfe3226"
+      }
+    },
+    {
+      "id": "F35",
+      "title": "桥面两边一起动，和一上一下，是同一种振动吗？",
+      "chapter": 9,
+      "heading": "弯曲、扭转和耦合模态",
+      "caption": "参数化桥面带的纯竖弯与纯扭转形状对照，以及同一横截面的观察方式。真实桥梁可能有耦合模态；需同一断面同步测量才可用两侧位移分解。",
+      "assumptions": [
+        "示意模态形状，无特征值求解",
+        "小转角且横截面近似刚体",
+        "非畸变截面；没有声称现实模态均为纯弯/纯扭"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F35.svg",
+      "png": "assets/publication/priority-40/F35.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "竖弯两边同号",
+        "扭转两边反号、中心不平移",
+        "位移箭头和荷载图例分开"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch09-wind.qmd",
+      "heading_line": 988,
+      "calculation_data": {},
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：两侧同向/反向、未变形虚线和横截面提取相互对应。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "6570218a38ba70329df5cf13e107e18fbb97777590321c0835361f64fca18b0b",
+        "png": "01b6bd0f3ac8218f42d2c2e53a988ed3f9e30036aa59211bd49b79ea8c06fdf2"
+      }
+    },
+    {
+      "id": "F36",
+      "title": "少了十分之一厚度，梁就只软十分之一吗？",
+      "chapter": 10,
+      "heading": "钢构件腐蚀至截面性能",
+      "caption": "同宽矩形钢条上下表面减薄的几何比较：高度减少10%，面积减少10%，惯性矩减少27.1%，同边界同荷载下线弹性挠度增加约37.2%。防护列只是指定剩余厚度的比较，不是预报寿命。",
+      "assumptions": [
+        "矩形截面，宽度与E保持不变",
+        "仅上下表面均匀损失，不模拟点蚀、疲劳或局部屈曲",
+        "维护列为假设状态，不表示涂层能恢复已损失钢材"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F36.svg",
+      "png": "assets/publication/priority-40/F36.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "A=bh，I=bh³/12",
+        "同梁同荷载δ与EI成反比",
+        "h90：I/I0=.729"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch10-lifecycle.qmd",
+      "heading_line": 536,
+      "calculation_data": {
+        "states": [
+          {
+            "h_mm": 100,
+            "A_ratio": 1.0,
+            "I_ratio": 1.0,
+            "deflection_ratio": 1.0
+          },
+          {
+            "h_mm": 90,
+            "A_ratio": 0.9,
+            "I_ratio": 0.729,
+            "deflection_ratio": 1.3717421124828533
+          },
+          {
+            "h_mm": 98,
+            "A_ratio": 0.98,
+            "I_ratio": 0.941192,
+            "deflection_ratio": 1.062482469039261
+          }
+        ],
+        "maintenance_note": "同一假定比较时点，无真实年限或实桥观测"
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：三种剩余高度、面积/EI/位移倍率分列；维护为假设状态而非年限预测。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "d1fa806503284191dffa12b369c7b1bc1ef6de22b3289be5c380198a077eee63",
+        "png": "067709a76c2fe4541e7dad8e2d5f85eb1ac700ef442d5dd03719fc795767c7ee"
+      }
+    },
+    {
+      "id": "F37",
+      "title": "把地震力降下来，还要为哪一种变化留空间？",
+      "chapter": 10,
+      "heading": "减隔震与位移控制",
+      "caption": "在本图明确指定的两组教学谱读数下，较长周期方案的等效力需求降低，但谱位移需求增大；隔震选择必须同时核查梁端位移、限位、管线和防落梁空间。图中的弹簧表示等效水平刚度。",
+      "assumptions": [
+        "m相同；使用指定Sa而非实际场地谱",
+        "线性谱等效示例，无滞回或多模态求解",
+        "惯性作用箭头仅表方向；应按实际绝对加速度取负向"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F37.svg",
+      "png": "assets/publication/priority-40/F37.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "F=mSa",
+        "Sd=Sa(T/2π)²",
+        "1000 t换算为1e6 kg"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch10-lifecycle.qmd",
+      "heading_line": 175,
+      "calculation_data": {
+        "scenarios": [
+          {
+            "T_s": 0.5,
+            "Sa_g": 0.4,
+            "F_kN": 3924.0,
+            "Sd_mm": 24.849020288283345
+          },
+          {
+            "T_s": 2.0,
+            "Sa_g": 0.15,
+            "F_kN": 1471.5,
+            "Sd_mm": 149.09412172970005
+          }
+        ]
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视并复查：等效水平弹簧连接至质量和地基，力与位移取舍并列。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "aa84a32eaae2e10483c27bedc6c1f37e2246a459aaaf7ac3518f60010fd2ba0c",
+        "png": "61d24de58864d8db2a56b18fa3426485515d8823d1d3e29450d83218acded452"
+      }
+    },
+    {
+      "id": "F38",
+      "title": "电脑里的一个节点，对应桥上的什么位置？",
+      "chapter": 11,
+      "heading": "自由度、局部坐标与单元关系",
+      "caption": "同一20 m简支梁从构件轴线到四个梁单元、五个节点的映射；跨中集中力施加在节点3。节点既有位置也携带自由度，单元连接节点并使用材料与截面刚度。",
+      "assumptions": [
+        "平面梁离散示意，不含求解结果",
+        "支座与荷载位置由同一几何生成",
+        "θy仅作转动自由度图示，正负随坐标统一"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F38.svg",
+      "png": "assets/publication/priority-40/F38.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "4单元/5节点",
+        "P位于L/2=10 m并落在节点3",
+        "两端约束与构件图一致"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch10-fem.qmd",
+      "heading_line": 133,
+      "calculation_data": {
+        "L_m": 20,
+        "nodes_x_m": [
+          0,
+          5,
+          10,
+          15,
+          20
+        ],
+        "connectivity": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "P_kN": 120,
+        "load_node": 3
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视并复查：节点3文字已避开荷载箭头，转角标签已避开平移箭头。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "df9e56d62a6a0a7a680e80231fa7c5afbf2002c820d448e77cd76b582848e483",
+        "png": "1500633a6c0fa68641d5885e4ba9821cc0b498ca1fed5cc27d10ff8f49a7582f"
+      }
+    },
+    {
+      "id": "F39",
+      "title": "网格越来越细，为什么答案仍可能错？",
+      "chapter": 11,
+      "heading": "第三层：网格与目标响应",
+      "caption": "以真实三次Hermite梁单元计算同一均布荷载：两端固支的错误边界也随网格加密收敛，但收敛值不等于任务要求的简支梁答案。",
+      "assumptions": [
+        "简支梁任务，两端固支为故障对照",
+        "均布q，常EI，忽略剪切变形",
+        "目标位移取x=0.37L并按形函数恢复"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F39.svg",
+      "png": "assets/publication/priority-40/F39.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "所有网格竖向反力和=qL",
+        "自由DOF残差小于1e-4 N",
+        "32单元与各自解析值差<1e-5 mm"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch10-fem.qmd",
+      "heading_line": 1283,
+      "calculation_data": {
+        "N": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32
+        ],
+        "ss_mm": [
+          9.141176470588238,
+          11.181254901960784,
+          11.262441176470608,
+          11.271970588235234,
+          11.271981464458907,
+          11.27198403032983
+        ],
+        "wrong_fixed_mm": [
+          0.0,
+          2.0400784313725486,
+          2.121264705882353,
+          2.1307941176470426,
+          2.1308049938725837,
+          2.1308075597411706
+        ],
+        "ss_exact_mm": 11.271984705882355,
+        "fixed_exact_mm": 2.1308082352941176,
+        "target_x_m": 7.4
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：任务与错误边界、收敛曲线、解析基准与单位均可读。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "a4e2a533325989a81cb59074adb6724f0796366146d00e9769f84042a7d5055f",
+        "png": "7c010d7b1611f56340653d91443f4f200ade4e782e2a115043b4a23ebbd74703"
+      }
+    },
+    {
+      "id": "F40",
+      "title": "AI给了一个数，怎样知道它算的是你的问题？",
+      "chapter": 11,
+      "heading": "AI交来一份计算，先检查什么？ {#ai-check-case}",
+      "caption": "同一等效梁任务的正确模型、弹性模量单位错误、两端固支边界错误对照。单位错的5882 mm只是超出小变形适用域的线性公式形式值，不能采纳；反力平衡也不能单独识别错误边界。",
+      "assumptions": [
+        "单根等效梁，暂不计自重",
+        "正确基准为线弹性小变形简支梁",
+        "单位故障仅为诊断；不把越域大位移当作物理预测"
+      ],
+      "source_script": "scripts/priority-figures/group_b.py",
+      "svg": "assets/publication/priority-40/F40.svg",
+      "png": "assets/publication/priority-40/F40.png",
+      "origin": "original_parameterized_drawing",
+      "status": "draft_for_review",
+      "checks": [
+        "正确δ=PL³/(48EI)=5.88235 mm",
+        "错误E小1000倍→线性形式值大1000倍并拒收",
+        "固定端集中力δ=PL³/(192EI)=1.47059 mm"
+      ],
+      "visual_review": "passed_self_review",
+      "chapter_file": "chapters/ch10-fem.qmd",
+      "heading_line": 1630,
+      "calculation_data": {
+        "correct_mm": 5.88235294117647,
+        "unit_error_formal_value_mm": 5882.35294117647,
+        "unit_error_accepted": false,
+        "wrong_boundary_mm": 1.4705882352941175
+      },
+      "diagram_kind": "teaching_model_or_schematic",
+      "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+      "layout_preflight": {
+        "text_outside_canvas": [],
+        "source_header_confirmed": true
+      },
+      "visual_review_notes": "逐张目视：三种草稿支承与位移读数可辨，越域形式值明确拒收，流程箭头分色。",
+      "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+      "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+      "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+      "file_sha256": {
+        "svg": "2d6435b5c0da70df13bae6cc7c265f28699d81432aa0c19ff718600471bca1a0",
+        "png": "87b760504dd09ef20807b63241efef399f6c423f3865c132e24d2cad11dc45f7"
+      }
+    }
+  ]
+}

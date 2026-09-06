@@ -1,0 +1,69 @@
+{
+  "id": "F38",
+  "title": "电脑里的一个节点，对应桥上的什么位置？",
+  "chapter": 11,
+  "heading": "自由度、局部坐标与单元关系",
+  "caption": "同一20 m简支梁从构件轴线到四个梁单元、五个节点的映射；跨中集中力施加在节点3。节点既有位置也携带自由度，单元连接节点并使用材料与截面刚度。",
+  "assumptions": [
+    "平面梁离散示意，不含求解结果",
+    "支座与荷载位置由同一几何生成",
+    "θy仅作转动自由度图示，正负随坐标统一"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F38.svg",
+  "png": "assets/publication/priority-40/F38.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "4单元/5节点",
+    "P位于L/2=10 m并落在节点3",
+    "两端约束与构件图一致"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch10-fem.qmd",
+  "heading_line": 133,
+  "calculation_data": {
+    "L_m": 20,
+    "nodes_x_m": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "connectivity": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "P_kN": 120,
+    "load_node": 3
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视并复查：节点3文字已避开荷载箭头，转角标签已避开平移箭头。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "df9e56d62a6a0a7a680e80231fa7c5afbf2002c820d448e77cd76b582848e483",
+    "png": "1500633a6c0fa68641d5885e4ba9821cc0b498ca1fed5cc27d10ff8f49a7582f"
+  }
+}

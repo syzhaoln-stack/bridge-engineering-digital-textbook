@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "unit_id": "C03U07",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C03U07",
+    "chapter": 3,
+    "chapter_title": "作用、组合与可靠度",
+    "title": "相关性进入余量的方差",
+    "model": "reliability",
+    "preset": "correlation",
+    "insight": "抗力与效应之差的方差包含相关项，不能只把两个方差相加。",
+    "transfer": "共享温度输入的两个响应可以当作独立吗？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C03U07.html",
+      "path": "interactive/lessons/C03U07.html"
+    },
+    "narration": [
+      "相关性进入余量的方差。先预测：改变抗力与效应相关系数，可靠指标 β会怎样变化？",
+      "现在保持其他条件不变，只改变抗力与效应相关系数。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "抗力与效应之差的方差包含相关项，不能只把两个方差相加。",
+      "共享温度输入的两个响应可以当作独立吗？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": -0.8,
+      "max": 0.8,
+      "start": 0,
+      "end": 0.6,
+      "step": 0.01,
+      "label": "抗力与效应相关系数",
+      "unit": "",
+      "output": "可靠指标 β",
+      "outunit": "",
+      "formula": "β=(μR−μS)/√(σR²+σS²−2ρσRσS)，Pf=Φ(−β)",
+      "boundary": "抗力与效应联合正态、线性极限状态R−S；基准μR=120、μS=80、σR=12、σS=10、ρ=0。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C03U07.mp4",
+        "href": "../assets/videos/core/C03U07.mp4",
+        "bytes": 3340035
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C03U07.vtt",
+        "href": "../assets/videos/core/C03U07.vtt",
+        "bytes": 746
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C03U07.jpg",
+        "href": "../assets/videos/core/posters/C03U07.jpg",
+        "bytes": 145360
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C03U07.txt",
+        "href": "../notebooks/course-data/C03U07.txt",
+        "bytes": 507
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C03U07.json",
+        "href": "../notebooks/course-data/C03U07.json",
+        "bytes": 18088
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C03U07",
+      "title": "相关性进入余量的方差",
+      "chapter": 3,
+      "fingerprint": "45ed793f86766f7d6d390f43e1f4e5c230936ad717e5a76ac0b9ac8bea729a6f",
+      "duration": 46.7,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 82.0
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F12.png",
+        "href": "../assets/publication/priority-40/F12.png",
+        "bytes": 357870,
+        "id": "F12",
+        "title": "平均抗力比平均作用大，为什么还不能只看两个平均数？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F12.svg",
+          "href": "../assets/publication/priority-40/F12.svg",
+          "bytes": 117389
+        },
+        "caption": "联合正态教学模型以g=R−S转化为一维余量分布；红色尾部为g<0的概率。联合图的阴影只是失效域，不是按几何面积计算概率。",
+        "assumptions": [
+          "所有统计参数为正文教学值，非测量样本",
+          "线性极限状态与指定联合正态假设；不可将此Pf迁移到实际桥梁"
+        ],
+        "mapping_note": "R与S的相关项进入余量方差；联合图阴影的几何面积不是失效概率。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "1d587c4175d21aecc635fd07e1e2f185e48f9cf5e111e7a111857cd806f4e337",
+          "png": "24d889f2037d0988bf84062aacfcb4f0a651785c681444a3e271f9e1a4ad4d5f"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C03U07.json",
+      "render_sha256": "34ddedba61f9eff8f3959f8bcdaee66c9496ad05226cc80875e61b991ff6e5e8",
+      "render_copy_sha256": "34ddedba61f9eff8f3959f8bcdaee66c9496ad05226cc80875e61b991ff6e5e8"
+    },
+    "download_href": "../notebooks/course-packages/C03U07.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

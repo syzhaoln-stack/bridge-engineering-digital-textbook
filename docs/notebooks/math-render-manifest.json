@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "time": "2026-09-06T16:57:22.158340+00:00",
+  "method": "render saved outputs; no code-cell execution",
+  "ipynb_and_python_hashes_unchanged": {
+    "A-transverse.ipynb": "7566553f153b3dc2f00a0cb543d0e66c118d41fd81534613c8fed550abb0fbba",
+    "A-transverse.py": "178a62d93476df49b77f1d15140be6d9bdaf0246d2c0bcf16b54196275e0181e",
+    "B-scaling.ipynb": "d36c792563a7f9879bef1e5d201f0d96a42244c467757f6fb1e60fc6dce30c27",
+    "B-scaling.py": "b0a11c8baeaf80a1f2003a32601c7343014f99bbfcc8f9e7c8a4ebf8ea179e97",
+    "C-beam-fem.ipynb": "4e8f4fc91179ae80697305342d305e62298ad33737f9605f27e651ff123f9d50",
+    "C-beam-fem.py": "ca9422d7f702abe470019345be98c331d702ad86022ce2801da5ffe13998e337"
+  },
+  "notebooks": [
+    {
+      "id": "A-transverse",
+      "engine": "KaTeX 0.18.6",
+      "formula_count": 5,
+      "display_count": 1,
+      "formulas": [
+        {
+          "tex": "\\sum y_i=0",
+          "display": false
+        },
+        {
+          "tex": "R_i=\\frac{P}{5}+\\frac{P e y_i}{\\sum_j y_j^2}.",
+          "display": true
+        },
+        {
+          "tex": "\\sigma=N/A+My/I",
+          "display": false
+        },
+        {
+          "tex": "\\sigma_{\\min}=N/A(1-6e/h)",
+          "display": false
+        },
+        {
+          "tex": "h/6",
+          "display": false
+        }
+      ],
+      "external_runtime_scripts": [],
+      "source_code_cells_unchanged": true,
+      "ipynb_sha256": "7566553f153b3dc2f00a0cb543d0e66c118d41fd81534613c8fed550abb0fbba",
+      "python_sha256": "178a62d93476df49b77f1d15140be6d9bdaf0246d2c0bcf16b54196275e0181e"
+    },
+    {
+      "id": "B-scaling",
+      "engine": "KaTeX 0.18.6",
+      "formula_count": 2,
+      "display_count": 1,
+      "formulas": [
+        {
+          "tex": "M_{\\max}=qL^2/8,\\quad \\sigma_{\\max}=M_{\\max}/W,\\quad w_{\\max}=5qL^4/(384EI),\\quad W=bh^2/6.",
+          "display": true
+        },
+        {
+          "tex": "q\\propto\\lambda^2,\\ I\\propto\\lambda^4",
+          "display": false
+        }
+      ],
+      "external_runtime_scripts": [],
+      "source_code_cells_unchanged": true,
+      "ipynb_sha256": "d36c792563a7f9879bef1e5d201f0d96a42244c467757f6fb1e60fc6dce30c27",
+      "python_sha256": "b0a11c8baeaf80a1f2003a32601c7343014f99bbfcc8f9e7c8a4ebf8ea179e97"
+    },
+    {
+      "id": "C-beam-fem",
+      "engine": "KaTeX 0.18.6",
+      "formula_count": 5,
+      "display_count": 1,
+      "formulas": [
+        {
+          "tex": "w(x)=qx(L^3-2Lx^2+x^3)/(24EI)",
+          "display": false
+        },
+        {
+          "tex": "5qL^4/(384EI)",
+          "display": false
+        },
+        {
+          "tex": "w(x)=qx^2(L-x)^2/(24EI)",
+          "display": false
+        },
+        {
+          "tex": "qL^4/(384EI)",
+          "display": false
+        },
+        {
+          "tex": "K_e=\\frac{EI}{\\ell^3}\\begin{bmatrix}12&6\\ell&-12&6\\ell\\\\6\\ell&4\\ell^2&-6\\ell&2\\ell^2\\\\-12&-6\\ell&12&-6\\ell\\\\6\\ell&2\\ell^2&-6\\ell&4\\ell^2\\end{bmatrix},\\quad\nf_e=q[\\ell/2,\\ell^2/12,\\ell/2,-\\ell^2/12]^T.",
+          "display": true
+        }
+      ],
+      "external_runtime_scripts": [],
+      "source_code_cells_unchanged": true,
+      "ipynb_sha256": "4e8f4fc91179ae80697305342d305e62298ad33737f9605f27e651ff123f9d50",
+      "python_sha256": "ca9422d7f702abe470019345be98c331d702ad86022ce2801da5ffe13998e337"
+    }
+  ]
+}

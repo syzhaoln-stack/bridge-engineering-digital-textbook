@@ -1,0 +1,53 @@
+{
+  "id": "F01",
+  "title": "车的重量，最后传到了哪里？",
+  "chapter": 1,
+  "heading": "桥梁的基本组成",
+  "caption": "由车辆、桥面板、主梁、支座、墩台、基础到地基的竖向传力路径。基础处向上箭头表示地基对基础的反力。",
+  "assumptions": [
+    "非实桥构造图；不表示材料应力和反力大小",
+    "桥台用简化端支承体表现，未绘台背土和附属设施"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F01.svg",
+  "png": "assets/publication/priority-40/F01.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "load path is continuous from superstructure to ground",
+    "reaction and applied load directions distinguished",
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大检查：左跨车辆向下作用只追踪到左端和中间墩，地基反力向上；右跨不画这份车辆的传力箭头。构件引线与标签清楚。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch01.qmd",
+  "heading_line": 48,
+  "figure_kind": "schematic",
+  "technical_review": "schematic_boundary_declared",
+  "visual_review_notes": "逐张放大检查：左跨车辆向下作用只追踪到左端和中间墩，地基反力向上；右跨不画这份车辆的传力箭头。构件引线与标签清楚。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "cb52426ccaccca63d41b47fb93b0c7243916e942920282c9501aa6a6e1099541",
+    "png": "9be0eded4ed27679f53f68d59aa0010d4cd7d529f0be5634f723e0a8cbb53f7c"
+  },
+  "calculation_data": {
+    "diagram": "two independent simply supported spans, left span vehicle only"
+  },
+  "diagram_kind": "schematic_geometry",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="518.4pt" viewBox="0 0 864 518.4" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-06T23:59:57.310040</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.5, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 518.4 
+L 864 518.4 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 156.6 203.064686 
+L 318.6 203.064686 
+L 318.6 181.736229 
+L 156.6 181.736229 
+z
+" clip-path="url(#p3fb63ba500)" style="fill: #edf5f7; stroke: #173c50; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 326.323081 192.400457 
+Q 292.681629 192.400457 261.835262 192.400457 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #d8792b; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 268.635262 195.800457 
+L 261.835262 192.400457 
+L 268.635262 189.000457 
+z
+" clip-path="url(#p3fb63ba500)" style="fill: #d8792b; stroke: #d8792b; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 185.638315 432.3456 
+Q 237.601657 432.3456 289.564999 432.3456 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #00898b; stroke-linecap: round"/>
+    <path d="M 190.038315 434.5456 
+L 185.638315 432.3456 
+L 190.038315 430.1456 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #00898b; stroke-linecap: round"/>
+    <path d="M 285.164999 430.1456 
+L 289.564999 432.3456 
+L 285.164999 434.5456 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #00898b; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 545.4 203.064686 
+L 707.4 203.064686 
+L 707.4 181.736229 
+L 545.4 181.736229 
+z
+" clip-path="url(#p3fb63ba500)" style="fill: #edf5f7; stroke: #173c50; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 715.123081 192.400457 
+Q 681.481629 192.400457 650.635262 192.400457 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #d8792b; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 657.435262 195.800457 
+L 650.635262 192.400457 
+L 657.435262 189.000457 
+z
+" clip-path="url(#p3fb63ba500)" style="fill: #d8792b; stroke: #d8792b; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 574.438315 432.3456 
+Q 626.401657 432.3456 678.364999 432.3456 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #00898b; stroke-linecap: round"/>
+    <path d="M 578.838315 434.5456 
+L 574.438315 432.3456 
+L 578.838315 430.1456 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #00898b; stroke-linecap: round"/>
+    <path d="M 673.964999 430.1456 
+L 678.364999 432.3456 
+L 673.964999 434.5456 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #00898b; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 95.04 128.415086 
+L 386.64 128.415086 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #edf5f7; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 166.32 227.0592 
+L 180.576 219.061029 
+L 194.832 235.057371 
+L 209.088 219.061029 
+L 223.344 235.057371 
+L 237.6 219.061029 
+L 251.856 235.057371 
+L 266.112 219.061029 
+L 280.368 235.057371 
+L 294.624 219.061029 
+L 308.88 227.0592 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #247f9e; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 140.4 253.719771 
+L 334.8 253.719771 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #7b919c; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 153.36 253.719771 
+L 153.36 227.0592 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #7b919c; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 153.36 227.0592 
+L 166.32 227.0592 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #247f9e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 308.88 227.0592 
+L 308.88 203.064686 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #247f9e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 483.84 128.415086 
+L 775.44 128.415086 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #edf5f7; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 555.12 227.0592 
+L 569.376 219.061029 
+L 583.632 235.057371 
+L 597.888 219.061029 
+L 612.144 235.057371 
+L 626.4 219.061029 
+L 640.656 235.057371 
+L 654.912 219.061029 
+L 669.168 235.057371 
+L 683.424 219.061029 
+L 697.68 227.0592 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #247f9e; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 529.2 253.719771 
+L 723.6 253.719771 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #7b919c; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 542.16 253.719771 
+L 542.16 227.0592 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #7b919c; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 542.16 227.0592 
+L 555.12 227.0592 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #247f9e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 697.68 227.0592 
+L 697.68 203.064686 
+" clip-path="url(#p3fb63ba500)" style="fill: none; stroke: #247f9e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #173c50" x="95.04" y="116.824993" transform="rotate(-0 95.04 116.824993)">较短周期方案</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #173c50" x="237.6" y="163.98785" transform="rotate(-0 237.6 163.98785)">同一上部质量 m</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #d8792b" x="331.56" y="224.756383" transform="rotate(-0 331.56 224.756383)">等效惯性力</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #173c50" x="237.6" y="288.407441" transform="rotate(-0 237.6 288.407441)">T = 0.5 s；S_a = 0.40 g</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 19px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #d8792b" x="237.6" y="340.533542" transform="rotate(-0 237.6 340.533542)">力需求 3924 kN</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 19px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #00898b" x="237.6" y="394.921108" transform="rotate(-0 237.6 394.921108)">位移需求 25 mm</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #00898b" x="237.6" y="448.447362" transform="rotate(-0 237.6 448.447362)">需要核对净空 / 限位</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #173c50" x="483.84" y="116.824993" transform="rotate(-0 483.84 116.824993)">较长周期方案</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #173c50" x="626.4" y="163.98785" transform="rotate(-0 626.4 163.98785)">同一上部质量 m</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #d8792b" x="720.36" y="224.756383" transform="rotate(-0 720.36 224.756383)">等效惯性力</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #173c50" x="626.4" y="288.407441" transform="rotate(-0 626.4 288.407441)">T = 2.0 s；S_a = 0.15 g</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 19px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #d8792b" x="626.4" y="340.533542" transform="rotate(-0 626.4 340.533542)">力需求 1472 kN</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 19px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #00898b" x="626.4" y="394.921108" transform="rotate(-0 626.4 394.921108)">位移需求 149 mm</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #00898b" x="626.4" y="448.447362" transform="rotate(-0 626.4 448.447362)">需要核对净空 / 限位</text>
+   </g>
+  </g>
+  <g id="text_15">
+   <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #173c50" x="47.52" y="46.897625" transform="rotate(-0 47.52 46.897625)">把地震力降下来，还要为哪一种变化留空间？</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #7b919c" x="47.52" y="492.391219" transform="rotate(-0 47.52 492.391219)">教学指定谱读数：m=1000 t，g=9.81 m/s²；F=mS_a，S_d=S_a(T/2π)²。不是某规范反应谱，也不是实际桥梁隔震效果预测。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p3fb63ba500">
+   <rect x="43.2" y="77.76" width="777.6" height="373.248"/>
+  </clipPath>
+ </defs>
+</svg>

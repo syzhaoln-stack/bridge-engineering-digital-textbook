@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "unit_id": "C01U02",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C01U02",
+    "chapter": 1,
+    "chapter_title": "体系与规模",
+    "title": "从梁式弯曲到拱的轴向传力",
+    "model": "arch",
+    "preset": "rise",
+    "insight": "抬高拱轴可以减少给定均布荷载下所需水平推力，但拱脚仍要传递水平力。",
+    "transfer": "屋盖采用拱后，基础需求会怎样变化？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C01U02.html",
+      "path": "interactive/lessons/C01U02.html"
+    },
+    "narration": [
+      "从梁式弯曲到拱的轴向传力。先预测：改变矢跨比 f/L，水平推力 H会怎样变化？",
+      "现在保持其他条件不变，只改变矢跨比 f/L。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "抬高拱轴可以减少给定均布荷载下所需水平推力，但拱脚仍要传递水平力。",
+      "屋盖采用拱后，基础需求会怎样变化？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.08,
+      "max": 0.3,
+      "start": 0.1,
+      "end": 0.25,
+      "step": 0.01,
+      "label": "矢跨比 f/L",
+      "unit": "",
+      "output": "水平推力 H",
+      "outunit": "",
+      "formula": "M(x)=M₀(x)−H y(x)，H=M₀(L/2)/f",
+      "boundary": "三铰抛物线拱、跨径1；左右均布荷载为1+a与1−a。非控制量f/L=0.2或a=0。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C01U02.mp4",
+        "href": "../assets/videos/core/C01U02.mp4",
+        "bytes": 3086957
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C01U02.vtt",
+        "href": "../assets/videos/core/C01U02.vtt",
+        "bytes": 735
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C01U02.jpg",
+        "href": "../assets/videos/core/posters/C01U02.jpg",
+        "bytes": 135281
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C01U02.txt",
+        "href": "../notebooks/course-data/C01U02.txt",
+        "bytes": 496
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C01U02.json",
+        "href": "../notebooks/course-data/C01U02.json",
+        "bytes": 155096
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C01U02",
+      "title": "从梁式弯曲到拱的轴向传力",
+      "chapter": 1,
+      "fingerprint": "6c1deb999282a7cbbbf3f64a3c2f51d5f51b7fac969461fdf67ded8de5fff679",
+      "duration": 48.566667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 128.6
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F02.png",
+        "href": "../assets/publication/priority-40/F02.png",
+        "bytes": 205889,
+        "id": "F02",
+        "title": "同样向下的重量，为什么需要不同的支承？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F02.svg",
+          "href": "../assets/publication/priority-40/F02.svg",
+          "bytes": 36208
+        },
+        "caption": "同一竖向均布荷载下，理想梁以弯曲平衡，抛物线拱需要向内水平反力，抛物线索需要向外水平反力。相同的反力量级不代表结构性能相同。",
+        "assumptions": [
+          "荷载沿水平投影均布；几何小斜率不是H公式必需条件",
+          "图示轴线与指定荷载相配；偏载后不能继续假定拱内无弯矩"
+        ],
+        "mapping_note": "同样的向下荷载，梁、拱、索需要的支承反力方向不同。先辨认方向，再调整本单元的拱高。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "f4aa4025105e4777b30b7b3d6159304c4e2a0f26711e8692d0c025884d2f2e2b",
+          "png": "22a0718f702ada5a0b992d3d326ce52e5f34bc671c03793cc29c6c3f5dfafe58"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C01U02.json",
+      "render_sha256": "914ed1cfce8bceaa2983cc6a3d146b4070369ab9f223f5ab67fad4875bfffc45",
+      "render_copy_sha256": "914ed1cfce8bceaa2983cc6a3d146b4070369ab9f223f5ab67fad4875bfffc45"
+    },
+    "download_href": "../notebooks/course-packages/C01U02.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "unit_id": "C04U06",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C04U06",
+    "chapter": 4,
+    "chapter_title": "梁桥的核心判断",
+    "title": "不同刚度，分配系数就要重算",
+    "model": "transverse",
+    "preset": "stiffness",
+    "insight": "兼容位移和转角配合各梁刚度，决定不等刚度体系的反力分配。",
+    "transfer": "一片梁损伤变软以后原分配系数还能用吗？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C04U06.html",
+      "path": "interactive/lessons/C04U06.html"
+    },
+    "narration": [
+      "不同刚度，分配系数就要重算。先预测：改变右边梁刚度/其余梁刚度，右边梁荷载分配系数会怎样变化？",
+      "现在保持其他条件不变，只改变右边梁刚度/其余梁刚度。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "兼容位移和转角配合各梁刚度，决定不等刚度体系的反力分配。",
+      "一片梁损伤变软以后原分配系数还能用吗？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.2,
+      "max": 4,
+      "start": 1,
+      "end": 0.4,
+      "step": 0.01,
+      "label": "右边梁刚度/其余梁刚度",
+      "unit": "",
+      "output": "右边梁荷载分配系数",
+      "outunit": "",
+      "formula": "Ri=ki(a+b yi)；ΣRi=1；ΣRi yi=e",
+      "boundary": "四片梁y=[−1.5,−0.5,0.5,1.5]；刚性横梁、共同位移与转角。负反力提示仅受压支承模型应重建。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C04U06.mp4",
+        "href": "../assets/videos/core/C04U06.mp4",
+        "bytes": 3291811
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C04U06.vtt",
+        "href": "../assets/videos/core/C04U06.vtt",
+        "bytes": 778
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C04U06.jpg",
+        "href": "../assets/videos/core/posters/C04U06.jpg",
+        "bytes": 147443
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C04U06.txt",
+        "href": "../notebooks/course-data/C04U06.txt",
+        "bytes": 539
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C04U06.json",
+        "href": "../notebooks/course-data/C04U06.json",
+        "bytes": 20555
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C04U06",
+      "title": "不同刚度，分配系数就要重算",
+      "chapter": 4,
+      "fingerprint": "5767292a7414e4a17d65af7d5f2fab19670856f9d0a4c24f07b1e95913a264f1",
+      "duration": 48.966667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 90.8
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F15.png",
+        "href": "../assets/publication/priority-40/F15.png",
+        "bytes": 228496,
+        "id": "F15",
+        "title": "只用力的平衡，什么时候能算出每个支点分担？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F15.svg",
+          "href": "../assets/publication/priority-40/F15.svg",
+          "bytes": 24876
+        },
+        "caption": "两支点静定板段用相反力臂计算反力；若保留三支承连续横梁，则需额外的变形协调。图中特别区分简化后的图式和未释放的连续图式。",
+        "assumptions": [
+          "左图荷载位于两支点之间；外悬臂另画图式",
+          "图为教学静力关系，不规定规范杠杆法的使用位置或系数"
+        ],
+        "mapping_note": "两支点可仅靠平衡求分担；保留更多支承时还要补充变形协调。图的板段不是独立页的四梁模型。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "fc58a9d0baa0ff059ba086479095f6b88367c47dee87bbb77862ad2b99d888b5",
+          "png": "de22e5d0c7fc761dd8490360a2fea3a9d0fa75071c783bbd76b941a9d815ca35"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C04U06.json",
+      "render_sha256": "965cd97315c90f2c040fbfd853b2cd0d7998761e8a4c49453f40e0f207343358",
+      "render_copy_sha256": "965cd97315c90f2c040fbfd853b2cd0d7998761e8a4c49453f40e0f207343358"
+    },
+    "download_href": "../notebooks/course-packages/C04U06.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

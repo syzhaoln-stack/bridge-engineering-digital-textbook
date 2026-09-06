@@ -1,0 +1,316 @@
+{
+  "id": "D02",
+  "title": "把搁板放大一倍，为什么不是重一倍？",
+  "purpose": "从生活直觉产生分歧，用图和计算发现遗漏条件，解释以后再引出术语。",
+  "roles": {
+    "zhou": {
+      "name": "小周",
+      "role": "替观众追问，直觉大胆但愿意改口",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+2%"
+    },
+    "ning": {
+      "name": "阿宁",
+      "role": "先解释看得见的变化，再给出术语",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-1%"
+    }
+  },
+  "model": {
+    "description": "同材料线弹性简支梁，所有尺寸同比放大且仅自重；另例固定截面和线荷载，仅改变跨度。",
+    "scale": 2,
+    "checks": "checks-a.json"
+  },
+  "turns": [
+    {
+      "speaker": "zhou",
+      "scene": "small",
+      "text": "一块搁板不够大，我照着原样放大一倍。料多用一倍，总该够了吧？"
+    },
+    {
+      "speaker": "ning",
+      "scene": "scale",
+      "text": "你说的放大，是只加长，还是长、宽、厚全都变成两倍？先拿两个盒子比一下。"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "scale",
+      "text": "全都两倍嘛，模样还一样。等等，这里面，能塞进去八个小盒子？"
+    },
+    {
+      "speaker": "ning",
+      "scene": "volume",
+      "text": "对。同样材料，体积变成八倍，自重也变成八倍。这只是重量，还不是它弯得怎样。"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "stress",
+      "text": "那它也变厚、变宽了，扛弯的本事肯定跟着涨。是不是正好抵消？"
+    },
+    {
+      "speaker": "ning",
+      "scene": "stress",
+      "text": "在这根只受自重的简支梁里，并没有抵消。按相同比例放大后，弯曲应力变成两倍，下沉量变成四倍。前提是材料相同，而且仍能用线弹性小变形来算。"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "span",
+      "text": "我家的搁板一般不变厚，只是两个支架离远了。那还能套刚才的四倍吗？"
+    },
+    {
+      "speaker": "ning",
+      "scene": "span",
+      "text": "不能。若截面和每米荷载不变，只把跨度加倍，下沉量会变成十六倍。你换了放大的方式，比较的就已经是另一个问题。"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "summary",
+      "text": "那问大桥有没有尺度问题，得先问到底什么变大、什么没变，不能只盯着长度。"
+    },
+    {
+      "speaker": "ning",
+      "scene": "summary",
+      "text": "是。先说清缩放条件，再看长度、面积、体积和响应各按什么比例变化。这种比较方法，叫尺度分析。"
+    }
+  ],
+  "sources": [
+    "chapters/ch01.qmd",
+    "core-thinking.qmd"
+  ],
+  "production_note": "原创双人教学剧本及合成声音，无真人声音模仿。同材料线弹性简支梁，所有尺寸同比放大且仅自重；另例固定截面和线荷载，仅改变跨度。",
+  "timeline": [
+    {
+      "speaker": "zhou",
+      "scene": "small",
+      "text": "一块搁板不够大，我照着原样放大一倍。料多用一倍，总该够了吧？",
+      "start_ms": 450,
+      "end_ms": 6642,
+      "duration_ms": 6192,
+      "audio_file": "turn-00.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "scale",
+      "text": "你说的放大，是只加长，还是长、宽、厚全都变成两倍？先拿两个盒子比一下。",
+      "start_ms": 6912,
+      "end_ms": 14976,
+      "duration_ms": 8064,
+      "audio_file": "turn-01.mp3"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "scale",
+      "text": "全都两倍嘛，模样还一样。等等，这里面，能塞进去八个小盒子？",
+      "start_ms": 15406,
+      "end_ms": 21286,
+      "duration_ms": 5880,
+      "audio_file": "turn-02.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "volume",
+      "text": "对。同样材料，体积变成八倍，自重也变成八倍。这只是重量，还不是它弯得怎样。",
+      "start_ms": 21556,
+      "end_ms": 30796,
+      "duration_ms": 9240,
+      "audio_file": "turn-03.mp3"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "stress",
+      "text": "那它也变厚、变宽了，扛弯的本事肯定跟着涨。是不是正好抵消？",
+      "start_ms": 31226,
+      "end_ms": 37538,
+      "duration_ms": 6312,
+      "audio_file": "turn-04.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "stress",
+      "text": "在这根只受自重的简支梁里，并没有抵消。按相同比例放大后，弯曲应力变成两倍，下沉量变成四倍。前提是材料相同，而且仍能用线弹性小变形来算。",
+      "start_ms": 37808,
+      "end_ms": 53408,
+      "duration_ms": 15600,
+      "audio_file": "turn-05.mp3"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "span",
+      "text": "我家的搁板一般不变厚，只是两个支架离远了。那还能套刚才的四倍吗？",
+      "start_ms": 53838,
+      "end_ms": 60294,
+      "duration_ms": 6456,
+      "audio_file": "turn-06.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "span",
+      "text": "不能。若截面和每米荷载不变，只把跨度加倍，下沉量会变成十六倍。你换了放大的方式，比较的就已经是另一个问题。",
+      "start_ms": 60564,
+      "end_ms": 72612,
+      "duration_ms": 12048,
+      "audio_file": "turn-07.mp3"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "summary",
+      "text": "那问大桥有没有尺度问题，得先问到底什么变大、什么没变，不能只盯着长度。",
+      "start_ms": 73042,
+      "end_ms": 79834,
+      "duration_ms": 6792,
+      "audio_file": "turn-08.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "summary",
+      "text": "是。先说清缩放条件，再看长度、面积、体积和响应各按什么比例变化。这种比较方法，叫尺度分析。",
+      "start_ms": 80104,
+      "end_ms": 91120,
+      "duration_ms": 11016,
+      "audio_file": "turn-09.mp3"
+    }
+  ],
+  "captions": [
+    {
+      "start_ms": 450,
+      "end_ms": 4165,
+      "text": "小周：一块搁板不够大，我照着原样放大一倍。",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 4165,
+      "end_ms": 6642,
+      "text": "小周：料多用一倍，总该够了吧？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 6912,
+      "end_ms": 12672,
+      "text": "阿宁：你说的放大，是只加长，还是长、宽、厚全都变成两倍？",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 12672,
+      "end_ms": 14976,
+      "text": "阿宁：先拿两个盒子比一下。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 15406,
+      "end_ms": 17839,
+      "text": "小周：全都两倍嘛，模样还一样。",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 17839,
+      "end_ms": 21286,
+      "text": "小周：等等，这里面，能塞进去八个小盒子？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 21556,
+      "end_ms": 22055,
+      "text": "阿宁：对。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 22055,
+      "end_ms": 27050,
+      "text": "阿宁：同样材料，体积变成八倍，自重也变成八倍。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 27050,
+      "end_ms": 30796,
+      "text": "阿宁：这只是重量，还不是它弯得怎样。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 31226,
+      "end_ms": 35797,
+      "text": "小周：那它也变厚、变宽了，扛弯的本事肯定跟着涨。",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 35797,
+      "end_ms": 37538,
+      "text": "小周：是不是正好抵消？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 37808,
+      "end_ms": 42232,
+      "text": "阿宁：在这根只受自重的简支梁里，并没有抵消。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 42232,
+      "end_ms": 48286,
+      "text": "阿宁：按相同比例放大后，弯曲应力变成两倍，下沉量变成四倍。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 48286,
+      "end_ms": 53408,
+      "text": "阿宁：前提是材料相同，而且仍能用线弹性小变形来算。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 53838,
+      "end_ms": 58075,
+      "text": "小周：我家的搁板一般不变厚，只是两个支架离远了。",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 58075,
+      "end_ms": 60294,
+      "text": "小周：那还能套刚才的四倍吗？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 60564,
+      "end_ms": 61246,
+      "text": "阿宁：不能。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 61246,
+      "end_ms": 67611,
+      "text": "阿宁：若截面和每米荷载不变，只把跨度加倍，下沉量会变成十六倍。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 67611,
+      "end_ms": 72612,
+      "text": "阿宁：你换了放大的方式，比较的就已经是另一个问题。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 73042,
+      "end_ms": 79834,
+      "text": "小周：那问大桥有没有尺度问题，得先问到底什么变大、什么没变，不能只盯着长度。",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 80104,
+      "end_ms": 80594,
+      "text": "阿宁：是。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 80594,
+      "end_ms": 87938,
+      "text": "阿宁：先说清缩放条件，再看长度、面积、体积和响应各按什么比例变化。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 87938,
+      "end_ms": 91120,
+      "text": "阿宁：这种比较方法，叫尺度分析。",
+      "speaker": "ning"
+    }
+  ],
+  "duration_ms": 93350,
+  "audio_provider": "Edge online neural TTS via edge-tts",
+  "subtitle_timing": "sentence duration proportional within each independently synthesized turn; editorial timing draft"
+}

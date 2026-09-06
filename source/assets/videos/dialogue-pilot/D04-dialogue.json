@@ -1,0 +1,266 @@
+{
+  "id": "D04",
+  "title": "车越多，桥的每一处都更不利吗？",
+  "purpose": "从生活直觉产生分歧，用图和计算发现遗漏条件，解释以后再引出术语。",
+  "roles": {
+    "zhou": {
+      "name": "小周",
+      "role": "替观众追问，直觉大胆但愿意改口",
+      "voice": "zh-CN-YunyangNeural",
+      "rate": "+2%"
+    },
+    "ning": {
+      "name": "阿宁",
+      "role": "先解释看得见的变化，再给出术语",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-1%"
+    }
+  },
+  "model": {
+    "description": "简支梁剪力影响线；左段右切面向下为正。独立可布均布荷载与整体移动的车辆分别讨论。",
+    "L_m": 10,
+    "a_m": 4,
+    "q_kN_per_m": 10,
+    "checks": "checks-a.json"
+  },
+  "turns": [
+    {
+      "speaker": "zhou",
+      "scene": "empty",
+      "text": "车越多，桥越累。要找最危险的时候，那就把能放车的地方全放满，还用算？"
+    },
+    {
+      "speaker": "ning",
+      "scene": "target",
+      "text": "先指一个要看的地方。我们只看这根简支梁，距离左端四米的截面剪力，并约定图上的正方向。你把一个力从左边慢慢移过去。"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "move",
+      "text": "刚过那条线，数就跳到另一边了？同一个东西往下压，怎么这边的影响还会换号？"
+    },
+    {
+      "speaker": "ning",
+      "scene": "signs",
+      "text": "因为我们盯着一个截面，并把梁在这里分开来画受力图。荷载在截面左边还是右边，进入哪一块的平衡式不同。把每个车位的影响连起来，就得到这张影响线。"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "all",
+      "text": "所以如果我只想让这个正方向的剪力尽量大，把左边也塞满车，反而可能抵消一些？"
+    },
+    {
+      "speaker": "ning",
+      "scene": "positive",
+      "text": "对，在这里的独立可布均布荷载模型中，正号区加载，能把这个响应推大；负号区加载，会往另一个方向推。找最小值就反过来。"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "axles",
+      "text": "可真车的轮子连在一起，总不能想把哪个轮子放哪儿，就放哪儿吧？"
+    },
+    {
+      "speaker": "ning",
+      "scene": "summary",
+      "text": "这句很关键。影响线告诉你各处怎样影响指定响应；真实车辆还得整体移动，遵守轴距、车道和相应加载规则。找最不利，要先说清看什么，再说允许怎样摆。"
+    }
+  ],
+  "sources": [
+    "chapters/ch02.qmd",
+    "chapters/ch03.qmd"
+  ],
+  "production_note": "原创双人教学剧本及合成声音，无真人声音模仿。简支梁剪力影响线；左段右切面向下为正。独立可布均布荷载与整体移动的车辆分别讨论。",
+  "timeline": [
+    {
+      "speaker": "zhou",
+      "scene": "empty",
+      "text": "车越多，桥越累。要找最危险的时候，那就把能放车的地方全放满，还用算？",
+      "start_ms": 450,
+      "end_ms": 7578,
+      "duration_ms": 7128,
+      "audio_file": "turn-00.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "target",
+      "text": "先指一个要看的地方。我们只看这根简支梁，距离左端四米的截面剪力，并约定图上的正方向。你把一个力从左边慢慢移过去。",
+      "start_ms": 7848,
+      "end_ms": 19608,
+      "duration_ms": 11760,
+      "audio_file": "turn-01.mp3"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "move",
+      "text": "刚过那条线，数就跳到另一边了？同一个东西往下压，怎么这边的影响还会换号？",
+      "start_ms": 20038,
+      "end_ms": 26614,
+      "duration_ms": 6576,
+      "audio_file": "turn-02.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "signs",
+      "text": "因为我们盯着一个截面，并把梁在这里分开来画受力图。荷载在截面左边还是右边，进入哪一块的平衡式不同。把每个车位的影响连起来，就得到这张影响线。",
+      "start_ms": 26884,
+      "end_ms": 41452,
+      "duration_ms": 14568,
+      "audio_file": "turn-03.mp3"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "all",
+      "text": "所以如果我只想让这个正方向的剪力尽量大，把左边也塞满车，反而可能抵消一些？",
+      "start_ms": 41882,
+      "end_ms": 48842,
+      "duration_ms": 6960,
+      "audio_file": "turn-04.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "positive",
+      "text": "对，在这里的独立可布均布荷载模型中，正号区加载，能把这个响应推大；负号区加载，会往另一个方向推。找最小值就反过来。",
+      "start_ms": 49112,
+      "end_ms": 61664,
+      "duration_ms": 12552,
+      "audio_file": "turn-05.mp3"
+    },
+    {
+      "speaker": "zhou",
+      "scene": "axles",
+      "text": "可真车的轮子连在一起，总不能想把哪个轮子放哪儿，就放哪儿吧？",
+      "start_ms": 62094,
+      "end_ms": 67230,
+      "duration_ms": 5136,
+      "audio_file": "turn-06.mp3"
+    },
+    {
+      "speaker": "ning",
+      "scene": "summary",
+      "text": "这句很关键。影响线告诉你各处怎样影响指定响应；真实车辆还得整体移动，遵守轴距、车道和相应加载规则。找最不利，要先说清看什么，再说允许怎样摆。",
+      "start_ms": 67500,
+      "end_ms": 84060,
+      "duration_ms": 16560,
+      "audio_file": "turn-07.mp3"
+    }
+  ],
+  "captions": [
+    {
+      "start_ms": 450,
+      "end_ms": 2127,
+      "text": "小周：车越多，桥越累。",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 2127,
+      "end_ms": 7578,
+      "text": "小周：要找最危险的时候，那就把能放车的地方全放满，还用算？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 7848,
+      "end_ms": 9948,
+      "text": "阿宁：先指一个要看的地方。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 9948,
+      "end_ms": 16668,
+      "text": "阿宁：我们只看这根简支梁，距离左端四米的截面剪力，并约定图上的正方向。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 16668,
+      "end_ms": 19608,
+      "text": "阿宁：你把一个力从左边慢慢移过去。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 20038,
+      "end_ms": 22778,
+      "text": "小周：刚过那条线，数就跳到另一边了？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 22778,
+      "end_ms": 26614,
+      "text": "小周：同一个东西往下压，怎么这边的影响还会换号？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 26884,
+      "end_ms": 32087,
+      "text": "阿宁：因为我们盯着一个截面，并把梁在这里分开来画受力图。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 32087,
+      "end_ms": 37082,
+      "text": "阿宁：荷载在截面左边还是右边，进入哪一块的平衡式不同。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 37082,
+      "end_ms": 41452,
+      "text": "阿宁：把每个车位的影响连起来，就得到这张影响线。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 41882,
+      "end_ms": 48842,
+      "text": "小周：所以如果我只想让这个正方向的剪力尽量大，把左边也塞满车，反而可能抵消一些？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 49112,
+      "end_ms": 56379,
+      "text": "阿宁：对，在这里的独立可布均布荷载模型中，正号区加载，能把这个响应推大；",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 56379,
+      "end_ms": 59682,
+      "text": "阿宁：负号区加载，会往另一个方向推。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 59682,
+      "end_ms": 61664,
+      "text": "阿宁：找最小值就反过来。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 62094,
+      "end_ms": 67230,
+      "text": "小周：可真车的轮子连在一起，总不能想把哪个轮子放哪儿，就放哪儿吧？",
+      "speaker": "zhou"
+    },
+    {
+      "start_ms": 67500,
+      "end_ms": 68919,
+      "text": "阿宁：这句很关键。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 68919,
+      "end_ms": 72941,
+      "text": "阿宁：影响线告诉你各处怎样影响指定响应；",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 72941,
+      "end_ms": 79092,
+      "text": "阿宁：真实车辆还得整体移动，遵守轴距、车道和相应加载规则。",
+      "speaker": "ning"
+    },
+    {
+      "start_ms": 79092,
+      "end_ms": 84060,
+      "text": "阿宁：找最不利，要先说清看什么，再说允许怎样摆。",
+      "speaker": "ning"
+    }
+  ],
+  "duration_ms": 86290,
+  "audio_provider": "Edge online neural TTS via edge-tts",
+  "subtitle_timing": "sentence duration proportional within each independently synthesized turn; editorial timing draft"
+}

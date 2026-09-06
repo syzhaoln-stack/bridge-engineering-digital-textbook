@@ -1,0 +1,62 @@
+{
+  "id": "F36",
+  "title": "少了十分之一厚度，梁就只软十分之一吗？",
+  "chapter": 10,
+  "heading": "钢构件腐蚀至截面性能",
+  "caption": "同宽矩形钢条上下表面减薄的几何比较：高度减少10%，面积减少10%，惯性矩减少27.1%，同边界同荷载下线弹性挠度增加约37.2%。防护列只是指定剩余厚度的比较，不是预报寿命。",
+  "assumptions": [
+    "矩形截面，宽度与E保持不变",
+    "仅上下表面均匀损失，不模拟点蚀、疲劳或局部屈曲",
+    "维护列为假设状态，不表示涂层能恢复已损失钢材"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F36.svg",
+  "png": "assets/publication/priority-40/F36.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "A=bh，I=bh³/12",
+    "同梁同荷载δ与EI成反比",
+    "h90：I/I0=.729"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch10-lifecycle.qmd",
+  "heading_line": 536,
+  "calculation_data": {
+    "states": [
+      {
+        "h_mm": 100,
+        "A_ratio": 1.0,
+        "I_ratio": 1.0,
+        "deflection_ratio": 1.0
+      },
+      {
+        "h_mm": 90,
+        "A_ratio": 0.9,
+        "I_ratio": 0.729,
+        "deflection_ratio": 1.3717421124828533
+      },
+      {
+        "h_mm": 98,
+        "A_ratio": 0.98,
+        "I_ratio": 0.941192,
+        "deflection_ratio": 1.062482469039261
+      }
+    ],
+    "maintenance_note": "同一假定比较时点，无真实年限或实桥观测"
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：三种剩余高度、面积/EI/位移倍率分列；维护为假设状态而非年限预测。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "d1fa806503284191dffa12b369c7b1bc1ef6de22b3289be5c380198a077eee63",
+    "png": "067709a76c2fe4541e7dad8e2d5f85eb1ac700ef442d5dd03719fc795767c7ee"
+  }
+}

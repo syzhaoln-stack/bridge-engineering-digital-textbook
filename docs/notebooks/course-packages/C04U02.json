@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C04U02",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C04U02",
+    "chapter": 4,
+    "chapter_title": "梁桥的核心判断",
+    "title": "弯矩、应力、挠度是三个输出",
+    "model": "beam",
+    "preset": "load",
+    "insight": "在线性范围内三者随荷载同比变化，但对应不同的验算问题。",
+    "transfer": "应力不超限能否推出挠度一定合格？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C04U02.html",
+      "path": "interactive/lessons/C04U02.html"
+    },
+    "narration": [
+      "弯矩、应力、挠度是三个输出。先预测：改变均布线荷载 q，跨中挠度会怎样变化？",
+      "现在保持其他条件不变，只改变均布线荷载 q。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "在线性范围内三者随荷载同比变化，但对应不同的验算问题。",
+      "应力不超限能否推出挠度一定合格？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 5,
+      "max": 50,
+      "start": 20,
+      "end": 40,
+      "step": 0.01,
+      "label": "均布线荷载 q",
+      "unit": "kN/m",
+      "output": "跨中挠度",
+      "outunit": "mm",
+      "formula": "I=bh³/12；δ=5qL⁴/(384EI)；Mmax=qL²/8",
+      "boundary": "简支矩形梁，E=30 GPa，b=0.6 m；非控制量L=20 m、h=1.2 m、q=20 kN/m。未计自重变化。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C04U02.mp4",
+        "href": "../assets/videos/core/C04U02.mp4",
+        "bytes": 3237882
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C04U02.vtt",
+        "href": "../assets/videos/core/C04U02.vtt",
+        "bytes": 723
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C04U02.jpg",
+        "href": "../assets/videos/core/posters/C04U02.jpg",
+        "bytes": 147008
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C04U02.txt",
+        "href": "../notebooks/course-data/C04U02.txt",
+        "bytes": 484
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C04U02.json",
+        "href": "../notebooks/course-data/C04U02.json",
+        "bytes": 19736
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C04U02",
+      "title": "弯矩、应力、挠度是三个输出",
+      "chapter": 4,
+      "fingerprint": "2d9bdc098c1b9f582c1769413cbb8b4c6e63ecabad4e7d6a79dbafea51ca7ff5",
+      "duration": 47.033333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 126.2
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F18.png",
+        "href": "../assets/publication/priority-40/F18.png",
+        "bytes": 222796,
+        "id": "F18",
+        "title": "把两跨接成一根梁，弯矩和下沉会怎样改变？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F18.svg",
+          "href": "../assets/publication/priority-40/F18.svg",
+          "bytes": 147058
+        },
+        "caption": "统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。",
+        "assumptions": [
+          "两跨等跨、EI恒定、两跨全布均载；不是任意车辆位置的包络",
+          "中支点不沉降；不计收缩徐变、温度或预应力",
+          "解析式第一跨w=q(L³x−3Lx³+2x⁴)/(48EI)，第二跨镜像"
+        ],
+        "mapping_note": "连接条件改变时，弯矩与下沉一起改变。图比较两跨独立简支和连续梁；本单元改变的是简支梁荷载。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "8a8b75c49e6a2563c98ec897590dda0c893f704335c00325bcce04ee69ec49f0",
+          "png": "a984e58c0886261ae85b3cce9b627344519d3c618787f9c62423c1d32b753453"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C04U02.json",
+      "render_sha256": "8deaa20c74f5c1ad940817c94f7644219c2ff0771763d2b3e21eaa8af63bf2c3",
+      "render_copy_sha256": "8deaa20c74f5c1ad940817c94f7644219c2ff0771763d2b3e21eaa8af63bf2c3"
+    },
+    "download_href": "../notebooks/course-packages/C04U02.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

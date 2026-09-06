@@ -1,0 +1,39 @@
+{
+  "id": "F31",
+  "title": "“固定支座”到底固定了哪些方向？",
+  "chapter": 8,
+  "heading": "支承体系的自由度表达",
+  "caption": "理想固定、纵向活动和多向活动支座的平移约束对照。青色双箭头代表可移动方向，红色标记代表被约束的平移；固定支座不等于梁固端。",
+  "assumptions": [
+    "仅列平移自由度，不规定θx/θy/θz全部锁死",
+    "压紧接触、忽略摩阻的理想化",
+    "x沿桥轴、y横桥向、z竖直"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F31.svg",
+  "png": "assets/publication/priority-40/F31.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "三个面板的ux/uy约束分别为(0,0)/(free,0)/(free,free)",
+    "无力或力矩箭头混入位移图例"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch07.qmd",
+  "heading_line": 123,
+  "calculation_data": {},
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：ux/uy缺字已消除；活动方向箭头不穿过下方说明。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "781abb553e89af6a135d7dc349102e7640759f9e29590e24288cac3f08fa3028",
+    "png": "9c71da6af44c40dae36c23de1e7c3cce9b8bbc3aeed554d4fc28b07abf731aec"
+  }
+}

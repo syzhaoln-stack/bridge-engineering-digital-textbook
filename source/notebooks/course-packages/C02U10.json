@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "unit_id": "C02U10",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C02U10",
+    "chapter": 2,
+    "chapter_title": "力学基础的桥梁迁移",
+    "title": "线性叠加的边界在哪里",
+    "model": "stress",
+    "preset": "superposition",
+    "insight": "线弹性未开裂条件下可叠加轴力与弯矩；开裂、脱空或大变形后必须重建关系。",
+    "transfer": "支座出现拉反力而实际不能受拉时该怎么办？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C02U10.html",
+      "path": "interactive/lessons/C02U10.html"
+    },
+    "narration": [
+      "线性叠加的边界在哪里。先预测：改变偏心比 e/h，最小边缘压应力会怎样变化？",
+      "现在保持其他条件不变，只改变偏心比 e/h。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "线弹性未开裂条件下可叠加轴力与弯矩；开裂、脱空或大变形后必须重建关系。",
+      "支座出现拉反力而实际不能受拉时该怎么办？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0,
+      "max": 0.35,
+      "start": 0.05,
+      "end": 0.16666666666666666,
+      "step": 0.01,
+      "label": "偏心比 e/h",
+      "unit": "",
+      "output": "最小边缘压应力",
+      "outunit": "MPa",
+      "formula": "σmin=10(1−6e/h)，σmax=10(1+6e/h)",
+      "boundary": "压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C02U10.mp4",
+        "href": "../assets/videos/core/C02U10.mp4",
+        "bytes": 3358427
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C02U10.vtt",
+        "href": "../assets/videos/core/C02U10.vtt",
+        "bytes": 751
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C02U10.jpg",
+        "href": "../assets/videos/core/posters/C02U10.jpg",
+        "bytes": 149927
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C02U10.txt",
+        "href": "../notebooks/course-data/C02U10.txt",
+        "bytes": 512
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C02U10.json",
+        "href": "../notebooks/course-data/C02U10.json",
+        "bytes": 19500
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C02U10",
+      "title": "线性叠加的边界在哪里",
+      "chapter": 2,
+      "fingerprint": "d7ceaa5991fc103a92d24d005817322f7de02f2a7cc0bd5f4c371c029bce645f",
+      "duration": 48.4,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 74.2
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F04.png",
+        "href": "../assets/publication/priority-40/F04.png",
+        "bytes": 186862,
+        "id": "F04",
+        "title": "同一个偏心压力，为什么一边压得更多？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F04.svg",
+          "href": "../assets/publication/priority-40/F04.svg",
+          "bytes": 24151
+        },
+        "caption": "把同一偏心压力分为中心压力和等效弯矩。三幅应力箭头使用同一比例；正值为压应力，负值为拉应力。",
+        "assumptions": [
+          "教学参数；不计开裂与材料非线性",
+          "应力图为截面计算，不是极限承载力验算"
+        ],
+        "mapping_note": "用线弹性未开裂截面展示叠加；开裂、脱空或大变形后不直接沿用这组线性关系。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "6cd936faea56ce40dccd501e54db6ea8b64380fd8cbe285de62d0aaa3ff71fe9",
+          "png": "fef313b8d9026954b89f9052a62271b5df02afe18be16eb090a4db48e35c49aa"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C02U10.json",
+      "render_sha256": "78cf9942a301ca9f1f8bb395adac7de3f7de23f3351c0f5af5c26762f6d7c284",
+      "render_copy_sha256": "78cf9942a301ca9f1f8bb395adac7de3f7de23f3351c0f5af5c26762f6d7c284"
+    },
+    "download_href": "../notebooks/course-packages/C02U10.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

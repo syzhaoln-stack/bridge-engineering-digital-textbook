@@ -1,0 +1,56 @@
+{
+  "id": "F28",
+  "title": "缆索垂得更深，锚碇要拉住的力会变多少？",
+  "chapter": 7,
+  "heading": "抛物线近似",
+  "caption": "在水平投影均布荷载的理想索模型中，垂度由40 m增至80 m，水平分力H从50 MN减至25 MN，竖向分力仍各20 MN。H是水平分量，不是支点索力总值。",
+  "assumptions": [
+    "抛物线索，等高支点",
+    "不含弹性伸长和索自重沿索长差异",
+    "图示纵横比不供量图"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F28.svg",
+  "png": "assets/publication/priority-40/F28.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "H=qL²/(8f)",
+    "V=qL/2",
+    "T_s=sqrt(H²+V²)，未把H标成T"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch06.qmd",
+  "heading_line": 99,
+  "calculation_data": {
+    "L_m": 400.0,
+    "q_kN_per_m": 100.0,
+    "f_m": [
+      40.0,
+      80.0
+    ],
+    "H_kN": [
+      50000.0,
+      25000.0
+    ],
+    "V_kN": 20000.0,
+    "Ts_kN": [
+      53851.648071345044,
+      32015.621187164244
+    ]
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：索支点水平分力向外、竖向分力向上，40/80m垂度对照清楚。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "37705a3bd14cbd3294f0fb10e4f58ef7c359602a6e0399f9c41d39ed9f6ac0de",
+    "png": "a09010c289484b65361b31df2ba4c22f37698a6492777bfd011e95772ed648ba"
+  }
+}

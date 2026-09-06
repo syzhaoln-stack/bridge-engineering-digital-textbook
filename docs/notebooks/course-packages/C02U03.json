@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "unit_id": "C02U03",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C02U03",
+    "chapter": 2,
+    "chapter_title": "力学基础的桥梁迁移",
+    "title": "核心条件不等于大、小偏心分界",
+    "model": "stress",
+    "preset": "beyondcore",
+    "insight": "越出核心仅说明未开裂线弹性计算出现拉应力，不能直接判定钢筋混凝土破坏类型。",
+    "transfer": "还需要哪些材料和应变信息才能分类破坏？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C02U03.html",
+      "path": "interactive/lessons/C02U03.html"
+    },
+    "narration": [
+      "核心条件不等于大、小偏心分界。先预测：改变偏心比 e/h，最小边缘压应力会怎样变化？",
+      "现在保持其他条件不变，只改变偏心比 e/h。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "越出核心仅说明未开裂线弹性计算出现拉应力，不能直接判定钢筋混凝土破坏类型。",
+      "还需要哪些材料和应变信息才能分类破坏？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0,
+      "max": 0.35,
+      "start": 0.05,
+      "end": 0.28,
+      "step": 0.01,
+      "label": "偏心比 e/h",
+      "unit": "",
+      "output": "最小边缘压应力",
+      "outunit": "MPa",
+      "formula": "σmin=10(1−6e/h)，σmax=10(1+6e/h)",
+      "boundary": "压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C02U03.mp4",
+        "href": "../assets/videos/core/C02U03.mp4",
+        "bytes": 3484952
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C02U03.vtt",
+        "href": "../assets/videos/core/C02U03.vtt",
+        "bytes": 801
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C02U03.jpg",
+        "href": "../assets/videos/core/posters/C02U03.jpg",
+        "bytes": 156386
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C02U03.txt",
+        "href": "../notebooks/course-data/C02U03.txt",
+        "bytes": 527
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C02U03.json",
+        "href": "../notebooks/course-data/C02U03.json",
+        "bytes": 19367
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C02U03",
+      "title": "核心条件不等于大、小偏心分界",
+      "chapter": 2,
+      "fingerprint": "40b235071b8b006ca96a9aab7057a6941eddb5615ec5da0d08b07ee236b6ce91",
+      "duration": 49.833333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 82.0
+    },
+    "notebooks": [
+      {
+        "id": "A-transverse",
+        "title": "车靠边走，五根梁怎样重新分担？",
+        "unit_ids": [
+          "C04U05",
+          "C04U10",
+          "C02U01",
+          "C02U02",
+          "C02U03"
+        ],
+        "ipynb": "notebooks/A-transverse.ipynb",
+        "python": "notebooks/A-transverse.py",
+        "html": "notebooks/A-transverse.html",
+        "embed_cell": "fig-transverse",
+        "mapping_note": "五梁120 kN，与原核心四梁归一示例参数不同。",
+        "executed": true,
+        "code_cells": 6,
+        "error_count": 0,
+        "seconds": 5.92
+      }
+    ],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F05.png",
+        "href": "../assets/publication/priority-40/F05.png",
+        "bytes": 203069,
+        "id": "F05",
+        "title": "压力移到哪里，截面边缘才开始出现拉应力？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F05.svg",
+          "href": "../assets/publication/priority-40/F05.svg",
+          "bytes": 25563
+        },
+        "caption": "移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。",
+        "assumptions": [
+          "只讨论单向偏心，双向偏心核心为菱形",
+          "出现拉区后若材料开裂，不再沿用完整弹性应力图作为实际状态"
+        ],
+        "mapping_note": "越出核心出现的是本线弹性模型的拉应力；图中的位置不是钢筋混凝土大、小偏心受压分界。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "5b65db8a9fcffe8bbd7c1f17bd94cfe93385aba075df765e35da067e5c017c50",
+          "png": "04701842098c2586332946d215254c5adf997bf167d1ec051c7fbb2053da7608"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C02U03.json",
+      "render_sha256": "9ced132fd75fb3a3e92360d3dafb0077a75e0a9791cc4d9ebbc1e4cd0f7bf4ab",
+      "render_copy_sha256": "9ced132fd75fb3a3e92360d3dafb0077a75e0a9791cc4d9ebbc1e4cd0f7bf4ab"
+    },
+    "download_href": "../notebooks/course-packages/C02U03.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

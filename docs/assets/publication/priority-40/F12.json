@@ -1,0 +1,90 @@
+{
+  "id": "F12",
+  "title": "平均抗力比平均作用大，为什么还不能只看两个平均数？",
+  "chapter": 3,
+  "heading": "新增完整计算单五：相关性对线性可靠度的影响",
+  "caption": "联合正态教学模型以g=R−S转化为一维余量分布；红色尾部为g<0的概率。联合图的阴影只是失效域，不是按几何面积计算概率。",
+  "assumptions": [
+    "所有统计参数为正文教学值，非测量样本",
+    "线性极限状态与指定联合正态假设；不可将此Pf迁移到实际桥梁"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F12.svg",
+  "png": "assets/publication/priority-40/F12.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    {
+      "name": "sigma_g",
+      "value": 1148.9125293076058,
+      "expected": 1148.9125293076058,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "beta",
+      "value": 2.6111648393354674,
+      "expected": 2.611164839,
+      "tolerance": 1e-07,
+      "unit": "",
+      "passed": true
+    },
+    {
+      "name": "pdf mass on shown range",
+      "value": 0.999750724836593,
+      "expected": 0.9997509,
+      "tolerance": 5e-05,
+      "unit": "",
+      "passed": true
+    },
+    {
+      "name": "failure probability",
+      "value": 0.004511719409040167,
+      "expected": 0.0045119,
+      "tolerance": 1e-06,
+      "unit": "",
+      "passed": true
+    },
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大并复看：概率参数文字移到曲线右侧，避免遮住曲线；R<S区域与一维红色概率尾部区分；非真实统计明确。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch02.qmd",
+  "heading_line": 2605,
+  "figure_kind": "calculated",
+  "technical_review": "formula_assertions_passed",
+  "visual_review_notes": "逐张放大并复看：概率参数文字移到曲线右侧，避免遮住曲线；R<S区域与一维红色概率尾部区分；非真实统计明确。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "1d587c4175d21aecc635fd07e1e2f185e48f9cf5e111e7a111857cd806f4e337",
+    "png": "24d889f2037d0988bf84062aacfcb4f0a651785c681444a3e271f9e1a4ad4d5f"
+  },
+  "calculation_data": {
+    "mu_R_kNm": 10000,
+    "sigma_R_kNm": 1000,
+    "mu_S_kNm": 7000,
+    "sigma_S_kNm": 800,
+    "correlation": 0.2,
+    "mu_g_kNm": 3000,
+    "sigma_g_kNm": 1148.9125293076058,
+    "distribution": "teaching joint normal, not actual observations"
+  },
+  "diagram_kind": "analytical_teaching_example",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

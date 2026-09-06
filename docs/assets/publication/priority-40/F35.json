@@ -1,0 +1,40 @@
+{
+  "id": "F35",
+  "title": "桥面两边一起动，和一上一下，是同一种振动吗？",
+  "chapter": 9,
+  "heading": "弯曲、扭转和耦合模态",
+  "caption": "参数化桥面带的纯竖弯与纯扭转形状对照，以及同一横截面的观察方式。真实桥梁可能有耦合模态；需同一断面同步测量才可用两侧位移分解。",
+  "assumptions": [
+    "示意模态形状，无特征值求解",
+    "小转角且横截面近似刚体",
+    "非畸变截面；没有声称现实模态均为纯弯/纯扭"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F35.svg",
+  "png": "assets/publication/priority-40/F35.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "竖弯两边同号",
+    "扭转两边反号、中心不平移",
+    "位移箭头和荷载图例分开"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch09-wind.qmd",
+  "heading_line": 988,
+  "calculation_data": {},
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：两侧同向/反向、未变形虚线和横截面提取相互对应。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "6570218a38ba70329df5cf13e107e18fbb97777590321c0835361f64fca18b0b",
+    "png": "01b6bd0f3ac8218f42d2c2e53a988ed3f9e30036aa59211bd49b79ea8c06fdf2"
+  }
+}

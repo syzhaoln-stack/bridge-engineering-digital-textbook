@@ -1,0 +1,113 @@
+{
+  "id": "F17",
+  "title": "某根梁的活载增量为负，就已经离开支承了吗？",
+  "chapter": 4,
+  "heading": "不等刚度横向相容",
+  "caption": "已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。",
+  "assumptions": [
+    "此Ri为横向分配模型的反力；真实支座接触须定义对应对象并求总状态",
+    "若总接触力不满足单向接触，需重建模型，不可直接将负值截零",
+    "不在图中声称该简化模型已验证真实支座安全"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F17.svg",
+  "png": "assets/publication/priority-40/F17.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    {
+      "name": "live sum",
+      "value": 120.0,
+      "expected": 120.0,
+      "tolerance": 1e-08,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "live moment",
+      "value": 432.0,
+      "expected": 432.0,
+      "tolerance": 1e-08,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "total reaction",
+      "value": 420.0,
+      "expected": 420.0,
+      "tolerance": 1e-08,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "left total",
+      "value": 48.0,
+      "expected": 48.0,
+      "tolerance": 1e-08,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大检查：恒载、活载增量、总量三层分开；−12增量与+48总量不混；灰度仍可通过正负和位置判读。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch03.qmd",
+  "heading_line": 2094,
+  "figure_kind": "calculated",
+  "technical_review": "formula_assertions_passed",
+  "visual_review_notes": "逐张放大检查：恒载、活载增量、总量三层分开；−12增量与+48总量不混；灰度仍可通过正负和位置判读。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "074783fd938e7e22e3ec8abaf897bdc1f5a44b09fe880e01c8f211174c28e3b7",
+    "png": "76eaae54c411c0c5e4140edc6e4d7b178f765daf94a79eb029237b90656b2c7f"
+  },
+  "calculation_data": {
+    "girder_y_m": [
+      -4.8,
+      -2.4,
+      0,
+      2.4,
+      4.8
+    ],
+    "P_kN": 120,
+    "e_m": 3.6,
+    "dead_R_kN": [
+      60,
+      60,
+      60,
+      60,
+      60
+    ],
+    "live_R_increment_kN": [
+      -12,
+      6,
+      24,
+      42,
+      60
+    ],
+    "total_R_kN": [
+      48,
+      66,
+      84,
+      102,
+      120
+    ]
+  },
+  "diagram_kind": "analytical_teaching_example",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

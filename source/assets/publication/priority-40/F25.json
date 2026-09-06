@@ -1,0 +1,73 @@
+{
+  "id": "F25",
+  "title": "只调一组索，怎样得到矩阵的一列？",
+  "chapter": 6,
+  "heading": "第三步：建立教学索力影响矩阵",
+  "caption": "固定模型状态和输出定义，仅将第二索组增大1 MN时，三项响应增量就是影响矩阵第二列；矩阵沿用正文明确声明的教学测试数据，构件定位图不冒充矩阵来源模型。",
+  "assumptions": [
+    "教学构造矩阵，不是具体桥的计算",
+    "列为索组增量，行依次为弯矩、位移、反力",
+    "仅线性局部影响，不直接用于调索设计"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F25.svg",
+  "png": "assets/publication/priority-40/F25.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "A·[0,1,0]=[−1,−0.6,+0.3]",
+    "A·[1.5,1,0.5]=[−4.2,−0.4,+0.75]",
+    "各行单位单独标注"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch05.qmd",
+  "heading_line": 613,
+  "calculation_data": {
+    "A": [
+      [
+        -2.0,
+        -1.0,
+        -0.4
+      ],
+      [
+        0.5,
+        -0.6,
+        -1.1
+      ],
+      [
+        0.1,
+        0.3,
+        0.6
+      ]
+    ],
+    "increment_MN": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "response": [
+      -1.0,
+      -0.6,
+      0.3
+    ],
+    "row_units": [
+      "MN·m/MN",
+      "mm/MN",
+      "MN/MN"
+    ]
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视并复查：三列标题分别对齐；各行影响系数量纲和输出量纲分列。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "c7c54ca1a3d2d7e2943a9a27a6f8c11de5b3d8f3aebbf0a53a1c6945d78f432b",
+    "png": "6a2eb1dcd7644bea3599628618f84b05f59cf301738ec0766afad43dfc9825a2"
+  }
+}

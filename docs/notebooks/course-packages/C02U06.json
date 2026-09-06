@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C02U06",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C02U06",
+    "chapter": 2,
+    "chapter_title": "力学基础的桥梁迁移",
+    "title": "稳定是平衡路径问题",
+    "model": "buckling",
+    "preset": "length",
+    "insight": "有效长度加倍，欧拉临界力降为四分之一；强度够不等于稳定够。",
+    "transfer": "施工阶段缺少横撑为什么可能先失稳？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C02U06.html",
+      "path": "interactive/lessons/C02U06.html"
+    },
+    "narration": [
+      "稳定是平衡路径问题。先预测：改变有效长度/基准长度，欧拉临界力相对值会怎样变化？",
+      "现在保持其他条件不变，只改变有效长度/基准长度。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "有效长度加倍，欧拉临界力降为四分之一；强度够不等于稳定够。",
+      "施工阶段缺少横撑为什么可能先失稳？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.5,
+      "max": 2,
+      "start": 1,
+      "end": 1.5,
+      "step": 0.01,
+      "label": "有效长度/基准长度",
+      "unit": "",
+      "output": "欧拉临界力相对值",
+      "outunit": "倍",
+      "formula": "Ncr=π²EI/(μL)²",
+      "boundary": "理想轴压直杆、线弹性，小挠度稳定基准；不代替实际拱或构件的非线性稳定分析。",
+      "power": -2
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C02U06.mp4",
+        "href": "../assets/videos/core/C02U06.mp4",
+        "bytes": 3054320
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C02U06.vtt",
+        "href": "../assets/videos/core/C02U06.vtt",
+        "bytes": 748
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C02U06.jpg",
+        "href": "../assets/videos/core/posters/C02U06.jpg",
+        "bytes": 133725
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C02U06.txt",
+        "href": "../notebooks/course-data/C02U06.txt",
+        "bytes": 509
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C02U06.json",
+        "href": "../notebooks/course-data/C02U06.json",
+        "bytes": 17109
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C02U06",
+      "title": "稳定是平衡路径问题",
+      "chapter": 2,
+      "fingerprint": "f14c7f12029bc2633b80ff6bd58d62cfcb40b07298acb6bfbb1733f0c6bd9cc7",
+      "duration": 47.466667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 77.9
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F07.png",
+        "href": "../assets/publication/priority-40/F07.png",
+        "bytes": 170314,
+        "id": "F07",
+        "title": "同样长的压杆，端部能不能转动有多大影响？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F07.svg",
+          "href": "../assets/publication/priority-40/F07.svg",
+          "bytes": 20434
+        },
+        "caption": "实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。",
+        "assumptions": [
+          "三种理想边界：不计局部屈曲、初始缺陷和屈服",
+          "真实塔柱/拱肋和弹性连接不应仅按外观选择K"
+        ],
+        "mapping_note": "把实际长度L、计算长度KL和端部约束分清，再比较理想欧拉临界力。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "795f7a6f644c11e801dae6420a791d46118dd40b9dc728142546af59908c8810",
+          "png": "072206b762b60576bd94694bd75a88a299cd408425e05aeaa60302d3f85f48a3"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C02U06.json",
+      "render_sha256": "a8c3da03cd3356c1f238c5b8cb069e774ee3a11b254c65d62b4385592e2409de",
+      "render_copy_sha256": "a8c3da03cd3356c1f238c5b8cb069e774ee3a11b254c65d62b4385592e2409de"
+    },
+    "download_href": "../notebooks/course-packages/C02U06.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

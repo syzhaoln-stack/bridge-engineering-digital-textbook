@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C06U01",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C06U01",
+    "chapter": 6,
+    "chapter_title": "斜拉桥：耦合与控制",
+    "title": "拉索把竖向荷载传给塔与梁",
+    "model": "cable",
+    "preset": "angle",
+    "insight": "相同竖向分量下，索倾角减小会提高索力和水平分量。",
+    "transfer": "平缓拉索会给主梁增加什么需求？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C06U01.html",
+      "path": "interactive/lessons/C06U01.html"
+    },
+    "narration": [
+      "拉索把竖向荷载传给塔与梁。先预测：改变索与水平线夹角，索力 T会怎样变化？",
+      "现在保持其他条件不变，只改变索与水平线夹角。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "相同竖向分量下，索倾角减小会提高索力和水平分量。",
+      "平缓拉索会给主梁增加什么需求？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 10,
+      "max": 70,
+      "start": 30,
+      "end": 15,
+      "step": 0.01,
+      "label": "索与水平线夹角",
+      "unit": "°",
+      "output": "索力 T",
+      "outunit": "",
+      "formula": "T=V/sinθ；H=V/tanθ",
+      "boundary": "单根拉索竖向分量V=1；仅作节点平衡。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C06U01.mp4",
+        "href": "../assets/videos/core/C06U01.mp4",
+        "bytes": 2816517
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C06U01.vtt",
+        "href": "../assets/videos/core/C06U01.vtt",
+        "bytes": 712
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C06U01.jpg",
+        "href": "../assets/videos/core/posters/C06U01.jpg",
+        "bytes": 120959
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C06U01.txt",
+        "href": "../notebooks/course-data/C06U01.txt",
+        "bytes": 473
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C06U01.json",
+        "href": "../notebooks/course-data/C06U01.json",
+        "bytes": 14533
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C06U01",
+      "title": "拉索把竖向荷载传给塔与梁",
+      "chapter": 6,
+      "fingerprint": "fd9c7c2a01968b8f68df88a54b41398aea6e75ab269f2f392e12e21ea1d7ebac",
+      "duration": 45.933333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 127.4
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F24.png",
+        "href": "../assets/publication/priority-40/F24.png",
+        "bytes": 274279,
+        "id": "F24",
+        "title": "车的重量，怎样经过拉索到达桥塔？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F24.svg",
+          "href": "../assets/publication/priority-40/F24.svg",
+          "bytes": 12810
+        },
+        "caption": "双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。",
+        "assumptions": [
+          "构件定位与分力示意，无全桥数值结果",
+          "只展示一根索的作用方向，不据箭头比例量取索力",
+          "索为受拉构件"
+        ],
+        "mapping_note": "先定位梁、索、塔的传力关系，再把单根斜索的竖向与水平分量拆开。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "616709bc3d9dc43c3a84313eda8706f10de2872875a3b40840d57e9656b295a7",
+          "png": "74dd9732af1481669bb31c5aa1d265220dd9568d97fbbc7eab5d2745e9ff98a0"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C06U01.json",
+      "render_sha256": "9484056abccdc9787a277d80fb6e07710a444d8b5c7b117a5eab5cf751af7983",
+      "render_copy_sha256": "9484056abccdc9787a277d80fb6e07710a444d8b5c7b117a5eab5cf751af7983"
+    },
+    "download_href": "../notebooks/course-packages/C06U01.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

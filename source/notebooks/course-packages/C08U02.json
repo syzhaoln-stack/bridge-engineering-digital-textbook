@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C08U02",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C08U02",
+    "chapter": 8,
+    "chapter_title": "支承、墩台与边界",
+    "title": "均匀温升：自由与完全约束",
+    "model": "thermal",
+    "preset": "temperature",
+    "insight": "温升增大时自由伸长与完全约束应力均线性增加，二者属于不同边界情形。",
+    "transfer": "为什么温度变形和温度应力不能同时按自由端条件计算？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C08U02.html",
+      "path": "interactive/lessons/C08U02.html"
+    },
+    "narration": [
+      "均匀温升：自由与完全约束。先预测：改变均匀温升，完全约束压应力会怎样变化？",
+      "现在保持其他条件不变，只改变均匀温升。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "温升增大时自由伸长与完全约束应力均线性增加，二者属于不同边界情形。",
+      "为什么温度变形和温度应力不能同时按自由端条件计算？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0,
+      "max": 60,
+      "start": 20,
+      "end": 40,
+      "step": 0.01,
+      "label": "均匀温升",
+      "unit": "℃",
+      "output": "完全约束压应力",
+      "outunit": "MPa",
+      "formula": "σ=E α ΔT r；ΔL=α ΔT L(1−r)",
+      "boundary": "E=30 GPa，α=10⁻⁵/℃，L=40 m；r为轴向自由热应变被抑制的比例。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C08U02.mp4",
+        "href": "../assets/videos/core/C08U02.mp4",
+        "bytes": 2900274
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C08U02.vtt",
+        "href": "../assets/videos/core/C08U02.vtt",
+        "bytes": 764
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C08U02.jpg",
+        "href": "../assets/videos/core/posters/C08U02.jpg",
+        "bytes": 124691
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C08U02.txt",
+        "href": "../notebooks/course-data/C08U02.txt",
+        "bytes": 525
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C08U02.json",
+        "href": "../notebooks/course-data/C08U02.json",
+        "bytes": 15422
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C08U02",
+      "title": "均匀温升：自由与完全约束",
+      "chapter": 8,
+      "fingerprint": "01fa26a07b145121722c387fd900bab2d9db3984e31343aff727bb52f3ba5930",
+      "duration": 49.066667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 126.7
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F30.png",
+        "href": "../assets/publication/priority-40/F30.png",
+        "bytes": 146186,
+        "id": "F30",
+        "title": "温度一样升高，为什么有的伸长、有的受压？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F30.svg",
+          "href": "../assets/publication/priority-40/F30.svg",
+          "bytes": 13366
+        },
+        "caption": "同样均匀温升下，自由伸缩产生7.2 mm轴向伸长；完全限制该伸长则在本一维弹性模型中产生72 MPa压应力、1440 kN压力。支座约束改变的是允许发生的运动。",
+        "assumptions": [
+          "轴向杆模型，不模拟桥面温度梯度",
+          "均匀温升、常材料参数、小变形",
+          "自由端无摩阻；受约束端刚性"
+        ],
+        "mapping_note": "同一温升下同时列自由伸长与完全约束压应力，但二者属于不同边界，不能同时套到同一根梁。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "cb85bda31ea49793a92cc8f49755fa2fc19317f833dadeb3409a81886dfe7466",
+          "png": "08dfa60b274544f56976092a35ec8b3e8c73bc87c99a8d3f5ff613d74a8c3837"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C08U02.json",
+      "render_sha256": "9461bfb22febeb5b26d05c0b07ef6b3b615874dadadb6f5b76e258910783cc34",
+      "render_copy_sha256": "9461bfb22febeb5b26d05c0b07ef6b3b615874dadadb6f5b76e258910783cc34"
+    },
+    "download_href": "../notebooks/course-packages/C08U02.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

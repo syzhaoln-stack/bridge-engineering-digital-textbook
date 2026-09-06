@@ -5,6 +5,9 @@
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry"><p>先从一个看得见的问题开始</p><h3>车靠一侧开，哪根梁分得更多？</h3><p>横向挪动车辆，观察桥下每根主梁的分担量；再切换主梁数量。</p><a href="../interactive/learning-map.html?chapter=ch03">看图进入实验 →</a></div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery"><summary>从本章的 7 幅新图开始</summary><div class="priority-thumb-grid"><a href="#fig-priority-F13"><img src="../assets/publication/priority-40/F13.svg" loading="lazy" alt="车轮下面，桥面板靠哪些构件支承？"><span>车轮下面，桥面板靠哪些构件支承？</span></a><a href="#fig-priority-F14"><img src="../assets/publication/priority-40/F14.svg" loading="lazy" alt="一块板能向两边传力，取成梁以后保留了什么？"><span>一块板能向两边传力，取成梁以后保留了什么？</span></a><a href="#fig-priority-F15"><img src="../assets/publication/priority-40/F15.svg" loading="lazy" alt="只用力的平衡，什么时候能算出每个支点分担？"><span>只用力的平衡，什么时候能算出每个支点分担？</span></a><a href="#fig-priority-F16"><img src="../assets/publication/priority-40/F16.svg" loading="lazy" alt="车偏到一侧，总重量怎样分到五根梁？"><span>车偏到一侧，总重量怎样分到五根梁？</span></a><a href="#fig-priority-F17"><img src="../assets/publication/priority-40/F17.svg" loading="lazy" alt="某根梁的活载增量为负，就已经离开支承了吗？"><span>某根梁的活载增量为负，就已经离开支承了吗？</span></a><a href="#fig-priority-F18"><img src="../assets/publication/priority-40/F18.svg" loading="lazy" alt="把两跨接成一根梁，弯矩和下沉会怎样改变？"><span>把两跨接成一根梁，弯矩和下沉会怎样改变？</span></a><a href="#fig-priority-F19"><img src="../assets/publication/priority-40/F19.svg" loading="lazy" alt="桥还没碰到下一个支点，悬空越长会怎样？"><span>桥还没碰到下一个支点，悬空越长会怎样？</span></a></div></details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 
 <h2>本章的核心思考</h2><p class="core-thesis">抓住截面效率、横向分工和初始应力三件事。</p><ol><li>比较材料位置对惯性矩、应力与挠度的不同影响。</li><li>从平均项与偏心项解释刚性横梁法。</li><li>把预应力的轴力、偏心矩与等效荷载对应起来。</li></ol><div class="core-analogy"><h3>跨课程类比</h3><p>偏心受压的线性分布 → 多梁横向分配；预压 → 使用阶段应力调整</p><p><strong>反例与边界：</strong>横向刚性、等刚度、未开裂等假定改变时要重算；不能截掉负反力继续使用旧模型。</p></div><p>建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。</p><div class="core-unit-grid"><article><p class="core-tag">C04U01 · 课前/课后迁移</p><h3>从简支反力到梁的整体平衡</h3><p>移动荷载改变反力分配，平衡提供最快的独立核验。</p><p><a href="../interactive/core-learning.html?unit=C04U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U01&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C04U02 · 课前/课后迁移</p><h3>弯矩、应力、挠度是三个输出</h3><p>在线性范围内三者随荷载同比变化，但对应不同的验算问题。</p><p><a href="../interactive/core-learning.html?unit=C04U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U02&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C04U03 · 课堂核心</p><h3>箱梁的效率来自材料位置</h3><p>相同外包尺寸下挖空会减少面积和惯性矩，但二者减少比例不同。</p><p><a href="../interactive/core-learning.html?unit=C04U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U03&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C04U04 · 课前/课后迁移</p><h3>影响线换一种方式组织计算</h3><p>固定跨中弯矩响应后，移动单位力可建立一条供重复加载使用的曲线。</p><p><a href="../interactive/core-learning.html?unit=C04U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U04&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C04U05 · 课堂核心</p><h3>横向分配就是平均加偏心修正</h3><p>等刚度刚性横梁模型可拆成平均分配和偏心力矩分配。</p><p><a href="../interactive/core-learning.html?unit=C04U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U05&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C04U06 · 课前/课后迁移</p><h3>不同刚度，分配系数就要重算</h3><p>兼容位移和转角配合各梁刚度，决定不等刚度体系的反力分配。</p><p><a href="../interactive/core-learning.html?unit=C04U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U06&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C04U07 · 课堂核心</p><h3>预应力的轴力与弯矩同时存在</h3><p>只增加偏心会增强反向弯矩，却不增加平均预压。</p><p><a href="../interactive/core-learning.html?unit=C04U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U07&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C04U08 · 课前/课后迁移</p><h3>束形是把轴力变成分布作用</h3><p>抛物线束的等效横向荷载与预应力和矢高成正比，与跨径平方成反比。</p><p><a href="../interactive/core-learning.html?unit=C04U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U08&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C04U09 · 课前/课后迁移</p><h3>只增跨径与整体放大不同</h3><p>截面和线荷载不变时，跨径增加使弯矩按平方、挠度按四次方增加。</p><p><a href="../interactive/core-learning.html?unit=C04U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U09&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C04U10 · 课前/课后迁移</p><h3>横梁刚性假定也有失效边界</h3><p>偏心加大可能算出负反力，若支承不能抗拔，线性全接触模型失效。</p><p><a href="../interactive/core-learning.html?unit=C04U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U10&amp;view=video" target="_blank">观看短视频</a></p></article></div><p><a href="../core-thinking.html">返回全书核心思维与尺度规律</a> · <a href="../core-resources.html">查看110个教学单元总索引</a> · <a href="../interactive/thinking-analogies.html">打开跨课程并排类比</a></p></div>
 <!-- CORE-ROUTE END -->
@@ -51,6 +54,14 @@
 简支梁在两个支承之间形成独立受力跨。若忽略支座摩阻、墩台变形等次要因素，结构为静定体系，支座沉降通常不引起附加内力。其受力边界清楚，适于标准化预制和快速架设；但跨中正弯矩较大，跨间接缝、伸缩装置和支座数量相对较多。对于装配式结构，还应区分“施工阶段简支”和“成桥阶段简支或连续”，二者不能仅凭梁片外形判断。
 
 #### 连续梁
+
+
+<!-- PRIORITY-FIGURE F18 START -->
+![统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。](../assets/publication/priority-40/F18.svg){#fig-priority-F18 width=100% fig-alt="把两跨接成一根梁，弯矩和下沉会怎样改变？。统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>两跨等跨、EI恒定、两跨全布均载；不是任意车辆位置的包络；中支点不沉降；不计收缩徐变、温度或预应力；解析式第一跨w=q(L³x−3Lx³+2x⁴)/(48EI)，第二跨镜像</p><p>课程组原创参数绘图 · F18 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F18.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F18.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F18 END -->
+
 
 连续梁的梁体跨越两个以上桥孔并在中间支点保持连续。支点负弯矩使跨中正弯矩减小，结构变形曲线更平顺，但体系属于超静定结构，温度、收缩徐变、预应力、支座位移和基础沉降均可能形成附加效应。连续梁的边跨长度、支点区刚度和施工顺序会改变恒载与可变作用的分配，因而总体设计应同时考虑跨径比例、梁高变化和施工可行性。
 
@@ -252,6 +263,14 @@ $$
 :::
 
 ### 桥面板、横隔构件与局部受力
+
+
+<!-- PRIORITY-FIGURE F13 START -->
+![轴测整桥以5根纵向主梁、3道跨内横隔板和两端横梁定位桥面板的空间支承。透明桥面仅为揭示内部构造；车辆轮载向下。](../assets/publication/priority-40/F13.svg){#fig-priority-F13 width=100% fig-alt="车轮下面，桥面板靠哪些构件支承？。轴测整桥以5根纵向主梁、3道跨内横隔板和两端横梁定位桥面板的空间支承。透明桥面仅为揭示内部构造；车辆轮载向下。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>所有几何为明确教学例；纵横比例由坐标统一投影；横隔板为有高度的实体连接，不是路面横线；此图不计算荷载分担或板内应力</p><p>课程组原创参数绘图 · F13 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F13.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F13.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F13 END -->
+
 
 桥面板一方面直接承受轮载并将其横向分配给腹板或主梁，另一方面作为主梁截面的翼缘参与纵向受力。对于组合结构，还应明确施工阶段钢梁单独受力与桥面板形成组合后的截面差异。桥面板悬臂段、腹板间板带以及轮载邻近区域属于局部分析对象，其计算尺度不同于整桥纵向分析。
 
@@ -1398,6 +1417,14 @@ $w$为板中面挠度，单位m；$p$为面荷载，单位N/m²；$x,y$为板面
 
 #### 横向板带与连续板
 
+
+<!-- PRIORITY-FIGURE F14 START -->
+![俯视四边简支板与侧视两端简支板带分别展示保留的运动和支承。两图不宣称自动等价，也没有用未经计算的彩色云图表示应力。](../assets/publication/priority-40/F14.svg){#fig-priority-F14 width=100% fig-alt="一块板能向两边传力，取成梁以后保留了什么？。俯视四边简支板与侧视两端简支板带分别展示保留的运动和支承。两图不宣称自动等价，也没有用未经计算的彩色云图表示应力。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>纯几何及传力方向示意，无板有限元结果；方板和板带为教学几何；Pb分配与等效宽度必须另行确定</p><p>课程组原创参数绘图 · F14 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F14.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F14.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F14 END -->
+
+
 在规则多梁桥中，可沿横向取单位宽度或有效宽度板带建立初步模型。板带跨于相邻腹板或主梁之间，支点弯矩和跨中弯矩取决于连续性。外侧悬臂板从外梁腹板伸至护栏或缘石，根部负弯矩、端部荷载和防撞构造需要单独计算。
 
 板带法的许可包括：几何和支承近似规则、主要作用在板带方向分配、纵向耦合可按采用方法处理。斜交、强横隔、局部开孔、宽跨比异常或轮载靠近自由边时，应升级板壳。板壳结果可沿设计截面积分为单位宽度弯矩，需说明局部坐标和平均宽度。
@@ -1502,6 +1529,14 @@ $P_i$为第$i$轴力，单位N；$d_i$为轴相对参考点的纵向偏移，单
 
 #### 杠杆法的物理基础
 
+
+<!-- PRIORITY-FIGURE F15 START -->
+![两支点静定板段用相反力臂计算反力；若保留三支承连续横梁，则需额外的变形协调。图中特别区分简化后的图式和未释放的连续图式。](../assets/publication/priority-40/F15.svg){#fig-priority-F15 width=100% fig-alt="只用力的平衡，什么时候能算出每个支点分担？。两支点静定板段用相反力臂计算反力；若保留三支承连续横梁，则需额外的变形协调。图中特别区分简化后的图式和未释放的连续图式。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>左图荷载位于两支点之间；外悬臂另画图式；图为教学静力关系，不规定规范杠杆法的使用位置或系数</p><p>课程组原创参数绘图 · F15 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F15.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F15.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F15 END -->
+
+
 当横向联系只在局部支承或端部起作用，或研究靠近支点的反力分配时，可把横向结构简化为支承在若干主梁上的横向梁。对落在相邻两条理想支承线之间的集中力$P$，两反力由
 
 $$
@@ -1515,6 +1550,14 @@ $$
 使用杠杆法需画出横向自由体、支承线和轮载接触位置。护栏或轮载位于外梁之外的悬臂区时，外梁反力可能大于单个作用，另一相邻梁出现反向增量；这并不自动违反平衡，但需检查连接能否传递相应方向和简化边界是否成立。
 
 #### 刚性横梁与偏心受压思路
+
+
+<!-- PRIORITY-FIGURE F16 START -->
+![平均分担24 kN/梁与偏心分量−24、−12、0、12、24 kN相加，得到0、12、24、36、48 kN。合力和合矩均与外作用一致。](../assets/publication/priority-40/F16.svg){#fig-priority-F16 width=100% fig-alt="车偏到一侧，总重量怎样分到五根梁？。平均分担24 kN/梁与偏心分量−24、−12、0、12、24 kN相加，得到0、12、24、36、48 kN。合力和合矩均与外作用一致。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>刚性横梁与等刚度；忽略扭转柔度、板局部和横隔离散；向下位移为正，图中只示意放大的线性位移趋势</p><p>课程组原创参数绘图 · F16 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F16.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F16.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F16 END -->
+
 
 若横向构件足够刚，各主梁在同一截面处可近似具有共同竖向平移加绕纵向轴的刚体转动。第$i$片梁的反力可分为合力平移项与偏心扭转项。对于等竖向刚度、梁位坐标$a_i$以刚度中心为原点的教学模型，常写成
 
@@ -1747,6 +1790,14 @@ $$
 节段事件记录左右浇筑次序、龄期、钢束、挂篮位置和实测高程。名义对称不等于完全无不平衡，实际允许偏差和施工方案由项目文件确定。合龙温度与临时锁定决定初始应变，后续解除临时约束需重新平衡。
 
 #### 顶推施工
+
+
+<!-- PRIORITY-FIGURE F19 START -->
+![悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。](../assets/publication/priority-40/F19.svg){#fig-priority-F19 width=100% fig-alt="桥还没碰到下一个支点，悬空越长会怎样？。悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>每个阶段梁尾恰在后支点、支点距12 m；这是教学静定截取，不冒充真实完整顶推系统；均布自重；未接触前方支点；无导梁、摩擦、支点高差或非线性；显示的是阶段内力，非设计安全系数</p><p>课程组原创参数绘图 · F19 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F19.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F19.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F19 END -->
+
 
 顶推过程中同一截面交替经历正、负弯矩，导梁、临时墩和滑移支承影响反力。成桥截面设计可能受施工阶段重复应力控制。模型需随推进位置更新支承关系和悬臂长度；钢束或临时加固按阶段激活。
 
@@ -2072,6 +2123,14 @@ $$
 这一步只获得全桥目标响应，尚未确定每片梁。集中力和均布作用被假定具有同一横向合力线；若实际二者横向位置不同，应分别分配后相加。
 
 #### 不等刚度横向相容
+
+
+<!-- PRIORITY-FIGURE F17 START -->
+![已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。](../assets/publication/priority-40/F17.svg){#fig-priority-F17 width=100% fig-alt="某根梁的活载增量为负，就已经离开支承了吗？。已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>此Ri为横向分配模型的反力；真实支座接触须定义对应对象并求总状态；若总接触力不满足单向接触，需重建模型，不可直接将负值截零；不在图中声称该简化模型已验证真实支座安全</p><p>课程组原创参数绘图 · F17 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F17.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F17.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F17 END -->
+
 
 <!-- FORMULA-SCAFFOLD ch03 START -->
 ::: {.formula-scaffold}

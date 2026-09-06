@@ -1,0 +1,54 @@
+{
+  "id": "F20",
+  "title": "把拱压低，拱脚要多推多少？",
+  "chapter": 5,
+  "heading": "跨径、矢高与矢跨比",
+  "caption": "相同跨度和竖向均布荷载下，三铰抛物线拱矢高由20 m增至30 m，水平推力由16.2 MN降至10.8 MN；竖向反力不变。",
+  "assumptions": [
+    "三铰、等高拱脚",
+    "抛物线拱轴",
+    "均布荷载以水平投影计",
+    "一阶静力"
+  ],
+  "source_script": "scripts/priority-figures/group_b.py",
+  "svg": "assets/publication/priority-40/F20.svg",
+  "png": "assets/publication/priority-40/F20.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "H=qL²/(8f)：16200/13500/10800 kN",
+    "竖向平衡2V=qL"
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch04.qmd",
+  "heading_line": 131,
+  "calculation_data": {
+    "L_m": 120.0,
+    "q_kN_per_m": 180.0,
+    "f_m": [
+      20,
+      24,
+      30
+    ],
+    "H_kN": [
+      16200.0,
+      13500.0,
+      10800.0
+    ],
+    "V_kN": 10800.0
+  },
+  "diagram_kind": "teaching_model_or_schematic",
+  "dimensions_note": "标注尺寸用于定义模型；示意图不供量图施工",
+  "layout_preflight": {
+    "text_outside_canvas": [],
+    "source_header_confirmed": true
+  },
+  "visual_review_notes": "逐张目视：两端水平推力向内、竖向支反力向上；20/30m工况和数值可分辨。",
+  "visual_reviewed_at_utc": "2026-09-06T16:02:46.640097+00:00",
+  "visual_review_source_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+  "review_limit": "制作者逐图图面自查与脚本数值断言；仍为专业/出版复核稿，不代替独立工程签审",
+  "file_sha256": {
+    "svg": "8611ab9f8d7048a228c423b9090d02d08d30cd52f9562572e49b750af02d5584",
+    "png": "49153a770ae4f9867957b3c7598ea18d0cee25c44fad8de1e44769c5f4258655"
+  }
+}

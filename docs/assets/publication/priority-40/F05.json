@@ -1,0 +1,92 @@
+{
+  "id": "F05",
+  "title": "压力移到哪里，截面边缘才开始出现拉应力？",
+  "chapter": 2,
+  "heading": "轴力、偏心与截面核心",
+  "caption": "移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。",
+  "assumptions": [
+    "只讨论单向偏心，双向偏心核心为菱形",
+    "出现拉区后若材料开裂，不再沿用完整弹性应力图作为实际状态"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F05.svg",
+  "png": "assets/publication/priority-40/F05.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    {
+      "name": "edge stress sum e/h=0",
+      "value": 6.666666666666667,
+      "expected": 6.666666666666667,
+      "tolerance": 1e-09,
+      "unit": "MPa",
+      "passed": true
+    },
+    {
+      "name": "edge stress sum e/h=0.16666666666666666",
+      "value": 6.666666666666667,
+      "expected": 6.666666666666667,
+      "tolerance": 1e-09,
+      "unit": "MPa",
+      "passed": true
+    },
+    {
+      "name": "edge stress sum e/h=0.3333333333333333",
+      "value": 6.666666666666666,
+      "expected": 6.666666666666667,
+      "tolerance": 1e-09,
+      "unit": "MPa",
+      "passed": true
+    },
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大检查：标题准确显示0、1/6、1/3；合力点、中间三分之一核心带和应力图对应；核心界限与RC大/小偏心已区分。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch02-foundations.qmd",
+  "heading_line": 229,
+  "figure_kind": "calculated",
+  "technical_review": "formula_assertions_passed",
+  "visual_review_notes": "逐张放大检查：标题准确显示0、1/6、1/3；合力点、中间三分之一核心带和应力图对应；核心界限与RC大/小偏心已区分。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "5b65db8a9fcffe8bbd7c1f17bd94cfe93385aba075df765e35da067e5c017c50",
+    "png": "04701842098c2586332946d215254c5adf997bf167d1ec051c7fbb2053da7608"
+  },
+  "calculation_data": {
+    "e_over_h": [
+      0,
+      0.16666666666666666,
+      0.3333333333333333
+    ],
+    "b_m": 0.3,
+    "h_m": 0.6,
+    "N_kN": 600,
+    "bottom_MPa": [
+      3.3333333333333335,
+      0,
+      -3.3333333333333335
+    ],
+    "top_MPa": [
+      3.3333333333333335,
+      6.666666666666667,
+      10
+    ]
+  },
+  "diagram_kind": "analytical_teaching_example",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

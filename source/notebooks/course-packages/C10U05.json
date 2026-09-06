@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C10U05",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C10U05",
+    "chapter": 10,
+    "chapter_title": "时间、不确定性与决策",
+    "title": "截面损失要通过模型映射到性能",
+    "model": "section",
+    "preset": "hollow",
+    "insight": "面积损失与惯性矩损失并不总是同一比例，损失位置也重要。",
+    "transfer": "相同质量损失发生在中性轴附近与边缘有何不同？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C10U05.html",
+      "path": "interactive/lessons/C10U05.html"
+    },
+    "narration": [
+      "截面损失要通过模型映射到性能。先预测：改变内空尺寸/外包尺寸，单位面积惯性矩相对值会怎样变化？",
+      "现在保持其他条件不变，只改变内空尺寸/外包尺寸。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "面积损失与惯性矩损失并不总是同一比例，损失位置也重要。",
+      "相同质量损失发生在中性轴附近与边缘有何不同？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0,
+      "max": 0.9,
+      "start": 0,
+      "end": 0.7,
+      "step": 0.01,
+      "label": "内空尺寸/外包尺寸",
+      "unit": "",
+      "output": "单位面积惯性矩相对值",
+      "outunit": "倍",
+      "formula": "A=1−r²；I=(1−r⁴)/12；(I/A)/(I₀/A₀)=1+r²",
+      "boundary": "外包尺寸固定的相似正方形空心截面；只比较几何效率，不检验薄壁稳定或构造。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C10U05.mp4",
+        "href": "../assets/videos/core/C10U05.mp4",
+        "bytes": 3248763
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C10U05.vtt",
+        "href": "../assets/videos/core/C10U05.vtt",
+        "bytes": 778
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C10U05.jpg",
+        "href": "../assets/videos/core/posters/C10U05.jpg",
+        "bytes": 144589
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C10U05.txt",
+        "href": "../notebooks/course-data/C10U05.txt",
+        "bytes": 539
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C10U05.json",
+        "href": "../notebooks/course-data/C10U05.json",
+        "bytes": 15702
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C10U05",
+      "title": "截面损失要通过模型映射到性能",
+      "chapter": 10,
+      "fingerprint": "a5b66ce90e5eec63dd44022d7d5eb10ba222691ab7602470cc151c40fd118178",
+      "duration": 49.5,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 130.5
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F36.png",
+        "href": "../assets/publication/priority-40/F36.png",
+        "bytes": 195399,
+        "id": "F36",
+        "title": "少了十分之一厚度，梁就只软十分之一吗？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F36.svg",
+          "href": "../assets/publication/priority-40/F36.svg",
+          "bytes": 12877
+        },
+        "caption": "同宽矩形钢条上下表面减薄的几何比较：高度减少10%，面积减少10%，惯性矩减少27.1%，同边界同荷载下线弹性挠度增加约37.2%。防护列只是指定剩余厚度的比较，不是预报寿命。",
+        "assumptions": [
+          "矩形截面，宽度与E保持不变",
+          "仅上下表面均匀损失，不模拟点蚀、疲劳或局部屈曲",
+          "维护列为假设状态，不表示涂层能恢复已损失钢材"
+        ],
+        "mapping_note": "损失位置影响几何性能。图削薄矩形外表面，核心演示挖去内部材料，两种截面变化不能直接共用数值。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "d1fa806503284191dffa12b369c7b1bc1ef6de22b3289be5c380198a077eee63",
+          "png": "067709a76c2fe4541e7dad8e2d5f85eb1ac700ef442d5dd03719fc795767c7ee"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C10U05.json",
+      "render_sha256": "dd4b6c74a8edae360749eed7ad640d016ee70089d6e3026f213182aea1877583",
+      "render_copy_sha256": "dd4b6c74a8edae360749eed7ad640d016ee70089d6e3026f213182aea1877583"
+    },
+    "download_href": "../notebooks/course-packages/C10U05.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

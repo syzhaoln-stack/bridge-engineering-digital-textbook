@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "unit_id": "C05U03",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C05U03",
+    "chapter": 5,
+    "chapter_title": "拱桥：几何与力流",
+    "title": "整体弯矩转成截面偏心",
+    "model": "stress",
+    "preset": "eccentricity",
+    "insight": "用偏心等于弯矩除以轴力，把拱的整体受力转成局部截面应力问题。",
+    "transfer": "同样弯矩下轴力增加会怎样改变偏心？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C05U03.html",
+      "path": "interactive/lessons/C05U03.html"
+    },
+    "narration": [
+      "整体弯矩转成截面偏心。先预测：改变偏心比 e/h，最小边缘压应力会怎样变化？",
+      "现在保持其他条件不变，只改变偏心比 e/h。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "用偏心等于弯矩除以轴力，把拱的整体受力转成局部截面应力问题。",
+      "同样弯矩下轴力增加会怎样改变偏心？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0,
+      "max": 0.35,
+      "start": 0.05,
+      "end": 0.16666666666666666,
+      "step": 0.01,
+      "label": "偏心比 e/h",
+      "unit": "",
+      "output": "最小边缘压应力",
+      "outunit": "MPa",
+      "formula": "σmin=10(1−6e/h)，σmax=10(1+6e/h)",
+      "boundary": "压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C05U03.mp4",
+        "href": "../assets/videos/core/C05U03.mp4",
+        "bytes": 3209413
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C05U03.vtt",
+        "href": "../assets/videos/core/C05U03.vtt",
+        "bytes": 727
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C05U03.jpg",
+        "href": "../assets/videos/core/posters/C05U03.jpg",
+        "bytes": 145923
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C05U03.txt",
+        "href": "../notebooks/course-data/C05U03.txt",
+        "bytes": 488
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C05U03.json",
+        "href": "../notebooks/course-data/C05U03.json",
+        "bytes": 19448
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C05U03",
+      "title": "整体弯矩转成截面偏心",
+      "chapter": 5,
+      "fingerprint": "906115e81539934c1533e29ee90d8a2f6ed25c98feb1d547d3c861288d3c589f",
+      "duration": 46.666667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 77.2
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F04.png",
+        "href": "../assets/publication/priority-40/F04.png",
+        "bytes": 186862,
+        "id": "F04",
+        "title": "同一个偏心压力，为什么一边压得更多？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F04.svg",
+          "href": "../assets/publication/priority-40/F04.svg",
+          "bytes": 24151
+        },
+        "caption": "把同一偏心压力分为中心压力和等效弯矩。三幅应力箭头使用同一比例；正值为压应力，负值为拉应力。",
+        "assumptions": [
+          "教学参数；不计开裂与材料非线性",
+          "应力图为截面计算，不是极限承载力验算"
+        ],
+        "mapping_note": "把拱的整体N、M带到截面上理解平均压应力与弯曲修正；图为矩形截面算例。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "6cd936faea56ce40dccd501e54db6ea8b64380fd8cbe285de62d0aaa3ff71fe9",
+          "png": "fef313b8d9026954b89f9052a62271b5df02afe18be16eb090a4db48e35c49aa"
+        }
+      },
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F21.png",
+        "href": "../assets/publication/priority-40/F21.png",
+        "bytes": 226803,
+        "id": "F21",
+        "title": "压力线离开拱轴，弯矩从哪里来？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F21.svg",
+          "href": "../assets/publication/priority-40/F21.svg",
+          "bytes": 23633
+        },
+        "caption": "同一左半跨均布荷载下，压力线作图与拱轴出现偏离。在左四分点，竖向差6 m对应M=HΔy=40.5 MN·m；沿截面法向计算的压力中心偏心为M/N，二者不可混用。",
+        "assumptions": [
+          "仅该三铰拱、该荷载",
+          "y_p=M0/H为图解关系",
+          "N为局部轴向分量；不判定截面是否满足承载要求"
+        ],
+        "mapping_note": "压力线与拱轴的竖向差可用于HΔy；截面法向偏心则是M/N。图专门区分这两个距离。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "a2ec027c78afbd137b1280dc316265ecbde8e635fb08587250719269bf0fd79d",
+          "png": "fdef5d85db3f2869c808c2e3039fa697038608b9b5ebc518226fad24f9b2ab99"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C05U03.json",
+      "render_sha256": "35eb678283d7a932b8a4532aede20a95a5b7e5627797fb16733fce41e4c48b41",
+      "render_copy_sha256": "35eb678283d7a932b8a4532aede20a95a5b7e5627797fb16733fce41e4c48b41"
+    },
+    "download_href": "../notebooks/course-packages/C05U03.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

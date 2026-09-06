@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "unit_id": "C01U08",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C01U08",
+    "chapter": 1,
+    "chapter_title": "体系与规模",
+    "title": "同一荷载，刚度决定分工",
+    "model": "springs",
+    "preset": "ratio",
+    "insight": "并联弹簧位移相同，较硬的支承分到较多荷载。",
+    "transfer": "多柱墩不同高度时能否平均分配水平力？",
+    "priority": "课前/课后迁移",
+    "standalone": false,
+    "candidate_note": "共同位移下按刚度分担，在矩阵入门单元继续练习。",
+    "interaction": {
+      "href": "core-learning.html?unit=C01U08",
+      "path": "interactive/core-learning.html?unit=C01U08"
+    },
+    "narration": [
+      "同一荷载，刚度决定分工。先预测：改变刚度比 k₁/k₂，第一弹簧分担力会怎样变化？",
+      "现在保持其他条件不变，只改变刚度比 k₁/k₂。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "并联弹簧位移相同，较硬的支承分到较多荷载。",
+      "多柱墩不同高度时能否平均分配水平力？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.2,
+      "max": 5,
+      "start": 1,
+      "end": 3,
+      "step": 0.01,
+      "label": "刚度比 k₁/k₂",
+      "unit": "",
+      "output": "第一弹簧分担力",
+      "outunit": "总力比例",
+      "formula": "u₁=u₂；R₁/P=k₁/(k₁+k₂)",
+      "boundary": "两个线性弹簧并联，共同位移，k₂=1，P=1。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C01U08.mp4",
+        "href": "../assets/videos/core/C01U08.mp4",
+        "bytes": 2778828
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C01U08.vtt",
+        "href": "../assets/videos/core/C01U08.vtt",
+        "bytes": 718
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C01U08.jpg",
+        "href": "../assets/videos/core/posters/C01U08.jpg",
+        "bytes": 121422
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C01U08.txt",
+        "href": "../notebooks/course-data/C01U08.txt",
+        "bytes": 479
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C01U08.json",
+        "href": "../notebooks/course-data/C01U08.json",
+        "bytes": 16424
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C01U08",
+      "title": "同一荷载，刚度决定分工",
+      "chapter": 1,
+      "fingerprint": "4c56a5d3055086aeae148376532964f21d4566f7d41eff76088cfdf20c260aff",
+      "duration": 44.366667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 65.9
+    },
+    "notebooks": [],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C01U08.json",
+      "render_sha256": "0594a1ec579fdb052b8e4bc090660b62298290ba96972e605e9d844faa947226",
+      "render_copy_sha256": "0594a1ec579fdb052b8e4bc090660b62298290ba96972e605e9d844faa947226"
+    },
+    "download_href": "../notebooks/course-packages/C01U08.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

@@ -5,6 +5,9 @@
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry"><p>先从一个看得见的问题开始</p><h3>只盯住桥上的一个位置，车停在哪里最不利？</h3><p>选择左跨跨中弯矩，切换正向最大或反向最小目标，再在桥上布置荷载并验证。</p><a href="../interactive/learning-map.html?chapter=ch02">看图进入实验 →</a></div>
 <!-- VISUAL-ENTRY END -->
+<!-- PRIORITY-CHAPTER-GALLERY START -->
+<details class="priority-chapter-gallery"><summary>从本章的 4 幅新图开始</summary><div class="priority-thumb-grid"><a href="#fig-priority-F09"><img src="../assets/publication/priority-40/F09.svg" loading="lazy" alt="同一辆车换个位置，跨中弯矩会怎样变？"><span>同一辆车换个位置，跨中弯矩会怎样变？</span></a><a href="#fig-priority-F10"><img src="../assets/publication/priority-40/F10.svg" loading="lazy" alt="想让同一截面的剪力最大，荷载该放在哪一边？"><span>想让同一截面的剪力最大，荷载该放在哪一边？</span></a><a href="#fig-priority-F11"><img src="../assets/publication/priority-40/F11.svg" loading="lazy" alt="两根车轴一起上桥，怎样把各自的作用加起来？"><span>两根车轴一起上桥，怎样把各自的作用加起来？</span></a><a href="#fig-priority-F12"><img src="../assets/publication/priority-40/F12.svg" loading="lazy" alt="平均抗力比平均作用大，为什么还不能只看两个平均数？"><span>平均抗力比平均作用大，为什么还不能只看两个平均数？</span></a></div></details>
+<!-- PRIORITY-CHAPTER-GALLERY END -->
 
 <h2>本章的核心思考</h2><p class="core-thesis">先定义输出，再组织作用与概率。</p><ol><li>组合的是同一目标的有符号效应。</li><li>区分内力图和影响线的输入、输出角色。</li><li>把平均余量与不确定性同时带入判断。</li></ol><div class="core-analogy"><h3>跨课程类比</h3><p>结构力学单位作用 → 移动加载；概率论余量分布 → 可靠度</p><p><strong>反例与边界：</strong>不同工况的各自极值不一定同时发生；正态线性模型不能包办全部尾部风险。</p></div><p>建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。</p><div class="core-unit-grid"><article><p class="core-tag">C03U01 · 课前/课后迁移</p><h3>作用大小与响应大小之间隔着模型</h3><p>荷载加倍时线性模型的反力加倍，但比例系数由位置和边界决定。</p><p><a href="../interactive/core-learning.html?unit=C03U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U01&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C03U02 · 课前/课后迁移</p><h3>等效荷载同时保留力和矩</h3><p>把点荷载分配到相邻节点，要同时保留合力与一阶矩。</p><p><a href="../interactive/core-learning.html?unit=C03U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U02&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C03U03 · 课堂核心</p><h3>组合不是把所有最大值相加</h3><p>伴随作用的贡献随组合系数改变，负贡献也必须保留符号。</p><p><a href="../interactive/core-learning.html?unit=C03U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U03&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C03U04 · 课前/课后迁移</p><h3>瀑布图读的是代数贡献</h3><p>反向作用可以减小某个目标响应，但对另一个截面未必有利。</p><p><a href="../interactive/core-learning.html?unit=C03U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U04&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C03U05 · 课堂核心</p><h3>从安全余量走到失效概率</h3><p>抗力均值不变时，提高效应均值会减少可靠指标。</p><p><a href="../interactive/core-learning.html?unit=C03U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U05&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C03U06 · 课前/课后迁移</p><h3>不确定性本身也改变结论</h3><p>均值差相同时，效应离散程度增加通常降低本模型的可靠指标。</p><p><a href="../interactive/core-learning.html?unit=C03U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U06&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C03U07 · 课前/课后迁移</p><h3>相关性进入余量的方差</h3><p>抗力与效应之差的方差包含相关项，不能只把两个方差相加。</p><p><a href="../interactive/core-learning.html?unit=C03U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U07&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C03U08 · 课堂核心</p><h3>移动荷载：固定输出再移动输入</h3><p>影响线的横坐标是荷载位置，不是正在查看的截面位置。</p><p><a href="../interactive/core-learning.html?unit=C03U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U08&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C03U09 · 课前/课后迁移</p><h3>正、负区段要分别构造不利布载</h3><p>连续梁同一截面影响线存在正负区，求最大与最小值必须改变允许布载区段。</p><p><a href="../interactive/core-learning.html?unit=C03U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U09&amp;view=video" target="_blank">观看短视频</a></p></article><article><p class="core-tag">C03U10 · 课前/课后迁移</p><h3>可靠度模型先做可解释的核验</h3><p>提高抗力均值会增大余量；公式方向检查是程序核验的第一步。</p><p><a href="../interactive/core-learning.html?unit=C03U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U10&amp;view=video" target="_blank">观看短视频</a></p></article></div><p><a href="../core-thinking.html">返回全书核心思维与尺度规律</a> · <a href="../core-resources.html">查看110个教学单元总索引</a> · <a href="../interactive/thinking-analogies.html">打开跨课程并排类比</a></p></div>
 <!-- CORE-ROUTE END -->
@@ -511,7 +514,23 @@ $$
 
 ### 车辆最不利布载与影响线接口
 
+
+<!-- PRIORITY-FIGURE F10 START -->
+![固定截面剪力影响线在C处有单位跃变。覆盖右侧正区得到+54 kN，覆盖左侧负区得到−24 kN。改变目标符号，需要改变加载区段。](../assets/publication/priority-40/F10.svg){#fig-priority-F10 width=100% fig-alt="想让同一截面的剪力最大，荷载该放在哪一边？。固定截面剪力影响线在C处有单位跃变。覆盖右侧正区得到+54 kN，覆盖左侧负区得到−24 kN。改变目标符号，需要改变加载区段。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>向下均布荷载可独立覆盖任意同号区，非规范车道加载规则；在C左、右紧邻取不同极限值；不为恰落C的集中力指定唯一剪力值</p><p>课程组原创参数绘图 · F10 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F10.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F10.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F10 END -->
+
+
 #### 影响线的计算对象
+
+
+<!-- PRIORITY-FIGURE F09 START -->
+![移动力相同，跨中弯矩随影响线纵标变化。6 m、15 m、24 m三个位置分别得到300、750、300 kN·m。](../assets/publication/priority-40/F09.svg){#fig-priority-F09 width=100% fig-alt="同一辆车换个位置，跨中弯矩会怎样变？。移动力相同，跨中弯矩随影响线纵标变化。6 m、15 m、24 m三个位置分别得到300、750、300 kN·m。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>线弹性简支梁；固定跨中正弯矩为目标；不含动力放大或车辆规范模型</p><p>课程组原创参数绘图 · F09 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F09.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F09.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F09 END -->
+
 
 影响线表示单位移动作用位置变化时某一指定响应的变化。设单位竖向力位于桥面路径坐标 $x$，控制响应为截面弯矩、剪力、支座反力或构件轴力，则影响线写为 $\eta_r(x)$。集中轴载 $P_i$ 位于 $x_i$、均布荷载 $q(x)$ 作用于区间 $\Omega_q$ 时，线性响应为
 
@@ -2075,6 +2094,14 @@ $$
 
 #### 新增完整计算单一：30 m简支梁的轴组与均布作用
 
+
+<!-- PRIORITY-FIGURE F11 START -->
+![两轴保持实际间距，在同一目标截面的影响线上分别读取纵标，再以轴重乘纵标后相加。120 kN轴贡献660，180 kN轴贡献1350 kN·m。](../assets/publication/priority-40/F11.svg){#fig-priority-F11 width=100% fig-alt="两根车轴一起上桥，怎样把各自的作用加起来？。两轴保持实际间距，在同一目标截面的影响线上分别读取纵标，再以轴重乘纵标后相加。120 kN轴贡献660，180 kN轴贡献1350 kN·m。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>线性叠加；两个贡献必须来自同一车辆位置；本图暂不加均布作用，正文加q后总数另算</p><p>课程组原创参数绘图 · F11 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F11.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F11.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F11 END -->
+
+
 本例只用于校验影响线算法，全部荷载为**课程组教学值**，不是规范车辆模型。取跨径 $L=30.0\ \mathrm m$ 的简支梁，目标为跨中 $a=15.0\ \mathrm m$ 处正弯矩。单位竖向力的影响线为
 
 $$
@@ -2583,6 +2610,14 @@ $f_{\boldsymbol X}$ 与 $q$ 具有相同密度量纲，因此 $w$ 无量纲。�
 重要抽样、子集模拟或代理模型可以作为高级扩展，但数字教材先用可解析基准验证实现。方差缩减方法的目标是提高估计效率，不是改变原始概率模型，也不提供规避样本证据不足的途径。
 
 #### 新增完整计算单五：相关性对线性可靠度的影响
+
+
+<!-- PRIORITY-FIGURE F12 START -->
+![联合正态教学模型以g=R−S转化为一维余量分布；红色尾部为g<0的概率。联合图的阴影只是失效域，不是按几何面积计算概率。](../assets/publication/priority-40/F12.svg){#fig-priority-F12 width=100% fig-alt="平均抗力比平均作用大，为什么还不能只看两个平均数？。联合正态教学模型以g=R−S转化为一维余量分布；红色尾部为g<0的概率。联合图的阴影只是失效域，不是按几何面积计算概率。"}
+
+<details class="figure-method"><summary>查看模型条件与绘图代码</summary><p>所有统计参数为正文教学值，非测量样本；线性极限状态与指定联合正态假设；不可将此Pf迁移到实际桥梁</p><p>课程组原创参数绘图 · F12 · <a href="../scripts/priority-figures/group_a.py">绘图 Python</a> · <a href="../scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="../assets/publication/priority-40/F12.png" download>下载 PNG</a> · <a href="../assets/publication/priority-40/F12.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F12 END -->
+
 
 本例采用**教学概率参数**校验闭式、FORM和模拟。设抗力 $R$ 与作用效应 $S$ 服从二元正态，单位均为 $\mathrm{kN\cdot m}$：
 

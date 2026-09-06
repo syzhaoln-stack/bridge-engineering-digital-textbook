@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "unit_id": "C04U04",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C04U04",
+    "chapter": 4,
+    "chapter_title": "梁桥的核心判断",
+    "title": "影响线换一种方式组织计算",
+    "model": "influence",
+    "preset": "point",
+    "insight": "固定跨中弯矩响应后，移动单位力可建立一条供重复加载使用的曲线。",
+    "transfer": "怎样把多个轮轴的作用组合起来？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C04U04.html",
+      "path": "interactive/lessons/C04U04.html"
+    },
+    "narration": [
+      "影响线换一种方式组织计算。先预测：改变单位荷载位置 x/L，左跨跨中弯矩会怎样变化？",
+      "现在保持其他条件不变，只改变单位荷载位置 x/L。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "固定跨中弯矩响应后，移动单位力可建立一条供重复加载使用的曲线。",
+      "怎样把多个轮轴的作用组合起来？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.01,
+      "max": 0.99,
+      "start": 0.25,
+      "end": 0.75,
+      "step": 0.01,
+      "label": "单位荷载位置 x/L",
+      "unit": "",
+      "output": "左跨跨中弯矩",
+      "outunit": "",
+      "formula": "M=Pη(x)",
+      "boundary": "等截面两跨连续梁，总长归一为1，左跨跨中观察；正为下缘受拉。单位荷载，不采用规范车辆模型。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C04U04.mp4",
+        "href": "../assets/videos/core/C04U04.mp4",
+        "bytes": 3393375
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C04U04.vtt",
+        "href": "../assets/videos/core/C04U04.vtt",
+        "bytes": 745
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C04U04.jpg",
+        "href": "../assets/videos/core/posters/C04U04.jpg",
+        "bytes": 150630
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C04U04.txt",
+        "href": "../notebooks/course-data/C04U04.txt",
+        "bytes": 506
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C04U04.json",
+        "href": "../notebooks/course-data/C04U04.json",
+        "bytes": 172322
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C04U04",
+      "title": "影响线换一种方式组织计算",
+      "chapter": 4,
+      "fingerprint": "7e8464cf8662ea5a4497cc7f7ac12eaaa2086b9d20e6f39631f698ad74cdf8d4",
+      "duration": 48.633333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 91.7
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F09.png",
+        "href": "../assets/publication/priority-40/F09.png",
+        "bytes": 142766,
+        "id": "F09",
+        "title": "同一辆车换个位置，跨中弯矩会怎样变？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F09.svg",
+          "href": "../assets/publication/priority-40/F09.svg",
+          "bytes": 31190
+        },
+        "caption": "移动力相同，跨中弯矩随影响线纵标变化。6 m、15 m、24 m三个位置分别得到300、750、300 kN·m。",
+        "assumptions": [
+          "线弹性简支梁；固定跨中正弯矩为目标",
+          "不含动力放大或车辆规范模型"
+        ],
+        "mapping_note": "先在简支梁跨中读移动荷载纵标；核心单元使用的连续梁图式与本图不同，迁移的是固定输出、移动输入的思路。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "d493a0a655a0acf9b1b2b997666707b903fa0f7566b2971ec775693d925a2141",
+          "png": "88c38c183967c2507885cc905d5321ff7901a3e5332a0c7743ee6048d7cb253d"
+        }
+      },
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F11.png",
+        "href": "../assets/publication/priority-40/F11.png",
+        "bytes": 154975,
+        "id": "F11",
+        "title": "两根车轴一起上桥，怎样把各自的作用加起来？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F11.svg",
+          "href": "../assets/publication/priority-40/F11.svg",
+          "bytes": 16143
+        },
+        "caption": "两轴保持实际间距，在同一目标截面的影响线上分别读取纵标，再以轴重乘纵标后相加。120 kN轴贡献660，180 kN轴贡献1350 kN·m。",
+        "assumptions": [
+          "线性叠加；两个贡献必须来自同一车辆位置",
+          "本图暂不加均布作用，正文加q后总数另算"
+        ],
+        "mapping_note": "由单个移动荷载扩展到两轴：保持轴距，分别读纵标后按轴重叠加。本图仍是简支梁算例，不是当前连续梁结果。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "21f5bc0ebe5637f772835c47164c5af86c09f8012376846fb23a35ca058b5545",
+          "png": "d0bc7a97ef6c1bcf39e5247f7d7fa93509fd4b47e71387fb656205f1ba4446c6"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C04U04.json",
+      "render_sha256": "cc3d82932d737f5f568ca7e1fe60a4d80bbf8101a56037faf9927b726cbe75aa",
+      "render_copy_sha256": "cc3d82932d737f5f568ca7e1fe60a4d80bbf8101a56037faf9927b726cbe75aa"
+    },
+    "download_href": "../notebooks/course-packages/C04U04.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

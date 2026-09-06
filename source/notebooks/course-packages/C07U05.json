@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C07U05",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C07U05",
+    "chapter": 7,
+    "chapter_title": "悬索桥：找形与刚度",
+    "title": "吊索传力不等于加劲梁不受弯",
+    "model": "beam",
+    "preset": "load",
+    "insight": "加劲梁仍承担荷载不均匀引起的弯曲，不能用主缆受拉替代梁的计算。",
+    "transfer": "集中车列为何使局部弯曲更突出？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C07U05.html",
+      "path": "interactive/lessons/C07U05.html"
+    },
+    "narration": [
+      "吊索传力不等于加劲梁不受弯。先预测：改变均布线荷载 q，跨中挠度会怎样变化？",
+      "现在保持其他条件不变，只改变均布线荷载 q。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "加劲梁仍承担荷载不均匀引起的弯曲，不能用主缆受拉替代梁的计算。",
+      "集中车列为何使局部弯曲更突出？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 5,
+      "max": 50,
+      "start": 20,
+      "end": 40,
+      "step": 0.01,
+      "label": "均布线荷载 q",
+      "unit": "kN/m",
+      "output": "跨中挠度",
+      "outunit": "mm",
+      "formula": "I=bh³/12；δ=5qL⁴/(384EI)；Mmax=qL²/8",
+      "boundary": "简支矩形梁，E=30 GPa，b=0.6 m；非控制量L=20 m、h=1.2 m、q=20 kN/m。未计自重变化。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C07U05.mp4",
+        "href": "../assets/videos/core/C07U05.mp4",
+        "bytes": 3357870
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C07U05.vtt",
+        "href": "../assets/videos/core/C07U05.vtt",
+        "bytes": 732
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C07U05.jpg",
+        "href": "../assets/videos/core/posters/C07U05.jpg",
+        "bytes": 155665
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C07U05.txt",
+        "href": "../notebooks/course-data/C07U05.txt",
+        "bytes": 493
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C07U05.json",
+        "href": "../notebooks/course-data/C07U05.json",
+        "bytes": 19760
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C07U05",
+      "title": "吊索传力不等于加劲梁不受弯",
+      "chapter": 7,
+      "fingerprint": "36fa9fa8c4f6918eba540e728ec5be6474f5e97644845dfe0dba3e85c5b8b45b",
+      "duration": 47.066667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 79.2
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F27.png",
+        "href": "../assets/publication/priority-40/F27.png",
+        "bytes": 167848,
+        "id": "F27",
+        "title": "悬索桥的重量，最后交给了谁？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F27.svg",
+          "href": "../assets/publication/priority-40/F27.svg",
+          "bytes": 16342
+        },
+        "caption": "地锚式悬索桥中，桥面经加劲梁、吊索和主缆传力，索塔与锚碇共同承担主缆传来的作用。自锚式的主缆水平分力路径不同，不能套用本图。",
+        "assumptions": [
+          "地锚式",
+          "构件和受力方向示意，非数值分析",
+          "索塔、锚碇和基础均须另行设计"
+        ],
+        "mapping_note": "地锚式悬索桥的力经加劲梁、吊索和主缆传走，不能由主缆受拉推出加劲梁没有弯矩。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "f81dd2de180e84ff751b4ffb24eb710179ccf689370b39917aa77e0004fa4e96",
+          "png": "2c24db4715d79367eee5bf379be680543fed4f0faae569a8620190906878da57"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C07U05.json",
+      "render_sha256": "58cdb33c31bcb01639bbe1e60a85eb387e8ac1801a0bb89e6a2ee75869355924",
+      "render_copy_sha256": "58cdb33c31bcb01639bbe1e60a85eb387e8ac1801a0bb89e6a2ee75869355924"
+    },
+    "download_href": "../notebooks/course-packages/C07U05.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

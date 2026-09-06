@@ -1,0 +1,62 @@
+{
+  "id": "F14",
+  "title": "一块板能向两边传力，取成梁以后保留了什么？",
+  "chapter": 4,
+  "heading": "横向板带与连续板",
+  "caption": "俯视四边简支板与侧视两端简支板带分别展示保留的运动和支承。两图不宣称自动等价，也没有用未经计算的彩色云图表示应力。",
+  "assumptions": [
+    "纯几何及传力方向示意，无板有限元结果",
+    "方板和板带为教学几何；Pb分配与等效宽度必须另行确定"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F14.svg",
+  "png": "assets/publication/priority-40/F14.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    "plate has four explicitly marked simply supported edges",
+    "strip has two endpoint supports",
+    "no claimed equal numerical response between different boundary models",
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大并复看：四边支承与两端支承可辨；向下作用符号改为自绘圆叉，消除缺字；示意方向不冒充计算力流。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch03.qmd",
+  "heading_line": 1419,
+  "figure_kind": "schematic",
+  "technical_review": "schematic_boundary_declared",
+  "visual_review_notes": "逐张放大并复看：四边支承与两端支承可辨；向下作用符号改为自绘圆叉，消除缺字；示意方向不冒充计算力流。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "843a8d861cbc66ba9691e8108958688d26eb9dc3d546096ed2e73bd8c9d3759e",
+    "png": "462a45a278e56ce373f97e124b465e6c138e686392391b5bd6bcbca660ceafef"
+  },
+  "calculation_data": {
+    "plate_size_m": [
+      2.4,
+      2.4
+    ],
+    "plate_boundary": "four edges simply supported",
+    "strip_width_m": 1,
+    "strip_span_m": 2.4,
+    "strip_boundary": "two endpoints simply supported",
+    "P_strip": "not assumed equal to total plate load"
+  },
+  "diagram_kind": "schematic_geometry",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}

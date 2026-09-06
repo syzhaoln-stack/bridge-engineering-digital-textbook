@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "unit_id": "C11U05",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C11U05",
+    "chapter": 11,
+    "chapter_title": "建模、有限元与审计",
+    "title": "边界错误可以伪装成漂亮结果",
+    "model": "thermal",
+    "preset": "restraint",
+    "insight": "错误释放或锁定自由度会改变内力，网格再细也不会修复边界。",
+    "transfer": "温度工况为什么适合用来检查约束？",
+    "priority": "课堂核心",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C11U05.html",
+      "path": "interactive/lessons/C11U05.html"
+    },
+    "narration": [
+      "边界错误可以伪装成漂亮结果。先预测：改变自由热应变被约束的比例，温度压应力会怎样变化？",
+      "现在保持其他条件不变，只改变自由热应变被约束的比例。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "错误释放或锁定自由度会改变内力，网格再细也不会修复边界。",
+      "温度工况为什么适合用来检查约束？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0,
+      "max": 1,
+      "start": 0,
+      "end": 1,
+      "step": 0.01,
+      "label": "自由热应变被约束的比例",
+      "unit": "",
+      "output": "温度压应力",
+      "outunit": "MPa",
+      "formula": "σ=E α ΔT r；ΔL=α ΔT L(1−r)",
+      "boundary": "E=30 GPa，α=10⁻⁵/℃，L=40 m；r为轴向自由热应变被抑制的比例。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C11U05.mp4",
+        "href": "../assets/videos/core/C11U05.mp4",
+        "bytes": 3081471
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C11U05.vtt",
+        "href": "../assets/videos/core/C11U05.vtt",
+        "bytes": 761
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C11U05.jpg",
+        "href": "../assets/videos/core/posters/C11U05.jpg",
+        "bytes": 138659
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C11U05.txt",
+        "href": "../notebooks/course-data/C11U05.txt",
+        "bytes": 522
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C11U05.json",
+        "href": "../notebooks/course-data/C11U05.json",
+        "bytes": 18016
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C11U05",
+      "title": "边界错误可以伪装成漂亮结果",
+      "chapter": 11,
+      "fingerprint": "36af3c1fc37dfda06419f3e0f39dbb20bcd52ee55ace7849d01956eca7d1ce5b",
+      "duration": 47.066667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 126.5
+    },
+    "notebooks": [
+      {
+        "id": "C-beam-fem",
+        "title": "网格越来越细，能把错误的支座修好吗？",
+        "unit_ids": [
+          "C11U03",
+          "C11U05",
+          "C11U07"
+        ],
+        "ipynb": "notebooks/C-beam-fem.ipynb",
+        "python": "notebooks/C-beam-fem.py",
+        "html": "notebooks/C-beam-fem.html",
+        "embed_cell": "fig-fem",
+        "mapping_note": "本页组装梁FEM；原核心网格单元为函数插值演示。",
+        "executed": true,
+        "code_cells": 6,
+        "error_count": 0,
+        "seconds": 4.9
+      }
+    ],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F18.png",
+        "href": "../assets/publication/priority-40/F18.png",
+        "bytes": 222796,
+        "id": "F18",
+        "title": "把两跨接成一根梁，弯矩和下沉会怎样改变？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F18.svg",
+          "href": "../assets/publication/priority-40/F18.svg",
+          "bytes": 147058
+        },
+        "caption": "统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。",
+        "assumptions": [
+          "两跨等跨、EI恒定、两跨全布均载；不是任意车辆位置的包络",
+          "中支点不沉降；不计收缩徐变、温度或预应力",
+          "解析式第一跨w=q(L³x−3Lx³+2x⁴)/(48EI)，第二跨镜像"
+        ],
+        "mapping_note": "图用两跨连续性展示边界改变后的响应；当前单元用温度约束作另一种边界比较，两者不是同一算例。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "8a8b75c49e6a2563c98ec897590dda0c893f704335c00325bcce04ee69ec49f0",
+          "png": "a984e58c0886261ae85b3cce9b627344519d3c618787f9c62423c1d32b753453"
+        }
+      },
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F23.png",
+        "href": "../assets/publication/priority-40/F23.png",
+        "bytes": 148810,
+        "id": "F23",
+        "title": "桥墩“动了十毫米”，到底是哪一种动？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F23.svg",
+          "href": "../assets/publication/priority-40/F23.svg",
+          "bytes": 26825
+        },
+        "caption": "相同“10 mm”可以是共同沉降、差异沉降或相对水平张开。必须先定义运动对象、方向与边界，再计算三铰、两铰或无铰拱的附加响应。",
+        "assumptions": [
+          "规定运动输入示意，不含响应计算",
+          "共同平移判断忽略地基额外约束、动力和几何变化",
+          "具体内力取决于结构边界与刚度"
+        ],
+        "mapping_note": "声明位移边界时要说清对象、方向和相对关系。图是支承沉降或张开，当前单元是均匀温升约束，不混用数值。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "1fb11140840c5c16602ec491e9216450fd3287336ceaf5229e730667d71f42b5",
+          "png": "da359ca4216a14a2169b8f82890b781d34dc366be31882070356b6cc019416a1"
+        }
+      },
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F39.png",
+        "href": "../assets/publication/priority-40/F39.png",
+        "bytes": 202483,
+        "id": "F39",
+        "title": "网格越来越细，为什么答案仍可能错？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F39.svg",
+          "href": "../assets/publication/priority-40/F39.svg",
+          "bytes": 33506
+        },
+        "caption": "以真实三次Hermite梁单元计算同一均布荷载：两端固支的错误边界也随网格加密收敛，但收敛值不等于任务要求的简支梁答案。",
+        "assumptions": [
+          "简支梁任务，两端固支为故障对照",
+          "均布q，常EI，忽略剪切变形",
+          "目标位移取x=0.37L并按形函数恢复"
+        ],
+        "mapping_note": "错误的两端固支梁也会数值收敛；图是梁FEM，当前核心温度约束模型说明同一种边界审查要求。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "a4e2a533325989a81cb59074adb6724f0796366146d00e9769f84042a7d5055f",
+          "png": "7c010d7b1611f56340653d91443f4f200ade4e782e2a115043b4a23ebbd74703"
+        }
+      },
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F40.png",
+        "href": "../assets/publication/priority-40/F40.png",
+        "bytes": 198860,
+        "id": "F40",
+        "title": "AI给了一个数，怎样知道它算的是你的问题？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F40.svg",
+          "href": "../assets/publication/priority-40/F40.svg",
+          "bytes": 23709
+        },
+        "caption": "同一等效梁任务的正确模型、弹性模量单位错误、两端固支边界错误对照。单位错的5882 mm只是超出小变形适用域的线性公式形式值，不能采纳；反力平衡也不能单独识别错误边界。",
+        "assumptions": [
+          "单根等效梁，暂不计自重",
+          "正确基准为线弹性小变形简支梁",
+          "单位故障仅为诊断；不把越域大位移当作物理预测"
+        ],
+        "mapping_note": "反力平衡并不能单独识别错误边界；图中超出小变形范围的巨大位移只是线性公式形式值。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "2d6435b5c0da70df13bae6cc7c265f28699d81432aa0c19ff718600471bca1a0",
+          "png": "87b760504dd09ef20807b63241efef399f6c423f3865c132e24d2cad11dc45f7"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C11U05.json",
+      "render_sha256": "01344bf97da4bffe5d1397b9f911496e2dd9743bc3e00cf8da72080119fda15c",
+      "render_copy_sha256": "01344bf97da4bffe5d1397b9f911496e2dd9743bc3e00cf8da72080119fda15c"
+    },
+    "download_href": "../notebooks/course-packages/C11U05.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

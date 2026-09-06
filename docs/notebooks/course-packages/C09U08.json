@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "unit_id": "C09U08",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C09U08",
+    "chapter": 9,
+    "chapter_title": "风与动力：无量纲判断",
+    "title": "几何相似不等于动力相似",
+    "model": "similitude",
+    "preset": "scale",
+    "insight": "在同流速下改变尺寸，会同时改变雷诺数与弗劳德数。",
+    "transfer": "风洞模型缩小以后哪些无量纲量发生变化？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C09U08.html",
+      "path": "interactive/lessons/C09U08.html"
+    },
+    "narration": [
+      "几何相似不等于动力相似。先预测：改变模型/原型长度比 λ，雷诺数相对值会怎样变化？",
+      "现在保持其他条件不变，只改变模型/原型长度比 λ。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "在同流速下改变尺寸，会同时改变雷诺数与弗劳德数。",
+      "风洞模型缩小以后哪些无量纲量发生变化？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0.1,
+      "max": 2,
+      "start": 1,
+      "end": 0.2,
+      "step": 0.01,
+      "label": "模型/原型长度比 λ",
+      "unit": "",
+      "output": "雷诺数相对值",
+      "outunit": "",
+      "formula": "同U、同ν：Re/Re₀=λ；Fr/Fr₀=λ⁻¹ᐟ²",
+      "boundary": "固定来流速度、重力与流体运动黏度；几何相似不保证两种无量纲数同时相似。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C09U08.mp4",
+        "href": "../assets/videos/core/C09U08.mp4",
+        "bytes": 2980392
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C09U08.vtt",
+        "href": "../assets/videos/core/C09U08.vtt",
+        "bytes": 739
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C09U08.jpg",
+        "href": "../assets/videos/core/posters/C09U08.jpg",
+        "bytes": 127065
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C09U08.txt",
+        "href": "../notebooks/course-data/C09U08.txt",
+        "bytes": 500
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C09U08.json",
+        "href": "../notebooks/course-data/C09U08.json",
+        "bytes": 16648
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C09U08",
+      "title": "几何相似不等于动力相似",
+      "chapter": 9,
+      "fingerprint": "d06f9377ab7e0eec176924b18f860c23b633795b92a707f2fd6c47ef0161aee3",
+      "duration": 46.5,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 140.6
+    },
+    "notebooks": [],
+    "figures": [],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C09U08.json",
+      "render_sha256": "dd51a1bc298b3840a8b28d5bac222c53530d02873c8027679a9c24f6d3a5f7a2",
+      "render_copy_sha256": "dd51a1bc298b3840a8b28d5bac222c53530d02873c8027679a9c24f6d3a5f7a2"
+    },
+    "download_href": "../notebooks/course-packages/C09U08.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

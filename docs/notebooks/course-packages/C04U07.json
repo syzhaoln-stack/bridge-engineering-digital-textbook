@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "unit_id": "C04U07",
+  "assets_relative_to": "book root",
+  "note": "这是带资源引用的清单，不含视频文件；使用时保留教材目录或提供教材站点根地址。",
+  "unit": {
+    "id": "C04U07",
+    "chapter": 4,
+    "chapter_title": "梁桥的核心判断",
+    "title": "预应力的轴力与弯矩同时存在",
+    "model": "prestress",
+    "preset": "eccentricity",
+    "insight": "只增加偏心会增强反向弯矩，却不增加平均预压。",
+    "transfer": "偏心过大时为什么另一边会出现拉应力？",
+    "priority": "课前/课后迁移",
+    "standalone": true,
+    "candidate_note": null,
+    "interaction": {
+      "href": "lessons/C04U07.html",
+      "path": "interactive/lessons/C04U07.html"
+    },
+    "narration": [
+      "预应力的轴力与弯矩同时存在。先预测：改变束偏心比 e/h，底缘压应力会怎样变化？",
+      "现在保持其他条件不变，只改变束偏心比 e/h。蓝色点表示当前状态，灰色点表示初始状态。请同时观察结构图与响应曲线。",
+      "只增加偏心会增强反向弯矩，却不增加平均预压。",
+      "偏心过大时为什么另一边会出现拉应力？ 请暂停，先写出判断，再进入同名交互实验检验。"
+    ],
+    "setup": {
+      "min": 0,
+      "max": 0.35,
+      "start": 0.05,
+      "end": 0.25,
+      "step": 0.01,
+      "label": "束偏心比 e/h",
+      "unit": "",
+      "output": "底缘压应力",
+      "outunit": "MPa",
+      "formula": "σ顶=p(1−6e/h)+8；σ底=p(1+6e/h)−8",
+      "boundary": "压为正；外荷载弯曲应力幅8 MPa；未开裂线弹性。非控制量p=10 MPa或e/h=0.12。"
+    },
+    "assets": {
+      "video": {
+        "kind": "video",
+        "path": "assets/videos/core/C04U07.mp4",
+        "href": "../assets/videos/core/C04U07.mp4",
+        "bytes": 3190002
+      },
+      "subtitles": {
+        "kind": "subtitles",
+        "path": "assets/videos/core/C04U07.vtt",
+        "href": "../assets/videos/core/C04U07.vtt",
+        "bytes": 715
+      },
+      "poster": {
+        "kind": "poster",
+        "path": "assets/videos/core/posters/C04U07.jpg",
+        "href": "../assets/videos/core/posters/C04U07.jpg",
+        "bytes": 140259
+      },
+      "narration": {
+        "kind": "narration",
+        "path": "notebooks/course-data/C04U07.txt",
+        "href": "../notebooks/course-data/C04U07.txt",
+        "bytes": 476
+      },
+      "render_data": {
+        "kind": "render_data",
+        "path": "notebooks/course-data/C04U07.json",
+        "href": "../notebooks/course-data/C04U07.json",
+        "bytes": 17657
+      },
+      "model_source": {
+        "kind": "shared_model_source",
+        "path": "interactive/core-lab/models.js",
+        "href": "../interactive/core-lab/models.js",
+        "bytes": 19313
+      },
+      "model_dependency": {
+        "kind": "shared_dependency",
+        "path": "interactive/influence-model.js",
+        "href": "../interactive/influence-model.js",
+        "bytes": 3739
+      }
+    },
+    "video_metadata": {
+      "id": "C04U07",
+      "title": "预应力的轴力与弯矩同时存在",
+      "chapter": 4,
+      "fingerprint": "f5ce3884514a32cc7f2d2371e3db8bc7860ef1e2eef6ebbeebb8feac433c8a74",
+      "duration": 45.9,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "audio": "aac",
+      "voice": "Microsoft Huihui Desktop / local SAPI",
+      "decode": "passed",
+      "frame_samples": 4,
+      "render_seconds": 132.9
+    },
+    "notebooks": [],
+    "figures": [
+      {
+        "kind": "figure",
+        "path": "assets/publication/priority-40/F08.png",
+        "href": "../assets/publication/priority-40/F08.png",
+        "bytes": 265256,
+        "id": "F08",
+        "title": "普通钢筋和预应力，分别在什么时候开始起作用？",
+        "svg": {
+          "kind": "figure_svg",
+          "path": "assets/publication/priority-40/F08.svg",
+          "href": "../assets/publication/priority-40/F08.svg",
+          "bytes": 25369
+        },
+        "caption": "左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。",
+        "assumptions": [
+          "两侧表达不同机制，不作等配筋等成本比较",
+          "实际预应力还包括偏心、束形、损失、施工阶段和次内力",
+          "不能把钢筋出现拉力等同于必然已有可见裂缝"
+        ],
+        "mapping_note": "先看中心预压与外弯矩叠加，再讨论单元中的偏心预压力；不能把两种偏心条件下的数值混用。",
+        "origin": "original_parameterized_drawing",
+        "status": "draft_for_review",
+        "source_manifest": "assets/publication/priority-40/manifest.json",
+        "file_sha256": {
+          "svg": "709d86be5d1a00a729a656edf415d80545c818edfbf94e6199c3e59da4d88ec4",
+          "png": "90bb732c61abc8af6f4690a730fdb2004d112b781ae2ddcce0fe3bd58e66e6d1"
+        }
+      }
+    ],
+    "provenance": {
+      "unit_source": "interactive/core-lab/units.json",
+      "render_source": "scripts/core-render/C04U07.json",
+      "render_sha256": "ad7538bf5eca913fa3ec2b689d1310ede3c64dc81d19d3bfdf5e26734f3193c7",
+      "render_copy_sha256": "ad7538bf5eca913fa3ec2b689d1310ede3c64dc81d19d3bfdf5e26734f3193c7"
+    },
+    "download_href": "../notebooks/course-packages/C04U07.json",
+    "model_note": "多个单元共享models.js，并由model与preset选择条件；不是每单元一套独立求解器。"
+  }
+}

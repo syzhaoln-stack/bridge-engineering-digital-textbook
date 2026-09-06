@@ -1,0 +1,104 @@
+{
+  "id": "F16",
+  "title": "车偏到一侧，总重量怎样分到五根梁？",
+  "chapter": 4,
+  "heading": "刚性横梁与偏心受压思路",
+  "caption": "平均分担24 kN/梁与偏心分量−24、−12、0、12、24 kN相加，得到0、12、24、36、48 kN。合力和合矩均与外作用一致。",
+  "assumptions": [
+    "刚性横梁与等刚度；忽略扭转柔度、板局部和横隔离散",
+    "向下位移为正，图中只示意放大的线性位移趋势"
+  ],
+  "source_script": "scripts/priority-figures/group_a.py",
+  "svg": "assets/publication/priority-40/F16.svg",
+  "png": "assets/publication/priority-40/F16.png",
+  "origin": "original_parameterized_drawing",
+  "status": "draft_for_review",
+  "checks": [
+    {
+      "name": "sum Ri",
+      "value": 120.0,
+      "expected": 120.0,
+      "tolerance": 1e-09,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "sum Ri yi",
+      "value": 288.0,
+      "expected": 288.0,
+      "tolerance": 1e-09,
+      "unit": "kN·m",
+      "passed": true
+    },
+    {
+      "name": "eccentric component sum",
+      "value": 0.0,
+      "expected": 0.0,
+      "tolerance": 1e-09,
+      "unit": "kN",
+      "passed": true
+    },
+    {
+      "name": "visual inspection of final rendered PNG",
+      "passed": true,
+      "method": "individual enlarged view; corrected figures re-opened",
+      "notes": "逐张放大并复看：五梁结果0/12/24/36/48；力矩箭头修为顺时针，与右侧向下力及右沉趋势一致；负柱标签不挤入注脚。已看灰度联系表。"
+    }
+  ],
+  "visual_review": "passed_self_review",
+  "chapter_file": "chapters/ch03.qmd",
+  "heading_line": 1537,
+  "figure_kind": "calculated",
+  "technical_review": "formula_assertions_passed",
+  "visual_review_notes": "逐张放大并复看：五梁结果0/12/24/36/48；力矩箭头修为顺时针，与右侧向下力及右沉趋势一致；负柱标签不挤入注脚。已看灰度联系表。",
+  "visual_reviewed_at_utc": "2026-09-06T16:09:47.353776+00:00",
+  "visual_review_source_sha256": "9a1fbaa9fb188e72b56cefa05f013e6e03337fb9d9200562af3a112747bb886f",
+  "review_limit": "制作者逐图图面自查与脚本公式断言；供专业和出版复核，不代替独立工程签审。",
+  "file_sha256": {
+    "svg": "04b5dca4a22edebab7908d3a74e0fc009c5ec0a098d2e5a9e1367dda2cac7345",
+    "png": "3d6cbfcd65fdb1d0fb32e960f7ea938fdc7c3c825c1b23ff5b4dd86c83715190"
+  },
+  "calculation_data": {
+    "girder_y_m": [
+      -4.8,
+      -2.4,
+      0,
+      2.4,
+      4.8
+    ],
+    "P_kN": 120,
+    "e_m": 2.4,
+    "average_R_kN": [
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "eccentric_R_kN": [
+      -24,
+      -12,
+      0,
+      12,
+      24
+    ],
+    "total_R_kN": [
+      0,
+      12,
+      24,
+      36,
+      48
+    ]
+  },
+  "diagram_kind": "analytical_teaching_example",
+  "dimensions_note": "模型尺寸与参数见图注和JSON；示意图不供量图施工。",
+  "export_checks": {
+    "png_dimensions": [
+      2400,
+      1440
+    ],
+    "dpi": 200,
+    "svg_embedded_rasters": 0,
+    "source_heading_exact_match": true
+  }
+}
