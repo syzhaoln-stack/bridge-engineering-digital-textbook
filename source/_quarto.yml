@@ -1,0 +1,69 @@
+project:
+  type: book
+  output-dir: _site
+  post-render:
+    - python scripts/prepare_local_site.py
+  resources:
+    - interactive/**
+    - assets/videos/**
+    - assets/generated/**
+    - assets/publication/**
+    - favicon.ico
+
+book:
+  title: "桥梁工程智能设计"
+  subtitle: "体系分析、交互可视化与数字建模"
+  author: "大连交通大学桥梁工程课程组"
+  date: today
+  chapters:
+    - index.qmd
+    - contents.qmd
+    - core-thinking.qmd
+    - part: "第一篇　基础、体系与作用"
+      chapters:
+        - chapters/ch01.qmd
+        - chapters/ch02-foundations.qmd
+        - chapters/ch02.qmd
+    - part: "第二篇　桥型与构造"
+      chapters:
+        - chapters/ch03.qmd
+        - chapters/ch04.qmd
+        - chapters/ch05.qmd
+        - chapters/ch06.qmd
+        - chapters/ch07.qmd
+    - part: "第三篇　专项性能与数字设计"
+      chapters:
+        - chapters/ch09-wind.qmd
+        - chapters/ch10-lifecycle.qmd
+        - chapters/ch10-fem.qmd
+    - part: "拓展篇　从桥梁看世界"
+      chapters:
+        - bridge-thinking.qmd
+        - course-guide.qmd
+        - legacy-tools.qmd
+    - core-resources.qmd
+    - resources.qmd
+    - publication-images.qmd
+    - references.qmd
+  sidebar:
+    style: docked
+    search: true
+
+format:
+  html:
+    lang: zh-CN
+    theme: default
+    css:
+      - styles.css
+      - interactive/core-reading.css
+    include-after-body:
+      - includes/core-reading.html
+    favicon: assets/favicon.svg
+    toc-depth: 2
+    number-sections: true
+    code-fold: true
+    code-summary: "查看计算实现"
+    smooth-scroll: true
+
+execute:
+  freeze: auto

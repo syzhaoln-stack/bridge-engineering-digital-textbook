@@ -1,0 +1,15 @@
+{
+  "id": "C08U01",
+  "title": "支座首先定义自由度",
+  "chapter": 8,
+  "fingerprint": "8277d024aaeb1bdd5dda494eed96b7b2a25490d9a9ed73053d309755bfb42896",
+  "duration": 46.066667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 133.6
+}

@@ -1,0 +1,15 @@
+{
+  "id": "C11U02",
+  "title": "最小模型也要保留力和矩",
+  "chapter": 11,
+  "fingerprint": "fe82d4859c6ec322c44cca88e5e43ac24f965384e9636d861dca846d0f77ba06",
+  "duration": 48.133333,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 126.3
+}

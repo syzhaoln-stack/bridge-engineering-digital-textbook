@@ -1,0 +1,30 @@
+# 从旧版接续的两个实验 {.unnumbered}
+
+有些问题，旧版已经形成了值得继续使用的学习路径：先把图看懂，再找到最容易求解的关系；实际方案选定后，重新回到平衡检查。本页把核对后的入口接到这本数字教材。
+
+## 把一根钢筋混凝土梁配出来 {.unnumbered}
+
+已知需要抵抗的弯矩，为什么先求混凝土受压区，再选钢筋？计算得到一个连续的面积，最后却要选择实际根数和直径；选完以后，哪些量必须重新计算？
+
+[**改变梁高，选一组钢筋，再比较两次结果**](interactive/rc-bending-design-lab.html)
+
+先保持弯矩不变，只改变梁高；再恢复梁高，只换钢筋。保存两个方案，用受压区、力臂和承载力解释差异。这个思路也能迁移到选螺栓、板厚等离散规格：实际选定的方案需要重新核对。
+
+模型只覆盖给定参数下的单筋矩形截面抗弯。超出适用受压区时，页面会停止给出通过结论；不能据此代替整根梁的抗剪、裂缝、挠度等检查。
+
+<details>
+<summary>旧版来源与本次接续</summary>
+
+来源：[旧版完整算例](https://syzhaoln-stack.github.io/bridge-engineering-textbook/appendices/rc-bending-worked-example.html)，代码基于旧仓库提交`389fe553846cc08fa4060a2d8cea532d7bb5f499`。这次保留求解顺序、实际选筋复核和方案对比，修正内力方向与力臂图示、超出模型范围的结果提示，以及有效高度模式切换。不是新增的AI绘CAD案例。
+
+</details>
+
+## 三张平面图，能不能想出同一个物体？ {.unnumbered}
+
+看完正面以后，再看侧面和上面，哪些边会对应同一条空间边？先预测，再旋转模型核对。把这个方法带到桥梁，便能逐步分清纵向、横向、截面和整桥的位置关系。
+
+[**打开已有的空间投影工作台**](https://syzhaoln-stack.github.io/projection-master/)
+
+这是既有项目的在线入口，需要联网，功能与发布版本由原项目维护。可以用它做三视图和空间关系练习。本教材的板、梁和横向分担场景继续使用自己的参数与力学模型。
+
+[返回本书学习入口](interactive/learning-map.html) · [读公众课首讲](interactive/public-course.html) · [查看旧版本](https://github.com/syzhaoln-stack/bridge-engineering-textbook)

@@ -1,0 +1,15 @@
+{
+  "id": "C02U05",
+  "title": "截面加高为什么比加宽敏感",
+  "chapter": 2,
+  "fingerprint": "98d9ea2f57f8e7daa0fbde11de81fc9c5df1800b7617d94daaa334ebf8ac1a31",
+  "duration": 44.966667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 124.9
+}

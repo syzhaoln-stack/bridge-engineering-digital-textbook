@@ -1,0 +1,15 @@
+{
+  "id": "C06U03",
+  "title": "成桥目标是多个条件的共同满足",
+  "chapter": 6,
+  "fingerprint": "4c6d992e0c2a947fb8e281c7552a9b5f0013851a2402d4e320065a2b555b6770",
+  "duration": 46.533333,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 139.2
+}

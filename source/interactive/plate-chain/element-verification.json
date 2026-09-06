@@ -1,0 +1,132 @@
+{
+  "passed": 13,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "unit-square area",
+      "ok": true,
+      "details": {
+        "area": 1
+      }
+    },
+    {
+      "name": "stiffness symmetry",
+      "ok": true,
+      "details": {
+        "relativeError": 9.181983120089946e-17
+      }
+    },
+    {
+      "name": "rigid translation",
+      "ok": true,
+      "details": {
+        "energy": 0.00000762939453125,
+        "normalized": 2.896524643561497e-17
+      }
+    },
+    {
+      "name": "rigid rotation x",
+      "ok": true,
+      "details": {
+        "energy": 2.9103830456733704e-10,
+        "normalized": 5.189109022403263e-18
+      }
+    },
+    {
+      "name": "rigid rotation y",
+      "ok": true,
+      "details": {
+        "energy": 1.0186340659856796e-10,
+        "normalized": 4.086423355142569e-18
+      }
+    },
+    {
+      "name": "rigid rotation z",
+      "ok": true,
+      "details": {
+        "energy": 3.7248355511110276e-9,
+        "normalized": 2.8017768165713825e-17
+      }
+    },
+    {
+      "name": "constant-strain membrane patch",
+      "ok": true,
+      "details": {
+        "recovered": [
+          0.00012000000000000002,
+          -0.00004,
+          0.00008
+        ],
+        "targetStrain": {
+          "ex": 0.00012,
+          "ey": -0.00004,
+          "gamma": 0.00008
+        },
+        "strainError": 1.3552527156068805e-20
+      }
+    },
+    {
+      "name": "distorted constant-strain patch",
+      "ok": true,
+      "details": {
+        "distortedPatchError": 5.421010862427522e-20
+      }
+    },
+    {
+      "name": "coordinate-rotation invariance",
+      "ok": true,
+      "details": {
+        "baseEnergy": 237.297381874554,
+        "rotatedEnergy": 237.29738187455436,
+        "rotationEnergyError": 1.5570429798950624e-15
+      }
+    },
+    {
+      "name": "center point-load mapping",
+      "ok": true,
+      "details": {
+        "xi": 0,
+        "eta": 0,
+        "weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    },
+    {
+      "name": "point load continuity across element edge",
+      "ok": true,
+      "details": {
+        "leftShared": [
+          -630,
+          -370
+        ],
+        "rightShared": [
+          -630,
+          -370
+        ],
+        "edgeLoadError": 0
+      }
+    },
+    {
+      "name": "consistent pressure equilibrium",
+      "ok": true,
+      "details": {
+        "totalNormalLoad": -12345,
+        "expected": -12345
+      }
+    },
+    {
+      "name": "simply-supported square plate benchmark",
+      "ok": true,
+      "details": {
+        "mesh": "8x8",
+        "centerDeflection": -0.00021042106901865946,
+        "navierCenter": -0.00021124219999999998,
+        "relativeError": 0.0038871540882480238
+      }
+    }
+  ]
+}

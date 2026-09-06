@@ -1,0 +1,15 @@
+{
+  "id": "C03U08",
+  "title": "移动荷载：固定输出再移动输入",
+  "chapter": 3,
+  "fingerprint": "f734211fcec15fb9b5d0c4a36cbc2e68e32edae2177a6cab409747005317bd14",
+  "duration": 48.4,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 92.1
+}

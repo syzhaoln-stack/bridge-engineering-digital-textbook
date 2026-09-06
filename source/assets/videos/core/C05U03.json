@@ -1,0 +1,15 @@
+{
+  "id": "C05U03",
+  "title": "整体弯矩转成截面偏心",
+  "chapter": 5,
+  "fingerprint": "906115e81539934c1533e29ee90d8a2f6ed25c98feb1d547d3c861288d3c589f",
+  "duration": 46.666667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 77.2
+}

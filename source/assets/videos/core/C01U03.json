@@ -1,0 +1,15 @@
+{
+  "id": "C01U03",
+  "title": "模型为何必须声明边界",
+  "chapter": 1,
+  "fingerprint": "48ef0a69c6426918c67ff0c68bf9bbecc02c86359f5e8fd292756ff3a6148e13",
+  "duration": 47.333333,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 70.4
+}

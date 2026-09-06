@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>梁桥数字实验室</title>
+<style>
+  :root{--ink:#17365d;--blue:#1769aa;--cyan:#168aad;--orange:#e67e22;--red:#b6403a;--paper:#f4f7fa;--line:#d8e1e8;--muted:#5b6573}
+  *{box-sizing:border-box} body{margin:0;background:var(--paper);color:#1e2933;font-family:"Microsoft YaHei","Noto Sans SC",sans-serif}
+  header{padding:18px 22px 14px;background:white;border-bottom:1px solid var(--line)}
+  h1{margin:0;color:var(--ink);font-size:25px} header p{margin:7px 0 0;color:var(--muted);line-height:1.65;font-size:14px}
+  .tabs{display:flex;gap:8px;padding:12px 22px;background:white;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  button{border:1px solid #b9c7d2;background:white;color:var(--ink);border-radius:7px;padding:8px 13px;cursor:pointer;font-weight:650}
+  button.active{background:var(--ink);color:white;border-color:var(--ink)}
+  .lab{display:none;padding:16px 22px 24px}.lab.active{display:block}
+  .grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(300px,.8fr);gap:16px;align-items:start}
+  .grid>*{min-width:0}
+  .card{min-width:0;background:white;border:1px solid var(--line);border-radius:10px;padding:15px;box-shadow:0 5px 18px rgba(23,54,93,.06)}
+  .card h2,.card h3{margin:0 0 10px;color:var(--ink)}
+  .scene{width:100%;min-width:0;height:470px;border-radius:8px;overflow:hidden;background:#c5d8e5;position:relative}
+  .scene-note{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.88);padding:6px 9px;border-radius:6px;font-size:12px;color:#334155;z-index:2}
+  .controls{display:grid;gap:9px}.control label{display:flex;justify-content:space-between;font-size:13px;color:#435160}.control output{font-weight:700;color:var(--blue)}
+  input[type=range]{width:100%;accent-color:var(--blue)}
+  .metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
+  .metric{border-left:4px solid var(--blue);background:#eef5fa;padding:9px;border-radius:5px}.metric b{display:block;color:var(--ink);font-size:17px}.metric span{font-size:12px;color:var(--muted)}
+  .formula{background:#f7fafc;border:1px solid var(--line);border-radius:7px;padding:10px 12px;margin-top:12px;font-family:"Cambria Math","Times New Roman",serif;line-height:1.8}
+  .note{margin-top:12px;border-left:4px solid var(--orange);background:#fff8ef;padding:10px 12px;line-height:1.65;font-size:13px}
+  svg{width:100%;height:auto;background:white;border-radius:8px}
+  .plotline{fill:none;stroke:var(--blue);stroke-width:3}.axis{stroke:#667788;stroke-width:1.2}.guide{stroke:#b9c7d2;stroke-dasharray:5 5}.load{stroke:var(--red);stroke-width:3}.bar{fill:var(--cyan)}
+  .lesson{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.lesson div{background:#f7fafc;border:1px solid var(--line);border-radius:7px;padding:10px;font-size:13px;line-height:1.6}.lesson strong{display:block;color:var(--ink);margin-bottom:3px}
+  @media(max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}.scene{height:390px}.lesson{grid-template-columns:1fr}.lab{padding:12px}.tabs,header{padding-left:14px;padding-right:14px}}
+</style>
+</head>
+<body>
+<header>
+<h1>第4章　梁式桥数字实验室</h1>
+<p>坐标统一为 <b>x桥向、y横桥向、z竖向</b>。每个实验先固定其余条件，只改变一个参数；所有结果均为教学模型，不代替规范验算。</p>
+<p><a href="transverse-bridge.html">先挪一挪车：在三维桥上看各根梁分担多少 →</a></p>
+</header>
+<nav aria-label="实验选择" class="tabs">
+<button class="active" data-tab="section">箱梁截面效率</button>
+<button data-tab="influence">纵向影响线</button>
+<button data-tab="transverse">横向分布影响线</button>
+</nav>
+<section class="lab active" id="section">
+<div class="grid">
+<div class="card">
+<h2>单箱截面：掏空、自重与抗弯效率</h2>
+<div class="scene" id="scene"><div class="scene-note">左键旋转，滚轮缩放，右键平移；模型仅含梁、桥面、支座和桥墩。</div></div>
+<div class="lesson">
+<div><strong>观察1　材料放在哪里</strong>掏空靠近中性轴的材料，面积和自重明显下降，惯性矩的下降相对较缓。</div>
+<div><strong>观察2　不能只追求最空</strong>腹板、顶底板还承担剪切、局部轮载、畸变、施工和耐久要求。</div>
+<div><strong>观察3　指标的边界</strong>本实验给出弹性截面指标，不包含配筋、开裂、预应力和规范构造限值。</div>
+</div>
+</div>
+<aside class="card">
+<h3>截面参数</h3>
+<div class="controls">
+<div class="control"><label>桥面总宽 B / m <output id="oB"></output></label><input id="B" max="18" min="8" step="0.5" type="range" value="12"/></div>
+<div class="control"><label>梁高 H / m <output id="oH"></output></label><input id="H" max="4.0" min="1.4" step="0.1" type="range" value="2.4"/></div>
+<div class="control"><label>顶板厚 t<sub>t</sub> / m <output id="ott"></output></label><input id="tt" max="0.50" min="0.18" step="0.01" type="range" value="0.25"/></div>
+<div class="control"><label>底板厚 t<sub>b</sub> / m <output id="otb"></output></label><input id="tb" max="0.50" min="0.18" step="0.01" type="range" value="0.22"/></div>
+<div class="control"><label>单侧腹板厚 t<sub>w</sub> / m <output id="otw"></output></label><input id="tw" max="0.60" min="0.20" step="0.02" type="range" value="0.28"/></div>
+<div class="control"><label>计算跨度 L / m <output id="oL"></output></label><input id="L" max="60" min="20" step="2" type="range" value="30"/></div>
+<div class="control"><label>比较应力 f / MPa <output id="of"></output></label><input id="f" max="25" min="8" step="1" type="range" value="15"/></div>
+</div>
+<svg aria-label="箱梁截面示意" id="sectionSvg" viewbox="0 0 620 240"></svg>
+<div class="metrics">
+<div class="metric"><b id="mVoid"></b><span>截面空腔率</span></div>
+<div class="metric"><b id="mWeight"></b><span>每延米自重</span></div>
+<div class="metric"><b id="mI"></b><span>竖向弯曲惯性矩</span></div>
+<div class="metric"><b id="mM"></b><span>弹性抗弯指标 fW</span></div>
+<div class="metric"><b id="mSave"></b><span>相对实心截面减重</span></div>
+<div class="metric"><b id="mEff"></b><span>W/A 抗弯材料效率</span></div>
+</div>
+<div class="formula">A=B(t_t+t_b)+2t_w(H-t_t-t_b)<br/>I=Σ(I_i+A_iΔz_i²)，W=min[I/z̄,I/(H-z̄)]<br/>q_g=25A，M_e=fW</div>
+</aside>
+</div>
+</section>
+<section class="lab" id="influence">
+<p style="padding:12px;background:#edf5fb"><a href="ch03-continuous-loading.html" target="_blank">比较连续梁同一截面的正负影响区与两种不利布载 →</a></p>
+<div class="grid">
+<div class="card">
+<h2>固定观察截面，让单位荷载沿桥移动</h2>
+<svg aria-label="简支梁弯矩影响线" id="influenceSvg" viewbox="0 0 760 390"></svg>
+<div class="lesson">
+<div><strong>固定</strong>目标截面 a 和目标响应 M(a)。</div>
+<div><strong>移动</strong>荷载位置 x，不移动观察截面。</div>
+<div><strong>读取</strong>M(a)=Pη<sub>M</sub>(x)，多轴荷载逐项叠加。</div>
+</div>
+</div>
+<aside class="card">
+<h3>移动荷载参数</h3>
+<div class="controls">
+<div class="control"><label>跨度 L / m <output id="oiL"></output></label><input id="iL" max="60" min="20" step="1" type="range" value="30"/></div>
+<div class="control"><label>观察截面 a / L <output id="oia"></output></label><input id="ia" max="0.90" min="0.10" step="0.01" type="range" value="0.50"/></div>
+<div class="control"><label>荷载位置 x / L <output id="oix"></output></label><input id="ix" max="1" min="0" step="0.005" type="range" value="0.25"/></div>
+<div class="control"><label>集中力 P / kN <output id="oiP"></output></label><input id="iP" max="500" min="50" step="10" type="range" value="200"/></div>
+</div>
+<div class="metrics">
+<div class="metric"><b id="mEta"></b><span>影响线纵标 η<sub>M</sub></span></div>
+<div class="metric"><b id="mMoment"></b><span>目标截面弯矩</span></div>
+<div class="metric"><b id="mRA"></b><span>左支座反力</span></div>
+<div class="metric"><b id="mRB"></b><span>右支座反力</span></div>
+</div>
+<div class="formula">η_M(x)=x(L-a)/L，x≤a<br/>η_M(x)=a(L-x)/L，x≥a</div>
+<div class="note">改变观察截面后，峰值位置随之改变。若目标换成支座反力、剪力或连续梁支点弯矩，必须重新生成相应影响线。</div>
+</aside>
+</div>
+</section>
+<section class="lab" id="transverse">
+<div class="grid">
+<div class="card">
+<h2>车辆横移与多片主梁分担</h2>
+<svg aria-label="刚性横梁法横向分布" id="transverseSvg" viewbox="0 0 760 430"></svg>
+<div class="lesson">
+<div><strong>平衡检查</strong>各片主梁分布比例之和应为1。</div>
+<div><strong>偏心效应</strong>车辆向一侧移动，同侧主梁份额增加，另一侧减小。</div>
+<div><strong>适用边界</strong>图示采用等刚度主梁与刚性横向构件假定，实际箱梁和宽桥需空间分析。</div>
+</div>
+</div>
+<aside class="card">
+<h3>横向参数</h3>
+<div class="controls">
+<div class="control"><label>桥面宽度 B / m <output id="otB"></output></label><input id="tB" max="20" min="8" step="0.5" type="range" value="12"/></div>
+<div class="control"><label>主梁片数 n <output id="otN"></output></label><input id="tN" max="8" min="2" step="1" type="range" value="5"/></div>
+<div class="control"><label>车辆横向位置 e / m <output id="otE"></output></label><input id="tE" max="5.5" min="-5.5" step="0.05" type="range" value="2.0"/></div>
+<div class="control"><label>目标主梁编号 i <output id="otI"></output></label><input id="tI" max="5" min="1" step="1" type="range" value="5"/></div>
+</div>
+<div class="metrics">
+<div class="metric"><b id="mShare"></b><span>目标主梁分布比例</span></div>
+<div class="metric"><b id="mSum"></b><span>全部主梁比例和</span></div>
+<div class="metric"><b id="mMaxGirder"></b><span>最大分担主梁</span></div>
+<div class="metric"><b id="mEcc"></b><span>车辆偏心距</span></div>
+</div>
+<div class="formula">η_i(e)=1/n + e·y_i / Σy_j²<br/>Ση_i=1，Ση_i y_i=e</div>
+<div class="note">该线性横向影响线用于解释平衡和偏心分配。桥面板柔度、横隔梁、主梁扭转、曲率、斜交和局部轮载会改变实际分布。</div>
+</aside>
+</div>
+</section>
+<script defer="" src="./bundles/ch03-beam-digital-lab.bundle.js"></script>
+<script defer="" src="./bridge-a11y.js"></script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/ch03-beam-digital-lab.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body>
+</html>

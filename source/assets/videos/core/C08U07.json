@@ -1,0 +1,15 @@
+{
+  "id": "C08U07",
+  "title": "约束改变，内力就重新分配",
+  "chapter": 8,
+  "fingerprint": "97fffc52d31fab897ae89feef6e840492faf76546b2972c051144cf64010633c",
+  "duration": 47.4,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 140.6
+}

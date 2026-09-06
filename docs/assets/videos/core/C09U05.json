@@ -1,0 +1,15 @@
+{
+  "id": "C09U05",
+  "title": "共振用频率比辨认",
+  "chapter": 9,
+  "fingerprint": "274dee665068f8217e8a138c1d468c07df0d0dd6e9fd3914ef7b1c83d3f81048",
+  "duration": 46.966667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 136.2
+}

@@ -1,0 +1,15 @@
+{
+  "id": "C08U08",
+  "title": "脱空不是把负反力删掉",
+  "chapter": 8,
+  "fingerprint": "e28432a52c090ba526f7e82ccdb4af724e5dc307f531e5b62dcd730d492f5a2d",
+  "duration": 45.8,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 127.9
+}

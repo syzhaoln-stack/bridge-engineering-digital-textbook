@@ -1,0 +1,15 @@
+{
+  "id": "C06U09",
+  "title": "施工阶段不能沿用成桥有效长度",
+  "chapter": 6,
+  "fingerprint": "cb774c9fe88c3746e3395cb26febff1c92a4fe77fad8e691591372244716750c",
+  "duration": 47.466667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 136.7
+}

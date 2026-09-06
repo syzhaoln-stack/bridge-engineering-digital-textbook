@@ -1,0 +1,15 @@
+{
+  "id": "C06U07",
+  "title": "温度与约束改变成桥状态",
+  "chapter": 6,
+  "fingerprint": "4875ee1494360721c80de594eee29a64d7b2a2045cba953770338d0a630552c9",
+  "duration": 47.133333,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 142.0
+}

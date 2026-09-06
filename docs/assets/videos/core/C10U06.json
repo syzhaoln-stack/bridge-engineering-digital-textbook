@@ -1,0 +1,15 @@
+{
+  "id": "C10U06",
+  "title": "疲劳由循环与幅值共同累积",
+  "chapter": 10,
+  "fingerprint": "4d48742020d5537f38d91db1e83b6ccb4c805fad57ab9102d01e60f488dd9934",
+  "duration": 45.266667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 129.1
+}

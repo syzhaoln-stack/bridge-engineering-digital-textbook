@@ -1,0 +1,15 @@
+{
+  "id": "C10U10",
+  "title": "扩散时间也受尺寸平方控制",
+  "chapter": 10,
+  "fingerprint": "ab0a0d009aef4c7da4ec2e921465457aceecd8f83d6327e94bab00e7bf12e5aa",
+  "duration": 49.4,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 119.8
+}

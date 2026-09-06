@@ -1,0 +1,15 @@
+{
+  "id": "C10U01",
+  "title": "今天的余量不是全寿命余量",
+  "chapter": 10,
+  "fingerprint": "89088c659060bf9d1700edf34f523c921f6a37910c9cf8bc94c7dfc7fca1f4df",
+  "duration": 45.366667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 133.8
+}

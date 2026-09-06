@@ -1,0 +1,15 @@
+{
+  "id": "C11U08",
+  "title": "病态问题不会被更多小数解决",
+  "chapter": 11,
+  "fingerprint": "ce1566a67b4bf17dfd61b936a94a7037b6080467aacbc1e3e85190679df54e1b",
+  "duration": 48.866667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 132.6
+}

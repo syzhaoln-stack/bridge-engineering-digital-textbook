@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>箱梁空腔、自重与截面效率</title><link href="bridge-lab.css" rel="stylesheet"/></head>
+<body><main>
+<header><div><h1>箱梁空腔、自重与截面效率</h1><p>在固定外轮廓的比较边界内，观察壁厚改变对面积、自重、弯曲惯性矩和闭口扭转常数的联动影响。</p></div><div class="toolbar"><button id="reset">恢复教学值</button><button id="export">导出当前图（SVG）</button></div></header>
+<section class="layout"><div class="controls"><h2>矩形单室教学截面</h2>
+<div class="control"><label for="B"><span>外宽 B</span><output id="B-out"></output></label><input data-unit=" m" id="B" max="14" min="5" step="0.5" type="range" value="10"/></div>
+<div class="control"><label for="H"><span>外高 H</span><output id="H-out"></output></label><input data-unit=" m" id="H" max="5" min="1.8" step="0.1" type="range" value="3.2"/></div>
+<div class="control"><label for="t"><span>等效壁厚 t</span><output id="t-out"></output></label><input data-unit=" m" id="t" max="0.60" min="0.18" step="0.01" type="range" value="0.30"/></div>
+<div class="control"><label for="gamma"><span>材料重度 γ</span><output id="gamma-out"></output></label><input data-unit=" kN/m³" id="gamma" max="27" min="23" step="0.5" type="range" value="25"/></div>
+<div class="task"><strong>观察任务：</strong>固定 B、H 逐步减小 t，记录减重率与 I 保留率。指出从哪一步开始，几何效率上升已不能代表截面可实施。</div>
+</div><div class="visual"><h2>截面与参数轨迹</h2><svg aria-label="箱梁截面和壁厚参数曲线" class="figure" id="scene" role="img" viewbox="0 0 860 480"></svg>
+<div class="metrics" id="metrics"></div><div class="formula">A=BH−(B−2t)(H−2t)；I=[BH³−(B−2t)(H−2t)³]/12；J<sub>t</sub>≈4A<sub>m</sub>²/∮(ds/t)。<br/>I/I<sub>solid</sub>以同外轮廓实心矩形为基准；右图 A、I、J<sub>t</sub>均以同一 B、H 下 t<sub>ref</sub>=0.60 m 为基准。</div>
+<div class="boundary" id="rangeNote">边界：等厚、对称、单室、线弹性几何比较。A 与 I 采用精确矩形相减式；J<sub>t</sub>采用薄壁闭口近似。最小壁厚、预应力管道、横向板受力、剪切、畸变、局部稳定、构造和施工条件必须另行核查。</div></div></section>
+</main><script src="bridge-lab-utils.js"></script><script>
+const svg=document.getElementById('scene'),metrics=document.getElementById('metrics'),rangeNote=document.getElementById('rangeNote'),NS='http://www.w3.org/2000/svg';const initial={B:10,H:3.2,t:.30,gamma:25},state={...initial};
+function el(tag,a={},t=''){const n=document.createElementNS(NS,tag);Object.entries(a).forEach(([k,v])=>n.setAttribute(k,v));if(t)n.textContent=t;svg.appendChild(n);return n}
+function calc(t){const bi=Math.max(.01,state.B-2*t),hi=Math.max(.01,state.H-2*t),A=state.B*state.H-bi*hi,I=(state.B*state.H**3-bi*hi**3)/12,Bm=state.B-t,Hm=state.H-t,Am=Bm*Hm,per=2*(Bm+Hm),J=4*Am*Am*t/per;return{A,I,J,q:A*state.gamma,rho:A/(state.B*state.H),eta:I/(A*state.H*state.H)}}
+function render(){svg.innerHTML='';const c=calc(state.t),ref=calc(.60),fullI=state.B*state.H**3/12,reduction=1-c.A/ref.A,thinRatio=state.t/Math.min(state.B,state.H);const sx=60,sy=55,sw=330,sh=sw*state.H/state.B;el('rect',{x:sx,y:sy,width:sw,height:sh,class:'solid'});const ix=sx+sw*state.t/state.B,iy=sy+sh*state.t/state.H,iw=sw*(state.B-2*state.t)/state.B,ih=sh*(state.H-2*state.t)/state.H;el('rect',{x:ix,y:iy,width:iw,height:ih,class:'void'});el('line',{x1:sx-12,y1:sy+sh/2,x2:sx+sw+12,y2:sy+sh/2,class:'axis','stroke-dasharray':'5 4'});el('text',{x:sx+sw/2,y:sy+sh+30,'text-anchor':'middle',class:'label'},`B=${state.B.toFixed(1)} m，H=${state.H.toFixed(1)} m，t=${state.t.toFixed(2)} m`);el('text',{x:sx+sw/2,y:sy+sh+54,'text-anchor':'middle',class:'small'},'空腔同时影响自重、横向板跨、检修空间与构造布置。');
+  const x0=485,y0=390,w=320,h=280;for(let i=0;i<=4;i++){const y=y0-i*h/4;el('line',{x1:x0,y1:y,x2:x0+w,y2:y,class:'grid'});el('text',{x:x0-10,y:y+4,'text-anchor':'end',class:'small'},(i*.25).toFixed(2))}for(let i=0;i<=4;i++){const tt=.18+i*.105,x=x0+(tt-.18)/.42*w;el('line',{x1:x,y1:y0-h,x2:x,y2:y0,class:'grid'});el('text',{x,y:y0+21,'text-anchor':'middle',class:'small'},tt.toFixed(2))}el('line',{x1:x0,y1:y0,x2:x0+w,y2:y0,class:'axis'});el('line',{x1:x0,y1:y0,x2:x0,y2:y0-h,class:'axis'});const series=[['curve',x=>calc(x).A/ref.A],['curve2',x=>calc(x).I/ref.I],['curve3',x=>calc(x).J/ref.J]];series.forEach(([cls,f])=>{let d='';for(let i=0;i<=84;i++){const tt=.18+i*.005,x=x0+(tt-.18)/.42*w,y=y0-Math.min(1,f(tt))*h;d+=(i?'L':'M')+x.toFixed(1)+','+y.toFixed(1)}el('path',{d,class:cls})});const px=x0+(state.t-.18)/.42*w;el('line',{x1:px,y1:y0-h,x2:px,y2:y0,class:'dim','stroke-dasharray':'5 4'});el('text',{x:x0+w/2,y:445,'text-anchor':'middle',class:'label'},'等效壁厚 t / m');el('text',{x:x0+w/2,y:82,'text-anchor':'middle',class:'small'},'右图基准：同一 B、H，tref=0.60 m 时为 1.00');
+  const leg=[['#146c94','面积 A'],['#c7632d','惯性矩 I'],['#2d7b68','扭转常数 Jₜ']];leg.forEach(([col,lab],i)=>{el('line',{x1:500+i*100,y1:101,x2:522+i*100,y2:101,stroke:col,'stroke-width':4});el('text',{x:528+i*100,y:106,class:'small'},lab)});
+  metrics.innerHTML=[['自重减少率（对 tref）',`${(reduction*100).toFixed(1)}%`],['相对参考壁厚 I/Iref',`${(c.I/ref.I*100).toFixed(1)}%`],['实心基准 I/Isolid',`${(c.I/fullI*100).toFixed(1)}%`],['单位长度自重 γA',`${c.q.toFixed(1)} kN/m`],['弯曲几何效率 I/(AH²)',c.eta.toFixed(3)]].map(([k,v])=>`<div class="metric"><span>${k}</span><strong>${v}</strong></div>`).join('');rangeNote.innerHTML=`边界：A 与 I 采用精确矩形相减式；J<sub>t</sub>采用薄壁闭口近似。当前 t/min(B,H)=${thinRatio.toFixed(3)}。${thinRatio<=.10?'该比值处于本页采用的薄壁教学范围（≤0.10）。':'该比值超出本页采用的薄壁教学范围（≤0.10），Jₜ曲线仅作示意。'} 最小壁厚、预应力管道、横向板受力、剪切、畸变、局部稳定、构造和施工条件必须另行核查。`}
+for(const id of ['B','H','t','gamma'])bindRange(state,id,render);document.getElementById('reset').onclick=()=>{Object.assign(state,initial);for(const id of ['B','H','t','gamma']){document.getElementById(id).value=state[id];document.getElementById(id).dispatchEvent(new Event('input'))}};document.getElementById('export').onclick=()=>exportSvg(svg,'箱梁空腔自重与截面效率.svg');render();
+</script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/ch04-box-girder-tradeoff.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body></html>

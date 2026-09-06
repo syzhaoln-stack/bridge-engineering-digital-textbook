@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="64 m 上承式空腹拱铁路桥梁壳混合准静态有限元数字孪生教学实验台" name="description"/>
+<link href="data:," rel="icon"/>
+<title>拱桥响应实验台 · 梁壳混合有限元</title>
+<!-- Built 2026-07-25T14:45:15.598Z -->
+<style>
+    :root {
+      color-scheme: light;
+      --chalk: #e9eef0;
+      --paper: #f5f7f6;
+      --ink: #172c34;
+      --muted: #647880;
+      --steel: #315867;
+      --signal: #d65f44;
+      --brass: #d5a94f;
+      --aqua: #4ca9ad;
+      --line: rgba(23,44,52,.16);
+      --top: 66px;
+      --side: 382px;
+      --bottom: 214px;
+      --shadow: 0 18px 50px rgba(20,39,46,.16);
+      font-family: "Microsoft YaHei UI", "Microsoft YaHei", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: var(--chalk); color: var(--ink); }
+    button, input, select { font: inherit; }
+    button { color: inherit; }
+    button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+
+    .topbar {
+      position: fixed; inset: 0 0 auto; height: var(--top); z-index: 30;
+      display: flex; align-items: center; justify-content: space-between; gap: 20px;
+      padding: 0 18px 0 20px; background: rgba(245,247,246,.94); border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+    }
+    .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+    .arch-mark { width: 54px; height: 28px; flex: 0 0 auto; }
+    .brand-copy { min-width: 0; }
+    h1 { margin: 0; font: 680 19px/1 Bahnschrift, "Arial Narrow", sans-serif; letter-spacing: .04em; white-space: nowrap; }
+    .subtitle { display: block; margin-top: 5px; color: var(--muted); font-size: 10px; letter-spacing: .05em; white-space: nowrap; }
+    .status-group { display: flex; align-items: center; gap: 8px; }
+    .status-chip { padding: 7px 9px; border: 1px solid var(--line); border-radius: 3px; background: rgba(255,255,255,.62); font: 10px/1.2 Consolas, monospace; color: var(--steel); white-space: nowrap; }
+    .status-chip.primary::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: var(--brass); box-shadow: 0 0 0 3px rgba(213,169,79,.17); }
+
+    #scene-wrap { position: fixed; top: var(--top); left: 0; right: var(--side); bottom: var(--bottom); overflow: hidden; background: linear-gradient(180deg,#b9cbd0 0%,#dbe4e3 54%,#aabfbd 100%); }
+    #scene { position: absolute; inset: 0; }
+    #scene canvas { display: block; width: 100%; height: 100%; }
+    .scene-grid { position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px); background-size: 56px 56px; mask-image: linear-gradient(to bottom,rgba(0,0,0,.55),transparent 72%); }
+    .section-tag { position: absolute; top: 16px; left: 18px; z-index: 4; padding: 7px 9px; background: rgba(23,44,52,.86); color: white; font: 10px Consolas,monospace; letter-spacing: .08em; }
+    .readouts { position: absolute; top: 52px; left: 18px; z-index: 4; display: grid; grid-template-columns: repeat(4,minmax(96px,1fr)); gap: 1px; background: rgba(23,44,52,.15); border: 1px solid rgba(255,255,255,.48); box-shadow: var(--shadow); }
+    .readout { min-width: 106px; padding: 9px 11px; background: rgba(245,247,246,.86); backdrop-filter: blur(12px); }
+    .readout span { display: block; margin-bottom: 4px; color: var(--muted); font-size: 9px; letter-spacing: .05em; }
+    .readout strong { font: 650 15px/1 Bahnschrift,Consolas,monospace; }
+    .readout small { margin-left: 3px; color: var(--muted); font: 9px Consolas,monospace; }
+    .load-path { position:absolute; top:52px; right:16px; z-index:5; width:min(540px,46%); padding:10px 12px; background:rgba(245,247,246,.90); border:1px solid rgba(23,44,52,.15); box-shadow:var(--shadow); backdrop-filter:blur(12px); }
+    .load-path-head { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:7px; }
+    .load-path-head span { color:var(--signal); font:650 9px Consolas,monospace; letter-spacing:.12em; }
+    .load-path-head strong { color:var(--ink); font:680 12px Bahnschrift,sans-serif; }
+    .load-path-chain { display:flex; align-items:center; gap:6px; color:var(--steel); font-size:10px; white-space:nowrap; }
+    .load-path-chain b { color:var(--signal); font-size:15px; line-height:1; }
+    .closure { margin-top:7px; height:3px; overflow:hidden; background:#d7dfdf; }
+    .closure i { display:block; width:0; height:100%; background:linear-gradient(90deg,var(--brass),var(--signal)); transition:width .2s; }
+    .thrust-note { display:block; margin-top:6px; color:var(--muted); font:9px Consolas,monospace; }
+
+    .result-rail { position: absolute; left: 18px; top: 133px; z-index: 5; width: 120px; padding: 4px; background: rgba(245,247,246,.86); border: 1px solid rgba(23,44,52,.15); backdrop-filter: blur(12px); box-shadow: 0 10px 30px rgba(20,39,46,.11); }
+    .result-rail button { position: relative; width: 100%; border: 0; border-left: 3px solid transparent; padding: 9px 8px; background: transparent; text-align: left; color: var(--muted); cursor: pointer; font-size: 10px; }
+    .result-rail button:hover { background: rgba(49,88,103,.08); color: var(--ink); }
+    .result-rail button.active { border-left-color: var(--signal); background: var(--ink); color: white; }
+
+    .viewbar { position: absolute; left: 18px; bottom: 16px; z-index: 5; display: flex; gap: 4px; padding: 4px; background: rgba(245,247,246,.86); border: 1px solid rgba(23,44,52,.15); backdrop-filter: blur(12px); }
+    .viewbar button, .chart-tabs button { border: 0; padding: 7px 9px; background: transparent; color: var(--muted); cursor: pointer; font-size: 10px; }
+    .viewbar button.active, .chart-tabs button.active { background: var(--ink); color: white; }
+    .legend { position: absolute; right: 16px; bottom: 16px; z-index: 5; width: min(250px,40%); padding: 10px 11px 8px; background: rgba(245,247,246,.88); border: 1px solid rgba(23,44,52,.15); box-shadow: 0 10px 30px rgba(20,39,46,.11); backdrop-filter: blur(12px); }
+    .legend-head, .legend-scale { display: flex; justify-content: space-between; gap: 8px; color: var(--muted); font-size: 9px; }
+    .legend-bar { height: 9px; margin: 6px 0 4px; background: linear-gradient(90deg,#143c7d,#2ba8b1 38%,#e0ca4f 70%,#cf503f); border: 1px solid rgba(0,0,0,.12); }
+    .legend-scale { font-family: Consolas,monospace; color: var(--ink); }
+
+    #control-panel { position: fixed; top: var(--top); right: 0; bottom: 0; width: var(--side); z-index: 20; display: flex; flex-direction: column; background: var(--paper); border-left: 1px solid var(--line); }
+    .panel-head { position: relative; padding: 14px 17px 12px; border-bottom: 1px solid var(--line); }
+    .panel-kicker { display: block; margin-bottom: 5px; color: var(--signal); font: 650 9px Consolas,monospace; letter-spacing: .14em; }
+    .panel-head strong { font: 680 16px Bahnschrift,sans-serif; }
+    .panel-tabs { display: grid; grid-template-columns: repeat(3,1fr); gap: 3px; margin-top: 12px; padding: 3px; background: #e2e8e8; }
+    .panel-tabs button { border: 0; padding: 7px; background: transparent; color: var(--muted); cursor: pointer; font-size: 11px; }
+    .panel-tabs button.active { background: white; color: var(--ink); box-shadow: 0 2px 8px rgba(20,39,46,.09); }
+    .panel-scroll { flex: 1; min-height: 0; overflow: auto; padding: 3px 17px 24px; scrollbar-width: thin; }
+    .tab-page { display: none; }
+    .tab-page.active { display: block; }
+    .control-section { padding: 13px 0 11px; border-bottom: 1px solid var(--line); }
+    .control-section:last-child { border-bottom: 0; }
+    .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 9px; }
+    .section-heading h2 { margin: 0; font: 680 12px Bahnschrift,sans-serif; letter-spacing: .04em; }
+    .section-heading span { color: var(--muted); font: 9px Consolas,monospace; }
+    .control { margin: 11px 0; }
+    .control label { display: flex; justify-content: space-between; gap: 12px; font-size: 11px; }
+    .control output { color: var(--steel); font: 650 10px Consolas,monospace; white-space: nowrap; }
+    .control input[type="range"] { width: 100%; height: 3px; margin: 9px 0 1px; accent-color: var(--signal); cursor: pointer; }
+    .control select { width: 100%; margin-top: 7px; padding: 8px; border: 1px solid var(--line); border-radius: 2px; background: white; color: var(--ink); font-size: 11px; }
+    .effect-note { margin: 8px 0 0; padding: 8px 9px; border-left: 3px solid var(--brass); background: rgba(213,169,79,.09); color: #5d5949; font-size: 10px; line-height: 1.55; }
+    .formula { display: block; margin: 8px 0; padding: 8px; border: 1px solid var(--line); background: white; color: var(--steel); font: 10px Consolas,monospace; }
+    .future { padding: 11px; border: 1px dashed rgba(49,88,103,.38); background: rgba(49,88,103,.045); }
+    .future strong { font-size: 11px; }
+    .future p { margin: 6px 0; color: var(--muted); font-size: 10px; line-height: 1.55; }
+    .disabled { opacity: .42; pointer-events: none; }
+    .toggle-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 10px 0; font-size: 11px; }
+    .switch { position: relative; width: 35px; height: 19px; flex: 0 0 auto; }
+    .switch input { position: absolute; opacity: 0; }
+    .switch i { position: absolute; inset: 0; border-radius: 20px; background: #c5cece; cursor: pointer; }
+    .switch i::after { content: ""; position: absolute; left: 3px; top: 3px; width: 13px; height: 13px; border-radius: 50%; background: white; transition: .18s; box-shadow: 0 1px 4px rgba(0,0,0,.17); }
+    .switch input:checked + i { background: var(--steel); }
+    .switch input:checked + i::after { transform: translateX(16px); }
+    .reset { width: 100%; padding: 9px; border: 1px solid var(--line); background: white; cursor: pointer; font-size: 11px; }
+
+    #response-panel { position: fixed; left: 0; right: var(--side); bottom: 0; height: var(--bottom); z-index: 15; display: grid; grid-template-rows: 44px 1fr; background: rgba(245,247,246,.98); border-top: 1px solid var(--line); }
+    .transport { display: flex; align-items: center; gap: 8px; padding: 0 18px; border-bottom: 1px solid var(--line); }
+    .play { min-width: 58px; padding: 7px 10px; border: 0; background: var(--ink); color: white; cursor: pointer; font-size: 10px; }
+    .step { width: 28px; height: 28px; border: 1px solid var(--line); background: white; cursor: pointer; }
+    #position-slider { flex: 1; accent-color: var(--signal); }
+    #position-readout { min-width: 104px; text-align: right; color: var(--steel); font: 10px Consolas,monospace; }
+    .chart-wrap { position: relative; min-height: 0; padding: 10px 16px 12px; }
+    #response-chart { width: 100%; height: 100%; display: block; }
+    .chart-caption { position: absolute; top: 12px; left: 20px; color: var(--steel); font: 650 9px Consolas,monospace; letter-spacing: .05em; }
+    .chart-tabs { position: absolute; right: 16px; top: 8px; display: flex; gap: 2px; padding: 3px; background: rgba(233,238,240,.91); }
+
+    #loading { position: fixed; inset: var(--top) var(--side) 0 0; z-index: 50; display: grid; place-items: center; background: rgba(233,238,240,.92); backdrop-filter: blur(7px); transition: opacity .2s; }
+    #loading.hidden { opacity: 0; pointer-events: none; }
+    .loading-box { width: min(420px,calc(100vw - 38px)); padding: 21px; border: 1px solid var(--line); background: var(--paper); box-shadow: var(--shadow); }
+    .loading-box strong { font: 680 15px Bahnschrift,sans-serif; }
+    .loading-box span { display: block; margin-top: 6px; color: var(--muted); font-size: 10px; line-height: 1.55; }
+    .loading-line { height: 3px; margin-top: 14px; overflow: hidden; background: #d4dddd; }
+    .loading-line::after { content: ""; display: block; width: 38%; height: 100%; background: var(--signal); animation: scan 1s ease-in-out infinite alternate; }
+    @keyframes scan { from { transform: translateX(-70%); } to { transform: translateX(235%); } }
+    #toast { position: fixed; left: 18px; bottom: calc(var(--bottom) + 16px); z-index: 60; max-width: 430px; padding: 9px 11px; background: var(--ink); color: white; font-size: 10px; opacity: 0; transform: translateY(7px); pointer-events: none; transition: .18s; }
+    #toast.show { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 1180px) { .load-path { top:178px; width:360px; } }
+    @media (max-width: 1100px) { :root { --side: 340px; } .readouts { grid-template-columns: repeat(2,1fr); } .result-rail { top: 178px; } .load-path { top:178px; right:12px; } }
+    @media (max-width: 760px) {
+      :root { --top: 58px; --side: 0px; --bottom: 250px; }
+      .topbar { padding: 0 10px; }
+      .arch-mark { width: 40px; }
+      h1 { font-size: 15px; }
+      .subtitle, .status-chip:not(.primary) { display: none; }
+      .status-chip { max-width: 145px; overflow: hidden; text-overflow: ellipsis; }
+      #scene-wrap { right: 0; bottom: var(--bottom); }
+      .section-tag { top: 9px; left: 9px; }
+      .readouts { top: 42px; left: 9px; width: calc(100% - 18px); grid-template-columns: repeat(4,1fr); }
+      .readout { min-width: 0; padding: 7px 6px; }
+      .readout span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      .readout strong { font-size: 12px; }
+      .load-path { top:151px; left:120px; right:9px; width:auto; padding:7px 8px; }
+      .load-path-head { margin-bottom:4px; }
+      .load-path-head strong { font-size:10px; }
+      .load-path-chain { gap:3px; overflow:hidden; text-overflow:ellipsis; font-size:8px; }
+      .load-path-chain b { font-size:11px; }
+      .result-rail { top: 101px; left: 9px; width: 102px; }
+      .result-rail button { padding: 7px 6px; font-size: 9px; }
+      .viewbar { left: 9px; bottom: 9px; }
+      .legend { right: 9px; bottom: 9px; width: 172px; }
+      #response-panel { right: 0; height: var(--bottom); }
+      #control-panel { top: auto; left: 0; bottom: 0; width: 100%; height: var(--bottom); border-left: 0; border-top: 1px solid var(--line); transform: translateY(calc(100% - 45px)); transition: transform .24s; }
+      #control-panel.open { height: 74vh; transform: translateY(0); }
+      .panel-head { padding: 10px 12px; cursor: pointer; }
+      .panel-head::after { content: "参数"; position: absolute; right: 13px; top: 15px; color: var(--signal); font-size: 10px; }
+      .panel-head strong, .panel-head .panel-kicker, .panel-tabs { display: none; }
+      #control-panel.open .panel-head strong, #control-panel.open .panel-head .panel-kicker { display: block; }
+      #control-panel.open .panel-tabs { display: grid; }
+      #loading { right: 0; bottom: var(--bottom); }
+      .transport { padding: 0 8px; gap: 5px; }
+      .chart-tabs button { padding: 6px; font-size: 9px; }
+      .chart-caption { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration: .001ms!important; transition-duration: .001ms!important; } }
+  </style>
+</head>
+<body>
+<header class="topbar">
+<div class="brand">
+<svg aria-hidden="true" class="arch-mark" viewbox="0 0 54 28"><path d="M2 4H52M5 25C11 7 43 7 49 25" fill="none" stroke="#172c34" stroke-width="2"></path><path d="M11 4V19M18 4V12M27 4V9M36 4V12M43 4V19" stroke="#d65f44" stroke-width="1.4"></path></svg>
+<div class="brand-copy"><h1>拱桥响应实验台</h1><span class="subtitle">64 m 上承式空腹拱 · 桥面壳 / 主梁与主拱梁 / 拱上立柱（空间梁柱）</span></div>
+</div>
+<div class="status-group">
+<span class="status-chip primary" id="solver-chip">MITC4 壳 + 空间梁柱</span>
+<span class="status-chip">准静态 KU = F(x)</span>
+<span class="status-chip">车桥耦合：未启用</span>
+<span class="status-chip">线弹性 · 小位移 · 不含自重初始态、开裂与稳定</span>
+</div>
+</header>
+<main id="scene-wrap">
+<div id="scene"></div><div class="scene-grid"></div>
+<div class="section-tag">A–A　DECK ARCH / OPEN SPANDREL / 64.000 m</div>
+<div class="readouts">
+<div class="readout"><span>桥面最大下挠</span><strong id="r-disp">—</strong><small>mm</small></div>
+<div class="readout"><span>桥面壳原始单元 / 积分点峰值</span><strong id="r-deck">—</strong><small>MPa</small></div>
+<div class="readout"><span>主拱最大轴压</span><strong id="r-arch">—</strong><small>kN</small></div>
+<div class="readout"><span>立柱最大轴压</span><strong id="r-column">—</strong><small>kN</small></div>
+</div>
+<div class="load-path"><div class="load-path-head"><span>LOAD PATH / 该车位</span><strong>立柱接口竖向力汇总 / 外荷载 <em id="r-transfer">—</em></strong></div><div class="load-path-chain"><span>桥面壳 / 主梁</span><b>→</b><span>拱上立柱（空间梁柱，当前轴压为主）</span><b>→</b><span>主拱</span><b>→</b><span>拱脚</span></div><div class="closure"><i id="closure-bar"></i></div><small class="thrust-note">拱脚水平推力 H = <span id="r-thrust">—</span> kN<span hidden="" id="balance-loaded"> · 全局力平衡相对残差 <span id="r-force-balance">—</span> · 全局矩平衡相对残差 <span id="r-moment-balance">—</span> · 最大自由平动残差 <span id="r-free-force-residual">—</span> kN · 最大自由转动残差 <span id="r-free-moment-residual">—</span> kN·m</span><span id="balance-empty"> · 当前无列车轴载，平衡相对残差不定义</span></small></div>
+<nav aria-label="结果图层" class="result-rail">
+<button class="active" data-result="deck-stress">桥面应力</button>
+<button data-result="deck-displacement">桥面位移</button>
+<button data-result="arch-stress">主拱应力</button>
+<button data-result="column-force">立柱轴力</button>
+</nav>
+<div class="viewbar"><button class="active" data-view="elevation">侧立</button><button data-view="perspective">透视</button><button data-view="deck">桥面</button><button data-view="transfer">传力</button></div>
+<div class="legend"><div class="legend-head"><span id="legend-title">桥面等效应力</span><span id="legend-unit">MPa</span></div><div class="legend-bar"></div><div class="legend-scale"><span id="legend-min">0.0</span><span id="legend-mid">—</span><span id="legend-max">—</span></div></div>
+</main>
+<aside id="control-panel">
+<div class="panel-head"><span class="panel-kicker">PARAMETRIC STUDY</span><strong>改一个参数，看力怎样重分配</strong><div class="panel-tabs" role="tablist"><button class="active" data-tab="bridge">拱桥</button><button data-tab="train">列车</button><button data-tab="display">显示 / 动力</button></div></div>
+<div class="panel-scroll">
+<section class="tab-page active" data-page="bridge">
+<div class="control-section">
+<div class="section-heading"><h2>拱轴与刚度</h2><span>L = 64 m</span></div>
+<div class="control"><label for="archRise">矢高 f <output data-output="archRise">12.8 m</output></label><input data-analysis="" data-param="archRise" data-rebuild="" id="archRise" max="18" min="8" step="0.4" type="range" value="12.8"/></div>
+<p class="effect-note">矢跨比改变拱的推力与弯矩分配；本模型用二次抛物线拱轴。</p>
+<div class="control"><label for="crownClearance">拱顶净距 <output data-output="crownClearance">2.40 m</output></label><input data-analysis="" data-param="crownClearance" data-rebuild="" id="crownClearance" max="5.0" min="1.2" step="0.1" type="range" value="2.4"/></div>
+<p class="effect-note">拱顶净距是桥面主梁底到主拱拱顶的竖向距离；它控制拱顶附近立柱的有效长度。</p>
+<div class="control"><label for="ribArea">拱肋几何相似缩放的等效面积 A <output data-output="ribArea">0.85 m²</output></label><input data-analysis="" data-param="ribArea" id="ribArea" max="1.40" min="0.45" step="0.05" type="range" value="0.85"/></div>
+<div class="control"><label for="deckThickness">桥面等效厚度 t <output data-output="deckThickness">0.42 m</output></label><input data-analysis="" data-param="deckThickness" id="deckThickness" max="0.70" min="0.24" step="0.01" type="range" value="0.42"/></div>
+<div class="control"><label for="elasticity">桥面壳等效弹性模量 E <output data-output="elasticity">34.5 GPa</output></label><input data-analysis="" data-param="elasticity" id="elasticity" max="45" min="28" step="0.5" type="range" value="34.5"/></div>
+<p class="effect-note">“面积”滑块按几何相似缩放截面，A 改变时 I<sub>y</sub>、I<sub>z</sub> 与 J 也约按 A² 改变。桥面壳 E 可调；所有线单元（主梁、横梁、拱肋、立柱、横撑）均固定采用 210 GPa 的教学钢材参数。</p>
+</div>
+<div class="control-section">
+<div class="section-heading"><h2>拱上立柱与网格</h2><span>空间梁柱单元</span></div>
+<div class="control"><label for="columnArea">立柱等几何相似缩放面积 A<sub>c</sub> <output data-output="columnArea">0.18 m²</output></label><input data-analysis="" data-param="columnArea" id="columnArea" max="0.40" min="0.08" step="0.01" type="range" value="0.18"/></div>
+<div class="control"><label for="mesh">桥面壳网格（每侧 13 根立柱）</label><select data-analysis="" data-param="mesh" data-rebuild="" id="mesh"><option value="12x2">12 × 2（横向粗网格）</option><option selected="" value="12x4">12 × 4（推荐）</option><option value="12x6">12 × 6（横向细化）</option></select></div>
+<p class="effect-note">拱上立柱采用可传轴力、双向弯矩和扭矩的空间梁柱单元；当前工况以轴压为主，但不是“只受压杆”。轴力以受压为负，界面显示立柱接口竖向力汇总与外荷载的比值。</p>
+</div>
+</section>
+<section class="tab-page" data-page="train">
+<div class="control-section">
+<div class="section-heading"><h2>移动轴列</h2><span>3 辆 · 12 轴</span></div>
+<div class="control"><label for="axleLoad">单轴重 <output data-output="axleLoad">160 kN</output></label><input data-analysis="" data-param="axleLoad" id="axleLoad" max="220" min="100" step="5" type="range" value="160"/></div>
+<div class="control"><label for="bogieSpacing">转向架轴距 <output data-output="bogieSpacing">2.50 m</output></label><input data-analysis="" data-param="bogieSpacing" data-rebuild="" id="bogieSpacing" max="3.2" min="2.0" step="0.05" type="range" value="2.5"/></div>
+<div class="control"><label for="trackOffset">线路横向偏心 <output data-output="trackOffset">0.00 m</output></label><input data-analysis="" data-param="trackOffset" data-rebuild="" id="trackOffset" max="1.4" min="-1.4" step="0.1" type="range" value="0"/></div>
+<div class="control"><label for="loadSpread">轮载扩散长度 <output data-output="loadSpread">0.55 m</output></label><input data-analysis="" data-param="loadSpread" id="loadSpread" max="1.2" min="0.2" step="0.05" type="range" value="0.55"/></div>
+<p class="effect-note">每个车位独立组装轮载并求解 KU = F(x)；扩散斑点保持每轴总力及一阶力矩。播放快慢不进入平衡方程，不能解释为真实速度效应。</p>
+</div>
+</section>
+<section class="tab-page" data-page="display">
+<div class="control-section">
+<div class="section-heading"><h2>显示</h2><span>固定全过程色标</span></div>
+<div class="control"><label for="deformScale">变形放大 <output data-output="deformScale">130×</output></label><input data-param="deformScale" id="deformScale" max="500" min="1" step="1" type="range" value="130"/></div>
+<div class="toggle-row"><span>显示桥面网格</span><label class="switch"><input checked="" id="toggle-mesh" type="checkbox"/><i></i></label></div>
+<div class="toggle-row"><span>显示轮载箭头</span><label class="switch"><input checked="" id="toggle-loads" type="checkbox"/><i></i></label></div>
+<div class="toggle-row"><span>突出拱上立柱（空间梁柱）</span><label class="switch"><input checked="" id="toggle-columns" type="checkbox"/><i></i></label></div>
+<div class="control"><label for="playbackRate">播放速度 <output data-output="playbackRate">1.0×</output></label><input data-param="playbackRate" id="playbackRate" max="3" min="0.25" step="0.25" type="range" value="1"/></div>
+</div>
+<div class="control-section">
+<div class="section-heading"><h2>车桥随机振动</h2><span>下一阶段</span></div>
+<div class="future"><strong>当前未参与求解</strong><p>后续升级为车辆悬挂—轮轨接触—桥梁模态耦合，并由轨道不平顺谱生成随机样本。</p><span class="formula">Mü + Cu̇ + Ku = F(vt, r)　·　f<sub>rough</sub> = v / λ</span><div class="disabled"><div class="control"><label>列车速度 <output>待启用</output></label><input disabled="" type="range"/></div><div class="control"><label>不平顺等级 / 随机种子 <output>待启用</output></label><input disabled="" type="range"/></div><div class="control"><label>桥梁阻尼比 <output>待启用</output></label><input disabled="" type="range"/></div></div></div>
+</div>
+<div class="control-section"><button class="reset" id="reset-params">恢复推荐参数</button></div>
+</section>
+</div>
+</aside>
+<section aria-label="同步响应曲线" id="response-panel">
+<div class="transport"><button class="play" id="play-button">暂停</button><button class="step" id="step-back" title="上一帧">‹</button><button class="step" id="step-forward" title="下一帧">›</button><input aria-label="列车位置" id="position-slider" max="120" min="0" type="range" value="0"/><span id="position-readout">车头 — m</span></div>
+<div class="chart-wrap"><span class="chart-caption">同一车位轴 · 列车 / 云图 / 构件响应同步</span><canvas id="response-chart"></canvas><div class="chart-tabs"><button class="active" data-chart="deckDisp">最大下挠</button><button data-chart="deckStress">桥面峰值</button><button data-chart="archCompression">主拱轴压</button><button data-chart="columnCompression">立柱轴压</button></div></div>
+</section>
+<div id="loading"><div class="loading-box"><strong id="loading-title">正在生成上承式空腹拱梁壳模型</strong><span id="loading-detail">桥面壳 / 主梁 · 主拱空间梁 · 拱上立柱空间梁柱 · 121 个准静态车位</span><div class="loading-line"></div></div></div>
+<div id="toast" role="status"></div>
+<script defer="" src="./bundles/ch04-arch-lab.bundle.js"></script>
+<script src="./learning-cycle.js"></script>
+<script defer="" src="./bridge-a11y.js"></script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/ch04-arch-lab.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body>
+</html>

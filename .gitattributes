@@ -1,0 +1,10 @@
+* text=auto
+*.mp4 -text
+*.png -text
+*.jpg -text
+*.woff -text
+*.woff2 -text
+*.ico -text
+*.obj -text -whitespace
+*.mtl -text -whitespace
+*.bundle.js -whitespace

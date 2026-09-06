@@ -1,0 +1,15 @@
+{
+  "id": "C05U05",
+  "title": "矢跨比改变水平推力",
+  "chapter": 5,
+  "fingerprint": "577398ac01fda14cb070d91929987bfea9eaeb975e79bc5c6a6907029fef385c",
+  "duration": 46.3,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 126.4
+}

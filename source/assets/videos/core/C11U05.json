@@ -1,0 +1,15 @@
+{
+  "id": "C11U05",
+  "title": "边界错误可以伪装成漂亮结果",
+  "chapter": 11,
+  "fingerprint": "36af3c1fc37dfda06419f3e0f39dbb20bcd52ee55ace7849d01956eca7d1ce5b",
+  "duration": 47.066667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 126.5
+}

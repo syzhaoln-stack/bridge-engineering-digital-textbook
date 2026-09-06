@@ -1,0 +1,15 @@
+{
+  "id": "C02U04",
+  "title": "固定外包尺寸，比较空心截面效率",
+  "chapter": 2,
+  "fingerprint": "25cac6263e20230ff1b1711942860a71645c52b20ca3b87ea4e3642cb09faa15",
+  "duration": 49.5,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 130.2
+}

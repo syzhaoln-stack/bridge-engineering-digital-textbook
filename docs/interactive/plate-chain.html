@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>平面结构会算了，为什么还要学板？</title><link href="plate-chain/style.css" rel="stylesheet"/></head>
+<body><main>
+<nav><a href="../bridge-thinking.html">← 从桥梁看世界</a><span>拓展实验 · 线弹性有限元</span></nav>
+<header><p class="eyebrow">从材料力学、结构力学和结构设计原理继续往前</p><h1>平面结构会算了，为什么还要学板？</h1><p class="lead">简支梁、连续梁、拱的受力，我们已经会分析：求内力，判断变形，再检查截面。可是车开到桥面的不同位置，力还只沿着图纸上的一个平面传递吗？学过的方法，该怎样继续往前用？</p></header>
+<section class="panel"><h2>已经学过的东西，哪些还管用？</h2><p>前面的训练主要从平面模型出发。材料力学把内力、应力和变形联系起来；结构力学分析简支梁、连续梁、拱等体系；结构设计原理进一步用这些结果检查截面和构件。三门课留下的方法仍然有用：<strong>力要平衡，连接处的变形要相容，材料受力与变形之间要有关系。</strong></p><p>现在增加的问题是：桥面有宽度，车轮分布在不同位置。我们不仅关心沿跨度怎样弯，还要知道横向不同位置怎样共同受力。先看看原来的模型有没有保留这些信息。</p></section>
+<section class="panel"><h2>车开到不同位置，桥面会怎样？</h2><p>先看整桥上的车，再走近橙框里的桥面。挪车、换连接、显示尺寸或传力，都可以自己选择；需要解释时再打开说明。</p><iframe loading="lazy" src="fem-workbench.html?lesson=planar&amp;revision=scene-first-20260905" style="width:100%;height:900px;border:0;border-radius:8px" title="小车、桥面与支承的三维场景"></iframe><p><a href="fem-workbench.html?lesson=planar&amp;revision=scene-first-20260905" target="_blank">单独打开三维场景 ↗</a></p></section>
+<section class="panel" id="beamPlateLesson"></section>
+<section class="panel"><h2>沿着熟悉的方法，怎样一步步认识板？</h2><ol><li><strong>先看一个方向。</strong>从板上想象出一条窄带，用熟悉的梁弯曲去理解它。这里是帮助理解，还没有把整块板真的切开。</li><li><strong>再看旁边的窄带。</strong>车轮附近与远处受到的直接压力不同，但板是连着的；它们会相互传力，不能各自随意变形。</li><li><strong>换一个方向再看。</strong>沿横向也能想象出一组窄带。两组在同一位置相交，竖向位移必须一致，周围的连接还会影响转动。不能把两组独立梁算完后直接相加。</li><li><strong>把共同作用写进模型。</strong>仍然使用平衡、变形协调和材料关系，只是现在要同时描述两个方向的弯曲、扭曲以及相互影响。这就逐步进入了板的分析。</li></ol><details><summary>板是不是完整的三维实体模型？</summary><p>真实桥面有长、宽、厚，是三维物体。板模型通常用中面上的两个坐标描述位置，再通过厚度方向的假设描述弯曲等行为；它不等于把实体内部每个方向的细节都逐一求出。“平面结构的平面内受力”“板的面外弯曲”“三维实体分析”应分开理解。</p><p>前面的梁条只是建立直觉。严格的板模型还要满足各处的位移、转动和弯曲关系，包含相应的扭曲与泊松耦合，不能用互不联系的梁条代替。</p></details><h2>学会板之后，为什么还要回到较简单的模型？</h2><p>因为不同问题需要保留的信息不同。若只求沿跨度的整体弯曲，适当的梁模型可能已经够用；若要看车轮附近或板边的局部响应，就可能需要保留板的两个方向。有限元可以帮助比较，但选择模型的理由仍来自我们想回答的问题。</p><details><summary>最后再问：整片桥面，怎样简化成单独的板或梁？</summary><p>先辨认主梁、横梁和相邻板块怎样提供支承与约束，再判断某块板能否近似为简支板。然后才尝试沿一个方向合并荷载，用梁回答指定的问题。连续板、简支板、梁之间的转化都有条件，不能先把边界改掉，再默认它们仍然等价。</p></details></section>
+<footer><a href="plate-calculation-notes.html">教师备课：计算与验证</a> · <a href="../bridge-thinking.html">返回拓展篇</a></footer></main><script src="plate-chain/shell-classic.js"></script><script src="plate-chain/model.js"></script><script src="plate-chain/learner.js"></script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/plate-chain.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body></html>

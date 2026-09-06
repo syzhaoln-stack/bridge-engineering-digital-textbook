@@ -1,0 +1,15 @@
+{
+  "id": "C02U09",
+  "title": "质量、刚度与频率不是单独变化",
+  "chapter": 2,
+  "fingerprint": "02ecb4c64d40bd27ab8fe3049c27303d79a1e05d86d802729b69679871e8b79c",
+  "duration": 45.866667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 68.9
+}

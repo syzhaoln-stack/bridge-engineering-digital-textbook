@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>从一座桥开始 · 公众课样讲</title><link href="public-course.css" rel="stylesheet"/></head>
+<body><header class="site-header"><a class="brand" href="../bridge-thinking.html">从一座桥开始<span>桥梁思维公众课</span></a><a href="../index.html">回到教材 ↗</a></header>
+<main>
+<section class="course-intro"><p>从书架、绳子和秋千，理解桥梁，也学会换一种方式看身边的物件。</p><label for="lessonSelect">选一讲<select aria-label="选择公众课讲次" id="lessonSelect"></select></label></section>
+<article id="lessonOne">
+<div class="lesson-heading"><p class="eyebrow">第 1 讲 · 可操作样讲 <span>视频未录制</span></p><h1>同一摞书，<br class="mobile-break"/>挪个位置有什么区别？</h1></div>
+<section aria-label="两端支承的书架实验" class="shelf-stage">
+<div class="shelf-visual"><svg aria-labelledby="shelfTitle shelfDesc" id="shelfSvg" role="img" viewbox="0 0 900 550"><title id="shelfTitle">同一摞书与两端支承</title><desc id="shelfDesc">书重60牛，板的两端分别在0米和1.2米处支承。移动书的位置，查看两端向上托的力。</desc>
+<defs><marker id="downHead" markerheight="5" markerwidth="5" orient="auto-start-reverse" refx="8" refy="5" viewbox="0 0 10 10"><path d="M0 0 L10 5 L0 10 Z" fill="#2363bb"></path></marker><marker id="upHead" markerheight="5" markerwidth="5" orient="auto" refx="8" refy="5" viewbox="0 0 10 10"><path d="M0 0 L10 5 L0 10 Z" fill="#087e75"></path></marker><lineargradient id="boardWood" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#d0b798"></stop><stop offset="1" stop-color="#ba9d7a"></stop></lineargradient></defs>
+<text class="scene-small" x="140" y="82">同一块板 · 同一摞书</text><text class="scene-small" text-anchor="end" x="760" y="82">两支承相距 1.20 m</text>
+<rect fill="url(#boardWood)" height="18" rx="3" width="712" x="94" y="322"></rect><path d="M99 329H799" opacity=".55" stroke="#ac906d" stroke-width="1"></path>
+<path d="M140 341L122 367H158Z M760 341L742 367H778Z" fill="#bed9d4" stroke="#4c817a" stroke-width="1.5"></path><path d="M117 374H163 M737 374H783" stroke="#7f9794" stroke-width="2"></path>
+<g aria-label="移动书的位置，也可以使用下方滑块" aria-valuemax="1.1" aria-valuemin="0.1" aria-valuenow="0.6" id="bookGroup" role="slider" tabindex="0">
+<rect fill="#167d74" height="20" rx="2" width="86" x="-43" y="301"></rect><path d="M-32 307H34M-32 314H30" stroke="#a9d2c9" stroke-width="2"></path><rect fill="#456b9d" height="25" rx="2" width="80" x="-38" y="274"></rect><rect fill="#e9eef2" height="13" rx="1" width="61" x="-29" y="280"></rect><path d="M-25 286H28M-25 289H28" stroke="#b8c8d4"></path>
+<rect fill="#d9a145" height="24" rx="2" width="83" x="-45" y="247"></rect><rect fill="#fff5db" height="12" rx="1" width="61" x="-33" y="253"></rect><path d="M-29 259H23M-29 262H23" stroke="#dec89c"></path>
+<line marker-end="url(#downHead)" stroke="#2363bb" stroke-width="5" x1="0" x2="0" y1="130" y2="232"></line><text class="force-label load-label" text-anchor="middle" y="112">书重 60 N</text><rect fill="transparent" height="80" width="106" x="-53" y="241"></rect>
+</g>
+<g hidden="" id="reactionForces"><line id="leftArrow" marker-end="url(#upHead)" stroke="#087e75" stroke-width="5" x1="140" x2="140" y1="453" y2="343"></line><line id="rightArrow" marker-end="url(#upHead)" stroke="#087e75" stroke-width="5" x1="760" x2="760" y1="453" y2="343"></line><text class="force-label" id="leftForce" text-anchor="middle" x="140" y="482">30 N</text><text class="force-label" id="rightForce" text-anchor="middle" x="760" y="482">30 N</text><text class="scene-small" text-anchor="middle" x="140" y="509">左端向上托</text><text class="scene-small" text-anchor="middle" x="760" y="509">右端向上托</text></g>
+<g id="positionMark"><line id="positionLine" stroke="#9ca9b7" stroke-dasharray="4 5" stroke-width="1.5" x1="140" x2="450" y1="416" y2="416"></line><path d="M140 408V424" stroke="#9ca9b7"></path><line id="positionTick" stroke="#9ca9b7" x1="450" x2="450" y1="408" y2="424"></line><text class="scene-small" id="positionLabel" text-anchor="middle" x="450" y="452">距左支承 0.60 m</text></g>
+</svg><p class="model-caption">书的位置按重心表示；忽略板自重，两端支承均保持接触。图中不画板的变形。</p></div>
+<div class="shelf-controls"><h2>先把书挪一挪</h2><p class="quiet">书没有变重。两边还会一样费力吗？</p><label for="bookPosition">距左支承 <output id="positionOutput">0.60 m</output><input id="bookPosition" max="1.1" min="0.1" step="0.01" type="range" value="0.6"/></label><div class="position-buttons"><button id="moveLeft">往左放</button><button id="moveCenter">回到中间</button><button id="moveRight">往右放</button></div><details class="prediction"><summary>先猜一下（可选）</summary><p>把书从中间移向左边，左端托力会怎样？</p><div class="choice-row"><button data-predict="more">增加</button><button data-predict="less">减少</button><button data-predict="same">不变</button></div><p id="predictionFeedback" role="status"></p></details><button class="primary" id="showForces">看看两边各托多少</button><p class="live-result" hidden="" id="liveResult" role="status"></p><details hidden="" id="whyPanel"><summary>为什么这样分？</summary><p>两端托力的总和要等于 60 N；还要使向两边转动的作用相互抵消。书离左端越近，右端需要提供的托力越小。</p><p class="quiet">这里求的是两端分担，尚不能据此判断板的弯曲或整个书架的承载能力。</p><details><summary>对照数字看一条关系</summary><p>右端托力 = 60 N × 书距左端 / 1.20 m；左端托力 = 60 N − 右端托力。长度都用米，先核对两端之和。</p></details></details></div>
+</section>
+<section class="bridge-step"><div><p class="eyebrow">把这个问题带到桥上</p><h2>两端能算清楚，换成五根梁呢？</h2><p>先把车放在中间，再往一侧挪。总重量不变，各根梁怎样分担？</p></div><a class="primary" href="transverse-bridge.html" id="openBridge">继续：到桥上挪车 <span>↗</span></a></section>
+<section class="after-lesson"><details id="quizPanel"><summary>换个问题，看看自己理解了没有 <span>3 道自测</span></summary><div class="quiz-grid">
+<fieldset><legend>1. 只挪书，没有添书</legend><p>同一模型中，书从中间移向左端，哪一项成立？</p><label><input name="q1" type="radio" value="a"/> 左端增加，右端减少，两者之和不变</label><label><input name="q1" type="radio" value="b"/> 两端一起增加</label><label><input name="q1" type="radio" value="c"/> 两端都不变</label><p class="quiz-feedback" id="feedback1" role="status"></p></fieldset>
+<fieldset><legend>2. 找到五根梁的一个分法</legend><p>在桥上保留 5 根相同主梁和 120 kN 总荷载，让 5 号梁分担约 30%。它承接多少力？</p><label class="number-answer">5 号梁 <input id="q2" inputmode="decimal" max="120" min="0" placeholder="填入数值" step="0.1" type="number"/> kN</label><button id="checkQ2">核对这个读数</button><p class="quiz-feedback" id="feedback2" role="status"></p></fieldset>
+<fieldset><legend>3. 都放在正中间，就会平均吗？</legend><p>车仍在中央，只有 5 号梁更容易发生竖向变形，还能直接说每根各分五分之一吗？</p><label><input name="q3" type="radio" value="yes"/> 能，车居中就一定平均</label><label><input name="q3" type="radio" value="no"/> 不能，还要看各梁刚度和共同变形</label><p class="quiz-feedback" id="feedback3" role="status"></p></fieldset>
+</div></details><details id="scriptPanel"><summary>读第一讲完整口播 <span>原创样稿 · 约 1,580 字</span></summary><div class="script-text" id="scriptText"></div></details></section>
+</article>
+<article hidden="" id="otherLesson"><p class="eyebrow" id="otherStatus"></p><h1 id="otherTitle"></h1><div class="outline-content"><p class="outline-lead" id="otherEveryday"></p><section><h2>这一讲带走什么</h2><p id="otherGain"></p></section><section><h2>在桥上可以看见什么</h2><p id="otherBridge"></p></section><section class="available-lab"><p class="eyebrow">先试已有的教具</p><p id="otherAction"></p><a class="primary" id="otherLab">打开相关教具 ↗</a><p class="quiet" id="otherAssetStatus"></p></section><details><summary>换一个对象再想想</summary><p id="otherTransfer"></p></details><button id="backSample">回到第 1 讲样讲</button></div></article>
+<footer>课程开发预览 · 已有 12 讲提纲和第 1 讲交互样讲；尚未制作课程视频。可自由选择，不设学习解锁。</footer>
+</main><script src="public-course-data.js"></script><script src="public-course.js"></script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/public-course.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body></html>

@@ -1,0 +1,15 @@
+{
+  "id": "C03U02",
+  "title": "等效荷载同时保留力和矩",
+  "chapter": 3,
+  "fingerprint": "9d65a451eb026076296a2b90c0166f2ab1da29fe6c6f53d37ecb5bd566e0e03e",
+  "duration": 46.866667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 65.2
+}

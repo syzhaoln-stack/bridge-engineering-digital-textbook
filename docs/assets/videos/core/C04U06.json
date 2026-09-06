@@ -1,0 +1,15 @@
+{
+  "id": "C04U06",
+  "title": "不同刚度，分配系数就要重算",
+  "chapter": 4,
+  "fingerprint": "5767292a7414e4a17d65af7d5f2fab19670856f9d0a4c24f07b1e95913a264f1",
+  "duration": 48.966667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 90.8
+}

@@ -1,0 +1,15 @@
+{
+  "id": "C06U04",
+  "title": "影响列接近时，控制就不稳定",
+  "chapter": 6,
+  "fingerprint": "da3a9d1b2b08908fc9d6825be1c627b4ecd30acb2b070ebd8b3b3bd19f5f4b0f",
+  "duration": 50.566667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 150.9
+}

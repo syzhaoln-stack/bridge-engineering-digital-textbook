@@ -1,0 +1,15 @@
+{
+  "id": "C03U04",
+  "title": "瀑布图读的是代数贡献",
+  "chapter": 3,
+  "fingerprint": "8a8c8ec470470173992f6e70cd916564254ab5d4c094525ee9ea05f75a2d50ea",
+  "duration": 47.4,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 149.9
+}

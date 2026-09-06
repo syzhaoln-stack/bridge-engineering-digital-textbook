@@ -1,0 +1,15 @@
+{
+  "id": "C11U09",
+  "title": "AI输出也必须经过方向与量纲检查",
+  "chapter": 11,
+  "fingerprint": "e5fd167bee53bafc8b20e4aa828983d18d8c60d743902049b2c64124c0429dfc",
+  "duration": 47.766667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 124.9
+}

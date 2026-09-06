@@ -1,0 +1,15 @@
+{
+  "id": "C03U06",
+  "title": "不确定性本身也改变结论",
+  "chapter": 3,
+  "fingerprint": "8b44020d9600938629a57939473c32062996453a2e208884aa468131a7664351",
+  "duration": 45.8,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 73.1
+}

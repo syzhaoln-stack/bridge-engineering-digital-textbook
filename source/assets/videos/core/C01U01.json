@@ -1,0 +1,15 @@
+{
+  "id": "C01U01",
+  "title": "移动荷载，先守住平衡",
+  "chapter": 1,
+  "fingerprint": "8048d103b4c11180370153d6860b1e03c79b60f1f6974fc5c4e6ec1e60dfbb0f",
+  "duration": 46.533333,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 64.4
+}

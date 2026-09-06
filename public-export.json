@@ -1,0 +1,17 @@
+{
+  "schema": "bridge-public-export/v1",
+  "source_commit": "2fc7d9df9f6a625a928e95fef2566a1c1e4b9feb",
+  "date": "2026-09-06",
+  "excluded_categories": [
+    "application documents and original repository history",
+    "reference scans and web candidate images",
+    "local author indexes and raw research ledgers"
+  ],
+  "public_content": "manuscript, original diagrams and laboratories, attributed runtime dependencies",
+  "counts": {
+    "removed_candidate_galleries": 120,
+    "withheld_reference_figures": 45,
+    "excluded_files": 785
+  },
+  "search_sections": 193
+}

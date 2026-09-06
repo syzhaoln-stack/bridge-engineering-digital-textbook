@@ -1,0 +1,15 @@
+{
+  "id": "C01U09",
+  "title": "方案比较先看敏感性",
+  "chapter": 1,
+  "fingerprint": "27cdf398fc8738de3424a2eb7f20c7dc5fa9e053ae5526423683a602ca1de055",
+  "duration": 45.566667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 122.8
+}

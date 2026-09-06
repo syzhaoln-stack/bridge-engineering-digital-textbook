@@ -1,0 +1,15 @@
+{
+  "id": "C03U10",
+  "title": "可靠度模型先做可解释的核验",
+  "chapter": 3,
+  "fingerprint": "48c25148eac6c32c15ec7716a0ddaa958c7fe29915f10ccb7e987cb89a5af83c",
+  "duration": 45.066667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 89.9
+}

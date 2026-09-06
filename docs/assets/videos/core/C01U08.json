@@ -1,0 +1,15 @@
+{
+  "id": "C01U08",
+  "title": "同一荷载，刚度决定分工",
+  "chapter": 1,
+  "fingerprint": "4c56a5d3055086aeae148376532964f21d4566f7d41eff76088cfdf20c260aff",
+  "duration": 44.366667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 65.9
+}

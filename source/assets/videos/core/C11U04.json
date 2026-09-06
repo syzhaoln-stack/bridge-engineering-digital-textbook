@@ -1,0 +1,15 @@
+{
+  "id": "C11U04",
+  "title": "刚度矩阵由平衡与协调组成",
+  "chapter": 11,
+  "fingerprint": "b3d4294c694f25e96efb6f1ae097b05409cb15500ee2f5780aaaa44f2b6fa044",
+  "duration": 47.033333,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 113.5
+}

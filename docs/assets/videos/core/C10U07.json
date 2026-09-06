@@ -1,0 +1,15 @@
+{
+  "id": "C10U07",
+  "title": "新证据改变参数判断",
+  "chapter": 10,
+  "fingerprint": "4eb0dd162b9a7dbedcf8c893a2ee1537e2fd775daf879d15624a22a3e3f07424",
+  "duration": 46.066667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 129.7
+}

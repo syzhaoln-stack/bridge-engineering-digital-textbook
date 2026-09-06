@@ -1,0 +1,15 @@
+{
+  "id": "C02U06",
+  "title": "稳定是平衡路径问题",
+  "chapter": 2,
+  "fingerprint": "f14c7f12029bc2633b80ff6bd58d62cfcb40b07298acb6bfbb1733f0c6bd9cc7",
+  "duration": 47.466667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 77.9
+}

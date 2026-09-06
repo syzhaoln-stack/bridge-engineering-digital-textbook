@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>氯盐侵入、截面劣化与可靠指标</title><link href="bridge-lab.css" rel="stylesheet"/><style>
+.direct-controls{display:grid;grid-template-columns:repeat(5,minmax(130px,1fr));gap:10px;margin-bottom:14px}.direct-controls .control{margin:0;background:#fff;border:1px solid var(--line);border-radius:7px;padding:9px}.visual{padding:12px}@media(max-width:850px){.direct-controls{grid-template-columns:1fr 1fr}}@media(max-width:440px){.direct-controls{grid-template-columns:1fr}}
+</style></head><body><main>
+<header><div><h1>氯盐侵入、截面劣化与可靠指标</h1><p>把局部暴露状态依次映射为锈蚀启动、教学截面损失和结构可靠指标；拖动时间游标读取同一时刻的全部状态。</p></div><div class="toolbar"><button id="reset">恢复教学值</button><button id="export">导出当前图（SVG）</button></div></header>
+<section class="direct-controls">
+<div class="control"><label for="cover"><span>保护层 c</span><output id="cover-out"></output></label><input data-unit=" mm" id="cover" max="80" min="30" step="2" type="range" value="50"/></div>
+<div class="control"><label for="D"><span>扩散系数 Dₐ</span><output id="D-out"></output></label><input data-unit=" mm²/年" id="D" max="100" min="10" step="2" type="range" value="45"/></div>
+<div class="control"><label for="Cs"><span>表面浓度 Cₛ（质量分数）</span><output id="Cs-out"></output></label><input data-unit=" %" id="Cs" max="2.0" min="0.5" step="0.05" type="range" value="1.2"/></div>
+<div class="control"><label for="Ccr"><span>临界浓度 Ccr（质量分数）</span><output id="Ccr-out"></output></label><input data-unit=" %" id="Ccr" max="0.8" min="0.2" step="0.02" type="range" value="0.45"/></div>
+<div class="control"><label for="year"><span>读取时刻 t</span><output id="year-out"></output></label><input data-unit=" 年" id="year" max="120" min="1" step="1" type="range" value="60"/></div>
+</section>
+<section class="visual"><svg aria-label="氯离子浓度、截面损失与可靠指标随时间变化" class="figure" id="scene" role="img" viewbox="0 0 940 500"></svg>
+<div class="metrics" id="metrics"></div><div class="formula">取初始浓度 C₀=0：C(c,t)=Cₛ[1−erf(c/(2√(Dₐt)))]；g(t)=R(t)−S。若 R(t)、S 为相互独立的正态变量，且极限状态函数为线性差值，则 β(t)=[μ<sub>R</sub>(t)−μ<sub>S</sub>]/√[σ<sub>R</sub>²(t)+σ<sub>S</sub>²]，P<sub>f</sub>=Φ(−β)。</div>
+<div class="boundary">边界：浓度采用一维半无限介质、常参数扩散的教学模型；“%”表示质量分数，质量基准必须与所采用标准保持一致。锈蚀后抗力映射及正态独立假定均为显式教学关系，只说明链条，不提供工程寿命结论。正式设计须采用项目环境、材料、裂缝与检测数据及现行标准。</div></section>
+</main><script src="bridge-lab-utils.js"></script><script>
+const svg=document.getElementById('scene'),metrics=document.getElementById('metrics'),NS='http://www.w3.org/2000/svg';const initial={cover:50,D:45,Cs:1.2,Ccr:.45,year:60},state={...initial};
+function el(tag,a={},t=''){const n=document.createElementNS(NS,tag);Object.entries(a).forEach(([k,v])=>n.setAttribute(k,v));if(t)n.textContent=t;svg.appendChild(n);return n}
+function erf(x){const sign=x<0?-1:1,a=Math.abs(x),t=1/(1+.3275911*a);return sign*(1-(((((1.061405429*t-1.453152027)*t)+1.421413741)*t-.284496736)*t+.254829592)*t*Math.exp(-a*a))}
+function phi(x){return .5*(1+erf(x/Math.sqrt(2)))}
+function conc(t){return state.Cs*(1-erf(state.cover/(2*Math.sqrt(state.D*Math.max(t,1e-6)))))}
+function initiation(){if(state.Cs<=state.Ccr)return Infinity;let lo=.001,hi=1;while(conc(hi)<state.Ccr&&hi<1e7)hi*=2;if(hi>=1e7&&conc(hi)<state.Ccr)return Infinity;for(let i=0;i<80;i++){const mid=(lo+hi)/2;if(conc(mid)>=state.Ccr)hi=mid;else lo=mid}return hi}
+function structural(t,ti){const loss=Number.isFinite(ti)?Math.min(.35,Math.max(0,t-ti)*.004):0,muR=1.35*(1-loss),sigR=.12*muR,muS=.82,sigS=.10*muS,beta=(muR-muS)/Math.sqrt(sigR*sigR+sigS*sigS),pf=phi(-beta);return{loss,muR,beta,pf}}
+function axes(x,y,w,h,xlab,ylab,ymax,formatter=v=>v.toFixed(1)){el('line',{x1:x,y1:y+h,x2:x+w,y2:y+h,class:'axis'});el('line',{x1:x,y1:y,x2:x,y2:y+h,class:'axis'});for(let i=0;i<=4;i++){const xx=x+i*w/4;el('line',{x1:xx,y1:y,x2:xx,y2:y+h,class:'grid'});el('text',{x:xx,y:y+h+20,'text-anchor':'middle',class:'small'},String(i*30));const yy=y+h-i*h/4;el('line',{x1:x,y1:yy,x2:x+w,y2:yy,class:'grid'});el('text',{x:x-9,y:yy+4,'text-anchor':'end',class:'small'},formatter(i*ymax/4))}el('text',{x:x+w/2,y:y+h+44,'text-anchor':'middle',class:'small'},xlab);el('text',{x:x+8,y:y+16,class:'small'},ylab)}
+function render(){svg.innerHTML='';const ti=initiation(),now=structural(state.year,ti),cmax=Math.max(1,Math.ceil(Math.max(state.Cs,state.Ccr)*1.1*4)/4);axes(60,70,370,310,'时间 / 年','浓度 / %（质量分数）',cmax,v=>v.toFixed(2));let d='';for(let t=1;t<=120;t++){const x=60+(t-1)/119*370,y=380-Math.min(cmax,conc(t))/cmax*310;d+=(t===1?'M':'L')+x.toFixed(1)+','+y.toFixed(1)}el('path',{d,class:'curve'});const ycr=380-state.Ccr/cmax*310;el('line',{x1:60,y1:ycr,x2:430,y2:ycr,class:'curve2','stroke-dasharray':'6 4'});el('text',{x:425,y:ycr-7,'text-anchor':'end',class:'small'},'Ccr');const xnow=60+(state.year-1)/119*370;el('line',{x1:xnow,y1:70,x2:xnow,y2:380,class:'dim','stroke-dasharray':'5 4'});el('circle',{cx:xnow,cy:380-Math.min(cmax,conc(state.year))/cmax*310,r:6,class:'point'});el('text',{x:245,y:38,'text-anchor':'middle',class:'label'},'钢筋深度处氯离子浓度');
+  axes(520,70,370,310,'时间 / 年','可靠指标 β',5,v=>v.toFixed(1));let db='';for(let t=1;t<=120;t++){const b=structural(t,ti).beta,x=520+(t-1)/119*370,y=380-Math.max(0,Math.min(5,b))/5*310;db+=(t===1?'M':'L')+x.toFixed(1)+','+y.toFixed(1)}el('path',{d:db,class:'curve3'});const xn=520+(state.year-1)/119*370,yn=380-Math.max(0,Math.min(5,now.beta))/5*310;el('line',{x1:xn,y1:70,x2:xn,y2:380,class:'dim','stroke-dasharray':'5 4'});el('circle',{cx:xn,cy:yn,r:6,class:'point'});if(Number.isFinite(ti)&&ti<=120){const xi=520+(ti-1)/119*370;el('line',{x1:xi,y1:70,x2:xi,y2:380,class:'curve2','stroke-dasharray':'6 4'});el('text',{x:xi+5,y:94,class:'small'},'锈蚀启动')};el('text',{x:705,y:38,'text-anchor':'middle',class:'label'},'教学抗力映射后的可靠指标');el('text',{x:705,y:465,'text-anchor':'middle',class:'small'},'橙色竖线表示局部状态跨越阈值，不等同于结构立即失效。');
+  metrics.innerHTML=[['锈蚀启动时间 tᵢ',Number.isFinite(ti)?`${ti.toFixed(1)} 年`:'本模型下不发生'],['当前 C(c,t)',`${conc(state.year).toFixed(3)}%（质量分数）`],['教学截面损失率',`${(now.loss*100).toFixed(1)}%`],['可靠指标 / 失效概率',`${now.beta.toFixed(2)} / ${now.pf.toExponential(2)}`]].map(([k,v])=>`<div class="metric"><span>${k}</span><strong>${v}</strong></div>`).join('')}
+for(const id of ['cover','D','Cs','Ccr','year'])bindRange(state,id,render);document.getElementById('reset').onclick=()=>{Object.assign(state,initial);for(const id of ['cover','D','Cs','Ccr','year']){document.getElementById(id).value=state[id];document.getElementById(id).dispatchEvent(new Event('input'))}};document.getElementById('export').onclick=()=>exportSvg(svg,'氯盐侵入劣化与可靠指标.svg');render();
+</script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/ch10-deterioration-reliability-lab.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body></html>

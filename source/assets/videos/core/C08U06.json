@@ -1,0 +1,15 @@
+{
+  "id": "C08U06",
+  "title": "地基与墩柱串联共同变形",
+  "chapter": 8,
+  "fingerprint": "78259968570ef89f69c595795d7c282f500ca8ed080abd800ccf7874b8ee7f85",
+  "duration": 44.566667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 110.9
+}

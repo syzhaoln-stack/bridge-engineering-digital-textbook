@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><link href="data:," rel="icon"/>
+<title>斜拉桥：索角、索力与主梁弯矩</title>
+<style>
+    :root{--paper:#f5f8f8;--ink:#102a36;--muted:#61737b;--line:#d5e1e3;--cyan:#168da8;--amber:#df962f;--coral:#cb5f4e;--green:#4d9c74;--panel:#fff}
+    *{box-sizing:border-box}html,body{margin:0;min-width:0;font-family:"Microsoft YaHei","Segoe UI",sans-serif;background:var(--paper);color:var(--ink)}body{padding:12px}.shell{max-width:1210px;margin:auto;display:grid;grid-template-columns:minmax(0,1.65fr) minmax(292px,.76fr);gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;box-shadow:0 12px 28px rgba(16,42,54,.08)}
+    .question{grid-column:1/-1;padding:15px 18px;border-left:5px solid var(--amber)}.question small{display:block;color:#8c5a16;font-weight:700;margin-bottom:4px}.question h1{font:600 22px/1.35 "STKaiti","KaiTi",serif;margin:0 0 6px}.question p{font-size:12px;color:var(--muted);line-height:1.65;margin:0}.scene-card{overflow:hidden}.scene-head{padding:10px 13px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:9px;align-items:center;flex-wrap:wrap}.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:9px;color:var(--muted)}.sw{display:inline-block;width:12px;height:5px;border-radius:3px;margin-right:4px}.views,.arrangements{display:flex;gap:5px;flex-wrap:wrap}
+    button{border:1px solid #c7d5d8;border-radius:8px;background:#edf3f4;color:var(--ink);padding:7px 9px;min-height:38px;font-size:10px;cursor:pointer}button.active{border-color:var(--cyan);background:#dff1f4}button:focus-visible,input:focus-visible{outline:3px solid rgba(22,141,168,.25);outline-offset:2px}
+    #scene{position:relative;height:590px;overflow:hidden;background:#87a5b5}#scene canvas{display:block;width:100%!important;height:100%!important}.label,.tip{position:absolute;z-index:4;transform:translate(-50%,-50%);padding:4px 6px;border-radius:5px;background:rgba(7,20,28,.87);border:1px solid rgba(255,255,255,.18);color:#f4f7f8;font-size:9px;white-space:nowrap;pointer-events:none}.tip{display:none;z-index:6;text-align:left;line-height:1.5}.scene-note{position:absolute;left:10px;bottom:9px;background:rgba(7,20,28,.78);color:#dce8eb;border-radius:6px;padding:5px 8px;font-size:9px}
+    .desk{padding:15px}.desk h2{font-size:15px;margin:0 0 4px}.desk>p{font-size:11px;color:var(--muted);line-height:1.55;margin:0 0 9px}.arrangements{margin-bottom:9px}.arrangements button{flex:1}.row{padding:9px 10px;margin:7px 0;border:1px solid var(--line);border-radius:9px;background:#fbfcfc}.row label{display:flex;justify-content:space-between;gap:8px;font-size:10px;color:#52666e}.row output{color:var(--cyan);font-weight:700}.row input{width:100%;height:38px;accent-color:var(--cyan)}details{margin-top:8px;border-top:1px solid var(--line);padding-top:8px}summary{font-size:11px;color:#3c6978;cursor:pointer}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}.metric{padding:8px;border-radius:8px;background:#eef3f4;border:1px solid var(--line);min-width:0}.metric span{display:block;font-size:9px;color:var(--muted)}.metric b{display:block;margin-top:3px;color:#966018;font-size:12px;overflow-wrap:anywhere}
+    .reading{grid-column:1/-1;padding:14px 17px;border-top:4px solid var(--cyan)}.reading strong{color:#8b5715}.reading p{font-size:12px;line-height:1.72;margin:5px 0;color:#405962}.boundary{font-size:10px!important;color:#66777e!important}.table-wrap{grid-column:1/-1;padding:0 15px 14px}.table-wrap details{border:0;margin:0;padding:0}.table-scroll{overflow:auto;max-height:280px;margin-top:8px;border:1px solid var(--line);border-radius:9px}table{border-collapse:collapse;width:100%;font-size:10px}th,td{padding:6px 8px;border-bottom:1px solid #e4ebec;text-align:right;white-space:nowrap}th:first-child,td:first-child{text-align:left}thead{position:sticky;top:0;background:#edf3f4;z-index:1}
+    @media(max-width:900px){.shell{grid-template-columns:1fr}.question,.scene-card,.desk,.reading,.table-wrap{grid-column:1}#scene{height:520px}}@media(max-width:560px){body{padding:7px}.question h1{font-size:19px}#scene{height:430px}.views{width:100%}.views button{flex:1}.metrics{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+<main class="shell">
+<section class="question card"><small>斜拉桥参数分析</small><h1>索角、索力与主梁弯矩</h1><p>索角决定同一竖向分力对应的索力水平；实际索力还取决于分担长度、初始调索、主梁刚度和荷载位置。图中同步显示各索初始值、增量、总值和主梁弯矩。</p></section>
+<section class="scene-card card">
+<header class="scene-head"><div class="legend"><span><i class="sw" style="background:#72d0ff"></i>斜拉索</span><span><i class="sw" style="background:#cad5d8"></i>目标索力柱</span><span><i class="sw" style="background:#df962f"></i>当前总索力柱</span><span><i class="sw" style="background:#cb5f4e"></i>负弯矩</span><span><i class="sw" style="background:#49a47a"></i>正弯矩</span></div><div class="views"><button class="active" data-view="bars">索力柱</button><button class="active" data-view="moment">主梁弯矩</button><button id="reset">重置视角</button></div></header>
+<div id="scene"><div class="tip" id="tip"></div><div class="scene-note">弯矩图采用独立归一化基线，绘于受拉侧：正弯矩向下、负弯矩向上；该方向不是工程 z 坐标。转动模型或悬停索力柱可读取结果。</div></div>
+</section>
+<aside class="desk card"><h2>几何参数与索力调整</h2><p>边跨与塔高确定基本几何；“调索程度”表示从等初始索力逐步过渡到按分担范围和索角确定的教学目标。</p>
+<div class="arrangements"><button class="active" data-arr="fan">辐射式</button><button data-arr="semi">扇形</button><button data-arr="harp">竖琴式</button></div>
+<div class="row"><label>塔高／主跨 <output id="o-height"></output></label><input id="height" max="32" min="18" step="1" type="range" value="25"/></div>
+<div class="row"><label>边跨／主跨 <output id="o-sideRatio"></output></label><input id="sideRatio" max="0.55" min="0.30" step="0.05" type="range" value="0.40"/></div>
+<div class="row"><label>车辆位置 x/L <output id="o-x"></output></label><input id="x" max="95" min="5" step="1" type="range" value="56"/></div>
+<div class="row"><label>调索程度 <output id="o-tune"></output></label><input id="tune" max="100" min="0" step="5" type="range" value="100"/></div>
+<details><summary>进一步试：荷载和索刚度</summary>
+<div class="row"><label>车辆总重 <output id="o-live"></output></label><input id="live" max="1800" min="200" step="50" type="range" value="900"/></div>
+<div class="row"><label>单根索面积 <output id="o-area"></output></label><input id="area" max="30" min="8" step="1" type="range" value="18"/></div>
+</details>
+<div class="metrics" id="metrics"></div>
+</aside>
+<section class="table-wrap card"><details><summary>展开全部索力表</summary><div class="table-scroll"><table><thead><tr><th>索号</th><th>位置 x</th><th>索角</th><th>目标 N*</th><th>初始 N₀</th><th>增量 ΔN</th><th>总索力 N</th><th>水平分量 N cosθ</th><th>偏离目标</th></tr></thead><tbody id="tbody"></tbody></table></div></details></section>
+<section class="reading card"><strong id="answer"></strong><p id="explain"></p><p class="boundary">模型边界：主梁采用线弹性 Euler–Bernoulli 梁；桥塔锚点固定；每个桥面锚点由双索面线性化弹簧支承，包含索的轴向刚度与初张力几何刚度。目标索力按恒载分担范围建立，是“让恒载弯矩较小”的教学基准，不是完成的合理成桥状态。未包含塔梁共同变形、索垂度找形、张拉施工、收缩徐变、动力、疲劳和局部锚固分析。</p></section>
+</main>
+<script defer="" src="./bundles/ch05-stay-lab.bundle.js"></script>
+<script defer="" src="./bridge-a11y.js"></script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/ch05-stay-lab.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body>
+</html>

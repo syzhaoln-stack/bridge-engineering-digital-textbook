@@ -1,0 +1,15 @@
+{
+  "id": "C02U10",
+  "title": "线性叠加的边界在哪里",
+  "chapter": 2,
+  "fingerprint": "d7ceaa5991fc103a92d24d005817322f7de02f2a7cc0bd5f4c371c029bce645f",
+  "duration": 48.4,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 74.2
+}

@@ -1,0 +1,15 @@
+{
+  "id": "C10U08",
+  "title": "监测精度决定证据的权重",
+  "chapter": 10,
+  "fingerprint": "be9f09d6ac87f137001fe4f5202aad34630bd43b7a9880e479e8a18a9298bfd9",
+  "duration": 46.033333,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 128.9
+}

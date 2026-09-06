@@ -1,0 +1,15 @@
+{
+  "id": "C10U03",
+  "title": "同一阻尼措施跨灾种迁移有边界",
+  "chapter": 10,
+  "fingerprint": "ff4bf85d150cc8c8047addd20e7b2d93002b227049e6497a4924ebc8b72d98b1",
+  "duration": 46.2,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 125.1
+}

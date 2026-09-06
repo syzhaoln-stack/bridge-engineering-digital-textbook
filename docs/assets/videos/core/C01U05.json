@@ -1,0 +1,15 @@
+{
+  "id": "C01U05",
+  "title": "截面惯性矩不等于整体刚度",
+  "chapter": 1,
+  "fingerprint": "07dadd8a7a315c0edc7948619301947cc91df42aeb3ac81db42e285d17c53b94",
+  "duration": 47.733333,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 72.0
+}

@@ -1,0 +1,15 @@
+{
+  "id": "C06U02",
+  "title": "调整一根索会影响多个输出",
+  "chapter": 6,
+  "fingerprint": "f1916ce5501ddf254d6b1cbeb6c20fdd3ea20179a8e2efb28ac90274a1295dc5",
+  "duration": 44.833333,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 137.7
+}

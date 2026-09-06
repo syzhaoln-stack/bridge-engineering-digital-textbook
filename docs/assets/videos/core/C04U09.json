@@ -1,0 +1,15 @@
+{
+  "id": "C04U09",
+  "title": "只增跨径与整体放大不同",
+  "chapter": 4,
+  "fingerprint": "6b9b50b4b337c1adbe261d8b588c82d91bf659245fcf8d3185cd9708d6702dc9",
+  "duration": 45.266667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 85.7
+}

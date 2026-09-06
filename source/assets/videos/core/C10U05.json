@@ -1,0 +1,15 @@
+{
+  "id": "C10U05",
+  "title": "截面损失要通过模型映射到性能",
+  "chapter": 10,
+  "fingerprint": "a5b66ce90e5eec63dd44022d7d5eb10ba222691ab7602470cc151c40fd118178",
+  "duration": 49.5,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 130.5
+}

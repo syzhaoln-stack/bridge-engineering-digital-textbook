@@ -1,0 +1,15 @@
+{
+  "id": "C11U07",
+  "title": "数值收敛与模型正确分两步证明",
+  "chapter": 11,
+  "fingerprint": "030c9943d150698a4db8765dd10d4ad7200f9c1644c1c636deff14db1d253874",
+  "duration": 47.466667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 140.7
+}

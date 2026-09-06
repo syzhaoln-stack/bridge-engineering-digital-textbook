@@ -1,0 +1,15 @@
+{
+  "id": "C08U10",
+  "title": "同温差放大结构，力和应力不同步",
+  "chapter": 8,
+  "fingerprint": "829ecf74d8a85142fd436d6cd586ef782589eb0ee996b447dfe8572c72946078",
+  "duration": 46.866667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 132.1
+}

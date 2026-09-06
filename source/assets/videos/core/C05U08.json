@@ -1,0 +1,15 @@
+{
+  "id": "C05U08",
+  "title": "合龙相当于锁定自由变形",
+  "chapter": 5,
+  "fingerprint": "cd1ddae4b5e14e43a87a98ae0f9330373b9cc8f5683bb9b56df03f9d5b7b522e",
+  "duration": 45.9,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 126.7
+}

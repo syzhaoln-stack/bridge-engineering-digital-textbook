@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>教师备课：板梁计算与验证</title><link href="plate-chain/style.css" rel="stylesheet"/></head><body><main><nav><a href="plate-chain.html">← 学生学习页</a></nav><header><h1>教师备课：板梁计算与验证</h1><p>本页用于备课、复算和解释计算差异。学生的学习顺序见上方链接。</p></header>
+<details class="code"><summary>计算实现的 6 行代码 · 完整源代码在页尾</summary><pre>full = solve(两跨连续板);
+cut.rotations = full.中间支承转角;
+retained = solve(左跨, cut.rotations); // 保留接口：恢复左跨
+simple = solve(左跨, 转角自由);        // 改了边界：不是原问题
+q(x) = integral(p(x,y), y=0..B);       // 保留纵向各处竖向合力
+beam = solve(简支梁, q, EI=E*B*t³/12); // 检查哪些响应仍接近</pre></details>
+<section class="panel"><h2>01 先猜，再算</h2><label for="predict">全宽均布荷载下，去掉邻跨转角约束，左跨中部的下挠会怎样？</label><div class="row"><select id="predict"><option value="">先选一个预测</option><option value="more">增大</option><option value="same">不变</option><option value="less">减小</option></select><button id="predictSave">记下预测</button></div><p id="prediction" role="status">可以先写下理由，再看数值。此预测针对默认均布工况。</p><textarea aria-label="预测理由" id="reason" placeholder="我的理由是……" rows="2"></textarea></section>
+<section class="panel"><h2>02 改一个条件，观察变化</h2><div class="controls">
+<label>荷载<select id="load"><option value="uniform">两跨全宽均布 10 kPa</option><option value="patch">左跨偏置面荷载 40 kPa</option></select></label>
+<label>板宽 B<select id="width"><option value="1">1 m · 窄板</option><option selected="" value="3">3 m</option><option value="6">6 m · 宽板</option></select></label>
+<label>泊松比 ν<select id="nu"><option value="0">0 · 分离泊松影响</option><option selected="" value="0.2">0.20</option><option value="0.3">0.30</option></select></label>
+<label>每跨网格<select id="mesh"><option value="4">4 × 4 · 粗</option><option value="8">8 × 8 · 中</option><option selected="" value="12">12 × 12 · 细</option><option value="16">16 × 16 · 加密</option></select></label></div>
+<div class="row"><button id="run">重新计算</button><button class="secondary" id="reset">恢复默认</button><span id="status" role="status">准备计算</span></div>
+<p class="note">每跨 L = 4 m，厚度 t = 0.16 m，E = 30 GPa；x 沿跨向，y 沿宽向，z 向上。支承线 x = 0、4、8 m 限制竖向位移，板的两侧边自由。简支板仅保留 x = 0、4 m 支承，转角自由。全宽均布总荷载为 2pLB；偏置面荷载位于左跨 x∈[L/4,3L/4]、y∈[0,B/2]，总荷载 pLB。切换工况同时改变了纵横向分布与全桥总量，各模型始终采用同一左跨荷载。</p>
+</section>
+<section class="panel"><h2>03 看板的二维响应，再看一条线</h2><p>颜色表示节点竖向位移 w（mm），负值为下挠，正值为上翘。两幅图共用同一色标，不显示应力。点击板面选择 y 截线；也可以用下面的按钮。</p><div id="legend"></div><div class="maps"><article><h3>两跨连续板 · MITC4</h3><svg aria-label="连续板位移图" id="fullMap" role="img" viewbox="0 0 700 240"></svg></article><article><h3>释放邻跨约束的单跨简支板 · MITC4</h3><svg aria-label="简支板位移图" id="simpleMap" role="img" viewbox="0 0 700 240"></svg></article></div>
+<div class="row" id="sampleButtons"><span>观察截线：</span><button class="secondary" data-y="0">y = 0</button><button class="secondary" data-y="0.25">y = B/4</button><button class="secondary" data-y="0.5">y = B/2</button><button class="secondary" data-y="1">y = B</button></div><p id="sampleLabel"></p>
+<svg aria-label="左跨纵向挠度比较曲线" id="profile" role="img" viewbox="0 0 900 320"></svg><p class="note">纵坐标向上为正，曲线显示静态解。橙：连续板左跨；紫虚线：保留接口的左跨（应重合）；蓝：简支板；绿：全宽简支梁。梁没有 y 方向自由度，换截线不会改变梁曲线。</p>
+<div class="tableWrap"><table><thead><tr><th>同一取样点 x = L/2</th><th>w / mm</th><th>保留与改变</th></tr></thead><tbody id="metrics"></tbody></table></div><p id="conclusion"></p>
+</section>
+<section class="panel"><h2>04 解释差异，而不是只挑相近的曲线</h2><p>这里“保留接口”使用已求得的切口转角，是同一离散模型的局部复现，需要先有整体信息。简支板释放了切口转角约束。梁按全宽积分荷载，舍弃横向位移差异与板的双向弯曲；不能靠匹配一个挠度就宣称所有局部内力等效。</p>
+<label for="quiz">把偏置荷载沿 y 方向镜像，单根全宽梁的计算结果不变。这能证明局部板响应也不变吗？</label><select id="quiz"><option value="">请选择</option><option value="no">不能；梁丢掉了横向位置，板的受载侧响应会换侧</option><option value="yes">能；只要总荷载相同，局部响应就相同</option></select><button id="checkQuiz">检验解释</button><p id="quizFeedback" role="status"></p>
+<label for="transfer">迁移到楼板或机翼局部盖板：还需要知道哪些信息？</label><textarea id="transfer" placeholder="例如：边缘是否传递转角、面荷载位置、是否有曲率……" rows="3"></textarea><button class="secondary" id="export">导出预测、结果与解释 JSON</button></section>
+<details class="panel"><summary>数值证据、假设和适用范围</summary><p id="checks"></p><p>单元采用 Q4 平面膜＋Reissner–Mindlin 弯曲＋MITC4 横向剪切。每节点定义 6 个自由度；本例平直、小变形、仅受横向荷载，约束不参与耦合的面内平移和钻转，仅求 w、rx、ry。未模拟开裂、接触脱开、几何非线性、曲率膜作用或真实轮胎接触。竖向线支承按双向约束处理，允许数值反力为拉力；实际只能受压的支承若脱空，需改模型。</p><p>位移色块是单元四角节点均值，仅供显示；折线与数值采用节点解。图面坐标为示意布局，两幅图的实际长度分别为 8 m 和 4 m。梁采用 Euler–Bernoulli 单元，板保留横向剪切效应；粗网格差异不应全部归因于物理模型。</p><p>算法依据：<a href="https://live.ocw.mit.edu/courses/res-2-002-finite-element-procedures-for-solids-and-structures-spring-2010/resources/lecture-20/">MIT：梁、板和壳单元</a>。实现来自本机 fem-analyzer 技能的教学单元，原始源码随页提供。<a href="plate-chain/verification.json">查看独立基准、网格与模型检查记录</a>。</p></details>
+<footer>先选择问题，再建立模型；保留哪些量，就检验哪些量。<a href="../bridge-thinking.html">返回拓展篇</a></footer>
+</main><script src="plate-chain/shell-classic.js"></script><script src="plate-chain/model.js"></script><script src="plate-chain/app.js"></script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/plate-calculation-notes.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body></html>

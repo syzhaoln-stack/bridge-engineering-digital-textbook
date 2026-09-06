@@ -1,0 +1,15 @@
+{
+  "id": "C09U10",
+  "title": "从风洞到计算都要验证假定",
+  "chapter": 9,
+  "fingerprint": "208e46d06590e7ca2d216fa5a851cabce2d5824176b3a7302d179cb9a0001899",
+  "duration": 46.966667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 159.1
+}

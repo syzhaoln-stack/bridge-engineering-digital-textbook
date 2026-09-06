@@ -1,0 +1,15 @@
+{
+  "id": "C03U01",
+  "title": "作用大小与响应大小之间隔着模型",
+  "chapter": 3,
+  "fingerprint": "f29479c3e3e22631be162dc3e878a658ab02b33a0b97a9547e02142c8e2c0ad7",
+  "duration": 46.2,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 64.3
+}

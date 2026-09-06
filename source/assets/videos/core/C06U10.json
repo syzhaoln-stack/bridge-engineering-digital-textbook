@@ -1,0 +1,15 @@
+{
+  "id": "C06U10",
+  "title": "调索必须留下输入输出证据",
+  "chapter": 6,
+  "fingerprint": "22daade79798fa57b38420f49158a1bf9e85debd15ec0f369d66138cefa08ffc",
+  "duration": 47.466667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 130.6
+}

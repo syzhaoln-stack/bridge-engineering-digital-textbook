@@ -1,0 +1,15 @@
+{
+  "id": "C09U02",
+  "title": "改变尺寸也改变受风面积",
+  "chapter": 9,
+  "fingerprint": "8fc9a92efdfeeffe4bf10ac51f1c60e67679c878a73bf70ad18ebdd39550f415",
+  "duration": 49.466667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 128.5
+}

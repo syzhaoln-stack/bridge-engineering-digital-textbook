@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="data:," rel="icon"/>
+<title>桥梁截面构形实验｜空间智能与抗弯效率</title>
+<style>
+    :root{
+      --paper:#eef3f5;--sheet:#f8faf9;--ink:#17313b;--muted:#657a82;--rule:#c9d6d9;
+      --blue:#245f73;--cyan:#198c91;--concrete:#c9bdac;--concrete-dark:#8c8172;
+      --cut:#e27a36;--cut-soft:#f7dfcf;--good:#2f756b;--bad:#ae4f43;--void:#e8eef0;
+      --shadow:0 18px 46px rgba(31,61,72,.12);--radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:var(--paper);color:var(--ink)}
+    body{font:14px/1.55 "Microsoft YaHei","Noto Sans SC",system-ui,sans-serif}
+    button,input{font:inherit}
+    button{min-height:44px;color:inherit}
+    .shell{max-width:1680px;margin:auto;padding:18px}
+    .hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;padding:5px 2px 17px;border-bottom:1px solid var(--rule)}
+    .eyebrow{font:700 11px/1.2 Bahnschrift,"Arial Narrow",sans-serif;letter-spacing:.18em;color:var(--blue);text-transform:uppercase}
+    h1{font:700 clamp(27px,3.2vw,48px)/1.08 STZhongsong,"Noto Serif SC",serif;letter-spacing:-.025em;margin:7px 0 8px}
+    .hero p{max-width:860px;margin:0;color:var(--muted);font-size:15px}
+    .coordinate{display:grid;grid-template-columns:repeat(3,auto);gap:6px;border:1px solid var(--rule);background:rgba(248,250,249,.72);padding:8px;border-radius:10px}
+    .coordinate span{display:grid;grid-template-columns:22px auto;align-items:center;gap:5px;padding:4px 7px;white-space:nowrap;color:var(--muted);font-size:12px}
+    .coordinate b{display:grid;place-items:center;width:22px;height:22px;background:var(--ink);color:white;border-radius:4px;font:700 12px Bahnschrift,sans-serif}
+    .modebar{display:flex;gap:4px;align-items:center;margin:14px 0 12px;padding:4px;background:#dfe8ea;border:1px solid var(--rule);border-radius:12px;width:max-content;max-width:100%;overflow:auto}
+    .modebar button{border:0;background:transparent;padding:9px 14px;border-radius:8px;white-space:nowrap;cursor:pointer;color:#526970;font-weight:700}
+    .modebar button.active{background:var(--sheet);box-shadow:0 2px 8px #19343e18;color:var(--ink)}
+    .workspace{display:grid;grid-template-columns:285px minmax(520px,1fr) 320px;gap:12px;align-items:start}
+    .panel,.stage,.drawing{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .panel{padding:15px}
+    .panel h2,.stage h2,.drawing h2{font-size:14px;margin:0;font-weight:800;letter-spacing:.02em}
+    .panel-head,.stage-head,.drawing-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+    .tiny-label{font:700 10px Bahnschrift,"Arial Narrow",sans-serif;letter-spacing:.12em;color:var(--blue);text-transform:uppercase}
+    .type-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:15px}
+    .type-grid button{border:1px solid var(--rule);background:#fff;padding:9px 7px;border-radius:8px;cursor:pointer;text-align:left;font-weight:700}
+    .type-grid button small{display:block;font-size:10px;color:var(--muted);font-weight:500;margin-top:2px}
+    .type-grid button.active{border-color:var(--blue);background:#e6f0f3;box-shadow:inset 3px 0 0 var(--blue)}
+    .control-group{border-top:1px solid var(--rule);padding-top:12px;margin-top:12px}
+    .control-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px;font-weight:800;font-size:12px}
+    .control{margin:0 0 11px}
+    .control label{display:flex;justify-content:space-between;gap:8px;margin-bottom:5px;color:#50666e;font-size:12px}
+    .control output{font:700 12px Bahnschrift,Consolas,monospace;color:var(--blue);font-variant-numeric:tabular-nums}
+    input[type=range]{width:100%;accent-color:var(--blue);cursor:pointer}
+    .main{display:grid;gap:12px;min-width:0}
+    .stage{padding:12px;position:relative;overflow:hidden}
+    #viewport{height:465px;border:1px solid #b9c8cc;border-radius:10px;overflow:hidden;background:linear-gradient(180deg,#f8faf9,#e8eff1);position:relative}
+    #viewport canvas{display:block;width:100%;height:100%;cursor:grab}
+    #viewport canvas:active{cursor:grabbing}
+    .view-hint{position:absolute;left:24px;bottom:22px;background:rgba(248,250,249,.9);border:1px solid var(--rule);border-radius:8px;padding:6px 9px;color:var(--muted);font-size:11px;pointer-events:none}
+    .station-tag{position:absolute;right:24px;bottom:22px;background:var(--ink);color:#fff;border-radius:8px;padding:6px 9px;font:700 11px Bahnschrift,Consolas,monospace;pointer-events:none}
+    .signature{display:grid;grid-template-columns:auto 1px auto;align-items:center;gap:14px;margin:0 0 12px;padding:11px 14px;border-radius:10px;background:#e7eef0;border:1px solid #c6d4d7}
+    .signature div{display:flex;align-items:baseline;gap:7px;min-width:0}
+    .signature strong{font:800 clamp(25px,3vw,39px)/1 Bahnschrift,Consolas,monospace;color:var(--cut);font-variant-numeric:tabular-nums}
+    .signature span{font-size:11px;color:var(--muted)}
+    .signature i{height:32px;background:#bac9cd}
+    .drawing{padding:12px}
+    #sectionSvg{display:block;width:100%;height:270px;border:1px solid #c7d4d7;border-radius:10px;background-color:#f7faf9;background-image:linear-gradient(#dce6e8 1px,transparent 1px),linear-gradient(90deg,#dce6e8 1px,transparent 1px);background-size:20px 20px}
+    .drawing-note{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-top:8px;color:var(--muted);font-size:11px}
+    .drawing-note b{color:var(--ink)}
+    .ledger{display:grid;gap:12px}
+    .memory-card{position:sticky;top:10px;z-index:2;border-top:4px solid #8b7c69;background:#fffdf8}.memory-thumb{margin-top:10px;padding:9px 10px;border:1px solid #d8d0c4;border-radius:8px;background:#f4f0e8}.memory-thumb span{display:block;color:#84796a;font-size:9px;font-weight:800;letter-spacing:.12em}.memory-thumb strong{display:block;margin-top:4px;font-family:"Noto Serif SC","Songti SC",serif;font-size:13px;line-height:1.55}.memory-visual{margin-top:9px;padding:5px;border:1px solid #ccd8da;border-radius:8px;background:#f7faf9;overflow:hidden}.memory-visual svg{display:block;width:100%;height:auto}.memory-pulse{animation:memoryPulse 1.25s ease-in-out infinite}.memory-steps{display:grid;gap:5px;margin:10px 0 0;padding:0;list-style:none;counter-reset:memory}.memory-steps li{display:grid;grid-template-columns:20px 1fr;gap:7px;color:#697a7f;font-size:10px;line-height:1.45}.memory-steps li::before{display:grid;place-items:center;width:18px;height:18px;border:1px solid #bdc9c9;border-radius:50%;counter-increment:memory;content:counter(memory);font:700 9px Bahnschrift,sans-serif}.memory-steps li.current{color:var(--ink);font-weight:750}.memory-steps li.current::before{border-color:var(--blue);background:var(--blue);color:white}.memory-now{margin:10px 0 0;padding-top:9px;border-top:1px solid #ddd8ce;color:#4d646b;font-size:11px;line-height:1.6}@keyframes memoryPulse{0%,100%{opacity:.35}50%{opacity:1}}
+    .metric-lead{padding:13px;border:1px solid var(--rule);border-radius:10px;background:#edf3f3}
+    .metric-lead span{display:block;color:var(--muted);font-size:11px}
+    .metric-lead strong{display:block;margin-top:2px;font:800 25px/1.15 Bahnschrift,Consolas,monospace;color:var(--blue);font-variant-numeric:tabular-nums}
+    .metric{margin:12px 0 0}
+    .metric-row{display:flex;justify-content:space-between;gap:10px;font-size:12px;margin-bottom:5px}
+    .metric-row b{font:700 12px Bahnschrift,Consolas,monospace;color:var(--ink);font-variant-numeric:tabular-nums}
+    .bar{height:7px;background:#dce6e8;border-radius:99px;overflow:hidden}
+    .bar i{display:block;height:100%;width:50%;background:var(--blue);border-radius:inherit;transition:width .24s ease}
+    .bar.cut i{background:var(--cut)}
+    .numbers{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:12px}
+    .number-card{padding:9px;border:1px solid var(--rule);border-radius:8px;background:white}
+    .number-card span{display:block;color:var(--muted);font-size:10px}
+    .number-card b{display:block;margin-top:2px;font:700 13px Bahnschrift,Consolas,monospace;font-variant-numeric:tabular-nums}
+    .task{border-top:3px solid var(--cyan)}
+    .task p{margin:0 0 10px;color:var(--muted);font-size:12px}
+    .view-targets{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin:0 0 9px;padding:4px;border-radius:9px;background:#e5edef}.view-targets[hidden]{display:none}.view-targets button{border:0;border-radius:7px;background:transparent;color:#536a71;font-size:11px;font-weight:750;cursor:pointer}.view-targets button.active{background:#fff;color:var(--ink);box-shadow:0 2px 7px #19343e18}
+    .task-status{padding:9px;border-radius:8px;background:#e8eff1;color:#49616a;font-size:12px;margin-bottom:9px}
+    .task-status.success{background:#e4f0ed;color:#245e57}
+    .task-status.error{background:#f5e5e2;color:#8d4036}
+    .task-actions{display:flex;gap:7px}
+    .task-actions button{flex:1;border:1px solid var(--rule);background:#fff;border-radius:8px;padding:8px;cursor:pointer;font-weight:700}
+    .task-actions button.primary{background:var(--blue);border-color:var(--blue);color:white}
+    .angle-meter{height:8px;background:#dce6e8;border-radius:99px;overflow:hidden;margin:8px 0}
+    .angle-meter i{display:block;height:100%;width:0;background:var(--cyan);transition:width .16s linear}
+    .session-list{display:grid;gap:6px;margin-top:10px}
+    .session-item{display:flex;justify-content:space-between;gap:10px;padding:7px 8px;border:1px solid var(--rule);border-radius:7px;font-size:11px;background:#fff}
+    .session-item b{font-family:Bahnschrift,Consolas,monospace}
+    .boundary{margin-top:12px;border:1px solid #d9c7bb;background:#f7eee8;border-radius:10px;padding:10px 12px;color:#705b4e;font-size:11px}
+    .boundary b{color:#553f34}
+    .target-key{display:none;align-items:center;gap:6px;color:var(--muted);font-size:11px}
+    .target-key.show{display:flex}
+    .target-key i{width:20px;border-top:2px dashed var(--cyan)}
+    button:focus-visible,input:focus-visible{outline:3px solid #74c8ca;outline-offset:2px}
+    @media(max-width:1220px){.workspace{grid-template-columns:260px minmax(0,1fr)}.ledger{grid-column:1/-1;grid-template-columns:1fr 1fr}.ledger .memory-card,.ledger .boundary{grid-column:1/-1}.memory-card{position:static}}
+    @media(max-width:820px){.shell{padding:10px}.hero{grid-template-columns:1fr}.coordinate{width:max-content}.workspace{grid-template-columns:1fr}.ledger{display:contents}.memory-card{order:-1}.ledger>.panel:not(.memory-card),.ledger>.boundary{order:3}#viewport{height:390px}.signature{gap:9px;padding:9px}.signature strong{font-size:26px}.drawing-note{display:block}}
+    @media(max-width:480px){.modebar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;overflow:visible}.modebar button{padding:9px 4px;font-size:11px}.type-grid{grid-template-columns:1fr}.coordinate{grid-template-columns:1fr 1fr 1fr;width:100%}.coordinate span{display:block;text-align:center;padding:3px}.coordinate b{margin:auto}.signature{grid-template-columns:1fr}.signature i{display:none}.numbers{grid-template-columns:1fr 1fr}#sectionSvg{height:230px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.memory-pulse{animation:none!important}}
+  </style>
+</head>
+<body>
+<main class="shell">
+<header class="hero">
+<div>
+<div class="eyebrow">Bridge drawing studio · section 01</div>
+<h1>把梁剖开，看看材料放在了哪里</h1>
+<p>同一外包尺寸下，挖空会同时改变自重、惯性矩和截面模量。先旋转、剖切和拆分构件，再用“去掉多少材料、留下多少惯性矩”判断箱梁、T 梁和空心板为什么不是实心块。</p>
+</div>
+<div aria-label="桥梁坐标约定" class="coordinate">
+<span><b>x</b>桥向</span><span><b>y</b>横桥向</span><span><b>z</b>竖向</span>
+</div>
+</header>
+<nav aria-label="学习模式" class="modebar">
+<button class="active" data-mode="explore">01 构形与剖切</button>
+<button data-mode="view">02 旋转到目标投影</button>
+<button data-mode="match">03 按轮廓复形</button>
+</nav>
+<section class="workspace">
+<aside class="panel controls-panel">
+<div class="panel-head"><h2>构件与参数</h2><span class="tiny-label">A − B</span></div>
+<div class="type-grid" id="typeGrid">
+<button data-type="solid"><span>实心矩形</span><small>比较基准</small></button>
+<button class="active" data-type="box"><span>单箱单室</span><small>顶底板＋腹板</small></button>
+<button data-type="tee"><span>T 梁</span><small>翼缘＋腹板</small></button>
+<button data-type="hollow"><span>空心板</span><small>多孔减重</small></button>
+</div>
+<div id="sectionControls"></div>
+<div class="control-group">
+<div class="control-title"><span>跨度与荷载</span><span class="tiny-label">response</span></div>
+<div class="control"><label for="span">计算跨度 <output id="oSpan"></output></label><input id="span" max="50" min="8" step="1" type="range"/></div>
+<div class="control"><label for="liveLoad">附加均布荷载 <output id="oLiveLoad"></output></label><input id="liveLoad" max="180" min="0" step="5" type="range"/></div>
+</div>
+<div class="control-group">
+<div class="control-title"><span>剖切与拆分</span><span class="tiny-label">section</span></div>
+<div class="control"><label for="cut">剖切位置 <output id="oCut"></output></label><input id="cut" max="85" min="15" step="1" type="range"/></div>
+<div class="control"><label for="split">拆分距离 <output id="oSplit"></output></label><input id="split" max="3" min="0" step="0.1" type="range"/></div>
+</div>
+</aside>
+<section class="main">
+<article class="stage">
+<div class="stage-head"><h2>可旋转构件</h2><span class="tiny-label" id="modelLabel">单箱单室 · 毛截面</span></div>
+<div aria-live="polite" class="signature">
+<div><strong id="savedMassHero">—</strong><span>相对外包实心截面<br/>减少材料</span></div>
+<i></i>
+<div><strong id="keptIHero">—</strong><span>仍保留的<br/>竖向抗弯惯性矩</span></div>
+</div>
+<div aria-label="可旋转、可剖切的桥梁梁体三维模型" id="viewport"></div>
+<div class="view-hint">拖动旋转 · 滚轮缩放 · 橙色面为当前剖面</div>
+<div class="station-tag" id="stationTag">x = 0.00 m</div>
+</article>
+<article class="drawing">
+<div class="drawing-head">
+<h2>横断面 y–z</h2>
+<span class="target-key" id="targetKey"><i></i>虚线为目标轮廓</span>
+</div>
+<svg aria-label="当前梁体横断面与形心轴" id="sectionSvg" role="img" viewbox="0 0 560 300"></svg>
+<div class="drawing-note"><span><b>读图：</b>橙线是形心轴；剖面中的空白不是“没有画”，而是实体中真实的空腔。</span><span id="sectionNote"></span></div>
+</article>
+</section>
+<aside class="ledger">
+<section aria-label="本步可随时参考的可视原理" class="panel memory-card">
+<div class="panel-head"><h2>本步可随时借用</h2><span class="tiny-label">visual memory</span></div>
+<div class="memory-thumb"><span>前一步 · 缩略保留</span><strong>先认桥向 x、横桥向 y、竖向 z；再问目标图把哪一根轴积聚掉。</strong></div>
+<div class="memory-visual"><svg aria-label="当前步骤调用的坐标、剖切或轮廓原理" id="memorySvg" role="img" viewbox="0 0 300 122"></svg></div>
+<ol class="memory-steps">
+<li data-memory-step="explore">构形以后，选择剖切位置</li>
+<li data-memory-step="view">把视线转到目标投影方向</li>
+<li data-memory-step="match">按二维轮廓反推几何参数</li>
+</ol>
+<p class="memory-now" id="memoryNow"></p>
+</section>
+<section class="panel">
+<div class="panel-head"><h2>截面账本</h2><span class="tiny-label">gross elastic</span></div>
+<div class="metric-lead"><span>弯曲效率 I/A</span><strong id="efficiencyLead">—</strong></div>
+<div class="metric">
+<div class="metric-row"><span>材料保留</span><b id="areaRatio">—</b></div><div class="bar cut"><i id="areaBar"></i></div>
+</div>
+<div class="metric">
+<div class="metric-row"><span>惯性矩保留</span><b id="inertiaRatio">—</b></div><div class="bar"><i id="inertiaBar"></i></div>
+</div>
+<div class="metric">
+<div class="metric-row"><span>同挠度相对跨度指标</span><b id="spanRatio">—</b></div><div class="bar"><i id="spanBar"></i></div>
+</div>
+<div class="numbers">
+<div class="number-card"><span>截面面积 A</span><b id="areaValue">—</b></div>
+<div class="number-card"><span>惯性矩 I</span><b id="inertiaValue">—</b></div>
+<div class="number-card"><span>自重线荷载</span><b id="selfWeightValue">—</b></div>
+<div class="number-card"><span>弹性挠度示意</span><b id="deflectionValue">—</b></div>
+<div class="number-card"><span>毛截面应力示意</span><b id="stressValue">—</b></div>
+<div class="number-card"><span>形心 z̄</span><b id="centroidValue">—</b></div>
+</div>
+</section>
+<section class="panel task">
+<div class="panel-head"><h2 id="taskTitle">参数影响分析</h2><span class="tiny-label">assessment</span></div>
+<p id="taskPrompt">增大截面空腔尺寸，比较材料面积与截面惯性矩的相对变化。</p>
+<div aria-label="目标投影视图" class="view-targets" hidden="" id="viewTargets">
+<button data-view-target="plan">平面 x–y</button>
+<button data-view-target="elevation">立面 x–z</button>
+<button class="active" data-view-target="section">横断面 y–z</button>
+</div>
+<div class="angle-meter" hidden="" id="angleMeter"><i></i></div>
+<div class="task-status" id="taskStatus">当前为自由探索，不计分。</div>
+<div class="task-actions"><button id="taskReset">重置</button><button class="primary" id="taskSubmit">记录判断</button></div>
+<div class="session-list" id="sessionList"></div>
+</section>
+<div class="boundary"><b>模型边界：</b>这里比较的是均质、线弹性、未开裂毛截面几何性质。钢筋混凝土梁的真实承载力还取决于配筋、预应力、开裂、剪切、锚固、局部构造与规范限值；“相对跨度指标”只用于观察四次方关系，不是可直接采用的设计跨径。</div>
+</aside>
+</section>
+</main>
+<script defer="" src="./bundles/ch10-bridge-section-spatial-lab.bundle.js"></script>
+<script defer="" src="./bridge-a11y.js"></script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/ch10-bridge-section-spatial-lab.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body>
+</html>

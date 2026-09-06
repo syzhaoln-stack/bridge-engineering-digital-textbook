@@ -1,0 +1,503 @@
+{
+  "scope": "educational flat MITC4 plate, linear elastic",
+  "passed": 27,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "uniform simply supported beam analytic benchmark",
+      "ok": true,
+      "details": {
+        "computed": -0.003255208333334336,
+        "expected": -0.003255208333333333
+      }
+    },
+    {
+      "name": "nu=0 plate beam-strip limit including shear",
+      "ok": true,
+      "details": {
+        "computed": -0.0032448632812593476,
+        "expected": -0.003265208333333333
+      }
+    },
+    {
+      "name": "mesh error decreases toward beam-strip benchmark",
+      "ok": true,
+      "details": [
+        {
+          "n": 4,
+          "w": -0.0029396875000006015,
+          "continuous": -0.0010813807439220805,
+          "cutMoment": 57087.18354671904
+        },
+        {
+          "n": 8,
+          "w": -0.0031838281250032166,
+          "continuous": -0.0012555394827131645,
+          "cutMoment": 59237.02709108001
+        },
+        {
+          "n": 12,
+          "w": -0.0032290393518517044,
+          "continuous": -0.001287971235374706,
+          "cutMoment": 59629.61253818757
+        },
+        {
+          "n": 16,
+          "w": -0.0032448632812593476,
+          "continuous": -0.0012993354529790744,
+          "cutMoment": 59766.61488460971
+        }
+      ]
+    },
+    {
+      "name": "continuous plate mesh sensitivity 12 to 16",
+      "ok": true,
+      "details": [
+        {
+          "n": 12,
+          "w": -0.0032290393518517044,
+          "continuous": -0.001287971235374706,
+          "cutMoment": 59629.61253818757
+        },
+        {
+          "n": 16,
+          "w": -0.0032448632812593476,
+          "continuous": -0.0012993354529790744,
+          "cutMoment": 59766.61488460971
+        }
+      ]
+    },
+    {
+      "name": "continuous two-span beam support moment limit",
+      "ok": true,
+      "details": {
+        "computed": 59766.61488460971,
+        "expected": 60000
+      }
+    },
+    {
+      "name": "load linearity",
+      "ok": true,
+      "details": {}
+    },
+    {
+      "name": "inverse E response",
+      "ok": true,
+      "details": {}
+    },
+    {
+      "name": "equilibrium and interfaces: uniform, B=1, nu=0",
+      "ok": true,
+      "details": {
+        "interfaceError": 7.176623254843649e-13,
+        "full": {
+          "appliedForce": -80000,
+          "appliedFirstMomentX": -320000,
+          "forceRelative": 4.731555236503482e-12,
+          "momentRelative": 4.742469172924757e-12,
+          "freeResidualRelative": 9.44510247791186e-14,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: uniform, B=1, nu=0.2",
+      "ok": true,
+      "details": {
+        "interfaceError": 1.1257207678016809e-13,
+        "full": {
+          "appliedForce": -80000,
+          "appliedFirstMomentX": -320000,
+          "forceRelative": 1.3791577657684684e-12,
+          "momentRelative": 1.3027602108195423e-12,
+          "freeResidualRelative": 1.1912106856470928e-13,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: uniform, B=1, nu=0.3",
+      "ok": true,
+      "details": {
+        "interfaceError": 2.1846299706324786e-13,
+        "full": {
+          "appliedForce": -80000,
+          "appliedFirstMomentX": -320000,
+          "forceRelative": 1.2878444977104663e-12,
+          "momentRelative": 1.195803633891046e-12,
+          "freeResidualRelative": 1.1286260814813432e-13,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: uniform, B=3, nu=0",
+      "ok": true,
+      "details": {
+        "interfaceError": 2.064876606607183e-13,
+        "full": {
+          "appliedForce": -239999.99999999997,
+          "appliedFirstMomentX": -959999.9999999999,
+          "forceRelative": 1.7098500393331053e-13,
+          "momentRelative": 1.7838222750773034e-13,
+          "freeResidualRelative": 1.709850039333105e-14,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: uniform, B=3, nu=0.2",
+      "ok": true,
+      "details": {
+        "interfaceError": 1.36153359726355e-13,
+        "full": {
+          "appliedForce": -239999.99999999997,
+          "appliedFirstMomentX": -959999.9999999999,
+          "forceRelative": 2.182787284255028e-13,
+          "momentRelative": 2.1791493054479364e-13,
+          "freeResidualRelative": 1.451401961579298e-14,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: uniform, B=3, nu=0.3",
+      "ok": true,
+      "details": {
+        "interfaceError": 2.5565483992473993e-14,
+        "full": {
+          "appliedForce": -239999.99999999997,
+          "appliedFirstMomentX": -959999.9999999999,
+          "forceRelative": 9.943808739384017e-14,
+          "momentRelative": 9.592137454698484e-14,
+          "freeResidualRelative": 1.5218878009667002e-14,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: uniform, B=6, nu=0",
+      "ok": true,
+      "details": {
+        "interfaceError": 1.8328302127061418e-13,
+        "full": {
+          "appliedForce": -479999.99999999994,
+          "appliedFirstMomentX": -1919999.9999999998,
+          "forceRelative": 2.470187610015273e-13,
+          "momentRelative": 2.53445856894056e-13,
+          "freeResidualRelative": 1.2520710394407314e-14,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: uniform, B=6, nu=0.2",
+      "ok": true,
+      "details": {
+        "interfaceError": 1.4513272894196335e-13,
+        "full": {
+          "appliedForce": -479999.99999999994,
+          "appliedFirstMomentX": -1919999.9999999998,
+          "forceRelative": 3.734991575280826e-14,
+          "momentRelative": 3.892637323588133e-14,
+          "freeResidualRelative": 8.867573342286052e-15,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: uniform, B=6, nu=0.3",
+      "ok": true,
+      "details": {
+        "interfaceError": 1.3782271330210005e-13,
+        "full": {
+          "appliedForce": -479999.99999999994,
+          "appliedFirstMomentX": -1919999.9999999998,
+          "forceRelative": 1.3472648182262977e-13,
+          "momentRelative": 1.3242242857813836e-13,
+          "freeResidualRelative": 1.179311463298897e-14,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: patch, B=1, nu=0",
+      "ok": true,
+      "details": {
+        "interfaceError": 6.849588109054411e-13,
+        "full": {
+          "appliedForce": -40000,
+          "appliedFirstMomentX": -80000,
+          "forceRelative": 6.831760401837527e-12,
+          "momentRelative": 3.3167452784255145e-12,
+          "freeResidualRelative": 3.8980942917987703e-13,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: patch, B=1, nu=0.2",
+      "ok": true,
+      "details": {
+        "interfaceError": 2.0512299179986541e-13,
+        "full": {
+          "appliedForce": -40000,
+          "appliedFirstMomentX": -80000,
+          "forceRelative": 1.8590071704238654e-12,
+          "momentRelative": 1.4792021829634905e-12,
+          "freeResidualRelative": 3.9311771615757607e-13,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: patch, B=1, nu=0.3",
+      "ok": true,
+      "details": {
+        "interfaceError": 1.1203882550443708e-13,
+        "full": {
+          "appliedForce": -40000,
+          "appliedFirstMomentX": -80000,
+          "forceRelative": 1.6145349945873021e-12,
+          "momentRelative": 1.0752046364359557e-12,
+          "freeResidualRelative": 4.632966010831296e-13,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: patch, B=3, nu=0",
+      "ok": true,
+      "details": {
+        "interfaceError": 1.17492999464809e-13,
+        "full": {
+          "appliedForce": -119999.99999999999,
+          "appliedFirstMomentX": -239999.99999999997,
+          "forceRelative": 2.3561976073930666e-13,
+          "momentRelative": 2.2664607968181375e-13,
+          "freeResidualRelative": 8.330971468240024e-14,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: patch, B=3, nu=0.2",
+      "ok": true,
+      "details": {
+        "interfaceError": 8.030920667561758e-14,
+        "full": {
+          "appliedForce": -119999.99999999999,
+          "appliedFirstMomentX": -239999.99999999997,
+          "forceRelative": 2.9770793238033854e-13,
+          "momentRelative": 2.1730860074361168e-13,
+          "freeResidualRelative": 7.821654435247183e-14,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: patch, B=3, nu=0.3",
+      "ok": true,
+      "details": {
+        "interfaceError": 2.0718121118403064e-14,
+        "full": {
+          "appliedForce": -119999.99999999999,
+          "appliedFirstMomentX": -239999.99999999997,
+          "forceRelative": 7.191071442017953e-14,
+          "momentRelative": 1.8687084472427767e-13,
+          "freeResidualRelative": 1.0077201295644046e-13,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: patch, B=6, nu=0",
+      "ok": true,
+      "details": {
+        "interfaceError": 1.312652335599051e-13,
+        "full": {
+          "appliedForce": -239999.99999999997,
+          "appliedFirstMomentX": -479999.99999999994,
+          "forceRelative": 3.614938274646799e-13,
+          "momentRelative": 1.6480043996125462e-13,
+          "freeResidualRelative": 1.0052948103596768e-13,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: patch, B=6, nu=0.2",
+      "ok": true,
+      "details": {
+        "interfaceError": 1.2319112819594972e-13,
+        "full": {
+          "appliedForce": -239999.99999999997,
+          "appliedFirstMomentX": -479999.99999999994,
+          "forceRelative": 1.1120088553677003e-13,
+          "momentRelative": 6.6696278130014744e-15,
+          "freeResidualRelative": 5.626740554968517e-14,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "equilibrium and interfaces: patch, B=6, nu=0.3",
+      "ok": true,
+      "details": {
+        "interfaceError": 5.105729927143372e-14,
+        "full": {
+          "appliedForce": -239999.99999999997,
+          "appliedFirstMomentX": -479999.99999999994,
+          "forceRelative": 1.8468805744002266e-13,
+          "momentRelative": 1.7947362114985786e-13,
+          "freeResidualRelative": 4.765752237290145e-14,
+          "prescribedError": 0
+        }
+      }
+    },
+    {
+      "name": "eccentric patch produces transverse response difference",
+      "ok": true,
+      "details": {
+        "loadedSide": -0.005317160557191856,
+        "otherSide": -0.0036785958806214787
+      }
+    },
+    {
+      "name": "element formulation verification suite",
+      "ok": true,
+      "details": {
+        "passed": 13,
+        "failed": 0
+      }
+    }
+  ],
+  "elementChecks": [
+    {
+      "name": "unit-square area",
+      "ok": true,
+      "details": {
+        "area": 1
+      }
+    },
+    {
+      "name": "stiffness symmetry",
+      "ok": true,
+      "details": {
+        "relativeError": 9.181983120089946e-17
+      }
+    },
+    {
+      "name": "rigid translation",
+      "ok": true,
+      "details": {
+        "energy": 0.00000762939453125,
+        "normalized": 2.896524643561497e-17
+      }
+    },
+    {
+      "name": "rigid rotation x",
+      "ok": true,
+      "details": {
+        "energy": 2.9103830456733704e-10,
+        "normalized": 5.189109022403263e-18
+      }
+    },
+    {
+      "name": "rigid rotation y",
+      "ok": true,
+      "details": {
+        "energy": 1.0186340659856796e-10,
+        "normalized": 4.086423355142569e-18
+      }
+    },
+    {
+      "name": "rigid rotation z",
+      "ok": true,
+      "details": {
+        "energy": 3.7248355511110276e-9,
+        "normalized": 2.8017768165713825e-17
+      }
+    },
+    {
+      "name": "constant-strain membrane patch",
+      "ok": true,
+      "details": {
+        "recovered": [
+          0.00012000000000000002,
+          -0.00004,
+          0.00008
+        ],
+        "targetStrain": {
+          "ex": 0.00012,
+          "ey": -0.00004,
+          "gamma": 0.00008
+        },
+        "strainError": 1.3552527156068805e-20
+      }
+    },
+    {
+      "name": "distorted constant-strain patch",
+      "ok": true,
+      "details": {
+        "distortedPatchError": 5.421010862427522e-20
+      }
+    },
+    {
+      "name": "coordinate-rotation invariance",
+      "ok": true,
+      "details": {
+        "baseEnergy": 237.297381874554,
+        "rotatedEnergy": 237.29738187455436,
+        "rotationEnergyError": 1.5570429798950624e-15
+      }
+    },
+    {
+      "name": "center point-load mapping",
+      "ok": true,
+      "details": {
+        "xi": 0,
+        "eta": 0,
+        "weights": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      }
+    },
+    {
+      "name": "point load continuity across element edge",
+      "ok": true,
+      "details": {
+        "leftShared": [
+          -630,
+          -370
+        ],
+        "rightShared": [
+          -630,
+          -370
+        ],
+        "edgeLoadError": 0
+      }
+    },
+    {
+      "name": "consistent pressure equilibrium",
+      "ok": true,
+      "details": {
+        "totalNormalLoad": -12345,
+        "expected": -12345
+      }
+    },
+    {
+      "name": "simply-supported square plate benchmark",
+      "ok": true,
+      "details": {
+        "mesh": "8x8",
+        "centerDeflection": -0.00021042106901865946,
+        "navierCenter": -0.00021124219999999998,
+        "relativeError": 0.0038871540882480238
+      }
+    }
+  ]
+}

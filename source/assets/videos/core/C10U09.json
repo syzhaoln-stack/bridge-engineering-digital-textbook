@@ -1,0 +1,15 @@
+{
+  "id": "C10U09",
+  "title": "比较方案同时展示不确定性",
+  "chapter": 10,
+  "fingerprint": "37b90ce627183650c70dac379572fd4d2bf35b5f6b6304250974a19949ab8136",
+  "duration": 44.166667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 125.1
+}

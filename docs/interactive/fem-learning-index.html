@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>每章十个单元：交互升级对照</title><link href="fem-review.css" rel="stylesheet"/></head><body><p><a href="fem-capability-review.html">← 调研说明</a> · <a href="fem-workbench.html">同屏有限元示范</a></p><h1>每章 10 个单元：交互升级对照</h1><p>以下 110 条来自已有教师题库，每条链接进入现有预测、参数目标、边界与迁移练习。数值目标为教学归一模型的练习目标，单位与假设见原页。这份索引不表示 110 个单元已统一改成三维有限元。</p><nav>
+<a href="#ch1">第 1 章</a>
+<a href="#ch2">第 2 章</a>
+<a href="#ch3">第 3 章</a>
+<a href="#ch4">第 4 章</a>
+<a href="#ch5">第 5 章</a>
+<a href="#ch6">第 6 章</a>
+<a href="#ch7">第 7 章</a>
+<a href="#ch8">第 8 章</a>
+<a href="#ch9">第 9 章</a>
+<a href="#ch10">第 10 章</a>
+<a href="#ch11">第 11 章</a>
+</nav>
+<h2 id="ch1">第 1 章 · 10 个单元</h2><div class="scroll"><table><tr><th>编号与内容</th><th>模型族</th><th>练习目标 / 容差</th><th>必须说明的条件</th></tr>
+<tr><td><a href="core-learning.html?unit=C01U01">C01U01 · 移动荷载，先守住平衡</a></td><td>reaction</td><td>0.75 / ±0.018</td><td>简支梁、竖向集中力；图形变形不参与求解。</td></tr>
+<tr><td><a href="core-learning.html?unit=C01U02">C01U02 · 从梁式弯曲到拱的轴向传力</a></td><td>arch</td><td>0.5 / ±0.022916666666666665</td><td>三铰抛物线拱、跨径1；左右均布荷载为1+a与1−a。非控制量f/L=0.2或a=0。</td></tr>
+<tr><td><a href="core-learning.html?unit=C01U03">C01U03 · 模型为何必须声明边界</a></td><td>thermal</td><td>9.000000000000002 / ±0.18000000000000005</td><td>E=30 GPa，α=10⁻⁵/℃，L=40 m；r为轴向自由热应变被抑制的比例。</td></tr>
+<tr><td><a href="core-learning.html?unit=C01U04">C01U04 · 长度、面积、体积不是同一种增长</a></td><td>scale</td><td>8 / ±0.5375</td><td>全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。</td></tr>
+<tr><td><a href="core-learning.html?unit=C01U05">C01U05 · 截面惯性矩不等于整体刚度</a></td><td>scale</td><td>2 / ±0.05</td><td>全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。</td></tr>
+<tr><td><a href="core-learning.html?unit=C01U06">C01U06 · 自重为何惩罚大跨度</a></td><td>scale</td><td>4 / ±0.17500000000000002</td><td>全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。</td></tr>
+<tr><td><a href="core-learning.html?unit=C01U07">C01U07 · 同样放大，换荷载便换结论</a></td><td>scale</td><td>0.25 / ±0.07777777777777778</td><td>全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。</td></tr>
+<tr><td><a href="core-learning.html?unit=C01U08">C01U08 · 同一荷载，刚度决定分工</a></td><td>springs</td><td>0.75 / ±0.013333333333333336</td><td>两个线性弹簧并联，共同位移，k₂=1，P=1。</td></tr>
+<tr><td><a href="core-learning.html?unit=C01U09">C01U09 · 方案比较先看敏感性</a></td><td>beam</td><td>4.762993446121018 / ±2.5025720164609058</td><td>简支矩形梁，E=30 GPa，b=0.6 m；非控制量L=20 m、h=1.2 m、q=20 kN/m。未计自重变化。</td></tr>
+<tr><td><a href="core-learning.html?unit=C01U10">C01U10 · 把复杂模型交给一个极限情形</a></td><td>mesh</td><td>0.000625 / ±0.0012468750000000002</td><td>解析函数的插值验证例，不是已经求解的实桥有限元结果；用于区分数值验证和物理确认。</td></tr>
+</table></div>
+<h2 id="ch2">第 2 章 · 10 个单元</h2><div class="scroll"><table><tr><th>编号与内容</th><th>模型族</th><th>练习目标 / 容差</th><th>必须说明的条件</th></tr>
+<tr><td><a href="core-learning.html?unit=C02U01">C02U01 · 偏心荷载等价为轴力加弯矩</a></td><td>stress</td><td>0 / ±0.41999999999999993</td><td>压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。</td></tr>
+<tr><td><a href="core-learning.html?unit=C02U02">C02U02 · 截面核心是怎样出现的</a></td><td>stress</td><td>0 / ±0.41999999999999993</td><td>压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。</td></tr>
+<tr><td><a href="core-learning.html?unit=C02U03">C02U03 · 核心条件不等于大、小偏心分界</a></td><td>stress</td><td>-6.800000000000002 / ±0.41999999999999993</td><td>压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。</td></tr>
+<tr><td><a href="core-learning.html?unit=C02U04">C02U04 · 固定外包尺寸，比较空心截面效率</a></td><td>section</td><td>1.49 / ±0.016200000000000003</td><td>外包尺寸固定的相似正方形空心截面；只比较几何效率，不检验薄壁稳定或构造。</td></tr>
+<tr><td><a href="core-learning.html?unit=C02U05">C02U05 · 截面加高为什么比加宽敏感</a></td><td>beam</td><td>4.762993446121018 / ±2.5025720164609058</td><td>简支矩形梁，E=30 GPa，b=0.6 m；非控制量L=20 m、h=1.2 m、q=20 kN/m。未计自重变化。</td></tr>
+<tr><td><a href="core-learning.html?unit=C02U06">C02U06 · 稳定是平衡路径问题</a></td><td>buckling</td><td>0.4444444444444444 / ±0.075</td><td>理想轴压直杆、线弹性，小挠度稳定基准；不代替实际拱或构件的非线性稳定分析。</td></tr>
+<tr><td><a href="core-learning.html?unit=C02U07">C02U07 · 预应力先改变初始状态</a></td><td>prestress</td><td>5.76 / ±0.4816</td><td>压为正；外荷载弯曲应力幅8 MPa；未开裂线弹性。非控制量p=10 MPa或e/h=0.12。</td></tr>
+<tr><td><a href="core-learning.html?unit=C02U08">C02U08 · 热胀受阻才产生温度内力</a></td><td>thermal</td><td>9.000000000000002 / ±0.18000000000000005</td><td>E=30 GPa，α=10⁻⁵/℃，L=40 m；r为轴向自由热应变被抑制的比例。</td></tr>
+<tr><td><a href="core-learning.html?unit=C02U09">C02U09 · 质量、刚度与频率不是单独变化</a></td><td>frequency</td><td>0.7071067811865475 / ±0.03</td><td>单自由度线性模型；只改变指定参数，其余参数不变。</td></tr>
+<tr><td><a href="core-learning.html?unit=C02U10">C02U10 · 线性叠加的边界在哪里</a></td><td>stress</td><td>0 / ±0.41999999999999993</td><td>压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。</td></tr>
+</table></div>
+<h2 id="ch3">第 3 章 · 10 个单元</h2><div class="scroll"><table><tr><th>编号与内容</th><th>模型族</th><th>练习目标 / 容差</th><th>必须说明的条件</th></tr>
+<tr><td><a href="core-learning.html?unit=C03U01">C03U01 · 作用大小与响应大小之间隔着模型</a></td><td>reaction</td><td>0.7 / ±0.017499999999999995</td><td>简支梁、竖向集中力；图形变形不参与求解。</td></tr>
+<tr><td><a href="core-learning.html?unit=C03U02">C03U02 · 等效荷载同时保留力和矩</a></td><td>loadmap</td><td>0.7 / ±0.018</td><td>单位力，节点位于0、0.5、1；仅检验合力与一阶矩的映射守恒。</td></tr>
+<tr><td><a href="core-learning.html?unit=C03U03">C03U03 · 组合不是把所有最大值相加</a></td><td>combination</td><td>172 / ±0.8</td><td>纯教学效应数值，不是任何规范的分项系数表；代数求和只对同一目标响应成立。</td></tr>
+<tr><td><a href="core-learning.html?unit=C03U04">C03U04 · 瀑布图读的是代数贡献</a></td><td>combination</td><td>200 / ±2.4</td><td>纯教学效应数值，不是任何规范的分项系数表；代数求和只对同一目标响应成立。</td></tr>
+<tr><td><a href="core-learning.html?unit=C03U05">C03U05 · 从安全余量走到失效概率</a></td><td>reliability</td><td>0.9602765994967198 / ±0.07042028396309279</td><td>抗力与效应联合正态、线性极限状态R−S；基准μR=120、μS=80、σR=12、σS=10、ρ=0。</td></tr>
+<tr><td><a href="core-learning.html?unit=C03U06">C03U06 · 不确定性本身也改变结论</a></td><td>reliability</td><td>1.4424368919492376 / ±0.03677908311485462</td><td>抗力与效应联合正态、线性极限状态R−S；基准μR=120、μS=80、σR=12、σS=10、ρ=0。</td></tr>
+<tr><td><a href="core-learning.html?unit=C03U07">C03U07 · 相关性进入余量的方差</a></td><td>reliability</td><td>4 / ±0.0726269878361998</td><td>抗力与效应联合正态、线性极限状态R−S；基准μR=120、μS=80、σR=12、σS=10、ρ=0。</td></tr>
+<tr><td><a href="core-learning.html?unit=C03U08">C03U08 · 移动荷载：固定输出再移动输入</a></td><td>influence</td><td>-0.023437500000008882 / ±0.0024827538178239968</td><td>等截面两跨连续梁，总长归一为1，左跨跨中观察；正为下缘受拉。单位荷载，不采用规范车辆模型。</td></tr>
+<tr><td><a href="core-learning.html?unit=C03U09">C03U09 · 正、负区段要分别构造不利布载</a></td><td>influence</td><td>-0.007813110351564219 / ±0.00015626220703128437</td><td>等截面两跨连续梁，总长归一为1，左跨跨中观察；正为下缘受拉。单位荷载，不采用规范车辆模型。</td></tr>
+<tr><td><a href="core-learning.html?unit=C03U10">C03U10 · 可靠度模型先做可解释的核验</a></td><td>reliability</td><td>3.8411063979868794 / ±0.0896258159530272</td><td>抗力与效应联合正态、线性极限状态R−S；基准μR=120、μS=80、σR=12、σS=10、ρ=0。</td></tr>
+</table></div>
+<h2 id="ch4">第 4 章 · 10 个单元</h2><div class="scroll"><table><tr><th>编号与内容</th><th>模型族</th><th>练习目标 / 容差</th><th>必须说明的条件</th></tr>
+<tr><td><a href="core-learning.html?unit=C04U01">C04U01 · 从简支反力到梁的整体平衡</a></td><td>reaction</td><td>0.75 / ±0.018</td><td>简支梁、竖向集中力；图形变形不参与求解。</td></tr>
+<tr><td><a href="core-learning.html?unit=C04U02">C04U02 · 弯矩、应力、挠度是三个输出</a></td><td>beam</td><td>32.150205761316876 / ±0.7233796296296298</td><td>简支矩形梁，E=30 GPa，b=0.6 m；非控制量L=20 m、h=1.2 m、q=20 kN/m。未计自重变化。</td></tr>
+<tr><td><a href="core-learning.html?unit=C04U03">C04U03 · 箱梁的效率来自材料位置</a></td><td>section</td><td>1.49 / ±0.016200000000000003</td><td>外包尺寸固定的相似正方形空心截面；只比较几何效率，不检验薄壁稳定或构造。</td></tr>
+<tr><td><a href="core-learning.html?unit=C04U04">C04U04 · 影响线换一种方式组织计算</a></td><td>influence</td><td>-0.023437500000008882 / ±0.0024827538178239968</td><td>等截面两跨连续梁，总长归一为1，左跨跨中观察；正为下缘受拉。单位荷载，不采用规范车辆模型。</td></tr>
+<tr><td><a href="core-learning.html?unit=C04U05">C04U05 · 横向分配就是平均加偏心修正</a></td><td>transverse</td><td>0.6699999999999999 / ±0.0216</td><td>四片梁y=[−1.5,−0.5,0.5,1.5]；刚性横梁、共同位移与转角。负反力提示仅受压支承模型应重建。</td></tr>
+<tr><td><a href="core-learning.html?unit=C04U06">C04U06 · 不同刚度，分配系数就要重算</a></td><td>transverse</td><td>0.23448275862068968 / ±0.005683284457478006</td><td>四片梁y=[−1.5,−0.5,0.5,1.5]；刚性横梁、共同位移与转角。负反力提示仅受压支承模型应重建。</td></tr>
+<tr><td><a href="core-learning.html?unit=C04U07">C04U07 · 预应力的轴力与弯矩同时存在</a></td><td>prestress</td><td>17 / ±0.41999999999999993</td><td>压为正；外荷载弯曲应力幅8 MPa；未开裂线弹性。非控制量p=10 MPa或e/h=0.12。</td></tr>
+<tr><td><a href="core-learning.html?unit=C04U08">C04U08 · 束形是把轴力变成分布作用</a></td><td>tendon</td><td>7.5 / ±0.2</td><td>P=1000 kN，L=40 m，小坡度抛物线束；端力与分布力须一起保留。</td></tr>
+<tr><td><a href="core-learning.html?unit=C04U09">C04U09 · 只增跨径与整体放大不同</a></td><td>beam</td><td>81.38020833333336 / ±5.1239390432098775</td><td>简支矩形梁，E=30 GPa，b=0.6 m；非控制量L=20 m、h=1.2 m、q=20 kN/m。未计自重变化。</td></tr>
+<tr><td><a href="core-learning.html?unit=C04U10">C04U10 · 横梁刚性假定也有失效边界</a></td><td>transverse</td><td>0.6699999999999999 / ±0.0216</td><td>四片梁y=[−1.5,−0.5,0.5,1.5]；刚性横梁、共同位移与转角。负反力提示仅受压支承模型应重建。</td></tr>
+</table></div>
+<h2 id="ch5">第 5 章 · 10 个单元</h2><div class="scroll"><table><tr><th>编号与内容</th><th>模型族</th><th>练习目标 / 容差</th><th>必须说明的条件</th></tr>
+<tr><td><a href="core-learning.html?unit=C05U01">C05U01 · 拱通过推力抵消梁式弯矩</a></td><td>arch</td><td>0.5 / ±0.022916666666666665</td><td>三铰抛物线拱、跨径1；左右均布荷载为1+a与1−a。非控制量f/L=0.2或a=0。</td></tr>
+<tr><td><a href="core-learning.html?unit=C05U02">C05U02 · 合理拱轴只对应指定荷载</a></td><td>arch</td><td>0.03125 / ±0.0006249999999999995</td><td>三铰抛物线拱、跨径1；左右均布荷载为1+a与1−a。非控制量f/L=0.2或a=0。</td></tr>
+<tr><td><a href="core-learning.html?unit=C05U03">C05U03 · 整体弯矩转成截面偏心</a></td><td>stress</td><td>0 / ±0.41999999999999993</td><td>压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。</td></tr>
+<tr><td><a href="core-learning.html?unit=C05U04">C05U04 · 无拉应力与压力线位置</a></td><td>stress</td><td>0 / ±0.41999999999999993</td><td>压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。</td></tr>
+<tr><td><a href="core-learning.html?unit=C05U05">C05U05 · 矢跨比改变水平推力</a></td><td>arch</td><td>0.5 / ±0.022916666666666665</td><td>三铰抛物线拱、跨径1；左右均布荷载为1+a与1−a。非控制量f/L=0.2或a=0。</td></tr>
+<tr><td><a href="core-learning.html?unit=C05U06">C05U06 · 拱与悬索是受力的对应形态</a></td><td>cable</td><td>0.625 / ±0.04</td><td>水平投影均布荷载q=1，L=1，理想柔索；不是沿索长自重的精确悬链线。</td></tr>
+<tr><td><a href="core-learning.html?unit=C05U07">C05U07 · 拱肋变细，稳定不会自动跟上</a></td><td>buckling</td><td>1.5 / ±0.034</td><td>理想轴压直杆、线弹性，小挠度稳定基准；不代替实际拱或构件的非线性稳定分析。</td></tr>
+<tr><td><a href="core-learning.html?unit=C05U08">C05U08 · 合龙相当于锁定自由变形</a></td><td>thermal</td><td>9.000000000000002 / ±0.18000000000000005</td><td>E=30 GPa，α=10⁻⁵/℃，L=40 m；r为轴向自由热应变被抑制的比例。</td></tr>
+<tr><td><a href="core-learning.html?unit=C05U09">C05U09 · 梁拱组合靠刚度分担作用</a></td><td>springs</td><td>0.75 / ±0.013333333333333336</td><td>两个线性弹簧并联，共同位移，k₂=1，P=1。</td></tr>
+<tr><td><a href="core-learning.html?unit=C05U10">C05U10 · 半跨荷载是检验类比的反例</a></td><td>arch</td><td>0.03125 / ±0.0006249999999999995</td><td>三铰抛物线拱、跨径1；左右均布荷载为1+a与1−a。非控制量f/L=0.2或a=0。</td></tr>
+</table></div>
+<h2 id="ch6">第 6 章 · 10 个单元</h2><div class="scroll"><table><tr><th>编号与内容</th><th>模型族</th><th>练习目标 / 容差</th><th>必须说明的条件</th></tr>
+<tr><td><a href="core-learning.html?unit=C06U01">C06U01 · 拉索把竖向荷载传给塔与梁</a></td><td>cable</td><td>3.8637033051562737 / ±0.09389185421335443</td><td>单根拉索竖向分量V=1；仅作节点平衡。</td></tr>
+<tr><td><a href="core-learning.html?unit=C06U02">C06U02 · 调整一根索会影响多个输出</a></td><td>matrix</td><td>0.87 / ±0.04</td><td>明确给定的教学影响矩阵；另一控制量为0.2；不代表具体实桥索力系数。</td></tr>
+<tr><td><a href="core-learning.html?unit=C06U03">C06U03 · 成桥目标是多个条件的共同满足</a></td><td>matrix</td><td>0.48 / ±0.013999999999999999</td><td>明确给定的教学影响矩阵；另一控制量为0.2；不代表具体实桥索力系数。</td></tr>
+<tr><td><a href="core-learning.html?unit=C06U04">C06U04 · 影响列接近时，控制就不稳定</a></td><td>conditioning</td><td>10.000000000000002 / ±0.9799999999999992</td><td>二阶教学反算模型；s趋近1时矩阵奇异，数值精度不能补足独立信息。</td></tr>
+<tr><td><a href="core-learning.html?unit=C06U05">C06U05 · 主梁轴压仍要和弯矩共同判断</a></td><td>stress</td><td>0 / ±0.41999999999999993</td><td>压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。</td></tr>
+<tr><td><a href="core-learning.html?unit=C06U06">C06U06 · 索越平，水平力越大</a></td><td>cable</td><td>3.8637033051562737 / ±0.09389185421335443</td><td>单根拉索竖向分量V=1；仅作节点平衡。</td></tr>
+<tr><td><a href="core-learning.html?unit=C06U07">C06U07 · 温度与约束改变成桥状态</a></td><td>thermal</td><td>9.000000000000002 / ±0.18000000000000005</td><td>E=30 GPa，α=10⁻⁵/℃，L=40 m；r为轴向自由热应变被抑制的比例。</td></tr>
+<tr><td><a href="core-learning.html?unit=C06U08">C06U08 · 阻尼与刚度解决不同问题</a></td><td>dynamic</td><td>3.370919636975488 / ±0.41870489933811494</td><td>单自由度线性简谐稳态力激励；非控制量r=0.98或ζ=0.03；不是地震反应谱。</td></tr>
+<tr><td><a href="core-learning.html?unit=C06U09">C06U09 · 施工阶段不能沿用成桥有效长度</a></td><td>buckling</td><td>0.4444444444444444 / ±0.075</td><td>理想轴压直杆、线弹性，小挠度稳定基准；不代替实际拱或构件的非线性稳定分析。</td></tr>
+<tr><td><a href="core-learning.html?unit=C06U10">C06U10 · 调索必须留下输入输出证据</a></td><td>matrix</td><td>0.87 / ±0.04</td><td>明确给定的教学影响矩阵；另一控制量为0.2；不代表具体实桥索力系数。</td></tr>
+</table></div>
+<h2 id="ch7">第 7 章 · 10 个单元</h2><div class="scroll"><table><tr><th>编号与内容</th><th>模型族</th><th>练习目标 / 容差</th><th>必须说明的条件</th></tr>
+<tr><td><a href="core-learning.html?unit=C07U01">C07U01 · 索形由荷载与边界共同决定</a></td><td>cable</td><td>0.625 / ±0.04</td><td>水平投影均布荷载q=1，L=1，理想柔索；不是沿索长自重的精确悬链线。</td></tr>
+<tr><td><a href="core-learning.html?unit=C07U02">C07U02 · 小垂度不是免费减小位移</a></td><td>cable</td><td>0.625 / ±0.04</td><td>水平投影均布荷载q=1，L=1，理想柔索；不是沿索长自重的精确悬链线。</td></tr>
+<tr><td><a href="core-learning.html?unit=C07U03">C07U03 · 主缆张力与截面应力分开看</a></td><td>cable</td><td>2.5 / ±0.0625</td><td>水平投影均布荷载下的抛物线柔索，L=1、f=0.1；不是沿索长自重的精确悬链线。</td></tr>
+<tr><td><a href="core-learning.html?unit=C07U04">C07U04 · 缆索与拱的类比保留了什么</a></td><td>arch</td><td>0.5 / ±0.022916666666666665</td><td>三铰抛物线拱、跨径1；左右均布荷载为1+a与1−a。非控制量f/L=0.2或a=0。</td></tr>
+<tr><td><a href="core-learning.html?unit=C07U05">C07U05 · 吊索传力不等于加劲梁不受弯</a></td><td>beam</td><td>32.150205761316876 / ±0.7233796296296298</td><td>简支矩形梁，E=30 GPa，b=0.6 m；非控制量L=20 m、h=1.2 m、q=20 kN/m。未计自重变化。</td></tr>
+<tr><td><a href="core-learning.html?unit=C07U06">C07U06 · 几何放大后，频率下降</a></td><td>scale</td><td>0.5 / ±0.03333333333333333</td><td>全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。</td></tr>
+<tr><td><a href="core-learning.html?unit=C07U07">C07U07 · 锚碇是水平力的终点</a></td><td>cable</td><td>2.5 / ±0.0625</td><td>水平投影均布荷载下的抛物线柔索，L=1、f=0.1；不是沿索长自重的精确悬链线。</td></tr>
+<tr><td><a href="core-learning.html?unit=C07U08">C07U08 · 支承柔度参与体系刚度</a></td><td>springs</td><td>1.3333333333333333 / ±0.096</td><td>两个线性弹簧串联，k₂=1，P=1。</td></tr>
+<tr><td><a href="core-learning.html?unit=C07U09">C07U09 · 周期荷载不只是更大的静载</a></td><td>dynamic</td><td>2.2428967793130674 / ±0.32667199360852145</td><td>单自由度线性简谐稳态力激励；非控制量r=0.98或ζ=0.03；不是地震反应谱。</td></tr>
+<tr><td><a href="core-learning.html?unit=C07U10">C07U10 · 用拱轴反例理解找形与使用状态</a></td><td>arch</td><td>0.03125 / ±0.0006249999999999995</td><td>三铰抛物线拱、跨径1；左右均布荷载为1+a与1−a。非控制量f/L=0.2或a=0。</td></tr>
+</table></div>
+<h2 id="ch8">第 8 章 · 10 个单元</h2><div class="scroll"><table><tr><th>编号与内容</th><th>模型族</th><th>练习目标 / 容差</th><th>必须说明的条件</th></tr>
+<tr><td><a href="core-learning.html?unit=C08U01">C08U01 · 支座首先定义自由度</a></td><td>thermal</td><td>9.000000000000002 / ±0.18000000000000005</td><td>E=30 GPa，α=10⁻⁵/℃，L=40 m；r为轴向自由热应变被抑制的比例。</td></tr>
+<tr><td><a href="core-learning.html?unit=C08U02">C08U02 · 均匀温升：自由与完全约束</a></td><td>thermal</td><td>12.000000000000002 / ±0.3600000000000001</td><td>E=30 GPa，α=10⁻⁵/℃，L=40 m；r为轴向自由热应变被抑制的比例。</td></tr>
+<tr><td><a href="core-learning.html?unit=C08U03">C08U03 · 刚度分配解释多墩水平力</a></td><td>springs</td><td>0.75 / ±0.013333333333333336</td><td>两个线性弹簧并联，共同位移，k₂=1，P=1。</td></tr>
+<tr><td><a href="core-learning.html?unit=C08U04">C08U04 · 偏心传力也发生在基础底面</a></td><td>stress</td><td>0 / ±0.41999999999999993</td><td>压为正，平均压应力10 MPa；矩形、单向偏心、未开裂线弹性。出现拉应力不判定RC破坏类型。</td></tr>
+<tr><td><a href="core-learning.html?unit=C08U05">C08U05 · 墩高通过三次方影响侧向刚度</a></td><td>springs</td><td>0.125 / ±0.1575</td><td>同截面、同材料的悬臂墩柱，顶部水平集中力，小变形；仅比较相对刚度。</td></tr>
+<tr><td><a href="core-learning.html?unit=C08U06">C08U06 · 地基与墩柱串联共同变形</a></td><td>springs</td><td>1.3333333333333333 / ±0.096</td><td>两个线性弹簧串联，k₂=1，P=1。</td></tr>
+<tr><td><a href="core-learning.html?unit=C08U07">C08U07 · 约束改变，内力就重新分配</a></td><td>transverse</td><td>0.23448275862068968 / ±0.005683284457478006</td><td>四片梁y=[−1.5,−0.5,0.5,1.5]；刚性横梁、共同位移与转角。负反力提示仅受压支承模型应重建。</td></tr>
+<tr><td><a href="core-learning.html?unit=C08U08">C08U08 · 脱空不是把负反力删掉</a></td><td>transverse</td><td>0.6699999999999999 / ±0.0216</td><td>四片梁y=[−1.5,−0.5,0.5,1.5]；刚性横梁、共同位移与转角。负反力提示仅受压支承模型应重建。</td></tr>
+<tr><td><a href="core-learning.html?unit=C08U09">C08U09 · 顶升用单位响应建立调整规律</a></td><td>matrix</td><td>0.48 / ±0.013999999999999999</td><td>明确给定的教学影响矩阵；另一控制量为0.2；不代表具体实桥索力系数。</td></tr>
+<tr><td><a href="core-learning.html?unit=C08U10">C08U10 · 同温差放大结构，力和应力不同步</a></td><td>scale</td><td>4 / ±0.17500000000000002</td><td>全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。</td></tr>
+</table></div>
+<h2 id="ch9">第 9 章 · 10 个单元</h2><div class="scroll"><table><tr><th>编号与内容</th><th>模型族</th><th>练习目标 / 容差</th><th>必须说明的条件</th></tr>
+<tr><td><a href="core-learning.html?unit=C09U01">C09U01 · 风力为什么跟风速平方有关</a></td><td>wind</td><td>98 / ±2.940000000000001</td><td>ρ=1.225 kg/m³，A=100 m²；非控制量U=30 m/s或C=1；未模拟涡振、颤振。</td></tr>
+<tr><td><a href="core-learning.html?unit=C09U02">C09U02 · 改变尺寸也改变受风面积</a></td><td>scale</td><td>1 / ±1e-08</td><td>全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。</td></tr>
+<tr><td><a href="core-learning.html?unit=C09U03">C09U03 · 气动系数是条件，不是常数真理</a></td><td>wind</td><td>27.5625 / ±1.9845</td><td>ρ=1.225 kg/m³，A=100 m²；非控制量U=30 m/s或C=1；未模拟涡振、颤振。</td></tr>
+<tr><td><a href="core-learning.html?unit=C09U04">C09U04 · 质量与刚度共同决定频率</a></td><td>frequency</td><td>1.4142135623730951 / ±0.03</td><td>单自由度线性模型；只改变指定参数，其余参数不变。</td></tr>
+<tr><td><a href="core-learning.html?unit=C09U05">C09U05 · 共振用频率比辨认</a></td><td>dynamic</td><td>2.2428967793130674 / ±0.32667199360852145</td><td>单自由度线性简谐稳态力激励；非控制量r=0.98或ζ=0.03；不是地震反应谱。</td></tr>
+<tr><td><a href="core-learning.html?unit=C09U06">C09U06 · 阻尼降低共振附近的稳态放大</a></td><td>dynamic</td><td>3.370919636975488 / ±0.41870489933811494</td><td>单自由度线性简谐稳态力激励；非控制量r=0.98或ζ=0.03；不是地震反应谱。</td></tr>
+<tr><td><a href="core-learning.html?unit=C09U07">C09U07 · 涡脱落频率也有尺度关系</a></td><td>vortex</td><td>2.5 / ±0.07</td><td>St固定为0.2，特征尺寸D=2 m；只是脱落频率关系，不能预测锁定幅值或颤振临界风速。</td></tr>
+<tr><td><a href="core-learning.html?unit=C09U08">C09U08 · 几何相似不等于动力相似</a></td><td>similitude</td><td>0.2 / ±0.038</td><td>固定来流速度、重力与流体运动黏度；几何相似不保证两种无量纲数同时相似。</td></tr>
+<tr><td><a href="core-learning.html?unit=C09U09">C09U09 · 气动措施与结构措施分开比较</a></td><td>wind</td><td>27.5625 / ±1.9845</td><td>ρ=1.225 kg/m³，A=100 m²；非控制量U=30 m/s或C=1；未模拟涡振、颤振。</td></tr>
+<tr><td><a href="core-learning.html?unit=C09U10">C09U10 · 从风洞到计算都要验证假定</a></td><td>mesh</td><td>0.000625 / ±0.0012468750000000002</td><td>解析函数的插值验证例，不是已经求解的实桥有限元结果；用于区分数值验证和物理确认。</td></tr>
+</table></div>
+<h2 id="ch10">第 10 章 · 10 个单元</h2><div class="scroll"><table><tr><th>编号与内容</th><th>模型族</th><th>练习目标 / 容差</th><th>必须说明的条件</th></tr>
+<tr><td><a href="core-learning.html?unit=C10U01">C10U01 · 今天的余量不是全寿命余量</a></td><td>deterioration</td><td>3.7211591285237233 / ±1.0828520733743363</td><td>教学指数劣化模型；非控制量k=0.006/年或t=50年，不用于实际桥梁寿命预测。</td></tr>
+<tr><td><a href="core-learning.html?unit=C10U02">C10U02 · 抗震需求先区分静力与动力</a></td><td>dynamic</td><td>2.2428967793130674 / ±0.32667199360852145</td><td>单自由度线性简谐稳态力激励；非控制量r=0.98或ζ=0.03；不是地震反应谱。</td></tr>
+<tr><td><a href="core-learning.html?unit=C10U03">C10U03 · 同一阻尼措施跨灾种迁移有边界</a></td><td>dynamic</td><td>3.370919636975488 / ±0.41870489933811494</td><td>单自由度线性简谐稳态力激励；非控制量r=0.98或ζ=0.03；不是地震反应谱。</td></tr>
+<tr><td><a href="core-learning.html?unit=C10U04">C10U04 · 劣化速率比初始值更值得追问</a></td><td>deterioration</td><td>-14.142603668716816 / ±1.5170893411885384</td><td>教学指数劣化模型；非控制量k=0.006/年或t=50年，不用于实际桥梁寿命预测。</td></tr>
+<tr><td><a href="core-learning.html?unit=C10U05">C10U05 · 截面损失要通过模型映射到性能</a></td><td>section</td><td>1.49 / ±0.016200000000000003</td><td>外包尺寸固定的相似正方形空心截面；只比较几何效率，不检验薄壁稳定或构造。</td></tr>
+<tr><td><a href="core-learning.html?unit=C10U06">C10U06 · 疲劳由循环与幅值共同累积</a></td><td>fatigue</td><td>0.675 / ±0.03150000000000001</td><td>教学S-N幂律加线性累积，幂指数3和基准损伤0.2为示例；实际细节与循环谱需另定。</td></tr>
+<tr><td><a href="core-learning.html?unit=C10U07">C10U07 · 新证据改变参数判断</a></td><td>bayes</td><td>116 / ±0.96</td><td>正态先验μ=100、σ=10；单次独立正态观测；非控制量y=120或σe=5。</td></tr>
+<tr><td><a href="core-learning.html?unit=C10U08">C10U08 · 监测精度决定证据的权重</a></td><td>bayes</td><td>104 / ±0.34461538461538455</td><td>正态先验μ=100、σ=10；单次独立正态观测；非控制量y=120或σe=5。</td></tr>
+<tr><td><a href="core-learning.html?unit=C10U09">C10U09 · 比较方案同时展示不确定性</a></td><td>reliability</td><td>1.4424368919492376 / ±0.03677908311485462</td><td>抗力与效应联合正态、线性极限状态R−S；基准μR=120、μS=80、σR=12、σS=10、ρ=0。</td></tr>
+<tr><td><a href="core-learning.html?unit=C10U10">C10U10 · 扩散时间也受尺寸平方控制</a></td><td>diffusion</td><td>4 / ±0.48</td><td>相同扩散系数与边界条件，到达相同无量纲状态；不代表所有劣化机制均如此。</td></tr>
+</table></div>
+<h2 id="ch11">第 11 章 · 10 个单元</h2><div class="scroll"><table><tr><th>编号与内容</th><th>模型族</th><th>练习目标 / 容差</th><th>必须说明的条件</th></tr>
+<tr><td><a href="core-learning.html?unit=C11U01">C11U01 · 从问题选择模型，而不是反过来</a></td><td>beam</td><td>32.150205761316876 / ±0.7233796296296298</td><td>简支矩形梁，E=30 GPa，b=0.6 m；非控制量L=20 m、h=1.2 m、q=20 kN/m。未计自重变化。</td></tr>
+<tr><td><a href="core-learning.html?unit=C11U02">C11U02 · 最小模型也要保留力和矩</a></td><td>loadmap</td><td>0.7 / ±0.018</td><td>单位力，节点位于0、0.5、1；仅检验合力与一阶矩的映射守恒。</td></tr>
+<tr><td><a href="core-learning.html?unit=C11U03">C11U03 · 离散细化改变误差而非物理对象</a></td><td>mesh</td><td>0.000625 / ±0.0012468750000000002</td><td>解析函数的插值验证例，不是已经求解的实桥有限元结果；用于区分数值验证和物理确认。</td></tr>
+<tr><td><a href="core-learning.html?unit=C11U04">C11U04 · 刚度矩阵由平衡与协调组成</a></td><td>springs</td><td>0.75 / ±0.013333333333333336</td><td>两个线性弹簧并联，共同位移，k₂=1，P=1。</td></tr>
+<tr><td><a href="core-learning.html?unit=C11U05">C11U05 · 边界错误可以伪装成漂亮结果</a></td><td>thermal</td><td>9.000000000000002 / ±0.18000000000000005</td><td>E=30 GPa，α=10⁻⁵/℃，L=40 m；r为轴向自由热应变被抑制的比例。</td></tr>
+<tr><td><a href="core-learning.html?unit=C11U06">C11U06 · 求解之前先检查守恒</a></td><td>loadmap</td><td>0.7 / ±0.018</td><td>单位力，节点位于0、0.5、1；仅检验合力与一阶矩的映射守恒。</td></tr>
+<tr><td><a href="core-learning.html?unit=C11U07">C11U07 · 数值收敛与模型正确分两步证明</a></td><td>mesh</td><td>0.000625 / ±0.0012468750000000002</td><td>解析函数的插值验证例，不是已经求解的实桥有限元结果；用于区分数值验证和物理确认。</td></tr>
+<tr><td><a href="core-learning.html?unit=C11U08">C11U08 · 病态问题不会被更多小数解决</a></td><td>conditioning</td><td>10.000000000000002 / ±0.9799999999999992</td><td>二阶教学反算模型；s趋近1时矩阵奇异，数值精度不能补足独立信息。</td></tr>
+<tr><td><a href="core-learning.html?unit=C11U09">C11U09 · AI输出也必须经过方向与量纲检查</a></td><td>scale</td><td>4 / ±0.17500000000000002</td><td>全尺寸几何相似，材料和边界类型相同；每种加载规则分别成立。尺寸幂律不等于荷载响应非线性。</td></tr>
+<tr><td><a href="core-learning.html?unit=C11U10">C11U10 · 从单位影响到优化与反算</a></td><td>matrix</td><td>0.87 / ±0.04</td><td>明确给定的教学影响矩阵；另一控制量为0.2；不代表具体实桥索力系数。</td></tr>
+</table></div>
+</body></html>

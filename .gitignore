@@ -1,0 +1,5 @@
+source/_site/
+source/.quarto/
+**/__pycache__/
+**/tmp/
+*.pyc

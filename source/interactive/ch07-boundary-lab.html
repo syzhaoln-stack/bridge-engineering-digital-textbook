@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><link href="data:," rel="icon"/>
+<title>支承自由度、温度约束与水平力分配</title>
+<style>
+:root{--blue:#17365d;--cyan:#168aad;--orange:#e67e22;--red:#b6403a;--paper:#fff;--ink:#273444}*{box-sizing:border-box}body{margin:0;font:15px/1.65 "Microsoft YaHei",sans-serif;color:var(--ink);background:var(--paper)}main{max-width:1180px;margin:auto;padding:20px}h1{margin:0;color:var(--blue);font-size:25px}.lead{color:#5b6d7d;margin:6px 0 18px}.grid{display:grid;grid-template-columns:310px 1fr;gap:16px}.card{background:white;border:1px solid #d7e0e7;border-radius:10px;padding:16px}.row{margin:14px 0}.row label{display:flex;justify-content:space-between;font-weight:600}.row output{color:var(--cyan)}input,select{width:100%;margin-top:7px;padding:7px;accent-color:var(--orange)}svg{width:100%;height:360px;background:#fff}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:12px}.metric{background:#eef4f8;padding:10px;border-radius:7px}.metric span{display:block;font-size:12px;color:#667887}.metric b{font-size:18px;color:var(--blue)}.formula{margin-top:12px;border-left:4px solid var(--cyan);padding:10px;background:#f2f8fa}.warn{color:var(--red)!important;font-weight:700}.hidden{display:none}@media(max-width:760px){.grid{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}}
+</style></head><body><main>
+<h1>支承自由度、温度约束与水平力分配</h1><p class="lead">两个模式分别处理不同物理问题：均匀温度变形关注约束内力，共同纵向外力关注各桥墩的刚度分配。</p>
+<div class="grid"><section class="card">
+<div class="row"><label>分析模式</label><select id="case"><option value="thermal">均匀温度变形</option><option value="force">共同纵向外力分配</option></select></div>
+<div class="row thermal"><label>支承体系</label><select id="mode"><option value="guided">左固定、右纵向活动</option><option value="locked">两端纵向固定</option><option value="free">两端纵向活动</option></select></div>
+<div class="row"><label>梁长 L <output id="oL">120 m</output></label><input id="L" max="240" min="30" step="10" type="range" value="120"/></div>
+<div class="row thermal"><label>均匀温差 ΔT <output id="oT">30 ℃</output></label><input id="T" max="60" min="-40" step="5" type="range" value="30"/></div>
+<div class="row force hidden"><label>共同纵向外力 H <output id="oH">12 MN</output></label><input id="H" max="40" min="2" step="1" type="range" value="12"/></div>
+<div class="row force hidden"><label>左墩相对刚度 k₁ <output id="ok1">1.0</output></label><input id="k1" max="4" min="0.2" step="0.1" type="range" value="1"/></div>
+<div class="row force hidden"><label>右墩相对刚度 k₂ <output id="ok2">2.0</output></label><input id="k2" max="4" min="0.2" step="0.1" type="range" value="2"/></div>
+<div class="formula" id="formula"></div>
+</section><section class="card"><svg aria-label="支承体系与纵向作用示意" id="svg" viewbox="0 0 820 360"></svg>
+<div class="metrics"><div class="metric"><span id="l1"></span><b id="m1"></b></div><div class="metric"><span id="l2"></span><b id="m2"></b></div><div class="metric"><span id="l3"></span><b id="m3"></b></div><div class="metric"><span>体系判定</span><b id="mState"></b></div></div>
+<p id="scope"></p></section></div></main>
+<script>
+const $=id=>document.getElementById(id),ns='http://www.w3.org/2000/svg';
+function E(n,a,t=''){const e=document.createElementNS(ns,n);Object.entries(a).forEach(([k,v])=>e.setAttribute(k,v));e.textContent=t;return e}
+function arrow(s,x1,y1,x2,y2,color='#e67e22'){s.append(E('line',{x1,y1,x2,y2,stroke:color,'stroke-width':4}));const dx=x2-x1,dy=y2-y1,len=Math.hypot(dx,dy)||1,ux=dx/len,uy=dy/len,px=-uy,py=ux;s.append(E('polygon',{points:`${x2},${y2} ${x2-12*ux+6*px},${y2-12*uy+6*py} ${x2-12*ux-6*px},${y2-12*uy-6*py}`,fill:color}))}
+function setMetric(i,label,value){$('l'+i).textContent=label;$('m'+i).textContent=value}
+function support(s,x,type,label){s.append(E('polygon',{points:`${x-18},170 ${x+18},170 ${x},140`,fill:'white',stroke:'#17365d','stroke-width':2}));if(type==='roller'){s.append(E('circle',{cx:x-9,cy:178,r:6,fill:'white',stroke:'#168aad','stroke-width':2}));s.append(E('circle',{cx:x+9,cy:178,r:6,fill:'white',stroke:'#168aad','stroke-width':2}))}s.append(E('text',{x,y:210,'text-anchor':'middle',fill:'#455a6d'},label))}
+function draw(){const analysis=$('case').value,mode=$('mode').value,L=+$('L').value,T=+$('T').value,H=+$('H').value,k1=+$('k1').value,k2=+$('k2').value,s=$('svg');
+  document.querySelectorAll('.thermal').forEach(e=>e.classList.toggle('hidden',analysis!=='thermal'));document.querySelectorAll('.force').forEach(e=>e.classList.toggle('hidden',analysis!=='force'));
+  $('oL').textContent=L+' m';$('oT').textContent=T+' ℃';$('oH').textContent=H+' MN';$('ok1').textContent=k1.toFixed(1);$('ok2').textContent=k2.toFixed(1);s.innerHTML='';s.append(E('line',{x1:90,y1:135,x2:730,y2:135,stroke:'#17365d','stroke-width':18}));
+  if(analysis==='thermal'){
+    support(s,150,mode==='free'?'roller':'fixed',mode==='free'?'纵向活动':'纵向固定');support(s,670,mode==='locked'?'fixed':'roller',mode==='locked'?'纵向固定':'纵向活动');
+    const d=1e-5*L*1000*T,dir=d>=0?1:-1,mag=Math.min(95,20+Math.abs(d)*.32);arrow(s,410,88,410+dir*mag,88);s.append(E('text',{x:410,y:62,'text-anchor':'middle',fill:'#b6403a'},`自由温度变形 ΔL = ${d.toFixed(1)} mm`));
+    let N=0,state,note;if(mode==='guided'){state='释放温度伸缩';note='理想活动支座释放纵向温度位移，固定支点用于消除刚体平移。'}else if(mode==='locked'){const Ecmp=35000,A=8;N=Ecmp*A*1000*1e-5*T/1000;state='温度变形受约束';note='教学值取 E=35 GPa、A=8.0 m²。升温产生轴向压力，降温产生轴向拉力；两端反力大小相等、方向相反。';if(T>=0){arrow(s,105,250,175,250,'#b6403a');arrow(s,715,250,645,250,'#b6403a')}else{arrow(s,175,250,105,250,'#146c94');arrow(s,645,250,715,250,'#146c94')}s.append(E('text',{x:410,y:278,'text-anchor':'middle',fill:'#455a6d'},T>=0?'升温：轴向受压':'降温：轴向受拉'))}else{state='存在刚体平移';note='两端均纵向活动时，均匀温度变形可以释放，但体系仍须由其他构件或限位系统提供纵向稳定。'}
+    setMetric(1,'自由温度变形',d.toFixed(1)+' mm');setMetric(2,'理想约束轴力',mode==='locked'?Math.abs(N).toFixed(1)+' MN':'0 MN');setMetric(3,'轴力性质',mode==='locked'?(T>=0?'受压':'受拉'):'无');$('formula').innerHTML='自由温度变形：ΔL=αLΔT。两端完全固定且计入梁体轴向变形：N=EAαΔT；两端支反力等值、反向。取 α=1.0×10⁻⁵/℃。';$('mState').textContent=state;$('mState').className=mode==='guided'?'':'warn';$('scope').textContent=note+' 实桥还应考虑支座摩阻、墩身与基础柔度、开裂、限位间隙及温度梯度。';
+  }else{
+    support(s,150,'fixed','纵向连接');support(s,670,'fixed','纵向连接');const f1=H*k1/(k1+k2),f2=H*k2/(k1+k2);arrow(s,355,80,465,80);s.append(E('text',{x:410,y:55,'text-anchor':'middle',fill:'#b6403a'},`共同纵向外力 H = ${H.toFixed(0)} MN`));arrow(s,150,270,150+55*f1/H,270,'#146c94');arrow(s,670,315,670+55*f2/H,315,'#146c94');s.append(E('text',{x:150,y:253,'text-anchor':'middle',fill:'#455a6d'},`H₁=${f1.toFixed(2)} MN`));s.append(E('text',{x:670,y:298,'text-anchor':'middle',fill:'#455a6d'},`H₂=${f2.toFixed(2)} MN`));setMetric(1,'共同纵向外力',H.toFixed(1)+' MN');setMetric(2,'左墩分配 H₁',f1.toFixed(2)+' MN');setMetric(3,'右墩分配 H₂',f2.toFixed(2)+' MN');$('mState').textContent='同位移刚度分配';$('mState').className='';$('formula').innerHTML='桥面在两个连接点产生相同纵向位移时：Hᵢ=kᵢu，H=ΣHᵢ，因此 Hᵢ/H=kᵢ/Σk。此式用于共同外力分配，不用于代替温度约束内力计算。';$('scope').textContent='本模式假定桥面纵向刚体运动、两墩线弹性且基础条件已计入等效刚度。支座摩阻、碰撞、限位和非线性应另行分析。';
+  }
+}
+document.querySelectorAll('input,select').forEach(e=>e.addEventListener('input',draw));draw();
+</script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/ch07-boundary-lab.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body></html>

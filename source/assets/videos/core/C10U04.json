@@ -1,0 +1,15 @@
+{
+  "id": "C10U04",
+  "title": "劣化速率比初始值更值得追问",
+  "chapter": 10,
+  "fingerprint": "ff58bb5b3b1c38fa224cd0c4c1c21496f940e05f7933dc68855f533e5e0eee02",
+  "duration": 46.1,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 127.3
+}

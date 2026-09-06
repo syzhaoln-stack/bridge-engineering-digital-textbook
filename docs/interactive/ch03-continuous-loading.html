@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>影响线正负区段与不利布载</title><link href="data:," rel="icon"/><link href="influence-lab.css" rel="stylesheet"/></head>
+<body><main>
+<header><div><p class="eyebrow">梁桥 · 固定截面，移动荷载</p><h1>影响线正负区段与不利布载</h1><p>同一截面既可以求弯矩最大值，也可以求最小值。先选目标，再在桥面涂布荷载，观察正负贡献如何相加。</p></div><a href="../chapters/ch03.html" target="_top">返回梁桥章</a></header>
+<section aria-label="选择模型与目标" class="controls">
+<label>结构体系<select id="structure"><option value="continuous">两跨连续梁 40＋40 m</option><option value="simple">简支梁 80 m</option></select></label>
+<label>固定观察截面<select id="target"><option value="mid">左跨跨中弯矩</option><option value="support">中支点弯矩</option></select></label>
+<fieldset><legend>求哪个极值</legend><button aria-pressed="true" data-direction="1">正向最大 Mmax</button><button aria-pressed="false" data-direction="-1">反向最小 Mmin</button></fieldset>
+<label>荷载形式<select id="load"><option value="zones">可分段均布荷载 q＝10 kN/m</option><option value="three">三个集中力 P＝100 kN</option></select></label>
+</section>
+<p class="goal" id="goal"></p>
+<div class="legend"><span class="positive">＋ 正号区：向下荷载使该截面弯矩增大</span><span class="negative">− 负号区：向下荷载使该截面弯矩减小</span><span>弯矩下缘受拉为正；这里影响线正值画在零线上方。</span></div>
+<section class="diagram"><svg aria-label="可操作桥面和带正负号的影响线" id="scene" role="img" viewbox="0 0 1100 470"></svg></section>
+<p class="hint" id="gesture">在桥面按住并划过多个区段即可涂布或擦除。键盘：Tab定位区段，空格切换，左右箭头移动。</p>
+<div class="actions"><button id="positive">只布正号区</button><button id="negative">只布负号区</button><button id="full">全桥满布</button><button id="clear">清空荷载</button><button class="primary" id="best">布置当前目标的最不利荷载</button><button id="undo">撤销上一步</button></div>
+<section aria-label="有符号的效应分解" class="readouts"><div><span>正号区贡献</span><strong class="positive" id="plus"></strong></div><div><span>负号区贡献</span><strong class="negative" id="minus"></strong></div><div><span>当前截面弯矩</span><strong id="total"></strong></div><div><span>当前目标的参考极值</span><strong id="optimum"></strong></div></section>
+<p class="explanation" id="explanation"></p>
+<section class="comparison"><h2>布置、验证、比较</h2><p>先自行布载，再检查是否接近目标。保存A后改变布载，观察方案B的差别。</p><div class="actions"><button class="primary" id="check">验证我的布载</button><button id="save">保存为方案A</button><button id="restore">恢复方案A</button><button id="export">导出本次操作记录</button></div><p aria-live="polite" id="feedback" role="status">尚未提交布载。</p><p id="comparison">尚未保存方案A。</p></section>
+<details class="method"><summary>计算关系、单位与适用条件</summary><p>影响线η(x)表示向下单位力作用于x时，固定截面的正弯矩响应。均布荷载按 M＝∫q(x)η(x)dx 计算，集中力按 M＝ΣPᵢη(xᵢ) 计算；正负号保留到最终求和。</p><p>总长L＝80 m，常量EI，两跨等跨、支点无竖向位移。采用40个Euler–Bernoulli梁单元和一致节点荷载。均布荷载分20段，用区段中点积分；三集中力最小间距为0.08L，参考极值由201个位置网格搜索得到。集中力模式不是规范车辆轴组，区段满布规则也不替代规范布载要求。</p><p>简支梁跨中影响线没有负区，允许不布载时最小值为0；连续梁中支点弯矩影响线全为负，最大值为0。界面不会为这两种情况虚构反号区。</p></details>
+</main><script src="influence-model.js"></script><script src="influence-lab.js"></script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/ch03-continuous-loading.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body></html>

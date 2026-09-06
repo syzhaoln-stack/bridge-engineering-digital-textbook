@@ -1,0 +1,15 @@
+{
+  "id": "C04U10",
+  "title": "横梁刚性假定也有失效边界",
+  "chapter": 4,
+  "fingerprint": "18f538cb49142046e04a251408c2e606323e379ae0a9fe5b563ab26d652be2d3",
+  "duration": 47.366667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 131.9
+}

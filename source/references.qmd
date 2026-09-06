@@ -1,0 +1,25 @@
+# 参考文献与标准 {.unnumbered}
+
+1. 肖汝诚. *桥梁结构体系*. 北京: 人民交通出版社, 2013.
+2. 中华人民共和国交通运输部. *公路工程结构可靠性设计统一标准*（JTG 2120—2020）及发布公告. <https://xxgk.mot.gov.cn/2020/jigou/glj/202006/t20200623_3313243.html>.
+3. 中华人民共和国交通运输部. *公路桥涵设计通用规范*（JTG D60—2015）及发布公告. <https://xxgk.mot.gov.cn/2020/jigou/glj/202006/t20200623_3312312.html>.
+4. 中华人民共和国交通运输部. *公路钢筋混凝土及预应力混凝土桥涵设计规范*（JTG 3362—2018）及发布公告. <https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3312720.html>.
+5. 中华人民共和国交通运输部. *公路钢结构桥梁设计规范*（JTG D64—2015）及发布公告. <https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3312425.html>.
+6. 中华人民共和国交通运输部. *公路桥梁抗震设计规范*（JTG/T 2231-01—2020）及发布公告. <https://xxgk.mot.gov.cn/2020/jigou/glj/202006/t20200630_3321370.html>.
+7. 中华人民共和国交通运输部. *公路桥梁抗风设计规范*（JTG/T 3360-01—2018）及发布公告. <https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3313096.html>.
+8. 中华人民共和国交通运输部. *公路桥涵地基与基础设计规范*（JTG 3363—2019）及发布公告. <https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3313201.html>.
+9. 中华人民共和国交通运输部. *公路桥涵施工技术规范*（JTG/T 3650—2020）及发布公告. <https://xxgk.mot.gov.cn/jigou/glj/202006/t20200630_3321368.html>.
+10. 中华人民共和国交通运输部. *公路工程混凝土结构耐久性设计规范*（JTG/T 3310—2019）及发布公告. <https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3313135.html>.
+11. 中华人民共和国交通运输部. *公路桥涵养护规范*（JTG 5120—2021）及发布公告. <https://xxgk.mot.gov.cn/jigou/glj/202108/t20210825_3616530.html>.
+12. Ji, T., Bell, A., and Wu, Y. “The philosophical basis of Seeing and Touching Structural Concepts.” *European Journal of Engineering Education*, 46(6), 889–907, 2021. 教学资源入口：<https://epsassets.manchester.ac.uk/structural-concepts/>.
+13. 刘龄嘉, 王晓明. *桥梁工程*（第2版）网络教材工程. <https://github.com/longyu8101/qlgc/blob/master/source/index.rst>. 本书仅将其目录、术语与知识颗粒度作为编写参考；仓库未显示明确再许可信息的图文不直接复制。
+14. NPTEL. *Bridge Engineering*. <https://www.nptel.ac.in/courses/105105216>.
+15. MIT OpenCourseWare. *Structural Engineering Design*. <https://ocw.mit.edu/courses/1-051-structural-engineering-design-fall-2003/>.
+16. Washington State Department of Transportation. *Tacoma Narrows Bridge History*. <https://wsdot.wa.gov/TNBhistory/>.
+17. Federal Highway Administration. *Understanding and Managing the Aerodynamic Behavior of Bridges*. <https://www.fhwa.dot.gov/publications/focus/13dec/13dec03.cfm>.
+18. Federal Highway Administration. *Bridge Preservation Guide: Maintaining a Resilient Infrastructure to Preserve Mobility*. <https://www.fhwa.dot.gov/bridge/preservation/guide/guide.pdf>.
+19. 大连交通大学桥梁工程课程组. 桥梁工程在线课程、教学案例、有限元模型与录课资源.
+
+::: {.boundary}
+以上标准编号已按交通运输部公开页面核对至2026年9月4日。正式出版前仍应以采用时点的标准体系再次复核名称、编号、年份、勘误和条文内容。教材图件须进入图源台账，注明作者、书名或标准名称、版次、页码、授权状态和必要的改绘说明；公开网页可访问并不等于允许复制其中图像、视频或版式。
+:::

@@ -1,0 +1,15 @@
+{
+  "id": "C05U02",
+  "title": "合理拱轴只对应指定荷载",
+  "chapter": 5,
+  "fingerprint": "9b5b2356a85c3dfa03839254f6be01ca518590be721cd9bdd48ad5a8bea1fc1a",
+  "duration": 49.033333,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 148.1
+}

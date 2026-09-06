@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-05T00:55:19+08:00",
+  "source": "scripts/manim/bridge_series.py",
+  "count": 15,
+  "videos": [
+    {
+      "code": "M01",
+      "title": "结构体系与力流",
+      "scene": "M01ForcePath",
+      "file": "M01_force_path.mp4",
+      "poster": "posters/M01_force_path.png",
+      "duration_seconds": 54.73,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M02",
+      "title": "跨径与尺度效应",
+      "scene": "M02ScaleEffect",
+      "file": "M02_scale_effect.mp4",
+      "poster": "posters/M02_scale_effect.png",
+      "duration_seconds": 44.67,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M03",
+      "title": "偏心受压与截面核心",
+      "scene": "M03EccentricCore",
+      "file": "M03_eccentric_core.mp4",
+      "poster": "posters/M03_eccentric_core.png",
+      "duration_seconds": 54.67,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M04",
+      "title": "预应力的三种等价表示",
+      "scene": "M04PrestressViews",
+      "file": "M04_prestress_views.mp4",
+      "poster": "posters/M04_prestress_views.png",
+      "duration_seconds": 52.47,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M05",
+      "title": "作用组合与瀑布图",
+      "scene": "M05CombinationWaterfall",
+      "file": "M05_combination_waterfall.mp4",
+      "poster": "posters/M05_combination_waterfall.png",
+      "duration_seconds": 51.8,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M06",
+      "title": "影响线与移动加载",
+      "scene": "M06InfluenceLine",
+      "file": "M06_influence_line.mp4",
+      "poster": "posters/M06_influence_line.png",
+      "duration_seconds": 56.67,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M07",
+      "title": "箱梁挖空与截面效率",
+      "scene": "M07BoxEfficiency",
+      "file": "M07_box_efficiency.mp4",
+      "poster": "posters/M07_box_efficiency.png",
+      "duration_seconds": 54.67,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M08",
+      "title": "拱轴、压力线与偏心",
+      "scene": "M08ArchThrustLine",
+      "file": "M08_arch_thrust_line.mp4",
+      "poster": "posters/M08_arch_thrust_line.png",
+      "duration_seconds": 45.8,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M09",
+      "title": "斜拉索影响矩阵与成桥状态",
+      "scene": "M09StayMatrix",
+      "file": "M09_stay_matrix.mp4",
+      "poster": "posters/M09_stay_matrix.png",
+      "duration_seconds": 50.6,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M10",
+      "title": "悬索线型、矢跨比与水平分力",
+      "scene": "M10SuspensionSag",
+      "file": "M10_suspension_sag.mp4",
+      "poster": "posters/M10_suspension_sag.png",
+      "duration_seconds": 55.67,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M11",
+      "title": "温度变形与纵向约束",
+      "scene": "M11ThermalRestraint",
+      "file": "M11_thermal_restraint.mp4",
+      "poster": "posters/M11_thermal_restraint.png",
+      "duration_seconds": 48.6,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M12",
+      "title": "模态、频比与共振",
+      "scene": "M12ModalResonance",
+      "file": "M12_modal_resonance.mp4",
+      "poster": "posters/M12_modal_resonance.png",
+      "duration_seconds": 45.67,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M13",
+      "title": "风速平方律与风致现象",
+      "scene": "M13WindPhenomena",
+      "file": "M13_wind_phenomena.mp4",
+      "poster": "posters/M13_wind_phenomena.png",
+      "duration_seconds": 57.27,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M14",
+      "title": "性能退化与时变可靠度",
+      "scene": "M14TimeReliability",
+      "file": "M14_time_reliability.mp4",
+      "poster": "posters/M14_time_reliability.png",
+      "duration_seconds": 55.2,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    },
+    {
+      "code": "M15",
+      "title": "有限元模型层级与可验证性",
+      "scene": "M15ModelHierarchy",
+      "file": "M15_model_hierarchy.mp4",
+      "poster": "posters/M15_model_hierarchy.png",
+      "duration_seconds": 49.4,
+      "quality": "low",
+      "style": "白底·中文教材体·无旁白"
+    }
+  ]
+}

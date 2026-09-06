@@ -1,0 +1,15 @@
+{
+  "id": "C03U03",
+  "title": "组合不是把所有最大值相加",
+  "chapter": 3,
+  "fingerprint": "4a703532b2a4e5d063c46b51302a20938cc25c9fbee2c08f6c773c9935a3fb61",
+  "duration": 44.566667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 142.6
+}

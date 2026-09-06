@@ -1,0 +1,352 @@
+{
+  "audit_date": "2026-09-06",
+  "definitions": {
+    "physical_files": "实际源图片文件；排除站点/临时/验收镜像，视频封面/纹理/图标另列",
+    "logical_unique": "logical_ids是台账记录去重，logical_key是文件SHA-256去重，两者都不等于视觉内容独立性。存在一文件多图、不同裁图共用原图和裁图误识别；完整逻辑独立图数尚未逐图审定",
+    "body_occurrence": "仅_quarto.yml登记11章QMD内Markdown图片与HTML img，候选条带单列；iframe及video poster不计",
+    "candidate_occurrence": "CANDIDATE-GALLERY标记内img次数，审核图库镜像不相加",
+    "code_rendered": "计渲染入口与模型族，不把视角、帧或参数组合当新图",
+    "publication_adopted": "需逐图技术和权利签认。登记0条表示没有该项证据，不表示最终不采用"
+  },
+  "totals": {
+    "source_image_files": 943,
+    "source_unique_hashes": 943,
+    "content_image_files": 812,
+    "content_unique_hashes": 812,
+    "reference_candidate_files": 781,
+    "own_static_files": 31,
+    "body_occurrences": 72,
+    "body_unique_files": 72,
+    "candidate_occurrences": 360,
+    "candidate_unique_files": 200,
+    "body_candidate_union_files": 250,
+    "registered_publication_adopted": 0
+  },
+  "groups": [
+    {
+      "group": "web",
+      "label": "Commons网上候选",
+      "physical_files": 134,
+      "unique_sha256": 134,
+      "logical_ids": 134,
+      "body_occurrences": 0,
+      "body_unique_files": 0,
+      "candidate_occurrences": 63,
+      "candidate_unique_files": 50,
+      "licence_status_counts": {
+        "open_licence_metadata_conditional": 107,
+        "public_domain_claim_pending": 22,
+        "special_or_unclear_pending": 5
+      }
+    },
+    {
+      "group": "paper",
+      "label": "论文截取候选",
+      "physical_files": 2,
+      "unique_sha256": 2,
+      "logical_ids": 2,
+      "body_occurrences": 0,
+      "body_unique_files": 0,
+      "candidate_occurrences": 11,
+      "candidate_unique_files": 2,
+      "licence_status_counts": {
+        "rights_unverified": 2
+      }
+    },
+    {
+      "group": "scan",
+      "label": "教材PDF裁图候选",
+      "physical_files": 598,
+      "unique_sha256": 598,
+      "logical_ids": 598,
+      "body_occurrences": 0,
+      "body_unique_files": 0,
+      "candidate_occurrences": 203,
+      "candidate_unique_files": 122,
+      "licence_status_counts": {
+        "internal_only": 598
+      }
+    },
+    {
+      "group": "scan_draft",
+      "label": "正文占位：教材PDF裁图",
+      "physical_files": 3,
+      "unique_sha256": 3,
+      "logical_ids": 3,
+      "body_occurrences": 1,
+      "body_unique_files": 1,
+      "candidate_occurrences": 0,
+      "candidate_unique_files": 0,
+      "licence_status_counts": {
+        "internal_only": 3
+      }
+    },
+    {
+      "group": "online_draft",
+      "label": "正文占位：在线教材图",
+      "physical_files": 42,
+      "unique_sha256": 42,
+      "logical_ids": 42,
+      "body_occurrences": 42,
+      "body_unique_files": 42,
+      "candidate_occurrences": 0,
+      "candidate_unique_files": 0,
+      "licence_status_counts": {
+        "internal_only": 42
+      }
+    },
+    {
+      "group": "official_draft",
+      "label": "正文占位：官方资料图待核",
+      "physical_files": 2,
+      "unique_sha256": 2,
+      "logical_ids": 2,
+      "body_occurrences": 2,
+      "body_unique_files": 2,
+      "candidate_occurrences": 0,
+      "candidate_unique_files": 0,
+      "licence_status_counts": {
+        "rights_unverified": 2
+      }
+    },
+    {
+      "group": "own",
+      "label": "本书自制静态图",
+      "physical_files": 31,
+      "unique_sha256": 31,
+      "logical_ids": 31,
+      "body_occurrences": 27,
+      "body_unique_files": 27,
+      "candidate_occurrences": 83,
+      "candidate_unique_files": 26,
+      "licence_status_counts": {
+        "own_source_for_preview": 31
+      }
+    },
+    {
+      "group": "poster",
+      "label": "视频海报/关键帧（另计）",
+      "physical_files": 125,
+      "unique_sha256": 125,
+      "logical_ids": 125,
+      "body_occurrences": 0,
+      "body_unique_files": 0,
+      "candidate_occurrences": 0,
+      "candidate_unique_files": 0,
+      "licence_status_counts": {
+        "own_video_derivative": 125
+      }
+    },
+    {
+      "group": "texture",
+      "label": "第三方3D纹理（另计）",
+      "physical_files": 1,
+      "unique_sha256": 1,
+      "logical_ids": 1,
+      "body_occurrences": 0,
+      "body_unique_files": 0,
+      "candidate_occurrences": 0,
+      "candidate_unique_files": 0,
+      "licence_status_counts": {
+        "cc0_local_licence": 1
+      }
+    },
+    {
+      "group": "icon",
+      "label": "界面图标（另计）",
+      "physical_files": 2,
+      "unique_sha256": 2,
+      "logical_ids": 2,
+      "body_occurrences": 0,
+      "body_unique_files": 0,
+      "candidate_occurrences": 0,
+      "candidate_unique_files": 0,
+      "licence_status_counts": {
+        "ui_asset": 2
+      }
+    },
+    {
+      "group": "cache",
+      "label": "研究缓存截图（不计）",
+      "physical_files": 3,
+      "unique_sha256": 3,
+      "logical_ids": 3,
+      "body_occurrences": 0,
+      "body_unique_files": 0,
+      "candidate_occurrences": 0,
+      "candidate_unique_files": 0,
+      "licence_status_counts": {
+        "rights_unverified": 3
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "chapter": 1,
+      "file": "chapters/ch01.qmd",
+      "title": "桥梁工程与智能设计概论",
+      "body_occurrences": 10,
+      "body_unique_files": 10,
+      "body_by_group": {
+        "online_draft": 8,
+        "own": 2
+      },
+      "candidate_occurrences": 30,
+      "candidate_unique_files": 27,
+      "inline_svg_blocks": 0
+    },
+    {
+      "chapter": 2,
+      "file": "chapters/ch02-foundations.qmd",
+      "title": "桥梁结构概念与力学基础",
+      "body_occurrences": 5,
+      "body_unique_files": 5,
+      "body_by_group": {
+        "own": 5
+      },
+      "candidate_occurrences": 33,
+      "candidate_unique_files": 26,
+      "inline_svg_blocks": 0
+    },
+    {
+      "chapter": 3,
+      "file": "chapters/ch02.qmd",
+      "title": "桥梁上的作用、作用组合与可靠度",
+      "body_occurrences": 7,
+      "body_unique_files": 7,
+      "body_by_group": {
+        "own": 7
+      },
+      "candidate_occurrences": 33,
+      "candidate_unique_files": 21,
+      "inline_svg_blocks": 0
+    },
+    {
+      "chapter": 4,
+      "file": "chapters/ch03.qmd",
+      "title": "梁式桥设计与计算",
+      "body_occurrences": 17,
+      "body_unique_files": 17,
+      "body_by_group": {
+        "scan_draft": 1,
+        "online_draft": 12,
+        "own": 3,
+        "official_draft": 1
+      },
+      "candidate_occurrences": 33,
+      "candidate_unique_files": 28,
+      "inline_svg_blocks": 0
+    },
+    {
+      "chapter": 5,
+      "file": "chapters/ch04.qmd",
+      "title": "拱桥设计",
+      "body_occurrences": 10,
+      "body_unique_files": 10,
+      "body_by_group": {
+        "online_draft": 10
+      },
+      "candidate_occurrences": 33,
+      "candidate_unique_files": 28,
+      "inline_svg_blocks": 0
+    },
+    {
+      "chapter": 6,
+      "file": "chapters/ch05.qmd",
+      "title": "斜拉桥设计",
+      "body_occurrences": 5,
+      "body_unique_files": 5,
+      "body_by_group": {
+        "online_draft": 4,
+        "own": 1
+      },
+      "candidate_occurrences": 36,
+      "candidate_unique_files": 26,
+      "inline_svg_blocks": 0
+    },
+    {
+      "chapter": 7,
+      "file": "chapters/ch06.qmd",
+      "title": "悬索桥设计",
+      "body_occurrences": 4,
+      "body_unique_files": 4,
+      "body_by_group": {
+        "online_draft": 3,
+        "own": 1
+      },
+      "candidate_occurrences": 33,
+      "candidate_unique_files": 30,
+      "inline_svg_blocks": 0
+    },
+    {
+      "chapter": 8,
+      "file": "chapters/ch07.qmd",
+      "title": "支座、墩台与基础",
+      "body_occurrences": 6,
+      "body_unique_files": 6,
+      "body_by_group": {
+        "own": 1,
+        "online_draft": 5
+      },
+      "candidate_occurrences": 30,
+      "candidate_unique_files": 22,
+      "inline_svg_blocks": 0
+    },
+    {
+      "chapter": 9,
+      "file": "chapters/ch09-wind.qmd",
+      "title": "桥梁抗风与气动响应",
+      "body_occurrences": 3,
+      "body_unique_files": 3,
+      "body_by_group": {
+        "own": 2,
+        "official_draft": 1
+      },
+      "candidate_occurrences": 33,
+      "candidate_unique_files": 15,
+      "inline_svg_blocks": 0
+    },
+    {
+      "chapter": 10,
+      "file": "chapters/ch10-lifecycle.qmd",
+      "title": "地震、耐久与全寿命评价",
+      "body_occurrences": 3,
+      "body_unique_files": 3,
+      "body_by_group": {
+        "own": 3
+      },
+      "candidate_occurrences": 33,
+      "candidate_unique_files": 18,
+      "inline_svg_blocks": 0
+    },
+    {
+      "chapter": 11,
+      "file": "chapters/ch10-fem.qmd",
+      "title": "数字建模、有限元与智能设计",
+      "body_occurrences": 2,
+      "body_unique_files": 2,
+      "body_by_group": {
+        "own": 2
+      },
+      "candidate_occurrences": 33,
+      "candidate_unique_files": 18,
+      "inline_svg_blocks": 0
+    }
+  ],
+  "web_licence_labels": {
+    "CC BY-SA 3.0": 11,
+    "CC BY-SA 4.0": 43,
+    "CC BY 3.0": 4,
+    "FAL": 1,
+    "CC BY 2.0": 6,
+    "Public domain": 22,
+    "CC BY 4.0": 15,
+    "CC BY-SA 2.0": 11,
+    "CC0": 13,
+    "CC SA 1.0": 1,
+    "CC BY 2.0 de": 3,
+    "No restrictions": 3,
+    "CC BY-SA 2.5": 1
+  },
+  "note": "统计图片文件及引用，不代表逐图审定的有效插图或出版采用数；不含原图与本地目录。"
+}

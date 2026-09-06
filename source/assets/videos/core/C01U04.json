@@ -1,0 +1,15 @@
+{
+  "id": "C01U04",
+  "title": "长度、面积、体积不是同一种增长",
+  "chapter": 1,
+  "fingerprint": "030fa352e91e09c06331c6ce04f69e1ce34db6b2ba25f77cd6ce0858a40e6259",
+  "duration": 48.866667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 72.3
+}

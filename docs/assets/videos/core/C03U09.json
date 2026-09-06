@@ -1,0 +1,15 @@
+{
+  "id": "C03U09",
+  "title": "正、负区段要分别构造不利布载",
+  "chapter": 3,
+  "fingerprint": "48e0fb4d2c62c2c9784c1cc20a9fb2c6aa14b453372064bc183db3b311131806",
+  "duration": 51.7,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 100.2
+}

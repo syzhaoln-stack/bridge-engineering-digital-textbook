@@ -1,0 +1,15 @@
+{
+  "id": "C07U02",
+  "title": "小垂度不是免费减小位移",
+  "chapter": 7,
+  "fingerprint": "f05c5e43293cfdd9b94e489a467aae90de4bdaad8084f80ac9c4e2c31ea1d7cb",
+  "duration": 45.566667,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 122.2
+}

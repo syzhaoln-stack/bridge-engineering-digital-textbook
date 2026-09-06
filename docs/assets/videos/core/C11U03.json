@@ -1,0 +1,15 @@
+{
+  "id": "C11U03",
+  "title": "离散细化改变误差而非物理对象",
+  "chapter": 11,
+  "fingerprint": "90a522bf655f8ed55505d7b601d51bb9f42e38e003078145437bc95dfe5d1eb7",
+  "duration": 47.3,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "audio": "aac",
+  "voice": "Microsoft Huihui Desktop / local SAPI",
+  "decode": "passed",
+  "frame_samples": 4,
+  "render_seconds": 143.7
+}

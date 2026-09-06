@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="data:," rel="icon"/>
+<title>主缆初张力与几何刚度</title>
+<style>
+    :root{--paper:#f5f8f8;--ink:#112b36;--muted:#61737b;--line:#d5e1e3;--cyan:#168da8;--amber:#df962f;--coral:#cf604f;--panel:#fff;--deep:#0d2632}
+    *{box-sizing:border-box}html,body{margin:0;min-width:0;font-family:"Microsoft YaHei","Segoe UI",sans-serif;background:var(--paper);color:var(--ink)}body{padding:12px}
+    .shell{max-width:1180px;margin:auto;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(290px,.78fr);gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;box-shadow:0 12px 28px rgba(17,43,54,.08)}
+    .question{grid-column:1/-1;padding:15px 18px;border-left:5px solid var(--amber)}.question small{display:block;color:#8a5a16;font-weight:700;margin-bottom:4px}.question h1{font:600 22px/1.35 "STKaiti","KaiTi",serif;margin:0 0 6px}.question p{margin:0;color:var(--muted);font-size:12px;line-height:1.65}
+    .scene-card{overflow:hidden}.scene-head{padding:11px 14px;border-bottom:1px solid var(--line);display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:10px;color:var(--muted)}.sw{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:5px;border-radius:3px}.modes{display:flex;gap:6px}.modes button{min-height:38px}
+    #scene{position:relative;height:570px;overflow:hidden;background:#87a5b5}#scene canvas{display:block;width:100%!important;height:100%!important}.label{position:absolute;z-index:4;transform:translate(-50%,-50%);padding:4px 7px;border-radius:5px;background:rgba(7,20,28,.86);border:1px solid rgba(255,255,255,.18);color:#f3f7f8;font-size:10px;white-space:nowrap;pointer-events:none}.scene-note{position:absolute;left:10px;bottom:9px;background:rgba(7,20,28,.78);color:#dce8eb;border-radius:6px;padding:5px 8px;font-size:9px}
+    .desk{padding:15px}.desk h2{font-size:15px;margin:0 0 4px}.desk>p{font-size:11px;color:var(--muted);line-height:1.55;margin:0 0 9px}.row{padding:9px 10px;margin:7px 0;border:1px solid var(--line);border-radius:9px;background:#fbfcfc}.row label{display:flex;justify-content:space-between;gap:8px;font-size:10px;color:#52666e}.row output{color:var(--cyan);font-weight:700}.row input{width:100%;height:38px;accent-color:var(--cyan)}details{margin-top:8px;border-top:1px solid var(--line);padding-top:8px}summary{font-size:11px;color:#3c6978;cursor:pointer}
+    button{border:1px solid #c7d5d8;border-radius:8px;background:#edf3f4;color:var(--ink);padding:7px 10px;cursor:pointer}button.active{border-color:var(--cyan);background:#dff1f4}button:focus-visible,input:focus-visible{outline:3px solid rgba(22,141,168,.25);outline-offset:2px}
+    .results{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:12px}.result{padding:13px 15px}.result h3{font-size:13px;margin:0 0 8px}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.metric{padding:8px;border-radius:8px;background:#eef3f4;border:1px solid var(--line);min-width:0}.metric span{display:block;font-size:9px;color:var(--muted)}.metric b{display:block;margin-top:3px;color:#9a6117;font-size:13px;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}.reading{grid-column:1/-1;padding:14px 17px;border-top:4px solid var(--cyan)}.reading strong{color:#8b5715}.reading p{font-size:12px;line-height:1.72;margin:5px 0;color:#405962}.boundary{font-size:10px!important;color:#66777e!important}
+    @media(max-width:880px){.shell{grid-template-columns:1fr}.question,.results,.reading{grid-column:1}.scene-card,.desk{grid-column:1}.results{grid-template-columns:1fr}#scene{height:500px}}@media(max-width:560px){body{padding:7px}.question h1{font-size:19px}#scene{height:420px}.metrics{grid-template-columns:1fr 1fr}.scene-head{align-items:flex-start}.modes{width:100%}.modes button{flex:1}}
+  </style>
+</head>
+<body>
+<main class="shell">
+<section class="question card"><small>悬索桥参数分析</small><h1>主缆初张力与几何刚度</h1><p>两座模型的跨度、垂度、材料和车辆相同，仅改变恒载形成的初张力。图中分别计算材料伸长与几何变形，并显示二者的耦合关系。</p></section>
+<section class="scene-card card">
+<header class="scene-head"><div class="legend"><span><i class="sw" style="background:#d8e1e3;border-top:1px dashed #60737b"></i>加载前索形</span><span><i class="sw" style="background:#df962f"></i>低初张力模型</span><span><i class="sw" style="background:#29a5bd"></i>高初张力模型</span><span><i class="sw" style="background:#cf604f"></i>同一附加荷载</span></div><div class="modes"><button id="linear" type="button">固定初张力估算</button><button class="active" id="nonlinear" type="button">伸长后重新找形</button></div></header>
+<div id="scene"><div class="scene-note">可旋转、缩放。实线按计算后的实际几何绘制，不使用位移放大。</div></div>
+</section>
+<aside class="desk card"><h2>控制参数</h2><p>左、右模型承受相同车辆作用；右侧模型的恒载与初张力较大。</p>
+<div class="row"><label>附加集中荷载 <output id="o-live"></output></label><input id="live" max="1800" min="200" step="50" type="range" value="900"/></div>
+<div class="row"><label>车辆位置 x/L <output id="o-x"></output></label><input id="x" max="85" min="15" step="1" type="range" value="50"/></div>
+<div class="row"><label>高／低恒载比 <output id="o-ratio"></output></label><input id="ratio" max="4" min="1.2" step=".1" type="range" value="3"/></div>
+<details><summary>进一步试：几何和材料</summary>
+<div class="row"><label>跨垂比 L/f <output id="o-sag"></output></label><input aria-label="跨垂比 L/f" id="sag" max="14" min="7" step="1" type="range" value="10"/></div>
+<div class="row"><label>轴向刚度 EA <output id="o-ea"></output></label><input id="ea" max="40" min="8" step="2" type="range" value="20"/></div>
+</details>
+</aside>
+<section class="results">
+<article class="result card"><h3>橙色：较低恒载／较低初张力</h3><div class="metrics" id="lowMetrics"></div></article>
+<article class="result card"><h3>蓝色：较高恒载／较高初张力</h3><div class="metrics" id="highMetrics"></div></article>
+</section>
+<section class="reading card"><strong id="answer"></strong><p id="explain"></p><p class="boundary">模型边界：二维柔索、固定塔顶、离散竖向恒载与一组集中附加荷载；为让两个初始状态保持同一垂度，模型分别确定其无应力索长，相当于经过不同的制作与调索，而不是把同一根未调整的索直接换一份恒载。重新找形满足整体自然长度兼容，并计入轴向弹性伸长。未包含加劲梁共同工作、吊索松弛、索鞍滑移、温度、动力和施工阶段。</p></section>
+</main>
+<script defer="" src="./bundles/ch06-cable-stiffness.bundle.js"></script>
+<script defer="" src="./bridge-a11y.js"></script>
+<!-- SOURCE-VIEW START -->
+<script src="source-snapshots/ch06-cable-stiffness.js"></script>
+<script src="source-viewer.js"></script>
+<!-- SOURCE-VIEW END -->
+</body>
+</html>
