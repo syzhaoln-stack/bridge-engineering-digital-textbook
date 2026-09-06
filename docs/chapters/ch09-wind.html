@@ -5,56 +5,56 @@
 <meta content="quarto-1.9.38" name="generator"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
 <title>9  桥梁抗风与气动响应 – 桥梁工程智能设计</title>
-<style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
@@ -74,61 +74,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
 <link append-hash="true" data-mode="light" href="../site_libs/bootstrap/bootstrap-c614dc152840027ed1d225942eae4f22.min.css" id="quarto-bootstrap" rel="stylesheet"/>
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "没有结果",
-    "search-matching-documents-text": "匹配的文档",
-    "search-copy-link-title": "复制搜索链接",
-    "search-hide-matches-text": "隐藏其它匹配结果",
-    "search-more-match-text": "更多匹配结果",
-    "search-more-matches-text": "更多匹配结果",
-    "search-clear-button-title": "清除",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "取消",
-    "search-submit-button-title": "提交",
-    "search-label": "搜索"
-  }
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
 </script>
 <link href="../styles.css" rel="stylesheet"/>
 
@@ -308,7 +308,7 @@ window.Quarto = {
 <li class="sidebar-item">
 <div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../legacy-tools.html">
-<span class="menu-text">从旧版接续的两个实验</span></a>
+<span class="menu-text">从旧版接续的实验与游戏</span></a>
 </div>
 </li>
 </ul>
@@ -374,185 +374,185 @@ window.Quarto = {
 <div class="core-route" id="core-route">
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry">
-<p>
-先从一个看得见的问题开始
+<p>
+先从一个看得见的问题开始
 </p>
-<h3 class="anchored">
-风速增加一倍，桥的晃动幅度也会增加一倍吗？
+<h3 class="anchored">
+风速增加一倍，桥的晃动幅度也会增加一倍吗？
 </h3>
-<p>
-选择一个现象并改变风速，观察平均偏移、晃动节奏和幅值怎样变化。
+<p>
+选择一个现象并改变风速，观察平均偏移、晃动节奏和幅值怎样变化。
 </p>
 <a href="../interactive/learning-map.html?chapter=ch09-wind">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
-<h2 class="anchored">
-本章的核心思考
+<h2 class="anchored">
+本章的核心思考
 </h2>
-<p class="core-thesis">
-用无量纲比值组织风与动力问题。
+<p class="core-thesis">
+用无量纲比值组织风与动力问题。
 </p>
 <ol>
-<li>
-声明气动系数条件，再用风速平方律。
+<li>
+声明气动系数条件，再用风速平方律。
 </li>
-<li>
-用频比和阻尼比区分静力、共振与抑振。
+<li>
+用频比和阻尼比区分静力、共振与抑振。
 </li>
-<li>
-用雷诺数、弗劳德数反问模型的相似条件。
+<li>
+用雷诺数、弗劳德数反问模型的相似条件。
 </li>
 </ol>
 <div class="core-analogy">
-<h3 class="anchored">
-跨课程类比
+<h3 class="anchored">
+跨课程类比
 </h3>
-<p>
-动力学单自由度 → 桥梁模态响应；量纲分析 → 风洞相似
+<p>
+动力学单自由度 → 桥梁模态响应；量纲分析 → 风洞相似
 </p>
 <p>
-<strong>反例与边界：</strong>简谐稳态不是地震反应谱；固定斯特劳哈尔数不能预测锁定幅值或颤振。
+<strong>反例与边界：</strong>简谐稳态不是地震反应谱；固定斯特劳哈尔数不能预测锁定幅值或颤振。
 </p>
 </div>
-<p>
-建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
+<p>
+建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
 </p>
 <div class="core-unit-grid">
 <article>
-<p class="core-tag">
-C09U01 · 课堂核心
+<p class="core-tag">
+C09U01 · 课堂核心
 </p>
-<h3 class="anchored">
-风力为什么跟风速平方有关
+<h3 class="anchored">
+风力为什么跟风速平方有关
 </h3>
-<p>
-固定气动系数、空气密度与迎风面积时，风力随风速平方变化。
+<p>
+固定气动系数、空气密度与迎风面积时，风力随风速平方变化。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C09U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U01&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C09U02 · 课前/课后迁移
+<p class="core-tag">
+C09U02 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-改变尺寸也改变受风面积
+<h3 class="anchored">
+改变尺寸也改变受风面积
 </h3>
-<p>
-保持面压力不变而几何相似放大时，线荷载随桥宽一次增长，而弯曲应力保持不变。
+<p>
+保持面压力不变而几何相似放大时，线荷载随桥宽一次增长，而弯曲应力保持不变。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C09U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U02&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C09U03 · 课前/课后迁移
+<p class="core-tag">
+C09U03 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-气动系数是条件，不是常数真理
+<h3 class="anchored">
+气动系数是条件，不是常数真理
 </h3>
-<p>
-系数变化能显著改变风力，固定系数平方律只是在指定条件下的模型。
+<p>
+系数变化能显著改变风力，固定系数平方律只是在指定条件下的模型。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C09U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U03&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C09U04 · 课前/课后迁移
+<p class="core-tag">
+C09U04 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-质量与刚度共同决定频率
+<h3 class="anchored">
+质量与刚度共同决定频率
 </h3>
-<p>
-质量固定时，频率随刚度平方根增加。
+<p>
+质量固定时，频率随刚度平方根增加。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C09U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U04&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C09U05 · 课堂核心
+<p class="core-tag">
+C09U05 · 课堂核心
 </p>
-<h3 class="anchored">
-共振用频率比辨认
+<h3 class="anchored">
+共振用频率比辨认
 </h3>
-<p>
-响应峰值靠近频比为一的位置，位置和高度还受阻尼影响。
+<p>
+响应峰值靠近频比为一的位置，位置和高度还受阻尼影响。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C09U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U05&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C09U06 · 课前/课后迁移
+<p class="core-tag">
+C09U06 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-阻尼降低共振附近的稳态放大
+<h3 class="anchored">
+阻尼降低共振附近的稳态放大
 </h3>
-<p>
-增加阻尼可以降低稳态放大峰，但静力柔度仍由刚度决定。
+<p>
+增加阻尼可以降低稳态放大峰，但静力柔度仍由刚度决定。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C09U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U06&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C09U07 · 课前/课后迁移
+<p class="core-tag">
+C09U07 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-涡脱落频率也有尺度关系
+<h3 class="anchored">
+涡脱落频率也有尺度关系
 </h3>
-<p>
-固定斯特劳哈尔数的模型中，脱落频率与流速成正比、与特征尺寸成反比。
+<p>
+固定斯特劳哈尔数的模型中，脱落频率与流速成正比、与特征尺寸成反比。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C09U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U07&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C09U08 · 课堂核心
+<p class="core-tag">
+C09U08 · 课堂核心
 </p>
-<h3 class="anchored">
-几何相似不等于动力相似
+<h3 class="anchored">
+几何相似不等于动力相似
 </h3>
-<p>
-在同流速下改变尺寸，会同时改变雷诺数与弗劳德数。
+<p>
+在同流速下改变尺寸，会同时改变雷诺数与弗劳德数。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C09U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U08&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C09U09 · 课前/课后迁移
+<p class="core-tag">
+C09U09 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-气动措施与结构措施分开比较
+<h3 class="anchored">
+气动措施与结构措施分开比较
 </h3>
-<p>
-改变截面气动系数属于减小作用，增加结构阻尼属于改变响应。
+<p>
+改变截面气动系数属于减小作用，增加结构阻尼属于改变响应。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C09U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U09&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C09U10 · 课前/课后迁移
+<p class="core-tag">
+C09U10 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-从风洞到计算都要验证假定
+<h3 class="anchored">
+从风洞到计算都要验证假定
 </h3>
-<p>
-数值加密只检查离散误差，不能证明湍流模型与边界条件已经真实。
+<p>
+数值加密只检查离散误差，不能证明湍流模型与边界条件已经真实。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C09U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C09U10&amp;view=video" target="_blank">观看短视频</a>
@@ -574,15 +574,15 @@ C09U10 · 课前/课后迁移
 <figure class="chapter-video-card figure">
 <video controls="" playsinline="" poster="../assets/videos/manim/posters/M12_modal_resonance.png" preload="metadata" src="../assets/videos/manim/M12_modal_resonance.mp4">
 </video>
-<figcaption>
-M12　模态、频比与共振
+<figcaption>
+M12　模态、频比与共振
 </figcaption>
 </figure>
 <figure class="chapter-video-card figure">
 <video controls="" playsinline="" poster="../assets/videos/manim/posters/M13_wind_phenomena.png" preload="metadata" src="../assets/videos/manim/M13_wind_phenomena.mp4">
 </video>
-<figcaption>
-M13　风速平方律与风致现象
+<figcaption>
+M13　风速平方律与风致现象
 </figcaption>
 </figure>
 </div>
@@ -590,10 +590,10 @@ M13　风速平方律与风致现象
 <h2 class="anchored" data-anchor-id="风工程任务与桥梁体系" data-number="9.1"><span class="header-section-number">9.1</span> 风工程任务与桥梁体系</h2>
 <p>桥梁计算图常把风表示为一组静态箭头。这种表示适合说明平均压力的方向，却没有包含风速随时间和空间的变化，也没有表达结构运动对气动力的反馈。对于刚度较大、尺度较小的常规桥梁，等效静风分析可能控制构件或附属设施；对于大跨、柔性、轻型或施工状态特殊的桥梁，动力和气动稳定问题可能成为体系与截面的先决条件。</p>
 <p>风作用的分析链可写为</p>
-<p><span class="math display">\[
-\text{区域气候}\rightarrow\text{桥位风场}\rightarrow
-\text{截面气动力}\rightarrow\text{结构动力系统}\rightarrow
-\text{响应与稳定}\rightarrow\text{设计措施}.
+<p><span class="math display">\[
+\text{区域气候}\rightarrow\text{桥位风场}\rightarrow
+\text{截面气动力}\rightarrow\text{结构动力系统}\rightarrow
+\text{响应与稳定}\rightarrow\text{设计措施}.
 \]</span></p>
 <p>链中任一环节都不能由一张风速图或一张流线云图代替。区域基本风速需转换到桥面高度和桥位地形；截面气动力随攻角、雷诺数和附属物变化；结构响应由质量、刚度、阻尼和振型决定；施工阶段的几何、边界和气动外形又与成桥不同。</p>
 <section class="level4" data-number="9.1.0.1" id="与材料力学和结构设计原理的联系">
@@ -620,8 +620,8 @@ M13　风速平方律与风致现象
 <section class="level4" data-number="9.2.0.2" id="高度地表与地形">
 <h4 class="anchored" data-anchor-id="高度地表与地形" data-number="9.2.0.2"><span class="header-section-number">9.2.0.2</span> 高度、地表与地形</h4>
 <p>风速随高度的变化可用幂律或对数律描述。概念阶段常写为</p>
-<p><span class="math display">\[
-\overline U(z)=\overline U(z_r)\left(\frac{z}{z_r}\right)^\alpha,
+<p><span class="math display">\[
+\overline U(z)=\overline U(z_r)\left(\frac{z}{z_r}\right)^\alpha,
 \]</span></p>
 <p>其中 <span class="math inline">\(z_r\)</span> 为参考高度，<span class="math inline">\(\alpha\)</span> 与地表粗糙度有关。该式的参数和适用范围按采用标准。山口、峡谷、陡坡、海岸和邻近高层建筑会产生加速、偏转或局部湍流，复杂桥位可能需要地形风洞或经过验证的数值模拟。</p>
 </section>
@@ -632,10 +632,10 @@ M13　风速平方律与风致现象
 <section class="level4" data-number="9.2.0.4" id="风速样本与统计量">
 <h4 class="anchored" data-anchor-id="风速样本与统计量" data-number="9.2.0.4"><span class="header-section-number">9.2.0.4</span> 风速样本与统计量</h4>
 <p>风速记录应首先说明测点高度、采样频率、记录时长、仪器类型和平均时距。设离散记录为 <span class="math inline">\(U_i\)</span>，样本数为 <span class="math inline">\(n\)</span>，则平均风速与脉动风标准差可分别写为</p>
-<p><span class="math display">\[
-\overline U=\frac{1}{n}\sum_{i=1}^{n}U_i,
-\qquad
-s_u=\sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(U_i-\overline U)^2}.
+<p><span class="math display">\[
+\overline U=\frac{1}{n}\sum_{i=1}^{n}U_i,
+\qquad
+s_u=\sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(U_i-\overline U)^2}.
 \]</span></p>
 <p>式中，<span class="math inline">\(\overline U\)</span> 和 <span class="math inline">\(s_u\)</span> 的单位均为 m/s。计算湍流强度时，平均值和标准差必须来自相同测点、相同方向和相同时间窗口。若将10 min平均风速与数秒阵风的标准差直接相除，所得指标不具有明确统计含义。</p>
 <p>风速是矢量。桥位记录通常需分解为顺风向 <span class="math inline">\(u\)</span>、横风向 <span class="math inline">\(v\)</span> 和竖向 <span class="math inline">\(w\)</span> 三个脉动分量，并同时保存平均风向。对于跨度较大的桥梁，只在岸边设置一个测点难以表示跨中、桥塔附近及不同高度的风场差异；测点布置应由地形、桥轴方向和目标模态共同确定。</p>
@@ -643,12 +643,12 @@ s_u=\sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(U_i-\overline U)^2}.
 <section class="level4" data-number="9.2.0.5" id="极值风速与重现期">
 <h4 class="anchored" data-anchor-id="极值风速与重现期" data-number="9.2.0.5"><span class="header-section-number">9.2.0.5</span> 极值风速与重现期</h4>
 <p>桥梁抗风设计需要从有限年限观测推断较低超越概率的极值风速。若以年最大风速为样本，一种教学性表示是I型极值分布</p>
-<p><span class="math display">\[
-F_U(u)=\exp\left[-\exp\left(-\frac{u-b}{a}\right)\right],
+<p><span class="math display">\[
+F_U(u)=\exp\left[-\exp\left(-\frac{u-b}{a}\right)\right],
 \]</span></p>
 <p>其中 <span class="math inline">\(F_U(u)\)</span> 为年最大风速不超过 <span class="math inline">\(u\)</span> 的概率，<span class="math inline">\(a&gt;0\)</span> 为尺度参数，单位为 m/s，<span class="math inline">\(b\)</span> 为位置参数，单位为 m/s。若各年最大值近似独立且同分布，重现期 <span class="math inline">\(T\)</span> 对应的分位值可写为</p>
-<p><span class="math display">\[
-U_T=b-a\ln\left[-\ln\left(1-\frac{1}{T}\right)\right].
+<p><span class="math display">\[
+U_T=b-a\ln\left[-\ln\left(1-\frac{1}{T}\right)\right].
 \]</span></p>
 <p><span class="math inline">\(T\)</span> 的单位为年。该式用于解释“观测期、概率模型与设计风速”的联系，不意味着所有桥位均应采用同一分布。台风区、非台风区、混合风气候和短期资料外推需要采用与资料相符的方法，并报告参数估计误差和置信区间。</p>
 <p><strong>教学计算。</strong> 取 <span class="math inline">\(a=2.5\ \mathrm{m/s}\)</span>、<span class="math inline">\(b=25.0\ \mathrm{m/s}\)</span>，可得50年和100年分位值约为34.8 m/s和36.5 m/s。这里的数值只用于核对公式和数量级，不是任何地区的规范设计风速。项目设计还需完成基准高度、平均时距、地表类别、地形和设计阶段之间的转换。</p>
@@ -656,24 +656,24 @@ U_T=b-a\ln\left[-\ln\left(1-\frac{1}{T}\right)\right].
 <section class="level4" data-number="9.2.0.6" id="相关函数功率谱与空间相干">
 <h4 class="anchored" data-anchor-id="相关函数功率谱与空间相干" data-number="9.2.0.6"><span class="header-section-number">9.2.0.6</span> 相关函数、功率谱与空间相干</h4>
 <p>脉动风的自协方差可写为</p>
-<p><span class="math display">\[
-R_{uu}(\tau)=\mathrm E[u'(t)u'(t+\tau)],
+<p><span class="math display">\[
+R_{uu}(\tau)=\mathrm E[u'(t)u'(t+\tau)],
 \]</span></p>
 <p>其单位为 <span class="math inline">\(\mathrm{m^2/s^2}\)</span>。归一化自相关函数为 <span class="math inline">\(\rho_{uu}(\tau)=R_{uu}(\tau)/R_{uu}(0)\)</span>。由自相关函数可定义积分时间尺度</p>
-<p><span class="math display">\[
-T_u=\int_0^\infty \rho_{uu}(\tau)\,\mathrm d\tau,
+<p><span class="math display">\[
+T_u=\int_0^\infty \rho_{uu}(\tau)\,\mathrm d\tau,
 \]</span></p>
 <p>并在冻结湍流近似下估计积分长度尺度 <span class="math inline">\(L_u\approx \overline U T_u\)</span>。<span class="math inline">\(T_u\)</span> 的单位为 s，<span class="math inline">\(L_u\)</span> 的单位为 m。</p>
 <p>一侧功率谱密度 <span class="math inline">\(S_u(f)\)</span> 满足</p>
-<p><span class="math display">\[
-\sigma_u^2=\int_0^\infty S_u(f)\,\mathrm df.
+<p><span class="math display">\[
+\sigma_u^2=\int_0^\infty S_u(f)\,\mathrm df.
 \]</span></p>
 <p>若频率 <span class="math inline">\(f\)</span> 以 Hz 表示，则 <span class="math inline">\(S_u(f)\)</span> 的单位为 <span class="math inline">\((\mathrm{m/s})^2/\mathrm{Hz}\)</span>。任何风谱图都应同时写明横坐标是 <span class="math inline">\(f\)</span>、圆频率 <span class="math inline">\(\omega\)</span> 还是无量纲频率，以及纵坐标是否经过归一化。缺少这些信息的曲线不能直接进入抖振计算。</p>
 <p>跨径方向两点 <span class="math inline">\(i\)</span>、<span class="math inline">\(j\)</span> 的平方相干函数可写为</p>
-<p><span class="math display">\[
-\gamma_{ij}^2(f)=
-\frac{|S_{ij}(f)|^2}{S_{ii}(f)S_{jj}(f)},
-\qquad 0\le \gamma_{ij}^2\le1,
+<p><span class="math display">\[
+\gamma_{ij}^2(f)=
+\frac{|S_{ij}(f)|^2}{S_{ii}(f)S_{jj}(f)},
+\qquad 0\le \gamma_{ij}^2\le1,
 \]</span></p>
 <p>其中 <span class="math inline">\(S_{ij}\)</span> 为互功率谱。相干性随测点间距和频率增加通常会降低，因此长桥各处脉动风不能简单按完全同步加载。数字实验应允许改变测点间距、平均风速和相干衰减参数，显示全相关与部分相关输入对模态响应的差异。</p>
 <div class="source-note">
@@ -684,8 +684,8 @@ T_u=\int_0^\infty \rho_{uu}(\tau)\,\mathrm d\tau,
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -699,14 +699,14 @@ T_u=\int_0^\infty \rho_{uu}(\tau)\,\mathrm d\tau,
 <section class="level4" data-number="9.3.0.1" id="风速平方关系">
 <h4 class="anchored" data-anchor-id="风速平方关系" data-number="9.3.0.1"><span class="header-section-number">9.3.0.1</span> 风速平方关系</h4>
 <p>对给定参考面积和气动力系数，阻力可写为</p>
-<p><span class="math display">\[
-D=\frac12\rho U^2C_DA,
+<p><span class="math display">\[
+D=\frac12\rho U^2C_DA,
 \]</span></p>
 <p>升力和力矩常按单位桥长表示为</p>
-<p><span class="math display">\[
-L=\frac12\rho U^2BC_L,
-\qquad
-M=\frac12\rho U^2B^2C_M,
+<p><span class="math display">\[
+L=\frac12\rho U^2BC_L,
+\qquad
+M=\frac12\rho U^2B^2C_M,
 \]</span></p>
 <p>其中 <span class="math inline">\(\rho\)</span> 为气密度，<span class="math inline">\(U\)</span> 为参考风速，<span class="math inline">\(B\)</span> 为桥面参考宽度，<span class="math inline">\(C_D\)</span>、<span class="math inline">\(C_L\)</span>、<span class="math inline">\(C_M\)</span> 为气动力系数。系数与截面、攻角、附属物和试验条件有关，不能把外形相似断面的数据直接当作项目值。</p>
 </section>
@@ -714,12 +714,12 @@ M=\frac12\rho U^2B^2C_M,
 <h4 class="anchored" data-anchor-id="坐标参考尺寸和变量单位" data-number="9.3.0.2"><span class="header-section-number">9.3.0.2</span> 坐标、参考尺寸和变量单位</h4>
 <p>桥面气动力公式只有在坐标和参考尺寸明确时才可复算。本章取 <span class="math inline">\(x\)</span> 沿桥轴，<span class="math inline">\(y\)</span> 沿桥面横向，<span class="math inline">\(z\)</span> 竖直向上；阻力 <span class="math inline">\(D\)</span> 沿来流的顺风方向，升力 <span class="math inline">\(L\)</span> 沿 <span class="math inline">\(z\)</span> 方向，气动力矩 <span class="math inline">\(M\)</span> 绕 <span class="math inline">\(x\)</span> 轴。不同规范、风洞机构和软件可能采用不同正方向，导入数据前必须转换到同一坐标系。</p>
 <p>为避免把总力与单位长度力混淆，桥面断面常写为</p>
-<p><span class="math display">\[
-q=\frac12\rho U^2,
-\qquad
-D'=qHC_D,\quad
-L'=qBC_L,\quad
-M'=qB^2C_M,
+<p><span class="math display">\[
+q=\frac12\rho U^2,
+\qquad
+D'=qHC_D,\quad
+L'=qBC_L,\quad
+M'=qB^2C_M,
 \]</span></p>
 <p>其中撇号表示单位桥长。变量及SI单位如下。</p>
 <table class="caption-top table">
@@ -793,16 +793,16 @@ M'=qB^2C_M,
 <section class="level4" data-number="9.3.0.3" id="静力系数随攻角的变化">
 <h4 class="anchored" data-anchor-id="静力系数随攻角的变化" data-number="9.3.0.3"><span class="header-section-number">9.3.0.3</span> 静力系数随攻角的变化</h4>
 <p>气动力系数是攻角 <span class="math inline">\(\alpha\)</span> 的函数：</p>
-<p><span class="math display">\[
-C_D=C_D(\alpha),\qquad
-C_L=C_L(\alpha),\qquad
-C_M=C_M(\alpha).
+<p><span class="math display">\[
+C_D=C_D(\alpha),\qquad
+C_L=C_L(\alpha),\qquad
+C_M=C_M(\alpha).
 \]</span></p>
 <p>在参考攻角 <span class="math inline">\(\alpha_0\)</span> 附近，可以用局部线性展开说明变形反馈：</p>
-<p><span class="math display">\[
-C_M(\alpha_0+\Delta\alpha)
-\approx C_M(\alpha_0)+
-\left.\frac{\mathrm dC_M}{\mathrm d\alpha}\right|_{\alpha_0}\Delta\alpha.
+<p><span class="math display">\[
+C_M(\alpha_0+\Delta\alpha)
+\approx C_M(\alpha_0)+
+\left.\frac{\mathrm dC_M}{\mathrm d\alpha}\right|_{\alpha_0}\Delta\alpha.
 \]</span></p>
 <p>若桥面扭转角改变有效攻角，力矩系数斜率便会形成随位移变化的气动力矩。斜率的符号和大小与本章的攻角、扭转角和力矩正方向有关；使用风洞报告数据时，应先画出方向示意图再代入公式。</p>
 <p>在气动力系数与参考面积不变的教学假定下，风速倍率与气动力倍率的平方关系见 <a class="quarto-xref" href="#fig-ch09-wind-square">图 <span>9.1</span></a>。</p>
@@ -811,8 +811,8 @@ C_M(\alpha_0+\Delta\alpha)
 <div aria-describedby="fig-ch09-wind-square-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch09/04-wind-speed-square-law.svg" style="width:82.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-wind-square-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 9.1: 风速平方关系的教学参数图
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-wind-square-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 9.1: 风速平方关系的教学参数图
 </figcaption>
 </figure>
 </div>
@@ -833,10 +833,10 @@ C_M(\alpha_0+\Delta\alpha)
 <p><span class="math display">\[K_{\theta,\mathrm{eff}}(U)=K_\theta-K_{\theta,a}(U),\]</span></p>
 <p>当有效刚度趋近零时，线性平衡解对扰动高度敏感。实际判定需采用截面气动导数或静力系数、结构几何非线性和规范规定方法。</p>
 <p>对单一扭转自由度，若以广义扭转坐标 <span class="math inline">\(\theta\)</span> 表示，可写成</p>
-<p><span class="math display">\[
-I_\theta\ddot\theta+C_\theta\dot\theta+
-\left[K_\theta-K_{\theta,a}(U)\right]\theta
-=M_0(U),
+<p><span class="math display">\[
+I_\theta\ddot\theta+C_\theta\dot\theta+
+\left[K_\theta-K_{\theta,a}(U)\right]\theta
+=M_0(U),
 \]</span></p>
 <p>其中 <span class="math inline">\(I_\theta\)</span> 为广义转动惯量，单位为 <span class="math inline">\(\mathrm{kg\,m^2}\)</span>；<span class="math inline">\(C_\theta\)</span> 为广义阻尼系数，单位为 <span class="math inline">\(\mathrm{N\,m\,s/rad}\)</span>；<span class="math inline">\(K_\theta\)</span> 和 <span class="math inline">\(K_{\theta,a}\)</span> 分别为结构与气动扭转刚度，单位为 <span class="math inline">\(\mathrm{N\,m/rad}\)</span>。由于 <span class="math inline">\(K_{\theta,a}\)</span> 常与 <span class="math inline">\(U^2\)</span> 成比例，有效刚度可能随风速增加而降低。实际全桥还需考虑侧弯、竖弯、扭转、索塔及几何非线性耦合。</p>
 <p>静风稳定检查不等于只算一个“临界风速”。还应检查平均侧移、扭转角、塔顶位移、主梁和桥塔应力、支座反力、拉索索力变化及附属设施受力；对施工状态，需检查临时支承、吊装设备和未闭合截面的稳定。若采用线性等效静力分析，应说明为何可忽略变形后气动力和几何非线性。</p>
@@ -845,8 +845,8 @@ I_\theta\ddot\theta+C_\theta\dot\theta+
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -862,8 +862,8 @@ I_\theta\ddot\theta+C_\theta\dot\theta+
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-提示
+<div class="callout-title-container flex-fill">
+提示
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -876,11 +876,11 @@ I_\theta\ddot\theta+C_\theta\dot\theta+
 <p>结构自由振动与受迫振动的基本方程为</p>
 <p><span class="math display">\[m\ddot x+c\dot x+kx=F(t).\]</span></p>
 <p>无阻尼固有圆频率和阻尼比为</p>
-<p><span class="math display">\[\omega_n=\sqrt{\frac{k}{m}},\qquad
+<p><span class="math display">\[\omega_n=\sqrt{\frac{k}{m}},\qquad
 \zeta=\frac{c}{2\sqrt{km}}.\]</span></p>
 <p>简谐力频率 <span class="math inline">\(\omega\)</span> 与固有频率之比为 <span class="math inline">\(r=\omega/\omega_n\)</span>。线性稳态位移动力放大系数为</p>
-<p><span class="math display">\[
-R_d=\frac{1}{\sqrt{(1-r^2)^2+(2\zeta r)^2}}.
+<p><span class="math display">\[
+R_d=\frac{1}{\sqrt{(1-r^2)^2+(2\zeta r)^2}}.
 \]</span></p>
 <p>不同阻尼比下动力放大系数随频率比的变化见 <a class="quarto-xref" href="#fig-ch09-dynamic-amplification">图 <span>9.2</span></a>。</p>
 <div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-ch09-dynamic-amplification">
@@ -888,8 +888,8 @@ R_d=\frac{1}{\sqrt{(1-r^2)^2+(2\zeta r)^2}}.
 <div aria-describedby="fig-ch09-dynamic-amplification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch09/05-single_dof_dynamic-amplification.svg" style="width:84.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-dynamic-amplification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 9.2: 不同阻尼下的单自由度动力放大
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-dynamic-amplification-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 9.2: 不同阻尼下的单自由度动力放大
 </figcaption>
 </figure>
 </div>
@@ -905,12 +905,12 @@ R_d=\frac{1}{\sqrt{(1-r^2)^2+(2\zeta r)^2}}.
 <section class="level4" data-number="9.4.0.2" id="多自由度与模态">
 <h4 class="anchored" data-anchor-id="多自由度与模态" data-number="9.4.0.2"><span class="header-section-number">9.4.0.2</span> 多自由度与模态</h4>
 <p>全桥动力方程为</p>
-<p><span class="math display">\[
-\mathbf M\ddot{\mathbf u}+\mathbf C\dot{\mathbf u}+\mathbf K\mathbf u=\mathbf F(t).
+<p><span class="math display">\[
+\mathbf M\ddot{\mathbf u}+\mathbf C\dot{\mathbf u}+\mathbf K\mathbf u=\mathbf F(t).
 \]</span></p>
 <p>忽略阻尼和外力，可得到特征问题</p>
-<p><span class="math display">\[
-(\mathbf K-\omega_i^2\mathbf M)\boldsymbol\phi_i=\mathbf0.
+<p><span class="math display">\[
+(\mathbf K-\omega_i^2\mathbf M)\boldsymbol\phi_i=\mathbf0.
 \]</span></p>
 <p><span class="math inline">\(\omega_i\)</span> 为第 <span class="math inline">\(i\)</span> 阶固有圆频率，<span class="math inline">\(\boldsymbol\phi_i\)</span> 为振型。桥梁可能具有竖弯、侧弯、扭转、桥塔和拉索局部模态。振型是全桥空间运动形态，单个测点频谱不能完整确定振型。</p>
 </section>
@@ -921,15 +921,15 @@ R_d=\frac{1}{\sqrt{(1-r^2)^2+(2\zeta r)^2}}.
 <section class="level4" data-number="9.4.0.4" id="约化参数与量纲一致性">
 <h4 class="anchored" data-anchor-id="约化参数与量纲一致性" data-number="9.4.0.4"><span class="header-section-number">9.4.0.4</span> 约化参数与量纲一致性</h4>
 <p>气动弹性结果常用无量纲参数表达。以桥面宽度 <span class="math inline">\(B\)</span> 为参考尺寸时，约化频率和约化风速可分别写为</p>
-<p><span class="math display">\[
-K=\frac{\omega B}{U},
-\qquad
-U_r=\frac{U}{fB}=\frac{2\pi}{K}.
+<p><span class="math display">\[
+K=\frac{\omega B}{U},
+\qquad
+U_r=\frac{U}{fB}=\frac{2\pi}{K}.
 \]</span></p>
 <p><span class="math inline">\(K\)</span>、<span class="math inline">\(U_r\)</span> 均无量纲。研究拉索或钝体涡振时，也常以直径或高度 <span class="math inline">\(D\)</span> 代替 <span class="math inline">\(B\)</span>。因此“约化风速为8”只有在说明特征尺寸和频率后才完整。</p>
 <p>质量—阻尼参数可用Scruton数表示。一种常用定义为</p>
-<p><span class="math display">\[
-Sc=\frac{2m\zeta}{\rho D^2},
+<p><span class="math display">\[
+Sc=\frac{2m\zeta}{\rho D^2},
 \]</span></p>
 <p>其中 <span class="math inline">\(m\)</span> 为单位长度质量，单位为 kg/m；<span class="math inline">\(\zeta\)</span> 为阻尼比；<span class="math inline">\(\rho D^2\)</span> 同样具有 kg/m 的量纲，故 <span class="math inline">\(Sc\)</span> 无量纲。文献也可能用对数衰减率或不同常数定义质量—阻尼参数，比较试验结果前应统一定义，不应只比较数值大小。</p>
 </section>
@@ -1022,23 +1022,23 @@ Sc=\frac{2m\zeta}{\rho D^2},
 <h4 class="anchored" data-anchor-id="驰振抖振与其他现象" data-number="9.5.0.4"><span class="header-section-number">9.5.0.4</span> 驰振、抖振与其他现象</h4>
 <p>细长构件或非圆截面在一定气动力斜率条件下可能发生驰振；拉索还可能发生风雨振、尾流驰振和参数振动。车辆、行人和风也可能共同影响桥梁舒适性。现象命名必须以输入、频率、相位、振型和响应随风速变化的证据为基础，不应仅凭一段“桥在晃”的视频判定。</p>
 <p>在准定常、小攻角和单自由度横风振动假定下，Den Hartog型筛查条件可写成</p>
-<p><span class="math display">\[
-\left.\frac{\mathrm d C_L}{\mathrm d\alpha}\right|_{\alpha_0}
-+C_D(\alpha_0)&lt;0.
+<p><span class="math display">\[
+\left.\frac{\mathrm d C_L}{\mathrm d\alpha}\right|_{\alpha_0}
++C_D(\alpha_0)&lt;0.
 \]</span></p>
 <p>该条件表示气动力可能提供负阻尼，但其结论依赖坐标、系数正号、准定常假定和截面运动形式。桥面、拉索或附属构件的实际驰振分析还需考虑有限振幅、三维性、湍流和结构非线性，不能仅凭一条静力系数曲线下结论。</p>
 </section>
 <section class="level4" data-number="9.5.0.5" id="抖振的频域表达">
 <h4 class="anchored" data-anchor-id="抖振的频域表达" data-number="9.5.0.5"><span class="header-section-number">9.5.0.5</span> 抖振的频域表达</h4>
 <p>对某一广义坐标 <span class="math inline">\(q\)</span>，线性频域分析可概念化写为</p>
-<p><span class="math display">\[
-S_q(\omega)=|H_q(\omega)|^2S_F(\omega),
-\qquad
-\sigma_q^2=\int_0^\infty S_q(\omega)\,\mathrm d\omega,
+<p><span class="math display">\[
+S_q(\omega)=|H_q(\omega)|^2S_F(\omega),
+\qquad
+\sigma_q^2=\int_0^\infty S_q(\omega)\,\mathrm d\omega,
 \]</span></p>
 <p>其中 <span class="math inline">\(S_F\)</span> 为广义脉动风荷载功率谱，<span class="math inline">\(H_q\)</span> 为结构频率响应函数，<span class="math inline">\(S_q\)</span> 为响应谱。若用峰值因子 <span class="math inline">\(g_p\)</span> 从均方根响应估计峰值，可写为</p>
-<p><span class="math display">\[
-q_{\max}\approx \overline q+g_p\sigma_q.
+<p><span class="math display">\[
+q_{\max}\approx \overline q+g_p\sigma_q.
 \]</span></p>
 <p>峰值因子不是固定常数，它与记录时长、带宽和超越概率有关。全桥抖振分析还需把不同位置的风速互谱、气动导纳和多个结构模态纳入，不能把单点风谱直接乘以静力影响线得到所有结果。</p>
 </section>
@@ -1051,41 +1051,41 @@ q_{\max}\approx \overline q+g_p\sigma_q.
 <span>上下位移 h</span><span>扭转角 α</span><span>运动与气动力互相影响</span>
 </div>
 <details>
-<summary>
-这组符号分别指什么？
+<summary>
+这组符号分别指什么？
 </summary>
-<p>
-方程第一行管上下平衡，第二行管转动平衡。mh、Iα 是两类惯性，ch、cα 是阻尼，kh、kα 是刚度；Lse、Mse 是随运动变化的气动力和气动力矩。看见定性运动不等于已算出临界风速。
+<p>
+方程第一行管上下平衡，第二行管转动平衡。mh、Iα 是两类惯性，ch、cα 是阻尼，kh、kα 是刚度；Lse、Mse 是随运动变化的气动力和气动力矩。看见定性运动不等于已算出临界风速。
 </p>
 </details>
 </div>
 <!-- FORMULA-SCAFFOLD ch09-wind END -->
 <p>以竖向位移 <span class="math inline">\(h\)</span> 和扭转角 <span class="math inline">\(\alpha\)</span> 为广义坐标，桥面节段可写为</p>
-<p><span class="math display">\[
-\begin{bmatrix}
-m_h&amp;0\\0&amp;I_\alpha
-\end{bmatrix}
-\begin{bmatrix}
-\ddot h\\\ddot\alpha
-\end{bmatrix}
-+
-\begin{bmatrix}
-c_h&amp;0\\0&amp;c_\alpha
-\end{bmatrix}
-\begin{bmatrix}
-\dot h\\\dot\alpha
-\end{bmatrix}
-+
-\begin{bmatrix}
-k_h&amp;0\\0&amp;k_\alpha
-\end{bmatrix}
-\begin{bmatrix}
-h\\\alpha
-\end{bmatrix}
-=
-\begin{bmatrix}
-L_{se}\\M_{se}
-\end{bmatrix}.
+<p><span class="math display">\[
+\begin{bmatrix}
+m_h&amp;0\\0&amp;I_\alpha
+\end{bmatrix}
+\begin{bmatrix}
+\ddot h\\\ddot\alpha
+\end{bmatrix}
++
+\begin{bmatrix}
+c_h&amp;0\\0&amp;c_\alpha
+\end{bmatrix}
+\begin{bmatrix}
+\dot h\\\dot\alpha
+\end{bmatrix}
++
+\begin{bmatrix}
+k_h&amp;0\\0&amp;k_\alpha
+\end{bmatrix}
+\begin{bmatrix}
+h\\\alpha
+\end{bmatrix}
+=
+\begin{bmatrix}
+L_{se}\\M_{se}
+\end{bmatrix}.
 \]</span></p>
 <p><span class="math inline">\(L_{se}\)</span>、<span class="math inline">\(M_{se}\)</span> 为与位移和速度有关的自激气动力。经典线性方法通过随约化频率变化的气动导数描述这些力。随风速增加求解复特征值，当某一模态的总阻尼降至零时得到线性颤振临界状态。气动导数依赖断面外形、攻角、附属构造和试验方法；只拥有静力 <span class="math inline">\(C_D\)</span>、<span class="math inline">\(C_L\)</span>、<span class="math inline">\(C_M\)</span> 时不能完成耦合颤振计算。</p>
 <div class="source-note">
@@ -1096,8 +1096,8 @@ L_{se}\\M_{se}
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1121,8 +1121,8 @@ L_{se}\\M_{se}
 <div aria-describedby="fig-ch09-tacoma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 9.3: 塔科马海峡桥扭转运动的历史影像帧。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-tacoma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 9.3: 塔科马海峡桥扭转运动的历史影像帧
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch09-tacoma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 9.3: 塔科马海峡桥扭转运动的历史影像帧
 </figcaption>
 </figure>
 </div>
@@ -1218,8 +1218,8 @@ L_{se}\\M_{se}
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1267,8 +1267,8 @@ L_{se}\\M_{se}
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1419,8 +1419,8 @@ L_{se}\\M_{se}
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1432,8 +1432,8 @@ L_{se}\\M_{se}
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1512,76 +1512,76 @@ L_{se}\\M_{se}
 <section class="level4" data-number="9.8.2.2" id="从仪器坐标到桥梁坐标">
 <h4 class="anchored" data-anchor-id="从仪器坐标到桥梁坐标" data-number="9.8.2.2"><span class="header-section-number">9.8.2.2</span> 从仪器坐标到桥梁坐标</h4>
 <p>三维测风仪常输出仪器坐标下的速度分量 <span class="math inline">\((u_s,v_s,w_s)\)</span>。桥梁分析需要转换到以桥轴、桥面横向和竖向为基准的坐标。设仪器水平零向与桥轴的夹角为 <span class="math inline">\(\psi_0\)</span>，忽略仪器倾斜时，可写为</p>
-<p><span class="math display">\[
-\begin{bmatrix}
-u_x\\u_y\\u_z
-\end{bmatrix}
-=
-\begin{bmatrix}
-\cos\psi_0&amp;-\sin\psi_0&amp;0\\
-\sin\psi_0&amp; \cos\psi_0&amp;0\\
-0&amp;0&amp;1
-\end{bmatrix}
-\begin{bmatrix}
-u_s\\v_s\\w_s
-\end{bmatrix}.
+<p><span class="math display">\[
+\begin{bmatrix}
+u_x\\u_y\\u_z
+\end{bmatrix}
+=
+\begin{bmatrix}
+\cos\psi_0&amp;-\sin\psi_0&amp;0\\
+\sin\psi_0&amp; \cos\psi_0&amp;0\\
+0&amp;0&amp;1
+\end{bmatrix}
+\begin{bmatrix}
+u_s\\v_s\\w_s
+\end{bmatrix}.
 \]</span></p>
 <p><span class="math inline">\(u_x,u_y,u_z\)</span> 的单位均为m/s。若仪器支架存在滚转角、俯仰角，需采用完整三维旋转矩阵，并由安装测量或静态标定确定角度。对每一个统计窗口，可由水平平均分量确定来流偏角</p>
-<p><span class="math display">\[
-\beta=\operatorname{atan2}(\overline u_x,\overline u_y),
+<p><span class="math display">\[
+\beta=\operatorname{atan2}(\overline u_x,\overline u_y),
 \]</span></p>
 <p>具体正方向以项目坐标定义为准。使用 <span class="math inline">\(\operatorname{atan2}\)</span> 而不是单纯反正切，可以保留象限信息。桥面攻角可由平均竖向分量和水平合速度估计：</p>
-<p><span class="math display">\[
-\alpha_w=
-\tan^{-1}
-\left[
-\frac{\overline u_z}
-{\sqrt{\overline u_x^2+\overline u_y^2}}
-\right].
+<p><span class="math display">\[
+\alpha_w=
+\tan^{-1}
+\left[
+\frac{\overline u_z}
+{\sqrt{\overline u_x^2+\overline u_y^2}}
+\right].
 \]</span></p>
 <p>测风仪倾斜误差可能被误判为稳定的竖向风。桥址观测报告应给出零漂、支架姿态和坐标旋转方法。对于斜交风，气动力系数使用的是断面有效来流，而不是气象学风向的原始读数；桥轴方位角、风向定义“风从何处来”还是“速度指向何处”也应统一。</p>
 </section>
 <section class="level4" data-number="9.8.2.3" id="平均时距阵风与统计口径">
 <h4 class="anchored" data-anchor-id="平均时距阵风与统计口径" data-number="9.8.2.3"><span class="header-section-number">9.8.2.3</span> 平均时距、阵风与统计口径</h4>
 <p>平均风速是带时间尺度的统计量。若连续速度为 <span class="math inline">\(U(t)\)</span>，长度为 <span class="math inline">\(T_a\)</span> 的移动平均可写为</p>
-<p><span class="math display">\[
-\overline U_{T_a}(t)
-=\frac{1}{T_a}
-\int_{t-T_a}^{t}U(\tau)\,\mathrm d\tau .
+<p><span class="math display">\[
+\overline U_{T_a}(t)
+=\frac{1}{T_a}
+\int_{t-T_a}^{t}U(\tau)\,\mathrm d\tau .
 \]</span></p>
 <p><span class="math inline">\(T_a\)</span> 的单位为s。不同平均时距会得到不同峰值，不能把短时阵风与长时平均风直接比较。阵风系数可定义为</p>
-<p><span class="math display">\[
-G_{T_g,T_a}
-=
-\frac{U_{\max,T_g}}{\overline U_{T_a}},
+<p><span class="math display">\[
+G_{T_g,T_a}
+=
+\frac{U_{\max,T_g}}{\overline U_{T_a}},
 \]</span></p>
 <p>其中 <span class="math inline">\(U_{\max,T_g}\)</span> 是由持续时间 <span class="math inline">\(T_g\)</span> 的短时平均得到的最大值。任何阵风系数都应同时标注 <span class="math inline">\(T_g\)</span> 与 <span class="math inline">\(T_a\)</span>。气象观测系统自身的报告算法也可能不同，例如美国国家气象局ASOS页面说明其风向、风速与阵风采用特定的更新和平均方式。该例表明，在桥位数据合并前必须核对观测定义，而不能只按列名“wind speed”拼接。</p>
 <div class="source-note">
 <p><strong>平均口径参考。</strong> U.S. National Weather Service, ASOS Wind Sensor：<a class="uri" href="https://www.weather.gov/asos/WindSensor.html">https://www.weather.gov/asos/WindSensor.html</a>。该页面用于说明观测系统的平均与更新口径会影响数据含义，不作为我国桥梁设计风速取值依据。正式出版若使用示意截图需按网页许可办理，本章仅文字转述并保留链接。</p>
 </div>
 <p>当区域站与桥址站的平均时距、测高或地表不同，应逐项转换而不是使用一个总的“修正系数”。一种便于审计的表达为</p>
-<p><span class="math display">\[
-U_{\mathrm{deck},T_a}(\theta)
-=
-U_{\mathrm{ref},T_r}(\theta)
-\,K_T(T_r\!\rightarrow T_a)
-\,K_z(z_r\!\rightarrow z_d,\theta)
-\,K_{\mathrm{ter}}(\theta)
-\,K_{\mathrm{dir}}(\theta),
+<p><span class="math display">\[
+U_{\mathrm{deck},T_a}(\theta)
+=
+U_{\mathrm{ref},T_r}(\theta)
+\,K_T(T_r\!\rightarrow T_a)
+\,K_z(z_r\!\rightarrow z_d,\theta)
+\,K_{\mathrm{ter}}(\theta)
+\,K_{\mathrm{dir}}(\theta),
 \]</span></p>
 <p>式中各 <span class="math inline">\(K\)</span> 为无量纲转换因子，分别对应平均时距、测高与地表、局部地形和方向性；<span class="math inline">\(\theta\)</span> 为风向扇区。此式采用数据链逐项分解形式，不指定任何规范系数。若项目标准把若干因素合并定义，应遵循该标准而避免重复计入。</p>
 </section>
 <section class="level4" data-number="9.8.2.4" id="长短期资料联合与极端事件分类">
 <h4 class="anchored" data-anchor-id="长短期资料联合与极端事件分类" data-number="9.8.2.4"><span class="header-section-number">9.8.2.4</span> 长短期资料联合与极端事件分类</h4>
 <p>桥址只有短期资料时，可与附近长期站建立同期关系。设桥址同期年或月极值为 <span class="math inline">\(U_b\)</span>，参考站同期量为 <span class="math inline">\(U_r\)</span>，可采用带截距的统计关系</p>
-<p><span class="math display">\[
-U_b=a_0+a_1U_r+\varepsilon ,
+<p><span class="math display">\[
+U_b=a_0+a_1U_r+\varepsilon ,
 \]</span></p>
 <p>其中 <span class="math inline">\(a_0\)</span> 的单位为m/s，<span class="math inline">\(a_1\)</span> 无量纲，<span class="math inline">\(\varepsilon\)</span> 为残差。回归应按风向或天气类型检验；山谷中的某一风向可能出现明显增速，而全风向回归会把它平均掉。需要报告样本量、残差分布、异常点处理、交叉验证误差以及外推范围。相关性高不等于极值尾部关系可靠，必要时应采用联合概率或区域频率方法。</p>
 <p>台风、季风、雷暴下击暴流和局地峡谷风的形成机制、持续时间和方向分布不同。将不同母体无区别地拟合单一分布，可能使尾部推断失真。项目可依据天气记录、路径资料和风向—持续时间特征对事件分类，再分别估计年发生率和条件强度。若资料不足以稳定区分，应将模型选择作为不确定性来源，而不能通过增加小数位掩盖证据不足。</p>
 <p>极值分析至少报告：样本选取方法、独立事件间隔、阈值或年最大定义、分布候选、参数估计方法、拟合诊断、重现水平及置信区间。重现期不是事件按固定年数出现的周期；对服役年限 <span class="math inline">\(N\)</span>，若每年超越概率为 <span class="math inline">\(p\)</span> 且暂按年际独立，则至少一次超越的概率为</p>
-<p><span class="math display">\[
-P_N=1-(1-p)^N.
+<p><span class="math display">\[
+P_N=1-(1-p)^N.
 \]</span></p>
 <p>该式用于解释年超越概率与寿命期风险的关系。实际设计状况和目标可靠度按采用标准确定。</p>
 </section>
@@ -1589,12 +1589,12 @@ P_N=1-(1-p)^N.
 <h4 class="anchored" data-anchor-id="脉动风处理谱估计与空间一致性" data-number="9.8.2.5"><span class="header-section-number">9.8.2.5</span> 脉动风处理、谱估计与空间一致性</h4>
 <p>从原始时程得到风谱之前，先处理尖峰、掉线、结冰、量程饱和和时钟漂移。异常值不宜无记录地删除；建议保留原值、质量标志和修正值三列。若仪器响应带宽不足，所得高频谱衰减可能来自传感器而非真实湍流。桥面、塔顶与跨中多台仪器必须使用统一时钟，否则互谱相位与相干函数会失真。</p>
 <p>离散风速序列 <span class="math inline">\(u_n\)</span> 的谱估计通常包含去均值或去趋势、分段、窗函数、重叠和平均。设采样间隔为 <span class="math inline">\(\Delta t\)</span>，奈奎斯特频率为</p>
-<p><span class="math display">\[
-f_N=\frac{1}{2\Delta t}.
+<p><span class="math display">\[
+f_N=\frac{1}{2\Delta t}.
 \]</span></p>
 <p>目标气动或结构频率应低于 <span class="math inline">\(f_N\)</span> 并保留抗混叠裕度。长度为 <span class="math inline">\(T_s\)</span> 的数据段的基本频率分辨率约为</p>
-<p><span class="math display">\[
-\Delta f\approx\frac{1}{T_s}.
+<p><span class="math display">\[
+\Delta f\approx\frac{1}{T_s}.
 \]</span></p>
 <p>增加段长提高低频分辨率，但减少可平均的独立段数；增加平均段数降低谱估计方差，却可能掩盖风场非平稳变化。数字教材应让学生同时看到时程、分段位置和谱，而不能只给最终平滑曲线。</p>
 <p>两点互谱 <span class="math inline">\(S_{ij}(f)\)</span> 是复数，包含共同频率成分的幅值与相位。平方相干只表示线性相关程度，不保留传播相位。长跨桥抖振输入的构造应同时考虑自谱、互谱矩阵的共轭对称和半正定性。若经验相干模型使某些频率的谱矩阵不再半正定，随机场模拟会产生不可实现的协方差，应在生成阶段检查特征值。</p>
@@ -1614,8 +1614,8 @@ f_N=\frac{1}{2\Delta t}.
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1629,75 +1629,75 @@ f_N=\frac{1}{2\Delta t}.
 <section class="level4" data-number="9.8.3.1" id="风轴桥轴和断面轴">
 <h4 class="anchored" data-anchor-id="风轴桥轴和断面轴" data-number="9.8.3.1"><span class="header-section-number">9.8.3.1</span> 风轴、桥轴和断面轴</h4>
 <p>桥面三分力常在风轴下测量：阻力沿平均来流，升力垂直来流，力矩绕桥轴。总体有限元模型则通常在全局桥轴坐标中加载。设水平来流与桥面横向的夹角为 <span class="math inline">\(\beta\)</span>，风轴下单位长度阻力、横向力分别为 <span class="math inline">\(D'_w\)</span>、<span class="math inline">\(S'_w\)</span>，其全局水平分量可写成</p>
-<p><span class="math display">\[
-\begin{bmatrix}
-F'_x\\F'_y
-\end{bmatrix}
-=
-\begin{bmatrix}
-\sin\beta&amp;-\cos\beta\\
-\cos\beta&amp; \sin\beta
-\end{bmatrix}
-\begin{bmatrix}
-D'_w\\S'_w
-\end{bmatrix}.
+<p><span class="math display">\[
+\begin{bmatrix}
+F'_x\\F'_y
+\end{bmatrix}
+=
+\begin{bmatrix}
+\sin\beta&amp;-\cos\beta\\
+\cos\beta&amp; \sin\beta
+\end{bmatrix}
+\begin{bmatrix}
+D'_w\\S'_w
+\end{bmatrix}.
 \]</span></p>
 <p>矩阵形式取决于风向正方向，上式只表示本章坐标约定。任何数据接口都应通过一个已知工况进行方向测试：例如正横风、正阻力应产生规定方向的整体侧移。若软件节点局部轴随曲线桥变化，还需逐单元转换。</p>
 <p>桥面、塔柱与索采用不同参考尺寸。桥面常以宽度 <span class="math inline">\(B\)</span>、迎风高度 <span class="math inline">\(H\)</span> 表示单位长度三分力；桥塔可按局部分段宽度 <span class="math inline">\(b_t(z)\)</span> 和投影高度；圆索以直径 <span class="math inline">\(D_c\)</span> 为特征长度：</p>
-<p><span class="math display">\[
-D'_c=\frac12\rho U_\perp^2D_cC_{D,c},
+<p><span class="math display">\[
+D'_c=\frac12\rho U_\perp^2D_cC_{D,c},
 \]</span></p>
 <p>其中 <span class="math inline">\(U_\perp\)</span> 为垂直于索轴的来流分量，单位为m/s，<span class="math inline">\(D_c\)</span> 为索外径，单位为m。斜索的偏航、倾角、表面螺旋线、雨水和相邻索尾流会使等效系数偏离理想圆柱结果。</p>
 </section>
 <section class="level4" data-number="9.8.3.2" id="有效攻角">
 <h4 class="anchored" data-anchor-id="有效攻角" data-number="9.8.3.2"><span class="header-section-number">9.8.3.2</span> 有效攻角</h4>
 <p>来流竖向攻角并不等于结构实际感受到的攻角。在线性、小转角近似下，可写成</p>
-<p><span class="math display">\[
-\alpha_{\mathrm e}(x,t)
-=
-\alpha_w(x,t)-\theta(x,t)
-+\frac{\dot h(x,t)}{U}
-+\alpha_g(x),
+<p><span class="math display">\[
+\alpha_{\mathrm e}(x,t)
+=
+\alpha_w(x,t)-\theta(x,t)
++\frac{\dot h(x,t)}{U}
++\alpha_g(x),
 \]</span></p>
 <p>其中 <span class="math inline">\(\alpha_w\)</span> 为来流攻角，<span class="math inline">\(\theta\)</span> 为桥面扭转角，<span class="math inline">\(h\)</span> 为竖向位移，<span class="math inline">\(\dot h/U\)</span> 是运动造成的附加来流角，<span class="math inline">\(\alpha_g\)</span> 表示桥面纵坡、预拱或局部几何方向。式中符号按本章“正扭转减小正攻角”的约定；采用其他约定时必须整体改写，不能只改变一项符号。对于较大运动或斜风，应由相对速度矢量直接计算，不再使用线性叠加。</p>
 <p>平均静风分析可暂忽略 <span class="math inline">\(\dot h/U\)</span>，但结构扭转与静力矩之间仍形成反馈。设单位长度气动力向量</p>
-<p><span class="math display">\[
-\mathbf f_a=
-\begin{bmatrix}
-D'&amp;L'&amp;M'
-\end{bmatrix}^{\mathsf T},
+<p><span class="math display">\[
+\mathbf f_a=
+\begin{bmatrix}
+D'&amp;L'&amp;M'
+\end{bmatrix}^{\mathsf T},
 \]</span></p>
 <p>在参考状态附近对位移向量 <span class="math inline">\(\mathbf q=[v,h,\theta]^{\mathsf T}\)</span> 线性化：</p>
-<p><span class="math display">\[
-\mathbf f_a(\mathbf q,U)
-\approx
-\mathbf f_{a0}(U)+
-\mathbf K_a(U)\mathbf q,
-\qquad
-\mathbf K_a=
-\left.\frac{\partial\mathbf f_a}{\partial\mathbf q}\right|_{\mathbf q=0}.
+<p><span class="math display">\[
+\mathbf f_a(\mathbf q,U)
+\approx
+\mathbf f_{a0}(U)+
+\mathbf K_a(U)\mathbf q,
+\qquad
+\mathbf K_a=
+\left.\frac{\partial\mathbf f_a}{\partial\mathbf q}\right|_{\mathbf q=0}.
 \]</span></p>
 <p><span class="math inline">\(\mathbf K_a\)</span> 是单位长度气动刚度矩阵，其分量单位随自由度不同而变化，例如力对位移为N/m<span class="math inline">\(^2\)</span>，力矩对转角为N·m/(m·rad)。总体离散后方可与结构刚度矩阵在一致自由度和单位下相减。</p>
 </section>
 <section class="level4" data-number="9.8.3.3" id="静风非线性平衡与稳定检查">
 <h4 class="anchored" data-anchor-id="静风非线性平衡与稳定检查" data-number="9.8.3.3"><span class="header-section-number">9.8.3.3</span> 静风非线性平衡与稳定检查</h4>
 <p>把气动力随变形更新后，静力平衡可写为</p>
-<p><span class="math display">\[
-\mathbf R(\mathbf u,U)
-=
-\mathbf K_s(\mathbf u)\mathbf u
--\mathbf F_g
--\mathbf F_a(\mathbf u,U)
-=\mathbf0,
+<p><span class="math display">\[
+\mathbf R(\mathbf u,U)
+=
+\mathbf K_s(\mathbf u)\mathbf u
+-\mathbf F_g
+-\mathbf F_a(\mathbf u,U)
+=\mathbf0,
 \]</span></p>
 <p>其中 <span class="math inline">\(\mathbf K_s(\mathbf u)\)</span> 表示包含几何非线性影响的结构切线关系，<span class="math inline">\(\mathbf F_g\)</span> 为恒载等既有作用，<span class="math inline">\(\mathbf F_a\)</span> 为风荷载。牛顿迭代的切线矩阵为</p>
-<p><span class="math display">\[
-\mathbf K_{\mathrm{tan}}
-=
-\frac{\partial\mathbf R}{\partial\mathbf u}
-=
-\mathbf K_{\mathrm{str,tan}}
--\mathbf K_{\mathrm{a,tan}}.
+<p><span class="math display">\[
+\mathbf K_{\mathrm{tan}}
+=
+\frac{\partial\mathbf R}{\partial\mathbf u}
+=
+\mathbf K_{\mathrm{str,tan}}
+-\mathbf K_{\mathrm{a,tan}}.
 \]</span></p>
 <p>当切线矩阵最小特征值接近零，平衡路径可能发生极限点或分岔。此处“接近零”不是直接的工程判据；数值算法、载荷步、初始缺陷与边界条件都会影响求解。线性静风位移、几何非线性平衡和静力发散分析是三个层级，应按跨径、柔度和项目要求选择。</p>
 <p>静风分析的输入输出检查表如下。</p>
@@ -1753,10 +1753,10 @@ D'&amp;L'&amp;M'
 <section class="level4" data-number="9.8.3.4" id="从单位长度力到有限元结点">
 <h4 class="anchored" data-anchor-id="从单位长度力到有限元结点" data-number="9.8.3.4"><span class="header-section-number">9.8.3.4</span> 从单位长度力到有限元结点</h4>
 <p>对长度为 <span class="math inline">\(l_e\)</span> 的两节点梁单元，若单位长度横向气动力 <span class="math inline">\(p(s)\)</span> 在局部坐标 <span class="math inline">\(s\in[0,l_e]\)</span> 上分布，等效结点荷载为</p>
-<p><span class="math display">\[
-\mathbf f_e
-=
-\int_0^{l_e}\mathbf N^{\mathsf T}(s)p(s)\,\mathrm ds,
+<p><span class="math display">\[
+\mathbf f_e
+=
+\int_0^{l_e}\mathbf N^{\mathsf T}(s)p(s)\,\mathrm ds,
 \]</span></p>
 <p><span class="math inline">\(\mathbf N\)</span> 为与该自由度一致的形函数矩阵。把 <span class="math inline">\(p\,l_e/2\)</span> 平分到两端只对均布荷载和相应低阶插值成立；空间非均匀风、曲线桥和多点相干输入需要按积分点处理。气动力矩还应分配到扭转自由度，不能用偏心竖向力重复计入力矩。</p>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -1764,8 +1764,8 @@ D'&amp;L'&amp;M'
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-警告
+<div class="callout-title-container flex-fill">
+警告
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1779,56 +1779,56 @@ D'&amp;L'&amp;M'
 <section class="level4" data-number="9.8.4.1" id="模态投影及归一化">
 <h4 class="anchored" data-anchor-id="模态投影及归一化" data-number="9.8.4.1"><span class="header-section-number">9.8.4.1</span> 模态投影及归一化</h4>
 <p>全桥有限元振型的绝对幅值取决于归一化方法。对第 <span class="math inline">\(r\)</span> 阶振型 <span class="math inline">\(\boldsymbol\phi_r\)</span>，广义质量、广义刚度和广义力分别为</p>
-<p><span class="math display">\[
-M_r=\boldsymbol\phi_r^{\mathsf T}\mathbf M\boldsymbol\phi_r,
-\qquad
-K_r=\boldsymbol\phi_r^{\mathsf T}\mathbf K\boldsymbol\phi_r,
-\qquad
-Q_r(t)=\boldsymbol\phi_r^{\mathsf T}\mathbf F(t).
+<p><span class="math display">\[
+M_r=\boldsymbol\phi_r^{\mathsf T}\mathbf M\boldsymbol\phi_r,
+\qquad
+K_r=\boldsymbol\phi_r^{\mathsf T}\mathbf K\boldsymbol\phi_r,
+\qquad
+Q_r(t)=\boldsymbol\phi_r^{\mathsf T}\mathbf F(t).
 \]</span></p>
 <p><span class="math inline">\(M_r\)</span> 的单位随振型归一化而变化；若振型分量按位移量纲保存，则 <span class="math inline">\(M_r\)</span> 为kg，<span class="math inline">\(K_r\)</span> 为N/m，<span class="math inline">\(Q_r\)</span> 为N。模态方程为</p>
-<p><span class="math display">\[
-M_r\ddot q_r+2\zeta_r\omega_rM_r\dot q_r+
-\omega_r^2M_rq_r=Q_r(t).
+<p><span class="math display">\[
+M_r\ddot q_r+2\zeta_r\omega_rM_r\dot q_r+
+\omega_r^2M_rq_r=Q_r(t).
 \]</span></p>
 <p>将振型乘以常数会同时改变 <span class="math inline">\(M_r\)</span>、<span class="math inline">\(Q_r\)</span> 和模态坐标 <span class="math inline">\(q_r\)</span>，物理位移 <span class="math inline">\(\mathbf u=\sum_r\boldsymbol\phi_rq_r\)</span> 不变。数据交换时必须保存归一化规则；只给“广义质量数值”而不给振型尺度，数值无法复核。</p>
 <p>对沿桥单位长度分布的风力 <span class="math inline">\(\mathbf f(x,t)\)</span>，连续形式的广义力为</p>
-<p><span class="math display">\[
-Q_r(t)
-=
-\int_0^L
-\boldsymbol\phi_r^{\mathsf T}(x)
-\mathbf f(x,t)\,\mathrm dx.
+<p><span class="math display">\[
+Q_r(t)
+=
+\int_0^L
+\boldsymbol\phi_r^{\mathsf T}(x)
+\mathbf f(x,t)\,\mathrm dx.
 \]</span></p>
 <p>因此风场空间相干与振型正负区域共同决定模态输入。一个长波、全相关脉动风可能在振型正负区间发生抵消；局部不相关风则以另一方式叠加。仅用跨中风速乘以全跨长度，不能表达这种空间滤波。</p>
 </section>
 <section class="level4" data-number="9.8.4.2" id="弯曲扭转和耦合模态">
 <h4 class="anchored" data-anchor-id="弯曲扭转和耦合模态" data-number="9.8.4.2"><span class="header-section-number">9.8.4.2</span> 弯曲、扭转和耦合模态</h4>
 <p>桥面两侧同步测点可将竖向平动与扭转近似分解。设左右侧竖向位移为 <span class="math inline">\(h_L,h_R\)</span>，两测点横向间距为 <span class="math inline">\(b_s\)</span>，小转角下</p>
-<p><span class="math display">\[
-h_c=\frac{h_L+h_R}{2},
-\qquad
-\theta\approx\frac{h_R-h_L}{b_s}.
+<p><span class="math display">\[
+h_c=\frac{h_L+h_R}{2},
+\qquad
+\theta\approx\frac{h_R-h_L}{b_s}.
 \]</span></p>
 <p><span class="math inline">\(h_c\)</span> 的单位为m，<span class="math inline">\(\theta\)</span> 为rad。若测点不在同一横断面、时间不同步或桥面存在畸变，上式不再代表纯刚体截面运动。空间振型识别应布置多个断面，以区分竖弯阶次、扭转和局部构件运动。</p>
 <p>大跨斜拉桥与悬索桥常出现频率接近的总体模态。风速变化时，运动相关气动力会改变等效频率与阻尼，模态形态也可能交换。仅追踪“第3阶”可能发生编号跳变，宜用模态保证准则</p>
-<p><span class="math display">\[
-\operatorname{MAC}(\boldsymbol\phi_a,\boldsymbol\phi_b)
-=
-\frac{
-|\boldsymbol\phi_a^{\mathsf T}\boldsymbol\phi_b|^2
-}{
-(\boldsymbol\phi_a^{\mathsf T}\boldsymbol\phi_a)
-(\boldsymbol\phi_b^{\mathsf T}\boldsymbol\phi_b)
-}
+<p><span class="math display">\[
+\operatorname{MAC}(\boldsymbol\phi_a,\boldsymbol\phi_b)
+=
+\frac{
+|\boldsymbol\phi_a^{\mathsf T}\boldsymbol\phi_b|^2
+}{
+(\boldsymbol\phi_a^{\mathsf T}\boldsymbol\phi_a)
+(\boldsymbol\phi_b^{\mathsf T}\boldsymbol\phi_b)
+}
 \]</span></p>
 <p>或质量加权形式追踪相邻工况的振型。MAC接近1说明向量形态相近，但具体阈值应结合测点数、噪声和工程目的确定，本章不规定统一数值。</p>
 </section>
 <section class="level4" data-number="9.8.4.3" id="阻尼识别及其不确定性">
 <h4 class="anchored" data-anchor-id="阻尼识别及其不确定性" data-number="9.8.4.3"><span class="header-section-number">9.8.4.3</span> 阻尼识别及其不确定性</h4>
 <p>阻尼是风致响应最敏感、也最难稳定确定的参数之一。自由衰减中，相邻相隔 <span class="math inline">\(n\)</span> 周期峰值的对数衰减率为</p>
-<p><span class="math display">\[
-\delta_n=\frac{1}{n}\ln\frac{x_k}{x_{k+n}},
+<p><span class="math display">\[
+\delta_n=\frac{1}{n}\ln\frac{x_k}{x_{k+n}},
 \]</span></p>
 <p>小阻尼时可近似 <span class="math inline">\(\zeta\approx\delta_n/(2\pi)\)</span>。若振幅相关、存在多模态拍振或传感器噪声，应在不同幅值段分别拟合，不能由两个峰值直接给出唯一阻尼。环境激励下可采用随机减量、频域分解、协方差驱动随机子空间等方法，但识别结果会受记录长度、模型阶次和温度交通影响。</p>
 <p>教材和工程计算应区分：</p>
@@ -1843,12 +1843,12 @@ h_c=\frac{h_L+h_R}{2},
 <section class="level4" data-number="9.8.4.4" id="施工状态的模态更新">
 <h4 class="anchored" data-anchor-id="施工状态的模态更新" data-number="9.8.4.4"><span class="header-section-number">9.8.4.4</span> 施工状态的模态更新</h4>
 <p>施工阶段每安装一个梁段、张拉一组索或改变临时支承，质量、刚度、初始内力和边界都会变化。索与主缆的切线刚度依赖张力，几何刚度不可忽略。施工风分析的模态应由相应阶段的平衡状态线性化得到：</p>
-<p><span class="math display">\[
-\left[
-\mathbf K_{\mathrm{mat}}
-+\mathbf K_{\mathrm{geo}}(\mathbf N_0)
--\omega_r^2\mathbf M
-\right]\boldsymbol\phi_r=\mathbf0,
+<p><span class="math display">\[
+\left[
+\mathbf K_{\mathrm{mat}}
++\mathbf K_{\mathrm{geo}}(\mathbf N_0)
+-\omega_r^2\mathbf M
+\right]\boldsymbol\phi_r=\mathbf0,
 \]</span></p>
 <p>其中 <span class="math inline">\(\mathbf K_{\mathrm{mat}}\)</span> 为材料刚度，<span class="math inline">\(\mathbf K_{\mathrm{geo}}\)</span> 为由初始轴力 <span class="math inline">\(\mathbf N_0\)</span> 形成的几何刚度。不能在成桥模型中仅删除几个构件而不重新建立施工张力与边界。</p>
 </section>
@@ -1926,8 +1926,8 @@ h_c=\frac{h_L+h_R}{2},
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1942,20 +1942,20 @@ h_c=\frac{h_L+h_R}{2},
 <section class="level4" data-number="9.8.5.1" id="涡激振动锁定与有限幅响应">
 <h4 class="anchored" data-anchor-id="涡激振动锁定与有限幅响应" data-number="9.8.5.1"><span class="header-section-number">9.8.5.1</span> 涡激振动：锁定与有限幅响应</h4>
 <p>斯特劳哈尔关系 <span class="math inline">\(f_s=StU/D\)</span> 描述静止钝体尾流主频随风速的近似变化。当 <span class="math inline">\(f_s\)</span> 接近某阶结构频率 <span class="math inline">\(f_n\)</span> 时，结构运动可能反过来调节尾流频率，使一段风速范围内的主响应频率保持接近 <span class="math inline">\(f_n\)</span>，这称为锁定。常用横坐标为约化风速</p>
-<p><span class="math display">\[
-U_r=\frac{U}{f_nD},
+<p><span class="math display">\[
+U_r=\frac{U}{f_nD},
 \]</span></p>
 <p>纵坐标可用约化振幅 <span class="math inline">\(A/D\)</span>。<span class="math inline">\(D\)</span> 对桥面可以是梁高或试验约定尺寸，对索为外径；必须与数据来源一致。锁定区边界和最大振幅受质量比、阻尼、湍流、攻角、雷诺数及附属物影响，不应仅由单个 <span class="math inline">\(St\)</span> 反推。</p>
 <p>用于解释尾流与结构相互作用的一类最小模型为</p>
-<p><span class="math display">\[
-m\ddot y+c\dot y+ky
-=
-\frac12\rho U^2D\,C_L(q),
+<p><span class="math display">\[
+m\ddot y+c\dot y+ky
+=
+\frac12\rho U^2D\,C_L(q),
 \]</span></p>
-<p><span class="math display">\[
-\ddot q+\epsilon\omega_s(q^2-1)\dot q+\omega_s^2q
-=
-A_w\frac{\ddot y}{D}.
+<p><span class="math display">\[
+\ddot q+\epsilon\omega_s(q^2-1)\dot q+\omega_s^2q
+=
+A_w\frac{\ddot y}{D}.
 \]</span></p>
 <p><span class="math inline">\(y\)</span> 为横风位移，单位m；<span class="math inline">\(q\)</span> 为无量纲尾流变量；<span class="math inline">\(\omega_s=2\pi StU/D\)</span>；<span class="math inline">\(\epsilon\)</span> 与 <span class="math inline">\(A_w\)</span> 为待由试验识别的模型参数。该方程用于说明“尾流振子与结构振子耦合”，不是桥面涡振的通用设计公式。若没有项目试验数据标定 <span class="math inline">\(\epsilon\)</span>、<span class="math inline">\(A_w\)</span> 和气动力幅值，模型不能预测真实最大振幅。</p>
 <p>涡振证据通常包括：响应在有限风速段明显；主频与某阶固有频率接近；升、降风速可能出现不同分支；振幅趋于有限值而非线性无界增长。宽频随机响应中偶然出现一个谱峰并不足以证明锁定；稳定的窄带设备噪声也可能产生相似频谱。需要检查风速—响应图、时频轨迹、桥面多点相位及重复事件。</p>
@@ -1963,39 +1963,39 @@ A_w\frac{\ddot y}{D}.
 <section class="level4" data-number="9.8.5.2" id="抖振随机场经结构系统滤波">
 <h4 class="anchored" data-anchor-id="抖振随机场经结构系统滤波" data-number="9.8.5.2"><span class="header-section-number">9.8.5.2</span> 抖振：随机场经结构系统滤波</h4>
 <p>设离散位置的脉动风向量为 <span class="math inline">\(\mathbf w(t)\)</span>，线性化的抖振力可写为</p>
-<p><span class="math display">\[
-\mathbf F_b(t)=\mathbf B_a(U)\mathbf w(t),
+<p><span class="math display">\[
+\mathbf F_b(t)=\mathbf B_a(U)\mathbf w(t),
 \]</span></p>
 <p><span class="math inline">\(\mathbf B_a\)</span> 为由速度压、静力系数斜率、参考尺寸和气动导纳构成的映射矩阵。若风速谱矩阵为 <span class="math inline">\(\mathbf S_w(\omega)\)</span>，则力谱矩阵为</p>
-<p><span class="math display">\[
-\mathbf S_F(\omega)
-=
-\mathbf B_a(\omega)
-\mathbf S_w(\omega)
-\mathbf B_a^{\mathsf H}(\omega),
+<p><span class="math display">\[
+\mathbf S_F(\omega)
+=
+\mathbf B_a(\omega)
+\mathbf S_w(\omega)
+\mathbf B_a^{\mathsf H}(\omega),
 \]</span></p>
 <p>其中上标 <span class="math inline">\(\mathsf H\)</span> 表示共轭转置。结构频率响应函数为</p>
-<p><span class="math display">\[
-\mathbf H(\omega)
-=
-\left[
--\omega^2\mathbf M+
-\mathrm i\omega\mathbf C+
-\mathbf K
-\right]^{-1},
+<p><span class="math display">\[
+\mathbf H(\omega)
+=
+\left[
+-\omega^2\mathbf M+
+\mathrm i\omega\mathbf C+
+\mathbf K
+\right]^{-1},
 \]</span></p>
 <p>则响应谱矩阵</p>
-<p><span class="math display">\[
-\mathbf S_u(\omega)
-=
-\mathbf H(\omega)\mathbf S_F(\omega)\mathbf H^{\mathsf H}(\omega).
+<p><span class="math display">\[
+\mathbf S_u(\omega)
+=
+\mathbf H(\omega)\mathbf S_F(\omega)\mathbf H^{\mathsf H}(\omega).
 \]</span></p>
 <p>某一响应分量 <span class="math inline">\(u_j\)</span> 的方差为</p>
-<p><span class="math display">\[
-\sigma_{u_j}^2
-=
-\int_0^\infty S_{u_j u_j}(\omega)
-\frac{\mathrm d\omega}{2\pi}.
+<p><span class="math display">\[
+\sigma_{u_j}^2
+=
+\int_0^\infty S_{u_j u_j}(\omega)
+\frac{\mathrm d\omega}{2\pi}.
 \]</span></p>
 <p>若谱以Hz定义，则积分形式相应为 <span class="math inline">\(\int_0^\infty S(f)\,\mathrm df\)</span>，不能混用 <span class="math inline">\(f\)</span> 和 <span class="math inline">\(\omega\)</span> 的谱单位。由方差得到峰值还需峰值因子、记录时长和带宽；把固定“均值加三倍标准差”用于所有响应缺乏统计依据。</p>
 <p>气动导纳表示有限断面对不同尺度湍流的空间平均。把准定常气动力直接用于高频脉动，等价于假定导纳恒为1，可能高估或误估高频输入。长桥还需保留不同位置风速的互谱。抖振是外部随机激励下的有界响应；在既定线性模型中，响应均方值随风速连续变化，不以总阻尼过零作为定义。</p>
@@ -2003,26 +2003,26 @@ A_w\frac{\ddot y}{D}.
 <section class="level4" data-number="9.8.5.3" id="驰振准定常负气动阻尼的条件">
 <h4 class="anchored" data-anchor-id="驰振准定常负气动阻尼的条件" data-number="9.8.5.3"><span class="header-section-number">9.8.5.3</span> 驰振：准定常负气动阻尼的条件</h4>
 <p>考虑横风位移 <span class="math inline">\(y\)</span> 的细长构件，若相对攻角近似为 <span class="math inline">\(\alpha\approx\dot y/U\)</span>，横风气动力线性化后可写为</p>
-<p><span class="math display">\[
-F_y
-\approx
-\frac12\rho U^2D
-\left[
-C_{L0}
-+
-\left(
-\frac{\mathrm d C_L}{\mathrm d\alpha}
-+C_D
-\right)_{\alpha_0}
-\frac{\dot y}{U}
-\right].
+<p><span class="math display">\[
+F_y
+\approx
+\frac12\rho U^2D
+\left[
+C_{L0}
++
+\left(
+\frac{\mathrm d C_L}{\mathrm d\alpha}
++C_D
+\right)_{\alpha_0}
+\frac{\dot y}{U}
+\right].
 \]</span></p>
 <p>与 <span class="math inline">\(\dot y\)</span> 成正比的项移到方程左侧，可得到等效气动阻尼贡献。按本节坐标定义，若</p>
-<p><span class="math display">\[
-\left(
-\frac{\mathrm d C_L}{\mathrm d\alpha}
-+C_D
-\right)_{\alpha_0}&lt;0,
+<p><span class="math display">\[
+\left(
+\frac{\mathrm d C_L}{\mathrm d\alpha}
++C_D
+\right)_{\alpha_0}&lt;0,
 \]</span></p>
 <p>气动力可能提供负阻尼，这就是Den Hartog型必要倾向条件。不同文献的升力与位移正方向不同，判据符号可能写成相反形式；应用时应从本项目的力方向重新推导，而不是机械抄录不等式。</p>
 <p>该准定常条件主要适合某些细长、非圆或结冰构件的初步筛查。它没有给出非线性极限振幅，也不自动适用于二维桥面弯扭耦合、强三维尾流或雨水参与的拉索振动。起振风速还与结构阻尼、质量和频率有关，需由相应理论或试验确定。</p>
@@ -2030,21 +2030,21 @@ C_{L0}
 <section class="level4" data-number="9.8.5.4" id="颤振复特征值与稳定边界">
 <h4 class="anchored" data-anchor-id="颤振复特征值与稳定边界" data-number="9.8.5.4"><span class="header-section-number">9.8.5.4</span> 颤振：复特征值与稳定边界</h4>
 <p>在线性频域中，运动相关气动力可以写成复数气动矩阵 <span class="math inline">\(\mathbf A_a(U,\omega)\)</span>。弯—扭耦合系统满足</p>
-<p><span class="math display">\[
-\left[
--\omega^2\mathbf M
-+\mathrm i\omega\mathbf C
-+\mathbf K
--\mathbf A_a(U,\omega)
-\right]\widehat{\mathbf q}
-=\mathbf0.
+<p><span class="math display">\[
+\left[
+-\omega^2\mathbf M
++\mathrm i\omega\mathbf C
++\mathbf K
+-\mathbf A_a(U,\omega)
+\right]\widehat{\mathbf q}
+=\mathbf0.
 \]</span></p>
 <p>由于 <span class="math inline">\(\mathbf A_a\)</span> 同时依赖 <span class="math inline">\(U\)</span> 与 <span class="math inline">\(\omega\)</span>，求解通常需要迭代。也可将状态方程写成随风速变化的复特征问题</p>
-<p><span class="math display">\[
-\mathbf A_s(U)\mathbf z_j
-=\lambda_j(U)\mathbf z_j,
-\qquad
-\lambda_j=-\zeta_j\omega_j+\mathrm i\omega_{dj}.
+<p><span class="math display">\[
+\mathbf A_s(U)\mathbf z_j
+=\lambda_j(U)\mathbf z_j,
+\qquad
+\lambda_j=-\zeta_j\omega_j+\mathrm i\omega_{dj}.
 \]</span></p>
 <p>当某一相关模态的实部由负变为零并继续为正，线性小扰动系统失稳；相应风速是该模型、攻角和结构状态下的线性颤振临界风速。数值上应随风速连续追踪特征向量，而不是只按特征值排序，以免弯扭模态靠近时换号或换阶。</p>
 <p>气动导数或状态空间气动力模型来自强迫振动、自由振动或系统辨识。静止断面的 <span class="math inline">\(C_D,C_L,C_M\)</span> 不能独立给出运动相关项。颤振临界风速也不等于实桥必然产生大幅运动的风速；它是所采用线性化模型的稳定边界，工程评价还需按规范处理检验风速、攻角、参数不确定性和施工状态。</p>
@@ -2119,8 +2119,8 @@ C_{L0}
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2139,15 +2139,15 @@ C_{L0}
 <section class="level4" data-number="9.8.6.2" id="拉索吊杆与主缆">
 <h4 class="anchored" data-anchor-id="拉索吊杆与主缆" data-number="9.8.6.2"><span class="header-section-number">9.8.6.2</span> 拉索、吊杆与主缆</h4>
 <p>理想张紧索的横向小振动方程可写为</p>
-<p><span class="math display">\[
-m_c\frac{\partial^2 y}{\partial t^2}
-+c_c\frac{\partial y}{\partial t}
--T_c\frac{\partial^2 y}{\partial s^2}
-=f_c(s,t),
+<p><span class="math display">\[
+m_c\frac{\partial^2 y}{\partial t^2}
++c_c\frac{\partial y}{\partial t}
+-T_c\frac{\partial^2 y}{\partial s^2}
+=f_c(s,t),
 \]</span></p>
 <p>其中 <span class="math inline">\(m_c\)</span> 为单位长度质量，单位kg/m；<span class="math inline">\(c_c\)</span> 为单位长度等效阻尼，单位N·s/m<span class="math inline">\(^2\)</span>；<span class="math inline">\(T_c\)</span> 为索力，单位N；<span class="math inline">\(s\)</span> 为沿索坐标，单位m；<span class="math inline">\(f_c\)</span> 为单位长度横向荷载，单位N/m。忽略垂度、弯曲刚度和端部弹性时，两端简支索的第 <span class="math inline">\(n\)</span> 阶频率近似</p>
-<p><span class="math display">\[
-f_n=\frac{n}{2L_c}\sqrt{\frac{T_c}{m_c}}.
+<p><span class="math display">\[
+f_n=\frac{n}{2L_c}\sqrt{\frac{T_c}{m_c}}.
 \]</span></p>
 <p>长斜拉索需要进一步考虑垂度、轴向伸长、端部支承、阻尼器和索—梁—塔耦合。桥面或锚点很小的周期运动也可能激发索的参数或端部运动响应，因此观察到“索在振”不代表风直接作用于索是唯一输入。</p>
 <p>索的候选风致机理包括单索涡振、雨风振、干索倾斜驰振、相邻索尾流驰振、桥面尾流作用和湍流抖振。雨风振识别至少需要降雨、风速风向、索倾角和表面水线证据；结冰后截面不再近似圆形，应重新评价气动力斜率。外置阻尼器、索间连接和表面螺旋线分别改变阻尼、有效长度／频率及水线与分离流动，它们的效果应针对具体索体系试验或验证。</p>
@@ -2170,8 +2170,8 @@ f_n=\frac{n}{2L_c}\sqrt{\frac{T_c}{m_c}}.
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2185,37 +2185,37 @@ f_n=\frac{n}{2L_c}\sqrt{\frac{T_c}{m_c}}.
 <section class="level4" data-number="9.8.7.1" id="相似比例的基本关系">
 <h4 class="anchored" data-anchor-id="相似比例的基本关系" data-number="9.8.7.1"><span class="header-section-number">9.8.7.1</span> 相似比例的基本关系</h4>
 <p>设模型与原型的长度、速度比例分别为</p>
-<p><span class="math display">\[
-\lambda_L=\frac{L_m}{L_p},
-\qquad
-\lambda_U=\frac{U_m}{U_p}.
+<p><span class="math display">\[
+\lambda_L=\frac{L_m}{L_p},
+\qquad
+\lambda_U=\frac{U_m}{U_p}.
 \]</span></p>
 <p>时间和频率比例由运动相似得到</p>
-<p><span class="math display">\[
-\lambda_T=\frac{T_m}{T_p}
-=\frac{\lambda_L}{\lambda_U},
-\qquad
-\lambda_f=\frac{f_m}{f_p}
-=\frac{\lambda_U}{\lambda_L}.
+<p><span class="math display">\[
+\lambda_T=\frac{T_m}{T_p}
+=\frac{\lambda_L}{\lambda_U},
+\qquad
+\lambda_f=\frac{f_m}{f_p}
+=\frac{\lambda_U}{\lambda_L}.
 \]</span></p>
 <p>若空气密度比例为 <span class="math inline">\(\lambda_\rho\)</span>，要保持单位长度质量比</p>
-<p><span class="math display">\[
-\mu=\frac{m}{\rho B^2}
+<p><span class="math display">\[
+\mu=\frac{m}{\rho B^2}
 \]</span></p>
 <p>相似，则单位长度质量比例应满足</p>
-<p><span class="math display">\[
-\lambda_m=\lambda_\rho\lambda_L^2.
+<p><span class="math display">\[
+\lambda_m=\lambda_\rho\lambda_L^2.
 \]</span></p>
 <p>这里 <span class="math inline">\(m\)</span> 为单位长度质量，kg/m。单位长度质量惯量 <span class="math inline">\(I_m\)</span> 的量纲为kg·m，若保持 <span class="math inline">\(I_m/(\rho B^4)\)</span> 相似，则</p>
-<p><span class="math display">\[
-\lambda_I=\lambda_\rho\lambda_L^4.
+<p><span class="math display">\[
+\lambda_I=\lambda_\rho\lambda_L^4.
 \]</span></p>
 <p>阻尼比、弯扭频率比、质量中心和弹性轴相对位置也应匹配。模型频率、质量和惯量往往相互制约，需要通过弹簧、配重与悬挂几何迭代调整。</p>
 <p>雷诺数比例为</p>
-<p><span class="math display">\[
-\frac{Re_m}{Re_p}
-=
-\frac{\lambda_U\lambda_L}{\lambda_\nu},
+<p><span class="math display">\[
+\frac{Re_m}{Re_p}
+=
+\frac{\lambda_U\lambda_L}{\lambda_\nu},
 \]</span></p>
 <p><span class="math inline">\(\lambda_\nu\)</span> 为运动黏度比例。在同一空气介质中 <span class="math inline">\(\lambda_\nu\)</span> 近似为1，小比例模型通常不能同时满足原型雷诺数与气弹时间比例。对具有尖锐分离边的桥面截面，某些系数对雷诺数可能相对不敏感，但圆索、圆角、栏杆和表面粗糙构件可能非常敏感。是否可放松雷诺相似必须由试验目的、敏感性试验或既有证据说明。</p>
 </section>
@@ -2247,14 +2247,14 @@ f_n=\frac{n}{2L_c}\sqrt{\frac{T_c}{m_c}}.
 <section class="level4" data-number="9.8.7.5" id="试验不确定性预算">
 <h4 class="anchored" data-anchor-id="试验不确定性预算" data-number="9.8.7.5"><span class="header-section-number">9.8.7.5</span> 试验不确定性预算</h4>
 <p>一个可审查的试验结论应附不确定性预算。对颤振临界风速，可至少考虑风速校准、模型频率、阻尼、质量惯量、攻角、模型几何、重复试验和判读插值；对静力系数，还应考虑天平校准、零漂、阻塞和参考面积。若输出量 <span class="math inline">\(Y=g(x_1,\ldots,x_n)\)</span>，小扰动且输入近似独立时，合成标准不确定度可估为</p>
-<p><span class="math display">\[
-u_c^2(Y)
-\approx
-\sum_{i=1}^{n}
-\left(
-\frac{\partial g}{\partial x_i}
-\right)^2
-u^2(x_i).
+<p><span class="math display">\[
+u_c^2(Y)
+\approx
+\sum_{i=1}^{n}
+\left(
+\frac{\partial g}{\partial x_i}
+\right)^2
+u^2(x_i).
 \]</span></p>
 <p>存在相关输入时还需协方差项。该式是通用传播框架；实际分布、覆盖因子和报告方法应由实验室质量体系确定。教材交互可以让学生改变单项测量误差，观察哪些参数控制结论不确定性。</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -2262,8 +2262,8 @@ u^2(x_i).
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2282,21 +2282,21 @@ u^2(x_i).
 <section class="level4" data-number="9.8.8.2" id="网格与时间步收敛的量化">
 <h4 class="anchored" data-anchor-id="网格与时间步收敛的量化" data-number="9.8.8.2"><span class="header-section-number">9.8.8.2</span> 网格与时间步收敛的量化</h4>
 <p>对系统加密比近似为 <span class="math inline">\(r\)</span> 的三组网格，若关注量在渐近、单调收敛区，可由细、中、粗网格结果 <span class="math inline">\(\phi_1,\phi_2,\phi_3\)</span> 估计表观阶次</p>
-<p><span class="math display">\[
-p
-\approx
-\frac{
-\ln\left|
-\dfrac{\phi_3-\phi_2}{\phi_2-\phi_1}
-\right|
-}{\ln r}.
+<p><span class="math display">\[
+p
+\approx
+\frac{
+\ln\left|
+\dfrac{\phi_3-\phi_2}{\phi_2-\phi_1}
+\right|
+}{\ln r}.
 \]</span></p>
 <p>外推值可写为</p>
-<p><span class="math display">\[
-\phi_{\mathrm{ext}}
-\approx
-\phi_1+
-\frac{\phi_1-\phi_2}{r^p-1}.
+<p><span class="math display">\[
+\phi_{\mathrm{ext}}
+\approx
+\phi_1+
+\frac{\phi_1-\phi_2}{r^p-1}.
 \]</span></p>
 <p>若结果振荡、加密比不一致或尚未进入渐近区，上述简式不适用，应使用更一般的网格收敛分析并解释异常。时间步也需独立加密；同时改变网格与时间步会混淆误差来源。</p>
 <p>桥面绕流的关注量可能对局部网格而非总单元数敏感。应报告前缘、风嘴、栏杆、剪切层和尾流的尺寸，壁面处理与相应无量纲壁面距离，以及计算域边界位置。力系数历史达到周期状态不等于统计收敛；非定常湍流结果需比较不同统计窗口的均值、方差和谱峰。</p>
@@ -2376,8 +2376,8 @@ p
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2512,120 +2512,120 @@ p
 </section>
 <section class="level4" data-number="9.9.0.2" id="第一步计算速度压">
 <h4 class="anchored" data-anchor-id="第一步计算速度压" data-number="9.9.0.2"><span class="header-section-number">9.9.0.2</span> 第一步：计算速度压</h4>
-<p><span class="math display">\[
-q=\frac12\rho U^2
-=\frac12\times1.225\times32^2
-=627.2\ \mathrm{N/m^2}.
+<p><span class="math display">\[
+q=\frac12\rho U^2
+=\frac12\times1.225\times32^2
+=627.2\ \mathrm{N/m^2}.
 \]</span></p>
 <p>单位检查为</p>
-<p><span class="math display">\[
-\frac{\mathrm{kg}}{\mathrm{m^3}}
-\frac{\mathrm{m^2}}{\mathrm{s^2}}
-=\frac{\mathrm{kg}}{\mathrm{m\,s^2}}
-=\frac{\mathrm N}{\mathrm{m^2}}.
+<p><span class="math display">\[
+\frac{\mathrm{kg}}{\mathrm{m^3}}
+\frac{\mathrm{m^2}}{\mathrm{s^2}}
+=\frac{\mathrm{kg}}{\mathrm{m\,s^2}}
+=\frac{\mathrm N}{\mathrm{m^2}}.
 \]</span></p>
 </section>
 <section class="level4" data-number="9.9.0.3" id="第二步计算桥面单位长度平均气动力">
 <h4 class="anchored" data-anchor-id="第二步计算桥面单位长度平均气动力" data-number="9.9.0.3"><span class="header-section-number">9.9.0.3</span> 第二步：计算桥面单位长度平均气动力</h4>
-<p><span class="math display">\[
-D'=qHC_D
-=627.2\times3.0\times1.25
-=2352\ \mathrm{N/m}
-=2.352\ \mathrm{kN/m},
+<p><span class="math display">\[
+D'=qHC_D
+=627.2\times3.0\times1.25
+=2352\ \mathrm{N/m}
+=2.352\ \mathrm{kN/m},
 \]</span></p>
-<p><span class="math display">\[
-L'=qBC_L
-=627.2\times30\times0.10
-=1881.6\ \mathrm{N/m}
-=1.882\ \mathrm{kN/m},
+<p><span class="math display">\[
+L'=qBC_L
+=627.2\times30\times0.10
+=1881.6\ \mathrm{N/m}
+=1.882\ \mathrm{kN/m},
 \]</span></p>
-<p><span class="math display">\[
-M'=qB^2C_M
-=627.2\times30^2\times0.025
-=14112\ \mathrm{N\,m/m}
-=14.112\ \mathrm{kN\,m/m}.
+<p><span class="math display">\[
+M'=qB^2C_M
+=627.2\times30^2\times0.025
+=14112\ \mathrm{N\,m/m}
+=14.112\ \mathrm{kN\,m/m}.
 \]</span></p>
 <p>三个结果分别是单位桥长的横向力、竖向力和绕桥轴力矩。输入总体有限元时，应按单元分配长度转换成节点或单元荷载；若软件要求全局坐标力，还要依据桥轴和风向完成坐标转换。</p>
 </section>
 <section class="level4" data-number="9.9.0.4" id="第三步静力数量级筛查">
 <h4 class="anchored" data-anchor-id="第三步静力数量级筛查" data-number="9.9.0.4"><span class="header-section-number">9.9.0.4</span> 第三步：静力数量级筛查</h4>
 <p>把120 m长的参考段暂时理想化为承受均布横向荷载 <span class="math inline">\(D'\)</span> 的简支梁，则支点剪力和跨中弯矩为</p>
-<p><span class="math display">\[
-V_{\max}=\frac{D'L_0}{2}
-=\frac{2.352\times120}{2}
-=141.1\ \mathrm{kN},
+<p><span class="math display">\[
+V_{\max}=\frac{D'L_0}{2}
+=\frac{2.352\times120}{2}
+=141.1\ \mathrm{kN},
 \]</span></p>
-<p><span class="math display">\[
-M_{\max}=\frac{D'L_0^2}{8}
-=\frac{2.352\times120^2}{8}
-=4233.6\ \mathrm{kN\,m}.
+<p><span class="math display">\[
+M_{\max}=\frac{D'L_0^2}{8}
+=\frac{2.352\times120^2}{8}
+=4233.6\ \mathrm{kN\,m}.
 \]</span></p>
 <p>按Euler—Bernoulli梁估算跨中侧移：</p>
-<p><span class="math display">\[
-\delta_{\max}
-=\frac{5D'L_0^4}{384EI_y}
-=0.0127\ \mathrm m
-=12.7\ \mathrm{mm}.
+<p><span class="math display">\[
+\delta_{\max}
+=\frac{5D'L_0^4}{384EI_y}
+=0.0127\ \mathrm m
+=12.7\ \mathrm{mm}.
 \]</span></p>
 <p>该模型只用于手算核查全桥模型的数量级。真实桥梁的连续性、索塔和缆索约束、侧向荷载分布、剪切变形及空间耦合均未包括，因此不能将12.7 mm作为设计结果。</p>
 </section>
 <section class="level4" data-number="9.9.0.5" id="第四步检查风速平方效应">
 <h4 class="anchored" data-anchor-id="第四步检查风速平方效应" data-number="9.9.0.5"><span class="header-section-number">9.9.0.5</span> 第四步：检查风速平方效应</h4>
 <p>若只把风速由32 m/s提高到40 m/s，其余参数暂不变，则</p>
-<p><span class="math display">\[
-\frac{q_{40}}{q_{32}}
-=\left(\frac{40}{32}\right)^2
-=1.5625.
+<p><span class="math display">\[
+\frac{q_{40}}{q_{32}}
+=\left(\frac{40}{32}\right)^2
+=1.5625.
 \]</span></p>
 <p>单位长度阻力相应变为</p>
-<p><span class="math display">\[
-D'_{40}=1.5625\times2.352=3.675\ \mathrm{kN/m}.
+<p><span class="math display">\[
+D'_{40}=1.5625\times2.352=3.675\ \mathrm{kN/m}.
 \]</span></p>
 <p>侧移的线性估计也增至约19.8 mm。该比例关系只适用于气动力系数和结构刚度近似不变的静力筛查；若攻角随扭转改变或结构进入非线性状态，应重新求解。</p>
 </section>
 <section class="level4" data-number="9.9.0.6" id="第五步估计涡振敏感风速">
 <h4 class="anchored" data-anchor-id="第五步估计涡振敏感风速" data-number="9.9.0.6"><span class="header-section-number">9.9.0.6</span> 第五步：估计涡振敏感风速</h4>
 <p>由斯特劳哈尔关系，脱涡频率接近竖弯频率时的中心风速为</p>
-<p><span class="math display">\[
-U_{\mathrm{VIV},0}
-=\frac{f_hD}{St}
-=\frac{0.55\times3.0}{0.12}
-=13.75\ \mathrm{m/s}.
+<p><span class="math display">\[
+U_{\mathrm{VIV},0}
+=\frac{f_hD}{St}
+=\frac{0.55\times3.0}{0.12}
+=13.75\ \mathrm{m/s}.
 \]</span></p>
 <p>以 <span class="math inline">\(D\)</span> 为特征尺寸的约化风速为</p>
-<p><span class="math display">\[
-U_r=\frac{U_{\mathrm{VIV},0}}{f_hD}
-=8.33.
+<p><span class="math display">\[
+U_r=\frac{U_{\mathrm{VIV},0}}{f_hD}
+=8.33.
 \]</span></p>
 <p>13.75 m/s只是由频率匹配得到的中心估计。锁定区上下界、最大振幅和滞回需要节段模型或经验证的涡振模型；不能把这一中心风速写成“发生涡振的唯一风速”。</p>
 </section>
 <section class="level4" data-number="9.9.0.7" id="第六步建立竖弯模态基准">
 <h4 class="anchored" data-anchor-id="第六步建立竖弯模态基准" data-number="9.9.0.7"><span class="header-section-number">9.9.0.7</span> 第六步：建立竖弯模态基准</h4>
 <p>竖弯圆频率为</p>
-<p><span class="math display">\[
-\omega_h=2\pi f_h=3.456\ \mathrm{rad/s}.
+<p><span class="math display">\[
+\omega_h=2\pi f_h=3.456\ \mathrm{rad/s}.
 \]</span></p>
 <p>在给定振型归一化下，广义刚度与广义阻尼为</p>
-<p><span class="math display">\[
-K_h=M_h\omega_h^2
-\approx2.63\times10^7\ \mathrm{N/m},
+<p><span class="math display">\[
+K_h=M_h\omega_h^2
+\approx2.63\times10^7\ \mathrm{N/m},
 \]</span></p>
-<p><span class="math display">\[
-C_h=2\zeta_hM_h\omega_h
-\approx9.12\times10^4\ \mathrm{N\,s/m}.
+<p><span class="math display">\[
+C_h=2\zeta_hM_h\omega_h
+\approx9.12\times10^4\ \mathrm{N\,s/m}.
 \]</span></p>
 <p>若阻尼比因模型识别差异从0.006降到0.003，<span class="math inline">\(C_h\)</span> 约减半。在频率比 <span class="math inline">\(r=1\)</span> 的理想谐波模型中，峰值动力放大系数由 <span class="math inline">\(1/(2\zeta)\)</span> 从约83.3增至166.7，说明小阻尼结构对阻尼估计非常敏感。该放大系数并非真实涡振振幅，仍需与气动力和非线性限制共同求解。</p>
 </section>
 <section class="level4" data-number="9.9.0.8" id="第七步抖振响应的统计表达">
 <h4 class="anchored" data-anchor-id="第七步抖振响应的统计表达" data-number="9.9.0.8"><span class="header-section-number">9.9.0.8</span> 第七步：抖振响应的统计表达</h4>
 <p>假定经风谱、相干、气动导纳和模态频响计算，参考点竖向脉动位移标准差为</p>
-<p><span class="math display">\[
-\sigma_h=12\ \mathrm{mm}.
+<p><span class="math display">\[
+\sigma_h=12\ \mathrm{mm}.
 \]</span></p>
 <p>若教学中取峰值因子 <span class="math inline">\(g_p=3.5\)</span>，则相对平均位置的峰值脉动位移估计为</p>
-<p><span class="math display">\[
-h_{\mathrm{pk}}=g_p\sigma_h
-=42\ \mathrm{mm}.
+<p><span class="math display">\[
+h_{\mathrm{pk}}=g_p\sigma_h
+=42\ \mathrm{mm}.
 \]</span></p>
 <p>若需与平均静风位移组合，应保持方向、相关性和组合规则一致。本例的12 mm和3.5均为教学输入；实际峰值因子需由记录时长、带宽、超越概率和采用标准确定。</p>
 </section>
@@ -2667,9 +2667,9 @@ h_{\mathrm{pk}}=g_p\sigma_h
 <section class="level4" data-number="9.9.0.10" id="第九步比较两类改进措施">
 <h4 class="anchored" data-anchor-id="第九步比较两类改进措施" data-number="9.9.0.10"><span class="header-section-number">9.9.0.10</span> 第九步：比较两类改进措施</h4>
 <p>若在转动惯量近似不变时将扭转刚度提高25%，扭转频率按平方根关系由0.72 Hz提高为</p>
-<p><span class="math display">\[
-f_{\alpha,2}=0.72\sqrt{1.25}
-\approx0.805\ \mathrm{Hz}.
+<p><span class="math display">\[
+f_{\alpha,2}=0.72\sqrt{1.25}
+\approx0.805\ \mathrm{Hz}.
 \]</span></p>
 <p>这会改变弯扭频率比和颤振状态，但新临界风速必须使用更新后的气弹模型重新计算。若另将竖弯阻尼比由0.006提高到0.010，理想共振放大系数由83.3降至50，可预期对涡振和窄带响应有利；它并不自动证明颤振临界风速满足要求。</p>
 </section>
@@ -2795,8 +2795,8 @@ f_{\alpha,2}=0.72\sqrt{1.25}
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2808,8 +2808,8 @@ f_{\alpha,2}=0.72\sqrt{1.25}
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-提示
+<div class="callout-title-container flex-fill">
+提示
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2909,19 +2909,19 @@ f_{\alpha,2}=0.72\sqrt{1.25}
 </tbody>
 </table>
 <p>桥面参考风速为</p>
-<p><span class="math display">\[
-U_d
-=28.0\times1.04\times1.08\times1.05\times0.98
-=32.36\ \mathrm{m/s}.
+<p><span class="math display">\[
+U_d
+=28.0\times1.04\times1.08\times1.05\times0.98
+=32.36\ \mathrm{m/s}.
 \]</span></p>
 <p>该乘积只为演示数据链。正式项目需确认各因子定义互不重叠。例如规范风速已包含地表换算时，不得再次乘入同类因子。若四个因子分别具有标准不确定度且暂按独立，可由</p>
-<p><span class="math display">\[
-\left(\frac{u(U_d)}{U_d}\right)^2
-\approx
-\left(\frac{u(U_{\mathrm{ref}})}{U_{\mathrm{ref}}}\right)^2
-+
-\sum_j
-\left(\frac{u(K_j)}{K_j}\right)^2
+<p><span class="math display">\[
+\left(\frac{u(U_d)}{U_d}\right)^2
+\approx
+\left(\frac{u(U_{\mathrm{ref}})}{U_{\mathrm{ref}}}\right)^2
++
+\sum_j
+\left(\frac{u(K_j)}{K_j}\right)^2
 \]</span></p>
 <p>估计相对标准不确定度。因子由同一资料拟合时通常相关，应加入协方差，不能直接采用独立假定。</p>
 <p>资料卡还记录风向扇区、空气密度、湍流强度、谱和相干。若某一项没有项目数据，状态标记为“待识别”，而不是填入常见值。这样，后续软件可以阻止缺少风谱时生成看似完整的抖振峰值。</p>
@@ -2929,39 +2929,39 @@ U_d
 <section class="level4" data-number="9.9.2.3" id="第二步计算平均三分力并核查单位">
 <h4 class="anchored" data-anchor-id="第二步计算平均三分力并核查单位" data-number="9.9.2.3"><span class="header-section-number">9.9.2.3</span> 第二步：计算平均三分力并核查单位</h4>
 <p>取教学空气密度 <span class="math inline">\(\rho=1.225\ \mathrm{kg/m^3}\)</span>，速度压</p>
-<p><span class="math display">\[
-q_d=\frac12\rho U_d^2
-=\frac12\times1.225\times32.36^2
-\approx641.3\ \mathrm{Pa}.
+<p><span class="math display">\[
+q_d=\frac12\rho U_d^2
+=\frac12\times1.225\times32.36^2
+\approx641.3\ \mathrm{Pa}.
 \]</span></p>
 <p>单位桥长三分力为</p>
-<p><span class="math display">\[
-D'=q_dHC_D
-\approx2.405\ \mathrm{kN/m},
+<p><span class="math display">\[
+D'=q_dHC_D
+\approx2.405\ \mathrm{kN/m},
 \]</span></p>
-<p><span class="math display">\[
-L'=q_dBC_L
-\approx1.924\ \mathrm{kN/m},
+<p><span class="math display">\[
+L'=q_dBC_L
+\approx1.924\ \mathrm{kN/m},
 \]</span></p>
-<p><span class="math display">\[
-M'=q_dB^2C_M
-\approx14.43\ \mathrm{kN\,m/m}.
+<p><span class="math display">\[
+M'=q_dB^2C_M
+\approx14.43\ \mathrm{kN\,m/m}.
 \]</span></p>
 <p>自动核查程序检查量纲：Pa乘m得到N/m，Pa乘m<span class="math inline">\(^2\)</span>得到N·m/m。若输入表把 <span class="math inline">\(M'\)</span> 错写成kN·m后再乘单元长度，会造成量纲和数量级错误。进入全桥模型前还需按风向把阻力转换到全局轴，并对沿桥风速、塔区遮挡和桥面曲线分段。</p>
 <p>若使用竖弯模态的教学有效长度 <span class="math inline">\(L_{\mathrm{eff}}=420\)</span> m，则平均升力的广义力近似</p>
-<p><span class="math display">\[
-Q_{h,0}=L'L_{\mathrm{eff}}
-\approx808\ \mathrm{kN}.
+<p><span class="math display">\[
+Q_{h,0}=L'L_{\mathrm{eff}}
+\approx808\ \mathrm{kN}.
 \]</span></p>
 <p>这里 <span class="math inline">\(L_{\mathrm{eff}}\)</span> 已包含振型正负和归一化影响，只用于数值演示。竖弯广义刚度为</p>
-<p><span class="math display">\[
-K_h=(2\pi f_h)^2M_h
-\approx26.29\ \mathrm{MN/m},
+<p><span class="math display">\[
+K_h=(2\pi f_h)^2M_h
+\approx26.29\ \mathrm{MN/m},
 \]</span></p>
 <p>相应线性平均模态位移为</p>
-<p><span class="math display">\[
-q_{h,0}=\frac{Q_{h,0}}{K_h}
-\approx30.7\ \mathrm{mm}.
+<p><span class="math display">\[
+q_{h,0}=\frac{Q_{h,0}}{K_h}
+\approx30.7\ \mathrm{mm}.
 \]</span></p>
 <p>该值不是桥面跨中总位移，需乘相应位置的振型分量，并与恒载、温度和其他作用按采用标准组合。它也未包含攻角反馈与几何非线性。与前一简支梁算例的12.7 mm不同，是因为模型、刚度表达和加载范围不同；两者不应强行相等。</p>
 </section>
@@ -2970,10 +2970,10 @@ q_{h,0}=\frac{Q_{h,0}}{K_h}
 <ol type="1">
 <li><p><strong>抖振。</strong> 已有平均风速而桥位谱与空间相干尚未确认，因此只能建立所需输入和频率响应函数，不能给出项目峰值。先以前文教学 <span class="math inline">\(\sigma_u=4.8\)</span> m/s 检查程序，再将结果标记为“教学运行”。</p></li>
 <li><p><strong>涡振。</strong> 取教学 <span class="math inline">\(St=0.12\)</span>、特征高度 <span class="math inline">\(D=3.0\)</span> m，第一竖弯频率对应的中心风速</p>
-<p><span class="math display">\[
-U_{\mathrm{VIV},0}
-=\frac{f_hD}{St}
-=13.75\ \mathrm{m/s}.
+<p><span class="math display">\[
+U_{\mathrm{VIV},0}
+=\frac{f_hD}{St}
+=13.75\ \mathrm{m/s}.
 \]</span></p>
 <p>该值处于日常可能经历的风速范围，但只表示频率接近位置。锁定区和振幅必须由弹性悬挂试验或经验证模型确定。</p></li>
 <li><p><strong>驰振。</strong> 当前只有零攻角三个系数，没有 <span class="math inline">\(\mathrm dC_L/\mathrm d\alpha\)</span>，无法计算准定常倾向条件；状态记为“资料不足”，不得由截面外形目测判断。</p></li>
@@ -3037,10 +3037,10 @@ U_{\mathrm{VIV},0}
 <section class="level4" data-number="9.9.2.6" id="第五步施工状态复核">
 <h4 class="anchored" data-anchor-id="第五步施工状态复核" data-number="9.9.2.6"><span class="header-section-number">9.9.2.6</span> 第五步：施工状态复核</h4>
 <p>教学施工模型给出最大悬臂阶段竖弯频率0.38 Hz、扭转频率0.51 Hz、阻尼比0.004；这些是假定输入，不代表常见工程值。若仍以 <span class="math inline">\(D=3.0\)</span> m、<span class="math inline">\(St=0.12\)</span> 作初筛，竖弯涡振中心风速变为</p>
-<p><span class="math display">\[
-U_{\mathrm{VIV},S2}
-=\frac{0.38\times3.0}{0.12}
-=9.5\ \mathrm{m/s}.
+<p><span class="math display">\[
+U_{\mathrm{VIV},S2}
+=\frac{0.38\times3.0}{0.12}
+=9.5\ \mathrm{m/s}.
 \]</span></p>
 <p>较低的中心风速并不意味着必然出现更大振幅，但提示施工状态可能在更常遇风速下接近频率锁定。与此同时，实际施工断面的 <span class="math inline">\(St\)</span>、阻尼、质量和临时附属物均已变化，因此该结果只能决定“应安排专项试验或监测”，不能由成桥试验曲线直接取振幅。</p>
 <p>施工期控制表包括：</p>
@@ -3147,13 +3147,13 @@ U_{\mathrm{VIV},S2}
 </table>
 <p>初步决策为：A、B进入组合验证，C保留为结构备选。这不是“确定采用A+B”，而是因为A直接针对断面气动、B对有限幅涡振有清晰参数接口，且两者可分别试验；若A在不利攻角恶化静力矩或颤振，或B的行程与维护不满足，则回到C或其他方案。每次设计改变均重新检查S1—S3三个状态。</p>
 <p>可采用无量纲多指标函数整理试验方案：</p>
-<p><span class="math display">\[
-J(\mathbf x)
-=
-w_1\frac{R_{\mathrm{VIV}}(\mathbf x)}{R_{\mathrm{ref}}}
-+w_2\frac{U_{\mathrm{req}}}{U_{\mathrm{cr}}(\mathbf x)}
-+w_3\frac{C_{\mathrm{life}}(\mathbf x)}{C_{\mathrm{ref}}}
-+w_4P_{\mathrm{maint}}(\mathbf x),
+<p><span class="math display">\[
+J(\mathbf x)
+=
+w_1\frac{R_{\mathrm{VIV}}(\mathbf x)}{R_{\mathrm{ref}}}
++w_2\frac{U_{\mathrm{req}}}{U_{\mathrm{cr}}(\mathbf x)}
++w_3\frac{C_{\mathrm{life}}(\mathbf x)}{C_{\mathrm{ref}}}
++w_4P_{\mathrm{maint}}(\mathbf x),
 \]</span></p>
 <p><span class="math inline">\(\mathbf x\)</span> 为构造和控制参数；<span class="math inline">\(R_{\mathrm{VIV}}\)</span> 为涡振响应指标；<span class="math inline">\(U_{\mathrm{cr}}\)</span> 为稳定临界风速；<span class="math inline">\(C_{\mathrm{life}}\)</span> 为寿命周期成本；<span class="math inline">\(P_{\mathrm{maint}}\)</span> 为维护惩罚；<span class="math inline">\(w_i\)</span> 为经项目决策确认的权重。该目标函数只用于方案透明比较，不能把规范必须满足的约束用权重抵消。所有强制性能目标应另写为约束 <span class="math inline">\(g_j(\mathbf x)\le0\)</span>。</p>
 </section>
@@ -3161,10 +3161,10 @@ w_1\frac{R_{\mathrm{VIV}}(\mathbf x)}{R_{\mathrm{ref}}}
 <h4 class="anchored" data-anchor-id="第七步布置监测与模型更新" data-number="9.9.2.8"><span class="header-section-number">9.9.2.8</span> 第七步：布置监测与模型更新</h4>
 <p>桥面至少在多个代表断面两侧布置同步加速度测点，以分解竖弯和扭转；桥塔布置塔顶及中部响应，代表索布置局部加速度或视频测量；桥上风仪记录三维风、风向、温度和降雨。装置方案B还记录阻尼器行程和温度。所有系统使用统一时间基准。</p>
 <p>事件发生后，先由低风或停风段识别结构频率和阻尼，再在强风段建立风速—响应—温度—交通联合数据集。设某参数 <span class="math inline">\(\theta_m\)</span> 表示模型频率或阻尼，监测数据为 <span class="math inline">\(\mathbf y\)</span>，可以用贝叶斯形式表示更新逻辑：</p>
-<p><span class="math display">\[
-p(\theta_m\mid\mathbf y)
-\propto
-p(\mathbf y\mid\theta_m)p(\theta_m).
+<p><span class="math display">\[
+p(\theta_m\mid\mathbf y)
+\propto
+p(\mathbf y\mid\theta_m)p(\theta_m).
 \]</span></p>
 <p><span class="math inline">\(p(\theta_m)\)</span> 是设计或试验形成的先验，<span class="math inline">\(p(\mathbf y\mid\theta_m)\)</span> 是包含测量与模型误差的似然。更新后分布不是“真实值”，仍依赖模型假定。若监测识别频率偏差来自温度或交通变化，不应全部解释为结构损伤或控制失效。</p>
 <p>控制效果评价采用相似风况配对或统计模型校正。比较前后事件时至少控制风速、风向、湍流、降雨、温度、交通和结构状态。若安装阻尼器后恰好未再经历相同风向，不能只凭最大响应下降宣称措施有效。</p>
@@ -3248,44 +3248,44 @@ p(\mathbf y\mid\theta_m)p(\theta_m).
 <section class="level4" data-number="9.9.3.2" id="最小计算脚本">
 <h4 class="anchored" data-anchor-id="最小计算脚本" data-number="9.9.3.2"><span class="header-section-number">9.9.3.2</span> 最小计算脚本</h4>
 <p>以下伪代码可直接转写为Python、JavaScript或Quarto计算单元。正式资源应附单元测试、输入JSON模式和版本号。</p>
-<pre><code>def deck_wind_speed(u_ref, factors):
-    assert u_ref &gt;= 0
-    assert all(k &gt; 0 for k in factors.values())
-    u_deck = u_ref
-    for name in ["time", "height", "terrain", "direction"]:
-        u_deck *= factors[name]
-    return u_deck
-
-def deck_forces(rho, u, B, H, coeff):
-    q = 0.5 * rho * u**2
-    drag = q * H * coeff["CD"]
-    lift = q * B * coeff["CL"]
-    moment = q * B**2 * coeff["CM"]
-    return {"q_Pa": q,
-            "D_N_per_m": drag,
-            "L_N_per_m": lift,
-            "M_Nm_per_m": moment}
-
-def modal_properties(freq_hz, modal_mass_kg, damping_ratio):
-    omega = 2.0 * pi * freq_hz
-    stiffness = modal_mass_kg * omega**2
-    damping = 2.0 * damping_ratio * modal_mass_kg * omega
-    return stiffness, damping
-
-def viv_center_speed(freq_hz, length_m, strouhal):
-    if strouhal &lt;= 0:
-        raise ValueError("Strouhal number must be positive")
-    return freq_hz * length_m / strouhal
-
-def evidence_gate(inputs):
-    status = {}
-    status["buffeting"] = (
-        "computable" if inputs.has_spectrum
-        and inputs.has_coherence and inputs.has_admittance
-        else "screening only")
-    status["flutter"] = (
-        "computable" if inputs.has_flutter_derivatives
-        else "not computable from static coefficients")
+<pre><code>def deck_wind_speed(u_ref, factors):
+    assert u_ref &gt;= 0
+    assert all(k &gt; 0 for k in factors.values())
+    u_deck = u_ref
+    for name in ["time", "height", "terrain", "direction"]:
+        u_deck *= factors[name]
+    return u_deck
+
+def deck_forces(rho, u, B, H, coeff):
+    q = 0.5 * rho * u**2
+    drag = q * H * coeff["CD"]
+    lift = q * B * coeff["CL"]
+    moment = q * B**2 * coeff["CM"]
+    return {"q_Pa": q,
+            "D_N_per_m": drag,
+            "L_N_per_m": lift,
+            "M_Nm_per_m": moment}
+
+def modal_properties(freq_hz, modal_mass_kg, damping_ratio):
+    omega = 2.0 * pi * freq_hz
+    stiffness = modal_mass_kg * omega**2
+    damping = 2.0 * damping_ratio * modal_mass_kg * omega
+    return stiffness, damping
+
+def viv_center_speed(freq_hz, length_m, strouhal):
+    if strouhal &lt;= 0:
+        raise ValueError("Strouhal number must be positive")
+    return freq_hz * length_m / strouhal
+
+def evidence_gate(inputs):
+    status = {}
+    status["buffeting"] = (
+        "computable" if inputs.has_spectrum
+        and inputs.has_coherence and inputs.has_admittance
+        else "screening only")
+    status["flutter"] = (
+        "computable" if inputs.has_flutter_derivatives
+        else "not computable from static coefficients")
     return status</code></pre>
 <p>脚本中不设置通用“安全／危险”布尔值。软件只能判断公式是否具有所需输入、单位是否一致以及证据层级，工程合格判定由采用标准、项目目标和审查流程完成。对空气密度、负风速、零频率、系数表超界和缺失数据均应有显式异常处理。</p>
 </section>
@@ -3307,8 +3307,8 @@ def evidence_gate(inputs):
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -3320,8 +3320,8 @@ def evidence_gate(inputs):
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -3338,10 +3338,10 @@ def evidence_gate(inputs):
 <h4 class="anchored" data-anchor-id="测风系统和元数据" data-number="9.10.0.1"><span class="header-section-number">9.10.0.1</span> 测风系统和元数据</h4>
 <p>桥址测风设备可布置于岸侧桅杆、桥塔、施工平台、主梁和邻近代表地形位置。每个测点至少记录：经纬度与高程；传感器距局部安装面的高度；仪器型号、量程、分辨率与标定日期；采样频率；内部平均或滤波方式；安装臂方向；附近塔柱、栏杆、吊机和建筑的遮挡；时钟系统；缺测和维护记录。仪器输出若已经经过厂商滤波，应保存原始设置，避免后续把滤波后的序列误作高频湍流。</p>
 <p>三维超声风速仪通常给出仪器坐标分量 <span class="math inline">\((u_s,v_s,w_s)\)</span>。转换到桥轴坐标可写为</p>
-<p><span class="math display">\[
-\boldsymbol U_b(t)=\boldsymbol R_{bs}\boldsymbol U_s(t),
-\qquad
-\boldsymbol U_s=[u_s,v_s,w_s]^{\mathrm T},
+<p><span class="math display">\[
+\boldsymbol U_b(t)=\boldsymbol R_{bs}\boldsymbol U_s(t),
+\qquad
+\boldsymbol U_s=[u_s,v_s,w_s]^{\mathrm T},
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol R_{bs}\)</span> 为由安装姿态与桥轴方位形成的正交旋转矩阵。风向定义采用“风来自何方”还是“速度指向何方”，需在数据字典中明确。旋转后以选定时段平均风向建立顺风、横风、竖风局部坐标；复杂地形存在持续竖向平均分量时，不应在没有说明的情况下强制把平均竖向速度旋转为零。</p>
 <p>测点受塔柱或安装臂尾流干扰时，应依据风向扇区设置质量标志。删除数据与保留但降级属于不同操作：原始层不删除，处理层保存 <code>wake_flag</code>、<code>icing_flag</code>、<code>clock_flag</code>、<code>range_flag</code> 和人工复核记录。若不同测点时钟偏差达到目标振动周期的显著比例，空间相干和风—响应相位会受到直接影响，应先校时再计算互谱。</p>
@@ -3353,8 +3353,8 @@ def evidence_gate(inputs):
 <h4 class="anchored" data-anchor-id="再分析资料的作用边界" data-number="9.10.0.2"><span class="header-section-number">9.10.0.2</span> 再分析资料的作用边界</h4>
 <p>再分析资料把数值天气模型和多源观测同化为规则网格数据，可提供长期、连续的区域风场背景。它适合检索台风路径附近的大尺度过程、识别季节和方向分布、寻找与桥址短期观测重叠的时段，也可作为长期订正的参考序列。网格中的近地风代表模型地形和下垫面，不等于桥面高度的实测风，更不能直接给出桥位湍流谱和局地峡谷增速。</p>
 <p>以同期观测 <span class="math inline">\(U_o(t)\)</span> 和再分析风速 <span class="math inline">\(U_r(t)\)</span> 为例，可按风向扇区 <span class="math inline">\(s\)</span>、季节 <span class="math inline">\(m\)</span> 建立教学性订正模型</p>
-<p><span class="math display">\[
-U_o(t)=a_{s,m}+b_{s,m}U_r(t)+\epsilon(t),
+<p><span class="math display">\[
+U_o(t)=a_{s,m}+b_{s,m}U_r(t)+\epsilon(t),
 \]</span></p>
 <p>其中 <span class="math inline">\(a_{s,m}\)</span> 的单位为 m/s，<span class="math inline">\(b_{s,m}\)</span> 无量纲，<span class="math inline">\(\epsilon\)</span> 为残差。模型应在独立时段验证均值、分位数和极值尾部，不能因总体相关系数较高便认为强风段无偏。若采用分位数映射，应保存经验分布、外推规则和单调性；超出同期样本范围的极端值需要单独评估。</p>
 <p>ERA5等公开再分析资料可用于课程演示，但下载时应保存产品、变量、网格、时区、版本和访问日期。10 m或100 m风分量的物理含义、陆海掩膜、表面粗糙度及更新记录均需随数据归档。正式出版只链接数据产品与课程组生成图，不复制数据门户界面。</p>
@@ -3366,10 +3366,10 @@ U_o(t)=a_{s,m}+b_{s,m}U_r(t)+\epsilon(t),
 <h4 class="anchored" data-anchor-id="地形模型与桥面风场映射" data-number="9.10.0.3"><span class="header-section-number">9.10.0.3</span> 地形模型与桥面风场映射</h4>
 <p>对于山谷、海峡、陡坡和城市边缘桥位，桥轴附近风速可能因地形加速、分离和风向偏转沿跨显著变化。地形研究的输入包括数字高程、地表粗糙度、建筑或植被、入流风廓线和方向扇区；输出不应只给“增速系数”，还应给出桥面和塔高范围的平均风、竖向攻角、湍流强度、积分尺度及其空间分布。</p>
 <p>设参考点风速为 <span class="math inline">\(U_r\)</span>，桥面坐标 <span class="math inline">\(x\)</span>、高度 <span class="math inline">\(z\)</span> 和方向 <span class="math inline">\(\theta\)</span> 下的平均风写为</p>
-<p><span class="math display">\[
-\overline U_b(x,z,\theta)
-=K_{\mathrm{topo}}(x,z,\theta)
-K_{\mathrm{height}}(z,\theta)U_r,
+<p><span class="math display">\[
+\overline U_b(x,z,\theta)
+=K_{\mathrm{topo}}(x,z,\theta)
+K_{\mathrm{height}}(z,\theta)U_r,
 \]</span></p>
 <p>其中两个 <span class="math inline">\(K\)</span> 均无量纲。若地形模型已经以目标高度的参考风为入口，则不得再次乘入同一高度换算；若 <span class="math inline">\(K_{\mathrm{topo}}\)</span> 包含地表过渡，也不能再重复施加粗糙度系数。每个因子需要定义分母位置和平均时距。</p>
 <p>地形风洞应记录缩尺、模拟半径、粗糙元、边界层廓线、阻塞和测点；地形CFD应记录域、网格、入口湍流和与测风或风洞的确认。二者均可生成沿跨风场，但对局地分离、湍流尺度和极端方向的可信度不同。正式设计应根据目标量选择方法，并保留不确定性。</p>
@@ -3397,17 +3397,17 @@ K_{\mathrm{height}}(z,\theta)U_r,
 <section class="level4" data-number="9.10.1.1" id="广义极值分布">
 <h4 class="anchored" data-anchor-id="广义极值分布" data-number="9.10.1.1"><span class="header-section-number">9.10.1.1</span> 广义极值分布</h4>
 <p>对独立的块最大值 <span class="math inline">\(X\)</span>，广义极值分布可写为</p>
-<p><span class="math display">\[
-G(x)=\exp\left\{-
-\left[1+\xi\left(\frac{x-\mu}{\sigma}\right)\right]^{-1/\xi}
-\right\},
+<p><span class="math display">\[
+G(x)=\exp\left\{-
+\left[1+\xi\left(\frac{x-\mu}{\sigma}\right)\right]^{-1/\xi}
+\right\},
 \]</span></p>
 <p>条件为 <span class="math inline">\(1+\xi(x-\mu)/\sigma&gt;0\)</span>。式中，位置参数 <span class="math inline">\(\mu\)</span> 与尺度参数 <span class="math inline">\(\sigma&gt;0\)</span> 的单位均为 m/s，形状参数 <span class="math inline">\(\xi\)</span> 无量纲；<span class="math inline">\(\xi\to0\)</span> 时趋于Gumbel分布。若每个块为一年，重现期 <span class="math inline">\(T\)</span> 年对应非超越概率 <span class="math inline">\(p=1-1/T\)</span>，分位值为</p>
-<p><span class="math display">\[
-x_T=\mu+\frac{\sigma}{\xi}
-\left\{
-[-\ln(1-1/T)]^{-\xi}-1
-\right\},
+<p><span class="math display">\[
+x_T=\mu+\frac{\sigma}{\xi}
+\left\{
+[-\ln(1-1/T)]^{-\xi}-1
+\right\},
 \]</span></p>
 <p>当 <span class="math inline">\(\xi\neq0\)</span>。<span class="math inline">\(T\)</span> 是概率描述，不表示每隔 <span class="math inline">\(T\)</span> 年必然出现一次。参数由有限样本估计，尤其 <span class="math inline">\(\xi\)</span> 对尾部外推敏感；报告必须给置信区间、诊断图与样本年限。</p>
 <p>块的选择要与气候和数据完整性一致。某年缺失强风季关键月份时，该年最大值可能偏低，不能与完整年份等权使用。若一年内台风和非台风极值混合，可按机制分别拟合并在年超越概率层面组合。</p>
@@ -3415,9 +3415,9 @@ x_T=\mu+\frac{\sigma}{\xi}
 <section class="level4" data-number="9.10.1.2" id="阈值超越法">
 <h4 class="anchored" data-anchor-id="阈值超越法" data-number="9.10.1.2"><span class="header-section-number">9.10.1.2</span> 阈值超越法</h4>
 <p>对超过阈值 <span class="math inline">\(u\)</span> 的超越量 <span class="math inline">\(Y=X-u\)</span>，广义Pareto分布写为</p>
-<p><span class="math display">\[
-H(y)=1-\left(1+\xi\frac{y}{\beta}\right)^{-1/\xi},
-\qquad y\ge0,
+<p><span class="math display">\[
+H(y)=1-\left(1+\xi\frac{y}{\beta}\right)^{-1/\xi},
+\qquad y\ge0,
 \]</span></p>
 <p>并满足 <span class="math inline">\(1+\xi y/\beta&gt;0\)</span>。<span class="math inline">\(u\)</span>、<span class="math inline">\(y\)</span> 与尺度参数 <span class="math inline">\(\beta&gt;0\)</span> 的单位为 m/s，<span class="math inline">\(\xi\)</span> 无量纲。阈值过低会引入非尾部数据，过高则样本不足；应结合平均余超图、参数稳定性和事件机制选择。</p>
 <p>连续强风过程中多个采样点并非独立极值。可按气象事件或规定时间窗聚类，每簇保留一个峰值，并记录簇持续时间、方向和机制。聚类窗不是任意平滑参数，需由风暴时间尺度与资料分辨率说明。POT方法还需估计独立超越事件率，才能转换为年超越概率和重现期分位值。</p>
@@ -3429,18 +3429,18 @@ H(y)=1-\left(1+\xi\frac{y}{\beta}\right)^{-1/\xi},
 <h4 class="anchored" data-anchor-id="参数不确定性和模型不确定性" data-number="9.10.1.3"><span class="header-section-number">9.10.1.3</span> 参数不确定性和模型不确定性</h4>
 <p>极值风速不确定性至少来自：仪器和缺测；长期订正；地形与高度转换；气候机制分类；极值模型；参数估计；未来气候非平稳性。参数置信区间可由似然、参数自助法或其他适用方法估计。模型比较应同时查看分位数图、重现水平图、尾部残差和留一检验，不能只按全样本拟合优度排序。</p>
 <p>对含时间趋势或气候指标的非平稳模型，可令</p>
-<p><span class="math display">\[
-\mu(t)=\mu_0+\mu_1g(t),
+<p><span class="math display">\[
+\mu(t)=\mu_0+\mu_1g(t),
 \]</span></p>
 <p>其中 <span class="math inline">\(g(t)\)</span> 为无量纲时间或气候协变量，<span class="math inline">\(\mu_0\)</span>、<span class="math inline">\(\mu_1\)</span> 用 m/s。增加协变量会提高模型灵活性，也增加外推依赖；只有在物理与统计证据共同支持时采用。设计寿命内气候变化情景应与项目风险研究衔接，不宜用短期线性趋势直接外推。</p>
 </section>
 <section class="level4" data-number="9.10.1.4" id="数值算例一由年最大风速到桥面方向风速">
 <h4 class="anchored" data-anchor-id="数值算例一由年最大风速到桥面方向风速" data-number="9.10.1.4"><span class="header-section-number">9.10.1.4</span> 数值算例一：由年最大风速到桥面方向风速</h4>
 <p>设某教学数据集已完成质量控制和气候机制筛选，采用GEV拟合得到</p>
-<p><span class="math display">\[
-\mu=30.0\ \mathrm{m/s},\qquad
-\sigma=2.8\ \mathrm{m/s},\qquad
-\xi=0.08.
+<p><span class="math display">\[
+\mu=30.0\ \mathrm{m/s},\qquad
+\sigma=2.8\ \mathrm{m/s},\qquad
+\xi=0.08.
 \]</span></p>
 <p>这些参数为课程组构造值，不对应任何地区。按上式计算：</p>
 <table class="caption-top table">
@@ -3470,16 +3470,16 @@ H(y)=1-\left(1+\xi\frac{y}{\beta}\right)^{-1/\xi},
 </tbody>
 </table>
 <p>以50年教学分位值为例，假定从参考口径到桥面某方向扇区需要三个互不重复的教学因子：测高因子 <span class="math inline">\(K_z=1.06\)</span>、地形因子 <span class="math inline">\(K_t=1.04\)</span>、方向因子 <span class="math inline">\(K_d=0.97\)</span>，则</p>
-<p><span class="math display">\[
-U_{50,b}=42.82\times1.06\times1.04\times0.97
-=45.79\ \mathrm{m/s}.
+<p><span class="math display">\[
+U_{50,b}=42.82\times1.06\times1.04\times0.97
+=45.79\ \mathrm{m/s}.
 \]</span></p>
 <p>该结果只有在三因子的分母口径一致、物理作用互不重叠时才成立。若地形研究已经输出桥面高度的方向风速，<span class="math inline">\(K_z\)</span> 与 <span class="math inline">\(K_d\)</span> 可能已包含于 <span class="math inline">\(K_t\)</span>，此时再次相乘会重复放大。</p>
 <p>进一步假设 <span class="math inline">\(x_{50}\)</span> 与三个因子的相对标准不确定度分别为 <span class="math inline">\(6\%\)</span>、<span class="math inline">\(2\%\)</span>、<span class="math inline">\(4\%\)</span> 和 <span class="math inline">\(2\%\)</span>，且仅为演示暂按独立，则一阶传播给出</p>
-<p><span class="math display">\[
-\frac{u(U_{50,b})}{U_{50,b}}
-=\sqrt{0.06^2+0.02^2+0.04^2+0.02^2}
-=0.0775,
+<p><span class="math display">\[
+\frac{u(U_{50,b})}{U_{50,b}}
+=\sqrt{0.06^2+0.02^2+0.04^2+0.02^2}
+=0.0775,
 \]</span></p>
 <p>即标准不确定度约为 <span class="math inline">\(3.55\ \mathrm{m/s}\)</span>。若因子来自同一同期拟合，它们往往相关，应加入协方差项。工程设计不能把 <span class="math inline">\(45.79\pm3.55\ \mathrm{m/s}\)</span> 直接当作规范设计值；本例的作用是说明尾部拟合与地形转换如何共同影响最终输入。</p>
 <p>算例应完成五项复核：改用Gumbel限制 <span class="math inline">\(\xi=0\)</span> 比较分位值；删除一个年份做留一检验；用参数自助法显示置信带；把台风与非台风样本分组；检查转换因子定义是否重复。学生提交分位值之外，还需提交样本完整性图、参数不确定性与模型选择说明。</p>
@@ -3494,9 +3494,9 @@ U_{50,b}=42.82\times1.06\times1.04\times0.97
 <section class="level4" data-number="9.10.2.1" id="平均时距与平稳分段">
 <h4 class="anchored" data-anchor-id="平均时距与平稳分段" data-number="9.10.2.1"><span class="header-section-number">9.10.2.1</span> 平均时距与平稳分段</h4>
 <p>对长度为 <span class="math inline">\(T_w\)</span> 的窗口，平均风速为</p>
-<p><span class="math display">\[
-\overline U_{T_w}(t_0)
-=\frac{1}{T_w}\int_{t_0}^{t_0+T_w}U(t)\,\mathrm dt.
+<p><span class="math display">\[
+\overline U_{T_w}(t_0)
+=\frac{1}{T_w}\int_{t_0}^{t_0+T_w}U(t)\,\mathrm dt.
 \]</span></p>
 <p><span class="math inline">\(T_w\)</span> 用 s，<span class="math inline">\(U\)</span> 用 m/s。窗口应足以分离平均与脉动，又不能跨越明显的天气非平稳变化。强对流、台风眼墙或风向快速转变时，固定窗口内的均值和谱可能失去平稳意义，应采用事件分段并保存趋势项。</p>
 <p>平稳性检查可比较窗口前后半段均值、方差与风向，也可用滑动统计量识别突变。去趋势会影响低频谱能量，必须记录方法和截止尺度。为美化谱曲线进行过度平滑，会掩盖模态附近能量和置信区间。</p>
@@ -3504,16 +3504,16 @@ U_{50,b}=42.82\times1.06\times1.04\times0.97
 <section class="level4" data-number="9.10.2.2" id="谱矩阵与空间相干">
 <h4 class="anchored" data-anchor-id="谱矩阵与空间相干" data-number="9.10.2.2"><span class="header-section-number">9.10.2.2</span> 谱矩阵与空间相干</h4>
 <p>将 <span class="math inline">\(n\)</span> 个位置的脉动风组成 <span class="math inline">\(\boldsymbol u(t)\)</span>，其频域输入由互谱矩阵</p>
-<p><span class="math display">\[
-\boldsymbol S_u(f)=
-[S_{u_i u_j}(f)]_{n\times n}
+<p><span class="math display">\[
+\boldsymbol S_u(f)=
+[S_{u_i u_j}(f)]_{n\times n}
 \]</span></p>
 <p>描述。对每一频率，<span class="math inline">\(\boldsymbol S_u\)</span> 应为Hermitian半正定矩阵。对角元素是自谱，非对角元素包含相干和相位：</p>
-<p><span class="math display">\[
-S_{u_i u_j}(f)
-=\gamma_{ij}(f)
-\sqrt{S_{u_i}(f)S_{u_j}(f)}
-\exp[\mathrm i\varphi_{ij}(f)].
+<p><span class="math display">\[
+S_{u_i u_j}(f)
+=\gamma_{ij}(f)
+\sqrt{S_{u_i}(f)S_{u_j}(f)}
+\exp[\mathrm i\varphi_{ij}(f)].
 \]</span></p>
 <p>其中 <span class="math inline">\(\gamma_{ij}\)</span> 为相干幅值，<span class="math inline">\(\varphi_{ij}\)</span> 为相位。只使用实数指数相干等价于忽略传播相位，是否可接受取决于桥长、风向和目标频率。输入矩阵若因独立拟合而不半正定，随机场生成会失败或产生非物理结果，应进行一致性检查。</p>
 <p>可对 <span class="math inline">\(\boldsymbol S_u(f)\)</span> 作Cholesky或特征分解，生成相关多点风速。合成时程应回算每点均值、方差、自谱、互谱和相干，并给随机种子。一个随机实现不足以估计峰值分布，需用多实现或足够长记录评估统计收敛。</p>
@@ -3521,17 +3521,17 @@ S_{u_i u_j}(f)
 <section class="level4" data-number="9.10.2.3" id="阵风峰值因子与气动导纳">
 <h4 class="anchored" data-anchor-id="阵风峰值因子与气动导纳" data-number="9.10.2.3"><span class="header-section-number">9.10.2.3</span> 阵风、峰值因子与气动导纳</h4>
 <p>阵风系数可概念性写为</p>
-<p><span class="math display">\[
-G_{t_g,T_w}=
-\frac{U_{\max,t_g}}{\overline U_{T_w}},
+<p><span class="math display">\[
+G_{t_g,T_w}=
+\frac{U_{\max,t_g}}{\overline U_{T_w}},
 \]</span></p>
 <p>其中 <span class="math inline">\(U_{\max,t_g}\)</span> 是以 <span class="math inline">\(t_g\)</span> 平均得到的窗口内最大风速，分子分母单位均为 m/s。不给出 <span class="math inline">\(t_g\)</span>、<span class="math inline">\(T_w\)</span> 和观测持续时间的阵风系数不可直接比较。桥面气动力还受到空间平均影响；气动导纳 <span class="math inline">\(\chi(f)\)</span> 描述湍流速度到气动力的频率依赖折减，不能用一个阵风系数替代完整抖振输入。</p>
 <p>线性化阻力脉动可示意为</p>
-<p><span class="math display">\[
-D'(t)\approx\overline D'
-+\rho\overline UHC_Du'(t)
-+\frac12\rho\overline U^2H
-\frac{\partial C_D}{\partial\alpha}\alpha'(t),
+<p><span class="math display">\[
+D'(t)\approx\overline D'
++\rho\overline UHC_Du'(t)
++\frac12\rho\overline U^2H
+\frac{\partial C_D}{\partial\alpha}\alpha'(t),
 \]</span></p>
 <p>并在频域乘入相应气动导纳。式中第一项为平均阻力，后两项分别体现顺风脉动和攻角脉动；<span class="math inline">\(D'\)</span> 用 N/m。更完整的桥面抖振模型包含升力、力矩、三分量湍流及交叉谱。</p>
 <div class="digital-note">
@@ -3545,31 +3545,31 @@ D'(t)\approx\overline D'
 <section class="level4" data-number="9.10.3.1" id="从表面压力到三分力">
 <h4 class="anchored" data-anchor-id="从表面压力到三分力" data-number="9.10.3.1"><span class="header-section-number">9.10.3.1</span> 从表面压力到三分力</h4>
 <p>对单位桥长断面边界 <span class="math inline">\(\Gamma\)</span>，表面压力 <span class="math inline">\(p(s)\)</span> 与切应力 <span class="math inline">\(\tau_w(s)\)</span> 形成的合力可写为</p>
-<p><span class="math display">\[
-\boldsymbol F'
-=\int_\Gamma[-p(s)\boldsymbol n(s)+\boldsymbol\tau_w(s)]\,\mathrm ds,
+<p><span class="math display">\[
+\boldsymbol F'
+=\int_\Gamma[-p(s)\boldsymbol n(s)+\boldsymbol\tau_w(s)]\,\mathrm ds,
 \]</span></p>
 <p>绕参考点 <span class="math inline">\(O\)</span> 的力矩为</p>
-<p><span class="math display">\[
-\boldsymbol M'_O
-=\int_\Gamma
-\boldsymbol r_O(s)\times
-[-p(s)\boldsymbol n(s)+\boldsymbol\tau_w(s)]\,\mathrm ds.
+<p><span class="math display">\[
+\boldsymbol M'_O
+=\int_\Gamma
+\boldsymbol r_O(s)\times
+[-p(s)\boldsymbol n(s)+\boldsymbol\tau_w(s)]\,\mathrm ds.
 \]</span></p>
 <p><span class="math inline">\(p\)</span>、<span class="math inline">\(\tau_w\)</span> 用 Pa，<span class="math inline">\(\mathrm ds\)</span> 用 m，所得单位长度力用 N/m；<span class="math inline">\(\boldsymbol r_O\)</span> 用 m，单位长度力矩用 N·m/m。风洞压力测点只给离散压力，积分前需说明测点插值和模型端部处理；CFD表面力则需核对参考压力、壁面方向和积分区域。</p>
 <p>若断面参考点由几何中心改为剪切中心，阻力和升力不变，但绕桥轴力矩发生转移。二维平面内，若升力作用线相对原点横向偏心 <span class="math inline">\(e_y\)</span>，新旧力矩满足</p>
-<p><span class="math display">\[
-M'_{O_2}=M'_{O_1}-e_yL'+e_zD',
+<p><span class="math display">\[
+M'_{O_2}=M'_{O_1}-e_yL'+e_zD',
 \]</span></p>
 <p>符号随坐标定义。比较不同试验机构的 <span class="math inline">\(C_M\)</span> 时，必须统一矩心、参考宽度和正方向。</p>
 </section>
 <section class="level4" data-number="9.10.3.2" id="风轴系数到桥轴荷载">
 <h4 class="anchored" data-anchor-id="风轴系数到桥轴荷载" data-number="9.10.3.2"><span class="header-section-number">9.10.3.2</span> 风轴系数到桥轴荷载</h4>
 <p>设水平来流与桥面法向的偏角为 <span class="math inline">\(\beta\)</span>，竖向攻角为 <span class="math inline">\(\alpha\)</span>。风轴中的阻力、侧力和升力需通过旋转矩阵转换到桥轴。概念上写为</p>
-<p><span class="math display">\[
-\boldsymbol f_b'=
-\boldsymbol R_{bw}(\alpha,\beta)
-\boldsymbol f_w',
+<p><span class="math display">\[
+\boldsymbol f_b'=
+\boldsymbol R_{bw}(\alpha,\beta)
+\boldsymbol f_w',
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol f_w'=[D',S',L']^{\mathrm T}\)</span>，<span class="math inline">\(\boldsymbol R_{bw}\)</span> 为正交矩阵。桥梁为曲线或风向沿跨变化时，转换应逐单元进行。将全桥统一施加“横桥向风”可能漏掉顺桥向分量、桥塔不同迎风面及曲线梁扭转。</p>
 <p>系数表通常在离散攻角测得。插值应保存原始点和插值方法，并限制在试验范围内。高阶样条可能在稀疏点间产生非物理振荡；用于静风发散的系数斜率对插值尤其敏感。可用分段线性和形状保持插值作敏感性比较，斜率差异进入不确定性。</p>
@@ -3577,41 +3577,41 @@ M'_{O_2}=M'_{O_1}-e_yL'+e_zD',
 <section class="level4" data-number="9.10.3.3" id="有效攻角和变形反馈">
 <h4 class="anchored" data-anchor-id="有效攻角和变形反馈" data-number="9.10.3.3"><span class="header-section-number">9.10.3.3</span> 有效攻角和变形反馈</h4>
 <p>局部有效攻角可写为</p>
-<p><span class="math display">\[
-\alpha_e(x,t)=\alpha_0(x)
-+\theta(x,t)
-+\arctan\frac{w(x,t)-\dot h(x,t)}
-{\overline U(x)+u(x,t)},
+<p><span class="math display">\[
+\alpha_e(x,t)=\alpha_0(x)
++\theta(x,t)
++\arctan\frac{w(x,t)-\dot h(x,t)}
+{\overline U(x)+u(x,t)},
 \]</span></p>
 <p>其中 <span class="math inline">\(\alpha_0\)</span> 为地形和桥面纵横坡形成的基准攻角，<span class="math inline">\(\theta\)</span> 为桥面扭转角，<span class="math inline">\(u,w\)</span> 为顺风和竖向脉动风，<span class="math inline">\(\dot h\)</span> 为竖向运动速度。各角度用 rad，速度用 m/s。小扰动线性化可以简化分母和反正切，但风速较低、振幅较大或施工断面旋转明显时，应回到非线性表达。</p>
 <p>静风平衡写为</p>
-<p><span class="math display">\[
-\boldsymbol R_s(\boldsymbol u)
-=\boldsymbol F_a[\boldsymbol u,U,\alpha_0],
+<p><span class="math display">\[
+\boldsymbol R_s(\boldsymbol u)
+=\boldsymbol F_a[\boldsymbol u,U,\alpha_0],
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol R_s\)</span> 为结构恢复力，<span class="math inline">\(\boldsymbol F_a\)</span> 为随变形改变的平均气动力。采用增量迭代时，切线方程为</p>
-<p><span class="math display">\[
-(\boldsymbol K_s-\boldsymbol K_a)\Delta\boldsymbol u
-=\boldsymbol r,
-\qquad
-\boldsymbol K_a=\frac{\partial\boldsymbol F_a}{\partial\boldsymbol u}.
+<p><span class="math display">\[
+(\boldsymbol K_s-\boldsymbol K_a)\Delta\boldsymbol u
+=\boldsymbol r,
+\qquad
+\boldsymbol K_a=\frac{\partial\boldsymbol F_a}{\partial\boldsymbol u}.
 \]</span></p>
 <p>当某一特征方向上气动切线刚度抵消结构刚度，可能发生静力发散。迭代不收敛也可能来自步长、插值不连续或接触边界变化，不能不经诊断直接解释为发散。</p>
 <p>单扭转自由度的教学近似中，若单位长度气动力矩</p>
-<p><span class="math display">\[
-M'=\frac12\rho U^2B^2
-[C_{M0}+C_{M\alpha}\theta],
+<p><span class="math display">\[
+M'=\frac12\rho U^2B^2
+[C_{M0}+C_{M\alpha}\theta],
 \]</span></p>
 <p>并以有效长度 <span class="math inline">\(L_e\)</span> 投影到广义坐标，则气动刚度为</p>
-<p><span class="math display">\[
-K_a(U)=\frac12\rho U^2B^2L_eC_{M\alpha}.
+<p><span class="math display">\[
+K_a(U)=\frac12\rho U^2B^2L_eC_{M\alpha}.
 \]</span></p>
 <p>在本文正号下，<span class="math inline">\(C_{M\alpha}&gt;0\)</span> 时可能削弱结构恢复刚度；教学临界值为</p>
-<p><span class="math display">\[
-U_D=\sqrt{
-\frac{2K_\theta}
-{\rho B^2L_eC_{M\alpha}}
-}.
+<p><span class="math display">\[
+U_D=\sqrt{
+\frac{2K_\theta}
+{\rho B^2L_eC_{M\alpha}}
+}.
 \]</span></p>
 <p><span class="math inline">\(K_\theta\)</span> 用 N·m/rad，<span class="math inline">\(L_e\)</span> 用 m，<span class="math inline">\(C_{M\alpha}\)</span> 是按rad求导的无量纲斜率。若系数按度拟合，必须先换算；正号不同则判据符号随之改变。实际桥梁需要沿跨积分并考虑侧移、扭转和几何非线性。</p>
 <div class="digital-note">
@@ -3625,45 +3625,45 @@ U_D=\sqrt{
 <section class="level4" data-number="9.10.4.1" id="模态归一化和广义量">
 <h4 class="anchored" data-anchor-id="模态归一化和广义量" data-number="9.10.4.1"><span class="header-section-number">9.10.4.1</span> 模态归一化和广义量</h4>
 <p>令物理位移表示为</p>
-<p><span class="math display">\[
-\boldsymbol u(t)=\boldsymbol\Phi\boldsymbol q(t),
+<p><span class="math display">\[
+\boldsymbol u(t)=\boldsymbol\Phi\boldsymbol q(t),
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol\Phi=[\boldsymbol\phi_1,\ldots,\boldsymbol\phi_m]\)</span> 为保留振型，<span class="math inline">\(\boldsymbol q\)</span> 为广义坐标。第 <span class="math inline">\(r\)</span> 模态的广义质量、刚度和阻尼为</p>
-<p><span class="math display">\[
-M_r=\boldsymbol\phi_r^{\mathrm T}\boldsymbol M\boldsymbol\phi_r,
-\quad
-K_r=\boldsymbol\phi_r^{\mathrm T}\boldsymbol K\boldsymbol\phi_r,
-\quad
-C_r=2\zeta_rM_r\omega_r.
+<p><span class="math display">\[
+M_r=\boldsymbol\phi_r^{\mathrm T}\boldsymbol M\boldsymbol\phi_r,
+\quad
+K_r=\boldsymbol\phi_r^{\mathrm T}\boldsymbol K\boldsymbol\phi_r,
+\quad
+C_r=2\zeta_rM_r\omega_r.
 \]</span></p>
 <p>若 <span class="math inline">\(\boldsymbol u\)</span> 用 m，<span class="math inline">\(M_r\)</span> 的单位取决于振型归一化；在以无量纲振型且某点分量为1时，<span class="math inline">\(M_r\)</span> 用 kg，<span class="math inline">\(K_r\)</span> 用 N/m，<span class="math inline">\(C_r\)</span> 用 N·s/m。振型整体乘以常数会改变广义量，却不应改变重构的物理响应。交换数据时必须同时传递振型与其归一化说明。</p>
 <p>分布气动力 <span class="math inline">\(\boldsymbol f(x,t)\)</span> 对模态 <span class="math inline">\(r\)</span> 的广义力为</p>
-<p><span class="math display">\[
-Q_r(t)=\int_0^L
-\boldsymbol\phi_r^{\mathrm T}(x)
-\boldsymbol f(x,t)\,\mathrm dx.
+<p><span class="math display">\[
+Q_r(t)=\int_0^L
+\boldsymbol\phi_r^{\mathrm T}(x)
+\boldsymbol f(x,t)\,\mathrm dx.
 \]</span></p>
 <p>若 <span class="math inline">\(\boldsymbol f\)</span> 为单位长度力 N/m、振型无量纲，则 <span class="math inline">\(Q_r\)</span> 用 N。扭转分量需要与单位长度力矩及振型扭转分量相配；把rad作为有量纲角度或无量纲角度需在实现中统一。</p>
 </section>
 <section class="level4" data-number="9.10.4.2" id="模态频响和谱积分">
 <h4 class="anchored" data-anchor-id="模态频响和谱积分" data-number="9.10.4.2"><span class="header-section-number">9.10.4.2</span> 模态频响和谱积分</h4>
 <p>忽略模态间结构耦合时，第 <span class="math inline">\(r\)</span> 模态频响函数为</p>
-<p><span class="math display">\[
-H_r(f)=
-\frac{1}{K_r-M_r(2\pi f)^2+\mathrm iC_r(2\pi f)}.
+<p><span class="math display">\[
+H_r(f)=
+\frac{1}{K_r-M_r(2\pi f)^2+\mathrm iC_r(2\pi f)}.
 \]</span></p>
 <p>若广义力功率谱为 <span class="math inline">\(S_{Q_r}(f)\)</span>，则</p>
-<p><span class="math display">\[
-S_{q_r}(f)=|H_r(f)|^2S_{Q_r}(f),
-\qquad
-\sigma_{q_r}^2=\int_0^\infty S_{q_r}(f)\,\mathrm df.
+<p><span class="math display">\[
+S_{q_r}(f)=|H_r(f)|^2S_{Q_r}(f),
+\qquad
+\sigma_{q_r}^2=\int_0^\infty S_{q_r}(f)\,\mathrm df.
 \]</span></p>
 <p>以Hz为频率时，<span class="math inline">\(S_{Q_r}\)</span> 用 N²/Hz，<span class="math inline">\(|H_r|^2\)</span> 用 m²/N²，<span class="math inline">\(S_{q_r}\)</span> 用 m²/Hz。使用圆频率谱时需处理 <span class="math inline">\(\mathrm d\omega=2\pi\mathrm df\)</span>，不能把两种谱直接代入同一积分。</p>
 <p>多模态响应在观测点 <span class="math inline">\(j\)</span> 写为</p>
-<p><span class="math display">\[
-S_{u_j}(f)=
-\sum_r\sum_s
-\phi_{jr}\phi_{js}^*S_{q_rq_s}(f).
+<p><span class="math display">\[
+S_{u_j}(f)=
+\sum_r\sum_s
+\phi_{jr}\phi_{js}^*S_{q_rq_s}(f).
 \]</span></p>
 <p>若广义风力相关或模态频率接近，交叉谱项可能重要。简单按各模态方差平方和组合等价于假定模态响应不相关，应说明依据。扭转和竖弯响应重构还应保留相位，才能形成桥面两侧加速度。</p>
 </section>
@@ -3675,32 +3675,32 @@ S_{u_j}(f)=
 <section class="level4" data-number="9.10.4.4" id="数值算例二教学广义力谱的抖振积分">
 <h4 class="anchored" data-anchor-id="数值算例二教学广义力谱的抖振积分" data-number="9.10.4.4"><span class="header-section-number">9.10.4.4</span> 数值算例二：教学广义力谱的抖振积分</h4>
 <p>沿用本章教学竖弯模态：</p>
-<p><span class="math display">\[
-M_h=2.20\times10^6\ \mathrm{kg},
-\quad f_h=0.55\ \mathrm{Hz},
-\quad\zeta_h=0.006.
+<p><span class="math display">\[
+M_h=2.20\times10^6\ \mathrm{kg},
+\quad f_h=0.55\ \mathrm{Hz},
+\quad\zeta_h=0.006.
 \]</span></p>
 <p>由此</p>
-<p><span class="math display">\[
-\omega_h=2\pi f_h=3.456\ \mathrm{rad/s},
+<p><span class="math display">\[
+\omega_h=2\pi f_h=3.456\ \mathrm{rad/s},
 \]</span></p>
-<p><span class="math display">\[
-K_h=M_h\omega_h^2
-=2.627\times10^7\ \mathrm{N/m},
+<p><span class="math display">\[
+K_h=M_h\omega_h^2
+=2.627\times10^7\ \mathrm{N/m},
 \]</span></p>
-<p><span class="math display">\[
-C_h=2\zeta_hM_h\omega_h
-=9.123\times10^4\ \mathrm{N\,s/m}.
+<p><span class="math display">\[
+C_h=2\zeta_hM_h\omega_h
+=9.123\times10^4\ \mathrm{N\,s/m}.
 \]</span></p>
 <p>为单独检验频响积分程序，构造在 <span class="math inline">\(0\le f\le2\ \mathrm{Hz}\)</span> 内恒定的白噪声广义力谱</p>
-<p><span class="math display">\[
-S_Q(f)=1.0\times10^{10}\ \mathrm{N^2/Hz},
+<p><span class="math display">\[
+S_Q(f)=1.0\times10^{10}\ \mathrm{N^2/Hz},
 \]</span></p>
 <p>区间外取零。该谱不是桥位风谱，不含相干与气动导纳，仅用于数值基线。代入 <span class="math inline">\(S_q=|H|^2S_Q\)</span>，若以足够细的频率间隔进行梯形积分，可得</p>
-<p><span class="math display">\[
-\sigma_q^2\approx1.043\times10^{-3}\ \mathrm{m^2},
-\qquad
-\sigma_q\approx0.0323\ \mathrm m=32.3\ \mathrm{mm}.
+<p><span class="math display">\[
+\sigma_q^2\approx1.043\times10^{-3}\ \mathrm{m^2},
+\qquad
+\sigma_q\approx0.0323\ \mathrm m=32.3\ \mathrm{mm}.
 \]</span></p>
 <p>若只把阻尼比提高到 <span class="math inline">\(0.012\)</span>，其余参数和谱不变，数值积分给出 <span class="math inline">\(\sigma_q\approx22.8\ \mathrm{mm}\)</span>。标准差并未减半，因为共振附近频响的带宽和峰值同时变化。该结果可用细化频率步长、延长上限频率和解析白噪声极限相互核对。</p>
 <p>完整桥位抖振计算把教学白噪声谱替换为由多点风谱、相干、三分力线性化和气动导纳形成的广义力谱。建议按以下顺序验证：单点单模态白噪声；单点有色谱；多点完全相干；多点无相干；实测或规定相干；多模态重构。每一步保留与前一步差异，才能定位错误。</p>
@@ -3717,13 +3717,13 @@ S_Q(f)=1.0\times10^{10}\ \mathrm{N^2/Hz},
 <h4 class="anchored" data-anchor-id="涡振锁定与非线性饱和" data-number="9.10.5.1"><span class="header-section-number">9.10.5.1</span> 涡振锁定与非线性饱和</h4>
 <p>钝体静止时的主脱涡频率可用 <span class="math inline">\(f_s=StU/D\)</span> 表示。结构可动后，在一定风速区间内涡脱落频率可能被结构频率牵引，形成锁定。响应通常集中于一个或少数模态，振幅受结构阻尼、质量比和非线性气动力限制，不会由线性共振公式无限增长。</p>
 <p>一种教学性尾流振子模型为</p>
-<p><span class="math display">\[
-m\ddot y+c\dot y+ky
-=\frac12\rho U^2DC_{L0}q,
+<p><span class="math display">\[
+m\ddot y+c\dot y+ky
+=\frac12\rho U^2DC_{L0}q,
 \]</span></p>
-<p><span class="math display">\[
-\ddot q+\varepsilon\omega_s(q^2-1)\dot q
-+\omega_s^2q=A\frac{\ddot y}{D},
+<p><span class="math display">\[
+\ddot q+\varepsilon\omega_s(q^2-1)\dot q
++\omega_s^2q=A\frac{\ddot y}{D},
 \]</span></p>
 <p>其中 <span class="math inline">\(y\)</span> 为横向或竖向响应（m），<span class="math inline">\(q\)</span> 为无量纲尾流变量，<span class="math inline">\(C_{L0}\)</span>、<span class="math inline">\(\varepsilon\)</span>、<span class="math inline">\(A\)</span> 为需由试验识别的参数，<span class="math inline">\(\omega_s=2\pi StU/D\)</span>。该模型用于展示流固同步和有限幅，不应在没有标定的情况下预测工程振幅。</p>
 <p>风洞试验应逐级升风和降风，以识别锁定区、滞回和多稳态；同时记录无风与有风阻尼、振幅、频率、相位和来流湍流。以一个中心风速代替整个锁定区，会遗漏控制振幅与疲劳的区段。</p>
@@ -3731,8 +3731,8 @@ m\ddot y+c\dot y+ky
 <section class="level4" data-number="9.10.5.2" id="驰振与准定常判据">
 <h4 class="anchored" data-anchor-id="驰振与准定常判据" data-number="9.10.5.2"><span class="header-section-number">9.10.5.2</span> 驰振与准定常判据</h4>
 <p>对某些非圆形细长构件，横向位移速度改变瞬时攻角，准定常气动力可能产生负阻尼。在明确坐标和系数定义后，Den Hartog型组合量可写为</p>
-<p><span class="math display">\[
-H_g=\frac{\mathrm dC_L}{\mathrm d\alpha}+C_D.
+<p><span class="math display">\[
+H_g=\frac{\mathrm dC_L}{\mathrm d\alpha}+C_D.
 \]</span></p>
 <p>在一种常用正号下，<span class="math inline">\(H_g&lt;0\)</span> 表示存在驰振倾向。若升力、位移或攻角正方向改变，判据符号也会改变。准定常假定要求气动力可由瞬时静力系数表示；当运动频率、尾流记忆或三维效应显著时，需采用非定常气动力模型或试验。</p>
 <p>驰振与涡振可在相近风速范围相互作用。观测到响应越过锁定区后继续增长，可能提示驰振分支，也可能来自断面状态、阻尼或其他模态改变。需要系数斜率、风速—振幅升降程和运动相位共同判断。</p>
@@ -3740,12 +3740,12 @@ H_g=\frac{\mathrm dC_L}{\mathrm d\alpha}+C_D.
 <section class="level4" data-number="9.10.5.3" id="颤振的状态空间表达">
 <h4 class="anchored" data-anchor-id="颤振的状态空间表达" data-number="9.10.5.3"><span class="header-section-number">9.10.5.3</span> 颤振的状态空间表达</h4>
 <p>弯扭耦合颤振可写成频率相关的复特征问题：</p>
-<p><span class="math display">\[
-\left[
--\omega^2\boldsymbol M
-+\mathrm i\omega(\boldsymbol C+\boldsymbol C_a)
-+\boldsymbol K+\boldsymbol K_a
-\right]\boldsymbol q=\boldsymbol0,
+<p><span class="math display">\[
+\left[
+-\omega^2\boldsymbol M
++\mathrm i\omega(\boldsymbol C+\boldsymbol C_a)
++\boldsymbol K+\boldsymbol K_a
+\right]\boldsymbol q=\boldsymbol0,
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol C_a(U,K)\)</span> 和 <span class="math inline">\(\boldsymbol K_a(U,K)\)</span> 为由气动导数形成的气动阻尼与刚度矩阵。由于约化频率 <span class="math inline">\(K=\omega B/U\)</span> 又依赖未知频率，通常需要迭代或状态空间方法。临界风速处某一复特征值实部越过稳定边界，等效阻尼为零。</p>
 <p>识别颤振应报告临界模态由哪些结构模态耦合、频率如何随风速变化、阻尼在哪个方向穿零、升降风是否一致，以及断面攻角和附属物状态。只报告一个临界风速而无模态和气动导数质量检查，难以复核。非线性颤振可能在临界附近形成极限环振动，线性临界值仍是小扰动稳定边界，不直接给出后临界振幅。</p>
@@ -3772,10 +3772,10 @@ H_g=\frac{\mathrm dC_L}{\mathrm d\alpha}+C_D.
 <section class="level4" data-number="9.10.6.3" id="参数振动与端点激励">
 <h4 class="anchored" data-anchor-id="参数振动与端点激励" data-number="9.10.6.3"><span class="header-section-number">9.10.6.3</span> 参数振动与端点激励</h4>
 <p>桥面或桥塔运动使索端点周期运动，并可能使索力随时间变化。对某一模态坐标 <span class="math inline">\(q\)</span>，教学性Mathieu型方程为</p>
-<p><span class="math display">\[
-\ddot q+2\zeta\omega_c\dot q
-+\omega_c^2[1+h_p\cos(\Omega t)]q
-=F_d(t),
+<p><span class="math display">\[
+\ddot q+2\zeta\omega_c\dot q
++\omega_c^2[1+h_p\cos(\Omega t)]q
+=F_d(t),
 \]</span></p>
 <p>其中 <span class="math inline">\(\omega_c\)</span> 为索模态圆频率（rad/s），<span class="math inline">\(h_p\)</span> 为无量纲参数调制幅值，<span class="math inline">\(\Omega\)</span> 为端点或索力调制圆频率（rad/s），<span class="math inline">\(F_d\)</span> 为直接激励项。某些频率关系附近可能出现参数不稳定，但实际边界受垂度、阻尼、非线性和端点运动方向影响，不能只用 <span class="math inline">\(\Omega\approx2\omega_c\)</span> 一条关系判定。</p>
 <p>索振监测应在索、桥面和桥塔同步布点，比较频率、相位和包络。若索响应只在桥面某模态显著时出现，且端点运动与索振具有稳定关系，参数或端点激励假设得到支持；若事件与降雨和特定风向高度相关，则应进一步检查风雨机制。</p>
@@ -3797,8 +3797,8 @@ H_g=\frac{\mathrm dC_L}{\mathrm d\alpha}+C_D.
 <section class="level4" data-number="9.10.7.1" id="桥塔沿高度风荷载">
 <h4 class="anchored" data-anchor-id="桥塔沿高度风荷载" data-number="9.10.7.1"><span class="header-section-number">9.10.7.1</span> 桥塔沿高度风荷载</h4>
 <p>桥塔分段 <span class="math inline">\(i\)</span> 的平均横风荷载可写为</p>
-<p><span class="math display">\[
-F_i=\frac12\rho U_i^2 C_{D,i}b_i\Delta z_i,
+<p><span class="math display">\[
+F_i=\frac12\rho U_i^2 C_{D,i}b_i\Delta z_i,
 \]</span></p>
 <p>式中，<span class="math inline">\(U_i\)</span> 为该段代表高度平均风速（m/s），<span class="math inline">\(C_{D,i}\)</span> 为相应截面和风向的阻力系数，<span class="math inline">\(b_i\)</span> 为迎风参考宽度（m），<span class="math inline">\(\Delta z_i\)</span> 为分段高度（m），<span class="math inline">\(F_i\)</span> 用 N。塔底平均弯矩为各段 <span class="math inline">\(F_i\)</span> 对塔底力矩之和。塔身截面、风向和邻近塔柱遮挡随高度变化时，应分段采用系数和坐标。</p>
 <p>脉动风作用下，塔的侧向和顺风响应可由多点风谱投影到塔模态。矩形、圆角或开孔塔柱可能出现横风涡振；施工模板、爬模和塔吊会形成新的局部气动外形。若塔顶风仪受塔身尾流影响，应布置冗余风向扇区或通过校准模型修正。</p>
@@ -3807,11 +3807,11 @@ F_i=\frac12\rho U_i^2 C_{D,i}b_i\Delta z_i,
 <h4 class="anchored" data-anchor-id="最大悬臂和合龙前状态" data-number="9.10.7.2"><span class="header-section-number">9.10.7.2</span> 最大悬臂和合龙前状态</h4>
 <p>大跨斜拉桥与悬索桥的合龙前梁端位移对风敏感。模型应包含实际已安装索、临时支承、吊机位置和桥面附属物。施工阶段模态需由该阶段切线刚度和质量计算，索力与几何刚度不得沿用成桥值。合龙口相对位移可分为低频平均偏移、抖振标准差和可能的窄带涡振分量，不宜无条件代数相加。</p>
 <p>吊装梁段的抗风还涉及吊索摆动和姿态控制。吊段作为六自由度刚体时，可写为</p>
-<p><span class="math display">\[
-\boldsymbol M_r\ddot{\boldsymbol q}
-+\boldsymbol C_r\dot{\boldsymbol q}
-+\boldsymbol K_r\boldsymbol q
-=\boldsymbol F_w(t)+\boldsymbol F_c(t),
+<p><span class="math display">\[
+\boldsymbol M_r\ddot{\boldsymbol q}
++\boldsymbol C_r\dot{\boldsymbol q}
++\boldsymbol K_r\boldsymbol q
+=\boldsymbol F_w(t)+\boldsymbol F_c(t),
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol q\)</span> 包含三向平动和三向转动，<span class="math inline">\(\boldsymbol F_c\)</span> 为吊索、导向索和控制设备作用。吊段气动力系数随姿态变化；现场允许风速、导向索力和设备能力由专项方案确定，本教材只给建模接口。</p>
 </section>
@@ -3835,29 +3835,29 @@ F_i=\frac12\rho U_i^2 C_{D,i}b_i\Delta z_i,
 <section class="level4" data-number="9.10.8.1" id="基本缩尺关系">
 <h4 class="anchored" data-anchor-id="基本缩尺关系" data-number="9.10.8.1"><span class="header-section-number">9.10.8.1</span> 基本缩尺关系</h4>
 <p>以下标 <span class="math inline">\(m\)</span>、<span class="math inline">\(p\)</span> 表示模型与原型，并定义尺度比 <span class="math inline">\(\lambda_X=X_m/X_p\)</span>。几何相似给出</p>
-<p><span class="math display">\[
-\lambda_L=\frac{L_m}{L_p}.
+<p><span class="math display">\[
+\lambda_L=\frac{L_m}{L_p}.
 \]</span></p>
 <p>选定风速比 <span class="math inline">\(\lambda_U\)</span> 后，时间和频率尺度为</p>
-<p><span class="math display">\[
-\lambda_t=\frac{\lambda_L}{\lambda_U},
-\qquad
-\lambda_f=\frac{\lambda_U}{\lambda_L}.
+<p><span class="math display">\[
+\lambda_t=\frac{\lambda_L}{\lambda_U},
+\qquad
+\lambda_f=\frac{\lambda_U}{\lambda_L}.
 \]</span></p>
 <p>若模型与原型空气密度相同，要使单位长度气动力与惯性相似，单位长度质量比约为</p>
-<p><span class="math display">\[
-\lambda_{m'}=\lambda_\rho\lambda_L^2,
+<p><span class="math display">\[
+\lambda_{m'}=\lambda_\rho\lambda_L^2,
 \]</span></p>
 <p>弯曲和扭转刚度比约为</p>
-<p><span class="math display">\[
-\lambda_{EI}=\lambda_{GJ}
-=\lambda_\rho\lambda_U^2\lambda_L^4.
+<p><span class="math display">\[
+\lambda_{EI}=\lambda_{GJ}
+=\lambda_\rho\lambda_U^2\lambda_L^4.
 \]</span></p>
 <p>这些关系基于相应线性梁与气动力尺度；全桥索、塔、集中质量和转动惯量需逐项推导。结构阻尼是无量纲量，但模型装置和测量系统会引入附加阻尼，应实测而非假定自动相似。</p>
 <p>若采用Froude相似并在相同重力加速度下，<span class="math inline">\(\lambda_U=\sqrt{\lambda_L}\)</span>。节段模型常根据约化风速、质量比和频率选择其他速度尺度。报告必须说明采用哪组相似准则及未满足项。</p>
 <p>雷诺数尺度为</p>
-<p><span class="math display">\[
-\lambda_{Re}=\frac{\lambda_U\lambda_L}{\lambda_\nu},
+<p><span class="math display">\[
+\lambda_{Re}=\frac{\lambda_U\lambda_L}{\lambda_\nu},
 \]</span></p>
 <p><span class="math inline">\(\nu\)</span> 为运动黏度（m²/s）。在同一空气介质中，缩小长度且风速受限时，模型雷诺数通常低于原型。尖角分离箱梁对某些Re效应可能不敏感，圆柱、圆角、栏杆和表面细节则可能敏感；应通过不同风速、表面处理或补充试验判断，不能一概忽略。</p>
 </section>
@@ -3875,13 +3875,13 @@ F_i=\frac12\rho U_i^2 C_{D,i}b_i\Delta z_i,
 <section class="level4" data-number="9.10.8.4" id="仪器链和不确定性">
 <h4 class="anchored" data-anchor-id="仪器链和不确定性" data-number="9.10.8.4"><span class="header-section-number">9.10.8.4</span> 仪器链和不确定性</h4>
 <p>试验量 <span class="math inline">\(Y=f(X_1,\ldots,X_n)\)</span> 的合成标准不确定度可按一阶传播写为</p>
-<p><span class="math display">\[
-u_c^2(Y)=
-\sum_i\left(\frac{\partial f}{\partial X_i}\right)^2u^2(X_i)
-+2\sum_{i&lt;j}
-\frac{\partial f}{\partial X_i}
-\frac{\partial f}{\partial X_j}
-u(X_i,X_j).
+<p><span class="math display">\[
+u_c^2(Y)=
+\sum_i\left(\frac{\partial f}{\partial X_i}\right)^2u^2(X_i)
++2\sum_{i&lt;j}
+\frac{\partial f}{\partial X_i}
+\frac{\partial f}{\partial X_j}
+u(X_i,X_j).
 \]</span></p>
 <p>来源包括风速标定、空气密度、模型尺寸、天平、角度、采样、零漂、重复性、阻塞修正和数据处理。系统误差不能通过延长记录自动消失；随机误差可随独立样本增加而降低，但强相关时间序列的有效样本数小于采样点数。</p>
 <p>风速—振幅曲线的不确定性不仅是纵坐标误差。风速、频率和模型尺寸共同影响约化风速，阻尼和质量影响响应分支；临界风速由插值或稳定边界识别，还包含工况间距与停机规则影响。报告可给重复试验散点和置信带，不宜只画光滑单线。</p>
@@ -3889,24 +3889,24 @@ u(X_i,X_j).
 <section class="level4" data-number="9.10.8.5" id="数值算例三a全桥模型尺度设计">
 <h4 class="anchored" data-anchor-id="数值算例三a全桥模型尺度设计" data-number="9.10.8.5"><span class="header-section-number">9.10.8.5</span> 数值算例三A：全桥模型尺度设计</h4>
 <p>设教学全桥模型几何比</p>
-<p><span class="math display">\[
-\lambda_L=\frac1{80},
+<p><span class="math display">\[
+\lambda_L=\frac1{80},
 \]</span></p>
 <p>原型目标风速 <span class="math inline">\(U_p=40\ \mathrm{m/s}\)</span>，风洞模型风速取 <span class="math inline">\(U_m=10\ \mathrm{m/s}\)</span>，故 <span class="math inline">\(\lambda_U=1/4\)</span>。则</p>
-<p><span class="math display">\[
-\lambda_t=\frac{1/80}{1/4}=\frac1{20},
-\qquad
-\lambda_f=20.
+<p><span class="math display">\[
+\lambda_t=\frac{1/80}{1/4}=\frac1{20},
+\qquad
+\lambda_f=20.
 \]</span></p>
 <p>原型 <span class="math inline">\(0.50\ \mathrm{Hz}\)</span> 模态在模型中目标频率为 <span class="math inline">\(10.0\ \mathrm{Hz}\)</span>。若原型主梁单位长度质量为 <span class="math inline">\(18,000\ \mathrm{kg/m}\)</span>，同一空气密度下模型目标为</p>
-<p><span class="math display">\[
-m_m'=18,000\left(\frac1{80}\right)^2
-=2.8125\ \mathrm{kg/m}.
+<p><span class="math display">\[
+m_m'=18,000\left(\frac1{80}\right)^2
+=2.8125\ \mathrm{kg/m}.
 \]</span></p>
 <p>若原型弯曲刚度 <span class="math inline">\(EI_p=5.0\times10^{12}\ \mathrm{N,m^2}\)</span>，模型目标刚度为</p>
-<p><span class="math display">\[
-EI_m=EI_p\lambda_U^2\lambda_L^4
-=7.63\times10^3\ \mathrm{N,m^2}.
+<p><span class="math display">\[
+EI_m=EI_p\lambda_U^2\lambda_L^4
+=7.63\times10^3\ \mathrm{N,m^2}.
 \]</span></p>
 <p>该数值量级说明模型壳体、传感器和导线质量不可忽略。若外形壳体本身已经超过目标质量或刚度，不能靠后续配重恢复全部相似。模型设计应在制造前建立质量和刚度预算，并在完成后以模态试验确认。</p>
 <p>原型和模型雷诺数比为 <span class="math inline">\(\lambda_{Re}=1/320\)</span>（暂取同一空气运动黏度）。因此该尺度方案不满足Re相似。试验报告应说明目标断面对Re的敏感性，并通过速度扫查、表面细节或其他证据评估缩尺影响。</p>
@@ -3927,8 +3927,8 @@ EI_m=EI_p\lambda_U^2\lambda_L^4
 <section class="level4" data-number="9.10.9.2" id="网格和近壁处理">
 <h4 class="anchored" data-anchor-id="网格和近壁处理" data-number="9.10.9.2"><span class="header-section-number">9.10.9.2</span> 网格和近壁处理</h4>
 <p>网格报告包含总单元数、壁面首层高度、法向层数、增长率、关键剪切层与尾流分辨率、质量指标。壁面无量纲距离 <span class="math inline">\(y^+\)</span> 为</p>
-<p><span class="math display">\[
-y^+=\frac{u_\tau y}{\nu},
+<p><span class="math display">\[
+y^+=\frac{u_\tau y}{\nu},
 \]</span></p>
 <p>其中 <span class="math inline">\(u_\tau\)</span> 为摩阻速度（m/s），<span class="math inline">\(y\)</span> 为首层中心距壁面距离（m），<span class="math inline">\(\nu\)</span> 为运动黏度（m²/s）。目标 <span class="math inline">\(y^+\)</span> 取决于湍流模型和壁面处理，不在本教材给统一值。尖角分离位置虽由几何限定，栏杆和圆角附近的近壁处理仍可改变力系数。</p>
 <p>网格独立性应系统改变特征尺寸，而非只改变总单元数。粗、中、细网格保持相似加密路线，并分别检查平均 <span class="math inline">\(C_D,C_L,C_M\)</span>、均方根、主频、压力分布和目标气动导数。不同输出的收敛速度可能不同。</p>
@@ -3941,39 +3941,39 @@ y^+=\frac{u_\tau y}{\nu},
 <section class="level4" data-number="9.10.9.4" id="数值验证和网格收敛">
 <h4 class="anchored" data-anchor-id="数值验证和网格收敛" data-number="9.10.9.4"><span class="header-section-number">9.10.9.4</span> 数值验证和网格收敛</h4>
 <p>设粗、中、细三个网格的特征尺寸比近似为 <span class="math inline">\(r&gt;1\)</span>，相应目标量为 <span class="math inline">\(\phi_3,\phi_2,\phi_1\)</span>（1为细网格）。当差值单调并进入渐近区时，可估计表观阶</p>
-<p><span class="math display">\[
-p=\frac{\ln| (\phi_3-\phi_2)/(\phi_2-\phi_1) |}{\ln r}.
+<p><span class="math display">\[
+p=\frac{\ln| (\phi_3-\phi_2)/(\phi_2-\phi_1) |}{\ln r}.
 \]</span></p>
 <p>Richardson外推为</p>
-<p><span class="math display">\[
-\phi_{\mathrm{ext}}
-=\phi_1+\frac{\phi_1-\phi_2}{r^p-1}.
+<p><span class="math display">\[
+\phi_{\mathrm{ext}}
+=\phi_1+\frac{\phi_1-\phi_2}{r^p-1}.
 \]</span></p>
 <p>网格收敛指数可按选定安全因子 <span class="math inline">\(F_s\)</span> 表示为</p>
-<p><span class="math display">\[
-GCI_{12}=F_s
-\frac{|(\phi_1-\phi_2)/\phi_1|}{r^p-1}.
+<p><span class="math display">\[
+GCI_{12}=F_s
+\frac{|(\phi_1-\phi_2)/\phi_1|}{r^p-1}.
 \]</span></p>
 <p><span class="math inline">\(F_s\)</span> 的选择、网格比不一致、振荡收敛和非渐近情形应按采用的V&amp;V程序处理；教材不把某一个安全因子固定为所有问题的规定值。</p>
 </section>
 <section class="level4" data-number="9.10.9.5" id="数值算例三b三网格阻力系数检查">
 <h4 class="anchored" data-anchor-id="数值算例三b三网格阻力系数检查" data-number="9.10.9.5"><span class="header-section-number">9.10.9.5</span> 数值算例三B：三网格阻力系数检查</h4>
 <p>构造同一二维教学断面三组系统加密网格，取 <span class="math inline">\(r=2\)</span>，计算得到</p>
-<p><span class="math display">\[
-C_{D,3}=1.300,
-\quad C_{D,2}=1.260,
-\quad C_{D,1}=1.245.
+<p><span class="math display">\[
+C_{D,3}=1.300,
+\quad C_{D,2}=1.260,
+\quad C_{D,1}=1.245.
 \]</span></p>
 <p>则</p>
-<p><span class="math display">\[
-p=\frac{\ln(0.040/0.015)}{\ln2}
-=1.415,
+<p><span class="math display">\[
+p=\frac{\ln(0.040/0.015)}{\ln2}
+=1.415,
 \]</span></p>
 <p>外推值</p>
-<p><span class="math display">\[
-C_{D,\mathrm{ext}}
-=1.245+\frac{1.245-1.260}{2^{1.415}-1}
-=1.236.
+<p><span class="math display">\[
+C_{D,\mathrm{ext}}
+=1.245+\frac{1.245-1.260}{2^{1.415}-1}
+=1.236.
 \]</span></p>
 <p>若仅作教学演示取 <span class="math inline">\(F_s=1.25\)</span>，则细网格 <span class="math inline">\(GCI_{12}\approx0.90\%\)</span>。该结果只表示该阻力系数序列的离散趋势，不证明升力谱、压力峰值或气动导数也收敛。应对每个目标量重复检查，并确认网格加密确实作用于分离和尾流区域。</p>
 <p>时间步验证可保持细网格不变，使用至少三组系统变化的 <span class="math inline">\(\Delta t\)</span>。统计误差通过把后处理记录分块，比较各块均值和谱。若离散误差小于统计波动，继续加密网格可能没有意义，应先延长统计时长。</p>
@@ -4002,47 +4002,47 @@ C_{D,\mathrm{ext}}
 <h4 class="anchored" data-anchor-id="结构措施" data-number="9.10.10.2"><span class="header-section-number">9.10.10.2</span> 结构措施</h4>
 <p>提高 <span class="math inline">\(EI\)</span> 或 <span class="math inline">\(GJ\)</span> 可减小静力变形并改变频率，但材料增加带来恒载、地震惯性和施工难度。改变弯扭频率比可能移动颤振边界，却不能只凭频率比判断稳定。横隔板、斜撑和索面布置改变空间振型；局部加劲也可能改善桥面畸变而对总体扭转作用有限。</p>
 <p>结构措施评价应从目标模态的广义刚度和质量出发。设措施前后为1、2，在模态形态变化不大时有</p>
-<p><span class="math display">\[
-\frac{f_2}{f_1}
-\approx\sqrt{
-\frac{K_2/M_2}{K_1/M_1}
-}.
+<p><span class="math display">\[
+\frac{f_2}{f_1}
+\approx\sqrt{
+\frac{K_2/M_2}{K_1/M_1}
+}.
 \]</span></p>
 <p>若振型明显改变，应重新计算广义量而不能使用该比例式。施工阶段只形成部分闭合截面时，最终加劲构造的效果可能尚未发挥，需要临时措施。</p>
 </section>
 <section class="level4" data-number="9.10.10.3" id="调谐质量阻尼器">
 <h4 class="anchored" data-anchor-id="调谐质量阻尼器" data-number="9.10.10.3"><span class="header-section-number">9.10.10.3</span> 调谐质量阻尼器</h4>
 <p>在主模态坐标 <span class="math inline">\(q\)</span> 上设置质量 <span class="math inline">\(m_t\)</span>、刚度 <span class="math inline">\(k_t\)</span>、阻尼 <span class="math inline">\(c_t\)</span> 的调谐质量阻尼器（TMD），可写为</p>
-<p><span class="math display">\[
-M\ddot q+C\dot q+Kq
-+c_t(\dot q-\dot x_t)+k_t(q-x_t)=Q(t),
+<p><span class="math display">\[
+M\ddot q+C\dot q+Kq
++c_t(\dot q-\dot x_t)+k_t(q-x_t)=Q(t),
 \]</span></p>
-<p><span class="math display">\[
-m_t\ddot x_t+c_t(\dot x_t-\dot q)
-+k_t(x_t-q)=0.
+<p><span class="math display">\[
+m_t\ddot x_t+c_t(\dot x_t-\dot q)
++k_t(x_t-q)=0.
 \]</span></p>
 <p><span class="math inline">\(q,x_t\)</span> 用 m，<span class="math inline">\(M,m_t\)</span> 用 kg，<span class="math inline">\(K,k_t\)</span> 用 N/m，<span class="math inline">\(C,c_t\)</span> 用 N·s/m。质量比 <span class="math inline">\(\mu=m_t/M\)</span>、调谐频率 <span class="math inline">\(f_t=(2\pi)^{-1}\sqrt{k_t/m_t}\)</span> 和阻尼比 <span class="math inline">\(\zeta_t=c_t/(2\sqrt{k_tm_t})\)</span> 决定控制效果。实际设计还受安装位置振型幅值、可用质量、行程、碰撞限位、温度、摩擦和耐久影响。</p>
 <p><strong>教学计算。</strong> 沿用 <span class="math inline">\(M=2.20\times10^6\ \mathrm{kg}\)</span>、<span class="math inline">\(f=0.55\ \mathrm{Hz}\)</span> 的模态，暂取教学质量比 <span class="math inline">\(\mu=0.02\)</span>，则</p>
-<p><span class="math display">\[
-m_t=44,000\ \mathrm{kg}.
+<p><span class="math display">\[
+m_t=44,000\ \mathrm{kg}.
 \]</span></p>
 <p>若先按 <span class="math inline">\(f_t=f\)</span> 调谐，则</p>
-<p><span class="math display">\[
-k_t=m_t(2\pi f_t)^2
-=5.25\times10^5\ \mathrm{N/m}.
+<p><span class="math display">\[
+k_t=m_t(2\pi f_t)^2
+=5.25\times10^5\ \mathrm{N/m}.
 \]</span></p>
 <p>再取教学装置阻尼比 <span class="math inline">\(\zeta_t=0.10\)</span>，有</p>
-<p><span class="math display">\[
-c_t=2\zeta_t m_t(2\pi f_t)
-=3.04\times10^4\ \mathrm{N\,s/m}.
+<p><span class="math display">\[
+c_t=2\zeta_t m_t(2\pi f_t)
+=3.04\times10^4\ \mathrm{N\,s/m}.
 \]</span></p>
 <p>这些值只用于建立两自由度模型，不是最优参数或工程推荐值。下一步应对结构频率和阻尼不确定性扫频，检查装置行程、连接力和失谐；若目标响应为非线性涡振，线性随机响应最优参数未必适用。</p>
 </section>
 <section class="level4" data-number="9.10.10.4" id="黏滞摩擦与半主动装置">
 <h4 class="anchored" data-anchor-id="黏滞摩擦与半主动装置" data-number="9.10.10.4"><span class="header-section-number">9.10.10.4</span> 黏滞、摩擦与半主动装置</h4>
 <p>黏滞阻尼器常用力—速关系</p>
-<p><span class="math display">\[
-F_d=c_d|v|^{n_d}\operatorname{sgn}(v),
+<p><span class="math display">\[
+F_d=c_d|v|^{n_d}\operatorname{sgn}(v),
 \]</span></p>
 <p>其中 <span class="math inline">\(F_d\)</span> 用 N，<span class="math inline">\(v\)</span> 用 m/s，<span class="math inline">\(c_d\)</span> 的单位随指数 <span class="math inline">\(n_d\)</span> 改变。产品试验应覆盖目标速度、行程、温度和循环；连接构件与支承反力进入结构设计。摩擦装置具有起滑阈值和滞回，微幅风振下可能不工作。半主动装置根据测量调整参数，但需要电源、传感、失效安全和控制时延评估。</p>
 <p>拉索阻尼器的安装位置与索振型有关。以某一索模态位移 <span class="math inline">\(w_r(s)\)</span> 为例，阻尼器位置 <span class="math inline">\(s_d\)</span> 处模态速度决定耗能；位于节点附近时效率低。阻尼器和交叉索会改变边界及频率，应以安装后实测确认。</p>
@@ -4050,9 +4050,9 @@ F_d=c_d|v|^{n_d}\operatorname{sgn}(v),
 <section class="level4" data-number="9.10.10.5" id="多状态与稳健性">
 <h4 class="anchored" data-anchor-id="多状态与稳健性" data-number="9.10.10.5"><span class="header-section-number">9.10.10.5</span> 多状态与稳健性</h4>
 <p>控制方案至少覆盖成桥常态、检修设备状态、施工不完整断面和装置失效状态。可把设计变量记为 <span class="math inline">\(\boldsymbol x\)</span>，不确定参数为 <span class="math inline">\(\boldsymbol\theta\)</span>，响应约束写为</p>
-<p><span class="math display">\[
-g_j(\boldsymbol x,\boldsymbol\theta,s)\le0,
-\qquad s\in\mathcal S,
+<p><span class="math display">\[
+g_j(\boldsymbol x,\boldsymbol\theta,s)\le0,
+\qquad s\in\mathcal S,
 \]</span></p>
 <p><span class="math inline">\(s\)</span> 为结构与运营状态。强制约束不进入加权总分抵消；满足约束后，再比较成本、维护、碳排放和施工。对频率、阻尼、风攻角和气动导数设置合理扰动，检查措施排序是否稳定。</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -4060,8 +4060,8 @@ g_j(\boldsymbol x,\boldsymbol\theta,s)\le0,
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -4085,10 +4085,10 @@ g_j(\boldsymbol x,\boldsymbol\theta,s)\le0,
 <h4 class="anchored" data-anchor-id="事件分段和特征量" data-number="9.10.11.2"><span class="header-section-number">9.10.11.2</span> 事件分段和特征量</h4>
 <p>以滑动窗计算平均风、风向、湍流强度、响应均方根、峰值和频谱。窗口内若风向突变或施工事件发生，应分段处理。涡振候选事件要求响应窄带、频率锁定和空间振型相互支持；抖振候选事件通常呈随机宽带输入经模态放大；颤振预警关注阻尼随风速下降和模态耦合，不能等待无界振幅出现后才判断。</p>
 <p>桥面两侧竖向加速度 <span class="math inline">\(a_L,a_R\)</span> 可构造对称与反对称分量：</p>
-<p><span class="math display">\[
-a_h=\frac{a_L+a_R}{2},
-\qquad
-a_\alpha=\frac{a_L-a_R}{B_m},
+<p><span class="math display">\[
+a_h=\frac{a_L+a_R}{2},
+\qquad
+a_\alpha=\frac{a_L-a_R}{B_m},
 \]</span></p>
 <p>其中 <span class="math inline">\(B_m\)</span> 为两测点横向距离（m），<span class="math inline">\(a_h\)</span> 用 m/s²，<span class="math inline">\(a_\alpha\)</span> 近似为角加速度 rad/s²。公式假定截面近似刚体；宽桥面畸变明显时需增加测点和局部模态。</p>
 </section>
@@ -4096,15 +4096,15 @@ a_\alpha=\frac{a_L-a_R}{B_m},
 <h4 class="anchored" data-anchor-id="模态和阻尼识别" data-number="9.10.11.3"><span class="header-section-number">9.10.11.3</span> 模态和阻尼识别</h4>
 <p>多点输出仅系统识别可从互谱矩阵提取模态频率、振型和阻尼。识别前检查风输入是否近似平稳、目标模态是否充分激励及测点是否覆盖振型。多个方法的差异应保留；算法阶次过高可能把噪声拟合为虚假模态。</p>
 <p>设观测谱矩阵为 <span class="math inline">\(\widehat{\boldsymbol S}_y(f)\)</span>，模型预测为 <span class="math inline">\(\boldsymbol S_y(f;\boldsymbol\theta)\)</span>，可通过加权误差形成参数候选：</p>
-<p><span class="math display">\[
-J(\boldsymbol\theta)=
-\sum_{f\in\mathcal F}
-\left\|
-\boldsymbol W_f[
-\widehat{\boldsymbol S}_y(f)-
-\boldsymbol S_y(f;\boldsymbol\theta)]
-\boldsymbol W_f^{\mathrm T}
-\right\|_F^2.
+<p><span class="math display">\[
+J(\boldsymbol\theta)=
+\sum_{f\in\mathcal F}
+\left\|
+\boldsymbol W_f[
+\widehat{\boldsymbol S}_y(f)-
+\boldsymbol S_y(f;\boldsymbol\theta)]
+\boldsymbol W_f^{\mathrm T}
+\right\|_F^2.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol\theta\)</span> 可含频率、阻尼和传感器尺度，<span class="math inline">\(\mathcal F\)</span> 为目标频带。识别范围、权重和初值改变时结果应稳定；否则只报告区间或多解。</p>
 </section>
@@ -4112,10 +4112,10 @@ J(\boldsymbol\theta)=
 <h4 class="anchored" data-anchor-id="风场响应联合更新" data-number="9.10.11.4"><span class="header-section-number">9.10.11.4</span> 风场—响应联合更新</h4>
 <p>模型更新不能只调结构阻尼来拟合响应。抖振偏差可能来自风谱、空间相干、气动导纳、气动力系数、结构模态或传感器。可按层级更新：先用风仪确认输入；再以低风数据确认结构模态；随后以强风数据确认气动力或响应模型；最后用留出事件验证。</p>
 <p>贝叶斯表达为</p>
-<p><span class="math display">\[
-p(\boldsymbol\theta\mid\boldsymbol y)
-\propto p(\boldsymbol y\mid\boldsymbol\theta)
-p(\boldsymbol\theta).
+<p><span class="math display">\[
+p(\boldsymbol\theta\mid\boldsymbol y)
+\propto p(\boldsymbol y\mid\boldsymbol\theta)
+p(\boldsymbol\theta).
 \]</span></p>
 <p>似然应含测量与模型差异，先验来自设计、风洞和低风识别。后验分布反映在所用模型下的参数知识，不是“真实参数”。用同一事件拟合和宣称验证会高估可信度。</p>
 </section>
@@ -4132,8 +4132,8 @@ p(\boldsymbol\theta).
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -4229,31 +4229,31 @@ p(\boldsymbol\theta).
 <p>本章数字资源应共用一个数据协议。桥位风资源输出风场版本，三分力资源输出断面版本，结构资源输出状态与模态版本，试验和CFD资源输出验证状态，控制与监测资源记录设计改变和实桥证据。上游数据改变后，下游结果自动失效，但历史版本保留。</p>
 <section class="level4" data-number="9.11.0.1" id="资源输入协议">
 <h4 class="anchored" data-anchor-id="资源输入协议" data-number="9.11.0.1"><span class="header-section-number">9.11.0.1</span> 资源输入协议</h4>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="fu">wind_case</span><span class="kw">:</span></span>
-<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a><span class="at">  </span><span class="fu">site_id</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a><span class="at">  </span><span class="fu">event_id</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a><span class="at">  </span><span class="fu">averaging_time_s</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a><span class="at">  </span><span class="fu">reference_height_m</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a><span class="at">  </span><span class="fu">direction_definition</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a><span class="at">  </span><span class="fu">coordinate_system</span><span class="kw">:</span><span class="at"> bridge-axis</span></span>
-<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a><span class="at">  </span><span class="fu">data_source</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a><span class="at">  </span><span class="fu">licence</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a><span class="fu">deck_state</span><span class="kw">:</span></span>
-<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a><span class="at">  </span><span class="fu">geometry_version</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a><span class="at">  </span><span class="fu">appendage_state</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-13"><a aria-hidden="true" href="#cb2-13" tabindex="-1"></a><span class="at">  </span><span class="fu">construction_stage</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-14"><a aria-hidden="true" href="#cb2-14" tabindex="-1"></a><span class="fu">aerodynamics</span><span class="kw">:</span></span>
-<span id="cb2-15"><a aria-hidden="true" href="#cb2-15" tabindex="-1"></a><span class="at">  </span><span class="fu">coefficient_version</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-16"><a aria-hidden="true" href="#cb2-16" tabindex="-1"></a><span class="at">  </span><span class="fu">moment_reference</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-17"><a aria-hidden="true" href="#cb2-17" tabindex="-1"></a><span class="at">  </span><span class="fu">attack_angle_unit</span><span class="kw">:</span><span class="at"> rad</span></span>
-<span id="cb2-18"><a aria-hidden="true" href="#cb2-18" tabindex="-1"></a><span class="at">  </span><span class="fu">valid_range</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-19"><a aria-hidden="true" href="#cb2-19" tabindex="-1"></a><span class="fu">structure</span><span class="kw">:</span></span>
-<span id="cb2-20"><a aria-hidden="true" href="#cb2-20" tabindex="-1"></a><span class="at">  </span><span class="fu">model_version</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-21"><a aria-hidden="true" href="#cb2-21" tabindex="-1"></a><span class="at">  </span><span class="fu">modal_normalization</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-22"><a aria-hidden="true" href="#cb2-22" tabindex="-1"></a><span class="at">  </span><span class="fu">damping_source</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb2-23"><a aria-hidden="true" href="#cb2-23" tabindex="-1"></a><span class="fu">verification</span><span class="kw">:</span></span>
-<span id="cb2-24"><a aria-hidden="true" href="#cb2-24" tabindex="-1"></a><span class="at">  </span><span class="fu">status</span><span class="kw">:</span><span class="at"> unverified</span></span>
-<span id="cb2-25"><a aria-hidden="true" href="#cb2-25" tabindex="-1"></a><span class="at">  </span><span class="fu">evidence</span><span class="kw">:</span><span class="at"> </span><span class="kw">[]</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="fu">wind_case</span><span class="kw">:</span></span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a><span class="at">  </span><span class="fu">site_id</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a><span class="at">  </span><span class="fu">event_id</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a><span class="at">  </span><span class="fu">averaging_time_s</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a><span class="at">  </span><span class="fu">reference_height_m</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a><span class="at">  </span><span class="fu">direction_definition</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a><span class="at">  </span><span class="fu">coordinate_system</span><span class="kw">:</span><span class="at"> bridge-axis</span></span>
+<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a><span class="at">  </span><span class="fu">data_source</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a><span class="at">  </span><span class="fu">licence</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a><span class="fu">deck_state</span><span class="kw">:</span></span>
+<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a><span class="at">  </span><span class="fu">geometry_version</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a><span class="at">  </span><span class="fu">appendage_state</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-13"><a aria-hidden="true" href="#cb2-13" tabindex="-1"></a><span class="at">  </span><span class="fu">construction_stage</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-14"><a aria-hidden="true" href="#cb2-14" tabindex="-1"></a><span class="fu">aerodynamics</span><span class="kw">:</span></span>
+<span id="cb2-15"><a aria-hidden="true" href="#cb2-15" tabindex="-1"></a><span class="at">  </span><span class="fu">coefficient_version</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-16"><a aria-hidden="true" href="#cb2-16" tabindex="-1"></a><span class="at">  </span><span class="fu">moment_reference</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-17"><a aria-hidden="true" href="#cb2-17" tabindex="-1"></a><span class="at">  </span><span class="fu">attack_angle_unit</span><span class="kw">:</span><span class="at"> rad</span></span>
+<span id="cb2-18"><a aria-hidden="true" href="#cb2-18" tabindex="-1"></a><span class="at">  </span><span class="fu">valid_range</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-19"><a aria-hidden="true" href="#cb2-19" tabindex="-1"></a><span class="fu">structure</span><span class="kw">:</span></span>
+<span id="cb2-20"><a aria-hidden="true" href="#cb2-20" tabindex="-1"></a><span class="at">  </span><span class="fu">model_version</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-21"><a aria-hidden="true" href="#cb2-21" tabindex="-1"></a><span class="at">  </span><span class="fu">modal_normalization</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-22"><a aria-hidden="true" href="#cb2-22" tabindex="-1"></a><span class="at">  </span><span class="fu">damping_source</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb2-23"><a aria-hidden="true" href="#cb2-23" tabindex="-1"></a><span class="fu">verification</span><span class="kw">:</span></span>
+<span id="cb2-24"><a aria-hidden="true" href="#cb2-24" tabindex="-1"></a><span class="at">  </span><span class="fu">status</span><span class="kw">:</span><span class="at"> unverified</span></span>
+<span id="cb2-25"><a aria-hidden="true" href="#cb2-25" tabindex="-1"></a><span class="at">  </span><span class="fu">evidence</span><span class="kw">:</span><span class="at"> </span><span class="kw">[]</span></span>
 <span id="cb2-26"><a aria-hidden="true" href="#cb2-26" tabindex="-1"></a><span class="fu">review_status</span><span class="kw">:</span><span class="at"> teaching</span></span></code></pre></div><button class="code-copy-button" title="复制到剪贴板"><i class="bi"></i></button></div>
 <p>字段为空时资源可在教学模式运行，但输出不得标记为工程结论。外部数据同时保存下载链接、访问日期、许可和原始校验值；实桥项目数据保存脱敏与授权记录。</p>
 </section>
@@ -4526,8 +4526,8 @@ p(\boldsymbol\theta).
 <section class="level4" data-number="9.11.2.3" id="第二步涡振可能先于设计强风出现">
 <h4 class="anchored" data-anchor-id="第二步涡振可能先于设计强风出现" data-number="9.11.2.3"><span class="header-section-number">9.11.2.3</span> 第二步：涡振可能先于设计强风出现</h4>
 <p>由 <span class="math inline">\(St=0.12\)</span>、<span class="math inline">\(D=3.0\ \mathrm m\)</span> 和 <span class="math inline">\(f_h=0.55\ \mathrm{Hz}\)</span>，教学涡振中心风速为</p>
-<p><span class="math display">\[
-U_{V,0}=13.75\ \mathrm{m/s}.
+<p><span class="math display">\[
+U_{V,0}=13.75\ \mathrm{m/s}.
 \]</span></p>
 <p>它低于教学桥面参考风速，但二者含义不同：前者是频率接近的常遇风速位置，后者是指定概率和转换链下的参考风。涡振控制的是有限风速区间的振幅、加速度、疲劳或运营感受，不因为低于极值风便可忽略；也不能因为中心风速低便判断结构不安全。</p>
 <p>所需后续证据为升降风弹性节段试验、多个阻尼和攻角、完整附属物状态以及锁定区振幅。若导流构造或附加阻尼用于控制涡振，应同时检查其对平均三分力和颤振的影响。</p>
@@ -4540,15 +4540,15 @@ U_{V,0}=13.75\ \mathrm{m/s}.
 <section class="level4" data-number="9.11.2.5" id="第四步静力发散筛查">
 <h4 class="anchored" data-anchor-id="第四步静力发散筛查" data-number="9.11.2.5"><span class="header-section-number">9.11.2.5</span> 第四步：静力发散筛查</h4>
 <p>为检验静力发散模块，另给教学广义扭转刚度</p>
-<p><span class="math display">\[
-K_\theta=5.0\times10^7\ \mathrm{N\,m/rad},
+<p><span class="math display">\[
+K_\theta=5.0\times10^7\ \mathrm{N\,m/rad},
 \]</span></p>
 <p>有效长度 <span class="math inline">\(L_e=420\ \mathrm m\)</span>，零攻角附近教学力矩系数斜率 <span class="math inline">\(C_{M\alpha}=0.030\ \mathrm{rad^{-1}}\)</span>。代入单自由度公式得</p>
-<p><span class="math display">\[
-U_D=
-\sqrt{\frac{2K_\theta}
-{\rho B^2L_eC_{M\alpha}}}
-=84.8\ \mathrm{m/s}.
+<p><span class="math display">\[
+U_D=
+\sqrt{\frac{2K_\theta}
+{\rho B^2L_eC_{M\alpha}}}
+=84.8\ \mathrm{m/s}.
 \]</span></p>
 <p>这是按单一斜率、单模态和线性结构得到的教学估计。它高于后述68 m/s颤振候选点，说明该教学模型中动态不稳定可能先于静力发散控制；不能由此认为静风变形无关，因为平均扭转会改变颤振所处攻角。若系数斜率来自按度拟合而误作按rad，结果将产生严重错误，因此界面必须显示导数单位。</p>
 </section>
@@ -4632,8 +4632,8 @@ U_D=
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -4700,8 +4700,8 @@ U_D=
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -5103,410 +5103,410 @@ U_D=
 </section>
 <p class="public-edition-note"><a href="../publication-images.html">公开预览 · 图片来源与版本说明</a></p></main> <!-- /main -->
 
-<script>
-(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
-
+<script>
+(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+
 </script>
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "已复制");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "已复制");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
-          }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
-  });
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
   </script>
 <nav class="page-navigation">
 <div class="nav-page nav-page-previous">

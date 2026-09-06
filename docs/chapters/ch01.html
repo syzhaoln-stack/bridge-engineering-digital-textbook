@@ -5,21 +5,21 @@
 <meta content="quarto-1.9.38" name="generator"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
 <title>1  桥梁工程与智能设计概论 – 桥梁工程智能设计</title>
-<style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
 </style>
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
@@ -39,61 +39,61 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
 <link append-hash="true" data-mode="light" href="../site_libs/bootstrap/bootstrap-c614dc152840027ed1d225942eae4f22.min.css" id="quarto-bootstrap" rel="stylesheet"/>
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "没有结果",
-    "search-matching-documents-text": "匹配的文档",
-    "search-copy-link-title": "复制搜索链接",
-    "search-hide-matches-text": "隐藏其它匹配结果",
-    "search-more-match-text": "更多匹配结果",
-    "search-more-matches-text": "更多匹配结果",
-    "search-clear-button-title": "清除",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "取消",
-    "search-submit-button-title": "提交",
-    "search-label": "搜索"
-  }
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
 </script>
 <link href="../styles.css" rel="stylesheet"/>
 
@@ -273,7 +273,7 @@ window.Quarto = {
 <li class="sidebar-item">
 <div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../legacy-tools.html">
-<span class="menu-text">从旧版接续的两个实验</span></a>
+<span class="menu-text">从旧版接续的实验与游戏</span></a>
 </div>
 </li>
 </ul>
@@ -338,185 +338,185 @@ window.Quarto = {
 <div class="core-route" id="core-route">
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry">
-<p>
-先从一个看得见的问题开始
+<p>
+先从一个看得见的问题开始
 </p>
-<h3 class="anchored">
-把桥按原样放大两倍，它会下沉多少？
+<h3 class="anchored">
+把桥按原样放大两倍，它会下沉多少？
 </h3>
-<p>
-把全尺寸放大比例从 1 调到 2，先比较自重造成的竖向位移。
+<p>
+把全尺寸放大比例从 1 调到 2，先比较自重造成的竖向位移。
 </p>
 <a href="../interactive/learning-map.html?chapter=ch01">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
-<h2 class="anchored">
-本章的核心思考
+<h2 class="anchored">
+本章的核心思考
 </h2>
-<p class="core-thesis">
-先判断体系与尺度，再进入桥例。
+<p class="core-thesis">
+先判断体系与尺度，再进入桥例。
 </p>
 <ol>
-<li>
-把桥梁简化为荷载、传力构件、连接与支承。
+<li>
+把桥梁简化为荷载、传力构件、连接与支承。
 </li>
-<li>
-用合力、合矩检查简化是否保真。
+<li>
+用合力、合矩检查简化是否保真。
 </li>
-<li>
-声明尺度改变时保持什么，再判断控制指标。
+<li>
+声明尺度改变时保持什么，再判断控制指标。
 </li>
 </ol>
 <div class="core-analogy">
-<h3 class="anchored">
-跨课程类比
+<h3 class="anchored">
+跨课程类比
 </h3>
-<p>
-材料力学的平衡与量纲 → 桥型选择与规模判断
+<p>
+材料力学的平衡与量纲 → 桥型选择与规模判断
 </p>
 <p>
-<strong>反例与边界：</strong>同一外形比例并不能保证应力、变形、频率或风洞相似。
+<strong>反例与边界：</strong>同一外形比例并不能保证应力、变形、频率或风洞相似。
 </p>
 </div>
-<p>
-建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
+<p>
+建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
 </p>
 <div class="core-unit-grid">
 <article>
-<p class="core-tag">
-C01U01 · 课堂核心
+<p class="core-tag">
+C01U01 · 课堂核心
 </p>
-<h3 class="anchored">
-移动荷载，先守住平衡
+<h3 class="anchored">
+移动荷载，先守住平衡
 </h3>
-<p>
-荷载移动时左右反力改变，合力与合矩仍须守恒。
+<p>
+荷载移动时左右反力改变，合力与合矩仍须守恒。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C01U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U01&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C01U02 · 课前/课后迁移
+<p class="core-tag">
+C01U02 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-从梁式弯曲到拱的轴向传力
+<h3 class="anchored">
+从梁式弯曲到拱的轴向传力
 </h3>
-<p>
-抬高拱轴可以减少给定均布荷载下所需水平推力，但拱脚仍要传递水平力。
+<p>
+抬高拱轴可以减少给定均布荷载下所需水平推力，但拱脚仍要传递水平力。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C01U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U02&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C01U03 · 课前/课后迁移
+<p class="core-tag">
+C01U03 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-模型为何必须声明边界
+<h3 class="anchored">
+模型为何必须声明边界
 </h3>
-<p>
-相同温升下，从自由伸长到完全约束，变形逐渐转换为内力。
+<p>
+相同温升下，从自由伸长到完全约束，变形逐渐转换为内力。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C01U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U03&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C01U04 · 课堂核心
+<p class="core-tag">
+C01U04 · 课堂核心
 </p>
-<h3 class="anchored">
-长度、面积、体积不是同一种增长
+<h3 class="anchored">
+长度、面积、体积不是同一种增长
 </h3>
-<p>
-全尺寸放大时，长度、面积与体积分别按一次、二次和三次方变化。
+<p>
+全尺寸放大时，长度、面积与体积分别按一次、二次和三次方变化。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C01U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U04&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C01U05 · 课前/课后迁移
+<p class="core-tag">
+C01U05 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-截面惯性矩不等于整体刚度
+<h3 class="anchored">
+截面惯性矩不等于整体刚度
 </h3>
-<p>
-惯性矩按四次方增长，但几何相似梁的横向位移刚度只按一次方增长。
+<p>
+惯性矩按四次方增长，但几何相似梁的横向位移刚度只按一次方增长。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C01U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U05&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C01U06 · 课堂核心
+<p class="core-tag">
+C01U06 · 课堂核心
 </p>
-<h3 class="anchored">
-自重为何惩罚大跨度
+<h3 class="anchored">
+自重为何惩罚大跨度
 </h3>
-<p>
-相似放大时，自重应力随尺度一次增长，相对挠度也随一次增长。
+<p>
+相似放大时，自重应力随尺度一次增长，相对挠度也随一次增长。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C01U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U06&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C01U07 · 课前/课后迁移
+<p class="core-tag">
+C01U07 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-同样放大，换荷载便换结论
+<h3 class="anchored">
+同样放大，换荷载便换结论
 </h3>
-<p>
-保持集中力不变时，相似放大的应力反而按尺度平方的倒数下降。
+<p>
+保持集中力不变时，相似放大的应力反而按尺度平方的倒数下降。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C01U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U07&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C01U08 · 课前/课后迁移
+<p class="core-tag">
+C01U08 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-同一荷载，刚度决定分工
+<h3 class="anchored">
+同一荷载，刚度决定分工
 </h3>
-<p>
-并联弹簧位移相同，较硬的支承分到较多荷载。
+<p>
+并联弹簧位移相同，较硬的支承分到较多荷载。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C01U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U08&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C01U09 · 课前/课后迁移
+<p class="core-tag">
+C01U09 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-方案比较先看敏感性
+<h3 class="anchored">
+方案比较先看敏感性
 </h3>
-<p>
-梁高增加同时改变惯性矩、应力与挠度，不能只比较一个尺寸。
+<p>
+梁高增加同时改变惯性矩、应力与挠度，不能只比较一个尺寸。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C01U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U09&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C01U10 · 课前/课后迁移
+<p class="core-tag">
+C01U10 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-把复杂模型交给一个极限情形
+<h3 class="anchored">
+把复杂模型交给一个极限情形
 </h3>
-<p>
-网格加密使数值误差减小，但不能证明原来的边界条件正确。
+<p>
+网格加密使数值误差减小，但不能证明原来的边界条件正确。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C01U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C01U10&amp;view=video" target="_blank">观看短视频</a>
@@ -544,15 +544,15 @@ C01U10 · 课前/课后迁移
 <figure class="chapter-video-card figure">
 <video controls="" playsinline="" poster="../assets/videos/manim/posters/M01_force_path.png" preload="metadata" src="../assets/videos/manim/M01_force_path.mp4">
 </video>
-<figcaption>
-M01　结构体系与力流
+<figcaption>
+M01　结构体系与力流
 </figcaption>
 </figure>
 <figure class="chapter-video-card figure">
 <video controls="" playsinline="" poster="../assets/videos/manim/posters/M02_scale_effect.png" preload="metadata" src="../assets/videos/manim/M02_scale_effect.mp4">
 </video>
-<figcaption>
-M02　跨径与尺度效应
+<figcaption>
+M02　跨径与尺度效应
 </figcaption>
 </figure>
 </div>
@@ -584,8 +584,8 @@ M02　跨径与尺度效应
 <div aria-describedby="fig-ch1-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 1.1: 桥梁基本组成。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 1.1: 桥梁基本组成
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 1.1: 桥梁基本组成
 </figcaption>
 </figure>
 </div>
@@ -593,10 +593,10 @@ M02　跨径与尺度效应
 <p><strong>初稿图源说明。</strong> <a class="quarto-xref" href="#fig-ch1-components">图 <span>1.1</span></a> 暂引自刘龄嘉、王晓明主编《桥梁工程》（第2版）在线教材原图1-1-5“桥梁基本组成”，本地源文件为“qlgc-1-1-5.jpg”。该图仅用于内部初稿的内容定位和版式验证；正式出版前应取得授权，或由课程组依据规范术语重新绘制。</p>
 </div>
 <p><a class="quarto-xref" href="#fig-ch1-components">图 <span>1.1</span></a> 同时表达了构件层次和传力顺序。对竖向作用，可将基本传力链概括为</p>
-<p><span class="math display">\[
-\text{桥面系}\rightarrow \text{桥跨承重结构}\rightarrow
-\text{支座}\rightarrow \text{墩台}\rightarrow
-\text{基础}\rightarrow \text{地基}.
+<p><span class="math display">\[
+\text{桥面系}\rightarrow \text{桥跨承重结构}\rightarrow
+\text{支座}\rightarrow \text{墩台}\rightarrow
+\text{基础}\rightarrow \text{地基}.
 \]</span></p>
 <p>这条传力链是理解桥梁体系的起点。任何模型简化都应说明传力链中的哪些构件被显式建立、哪些作用被等效处理、哪些局部效应未被考虑。</p>
 </section>
@@ -634,8 +634,8 @@ M02　跨径与尺度效应
 <div aria-describedby="fig-ch01-forcepath-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/forcepath.svg" style="width:88.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch01-forcepath-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 1.2: 荷载位置与支承反力的静态基准图
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch01-forcepath-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 1.2: 荷载位置与支承反力的静态基准图
 </figcaption>
 </figure>
 </div>
@@ -653,8 +653,8 @@ M02　跨径与尺度效应
 <div aria-describedby="fig-ch1-beam-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 1.3: 梁式桥的若干体系。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-beam-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 1.3: 梁式桥的若干体系
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-beam-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 1.3: 梁式桥的若干体系
 </figcaption>
 </figure>
 </div>
@@ -671,8 +671,8 @@ M02　跨径与尺度效应
 <div aria-describedby="fig-ch1-arch-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 1.4: 拱式桥的基本受力与构造形式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-arch-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 1.4: 拱式桥的基本受力与构造形式
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-arch-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 1.4: 拱式桥的基本受力与构造形式
 </figcaption>
 </figure>
 </div>
@@ -689,8 +689,8 @@ M02　跨径与尺度效应
 <div aria-describedby="fig-ch1-stay-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 1.5: 斜拉桥的基本组成。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-stay-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 1.5: 斜拉桥的基本组成
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-stay-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 1.5: 斜拉桥的基本组成
 </figcaption>
 </figure>
 </div>
@@ -707,8 +707,8 @@ M02　跨径与尺度效应
 <div aria-describedby="fig-ch1-suspension-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 1.6: 自锚式悬索桥工程示例。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-suspension-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 1.6: 自锚式悬索桥工程示例
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-suspension-system-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 1.6: 自锚式悬索桥工程示例
 </figcaption>
 </figure>
 </div>
@@ -797,8 +797,8 @@ M02　跨径与尺度效应
 <div aria-describedby="fig-ch1-elevation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 1.7: 梁桥立面规划示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-elevation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 1.7: 梁桥立面规划示意
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-elevation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 1.7: 梁桥立面规划示意
 </figcaption>
 </figure>
 </div>
@@ -815,8 +815,8 @@ M02　跨径与尺度效应
 <div aria-describedby="fig-ch1-cross-section-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 1.8: 单幅桥和双幅桥的箱梁横断面布置。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-cross-section-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 1.8: 单幅桥和双幅桥的箱梁横断面布置
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-cross-section-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 1.8: 单幅桥和双幅桥的箱梁横断面布置
 </figcaption>
 </figure>
 </div>
@@ -829,8 +829,8 @@ M02　跨径与尺度效应
 <div aria-describedby="fig-ch1-section-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 1.9: 不同材料与构造形成的桥跨横截面。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-section-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 1.9: 不同材料与构造形成的桥跨横截面
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch1-section-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 1.9: 不同材料与构造形成的桥跨横截面
 </figcaption>
 </figure>
 </div>
@@ -842,8 +842,8 @@ M02　跨径与尺度效应
 <h4 class="anchored" data-anchor-id="平面立面与横断面的联动" data-number="1.3.0.4"><span class="header-section-number">1.3.0.4</span> 平面、立面与横断面的联动</h4>
 <p>总体设计中的三个视图不是相互独立的。平面曲线会改变横坡和腹板布置；桥面宽度会影响梁高、横向刚度和基础反力；立面跨径与墩高会影响施工方法和下部结构刚度。数字化总体模型应使平、纵、横参数由同一数据源控制，以避免不同图纸间出现不一致。</p>
 <p>可将总体布置的基本约束写为</p>
-<p><span class="math display">\[
-\boldsymbol{c}(\boldsymbol{x})\leq \boldsymbol{0},
+<p><span class="math display">\[
+\boldsymbol{c}(\boldsymbol{x})\leq \boldsymbol{0},
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol{x}\)</span>为桥位、跨径、梁高、桥宽、墩位和基础等设计变量，<span class="math inline">\(\boldsymbol{c}\)</span>表示净空、线形、结构、施工、环境和维护等约束。方案选择并不是在所有变量上任意寻优，而是在满足约束的可行域内比较若干具有工程意义的体系。</p>
 </section>
@@ -950,8 +950,8 @@ M02　跨径与尺度效应
 <div aria-describedby="fig-ch01-scale-fallback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/scale.svg" style="width:88.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch01-scale-fallback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 1.10: 几何相似放大下尺度量的归一化变化
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch01-scale-fallback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 1.10: 几何相似放大下尺度量的归一化变化
 </figcaption>
 </figure>
 </div>
@@ -991,8 +991,8 @@ M02　跨径与尺度效应
 <h4 class="anchored" data-anchor-id="与结构设计原理的关系" data-number="1.5.2.2"><span class="header-section-number">1.5.2.2</span> 与结构设计原理的关系</h4>
 <p>结构设计原理系统讨论材料性能、截面承载力、裂缝、变形和构件极限状态。本书在桥梁情境中确定结构效应、控制截面和验算接口。</p>
 <p>以承载能力极限状态为例，可以概括为</p>
-<p><span class="math display">\[
-S_d \leq R_d,
+<p><span class="math display">\[
+S_d \leq R_d,
 \]</span></p>
 <p>其中，<span class="math inline">\(S_d\)</span>为按规定作用组合得到的设计效应，<span class="math inline">\(R_d\)</span>为按照材料、截面和构造条件确定的设计抗力。本书重点解释<span class="math inline">\(S_d\)</span>从何而来、在哪个结构模型和控制截面上取得，以及施工阶段或空间效应如何影响它；<span class="math inline">\(R_d\)</span>的系统推导仍由结构设计原理承担。本书会给出必要的抗力接口和验算结果，但不重复整门课程。</p>
 </section>
@@ -1080,10 +1080,10 @@ S_d \leq R_d,
 <h4 class="anchored" data-anchor-id="智能设计的任务结构" data-number="1.6.1.1"><span class="header-section-number">1.6.1.1</span> 智能设计的任务结构</h4>
 <p>本书所称智能设计，是在明确工程问题和规范边界的前提下，综合采用参数化建模、可复算程序、交互可视化、优化方法和人工智能辅助，提高设计信息组织、方案比较和结果审查的效率。</p>
 <p>一个可审查的智能设计任务应包含：</p>
-<p><span class="math display">\[
-\text{任务}=
-\{\text{目标},\text{输入},\text{约束},\text{模型},
-\text{输出},\text{校核},\text{责任}\}.
+<p><span class="math display">\[
+\text{任务}=
+\{\text{目标},\text{输入},\text{约束},\text{模型},
+\text{输出},\text{校核},\text{责任}\}.
 \]</span></p>
 <p>缺少其中任何一项，自动生成的结果都难以进入正式设计流程。例如，要求系统“给出最优桥型”并不足以构成工程任务；还需说明桥位条件、可选体系、净空和地质约束、评价指标、数据来源以及由谁复核。</p>
 </section>
@@ -1198,8 +1198,8 @@ S_d \leq R_d,
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-提示
+<div class="callout-title-container flex-fill">
+提示
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1372,8 +1372,8 @@ S_d \leq R_d,
 <h4 class="anchored" data-anchor-id="总体布置的迭代顺序" data-number="1.7.2.3"><span class="header-section-number">1.7.2.3</span> 总体布置的迭代顺序</h4>
 <p>总体布置可按以下顺序迭代：先锁定线路、桥面功能和不可侵入控制区；再确定主跨越对象及可能设墩区；据此生成孔跨和桥型；然后选取横断面与结构高度；继而形成支承、墩台和基础概念；最后把施工与维护空间叠加审查。任一环节发现冲突，应回退到受影响的上游决策，而不应仅通过局部加厚或提高材料等级修补。</p>
 <p>数字模型中的依赖关系可表达为</p>
-<p><span class="math display">\[
-\boldsymbol y=\mathcal M(\boldsymbol x,\boldsymbol c,\boldsymbol s),
+<p><span class="math display">\[
+\boldsymbol y=\mathcal M(\boldsymbol x,\boldsymbol c,\boldsymbol s),
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol x\)</span> 为可调设计变量，<span class="math inline">\(\boldsymbol c\)</span> 为桥位约束，<span class="math inline">\(\boldsymbol s\)</span> 为设计或施工状态，<span class="math inline">\(\boldsymbol y\)</span> 为净空、工程量、反力、内力、变形及维护空间等结果。交互改变一个参数时，只更新由依赖关系确定的下游对象；未经验证的自动联动不得覆盖已审定条件。</p>
 </section>
@@ -1464,8 +1464,8 @@ S_d \leq R_d,
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-提示
+<div class="callout-title-container flex-fill">
+提示
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1484,8 +1484,8 @@ S_d \leq R_d,
 <section class="level4" data-number="1.7.5.2" id="第一步形成控制剖面">
 <h4 class="anchored" data-anchor-id="第一步形成控制剖面" data-number="1.7.5.2"><span class="header-section-number">1.7.5.2</span> 第一步：形成控制剖面</h4>
 <p>在统一高程基准下叠加河床线、控制水位、净空包络、桥面设计线、地质界面和墩位禁设区。结构允许占用的竖向空间为</p>
-<p><span class="math display">\[
-h_a=Z_d-Z_c-h_r,
+<p><span class="math display">\[
+h_a=Z_d-Z_c-h_r,
 \]</span></p>
 <p>其中，<span class="math inline">\(Z_c\)</span> 为控制净空顶界高程，<span class="math inline">\(h_r\)</span> 为桥面铺装、横坡和施工误差等需要占用的高度项。<span class="math inline">\(h_r\)</span> 的组成及取值由项目标准和设计阶段确定。若候选主梁结构高度 <span class="math inline">\(h_s&gt;h_a\)</span>，该总体布置在当前线路高程下不可行，应调整体系、跨径或路线条件，而不应删除净空检查。</p>
 </section>
@@ -1560,8 +1560,8 @@ h_a=Z_d-Z_c-h_r,
 <h4 class="anchored" data-anchor-id="第五步可比指标与敏感性" data-number="1.7.5.6"><span class="header-section-number">1.7.5.6</span> 第五步：可比指标与敏感性</h4>
 <p>对通过硬约束筛查的方案，在相同桥面功能、价格基准和统计边界下比较上部结构材料、基础规模、工期、交通影响、检查更换、耐久暴露、景观和全寿命成本。初步工程量来自参数化几何，标注估算精度；施工风险以风险事件和控制措施表达；景观评价说明视点和利益相关方，不以单一主观分数代替。</p>
 <p>若采用加权矩阵，方案 <span class="math inline">\(j\)</span> 的辅助评分可写为</p>
-<p><span class="math display">\[
-I_j=\sum_{k=1}^{m}w_kr_{jk},\qquad \sum_{k=1}^{m}w_k=1,
+<p><span class="math display">\[
+I_j=\sum_{k=1}^{m}w_kr_{jk},\qquad \sum_{k=1}^{m}w_k=1,
 \]</span></p>
 <p>其中，<span class="math inline">\(r_{jk}\)</span> 为统一量纲后的第 <span class="math inline">\(k\)</span> 项指标评分，<span class="math inline">\(w_k\)</span> 为经说明的权重。应至少改变一组关键权重进行敏感性分析。若推荐方案随小幅权重变化而改变，结论应写为“方案接近，需补充证据”，而不是以小数点后的分差确定优劣。</p>
 </section>
@@ -1643,15 +1643,15 @@ I_j=\sum_{k=1}^{m}w_kr_{jk},\qquad \sum_{k=1}^{m}w_k=1,
 <section class="level4" data-number="1.8.0.2" id="约束矩阵">
 <h4 class="anchored" data-anchor-id="约束矩阵" data-number="1.8.0.2"><span class="header-section-number">1.8.0.2</span> 约束矩阵</h4>
 <p>约束矩阵把桥位条件与设计变量相联系。设设计变量向量为</p>
-<p><span class="math display">\[
-\boldsymbol x=
-[x_{\mathrm{axis}},Z_d,L_1,\ldots,L_n,h_s,B_d,
-\boldsymbol p_{\mathrm{sub}},\boldsymbol p_{\mathrm{con}}]^{\mathrm T},
+<p><span class="math display">\[
+\boldsymbol x=
+[x_{\mathrm{axis}},Z_d,L_1,\ldots,L_n,h_s,B_d,
+\boldsymbol p_{\mathrm{sub}},\boldsymbol p_{\mathrm{con}}]^{\mathrm T},
 \]</span></p>
 <p>其中，<span class="math inline">\(x_{\mathrm{axis}}\)</span> 为桥轴线平面参数，单位通常为 m 或以线路里程表示；<span class="math inline">\(Z_d\)</span> 为桥面设计高程，单位为 m；<span class="math inline">\(L_i\)</span> 为第 <span class="math inline">\(i\)</span> 跨的计算或布置尺度，单位为 m，其定义须在图中注明；<span class="math inline">\(h_s\)</span> 为上部结构控制高度，单位为 m；<span class="math inline">\(B_d\)</span> 为桥面总宽，单位为 m；<span class="math inline">\(\boldsymbol p_{\mathrm{sub}}\)</span> 和 <span class="math inline">\(\boldsymbol p_{\mathrm{con}}\)</span> 分别代表下部结构与施工方案参数。约束写为</p>
-<p><span class="math display">\[
-c_j(\boldsymbol x,\boldsymbol d,\boldsymbol s)\leq0,
-\qquad j=1,2,\ldots,n_c,
+<p><span class="math display">\[
+c_j(\boldsymbol x,\boldsymbol d,\boldsymbol s)\leq0,
+\qquad j=1,2,\ldots,n_c,
 \]</span></p>
 <p>式中，<span class="math inline">\(\boldsymbol d\)</span> 为经确认的桥位数据，<span class="math inline">\(\boldsymbol s\)</span> 为成桥、施工或维修状态，<span class="math inline">\(n_c\)</span> 为约束数。公式只规定表达方式，不暗示所有约束均可用一个连续函数计算。法规审批、设备可用性和道路封闭许可等离散条件，应采用状态字段和逻辑规则表达。</p>
 <table class="caption-top table">
@@ -1851,20 +1851,20 @@ c_j(\boldsymbol x,\boldsymbol d,\boldsymbol s)\leq0,
 <h4 class="anchored" data-anchor-id="体系选择的力学预审" data-number="1.8.1.4"><span class="header-section-number">1.8.1.4</span> 体系选择的力学预审</h4>
 <p>桥型初选阶段尚未具备完整构件尺寸，但仍可以通过自由体、尺度关系和数量级计算排除明显不合理的传力假定。预审的目标不是提前完成结构设计，而是判断候选体系是否值得进入更精细分析。所有近似式均应写明模型边界，并用无量纲参数或符号结果表达，避免把课堂经验当成规范界限。</p>
 <p>对于计算跨径为 <span class="math inline">\(L\)</span>、承受等效均布作用 <span class="math inline">\(q\)</span> 的简支梁教学模型，跨中弯矩和端部剪力为</p>
-<p><span class="math display">\[
-M_{\max}=\frac{qL^2}{8},\qquad
-V_{\max}=\frac{qL}{2}.
+<p><span class="math display">\[
+M_{\max}=\frac{qL^2}{8},\qquad
+V_{\max}=\frac{qL}{2}.
 \]</span></p>
 <p>若 <span class="math inline">\(q\)</span> 的单位为 kN/m，<span class="math inline">\(L\)</span> 的单位为 m，则 <span class="math inline">\(M_{\max}\)</span> 的单位为 kN·m，<span class="math inline">\(V_{\max}\)</span> 的单位为 kN。该模型假定直梁、小变形、线弹性和理想简支，只用于揭示弯矩随跨径平方增长的尺度趋势。真实连续梁、曲线梁、斜桥和施工阶段体系不能直接采用该结果设计。</p>
 <p>对三铰拱在特定竖向均布作用和相应理想几何下，可用水平推力数量级</p>
-<p><span class="math display">\[
-H\sim\frac{qL^2}{8f}
+<p><span class="math display">\[
+H\sim\frac{qL^2}{8f}
 \]</span></p>
 <p>解释矢高 <span class="math inline">\(f\)</span> 对推力的影响。<span class="math inline">\(H\)</span> 的单位为 kN，<span class="math inline">\(f\)</span> 和 <span class="math inline">\(L\)</span> 的单位为 m。符号“<span class="math inline">\(\sim\)</span>”表示数量级关系，并非对任意拱轴、荷载分布和边界均成立的设计公式。减小矢跨比可能降低结构高度，但通常会提高水平推力和轴向压力；增大矢高又会影响桥面、净空、横向稳定和施工。因此矢跨比不能脱离场地与体系单独优化。</p>
 <p>斜拉体系可先对单根索节点作平衡。索力为 <span class="math inline">\(T\)</span>，与主梁夹角为 <span class="math inline">\(\theta\)</span> 时，竖向和水平分量分别为</p>
-<p><span class="math display">\[
-T_v=T\sin\theta,
-\qquad T_h=T\cos\theta.
+<p><span class="math display">\[
+T_v=T\sin\theta,
+\qquad T_h=T\cos\theta.
 \]</span></p>
 <p><span class="math inline">\(T\)</span>、<span class="math inline">\(T_v\)</span> 和 <span class="math inline">\(T_h\)</span> 的单位均为 kN，<span class="math inline">\(\theta\)</span> 采用一致角度单位。索倾角较小时，为提供相同竖向分量需要更大索力，同时主梁或桥塔中的水平效应增加。该局部平衡尚未考虑多索共同工作、主梁刚度、索垂度、塔梁边界和施工初始状态，只用来检查“索提供竖向支承但其水平分力必须有去向”。</p>
 <p>悬索体系可用柔性索在均布竖向作用下的近似关系认识垂度作用，形式同样表现为水平分力随跨径平方增加、随垂度增加而降低。实际主缆几何应由恒载状态找形，荷载可能按水平投影或索长定义，加劲梁和吊索参与分配，不能把简单抛物线关系直接用于非均布活载或成桥线形控制。</p>
@@ -1957,8 +1957,8 @@ T_v=T\sin\theta,
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-提示
+<div class="callout-title-container flex-fill">
+提示
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1986,8 +1986,8 @@ T_v=T\sin\theta,
 <p>总体平面决定桥轴线、斜交关系、曲线半径、墩台平面位置、桥面边界及既有设施避让；总体立面决定孔跨、结构高度、桥面纵断、桥下净空、水位和地质的竖向关系；典型及控制横断面决定交通功能、梁片或箱室、悬臂、横坡、索面、拱肋和检修空间。三个视图分别投影同一工程对象，任一尺寸只能有一个受控来源。</p>
 <p>三视图协同并非在完成三张图后互相校对，而是在布置过程中持续联动。平面上桥轴与河道斜交会使立面中各腹板实际跨越长度不同；横断面宽度变化会改变边腹板平面位置，进而改变墩帽、支座和基础反力；立面采用变高度梁会改变横断面腹板高度、检修通道和预应力束线空间；平曲线与横坡组合还会使各支座高程和方向不同。</p>
 <p>可建立统一的线路坐标 <span class="math inline">\(s\)</span>。桥面中心线位置为 <span class="math inline">\(\boldsymbol r(s)=[x(s),y(s),z(s)]^{\mathrm T}\)</span>，横断面局部基向量为切向 <span class="math inline">\(\boldsymbol e_s\)</span>、横向 <span class="math inline">\(\boldsymbol e_y\)</span> 和竖向或法向 <span class="math inline">\(\boldsymbol e_z\)</span>。横断面上一点可写为</p>
-<p><span class="math display">\[
-\boldsymbol r_p(s,u,v)=\boldsymbol r(s)+u\boldsymbol e_y(s)+v\boldsymbol e_z(s),
+<p><span class="math display">\[
+\boldsymbol r_p(s,u,v)=\boldsymbol r(s)+u\boldsymbol e_y(s)+v\boldsymbol e_z(s),
 \]</span></p>
 <p>其中，<span class="math inline">\(s\)</span>、<span class="math inline">\(u\)</span>、<span class="math inline">\(v\)</span> 的单位均为 m；<span class="math inline">\(u\)</span> 为横桥偏距，<span class="math inline">\(v\)</span> 为相对桥面基准的竖向偏距。该表达假定局部截面由统一坐标框架生成；在超高过渡、复杂空间曲线和大斜交处，应明确截面旋转规则并检查几何连续性。</p>
 </section>
@@ -2000,8 +2000,8 @@ T_v=T\sin\theta,
 <h4 class="anchored" data-anchor-id="立面审查" data-number="1.8.2.3"><span class="header-section-number">1.8.2.3</span> 立面审查</h4>
 <p>立面布置从控制线开始，而不是从一条视觉顺滑的梁底线开始。所有水位、道路或航道净空、堤顶、地面、河床、地层和桥面线应注明来源、日期与高程基准。对于变截面梁、拱肋或斜拉桥塔，还需标出结构高度或构件轴线如何随里程变化。</p>
 <p>净空检查不应只取一条中心剖面。设结构下缘点集为 <span class="math inline">\(\Omega_b\)</span>，控制包络顶界为 <span class="math inline">\(z_c(x,y)\)</span>，最小竖向间距可表示为</p>
-<p><span class="math display">\[
-d_{\min}=\min_{(x,y,z)\in\Omega_b}[z-z_c(x,y)].
+<p><span class="math display">\[
+d_{\min}=\min_{(x,y,z)\in\Omega_b}[z-z_c(x,y)].
 \]</span></p>
 <p><span class="math inline">\(x,y,z\)</span> 及 <span class="math inline">\(d_{\min}\)</span> 的单位为 m，正值表示在给定几何定义下存在间距。该几何量是否满足要求，仍须与采用标准、施工误差、结构变形和测量精度共同判断。斜交和横坡情况下，最小点可能不在道路中心线处，数字模型应返回控制坐标而非只显示“通过”。</p>
 </section>
@@ -2091,9 +2091,9 @@ d_{\min}=\min_{(x,y,z)\in\Omega_b}[z-z_c(x,y)].
 <h4 class="anchored" data-anchor-id="两阶段评价" data-number="1.8.3.2"><span class="header-section-number">1.8.3.2</span> 两阶段评价</h4>
 <p>第一级采用可行性门槛。每项硬约束的判断值为“满足、条件满足、证据不足、不满足”。“条件满足”必须写清前提，“证据不足”必须对应补充工作；二者不能在导出报告时自动并入“满足”。明确不满足且无批准调整路径的方案退出当前比较。</p>
 <p>第二级对可行方案进行多准则评价。设第 <span class="math inline">\(j\)</span> 个方案在第 <span class="math inline">\(k\)</span> 个指标上的原始量为 <span class="math inline">\(z_{jk}\)</span>，经过公开的同向化和无量纲处理得到 <span class="math inline">\(r_{jk}\)</span>。辅助总指标为</p>
-<p><span class="math display">\[
-I_j=\sum_{k=1}^{m}w_kr_{jk},
-\qquad w_k\ge0,\quad\sum_{k=1}^{m}w_k=1.
+<p><span class="math display">\[
+I_j=\sum_{k=1}^{m}w_kr_{jk},
+\qquad w_k\ge0,\quad\sum_{k=1}^{m}w_k=1.
 \]</span></p>
 <p><span class="math inline">\(w_k\)</span> 为无量纲权重，<span class="math inline">\(r_{jk}\)</span> 为无量纲评分，<span class="math inline">\(I_j\)</span> 仅用于整理偏好。在工程量、成本、工期、环境和景观采用不同证据成熟度时，不应通过同一小数精度制造确定性。报告应同时保留原始指标、转换方法、权重来源和误差范围。</p>
 <p>权重敏感性至少检查三类变化：决策主体偏好变化、指标不确定性变化和统计边界变化。若全寿命成本是否包含交通中断损失会改变推荐顺序，应把统计边界列为关键决策；若两个方案的差异小于估算误差，应报告“现阶段不可区分”，并指出哪项调查最有价值。</p>
@@ -2174,10 +2174,10 @@ I_j=\sum_{k=1}^{m}w_kr_{jk},
 <h4 class="anchored" data-anchor-id="施工是结构体系的一部分" data-number="1.8.4.1"><span class="header-section-number">1.8.4.1</span> 施工是结构体系的一部分</h4>
 <p>桥梁在施工期间经历构件逐步形成、边界改变和荷载累积。预制梁架设前是独立构件，湿接缝和桥面板形成后才共同工作；悬臂浇筑连续梁在合龙前后具有不同拓扑；系杆拱的拱肋、系杆、吊杆和桥面系按顺序参与受力；斜拉桥每安装一个梁段和一对拉索，结构几何与内力状态都会改变。因此施工方法不是总体方案后的说明文字，而是定义最终内力和可实施性的输入。</p>
 <p>阶段 <span class="math inline">\(k\)</span> 可表示为</p>
-<p><span class="math display">\[
-\mathcal S_k=
-\{\mathcal O_k,\mathcal E_k,\mathcal B_k,
-\mathcal F_k,\boldsymbol q_k,\boldsymbol u_k\},
+<p><span class="math display">\[
+\mathcal S_k=
+\{\mathcal O_k,\mathcal E_k,\mathcal B_k,
+\mathcal F_k,\boldsymbol q_k,\boldsymbol u_k\},
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathcal O_k\)</span> 为已存在的构件集合，<span class="math inline">\(\mathcal E_k\)</span> 为连接关系，<span class="math inline">\(\mathcal B_k\)</span> 为永久和临时边界，<span class="math inline">\(\mathcal F_k\)</span> 为本阶段作用，<span class="math inline">\(\boldsymbol q_k\)</span> 为需要继承的内力或材料状态，<span class="math inline">\(\boldsymbol u_k\)</span> 为几何位置与变形。集合和状态随阶段更新。若采用线性叠加近似，必须说明刚度、边界和时变效应的假定；涉及大位移、索力、混凝土时变或接触状态时，应按阶段直接求解。</p>
 <p>总体方案阶段至少选择一个控制施工状态。判断控制状态时不只比较成桥弯矩，还应检查构件稳定、临时支承反力、抗倾覆、吊装应力、合龙口相对位移、设备能力和施工风环境。对尚未确定的施工设备，以包络参数表示并标明来源，不把供应商宣传数据直接作为设计能力。</p>
@@ -2479,9 +2479,9 @@ I_j=\sum_{k=1}^{m}w_kr_{jk},
 <h4 class="anchored" data-anchor-id="三视图与施工状态的第四维" data-number="1.9.1.2"><span class="header-section-number">1.9.1.2</span> 三视图与施工状态的第四维</h4>
 <p>平面、立面、横断面描述成桥空间，施工阶段增加时间维。每一阶段都应能够从同一总体模型生成当时的平面、立面和横断面：哪些梁段已存在，哪些支承有效，设备与临时结构在哪里，净空和交通是否仍满足阶段要求。只在成桥三视图上补箭头，不能表达体系转换。</p>
 <p>可把阶段对象写为</p>
-<p><span class="math display">\[
-\mathcal G_k=\{\Omega_k,\mathcal B_k,
-\mathcal L_k,\mathcal Z_k\},
+<p><span class="math display">\[
+\mathcal G_k=\{\Omega_k,\mathcal B_k,
+\mathcal L_k,\mathcal Z_k\},
 \]</span></p>
 <p>其中，<span class="math inline">\(\Omega_k\)</span> 为第 <span class="math inline">\(k\)</span> 阶段已形成的几何对象，<span class="math inline">\(\mathcal B_k\)</span> 为永久和临时边界，<span class="math inline">\(\mathcal L_k\)</span> 为作用和设备包络，<span class="math inline">\(\mathcal Z_k\)</span> 为道路、航道、河道及安全控制区。集合随阶段变化；公式用于组织数据，不替代施工设计。</p>
 <p>例如预制梁吊装阶段，平面检查运梁与吊机路线，立面检查起吊高度和既有交通净空，横断面检查单片梁吊点与临时稳定；梁片就位后，支座和临时横撑成为新边界；湿接缝施工后，横向体系改变。每一步的三视图均来自同一阶段状态，避免把成桥横隔和刚度提前用于单梁吊装。</p>
@@ -2502,9 +2502,9 @@ I_j=\sum_{k=1}^{m}w_kr_{jk},
 <h4 class="anchored" data-anchor-id="从事实到结论" data-number="1.9.2.1"><span class="header-section-number">1.9.2.1</span> 从事实到结论</h4>
 <p>桥梁设计判断由事实、模型、评价准则和责任决定。事实是经确认的桥位、功能、材料、设备或标准信息；模型把事实转化为几何、反力、内力、变形、工程量和风险；评价准则说明何为满足、条件满足或相对有利；责任主体最终确认结论。四者应在记录中分列。</p>
 <p>一个判断记录可写为</p>
-<p><span class="math display">\[
-\mathcal J=
-\{C,E,W,A,U,D,R\},
+<p><span class="math display">\[
+\mathcal J=
+\{C,E,W,A,U,D,R\},
 \]</span></p>
 <p>其中，<span class="math inline">\(C\)</span> 为待判断命题，<span class="math inline">\(E\)</span> 为证据，<span class="math inline">\(W\)</span> 为从证据到结论的力学或规范理由，<span class="math inline">\(A\)</span> 为假定，<span class="math inline">\(U\)</span> 为不确定性，<span class="math inline">\(D\)</span> 为决定及适用条件，<span class="math inline">\(R\)</span> 为复核责任。若只保存 <span class="math inline">\(D\)</span>，后续资料变化时无法判断结论是否仍成立。</p>
 <p>例如“采用连续箱梁”不是完整判断。完整记录应说明：桥面位于曲线且结构高度受限；闭口截面可提供所需扭转与整体性；施工场地支持现浇或节段方法；初步模型表明净空和支承可行；箱内检查、横隔和施工阶段仍需验证；在这些前提下将连续箱梁作为下一阶段首选。条件改变时重新评估，而不是把桥型名称视为固定任务书。</p>
@@ -3064,17 +3064,17 @@ I_j=\sum_{k=1}^{m}w_kr_{jk},
 <h4 class="anchored" data-anchor-id="从结构物到持续提供的公共功能" data-number="1.9.10.1"><span class="header-section-number">1.9.10.1</span> 从结构物到持续提供的公共功能</h4>
 <p>桥梁首先承担跨越功能，但设计对象不能只理解为一组承重构件。对道路桥而言，桥梁连续承载车辆、行人以及必要的市政设施；对铁路桥而言，还要维持轨道几何、列车运行安全和线路系统连续；跨海、跨江桥梁同时处于航运、防洪、生态、海事和区域交通系统之中。桥梁因此具有四个同时存在的属性：它是传递作用的结构系统，是线路通过障碍的空间系统，是建设期逐步形成的施工系统，也是需要长期检查、维修和更新的公共资产。</p>
 <p>以“持续提供通行服务”为中心，可以把桥梁工程对象写成</p>
-<p><span class="math display">\[
-\mathcal B=\{\mathcal F,\mathcal S,\mathcal G,\mathcal C,\mathcal O,\mathcal E\},
+<p><span class="math display">\[
+\mathcal B=\{\mathcal F,\mathcal S,\mathcal G,\mathcal C,\mathcal O,\mathcal E\},
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathcal F\)</span> 为功能集合，包含交通能力、通行净空、可达性和应急通行；<span class="math inline">\(\mathcal S\)</span> 为结构体系及其连接；<span class="math inline">\(\mathcal G\)</span> 为桥位、路线和几何控制；<span class="math inline">\(\mathcal C\)</span> 为施工阶段、临时结构和资源条件；<span class="math inline">\(\mathcal O\)</span> 为运营、检查、养护和更换活动；<span class="math inline">\(\mathcal E\)</span> 为自然环境、社会环境及其约束。这个表达式不是计算公式，而是对象完整性检查。若方案只定义 <span class="math inline">\(\mathcal S\)</span> 而没有 <span class="math inline">\(\mathcal C\)</span>，可能形成成桥受力合理但无法安全建造的方案；若遗漏 <span class="math inline">\(\mathcal O\)</span>，支座、伸缩装置或拉索在需要更换时可能没有作业空间和替代传力路径。</p>
 <p>公共功能需要用状态而不是单一“设计寿命”描述。正常运营状态关注交通功能、舒适性、耐久性和常规检查；维修状态允许部分车道封闭、临时支承和构件卸载；极端事件状态关注生命安全、结构整体性与应急交通；事件后的恢复状态关注检查可达、临时通行和修复顺序。某一构件在正常运营时并不显著，却可能在维修或恢复状态中成为关键对象，例如顶升反力点、临时横向联系、防落梁构造和检修平台。</p>
 <p>由此可定义某时刻 <span class="math inline">\(t\)</span> 的服务状态向量</p>
-<p><span class="math display">\[
-\boldsymbol s(t)=
-\begin{bmatrix}
-C_t(t)&amp;A_t(t)&amp;G_t(t)&amp;S_t(t)&amp;M_t(t)
-\end{bmatrix}^{\mathsf T},
+<p><span class="math display">\[
+\boldsymbol s(t)=
+\begin{bmatrix}
+C_t(t)&amp;A_t(t)&amp;G_t(t)&amp;S_t(t)&amp;M_t(t)
+\end{bmatrix}^{\mathsf T},
 \]</span></p>
 <p>其中 <span class="math inline">\(C_t\)</span> 为交通能力，可用车道数或折算通行能力表示；<span class="math inline">\(A_t\)</span> 为可用性，量纲为1；<span class="math inline">\(G_t\)</span> 为线路或轨道几何状态；<span class="math inline">\(S_t\)</span> 为结构安全与适用状态；<span class="math inline">\(M_t\)</span> 为可维护状态。课程总论不为这些量规定统一权重，而要求学生说明：当前方案准备维持什么功能、在何种状态下维持、功能中断的后果是什么、通过哪些构件和管理措施实现。</p>
 </section>
@@ -3082,8 +3082,8 @@ C_t(t)&amp;A_t(t)&amp;G_t(t)&amp;S_t(t)&amp;M_t(t)
 <h4 class="anchored" data-anchor-id="工程对象的空间时间和证据边界" data-number="1.9.10.2"><span class="header-section-number">1.9.10.2</span> 工程对象的空间、时间和证据边界</h4>
 <p>桥梁的空间边界通常从桥头连接、桥面系、上部结构延伸到支承、桥墩桥台、基础和地基，还包括排水、照明、防护、检修以及与道路、轨道、管线相接的界面。边界并非越大越好，而应与问题相称。研究主梁总体刚度时可将地基处理为等效弹簧；研究沉降差时，地层、基础和上部结构必须共同进入模型；研究交通恢复时，还需把引道、匝道和相邻节点纳入系统边界。</p>
 <p>时间边界至少包括成桥状态、若干关键施工状态、计划维修状态和控制性偶然状态。对分阶段施工结构，可把第 <span class="math inline">\(k\)</span> 阶段存在的构件和连接写成图</p>
-<p><span class="math display">\[
-\mathcal G_k=(\mathcal V_k,\mathcal E_k,\boldsymbol b_k),
+<p><span class="math display">\[
+\mathcal G_k=(\mathcal V_k,\mathcal E_k,\boldsymbol b_k),
 \]</span></p>
 <p>式中，<span class="math inline">\(\mathcal V_k\)</span> 为构件或节点集合；<span class="math inline">\(\mathcal E_k\)</span> 为连接关系；<span class="math inline">\(\boldsymbol b_k\)</span> 为边界条件。若 <span class="math inline">\(\mathcal V_{k+1}\)</span> 增加新节段而 <span class="math inline">\(\boldsymbol b_{k+1}\)</span> 同时解除临时支承，两个阶段不是在同一静力体系上简单增加荷载。总体设计必须说明拓扑、边界和初始状态怎样随阶段变化。</p>
 <p>证据边界用于区分“对象已定义”和“对象已有可靠数据”。桥位水位可以是多年实测统计值、经批准的控制值、一次现场测量值，也可以只是教学假定值；这些数值即使相同，其证据等级也不同。每个控制字段至少记录名称、符号、数值、单位、坐标或高程基准、时间范围、来源文件、版本、批准状态和适用场景。不能定位到来源或不能确认基准的数值，只能进入待核清单。</p>
@@ -3098,16 +3098,16 @@ C_t(t)&amp;A_t(t)&amp;G_t(t)&amp;S_t(t)&amp;M_t(t)
 <li>施工或资产坐标在上述几何位置上增加阶段 <span class="math inline">\(k\)</span>、时间 <span class="math inline">\(t\)</span> 和状态编号，用于安装、测量、检查与更换。</li>
 </ol>
 <p>对平面内近似直线且坐标原点已定义的桥梁，路线坐标到总体坐标可写为</p>
-<p><span class="math display">\[
-\begin{bmatrix}X\\Y\end{bmatrix}
-=
-\begin{bmatrix}X_0\\Y_0\end{bmatrix}
-+
-\begin{bmatrix}
-\cos\theta&amp;-\sin\theta\\
-\sin\theta&amp;\cos\theta
-\end{bmatrix}
-\begin{bmatrix}s-s_0\\n\end{bmatrix},
+<p><span class="math display">\[
+\begin{bmatrix}X\\Y\end{bmatrix}
+=
+\begin{bmatrix}X_0\\Y_0\end{bmatrix}
++
+\begin{bmatrix}
+\cos\theta&amp;-\sin\theta\\
+\sin\theta&amp;\cos\theta
+\end{bmatrix}
+\begin{bmatrix}s-s_0\\n\end{bmatrix},
 \]</span></p>
 <p>式中，<span class="math inline">\(X,Y,X_0,Y_0,s,s_0,n\)</span> 的单位均为m；<span class="math inline">\(\theta\)</span> 为路线切线相对总体 <span class="math inline">\(X\)</span> 轴的方向角，单位可采用rad或°，但数据接口必须明确。曲线桥应按线路里程逐点计算切向、法向与高程，不能使用一个固定 <span class="math inline">\(\theta\)</span> 代替全桥坐标变换。</p>
 <p>常用跨径术语必须与标注对象对应。净跨径描述相邻支承构造边缘或通行空间之间的净距离；计算跨径通常与支承中心或计算模型节点之间的距离有关；标准跨径、名义跨径、桥梁全长和桥长分别服务于标准化、方案表达或项目统计，具体定义应回查当前采用的行业标准和项目规定。教材不以口头简称替代图纸尺寸链。任何表中出现“跨径”时，表头或注释应说明量取对象。</p>
@@ -3188,8 +3188,8 @@ C_t(t)&amp;A_t(t)&amp;G_t(t)&amp;S_t(t)&amp;M_t(t)
 <section class="level4" data-number="1.9.11.2" id="四元协同关系">
 <h4 class="anchored" data-anchor-id="四元协同关系" data-number="1.9.11.2"><span class="header-section-number">1.9.11.2</span> 四元协同关系</h4>
 <p>可将一个桥型能力写成材料 <span class="math inline">\(M\)</span>、结构体系 <span class="math inline">\(S\)</span>、建造方法 <span class="math inline">\(C\)</span> 与分析验证能力 <span class="math inline">\(A\)</span> 的共同结果：</p>
-<p><span class="math display">\[
-\mathcal K=\Phi(M,S,C,A\mid E,R),
+<p><span class="math display">\[
+\mathcal K=\Phi(M,S,C,A\mid E,R),
 \]</span></p>
 <p>其中，<span class="math inline">\(E\)</span> 表示桥位环境和工程资源，<span class="math inline">\(R\)</span> 表示法规、社会需求与风险边界。<span class="math inline">\(\Phi\)</span> 不宜被理解为一个可直接计算的“先进度得分”，而是提醒设计者逐项检验协同条件。若只有高性能材料而没有质量控制，<span class="math inline">\(M\)</span> 的名义能力不能完整实现；若成桥体系高效而施工状态缺少稳定性，<span class="math inline">\(S\)</span> 与 <span class="math inline">\(C\)</span> 不相容；若模型复杂但缺少试验、基准算例或现场证据，<span class="math inline">\(A\)</span> 不能提供相称的可信度。</p>
 <table class="caption-top table">
@@ -3274,19 +3274,19 @@ C_t(t)&amp;A_t(t)&amp;G_t(t)&amp;S_t(t)&amp;M_t(t)
 <section class="level4" data-number="1.9.12.1" id="从自由体到体系选择">
 <h4 class="anchored" data-anchor-id="从自由体到体系选择" data-number="1.9.12.1"><span class="header-section-number">1.9.12.1</span> 从自由体到体系选择</h4>
 <p>桥型初选的共同起点是自由体平衡。对整个上部结构，竖向、横向和纵向作用最终由支承及基础反力平衡；不同体系的差别在于内部如何传递这些作用、怎样取得刚度以及是否产生显著水平反力。总体平衡可写为</p>
-<p><span class="math display">\[
-\sum \boldsymbol F=\boldsymbol 0,\qquad
-\sum \boldsymbol M_O=\boldsymbol 0,
+<p><span class="math display">\[
+\sum \boldsymbol F=\boldsymbol 0,\qquad
+\sum \boldsymbol M_O=\boldsymbol 0,
 \]</span></p>
 <p>式中，<span class="math inline">\(\boldsymbol F\)</span> 为作用与反力，单位为N或kN；<span class="math inline">\(\boldsymbol M_O\)</span> 为关于参考点 <span class="math inline">\(O\)</span> 的力矩，单位为N·m或kN·m。平衡只能说明整体反力可能成立，不能保证变形协调、稳定、动力和局部强度满足要求。方案阶段应在平衡之后继续回答刚度来源、关键变形、施工状态和耐久细节。</p>
 </section>
 <section class="level4" data-number="1.9.12.2" id="梁式刚架与连续体系">
 <h4 class="anchored" data-anchor-id="梁式刚架与连续体系" data-number="1.9.12.2"><span class="header-section-number">1.9.12.2</span> 梁式、刚架与连续体系</h4>
 <p>梁式体系主要以弯矩 <span class="math inline">\(M\)</span> 和剪力 <span class="math inline">\(V\)</span> 传递横向荷载。对平面直梁且采用小变形Euler–Bernoulli假定的简化模型，有</p>
-<p><span class="math display">\[
-\frac{\mathrm d V}{\mathrm d x}=-q(x),\qquad
-\frac{\mathrm d M}{\mathrm d x}=V(x),\qquad
-EI(x)\frac{\mathrm d^2v}{\mathrm d x^2}=M(x),
+<p><span class="math display">\[
+\frac{\mathrm d V}{\mathrm d x}=-q(x),\qquad
+\frac{\mathrm d M}{\mathrm d x}=V(x),\qquad
+EI(x)\frac{\mathrm d^2v}{\mathrm d x^2}=M(x),
 \]</span></p>
 <p>其中，<span class="math inline">\(x\)</span> 为沿梁轴的坐标，单位m；<span class="math inline">\(q\)</span> 为单位长度荷载，单位kN/m；<span class="math inline">\(V\)</span> 为剪力，单位kN；<span class="math inline">\(M\)</span> 为弯矩，单位kN·m；<span class="math inline">\(E\)</span> 为弹性模量，单位kN/m²；<span class="math inline">\(I\)</span> 为截面惯性矩，单位m⁴；<span class="math inline">\(v\)</span> 为挠度，单位m。公式用于说明传力和尺度趋势，曲线、斜交、深梁、剪切变形、开裂、预应力与施工阶段应采用相应模型。</p>
 <p>简支梁使上、下部边界清楚，构造和更换相对直接，但跨中弯矩与接缝较多；连续梁通过支点负弯矩重新分配跨中效应，改善行车连续性，同时对不均匀沉降、温度约束和施工顺序更敏感；连续刚构把墩梁连接转化为共同受力，减少支座并提高纵向连续性，但墩高、温度、长期变形和合龙控制影响显著。箱形截面通过材料远离中性轴和形成闭合剪流提高抗弯、抗扭效率，并非仅以“掏空减重”概括。开孔或空腔带来的自重降低必须与局部板件稳定、剪切、畸变、施工和检查空间共同评价。</p>
@@ -3294,8 +3294,8 @@ EI(x)\frac{\mathrm d^2v}{\mathrm d x^2}=M(x),
 <section class="level4" data-number="1.9.12.3" id="拱式与系杆拱体系">
 <h4 class="anchored" data-anchor-id="拱式与系杆拱体系" data-number="1.9.12.3"><span class="header-section-number">1.9.12.3</span> 拱式与系杆拱体系</h4>
 <p>拱把竖向荷载的一部分转化为轴向压力，并在拱脚产生水平推力。对二铰抛物线拱、跨径 <span class="math inline">\(L\)</span>、矢高 <span class="math inline">\(f\)</span>、沿水平投影均布荷载 <span class="math inline">\(q\)</span> 的理想化情形，水平推力可近似写为</p>
-<p><span class="math display">\[
-H=\frac{qL^2}{8f},
+<p><span class="math display">\[
+H=\frac{qL^2}{8f},
 \]</span></p>
 <p>其中 <span class="math inline">\(H\)</span> 单位为kN，<span class="math inline">\(q\)</span> 单位为kN/m，<span class="math inline">\(L\)</span>、<span class="math inline">\(f\)</span> 单位为m。该式只用于解释矢跨比对推力数量级的影响，实际拱桥需考虑拱轴、弹性压缩、超静定、温度、基础变位、偏载、稳定和施工阶段。<span class="math inline">\(f\)</span> 减小可降低结构高度，却会增大水平推力并改变稳定和基础需求。</p>
 <p>上承式、中承式和下承式描述桥面与拱肋的相对位置，不直接决定拱的静力体系。无铰、两铰和三铰描述拱脚及拱顶约束；系杆拱以系杆闭合主要水平推力，使基础水平反力显著减小，但系杆和锚固成为关键受拉路径。拱体系适用性取决于地形和基础、结构高度、施工架设、偏载与横向稳定，不宜以“山谷必用拱”或“软土不能用拱”作绝对判断。若可通过系杆、桁式拱或施工方法改变反力和形成条件，应在同一控制剖面下比较。</p>
@@ -3303,8 +3303,8 @@ H=\frac{qL^2}{8f},
 <section class="level4" data-number="1.9.12.4" id="斜拉体系-1">
 <h4 class="anchored" data-anchor-id="斜拉体系-1" data-number="1.9.12.4"><span class="header-section-number">1.9.12.4</span> 斜拉体系</h4>
 <p>斜拉桥由主梁、拉索和桥塔共同工作。以一根斜拉索为例，索力 <span class="math inline">\(T_i\)</span> 在竖向与水平向的分量为</p>
-<p><span class="math display">\[
-V_i=T_i\sin\alpha_i,\qquad H_i=T_i\cos\alpha_i,
+<p><span class="math display">\[
+V_i=T_i\sin\alpha_i,\qquad H_i=T_i\cos\alpha_i,
 \]</span></p>
 <p>式中，<span class="math inline">\(T_i,V_i,H_i\)</span> 单位为kN；<span class="math inline">\(\alpha_i\)</span> 为拉索相对水平面的夹角。<span class="math inline">\(V_i\)</span> 支承主梁，<span class="math inline">\(H_i\)</span> 通常在主梁中形成轴向压力并由相邻索、塔和边跨共同平衡。索距、索角、塔高和梁刚度相互关联：提高塔高可增大索角，但同时影响塔、景观、施工和航空等约束；减小索距可细化主梁支承，却增加索、锚固和维护对象。</p>
 <p>斜拉桥适用于需要较大主跨、结构高度受限、可设置桥塔且施工允许对称悬臂的场景。其方案判断不能只看成桥索形。合理成桥状态、施工索力、临时稳定、几何非线性、风致振动、锚固疲劳和换索交通组织都应前置。多塔斜拉、矮塔斜拉和斜拉—连续梁组合可改变刚度与跨径分配，但名称改变并不取消塔梁索协调条件。</p>
@@ -3312,12 +3312,12 @@ V_i=T_i\sin\alpha_i,\qquad H_i=T_i\cos\alpha_i,
 <section class="level4" data-number="1.9.12.5" id="悬索体系-1">
 <h4 class="anchored" data-anchor-id="悬索体系-1" data-number="1.9.12.5"><span class="header-section-number">1.9.12.5</span> 悬索体系</h4>
 <p>悬索桥以主缆承受拉力，吊索把桥面荷载传给主缆，主缆通过桥塔和锚碇形成完整路径。对两端等高、水平投影均布荷载 <span class="math inline">\(q\)</span>、跨径 <span class="math inline">\(L\)</span>、主缆矢度 <span class="math inline">\(f\)</span> 的抛物线近似，主缆水平分力同样可写为</p>
-<p><span class="math display">\[
-H=\frac{qL^2}{8f},
+<p><span class="math display">\[
+H=\frac{qL^2}{8f},
 \]</span></p>
 <p>支点处索力近似为</p>
-<p><span class="math display">\[
-T_s=\sqrt{H^2+\left(\frac{qL}{2}\right)^2}.
+<p><span class="math display">\[
+T_s=\sqrt{H^2+\left(\frac{qL}{2}\right)^2}.
 \]</span></p>
 <p>式中各力单位为kN，长度单位为m。该近似用于理解自重、跨径和矢跨比对索力的影响；实际悬索桥需考虑主缆自重、加劲梁刚度、活载非均匀分布、几何非线性、温度、风和施工架设。</p>
 <p>地锚式悬索桥把主缆水平力传入锚碇和地基，对锚址地质、施工水域和用地要求高；自锚式悬索桥在成桥后由加劲梁平衡主缆水平分力，可减少大型地锚，但施工阶段必须建立临时受力路径并按顺序转移索力。悬索体系的跨越能力突出，低刚度、风致稳定、加劲梁构造、主缆防护、吊索疲劳和锚碇检查也更重要。</p>
@@ -3330,8 +3330,8 @@ T_s=\sqrt{H^2+\left(\frac{qL}{2}\right)^2}.
 <section class="level4" data-number="1.9.12.7" id="适用条件是条件式集合">
 <h4 class="anchored" data-anchor-id="适用条件是条件式集合" data-number="1.9.12.7"><span class="header-section-number">1.9.12.7</span> 适用条件是条件式集合</h4>
 <p>桥型适用性可写为</p>
-<p><span class="math display">\[
-\mathcal A_j=\{g_{jr}(\boldsymbol x,\boldsymbol d)\le 0,\ r=1,2,\ldots,m_j\},
+<p><span class="math display">\[
+\mathcal A_j=\{g_{jr}(\boldsymbol x,\boldsymbol d)\le 0,\ r=1,2,\ldots,m_j\},
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathcal A_j\)</span> 为方案 <span class="math inline">\(j\)</span> 的可行域；<span class="math inline">\(\boldsymbol x\)</span> 为可调整设计变量，如跨径、梁高、塔高、矢高和施工分段；<span class="math inline">\(\boldsymbol d\)</span> 为已知或待确认的场地数据；<span class="math inline">\(g_{jr}\)</span> 为第 <span class="math inline">\(r\)</span> 项约束函数。只有当方案存在一组 <span class="math inline">\(\boldsymbol x\)</span> 使全部硬约束成立时，才能进入性能、工程量、风险和景观比较。某一初始尺寸不满足约束，不必然说明整个体系不可行；但若体系固有的水平反力、塔高、锚碇或施工路径与硬约束冲突，则应及时筛除。</p>
 <table class="caption-top table">
@@ -3400,8 +3400,8 @@ T_s=\sqrt{H^2+\left(\frac{qL}{2}\right)^2}.
 <h4 class="anchored" data-anchor-id="勘察的目标是缩小决策不确定性" data-number="1.9.13.1"><span class="header-section-number">1.9.13.1</span> 勘察的目标是缩小决策不确定性</h4>
 <p>桥位勘察不是把尽可能多的资料装入项目文件夹，而是回答哪些事实决定跨越位置、桥长、孔跨、基础、结构体系、施工方法和运营风险。方案阶段应先建立“决策—所需证据”对应关系，再确定测量、钻探、调查、监测和专题研究的范围。若资料不能改变任何当前决策，应说明其后续用途；若某项不确定性可能改变桥型可行性，则应优先补充。</p>
 <p>对待确认参数 <span class="math inline">\(D\)</span>，补充勘察的工程价值可以用决策损失的期望变化解释。设在现有资料下选择方案的最小期望损失为 <span class="math inline">\(L_0\)</span>，获得新资料 <span class="math inline">\(I\)</span> 后的条件最小期望损失为 <span class="math inline">\(L(I)\)</span>，则资料的期望价值为</p>
-<p><span class="math display">\[
-V_I=L_0-\mathrm E_I[L(I)],
+<p><span class="math display">\[
+V_I=L_0-\mathrm E_I[L(I)],
 \]</span></p>
 <p>式中 <span class="math inline">\(V_I\)</span> 与损失采用相同单位，可为货币、工期或经批准的风险量纲；<span class="math inline">\(\mathrm E_I\)</span> 表示对可能勘察结果的期望。方案教学不要求计算精确货币值，而要求比较：增加一个墩位钻孔、延长测流时间或开展施工交通调查，最可能关闭哪一项重大分支。若新资料只微调尺寸，优先级通常低于能够判定“可设墩/不可设墩”或“可顶推/不可顶推”的资料。</p>
 </section>
@@ -3415,8 +3415,8 @@ V_I=L_0-\mathrm E_I[L(I)],
 <p>跨越通航水域时，应取得航道等级、通航孔尺度、控制水位、流向、船舶航迹、助航与防撞要求。通航孔是带位置、方向和高程的空间对象，而不是一个孤立的净高数值。斜交或弯曲航道可能要求在平面检查有效宽度；桥墩即使位于名义航道之外，也可能进入船舶偏航或防撞设施范围。具体净空和设防取值必须回查航道主管部门批复及现行标准。</p>
 <p>行洪分析需要流域、河槽、滩地、水位、流速、流向、冲淤、漂浮物和河势资料。方案阶段至少区分常水位、设计采用的控制水位、施工水位和调查时水位，并记录高程基准。桥孔压缩、墩台阻水、引道填筑和施工栈桥都可能改变流态。水文水力结论应明确模型范围、地形时间、边界条件与不确定性；结构专业据此布置桥孔和基础，但不替代水文主管专业的正式结论。</p>
 <p>若采用总过水宽度 <span class="math inline">\(B_w\)</span>、桥墩在主流方向投影总宽 <span class="math inline">\(\sum b_{p,i}\)</span> 作概念性阻水比，可写为</p>
-<p><span class="math display">\[
-\eta_b=\frac{\sum_i b_{p,i}}{B_w}.
+<p><span class="math display">\[
+\eta_b=\frac{\sum_i b_{p,i}}{B_w}.
 \]</span></p>
 <p><span class="math inline">\(\eta_b\)</span> 为无量纲指标，只用于统一方案几何边界下的相对比较，不直接等于壅水或冲刷效应。墩形、流速、河床、斜交、群墩和滩地主槽分配均会改变真实水力响应。教材页面应在该指标旁明确“需水力模型验证”，避免把一个易计算比例误作规范结论。</p>
 </section>
@@ -3509,8 +3509,8 @@ V_I=L_0-\mathrm E_I[L(I)],
 <h4 class="anchored" data-anchor-id="平面视图路线控制体与横向受力" data-number="1.9.14.1"><span class="header-section-number">1.9.14.1</span> 平面视图：路线、控制体与横向受力</h4>
 <p>平面图应同时表达线路中心线、桥面边缘、墩台轴线、支座或梁线、被交对象、基础与施工控制体。它回答的不只是“桥从哪里经过”，还包括：斜交角如何形成，曲率怎样沿里程变化，桥宽和分幅如何展开，桥墩是否进入航道或道路禁入区，基础是否与管线冲突，设备是否有转场和回转空间。</p>
 <p>曲线梁桥中，线路弧长 <span class="math inline">\(s\)</span> 与弦长 <span class="math inline">\(c\)</span> 不应混用。对半径为 <span class="math inline">\(R\)</span>、圆心角为 <span class="math inline">\(\varphi\)</span> 的圆曲线，有</p>
-<p><span class="math display">\[
-s=R\varphi,\qquad c=2R\sin\frac{\varphi}{2},
+<p><span class="math display">\[
+s=R\varphi,\qquad c=2R\sin\frac{\varphi}{2},
 \]</span></p>
 <p>其中 <span class="math inline">\(R,s,c\)</span> 单位为m，<span class="math inline">\(\varphi\)</span> 单位为rad。两者差异会影响节段长度、模型节点、支座方向和工程量。曲线外侧边缘长度也不同于中心线长度，桥面排水和伸缩构造应按真实几何处理。该公式只适用于圆曲线段，缓和曲线和复曲线由路线几何计算。</p>
 <p>斜交布置需要区分正交净宽与沿墩轴或支承线量取的结构长度。若两方向夹角为 <span class="math inline">\(\beta\)</span>，简单矩形投影中的斜向长度会随 <span class="math inline">\(1/\sin\beta\)</span> 放大；但真实桥台、梁端和支座布置还受翼墙、梁线和构造控制，不能仅用投影公式完成设计。数字页面应允许学生同时查看正交截面与斜交构造，而不是把斜交桥强制正交化。</p>
@@ -3518,8 +3518,8 @@ s=R\varphi,\qquad c=2R\sin\frac{\varphi}{2},
 <section class="level4" data-number="1.9.14.2" id="立面视图高程跨径和传力节奏">
 <h4 class="anchored" data-anchor-id="立面视图高程跨径和传力节奏" data-number="1.9.14.2"><span class="header-section-number">1.9.14.2</span> 立面视图：高程、跨径和传力节奏</h4>
 <p>立面图把路线设计高程、桥面结构层、上部结构底缘、支座、墩台、基础、地层、河床或被交道路以及控制净空置于同一基准。控制点应以里程—高程对给出。对任意里程 <span class="math inline">\(s\)</span>，桥下可用净高的概念表达为</p>
-<p><span class="math display">\[
-h_{\mathrm{clr}}(s)=z_{\mathrm{soffit}}(s)-z_{\mathrm{obstacle}}(s)-\Delta_h(s),
+<p><span class="math display">\[
+h_{\mathrm{clr}}(s)=z_{\mathrm{soffit}}(s)-z_{\mathrm{obstacle}}(s)-\Delta_h(s),
 \]</span></p>
 <p>其中 <span class="math inline">\(z_{\mathrm{soffit}}\)</span> 为结构或附属物最低点高程，<span class="math inline">\(z_{\mathrm{obstacle}}\)</span> 为被交对象控制面高程，<span class="math inline">\(\Delta_h\)</span> 为施工误差、变形、沉降或项目规定需要计入的预留，三者单位为m。<span class="math inline">\(\Delta_h\)</span> 的组成和取值须按主管部门批复及现行标准确定，本式仅建立尺寸链。</p>
 <p>跨径布置先服务于控制对象，再寻求结构节奏。河流桥应识别主槽、滩地、堤防和河势；道路立交桥应识别近期与远期车道、中央分隔带和设施带；深谷桥应比较墩高、边坡、基础与架设。等跨布置有利于标准化和视觉秩序，但不应为等跨而侵入硬约束。边中跨比例属于体系性能与施工的变量，不能脱离支承、恒载、锚固和架设方式单独采用经验值。</p>
@@ -3527,13 +3527,13 @@ h_{\mathrm{clr}}(s)=z_{\mathrm{soffit}}(s)-z_{\mathrm{obstacle}}(s)-\Delta_h(s),
 <section class="level4" data-number="1.9.14.3" id="横断面视图功能分配截面效率与更换分区">
 <h4 class="anchored" data-anchor-id="横断面视图功能分配截面效率与更换分区" data-number="1.9.14.3"><span class="header-section-number">1.9.14.3</span> 横断面视图：功能分配、截面效率与更换分区</h4>
 <p>横断面从功能带开始：车道、轨道、人行或非机动车道、检修带、防护、排水、管线和预留。功能总宽与结构总宽的关系可写为</p>
-<p><span class="math display">\[
-B=\sum_{i=1}^{n} b_i+\sum_{j=1}^{m}d_j,
+<p><span class="math display">\[
+B=\sum_{i=1}^{n} b_i+\sum_{j=1}^{m}d_j,
 \]</span></p>
 <p>式中，<span class="math inline">\(B\)</span> 为桥面结构总宽，<span class="math inline">\(b_i\)</span> 为各通行或设施功能带宽度，<span class="math inline">\(d_j\)</span> 为隔离、防护、构造缝和边缘构造占用宽度，单位均为m。公式用于尺寸闭合；具体宽度须由路线、交通、安全和项目标准确定。</p>
 <p>截面选择同时影响自重、抗弯、抗扭、横向分布、预制运输、浇筑、检查和更换。以同一材料、同一外轮廓高度的矩形实体截面与箱形截面为概念比较，可计算单位长度面积 <span class="math inline">\(A\)</span> 和绕水平中性轴惯性矩 <span class="math inline">\(I\)</span>，再用</p>
-<p><span class="math display">\[
-\eta_I=\frac{I}{A}
+<p><span class="math display">\[
+\eta_I=\frac{I}{A}
 \]</span></p>
 <p>描述单位截面面积提供的抗弯几何效率，<span class="math inline">\(\eta_I\)</span> 单位为m²。该指标只比较几何分布，不等于承载能力；薄壁局部稳定、剪切、畸变、连接、材料非线性和施工阶段都未包含。数字实验应同时显示空腔面积、顶底板和腹板厚度、局部最小尺寸及可进入性，防止把“挖空越多越好”作为结论。</p>
 <p>分幅与横向连接还应服务于交通维持和更换。若桥面需要半幅施工或半幅更换，横断面应说明临时交通荷载、横向稳定、接缝、设备位置和另一幅的安全净距。钢—混凝土组合梁的桥面板更换、预制梁的单片更换和整体箱梁的局部维修具有不同条件，不能仅用“少设接缝”评价。</p>
@@ -3542,10 +3542,10 @@ B=\sum_{i=1}^{n} b_i+\sum_{j=1}^{m}d_j,
 <h4 class="anchored" data-anchor-id="时间是第四个总体视图" data-number="1.9.14.4"><span class="header-section-number">1.9.14.4</span> 时间是第四个总体视图</h4>
 <p>三视图描述空间，施工和运维阶段描述对象随时间的存在、约束和功能。建议每个关键阶段保存一组三视图，而不是另画一张无法关联的施工示意图。第 <span class="math inline">\(k\)</span> 阶段图至少标注：已经存在的永久构件、临时构件、已闭合与未闭合连接、支承边界、设备和荷载包络、禁入区、测量控制点及下一转换事件。</p>
 <p>阶段事件可以写成</p>
-<p><span class="math display">\[
-E_k:\ (\mathcal G_k,\boldsymbol q_k,\boldsymbol u_k^0)
-\longrightarrow
-(\mathcal G_{k+1},\boldsymbol q_{k+1},\boldsymbol u_{k+1}^0),
+<p><span class="math display">\[
+E_k:\ (\mathcal G_k,\boldsymbol q_k,\boldsymbol u_k^0)
+\longrightarrow
+(\mathcal G_{k+1},\boldsymbol q_{k+1},\boldsymbol u_{k+1}^0),
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathcal G_k\)</span> 为结构拓扑和边界，<span class="math inline">\(\boldsymbol q_k\)</span> 为该阶段作用，<span class="math inline">\(\boldsymbol u_k^0\)</span> 为安装、张拉、温度或几何形成的初始状态。事件可能是浇筑、架设、张拉、落架、合龙、支座转换或拆除临时构件。若模型只更新 <span class="math inline">\(\boldsymbol q\)</span> 而不更新 <span class="math inline">\(\mathcal G\)</span> 与初始状态，往往不能代表真实体系转换。</p>
 <p>运维阶段同样需要三视图。更换支座时，在平面确定顶升点和交通分区，在立面检查千斤顶、临时支承和位移空间，在横断面检查同步顶升、横向稳定和作业通道。更换拉索时还需表示临时索或邻索调整、锚头拆装方向、吊装和防坠区域。设计中“有检修道”并不等同于设备能够到达、人员能够操作且结构在拆除目标构件后仍有明确传力路径。</p>
@@ -3632,8 +3632,8 @@ E_k:\ (\mathcal G_k,\boldsymbol q_k,\boldsymbol u_k^0)
 <li>对可能改变拓扑的水文、地质、线路或设备条件进行敏感性分析。</li>
 </ol>
 <p>跨径之和还要与桥长定义一致。若 <span class="math inline">\(x_0,x_1,\ldots,x_n\)</span> 为各支承计算位置，<span class="math inline">\(L_i=x_i-x_{i-1}\)</span> 为第 <span class="math inline">\(i\)</span> 孔计算跨径，则</p>
-<p><span class="math display">\[
-L_{\mathrm{calc}}=\sum_{i=1}^{n}L_i.
+<p><span class="math display">\[
+L_{\mathrm{calc}}=\sum_{i=1}^{n}L_i.
 \]</span></p>
 <p><span class="math inline">\(L_{\mathrm{calc}}\)</span> 不必等于桥梁全长，因为桥台背墙、伸缩端、引桥连接和标准定义可能采用不同端点。方案表应分别保存计算跨径和桥长，避免用总长除以孔数反推所有模型跨径。</p>
 </section>
@@ -3658,8 +3658,8 @@ L_{\mathrm{calc}}=\sum_{i=1}^{n}L_i.
 <h4 class="anchored" data-anchor-id="阶段的差别在于决定可以承担多大后果" data-number="1.9.16.1"><span class="header-section-number">1.9.16.1</span> 阶段的差别在于决定可以承担多大后果</h4>
 <p>桥梁设计阶段不能只按图纸数量区分。前期研究回答跨越方式、桥位和项目边界，方案阶段回答桥型、孔跨、桥面与主要工法，总体设计冻结主要几何与体系，结构设计完成作用、模型、构件和构造验证，施工设计把永久与临时状态转化为可执行工序，竣工和运营交付建立实建资产基线。不同建设制度对阶段名称和法定成果有不同规定，项目应以合同、主管部门和现行文件为准；教材强调其共同逻辑：决定越不可逆，支撑决定的证据必须越完整。</p>
 <p>可将一项决定 <span class="math inline">\(D_j\)</span> 的成熟度写成五元状态</p>
-<p><span class="math display">\[
-m(D_j)=\{p_j,e_j,a_j,r_j,s_j\},
+<p><span class="math display">\[
+m(D_j)=\{p_j,e_j,a_j,r_j,s_j\},
 \]</span></p>
 <p>其中，<span class="math inline">\(p_j\)</span> 为问题和适用阶段；<span class="math inline">\(e_j\)</span> 为证据及版本；<span class="math inline">\(a_j\)</span> 为分析模型与假定；<span class="math inline">\(r_j\)</span> 为风险和剩余不确定性；<span class="math inline">\(s_j\)</span> 为审查、批准或待确认状态。该表达不生成自动分数。一个决定只有在五项均明确后，才能作为下游输入；“方案图已画完”不能替代证据和风险状态。</p>
 </section>
@@ -3730,8 +3730,8 @@ m(D_j)=\{p_j,e_j,a_j,r_j,s_j\},
 <section class="level4" data-number="1.9.16.4" id="风险登记与问题关闭">
 <h4 class="anchored" data-anchor-id="风险登记与问题关闭" data-number="1.9.16.4"><span class="header-section-number">1.9.16.4</span> 风险登记与问题关闭</h4>
 <p>风险不是在报告末尾罗列“施工风险大、运营风险高”，而应与对象、原因、事件、后果和处置相连。一条可执行风险记录可写为</p>
-<p><span class="math display">\[
-R_i=\{o_i,c_i,e_i,q_i,m_i,w_i,d_i\},
+<p><span class="math display">\[
+R_i=\{o_i,c_i,e_i,q_i,m_i,w_i,d_i\},
 \]</span></p>
 <p>其中，<span class="math inline">\(o_i\)</span> 为风险对象；<span class="math inline">\(c_i\)</span> 为原因；<span class="math inline">\(e_i\)</span> 为可能事件；<span class="math inline">\(q_i\)</span> 为后果；<span class="math inline">\(m_i\)</span> 为预防、降低、监测或应急措施；<span class="math inline">\(w_i\)</span> 为责任人；<span class="math inline">\(d_i\)</span> 为关闭证据和日期。概率与后果若没有可靠资料，不强行换算为精确乘积，可采用经项目批准的等级并保留依据。</p>
 <p>风险处置顺序首先是消除或回避，例如移动墩位避开不可迁改设施；其次通过体系、构造或工法降低发生可能或后果；再次通过检测、监测和停工条件控制；最后才是接受并配置应急资源。一个风险被写入登记表并不等于已经处理，只有关闭证据满足预定条件且经责任主体确认，状态才由“开放”转为“关闭”。</p>
@@ -3746,22 +3746,22 @@ R_i=\{o_i,c_i,e_i,q_i,m_i,w_i,d_i\},
 <span>改一个尺寸</span><span>比较结果变化</span><span>把变化速度记成表</span>
 </div>
 <details>
-<summary>
-这组符号分别指什么？
+<summary>
+这组符号分别指什么？
 </summary>
-<p>
-p 是可改的输入，如跨径 L、截面惯性矩 I；y 是关心的结果，如弯矩 M、下沉量 δ。J 的一列对应一个输入，一行对应一个结果；Δ表示新旧值之差。局部变化率用于小改动，大改动应重新计算。
+<p>
+p 是可改的输入，如跨径 L、截面惯性矩 I；y 是关心的结果，如弯矩 M、下沉量 δ。J 的一列对应一个输入，一行对应一个结果；Δ表示新旧值之差。局部变化率用于小改动，大改动应重新计算。
 </p>
 </details>
 </div>
 <!-- FORMULA-SCAFFOLD ch01 END -->
 <p>变更由触发、评估、批准、实施和验证五步组成。触发可能来自路线、水文、地质、施工设备、材料供应、现场偏差、标准或运营需求。评估先确认变更对象和原因，再沿依赖图寻找受影响成果；批准明确变更的边界、责任和生效版本；实施更新图纸、模型、计算和工序；验证通过回归检查确认无关结果未被误改、相关结果已经重算。</p>
 <p>若参数向量由 <span class="math inline">\(\boldsymbol p\)</span> 变为 <span class="math inline">\(\boldsymbol p+\Delta\boldsymbol p\)</span>，结果向量 <span class="math inline">\(\boldsymbol y\)</span> 的局部敏感性可近似为</p>
-<p><span class="math display">\[
-\Delta\boldsymbol y\approx
-\boldsymbol J\Delta\boldsymbol p,
-\qquad
-\boldsymbol J=\frac{\partial\boldsymbol y}{\partial\boldsymbol p}.
+<p><span class="math display">\[
+\Delta\boldsymbol y\approx
+\boldsymbol J\Delta\boldsymbol p,
+\qquad
+\boldsymbol J=\frac{\partial\boldsymbol y}{\partial\boldsymbol p}.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol J\)</span> 是结果对参数的雅可比矩阵，单位由相应结果和参数之比确定。该线性近似只用于小扰动和影响筛查；当变更导致支承、连接、接触、施工阶段或控制工况改变时，模型拓扑和极值位置可能突变，应重新分析而不能依赖局部导数。</p>
 <p>设计变更单至少保留旧值、新值、单位、原因、来源、批准人、生效日期、直接与间接影响、重算清单、图模一致性和未决风险。被替代版本应冻结存档，不以覆盖文件方式消失。若AI协助生成影响清单，清单状态只能是“候选”，由各专业确认后才成为正式重算范围。</p>
@@ -3790,9 +3790,9 @@ p 是可改的输入，如跨径 L、截面惯性矩 I；y 是关心的结果，
 <h4 class="anchored" data-anchor-id="模型许可" data-number="1.9.17.2"><span class="header-section-number">1.9.17.2</span> 模型许可</h4>
 <p>每个模型应附一份许可说明：适用对象、状态、输出、主要假定、忽略机制、输入来源、验证证据和禁止用途。例如，一个线弹性直梁模型可用于初步竖向弯矩和挠度，却不能直接用于曲线箱梁畸变、开裂后刚度、支座脱空或碰撞；一个成桥模态模型不能自动代表最大悬臂施工态；一个参数化几何模型可以统计工程量，但若截面交接未处理，不能作为局部应力模型。</p>
 <p>模型许可可用集合表示：</p>
-<p><span class="math display">\[
-\Pi_M=\{\mathcal O_M,\mathcal S_M,\mathcal Q_M,
-\mathcal A_M,\mathcal V_M,\mathcal X_M\},
+<p><span class="math display">\[
+\Pi_M=\{\mathcal O_M,\mathcal S_M,\mathcal Q_M,
+\mathcal A_M,\mathcal V_M,\mathcal X_M\},
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathcal O_M\)</span> 为适用对象，<span class="math inline">\(\mathcal S_M\)</span> 为适用状态，<span class="math inline">\(\mathcal Q_M\)</span> 为允许输出，<span class="math inline">\(\mathcal A_M\)</span> 为假定，<span class="math inline">\(\mathcal V_M\)</span> 为验证证据，<span class="math inline">\(\mathcal X_M\)</span> 为明确排除的用途。调用模型前先检查当前问题是否属于 <span class="math inline">\(\Pi_M\)</span>，比事后解释异常结果更可靠。</p>
 </section>
@@ -3800,13 +3800,13 @@ p 是可改的输入，如跨径 L、截面惯性矩 I；y 是关心的结果，
 <h4 class="anchored" data-anchor-id="验证确认和校准" data-number="1.9.17.3"><span class="header-section-number">1.9.17.3</span> 验证、确认和校准</h4>
 <p>验证回答“方程和离散是否被正确求解”，包括基准算例、网格或步长收敛、单元与约束检查、平衡、对称和软件交叉计算；确认回答“所选方程和参数是否足以代表目标现实”，需要试验、监测、既有工程或高可信分析证据；校准依据数据调整参数，但不能把未建模机制的影响全部塞进一个等效系数。</p>
 <p>总体静力模型至少检查外力与反力平衡：</p>
-<p><span class="math display">\[
-\boldsymbol r_F=
-\sum\boldsymbol F_{\mathrm{ext}}+
-\sum\boldsymbol R,\qquad
-\varepsilon_F=
-\frac{\|\boldsymbol r_F\|}
-{\max(\sum\|\boldsymbol F_{\mathrm{ext}}\|,F_0)},
+<p><span class="math display">\[
+\boldsymbol r_F=
+\sum\boldsymbol F_{\mathrm{ext}}+
+\sum\boldsymbol R,\qquad
+\varepsilon_F=
+\frac{\|\boldsymbol r_F\|}
+{\max(\sum\|\boldsymbol F_{\mathrm{ext}}\|,F_0)},
 \]</span></p>
 <p>式中，<span class="math inline">\(\boldsymbol r_F\)</span> 为力残差，单位kN；<span class="math inline">\(\varepsilon_F\)</span> 为无量纲相对残差；<span class="math inline">\(F_0\)</span> 为防止零荷载除零的参考力，单位kN。容许残差应结合求解器、单位和项目要求确定，本书不预设统一阈值。平衡成立也不代表模型正确，还需检查反力方向、约束冗余、变形形态和简化解。</p>
 </section>
@@ -3830,14 +3830,14 @@ p 是可改的输入，如跨径 L、截面惯性矩 I；y 是关心的结果，
 <h4 class="anchored" data-anchor-id="本书对bridge-modeler的用法" data-number="1.9.18.2"><span class="header-section-number">1.9.18.2</span> 本书对Bridge Modeler的用法</h4>
 <p>本书暂以 <strong>Bridge Modeler（桥梁参数化建模器）</strong> 指一类教学与工程建模环境，而不绑定某一商业软件。它接收路线、桥位控制、孔跨、截面、构件、支承、施工阶段和材料字段，生成三维语义模型、二维视图、分析骨架与工程量接口。若课程后续确定采用某一具体软件，只需在适配层把通用字段映射到该软件对象，不改变教材中的结构判断链。</p>
 <p>Bridge Modeler的最小对象关系为</p>
-<p><span class="math display">\[
-\text{Route}
-\rightarrow\text{Span}
-\rightarrow\text{Support}
-\rightarrow\text{Member}
-\rightarrow\text{Section}
-\rightarrow\text{Stage}
-\rightarrow\text{Analysis/Asset}.
+<p><span class="math display">\[
+\text{Route}
+\rightarrow\text{Span}
+\rightarrow\text{Support}
+\rightarrow\text{Member}
+\rightarrow\text{Section}
+\rightarrow\text{Stage}
+\rightarrow\text{Analysis/Asset}.
 \]</span></p>
 <p>路线定义空间基准；孔跨与支承定义拓扑；构件和截面定义结构对象；阶段定义对象何时存在及怎样连接；分析接口转换为节点、单元、材料、边界和作用；资产接口增加检查、维护和更换信息。几何模型与分析模型可以共享来源，但自动转换后仍须核对理想化、连接与边界。</p>
 <p>推荐的数据字段如下：</p>
@@ -3905,8 +3905,8 @@ p 是可改的输入，如跨径 L、截面惯性矩 I；y 是关心的结果，
 <section class="level4" data-number="1.9.18.3" id="几何分析图纸一致性">
 <h4 class="anchored" data-anchor-id="几何分析图纸一致性" data-number="1.9.18.3"><span class="header-section-number">1.9.18.3</span> 几何—分析—图纸一致性</h4>
 <p>参数化环境至少需要三种模型：几何语义模型、计算模型和表达模型。几何模型描述真实轴线、表面、构件和空间；计算模型按分析目的建立节点、单元、偏心、连接和边界；表达模型生成平立横、构造详图和表格。三者不能简单认为同一个文件。转换时应记录对象映射</p>
-<p><span class="math display">\[
-\mu:\ O_G\longrightarrow\{O_{A,1},O_{A,2},\ldots,O_{D,n}\},
+<p><span class="math display">\[
+\mu:\ O_G\longrightarrow\{O_{A,1},O_{A,2},\ldots,O_{D,n}\},
 \]</span></p>
 <p>其中，<span class="math inline">\(O_G\)</span> 为几何对象；<span class="math inline">\(O_A\)</span> 为一个或多个分析对象；<span class="math inline">\(O_D\)</span> 为图纸或表格对象。一个箱梁几何体可映射为一根偏心梁单元、一组格梁或壳单元；不同映射回答的问题不同。映射丢失或对象拆分后，应保留原对象编号以便结果回写。</p>
 <p>一致性检查包括：跨径和支承位置是否一致；截面面积和惯性矩是否由同一几何版本计算；构件局部轴是否与内力方向一致；阶段对象是否同步；模型反力能否回写到正确墩台；图纸修改是否触发计算失效；资产编号是否对应实建构件。结果回写只能写入相同输入版本，不能把旧模型结果显示在新几何上。</p>
@@ -3921,8 +3921,8 @@ p 是可改的输入，如跨径 L、截面惯性矩 I；y 是关心的结果，
 <li><strong>表达接口</strong>：把经确认数据组织为图表、说明和无障碍替代文本，不增加新工程事实。</li>
 </ol>
 <p>每次调用形成任务合同</p>
-<p><span class="math display">\[
-C_{AI}=\{I,P,O,R,V,H\},
+<p><span class="math display">\[
+C_{AI}=\{I,P,O,R,V,H\},
 \]</span></p>
 <p>其中，<span class="math inline">\(I\)</span> 为允许输入，<span class="math inline">\(P\)</span> 为问题与禁止范围，<span class="math inline">\(O\)</span> 为输出模式，<span class="math inline">\(R\)</span> 为可用来源，<span class="math inline">\(V\)</span> 为验证程序，<span class="math inline">\(H\)</span> 为人工责任与签认。若输出不符合模式、引用不能定位或验证失败，流程停止在候选状态。</p>
 <p>AI生成代码还需通过语法、单位、极限情形、基准例和独立实现检查。例如，跨径趋近零、矢高减小、对称荷载和关闭某支承等极限情形可以暴露符号、方向和边界错误。通过测试只证明代码按测试运行，不能证明结构模型的物理假定充分。</p>
@@ -3960,8 +3960,8 @@ C_{AI}=\{I,P,O,R,V,H\},
 <h4 class="anchored" data-anchor-id="一级筛查" data-number="1.9.19.4"><span class="header-section-number">1.9.19.4</span> 一级筛查</h4>
 <p>首先检查机场控制面。若方案A任一桥塔、设备或施工吊装包络侵入不可协商高度控制，则全桥高塔方案退出；不能以降低成桥塔高而忽略施工设备。其次检查主航道：方案C的桥段或隧段必须保证航道连续，沉管施工和疏浚也需在批准窗口内。再次检查铁路纵坡和平曲线，桥隧转换必须形成可接受的线路几何。最后检查海床和环境：基础、沉管沟槽、人工岛及取弃料分别具有不同扰动，需统一评价边界。</p>
 <p>可将某方案对控制体 <span class="math inline">\(\Omega_r\)</span> 的侵入写为</p>
-<p><span class="math display">\[
-I_{jr}=\operatorname{vol}(\Omega_j\cap\Omega_r),
+<p><span class="math display">\[
+I_{jr}=\operatorname{vol}(\Omega_j\cap\Omega_r),
 \]</span></p>
 <p>其中 <span class="math inline">\(I_{jr}\)</span> 为方案 <span class="math inline">\(j\)</span> 与第 <span class="math inline">\(r\)</span> 个三维控制体的重叠体积，单位m³；<span class="math inline">\(\Omega_j\)</span> 包括永久结构和控制施工设备。对绝对禁入区，要求 <span class="math inline">\(I_{jr}=0\)</span>。体积为零并不自动证明满足净距，仍需计算对象表面间最小距离并按主管部门批准值核对。</p>
 </section>
@@ -3999,8 +3999,8 @@ I_{jr}=\operatorname{vol}(\Omega_j\cap\Omega_r),
 <section class="level4" data-number="1.9.20.4" id="传力和尺度预审">
 <h4 class="anchored" data-anchor-id="传力和尺度预审" data-number="1.9.20.4"><span class="header-section-number">1.9.20.4</span> 传力和尺度预审</h4>
 <p>对每个墩位 <span class="math inline">\(i\)</span>，先计算墩高 <span class="math inline">\(H_i\)</span>、相邻跨径 <span class="math inline">\(L_i,L_{i+1}\)</span> 和基础可达等级。概念层可用悬臂墩侧向刚度</p>
-<p><span class="math display">\[
-k_i\approx\frac{3E_iI_i}{H_i^3}
+<p><span class="math display">\[
+k_i\approx\frac{3E_iI_i}{H_i^3}
 \]</span></p>
 <p>比较高墩刚度差异，式中 <span class="math inline">\(k_i\)</span> 单位kN/m，<span class="math inline">\(E_i\)</span> 单位kN/m²，<span class="math inline">\(I_i\)</span> 单位m⁴，<span class="math inline">\(H_i\)</span> 单位m。该式假定墩底固结、墩顶受水平力且线弹性，只用于识别 <span class="math inline">\(H_i^3\)</span> 对刚度的影响，不作为高墩设计。墩高差异会造成温度、制动和地震力分配不均，应在总体模型中显式表示。</p>
 <p>对顶推主梁，成桥正弯矩控制并不能代表施工。每推进一个节段，支点位置和悬臂长度改变，必须建立阶段包络。设置导梁可降低前端悬臂弯矩，但增加设备、连接和侧风面积。斜拉方案若在主梁顶推完成后设置索塔和索，也需明确顶推阶段主梁自身的稳定与强度；若索塔先形成并参与架设，则施工拓扑不同。</p>
@@ -4034,13 +4034,13 @@ k_i\approx\frac{3E_iI_i}{H_i^3}
 <section class="level4" data-number="1.9.21.3" id="冰作用作为概率情景">
 <h4 class="anchored" data-anchor-id="冰作用作为概率情景" data-number="1.9.21.3"><span class="header-section-number">1.9.21.3</span> 冰作用作为概率情景</h4>
 <p>冰作用不能用一幅静态冰块图表达。需要区分冰片在风和流作用下推移、局部挤压、弯曲破坏、堆积、冰脊和温度相关材料性质，并说明桥墩几何怎样改变破坏模式。方案阶段可把年度最大冰作用效应记为随机变量 <span class="math inline">\(S_I\)</span>，结构抵抗或允许效应记为 <span class="math inline">\(R_I\)</span>，概念失效概率为</p>
-<p><span class="math display">\[
-P_f=P(R_I-S_I\le 0).
+<p><span class="math display">\[
+P_f=P(R_I-S_I\le 0).
 \]</span></p>
 <p><span class="math inline">\(S_I\)</span> 与 <span class="math inline">\(R_I\)</span> 的单位应一致，可为kN、kN·m或相应响应量。该式用于建立“统计资料—荷载模型—结构响应—可靠性”的证据链，不提供规范目标值。冰厚、强度、速度、接触宽度和作用相关性均需由项目研究与现行标准确定。</p>
 <p>为比较桥墩数量和上部跨径，可设海上墩数为 <span class="math inline">\(N_p\)</span>、单墩施工暴露时长为 <span class="math inline">\(t_{p,i}\)</span>、冰区暴露等级为 <span class="math inline">\(e_i\)</span>，定义无量纲教学指标</p>
-<p><span class="math display">\[
-J_c=\sum_{i=1}^{N_p}w_i\frac{t_{p,i}}{t_0},
+<p><span class="math display">\[
+J_c=\sum_{i=1}^{N_p}w_i\frac{t_{p,i}}{t_0},
 \]</span></p>
 <p>其中 <span class="math inline">\(w_i\)</span> 为由课程数据包给出的暴露权重，<span class="math inline">\(t_0\)</span> 为参考时长。<span class="math inline">\(J_c\)</span> 只用于同一教学边界的施工暴露比较，不能替代费用、风险或环境评价。减少桥墩会增大上部跨径和构件尺度，应同时比较预制、运输和架设能力。</p>
 </section>
@@ -4048,8 +4048,8 @@ J_c=\sum_{i=1}^{N_p}w_i\frac{t_{p,i}}{t_0},
 <h4 class="anchored" data-anchor-id="总体设计与工业化建造" data-number="1.9.21.4"><span class="header-section-number">1.9.21.4</span> 总体设计与工业化建造</h4>
 <p>长联桥先划分标准段、通航段和岸侧过渡段。标准段追求跨径、墩形、构件和工序重复；通航段按航道控制提高跨径和净空；过渡段解决高程、地质和结构体系变化。桥墩迎冰构造、基础和墩身并非孤立细节，它们决定冰作用路径、局部耐久和海上安装。平面还需考虑冰运动方向与水流，不应只沿线路对称布置。</p>
 <p>工业化方案从构件制造、存放、装船、运输、起吊、定位、连接和撤离形成连续物流。预制场的构件尺寸由结构效率和运输起吊共同决定。对第 <span class="math inline">\(i\)</span> 类构件，可用</p>
-<p><span class="math display">\[
-m_i=\rho_i V_i,
+<p><span class="math display">\[
+m_i=\rho_i V_i,
 \]</span></p>
 <p>计算质量，式中 <span class="math inline">\(m_i\)</span> 单位kg或t，<span class="math inline">\(\rho_i\)</span> 为材料密度，单位kg/m³或t/m³，<span class="math inline">\(V_i\)</span> 为体积，单位m³。起吊验算还需计入吊具、动力效应、风浪、重心偏差和设备工况，不能用构件自重直接代替起重量。</p>
 <p>长联桥施工的质量一致性具有系统效应。若标准节段高程、长度或预应力偏差在多跨中累积，桥面线形和支承状态可能偏离。参数模型应区分随机偏差与系统偏差，按安装批次和测量基准更新。课程只演示误差传播，不规定工程容差。</p>
@@ -4080,8 +4080,8 @@ m_i=\rho_i V_i,
 <h4 class="anchored" data-anchor-id="力流与尺度比较" data-number="1.9.22.3"><span class="header-section-number">1.9.22.3</span> 力流与尺度比较</h4>
 <p>斜拉方案把桥面荷载经密集斜索传给桥塔，主梁承担弯矩及显著轴压；悬索方案把桥面荷载经吊索传给主缆，再经桥塔和锚碇闭合。两类体系都使用受拉索，但索的几何、刚度和锚固边界不同。不能仅依据外形将长索结构归为同一模型。</p>
 <p>对悬索桥抛物线概念模型，前述 <span class="math inline">\(H=qL^2/(8f)\)</span> 表明主跨 <span class="math inline">\(L\)</span> 增长会显著提高主缆水平分力；增大矢度 <span class="math inline">\(f\)</span> 可降低 <span class="math inline">\(H\)</span>，却会提高塔顶索位并改变塔高、材料和景观。若设矢跨比 <span class="math inline">\(\lambda_f=f/L\)</span>，可写为</p>
-<p><span class="math display">\[
-H=\frac{qL}{8\lambda_f}.
+<p><span class="math display">\[
+H=\frac{qL}{8\lambda_f}.
 \]</span></p>
 <p><span class="math inline">\(H\)</span> 单位kN，<span class="math inline">\(q\)</span> 单位kN/m，<span class="math inline">\(L\)</span> 单位m，<span class="math inline">\(\lambda_f\)</span> 无量纲。该式只反映均布荷载的静力数量级，不能评价加劲梁气动稳定或活载变形。</p>
 <p>桥面总体刚度还需控制不对称活载、风和施工吊装。概念比较可计算单位长度质量 <span class="math inline">\(m\)</span>、竖弯/扭转频率趋势和宽高尺度，但必须在第9章采用经验证的气动系数、风场和动力模型。所谓“流线型截面”不能由外观判断，需经过节段或全桥模型试验及计算验证。</p>
@@ -4288,8 +4288,8 @@ H=\frac{qL}{8\lambda_f}.
 <h4 class="anchored" data-anchor-id="从专业成果转化为可交换条件" data-number="1.10.0.1"><span class="header-section-number">1.10.0.1</span> 从专业成果转化为可交换条件</h4>
 <p>总体设计处于路线、结构、岩土、水文、交通、建筑、机电、施工和运维之间。接口验收不是检查各专业是否分别提交文件，而是检查一方输出的对象能否被另一方以相同基准、单位和版本读取。结构专业收到一条路线时，应同时获得里程、平纵曲线、横坡、设计高程、有效日期和适用范围；收到“桥墩可设区”时，应知道其依据是规划净空、地质建议还是施工偏好；输出支座反力时，应说明工况、方向、符号、作用位置和是否为包络。</p>
 <p>可交换接口写成</p>
-<p><span class="math display">\[
-I_{ab}=\{O,V,U,C,T,S,Q\},
+<p><span class="math display">\[
+I_{ab}=\{O,V,U,C,T,S,Q\},
 \]</span></p>
 <p>其中，<span class="math inline">\(O\)</span> 为交换对象；<span class="math inline">\(V\)</span> 为数值或版本；<span class="math inline">\(U\)</span> 为单位；<span class="math inline">\(C\)</span> 为坐标、高程和符号约定；<span class="math inline">\(T\)</span> 为时间或设计阶段；<span class="math inline">\(S\)</span> 为来源与批准状态；<span class="math inline">\(Q\)</span> 为质量检查。接口从专业 <span class="math inline">\(a\)</span> 传给专业 <span class="math inline">\(b\)</span> 后，<span class="math inline">\(b\)</span> 不得在本地复制并修改为另一个同名对象。确需调整时，应形成变更请求并回写到共同基线。</p>
 </section>
@@ -4503,410 +4503,410 @@ I_{ab}=\{O,V,U,C,T,S,Q\},
 </section>
 <p class="public-edition-note"><a href="../publication-images.html">公开预览 · 图片来源与版本说明</a></p></main> <!-- /main -->
 
-<script>
-(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
-
+<script>
+(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+
 </script>
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "已复制");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "已复制");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
-          }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
-  });
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
   </script>
 <nav class="page-navigation">
 <div class="nav-page nav-page-previous">

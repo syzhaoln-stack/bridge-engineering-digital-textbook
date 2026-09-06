@@ -5,21 +5,21 @@
 <meta content="quarto-1.9.38" name="generator"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
 <title>5  拱桥设计 – 桥梁工程智能设计</title>
-<style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
 </style>
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
@@ -39,61 +39,61 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
 <link append-hash="true" data-mode="light" href="../site_libs/bootstrap/bootstrap-c614dc152840027ed1d225942eae4f22.min.css" id="quarto-bootstrap" rel="stylesheet"/>
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "没有结果",
-    "search-matching-documents-text": "匹配的文档",
-    "search-copy-link-title": "复制搜索链接",
-    "search-hide-matches-text": "隐藏其它匹配结果",
-    "search-more-match-text": "更多匹配结果",
-    "search-more-matches-text": "更多匹配结果",
-    "search-clear-button-title": "清除",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "取消",
-    "search-submit-button-title": "提交",
-    "search-label": "搜索"
-  }
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
 </script>
 <link href="../styles.css" rel="stylesheet"/>
 
@@ -273,7 +273,7 @@ window.Quarto = {
 <li class="sidebar-item">
 <div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../legacy-tools.html">
-<span class="menu-text">从旧版接续的两个实验</span></a>
+<span class="menu-text">从旧版接续的实验与游戏</span></a>
 </div>
 </li>
 </ul>
@@ -339,185 +339,185 @@ window.Quarto = {
 <div class="core-route" id="core-route">
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry">
-<p>
-先从一个看得见的问题开始
+<p>
+先从一个看得见的问题开始
 </p>
-<h3 class="anchored">
-桥上只来了一侧的车，原来的拱形还合适吗？
+<h3 class="anchored">
+桥上只来了一侧的车，原来的拱形还合适吗？
 </h3>
-<p>
-逐渐增大左右半跨荷载的不对称度，比较同一条拱轴上的剩余弯矩。
+<p>
+逐渐增大左右半跨荷载的不对称度，比较同一条拱轴上的剩余弯矩。
 </p>
 <a href="../interactive/learning-map.html?chapter=ch04">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
-<h2 class="anchored">
-本章的核心思考
+<h2 class="anchored">
+本章的核心思考
 </h2>
-<p class="core-thesis">
-让几何贴近力流，同时保留弯曲与稳定判断。
+<p class="core-thesis">
+让几何贴近力流，同时保留弯曲与稳定判断。
 </p>
 <ol>
-<li>
-用 M=M₀−Hy 解释拱的水平推力。
+<li>
+用 M=M₀−Hy 解释拱的水平推力。
 </li>
-<li>
-改变荷载，检验合理拱轴的适用条件。
+<li>
+改变荷载，检验合理拱轴的适用条件。
 </li>
-<li>
-把整体内力转换为截面偏心，区分不同的无拉要求。
+<li>
+把整体内力转换为截面偏心，区分不同的无拉要求。
 </li>
 </ol>
 <div class="core-analogy">
-<h3 class="anchored">
-跨课程类比
+<h3 class="anchored">
+跨课程类比
 </h3>
-<p>
-轴力＋弯矩 → 压力线偏心；柔索平衡 → 合理拱轴
+<p>
+轴力＋弯矩 → 压力线偏心；柔索平衡 → 合理拱轴
 </p>
 <p>
-<strong>反例与边界：</strong>只在某种荷载下合理的拱轴，不会自动对半跨活载合理；纯压也可能失稳。
+<strong>反例与边界：</strong>只在某种荷载下合理的拱轴，不会自动对半跨活载合理；纯压也可能失稳。
 </p>
 </div>
-<p>
-建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
+<p>
+建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
 </p>
 <div class="core-unit-grid">
 <article>
-<p class="core-tag">
-C05U01 · 课堂核心
+<p class="core-tag">
+C05U01 · 课堂核心
 </p>
-<h3 class="anchored">
-拱通过推力抵消梁式弯矩
+<h3 class="anchored">
+拱通过推力抵消梁式弯矩
 </h3>
-<p>
-拱的水平推力乘以拱高，可以抵消对应梁的弯矩。
+<p>
+拱的水平推力乘以拱高，可以抵消对应梁的弯矩。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C05U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U01&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C05U02 · 课堂核心
+<p class="core-tag">
+C05U02 · 课堂核心
 </p>
-<h3 class="anchored">
-合理拱轴只对应指定荷载
+<h3 class="anchored">
+合理拱轴只对应指定荷载
 </h3>
-<p>
-对称均布荷载下的合理拱轴，遇到不对称活载后会产生剩余弯矩。
+<p>
+对称均布荷载下的合理拱轴，遇到不对称活载后会产生剩余弯矩。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C05U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U02&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C05U03 · 课前/课后迁移
+<p class="core-tag">
+C05U03 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-整体弯矩转成截面偏心
+<h3 class="anchored">
+整体弯矩转成截面偏心
 </h3>
-<p>
-用偏心等于弯矩除以轴力，把拱的整体受力转成局部截面应力问题。
+<p>
+用偏心等于弯矩除以轴力，把拱的整体受力转成局部截面应力问题。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C05U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U03&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C05U04 · 课堂核心
+<p class="core-tag">
+C05U04 · 课堂核心
 </p>
-<h3 class="anchored">
-无拉应力与压力线位置
+<h3 class="anchored">
+无拉应力与压力线位置
 </h3>
-<p>
-未开裂矩形截面无拉应力要求压力合力位于核心内。
+<p>
+未开裂矩形截面无拉应力要求压力合力位于核心内。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C05U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U04&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C05U05 · 课前/课后迁移
+<p class="core-tag">
+C05U05 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-矢跨比改变水平推力
+<h3 class="anchored">
+矢跨比改变水平推力
 </h3>
-<p>
-同跨度同均布荷载下，拱矢高降低，水平推力按矢高倒数增加。
+<p>
+同跨度同均布荷载下，拱矢高降低，水平推力按矢高倒数增加。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C05U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U05&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C05U06 · 课前/课后迁移
+<p class="core-tag">
+C05U06 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-拱与悬索是受力的对应形态
+<h3 class="anchored">
+拱与悬索是受力的对应形态
 </h3>
-<p>
-在水平投影均布荷载模型中，悬索与合理拱均呈抛物线平衡关系，但轴力符号相反。
+<p>
+在水平投影均布荷载模型中，悬索与合理拱均呈抛物线平衡关系，但轴力符号相反。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C05U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U06&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C05U07 · 课前/课后迁移
+<p class="core-tag">
+C05U07 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-拱肋变细，稳定不会自动跟上
+<h3 class="anchored">
+拱肋变细，稳定不会自动跟上
 </h3>
-<p>
-提高惯性矩可以提高理想压杆临界力，实际拱仍需检查空间稳定。
+<p>
+提高惯性矩可以提高理想压杆临界力，实际拱仍需检查空间稳定。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C05U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U07&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C05U08 · 课前/课后迁移
+<p class="core-tag">
+C05U08 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-合龙相当于锁定自由变形
+<h3 class="anchored">
+合龙相当于锁定自由变形
 </h3>
-<p>
-约束建立前后，同一自由变形会对应不同的内力。
+<p>
+约束建立前后，同一自由变形会对应不同的内力。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C05U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U08&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C05U09 · 课前/课后迁移
+<p class="core-tag">
+C05U09 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-梁拱组合靠刚度分担作用
+<h3 class="anchored">
+梁拱组合靠刚度分担作用
 </h3>
-<p>
-共同变形的构件按刚度分担作用，不能仅凭名称判断谁承担更多荷载。
+<p>
+共同变形的构件按刚度分担作用，不能仅凭名称判断谁承担更多荷载。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C05U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U09&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C05U10 · 课前/课后迁移
+<p class="core-tag">
+C05U10 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-半跨荷载是检验类比的反例
+<h3 class="anchored">
+半跨荷载是检验类比的反例
 </h3>
-<p>
-荷载失去对称性时，剩余弯矩显现，必须保留弯曲验算。
+<p>
+荷载失去对称性时，剩余弯矩显现，必须保留弯曲验算。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C05U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C05U10&amp;view=video" target="_blank">观看短视频</a>
@@ -539,8 +539,8 @@ C05U10 · 课前/课后迁移
 <figure class="chapter-video-card figure">
 <video controls="" playsinline="" poster="../assets/videos/manim/posters/M08_arch_thrust_line.png" preload="metadata" src="../assets/videos/manim/M08_arch_thrust_line.mp4">
 </video>
-<figcaption>
-M08　拱轴、压力线与偏心
+<figcaption>
+M08　拱轴、压力线与偏心
 </figcaption>
 </figure>
 </div>
@@ -554,8 +554,8 @@ M08　拱轴、压力线与偏心
 <div aria-describedby="fig-ch04-deck-position-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 5.1: 上承式、下承式与中承式拱桥的组成。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-deck-position-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.1: 上承式、下承式与中承式拱桥的组成
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-deck-position-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.1: 上承式、下承式与中承式拱桥的组成
 </figcaption>
 </figure>
 </div>
@@ -634,8 +634,8 @@ M08　拱轴、压力线与偏心
 <div aria-describedby="fig-ch04-beam-arch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 5.2: 梁与拱的反力及截面内力对比。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-beam-arch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.2: 梁与拱的反力及截面内力对比
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-beam-arch-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.2: 梁与拱的反力及截面内力对比
 </figcaption>
 </figure>
 </div>
@@ -643,12 +643,12 @@ M08　拱轴、压力线与偏心
 <p><strong>图源（内部初稿）。</strong> 在线教材项目 <code>longyu8101/qlgc</code>，原图3-1-2“拱和梁受力分析对比”，文件 <code>source/_static/fig/3-1-2.jpg</code>，<a class="uri" href="https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/3-1-2.jpg">https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/3-1-2.jpg</a>。用于说明水平推力对拱截面内力的作用，正式版拟按统一正负号重绘。</p>
 </div>
 <p>以三铰拱为例，设相同荷载作用在同跨度简支梁上产生弯矩 <span class="math inline">\(M^0(x)\)</span>，拱轴在该截面的竖坐标为 <span class="math inline">\(y(x)\)</span>，拱脚水平推力为 <span class="math inline">\(H\)</span>，则</p>
-<p><span class="math display">\[
-M(x)=M^0(x)-Hy(x).
+<p><span class="math display">\[
+M(x)=M^0(x)-Hy(x).
 \]</span></p>
 <p>若拱顶铰的竖坐标为矢高 <span class="math inline">\(f\)</span>，由拱顶铰弯矩为零可得</p>
-<p><span class="math display">\[
-H=\frac{M_C^0}{f},
+<p><span class="math display">\[
+H=\frac{M_C^0}{f},
 \]</span></p>
 <p>其中 <span class="math inline">\(M_C^0\)</span> 为同荷载作用下相应简支梁在拱顶投影截面的弯矩。该关系说明：在跨度与荷载不变时，矢高减小会增大水平推力；同时，<span class="math inline">\(Hy(x)\)</span> 项改变全拱弯矩分布。</p>
 <p>若截面切线与水平线夹角为 <span class="math inline">\(\varphi\)</span>，同位置简支梁剪力为 <span class="math inline">\(V^0(x)\)</span>，在统一符号约定下可将拱截面轴力与剪力写成水平、竖向合力在局部坐标上的投影。教材计算前必须先画出正方向，避免只记公式而混淆符号。无论采用何种约定，轴力、剪力和弯矩均应能由截面一侧自由体平衡复核。</p>
@@ -661,9 +661,9 @@ H=\frac{M_C^0}{f},
 <section class="level4" data-number="5.1.2.2" id="两铰拱的水平推力">
 <h4 class="anchored" data-anchor-id="两铰拱的水平推力" data-number="5.1.2.2"><span class="header-section-number">5.1.2.2</span> 两铰拱的水平推力</h4>
 <p>两铰拱为一次超静定结构。释放水平约束形成基本体系，以水平推力 <span class="math inline">\(H\)</span> 为多余力，由两拱脚相对水平位移为零的协调条件可概括为</p>
-<p><span class="math display">\[
-H=\frac{\displaystyle\int\frac{M^0y}{EI}\,\mathrm ds+\text{轴向变形及其他作用项}}
-{\displaystyle\int\frac{y^2}{EI}\,\mathrm ds+\text{相应柔度项}}.
+<p><span class="math display">\[
+H=\frac{\displaystyle\int\frac{M^0y}{EI}\,\mathrm ds+\text{轴向变形及其他作用项}}
+{\displaystyle\int\frac{y^2}{EI}\,\mathrm ds+\text{相应柔度项}}.
 \]</span></p>
 <p>符号随基本体系约定而定。该式说明水平推力由变形协调决定，受 <span class="math inline">\(EI\)</span>、<span class="math inline">\(EA\)</span>、拱轴、温度和支座位移影响。不能使用三铰拱静力公式代替两铰或无铰拱分析。</p>
 </section>
@@ -691,8 +691,8 @@ H=\frac{\displaystyle\int\frac{M^0y}{EI}\,\mathrm ds+\text{轴向变形及其他
 <div aria-describedby="fig-ch04-rise-span-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 5.3: 拱桥跨径、矢高与拱轴线参数。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-rise-span-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.3: 拱桥跨径、矢高与拱轴线参数
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-rise-span-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.3: 拱桥跨径、矢高与拱轴线参数
 </figcaption>
 </figure>
 </div>
@@ -703,17 +703,17 @@ H=\frac{\displaystyle\int\frac{M^0y}{EI}\,\mathrm ds+\text{轴向变形及其他
 <section class="level4" data-number="5.2.0.2" id="压力线与合理拱轴">
 <h4 class="anchored" data-anchor-id="压力线与合理拱轴" data-number="5.2.0.2"><span class="header-section-number">5.2.0.2</span> 压力线与合理拱轴</h4>
 <p>压力线是各截面内力合力作用点的连线。若截面轴力为 <span class="math inline">\(N\)</span>、弯矩为 <span class="math inline">\(M\)</span>，压力中心相对截面形心的偏心距为</p>
-<p><span class="math display">\[
-e=\frac{M}{N}.
+<p><span class="math display">\[
+e=\frac{M}{N}.
 \]</span></p>
 <p>当压力线接近拱轴线时，<span class="math inline">\(e\)</span> 较小，截面以轴向受压为主。合理拱轴线是针对特定荷载和边界定义的：一种线形不可能同时与所有恒载、活载、温度和施工状态的压力线完全重合。设计目标通常是使主要长期作用下的压力线与拱轴接近，并使其他控制工况的偏心、应力和稳定满足要求。</p>
 <p>对水平投影上均布荷载 <span class="math inline">\(q\)</span>，跨度为 <span class="math inline">\(l\)</span>、矢高为 <span class="math inline">\(f\)</span> 的抛物线三铰拱可取</p>
-<p><span class="math display">\[
-y(x)=\frac{4f}{l^2}x(l-x).
+<p><span class="math display">\[
+y(x)=\frac{4f}{l^2}x(l-x).
 \]</span></p>
 <p>相应简支梁弯矩为 <span class="math inline">\(M^0(x)=qx(l-x)/2\)</span>，拱顶水平推力为</p>
-<p><span class="math display">\[
-H=\frac{ql^2}{8f}.
+<p><span class="math display">\[
+H=\frac{ql^2}{8f}.
 \]</span></p>
 <p>代入 <span class="math inline">\(M(x)=M^0(x)-Hy(x)\)</span> 可得全拱 <span class="math inline">\(M(x)=0\)</span>。这一结果成立于理想几何、指定荷载和三铰边界，用于揭示“荷载图式—压力线—拱轴线”的对应关系，不代表实际拱桥在全部作用下均为纯压。</p>
 <p>实腹式与空腹式拱桥的恒载分布不同。实腹填料使单位水平长度上的恒载通常由拱顶向拱脚变化；空腹式结构则把部分恒载集中在腹孔墩或立柱位置，其压力线呈分段变化。悬链线、抛物线和圆弧线的选择应与荷载分布、施工放样、结构形式和分析结果相结合。</p>
@@ -723,8 +723,8 @@ H=\frac{ql^2}{8f}.
 <div aria-describedby="fig-ch04-dead-load-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 5.4: 实腹式与空腹式拱桥恒载分布示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-dead-load-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.4: 实腹式与空腹式拱桥恒载分布示意
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-dead-load-pattern-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.4: 实腹式与空腹式拱桥恒载分布示意
 </figcaption>
 </figure>
 </div>
@@ -749,8 +749,8 @@ H=\frac{ql^2}{8f}.
 <div aria-describedby="fig-ch04-rib-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 5.5: 拱肋常见截面形式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-rib-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.5: 拱肋常见截面形式
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-rib-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.5: 拱肋常见截面形式
 </figcaption>
 </figure>
 </div>
@@ -764,8 +764,8 @@ H=\frac{ql^2}{8f}.
 <div aria-describedby="fig-ch04-cfst-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 5.6: 钢管混凝土拱肋的单肢、哑铃形和格构截面。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-cfst-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.6: 钢管混凝土拱肋的单肢、哑铃形和格构截面
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-cfst-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.6: 钢管混凝土拱肋的单肢、哑铃形和格构截面
 </figcaption>
 </figure>
 </div>
@@ -782,8 +782,8 @@ H=\frac{ql^2}{8f}.
 <div aria-describedby="fig-ch04-hangers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 5.7: 刚性、半刚性与柔性吊杆截面示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-hangers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.7: 刚性、半刚性与柔性吊杆截面示意
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-hangers-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.7: 刚性、半刚性与柔性吊杆截面示意
 </figcaption>
 </figure>
 </div>
@@ -810,8 +810,8 @@ H=\frac{ql^2}{8f}.
 <h2 class="anchored" data-anchor-id="空间共同工作与稳定" data-number="5.4"><span class="header-section-number">5.4</span> 空间共同工作与稳定</h2>
 <p>拱肋承受较大轴向压力，稳定问题贯穿施工和运营阶段。面内失稳发生在拱轴平面内，受矢跨比、拱肋刚度、荷载分布和拱脚约束影响；面外失稳涉及两片拱肋的横向间距、横撑刚度、桥面系约束、风作用和初始缺陷。局部稳定则与钢板或钢管壁厚、加劲和截面组成有关。</p>
 <p>线弹性特征值屈曲可写为</p>
-<p><span class="math display">\[
-\left(\mathbf{K}+\lambda\mathbf{K}_G\right)\boldsymbol{\phi}=\mathbf{0},
+<p><span class="math display">\[
+\left(\mathbf{K}+\lambda\mathbf{K}_G\right)\boldsymbol{\phi}=\mathbf{0},
 \]</span></p>
 <p>其中 <span class="math inline">\(\mathbf{K}\)</span> 为弹性刚度矩阵，<span class="math inline">\(\mathbf{K}_G\)</span> 为参考荷载下的几何刚度矩阵，<span class="math inline">\(\lambda\)</span> 为特征荷载系数。该分析可识别可能的屈曲模态，但不能直接代替考虑材料非线性、几何非线性、残余应力和初始缺陷的稳定验算。数字教材应把“模态形状用于识别薄弱方向”和“设计承载力需要规范方法或非线性分析”明确区分。</p>
 <p>横向联系的作用是使分离拱肋共同抵抗横向变形与扭转，并控制面外失稳。横撑形式、数量和位置应与拱肋间距、桥面位置、景观净空和施工吊装协调。取消桥面以上横撑时，应由拱肋、吊杆和横梁组成的空间框架提供足够横向刚度，而不能仅凭外观决定。</p>
@@ -835,8 +835,8 @@ H=\frac{ql^2}{8f}.
 <div aria-describedby="fig-ch04-bare-arch-construction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 5.8: 支架施工与无支架吊装的裸拱阶段示例。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-bare-arch-construction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.8: 支架施工与无支架吊装的裸拱阶段示例
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-bare-arch-construction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.8: 支架施工与无支架吊装的裸拱阶段示例
 </figcaption>
 </figure>
 </div>
@@ -856,8 +856,8 @@ H=\frac{ql^2}{8f}.
 <div aria-describedby="fig-ch04-fe-models-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 5.9: 上承式、中承式和下承式拱桥的平面有限元模型。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-fe-models-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.9: 上承式、中承式和下承式拱桥的平面有限元模型
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-fe-models-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.9: 上承式、中承式和下承式拱桥的平面有限元模型
 </figcaption>
 </figure>
 </div>
@@ -870,8 +870,8 @@ H=\frac{ql^2}{8f}.
 <div aria-describedby="fig-ch04-bare-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 5.10: 裸拱平面杆系模型及拱脚边界。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-bare-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 5.10: 裸拱平面杆系模型及拱脚边界
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch04-bare-model-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 5.10: 裸拱平面杆系模型及拱脚边界
 </figcaption>
 </figure>
 </div>
@@ -978,13 +978,13 @@ H=\frac{ql^2}{8f}.
 <h4 class="anchored" data-anchor-id="三铰两铰与无铰体系的力学层次" data-number="5.7.2.2"><span class="header-section-number">5.7.2.2</span> 三铰、两铰与无铰体系的力学层次</h4>
 <p>三铰拱可由整体平衡确定反力，其跨中铰强制弯矩为零，适合说明水平推力和拱轴关系。两铰拱的拱脚允许转动而限制相对水平位移，水平推力是由变形协调确定的一个多余未知量。无铰拱还限制拱脚转动，水平力和端弯矩共同由协调条件确定。三者的差别不是“多几个铰”的图形差别，而是独立约束、冗余力和由强迫变形产生附加内力的差别。</p>
 <p>可用统一柔度形式表达后两类体系。设释放约束后的基本体系多余力向量为 <span class="math inline">\(\boldsymbol X\)</span>，外部作用在相应广义位移上产生 <span class="math inline">\(\boldsymbol\Delta_0\)</span>，柔度矩阵为 <span class="math inline">\(\boldsymbol F\)</span>，则兼容条件为</p>
-<p><span class="math display">\[
-\boldsymbol F\boldsymbol X+\boldsymbol\Delta_0
-=\boldsymbol\Delta_c,
+<p><span class="math display">\[
+\boldsymbol F\boldsymbol X+\boldsymbol\Delta_0
+=\boldsymbol\Delta_c,
 \]</span></p>
 <p>式中，<span class="math inline">\(\boldsymbol\Delta_c\)</span> 为支承规定的广义位移，单位可包含 m 和 rad；<span class="math inline">\(\boldsymbol F\)</span> 中各元素的单位随广义力和位移定义而定。对于不发生支承移动的理想约束，<span class="math inline">\(\boldsymbol\Delta_c=\boldsymbol0\)</span>，有</p>
-<p><span class="math display">\[
-\boldsymbol X=-\boldsymbol F^{-1}\boldsymbol\Delta_0.
+<p><span class="math display">\[
+\boldsymbol X=-\boldsymbol F^{-1}\boldsymbol\Delta_0.
 \]</span></p>
 <p>两铰拱可只取水平推力为多余力；平面无铰拱还需包含端弯矩等多余力。矩阵表达提示两点：刚度分布改变会改变超静定力；温度、收缩、徐变和基础位移可通过 <span class="math inline">\(\boldsymbol\Delta_0\)</span> 或 <span class="math inline">\(\boldsymbol\Delta_c\)</span> 进入同一协调框架。实际设计应采用与结构材料、截面变化和施工状态相符的分析模型，不能把上述通式当作规范验算公式。</p>
 </section>
@@ -994,9 +994,9 @@ H=\frac{ql^2}{8f}.
 <section class="level4" data-number="5.7.3.1" id="压力线的计算与判读">
 <h4 class="anchored" data-anchor-id="压力线的计算与判读" data-number="5.7.3.1"><span class="header-section-number">5.7.3.1</span> 压力线的计算与判读</h4>
 <p>在平面受力下，截面轴力 <span class="math inline">\(N\)</span> 和弯矩 <span class="math inline">\(M\)</span> 的合力相对于截面形心的偏心距为 <span class="math inline">\(e=M/N\)</span>。若采用轴力受压为正的约定，截面边缘弹性正应力可概括为</p>
-<p><span class="math display">\[
-\sigma_{1,2}=\frac{N}{A}\pm\frac{M}{W}
-=\frac{N}{A}\left(1\pm\frac{Ae}{W}\right),
+<p><span class="math display">\[
+\sigma_{1,2}=\frac{N}{A}\pm\frac{M}{W}
+=\frac{N}{A}\left(1\pm\frac{Ae}{W}\right),
 \]</span></p>
 <p>其中，<span class="math inline">\(N\)</span> 的单位为 N 或 kN，<span class="math inline">\(M\)</span> 为 N·m 或 kN·m，<span class="math inline">\(A\)</span> 为 m²，<span class="math inline">\(W\)</span> 为 m³，<span class="math inline">\(e\)</span> 为 m，<span class="math inline">\(\sigma\)</span> 为 Pa 或 kPa。使用该式时各量必须采用相容单位。式中未计材料非线性、开裂、组合截面分阶段形成和局部应力，仅用于说明压力线偏离形心会形成弯曲应力。</p>
 <p>压力线是随作用组合和结构状态变化的结果。恒载压力线接近拱轴，并不保证半跨交通、温度梯度、横风或施工不对称状态仍然接近。设计可将若干控制状态的压力线叠加形成“压力线带”，再与截面核心区、截面高度和材料受拉能力比较。对圬工或素混凝土拱，压力线位置关系尤其重要；对钢筋混凝土、钢或钢管混凝土拱，仍需按相应材料模型完成偏心受压、稳定和构造验算。</p>
@@ -1008,11 +1008,11 @@ H=\frac{ql^2}{8f}.
 <h4 class="anchored" data-anchor-id="合理拱轴的适用范围" data-number="5.7.3.2"><span class="header-section-number">5.7.3.2</span> 合理拱轴的适用范围</h4>
 <p>合理拱轴是给定荷载分布、支承关系和结构假定下，使弯矩较小或满足某一目标的轴线。对水平投影均布荷载，抛物线三铰拱可达到理想无弯矩状态；对沿拱轴分布的自重、拱上填料或离散立柱荷载，其对应压力线并非同一抛物线。真实拱桥还包含截面自重随弧长变化、桥面系集中传力和材料刚度变化，因此合理线形通常通过迭代获得。</p>
 <p>若以拱轴控制点纵坐标组成向量 <span class="math inline">\(\boldsymbol y\)</span>，以控制工况下弯矩向量为 <span class="math inline">\(\boldsymbol M_k(\boldsymbol y)\)</span>，可建立教学优化目标</p>
-<p><span class="math display">\[
-J(\boldsymbol y)=
-\sum_{k=1}^{n_c}w_k
-\left\|\boldsymbol D_k\boldsymbol M_k(\boldsymbol y)\right\|_2^2
-+\lambda\left\|\boldsymbol L\boldsymbol y\right\|_2^2,
+<p><span class="math display">\[
+J(\boldsymbol y)=
+\sum_{k=1}^{n_c}w_k
+\left\|\boldsymbol D_k\boldsymbol M_k(\boldsymbol y)\right\|_2^2
++\lambda\left\|\boldsymbol L\boldsymbol y\right\|_2^2,
 \]</span></p>
 <p>其中，<span class="math inline">\(w_k\)</span> 为工况权重，<span class="math inline">\(\boldsymbol D_k\)</span> 用于量纲统一或选择控制截面，<span class="math inline">\(\boldsymbol L\)</span> 为线形平顺约束，<span class="math inline">\(\lambda\)</span> 为平顺项权重。该式只是一种概念性目标；优化结果仍须满足净空、施工放样、截面承载和稳定。权重改变时应检查线形敏感性，不能把某次优化得到的曲线命名为唯一合理拱轴。</p>
 </section>
@@ -1020,13 +1020,13 @@ J(\boldsymbol y)=
 <section class="level3" data-number="5.7.4" id="矢跨比水平推力与基础接口">
 <h3 class="anchored" data-anchor-id="矢跨比水平推力与基础接口" data-number="5.7.4"><span class="header-section-number">5.7.4</span> 矢跨比、水平推力与基础接口</h3>
 <p>对前述抛物线三铰拱，<span class="math inline">\(H=ql^2/(8f)\)</span>。在 <span class="math inline">\(q\)</span> 和 <span class="math inline">\(l\)</span> 不变时，水平推力相对矢高的局部敏感性为</p>
-<p><span class="math display">\[
-\frac{\mathrm dH}{H}=-\frac{\mathrm df}{f}.
+<p><span class="math display">\[
+\frac{\mathrm dH}{H}=-\frac{\mathrm df}{f}.
 \]</span></p>
 <p>这表明矢高相对增加一定比例时，理想模型中的水平推力相对减少相同比例。跨度的影响更强：</p>
-<p><span class="math display">\[
-\frac{\mathrm dH}{H}=2\frac{\mathrm dl}{l}
--\frac{\mathrm df}{f}+\frac{\mathrm dq}{q}.
+<p><span class="math display">\[
+\frac{\mathrm dH}{H}=2\frac{\mathrm dl}{l}
+-\frac{\mathrm df}{f}+\frac{\mathrm dq}{q}.
 \]</span></p>
 <p>上述微分关系适用于给定公式附近的参数趋势，不适用于直接确定工程尺寸。矢高改变还会改变拱肋长度、倾角、桥面交点、面外风荷载、施工塔架与景观，不能只按最小水平推力选择。</p>
 <p>基础接口至少输出竖向力、水平力、弯矩和其组合，同时记录作用位置和方向。推力拱中，基础水平变形会反过来改变上部内力，因此上、下部结构不宜完全分离。初步阶段可用平动与转动弹簧表示地基—基础柔度，随后根据地质与基础分析更新。若水平弹簧刚度为 <span class="math inline">\(k_x\)</span>（N/m）、基础水平位移为 <span class="math inline">\(u_x\)</span>（m），线性关系 <span class="math inline">\(H_f=k_xu_x\)</span> 只表示局部等效模型；土体非线性、开裂、滑移和冲刷后的刚度需要专项分析。</p>
@@ -1034,8 +1034,8 @@ J(\boldsymbol y)=
 <section class="level3" data-number="5.7.5" id="温度收缩徐变与基础变位">
 <h3 class="anchored" data-anchor-id="温度收缩徐变与基础变位" data-number="5.7.5"><span class="header-section-number">5.7.5</span> 温度、收缩徐变与基础变位</h3>
 <p>均匀温差 <span class="math inline">\(\Delta T\)</span> 使自由构件产生热应变</p>
-<p><span class="math display">\[
-\varepsilon_T=\alpha_T\Delta T,
+<p><span class="math display">\[
+\varepsilon_T=\alpha_T\Delta T,
 \]</span></p>
 <p>其中，<span class="math inline">\(\alpha_T\)</span> 为线膨胀系数（1/K），<span class="math inline">\(\Delta T\)</span> 为 K 或 ℃ 的温差。温度梯度则使截面不同位置具有不同自由应变，可形成曲率。无铰拱或受约束两铰拱不能自由实现这些变形，协调条件产生附加轴力和弯矩。温度基准应说明闭合或合龙时的结构温度，而不是把当天气温直接作为全截面温度。</p>
 <p>混凝土收缩徐变对拱桥的影响与结构形成顺序有关。收缩可视为随时间发展的本征应变；徐变使恒载和预应力作用下的变形随龄期发展，并在超静定体系中引起内力重分配。模型至少记录构件浇筑时间、加载龄期、合龙时间、环境参数和材料模型版本。若只在成桥模型施加一个统一收缩应变，会遗漏不同节段和不同约束形成时间的差异。</p>
@@ -1104,10 +1104,10 @@ J(\boldsymbol y)=
 <h4 class="anchored" data-anchor-id="面内稳定" data-number="5.7.6.1"><span class="header-section-number">5.7.6.1</span> 面内稳定</h4>
 <p>面内稳定发生在拱轴平面内，受轴压力水平、拱轴曲率、截面刚度、拱脚约束和荷载对称性影响。面内对称屈曲与反对称屈曲的控制条件可能不同；半跨荷载或施工不对称会同时形成较大弯矩。初步判断可比较轴力与基于构件长度的欧拉量级，但曲线拱、变截面和弹性支承不能直接等同于一根直杆。</p>
 <p>结构的二阶平衡可表示为</p>
-<p><span class="math display">\[
-\boldsymbol R(\boldsymbol u,\lambda)=
-\boldsymbol F_{\mathrm{int}}(\boldsymbol u)
--\lambda\boldsymbol F_{\mathrm{ext}}=\boldsymbol0,
+<p><span class="math display">\[
+\boldsymbol R(\boldsymbol u,\lambda)=
+\boldsymbol F_{\mathrm{int}}(\boldsymbol u)
+-\lambda\boldsymbol F_{\mathrm{ext}}=\boldsymbol0,
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol u\)</span> 为位移，<span class="math inline">\(\lambda\)</span> 为荷载参数。特征值屈曲在参考状态附近识别分叉模态；几何与材料非线性分析则沿平衡路径追踪刚度退化。设计模型需按所用规范设置初始缺陷、材料本构和残余应力，教材不预设缺陷幅值。</p>
 </section>
@@ -1133,10 +1133,10 @@ J(\boldsymbol y)=
 <h4 class="anchored" data-anchor-id="钢管混凝土的阶段性共同工作" data-number="5.7.7.2"><span class="header-section-number">5.7.7.2</span> 钢管混凝土的阶段性共同工作</h4>
 <p>钢管混凝土拱肋应区分空钢管、灌注过程中、核心混凝土达到规定性能后和长期运营四类状态。空钢管阶段由钢管及横向联系承担架设和湿混凝土作用；分仓灌注时，各管肢刚度和自重逐步变化，可能产生不对称；形成组合截面后，钢管与核心混凝土共同工作；长期还需考虑收缩徐变、钢管防腐、脱空与灌注质量。</p>
 <p>若第 <span class="math inline">\(k\)</span> 阶段截面切线刚度为 <span class="math inline">\((EA)_k\)</span>、<span class="math inline">\((EI)_k\)</span>，其响应只对该阶段之后施加的作用有效。阶段效应原则上写为</p>
-<p><span class="math display">\[
-\boldsymbol r_n=\sum_{k=1}^{n}
-\mathcal H_k\!\left(\Delta\boldsymbol F_k,
-(EA)_k,(EI)_k,\boldsymbol q_{k-1}\right),
+<p><span class="math display">\[
+\boldsymbol r_n=\sum_{k=1}^{n}
+\mathcal H_k\!\left(\Delta\boldsymbol F_k,
+(EA)_k,(EI)_k,\boldsymbol q_{k-1}\right),
 \]</span></p>
 <p>其中，<span class="math inline">\(\Delta\boldsymbol F_k\)</span> 为阶段新增作用，<span class="math inline">\(\boldsymbol q_{k-1}\)</span> 为继承的初始状态，<span class="math inline">\(\mathcal H_k\)</span> 为该阶段响应算子。存在几何或材料非线性时不能简单线性相加，公式仅说明“新增作用由当时体系承担”。钢管、核心混凝土的设计强度、组合刚度、稳定与节点计算均应回查 JTG/T D65-06—2015 及项目采用标准。</p>
 <div class="source-note">
@@ -1147,10 +1147,10 @@ J(\boldsymbol y)=
 <section class="level3" data-number="5.7.8" id="施工体系转换的状态表达">
 <h3 class="anchored" data-anchor-id="施工体系转换的状态表达" data-number="5.7.8"><span class="header-section-number">5.7.8</span> 施工体系转换的状态表达</h3>
 <p>拱桥施工可表示为状态序列</p>
-<p><span class="math display">\[
-\mathcal S_0\xrightarrow{e_1}\mathcal S_1
-\xrightarrow{e_2}\cdots
-\xrightarrow{e_n}\mathcal S_n,
+<p><span class="math display">\[
+\mathcal S_0\xrightarrow{e_1}\mathcal S_1
+\xrightarrow{e_2}\cdots
+\xrightarrow{e_n}\mathcal S_n,
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathcal S_k\)</span> 包含已激活构件、边界、材料龄期、几何、内力和温度，<span class="math inline">\(e_k\)</span> 为安装、张拉、灌注、合龙、卸架或拆索事件。每个事件既可能新增荷载，也可能改变刚度和约束。施工计算表必须区分“作用发生时的体系”和“结果读取时的体系”。</p>
 <p>合龙前，左右半拱可能由扣索、塔架和临时横撑保持稳定；合龙事件增加拱顶连接并锁定合龙温度与几何偏差；拆索或落架把荷载转移到完整拱；安装桥面系又改变恒载分布和空间约束。若合龙前左右半拱标高或转角不一致，应按施工控制程序调整，不能在数值模型中强制节点重合而不记录闭合力。</p>
@@ -1166,39 +1166,39 @@ J(\boldsymbol y)=
 <section class="level4" data-number="5.7.9.2" id="第一步全跨均布作用和平衡核验">
 <h4 class="anchored" data-anchor-id="第一步全跨均布作用和平衡核验" data-number="5.7.9.2"><span class="header-section-number">5.7.9.2</span> 第一步：全跨均布作用和平衡核验</h4>
 <p>三铰拱每侧竖向反力为</p>
-<p><span class="math display">\[
-V_A=V_B=\frac{ql}{2}
-=\frac{180\times120}{2}=10800\,\mathrm{kN}.
+<p><span class="math display">\[
+V_A=V_B=\frac{ql}{2}
+=\frac{180\times120}{2}=10800\,\mathrm{kN}.
 \]</span></p>
 <p>三组矢高的水平推力分别为</p>
-<p><span class="math display">\[
-H_{20}=\frac{180\times120^2}{8\times20}=16200\,\mathrm{kN},
+<p><span class="math display">\[
+H_{20}=\frac{180\times120^2}{8\times20}=16200\,\mathrm{kN},
 \]</span></p>
-<p><span class="math display">\[
-H_{24}=13500\,\mathrm{kN},\qquad
-H_{30}=10800\,\mathrm{kN}.
+<p><span class="math display">\[
+H_{24}=13500\,\mathrm{kN},\qquad
+H_{30}=10800\,\mathrm{kN}.
 \]</span></p>
 <p>矢高从 <span class="math inline">\(20\,\mathrm m\)</span> 增至 <span class="math inline">\(30\,\mathrm m\)</span>，本理想模型水平推力减小三分之一。该结果必须与竖向反力同时显示：矢高只改变水平推力，不改变同一竖向荷载下的总竖向平衡。</p>
 <p>取四分点 <span class="math inline">\(x=30\,\mathrm m\)</span>。抛物线纵坐标为 <span class="math inline">\(y=0.75f\)</span>，简支梁弯矩为</p>
-<p><span class="math display">\[
-M^0=\frac{qx(l-x)}{2}
-=243000\,\mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M^0=\frac{qx(l-x)}{2}
+=243000\,\mathrm{kN\cdot m}.
 \]</span></p>
 <p>三组几何均有 <span class="math inline">\(Hy=243000\,\mathrm{kN\cdot m}\)</span>，故 <span class="math inline">\(M=M^0-Hy=0\)</span>。这一核验同时检查几何生成、荷载方向、单位和弯矩符号。</p>
 </section>
 <section class="level4" data-number="5.7.9.3" id="第二步半跨作用与压力线偏离">
 <h4 class="anchored" data-anchor-id="第二步半跨作用与压力线偏离" data-number="5.7.9.3"><span class="header-section-number">5.7.9.3</span> 第二步：半跨作用与压力线偏离</h4>
 <p>将同一 <span class="math inline">\(q\)</span> 仅施加于左半跨。简支体系跨中弯矩为 <span class="math inline">\(M_c^0=ql^2/16\)</span>，对 <span class="math inline">\(f=24\,\mathrm m\)</span>，</p>
-<p><span class="math display">\[
-H=\frac{ql^2}{16f}=6750\,\mathrm{kN}.
+<p><span class="math display">\[
+H=\frac{ql^2}{16f}=6750\,\mathrm{kN}.
 \]</span></p>
 <p>左四分点简支梁弯矩为 <span class="math inline">\(ql^2/16=162000\,\mathrm{kN\cdot m}\)</span>，而 <span class="math inline">\(Hy=6750\times18=121500\,\mathrm{kN\cdot m}\)</span>，因此</p>
-<p><span class="math display">\[
-M_{l/4}=+40500\,\mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_{l/4}=+40500\,\mathrm{kN\cdot m}.
 \]</span></p>
 <p>右四分点简支梁弯矩为 <span class="math inline">\(ql^2/32=81000\,\mathrm{kN\cdot m}\)</span>，得到</p>
-<p><span class="math display">\[
-M_{3l/4}=-40500\,\mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_{3l/4}=-40500\,\mathrm{kN\cdot m}.
 \]</span></p>
 <p>结果呈现一正一负的偏载弯矩，并说明不存在同时适配全跨与半跨作用的单一无弯矩拱轴。页面应显示两个截面的 <span class="math inline">\(N\)</span>、<span class="math inline">\(M\)</span> 和 <span class="math inline">\(e=M/N\)</span>；若尚未计算 <span class="math inline">\(N\)</span>，不得只凭弯矩颜色绘制压力线。</p>
 </section>
@@ -1236,26 +1236,26 @@ M_{3l/4}=-40500\,\mathrm{kN\cdot m}.
 <section class="level4" data-number="5.8.0.1" id="曲线坐标与截面内力">
 <h4 class="anchored" data-anchor-id="曲线坐标与截面内力" data-number="5.8.0.1"><span class="header-section-number">5.8.0.1</span> 曲线坐标与截面内力</h4>
 <p>对于轴线为一般平面曲线的拱，采用弧长 <span class="math inline">\(s\)</span> 描述截面位置。轴线切向与总体 <span class="math inline">\(x\)</span> 轴夹角为 <span class="math inline">\(\varphi(s)\)</span>，曲率为</p>
-<p><span class="math display">\[
-\kappa(s)=\frac{\mathrm d\varphi}{\mathrm ds}.
+<p><span class="math display">\[
+\kappa(s)=\frac{\mathrm d\varphi}{\mathrm ds}.
 \]</span></p>
 <p>在截面局部坐标中，以轴力 <span class="math inline">\(N(s)\)</span>、剪力 <span class="math inline">\(Q(s)\)</span> 和弯矩 <span class="math inline">\(M(s)\)</span> 描述内力，以沿切线方向的分布作用 <span class="math inline">\(p_t(s)\)</span> 和沿法线方向的分布作用 <span class="math inline">\(p_n(s)\)</span> 描述单位弧长作用。若采用轴力受拉为正、剪力和弯矩按教材图示正向，则微段平衡可写成一组形式为</p>
-<p><span class="math display">\[
-\frac{\mathrm dN}{\mathrm ds}-\kappa Q+p_t=0,
+<p><span class="math display">\[
+\frac{\mathrm dN}{\mathrm ds}-\kappa Q+p_t=0,
 \]</span></p>
-<p><span class="math display">\[
-\frac{\mathrm dQ}{\mathrm ds}+\kappa N+p_n=0,
+<p><span class="math display">\[
+\frac{\mathrm dQ}{\mathrm ds}+\kappa N+p_n=0,
 \]</span></p>
-<p><span class="math display">\[
-\frac{\mathrm dM}{\mathrm ds}-Q=0.
+<p><span class="math display">\[
+\frac{\mathrm dM}{\mathrm ds}-Q=0.
 \]</span></p>
 <p><span class="math inline">\(s\)</span> 的单位为 m，<span class="math inline">\(\kappa\)</span> 为 1/m，<span class="math inline">\(N,Q\)</span> 为 kN，<span class="math inline">\(M\)</span> 为 kN·m，<span class="math inline">\(p_t,p_n\)</span> 为 kN/m。改变内力正号约定时，方程中的相应符号也随之改变；计算书必须给出微段自由体，不能只摘录方程。三式表明，曲率使轴力与剪力相互耦合，直梁的 <span class="math inline">\(\kappa=0\)</span> 只是其中的特例。</p>
 <p>若已知截面左侧全部外力在总体坐标中的合力 <span class="math inline">\((R_x,R_z)\)</span> 和合力矩 <span class="math inline">\(M_O\)</span>，也可先由整体静力获得总体分量，再投影到局部坐标：</p>
-<p><span class="math display">\[
-N=R_x\cos\varphi+R_z\sin\varphi,
+<p><span class="math display">\[
+N=R_x\cos\varphi+R_z\sin\varphi,
 \]</span></p>
-<p><span class="math display">\[
-Q=-R_x\sin\varphi+R_z\cos\varphi.
+<p><span class="math display">\[
+Q=-R_x\sin\varphi+R_z\cos\varphi.
 \]</span></p>
 <p>截面弯矩由该侧外力对截面形心取矩得到。该方法适合用自由体检查有限元结果：选定任一截面，截面内力与该侧荷载和支承反力应满足三向平衡。对空间拱还需增加横向剪力、扭矩和另一方向弯矩，平面投影不足以完成核验。</p>
 </section>
@@ -1273,72 +1273,72 @@ Q=-R_x\sin\varphi+R_z\cos\varphi.
 <span>暂时允许水平移动</span><span>单位水平力能推回多少</span><span>满足规定位置</span>
 </div>
 <details>
-<summary>
-这组符号分别指什么？
+<summary>
+这组符号分别指什么？
 </summary>
-<p>
-先读成“原有位移＋水平力引起的位移＝规定位移”。Δ₀ 是释放约束后的位移，fH 是单位水平力对应的柔度，H 是未知水平力。长分式的分子是需抵消的位移，分母是单位力的移动能力；正向必须按图中约定。
+<p>
+先读成“原有位移＋水平力引起的位移＝规定位移”。Δ₀ 是释放约束后的位移，fH 是单位水平力对应的柔度，H 是未知水平力。长分式的分子是需抵消的位移，分母是单位力的移动能力；正向必须按图中约定。
 </p>
 </details>
 </div>
 <!-- FORMULA-SCAFFOLD ch04 END -->
 <p>以两铰拱为例，释放一侧水平约束形成静定基本体系，把水平推力 <span class="math inline">\(H\)</span> 作为多余力。在线弹性、小变形条件下，结构应变能可写为</p>
-<p><span class="math display">\[
-U(H)=\frac12\int_0^{L_s}
-\left[
-\frac{M^2(s,H)}{E(s)I(s)}
-+\frac{N^2(s,H)}{E(s)A(s)}
-+\frac{\chi_sQ^2(s,H)}{G(s)A_s(s)}
-\right]\mathrm ds,
+<p><span class="math display">\[
+U(H)=\frac12\int_0^{L_s}
+\left[
+\frac{M^2(s,H)}{E(s)I(s)}
++\frac{N^2(s,H)}{E(s)A(s)}
++\frac{\chi_sQ^2(s,H)}{G(s)A_s(s)}
+\right]\mathrm ds,
 \]</span></p>
 <p>其中，<span class="math inline">\(L_s\)</span> 为拱轴弧长（m），<span class="math inline">\(E,G\)</span> 为弹性模量与剪切模量（kPa或Pa），<span class="math inline">\(A\)</span> 为面积（m²），<span class="math inline">\(I\)</span> 为惯性矩（m⁴），<span class="math inline">\(A_s\)</span> 为有效剪切面积（m²），<span class="math inline">\(\chi_s\)</span> 为与剪切变形定义一致的系数。细长拱初步分析常忽略剪切项，但厚拱、箱形或局部柔性构造应判断其影响。</p>
 <p>设外部作用在释放基本体系中产生 <span class="math inline">\(M_0,N_0,Q_0\)</span>，单位水平多余力产生 <span class="math inline">\(m_H,n_H,q_H\)</span>，则</p>
-<p><span class="math display">\[
-M=M_0+Hm_H,\quad
-N=N_0+Hn_H,\quad
-Q=Q_0+Hq_H.
+<p><span class="math display">\[
+M=M_0+Hm_H,\quad
+N=N_0+Hn_H,\quad
+Q=Q_0+Hq_H.
 \]</span></p>
 <p>由释放方向的位移协调，可写为</p>
-<p><span class="math display">\[
-\frac{\partial U}{\partial H}
-+\Delta_H^{(T)}+\Delta_H^{(sh)}
-=\Delta_H^{(s)},
+<p><span class="math display">\[
+\frac{\partial U}{\partial H}
++\Delta_H^{(T)}+\Delta_H^{(sh)}
+=\Delta_H^{(s)},
 \]</span></p>
 <p>其中，<span class="math inline">\(\Delta_H^{(T)}\)</span> 为温度自由变形在该广义位移方向的投影，<span class="math inline">\(\Delta_H^{(sh)}\)</span> 为收缩等本征应变贡献，<span class="math inline">\(\Delta_H^{(s)}\)</span> 为支座规定相对位移，单位为 m。整理得</p>
-<p><span class="math display">\[
-H=-\frac{
-\displaystyle\int_0^{L_s}
-\left(
-\frac{M_0m_H}{EI}+
-\frac{N_0n_H}{EA}+
-\frac{\chi_sQ_0q_H}{GA_s}
-\right)\mathrm ds
-+\Delta_H^{(T)}+\Delta_H^{(sh)}-\Delta_H^{(s)}
-}{
-\displaystyle\int_0^{L_s}
-\left(
-\frac{m_H^2}{EI}+
-\frac{n_H^2}{EA}+
-\frac{\chi_sq_H^2}{GA_s}
-\right)\mathrm ds
-}.
+<p><span class="math display">\[
+H=-\frac{
+\displaystyle\int_0^{L_s}
+\left(
+\frac{M_0m_H}{EI}+
+\frac{N_0n_H}{EA}+
+\frac{\chi_sQ_0q_H}{GA_s}
+\right)\mathrm ds
++\Delta_H^{(T)}+\Delta_H^{(sh)}-\Delta_H^{(s)}
+}{
+\displaystyle\int_0^{L_s}
+\left(
+\frac{m_H^2}{EI}+
+\frac{n_H^2}{EA}+
+\frac{\chi_sq_H^2}{GA_s}
+\right)\mathrm ds
+}.
 \]</span></p>
 <p>分母为释放方向柔度，单位为 m/kN；分子为该方向的自由位移，单位为 m，因此 <span class="math inline">\(H\)</span> 的单位为 kN。式中正负号取决于多余力和位移正向，实际推导应先画基本体系。该式说明，轴向变形、截面变刚度、温度和支座位移均可能影响推力；只保留弯曲项属于需说明的近似。</p>
 </section>
 <section class="level4" data-number="5.8.0.4" id="无铰拱的矩阵柔度">
 <h4 class="anchored" data-anchor-id="无铰拱的矩阵柔度" data-number="5.8.0.4"><span class="header-section-number">5.8.0.4</span> 无铰拱的矩阵柔度</h4>
 <p>平面无铰拱可选择水平力和两个端弯矩作为多余力，记</p>
-<p><span class="math display">\[
-\boldsymbol X=
-\begin{bmatrix}H&amp;M_A&amp;M_B\end{bmatrix}^{\mathrm T}.
+<p><span class="math display">\[
+\boldsymbol X=
+\begin{bmatrix}H&amp;M_A&amp;M_B\end{bmatrix}^{\mathrm T}.
 \]</span></p>
 <p>由三个释放方向的协调条件得到</p>
-<p><span class="math display">\[
-\boldsymbol F\boldsymbol X
-=\boldsymbol\Delta_s-
-\boldsymbol\Delta_0-
-\boldsymbol\Delta_T-
-\boldsymbol\Delta_{sh},
+<p><span class="math display">\[
+\boldsymbol F\boldsymbol X
+=\boldsymbol\Delta_s-
+\boldsymbol\Delta_0-
+\boldsymbol\Delta_T-
+\boldsymbol\Delta_{sh},
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol F\)</span> 是 <span class="math inline">\(3\times3\)</span> 柔度矩阵，各列来自相应单位多余力；<span class="math inline">\(\boldsymbol\Delta_0\)</span> 为外部荷载自由位移，<span class="math inline">\(\boldsymbol\Delta_T\)</span>、<span class="math inline">\(\boldsymbol\Delta_{sh}\)</span> 为温度与收缩贡献，<span class="math inline">\(\boldsymbol\Delta_s\)</span> 为支座位移与转角。矩阵同时包含平动和转动，必须保留每行、每列的物理单位，不能仅把数值复制到无量纲矩阵求解器。</p>
 <p>柔度法适于解释超静定来源和参数敏感性。复杂空间拱一般由刚度法或有限元求解，但仍可用释放一个关键约束的柔度计算核对水平反力数量级。若材料开裂、接触开闭或几何大位移明显，线弹性柔度不再固定，应采用增量迭代模型。</p>
@@ -1351,9 +1351,9 @@ H=-\frac{
 <section class="level4" data-number="5.8.1.1" id="三种荷载集度的区分">
 <h4 class="anchored" data-anchor-id="三种荷载集度的区分" data-number="5.8.1.1"><span class="header-section-number">5.8.1.1</span> 三种荷载集度的区分</h4>
 <p>合理拱轴推导中必须说明荷载按什么长度计量。设单位水平投影长度的竖向荷载为 <span class="math inline">\(q_x(x)\)</span>（kN/m），单位拱轴弧长的自重为 <span class="math inline">\(w_s(s)\)</span>（kN/m），两者关系为</p>
-<p><span class="math display">\[
-q_x(x)=w_s(s)\frac{\mathrm ds}{\mathrm dx}
-=w_s(s)\sqrt{1+[y'(x)]^2}.
+<p><span class="math display">\[
+q_x(x)=w_s(s)\frac{\mathrm ds}{\mathrm dx}
+=w_s(s)\sqrt{1+[y'(x)]^2}.
 \]</span></p>
 <p>若材料重度为 <span class="math inline">\(\gamma\)</span>（kN/m³）、截面面积为 <span class="math inline">\(A(s)\)</span>（m²），拱肋自重 <span class="math inline">\(w_s=\gamma A\)</span>。因此，即使 <span class="math inline">\(A\)</span> 沿弧长不变，按水平投影计的荷载也会随坡度增加。桥面铺装和桥面板通常先按桥面水平或线路长度计量，再通过立柱或吊杆离散传给拱肋。把上述荷载全部写成一个常数 <span class="math inline">\(q\)</span>，可能得到与真实恒载压力线不同的轴线。</p>
 <p>上承式空腹拱的恒载可分为拱肋连续自重、立柱集中反力、桥面梁连续作用和横向联系自重；下承式拱则包括拱肋自重、吊杆集中力、桥面横梁反力和系杆自重。每一类荷载应保留施加路径，不能为追求平滑压力线而任意连续化。</p>
@@ -1431,12 +1431,12 @@ q_x(x)=w_s(s)\frac{\mathrm ds}{\mathrm dx}
 <section class="level4" data-number="5.8.2.1" id="三铰拱影响线的构成">
 <h4 class="anchored" data-anchor-id="三铰拱影响线的构成" data-number="5.8.2.1"><span class="header-section-number">5.8.2.1</span> 三铰拱影响线的构成</h4>
 <p>设单位竖向移动力位于水平坐标 <span class="math inline">\(z\)</span>，相应简支梁在拱顶投影 <span class="math inline">\(c\)</span> 处的弯矩影响线为 <span class="math inline">\(\eta_{M_c^0}(z)\)</span>，则三铰拱水平推力影响线为</p>
-<p><span class="math display">\[
-\eta_H(z)=\frac{\eta_{M_c^0}(z)}{f_c}.
+<p><span class="math display">\[
+\eta_H(z)=\frac{\eta_{M_c^0}(z)}{f_c}.
 \]</span></p>
 <p>对拱上固定截面 <span class="math inline">\(x\)</span>，弯矩影响线为</p>
-<p><span class="math display">\[
-\eta_M(x;z)=\eta_{M^0}(x;z)-y(x)\eta_H(z).
+<p><span class="math display">\[
+\eta_M(x;z)=\eta_{M^0}(x;z)-y(x)\eta_H(z).
 \]</span></p>
 <p>这里 <span class="math inline">\(z\)</span> 是移动荷载位置，<span class="math inline">\(x\)</span> 是响应截面，两者不得混淆。<span class="math inline">\(\eta_H\)</span> 对单位力的量纲为无量纲，<span class="math inline">\(\eta_M\)</span> 的量纲为 m。轴力和剪力影响线还需把简支梁竖向反力与 <span class="math inline">\(H\)</span> 投影到截面切、法方向。每条影响线均应附控制截面、局部轴和正号。</p>
 <p>根据虚位移原理，超静定拱的影响线也可通过 Müller—Breslau 原理解释：释放所求广义力对应约束并施加单位广义位移，所得变形形状与影响线成比例。数值模型可通过单位移动力逐点求解，但解析或运动学解释有助于识别影响线正负区和程序异常。</p>
@@ -1444,22 +1444,22 @@ q_x(x)=w_s(s)\frac{\mathrm ds}{\mathrm dx}
 <section class="level4" data-number="5.8.2.2" id="桥面荷载到拱肋的离散映射">
 <h4 class="anchored" data-anchor-id="桥面荷载到拱肋的离散映射" data-number="5.8.2.2"><span class="header-section-number">5.8.2.2</span> 桥面荷载到拱肋的离散映射</h4>
 <p>桥面车辆不一定直接作用在拱轴上。设桥面离散轮载向量为 <span class="math inline">\(\boldsymbol P_w\)</span>，桥面板、纵梁和横梁把其转换为吊杆或立柱节点力 <span class="math inline">\(\boldsymbol P_v\)</span>，可在线性范围写为</p>
-<p><span class="math display">\[
-\boldsymbol P_v=\boldsymbol G_d\boldsymbol P_w,
+<p><span class="math display">\[
+\boldsymbol P_v=\boldsymbol G_d\boldsymbol P_w,
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol G_d\)</span> 为桥面系分配矩阵。随后主拱响应为</p>
-<p><span class="math display">\[
-\boldsymbol r_a=\boldsymbol H_a\boldsymbol P_v
-=\boldsymbol H_a\boldsymbol G_d\boldsymbol P_w.
+<p><span class="math display">\[
+\boldsymbol r_a=\boldsymbol H_a\boldsymbol P_v
+=\boldsymbol H_a\boldsymbol G_d\boldsymbol P_w.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol H_a\)</span> 为吊点或柱脚到拱响应的影响矩阵。分层表达便于判断“车辆横向分配”和“主拱纵向影响线”分别由哪个模型完成。若桥面系与拱肋刚接且共同变形显著，<span class="math inline">\(\boldsymbol G_d\)</span> 并非常数，应在全桥空间模型中直接加载。</p>
 </section>
 <section class="level4" data-number="5.8.2.3" id="偏载与两肋分配">
 <h4 class="anchored" data-anchor-id="偏载与两肋分配" data-number="5.8.2.3"><span class="header-section-number">5.8.2.3</span> 偏载与两肋分配</h4>
 <p>双肋拱在对称荷载下理论上响应对称；单侧车道加载会通过桥面板、横梁、吊杆和横撑形成两肋不等受力，并伴随全桥扭转。定义两肋某响应为 <span class="math inline">\(r_L,r_R\)</span>，可用教学不均匀指标</p>
-<p><span class="math display">\[
-\eta_r=\frac{|r_L-r_R|}
-{\max(|r_L|+|r_R|,r_0)},
+<p><span class="math display">\[
+\eta_r=\frac{|r_L-r_R|}
+{\max(|r_L|+|r_R|,r_0)},
 \]</span></p>
 <p>其中 <span class="math inline">\(r_0\)</span> 是防止分母接近零的参考量，需在报告中说明。<span class="math inline">\(\eta_r\)</span> 只用于比较模型方案，不是规范验算指标。改变横梁刚度、拱肋间距或横撑布置时，应同时观察两肋差异、桥面扭转和横向构件内力。</p>
 <p>移动加载程序需输出车辆纵向位置、横向车道、各吊点力及成组响应。最大左肋轴力、最大右肋弯矩、最大横梁扭矩可能来自不同位置；构件复合验算仍需使用同一位置的整组内力，不能拼接峰值。</p>
@@ -1473,19 +1473,19 @@ q_x(x)=w_s(s)\frac{\mathrm ds}{\mathrm dx}
 <section class="level4" data-number="5.8.3.1" id="变形协调而非单纯静力分解">
 <h4 class="anchored" data-anchor-id="变形协调而非单纯静力分解" data-number="5.8.3.1"><span class="header-section-number">5.8.3.1</span> 变形协调而非单纯静力分解</h4>
 <p>系杆拱的基本平衡可由 <span class="math inline">\(T_t\approx H\)</span> 说明，但实际内力分配由拱肋、系杆、桥面梁和吊杆的变形协调决定。系杆伸长会使两拱脚相对张开，改变拱肋轴力和弯矩；桥面梁弯曲会改变吊点竖向位移和吊杆力；吊杆伸长又改变桥面与拱肋之间的相对位移。在线性化状态下，可写成分块方程</p>
-<p><span class="math display">\[
-\begin{bmatrix}
-\boldsymbol K_{aa}&amp;\boldsymbol K_{ad}&amp;\boldsymbol K_{at}\\
-\boldsymbol K_{da}&amp;\boldsymbol K_{dd}&amp;\boldsymbol K_{dt}\\
-\boldsymbol K_{ta}&amp;\boldsymbol K_{td}&amp;\boldsymbol K_{tt}
-\end{bmatrix}
-\begin{bmatrix}
-\boldsymbol u_a\\\boldsymbol u_d\\\boldsymbol u_t
-\end{bmatrix}
-=
-\begin{bmatrix}
-\boldsymbol F_a\\\boldsymbol F_d\\\boldsymbol F_t
-\end{bmatrix},
+<p><span class="math display">\[
+\begin{bmatrix}
+\boldsymbol K_{aa}&amp;\boldsymbol K_{ad}&amp;\boldsymbol K_{at}\\
+\boldsymbol K_{da}&amp;\boldsymbol K_{dd}&amp;\boldsymbol K_{dt}\\
+\boldsymbol K_{ta}&amp;\boldsymbol K_{td}&amp;\boldsymbol K_{tt}
+\end{bmatrix}
+\begin{bmatrix}
+\boldsymbol u_a\\\boldsymbol u_d\\\boldsymbol u_t
+\end{bmatrix}
+=
+\begin{bmatrix}
+\boldsymbol F_a\\\boldsymbol F_d\\\boldsymbol F_t
+\end{bmatrix},
 \]</span></p>
 <p>下标 <span class="math inline">\(a,d,t\)</span> 分别表示拱肋、桥面与吊杆系统、系杆。耦合矩阵来自共同节点、刚性臂或实际连接。模型若遗漏锚固偏心、端横梁刚度或吊杆仅受拉特性，将改变共同工作结果。</p>
 </section>
@@ -1518,8 +1518,8 @@ q_x(x)=w_s(s)\frac{\mathrm ds}{\mathrm dx}
 <section class="level4" data-number="5.8.4.2" id="初始缺陷与模态组合">
 <h4 class="anchored" data-anchor-id="初始缺陷与模态组合" data-number="5.8.4.2"><span class="header-section-number">5.8.4.2</span> 初始缺陷与模态组合</h4>
 <p>真实拱肋存在制造、安装和残余变形。初始缺陷可以采用测量线形、规范规定形状或特征模态组合。若以模态 <span class="math inline">\(\boldsymbol\phi_i\)</span> 组合，初始几何写为</p>
-<p><span class="math display">\[
-\boldsymbol u_0=\sum_{i=1}^{m}a_i\boldsymbol\phi_i,
+<p><span class="math display">\[
+\boldsymbol u_0=\sum_{i=1}^{m}a_i\boldsymbol\phi_i,
 \]</span></p>
 <p>其中 <span class="math inline">\(a_i\)</span> 为具有长度单位的幅值。正式设计的幅值和组合方式按材料与桥型标准确定；教材交互只比较相同幅值定义下不同模态的相对影响。面外最低模态并不总是最不利缺陷，荷载不对称和横撑局部柔性可能使其他模态控制。</p>
 </section>
@@ -1645,10 +1645,10 @@ q_x(x)=w_s(s)\frac{\mathrm ds}{\mathrm dx}
 <section class="level4" data-number="5.8.5.2" id="监控观测模型">
 <h4 class="anchored" data-anchor-id="监控观测模型" data-number="5.8.5.2"><span class="header-section-number">5.8.5.2</span> 监控观测模型</h4>
 <p>施工观测包括拱段空间坐标、拱顶间隙、扣索力、临时支承反力、关键截面应变、环境与构件温度、风速和施工事件。将观测写为</p>
-<p><span class="math display">\[
-\boldsymbol y_k=
-\boldsymbol h_k(\boldsymbol p_k,\mathcal S_k)
-+\boldsymbol\varepsilon_k,
+<p><span class="math display">\[
+\boldsymbol y_k=
+\boldsymbol h_k(\boldsymbol p_k,\mathcal S_k)
++\boldsymbol\varepsilon_k,
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathcal S_k\)</span> 是实际完成的阶段状态，<span class="math inline">\(\boldsymbol p_k\)</span> 包括构件重量、刚度、索力、支承沉降和温度，<span class="math inline">\(\boldsymbol\varepsilon_k\)</span> 包含测量与模型误差。比较前必须确认模型阶段与现场事件一致；如果现场已安装横撑而模型尚未激活，残差不能解释为材料参数误差。</p>
 <p>温度修正宜使用同一时间窗内的构件温度，而非仅用气象站气温。拱肋日照会产生截面和两肋温差，量测线形应注明测量时间、太阳辐射和风。可选取温度相对稳定时段建立基线，再利用热—结构模型解释其他时段。</p>
@@ -1849,10 +1849,10 @@ q_x(x)=w_s(s)\frac{\mathrm ds}{\mathrm dx}
 <section class="level4" data-number="5.8.6.3" id="无量纲敏感性">
 <h4 class="anchored" data-anchor-id="无量纲敏感性" data-number="5.8.6.3"><span class="header-section-number">5.8.6.3</span> 无量纲敏感性</h4>
 <p>设输出 <span class="math inline">\(r\)</span> 受参数 <span class="math inline">\(x_i\)</span> 影响，可用中心差分估计归一化敏感性</p>
-<p><span class="math display">\[
-S_i^*=
-\frac{x_i}{r_{\mathrm{ref}}}
-\frac{r(x_i+\Delta x_i)-r(x_i-\Delta x_i)}{2\Delta x_i},
+<p><span class="math display">\[
+S_i^*=
+\frac{x_i}{r_{\mathrm{ref}}}
+\frac{r(x_i+\Delta x_i)-r(x_i-\Delta x_i)}{2\Delta x_i},
 \]</span></p>
 <p>其中 <span class="math inline">\(r_{\mathrm{ref}}\)</span> 为基准响应或另行规定的非零尺度。<span class="math inline">\(\Delta x_i\)</span> 应足以超过数值噪声，又不应跨越不同模型拓扑。对横撑数量这类离散参数，不使用微分敏感性，而直接比较候选布置。</p>
 <p>本案例至少分析以下参数—响应关系：</p>
@@ -1936,22 +1936,22 @@ S_i^*=
 <h4 class="anchored" data-anchor-id="六自由度基础接口" data-number="5.8.7.1"><span class="header-section-number">5.8.7.1</span> 六自由度基础接口</h4>
 <p>普通推力拱把显著水平力传给拱座和基础。若上部模型把拱脚完全固结，等于假定基础在三个平动和三个转动方向均无变形；若把拱脚理想铰接，则又完全释放相应转动。真实基础通常位于二者之间，其变形与地层、基础形式、埋置、邻近岸坡和作用水平有关。</p>
 <p>在总体坐标中，可用等效基础刚度矩阵建立接口：</p>
-<p><span class="math display">\[
-\begin{bmatrix}
-\boldsymbol F\\\boldsymbol M
-\end{bmatrix}
-=
-\boldsymbol K_f
-\begin{bmatrix}
-\boldsymbol u\\\boldsymbol\theta
-\end{bmatrix},
+<p><span class="math display">\[
+\begin{bmatrix}
+\boldsymbol F\\\boldsymbol M
+\end{bmatrix}
+=
+\boldsymbol K_f
+\begin{bmatrix}
+\boldsymbol u\\\boldsymbol\theta
+\end{bmatrix},
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol F=[F_x,F_y,F_z]^{\mathrm T}\)</span>，单位为 kN；<span class="math inline">\(\boldsymbol M=[M_x,M_y,M_z]^{\mathrm T}\)</span>，单位为 kN·m；<span class="math inline">\(\boldsymbol u\)</span> 为 m；<span class="math inline">\(\boldsymbol\theta\)</span> 为 rad。<span class="math inline">\(\boldsymbol K_f\)</span> 为 <span class="math inline">\(6\times6\)</span> 矩阵，对角项表示各方向直接刚度，非对角项表示平动—转动及不同方向的耦合。矩阵元素具有不同单位，输入程序时不得把数值无量纲化后遗失物理尺度。</p>
 <p>基础刚度可由地基—基础专项模型在参考状态附近凝聚得到。若完整模型自由度分为拱脚接口 <span class="math inline">\(b\)</span> 和内部地基自由度 <span class="math inline">\(i\)</span>，线性静力凝聚为</p>
-<p><span class="math display">\[
-\boldsymbol K_f=
-\boldsymbol K_{bb}-
-\boldsymbol K_{bi}\boldsymbol K_{ii}^{-1}\boldsymbol K_{ib}.
+<p><span class="math display">\[
+\boldsymbol K_f=
+\boldsymbol K_{bb}-
+\boldsymbol K_{bi}\boldsymbol K_{ii}^{-1}\boldsymbol K_{ib}.
 \]</span></p>
 <p>该矩阵与基础类型、土层、边界范围和作用水平相联系。土体开裂、滑移、离缝或桩土非线性明显时，固定矩阵只在其线性化邻域适用，应采用分级刚度、非线性弹簧或上—下部整体分析。</p>
 </section>
@@ -2070,20 +2070,20 @@ S_i^*=
 <section class="level4" data-number="5.8.8.2" id="参数敏感性解释">
 <h4 class="anchored" data-anchor-id="参数敏感性解释" data-number="5.8.8.2"><span class="header-section-number">5.8.8.2</span> 参数敏感性解释</h4>
 <p>选择两个候选参数：<span class="math inline">\(p_1\)</span> 为本阶段已安装构件重量相对模型值的偏差（%），<span class="math inline">\(p_2\)</span> 为左侧扣索力相对指令值的偏差（%）。在基准模型附近分别进行正、负扰动，得到教学敏感矩阵</p>
-<p><span class="math display">\[
-\boldsymbol S_p=
-\begin{bmatrix}
-3.0&amp;-2.0\\
-1.5&amp;-0.5
-\end{bmatrix}
-\quad\mathrm{mm/\%}.
+<p><span class="math display">\[
+\boldsymbol S_p=
+\begin{bmatrix}
+3.0&amp;-2.0\\
+1.5&amp;-0.5
+\end{bmatrix}
+\quad\mathrm{mm/\%}.
 \]</span></p>
 <p>第一列表示重量每增加 <span class="math inline">\(1\%\)</span>，两测点向下位移分别增加 <span class="math inline">\(3.0\)</span> 和 <span class="math inline">\(1.5\,\mathrm{mm}\)</span>；第二列表示扣索力变化的相应方向。由</p>
-<p><span class="math display">\[
-\begin{bmatrix}4\\2\end{bmatrix}
-=
-\begin{bmatrix}3.0&amp;-2.0\\1.5&amp;-0.5\end{bmatrix}
-\begin{bmatrix}\Delta p_1\\\Delta p_2\end{bmatrix}
+<p><span class="math display">\[
+\begin{bmatrix}4\\2\end{bmatrix}
+=
+\begin{bmatrix}3.0&amp;-2.0\\1.5&amp;-0.5\end{bmatrix}
+\begin{bmatrix}\Delta p_1\\\Delta p_2\end{bmatrix}
 \]</span></p>
 <p>可得 <span class="math inline">\(\Delta p_1=1.33\%\)</span>、<span class="math inline">\(\Delta p_2=0\)</span>。这表示在该教学线性模型中，两个残差的空间模式与重量偏差一致，不需要通过改变扣索力才能解释。</p>
 <p>该结果不是调控指令。进入下一步前还要核对已安装构件实测重量、吊具和临时设施是否纳入模型，并查看扣索力实测值。如果重量记录不支持 <span class="math inline">\(1.33\%\)</span> 偏差，说明候选参数集或温度修正可能不完整。若观测误差不可忽略，应使用权重和参数先验，报告置信范围而不是只报两位小数。</p>
@@ -2213,8 +2213,8 @@ S_i^*=
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2228,57 +2228,57 @@ S_i^*=
 <section class="level4" data-number="5.8.10.1" id="曲线微段平衡">
 <h4 class="anchored" data-anchor-id="曲线微段平衡" data-number="5.8.10.1"><span class="header-section-number">5.8.10.1</span> 曲线微段平衡</h4>
 <p>设平面拱轴以弧长 <span class="math inline">\(s\)</span> 参数化，切线与全局 <span class="math inline">\(x\)</span> 轴夹角为 <span class="math inline">\(\theta(s)\)</span>，曲率</p>
-<p><span class="math display">\[
-\kappa(s)=\frac{\mathrm d\theta}{\mathrm ds}.
+<p><span class="math display">\[
+\kappa(s)=\frac{\mathrm d\theta}{\mathrm ds}.
 \]</span></p>
 <p>取切向单位向量 <span class="math inline">\(\mathbf t\)</span> 和法向单位向量 <span class="math inline">\(\mathbf n\)</span>，分布作用在两方向的分量为 <span class="math inline">\(p_t(s)\)</span>、<span class="math inline">\(p_n(s)\)</span>，单位均为kN/m。按本节正号，微段平衡为</p>
-<p><span class="math display">\[
-\frac{\mathrm dN}{\mathrm ds}
--\kappa Q+p_t=0,
+<p><span class="math display">\[
+\frac{\mathrm dN}{\mathrm ds}
+-\kappa Q+p_t=0,
 \]</span></p>
-<p><span class="math display">\[
-\frac{\mathrm dQ}{\mathrm ds}
-+\kappa N+p_n=0,
+<p><span class="math display">\[
+\frac{\mathrm dQ}{\mathrm ds}
++\kappa N+p_n=0,
 \]</span></p>
-<p><span class="math display">\[
-\frac{\mathrm dM}{\mathrm ds}+Q=0.
+<p><span class="math display">\[
+\frac{\mathrm dM}{\mathrm ds}+Q=0.
 \]</span></p>
 <p><span class="math inline">\(N,Q\)</span> 的单位为kN，<span class="math inline">\(M\)</span> 为kN·m。不同教材可能采用相反法向或弯矩正号；程序验证应由一段已知曲线和端力复算，而不是只比较公式外形。</p>
 <p>若压力线与拱轴重合且截面只受轴向力，理想状态有 <span class="math inline">\(M=0\)</span>、<span class="math inline">\(Q=0\)</span>，于是</p>
-<p><span class="math display">\[
-\frac{\mathrm dN}{\mathrm ds}+p_t=0,
-\qquad
-\kappa N+p_n=0.
+<p><span class="math display">\[
+\frac{\mathrm dN}{\mathrm ds}+p_t=0,
+\qquad
+\kappa N+p_n=0.
 \]</span></p>
 <p>第二式说明曲率、轴力与法向荷载必须相互匹配。对于沿水平投影均布、沿弧长均布、离散立柱力或吊杆力，<span class="math inline">\(p_t,p_n\)</span> 不同，合理拱轴也不同。抛物线、圆弧和悬链线不能脱离荷载定义直接比较“合理性”。</p>
 </section>
 <section class="level4" data-number="5.8.10.2" id="压力线的几何位置">
 <h4 class="anchored" data-anchor-id="压力线的几何位置" data-number="5.8.10.2"><span class="header-section-number">5.8.10.2</span> 压力线的几何位置</h4>
 <p>在平面截面处，若轴力 <span class="math inline">\(N\ne0\)</span>，合力作用线相对截面形心的法向偏心可写为</p>
-<p><span class="math display">\[
-e(s)=\frac{M(s)}{N(s)}.
+<p><span class="math display">\[
+e(s)=\frac{M(s)}{N(s)}.
 \]</span></p>
 <p><span class="math inline">\(e\)</span> 的单位为m。压力线点可由</p>
-<p><span class="math display">\[
-\mathbf r_p(s)
-=
-\mathbf r_c(s)+e(s)\mathbf n(s)
+<p><span class="math display">\[
+\mathbf r_p(s)
+=
+\mathbf r_c(s)+e(s)\mathbf n(s)
 \]</span></p>
 <p>构造，其中 <span class="math inline">\(\mathbf r_c\)</span> 为拱轴形心线。若轴力正号取拉为正而拱中受压为负，偏心方向需与弯矩正号一并核对。<span class="math inline">\(N\)</span> 接近零处 <span class="math inline">\(e\)</span> 会数值发散，页面应同时显示 <span class="math inline">\(N,M\)</span>，并对低轴力区标记“压力线不适用”，不能静默截断。</p>
 <p>截面应力在线弹性、平截面且未开裂条件下可写为</p>
-<p><span class="math display">\[
-\sigma(y_s)
-=
-\frac{N}{A}
-+\frac{M}{I}y_s,
+<p><span class="math display">\[
+\sigma(y_s)
+=
+\frac{N}{A}
++\frac{M}{I}y_s,
 \]</span></p>
 <p>其中 <span class="math inline">\(A\)</span> 为m<span class="math inline">\(^2\)</span>，<span class="math inline">\(I\)</span> 为m<span class="math inline">\(^4\)</span>，<span class="math inline">\(y_s\)</span> 为m，<span class="math inline">\(\sigma\)</span> 为kPa。圬工或无拉区分析关注压力线是否位于相应核心范围；钢筋混凝土、钢和钢管混凝土拱还需按材料规范进行压弯、稳定和非线性验算，不能把“压力线在截面内”当作充分条件。</p>
 </section>
 <section class="level4" data-number="5.8.10.3" id="一般荷载下的索多边形解释">
 <h4 class="anchored" data-anchor-id="一般荷载下的索多边形解释" data-number="5.8.10.3"><span class="header-section-number">5.8.10.3</span> 一般荷载下的索多边形解释</h4>
 <p>将竖向集中荷载 <span class="math inline">\(P_i\)</span> 作用于简支梁，选定水平推力 <span class="math inline">\(H\)</span> 后，弯矩除以 <span class="math inline">\(H\)</span> 可给出相应压力线纵坐标：</p>
-<p><span class="math display">\[
-y_p(x)=\frac{M^0(x)}{H}.
+<p><span class="math display">\[
+y_p(x)=\frac{M^0(x)}{H}.
 \]</span></p>
 <p>对离散荷载，<span class="math inline">\(M^0(x)\)</span> 为分段线性，压力线形成索多边形。选取不同 <span class="math inline">\(H\)</span> 相当于改变极距，压力线整体高度随之变化。三铰拱由拱顶铰条件确定 <span class="math inline">\(H\)</span>；两铰和无铰拱的 <span class="math inline">\(H\)</span> 还取决于变形协调和刚度分布。</p>
 <p>这一构造适合解释“压力线由荷载与推力共同确定”。实际拱肋存在轴向变形、剪切、弯曲刚度、支承和施工内力，不能只用图解多边形代替超静定分析。</p>
@@ -2286,16 +2286,16 @@ y_p(x)=\frac{M^0(x)}{H}.
 <section class="level4" data-number="5.8.10.4" id="多工况合理拱轴">
 <h4 class="anchored" data-anchor-id="多工况合理拱轴" data-number="5.8.10.4"><span class="header-section-number">5.8.10.4</span> 多工况合理拱轴</h4>
 <p>成桥恒载可能由拱肋自重、拱上建筑、桥面系、铺装和附属构造组成，其施加时的体系不同。设第 <span class="math inline">\(j\)</span> 个代表状态的弯矩为 <span class="math inline">\(M_j(s;\mathbf a)\)</span>，<span class="math inline">\(\mathbf a\)</span> 为拱轴控制参数，可定义教学目标</p>
-<p><span class="math display">\[
-J(\mathbf a)
-=
-\sum_{j=1}^{n_c}w_j
-\int_0^L
-\left[
-\frac{M_j(s;\mathbf a)}
-{N_{\mathrm{ref}}(s)h(s)}
-\right]^2
-\mathrm ds.
+<p><span class="math display">\[
+J(\mathbf a)
+=
+\sum_{j=1}^{n_c}w_j
+\int_0^L
+\left[
+\frac{M_j(s;\mathbf a)}
+{N_{\mathrm{ref}}(s)h(s)}
+\right]^2
+\mathrm ds.
 \]</span></p>
 <p><span class="math inline">\(h(s)\)</span> 为截面参考高度，m；<span class="math inline">\(N_{\mathrm{ref}}\)</span> 为非零参考轴力，kN；括号内无量纲；<span class="math inline">\(w_j\)</span> 为无量纲权重。约束可包括跨径与矢高、净空、曲率连续、拱脚角度、制造和施工可行性。该目标只用于几何比较，不能取代活载、温度、稳定和极限状态验算。</p>
 <p>如果只最小化单一恒载弯矩，优化轴线可能对偏载、施工或基础变位更敏感。因此输出应同时给出各状态弯矩包络和参数敏感性，不只给加权总目标。</p>
@@ -2303,13 +2303,13 @@ J(\mathbf a)
 <section class="level4" data-number="5.8.10.5" id="自重几何迭代">
 <h4 class="anchored" data-anchor-id="自重几何迭代" data-number="5.8.10.5"><span class="header-section-number">5.8.10.5</span> 自重—几何迭代</h4>
 <p>拱肋单位弧长自重</p>
-<p><span class="math display">\[
-q_s(s)=\gamma(s)A(s),
+<p><span class="math display">\[
+q_s(s)=\gamma(s)A(s),
 \]</span></p>
 <p><span class="math inline">\(\gamma\)</span> 为kN/m<span class="math inline">\(^3\)</span>，<span class="math inline">\(A\)</span> 为m<span class="math inline">\(^2\)</span>，故 <span class="math inline">\(q_s\)</span> 为kN/m。转换为水平投影荷载时</p>
-<p><span class="math display">\[
-q_x(x)=q_s(s)\frac{\mathrm ds}{\mathrm dx}
-=q_s(s)\sqrt{1+\left(\frac{\mathrm dy}{\mathrm dx}\right)^2}.
+<p><span class="math display">\[
+q_x(x)=q_s(s)\frac{\mathrm ds}{\mathrm dx}
+=q_s(s)\sqrt{1+\left(\frac{\mathrm dy}{\mathrm dx}\right)^2}.
 \]</span></p>
 <p>轴线变化会改变弧长、截面方向和自重分布，截面调整又改变 <span class="math inline">\(A(s)\)</span>，因此需迭代：</p>
 <ol type="1">
@@ -2331,43 +2331,43 @@ q_x(x)=q_s(s)\frac{\mathrm ds}{\mathrm dx}
 <section class="level4" data-number="5.8.11.1" id="柔度法的一般形式">
 <h4 class="anchored" data-anchor-id="柔度法的一般形式" data-number="5.8.11.1"><span class="header-section-number">5.8.11.1</span> 柔度法的一般形式</h4>
 <p>选择 <span class="math inline">\(n\)</span> 个超静定力组成 <span class="math inline">\(\mathbf X\)</span>，释放相应约束得到基本体系。协调方程为</p>
-<p><span class="math display">\[
-\mathbf F\mathbf X
-+\boldsymbol\Delta_L
-+\boldsymbol\Delta_0
-=\boldsymbol\Delta_{\mathrm{sup}},
+<p><span class="math display">\[
+\mathbf F\mathbf X
++\boldsymbol\Delta_L
++\boldsymbol\Delta_0
+=\boldsymbol\Delta_{\mathrm{sup}},
 \]</span></p>
 <p>其中 <span class="math inline">\(\mathbf F\)</span> 为 <span class="math inline">\(n\times n\)</span> 柔度矩阵；<span class="math inline">\(\boldsymbol\Delta_L\)</span> 为基本体系在外荷载下相应位移；<span class="math inline">\(\boldsymbol\Delta_0\)</span> 为温度、收缩、徐变、预应变等自由变形；<span class="math inline">\(\boldsymbol\Delta_{\mathrm{sup}}\)</span> 为支承规定变位。矩阵元素与位移类型相应具有m/kN、rad/(kN·m)或耦合单位，不能将不同自由度数值不加缩放地比较大小。</p>
 <p>单位力法下，柔度项可包含弯曲、轴向和剪切贡献：</p>
-<p><span class="math display">\[
-F_{ij}
-=
-\int
-\frac{\overline M_i\overline M_j}{EI}\,\mathrm ds
-+
-\int
-\frac{\overline N_i\overline N_j}{EA}\,\mathrm ds
-+
-\int
-\frac{\overline Q_i\overline Q_j}{\kappa_sGA}\,\mathrm ds.
+<p><span class="math display">\[
+F_{ij}
+=
+\int
+\frac{\overline M_i\overline M_j}{EI}\,\mathrm ds
++
+\int
+\frac{\overline N_i\overline N_j}{EA}\,\mathrm ds
++
+\int
+\frac{\overline Q_i\overline Q_j}{\kappa_sGA}\,\mathrm ds.
 \]</span></p>
 <p><span class="math inline">\(\overline M_i,\overline N_i,\overline Q_i\)</span> 是基本体系受第 <span class="math inline">\(i\)</span> 个单位广义力时的内力；<span class="math inline">\(\kappa_s\)</span> 为剪切修正系数。细长拱中弯曲项可能主导某些协调量，但扁平拱、深截面或大轴力下不能未经检查删除轴向项。</p>
 </section>
 <section class="level4" data-number="5.8.11.2" id="温度和收缩">
 <h4 class="anchored" data-anchor-id="温度和收缩" data-number="5.8.11.2"><span class="header-section-number">5.8.11.2</span> 温度和收缩</h4>
 <p>均匀温变引起自由轴向应变</p>
-<p><span class="math display">\[
-\varepsilon_T(s)=\alpha_T(s)\Delta T(s),
+<p><span class="math display">\[
+\varepsilon_T(s)=\alpha_T(s)\Delta T(s),
 \]</span></p>
 <p>温度梯度可形成自由曲率 <span class="math inline">\(\kappa_T(s)\)</span>。对应单位力方向的自由变形可写为</p>
-<p><span class="math display">\[
-\Delta_{0i}
-=
-\int\overline N_i\varepsilon_T\,\mathrm ds
-+
-\int\overline M_i\kappa_T\,\mathrm ds
-+
-\int\overline N_i\varepsilon_{\mathrm{sh}}\,\mathrm ds,
+<p><span class="math display">\[
+\Delta_{0i}
+=
+\int\overline N_i\varepsilon_T\,\mathrm ds
++
+\int\overline M_i\kappa_T\,\mathrm ds
++
+\int\overline N_i\varepsilon_{\mathrm{sh}}\,\mathrm ds,
 \]</span></p>
 <p>其中 <span class="math inline">\(\alpha_T\)</span> 为1/K，<span class="math inline">\(\Delta T\)</span> 为K，<span class="math inline">\(\varepsilon_{\mathrm{sh}}\)</span> 为无量纲收缩应变。具体符号由虚功和单位力方向确定。无铰拱还会因端转角受限产生弯矩；两铰拱主要由跨向长度协调形成推力变化。</p>
 <p>不同构件温度并不一致。钢管、核心混凝土、桥面系、系杆和吊杆具有不同热惯性；日照还会形成横向与竖向温差。采用单一全桥温度时，应说明所代表的状态和敏感性。</p>
@@ -2375,34 +2375,34 @@ F_{ij}
 <section class="level4" data-number="5.8.11.3" id="徐变与施工龄期">
 <h4 class="anchored" data-anchor-id="徐变与施工龄期" data-number="5.8.11.3"><span class="header-section-number">5.8.11.3</span> 徐变与施工龄期</h4>
 <p>混凝土徐变取决于应力发生时间、材料龄期、湿度和构件尺寸。施工阶段 <span class="math inline">\(t_k\)</span> 施加的恒载在后续产生徐变应变，不能全部按成桥同一龄期计算。线性黏弹性概念下，可用徐变柔量 <span class="math inline">\(J(t,t_k)\)</span> 表示</p>
-<p><span class="math display">\[
-\varepsilon(t)
-=
-\int_0^t J(t,\tau)\,\mathrm d\sigma(\tau),
+<p><span class="math display">\[
+\varepsilon(t)
+=
+\int_0^t J(t,\tau)\,\mathrm d\sigma(\tau),
 \]</span></p>
 <p><span class="math inline">\(J\)</span> 的单位为1/Pa，<span class="math inline">\(\sigma\)</span> 为Pa。实际规范模型的参数和离散算法按项目采用标准。钢管混凝土拱的钢管与核心混凝土共同受力形成时间取决于灌注、硬化、卸架和桥面施工，阶段顺序直接影响长期内力分配。</p>
 </section>
 <section class="level4" data-number="5.8.11.4" id="支承变位和拱脚转动">
 <h4 class="anchored" data-anchor-id="支承变位和拱脚转动" data-number="5.8.11.4"><span class="header-section-number">5.8.11.4</span> 支承变位和拱脚转动</h4>
 <p>右拱脚水平位移、竖向沉降或转动可组成</p>
-<p><span class="math display">\[
-\boldsymbol\Delta_{\mathrm{sup}}
-=
-\begin{bmatrix}
-u_{Bx}-u_{Ax}\\
-u_{Bz}-u_{Az}\\
-\theta_B-\theta_A
-\end{bmatrix}.
+<p><span class="math display">\[
+\boldsymbol\Delta_{\mathrm{sup}}
+=
+\begin{bmatrix}
+u_{Bx}-u_{Ax}\\
+u_{Bz}-u_{Az}\\
+\theta_B-\theta_A
+\end{bmatrix}.
 \]</span></p>
 <p>平动用m，转动用rad。上部模型应从基础模型取得同一作用点、坐标和阶段的六自由度变形。基础沉降通常同时包含平动与转动，把所有影响简化为单个竖向弹簧可能遗漏拱轴平面内转角。</p>
 </section>
 <section class="level4" data-number="5.8.11.5" id="施工锁定内力">
 <h4 class="anchored" data-anchor-id="施工锁定内力" data-number="5.8.11.5"><span class="header-section-number">5.8.11.5</span> 施工锁定内力</h4>
 <p>合龙时若两端存在相对位移 <span class="math inline">\(\Delta\mathbf u_c\)</span>，强制闭合会形成锁定内力。在线性近似下</p>
-<p><span class="math display">\[
-\Delta\mathbf F_c
-=
-\mathbf K_c\Delta\mathbf u_c,
+<p><span class="math display">\[
+\Delta\mathbf F_c
+=
+\mathbf K_c\Delta\mathbf u_c,
 \]</span></p>
 <p><span class="math inline">\(\mathbf K_c\)</span> 为合龙接口凝聚刚度。实际闭合可能通过配重、温度选择、扣索调整或顶推实现；闭合力不能由“节点合并”命令隐藏。模型应保存合龙前两端坐标、转角、临时作用、闭合操作和合龙温度。</p>
 </section>
@@ -2461,41 +2461,41 @@ u_{Bz}-u_{Az}\\
 <h4 class="anchored" data-anchor-id="影响线的能量解释" data-number="5.8.12.1"><span class="header-section-number">5.8.12.1</span> 影响线的能量解释</h4>
 <p>对线弹性结构，单位移动荷载作用于位置 <span class="math inline">\(\xi\)</span> 时，响应 <span class="math inline">\(r(\xi)\)</span> 构成影响线。依据互等定理，对某一广义位移的影响线也可由对应位置施加单位广义力后的变形图得到。对超静定拱，影响线形状包含拱轴、刚度和边界，不能由简支梁影响线乘固定系数获得。</p>
 <p>设响应为</p>
-<p><span class="math display">\[
-r(\xi)=\mathbf c^{\mathsf T}\mathbf u(\xi),
-\qquad
-\mathbf K\mathbf u(\xi)=\mathbf f(\xi),
+<p><span class="math display">\[
+r(\xi)=\mathbf c^{\mathsf T}\mathbf u(\xi),
+\qquad
+\mathbf K\mathbf u(\xi)=\mathbf f(\xi),
 \]</span></p>
 <p>则</p>
-<p><span class="math display">\[
-r(\xi)
-=
-\mathbf c^{\mathsf T}\mathbf K^{-1}\mathbf f(\xi).
+<p><span class="math display">\[
+r(\xi)
+=
+\mathbf c^{\mathsf T}\mathbf K^{-1}\mathbf f(\xi).
 \]</span></p>
 <p><span class="math inline">\(\mathbf c\)</span> 定义目标截面内力、支反力或位移提取方式。计算一系列 <span class="math inline">\(\xi\)</span> 时，应保持结构状态和边界不变。若移动荷载导致吊杆松弛、支座滑移或明显几何非线性，影响线叠加不再严格适用，应直接移动加载求解。</p>
 </section>
 <section class="level4" data-number="5.8.12.2" id="车辆与车道加载">
 <h4 class="anchored" data-anchor-id="车辆与车道加载" data-number="5.8.12.2"><span class="header-section-number">5.8.12.2</span> 车辆与车道加载</h4>
 <p>影响线用于寻找纵向不利位置，实际车辆加载还需按采用规范处理车道、轴重、间距、多车道折减或冲击等。教材不自编这些数值，而把规范车辆转换为带来源的轴列：</p>
-<p><span class="math display">\[
-R(\xi_0)
-=
-\sum_{j=1}^{n_a}P_j
-\eta_R(\xi_0+d_j),
+<p><span class="math display">\[
+R(\xi_0)
+=
+\sum_{j=1}^{n_a}P_j
+\eta_R(\xi_0+d_j),
 \]</span></p>
 <p><span class="math inline">\(P_j\)</span> 为第 <span class="math inline">\(j\)</span> 个轴重，kN；<span class="math inline">\(d_j\)</span> 为相对首轴位置，m；<span class="math inline">\(\eta_R\)</span> 为目标响应的影响线纵坐标，其单位由响应决定。连续分布荷载则对影响线同号有利区积分。程序应保存控制首轴位置和每一轴贡献，而不是只报包络值。</p>
 </section>
 <section class="level4" data-number="5.8.12.3" id="横向偏载">
 <h4 class="anchored" data-anchor-id="横向偏载" data-number="5.8.12.3"><span class="header-section-number">5.8.12.3</span> 横向偏载</h4>
 <p>双肋拱的车辆荷载先由桥面板、纵梁和横梁分配到吊杆或立柱，再传入两片拱肋。可将横向系统写为</p>
-<p><span class="math display">\[
-\mathbf K_d\mathbf v
-=
-\mathbf B_p\mathbf P,
-\qquad
-\mathbf F_h
-=
-\mathbf B_h^{\mathsf T}\mathbf K_d\mathbf v,
+<p><span class="math display">\[
+\mathbf K_d\mathbf v
+=
+\mathbf B_p\mathbf P,
+\qquad
+\mathbf F_h
+=
+\mathbf B_h^{\mathsf T}\mathbf K_d\mathbf v,
 \]</span></p>
 <p><span class="math inline">\(\mathbf K_d\)</span> 为桥面系横向／扭转刚度，<span class="math inline">\(\mathbf v\)</span> 为位移，<span class="math inline">\(\mathbf P\)</span> 为车轮或车道荷载，<span class="math inline">\(\mathbf F_h\)</span> 为吊杆或立柱节点力。矩阵的具体形式取决于梁格、板壳或实体模型。</p>
 <p>只用杠杆法按横向距离分配适合某些刚性横梁概念判断，不能覆盖柔性横梁、桥面扭转、系杆弯曲和空间拱肋变形。模型应先以对称车辆检查两肋反力镜像，再以单侧车道检查总竖向力和横桥向力矩平衡。</p>
@@ -2503,11 +2503,11 @@ R(\xi_0)
 <section class="level4" data-number="5.8.12.4" id="空间影响面">
 <h4 class="anchored" data-anchor-id="空间影响面" data-number="5.8.12.4"><span class="header-section-number">5.8.12.4</span> 空间影响面</h4>
 <p>把车辆纵向位置 <span class="math inline">\(x\)</span> 与横向位置 <span class="math inline">\(y\)</span> 同时作为变量，可形成响应影响面 <span class="math inline">\(\eta_R(x,y)\)</span>。车辆组响应</p>
-<p><span class="math display">\[
-R
-=
-\sum_{j=1}^{n_w}
-P_j\,\eta_R(x_j,y_j).
+<p><span class="math display">\[
+R
+=
+\sum_{j=1}^{n_w}
+P_j\,\eta_R(x_j,y_j).
 \]</span></p>
 <p>影响面适合解释偏载为何同时改变拱肋面内弯矩、面外弯矩、扭矩、吊杆力和横梁弯矩。可视化时应固定一个目标响应，不在同一颜色图中混合多种单位。</p>
 </section>
@@ -2522,8 +2522,8 @@ P_j\,\eta_R(x_j,y_j).
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2537,39 +2537,39 @@ P_j\,\eta_R(x_j,y_j).
 <section class="level4" data-number="5.8.13.1" id="系杆拱肋桥面系的闭合">
 <h4 class="anchored" data-anchor-id="系杆拱肋桥面系的闭合" data-number="5.8.13.1"><span class="header-section-number">5.8.13.1</span> 系杆—拱肋—桥面系的闭合</h4>
 <p>理想系杆拱在端节点满足水平平衡</p>
-<p><span class="math display">\[
-T_t\approx H_a,
+<p><span class="math display">\[
+T_t\approx H_a,
 \]</span></p>
 <p>其中 <span class="math inline">\(T_t\)</span> 为系杆拉力，<span class="math inline">\(H_a\)</span> 为拱肋水平分力，单位均为kN。实际结构中，端横梁、主梁、支座摩擦、拱脚节点刚度和施工临时约束也可能分担水平力，因而应在同一截面或同一刚性区域边界上核对六分量平衡。</p>
 <p>系杆具有有限轴向刚度 <span class="math inline">\(E_tA_t\)</span>，伸长会使两拱脚相对位移并改变拱肋推力与弯矩。对均匀轴力的概念估计</p>
-<p><span class="math display">\[
-\Delta l_t
-=
-\frac{T_tl_t}{E_tA_t},
+<p><span class="math display">\[
+\Delta l_t
+=
+\frac{T_tl_t}{E_tA_t},
 \]</span></p>
 <p><span class="math inline">\(l_t\)</span> 为m，<span class="math inline">\(E_t\)</span> 为kN/m<span class="math inline">\(^2\)</span>，<span class="math inline">\(A_t\)</span> 为m<span class="math inline">\(^2\)</span>，故 <span class="math inline">\(\Delta l_t\)</span> 为m。若系杆同时作为桥面主梁，还承受局部轮载、横梁反力和弯矩，不能只用轴向杆。预应力系杆需记录张拉阶段、锚固回缩、摩阻和长期损失。</p>
 <p>端节点将拱肋压弯、系杆拉力、端横梁剪弯扭和支座反力集中到有限空间。总体模型应输出节点边界上的</p>
-<p><span class="math display">\[
-\mathbf F_b=
-[N,V_y,V_z,T,M_y,M_z]^{\mathsf T},
+<p><span class="math display">\[
+\mathbf F_b=
+[N,V_y,V_z,T,M_y,M_z]^{\mathsf T},
 \]</span></p>
 <p>分别采用kN和kN·m，再施加于壳或实体局部模型。局部模型的截断面应足够远离集中区，并保持总体模型的力和位移边界相容。只把最大系杆拉力施加在一个节点，可能产生不真实的局部峰值。</p>
 </section>
 <section class="level4" data-number="5.8.13.2" id="吊杆布置与共同工作">
 <h4 class="anchored" data-anchor-id="吊杆布置与共同工作" data-number="5.8.13.2"><span class="header-section-number">5.8.13.2</span> 吊杆布置与共同工作</h4>
 <p>竖直吊杆、斜吊杆或网状吊杆改变桥面与拱肋之间的剪切传递和体系刚度。吊杆长度、倾角和间距影响轴向刚度</p>
-<p><span class="math display">\[
-k_{h,i}=\frac{E_iA_i}{l_i},
+<p><span class="math display">\[
+k_{h,i}=\frac{E_iA_i}{l_i},
 \]</span></p>
 <p>单位为kN/m。较短吊杆的几何误差、端部刚度和温度变化对索力比例更敏感。斜吊杆可能提高整体剪切刚度，但交叉点、锚固、安装顺序和疲劳应力范围更复杂。</p>
 <p>吊杆只受拉时，其切线刚度取决于是否处于张紧状态。可用分段关系表达</p>
-<p><span class="math display">\[
-N_i=
-\begin{cases}
-k_{h,i}\Delta l_i+N_{0i},&amp;
-k_{h,i}\Delta l_i+N_{0i}&gt;0,\\
-0,&amp;\text{否则},
-\end{cases}
+<p><span class="math display">\[
+N_i=
+\begin{cases}
+k_{h,i}\Delta l_i+N_{0i},&amp;
+k_{h,i}\Delta l_i+N_{0i}&gt;0,\\
+0,&amp;\text{否则},
+\end{cases}
 \]</span></p>
 <p><span class="math inline">\(N_{0i}\)</span> 为初始拉力。移动荷载使某吊杆卸载接近零时，结构刚度改变，线性影响线叠加需谨慎。吊杆退出分析还应检查相邻吊杆、横梁、系杆和拱肋的重分配。</p>
 <p>吊杆疲劳由交通应力范围、风振、连接偏心和锚固细节共同决定。总体模型提供轴力时程或影响线，局部锚固模型提供应力集中；二者使用同一事件和构件编号。只用最大索力不能评价疲劳。</p>
@@ -2636,22 +2636,22 @@ k_{h,i}\Delta l_i+N_{0i}&gt;0,\\
 <section class="level4" data-number="5.8.13.4" id="组合截面与界面">
 <h4 class="anchored" data-anchor-id="组合截面与界面" data-number="5.8.13.4"><span class="header-section-number">5.8.13.4</span> 组合截面与界面</h4>
 <p>在完全共同变形的线弹性概念下，截面轴向刚度可写为</p>
-<p><span class="math display">\[
-(EA)_{\mathrm{comp}}
-=
-E_sA_s+E_cA_c,
+<p><span class="math display">\[
+(EA)_{\mathrm{comp}}
+=
+E_sA_s+E_cA_c,
 \]</span></p>
 <p>弯曲刚度按同一参考轴计算</p>
-<p><span class="math display">\[
-(EI)_{\mathrm{comp}}
-=
-E_sI_s+E_cI_c+
-E_sA_sd_s^2+E_cA_cd_c^2.
+<p><span class="math display">\[
+(EI)_{\mathrm{comp}}
+=
+E_sI_s+E_cI_c+
+E_sA_sd_s^2+E_cA_cd_c^2.
 \]</span></p>
 <p><span class="math inline">\(E\)</span> 为kN/m<span class="math inline">\(^2\)</span>，<span class="math inline">\(A\)</span> 为m<span class="math inline">\(^2\)</span>，<span class="math inline">\(I\)</span> 为m<span class="math inline">\(^4\)</span>，<span class="math inline">\(d\)</span> 为m。该式只描述弹性变形协调，不包括钢管约束核心混凝土、局部屈曲、界面滑移、残余应力和非线性。构件抗力按现行钢管混凝土拱桥设计规范计算。</p>
 <p>若考虑界面滑移，可用沿界面剪力流 <span class="math inline">\(q_i\)</span> 与相对滑移 <span class="math inline">\(s_i\)</span> 的关系</p>
-<p><span class="math display">\[
-q_i=\mathcal B(s_i),
+<p><span class="math display">\[
+q_i=\mathcal B(s_i),
 \]</span></p>
 <p><span class="math inline">\(q_i\)</span> 的单位为kN/m，<span class="math inline">\(s_i\)</span> 为m。界面模型需要试验或可靠资料。大面积脱空、灌注不密实或界面缺陷会同时影响共同工作、耐久和检测解释，不宜用任意折减系数处理。</p>
 </section>
@@ -2670,8 +2670,8 @@ q_i=\mathcal B(s_i),
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2687,11 +2687,11 @@ q_i=\mathcal B(s_i),
 <h4 class="anchored" data-anchor-id="参考状态" data-number="5.9.0.1"><span class="header-section-number">5.9.0.1</span> 参考状态</h4>
 <p>稳定分析首先定义参考状态 <span class="math inline">\(\mathcal S_0\)</span>：几何、边界、材料龄期、初始内力、施工阶段和已施加作用。拱桥的几何刚度由轴力决定，同一成桥几何若采用不同施工锁定内力，会得到不同稳定结果。特征值分析、几何非线性分析和材料非线性分析必须从可比参考状态开始。</p>
 <p>线性特征值问题可写为</p>
-<p><span class="math display">\[
-\left[
-\mathbf K_E(\mathcal S_0)
-+\lambda\mathbf K_G(\mathcal S_0,\mathbf P)
-\right]\boldsymbol\phi=\mathbf0,
+<p><span class="math display">\[
+\left[
+\mathbf K_E(\mathcal S_0)
++\lambda\mathbf K_G(\mathcal S_0,\mathbf P)
+\right]\boldsymbol\phi=\mathbf0,
 \]</span></p>
 <p><span class="math inline">\(\mathbf K_E\)</span> 为弹性刚度，<span class="math inline">\(\mathbf K_G\)</span> 为参考荷载模式 <span class="math inline">\(\mathbf P\)</span> 形成的几何刚度，<span class="math inline">\(\lambda\)</span> 为荷载比例特征值，<span class="math inline">\(\boldsymbol\phi\)</span> 为屈曲模态。<span class="math inline">\(\lambda\)</span> 只对所选荷载模式和线性化状态有意义；若恒载、活载、温度等不能按同一比例增长，需构造与设计状况相符的加载路径。</p>
 </section>
@@ -2708,19 +2708,19 @@ q_i=\mathcal B(s_i),
 <section class="level4" data-number="5.9.0.3" id="几何材料非线性分析">
 <h4 class="anchored" data-anchor-id="几何材料非线性分析" data-number="5.9.0.3"><span class="header-section-number">5.9.0.3</span> 几何材料非线性分析</h4>
 <p>含初始缺陷的平衡方程为</p>
-<p><span class="math display">\[
-\mathbf R[
-\mathbf u,\lambda;
-\mathbf u_0,\boldsymbol\theta_m
-]
-=\mathbf0,
+<p><span class="math display">\[
+\mathbf R[
+\mathbf u,\lambda;
+\mathbf u_0,\boldsymbol\theta_m
+]
+=\mathbf0,
 \]</span></p>
 <p><span class="math inline">\(\mathbf u_0\)</span> 为初始几何缺陷，m；<span class="math inline">\(\boldsymbol\theta_m\)</span> 为材料与残余应力参数。采用弧长法或位移控制可追踪极限点后的平衡路径。输出应包括荷载—位移曲线、塑性或损伤分布、关键内力、迭代与能量，而不只给一个极限系数。</p>
 <p>初始缺陷可以由规范规定形式、实测线形、特征模态组合或制造安装容差构造。设</p>
-<p><span class="math display">\[
-\mathbf u_0
-=
-\sum_{r=1}^{n_b}a_r\boldsymbol\phi_r,
+<p><span class="math display">\[
+\mathbf u_0
+=
+\sum_{r=1}^{n_b}a_r\boldsymbol\phi_r,
 \]</span></p>
 <p><span class="math inline">\(a_r\)</span> 为m。幅值和组合由项目标准与测量决定。只采用第一阶模态可能遗漏局部、反对称或施工偏差；可对几种物理合理模式进行包络。</p>
 <p>材料非线性需与截面类型相符。钢拱关注屈服、残余应力和板件局部屈曲；混凝土拱关注开裂、压碎和约束；钢管混凝土拱关注钢管—核心混凝土共同作用及阶段已有应力。纤维梁适合总体截面非线性，但不能自动解析局部板屈曲或界面脱空。</p>
@@ -2728,10 +2728,10 @@ q_i=\mathcal B(s_i),
 <section class="level4" data-number="5.9.0.4" id="空间约束和横撑失效">
 <h4 class="anchored" data-anchor-id="空间约束和横撑失效" data-number="5.9.0.4"><span class="header-section-number">5.9.0.4</span> 空间约束和横撑失效</h4>
 <p>面外稳定取决于拱肋间距、横撑间距与刚度、桥面系连接和拱脚横向约束。设两拱肋侧向位移为 <span class="math inline">\(v_1,v_2\)</span>，可分解为同向侧移和反向开合：</p>
-<p><span class="math display">\[
-v_s=\frac{v_1+v_2}{2},
-\qquad
-v_a=\frac{v_1-v_2}{2}.
+<p><span class="math display">\[
+v_s=\frac{v_1+v_2}{2},
+\qquad
+v_a=\frac{v_1-v_2}{2}.
 \]</span></p>
 <p>横撑对 <span class="math inline">\(v_a\)</span> 通常更敏感，桥面系与支承对 <span class="math inline">\(v_s\)</span> 影响显著。仅观察一片拱肋的侧移不能区分两类模态。模型应在对称和反对称初始缺陷、对称和偏载作用下分别检查。</p>
 <p>横撑或吊杆退出属于拓扑变化。应先形成损伤前平衡，再移除或退化构件，计算静力重分配；若考虑突然失效，需进一步进行动力分析。备用传力路径的存在必须由内力和变形证明，不能由构件数量推断。</p>
@@ -2808,10 +2808,10 @@ v_a=\frac{v_1-v_2}{2}.
 <h4 class="anchored" data-anchor-id="悬臂扣挂施工" data-number="5.9.1.2"><span class="header-section-number">5.9.1.2</span> 悬臂扣挂施工</h4>
 <p>悬臂拼装阶段的半拱由扣索、扣塔和锚固体系稳定。每安装一节段，扣索力、拱肋弯矩和面外稳定均变化。控制量包括节段端坐标、扣索力、扣塔位移、拱脚反力和最低空间模态。</p>
 <p>扣索调整属于多变量控制。若观测向量为 <span class="math inline">\(\Delta\mathbf y\)</span>、扣索调整为 <span class="math inline">\(\Delta\mathbf T_c\)</span>，线性化关系</p>
-<p><span class="math display">\[
-\Delta\mathbf y
-\approx
-\mathbf S_c\Delta\mathbf T_c
+<p><span class="math display">\[
+\Delta\mathbf y
+\approx
+\mathbf S_c\Delta\mathbf T_c
 \]</span></p>
 <p>只在当前阶段和小扰动附近有效。矩阵病态时，多组调索可产生相近线形；应结合索力范围、调整量、对称性和独立测点约束，不能只追求残差最小。</p>
 </section>
@@ -2827,21 +2827,21 @@ v_a=\frac{v_1-v_2}{2}.
 <section class="level4" data-number="5.9.1.5" id="合龙与拆除临时体系">
 <h4 class="anchored" data-anchor-id="合龙与拆除临时体系" data-number="5.9.1.5"><span class="header-section-number">5.9.1.5</span> 合龙与拆除临时体系</h4>
 <p>合龙控制包含间隙、相对高差、横向偏位、转角、温度和合龙力。可将接口相对状态写为</p>
-<p><span class="math display">\[
-\Delta\mathbf d_c
-=
-[\,\Delta u,\Delta v,\Delta w,
-\Delta\theta_x,\Delta\theta_y,\Delta\theta_z\,]^{\mathsf T}.
+<p><span class="math display">\[
+\Delta\mathbf d_c
+=
+[\,\Delta u,\Delta v,\Delta w,
+\Delta\theta_x,\Delta\theta_y,\Delta\theta_z\,]^{\mathsf T}.
 \]</span></p>
 <p>平动用mm或m，转动用rad。合龙方案决定哪些分量通过配重、索力、顶推或温度调整，哪些由合龙构件变形吸收。合龙后拆索或卸架按规定顺序进行，每一步核对荷载转移和支反力。</p>
 </section>
 <section class="level4" data-number="5.9.1.6" id="基础联合与施工期岸坡">
 <h4 class="anchored" data-anchor-id="基础联合与施工期岸坡" data-number="5.9.1.6"><span class="header-section-number">5.9.1.6</span> 基础联合与施工期岸坡</h4>
 <p>施工开挖、锚碇、扣塔和大型吊装可能改变拱座周边地层；运营期冲刷、岸坡变形和地震又改变基础边界。基础刚度不是一个全寿命固定矩阵。建议定义</p>
-<p><span class="math display">\[
-\mathbf K_f
-=
-\mathbf K_f(\mathcal S_k,I),
+<p><span class="math display">\[
+\mathbf K_f
+=
+\mathbf K_f(\mathcal S_k,I),
 \]</span></p>
 <p>其中 <span class="math inline">\(\mathcal S_k\)</span> 为施工或运营状态，<span class="math inline">\(I\)</span> 为作用水平。不同状态的凝聚矩阵必须来源于同一接口坐标。非线性明显时传递完整力—位移关系。</p>
 <p>普通推力拱宜同时检查拱座滑移、倾覆、地基承载和变形对上部的反馈；系杆拱虽显著减少永久水平推力，基础仍承担竖向、制动、风、地震和不平衡作用。不得因设置系杆而删除基础水平自由度和相关工况。</p>
@@ -2857,8 +2857,8 @@ v_a=\frac{v_1-v_2}{2}.
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2933,23 +2933,23 @@ v_a=\frac{v_1-v_2}{2}.
 <section class="level4" data-number="5.10.0.2" id="一推力系杆和基础三种边界">
 <h4 class="anchored" data-anchor-id="一推力系杆和基础三种边界" data-number="5.10.0.2"><span class="header-section-number">5.10.0.2</span> 一：推力、系杆和基础三种边界</h4>
 <p>理想三铰推力已得</p>
-<p><span class="math display">\[
-H=\frac{ql^2}{8f}=13500\ \mathrm{kN}.
+<p><span class="math display">\[
+H=\frac{ql^2}{8f}=13500\ \mathrm{kN}.
 \]</span></p>
 <p>若普通推力拱以两个等值水平弹簧表示拱座，忽略其他耦合时每侧数量级位移</p>
-<p><span class="math display">\[
-u_A\approx\frac{H}{k_{Ax}}
-=2.70\ \mathrm{mm}.
+<p><span class="math display">\[
+u_A\approx\frac{H}{k_{Ax}}
+=2.70\ \mathrm{mm}.
 \]</span></p>
 <p>该计算只用于验证单位和弹簧方向；真实基础需使用六自由度刚度或非线性关系。</p>
 <p>系杆方案A若按均匀拉力 <span class="math inline">\(T_t=H\)</span>，伸长</p>
-<p><span class="math display">\[
-\Delta l_{t,A}
-=
-\frac{13500\times120}
-{2.0\times10^8\times0.080}
-=0.10125\ \mathrm m
-=101.25\ \mathrm{mm}.
+<p><span class="math display">\[
+\Delta l_{t,A}
+=
+\frac{13500\times120}
+{2.0\times10^8\times0.080}
+=0.10125\ \mathrm m
+=101.25\ \mathrm{mm}.
 \]</span></p>
 <p>方案B伸长为67.50 mm。有限刚度系杆实际拉力与拱脚相对变形耦合，不会严格等于刚性拱的13500 kN；交互模型应迭代求平衡。该手算提供上限式初始核验。</p>
 <p>三种边界分别输出：普通推力拱的基础水平反力和位移；方案A、B的系杆拉力、伸长、外部水平反力、拱肋弯矩和端节点力。比较不能只看外部反力，还要检查系杆变形是否影响桥面线形与伸缩构造。</p>
@@ -2957,17 +2957,17 @@ u_A\approx\frac{H}{k_{Ax}}
 <section class="level4" data-number="5.10.0.3" id="二偏载与影响面">
 <h4 class="anchored" data-anchor-id="二偏载与影响面" data-number="5.10.0.3"><span class="header-section-number">5.10.0.3</span> 二：偏载与影响面</h4>
 <p>从左车道教学轴列求目标吊杆、左拱肋四分点弯矩和右拱肋面外弯矩。程序保存每个车轮贡献</p>
-<p><span class="math display">\[
-R_j=P_j\eta_R(x_j,y_j)
+<p><span class="math display">\[
+R_j=P_j\eta_R(x_j,y_j)
 \]</span></p>
 <p>并核对</p>
-<p><span class="math display">\[
-\sum R_{z,\mathrm{support}}
-=
-\sum P_j,\qquad
-\sum M_x^{\mathrm{support}}
-=
-\sum P_jy_j.
+<p><span class="math display">\[
+\sum R_{z,\mathrm{support}}
+=
+\sum P_j,\qquad
+\sum M_x^{\mathrm{support}}
+=
+\sum P_jy_j.
 \]</span></p>
 <p>对称复制到右车道后，左右响应应镜像。若总竖向反力正确而横向力矩不闭合，可能是车道坐标、局部轴或横梁偏心错误。</p>
 <p>再将一根中跨吊杆设为退出，重算影响面。输出相邻吊杆增量、横梁弯矩、两肋弯扭和系杆局部响应。旧影响面标记为“拓扑已改变，不可用”。</p>
@@ -2975,11 +2975,11 @@ R_j=P_j\eta_R(x_j,y_j)
 <section class="level4" data-number="5.10.0.4" id="三合龙偏差">
 <h4 class="anchored" data-anchor-id="三合龙偏差" data-number="5.10.0.4"><span class="header-section-number">5.10.0.4</span> 三：合龙偏差</h4>
 <p>用单自由度教学接口估算未经调整强制闭合的力</p>
-<p><span class="math display">\[
-\Delta F_c
-=k_c\Delta u_c
-=300\times4
-=1200\ \mathrm{kN}.
+<p><span class="math display">\[
+\Delta F_c
+=k_c\Delta u_c
+=300\times4
+=1200\ \mathrm{kN}.
 \]</span></p>
 <p>这是合龙截面的等效接口力，不是现场操作指令。实际六自由度闭合需用凝聚刚度矩阵，并考虑扣索、温度、两半拱已有内力和调整顺序。页面允许把4 mm偏差分解为测量、温度和制造部分，只有经批准的可调整部分进入控制模拟。</p>
 </section>
@@ -3153,15 +3153,15 @@ R_j=P_j\eta_R(x_j,y_j)
 </table>
 <p>底层采用统一SI制，界面可显示kN、mm和kN·m。每次运行生成数据集哈希、程序版本和随机种子。压力线、影响面、稳定路径和施工曲线均从同一结果文件绘制。</p>
 <p>算法门槛采用以下顺序：</p>
-<pre><code>validate_schema_and_units()
-build_geometry_and_local_axes()
-verify_three_hinged_arch_baseline()
-map_loads_to_actual_stages()
-solve_stage_equilibrium()
-verify_force_and_moment_balance()
-generate_influence_surface_if_linear()
-run_stability_ladder()
-compare_monitoring_and_holdout_data()
+<pre><code>validate_schema_and_units()
+build_geometry_and_local_axes()
+verify_three_hinged_arch_baseline()
+map_loads_to_actual_stages()
+solve_stage_equilibrium()
+verify_force_and_moment_balance()
+generate_influence_surface_if_linear()
+run_stability_ladder()
+compare_monitoring_and_holdout_data()
 export_evidence_package()</code></pre>
 <p>若解析基线、平衡或阶段拓扑未通过，后续参数优化按钮保持禁用。任何AI辅助解释只能读取已验证结果和来源字段，不能修改模型或生成现场控制值。</p>
 <div class="digital-note">
@@ -3172,8 +3172,8 @@ export_evidence_package()</code></pre>
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -3188,9 +3188,9 @@ export_evidence_package()</code></pre>
 <p>拱桥名称往往把多个维度压缩在一起。为避免由一个名称推断过多信息，可把分类分成三组。第一组回答桥面怎样把作用送入拱肋，包括上承、中承、下承以及桥面穿越拱肋的混合区；第二组回答拱上或拱下构件怎样组织，包括实腹、空腹、立柱、吊杆、桁架腹杆与刚架；第三组回答水平分力怎样闭合，包括由拱座—基础承担的推力拱、由系杆承担的系杆拱以及部分水平力在多个构件间分配的组合形式。</p>
 <p>三组分类不能相互替代。下承式拱桥可以采用系杆，也可以把水平推力传入基础；空腹拱既可以由立柱传力，也可以形成桁式或刚架式腹部；钢管混凝土只说明材料与截面，不说明桥面位置、静定程度或施工方法。设计模型的名称至少应包含桥面位置、水平力闭合、主拱形式、材料和施工参考状态。</p>
 <p>建议采用如下拓扑标签：</p>
-<p><span class="math display">\[
-T_{\mathrm{arch}}=
-\langle D,W,R,M,C,S\rangle,
+<p><span class="math display">\[
+T_{\mathrm{arch}}=
+\langle D,W,R,M,C,S\rangle,
 \]</span></p>
 <p>式中，<span class="math inline">\(D\)</span> 为桥面相对拱肋位置；<span class="math inline">\(W\)</span> 为腹部构造；<span class="math inline">\(R\)</span> 为拱脚和水平力闭合方式；<span class="math inline">\(M\)</span> 为主拱材料与截面；<span class="math inline">\(C\)</span> 为横向联系；<span class="math inline">\(S\)</span> 为形成体系的施工方法。该标签不是规范分类代码，而是教材和数字模型的对象合同。例如，<code>D=through, W=hangers, R=tied, M=CFST-box, C=K-brace, S=cable-hoist</code> 表示采用吊杆的中/下承式钢管混凝土系杆拱，并提示模型必须存在吊杆、系杆、端节点、横撑和缆索吊装阶段。</p>
 </section>
@@ -3285,34 +3285,34 @@ T_{\mathrm{arch}}=
 <section class="level4" data-number="5.10.2.1" id="笛卡尔坐标下的平衡关系">
 <h4 class="anchored" data-anchor-id="笛卡尔坐标下的平衡关系" data-number="5.10.2.1"><span class="header-section-number">5.10.2.1</span> 笛卡尔坐标下的平衡关系</h4>
 <p>令平面拱轴为 <span class="math inline">\(y=y(x)\)</span>，<span class="math inline">\(x\)</span> 沿弦线水平向右，<span class="math inline">\(y\)</span> 由弦线向上为正。截面切线斜率 <span class="math inline">\(y'=\mathrm dy/\mathrm dx\)</span>，弧长微分为</p>
-<p><span class="math display">\[
-\mathrm ds=\sqrt{1+y'^2}\,\mathrm dx.
+<p><span class="math display">\[
+\mathrm ds=\sqrt{1+y'^2}\,\mathrm dx.
 \]</span></p>
 <p>对仅承受竖向分布荷载的平面体系，取向下荷载集度 <span class="math inline">\(q(x)&gt;0\)</span>，单位kN/m，且无分布水平荷载时，截面内力的全局水平分量 <span class="math inline">\(H\)</span> 为常数。与同跨简支梁在相同竖向荷载下的弯矩 <span class="math inline">\(M^0(x)\)</span> 比较，可写</p>
-<p><span class="math display">\[
-M(x)=M^0(x)-H,y(x).
+<p><span class="math display">\[
+M(x)=M^0(x)-H,y(x).
 \]</span></p>
 <p>式中 <span class="math inline">\(M\)</span>、<span class="math inline">\(M^0\)</span> 单位为kN·m，<span class="math inline">\(H\)</span> 单位kN，<span class="math inline">\(y\)</span> 单位m。该关系要求拱脚连线、坐标、竖向荷载和水平推力定义一致；存在分布水平荷载、支点不等高、空间偏载或显著二阶效应时，应重新从自由体平衡建立关系。</p>
 <p>若要求特定荷载下 <span class="math inline">\(M(x)=0\)</span>，则</p>
-<p><span class="math display">\[
-y(x)=\frac{M^0(x)}{H}.
+<p><span class="math display">\[
+y(x)=\frac{M^0(x)}{H}.
 \]</span></p>
 <p>两边二次求导，在本节正号下有</p>
-<p><span class="math display">\[
-H\frac{\mathrm d^2y}{\mathrm dx^2}=-q(x).
+<p><span class="math display">\[
+H\frac{\mathrm d^2y}{\mathrm dx^2}=-q(x).
 \]</span></p>
 <p>该式说明合理轴线的曲率由荷载沿水平投影的分布决定。<span class="math inline">\(q\)</span> 为常数时得到抛物线；若荷载按拱轴弧长均布，则转换到水平投影后包含 <span class="math inline">\(\sqrt{1+y'^2}\)</span>，方程为非线性；若荷载由等间距立柱形成，应采用离散索多边形或分段平衡，不能将其直接称为“均布荷载合理拱轴”。</p>
 <p>截面切向和法向单位向量为</p>
-<p><span class="math display">\[
-\boldsymbol t=\frac{(1,y')}{\sqrt{1+y'^2}},
-\qquad
-\boldsymbol n=\frac{(-y',1)}{\sqrt{1+y'^2}}.
+<p><span class="math display">\[
+\boldsymbol t=\frac{(1,y')}{\sqrt{1+y'^2}},
+\qquad
+\boldsymbol n=\frac{(-y',1)}{\sqrt{1+y'^2}}.
 \]</span></p>
 <p>若截面合力的全局分量为 <span class="math inline">\((H,V)\)</span>，则采用压为正且本节法向约定时，轴力与剪力可由</p>
-<p><span class="math display">\[
-N=H t_x+V t_y,
-\qquad
-Q=H n_x+V n_y
+<p><span class="math display">\[
+N=H t_x+V t_y,
+\qquad
+Q=H n_x+V n_y
 \]</span></p>
 <p>求得。不同软件的构件局部轴和内力正号可能相反，导入结果前应以已知自由体核验，不能只按列名对应。</p>
 </section>
@@ -3320,30 +3320,30 @@ Q=H n_x+V n_y
 <h4 class="anchored" data-anchor-id="支点不等高与水平作用" data-number="5.10.2.2"><span class="header-section-number">5.10.2.2</span> 支点不等高与水平作用</h4>
 <p>拱脚不等高时，弦线可取两拱脚连线，或采用全局水平基准，但公式中的 <span class="math inline">\(y\)</span> 和支反力必须与选择一致。若采用全局坐标，左、右支反力的水平与竖向分量需同时由整体平衡和约束协调确定；“水平推力恒定”仅在无分布水平作用时成立。</p>
 <p>风、制动、流水或地震可产生沿全局水平方向的分布作用 <span class="math inline">\(p_x(x)\)</span>。此时截面水平分量满足</p>
-<p><span class="math display">\[
-\frac{\mathrm dH(x)}{\mathrm dx}+p_x(x)=0,
+<p><span class="math display">\[
+\frac{\mathrm dH(x)}{\mathrm dx}+p_x(x)=0,
 \]</span></p>
 <p><span class="math inline">\(H\)</span> 随位置变化，不能继续使用单一常数乘 <span class="math inline">\(y\)</span> 的简式。处理一般作用时，以前文弧长坐标微段平衡或有限元方程为主，<span class="math inline">\(M^0-Hy\)</span> 仅保留为竖向荷载解析基线。</p>
 </section>
 <section class="level4" data-number="5.10.2.3" id="压力线与截面合力位置">
 <h4 class="anchored" data-anchor-id="压力线与截面合力位置" data-number="5.10.2.3"><span class="header-section-number">5.10.2.3</span> 压力线与截面合力位置</h4>
 <p>平面压弯截面的压力线偏心为 <span class="math inline">\(e=M/N\)</span>。为避免 <span class="math inline">\(N\)</span> 接近零造成误导，可同时输出无量纲偏心</p>
-<p><span class="math display">\[
-\eta_e=\frac{|e|}{k},
+<p><span class="math display">\[
+\eta_e=\frac{|e|}{k},
 \]</span></p>
 <p>其中 <span class="math inline">\(k\)</span> 为截面相应方向的核心距，单位m。对线弹性、均质且仅考虑一个弯曲方向的截面，正负边核心距分别为</p>
-<p><span class="math display">\[
-k_+=\frac{I}{A c_-},
-\qquad
-k_-=\frac{I}{A c_+},
+<p><span class="math display">\[
+k_+=\frac{I}{A c_-},
+\qquad
+k_-=\frac{I}{A c_+},
 \]</span></p>
 <p><span class="math inline">\(I\)</span> 为关于形心轴的惯性矩，单位m<span class="math inline">\(^4\)</span>；<span class="math inline">\(A\)</span> 为面积，单位m<span class="math inline">\(^2\)</span>；<span class="math inline">\(c_+,c_-\)</span> 为形心至两侧最外缘距离，单位m。矩形截面高度为 <span class="math inline">\(h\)</span> 时，两侧核心距均为 <span class="math inline">\(h/6\)</span>。只有在材料不承受拉应力、应力线性分布且截面完整的假定下，压力线位于核心可作为无拉应力的判断。</p>
 <p>对双向偏压，截面正应力可写为</p>
-<p><span class="math display">\[
-\sigma(y_s,z_s)
-=\frac{N}{A}
-+\frac{M_y}{I_y}z_s
-+\frac{M_z}{I_z}y_s,
+<p><span class="math display">\[
+\sigma(y_s,z_s)
+=\frac{N}{A}
++\frac{M_y}{I_y}z_s
++\frac{M_z}{I_z}y_s,
 \]</span></p>
 <p>其中 <span class="math inline">\(M_y,M_z\)</span> 为两个主轴方向弯矩，单位kN·m；<span class="math inline">\(I_y,I_z\)</span> 单位m<span class="math inline">\(^4\)</span>；<span class="math inline">\(y_s,z_s\)</span> 单位m；若力和长度采用kN、m，<span class="math inline">\(\sigma\)</span> 单位kPa。截面非对称、主轴旋转或存在翘曲时需采用完整截面性质。空间拱的“压力线”应扩展为截面合力作用点轨迹，并与核心区域或材料相互作用面比较。</p>
 <p>钢筋混凝土、钢和钢管混凝土截面能够承担一定拉力和塑性重分配，<span class="math inline">\(\eta_e&gt;1\)</span> 不等于立即失效；圬工或素混凝土拱在开裂、接缝张开后，应采用无拉材料、接触或极限分析。压力线是受力解释工具，不替代材料与构件验算。</p>
@@ -3351,10 +3351,10 @@ k_-=\frac{I}{A c_+},
 <section class="level4" data-number="5.10.2.4" id="压力线带与多状态几何">
 <h4 class="anchored" data-anchor-id="压力线带与多状态几何" data-number="5.10.2.4"><span class="header-section-number">5.10.2.4</span> 压力线带与多状态几何</h4>
 <p>单一合理轴线只能对应一项理想荷载。实际桥梁有自重、拱上构造、桥面、活载、温度、基础变位和施工状态，因而应形成压力线带。设第 <span class="math inline">\(j\)</span> 个状态在弧长 <span class="math inline">\(s\)</span> 处的偏心为 <span class="math inline">\(e_j(s)\)</span>，可定义包络</p>
-<p><span class="math display">\[
-e_{\min}(s)=\min_j e_j(s),
-\qquad
-e_{\max}(s)=\max_j e_j(s).
+<p><span class="math display">\[
+e_{\min}(s)=\min_j e_j(s),
+\qquad
+e_{\max}(s)=\max_j e_j(s).
 \]</span></p>
 <p>绘图时同时给出对应的 <span class="math inline">\(N_j(s)\)</span>，并标记控制状态。不能把不同位置的最大 <span class="math inline">\(M\)</span> 与最小 <span class="math inline">\(N\)</span> 任意相除形成不存在的组合偏心。对施工阶段，压力线应按当时有效截面和边界绘制，不能投到尚未形成的成桥截面上。</p>
 <p>几何优化可以最小化多状态偏心、弯曲能或材料量，但应保留净空、曲率、制造、施工和稳定约束。推荐同时输出帕累托方案，而不是把多个有量纲指标未经说明地加成一个分数。若优化使拱脚曲率突变、横撑难布置或施工节段不规则，结构总体上未必更优。</p>
@@ -3368,13 +3368,13 @@ e_{\max}(s)=\max_j e_j(s).
 <section class="level4" data-number="5.10.3.1" id="纵向最不利位置与控制行">
 <h4 class="anchored" data-anchor-id="纵向最不利位置与控制行" data-number="5.10.3.1"><span class="header-section-number">5.10.3.1</span> 纵向最不利位置与控制行</h4>
 <p>影响线的教学目标是解释“同一车辆为什么在不同位置产生不同效应”。对轴列 <span class="math inline">\(P_i\)</span>，首轴位置为 <span class="math inline">\(x_0\)</span>，相对间距为 <span class="math inline">\(d_i\)</span>，目标响应为</p>
-<p><span class="math display">\[
-R(x_0)=\sum_{i=1}^{n_a}P_i\eta_R(x_0+d_i).
+<p><span class="math display">\[
+R(x_0)=\sum_{i=1}^{n_a}P_i\eta_R(x_0+d_i).
 \]</span></p>
 <p>程序应遍历允许位置并保存完整控制行：<span class="math inline">\(x_0\)</span>、各轴位置、各轴贡献、车道、结构状态和目标响应。若只保存最终最大值，无法核查车辆是否跨越允许区、哪个轴落在影响线峰值以及最不利状态是否因吊杆退出或支承改变而失效。</p>
 <p>对分布荷载 <span class="math inline">\(w(x)\)</span>，响应为</p>
-<p><span class="math display">\[
-R=\int_{\Omega_w}w(x)\eta_R(x)\,\mathrm dx.
+<p><span class="math display">\[
+R=\int_{\Omega_w}w(x)\eta_R(x)\,\mathrm dx.
 \]</span></p>
 <p><span class="math inline">\(w\)</span> 单位为kN/m；若 <span class="math inline">\(R\)</span> 为弯矩，<span class="math inline">\(\eta_R\)</span> 单位为m。加载区 <span class="math inline">\(\Omega_w\)</span> 应依据采用规范的有利/不利加载规则确定，教材不预置车道荷载及折减系数。影响线正负区仅说明线性叠加的效应方向，不自动等于规范加载区。</p>
 </section>
@@ -3382,24 +3382,24 @@ R=\int_{\Omega_w}w(x)\eta_R(x)\,\mathrm dx.
 <h4 class="anchored" data-anchor-id="拱脚推力与截面弯矩的不同影响线" data-number="5.10.3.2"><span class="header-section-number">5.10.3.2</span> 拱脚推力与截面弯矩的不同影响线</h4>
 <p>同一车辆对拱脚水平推力、拱肋弯矩、吊杆力和桥面横梁弯矩具有不同最不利位置。三铰拱的推力可由拱顶简支梁弯矩除以矢高得到，因而其影响线与拱顶弯矩相关；某截面拱肋弯矩则是简支梁弯矩影响线与 <span class="math inline">\(y(x)\)</span> 倍推力影响线之差。即使全跨均布恒载使拱肋弯矩为零，局部车辆仍会产生正负弯矩区。</p>
 <p>可写为</p>
-<p><span class="math display">\[
-\eta_{M_a}(x;\xi)
-=\eta_{M^0}(x;\xi)-y(x)\eta_H(\xi),
+<p><span class="math display">\[
+\eta_{M_a}(x;\xi)
+=\eta_{M^0}(x;\xi)-y(x)\eta_H(\xi),
 \]</span></p>
 <p>其中 <span class="math inline">\(x\)</span> 为目标截面，<span class="math inline">\(\xi\)</span> 为单位荷载位置；<span class="math inline">\(\eta_{M_a}\)</span> 和 <span class="math inline">\(\eta_{M^0}\)</span> 的单位为m，<span class="math inline">\(\eta_H\)</span> 为无量纲。公式适用于平面、线弹性和固定拓扑的三铰基线。两铰和无铰拱的 <span class="math inline">\(\eta_H\)</span> 需由柔度或数值模型求得。</p>
 </section>
 <section class="level4" data-number="5.10.3.3" id="横向分配不等于固定比例">
 <h4 class="anchored" data-anchor-id="横向分配不等于固定比例" data-number="5.10.3.3"><span class="header-section-number">5.10.3.3</span> 横向分配不等于固定比例</h4>
 <p>若两片拱肋中心距为 <span class="math inline">\(b_r\)</span>，横向刚性横梁承受竖向合力 <span class="math inline">\(P\)</span>，作用点相对中心偏心为 <span class="math inline">\(e_y\)</span>，最简单静力分配为</p>
-<p><span class="math display">\[
-P_L=P\left(\frac12+\frac{e_y}{b_r}\right),
-\qquad
-P_R=P\left(\frac12-\frac{e_y}{b_r}\right).
+<p><span class="math display">\[
+P_L=P\left(\frac12+\frac{e_y}{b_r}\right),
+\qquad
+P_R=P\left(\frac12-\frac{e_y}{b_r}\right).
 \]</span></p>
 <p><span class="math inline">\(P,P_L,P_R\)</span> 单位为kN，<span class="math inline">\(e_y,b_r\)</span> 单位m。该式满足总力和关于中心的力矩平衡，只适用于两条支承线、横梁足够刚且没有扭转柔度的概念检查。桥面板、纵梁、横梁、系杆和拱肋发生弹性变形时，分配比例随纵向位置和目标响应改变，应采用梁格、板壳或空间模型。</p>
 <p>空间影响面 <span class="math inline">\(\eta_R(x,y)\)</span> 把纵向和横向位置共同保留。对轮组 <span class="math inline">\(P_i\)</span>，有</p>
-<p><span class="math display">\[
-R=\sum_iP_i\eta_R(x_i,y_i).
+<p><span class="math display">\[
+R=\sum_iP_i\eta_R(x_i,y_i).
 \]</span></p>
 <p>生成影响面之前应冻结结构状态、局部轴和荷载落点映射。一个吊杆失效、一个支座脱空或横撑刚度显著改变后，原影响面全部失效。几何非线性明显时，影响面也依赖荷载水平，需用移动加载直接求解。</p>
 </section>
@@ -3407,10 +3407,10 @@ R=\sum_iP_i\eta_R(x_i,y_i).
 <h4 class="anchored" data-anchor-id="非对称活载引起的空间响应" data-number="5.10.3.4"><span class="header-section-number">5.10.3.4</span> 非对称活载引起的空间响应</h4>
 <p>单侧车道加载不仅使左右拱肋竖向反力不同，还产生横向弯曲、扭转和横撑内力。建议保存以下成组输出：两肋轴力和面内弯矩；两肋面外弯矩与扭矩；横撑端力；吊杆和立柱力；系杆轴力与横向弯矩；支座六分量。总竖向力平衡只能发现漏载，横向力矩平衡才能发现车轮横坐标或横梁偏心错误。</p>
 <p>定义两肋某响应的偏载指标</p>
-<p><span class="math display">\[
-\rho_R=
-\frac{|R_L-R_R|}
-{|R_L|+|R_R|+R_0},
+<p><span class="math display">\[
+\rho_R=
+\frac{|R_L-R_R|}
+{|R_L|+|R_R|+R_0},
 \]</span></p>
 <p><span class="math inline">\(R_0\)</span> 为与响应同量纲的小参考值，防止分母接近零。<span class="math inline">\(\rho_R\)</span> 仅用于比较同一响应和同一模型的左右不均匀，不是规范限值。若左右响应异号，必须同时查看原始值，不能由一个0～1附近的指标替代物理解释。</p>
 </section>
@@ -3429,26 +3429,26 @@ R=\sum_iP_i\eta_R(x_i,y_i).
 <h4 class="anchored" data-anchor-id="次内力必须绑定参考状态" data-number="5.10.4.1"><span class="header-section-number">5.10.4.1</span> 次内力必须绑定参考状态</h4>
 <p>温度、收缩、徐变、预应力、支承变位和合龙偏差产生的内力，取决于它们发生时结构已经形成到什么程度。相同温降作用于三铰裸拱、已经封铰的无铰拱、已连接桥面系的系杆拱或正在更换支座的结构，得到的约束效应不同。因此每一项强迫变形至少记录参考温度、材料龄期、存在构件、连接状态、支承状态和此前已有应力。</p>
 <p>设第 <span class="math inline">\(k\)</span> 阶段平衡方程为</p>
-<p><span class="math display">\[
-\boldsymbol K_k\Delta\boldsymbol u_k
-=\Delta\boldsymbol f_k
--\boldsymbol f^{0}_{T,k}
--\boldsymbol f^{0}_{sh,k}
--\boldsymbol f^{0}_{cr,k}
-+\boldsymbol f^{0}_{sup,k},
+<p><span class="math display">\[
+\boldsymbol K_k\Delta\boldsymbol u_k
+=\Delta\boldsymbol f_k
+-\boldsymbol f^{0}_{T,k}
+-\boldsymbol f^{0}_{sh,k}
+-\boldsymbol f^{0}_{cr,k}
++\boldsymbol f^{0}_{sup,k},
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol K_k\)</span> 为当前阶段切线或线性刚度矩阵；<span class="math inline">\(\Delta\boldsymbol u_k\)</span> 为增量位移；<span class="math inline">\(\Delta\boldsymbol f_k\)</span> 为外作用增量；<span class="math inline">\(\boldsymbol f^{0}_{T,k}\)</span>、<span class="math inline">\(\boldsymbol f^{0}_{sh,k}\)</span>、<span class="math inline">\(\boldsymbol f^{0}_{cr,k}\)</span> 分别为温度、收缩和徐变对应的等效节点作用；<span class="math inline">\(\boldsymbol f^{0}_{sup,k}\)</span> 表示规定支承变位的等效作用。力分量单位为kN、力矩分量为kN·m。符号取决于程序初应变约定，必须用自由伸长或简单约束杆基准例核对。</p>
 </section>
 <section class="level4" data-number="5.10.4.2" id="均匀温变梯度温度与构件差温">
 <h4 class="anchored" data-anchor-id="均匀温变梯度温度与构件差温" data-number="5.10.4.2"><span class="header-section-number">5.10.4.2</span> 均匀温变、梯度温度与构件差温</h4>
 <p>均匀温变使自由长度变化</p>
-<p><span class="math display">\[
-\Delta L_T=\alpha_T\Delta T L,
+<p><span class="math display">\[
+\Delta L_T=\alpha_T\Delta T L,
 \]</span></p>
 <p>式中，<span class="math inline">\(\alpha_T\)</span> 为线膨胀系数，单位1/K；<span class="math inline">\(\Delta T\)</span> 为相对参考温度变化，单位K；<span class="math inline">\(L\)</span> 为参考长度，单位m；<span class="math inline">\(\Delta L_T\)</span> 单位m。三铰拱可以通过铰转动和拱脚位移释放一部分变形，两铰与无铰拱因水平距离和转角受限形成超静定力。系杆拱中，拱肋与系杆温度可能不同，端节点协调会同时改变系杆力和拱肋弯矩。</p>
 <p>截面温度梯度产生自由曲率。对线性温差且同一材料截面，可作概念表示</p>
-<p><span class="math display">\[
-\kappa_T\approx\alpha_T\frac{\Delta T_g}{h},
+<p><span class="math display">\[
+\kappa_T\approx\alpha_T\frac{\Delta T_g}{h},
 \]</span></p>
 <p><span class="math inline">\(\Delta T_g\)</span> 为截面两参考面的温差，单位K；<span class="math inline">\(h\)</span> 为两参考面距离，单位m；<span class="math inline">\(\kappa_T\)</span> 单位1/m。实际桥梁温度分布、等效温差和组合按采用规范确定。钢管、核心混凝土、桥面板、系杆与吊杆受日照和热惯性影响不同，不能把一项均匀温变同时代表全部构件。</p>
 <p>温度参考状态必须与施工闭合相连。合龙或系杆锁定时的温度定义了后续零应变基准；若只在成桥模型中施加全年温差，却没有记录闭合温度和施工已有应力，计算结果缺少物理起点。</p>
@@ -3456,12 +3456,12 @@ R=\sum_iP_i\eta_R(x_i,y_i).
 <section class="level4" data-number="5.10.4.3" id="收缩徐变及预应力的相互作用">
 <h4 class="anchored" data-anchor-id="收缩徐变及预应力的相互作用" data-number="5.10.4.3"><span class="header-section-number">5.10.4.3</span> 收缩、徐变及预应力的相互作用</h4>
 <p>混凝土收缩可作为随龄期发展的自由应变 <span class="math inline">\(\varepsilon_{sh}(t,t_0)\)</span>；徐变使应变依赖应力历史。对于分阶段线性黏弹性计算，可写为</p>
-<p><span class="math display">\[
-\varepsilon_c(t)
-=\frac{\sigma_c(t_0)}{E_c(t_0)}
-+\frac{\sigma_c(t_0)}{E_c(t_0)}\varphi(t,t_0)
-+\varepsilon_{sh}(t,t_0)
-+\alpha_T\Delta T,
+<p><span class="math display">\[
+\varepsilon_c(t)
+=\frac{\sigma_c(t_0)}{E_c(t_0)}
++\frac{\sigma_c(t_0)}{E_c(t_0)}\varphi(t,t_0)
++\varepsilon_{sh}(t,t_0)
++\alpha_T\Delta T,
 \]</span></p>
 <p>其中，<span class="math inline">\(\sigma_c\)</span>、<span class="math inline">\(E_c\)</span> 单位为kPa或MPa并保持一致；<span class="math inline">\(\varphi\)</span> 为无量纲徐变系数；各应变无量纲。该式只示意单次加载的组成；多次浇筑、张拉和加载需按应力历史积分或采用规范认可的逐步方法。</p>
 <p>在钢管混凝土拱中，空钢管阶段的应力已存在于钢管；核心混凝土硬化后，新增荷载由组合截面共同承担；核心收缩和徐变又使钢管与混凝土内力随时间重分配。在钢筋混凝土拱中，桥面和拱肋不同龄期、不同湿度及构件尺寸会形成差异应变。有效模量法可以作第一层长期估算，但若分期加载和内力重分配决定合龙或线形，应采用时间步分析并核对规范模型。</p>
@@ -3470,12 +3470,12 @@ R=\sum_iP_i\eta_R(x_i,y_i).
 <section class="level4" data-number="5.10.4.4" id="基础沉降水平位移和转动组合">
 <h4 class="anchored" data-anchor-id="基础沉降水平位移和转动组合" data-number="5.10.4.4"><span class="header-section-number">5.10.4.4</span> 基础沉降、水平位移和转动组合</h4>
 <p>拱座位移通常是六分量组合。左右拱座在总体坐标中的规定变位可写为</p>
-<p><span class="math display">\[
-\Delta\boldsymbol d=
-\begin{bmatrix}
-\Delta u_x&amp;\Delta u_y&amp;\Delta u_z&amp;
-\Delta\theta_x&amp;\Delta\theta_y&amp;\Delta\theta_z
-\end{bmatrix}^{\mathsf T}.
+<p><span class="math display">\[
+\Delta\boldsymbol d=
+\begin{bmatrix}
+\Delta u_x&amp;\Delta u_y&amp;\Delta u_z&amp;
+\Delta\theta_x&amp;\Delta\theta_y&amp;\Delta\theta_z
+\end{bmatrix}^{\mathsf T}.
 \]</span></p>
 <p>平动单位为m或mm，转动单位为rad。均匀竖向沉降可能主要改变桥面标高，差异沉降会形成拱肋弯矩；两拱脚相向水平移动使拱轴受迫改变；绕横桥向转动产生面内效应，绕竖向或纵向转动则可能引起两肋空间不一致。</p>
 <p>基础模型输出应在拱肋—拱座接口点凝聚，坐标、正号和阶段与上部模型一致。把沉降以“某支点下降”输入后，还需检查基础反力是否与地基分析中的作用组合一致，避免一边采用特征反力、另一边采用极限组合变位。</p>
@@ -3494,8 +3494,8 @@ R=\sum_iP_i\eta_R(x_i,y_i).
 <h4 class="anchored" data-anchor-id="圬工拱与接缝模型" data-number="5.10.5.1"><span class="header-section-number">5.10.5.1</span> 圬工拱与接缝模型</h4>
 <p>圬工拱由块体、砂浆接缝、拱上填料及拱背构造共同工作。压应力、接缝张开、块体转动和剪切滑移是主要机理。在线弹性第一层模型中可用等效截面和弹性模量估算压力线；当压力线接近或越过核心、接缝拉应力不可接受时，应采用无拉材料、离散块体、接触或极限分析验证。材料参数应来自试验、现状调查和适用标准。</p>
 <p>砌块接缝的概念接触条件可写为</p>
-<p><span class="math display">\[
-p_n\ge0,\qquad g_n\ge0,\qquad p_n g_n=0,
+<p><span class="math display">\[
+p_n\ge0,\qquad g_n\ge0,\qquad p_n g_n=0,
 \]</span></p>
 <p>其中 <span class="math inline">\(p_n\)</span> 为法向压应力，单位kPa；<span class="math inline">\(g_n\)</span> 为接缝张开量，单位m。切向抗滑与法向压力、砂浆黏结及界面状态有关，具体本构不得由教材随意给定。既有圬工拱还需识别填料拱效应、渗水、基础移动和维修材料兼容性。</p>
 <p>实腹圬工拱的桥面轮载通过填料扩散，二维拱圈模型不能直接回答局部轮载与拱圈宽度方向分布。可先用横向分配或三维连续体得到拱圈作用，再进入压力线分析；对多孔拱还需考虑桥墩、腹拱和相邻孔共同作用。</p>
@@ -3516,12 +3516,12 @@ p_n\ge0,\qquad g_n\ge0,\qquad p_n g_n=0,
 <h4 class="anchored" data-anchor-id="钢管混凝土拱的分阶段截面" data-number="5.10.5.4"><span class="header-section-number">5.10.5.4</span> 钢管混凝土拱的分阶段截面</h4>
 <p>钢管混凝土拱由钢管与核心混凝土组成。空钢管架设阶段主要由钢管承担自重、风、施工设备和湿混凝土；混凝土硬化并形成可靠界面后，后续作用由组合截面承担。不能把成桥组合刚度回溯到空管阶段。</p>
 <p>在完全共同变形的线弹性概念模型中，组合轴向刚度为</p>
-<p><span class="math display">\[
-(EA)_{c}=E_sA_s+E_cA_c,
+<p><span class="math display">\[
+(EA)_{c}=E_sA_s+E_cA_c,
 \]</span></p>
 <p>弯曲刚度关于共同参考轴可写为</p>
-<p><span class="math display">\[
-(EI)_{c}=E_s(I_s+A_sd_s^2)+E_c(I_c+A_cd_c^2),
+<p><span class="math display">\[
+(EI)_{c}=E_s(I_s+A_sd_s^2)+E_c(I_c+A_cd_c^2),
 \]</span></p>
 <p>其中 <span class="math inline">\(E_s,E_c\)</span> 单位kN/m²；<span class="math inline">\(A_s,A_c\)</span> 单位m²；<span class="math inline">\(I_s,I_c\)</span> 单位m⁴；<span class="math inline">\(d_s,d_c\)</span> 为各材料形心至参考轴距离，单位m。公式未考虑开裂、塑性、约束效应、界面滑移、徐变收缩和施工已有应力，只用于检查截面换算和阶段刚度方向。</p>
 <p>灌注方案需定义管径、仓段、进排浆、对称顺序、湿重、泵送压力、温度和质量检验。若多肢钢管由缀板或腹杆组成，单肢灌注会产生反对称荷载和横向变形。硬化判据不是时间到达即自动激活，需由材料试验与施工方案确定。</p>
@@ -3600,8 +3600,8 @@ p_n\ge0,\qquad g_n\ge0,\qquad p_n g_n=0,
 <section class="level4" data-number="5.10.6.1" id="变幅应力与循环统计">
 <h4 class="anchored" data-anchor-id="变幅应力与循环统计" data-number="5.10.6.1"><span class="header-section-number">5.10.6.1</span> 变幅应力与循环统计</h4>
 <p>吊杆、系杆、横梁、横撑及其连接可能承受交通、风和温度引起的变幅应力。疲劳评价以应力范围、循环次数、平均应力影响和细节类别为基础。对经过雨流计数得到的第 <span class="math inline">\(i\)</span> 个应力范围 <span class="math inline">\(\Delta\sigma_i\)</span> 和循环数 <span class="math inline">\(n_i\)</span>，采用相应S—N关系得到允许循环数 <span class="math inline">\(N_i\)</span> 后，可用Miner线性累积形式</p>
-<p><span class="math display">\[
-D=\sum_i\frac{n_i}{N_i}
+<p><span class="math display">\[
+D=\sum_i\frac{n_i}{N_i}
 \]</span></p>
 <p>组织损伤计算。<span class="math inline">\(D\)</span> 无量纲；<span class="math inline">\(N_i\)</span> 必须来自项目采用标准中与细节、应力定义和环境相符的曲线。该线性累积模型不能描述腐蚀、断丝、残余应力、序列效应和多轴疲劳的全部影响，教材不设统一判定阈值。</p>
 <p>吊杆名义轴向应力范围可由 <span class="math inline">\(\Delta T/A\)</span> 初算，但锚头弯曲、索夹、护套约束、风致振动和车辆动力可能产生附加应力。短吊杆因端部转角约束更敏感；斜吊杆交叉处还需避免碰索和护套磨损。监测到的索力变化必须区分温度、交通、传感器漂移和真实刚度变化。</p>
@@ -3626,29 +3626,29 @@ D=\sum_i\frac{n_i}{N_i}
 <section class="level4" data-number="5.10.7.1" id="平衡路径与切线刚度">
 <h4 class="anchored" data-anchor-id="平衡路径与切线刚度" data-number="5.10.7.1"><span class="header-section-number">5.10.7.1</span> 平衡路径与切线刚度</h4>
 <p>拱肋以轴压为主，变形会改变轴力作用线并产生二阶弯矩。非线性平衡可写为</p>
-<p><span class="math display">\[
-\boldsymbol g(\boldsymbol u,\lambda)
-=\boldsymbol f_{\mathrm{int}}(\boldsymbol u)
--\lambda\boldsymbol f_{\mathrm{ref}}=\boldsymbol 0,
+<p><span class="math display">\[
+\boldsymbol g(\boldsymbol u,\lambda)
+=\boldsymbol f_{\mathrm{int}}(\boldsymbol u)
+-\lambda\boldsymbol f_{\mathrm{ref}}=\boldsymbol 0,
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol u\)</span> 为位移，<span class="math inline">\(\lambda\)</span> 为参考荷载参数，<span class="math inline">\(\boldsymbol f_{\mathrm{int}}\)</span> 和 <span class="math inline">\(\boldsymbol f_{\mathrm{ref}}\)</span> 为内力与参考外力向量。迭代增量满足</p>
-<p><span class="math display">\[
-\boldsymbol K_T\Delta\boldsymbol u=-\boldsymbol g,
-\qquad
-\boldsymbol K_T=\frac{\partial\boldsymbol g}{\partial\boldsymbol u}.
+<p><span class="math display">\[
+\boldsymbol K_T\Delta\boldsymbol u=-\boldsymbol g,
+\qquad
+\boldsymbol K_T=\frac{\partial\boldsymbol g}{\partial\boldsymbol u}.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol K_T\)</span> 包含材料、几何和边界贡献。极限点附近荷载控制可能无法继续，应采用位移控制、弧长法或其他经验证的路径跟踪。收敛失败不等于结构达到承载极限，也可能来自步长、接触、材料或数值设置。</p>
 </section>
 <section class="level4" data-number="5.10.7.2" id="特征值屈曲的定位">
 <h4 class="anchored" data-anchor-id="特征值屈曲的定位" data-number="5.10.7.2"><span class="header-section-number">5.10.7.2</span> 特征值屈曲的定位</h4>
 <p>在线性参考状态附近，特征值问题可写为</p>
-<p><span class="math display">\[
-(\boldsymbol K_E+\lambda_i\boldsymbol K_G)\boldsymbol\phi_i=\boldsymbol0,
+<p><span class="math display">\[
+(\boldsymbol K_E+\lambda_i\boldsymbol K_G)\boldsymbol\phi_i=\boldsymbol0,
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol K_E\)</span> 为弹性刚度，<span class="math inline">\(\boldsymbol K_G\)</span> 为参考轴力产生的几何刚度，<span class="math inline">\(\lambda_i\)</span> 为特征值，<span class="math inline">\(\boldsymbol\phi_i\)</span> 为模态。特征值帮助识别面内对称/反对称、面外同向/反向以及横撑局部模式，但理想完善结构的 <span class="math inline">\(\lambda_i\)</span> 不能直接作为实际极限承载力。</p>
 <p>最低特征模态不一定是唯一危险缺陷。制造、安装和施工测量可能包含多个模态及局部弯曲。初始缺陷可写为</p>
-<p><span class="math display">\[
-\boldsymbol{u}_0=\sum_{i=1}^{m}a_i\boldsymbol{\phi}_i+\boldsymbol{u}_{\mathrm{meas}},
+<p><span class="math display">\[
+\boldsymbol{u}_0=\sum_{i=1}^{m}a_i\boldsymbol{\phi}_i+\boldsymbol{u}_{\mathrm{meas}},
 \]</span></p>
 <p><span class="math inline">\(a_i\)</span> 为长度单位的模态幅值，<span class="math inline">\(\boldsymbol{u}_{\mathrm{meas}}\)</span> 为经处理的实测偏差。幅值和组合按采用标准、制造要求或测量证据确定，本章不虚构默认值。使用实测缺陷时还需去除刚体移动并与设计轴线采用相同坐标。</p>
 </section>
@@ -3661,18 +3661,18 @@ D=\sum_i\frac{n_i}{N_i}
 <h4 class="anchored" data-anchor-id="材料非线性与相互作用" data-number="5.10.7.4"><span class="header-section-number">5.10.7.4</span> 材料非线性与相互作用</h4>
 <p>钢拱需考虑屈服、残余应力、几何缺陷和局部屈曲；混凝土拱需考虑开裂、受压非线性、徐变及钢筋；钢管混凝土需考虑钢管与核心混凝土共同作用和阶段已有应力。稳定验算的参考强度、缺陷和相互作用公式均由相应现行规范确定。</p>
 <p>截面层可用无量纲作用比组织结果，例如</p>
-<p><span class="math display">\[
-\eta_{NM}=\frac{N}{N_R}+\frac{|M_y|}{M_{Ry}}+\frac{|M_z|}{M_{Rz}},
+<p><span class="math display">\[
+\eta_{NM}=\frac{N}{N_R}+\frac{|M_y|}{M_{Ry}}+\frac{|M_z|}{M_{Rz}},
 \]</span></p>
 <p>其中 <span class="math inline">\(N_R,M_{Ry},M_{Rz}\)</span> 是与当前材料、稳定和规范方法相符的抗力。该线性形式仅为教学结果表结构，并非通用验算式，不能作为工程判定。正式验算应采用规定的压弯相互作用、稳定系数和组合。</p>
 </section>
 <section class="level4" data-number="5.10.7.5" id="拱座基础地基的反馈">
 <h4 class="anchored" data-anchor-id="拱座基础地基的反馈" data-number="5.10.7.5"><span class="header-section-number">5.10.7.5</span> 拱座—基础—地基的反馈</h4>
 <p>推力拱把水平力直接送入拱座。拱座设计需同时满足承载、滑移、倾覆、变形、耐久与施工，并把力传入岩体或土体。基础刚度和上部内力相互影响：假定完全固定可能高估约束内力，假定自由滑动又可能低估反力和变形。建议以六自由度关系</p>
-<p><span class="math display">\[
-\begin{bmatrix}\boldsymbol F\\\boldsymbol M\end{bmatrix}
-=\boldsymbol K_f
-\begin{bmatrix}\boldsymbol u\\\boldsymbol\theta\end{bmatrix}
+<p><span class="math display">\[
+\begin{bmatrix}\boldsymbol F\\\boldsymbol M\end{bmatrix}
+=\boldsymbol K_f
+\begin{bmatrix}\boldsymbol u\\\boldsymbol\theta\end{bmatrix}
 \]</span></p>
 <p>作为线性接口，或传递非线性力—位移曲线。<span class="math inline">\(\boldsymbol F\)</span> 单位kN，<span class="math inline">\(\boldsymbol M\)</span> 单位kN·m，<span class="math inline">\(\boldsymbol u\)</span> 单位m，<span class="math inline">\(\boldsymbol\theta\)</span> 单位rad；<span class="math inline">\(\boldsymbol K_f\)</span> 各分块单位不同，必须保留接口坐标和尺度。</p>
 <p>岩质拱座还需识别岩层产状、节理、楔体、风化和开挖扰动；土质基础需处理沉降、水平变形和循环作用；岸坡上的拱座与整体边坡稳定相互影响。施工开挖、临时锚碇和排水可能改变地基状态，运营期冲刷、渗水和地震又可能改变边界。基础不是在成桥分析中永远不变的弹簧。</p>
@@ -3699,10 +3699,10 @@ D=\sum_i\frac{n_i}{N_i}
 <section class="level4" data-number="5.10.8.1" id="施工方案的统一描述">
 <h4 class="anchored" data-anchor-id="施工方案的统一描述" data-number="5.10.8.1"><span class="header-section-number">5.10.8.1</span> 施工方案的统一描述</h4>
 <p>施工方法应以状态和事件描述，而不只写工法名称。状态说明当前存在的永久与临时构件、连接、边界、材料龄期、已有应力和外部环境；事件说明安装、浇筑、张拉、转体、合龙、落架、拆索或支承转换。设第 <span class="math inline">\(k\)</span> 阶段状态为</p>
-<p><span class="math display">\[
-\mathcal S_k=
-\{\mathcal V_k,\mathcal E_k,\boldsymbol b_k,
-\boldsymbol q_k,\boldsymbol\varepsilon_k^0,t_k\},
+<p><span class="math display">\[
+\mathcal S_k=
+\{\mathcal V_k,\mathcal E_k,\boldsymbol b_k,
+\boldsymbol q_k,\boldsymbol\varepsilon_k^0,t_k\},
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathcal V_k\)</span> 为构件集合，<span class="math inline">\(\mathcal E_k\)</span> 为连接集合，<span class="math inline">\(\boldsymbol b_k\)</span> 为边界，<span class="math inline">\(\boldsymbol q_k\)</span> 为作用，<span class="math inline">\(\boldsymbol\varepsilon_k^0\)</span> 为温度、预应力和安装形成的初始应变，<span class="math inline">\(t_k\)</span> 为时间或材料龄期。一次施工事件 <span class="math inline">\(E_k\)</span> 将 <span class="math inline">\(\mathcal S_k\)</span> 转为 <span class="math inline">\(\mathcal S_{k+1}\)</span>。若事件删除临时支承并增加永久连接，刚度和内力都要重新平衡。</p>
 <p>五类工法采用同一比较边界：成桥功能和桥面、主拱几何、材料数量统计范围、施工期环境、设备可达、临时用地、质量控制、公众风险和运维交付。只比较永久工程量，会遗漏支架、扣塔、锚碇、转体系统和临时加固；只比较施工速度，也可能把不可逆合龙或高风险吊装压缩为一个持续时间。</p>
@@ -3712,8 +3712,8 @@ D=\sum_i\frac{n_i}{N_i}
 <p>支架法通过地基—支架—模板或拼装架支承未形成的拱圈。其适用性取决于桥下占用、水深、洪水、地基承载、沉降、交通和支架高度。支架可以减少裸拱悬臂，却把稳定责任转移到大量临时构件、节点和基础。</p>
 <p>支架设计状态至少包括搭设完成、预压、分段浇筑或砌筑、合龙、材料达到转换条件、分级卸落和拆除。预压的目的不是“消除所有沉降”，而是识别非弹性变形、校核承载和建立施工标高修正。观测应把地基沉降、支架压缩、模板变形和主拱变形分开。</p>
 <p>设第 <span class="math inline">\(i\)</span> 个支架点竖向刚度为 <span class="math inline">\(k_i\)</span>，卸落量为 <span class="math inline">\(\Delta_i\)</span>，其反力增量的第一层近似为</p>
-<p><span class="math display">\[
-\Delta R_i\approx-k_i\Delta_i.
+<p><span class="math display">\[
+\Delta R_i\approx-k_i\Delta_i.
 \]</span></p>
 <p><span class="math inline">\(k_i\)</span> 单位kN/m，<span class="math inline">\(\Delta_i\)</span> 单位m，<span class="math inline">\(\Delta R_i\)</span> 单位kN。支架点通过拱肋耦合，真实反力并非各点独立；该式只用于核对方向和数量级。分级卸落模型应同时更新全部支承，并检查反力是否平稳转移到拱座。</p>
 <p>卸落顺序由结构体系、支架布置、材料状态和施工方案确定，不在教材中规定统一方案。每一级至少设置反力、拱顶与四分点位移、拱脚位移、裂缝或应变和异常停止条件。若观测与预测差异超过经批准阈值，应保持当前状态并核查，不自动继续下一步。</p>
@@ -3722,13 +3722,13 @@ D=\sum_i\frac{n_i}{N_i}
 <h4 class="anchored" data-anchor-id="缆索吊装与斜拉扣挂" data-number="5.10.8.3"><span class="header-section-number">5.10.8.3</span> 缆索吊装与斜拉扣挂</h4>
 <p>缆索吊装系统通常包括主索、起重索、牵引索、索塔、锚碇、跑车和吊具。系统首先承担节段运输与就位，拱肋节段在闭合前还由扣索或临时支撑保持。每安装一段，主索垂度、索塔反力、锚碇力、半拱内力和面外稳定都改变。</p>
 <p>对跨中集中吊重 <span class="math inline">\(P\)</span> 的对称主索作极简数量级检查，若两侧索段近似直线、与水平夹角为 <span class="math inline">\(\alpha\)</span>，单侧索力可写为</p>
-<p><span class="math display">\[
-T=\frac{P}{2\sin\alpha}.
+<p><span class="math display">\[
+T=\frac{P}{2\sin\alpha}.
 \]</span></p>
 <p><span class="math inline">\(T,P\)</span> 单位kN。<span class="math inline">\(\alpha\)</span> 减小时索力迅速增大；实际主索还承受自重、多个吊点、弹性伸长、温度、风和动力，需使用索结构模型。该式不能用于选定设备，只用于检查吊点力、角度和单位。</p>
 <p>扣挂体系由半拱、扣索、扣塔和锚索构成。扣索张拉既改变节段端坐标，也改变拱脚和锚碇反力。控制向量可包括扣索力 <span class="math inline">\(\boldsymbol T\)</span>，观测向量可包括节段端位移、关键应力与塔顶偏位 <span class="math inline">\(\boldsymbol y\)</span>。当前阶段附近有</p>
-<p><span class="math display">\[
-\Delta\boldsymbol y\approx\boldsymbol S_T\Delta\boldsymbol T.
+<p><span class="math display">\[
+\Delta\boldsymbol y\approx\boldsymbol S_T\Delta\boldsymbol T.
 \]</span></p>
 <p>若 <span class="math inline">\(\boldsymbol S_T\)</span> 病态，仅凭线形残差无法唯一识别各扣索调整，应增加索力、塔位移和反力等独立观测，并限制调整幅度。现场控制指令必须由批准的监控系统产生，本数字教材仅演示敏感性和可识别性。</p>
 <p>缆索系统还受风、雷电、滑轮制动、通信、停电和突发封航影响。每次起吊需定义可回退状态：若风或设备达到停工条件，节段能否落回、锁定或临时支承。不能把“吊到位”作为唯一成功路径。</p>
@@ -3743,8 +3743,8 @@ T=\frac{P}{2\sin\alpha}.
 <h4 class="anchored" data-anchor-id="转体施工-1" data-number="5.10.8.5"><span class="header-section-number">5.10.8.5</span> 转体施工</h4>
 <p>转体施工先在不影响被交对象的位置形成半跨或整跨结构，再绕竖轴平转或绕横轴竖转至桥位。它能够减少跨越交通、铁路或河谷上方的长期作业，但增加转体支承、平衡、牵引、限位、就位和合龙系统。</p>
 <p>平转结构在转盘中心的竖向合力为 <span class="math inline">\(W\)</span>，重心偏心为 <span class="math inline">\(e\)</span> 时，倾覆力矩为</p>
-<p><span class="math display">\[
-M_e=W e.
+<p><span class="math display">\[
+M_e=W e.
 \]</span></p>
 <p><span class="math inline">\(W\)</span> 单位kN，<span class="math inline">\(e\)</span> 单位m，<span class="math inline">\(M_e\)</span> 单位kN·m。风、坡度、牵引不同步和施工不平衡还会贡献附加力矩。抗倾覆与承载应按项目施工标准和专项方案验算，本章不规定安全系数。</p>
 <p>牵引力 <span class="math inline">\(F_t\)</span> 作用于有效半径 <span class="math inline">\(r_t\)</span> 时提供转动力矩 <span class="math inline">\(F_t r_t\)</span>。启动、匀速、制动和临停分别对应不同摩阻与动力状态。若采用两组牵引设备，应检查不同步造成的扭转。转体过程中连续观测角度、速度、支承反力、姿态、风和关键应力；程序应在规定角度自动比较实测与预测，但现场停止条件由批准方案设置。</p>
@@ -3830,8 +3830,8 @@ M_e=W e.
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -3845,101 +3845,101 @@ M_e=W e.
 <section class="level4" data-number="5.10.9.1" id="任务与输入">
 <h4 class="anchored" data-anchor-id="任务与输入" data-number="5.10.9.1"><span class="header-section-number">5.10.9.1</span> 任务与输入</h4>
 <p>本案例建立一个可以逐行手算的解析基准，用于验证拱轴、水平推力、内力正号和压力线程序。桥梁为平面三铰抛物线拱，跨径 <span class="math inline">\(L=40\)</span> m，矢高 <span class="math inline">\(f=8\)</span> m。沿水平投影的教学均布荷载为 <span class="math inline">\(q=50\)</span> kN/m。拱轴取</p>
-<p><span class="math display">\[
-y(x)=\frac{4f}{L^2}x(L-x),
-\qquad0\le x\le L.
+<p><span class="math display">\[
+y(x)=\frac{4f}{L^2}x(L-x),
+\qquad0\le x\le L.
 \]</span></p>
 <p>为演示截面核心，在四分点暂取矩形均质截面，宽 <span class="math inline">\(b=1.8\)</span> m、高 <span class="math inline">\(h=1.2\)</span> m。该截面是诊断数据，不代表圬工或混凝土拱的推荐尺寸，也不用于规范验算。</p>
 </section>
 <section class="level4" data-number="5.10.9.2" id="状态a全跨均布荷载">
 <h4 class="anchored" data-anchor-id="状态a全跨均布荷载" data-number="5.10.9.2"><span class="header-section-number">5.10.9.2</span> 状态A：全跨均布荷载</h4>
 <p>全跨荷载合力为</p>
-<p><span class="math display">\[
-W=qL=50\times40=2000\ \mathrm{kN}.
+<p><span class="math display">\[
+W=qL=50\times40=2000\ \mathrm{kN}.
 \]</span></p>
 <p>由对称性，竖向反力 <span class="math inline">\(R_A=R_B=1000\)</span> kN。拱顶铰处弯矩为零，因此水平推力</p>
-<p><span class="math display">\[
-H=\frac{M_C^0}{f}
-=\frac{qL^2/8}{f}
-=\frac{50\times40^2}{8\times8}
-=1250\ \mathrm{kN}.
+<p><span class="math display">\[
+H=\frac{M_C^0}{f}
+=\frac{qL^2/8}{f}
+=\frac{50\times40^2}{8\times8}
+=1250\ \mathrm{kN}.
 \]</span></p>
 <p>同跨简支梁弯矩</p>
-<p><span class="math display">\[
-M^0(x)=\frac{q}{2}x(L-x).
+<p><span class="math display">\[
+M^0(x)=\frac{q}{2}x(L-x).
 \]</span></p>
 <p>而 <span class="math inline">\(Hy(x)=q x(L-x)/2\)</span>，故任意截面</p>
-<p><span class="math display">\[
-M(x)=M^0(x)-Hy(x)=0.
+<p><span class="math display">\[
+M(x)=M^0(x)-Hy(x)=0.
 \]</span></p>
 <p>这说明所取抛物线是该特定荷载定义下的压力线。结论不适用于拱轴弧长均布、自重随曲线变化、离散立柱或其他状态。</p>
 </section>
 <section class="level4" data-number="5.10.9.3" id="状态b左半跨均布荷载">
 <h4 class="anchored" data-anchor-id="状态b左半跨均布荷载" data-number="5.10.9.3"><span class="header-section-number">5.10.9.3</span> 状态B：左半跨均布荷载</h4>
 <p>荷载仅作用于 <span class="math inline">\(0\le x\le20\)</span> m，总力仍为 <span class="math inline">\(W_h=1000\)</span> kN，合力作用于 <span class="math inline">\(x=10\)</span> m。简支梁反力为</p>
-<p><span class="math display">\[
-R_B=\frac{1000\times10}{40}=250\ \mathrm{kN},
-\qquad
-R_A=750\ \mathrm{kN}.
+<p><span class="math display">\[
+R_B=\frac{1000\times10}{40}=250\ \mathrm{kN},
+\qquad
+R_A=750\ \mathrm{kN}.
 \]</span></p>
 <p>拱顶处简支梁弯矩</p>
-<p><span class="math display">\[
-M_C^0
-=750\times20
--50\times\frac{20^2}{2}
-=5000\ \mathrm{kN\cdot m},
+<p><span class="math display">\[
+M_C^0
+=750\times20
+-50\times\frac{20^2}{2}
+=5000\ \mathrm{kN\cdot m},
 \]</span></p>
 <p>故三铰拱水平推力</p>
-<p><span class="math display">\[
-H_h=\frac{5000}{8}=625\ \mathrm{kN}.
+<p><span class="math display">\[
+H_h=\frac{5000}{8}=625\ \mathrm{kN}.
 \]</span></p>
 <p>在左四分点 <span class="math inline">\(x=10\)</span> m，拱轴高程</p>
-<p><span class="math display">\[
-y(10)=\frac{4\times8}{40^2}\times10\times30=6\ \mathrm m.
+<p><span class="math display">\[
+y(10)=\frac{4\times8}{40^2}\times10\times30=6\ \mathrm m.
 \]</span></p>
 <p>简支梁弯矩为</p>
-<p><span class="math display">\[
-M^0(10)=750\times10-50\times\frac{10^2}{2}
-=5000\ \mathrm{kN\cdot m},
+<p><span class="math display">\[
+M^0(10)=750\times10-50\times\frac{10^2}{2}
+=5000\ \mathrm{kN\cdot m},
 \]</span></p>
 <p>因此拱肋弯矩</p>
-<p><span class="math display">\[
-M(10)=5000-625\times6
-=1250\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M(10)=5000-625\times6
+=1250\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>在右四分点 <span class="math inline">\(x=30\)</span> m，左半跨全部荷载位于截面左侧，</p>
-<p><span class="math display">\[
-M^0(30)=750\times30-1000(30-10)
-=2500\ \mathrm{kN\cdot m},
+<p><span class="math display">\[
+M^0(30)=750\times30-1000(30-10)
+=2500\ \mathrm{kN\cdot m},
 \]</span></p>
 <p>故</p>
-<p><span class="math display">\[
-M(30)=2500-625\times6=-1250\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M(30)=2500-625\times6=-1250\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>两个四分点弯矩等值反号，清楚显示反对称加载使压力线在拱轴两侧移动。</p>
 </section>
 <section class="level4" data-number="5.10.9.4" id="轴力偏心与核心检查">
 <h4 class="anchored" data-anchor-id="轴力偏心与核心检查" data-number="5.10.9.4"><span class="header-section-number">5.10.9.4</span> 轴力、偏心与核心检查</h4>
 <p>在 <span class="math inline">\(x=10\)</span> m，<span class="math inline">\(y'=0.4\)</span>，故 <span class="math inline">\(\cos\theta=1/\sqrt{1+0.4^2}=0.9285\)</span>，<span class="math inline">\(\sin\theta=0.3714\)</span>。该截面左侧竖向剪力分量为</p>
-<p><span class="math display">\[
-V=R_A-qx=750-50\times10=250\ \mathrm{kN}.
+<p><span class="math display">\[
+V=R_A-qx=750-50\times10=250\ \mathrm{kN}.
 \]</span></p>
 <p>按本节方向，轴向压力数量级</p>
-<p><span class="math display">\[
-N=H_h\cos\theta+V\sin\theta
-=625\times0.9285+250\times0.3714
-\approx673.2\ \mathrm{kN}.
+<p><span class="math display">\[
+N=H_h\cos\theta+V\sin\theta
+=625\times0.9285+250\times0.3714
+\approx673.2\ \mathrm{kN}.
 \]</span></p>
 <p>偏心为</p>
-<p><span class="math display">\[
-e=\frac{M}{N}
-=\frac{1250}{673.2}
-\approx1.857\ \mathrm m.
+<p><span class="math display">\[
+e=\frac{M}{N}
+=\frac{1250}{673.2}
+\approx1.857\ \mathrm m.
 \]</span></p>
 <p>矩形截面核心距 <span class="math inline">\(k=h/6=0.200\)</span> m，故 <span class="math inline">\(|e|/k\approx9.28\)</span>。这不是对真实拱桥的安全结论，而是说明所给小截面在半跨教学荷载下已远离无拉核心，不能继续用“全跨恒载无弯矩”的结论评价偏载。</p>
 <p>截面面积 <span class="math inline">\(A=bh=2.16\)</span> m²，截面模量</p>
-<p><span class="math display">\[
-W=\frac{bh^2}{6}=0.432\ \mathrm{m^3}.
+<p><span class="math display">\[
+W=\frac{bh^2}{6}=0.432\ \mathrm{m^3}.
 \]</span></p>
 <p>按线弹性完整截面估算，平均压应力为 <span class="math inline">\(N/A\approx311.7\)</span> kPa，弯曲应力幅为 <span class="math inline">\(M/W\approx2893.5\)</span> kPa，截面两缘应力约为 <span class="math inline">\(3205\)</span> kPa压应力和 <span class="math inline">\(-2582\)</span> kPa拉应力。对无拉圬工，这一状态意味着接缝张开或接触区重分配，需要改变截面、拱轴、荷载传递或采用能承受拉力的材料与构造；不能把负应力直接当作圬工实际拉应力。</p>
 </section>
@@ -3957,63 +3957,63 @@ W=\frac{bh^2}{6}=0.432\ \mathrm{m^3}.
 <section class="level4" data-number="5.10.10.1" id="基本体系与柔度数据">
 <h4 class="anchored" data-anchor-id="基本体系与柔度数据" data-number="5.10.10.1"><span class="header-section-number">5.10.10.1</span> 基本体系与柔度数据</h4>
 <p>某80 m跨两铰钢拱采用线弹性教学模型。释放右拱脚水平约束，取正的冗余力 <span class="math inline">\(X\)</span> 为使右拱脚相对左拱脚沿跨向外移的广义力。通过单位力积分得到水平柔度</p>
-<p><span class="math display">\[
-F_{XX}=1.60\times10^{-5}\ \mathrm{m/kN}.
+<p><span class="math display">\[
+F_{XX}=1.60\times10^{-5}\ \mathrm{m/kN}.
 \]</span></p>
 <p>该柔度为课程数据，已包含拱肋弯曲和轴向变形，不代表任何实际桥梁。拱肋线膨胀系数取 <span class="math inline">\(\alpha_T=1.20\times10^{-5}\)</span> /K，均匀升温 <span class="math inline">\(\Delta T=25\)</span> K。忽略横向温差和材料非线性。</p>
 </section>
 <section class="level4" data-number="5.10.10.2" id="自由温度伸长">
 <h4 class="anchored" data-anchor-id="自由温度伸长" data-number="5.10.10.2"><span class="header-section-number">5.10.10.2</span> 自由温度伸长</h4>
 <p>以跨向长度作第一层近似，自由伸长为</p>
-<p><span class="math display">\[
-\Delta_T
-=\alpha_T\Delta T L
-=1.20\times10^{-5}\times25\times80
-=0.0240\ \mathrm m
-=24.0\ \mathrm{mm}.
+<p><span class="math display">\[
+\Delta_T
+=\alpha_T\Delta T L
+=1.20\times10^{-5}\times25\times80
+=0.0240\ \mathrm m
+=24.0\ \mathrm{mm}.
 \]</span></p>
 <p>实际曲线拱的自由变形应沿弧长积分，并包含支点转动和截面温度；本值用于验证协调方程数量级。</p>
 <p>协调方程写为</p>
-<p><span class="math display">\[
-F_{XX}X+\Delta_T=\Delta_{\mathrm{sup}},
+<p><span class="math display">\[
+F_{XX}X+\Delta_T=\Delta_{\mathrm{sup}},
 \]</span></p>
 <p><span class="math inline">\(\Delta_{\mathrm{sup}}\)</span> 为右拱脚相对左拱脚的规定外移，单位m。</p>
 </section>
 <section class="level4" data-number="5.10.10.3" id="三种支承情景">
 <h4 class="anchored" data-anchor-id="三种支承情景" data-number="5.10.10.3"><span class="header-section-number">5.10.10.3</span> 三种支承情景</h4>
 <p>情景A中两拱脚水平距离保持不变，<span class="math inline">\(\Delta_{\mathrm{sup}}=0\)</span>，故</p>
-<p><span class="math display">\[
-X_A=\frac{0-0.0240}{1.60\times10^{-5}}
-=-1500\ \mathrm{kN}.
+<p><span class="math display">\[
+X_A=\frac{0-0.0240}{1.60\times10^{-5}}
+=-1500\ \mathrm{kN}.
 \]</span></p>
 <p>负号表示约束力方向与所定义的正向外移力相反，其物理作用是阻止自由膨胀。</p>
 <p>情景B中右拱脚因基础变形向外移动5 mm，即 <span class="math inline">\(\Delta_{\mathrm{sup}}=0.005\)</span> m，</p>
-<p><span class="math display">\[
-X_B=\frac{0.005-0.0240}{1.60\times10^{-5}}
-=-1187.5\ \mathrm{kN}.
+<p><span class="math display">\[
+X_B=\frac{0.005-0.0240}{1.60\times10^{-5}}
+=-1187.5\ \mathrm{kN}.
 \]</span></p>
 <p>外移释放了部分温度约束。情景C中右拱脚向内移动5 mm，<span class="math inline">\(\Delta_{\mathrm{sup}}=-0.005\)</span> m，</p>
-<p><span class="math display">\[
-X_C=\frac{-0.005-0.0240}{1.60\times10^{-5}}
-=-1812.5\ \mathrm{kN}.
+<p><span class="math display">\[
+X_C=\frac{-0.005-0.0240}{1.60\times10^{-5}}
+=-1812.5\ \mathrm{kN}.
 \]</span></p>
 <p>支承向内移动与升温自由膨胀方向相反，约束力增大。三种情景的结果不能说明基础外移有利，因为基础变位还会产生竖向、转动和长期影响；这里只分离一个水平自由度。</p>
 </section>
 <section class="level4" data-number="5.10.10.4" id="附加弯矩数量级">
 <h4 class="anchored" data-anchor-id="附加弯矩数量级" data-number="5.10.10.4"><span class="header-section-number">5.10.10.4</span> 附加弯矩数量级</h4>
 <p>若四分点拱轴距弦线高度 <span class="math inline">\(y_q=12.0\)</span> m，且单位冗余力在该截面产生的弯矩关系为 <span class="math inline">\(\Delta M=-Xy_q\)</span>，则三种情景的附加弯矩幅值为</p>
-<p><span class="math display">\[
-|\Delta M_A|=18000,\quad
-|\Delta M_B|=14250,\quad
-|\Delta M_C|=21750\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+|\Delta M_A|=18000,\quad
+|\Delta M_B|=14250,\quad
+|\Delta M_C|=21750\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>这些数值使用教学柔度和单一坐标关系，仅用于说明刚性两铰拱对毫米级支承变位的敏感性。完整模型还需叠加原荷载弯矩、轴力和空间效应，并按同一设计状况组合。</p>
 </section>
 <section class="level4" data-number="5.10.10.5" id="收缩等效情景">
 <h4 class="anchored" data-anchor-id="收缩等效情景" data-number="5.10.10.5"><span class="header-section-number">5.10.10.5</span> 收缩等效情景</h4>
 <p>若混凝土系杆或桥面构件在连接后产生等效自由收缩应变 <span class="math inline">\(\varepsilon_{sh}=-180\times10^{-6}\)</span>，在80 m参考长度上的自由缩短为</p>
-<p><span class="math display">\[
-\Delta_{sh}=\varepsilon_{sh}L=-0.0144\ \mathrm m.
+<p><span class="math display">\[
+\Delta_{sh}=\varepsilon_{sh}L=-0.0144\ \mathrm m.
 \]</span></p>
 <p>该自由变形是否全部进入拱脚协调，取决于构件连接、龄期和体系，不得直接与拱肋温度伸长相加。交互模型分别设置“尚未连接”“部分连接”“完全协调”三种状态，只有完全协调状态才使用同一广义自由度。<span class="math inline">\(-180\times10^{-6}\)</span> 为教学值，工程取值回查材料模型和现行规范。</p>
 </section>
@@ -4030,62 +4030,62 @@ X_C=\frac{-0.005-0.0240}{1.60\times10^{-5}}
 <section class="level4" data-number="5.10.11.1" id="几何与恒载闭合">
 <h4 class="anchored" data-anchor-id="几何与恒载闭合" data-number="5.10.11.1"><span class="header-section-number">5.10.11.1</span> 几何与恒载闭合</h4>
 <p>教学桥为跨径 <span class="math inline">\(L=100\)</span> m、矢高 <span class="math inline">\(f=20\)</span> m的双肋下承式系杆拱，两肋中心距 <span class="math inline">\(b_r=16\)</span> m。单一纵向平面内等效恒载 <span class="math inline">\(q=150\)</span> kN/m。按三铰抛物线数量级，水平推力为</p>
-<p><span class="math display">\[
-H_d=\frac{qL^2}{8f}
-=\frac{150\times100^2}{8\times20}
-=9375\ \mathrm{kN}.
+<p><span class="math display">\[
+H_d=\frac{qL^2}{8f}
+=\frac{150\times100^2}{8\times20}
+=9375\ \mathrm{kN}.
 \]</span></p>
 <p>理想系杆承担同量级拉力。若系杆弹性模量 <span class="math inline">\(E_t=2.0\times10^8\)</span> kN/m²、有效面积 <span class="math inline">\(A_t=0.100\)</span> m²，忽略拱肋与桥面变形时，弹性伸长为</p>
-<p><span class="math display">\[
-\Delta L_t=\frac{H_dL}{E_tA_t}
-=\frac{9375\times100}{2.0\times10^8\times0.100}
-=0.046875\ \mathrm m
-=46.9\ \mathrm{mm}.
+<p><span class="math display">\[
+\Delta L_t=\frac{H_dL}{E_tA_t}
+=\frac{9375\times100}{2.0\times10^8\times0.100}
+=0.046875\ \mathrm m
+=46.9\ \mathrm{mm}.
 \]</span></p>
 <p>该值是刚性拱、单一系杆的上层检查；实际拉力由拱肋缩短、桥面梁弯曲、端节点和施工锁定共同决定。</p>
 </section>
 <section class="level4" data-number="5.10.11.2" id="横向偏载分配">
 <h4 class="anchored" data-anchor-id="横向偏载分配" data-number="5.10.11.2"><span class="header-section-number">5.10.11.2</span> 横向偏载分配</h4>
 <p>一组教学车辆轮载合力 <span class="math inline">\(P=1600\)</span> kN，作用点距桥面中心线向左偏 <span class="math inline">\(e_y=4.0\)</span> m。先假定横梁刚性，左右拱肋的竖向份额为</p>
-<p><span class="math display">\[
-P_L=1600\left(\frac12+\frac4{16}\right)
-=1200\ \mathrm{kN},
+<p><span class="math display">\[
+P_L=1600\left(\frac12+\frac4{16}\right)
+=1200\ \mathrm{kN},
 \]</span></p>
-<p><span class="math display">\[
-P_R=1600\left(\frac12-\frac4{16}\right)
-=400\ \mathrm{kN}.
+<p><span class="math display">\[
+P_R=1600\left(\frac12-\frac4{16}\right)
+=400\ \mathrm{kN}.
 \]</span></p>
 <p>核对总力 <span class="math inline">\(P_L+P_R=1600\)</span> kN；关于中心的力矩</p>
-<p><span class="math display">\[
-(P_L-P_R)\frac{b_r}{2}
-=(1200-400)\times8
-=6400\ \mathrm{kN\cdot m}
-=Pe_y.
+<p><span class="math display">\[
+(P_L-P_R)\frac{b_r}{2}
+=(1200-400)\times8
+=6400\ \mathrm{kN\cdot m}
+=Pe_y.
 \]</span></p>
 <p>若空间梁格得到左、右份额为1120 kN和480 kN，两者仍满足总力但表示桥面扭转和柔度重新分配。应进一步核对横向力矩及横梁、系杆弯矩，不能以“更平均”判断模型更正确。</p>
 </section>
 <section class="level4" data-number="5.10.11.3" id="吊杆应力历程与教学疲劳计算">
 <h4 class="anchored" data-anchor-id="吊杆应力历程与教学疲劳计算" data-number="5.10.11.3"><span class="header-section-number">5.10.11.3</span> 吊杆应力历程与教学疲劳计算</h4>
 <p>目标吊杆有效金属面积为 <span class="math inline">\(A_h=0.0120\)</span> m²。空间影响面得到一次车辆通行引起的轴力范围 <span class="math inline">\(\Delta T_1=340\)</span> kN，则名义应力范围</p>
-<p><span class="math display">\[
-\Delta\sigma_1=\frac{340}{0.0120}
-=28333\ \mathrm{kPa}=28.33\ \mathrm{MPa}.
+<p><span class="math display">\[
+\Delta\sigma_1=\frac{340}{0.0120}
+=28333\ \mathrm{kPa}=28.33\ \mathrm{MPa}.
 \]</span></p>
 <p>课程提供两档循环统计：<span class="math inline">\(n_1=1.0\times10^5\)</span> 次、对应教学S—N曲线允许循环数 <span class="math inline">\(N_1=3.0\times10^6\)</span>；第二档应力范围18 MPa，<span class="math inline">\(n_2=2.0\times10^5\)</span>，<span class="math inline">\(N_2=1.0\times10^7\)</span>。Miner累积为</p>
-<p><span class="math display">\[
-D=\frac{1.0\times10^5}{3.0\times10^6}
-+\frac{2.0\times10^5}{1.0\times10^7}
-=0.0533.
+<p><span class="math display">\[
+D=\frac{1.0\times10^5}{3.0\times10^6}
++\frac{2.0\times10^5}{1.0\times10^7}
+=0.0533.
 \]</span></p>
 <p>该结果只验证分箱和单位，<span class="math inline">\(N_i\)</span> 为教学数据，不对应任何规范细节类别；不能据此声明疲劳满足要求。真实评价需使用与吊杆体系、锚固、腐蚀、弯折和动力相符的标准曲线，并检查数据时间基准。</p>
 </section>
 <section class="level4" data-number="5.10.11.4" id="一根吊杆退出">
 <h4 class="anchored" data-anchor-id="一根吊杆退出" data-number="5.10.11.4"><span class="header-section-number">5.10.11.4</span> 一根吊杆退出</h4>
 <p>假设目标吊杆退出前承担静力 <span class="math inline">\(T_0=1800\)</span> kN。一个简化替代路径把其静力份额的55%和45%分配给相邻两根吊杆，则增量为</p>
-<p><span class="math display">\[
-\Delta T_{a}=0.55\times1800=990\ \mathrm{kN},
-\qquad
-\Delta T_{b}=0.45\times1800=810\ \mathrm{kN}.
+<p><span class="math display">\[
+\Delta T_{a}=0.55\times1800=990\ \mathrm{kN},
+\qquad
+\Delta T_{b}=0.45\times1800=810\ \mathrm{kN}.
 \]</span></p>
 <p>两者之和等于退出吊杆力，只满足局部总力检查。真实重分配取决于拱肋、横梁、系杆和桥面连续性，其他吊杆及支座也会参与。若吊杆突然断裂，还需考虑动力放大和断裂冲击；本静力比例只用于更换状态的初始手算。</p>
 <p>构件退出后应重算车辆影响面。原目标吊杆响应消失，相邻吊杆、横梁和系杆的控制车辆位置可能改变。更换阶段先按批准方案限制交通并设置临时承载，再卸载、拆除、安装和张拉；完成后核对桥面高程、相邻索力和端锚状态。任何一步不能直接使用正常运营影响面。</p>
@@ -4104,84 +4104,84 @@ D=\frac{1.0\times10^5}{3.0\times10^6}
 <h4 class="anchored" data-anchor-id="构件和施工数据" data-number="5.10.12.1"><span class="header-section-number">5.10.12.1</span> 构件和施工数据</h4>
 <p>教学结构为跨径180 m、矢高36 m的双肋钢管混凝土拱。每片拱肋由4根圆钢管弦管构成；弦管外径 <span class="math inline">\(D=1.00\)</span> m、壁厚 <span class="math inline">\(t=0.020\)</span> m。一个吊装节段沿拱轴参考长度 <span class="math inline">\(l_s=12.0\)</span> m。钢材重度取 <span class="math inline">\(\gamma_s=78.5\)</span> kN/m³，湿混凝土重度取 <span class="math inline">\(\gamma_c=24.0\)</span> kN/m³。吊具及临时构造重量60 kN。所有数值为施工教学数据，不是实际工程或规范推荐。</p>
 <p>单根弦管钢材面积</p>
-<p><span class="math display">\[
-A_s=\frac{\pi}{4}[D^2-(D-2t)^2]
-=\frac{\pi}{4}(1.00^2-0.96^2)
-\approx0.06158\ \mathrm{m^2}.
+<p><span class="math display">\[
+A_s=\frac{\pi}{4}[D^2-(D-2t)^2]
+=\frac{\pi}{4}(1.00^2-0.96^2)
+\approx0.06158\ \mathrm{m^2}.
 \]</span></p>
 <p>四根钢管一个节段的钢材体积</p>
-<p><span class="math display">\[
-V_s=4A_sl_s
-=4\times0.06158\times12
-\approx2.956\ \mathrm{m^3},
+<p><span class="math display">\[
+V_s=4A_sl_s
+=4\times0.06158\times12
+\approx2.956\ \mathrm{m^3},
 \]</span></p>
 <p>钢管自重</p>
-<p><span class="math display">\[
-W_s=\gamma_sV_s
-\approx78.5\times2.956
-\approx232.0\ \mathrm{kN}.
+<p><span class="math display">\[
+W_s=\gamma_sV_s
+\approx78.5\times2.956
+\approx232.0\ \mathrm{kN}.
 \]</span></p>
 <p>单根钢管核心面积</p>
-<p><span class="math display">\[
-A_c=\frac{\pi}{4}(D-2t)^2
-=\frac{\pi}{4}\times0.96^2
-\approx0.7238\ \mathrm{m^2}.
+<p><span class="math display">\[
+A_c=\frac{\pi}{4}(D-2t)^2
+=\frac{\pi}{4}\times0.96^2
+\approx0.7238\ \mathrm{m^2}.
 \]</span></p>
 <p>四管一个节段的核心混凝土体积与湿重为</p>
-<p><span class="math display">\[
-V_c=4A_cl_s\approx34.74\ \mathrm{m^3},
+<p><span class="math display">\[
+V_c=4A_cl_s\approx34.74\ \mathrm{m^3},
 \]</span></p>
-<p><span class="math display">\[
-W_c=\gamma_cV_c
-\approx24.0\times34.74
-\approx833.9\ \mathrm{kN}.
+<p><span class="math display">\[
+W_c=\gamma_cV_c
+\approx24.0\times34.74
+\approx833.9\ \mathrm{kN}.
 \]</span></p>
 </section>
 <section class="level4" data-number="5.10.12.2" id="空钢管与灌注后吊装比较">
 <h4 class="anchored" data-anchor-id="空钢管与灌注后吊装比较" data-number="5.10.12.2"><span class="header-section-number">5.10.12.2</span> 空钢管与灌注后吊装比较</h4>
 <p>若采用对称双索腿吊装，索腿相对水平夹角 <span class="math inline">\(\alpha=35^\circ\)</span>。空钢管节段连同吊具的起吊荷载</p>
-<p><span class="math display">\[
-P_{\mathrm{empty}}=232.0+60=292.0\ \mathrm{kN}.
+<p><span class="math display">\[
+P_{\mathrm{empty}}=232.0+60=292.0\ \mathrm{kN}.
 \]</span></p>
 <p>忽略动力和索自重时，单侧索腿拉力</p>
-<p><span class="math display">\[
-T_{\mathrm{empty}}
-=\frac{292.0}{2\sin35^\circ}
-\approx254.5\ \mathrm{kN}.
+<p><span class="math display">\[
+T_{\mathrm{empty}}
+=\frac{292.0}{2\sin35^\circ}
+\approx254.5\ \mathrm{kN}.
 \]</span></p>
 <p>若核心混凝土在吊装前已经灌注，起吊荷载约为</p>
-<p><span class="math display">\[
-P_{\mathrm{filled}}=232.0+833.9+60
-=1125.9\ \mathrm{kN},
+<p><span class="math display">\[
+P_{\mathrm{filled}}=232.0+833.9+60
+=1125.9\ \mathrm{kN},
 \]</span></p>
 <p>单侧索腿拉力约</p>
-<p><span class="math display">\[
-T_{\mathrm{filled}}
-=\frac{1125.9}{2\sin35^\circ}
-\approx981.5\ \mathrm{kN}.
+<p><span class="math display">\[
+T_{\mathrm{filled}}
+=\frac{1125.9}{2\sin35^\circ}
+\approx981.5\ \mathrm{kN}.
 \]</span></p>
 <p>这项比较说明“先架钢管、后灌混凝土”可显著降低单次吊装重量，但不能据此自动选定工法。空钢管阶段刚度、局部稳定、风和后续泵送成为新的控制问题；实际吊索力还需计入动力、偏心、吊点角度变化和设备工况。</p>
 </section>
 <section class="level4" data-number="5.10.12.3" id="灌注顺序与反对称响应">
 <h4 class="anchored" data-anchor-id="灌注顺序与反对称响应" data-number="5.10.12.3"><span class="header-section-number">5.10.12.3</span> 灌注顺序与反对称响应</h4>
 <p>若同一纵向仓段只先灌注左肋，左右肋新增重量差为833.9 kN。课程空间模型在该阶段给出“拱顶左右高差对单仓不平衡荷载”的局部灵敏度</p>
-<p><span class="math display">\[
-s_w=0.0040\ \mathrm{mm/kN}.
+<p><span class="math display">\[
+s_w=0.0040\ \mathrm{mm/kN}.
 \]</span></p>
 <p>则第一层线性估计</p>
-<p><span class="math display">\[
-\Delta w_{\mathrm{crown}}
-=s_w\Delta W
-=0.0040\times833.9
-\approx3.34\ \mathrm{mm}.
+<p><span class="math display">\[
+\Delta w_{\mathrm{crown}}
+=s_w\Delta W
+=0.0040\times833.9
+\approx3.34\ \mathrm{mm}.
 \]</span></p>
 <p><span class="math inline">\(s_w\)</span> 是该教学模型在当前边界下计算得到的灵敏度，不能迁移到其他跨径或横撑。若左右肋同仓同步且重量相等，一阶反对称分量接近零，但总对称变形和轴力仍增加。施工方案需比较“同肋连续灌注”“两肋对称灌注”和“分仓交替”，并检查泵送能力、施工缝、硬化时间与稳定。</p>
 </section>
 <section class="level4" data-number="5.10.12.4" id="合龙偏差与强制闭合">
 <h4 class="anchored" data-anchor-id="合龙偏差与强制闭合" data-number="5.10.12.4"><span class="header-section-number">5.10.12.4</span> 合龙偏差与强制闭合</h4>
 <p>两半拱合龙前测得接口状态为：纵向间隙6 mm、横向偏位3 mm、竖向高差 <span class="math inline">\(-4\)</span> mm，另有三个转角待测。若只对纵向自由度采用教学凝聚刚度 <span class="math inline">\(k_u=250\)</span> kN/mm并强制消除6 mm间隙，产生的接口力数量级为</p>
-<p><span class="math display">\[
-F_u=k_u\Delta u=250\times6=1500\ \mathrm{kN}.
+<p><span class="math display">\[
+F_u=k_u\Delta u=250\times6=1500\ \mathrm{kN}.
 \]</span></p>
 <p>该力并非现场允许闭合力。真实接口是六自由度矩阵，横向偏位和转角会产生弯矩与扭矩；扣索、温度、配重或顶推的调整又改变全桥内力。正确流程是统一测量基准、分解温度和制造偏差、用当前阶段模型预测调整、经审查后实施，并在永久连接生效后分级拆索。</p>
 </section>
@@ -4215,13 +4215,13 @@ F_u=k_u\Delta u=250\times6=1500\ \mathrm{kN}.
 <h4 class="anchored" data-anchor-id="四案例的联合实验" data-number="5.11.0.1"><span class="header-section-number">5.11.0.1</span> 四案例的联合实验</h4>
 <p>四个新增案例分别承担不同的验证功能。案例一是静定解析基准，检验压力线、核心和内力正号；案例二用柔度协调检验温度与支承变位；案例三连接空间偏载、疲劳和构件退出；案例四连接构件重量、吊装、组合生效和合龙。学生不需要一次运行所有高阶模型，而应从可手算基线逐级升级。</p>
 <p>综合资源的数据流为</p>
-<p><span class="math display">\[
-\text{几何/状态}
-\rightarrow\text{解析平衡}
-\rightarrow\text{空间分配}
-\rightarrow\text{材料与稳定}
-\rightarrow\text{施工事件}
-\rightarrow\text{证据包}.
+<p><span class="math display">\[
+\text{几何/状态}
+\rightarrow\text{解析平衡}
+\rightarrow\text{空间分配}
+\rightarrow\text{材料与稳定}
+\rightarrow\text{施工事件}
+\rightarrow\text{证据包}.
 \]</span></p>
 <p>每一箭头都有准入条件。解析平衡未通过时不解释空间云图；空间模型未通过横向力矩平衡时不计算吊杆疲劳；施工阶段未定义组合生效时点时不使用钢管混凝土成桥刚度；模型与监测不在同一温度和阶段时不作参数更新。</p>
 <table class="caption-top table">
@@ -4464,10 +4464,10 @@ F_u=k_u\Delta u=250\times6=1500\ \mathrm{kN}.
 <h4 class="anchored" data-anchor-id="模型族与不确定性" data-number="5.11.1.3"><span class="header-section-number">5.11.1.3</span> 模型族与不确定性</h4>
 <p>既有桥宜建立模型族而不是唯一“精确模型”。例如，拱脚可采用固定、转动弹簧和六自由度基础三个边界；横撑节点可采用刚接、半刚接区间；圬工可采用完整弹性、无拉连续体和离散接触；钢管混凝土可采用完全组合和界面退化边界。先比较哪些输出对模型选择敏感，再决定补充检测。</p>
 <p>设候选模型为 <span class="math inline">\(M_j\)</span>，观测为 <span class="math inline">\(\boldsymbol y\)</span>，模型预测为 <span class="math inline">\(\widehat{\boldsymbol y}_j\)</span>，带权残差可写为</p>
-<p><span class="math display">\[
-J_j=(\boldsymbol y-\widehat{\boldsymbol y}_j)^{\mathsf T}
-\boldsymbol W
-(\boldsymbol y-\widehat{\boldsymbol y}_j),
+<p><span class="math display">\[
+J_j=(\boldsymbol y-\widehat{\boldsymbol y}_j)^{\mathsf T}
+\boldsymbol W
+(\boldsymbol y-\widehat{\boldsymbol y}_j),
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol W\)</span> 根据测量不确定性和相关性构造。较小 <span class="math inline">\(J_j\)</span> 表示在指定数据下拟合较好，不证明模型机理唯一正确。若参数数量接近或超过独立观测量，模型可能过拟合；应保留未参与识别的测点或工况作验证。</p>
 <p>静载试验可用于观察荷载—响应、横向分配和残余变形，动力试验可用于识别频率、振型和阻尼；其荷载水平、测点、环境和评价边界由项目方案与现行标准确定。试验结果不能直接替代极限状态，因为常规试验通常处于服务荷载和小振幅范围。模型更新只调整可识别参数，不把所有残差归入“刚度折减”。</p>
@@ -4496,10 +4496,10 @@ J_j=(\boldsymbol y-\widehat{\boldsymbol y}_j)^{\mathsf T}
 <section class="level4" data-number="5.11.2.2" id="全桥平衡和分级局部核查">
 <h4 class="anchored" data-anchor-id="全桥平衡和分级局部核查" data-number="5.11.2.2"><span class="header-section-number">5.11.2.2</span> 全桥平衡和分级局部核查</h4>
 <p>成桥与每一施工阶段都应检查全局平衡：</p>
-<p><span class="math display">\[
-\boldsymbol r_F=\sum\boldsymbol F_{ext}+\sum\boldsymbol R,
-\qquad
-\boldsymbol r_M=\sum\boldsymbol M_O.
+<p><span class="math display">\[
+\boldsymbol r_F=\sum\boldsymbol F_{ext}+\sum\boldsymbol R,
+\qquad
+\boldsymbol r_M=\sum\boldsymbol M_O.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol r_F\)</span> 单位kN，<span class="math inline">\(\boldsymbol r_M\)</span> 单位kN·m。残差容许值由求解器和项目计算精度确定，不在教材中给统一比例。对系杆拱，还要在端节点自由体中核对拱肋水平分力、系杆拉力与外部水平反力；对双肋拱，在横断面核对竖向力与横向力矩。</p>
 <p>局部节点核查从总体模型提取同一控制行的六分量内力，不能分别取六个包络极值拼成一个不存在的状态。若要建立包络设计域，可保存若干真实控制组合点并取凸包，再由局部模型求响应。施工吊点、临时横撑和合龙节点应使用施工控制行，不用成桥车辆组合。</p>
@@ -4590,8 +4590,8 @@ J_j=(\boldsymbol y-\widehat{\boldsymbol y}_j)^{\mathsf T}
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-注记
+<div class="callout-title-container flex-fill">
+注记
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -4816,10 +4816,10 @@ J_j=(\boldsymbol y-\widehat{\boldsymbol y}_j)^{\mathsf T}
 </tr>
 </tbody>
 </table>
-<div class="line-block">图5-11 | 课程组依据分类矩阵原创 | 拱桥七维分类与构造树 | 自绘矢量图；原教材图仅作内部核对 |<br/>
-图5-12 | 120 m双肋拱教学模型 | 车辆对拱肋、吊杆、横梁和系杆的影响面 | 由开放结果重绘，附单位与CSV |<br/>
-图5-13 | 课程组施工阶段模型 | 钢管混凝土拱形成序列 | 自绘；不复制工程照片 |<br/>
-图5-14 | 课程组施工模型与规范范围 | 五类施工法状态对照 | 自绘线图；外部照片须取得授权 |<br/>
+<div class="line-block">图5-11 | 课程组依据分类矩阵原创 | 拱桥七维分类与构造树 | 自绘矢量图；原教材图仅作内部核对 |<br/>
+图5-12 | 120 m双肋拱教学模型 | 车辆对拱肋、吊杆、横梁和系杆的影响面 | 由开放结果重绘，附单位与CSV |<br/>
+图5-13 | 课程组施工阶段模型 | 钢管混凝土拱形成序列 | 自绘；不复制工程照片 |<br/>
+图5-14 | 课程组施工模型与规范范围 | 五类施工法状态对照 | 自绘线图；外部照片须取得授权 |<br/>
 图5-15 | 数字资源5-13教学数据 | 120 m贯通案例证据页 | 由交互资源导出SVG并保留版本 |</div>
 </section>
 <section class="level3" data-number="5.12.3" id="本章参考资料">
@@ -4848,410 +4848,410 @@ J_j=(\boldsymbol y-\widehat{\boldsymbol y}_j)^{\mathsf T}
 </section>
 <p class="public-edition-note"><a href="../publication-images.html">公开预览 · 图片来源与版本说明</a></p></main> <!-- /main -->
 
-<script>
-(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
-
+<script>
+(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+
 </script>
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "已复制");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "已复制");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
-          }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
-  });
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
   </script>
 <nav class="page-navigation">
 <div class="nav-page nav-page-previous">

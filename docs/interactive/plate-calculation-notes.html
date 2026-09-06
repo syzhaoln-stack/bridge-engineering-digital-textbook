@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>教师备课：板梁计算与验证</title><link href="plate-chain/style.css" rel="stylesheet"/></head><body><main><nav><a href="plate-chain.html">← 学生学习页</a></nav><header><h1>教师备课：板梁计算与验证</h1><p>本页用于备课、复算和解释计算差异。学生的学习顺序见上方链接。</p></header>
-<details class="code"><summary>计算实现的 6 行代码 · 完整源代码在页尾</summary><pre>full = solve(两跨连续板);
-cut.rotations = full.中间支承转角;
-retained = solve(左跨, cut.rotations); // 保留接口：恢复左跨
-simple = solve(左跨, 转角自由);        // 改了边界：不是原问题
-q(x) = integral(p(x,y), y=0..B);       // 保留纵向各处竖向合力
+<details class="code"><summary>计算实现的 6 行代码 · 完整源代码在页尾</summary><pre>full = solve(两跨连续板);
+cut.rotations = full.中间支承转角;
+retained = solve(左跨, cut.rotations); // 保留接口：恢复左跨
+simple = solve(左跨, 转角自由);        // 改了边界：不是原问题
+q(x) = integral(p(x,y), y=0..B);       // 保留纵向各处竖向合力
 beam = solve(简支梁, q, EI=E*B*t³/12); // 检查哪些响应仍接近</pre></details>
 <section class="panel"><h2>01 先猜，再算</h2><label for="predict">全宽均布荷载下，去掉邻跨转角约束，左跨中部的下挠会怎样？</label><div class="row"><select id="predict"><option value="">先选一个预测</option><option value="more">增大</option><option value="same">不变</option><option value="less">减小</option></select><button id="predictSave">记下预测</button></div><p id="prediction" role="status">可以先写下理由，再看数值。此预测针对默认均布工况。</p><textarea aria-label="预测理由" id="reason" placeholder="我的理由是……" rows="2"></textarea></section>
 <section class="panel"><h2>02 改一个条件，观察变化</h2><div class="controls">

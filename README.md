@@ -6,7 +6,8 @@
 - [先试公众课第一讲](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/public-course.html)
 - [图片数量、来源与出版制作计划](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/publication-images.html)
 - [各章实验入口](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/learning-map.html)
-- [从旧版接续的配筋与投影实验](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/legacy-tools.html)
+- [配筋、空间投影与桥梁建造游戏](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/legacy-tools.html)
+- [从桥梁看世界：改一个条件，看看受力怎样变](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/bridge-thinking.html)
 
 ## 当前内容与完成程度
 
@@ -27,4 +28,4 @@
 
 安装Quarto和Python后，运行`quarto render source --to html`；构建结果在`source/_site/`。当前Pages从`main`分支的`docs/`发布，更新时应先检查构建结果再同步到该目录。默认交互可本地运行；外部课程与投影工作台需要联网，部分正文公式使用在线MathJax。
 
-来源工作版本：`2fc7d9df9f6a625a928e95fef2566a1c1e4b9feb`。这是不携带内部资料与旧历史的公开导出，不能将此仓库的首次提交误认为教材首次写作。
+来源工作版本：`8ac8adaea7c5eff887333884bdb53bf78fdfce0a`。这是不携带内部资料与旧历史的公开导出，不能将此仓库的首次提交误认为教材首次写作。

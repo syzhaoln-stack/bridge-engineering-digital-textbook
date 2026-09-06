@@ -1,136 +1,130 @@
 # 数字资源索引 {.unnumbered}
 
-[图片数量、参考来源与出版制作计划](publication-images.qmd) · [从旧版接续的两个实验](legacy-tools.qmd)
-
-[全书候选图片筛选：120节、360处配图](publication-images.html){.btn .btn-primary target="_blank"}
-
-候选图可按章节查看，标记“保留候选、拟重绘、不采用”，并导出筛选记录。每张图保留来源；已有自制图的复用单独标记。各交互页底部可展开、复制与下载页面代码。新版[影响线与不利布载实验](interactive/ch03-continuous-loading.html)支持正负区段、涂布荷载、三个集中力的布置、方案对比和作答记录。
-
-数字教材资源用于支持观察、计算、建模、核验和迁移，不单独承担工程结论。资源采用“正文编号—交互页面—静态关键帧—数据或模型—版本记录”的对应关系；HTML版本提供完整操作，PDF版本保留核心状态图、公式、输入表和访问链接。
-
-<div class="embed-wrap tall"><iframe loading="lazy" src="interactive/resource-hub.html" title="全书数字实验入口"></iframe></div>
-
-[在独立窗口打开数字实验入口](interactive/resource-hub.html){.btn .btn-primary target="_blank"}
-
-## 一、交互可视化网页
-
-| 关联章节 | 资源主题 | 当前原型 | 主要变量与输出 | 使用说明 |
-|---|---|---|---|---|
-| 第1章 | 桥梁体系图谱 | [桥梁体系图谱](interactive/ch01-bridge-systems-atlas.html) | 跨径、桥宽、梁高、矢高、塔高、垂度、边界与施工状态 | 用于识别构件、荷载路径和总体参数；常规比值仅作教学范围提示 |
-| 第1章 | 跨越尺度 | [跨越尺度与体系比例](interactive/ch01-scale-system-lab.html) | 几何尺度、自重、弯矩、应力和相对挠度 | 说明几何相似下的尺度律；不替代材料、稳定和规范审查 |
-| 第2章 | 结构概念实验 | [结构概念实验台](interactive/ch02-structural-concepts-lab.html) | 平衡、截面效率、约束、温度、频率比与阻尼 | 单一模式只显示一组参数、一个主图、关键结果和适用边界 |
-| 第2章 | 偏心受压 | [偏心受压与截面核心](interactive/ch02-eccentric-compression-lab.html) | 合力作用点、双向偏心、角点应力和核心范围 | 只作线弹性截面判读；与钢筋混凝土大、小偏心受压术语分开 |
-| 第2章 | 预应力状态 | [预应力等效作用与截面状态](interactive/ch02-prestress-state-lab.html) | 有效预应力、偏心、束形、等效作用和截面应力 | 用应力叠加、内力平衡和等效荷载三视角相互核对 |
-| 第3章 | 作用组合 | [组合瀑布图](interactive/ch02-load-combination-waterfall.html) | 单项效应、分项系数、组合值系数、累计效应 | 参数须标明来源；教学数据不得直接用于工程设计 |
-| 第3章 | 可靠度 | [失效概率实验](interactive/ch02-reliability-lab.html) | 抗力与效应均值、标准差、相关性、失效点、$P_f$、$\beta$ | 同时显示边缘分布、联合密度、极限状态边界与抽样误差 |
-| 第4章 | 梁桥综合实验 | [梁桥数字实验室](interactive/ch03-beam-digital-lab.html) | 截面、影响线、横向分布、施工与响应 | 截面几何指标、结构效应和构件验算分层呈现 |
-| 第4章 | 箱梁截面权衡 | [箱梁空腔与截面效率](interactive/ch04-box-girder-tradeoff.html) | 空腔、壁厚、面积、自重、惯性矩和扭转常数 | 单一截面任务，先比较几何效率，再进入局部与极限状态验算 |
-| 第4章 | 连续梁移动加载 | [连续梁布载](interactive/ch03-continuous-loading.html) | 车轴位置、目标响应、控制位置与包络 | 先定义所求响应，再解释最不利布载 |
-| 第5章 | 拱轴与压力线 | [拱桥参数实验](interactive/ch04-arch-lab.html) | 跨径、矢高、荷载不对称、水平推力与偏心 | 区分几何拱轴、压力线和截面中心线 |
-| 第6章 | 索力与成桥状态 | [斜拉桥索力实验](interactive/ch05-stay-lab.html) | 索力增量、主梁弯矩、塔顶位移与目标状态 | 强调索力调整的全桥耦合和施工阶段条件 |
-| 第7章 | 主缆线形与几何刚度 | [悬索体系实验](interactive/ch06-cable-stiffness.html) | 垂跨比、初拉力、水平分力与活载变形 | 抛物线与悬链线公式均标明适用假定 |
-| 第8章 | 支承边界 | [支承自由度实验](interactive/ch07-boundary-lab.html) | 六自由度、温度位移、水平力路径 | 用刚体自由度、约束冲突与强迫变形校核边界 |
-| 第9章 | 风致现象 | [桥梁风致现象辨识](interactive/ch09-wind-phenomena-lab.html) | 风速、频率比、阻尼、截面与响应 | 区分静风、涡振、抖振、驰振和颤振所需证据 |
-| 第10章 | 全寿命方案 | [方案与证据比较](interactive/ch08-decision-lab.html) | 性能、成本、维护、风险与情景 | 显示原始量纲、权重敏感性和非支配方案 |
-| 第10章 | 劣化与可靠指标 | [氯盐侵入、截面劣化与可靠指标](interactive/ch10-deterioration-reliability-lab.html) | 时间、扩散参数、氯盐剖面、教学截面损失、$\beta$与$P_f$ | 状态到抗力的映射仅作教学，不输出工程安全结论 |
-| 第11章 | 模型层级 | [桥梁有限元模型层级](interactive/ch10-bridge-fem-hierarchy.html) | 解析梁、杆系、梁格、板壳和局部模型 | 每一级说明可回答问题、忽略信息与新增参数 |
-| 第11章 | 梁有限元校核 | [梁有限元审核台](interactive/ch10-modeling-lab.html?mode=fem) | 网格、荷载完整性、端部约束、平衡与闭式解 | 求解收敛与模型正确性分别审查 |
-| 第11章 | 桥面壳与移动轮载 | [MITC4桥面壳](interactive/ch10-bridge-shell-mitc4.html) | 网格、轮载位置、合力与一阶矩、固定色标 | 局部峰值结合网格和荷载映射共同解释 |
-| 第11章 | 空间截面 | [截面与空间受力](interactive/ch10-bridge-section-spatial-lab.html) | 箱室、板厚、面积、惯性矩、扭转与横向分配 | 三维几何、公式和结果由同一参数源驱动 |
-
-交互文件名中的 `ch02`、`ch03`、`ch10` 等属于早期稳定资源标识。当前正文显示编号采用现行11章目录，后续更新不以改名破坏历史链接。
-
-### 单关系微实验
-
-为降低综合实验台的界面负荷，本轮另行实现16个单关系页面。每个链接只显示一个工程对象、一个主参数、四项读数、一条核心关系和一个操作任务；同一计算内核通过稳定查询参数进入，不在学生端显示模式工具栏。
-
-| 章节 | 单关系页面 |
-|---|---|
-| 第1章 | [荷载位置与支承反力](interactive/bridge-concept-screen.html?lab=forcepath) |
-| 第2章 | [弯矩图与受拉侧](interactive/bridge-concept-screen.html?lab=bending) · [温度变形与约束](interactive/bridge-concept-screen.html?lab=restraint) · [有效长度与屈曲](interactive/bridge-concept-screen.html?lab=buckling) · [质量、刚度与频率](interactive/bridge-concept-screen.html?lab=modal) |
-| 第4章 | [影响线解析基准](interactive/bridge-concept-screen.html?lab=influence) · [偏心轮载横向分配](interactive/bridge-concept-screen.html?lab=transverse) |
-| 第6章 | [索力影响矩阵](interactive/bridge-concept-screen.html?lab=staymatrix) |
-| 第7章 | [垂跨比与水平分力](interactive/bridge-concept-screen.html?lab=suspension) |
-| 第8章 | [桥长、温差与支座位移](interactive/bridge-concept-screen.html?lab=thermal) |
-| 第9章 | [风速平方与静风力](interactive/bridge-concept-screen.html?lab=windforce) · [频率比与动力放大](interactive/bridge-concept-screen.html?lab=resonance) |
-| 第10章 | [周期与教学反应谱](interactive/bridge-concept-screen.html?lab=spectrum) · [观测与状态更新](interactive/bridge-concept-screen.html?lab=bayes) |
-| 第11章 | [离散与位移收敛](interactive/bridge-concept-screen.html?lab=mesh) · [均布荷载的一致节点力](interactive/bridge-concept-screen.html?lab=loadmap) |
-
-这些页面覆盖L1直观入口、L2大三核心和L3拓展层。教学反应谱、影响矩阵、状态更新和离散收敛页面均明确标注模型性质，不向学生提供未经规范复核的设计限值。
-
-## 二、核心视频与早期样片
-
-新增[110个核心视频与交互教学单元](core-resources.qmd)，每章10组，采用1920×1080、30帧/秒、中文合成讲解和字幕。视频前可查看并运行计算片段，视频下方提供完整源码。每组配趋势预测、目标调参、条件判断与开放迁移题；[跨课程类比页](interactive/thinking-analogies.html)提供同步并排比较。
-
-### 早期概念样片（保留参考）
-
-原有15段课程组自制Manim动画采用白底、无旁白和中文教材式标注，每段约45—57 s。动画只呈现一个主要关系，章首可直接播放，资源中心提供集中浏览；MP4、海报、分镜、统一源码和批量渲染脚本同步保存。
-
-<div class="embed-wrap tall"><iframe loading="lazy" src="interactive/video-gallery.html" title="桥梁工程概念短视频系列"></iframe></div>
-
-[在独立窗口打开概念短视频系列](interactive/video-gallery.html){.btn .btn-primary target="_blank"}
-
-| 编号范围 | 内容 | 对应章节 |
-|---|---|---|
-| M01—M05 | 力流、尺度、偏心受压、预应力与作用组合 | 第1—3章 |
-| M06—M11 | 影响线、箱梁、拱、斜拉、悬索与温度约束 | 第4—8章 |
-| M12—M15 | 模态与风、时变可靠度、有限元模型层级 | 第9—11章 |
-
-上述早期样片为854×480、15 fps的教材初稿。正文和符号定稿后，可由同一源码统一输出中清或高清版本；视频中的数值均为教学参数，不作为工程设计取值。
-
-## 三、受控提示词与计算助手
-
-提示词按“任务—已知—单位—假定—输出—校核—禁止补全项”七个字段组织。教材提供四类模板：
-
-1. **概念解释模板**：要求指出真实构件、理想模型、荷载路径、核心关系和适用边界；
-2. **公式与程序模板**：要求逐一定义符号和单位，保留公式来源，输出可复算数据并进行量纲、平衡和极限情况检查；
-3. **模型审查模板**：输入单元、材料、截面、连接、边界、作用、施工阶段和目标响应，输出缺失项、异常项及验证方案；
-4. **图表说明模板**：读取原始数据和绘图脚本，说明坐标、量纲、参数范围、图形所支持的结论及不可外推范围。
-
-所有工具输出均作为待核材料。规范系数、工程参数、桥梁事故事实和设计结论应回查原始文件并由教师或设计责任人确认；提示词、模型版本和人工修改记录随作业或案例一并提交。
-
-## 四、Bridge Modeler Skill
-
-Bridge Modeler Skill把桥型识别、构件分解、坐标约定、参数契约、几何重建、交互显示与节点—单元导出组织为可复用流程。课程统一采用桥向$x$、横桥向$y$、竖向$z$；三维显示程序通过唯一转换函数映射到图形坐标，工程坐标和导出坐标保持不变。
-
-Skill的典型成果包括：参数表、荷载路径图、可旋转三维模型、构件分组、节点—单元表、重复节点与孤立构件检查、OBJ视觉模型和STL打印前检查。教学几何、打印网格和有限元模型具有不同对象边界，分别验证。该Skill用于形成可检查模型和建模记录，不代替结构分析、规范验算与工程签认。
-
-## 五、MIDAS及同类软件视频
-
-课程组录屏建议按可核查任务拆分为下列资源包：
-
-1. 单位、坐标、材料与截面的建立及手算抽查；
-2. 节点、单元、偏置、连接和支承自由度的检查；
-3. 自重、二期恒载、温度、预应力和基础位移等基本工况；
-4. 移动荷载、影响线、车道与控制截面；
-5. 施工阶段激活、合龙、张拉及体系转换；
-6. 组合、包络、目标响应与结果导出；
-7. 平衡、闭式解、网格趋势、独立模型和运行日志；
-8. 参数批处理、版本差异与复核报告。
-
-每段视频开头显示输入与分析目标，结尾显示校核证据；软件名称、版本、单位制、规范模块和模型文件随视频登记。软件界面和商标按许可使用，教材正文采用工具中立的流程图和课程组自有模型。
-
-## 六、资源来源与更新
-
-- 课程组录课的逐节素材映射见 `素材汇总/课程录课_章节与数字资源映射.md`；
-- 国内外公开课程及科普视频的表达研究见 `素材汇总/公开视频课程与科普资源映射.md`；
-- Manchester结构概念网站的跨课程映射见 `素材汇总/Manchester_Structural_Concepts映射.md`；
-- 候选图片、页码、链接、授权与重绘状态见 `图源与版权台账.md` 及各章图源表；
-- 交互计算应保存公式、默认参数、数据性质、基准结果、脚本版本和测试记录。
-
-正式上线前执行链接有效性、浏览器兼容性、键盘可访问性、图形色盲友好、移动端布局、公式渲染和结果复算检查。外部网站和视频优先使用机构官方入口；链接失效时保留题名、机构和访问日期，不以来源不明的转载地址替换。
-
-## 七、公开课程与专题导学
-
-公开资源承担课程范围核对、概念演示和继续学习入口，不替代本书采用的中国桥梁标准。教师可按下列顺序组织导学：先阅读本书相应节并完成基本计算，再观看指定片段，最后用课程组数据和模型复现其中的结构概念。
-
-| 主题 | 机构入口 | 对应章节 | 导学任务 |
-|---|---|---|---|
-| 结构概念与实体模型 | University of Manchester, [Seeing and Touching Structural Concepts](https://epsassets.manchester.ac.uk/structural-concepts/) | 第2、4、7、9章 | 识别演示中的工程对象、边界、唯一变化参数和可观测量；用桥梁构件重新建立模型 |
-| 桥梁工程课程体系 | NPTEL, [Bridge Engineering](https://www.nptel.ac.in/courses/105105216) | 第1—10章 | 对照桥型、构造、设计、施工和维护的课程次序，形成术语差异表 |
-| 结构设计与方案判断 | MIT OpenCourseWare, [Structural Engineering Design](https://ocw.mit.edu/courses/1-051-structural-engineering-design-fall-2003/) | 第1、10、11章 | 区分设计约束、计算模型、构件验算和工程决策，整理可迁移的方法 |
-| 有限元理论 | MIT OpenCourseWare, [Finite Element Procedures for Solids and Structures](https://ocw.mit.edu/courses/res-2-002-finite-element-procedures-for-solids-and-structures-spring-2010/) | 第11章 | 选取一个梁或板算例，复核离散、单元关系、组装、边界与收敛 |
-| 桥梁风工程案例 | WSDOT, [Tacoma Narrows Bridge History](https://wsdot.wa.gov/TNBhistory/)；FHWA, [Aerodynamic Behavior of Bridges](https://www.fhwa.dot.gov/publications/focus/13dec/13dec03.cfm) | 第9章 | 分开记录历史事实、气动机理、试验方法和后续工程措施 |
-| 桥梁维护与寿命 | FHWA, [Bridge Preservation](https://www.fhwa.dot.gov/bridge/preservation/) | 第10章 | 将预防性养护、修复、加固与更换映射到状态、性能、时点和证据 |
-
-哔哩哔哩和YouTube的具体课程、分集线索、适用章节、拟借鉴的讲授结构及权利状态，集中列于 `素材汇总/公开视频课程与科普资源映射.md`。平台转载页只作为定位原课程的检索线索；教材不复制未经授权的视频帧、字幕、课件和旁白。
+[查看图片与参考来源](publication-images.qmd) · [从旧版接续的实验与游戏](legacy-tools.qmd)
+
+[**试一试桥梁建造游戏 SpanCraft**](https://syzhaoln-stack.github.io/spancraft-bridge-game/){target="_blank" rel="noopener"}：先点“开始建造 · 装载示范桥”，等桥面和构件出现，再点“加载：小汽车”，观察荷载进度和主梁抗弯利用率怎样变化。这是既有在线游戏，需要联网；[玩法与模型说明](legacy-tools.qmd)。
+
+从下面选一个问题开始。想比较车辆摆放，可以打开[影响线与不利布载实验](interactive/ch03-continuous-loading.html)：先选定要观察的响应，再调整集中力或涂布区段，比较两种方案。需要了解计算过程时，展开交互页中的代码说明。
+
+实验中的数值随参数变化。先留意图上的对象、单位和模型条件，再判断结果说明了什么。
+
+<div class="embed-wrap tall"><iframe loading="lazy" src="interactive/resource-hub.html" title="全书数字实验入口"></iframe></div>
+
+[在独立窗口打开数字实验入口](interactive/resource-hub.html){.btn .btn-primary target="_blank"}
+
+## 一、交互可视化网页
+
+| 关联章节 | 资源主题 | 打开实验 | 主要变量与输出 | 使用说明 |
+|---|---|---|---|---|
+| 第1章 | 桥梁体系图谱 | [桥梁体系图谱](interactive/ch01-bridge-systems-atlas.html) | 跨径、桥宽、梁高、矢高、塔高、垂度、边界与施工状态 | 用于识别构件、荷载路径和总体参数；常规比值仅作教学范围提示 |
+| 第1章 | 跨越尺度 | [跨越尺度与体系比例](interactive/ch01-scale-system-lab.html) | 几何尺度、自重、弯矩、应力和相对挠度 | 说明几何相似下的尺度律；不替代材料、稳定和规范审查 |
+| 第2章 | 结构概念实验 | [结构概念实验台](interactive/ch02-structural-concepts-lab.html) | 平衡、截面效率、约束、温度、频率比与阻尼 | 单一模式只显示一组参数、一个主图、关键结果和适用边界 |
+| 第2章 | 偏心受压 | [偏心受压与截面核心](interactive/ch02-eccentric-compression-lab.html) | 合力作用点、双向偏心、角点应力和核心范围 | 只作线弹性截面判读；与钢筋混凝土大、小偏心受压术语分开 |
+| 第2章 | 预应力状态 | [预应力等效作用与截面状态](interactive/ch02-prestress-state-lab.html) | 有效预应力、偏心、束形、等效作用和截面应力 | 用应力叠加、内力平衡和等效荷载三视角相互核对 |
+| 第3章 | 作用组合 | [组合瀑布图](interactive/ch02-load-combination-waterfall.html) | 单项效应、分项系数、组合值系数、累计效应 | 参数须标明来源；教学数据不得直接用于工程设计 |
+| 第3章 | 可靠度 | [失效概率实验](interactive/ch02-reliability-lab.html) | 抗力与效应均值、标准差、相关性、失效点、$P_f$、$\beta$ | 同时显示边缘分布、联合密度、极限状态边界与抽样误差 |
+| 第4章 | 梁桥综合实验 | [梁桥数字实验室](interactive/ch03-beam-digital-lab.html) | 截面、影响线、横向分布、施工与响应 | 截面几何指标、结构效应和构件验算分层呈现 |
+| 第4章 | 箱梁截面权衡 | [箱梁空腔与截面效率](interactive/ch04-box-girder-tradeoff.html) | 空腔、壁厚、面积、自重、惯性矩和扭转常数 | 单一截面任务，先比较几何效率，再进入局部与极限状态验算 |
+| 第4章 | 连续梁移动加载 | [连续梁布载](interactive/ch03-continuous-loading.html) | 车轴位置、目标响应、控制位置与包络 | 先定义所求响应，再解释最不利布载 |
+| 第5章 | 拱轴与压力线 | [拱桥参数实验](interactive/ch04-arch-lab.html) | 跨径、矢高、荷载不对称、水平推力与偏心 | 区分几何拱轴、压力线和截面中心线 |
+| 第6章 | 索力与成桥状态 | [斜拉桥索力实验](interactive/ch05-stay-lab.html) | 索力增量、主梁弯矩、塔顶位移与目标状态 | 强调索力调整的全桥耦合和施工阶段条件 |
+| 第7章 | 主缆线形与几何刚度 | [悬索体系实验](interactive/ch06-cable-stiffness.html) | 垂跨比、初拉力、水平分力与活载变形 | 抛物线与悬链线公式均标明适用假定 |
+| 第8章 | 支承边界 | [支承自由度实验](interactive/ch07-boundary-lab.html) | 六自由度、温度位移、水平力路径 | 用刚体自由度、约束冲突与强迫变形校核边界 |
+| 第9章 | 风致现象 | [桥梁风致现象辨识](interactive/ch09-wind-phenomena-lab.html) | 风速、频率比、阻尼、截面与响应 | 区分静风、涡振、抖振、驰振和颤振所需证据 |
+| 第10章 | 全寿命方案 | [方案与证据比较](interactive/ch08-decision-lab.html) | 性能、成本、维护、风险与情景 | 显示原始量纲、权重敏感性和非支配方案 |
+| 第10章 | 劣化与可靠指标 | [氯盐侵入、截面劣化与可靠指标](interactive/ch10-deterioration-reliability-lab.html) | 时间、扩散参数、氯盐剖面、教学截面损失、$\beta$与$P_f$ | 状态到抗力的映射仅作教学，不输出工程安全结论 |
+| 第11章 | 模型层级 | [桥梁有限元模型层级](interactive/ch10-bridge-fem-hierarchy.html) | 解析梁、杆系、梁格、板壳和局部模型 | 每一级说明可回答问题、忽略信息与新增参数 |
+| 第11章 | 梁有限元校核 | [梁有限元审核台](interactive/ch10-modeling-lab.html?mode=fem) | 网格、荷载完整性、端部约束、平衡与闭式解 | 求解收敛与模型正确性分别审查 |
+| 第11章 | 桥面壳与移动轮载 | [MITC4桥面壳](interactive/ch10-bridge-shell-mitc4.html) | 网格、轮载位置、合力与一阶矩、固定色标 | 局部峰值结合网格和荷载映射共同解释 |
+| 第11章 | 空间截面 | [截面与空间受力](interactive/ch10-bridge-section-spatial-lab.html) | 箱室、板厚、面积、惯性矩、扭转与横向分配 | 三维几何、公式和结果由同一参数源驱动 |
+
+请按表中的章节名称选择资源；链接文件名中的数字不一定对应当前章号。
+
+### 单关系微实验
+
+想先弄清一个关系，可以选下面的微实验。先预测方向，再改变主参数，观察图形和读数是否支持你的判断。
+
+| 章节 | 单关系页面 |
+|---|---|
+| 第1章 | [荷载位置与支承反力](interactive/bridge-concept-screen.html?lab=forcepath) |
+| 第2章 | [弯矩图与受拉侧](interactive/bridge-concept-screen.html?lab=bending) · [温度变形与约束](interactive/bridge-concept-screen.html?lab=restraint) · [有效长度与屈曲](interactive/bridge-concept-screen.html?lab=buckling) · [质量、刚度与频率](interactive/bridge-concept-screen.html?lab=modal) |
+| 第4章 | [影响线解析基准](interactive/bridge-concept-screen.html?lab=influence) · [偏心轮载横向分配](interactive/bridge-concept-screen.html?lab=transverse) |
+| 第6章 | [索力影响矩阵](interactive/bridge-concept-screen.html?lab=staymatrix) |
+| 第7章 | [垂跨比与水平分力](interactive/bridge-concept-screen.html?lab=suspension) |
+| 第8章 | [桥长、温差与支座位移](interactive/bridge-concept-screen.html?lab=thermal) |
+| 第9章 | [风速平方与静风力](interactive/bridge-concept-screen.html?lab=windforce) · [频率比与动力放大](interactive/bridge-concept-screen.html?lab=resonance) |
+| 第10章 | [周期与教学反应谱](interactive/bridge-concept-screen.html?lab=spectrum) · [观测与状态更新](interactive/bridge-concept-screen.html?lab=bayes) |
+| 第11章 | [离散与位移收敛](interactive/bridge-concept-screen.html?lab=mesh) · [均布荷载的一致节点力](interactive/bridge-concept-screen.html?lab=loadmap) |
+
+反应谱、影响矩阵、状态更新和离散收敛等实验使用教学模型；引用读数时，一起写出页面标明的假设与参数。
+
+## 二、核心视频与早期样片
+
+[110个核心视频与交互教学单元](core-resources.qmd)，每章10组，采用1920×1080、30帧/秒、中文合成讲解和字幕。视频前可查看并运行计算片段，视频下方提供完整源码。每组配趋势预测、目标调参、条件判断与开放迁移题；[跨课程类比页](interactive/thinking-analogies.html)提供同步并排比较。
+
+### 早期概念样片（保留参考）
+
+这15段早期概念动画没有旁白，每段约45—57 s，只呈现一个主要关系。可以先看图上的变化，再暂停核对中文标注。
+
+<div class="embed-wrap tall"><iframe loading="lazy" src="interactive/video-gallery.html" title="桥梁工程概念短视频系列"></iframe></div>
+
+[在独立窗口打开概念短视频系列](interactive/video-gallery.html){.btn .btn-primary target="_blank"}
+
+| 编号范围 | 内容 | 对应章节 |
+|---|---|---|
+| M01—M05 | 力流、尺度、偏心受压、预应力与作用组合 | 第1—3章 |
+| M06—M11 | 影响线、箱梁、拱、斜拉、悬索与温度约束 | 第4—8章 |
+| M12—M15 | 模态与风、时变可靠度、有限元模型层级 | 第9—11章 |
+
+早期样片分辨率为854×480、15 fps。视频中的数值用于观察关系；比较时，请记录所用参数。
+
+## 三、受控提示词与计算助手
+
+使用AI协助学习时，写清任务、已知条件、单位、假设、所需输出、检查方法，以及哪些缺失信息不能猜测。可以按下面四类任务提出要求：
+
+1. **概念解释模板**：要求指出真实构件、理想模型、荷载路径、核心关系和适用边界；
+2. **公式与程序模板**：要求逐一定义符号和单位，保留公式来源，输出可复算数据并进行量纲、平衡和极限情况检查；
+3. **模型审查模板**：输入单元、材料、截面、连接、边界、作用、施工阶段和目标响应，输出缺失项、异常项及验证方案；
+4. **图表说明模板**：读取原始数据和绘图脚本，说明坐标、量纲、参数范围、图形所支持的结论及不可外推范围。
+
+所有工具输出均作为待核材料。规范系数、工程参数、桥梁事故事实和设计结论应回查原始文件并由教师或设计责任人确认；提示词、模型版本和人工修改记录随作业或案例一并提交。
+
+## 四、从三维外形走到计算模型 {#四bridge-modeler-skill}
+
+先打开[模型层级实验](interactive/ch10-bridge-fem-hierarchy.html)，比较外形、构件和计算模型分别保留了什么。自己建模时，先识别桥型和构件，再列尺寸与连接条件。按桥向$x$、横桥向$y$、竖向$z$记录坐标；显示软件使用不同坐标时，写清转换关系，再核对导出的坐标。
+
+检查模型时，把参数表、荷载路径、构件分组和节点—单元表放在一起，查找重复节点与孤立构件。OBJ外形模型、STL打印网格和有限元模型服务于不同目的；外形看起来相同，不代表连接、约束和受力也相同。使用Bridge Modeler等建模工具时，同样需要核对这些输入与输出，另行完成结构计算和适用的规范验算。
+
+## 五、使用结构分析软件时，先检查什么？ {#五midas及同类软件视频}
+
+在MIDAS或同类软件中练习时，可以依次检查以下内容。这是一份建模检查顺序，不是视频播放目录：
+
+1. 单位、坐标、材料与截面的建立及手算抽查；
+2. 节点、单元、偏置、连接和支承自由度的检查；
+3. 自重、二期恒载、温度、预应力和基础位移等基本工况；
+4. 移动荷载、影响线、车道与控制截面；
+5. 施工阶段激活、合龙、张拉及体系转换；
+6. 组合、包络、目标响应与结果导出；
+7. 平衡、闭式解、网格趋势、独立模型和运行日志；
+8. 参数批处理、版本差异与复核报告。
+
+记录软件版本、单位制、所用规范模块和模型输入。得到结果后，至少用一个手算关系或独立模型核对；仅保存软件截图还不足以让别人复算。
+
+## 六、查来源与继续阅读 {#六资源来源与更新}
+
+[图片与来源](publication-images.qmd)可用来查图的出处；[外部课程导读](course-guide.qmd)按问题列出课程、讲者和原始入口。引用资料时，记录题名、作者或机构、链接及访问日期。引用交互结果时，还应保存公式、参数和运行条件。
+
+## 七、公开课程与专题导学
+
+先选一个主题，读本书对应章节，再带着表中的问题进入原课程。国外课程的荷载与规范取值需要同本书采用的标准区分。
+
+| 主题 | 机构入口 | 对应章节 | 导学任务 |
+|---|---|---|---|
+| 结构概念与实体模型 | University of Manchester, [Seeing and Touching Structural Concepts](https://epsassets.manchester.ac.uk/structural-concepts/) | 第2、4、7、9章 | 识别演示中的工程对象、边界、唯一变化参数和可观测量；用桥梁构件重新建立模型 |
+| 桥梁工程课程体系 | NPTEL, [Bridge Engineering](https://www.nptel.ac.in/courses/105105216) | 第1—10章 | 对照桥型、构造、设计、施工和维护的课程次序，形成术语差异表 |
+| 结构设计与方案判断 | MIT OpenCourseWare, [Structural Engineering Design](https://ocw.mit.edu/courses/1-051-structural-engineering-design-fall-2003/) | 第1、10、11章 | 区分设计约束、计算模型、构件验算和工程决策，整理可迁移的方法 |
+| 有限元理论 | MIT OpenCourseWare, [Finite Element Procedures for Solids and Structures](https://ocw.mit.edu/courses/res-2-002-finite-element-procedures-for-solids-and-structures-spring-2010/) | 第11章 | 选取一个梁或板算例，复核离散、单元关系、组装、边界与收敛 |
+| 桥梁风工程案例 | WSDOT, [Tacoma Narrows Bridge History](https://wsdot.wa.gov/TNBhistory/)；FHWA, [Aerodynamic Behavior of Bridges](https://www.fhwa.dot.gov/publications/focus/13dec/13dec03.cfm) | 第9章 | 分开记录历史事实、气动机理、试验方法和后续工程措施 |
+| 桥梁维护与寿命 | FHWA, [Bridge Preservation](https://www.fhwa.dot.gov/bridge/preservation/) | 第10章 | 将预防性养护、修复、加固与更换映射到状态、性能、时点和证据 |
+
+想按具体问题选择哔哩哔哩、YouTube和其他平台的资源，可以进入[外部课程导读](course-guide.qmd)。

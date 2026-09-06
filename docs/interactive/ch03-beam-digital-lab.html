@@ -5,31 +5,31 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>梁桥数字实验室</title>
-<style>
-  :root{--ink:#17365d;--blue:#1769aa;--cyan:#168aad;--orange:#e67e22;--red:#b6403a;--paper:#f4f7fa;--line:#d8e1e8;--muted:#5b6573}
-  *{box-sizing:border-box} body{margin:0;background:var(--paper);color:#1e2933;font-family:"Microsoft YaHei","Noto Sans SC",sans-serif}
-  header{padding:18px 22px 14px;background:white;border-bottom:1px solid var(--line)}
-  h1{margin:0;color:var(--ink);font-size:25px} header p{margin:7px 0 0;color:var(--muted);line-height:1.65;font-size:14px}
-  .tabs{display:flex;gap:8px;padding:12px 22px;background:white;border-bottom:1px solid var(--line);flex-wrap:wrap}
-  button{border:1px solid #b9c7d2;background:white;color:var(--ink);border-radius:7px;padding:8px 13px;cursor:pointer;font-weight:650}
-  button.active{background:var(--ink);color:white;border-color:var(--ink)}
-  .lab{display:none;padding:16px 22px 24px}.lab.active{display:block}
-  .grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(300px,.8fr);gap:16px;align-items:start}
-  .grid>*{min-width:0}
-  .card{min-width:0;background:white;border:1px solid var(--line);border-radius:10px;padding:15px;box-shadow:0 5px 18px rgba(23,54,93,.06)}
-  .card h2,.card h3{margin:0 0 10px;color:var(--ink)}
-  .scene{width:100%;min-width:0;height:470px;border-radius:8px;overflow:hidden;background:#c5d8e5;position:relative}
-  .scene-note{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.88);padding:6px 9px;border-radius:6px;font-size:12px;color:#334155;z-index:2}
-  .controls{display:grid;gap:9px}.control label{display:flex;justify-content:space-between;font-size:13px;color:#435160}.control output{font-weight:700;color:var(--blue)}
-  input[type=range]{width:100%;accent-color:var(--blue)}
-  .metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
-  .metric{border-left:4px solid var(--blue);background:#eef5fa;padding:9px;border-radius:5px}.metric b{display:block;color:var(--ink);font-size:17px}.metric span{font-size:12px;color:var(--muted)}
-  .formula{background:#f7fafc;border:1px solid var(--line);border-radius:7px;padding:10px 12px;margin-top:12px;font-family:"Cambria Math","Times New Roman",serif;line-height:1.8}
-  .note{margin-top:12px;border-left:4px solid var(--orange);background:#fff8ef;padding:10px 12px;line-height:1.65;font-size:13px}
-  svg{width:100%;height:auto;background:white;border-radius:8px}
-  .plotline{fill:none;stroke:var(--blue);stroke-width:3}.axis{stroke:#667788;stroke-width:1.2}.guide{stroke:#b9c7d2;stroke-dasharray:5 5}.load{stroke:var(--red);stroke-width:3}.bar{fill:var(--cyan)}
-  .lesson{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.lesson div{background:#f7fafc;border:1px solid var(--line);border-radius:7px;padding:10px;font-size:13px;line-height:1.6}.lesson strong{display:block;color:var(--ink);margin-bottom:3px}
-  @media(max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}.scene{height:390px}.lesson{grid-template-columns:1fr}.lab{padding:12px}.tabs,header{padding-left:14px;padding-right:14px}}
+<style>
+  :root{--ink:#17365d;--blue:#1769aa;--cyan:#168aad;--orange:#e67e22;--red:#b6403a;--paper:#f4f7fa;--line:#d8e1e8;--muted:#5b6573}
+  *{box-sizing:border-box} body{margin:0;background:var(--paper);color:#1e2933;font-family:"Microsoft YaHei","Noto Sans SC",sans-serif}
+  header{padding:18px 22px 14px;background:white;border-bottom:1px solid var(--line)}
+  h1{margin:0;color:var(--ink);font-size:25px} header p{margin:7px 0 0;color:var(--muted);line-height:1.65;font-size:14px}
+  .tabs{display:flex;gap:8px;padding:12px 22px;background:white;border-bottom:1px solid var(--line);flex-wrap:wrap}
+  button{border:1px solid #b9c7d2;background:white;color:var(--ink);border-radius:7px;padding:8px 13px;cursor:pointer;font-weight:650}
+  button.active{background:var(--ink);color:white;border-color:var(--ink)}
+  .lab{display:none;padding:16px 22px 24px}.lab.active{display:block}
+  .grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(300px,.8fr);gap:16px;align-items:start}
+  .grid>*{min-width:0}
+  .card{min-width:0;background:white;border:1px solid var(--line);border-radius:10px;padding:15px;box-shadow:0 5px 18px rgba(23,54,93,.06)}
+  .card h2,.card h3{margin:0 0 10px;color:var(--ink)}
+  .scene{width:100%;min-width:0;height:470px;border-radius:8px;overflow:hidden;background:#c5d8e5;position:relative}
+  .scene-note{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.88);padding:6px 9px;border-radius:6px;font-size:12px;color:#334155;z-index:2}
+  .controls{display:grid;gap:9px}.control label{display:flex;justify-content:space-between;font-size:13px;color:#435160}.control output{font-weight:700;color:var(--blue)}
+  input[type=range]{width:100%;accent-color:var(--blue)}
+  .metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:12px}
+  .metric{border-left:4px solid var(--blue);background:#eef5fa;padding:9px;border-radius:5px}.metric b{display:block;color:var(--ink);font-size:17px}.metric span{font-size:12px;color:var(--muted)}
+  .formula{background:#f7fafc;border:1px solid var(--line);border-radius:7px;padding:10px 12px;margin-top:12px;font-family:"Cambria Math","Times New Roman",serif;line-height:1.8}
+  .note{margin-top:12px;border-left:4px solid var(--orange);background:#fff8ef;padding:10px 12px;line-height:1.65;font-size:13px}
+  svg{width:100%;height:auto;background:white;border-radius:8px}
+  .plotline{fill:none;stroke:var(--blue);stroke-width:3}.axis{stroke:#667788;stroke-width:1.2}.guide{stroke:#b9c7d2;stroke-dasharray:5 5}.load{stroke:var(--red);stroke-width:3}.bar{fill:var(--cyan)}
+  .lesson{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.lesson div{background:#f7fafc;border:1px solid var(--line);border-radius:7px;padding:10px;font-size:13px;line-height:1.6}.lesson strong{display:block;color:var(--ink);margin-bottom:3px}
+  @media(max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}.scene{height:390px}.lesson{grid-template-columns:1fr}.lab{padding:12px}.tabs,header{padding-left:14px;padding-right:14px}}
 </style>
 </head>
 <body>

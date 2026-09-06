@@ -6,25 +6,25 @@
 <meta content="pandoc" name="generator"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
 <title>有限元、拓扑优化与交互考核调研</title>
-<style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    /* The extra [class] is a hack that increases specificity enough to
-       override a similar rule in reveal.js */
-    ul.task-list[class]{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      font-size: inherit;
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+<style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 <link href="fem-review.css" rel="stylesheet"/>
 </head>
@@ -33,13 +33,13 @@
 <h1 class="title">有限元、拓扑优化与交互考核调研</h1>
 </header>
 <h1 id="有限元拓扑优化与交互考核教材可以怎样升级">有限元、拓扑优化与交互考核：教材可以怎样升级</h1>
-<p>调研日期：2026-09-05。范围：第 11
+<p>调研日期：2026-09-05。范围：第 11
 章模型层级、板壳、非线性及贯通案例；现有相关教具源代码；公开的一手技术资料。下文区分代码中已有的能力、本轮新增并验证的示范、尚需开发的方向，不把三维外观当作求解能力。</p>
 <p><a href="fem-workbench.html">打开新增的有限元同屏实验台</a> · <a href="plate-chain.html">板梁简化比较</a> · <a href="../core-resources.html">现有每章 10 个单元与自测</a> · <a href="fem-learning-index.html">110 个单元的交互升级对照表</a></p>
 <h2 id="一可以不用哪些简化又有哪些简化仍然存在">一、可以不用哪些简化，又有哪些简化仍然存在？</h2>
 <p>结论是：<strong>可以减少为手算服务的经验折算，直接保留需要研究的机制；不能把有限元称为“不需要模型假设”。</strong></p>
 <p>规范中的荷载取值、作用组合和性能判据，与求解方法并非同一层面。使用直接分析，并不自动取消这些要求；某项精细分析能否替代指定的简化计算，应核对适用标准与条款。本次是教学模型及技术路线调研，没有认定某项规范条文可以被省略。</p>
-<p>例如桥面板的轮载局部响应，可以直接用板壳模型求解，不必先把它折成某个宽度的梁条。它仍需要确定材料、板厚、边缘约束、与主梁的连接、轮载作用面和求解类型。网格加密只能减少相应离散误差，不能自行补上开裂或接触机制。FHWA
+<p>例如桥面板的轮载局部响应，可以直接用板壳模型求解，不必先把它折成某个宽度的梁条。它仍需要确定材料、板厚、边缘约束、与主梁的连接、轮载作用面和求解类型。网格加密只能减少相应离散误差，不能自行补上开裂或接触机制。FHWA
 的桥梁精细分析资料同时讨论模型选择、计算与验证，桥面板指南也把有限元作为精细分析方法，而非摆脱边界与材料假设的工具。<a href="https://www.fhwa.dot.gov/bridge/pubs/hif18046.pdf">精细分析手册</a>，<a href="https://www.fhwa.dot.gov/bridge/lrfd/pscusappb.cfm">桥面板精细分析指南</a>。</p>
 <table>
 <colgroup>
@@ -159,7 +159,7 @@
 <td>110 个核心单元</td>
 <td>每章 10 个，已有预测、调参目标、边界判断和迁移题</td>
 <td>作为分章任务入口与原始题库</td>
-<td>110 个单元不是 110
+<td>110 个单元不是 110
 套独立有限元求解器；并非全都已经迁移至同屏三维界面</td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@
 </tr>
 </tbody>
 </table>
-<p>现有项目中还查到“桥流·双城交通实验室”。其 README
+<p>现有项目中还查到“桥流·双城交通实验室”。其 README
 明确采用交通与建设的教学简化模型，适合交通组织、预算和建设时序活动；不能直接把车流热力或游戏验桥结果当成结构有限元承载力。三维场景可借用交互方式，结构计算须另接明确的模型。</p>
 <h2 id="三优化应该分三层讲">三、优化应该分三层讲</h2>
 <ol type="1">
@@ -179,11 +179,11 @@
 <li><strong>拓扑优化：</strong>材料在哪里存在、哪些杆件连接哪些节点，也作为变量。可以用桁架地面结构法或连续体密度法组织课程，但不能把调板厚也称为拓扑优化。</li>
 </ol>
 <p><strong>优先建议：一个二维桥梁设计域的材料布置实验。</strong>给定跨越空间、支承、不可侵占的通行区域与荷载，学生先画一版材料分布，再与优化迭代比较。输出总材料用量、柔度及迭代曲线，展示不同荷载工况为什么形成不同的传力路径。初版应明确为线弹性、体积约束下最小柔度，不把“看起来像拱”当成拱桥设计已经完成。</p>
-<p>DTU
-的公开教学代码提供了紧凑的有限元—灵敏度—过滤—更新循环，可作为课程算法起点；其教学文献也讨论二维及三维实现。过滤、最小尺度和多荷载工况应进入解释，而不是只播放材料逐渐消失的动画。<a href="https://www.topopt.mek.dtu.dk/apps-and-software">DTU
-教学软件</a>，<a href="https://arxiv.org/abs/2005.05436">99
+<p>DTU
+的公开教学代码提供了紧凑的有限元—灵敏度—过滤—更新循环，可作为课程算法起点；其教学文献也讨论二维及三维实现。过滤、最小尺度和多荷载工况应进入解释，而不是只播放材料逐渐消失的动画。<a href="https://www.topopt.mek.dtu.dk/apps-and-software">DTU
+教学软件</a>，<a href="https://arxiv.org/abs/2005.05436">99
 行新一代教学代码论文</a>。</p>
-<p><strong>桥梁专门化的下一层：</strong>桥面板加劲布置、横梁或腹板材料布置、连接局部的传力形状、索支承桥主梁均有研究价值。桥梁主梁的拓扑优化已有针对索支承桥的研究，可作为专业拓展案例。<a href="https://orbit.dtu.dk/en/publications/structural-topology-optimization-of-bridge-girders-in-cable-suppo/">DTU
+<p><strong>桥梁专门化的下一层：</strong>桥面板加劲布置、横梁或腹板材料布置、连接局部的传力形状、索支承桥主梁均有研究价值。桥梁主梁的拓扑优化已有针对索支承桥的研究，可作为专业拓展案例。<a href="https://orbit.dtu.dk/en/publications/structural-topology-optimization-of-bridge-girders-in-cable-suppo/">DTU
 桥梁主梁拓扑优化研究</a>。这些用途是根据研究对象作出的教材选题建议，不是本轮已建成的求解功能。</p>
 <p><strong>不能跳过稳定：</strong>只做最小柔度与体积约束，不能自动保证压杆或薄壁构件的屈曲性能，也不能保证疲劳、施工或制造可行性。可以在进阶单元中加入线性化屈曲约束，再讨论它与考虑初始缺陷的非线性稳定分析有何差别。<a href="https://arxiv.org/abs/2101.02973">含屈曲条件的教学优化代码论文</a>。</p>
 <p>本轮完成了算法与选题调研，<strong>尚未新增拓扑优化求解器</strong>。</p>
@@ -272,24 +272,24 @@
 </tr>
 </tbody>
 </table>
-<p>Three.js 的 OrbitControls、Raycaster、TransformControls
+<p>Three.js 的 OrbitControls、Raycaster、TransformControls
 分别支持相机控制、对象拾取与对象变换。它们提供交互基础，不自动维护结构模型的物理一致性；移动了画面中的荷载后，程序必须同步更新力向量并重新求解。<a href="https://threejs.org/docs/pages/OrbitControls.html">相机控制</a>，<a href="https://threejs.org/docs/pages/Raycaster.html">拾取</a>，<a href="https://threejs.org/docs/pages/TransformControls.html">变换控制</a>。</p>
-<p>计算应与画面刷新分开。本轮示范把有限元与极值遍历放进 Web
-Worker，计算时仍可旋转模型；工程级非线性、大规模三维优化可考虑服务端求解或经验证的降阶响应，不承诺任何模型都能逐帧实时计算。<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers">Web
+<p>计算应与画面刷新分开。本轮示范把有限元与极值遍历放进 Web
+Worker，计算时仍可旋转模型；工程级非线性、大规模三维优化可考虑服务端求解或经验证的降阶响应，不承诺任何模型都能逐帧实时计算。<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers">Web
 Worker 机制</a>。</p>
 <h2 id="五同屏的关键不是按钮数量而是共享一份状态">五、同屏的关键不是按钮数量，而是共享一份状态</h2>
 <p>建议固定屏幕结构：左侧当前任务和证据；中间三维场景；右侧物理参数；底部所选节点/构件的实际数值。代码放在可展开的区域，显示放大、相机角度与物理参数分开。</p>
-<p>数据链为：<strong>参数与模型版本 → 节点/单元/边界/荷载 → 求解 →
-结果对象 →
+<p>数据链为：<strong>参数与模型版本 → 节点/单元/边界/荷载 → 求解 →
+结果对象 →
 三维、图表、读数和判题共同读取。</strong>参数变更后，过期结果不能继续被判为新方案的答案。学习记录应含题号、输入、单位、网格、响应位置、结果、核对规则与学生解释。</p>
-<p>本轮同屏示范设 10
-道任务：旋转辨认、节点取样、显示与物理分离、反求荷载、释放约束、板梁极限对照、网格检查、最不利位置、荷载线性、模型迁移。前
-9 题可以客观核对；第 10
+<p>本轮同屏示范设 10
+道任务：旋转辨认、节点取样、显示与物理分离、反求荷载、释放约束、板梁极限对照、网格检查、最不利位置、荷载线性、模型迁移。前
+9 题可以客观核对；第 10
 题明确交由教师评价，不用字数或某个关键词冒充理解得分。所有容差都是教学核对条件。</p>
-<h2 id="六每章-10-道题怎样从已有内容升级">六、每章 10
+<h2 id="六每章-10-道题怎样从已有内容升级">六、每章 10
 道题怎样从已有内容升级？</h2>
-<p>已有 11 章各 10
-个核心单元与自测，可作为第一批分章题目，不必另建一套重复题库。已生成 110
+<p>已有 11 章各 10
+个核心单元与自测，可作为第一批分章题目，不必另建一套重复题库。已生成 110
 条对照索引，逐条指向现有教具、数值目标、预测和迁移任务。下面是逐章升级方向；这是开发安排，不表示所有能力已完成。</p>
 <table>
 <thead>
@@ -345,21 +345,21 @@ Worker 机制</a>。</p>
 </tr>
 </tbody>
 </table>
-<p>每章可以按“2 题观察辨认＋3 题操作达标＋2 题比较/找错＋2
-题逆向设计/极值＋1
+<p>每章可以按“2 题观察辨认＋3 题操作达标＋2 题比较/找错＋2
+题逆向设计/极值＋1
 题迁移解释”组织。某些章节不宜为了凑数强加有限元，仍应围绕该章真正的学习目标。</p>
 <h2 id="七桥梁游戏怎样放进教材">七、桥梁游戏怎样放进教材？</h2>
-<p>ASCE Bridge Designer Cloud Edition
-可以作为外部的“设计—车辆试验—成本迭代”练习入口。官方说明它面向教育，可在浏览器中操作钢桁架桥，并展示成本和模拟车辆试验。<a href="https://www.asce.org/career-growth/pre-college-outreach/bridge-designer">ASCE
+<p>ASCE Bridge Designer Cloud Edition
+可以作为外部的“设计—车辆试验—成本迭代”练习入口。官方说明它面向教育，可在浏览器中操作钢桁架桥，并展示成本和模拟车辆试验。<a href="https://www.asce.org/career-growth/pre-college-outreach/bridge-designer">ASCE
 官方入口</a>。</p>
-<p>有三种接法：一是打开外部游戏并提交方案与解释；二是在取得许可且服务允许嵌入时使用
-iframe；三是使用本教材自己的可控桁架求解与编辑器，实现统一题目和记录。外部游戏能打开，并不意味着教材可以读取它的内部状态或分数；跨源通信需要对方提供协议。本轮没有验证外部服务的
+<p>有三种接法：一是打开外部游戏并提交方案与解释；二是在取得许可且服务允许嵌入时使用
+iframe；三是使用本教材自己的可控桁架求解与编辑器，实现统一题目和记录。外部游戏能打开，并不意味着教材可以读取它的内部状态或分数；跨源通信需要对方提供协议。本轮没有验证外部服务的
 iframe 策略，也没有把外部游戏分数接入教材。</p>
 <p>“桥流”更适合桥址、交通和施工资源取舍；空间截面实验适合旋转与形状匹配；结构承载、稳定和最不利荷载题则接入结构模型。它们可以共享学习入口，但评分依据须与所教的对象一致。</p>
 <h2 id="八开发顺序">八、开发顺序</h2>
 <p>先让已有板、拱、影响线和空间截面共享题目与结果记录；再建设可编辑桁架与尺寸/形状优化；随后加入二维拓扑优化与多工况、稳定约束。非线性曲壳、接触、大规模三维拓扑和工程级施工阶段作为更高阶模块单独验证。</p>
-<p>本轮交付：独立思维拓展篇、实际板梁比较、同屏三维板实验与 10
-个示范任务、110
+<p>本轮交付：独立思维拓展篇、实际板梁比较、同屏三维板实验与 10
+个示范任务、110
 个已有单元升级索引、本调研说明。拓扑优化求解器、全书统一三维判题平台和外部游戏自动评分仍属于后续开发。</p>
 </body>
 </html>

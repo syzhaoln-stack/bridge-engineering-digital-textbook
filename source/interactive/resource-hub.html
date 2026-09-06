@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
-<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>数字实验入口</title><link href="bridge-lab.css" rel="stylesheet"/><style>
-.filters{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 15px}.filters button.active{background:var(--blue);border-color:var(--blue);color:#fff}.count{color:var(--muted);font-size:.88rem}.hub-card[hidden]{display:none}.hub-card em{font-style:normal;color:var(--orange);font-size:.78rem}
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>数字实验入口</title><link href="bridge-lab.css" rel="stylesheet"/><style>
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 15px}.filters button.active{background:var(--blue);border-color:var(--blue);color:#fff}.count{color:var(--muted);font-size:.88rem}.hub-card[hidden]{display:none}.hub-card em{font-style:normal;color:var(--orange);font-size:.78rem}
 </style></head><body><main>
 <header><div><h1>数字实验入口</h1><p>每个页面只承担一个主要观察任务。三维页面可旋转、缩放与平移；参数页改变一个变量后读取同步结果。</p></div><div class="toolbar"><a class="button-link" href="../index.html" target="_top">返回教材</a></div></header>
 <div class="filters" id="filters"><button aria-pressed="true" class="active" data-filter="all" type="button">全部</button><button aria-pressed="false" data-filter="direct" type="button">拖动/调参</button><button aria-pressed="false" data-filter="three" type="button">三维旋转</button><button aria-pressed="false" data-filter="prob" type="button">概率与证据</button><button aria-pressed="false" data-filter="fem" type="button">有限元</button><button aria-pressed="false" data-filter="video" type="button">短视频</button></div>
@@ -46,8 +46,8 @@
 <a class="hub-card" data-tags="three fem direct" href="ch10-bridge-section-spatial-lab.html"><strong>11-4　截面与空间受力</strong><span>旋转、剖切并比较截面力与空间应力。</span><em class="tag">三维</em><em class="tag">空间模型</em></a>
 <a class="hub-card" data-tags="fem direct" href="bridge-concept-screen.html?lab=mesh"><strong>11-5　离散与位移收敛</strong><span>增加积分区段，观察数值结果趋近解析值。</span><em class="tag">收敛</em></a>
 <a class="hub-card" data-tags="fem direct" href="bridge-concept-screen.html?lab=loadmap"><strong>11-6　一致节点力</strong><span>改变均布荷载，核对映射后的合力与一阶矩。</span><em class="tag">荷载映射</em></a>
-</section></main><script>
-const cards=[...document.querySelectorAll('.hub-card')],count=document.getElementById('count');function apply(f){let n=0;cards.forEach(c=>{const ok=f==='all'||c.dataset.tags.split(' ').includes(f);c.hidden=!ok;if(ok)n++});count.textContent=`当前显示 ${n} 组已实现资源；新增110个配视频的核心学习单元，另保留原专题交互与15段早期样片。`}document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-filter]').forEach(x=>{const active=x===b;x.classList.toggle('active',active);x.setAttribute('aria-pressed',String(active))});apply(b.dataset.filter)});apply('all');
+</section></main><script>
+const cards=[...document.querySelectorAll('.hub-card')],count=document.getElementById('count');function apply(f){let n=0;cards.forEach(c=>{const ok=f==='all'||c.dataset.tags.split(' ').includes(f);c.hidden=!ok;if(ok)n++});count.textContent=`当前显示 ${n} 组已实现资源；新增110个配视频的核心学习单元，另保留原专题交互与15段早期样片。`}document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-filter]').forEach(x=>{const active=x===b;x.classList.toggle('active',active);x.setAttribute('aria-pressed',String(active))});apply(b.dataset.filter)});apply('all');
 </script>
 <!-- SOURCE-VIEW START -->
 <script src="source-snapshots/resource-hub.js"></script>

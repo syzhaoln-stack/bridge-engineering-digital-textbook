@@ -5,56 +5,56 @@
 <meta content="quarto-1.9.38" name="generator"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
 <title>6  斜拉桥设计 – 桥梁工程智能设计</title>
-<style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
@@ -74,61 +74,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
 <link append-hash="true" data-mode="light" href="../site_libs/bootstrap/bootstrap-c614dc152840027ed1d225942eae4f22.min.css" id="quarto-bootstrap" rel="stylesheet"/>
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "没有结果",
-    "search-matching-documents-text": "匹配的文档",
-    "search-copy-link-title": "复制搜索链接",
-    "search-hide-matches-text": "隐藏其它匹配结果",
-    "search-more-match-text": "更多匹配结果",
-    "search-more-matches-text": "更多匹配结果",
-    "search-clear-button-title": "清除",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "取消",
-    "search-submit-button-title": "提交",
-    "search-label": "搜索"
-  }
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
 </script>
 <link href="../styles.css" rel="stylesheet"/>
 
@@ -308,7 +308,7 @@ window.Quarto = {
 <li class="sidebar-item">
 <div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../legacy-tools.html">
-<span class="menu-text">从旧版接续的两个实验</span></a>
+<span class="menu-text">从旧版接续的实验与游戏</span></a>
 </div>
 </li>
 </ul>
@@ -375,185 +375,185 @@ window.Quarto = {
 <div class="core-route" id="core-route">
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry">
-<p>
-先从一个看得见的问题开始
+<p>
+先从一个看得见的问题开始
 </p>
-<h3 class="anchored">
-只调整一个地方，为什么别的位置也会跟着变？
+<h3 class="anchored">
+只调整一个地方，为什么别的位置也会跟着变？
 </h3>
-<p>
-改变第一控制量，比较两个控制点的响应，留意没有直接调整的那一处。
+<p>
+改变第一控制量，比较两个控制点的响应，留意没有直接调整的那一处。
 </p>
 <a href="../interactive/learning-map.html?chapter=ch05">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
-<h2 class="anchored">
-本章的核心思考
+<h2 class="anchored">
+本章的核心思考
 </h2>
-<p class="core-thesis">
-斜拉桥的核心是耦合响应与可控性。
+<p class="core-thesis">
+斜拉桥的核心是耦合响应与可控性。
 </p>
 <ol>
-<li>
-用索倾角理解索力及其水平分量。
+<li>
+用索倾角理解索力及其水平分量。
 </li>
-<li>
-观察调整一根索对多个控制点的影响。
+<li>
+观察调整一根索对多个控制点的影响。
 </li>
-<li>
-检查控制方向独立性，再谈优化和反算。
+<li>
+检查控制方向独立性，再谈优化和反算。
 </li>
 </ol>
 <div class="core-analogy">
-<h3 class="anchored">
-跨课程类比
+<h3 class="anchored">
+跨课程类比
 </h3>
-<p>
-结构力学单位响应 → 索力影响矩阵；线性代数 → 可控性
+<p>
+结构力学单位响应 → 索力影响矩阵；线性代数 → 可控性
 </p>
 <p>
-<strong>反例与边界：</strong>固定影响矩阵只在相应状态附近有效；不同施工阶段不能沿用未解释的同一矩阵。
+<strong>反例与边界：</strong>固定影响矩阵只在相应状态附近有效；不同施工阶段不能沿用未解释的同一矩阵。
 </p>
 </div>
-<p>
-建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
+<p>
+建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
 </p>
 <div class="core-unit-grid">
 <article>
-<p class="core-tag">
-C06U01 · 课堂核心
+<p class="core-tag">
+C06U01 · 课堂核心
 </p>
-<h3 class="anchored">
-拉索把竖向荷载传给塔与梁
+<h3 class="anchored">
+拉索把竖向荷载传给塔与梁
 </h3>
-<p>
-相同竖向分量下，索倾角减小会提高索力和水平分量。
+<p>
+相同竖向分量下，索倾角减小会提高索力和水平分量。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C06U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U01&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C06U02 · 课堂核心
+<p class="core-tag">
+C06U02 · 课堂核心
 </p>
-<h3 class="anchored">
-调整一根索会影响多个输出
+<h3 class="anchored">
+调整一根索会影响多个输出
 </h3>
-<p>
-索力增量通过影响矩阵同时改变多个控制点响应。
+<p>
+索力增量通过影响矩阵同时改变多个控制点响应。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C06U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U02&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C06U03 · 课前/课后迁移
+<p class="core-tag">
+C06U03 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-成桥目标是多个条件的共同满足
+<h3 class="anchored">
+成桥目标是多个条件的共同满足
 </h3>
-<p>
-不同控制变量对应不同响应方向，必须同时查看耦合输出。
+<p>
+不同控制变量对应不同响应方向，必须同时查看耦合输出。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C06U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U03&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C06U04 · 课堂核心
+<p class="core-tag">
+C06U04 · 课堂核心
 </p>
-<h3 class="anchored">
-影响列接近时，控制就不稳定
+<h3 class="anchored">
+影响列接近时，控制就不稳定
 </h3>
-<p>
-两个控制变量作用方向越接近，为实现某些目标所需调整量越大。
+<p>
+两个控制变量作用方向越接近，为实现某些目标所需调整量越大。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C06U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U04&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C06U05 · 课前/课后迁移
+<p class="core-tag">
+C06U05 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-主梁轴压仍要和弯矩共同判断
+<h3 class="anchored">
+主梁轴压仍要和弯矩共同判断
 </h3>
-<p>
-索的水平分量产生轴压，不能因此省略主梁弯矩与稳定校核。
+<p>
+索的水平分量产生轴压，不能因此省略主梁弯矩与稳定校核。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C06U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U05&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C06U06 · 课前/课后迁移
+<p class="core-tag">
+C06U06 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-索越平，水平力越大
+<h3 class="anchored">
+索越平，水平力越大
 </h3>
-<p>
-竖向承载需求固定时，降低倾角显著提高水平分量。
+<p>
+竖向承载需求固定时，降低倾角显著提高水平分量。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C06U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U06&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C06U07 · 课前/课后迁移
+<p class="core-tag">
+C06U07 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-温度与约束改变成桥状态
+<h3 class="anchored">
+温度与约束改变成桥状态
 </h3>
-<p>
-温度变形能否自由发生由体系约束决定，成桥状态依赖相应条件。
+<p>
+温度变形能否自由发生由体系约束决定，成桥状态依赖相应条件。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C06U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U07&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C06U08 · 课前/课后迁移
+<p class="core-tag">
+C06U08 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-阻尼与刚度解决不同问题
+<h3 class="anchored">
+阻尼与刚度解决不同问题
 </h3>
-<p>
-增加阻尼主要降低共振附近的动力放大，不能等同于提高静力刚度。
+<p>
+增加阻尼主要降低共振附近的动力放大，不能等同于提高静力刚度。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C06U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U08&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C06U09 · 课前/课后迁移
+<p class="core-tag">
+C06U09 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-施工阶段不能沿用成桥有效长度
+<h3 class="anchored">
+施工阶段不能沿用成桥有效长度
 </h3>
-<p>
-临时横向支承改变有效长度，从而显著改变理想临界力。
+<p>
+临时横向支承改变有效长度，从而显著改变理想临界力。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C06U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U09&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C06U10 · 课前/课后迁移
+<p class="core-tag">
+C06U10 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-调索必须留下输入输出证据
+<h3 class="anchored">
+调索必须留下输入输出证据
 </h3>
-<p>
-保存调整前后响应和索力增量，才能判断模型预测是否得到验证。
+<p>
+保存调整前后响应和索力增量，才能判断模型预测是否得到验证。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C06U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C06U10&amp;view=video" target="_blank">观看短视频</a>
@@ -572,8 +572,8 @@ C06U10 · 课前/课后迁移
 <figure class="chapter-video-card figure">
 <video controls="" playsinline="" poster="../assets/videos/manim/posters/M09_stay_matrix.png" preload="metadata" src="../assets/videos/manim/M09_stay_matrix.mp4">
 </video>
-<figcaption>
-M09　斜拉索影响矩阵与成桥状态
+<figcaption>
+M09　斜拉索影响矩阵与成桥状态
 </figcaption>
 </figure>
 </div>
@@ -587,8 +587,8 @@ M09　斜拉索影响矩阵与成桥状态
 <div aria-describedby="fig-ch05-load-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 6.1: 斜拉桥作用传递路径。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-load-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 6.1: 斜拉桥作用传递路径
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-load-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 6.1: 斜拉桥作用传递路径
 </figcaption>
 </figure>
 </div>
@@ -601,8 +601,8 @@ M09　斜拉索影响矩阵与成桥状态
 <div aria-describedby="fig-ch05-member-force-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 6.2: 斜拉桥基本构件受力。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-member-force-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 6.2: 斜拉桥基本构件受力
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-member-force-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 6.2: 斜拉桥基本构件受力
 </figcaption>
 </figure>
 </div>
@@ -645,8 +645,8 @@ M09　斜拉索影响矩阵与成桥状态
 <div aria-describedby="fig-ch05-moment-compare-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 6.3: 连续梁与斜拉桥恒载弯矩示意比较。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-moment-compare-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 6.3: 连续梁与斜拉桥恒载弯矩示意比较
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-moment-compare-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 6.3: 连续梁与斜拉桥恒载弯矩示意比较
 </figcaption>
 </figure>
 </div>
@@ -659,8 +659,8 @@ M09　斜拉索影响矩阵与成桥状态
 <div aria-describedby="fig-ch05-girder-axial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 6.4: 斜拉桥主梁轴力分布示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-girder-axial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 6.4: 斜拉桥主梁轴力分布示意
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-girder-axial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 6.4: 斜拉桥主梁轴力分布示意
 </figcaption>
 </figure>
 </div>
@@ -720,9 +720,9 @@ M09　斜拉索影响矩阵与成桥状态
 <p>在线性化分析中，设索力调整量为 <span class="math inline">\(\Delta\mathbf T\)</span>，响应变化为</p>
 <p><span class="math display">\[\Delta\mathbf r=\mathbf A\Delta\mathbf T,\]</span></p>
 <p>其中 <span class="math inline">\(\mathbf A\)</span> 为索力影响矩阵。给定目标响应 <span class="math inline">\(\mathbf r^*\)</span>，可建立加权最小二乘问题：</p>
-<p><span class="math display">\[
-\min_{\Delta\mathbf T}
-\left\|\mathbf W(\mathbf r_0+\mathbf A\Delta\mathbf T-\mathbf r^*)\right\|_2^2,
+<p><span class="math display">\[
+\min_{\Delta\mathbf T}
+\left\|\mathbf W(\mathbf r_0+\mathbf A\Delta\mathbf T-\mathbf r^*)\right\|_2^2,
 \]</span></p>
 <p>并附加索力上下限、相邻索力差、塔顶位移、端支点反力等约束。权重矩阵 <span class="math inline">\(\mathbf W\)</span> 表示不同控制量的重要程度，其取值应说明依据并开展敏感性比较。</p>
 </section>
@@ -814,8 +814,8 @@ M09　斜拉索影响矩阵与成桥状态
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-提示
+<div class="callout-title-container flex-fill">
+提示
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -897,28 +897,28 @@ M09　斜拉索影响矩阵与成桥状态
 <h4 class="anchored" data-anchor-id="共同平衡与相对刚度" data-number="6.7.3.1"><span class="header-section-number">6.7.3.1</span> 共同平衡与相对刚度</h4>
 <p>斜拉桥不是“梁上增加若干拉杆”的普通连续梁。每根拉索把梁上锚点与塔上锚点连接，其索力变化同时作用于主梁和桥塔；主梁挠度、桥塔偏位又改变拉索长度和方向，从而反过来改变索力。边跨、辅助墩和端锚索则为主跨活载与恒载提供平衡。体系响应由几何、初始索力和索—塔—梁相对刚度共同决定。</p>
 <p>对第 <span class="math inline">\(i\)</span> 根拉索，设梁端锚点与塔端锚点的空间单位向量为 <span class="math inline">\(\boldsymbol n_i\)</span>，索力为 <span class="math inline">\(T_i\)</span>（N或kN），则两端节点作用为大小相等、方向相反的</p>
-<p><span class="math display">\[
-\boldsymbol f_i=T_i\boldsymbol n_i.
+<p><span class="math display">\[
+\boldsymbol f_i=T_i\boldsymbol n_i.
 \]</span></p>
 <p>在顺桥竖直平面内，若索与水平线夹角为 <span class="math inline">\(\theta_i\)</span>，则竖向分量 <span class="math inline">\(V_i=T_i\sin\theta_i\)</span>，水平分量 <span class="math inline">\(H_i=T_i\cos\theta_i\)</span>。<span class="math inline">\(V_i\)</span> 形成对主梁的弹性支承，<span class="math inline">\(H_i\)</span> 在主梁中累积为轴向压力，并在桥塔两侧不平衡时形成塔弯矩。空间索面还产生横向分量，必须在三维坐标中保持节点合力和合力矩平衡。</p>
 <p>在给定成桥平衡状态附近，增量方程可写为</p>
-<p><span class="math display">\[
-\begin{bmatrix}
-\boldsymbol K_{bb}&amp;\boldsymbol K_{bt}&amp;\boldsymbol K_{bc}\\
-\boldsymbol K_{tb}&amp;\boldsymbol K_{tt}&amp;\boldsymbol K_{tc}\\
-\boldsymbol K_{cb}&amp;\boldsymbol K_{ct}&amp;\boldsymbol K_{cc}
-\end{bmatrix}
-\begin{bmatrix}
-\Delta\boldsymbol u_b\\
-\Delta\boldsymbol u_t\\
-\Delta\boldsymbol u_c
-\end{bmatrix}
-=
-\begin{bmatrix}
-\Delta\boldsymbol F_b\\
-\Delta\boldsymbol F_t\\
-\Delta\boldsymbol F_c
-\end{bmatrix},
+<p><span class="math display">\[
+\begin{bmatrix}
+\boldsymbol K_{bb}&amp;\boldsymbol K_{bt}&amp;\boldsymbol K_{bc}\\
+\boldsymbol K_{tb}&amp;\boldsymbol K_{tt}&amp;\boldsymbol K_{tc}\\
+\boldsymbol K_{cb}&amp;\boldsymbol K_{ct}&amp;\boldsymbol K_{cc}
+\end{bmatrix}
+\begin{bmatrix}
+\Delta\boldsymbol u_b\\
+\Delta\boldsymbol u_t\\
+\Delta\boldsymbol u_c
+\end{bmatrix}
+=
+\begin{bmatrix}
+\Delta\boldsymbol F_b\\
+\Delta\boldsymbol F_t\\
+\Delta\boldsymbol F_c
+\end{bmatrix},
 \]</span></p>
 <p>其中，下标 <span class="math inline">\(b,t,c\)</span> 分别代表主梁、桥塔和拉索，自由度位移单位为 m 或 rad，刚度矩阵相应分块表示直接刚度与耦合刚度。公式仅用于说明耦合关系；索的几何刚度、主梁轴力二阶效应和支座非线性会使切线刚度随状态改变。</p>
 </section>
@@ -1005,32 +1005,32 @@ M09　斜拉索影响矩阵与成桥状态
 <h4 class="anchored" data-anchor-id="状态目标和约束" data-number="6.7.5.1"><span class="header-section-number">6.7.5.1</span> 状态目标和约束</h4>
 <p>合理成桥状态应同时描述几何和内力。常用控制量包括主梁控制截面弯矩、梁面线形、桥塔偏位与弯矩、索力及其相邻变化、端支点反力和基础反力。目标不宜设置为“所有主梁弯矩为零”，因为主梁仍需承担锚点间局部作用、活载和空间效应；把过多控制点强制为零还可能造成索力异常或端支点上拔。</p>
 <p>设初始响应为 <span class="math inline">\(\boldsymbol r_0\)</span>，索力修正为 <span class="math inline">\(\Delta\boldsymbol T\)</span>，线性化影响矩阵为 <span class="math inline">\(\boldsymbol A\)</span>，则</p>
-<p><span class="math display">\[
-\boldsymbol r=\boldsymbol r_0+\boldsymbol A\Delta\boldsymbol T.
+<p><span class="math display">\[
+\boldsymbol r=\boldsymbol r_0+\boldsymbol A\Delta\boldsymbol T.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol A\)</span> 的第 <span class="math inline">\(i\)</span> 列可由第 <span class="math inline">\(i\)</span> 根索施加单位索力增量并重新平衡后得到。由于响应中弯矩、位移和反力单位不同，优化前应采用具有物理依据的尺度矩阵 <span class="math inline">\(\boldsymbol W_r\)</span> 进行归一化。一个带正则项的教学目标为</p>
-<p><span class="math display">\[
-\min_{\Delta\boldsymbol T}
-\left\|\boldsymbol W_r
-(\boldsymbol r_0+\boldsymbol A\Delta\boldsymbol T-\boldsymbol r^*)
-\right\|_2^2
-+\lambda\left\|\boldsymbol W_T\Delta\boldsymbol T\right\|_2^2,
+<p><span class="math display">\[
+\min_{\Delta\boldsymbol T}
+\left\|\boldsymbol W_r
+(\boldsymbol r_0+\boldsymbol A\Delta\boldsymbol T-\boldsymbol r^*)
+\right\|_2^2
++\lambda\left\|\boldsymbol W_T\Delta\boldsymbol T\right\|_2^2,
 \]</span></p>
 <p>并满足</p>
-<p><span class="math display">\[
-\boldsymbol T_{\min}\le
-\boldsymbol T_0+\Delta\boldsymbol T
-\le\boldsymbol T_{\max},
+<p><span class="math display">\[
+\boldsymbol T_{\min}\le
+\boldsymbol T_0+\Delta\boldsymbol T
+\le\boldsymbol T_{\max},
 \]</span></p>
 <p>以及端支点反力、塔顶位移、相邻索力变化和施工张拉能力等约束。<span class="math inline">\(\lambda\)</span> 为正则化权重，防止为减少很小的目标误差而产生过大的索力调整。上下限和接受准则必须从项目采用标准、材料、锚具与施工能力确定，本教材不预置规范数值。</p>
 </section>
 <section class="level4" data-number="6.7.5.2" id="影响矩阵的质量检查">
 <h4 class="anchored" data-anchor-id="影响矩阵的质量检查" data-number="6.7.5.2"><span class="header-section-number">6.7.5.2</span> 影响矩阵的质量检查</h4>
 <p>影响矩阵计算前应固定成桥模型、边界和参考状态。单位索力增量既不能过小而被数值误差淹没，也不能过大而越出线性化邻域；可用正、负两次扰动形成中心差分：</p>
-<p><span class="math display">\[
-\boldsymbol a_i\approx
-\frac{\boldsymbol r(\boldsymbol T_0+\Delta T_i\boldsymbol e_i)
--\boldsymbol r(\boldsymbol T_0-\Delta T_i\boldsymbol e_i)}{2\Delta T_i}.
+<p><span class="math display">\[
+\boldsymbol a_i\approx
+\frac{\boldsymbol r(\boldsymbol T_0+\Delta T_i\boldsymbol e_i)
+-\boldsymbol r(\boldsymbol T_0-\Delta T_i\boldsymbol e_i)}{2\Delta T_i}.
 \]</span></p>
 <p>若正负扰动得到的斜率明显不同，说明几何或边界非线性不可忽略，线性矩阵只可用于生成初值。矩阵列还应检查相邻索响应的连续趋势、对称结构中的镜像关系和总体平衡。条件数过大表示某些索力调整对选定目标的作用高度相似，解可能对测量误差和权重敏感，此时应减少控制变量、增加约束或采用索组调整。</p>
 </section>
@@ -1049,8 +1049,8 @@ M09　斜拉索影响矩阵与成桥状态
 <div aria-describedby="fig-ch05-stay-matrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/staymatrix.svg" style="width:82.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-stay-matrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 6.5: 索力影响矩阵及选中索列的静态基准图
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch05-stay-matrix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 6.5: 索力影响矩阵及选中索列的静态基准图
 </figcaption>
 </figure>
 </div>
@@ -1061,11 +1061,11 @@ M09　斜拉索影响矩阵与成桥状态
 <section class="level4" data-number="6.7.6.1" id="状态递推">
 <h4 class="anchored" data-anchor-id="状态递推" data-number="6.7.6.1"><span class="header-section-number">6.7.6.1</span> 状态递推</h4>
 <p>正装分析按真实事件顺序计算。第 <span class="math inline">\(k\)</span> 阶段状态可概括为</p>
-<p><span class="math display">\[
-\boldsymbol q_k=
-\mathcal F_k(\boldsymbol q_{k-1},
-\Delta\boldsymbol F_k,\Delta\boldsymbol T_k,
-\Delta t_k,\Theta_k),
+<p><span class="math display">\[
+\boldsymbol q_k=
+\mathcal F_k(\boldsymbol q_{k-1},
+\Delta\boldsymbol F_k,\Delta\boldsymbol T_k,
+\Delta t_k,\Theta_k),
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol q\)</span> 包含几何、内力、索力和材料状态；<span class="math inline">\(\Delta\boldsymbol F_k\)</span> 为新增构件与施工作用；<span class="math inline">\(\Delta\boldsymbol T_k\)</span> 为本阶段张拉；<span class="math inline">\(\Delta t_k\)</span> 为时间增量；<span class="math inline">\(\Theta_k\)</span> 为温度、材料龄期和边界等参数。对混凝土主梁，<span class="math inline">\(\mathcal F_k\)</span> 还应反映收缩徐变和弹性模量发展；对钢梁，需考虑制造线形、吊装温度和连接形成。</p>
 <p>倒拆分析从目标成桥状态逆向移除构件和作用，可辅助推求安装标高、制造预拱度和索的控制长度。严格倒拆要求过程可逆，而混凝土时变、摩擦、锚具回缩、接触和塑性等并不满足这一条件。因此倒拆用于生成初始控制值，随后必须用正装模型验证。</p>
@@ -1073,10 +1073,10 @@ M09　斜拉索影响矩阵与成桥状态
 <section class="level4" data-number="6.7.6.2" id="无应力长度与无应力几何">
 <h4 class="anchored" data-anchor-id="无应力长度与无应力几何" data-number="6.7.6.2"><span class="header-section-number">6.7.6.2</span> 无应力长度与无应力几何</h4>
 <p>无应力长度是拉索在规定参考温度、无轴力状态下的材料长度。若暂忽略索自重垂度、锚具变形和温度，仅按均匀弹性直杆近似，当前几何长度 <span class="math inline">\(l_g\)</span> 与无应力长度 <span class="math inline">\(l_0\)</span> 有</p>
-<p><span class="math display">\[
-l_g\approx l_0\left(1+\frac{T}{EA}\right),
-\qquad
-l_0\approx\frac{l_g}{1+T/(EA)},
+<p><span class="math display">\[
+l_g\approx l_0\left(1+\frac{T}{EA}\right),
+\qquad
+l_0\approx\frac{l_g}{1+T/(EA)},
 \]</span></p>
 <p>其中，<span class="math inline">\(T\)</span> 为 N，<span class="math inline">\(E\)</span> 为 Pa，<span class="math inline">\(A\)</span> 为 m²，<span class="math inline">\(l_g,l_0\)</span> 为 m。长索应考虑自重垂度和悬链线关系；现场控制还要统一锚具基准点、温度修正和张拉端回缩。</p>
 <p>主梁节段的无应力几何是构件在装配前的制造几何，包含预拱度、切线方向、节段长度和接缝角度。它与成桥设计线形、某一施工阶段实测线形不是同一对象。成果表应明确：坐标采用哪个温度基准；是否含弹性压缩、徐变和施工设备变形；控制点位于梁顶、梁底还是结构轴线。</p>
@@ -1089,9 +1089,9 @@ l_0\approx\frac{l_g}{1+T/(EA)},
 <section class="level3" data-number="6.7.7" id="活载几何非线性与组合边界">
 <h3 class="anchored" data-anchor-id="活载几何非线性与组合边界" data-number="6.7.7"><span class="header-section-number">6.7.7</span> 活载、几何非线性与组合边界</h3>
 <p>斜拉桥成桥状态含显著初始索力和主梁轴向压力。活载响应应在该平衡状态附近求解。对当前状态，增量方程可写为</p>
-<p><span class="math display">\[
-\boldsymbol K_T(\boldsymbol u,\boldsymbol T)
-\Delta\boldsymbol u=\Delta\boldsymbol F,
+<p><span class="math display">\[
+\boldsymbol K_T(\boldsymbol u,\boldsymbol T)
+\Delta\boldsymbol u=\Delta\boldsymbol F,
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol K_T\)</span> 为包含材料刚度与几何刚度的切线矩阵，随位移 <span class="math inline">\(\boldsymbol u\)</span> 和索力 <span class="math inline">\(\boldsymbol T\)</span> 变化。若活载引起的几何变化较小，可在固定切线状态上用影响线或影响面近似；若索垂度、主梁二阶效应、支座状态切换或大位移显著，应在各有效布载情景下直接进行非线性分析。</p>
 <p>几何非线性主要来自三处：拉索的初始垂度使轴向刚度与索力相关；主梁受压产生梁柱效应；桥塔偏位改变索角和水平分力。使用等效弹性模量的索单元时，应记录适用索力区间；使用悬链线索单元时，应定义单位长度质量、无应力长度、温度和初始几何。把拉索建成只依赖 <span class="math inline">\(EA/l\)</span> 的普通桁架，在长索或低索力状态可能高估刚度。</p>
@@ -1107,12 +1107,12 @@ l_0\approx\frac{l_g}{1+T/(EA)},
 <section class="level4" data-number="6.7.8.2" id="应力幅和累积损伤接口">
 <h4 class="anchored" data-anchor-id="应力幅和累积损伤接口" data-number="6.7.8.2"><span class="header-section-number">6.7.8.2</span> 应力幅和累积损伤接口</h4>
 <p>若一根索在交通作用下的索力范围为 <span class="math inline">\(\Delta T\)</span>（N），以有效金属面积 <span class="math inline">\(A_s\)</span>（m²）形成的平均应力范围为</p>
-<p><span class="math display">\[
-\Delta\sigma=\frac{\Delta T}{A_s},
+<p><span class="math display">\[
+\Delta\sigma=\frac{\Delta T}{A_s},
 \]</span></p>
 <p>单位为 Pa。锚具、焊接细节和局部构件的疲劳应力范围需由相应局部模型或试验定义，不能用索体平均应力代替。对离散应力谱，可用 Miner 线性累积形式说明数据接口：</p>
-<p><span class="math display">\[
-D=\sum_{j=1}^{m}\frac{n_j}{N_j},
+<p><span class="math display">\[
+D=\sum_{j=1}^{m}\frac{n_j}{N_j},
 \]</span></p>
 <p>其中，<span class="math inline">\(n_j\)</span> 为第 <span class="math inline">\(j\)</span> 档实计或等效循环数，<span class="math inline">\(N_j\)</span> 为相应细节和应力范围下的允许循环数。<span class="math inline">\(S\)</span>—<span class="math inline">\(N\)</span> 曲线、应力定义、截止限及验算准则应由项目采用的斜拉桥、钢结构或产品标准查取，本章不提供替代数值。</p>
 <p>疲劳证据链应保留交通或监测数据的时间范围、循环计数方法、动力放大处理、腐蚀状态、锚具类别和模型版本。索体、锚具、阻尼器连接和梁塔锚固区可能由不同细节控制，应分别建账。</p>
@@ -1124,17 +1124,17 @@ D=\sum_{j=1}^{m}\frac{n_j}{N_j},
 <h4 class="anchored" data-anchor-id="监控闭环" data-number="6.7.9.1"><span class="header-section-number">6.7.9.1</span> 监控闭环</h4>
 <p>施工监控的目标是让实际结构沿可接受路径到达目标成桥状态。流程为：施工前预测；完成事件后测量；进行温度和时间基准修正；比较实测与预测；识别可能参数；形成下一阶段控制指令；在模型中预演并复核。测量偏差不直接等于施工误差，必须先排除测点移动、温度、仪器标定和事件记录不一致。</p>
 <p>观测模型可写为</p>
-<p><span class="math display">\[
-\boldsymbol y=
-\boldsymbol h(\boldsymbol p)+\boldsymbol\varepsilon,
+<p><span class="math display">\[
+\boldsymbol y=
+\boldsymbol h(\boldsymbol p)+\boldsymbol\varepsilon,
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol y\)</span> 为梁面高程、塔顶坐标、索力和应变等观测，<span class="math inline">\(\boldsymbol p\)</span> 为节段重量、弹性模量、温度、索力和边界参数，<span class="math inline">\(\boldsymbol\varepsilon\)</span> 为测量与模型误差。在当前参数附近线性化并采用加权正则估计：</p>
-<p><span class="math display">\[
-\Delta\boldsymbol p=
-\left(\boldsymbol S_p^{\mathrm T}\boldsymbol R^{-1}\boldsymbol S_p
-+\boldsymbol\Lambda\right)^{-1}
-\boldsymbol S_p^{\mathrm T}\boldsymbol R^{-1}
-(\boldsymbol y-\boldsymbol y_p),
+<p><span class="math display">\[
+\Delta\boldsymbol p=
+\left(\boldsymbol S_p^{\mathrm T}\boldsymbol R^{-1}\boldsymbol S_p
++\boldsymbol\Lambda\right)^{-1}
+\boldsymbol S_p^{\mathrm T}\boldsymbol R^{-1}
+(\boldsymbol y-\boldsymbol y_p),
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol S_p\)</span> 为敏感矩阵，<span class="math inline">\(\boldsymbol R\)</span> 为观测误差协方差，<span class="math inline">\(\boldsymbol\Lambda\)</span> 为正则矩阵。矩阵形式用于说明“观测误差和参数可识别性必须进入修正”，并不要求现场每次均采用该算法。参数修正后要重新预测全部控制量；若多个参数高度相关，应保留不确定范围而非强行给出唯一值。</p>
 <div class="source-note">
@@ -1158,8 +1158,8 @@ D=\sum_{j=1}^{m}\frac{n_j}{N_j},
 <section class="level4" data-number="6.7.10.2" id="第一步塔高与索力分解">
 <h4 class="anchored" data-anchor-id="第一步塔高与索力分解" data-number="6.7.10.2"><span class="header-section-number">6.7.10.2</span> 第一步：塔高与索力分解</h4>
 <p>取距桥塔水平距离 <span class="math inline">\(x=180\,\mathrm m\)</span> 的一根代表索，其承担一个索距内的教学竖向作用</p>
-<p><span class="math display">\[
-V=qa=220\times12=2640\,\mathrm{kN}.
+<p><span class="math display">\[
+V=qa=220\times12=2640\,\mathrm{kN}.
 \]</span></p>
 <p>忽略索自重、连续梁分配和两索面空间差异，仅用 <span class="math inline">\(T=V/\sin\theta\)</span> 比较塔高。因 <span class="math inline">\(\tan\theta=h/x\)</span>，有</p>
 <table class="caption-top table">
@@ -1228,43 +1228,43 @@ V=qa=220\times12=2640\,\mathrm{kN}.
 <section class="level4" data-number="6.7.10.4" id="第三步建立教学索力影响矩阵">
 <h4 class="anchored" data-anchor-id="第三步建立教学索力影响矩阵" data-number="6.7.10.4"><span class="header-section-number">6.7.10.4</span> 第三步：建立教学索力影响矩阵</h4>
 <p>选取三个索组修正量 <span class="math inline">\(\Delta T_1,\Delta T_2,\Delta T_3\)</span>（MN），控制量为跨中弯矩 <span class="math inline">\(M_c\)</span>（MN·m）、塔顶纵向位移 <span class="math inline">\(u_t\)</span>（mm）和端支点反力 <span class="math inline">\(R_e\)</span>（MN）。构造用于程序测试的影响矩阵</p>
-<p><span class="math display">\[
-\boldsymbol A=
-\begin{bmatrix}
--2.0&amp;-1.0&amp;-0.4\\
-0.5&amp;-0.6&amp;-1.1\\
-0.1&amp;0.3&amp;0.6
-\end{bmatrix}.
+<p><span class="math display">\[
+\boldsymbol A=
+\begin{bmatrix}
+-2.0&amp;-1.0&amp;-0.4\\
+0.5&amp;-0.6&amp;-1.1\\
+0.1&amp;0.3&amp;0.6
+\end{bmatrix}.
 \]</span></p>
 <p>矩阵三行单位分别为 MN·m/MN、mm/MN 和 MN/MN。设当前目标误差</p>
-<p><span class="math display">\[
-\boldsymbol r_0-\boldsymbol r^*
-=\begin{bmatrix}4.2&amp;0.4&amp;-0.75\end{bmatrix}^{\mathrm T},
+<p><span class="math display">\[
+\boldsymbol r_0-\boldsymbol r^*
+=\begin{bmatrix}4.2&amp;0.4&amp;-0.75\end{bmatrix}^{\mathrm T},
 \]</span></p>
 <p>教学修正量</p>
-<p><span class="math display">\[
-\Delta\boldsymbol T=
-\begin{bmatrix}1.5&amp;1.0&amp;0.5\end{bmatrix}^{\mathrm T}\ \mathrm{MN}
+<p><span class="math display">\[
+\Delta\boldsymbol T=
+\begin{bmatrix}1.5&amp;1.0&amp;0.5\end{bmatrix}^{\mathrm T}\ \mathrm{MN}
 \]</span></p>
 <p>产生</p>
-<p><span class="math display">\[
-\boldsymbol A\Delta\boldsymbol T
-=\begin{bmatrix}-4.2&amp;-0.4&amp;0.75\end{bmatrix}^{\mathrm T},
+<p><span class="math display">\[
+\boldsymbol A\Delta\boldsymbol T
+=\begin{bmatrix}-4.2&amp;-0.4&amp;0.75\end{bmatrix}^{\mathrm T},
 \]</span></p>
 <p>在线性测试中恰好消除三项误差。该矩阵为课程组构造的可复算数据，不代表具体斜拉桥。实际矩阵往往为非方阵且含约束；即使残差为零，也需检查索力上下限、相邻变化和非线性复算。</p>
 </section>
 <section class="level4" data-number="6.7.10.5" id="第四步无应力长度量级">
 <h4 class="anchored" data-anchor-id="第四步无应力长度量级" data-number="6.7.10.5"><span class="header-section-number">6.7.10.5</span> 第四步：无应力长度量级</h4>
 <p>对 <span class="math inline">\(h=120\,\mathrm m\)</span> 的代表索，直线几何长度</p>
-<p><span class="math display">\[
-l_g=\sqrt{180^2+120^2}=216.333\,\mathrm m.
+<p><span class="math display">\[
+l_g=\sqrt{180^2+120^2}=216.333\,\mathrm m.
 \]</span></p>
 <p>另取教学材料参数 <span class="math inline">\(E=195\,\mathrm{GPa}\)</span>、有效面积 <span class="math inline">\(A=0.030\,\mathrm{m^2}\)</span>，以及上一步近似索力 <span class="math inline">\(T=4.759\,\mathrm{MN}\)</span>。忽略自重垂度、温度和锚具变形时，</p>
-<p><span class="math display">\[
-\frac{T}{EA}=8.14\times10^{-4},
-\qquad
-l_0\approx\frac{216.333}{1+8.14\times10^{-4}}
-=216.157\,\mathrm m.
+<p><span class="math display">\[
+\frac{T}{EA}=8.14\times10^{-4},
+\qquad
+l_0\approx\frac{216.333}{1+8.14\times10^{-4}}
+=216.157\,\mathrm m.
 \]</span></p>
 <p>几何长度与无应力长度相差约 <span class="math inline">\(0.176\,\mathrm m\)</span>。结果用于说明长度定义的重要性；长索正式计算必须使用相应索模型，并由制造、温度和锚具基准复核。</p>
 </section>
@@ -1276,10 +1276,10 @@ l_0\approx\frac{216.333}{1+8.14\times10^{-4}}
 <section class="level4" data-number="6.7.10.7" id="第六步教学活载与非线性复算">
 <h4 class="anchored" data-anchor-id="第六步教学活载与非线性复算" data-number="6.7.10.7"><span class="header-section-number">6.7.10.7</span> 第六步：教学活载与非线性复算</h4>
 <p>在成桥初始索力状态生成跨中弯矩、塔底弯矩、端支点反力和三根代表索力的影响线。分别保存各自控制车辆位置。先在线性切线模型筛选，再对控制位置及其相邻位置进行几何非线性直接分析，比较</p>
-<p><span class="math display">\[
-\delta_r=
-\frac{r_{\mathrm{NL}}-r_{\mathrm L}}
-{\max(|r_{\mathrm L}|,r_{\mathrm{ref}})},
+<p><span class="math display">\[
+\delta_r=
+\frac{r_{\mathrm{NL}}-r_{\mathrm L}}
+{\max(|r_{\mathrm L}|,r_{\mathrm{ref}})},
 \]</span></p>
 <p>其中，<span class="math inline">\(r_{\mathrm{ref}}\)</span> 为避免响应接近零时比值失真的参考量，并须在报告中给出。教材不设统一接受阈值；是否可使用线性结果由分析目的、项目标准和专项论证确定。</p>
 </section>
@@ -1370,63 +1370,63 @@ l_0\approx\frac{216.333}{1+8.14\times10^{-4}}
 <h4 class="anchored" data-anchor-id="响应与控制变量的选择" data-number="6.8.0.1"><span class="header-section-number">6.8.0.1</span> 响应与控制变量的选择</h4>
 <p>影响矩阵的列对应可调索力或索组，行对应希望控制的结构响应。控制变量可以是单根索的张拉增量，也可以是若干对称索同步调整量；响应可以包含主梁弯矩、梁面标高、桥塔偏位、塔底弯矩、端支点反力和索力均匀性。变量选择决定了优化问题能否识别和能否实施。</p>
 <p>单根索逐一调整可获得较大自由度，但施工设备、对称性和相邻索协调常使索组调整更符合实际。若采用索组映射矩阵 <span class="math inline">\(\boldsymbol B_g\)</span>，单索修正与组变量 <span class="math inline">\(\Delta\boldsymbol z\)</span> 的关系为</p>
-<p><span class="math display">\[
-\Delta\boldsymbol T=\boldsymbol B_g\Delta\boldsymbol z,
+<p><span class="math display">\[
+\Delta\boldsymbol T=\boldsymbol B_g\Delta\boldsymbol z,
 \]</span></p>
 <p>响应增量为</p>
-<p><span class="math display">\[
-\Delta\boldsymbol r=
-\boldsymbol A\boldsymbol B_g\Delta\boldsymbol z.
+<p><span class="math display">\[
+\Delta\boldsymbol r=
+\boldsymbol A\boldsymbol B_g\Delta\boldsymbol z.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol B_g\)</span> 的每列规定一个可实施调整模式，例如左右对称索同调、塔两侧成对反向调整或某一施工批次索同步调整。矩阵应由施工工序确定，而不是为了得到更小残差临时组合。</p>
 </section>
 <section class="level4" data-number="6.8.0.2" id="有限差分建立矩阵">
 <h4 class="anchored" data-anchor-id="有限差分建立矩阵" data-number="6.8.0.2"><span class="header-section-number">6.8.0.2</span> 有限差分建立矩阵</h4>
 <p>在参考状态 <span class="math inline">\(\boldsymbol T_0\)</span> 附近，对第 <span class="math inline">\(i\)</span> 个控制变量施加正、负扰动 <span class="math inline">\(\delta T_i\)</span>，并使结构重新达到平衡。中心差分列为</p>
-<p><span class="math display">\[
-\boldsymbol a_i=
-\frac{
-\boldsymbol r(\boldsymbol T_0+\delta T_i\boldsymbol e_i)
--\boldsymbol r(\boldsymbol T_0-\delta T_i\boldsymbol e_i)
-}{2\delta T_i}.
+<p><span class="math display">\[
+\boldsymbol a_i=
+\frac{
+\boldsymbol r(\boldsymbol T_0+\delta T_i\boldsymbol e_i)
+-\boldsymbol r(\boldsymbol T_0-\delta T_i\boldsymbol e_i)
+}{2\delta T_i}.
 \]</span></p>
 <p>若 <span class="math inline">\(\delta T_i\)</span> 以 kN 计、响应行为弯矩 kN·m，则相应矩阵元素单位为 m；若响应行为位移 mm，元素单位为 mm/kN。矩阵不得在无单位说明的CSV中传播。对每一列还应记录扰动前后拉索实际索力、几何、支座状态和求解收敛信息。</p>
 <p>扰动幅值需要进行稳定性检查。设用 <span class="math inline">\(\delta T_i\)</span> 和 <span class="math inline">\(2\delta T_i\)</span> 得到的列分别为 <span class="math inline">\(\boldsymbol a_i^{(1)}\)</span>、<span class="math inline">\(\boldsymbol a_i^{(2)}\)</span>，可用</p>
-<p><span class="math display">\[
-e_i^{(A)}=
-\frac{\|\boldsymbol a_i^{(2)}-\boldsymbol a_i^{(1)}\|_2}
-{\max(\|\boldsymbol a_i^{(1)}\|_2,a_0)}
+<p><span class="math display">\[
+e_i^{(A)}=
+\frac{\|\boldsymbol a_i^{(2)}-\boldsymbol a_i^{(1)}\|_2}
+{\max(\|\boldsymbol a_i^{(1)}\|_2,a_0)}
 \]</span></p>
 <p>衡量线性化稳定性，<span class="math inline">\(a_0\)</span> 是防止分母接近零的参考量。误差较大时，应减小线性化范围或把该控制问题转为非线性直接优化。教材不设统一误差限，容差由数值精度和任务要求确定。</p>
 </section>
 <section class="level4" data-number="6.8.0.3" id="量纲缩放">
 <h4 class="anchored" data-anchor-id="量纲缩放" data-number="6.8.0.3"><span class="header-section-number">6.8.0.3</span> 量纲缩放</h4>
 <p>主梁弯矩、位移和反力的数量级不同，直接对原始矩阵进行最小二乘会使大数值响应支配目标。设响应尺度为对角矩阵</p>
-<p><span class="math display">\[
-\boldsymbol D_r=
-\operatorname{diag}(r_{s,1},r_{s,2},\ldots,r_{s,m}),
+<p><span class="math display">\[
+\boldsymbol D_r=
+\operatorname{diag}(r_{s,1},r_{s,2},\ldots,r_{s,m}),
 \]</span></p>
 <p>控制变量尺度为</p>
-<p><span class="math display">\[
-\boldsymbol D_T=
-\operatorname{diag}(T_{s,1},T_{s,2},\ldots,T_{s,n}),
+<p><span class="math display">\[
+\boldsymbol D_T=
+\operatorname{diag}(T_{s,1},T_{s,2},\ldots,T_{s,n}),
 \]</span></p>
 <p>则无量纲矩阵为</p>
-<p><span class="math display">\[
-\widetilde{\boldsymbol A}=
-\boldsymbol D_r^{-1}\boldsymbol A\boldsymbol D_T.
+<p><span class="math display">\[
+\widetilde{\boldsymbol A}=
+\boldsymbol D_r^{-1}\boldsymbol A\boldsymbol D_T.
 \]</span></p>
 <p>响应尺度可以采用工程允许偏差、基准响应或明确的教学尺度；控制变量尺度可采用可执行张拉步长或基准索力。尺度选择本身体现工程优先级，应在报告中列出。权重用于表达控制重要性，尺度用于统一量纲，二者不应混为一项。</p>
 </section>
 <section class="level4" data-number="6.8.0.4" id="奇异值与病态性">
 <h4 class="anchored" data-anchor-id="奇异值与病态性" data-number="6.8.0.4"><span class="header-section-number">6.8.0.4</span> 奇异值与病态性</h4>
 <p>对无量纲矩阵作奇异值分解</p>
-<p><span class="math display">\[
-\widetilde{\boldsymbol A}=
-\boldsymbol U\boldsymbol\Sigma\boldsymbol V^{\mathrm T},
-\qquad
-\boldsymbol\Sigma=
-\operatorname{diag}(\sigma_1,\ldots,\sigma_r),
+<p><span class="math display">\[
+\widetilde{\boldsymbol A}=
+\boldsymbol U\boldsymbol\Sigma\boldsymbol V^{\mathrm T},
+\qquad
+\boldsymbol\Sigma=
+\operatorname{diag}(\sigma_1,\ldots,\sigma_r),
 \]</span></p>
 <p>其中 <span class="math inline">\(\sigma_1\ge\cdots\ge\sigma_r&gt;0\)</span>。较大的奇异值方向表示较小索力调整即可明显改变响应；很小的奇异值表示某些索力组合对已选响应影响相近或很弱。条件数 <span class="math inline">\(\kappa_2=\sigma_1/\sigma_r\)</span> 较大时，观测误差或矩阵小变化可能导致索力解显著改变。</p>
 <p>病态性具有明确物理来源：相邻拉索的作用模式高度相似；控制点过少；所选响应只覆盖局部区域；对称索同时作为独立变量却只使用对称响应；索力改变主要落在未观测的响应方向。处理方法包括合并索组、增加独立响应、加入施工约束、采用正则化和保留不确定范围，而不是提高输出小数位数。</p>
@@ -1435,13 +1435,13 @@ e_i^{(A)}=
 <section class="level4" data-number="6.8.0.5" id="教学矩阵的数值质量">
 <h4 class="anchored" data-anchor-id="教学矩阵的数值质量" data-number="6.8.0.5"><span class="header-section-number">6.8.0.5</span> 教学矩阵的数值质量</h4>
 <p>前述三索组教学矩阵中，取响应尺度 <span class="math inline">\([5\,\mathrm{MN\cdot m},1\,\mathrm{mm},1\,\mathrm{MN}]\)</span>，控制变量尺度均为 <span class="math inline">\(1\,\mathrm{MN}\)</span>，得到</p>
-<p><span class="math display">\[
-\widetilde{\boldsymbol A}=
-\begin{bmatrix}
--0.40&amp;-0.20&amp;-0.08\\
-0.50&amp;-0.60&amp;-1.10\\
-0.10&amp;0.30&amp;0.60
-\end{bmatrix}.
+<p><span class="math display">\[
+\widetilde{\boldsymbol A}=
+\begin{bmatrix}
+-0.40&amp;-0.20&amp;-0.08\\
+0.50&amp;-0.60&amp;-1.10\\
+0.10&amp;0.30&amp;0.60
+\end{bmatrix}.
 \]</span></p>
 <p>该课程组矩阵的奇异值约为 <span class="math inline">\(1.478\)</span>、<span class="math inline">\(0.541\)</span>、<span class="math inline">\(0.0966\)</span>，条件数约为 <span class="math inline">\(15.3\)</span>。它可以求解，但最弱方向对输入变化更敏感。若把第二列改成第一列的 <span class="math inline">\(1.01\)</span> 倍，两列线性相关，矩阵降秩；此时不能通过普通求逆得到唯一物理解，应合并两个索组或增加能区分它们的响应。</p>
 <div class="digital-note">
@@ -1453,20 +1453,20 @@ e_i^{(A)}=
 <section class="level4" data-number="6.8.1.1" id="二次规划表达">
 <h4 class="anchored" data-anchor-id="二次规划表达" data-number="6.8.1.1"><span class="header-section-number">6.8.1.1</span> 二次规划表达</h4>
 <p>索力调整可写为带约束二次规划：</p>
-<p><span class="math display">\[
-\min_{\Delta\boldsymbol T}
-\frac12\Delta\boldsymbol T^{\mathrm T}
-\boldsymbol H\Delta\boldsymbol T
-+\boldsymbol f^{\mathrm T}\Delta\boldsymbol T,
+<p><span class="math display">\[
+\min_{\Delta\boldsymbol T}
+\frac12\Delta\boldsymbol T^{\mathrm T}
+\boldsymbol H\Delta\boldsymbol T
++\boldsymbol f^{\mathrm T}\Delta\boldsymbol T,
 \]</span></p>
 <p>满足</p>
-<p><span class="math display">\[
-\boldsymbol C\Delta\boldsymbol T=\boldsymbol d,
+<p><span class="math display">\[
+\boldsymbol C\Delta\boldsymbol T=\boldsymbol d,
 \]</span></p>
-<p><span class="math display">\[
-\boldsymbol l\le
-\boldsymbol B\Delta\boldsymbol T
-\le\boldsymbol u.
+<p><span class="math display">\[
+\boldsymbol l\le
+\boldsymbol B\Delta\boldsymbol T
+\le\boldsymbol u.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol H\)</span> 和 <span class="math inline">\(\boldsymbol f\)</span> 由加权响应误差与正则项展开得到；等式约束 <span class="math inline">\(\boldsymbol C\Delta\boldsymbol T=\boldsymbol d\)</span> 可表示对称调整、总体平衡或指定索组关系；不等式约束可表示最终索力范围、单次张拉能力、相邻索力差、塔顶位移和端支点反力。<span class="math inline">\(\boldsymbol l,\boldsymbol u\)</span> 的具体数值由项目采用规范、构件与施工能力确定。</p>
 <p>拉格朗日乘子可帮助解释活动约束：某一边界的乘子绝对值较大，说明若放宽该约束，目标函数可能明显改善。但这不意味着应放宽安全或施工限制，而是提示目标与约束冲突，需要调整体系、控制变量或目标状态。</p>
@@ -1474,9 +1474,9 @@ e_i^{(A)}=
 <section class="level4" data-number="6.8.1.2" id="正则化与少调匀调可调">
 <h4 class="anchored" data-anchor-id="正则化与少调匀调可调" data-number="6.8.1.2"><span class="header-section-number">6.8.1.2</span> 正则化与“少调、匀调、可调”</h4>
 <p>正则项 <span class="math inline">\(\lambda\|\boldsymbol W_T\Delta\boldsymbol T\|_2^2\)</span> 表示限制总体调整幅度；一阶差分项</p>
-<p><span class="math display">\[
-\lambda_s\|\boldsymbol D_1
-(\boldsymbol T_0+\Delta\boldsymbol T)\|_2^2
+<p><span class="math display">\[
+\lambda_s\|\boldsymbol D_1
+(\boldsymbol T_0+\Delta\boldsymbol T)\|_2^2
 \]</span></p>
 <p>可减少相邻索力突变；若希望减少需要实际操作的索数，可在教学讨论中引入稀疏目标，但其非光滑性和施工含义应明确。“少调”降低操作次数，“匀调”改善索力平顺，“可调”要求每一步都在设备与结构允许范围内。三者是工程目标，不应只以优化算法名称描述。</p>
 <p>正则权重增加通常使调整量减小而目标残差增大。数字实验应绘制残差范数—调整范数曲线，由结构性能和施工可控性选择折中点；不能以训练误差最小作为唯一准则。</p>
@@ -1501,9 +1501,9 @@ e_i^{(A)}=
 <section class="level4" data-number="6.8.2.1" id="轴力的累积">
 <h4 class="anchored" data-anchor-id="轴力的累积" data-number="6.8.2.1"><span class="header-section-number">6.8.2.1</span> 轴力的累积</h4>
 <p>拉索水平分力沿主梁累积。取从跨中向桥塔方向的主梁剖面，忽略其他纵向作用时，某截面轴力变化可由该段内拉索水平分力平衡得到。离散形式可概括为</p>
-<p><span class="math display">\[
-N_b(x_j)-N_b(x_{j-1})
-=-H_j,
+<p><span class="math display">\[
+N_b(x_j)-N_b(x_{j-1})
+=-H_j,
 \]</span></p>
 <p>其中，<span class="math inline">\(H_j=T_j\cos\theta_j\)</span>，单位为 kN；负号按主梁受压为负的约定。若采用受压为正约定，符号相反。塔附近汇集的水平分力较多，主梁轴压力通常较大；边跨端锚、辅助墩、塔梁连接和预应力又会改变分布。</p>
 <p>主梁截面不能只按弯曲梁验算。总体模型应输出同一组合下的轴力 <span class="math inline">\(N\)</span>、弯矩 <span class="math inline">\(M_y,M_z\)</span>、剪力和扭矩，材料设计模块按弯压、稳定和局部板件要求处理。把最大轴力和最大弯矩从不同活载位置拼接，会构造不存在的效应组合；应从各控制车辆位置提取成组内力。</p>
@@ -1513,8 +1513,8 @@ N_b(x_j)-N_b(x_{j-1})
 <p>主梁轴压力会通过初始弯曲和活载挠度产生二阶弯矩。对简化梁柱，二阶平衡中包含几何刚度；对斜拉桥，主梁、索和塔共同提供约束，不能任意选取一根“计算长度”替代整体分析。几何非线性模型应以合理成桥初始力为基础，并检查不同索力方案对主梁稳定的影响。</p>
 <p>稳定问题至少分为：主梁在竖向平面内的弯压稳定；侧向弯曲与扭转耦合；钢箱或组合梁板件局部稳定；施工长悬臂的空间稳定。特征值分析用于识别模态，含初始缺陷的几何—材料非线性分析用于研究极限路径，材料与截面规范用于构件和板件验算。三者不能互相替代。</p>
 <p>定义教学轴压利用量</p>
-<p><span class="math display">\[
-\eta_N(x)=\frac{|N_b(x)|}{N_{\mathrm{ref}}},
+<p><span class="math display">\[
+\eta_N(x)=\frac{|N_b(x)|}{N_{\mathrm{ref}}},
 \]</span></p>
 <p><span class="math inline">\(N_{\mathrm{ref}}\)</span> 是明确选定的比较尺度，可为某一方案基准轴力，不得冒充设计承载力。参数试验同时显示 <span class="math inline">\(\eta_N\)</span>、主梁弯矩、塔底弯矩和索力，避免通过降低一项响应把需求转移到另一构件。</p>
 </section>
@@ -1529,9 +1529,9 @@ N_b(x_j)-N_b(x_{j-1})
 <h4 class="anchored" data-anchor-id="中间桥塔的约束特点" data-number="6.8.3.1"><span class="header-section-number">6.8.3.1</span> 中间桥塔的约束特点</h4>
 <p>双塔斜拉桥中，边跨和端锚索为桥塔提供相对明确的反向约束。三塔及以上多塔体系的中间塔两侧均连接主跨，缺少传统意义上短边跨的锚固；当某一跨受活载时，中间塔可能产生较大纵向位移，使荷载通过相邻跨继续传递。多塔体系的关键不是简单增加桥塔数量，而是控制塔、梁和索网的纵向刚度分配。</p>
 <p>把各塔顶或主要锚固区的纵向位移组成 <span class="math inline">\(\boldsymbol u_t\)</span>，可在给定初始状态附近写为</p>
-<p><span class="math display">\[
-(\boldsymbol K_t+\boldsymbol K_c+\boldsymbol K_b+\boldsymbol K_s)
-\boldsymbol u_t=\boldsymbol F_t,
+<p><span class="math display">\[
+(\boldsymbol K_t+\boldsymbol K_c+\boldsymbol K_b+\boldsymbol K_s)
+\boldsymbol u_t=\boldsymbol F_t,
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol K_t\)</span> 为塔柱弯曲提供的刚度，<span class="math inline">\(\boldsymbol K_c\)</span> 为两侧索体系的切线刚度，<span class="math inline">\(\boldsymbol K_b\)</span> 为主梁连续性耦合刚度，<span class="math inline">\(\boldsymbol K_s\)</span> 为辅助墩、约束装置或其他稳定体系贡献。多塔体系中这些矩阵具有明显非对角项，一座塔的位移会影响相邻塔和跨。</p>
 </section>
@@ -1580,22 +1580,22 @@ N_b(x_j)-N_b(x_{j-1})
 <span>索偏离原位 w</span><span>索力与抗弯提供恢复作用</span><span>惯性和耗能影响运动</span>
 </div>
 <details>
-<summary>
-这组符号分别指什么？
+<summary>
+这组符号分别指什么？
 </summary>
-<p>
-w(x,t) 是位置 x 在时刻 t 的横向位移；m 表示单位长度质量，c 表示分布阻尼，T 是索力，EIc 是抗弯刚度，p 是横向分布作用。时间导数表示速度、加速度；空间导数描述索形变化。下标不是指数，动画也不能代替求解。
+<p>
+w(x,t) 是位置 x 在时刻 t 的横向位移；m 表示单位长度质量，c 表示分布阻尼，T 是索力，EIc 是抗弯刚度，p 是横向分布作用。时间导数表示速度、加速度；空间导数描述索形变化。下标不是指数，动画也不能代替求解。
 </p>
 </details>
 </div>
 <!-- FORMULA-SCAFFOLD ch05 END -->
 <p>将拉索在一个振动平面内简化为具有弯曲刚度的受拉构件，其小振幅横向振动可概括为</p>
-<p><span class="math display">\[
-m\frac{\partial^2w}{\partial t^2}
-+c\frac{\partial w}{\partial t}
-+EI_c\frac{\partial^4w}{\partial x^4}
--T\frac{\partial^2w}{\partial x^2}
-=p(x,t),
+<p><span class="math display">\[
+m\frac{\partial^2w}{\partial t^2}
++c\frac{\partial w}{\partial t}
++EI_c\frac{\partial^4w}{\partial x^4}
+-T\frac{\partial^2w}{\partial x^2}
+=p(x,t),
 \]</span></p>
 <p>其中，<span class="math inline">\(w\)</span> 为横向位移（m），<span class="math inline">\(x\)</span> 为沿索坐标（m），<span class="math inline">\(m\)</span> 为单位长度质量（kg/m），<span class="math inline">\(c\)</span> 为等效分布阻尼（N·s/m²），<span class="math inline">\(EI_c\)</span> 为弯曲刚度（N·m²），<span class="math inline">\(T\)</span> 为索力（N），<span class="math inline">\(p\)</span> 为单位长度横向作用（N/m）。理想弦模型忽略 <span class="math inline">\(EI_c\)</span>，但短索、锚固区和阻尼器附近的弯曲刚度会影响频率和曲率。</p>
 <p>索振机制包括涡激振动、风雨振、尾流干扰、驰振类不稳定、参数振动以及桥面或桥塔运动引起的强迫振动。不同机制的触发条件和控制措施不同，不能把所有明显振动归为“风振”。诊断需要风速风向、降雨、索面水线、索振幅频率、桥面塔振动和阻尼器状态等同步数据。</p>
@@ -1603,12 +1603,12 @@ m\frac{\partial^2w}{\partial t^2}
 <section class="level4" data-number="6.8.5.2" id="阻尼识别与装置评价">
 <h4 class="anchored" data-anchor-id="阻尼识别与装置评价" data-number="6.8.5.2"><span class="header-section-number">6.8.5.2</span> 阻尼识别与装置评价</h4>
 <p>自由衰减相邻同向峰值 <span class="math inline">\(x_k,x_{k+n}\)</span> 可给出对数减量</p>
-<p><span class="math display">\[
-\delta=\frac1n\ln\frac{x_k}{x_{k+n}},
+<p><span class="math display">\[
+\delta=\frac1n\ln\frac{x_k}{x_{k+n}},
 \]</span></p>
 <p>小阻尼单自由度近似下</p>
-<p><span class="math display">\[
-\zeta=\frac{\delta}{\sqrt{4\pi^2+\delta^2}}.
+<p><span class="math display">\[
+\zeta=\frac{\delta}{\sqrt{4\pi^2+\delta^2}}.
 \]</span></p>
 <p>振幅单位可为 mm，只要比值一致；<span class="math inline">\(\delta\)</span>、<span class="math inline">\(\zeta\)</span> 无量纲。实际拉索多模态、受迫且边界含阻尼器，需先分离模态和自由衰减区间。阻尼器评价应比较目标模态、安装位置、行程、温度和耐久状态，不只比较一个名义阻尼系数。</p>
 <p>外置阻尼器改变索在安装点的边界与耗能。安装位置过近锚端时，低阶模态在该点位移小，控制效率可能受限；位置增加又受桥面净空、检修和索面布置约束。气动表面措施、交叉索和阻尼器可以组合，但需检查对高阶模态、噪声、疲劳和维护的影响。</p>
@@ -1616,14 +1616,14 @@ m\frac{\partial^2w}{\partial t^2}
 <section class="level4" data-number="6.8.5.3" id="从振动到疲劳">
 <h4 class="anchored" data-anchor-id="从振动到疲劳" data-number="6.8.5.3"><span class="header-section-number">6.8.5.3</span> 从振动到疲劳</h4>
 <p>索振时程先转换为索力或应力时程，再采用明确的循环计数形成应力范围直方图。交通与风振可具有不同时间尺度和发生条件，应分别建立事件，再按设计使用期和暴露统计组合。疲劳证据链为</p>
-<p><span class="math display">\[
-\text{原始时程}\rightarrow
-\text{数据清洗}\rightarrow
-\text{响应或索力识别}\rightarrow
-\text{循环计数}\rightarrow
-\text{应力范围}\rightarrow
-\text{细节 }S\!-!N\text{ 数据}\rightarrow
-\text{损伤评价}.
+<p><span class="math display">\[
+\text{原始时程}\rightarrow
+\text{数据清洗}\rightarrow
+\text{响应或索力识别}\rightarrow
+\text{循环计数}\rightarrow
+\text{应力范围}\rightarrow
+\text{细节 }S\!-!N\text{ 数据}\rightarrow
+\text{损伤评价}.
 \]</span></p>
 <p>每一箭头都保存方法、参数和版本。传感器饱和、缺测、温度漂移和索力识别模型误差会影响尾部应力范围，不能在清洗后删除原始数据。疲劳类别与允许循环数由斜拉索产品、桥型和材料标准或试验资料确定。</p>
 <div class="digital-note">
@@ -1636,8 +1636,8 @@ m\frac{\partial^2w}{\partial t^2}
 <section class="level4" data-number="6.8.6.1" id="力流分解">
 <h4 class="anchored" data-anchor-id="力流分解" data-number="6.8.6.1"><span class="header-section-number">6.8.6.1</span> 力流分解</h4>
 <p>索力在梁上或塔上锚固区分解为沿构件轴向、横向和竖向的集中分量。若锚具中心相对整体模型参考轴位置为 <span class="math inline">\(\boldsymbol r_e\)</span>，等效到参考点的力矩为</p>
-<p><span class="math display">\[
-\boldsymbol M_e=\boldsymbol r_e\times\boldsymbol f_i.
+<p><span class="math display">\[
+\boldsymbol M_e=\boldsymbol r_e\times\boldsymbol f_i.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol r_e\)</span> 以 m、<span class="math inline">\(\boldsymbol f_i\)</span> 以 kN，则 <span class="math inline">\(\boldsymbol M_e\)</span> 为 kN·m。整体模型若以节点力施加但忽略偏心力矩，会低估主梁扭转、横隔板弯曲或塔壁局部作用。使用刚性臂时也要检查其是否引入非物理刚度。</p>
 <p>局部模型的边界可采用截面合力分配、位移边界或整体—局部子模型。边界应远离锚具几何突变，并通过反力合计核对六分量。切取范围改变后，关注区应力和力流应趋于稳定；否则说明边界仍影响结果。</p>
@@ -1658,13 +1658,13 @@ m\frac{\partial^2w}{\partial t^2}
 <h4 class="anchored" data-anchor-id="一致性不是数值完全相等" data-number="6.8.7.1"><span class="header-section-number">6.8.7.1</span> 一致性不是数值完全相等</h4>
 <p>在线弹性、无时变、事件完全可逆且数值设置一致时，倒拆得到的制造与张拉参数经正装应回到目标成桥状态。实际斜拉桥包含几何非线性、收缩徐变、温度、锚具回缩、施工误差和临时设备，严格逆过程并不存在。因此一致性检查的目标是解释差异并把它控制在项目允许范围，而不是要求所有节点最后一位小数相同。</p>
 <p>设正装成桥结果为 <span class="math inline">\(\boldsymbol r_F\)</span>，目标为 <span class="math inline">\(\boldsymbol r^*\)</span>，差异可概念性分解为</p>
-<p><span class="math display">\[
-\boldsymbol r_F-\boldsymbol r^*=
-\boldsymbol e_g+
-\boldsymbol e_m+
-\boldsymbol e_t+
-\boldsymbol e_b+
-\boldsymbol e_n,
+<p><span class="math display">\[
+\boldsymbol r_F-\boldsymbol r^*=
+\boldsymbol e_g+
+\boldsymbol e_m+
+\boldsymbol e_t+
+\boldsymbol e_b+
+\boldsymbol e_n,
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol e_g\)</span> 为几何与无应力长度差异，<span class="math inline">\(\boldsymbol e_m\)</span> 为材料和时变模型差异，<span class="math inline">\(\boldsymbol e_t\)</span> 为温度和时间基准差异，<span class="math inline">\(\boldsymbol e_b\)</span> 为边界与事件差异，<span class="math inline">\(\boldsymbol e_n\)</span> 为数值误差。分解可通过逐项启用模型功能和控制变量敏感性完成，不应凭经验把全部差异归因于索力。</p>
 </section>
@@ -1851,15 +1851,15 @@ m\frac{\partial^2w}{\partial t^2}
 <section class="level4" data-number="6.8.9.3" id="参数敏感性矩阵">
 <h4 class="anchored" data-anchor-id="参数敏感性矩阵" data-number="6.8.9.3"><span class="header-section-number">6.8.9.3</span> 参数敏感性矩阵</h4>
 <p>设参数向量</p>
-<p><span class="math display">\[
-\boldsymbol p=
-[h,a,EA_c,EI_b,EI_t,k_x,T_{\mathrm{ref}}]^{\mathrm T},
+<p><span class="math display">\[
+\boldsymbol p=
+[h,a,EA_c,EI_b,EI_t,k_x,T_{\mathrm{ref}}]^{\mathrm T},
 \]</span></p>
 <p>分别表示塔高、索距、索轴向刚度、主梁弯曲刚度、桥塔弯曲刚度、塔梁纵向约束刚度和参考温度。输出向量可取</p>
-<p><span class="math display">\[
-\boldsymbol r=
-[T_{\max},N_{b,\max},M_{b,\max},
-u_{t,\max},R_{e,\min},f_1]^{\mathrm T}.
+<p><span class="math display">\[
+\boldsymbol r=
+[T_{\max},N_{b,\max},M_{b,\max},
+u_{t,\max},R_{e,\min},f_1]^{\mathrm T}.
 \]</span></p>
 <p>用中心差分形成有量纲敏感矩阵 <span class="math inline">\(\boldsymbol S_{rp}=\partial\boldsymbol r/\partial\boldsymbol p\)</span>，再按输入和输出尺度无量纲化。参数改变若同时改变索数或塔形，属于拓扑变化，应以离散方案比较而非导数解释。</p>
 <p>敏感性试验预期检查如下：</p>
@@ -1928,8 +1928,8 @@ u_{t,\max},R_{e,\min},f_1]^{\mathrm T}.
 <h4 class="anchored" data-anchor-id="影响矩阵案例的复核" data-number="6.8.9.4"><span class="header-section-number">6.8.9.4</span> 影响矩阵案例的复核</h4>
 <p>当前教学矩阵的解 <span class="math inline">\([1.5,1.0,0.5]^{\mathrm T}\,\mathrm{MN}\)</span> 是专门构造的精确线性解。数字实验进一步进行三项扰动：将第一项弯矩目标改变 <span class="math inline">\(5\%\)</span>；将塔顶位移尺度从 <span class="math inline">\(1\,\mathrm{mm}\)</span> 改为 <span class="math inline">\(2\,\mathrm{mm}\)</span>；在矩阵各元素叠加受控小扰动。比较无正则和有正则解的索力变化，并记录奇异值方向。若目标小变导致索力大幅反转，说明当前解缺少稳健性，应调整响应或索组。</p>
 <p>再把优化索力写回几何非线性正装模型。输出线性预测 <span class="math inline">\(\boldsymbol r_L\)</span> 和正装结果 <span class="math inline">\(\boldsymbol r_F\)</span>，按每一响应尺度计算</p>
-<p><span class="math display">\[
-e_j=\frac{r_{F,j}-r_j^*}{r_{s,j}}.
+<p><span class="math display">\[
+e_j=\frac{r_{F,j}-r_j^*}{r_{s,j}}.
 \]</span></p>
 <p>误差向量不合格时，先判断来自矩阵线性化还是施工不可逆因素，再更新矩阵或无应力几何。不得直接在成桥阶段施加一组补偿节点力消除误差。</p>
 </section>
@@ -1952,19 +1952,19 @@ e_j=\frac{r_{F,j}-r_j^*}{r_{s,j}}.
 <section class="level4" data-number="6.8.10.1" id="频率法的输入与误差传播">
 <h4 class="anchored" data-anchor-id="频率法的输入与误差传播" data-number="6.8.10.1"><span class="header-section-number">6.8.10.1</span> 频率法的输入与误差传播</h4>
 <p>前述理想弦公式 <span class="math inline">\(T=4ml^2f_1^2\)</span> 说明索力识别依赖单位长度质量 <span class="math inline">\(m\)</span>、有效振动长度 <span class="math inline">\(l\)</span> 和频率 <span class="math inline">\(f_1\)</span>。对小变化取对数微分，有</p>
-<p><span class="math display">\[
-\frac{\mathrm dT}{T}
-\approx
-\frac{\mathrm dm}{m}
-+2\frac{\mathrm dl}{l}
-+2\frac{\mathrm df_1}{f_1}.
+<p><span class="math display">\[
+\frac{\mathrm dT}{T}
+\approx
+\frac{\mathrm dm}{m}
++2\frac{\mathrm dl}{l}
++2\frac{\mathrm df_1}{f_1}.
 \]</span></p>
 <p>因此，频率相对误差在索力中约以两倍进入，有效长度误差也以两倍进入；单位长度质量还会受护套、填充和附属构件影响。公式仅为一阶误差传播，且限于理想弦模型。若短索弯曲刚度、锚固弹性、垂度、阻尼器或外置传感器质量不可忽略，应使用多阶频率拟合或相应修正模型。</p>
 <p>将量测输入写为 <span class="math inline">\(\boldsymbol z=[m,l,f_1,f_2,\ldots]^{\mathrm T}\)</span>，识别结果为 <span class="math inline">\(T=h(\boldsymbol z)\)</span>。在当前值附近，索力方差可近似为</p>
-<p><span class="math display">\[
-\sigma_T^2\approx
-\boldsymbol J_h\boldsymbol\Sigma_z\boldsymbol J_h^{\mathrm T}
-+\sigma_{\mathrm{model}}^2,
+<p><span class="math display">\[
+\sigma_T^2\approx
+\boldsymbol J_h\boldsymbol\Sigma_z\boldsymbol J_h^{\mathrm T}
++\sigma_{\mathrm{model}}^2,
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol J_h=\partial h/\partial\boldsymbol z\)</span>，<span class="math inline">\(\boldsymbol\Sigma_z\)</span> 是测量输入协方差，<span class="math inline">\(\sigma_{\mathrm{model}}\)</span> 表示弦模型、边界和垂度等模型误差。只报告单一索力而不说明频率峰、有效长度和模型版本，不足以支持施工调整。</p>
 </section>
@@ -1976,11 +1976,11 @@ e_j=\frac{r_{F,j}-r_j^*}{r_{s,j}}.
 <section class="level4" data-number="6.8.10.3" id="温度归一">
 <h4 class="anchored" data-anchor-id="温度归一" data-number="6.8.10.3"><span class="header-section-number">6.8.10.3</span> 温度归一</h4>
 <p>索力随索体温度、主梁伸缩和桥塔位移共同变化。不同时间索力比较前，应统一结构状态和温度基准。可在稳定运营时段建立教学回归</p>
-<p><span class="math display">\[
-T(t)=T_{\mathrm{ref}}
-+k_c[T_c(t)-T_{c,\mathrm{ref}}]
-+k_b[T_b(t)-T_{b,\mathrm{ref}}]
-+\epsilon(t),
+<p><span class="math display">\[
+T(t)=T_{\mathrm{ref}}
++k_c[T_c(t)-T_{c,\mathrm{ref}}]
++k_b[T_b(t)-T_{b,\mathrm{ref}}]
++\epsilon(t),
 \]</span></p>
 <p>其中，<span class="math inline">\(T_c,T_b\)</span> 分别为索体和主梁代表温度（℃或K的温差），<span class="math inline">\(k_c,k_b\)</span> 为 kN/K，<span class="math inline">\(\epsilon\)</span> 包含交通、风和未建模影响。系数应由有足够覆盖范围且结构状态稳定的数据识别，不能从短时相关性直接解释为材料常数。日照下索表面与内部温度不同，测点位置和辐射条件需要记录。</p>
 <p>施工索力比较更应使用同一事件时点。张拉完成后立即读取、锚固回缩后读取和温度稳定后读取对应不同状态，应分别存储。监控报告同时给出千斤顶或压力传感器结果、频率法结果及二者差异；二者基准、量测范围和误差模型不同，不能简单平均。</p>
@@ -2092,14 +2092,14 @@ T(t)=T_{\mathrm{ref}}
 <li><strong>维护路径。</strong> 检查锚具、阻尼器和索体能否接近，换索设备是否有布置空间，旧索退出时是否存在可建立的临时传力路径。</li>
 </ol>
 <p>设第 <span class="math inline">\(i\)</span> 根索的梁端与塔端坐标差为 <span class="math inline">\((\Delta x_i,\Delta y_i,\Delta z_i)\)</span>，索弦长为</p>
-<p><span class="math display">\[
-L_i=\sqrt{\Delta x_i^2+\Delta y_i^2+\Delta z_i^2},
+<p><span class="math display">\[
+L_i=\sqrt{\Delta x_i^2+\Delta y_i^2+\Delta z_i^2},
 \]</span></p>
 <p>索力矢量在桥梁纵、横、竖三个方向的分量为</p>
-<p><span class="math display">\[
-\begin{bmatrix}H_{x,i}\\H_{y,i}\\V_i\end{bmatrix}
-=\frac{T_i}{L_i}
-\begin{bmatrix}\Delta x_i\\\Delta y_i\\\Delta z_i\end{bmatrix}.
+<p><span class="math display">\[
+\begin{bmatrix}H_{x,i}\\H_{y,i}\\V_i\end{bmatrix}
+=\frac{T_i}{L_i}
+\begin{bmatrix}\Delta x_i\\\Delta y_i\\\Delta z_i\end{bmatrix}.
 \]</span></p>
 <p>式中，<span class="math inline">\(L_i\)</span>、<span class="math inline">\(\Delta x_i\)</span>、<span class="math inline">\(\Delta y_i\)</span>、<span class="math inline">\(\Delta z_i\)</span> 用 m，<span class="math inline">\(T_i\)</span> 及其分量用 kN。该式把“索面名称”转化为可以核验的三维传力关系。对于单索面桥，<span class="math inline">\(H_{y,i}\)</span> 可能较小，但偏心交通产生的主梁扭矩仍需通过截面和横向构造闭合；对于空间索面，横向分量可参与稳定，但也会增加塔上锚固区横向力。</p>
 <p>体系筛选时应保存被淘汰方案及原因。例如，“端支点在规定状态下出现不允许的拉力”“塔内锚固空间不足”“最大梁段质量超出运输吊装条件”属于硬约束；材料量、景观连续性、检查难度和施工工期可在满足硬约束后作为比较指标。把硬约束与偏好指标混入一个无量纲总分，会使不可实施方案因其他指标得分较高而被错误保留。</p>
@@ -2115,8 +2115,8 @@ L_i=\sqrt{\Delta x_i^2+\Delta y_i^2+\Delta z_i^2},
 <section class="level4" data-number="6.9.1.1" id="控制变量与响应变量的物理配对">
 <h4 class="anchored" data-anchor-id="控制变量与响应变量的物理配对" data-number="6.9.1.1"><span class="header-section-number">6.9.1.1</span> 控制变量与响应变量的物理配对</h4>
 <p>控制变量可以是索力增量、索的无应力长度增量、张拉端位移或施工配重，但同一次优化中必须明确唯一的物理输入。设控制变量为 <span class="math inline">\(\boldsymbol q\in\mathbb R^n\)</span>，响应为 <span class="math inline">\(\boldsymbol r\in\mathbb R^m\)</span>，线性化关系写为</p>
-<p><span class="math display">\[
-\Delta\boldsymbol r=\boldsymbol A_q\Delta\boldsymbol q.
+<p><span class="math display">\[
+\Delta\boldsymbol r=\boldsymbol A_q\Delta\boldsymbol q.
 \]</span></p>
 <p>若 <span class="math inline">\(q_i\)</span> 是索力，单位为 kN；若为无应力长度，单位为 m；若为锚杯位移，单位可用 mm。矩阵第 <span class="math inline">\(j\)</span> 行单位因此是“第 <span class="math inline">\(j\)</span> 个响应单位/第 <span class="math inline">\(i\)</span> 个控制单位”。同一列中可以同时包含 kN·m/kN、mm/kN 和 kN/kN 等不同量纲，必须先尺度化后才能比较。</p>
 <p>响应变量不宜只选梁面标高。建议至少从下列各组选择代表量：主梁控制截面弯矩、桥塔控制截面弯矩、塔顶纵横向位移、端支点反力、代表索力偏差、梁面线形及整体平衡残差。若只控制位移，可能得到弯矩集中或索力突变；若只控制内力，可能得到不满足制造与铺装要求的线形。</p>
@@ -2124,36 +2124,36 @@ L_i=\sqrt{\Delta x_i^2+\Delta y_i^2+\Delta z_i^2},
 <section class="level4" data-number="6.9.1.2" id="有效控制子空间">
 <h4 class="anchored" data-anchor-id="有效控制子空间" data-number="6.9.1.2"><span class="header-section-number">6.9.1.2</span> 有效控制子空间</h4>
 <p>对尺度化矩阵 <span class="math inline">\(\widetilde{\boldsymbol A}\)</span> 作奇异值分解</p>
-<p><span class="math display">\[
-\widetilde{\boldsymbol A}
-=\boldsymbol U\boldsymbol\Sigma\boldsymbol V^{\mathrm T},
+<p><span class="math display">\[
+\widetilde{\boldsymbol A}
+=\boldsymbol U\boldsymbol\Sigma\boldsymbol V^{\mathrm T},
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol\Sigma=\operatorname{diag}(\sigma_1,\ldots,\sigma_p)\)</span>，<span class="math inline">\(p=\min(m,n)\)</span>。较大的奇异值对应容易通过索力组合改变的响应方向，较小奇异值对应控制能力弱或索组作用近似抵消的方向。阈值不能脱离尺度、扰动误差和目标精度机械设定；应结合矩阵的数值噪声、线性化范围以及完整模型复算结果确定有效秩。</p>
 <p>右奇异向量 <span class="math inline">\(\boldsymbol v_k\)</span> 表示索力协同变化模式，左奇异向量 <span class="math inline">\(\boldsymbol u_k\)</span> 表示相应的响应模式。若某一小奇异值方向表现为相邻索大幅正负调整，而全桥响应变化很小，该方向在数学上接近零空间，在工程上通常意味着“张拉工作量大、误差敏感、收益小”。优化中采用正则化或索组约束，实质是抑制这类调整模式。</p>
 <p>对目标 <span class="math inline">\(\boldsymbol d\)</span>，可采用如下稳健形式：</p>
-<p><span class="math display">\[
-\min_{\Delta\boldsymbol q}
-\left\|
-\boldsymbol W_r(\boldsymbol A_q\Delta\boldsymbol q-\boldsymbol d)
-\right\|_2^2
-+\lambda_1\|\boldsymbol W_q\Delta\boldsymbol q\|_2^2
-+\lambda_2\|\boldsymbol D\Delta\boldsymbol q\|_2^2,
+<p><span class="math display">\[
+\min_{\Delta\boldsymbol q}
+\left\|
+\boldsymbol W_r(\boldsymbol A_q\Delta\boldsymbol q-\boldsymbol d)
+\right\|_2^2
++\lambda_1\|\boldsymbol W_q\Delta\boldsymbol q\|_2^2
++\lambda_2\|\boldsymbol D\Delta\boldsymbol q\|_2^2,
 \]</span></p>
 <p>并满足</p>
-<p><span class="math display">\[
-\boldsymbol q_{\min}\leq
-\boldsymbol q_0+\Delta\boldsymbol q
-\leq\boldsymbol q_{\max},
-\qquad
-\boldsymbol C(\boldsymbol q_0+\Delta\boldsymbol q)\leq\boldsymbol b.
+<p><span class="math display">\[
+\boldsymbol q_{\min}\leq
+\boldsymbol q_0+\Delta\boldsymbol q
+\leq\boldsymbol q_{\max},
+\qquad
+\boldsymbol C(\boldsymbol q_0+\Delta\boldsymbol q)\leq\boldsymbol b.
 \]</span></p>
 <p>式中，<span class="math inline">\(\boldsymbol W_r\)</span> 为响应尺度或权重矩阵；<span class="math inline">\(\boldsymbol W_q\)</span> 为控制量尺度矩阵；<span class="math inline">\(\boldsymbol D\)</span> 可表示相邻索差分；<span class="math inline">\(\lambda_1\)</span>、<span class="math inline">\(\lambda_2\)</span> 为正则化参数；<span class="math inline">\(\boldsymbol C\boldsymbol q\leq\boldsymbol b\)</span> 表示索力、塔偏位、端反力或设备行程等线性化约束。所有边界来自设计、施工设备或现行标准的受控数据，不在教材中给出通用数值。</p>
 </section>
 <section class="level4" data-number="6.9.1.3" id="模型误差下的稳健检查">
 <h4 class="anchored" data-anchor-id="模型误差下的稳健检查" data-number="6.9.1.3"><span class="header-section-number">6.9.1.3</span> 模型误差下的稳健检查</h4>
 <p>影响矩阵本身也有误差。可写为</p>
-<p><span class="math display">\[
-\boldsymbol A_q=\overline{\boldsymbol A}_q+\Delta\boldsymbol A_q,
+<p><span class="math display">\[
+\boldsymbol A_q=\overline{\boldsymbol A}_q+\Delta\boldsymbol A_q,
 \]</span></p>
 <p>其中 <span class="math inline">\(\overline{\boldsymbol A}_q\)</span> 为名义矩阵，<span class="math inline">\(\Delta\boldsymbol A_q\)</span> 来自刚度、边界、索垂度和施工状态不确定性。教学中不必直接求复杂的鲁棒优化，而可采用扰动集合检验：改变主梁刚度、塔梁约束、温度与代表索刚度，在每个情景下复算同一调整方案。若某方案仅在名义模型中误差很小，却在轻微扰动下造成索力反转或端支点反力越界，应降低对该方向的控制强度或增加观测。</p>
 <p>稳健检查至少报告三项：目标残差的变化范围、活动约束是否改变、控制变量对输入扰动的放大倍数。最小目标函数值不是唯一决策依据。较小但分布平滑、可由设备可靠实现且对参数扰动不敏感的调整方案，通常比高度精确却依赖相邻索大幅反向调整的方案更可实施。</p>
@@ -2161,8 +2161,8 @@ L_i=\sqrt{\Delta x_i^2+\Delta y_i^2+\Delta z_i^2},
 <section class="level4" data-number="6.9.1.4" id="可观测性与监控配置">
 <h4 class="anchored" data-anchor-id="可观测性与监控配置" data-number="6.9.1.4"><span class="header-section-number">6.9.1.4</span> 可观测性与监控配置</h4>
 <p>设待识别状态或参数为 <span class="math inline">\(\boldsymbol p\)</span>，量测为</p>
-<p><span class="math display">\[
-\Delta\boldsymbol y=\boldsymbol S_y\Delta\boldsymbol p+\boldsymbol\varepsilon,
+<p><span class="math display">\[
+\Delta\boldsymbol y=\boldsymbol S_y\Delta\boldsymbol p+\boldsymbol\varepsilon,
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol S_y\)</span> 为观测敏感矩阵，<span class="math inline">\(\boldsymbol\varepsilon\)</span> 包含测量和模型误差。若不同参数对应的列近似线性相关，仅凭现有测点不能区分它们。例如，主梁刚度偏差与节段重量偏差可能都造成梁面标高变化；增加索力或塔顶坐标观测，才可能改善辨识。</p>
 <p>监控设计应与控制设计同时进行：准备通过索力改变哪一类响应，就要布置能够确认该响应及其副作用的观测。每次调整后至少复测直接控制量、主要耦合量和整体平衡量。算法给出的“最可能参数”只属于识别候选；未通过独立观测和现场事件核对，不得直接转换为调索指令。</p>
@@ -2177,8 +2177,8 @@ L_i=\sqrt{\Delta x_i^2+\Delta y_i^2+\Delta z_i^2},
 <section class="level4" data-number="6.9.2.1" id="直索近似与悬链线边界">
 <h4 class="anchored" data-anchor-id="直索近似与悬链线边界" data-number="6.9.2.1"><span class="header-section-number">6.9.2.1</span> 直索近似与悬链线边界</h4>
 <p>对短索或概念校核，在索力近似均匀且垂度可忽略时，有</p>
-<p><span class="math display">\[
-L-L_0\approx L_0\left(\frac{T}{EA}+\alpha\Delta T_c\right),
+<p><span class="math display">\[
+L-L_0\approx L_0\left(\frac{T}{EA}+\alpha\Delta T_c\right),
 \]</span></p>
 <p>式中，<span class="math inline">\(L\)</span> 为当前弦长或近似有应力长度（m），<span class="math inline">\(L_0\)</span> 为参考温度下无应力长度（m），<span class="math inline">\(T\)</span> 为索力（kN），<span class="math inline">\(E\)</span> 为弹性模量（kPa），<span class="math inline">\(A\)</span> 为截面积（m²），<span class="math inline">\(\alpha\)</span> 为线膨胀系数（1/K），<span class="math inline">\(\Delta T_c\)</span> 为索体温差（K）。采用 kN—m 单位制时 <span class="math inline">\(EA\)</span> 用 kN。该式没有反映索自重垂度和沿索轴力变化，不适合直接确定长索制造长度。</p>
 <p>对自重不可忽略的索，应采用悬链线或经验证的索单元。二维均布自重理想化下，可用水平分力 <span class="math inline">\(H\)</span> 和单位水平投影荷载 <span class="math inline">\(w\)</span> 表示索形；三维、风偏、支点高差及弹性伸长则需数值积分。输入应说明自重是按索弧长还是水平投影分布，输出同时给弦长、弧长、端力和最低点位置，防止把不同定义的长度混用。</p>
@@ -2186,14 +2186,14 @@ L-L_0\approx L_0\left(\frac{T}{EA}+\alpha\Delta T_c\right),
 <section class="level4" data-number="6.9.2.2" id="无应力长度与单元初始状态">
 <h4 class="anchored" data-anchor-id="无应力长度与单元初始状态" data-number="6.9.2.2"><span class="header-section-number">6.9.2.2</span> 无应力长度与单元初始状态</h4>
 <p>常见索单元控制方式包括：给定无应力长度、给定初始应变、给定安装索力或通过张拉端位移形成索力。它们可以相互换算，但不能在同一阶段重复输入。数据文件建议设置互斥字段：</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="fu">cable_state</span><span class="kw">:</span></span>
-<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="at">  </span><span class="fu">control_mode</span><span class="kw">:</span><span class="at"> unstressed_length</span><span class="co">   # 只能选一种控制方式</span></span>
-<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a><span class="at">  </span><span class="fu">reference_temperature_C</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a><span class="at">  </span><span class="fu">unstressed_length_m</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a><span class="at">  </span><span class="fu">imposed_strain</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a><span class="at">  </span><span class="fu">target_force_kN</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a><span class="at">  </span><span class="fu">jack_displacement_mm</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
-<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a><span class="at">  </span><span class="fu">source_ref</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a aria-hidden="true" href="#cb1-1" tabindex="-1"></a><span class="fu">cable_state</span><span class="kw">:</span></span>
+<span id="cb1-2"><a aria-hidden="true" href="#cb1-2" tabindex="-1"></a><span class="at">  </span><span class="fu">control_mode</span><span class="kw">:</span><span class="at"> unstressed_length</span><span class="co">   # 只能选一种控制方式</span></span>
+<span id="cb1-3"><a aria-hidden="true" href="#cb1-3" tabindex="-1"></a><span class="at">  </span><span class="fu">reference_temperature_C</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb1-4"><a aria-hidden="true" href="#cb1-4" tabindex="-1"></a><span class="at">  </span><span class="fu">unstressed_length_m</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb1-5"><a aria-hidden="true" href="#cb1-5" tabindex="-1"></a><span class="at">  </span><span class="fu">imposed_strain</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb1-6"><a aria-hidden="true" href="#cb1-6" tabindex="-1"></a><span class="at">  </span><span class="fu">target_force_kN</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb1-7"><a aria-hidden="true" href="#cb1-7" tabindex="-1"></a><span class="at">  </span><span class="fu">jack_displacement_mm</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
+<span id="cb1-8"><a aria-hidden="true" href="#cb1-8" tabindex="-1"></a><span class="at">  </span><span class="fu">source_ref</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span>
 <span id="cb1-9"><a aria-hidden="true" href="#cb1-9" tabindex="-1"></a><span class="at">  </span><span class="fu">review_status</span><span class="kw">:</span><span class="at"> teaching</span></span></code></pre></div><button class="code-copy-button" title="复制到剪贴板"><i class="bi"></i></button></div>
 <p>当 <code>control_mode</code> 为 <code>unstressed_length</code> 时，其他三个控制字段保持空值；程序可以计算等效初应变或目标索力，但需标注为派生量。温度场、弹性模量和锚具回缩分别保存，不得悄然吸收到所谓“修正索长”中。</p>
 </section>
@@ -2204,10 +2204,10 @@ L-L_0\approx L_0\left(\frac{T}{EA}+\alpha\Delta T_c\right),
 <section class="level4" data-number="6.9.2.4" id="合龙坐标与锁定效应">
 <h4 class="anchored" data-anchor-id="合龙坐标与锁定效应" data-number="6.9.2.4"><span class="header-section-number">6.9.2.4</span> 合龙坐标与锁定效应</h4>
 <p>合龙控制量不只包括两端高差。设两合龙端相对位移和转角为</p>
-<p><span class="math display">\[
-\boldsymbol g=
-[\Delta x,\Delta y,\Delta z,
-\Delta\theta_x,\Delta\theta_y,\Delta\theta_z]^{\mathrm T},
+<p><span class="math display">\[
+\boldsymbol g=
+[\Delta x,\Delta y,\Delta z,
+\Delta\theta_x,\Delta\theta_y,\Delta\theta_z]^{\mathrm T},
 \]</span></p>
 <p>前三项用 mm，后三项用 rad 或 mrad。合龙段制造尺寸、焊接收缩或混凝土浇筑、临时锁定、日照温差和配重共同决定最终锁定作用。监测数据必须附带构件温度、风和观测时间；仅用气温修正合龙间隙，可能不能反映塔、梁和索的不同温度场。</p>
 <p>正装—倒拆闭环可按四个层次判断：拓扑和事件一致；线弹性、无时变基线可逆；加入几何非线性后的目标状态可接受；加入温度、收缩徐变和实际龄期后的偏差可由施工控制量覆盖。倒拆结果属于制造和张拉的初始候选，最终控制值由正装、量测和审批共同形成。</p>
@@ -2225,8 +2225,8 @@ L-L_0\approx L_0\left(\frac{T}{EA}+\alpha\Delta T_c\right),
 <section class="level4" data-number="6.9.3.1" id="锚点平衡与轴力跳变">
 <h4 class="anchored" data-anchor-id="锚点平衡与轴力跳变" data-number="6.9.3.1"><span class="header-section-number">6.9.3.1</span> 锚点平衡与轴力跳变</h4>
 <p>在第 <span class="math inline">\(i\)</span> 个索梁锚点处，取主梁局部坐标 <span class="math inline">\(x\)</span> 沿桥向，锚点左、右截面的轴力分别为 <span class="math inline">\(N_i^-\)</span> 和 <span class="math inline">\(N_i^+\)</span>，则局部平衡给出</p>
-<p><span class="math display">\[
-N_i^+-N_i^-+H_{x,i}+P_{x,i}=0,
+<p><span class="math display">\[
+N_i^+-N_i^-+H_{x,i}+P_{x,i}=0,
 \]</span></p>
 <p>式中，<span class="math inline">\(H_{x,i}\)</span> 为该索作用于主梁的纵向分量（kN），<span class="math inline">\(P_{x,i}\)</span> 为锚点处其他纵向集中力（kN）。符号取决于局部轴方向，程序应把节点力和截面内力画在同一自由体上核对。若没有其他纵向作用，沿跨向累计索水平分力即可得到主梁轴力的基本阶梯形分布。数值模型在锚点两侧输出的轴力差，应与节点索力纵向分量在容差内闭合。</p>
 <p>索梁锚点通常还存在竖向、横向分量和偏心矩。总体梁单元可用刚臂或偏心连接把索力传到截面剪心；若索力直接施加于主梁中心线，可能漏掉锚点偏心产生的扭矩和横向弯矩。局部锚固模型则应接收完整六分量作用，不应只接收轴向索力。</p>
@@ -2234,15 +2234,15 @@ N_i^+-N_i^-+H_{x,i}+P_{x,i}=0,
 <section class="level4" data-number="6.9.3.2" id="轴力作用下的梁柱方程">
 <h4 class="anchored" data-anchor-id="轴力作用下的梁柱方程" data-number="6.9.3.2"><span class="header-section-number">6.9.3.2</span> 轴力作用下的梁柱方程</h4>
 <p>对轴力在梁段内近似常值、挠度较小的平面梁段，横向平衡可概念性写为</p>
-<p><span class="math display">\[
-EI_y\frac{\mathrm d^4v}{\mathrm dx^4}
-+N\frac{\mathrm d^2v}{\mathrm dx^2}=p_y(x),
+<p><span class="math display">\[
+EI_y\frac{\mathrm d^4v}{\mathrm dx^4}
++N\frac{\mathrm d^2v}{\mathrm dx^2}=p_y(x),
 \]</span></p>
 <p>式中，<span class="math inline">\(E\)</span> 为弹性模量（kPa），<span class="math inline">\(I_y\)</span> 为相应弯曲轴的截面惯性矩（m⁴），<span class="math inline">\(v\)</span> 为挠度（m），<span class="math inline">\(x\)</span> 为纵向坐标（m），<span class="math inline">\(N\)</span> 为轴向压力（kN，本文取压力为正），<span class="math inline">\(p_y\)</span> 为线荷载（kN/m）。<span class="math inline">\(EI_yv''''\)</span> 与 <span class="math inline">\(Nv''\)</span> 的量纲均为 kN/m。该方程用于解释几何刚度，不直接替代变轴力、薄壁扭转和大位移有限元分析。</p>
 <p>有限元切线平衡写为</p>
-<p><span class="math display">\[
-(\boldsymbol K_E+\boldsymbol K_G)\Delta\boldsymbol u
-=\Delta\boldsymbol P,
+<p><span class="math display">\[
+(\boldsymbol K_E+\boldsymbol K_G)\Delta\boldsymbol u
+=\Delta\boldsymbol P,
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol K_E\)</span> 为材料和截面弹性刚度，<span class="math inline">\(\boldsymbol K_G\)</span> 为由当前轴力、索力和应力状态形成的几何刚度。改变初始索力会同时改变外观相同结构的 <span class="math inline">\(\boldsymbol K_G\)</span> 和模态，因此动力、稳定与索力优化必须采用一致的成桥初始状态。</p>
 </section>
@@ -2255,8 +2255,8 @@ EI_y\frac{\mathrm d^4v}{\mathrm dx^4}
 <li><strong>全桥协同。</strong> 主梁、桥塔和拉索的几何刚度耦合，施工悬臂、不对称活载、横风或地震可能产生与成桥对称状态不同的控制模态。</li>
 </ul>
 <p>特征值屈曲问题可写为</p>
-<p><span class="math display">\[
-(\boldsymbol K_E+\lambda\boldsymbol K_G)\boldsymbol\phi=\boldsymbol0,
+<p><span class="math display">\[
+(\boldsymbol K_E+\lambda\boldsymbol K_G)\boldsymbol\phi=\boldsymbol0,
 \]</span></p>
 <p>其中 <span class="math inline">\(\lambda\)</span> 为荷载或参考应力状态的放大系数，<span class="math inline">\(\boldsymbol\phi\)</span> 为屈曲模态。它适合识别可能的失稳方向和比较方案，但不能直接视为含缺陷、材料屈服及索松弛条件下的承载力。进一步分析应按目标问题选择几何非线性、材料非线性、初始缺陷和残余应力，并说明缺陷形状来源。</p>
 <p>稳定验证建议采用递进层级：先以单梁或梁柱算例验证符号和几何刚度；再以成桥线性特征值分析识别模态；然后在代表施工与运营状态中引入几何缺陷开展非线性路径分析；最后检查局部板壳模型和总体模型之间的轴力、弯矩、扭矩及约束传递。不同层级回答的问题不同，不能以一个特征值覆盖全部稳定判断。</p>
@@ -2279,11 +2279,11 @@ EI_y\frac{\mathrm d^4v}{\mathrm dx^4}
 <section class="level4" data-number="6.9.4.1" id="动力方程与适用边界">
 <h4 class="anchored" data-anchor-id="动力方程与适用边界" data-number="6.9.4.1"><span class="header-section-number">6.9.4.1</span> 动力方程与适用边界</h4>
 <p>忽略垂度、弯曲刚度并把索力视为常量时，索横向振动可由理想弦方程表示：</p>
-<p><span class="math display">\[
-m\frac{\partial^2w}{\partial t^2}
-+c\frac{\partial w}{\partial t}
--T\frac{\partial^2w}{\partial s^2}
-=p(s,t),
+<p><span class="math display">\[
+m\frac{\partial^2w}{\partial t^2}
++c\frac{\partial w}{\partial t}
+-T\frac{\partial^2w}{\partial s^2}
+=p(s,t),
 \]</span></p>
 <p>式中，<span class="math inline">\(m\)</span> 为单位长度质量（kg/m），<span class="math inline">\(w\)</span> 为横向位移（m），<span class="math inline">\(t\)</span> 为时间（s），<span class="math inline">\(c\)</span> 为单位长度等效黏性阻尼（N·s/m²），<span class="math inline">\(T\)</span> 为索力（N），<span class="math inline">\(s\)</span> 为沿索坐标（m），<span class="math inline">\(p\)</span> 为单位长度横向激励（N/m）。当索的弯曲刚度不可忽略时，可增加 <span class="math inline">\(EI_c\partial^4w/\partial s^4\)</span>；当索力随桥面或桥塔运动周期变化时，<span class="math inline">\(T=T(t)\)</span>，方程具有参数激励特征。</p>
 <p>该简化方程不能同时代表所有索振现象。现象辨识应结合激励条件、频率关系、振型、风雨状态和运动轨迹：</p>
@@ -2346,10 +2346,10 @@ m\frac{\partial^2w}{\partial t^2}
 <section class="level4" data-number="6.9.4.2" id="阻尼的识别和装置评价">
 <h4 class="anchored" data-anchor-id="阻尼的识别和装置评价" data-number="6.9.4.2"><span class="header-section-number">6.9.4.2</span> 阻尼的识别和装置评价</h4>
 <p>自由衰减近似为单模态时，相邻若干峰值 <span class="math inline">\(x_k\)</span> 可求对数衰减率</p>
-<p><span class="math display">\[
-\delta=\frac{1}{j}\ln\frac{x_k}{x_{k+j}},
-\qquad
-\zeta=\frac{\delta}{\sqrt{4\pi^2+\delta^2}},
+<p><span class="math display">\[
+\delta=\frac{1}{j}\ln\frac{x_k}{x_{k+j}},
+\qquad
+\zeta=\frac{\delta}{\sqrt{4\pi^2+\delta^2}},
 \]</span></p>
 <p>其中 <span class="math inline">\(j\)</span> 为间隔周期数，<span class="math inline">\(\zeta\)</span> 为阻尼比。现场信号含多模态、非平稳风和测量噪声时，应给出拟合区间、模态分离方法与不确定度。阻尼器评价需比较安装位置、目标模态、行程、速度、温度和连接刚度，不能只报告一个名义阻尼系数。</p>
 <p>外置阻尼器可在有限安装距离内耗能，其效率与目标模态在安装点的位移有关；交叉索改变索群模态和荷载传递；表面螺旋线或凹槽等气动措施改变雨水与绕流。措施选择应先对应已识别机制，再通过分析、试验或监测确认。对一个机制有效的措施，未必控制另一种索振。</p>
@@ -2357,16 +2357,16 @@ m\frac{\partial^2w}{\partial t^2}
 <section class="level4" data-number="6.9.4.3" id="从响应时程到疲劳评价">
 <h4 class="anchored" data-anchor-id="从响应时程到疲劳评价" data-number="6.9.4.3"><span class="header-section-number">6.9.4.3</span> 从响应时程到疲劳评价</h4>
 <p>索力时程可写为</p>
-<p><span class="math display">\[
-T(t)=T_0+\Delta T_{\mathrm{traffic}}(t)
-+\Delta T_{\mathrm{wind}}(t)
-+\Delta T_{\mathrm{temp}}(t)
-+\Delta T_{\mathrm{deck}}(t),
+<p><span class="math display">\[
+T(t)=T_0+\Delta T_{\mathrm{traffic}}(t)
++\Delta T_{\mathrm{wind}}(t)
++\Delta T_{\mathrm{temp}}(t)
++\Delta T_{\mathrm{deck}}(t),
 \]</span></p>
 <p>其中各项分别表示基准索力、交通、风、温度及桥面或塔运动引起的变化，单位为 kN。不同来源未必统计独立，也未必处于同一时间尺度；分解用于数据解释，最终疲劳输入应来自与目标细节相符的组合时程或规定方法。</p>
 <p>名义轴向应力变化可用 <span class="math inline">\(\Delta\sigma=\Delta T/A_m\)</span> 估算，<span class="math inline">\(A_m\)</span> 为参与受力的金属截面积（m²）。锚端弯曲、丝间接触、锚具楔固和局部偏心会使实际应力范围高于名义值；所采用的疲劳抗力类别、试验结果和安全格式须回查相应现行标准及产品资料。雨流计数把应力时程转换为不同范围 <span class="math inline">\(\Delta\sigma_j\)</span> 与循环数 <span class="math inline">\(n_j\)</span>；若采用线性损伤累积，概念式为</p>
-<p><span class="math display">\[
-D=\sum_j\frac{n_j}{N_j},
+<p><span class="math display">\[
+D=\sum_j\frac{n_j}{N_j},
 \]</span></p>
 <p>其中 <span class="math inline">\(N_j\)</span> 为相应应力范围下的容许循环数。该式只说明数据接口，不在本教材中规定疲劳曲线或判定阈值。</p>
 </section>
@@ -2388,11 +2388,11 @@ D=\sum_j\frac{n_j}{N_j},
 <section class="level4" data-number="6.9.5.1" id="观测方程与误差构成">
 <h4 class="anchored" data-anchor-id="观测方程与误差构成" data-number="6.9.5.1"><span class="header-section-number">6.9.5.1</span> 观测方程与误差构成</h4>
 <p>第 <span class="math inline">\(k\)</span> 施工阶段的观测可写为</p>
-<p><span class="math display">\[
-\boldsymbol y_k=
-\boldsymbol h_k(\boldsymbol x_k,\boldsymbol p,
-\boldsymbol e_{1:k},\boldsymbol T_k)
-+\boldsymbol b_k+\boldsymbol\varepsilon_k,
+<p><span class="math display">\[
+\boldsymbol y_k=
+\boldsymbol h_k(\boldsymbol x_k,\boldsymbol p,
+\boldsymbol e_{1:k},\boldsymbol T_k)
++\boldsymbol b_k+\boldsymbol\varepsilon_k,
 \]</span></p>
 <p>式中，<span class="math inline">\(\boldsymbol x_k\)</span> 为阶段结构状态，<span class="math inline">\(\boldsymbol p\)</span> 为材料、截面和边界参数，<span class="math inline">\(\boldsymbol e_{1:k}\)</span> 为截至当前的施工事件记录，<span class="math inline">\(\boldsymbol T_k\)</span> 为构件温度场，<span class="math inline">\(\boldsymbol b_k\)</span> 为系统偏差，<span class="math inline">\(\boldsymbol\varepsilon_k\)</span> 为随机测量误差。线形、索力、应变和塔顶坐标必须具有统一时间戳，否则交通、日照和施工操作会被错误解释为参数变化。</p>
 <p>差异诊断按由近及远的顺序进行：先核对测点、仪器、坐标和温度；再核对梁段是否安装、临时支承是否解除、索是否完成锁定；随后核对节段重量、索参数、材料龄期和边界；最后才讨论模型形式。每一候选原因都需能预测不止一个观测量。例如，若把梁面标高偏差归因于某索索力，应同时检查该索频率、相邻梁段标高和塔顶位移的变化方向。</p>
@@ -2400,15 +2400,15 @@ D=\sum_j\frac{n_j}{N_j},
 <section class="level4" data-number="6.9.5.2" id="识别与独立验证">
 <h4 class="anchored" data-anchor-id="识别与独立验证" data-number="6.9.5.2"><span class="header-section-number">6.9.5.2</span> 识别与独立验证</h4>
 <p>参数更新可采用加权最小二乘或贝叶斯形式，但应限制待识别参数数量。以高斯线性化为例：</p>
-<p><span class="math display">\[
-\widehat{\Delta\boldsymbol p}
-=\arg\min_{\Delta\boldsymbol p}
-\left\|
-\boldsymbol W_y(\boldsymbol S_p\Delta\boldsymbol p-\Delta\boldsymbol y)
-\right\|_2^2
-+\left\|
-\boldsymbol W_p\Delta\boldsymbol p
-\right\|_2^2.
+<p><span class="math display">\[
+\widehat{\Delta\boldsymbol p}
+=\arg\min_{\Delta\boldsymbol p}
+\left\|
+\boldsymbol W_y(\boldsymbol S_p\Delta\boldsymbol p-\Delta\boldsymbol y)
+\right\|_2^2
++\left\|
+\boldsymbol W_p\Delta\boldsymbol p
+\right\|_2^2.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol W_y\)</span> 反映量测尺度与不确定度，<span class="math inline">\(\boldsymbol W_p\)</span> 反映参数先验范围。识别后应使用未参与拟合的观测验证；若所有测点都用于拟合，残差降低并不能证明预测能力提高。模型更新报告保留原参数、候选参数、采用参数、拟合观测、验证观测及其适用阶段。</p>
 </section>
@@ -2426,12 +2426,12 @@ D=\sum_j\frac{n_j}{N_j},
 <section class="level4" data-number="6.9.5.4" id="换索的状态路径与容量约束">
 <h4 class="anchored" data-anchor-id="换索的状态路径与容量约束" data-number="6.9.5.4"><span class="header-section-number">6.9.5.4</span> 换索的状态路径与容量约束</h4>
 <p>换索阶段的状态变量至少包括旧索索力 <span class="math inline">\(T_o\)</span>、新索索力 <span class="math inline">\(T_n\)</span>、临时体系力 <span class="math inline">\(T_t\)</span>、相邻索力向量 <span class="math inline">\(\boldsymbol T_a\)</span>、主梁线形 <span class="math inline">\(\boldsymbol u_b\)</span>、塔顶位移 <span class="math inline">\(\boldsymbol u_t\)</span> 和锚固区作用 <span class="math inline">\(\boldsymbol R_a\)</span>。某一卸载级 <span class="math inline">\(j\)</span> 到下一阶段的增量平衡可写为</p>
-<p><span class="math display">\[
-\boldsymbol K_{t,j}\Delta\boldsymbol u_j
-=\Delta\boldsymbol P_j
-+\boldsymbol B_o\Delta T_{o,j}
-+\boldsymbol B_n\Delta T_{n,j}
-+\boldsymbol B_t\Delta T_{t,j},
+<p><span class="math display">\[
+\boldsymbol K_{t,j}\Delta\boldsymbol u_j
+=\Delta\boldsymbol P_j
++\boldsymbol B_o\Delta T_{o,j}
++\boldsymbol B_n\Delta T_{n,j}
++\boldsymbol B_t\Delta T_{t,j},
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol K_{t,j}\)</span> 为当前阶段切线刚度，<span class="math inline">\(\boldsymbol B_o\)</span>、<span class="math inline">\(\boldsymbol B_n\)</span>、<span class="math inline">\(\boldsymbol B_t\)</span> 为索力变化到结构自由度的映射。索卸载可能使结构刚度和几何状态明显变化，较大阶段需用非线性重新平衡，不能将单位影响线外推到全过程。</p>
 <p>状态转换前的检查包括：临时构造是否达到设计状态；交通、风和温度是否满足专项条件；旧索和相邻索量测是否完成；张拉设备和锚具行程是否核对；锚固区是否存在损伤；异常时能否恢复到上一稳定状态。阶段完成后必须核对全桥平衡、相邻索力、塔梁位移与局部锚固作用，再决定是否进入下一阶段。</p>
@@ -2517,8 +2517,8 @@ D=\sum_j\frac{n_j}{N_j},
 <h4 class="anchored" data-anchor-id="第二步完成四项独立基线核验" data-number="6.9.6.2"><span class="header-section-number">6.9.6.2</span> 第二步：完成四项独立基线核验</h4>
 <p>第一项是总体平衡。自重和二期恒载单独施加，核对支反力总和与总荷载、基础力矩与荷载矩。第二项是代表索自由体：以前述水平距离 <span class="math inline">\(180\,\mathrm m\)</span>、高差 <span class="math inline">\(120\,\mathrm m\)</span> 的索核对方向余弦、<span class="math inline">\(T\)</span>、<span class="math inline">\(V\)</span> 和 <span class="math inline">\(H\)</span>。第三项是轴力跳变：比较主梁锚点左右轴力差与索水平分量。第四项是对称性：完全对称输入下，两塔和两索面的镜像响应应满足符号约定。</p>
 <p>每项核验保存解析值 <span class="math inline">\(r_A\)</span>、模型值 <span class="math inline">\(r_M\)</span>、差值和数值尺度。相对误差可写为</p>
-<p><span class="math display">\[
-e_r=\frac{r_M-r_A}{\max(|r_A|,r_s)},
+<p><span class="math display">\[
+e_r=\frac{r_M-r_A}{\max(|r_A|,r_s)},
 \]</span></p>
 <p>其中 <span class="math inline">\(r_s\)</span> 是预先声明的尺度，单位与 <span class="math inline">\(r_A\)</span> 相同。教材不规定统一容差；容差应由数值精度、模型用途和项目质量程序确定。响应接近零时必须使用绝对量或尺度化误差，不能用失真的百分比评价。</p>
 </section>
@@ -2526,12 +2526,12 @@ e_r=\frac{r_M-r_A}{\max(|r_A|,r_s)},
 <h4 class="anchored" data-anchor-id="第三步诊断索力矩阵而非直接求解" data-number="6.9.6.3"><span class="header-section-number">6.9.6.3</span> 第三步：诊断索力矩阵而非直接求解</h4>
 <p>沿用前述三索组教学矩阵 <span class="math inline">\(\boldsymbol A\)</span>。在相应的行、列尺度下，其三个奇异值约为 <span class="math inline">\(2.2981\)</span>、<span class="math inline">\(1.4647\)</span> 和 <span class="math inline">\(0.1147\)</span>，最大与最小奇异值之比约为 <span class="math inline">\(20.04\)</span>。这些数值由本章矩阵直接计算，可供读者复算；它们不对应工程阈值。较小的第三奇异值提示存在相对弱控方向，求解前需观察该方向对应哪些索组的反向调整。</p>
 <p>原目标修正向量为 <span class="math inline">\([-4.2,-0.4,0.75]^{\mathrm T}\)</span>，解为 <span class="math inline">\([1.5,1.0,0.5]^{\mathrm T}\,\mathrm{MN}\)</span>。若只把第一项目标幅值增加 <span class="math inline">\(5\%\)</span>，即改为 <span class="math inline">\([-4.41,-0.4,0.75]^{\mathrm T}\)</span>，直接解约为</p>
-<p><span class="math display">\[
-\Delta\boldsymbol T'
-=
-\begin{bmatrix}
-1.5163&amp;1.2231&amp;0.3858
-\end{bmatrix}^{\mathrm T}\ \mathrm{MN}.
+<p><span class="math display">\[
+\Delta\boldsymbol T'
+=
+\begin{bmatrix}
+1.5163&amp;1.2231&amp;0.3858
+\end{bmatrix}^{\mathrm T}\ \mathrm{MN}.
 \]</span></p>
 <p>第一索组变化不大，第二、第三索组的变化更明显。这一结果不是说矩阵“不可用”，而是说明某些目标方向会被索组协同放大。后续应分别比较：直接精确解；限制相邻索组差值的约束解；加入正则项的平滑解。三种结果都写回完整模型，按目标残差、索力边界、施工可调性和参数扰动敏感度共同选择。</p>
 </section>
@@ -2633,18 +2633,18 @@ e_r=\frac{r_M-r_A}{\max(|r_A|,r_s)},
 <h3 class="anchored" data-anchor-id="数字交互数据协议与验收规则" data-number="6.9.7"><span class="header-section-number">6.9.7</span> 数字交互数据协议与验收规则</h3>
 <p>数字教材的交互并不是正文之外的装饰。每个资源至少包含输入层、计算层、解释层和证据层。输入层显示变量、单位、范围来源和默认状态；计算层保留公式或模型版本；解释层突出因果关系与适用边界；证据层保存原始数据、校核、来源和审查状态。</p>
 <p>建议统一交换对象如下：</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a>  <span class="dt">"resource_id"</span><span class="fu">:</span> <span class="st">"6-17"</span><span class="fu">,</span></span>
-<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>  <span class="dt">"model_version"</span><span class="fu">:</span> <span class="st">"CSB400-B0"</span><span class="fu">,</span></span>
-<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a>  <span class="dt">"scenario_id"</span><span class="fu">:</span> <span class="st">"erection-closure"</span><span class="fu">,</span></span>
-<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a>  <span class="dt">"input_set"</span><span class="fu">:</span> <span class="st">"teaching-v1"</span><span class="fu">,</span></span>
-<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a>  <span class="dt">"unit_system"</span><span class="fu">:</span> <span class="st">"kN-m-s-K"</span><span class="fu">,</span></span>
-<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a>  <span class="dt">"standard_refs"</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span></span>
-<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a>  <span class="dt">"source_assets"</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span></span>
-<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a>  <span class="dt">"solver"</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">"name"</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span> <span class="dt">"version"</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span> <span class="dt">"settings"</span><span class="fu">:</span> <span class="fu">{}},</span></span>
-<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a>  <span class="dt">"verification"</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span></span>
-<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a>  <span class="dt">"review_status"</span><span class="fu">:</span> <span class="st">"teaching"</span><span class="fu">,</span></span>
-<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a>  <span class="dt">"export_time"</span><span class="fu">:</span> <span class="kw">null</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb2-1"><a aria-hidden="true" href="#cb2-1" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb2-2"><a aria-hidden="true" href="#cb2-2" tabindex="-1"></a>  <span class="dt">"resource_id"</span><span class="fu">:</span> <span class="st">"6-17"</span><span class="fu">,</span></span>
+<span id="cb2-3"><a aria-hidden="true" href="#cb2-3" tabindex="-1"></a>  <span class="dt">"model_version"</span><span class="fu">:</span> <span class="st">"CSB400-B0"</span><span class="fu">,</span></span>
+<span id="cb2-4"><a aria-hidden="true" href="#cb2-4" tabindex="-1"></a>  <span class="dt">"scenario_id"</span><span class="fu">:</span> <span class="st">"erection-closure"</span><span class="fu">,</span></span>
+<span id="cb2-5"><a aria-hidden="true" href="#cb2-5" tabindex="-1"></a>  <span class="dt">"input_set"</span><span class="fu">:</span> <span class="st">"teaching-v1"</span><span class="fu">,</span></span>
+<span id="cb2-6"><a aria-hidden="true" href="#cb2-6" tabindex="-1"></a>  <span class="dt">"unit_system"</span><span class="fu">:</span> <span class="st">"kN-m-s-K"</span><span class="fu">,</span></span>
+<span id="cb2-7"><a aria-hidden="true" href="#cb2-7" tabindex="-1"></a>  <span class="dt">"standard_refs"</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span></span>
+<span id="cb2-8"><a aria-hidden="true" href="#cb2-8" tabindex="-1"></a>  <span class="dt">"source_assets"</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span></span>
+<span id="cb2-9"><a aria-hidden="true" href="#cb2-9" tabindex="-1"></a>  <span class="dt">"solver"</span><span class="fu">:</span> <span class="fu">{</span><span class="dt">"name"</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span> <span class="dt">"version"</span><span class="fu">:</span> <span class="kw">null</span><span class="fu">,</span> <span class="dt">"settings"</span><span class="fu">:</span> <span class="fu">{}},</span></span>
+<span id="cb2-10"><a aria-hidden="true" href="#cb2-10" tabindex="-1"></a>  <span class="dt">"verification"</span><span class="fu">:</span> <span class="ot">[]</span><span class="fu">,</span></span>
+<span id="cb2-11"><a aria-hidden="true" href="#cb2-11" tabindex="-1"></a>  <span class="dt">"review_status"</span><span class="fu">:</span> <span class="st">"teaching"</span><span class="fu">,</span></span>
+<span id="cb2-12"><a aria-hidden="true" href="#cb2-12" tabindex="-1"></a>  <span class="dt">"export_time"</span><span class="fu">:</span> <span class="kw">null</span></span>
 <span id="cb2-13"><a aria-hidden="true" href="#cb2-13" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button class="code-copy-button" title="复制到剪贴板"><i class="bi"></i></button></div>
 <p><code>standard_refs</code> 未填写时仍可运行教学模式，但页面不得显示“满足规范”；工程模式则必须绑定标准版本、条款和参数来源。<code>source_assets</code> 记录图片、视频和数据的权利状态。<code>verification</code> 至少包含一个解析或独立数值核验。</p>
 <p>交互资源按以下项目验收：</p>
@@ -2668,20 +2668,20 @@ e_r=\frac{r_M-r_A}{\max(|r_A|,r_s)},
 <section class="level4" data-number="6.10.0.1" id="桥型谱系的参数化表达">
 <h4 class="anchored" data-anchor-id="桥型谱系的参数化表达" data-number="6.10.0.1"><span class="header-section-number">6.10.0.1</span> 桥型谱系的参数化表达</h4>
 <p>本章将桥型谱系表达为参数集合</p>
-<p><span class="math display">\[
-\mathcal B=\{L_m,L_s,n_p,\mathcal C,\mathcal P,
-\mathcal G,\mathcal R,\mathcal E,\mathcal M\},
+<p><span class="math display">\[
+\mathcal B=\{L_m,L_s,n_p,\mathcal C,\mathcal P,
+\mathcal G,\mathcal R,\mathcal E,\mathcal M\},
 \]</span></p>
 <p>式中，<span class="math inline">\(L_m\)</span>、<span class="math inline">\(L_s\)</span> 分别为主跨和边跨长度，单位为 <span class="math inline">\(\mathrm m\)</span>；<span class="math inline">\(n_p\)</span> 为塔数；<span class="math inline">\(\mathcal C\)</span> 为索面与索形；<span class="math inline">\(\mathcal P\)</span> 为塔形；<span class="math inline">\(\mathcal G\)</span> 为主梁材料和截面族；<span class="math inline">\(\mathcal R\)</span> 为纵横向约束；<span class="math inline">\(\mathcal E\)</span> 为施工方法和阶段；<span class="math inline">\(\mathcal M\)</span> 为检查、更换及交通组织条件。离散变量与连续变量共同存在，应先按净空、基础、端支点、施工和维护等硬约束筛选，再比较材料、工期、景观和全寿命指标。</p>
 <p>对一根索，梁端坐标为 <span class="math inline">\(\mathbf x_{b,i}\)</span>，塔端坐标为 <span class="math inline">\(\mathbf x_{t,i}\)</span>，单位均为 <span class="math inline">\(\mathrm m\)</span>。索弦向量与单位方向为</p>
-<p><span class="math display">\[
-\mathbf d_i=\mathbf x_{t,i}-\mathbf x_{b,i},
-\qquad
-\mathbf n_i=\frac{\mathbf d_i}{\|\mathbf d_i\|}.
+<p><span class="math display">\[
+\mathbf d_i=\mathbf x_{t,i}-\mathbf x_{b,i},
+\qquad
+\mathbf n_i=\frac{\mathbf d_i}{\|\mathbf d_i\|}.
 \]</span></p>
 <p>索力作用于梁端的理想集中力为 <span class="math inline">\(\mathbf f_{b,i}=T_i\mathbf n_i\)</span>，其中 <span class="math inline">\(T_i\)</span> 以 <span class="math inline">\(\mathrm N\)</span> 或 <span class="math inline">\(\mathrm{kN}\)</span> 表示。若锚点相对主梁参考线的偏心为 <span class="math inline">\(\mathbf e_i\)</span>，则传至参考线的力矩为</p>
-<p><span class="math display">\[
-\mathbf m_{b,i}=\mathbf e_i\times\mathbf f_{b,i}.
+<p><span class="math display">\[
+\mathbf m_{b,i}=\mathbf e_i\times\mathbf f_{b,i}.
 \]</span></p>
 <p><span class="math inline">\(\mathbf e_i\)</span> 单位为 <span class="math inline">\(\mathrm m\)</span>，<span class="math inline">\(\mathbf m_{b,i}\)</span> 单位为 <span class="math inline">\(\mathrm{N\,m}\)</span>。这组关系说明，改变索面不仅改变竖向分力，还改变主梁扭矩、横向弯矩和塔柱横向力。二维立面草图不能替代三维锚点核对。</p>
 </section>
@@ -2689,16 +2689,16 @@ e_r=\frac{r_M-r_A}{\max(|r_A|,r_s)},
 <h4 class="anchored" data-anchor-id="索面选择的力学与构造条件" data-number="6.10.0.2"><span class="header-section-number">6.10.0.2</span> 索面选择的力学与构造条件</h4>
 <p>单索面集中在桥轴附近，桥面偏心作用主要由主梁扭转和横向体系承担；双索面可直接提供较强的抗扭路径，但梁缘锚固、桥面宽度和横向构造更复杂；空间索面可使索产生横向分量，对塔横向稳定和景观有利或不利，取决于索塔几何和锚固区。索面比较至少输出四组指标：恒载下的竖向支承效率、偏载下的扭转与横向分配、塔柱与锚固区横向分力、施工和换索设备可达性。</p>
 <p>设桥面横向偏心荷载合力为 <span class="math inline">\(P\)</span>，其作用点至梁轴距离为 <span class="math inline">\(e_P\)</span>，外扭矩为 <span class="math inline">\(M_x=P e_P\)</span>。双索面间距为 <span class="math inline">\(b_c\)</span>，左右索面竖向分力增量差为 <span class="math inline">\(\Delta V\)</span>，则最简平衡关系为</p>
-<p><span class="math display">\[
-\Delta V\,b_c\approx M_x.
+<p><span class="math display">\[
+\Delta V\,b_c\approx M_x.
 \]</span></p>
 <p><span class="math inline">\(P\)</span>、<span class="math inline">\(\Delta V\)</span> 单位为 <span class="math inline">\(\mathrm N\)</span>，<span class="math inline">\(e_P\)</span>、<span class="math inline">\(b_c\)</span> 为 <span class="math inline">\(\mathrm m\)</span>，<span class="math inline">\(M_x\)</span> 为 <span class="math inline">\(\mathrm{N\,m}\)</span>。该式只用于检查扭矩量级；实际分配同时取决于主梁扭转刚度、横隔体系、索斜率、塔横向刚度和支座约束。若参数化程序改变 <span class="math inline">\(b_c\)</span>，应同步更新真实锚点、索长、梁缘构造和塔柱坐标。</p>
 </section>
 <section class="level4" data-number="6.10.0.3" id="塔形与索力闭合">
 <h4 class="anchored" data-anchor-id="塔形与索力闭合" data-number="6.10.0.3"><span class="header-section-number">6.10.0.3</span> 塔形与索力闭合</h4>
 <p>塔形需要同时闭合纵桥向不平衡力、横桥向索面分力和塔底边界。主跨与边跨索在第 <span class="math inline">\(j\)</span> 层塔锚点形成的合力为</p>
-<p><span class="math display">\[
-\mathbf F_{p,j}=\sum_{i\in\mathcal I_j}s_iT_i\mathbf n_i,
+<p><span class="math display">\[
+\mathbf F_{p,j}=\sum_{i\in\mathcal I_j}s_iT_i\mathbf n_i,
 \]</span></p>
 <p>其中，<span class="math inline">\(s_i=+1\)</span> 或 <span class="math inline">\(-1\)</span> 表示按统一方向计入；<span class="math inline">\(\mathcal I_j\)</span> 为该锚点或锚固区连接的索集合。塔段轴力、剪力和弯矩应由各层合力逐级累积。边跨长度、辅助墩和压重改变边索反力后，塔顶纵向偏位和塔底弯矩也随之改变。</p>
 <p>门形或H形塔可通过横梁形成横向框架；A形或钻石形塔通过塔柱倾斜汇聚索面力，但会引入塔柱轴力与横向弯矩耦合。塔横梁不是几何装饰，应说明其在施工阶段、横风、横向地震和非对称交通下的力流。塔内锚固采用钢锚梁、钢锚箱、混凝土锚块或其他构造时，总体模型的锚点刚度与局部模型边界需相容。</p>
@@ -2716,9 +2716,9 @@ e_r=\frac{r_M-r_A}{\max(|r_A|,r_s)},
 <section class="level4" data-number="6.10.0.6" id="联合选择矩阵与可行域">
 <h4 class="anchored" data-anchor-id="联合选择矩阵与可行域" data-number="6.10.0.6"><span class="header-section-number">6.10.0.6</span> 联合选择矩阵与可行域</h4>
 <p>设离散方案为 <span class="math inline">\(b\)</span>，连续参数为 <span class="math inline">\(\mathbf x\)</span>，硬约束写为</p>
-<p><span class="math display">\[
-g_k(b,\mathbf x)\le0,
-\qquad k=1,\ldots,n_g,
+<p><span class="math display">\[
+g_k(b,\mathbf x)\le0,
+\qquad k=1,\ldots,n_g,
 \]</span></p>
 <p>偏好指标为 <span class="math inline">\(f_j(b,\mathbf x)\)</span>。硬约束包括跨越净空、端支点反力允许状态、运输吊装能力、锚固空间、稳定、换索路径等；偏好指标可包括材料量、施工期、维护可达性、碳和景观连续性。只有满足全部 <span class="math inline">\(g_k\)</span> 的方案进入多目标比较。</p>
 <p>联合选择的第一轮使用解析力分解和尺度估算，第二轮采用平面杆系检查恒载与纵向不平衡，第三轮采用空间模型检查偏载、横风和扭转，第四轮将候选截面与锚固构造落位。每轮淘汰原因回写方案记录，避免后续优化重新生成已被构造约束否决的组合。</p>
@@ -2735,15 +2735,15 @@ g_k(b,\mathbf x)\le0,
 <section class="level4" data-number="6.10.1.1" id="一般空间索形的平衡">
 <h4 class="anchored" data-anchor-id="一般空间索形的平衡" data-number="6.10.1.1"><span class="header-section-number">6.10.1.1</span> 一般空间索形的平衡</h4>
 <p>以无应力材料坐标 <span class="math inline">\(s_0\)</span> 描述索，当前坐标为 <span class="math inline">\(\mathbf r(s_0)\)</span>。忽略弯曲刚度时，索段平衡可写为</p>
-<p><span class="math display">\[
-\frac{\mathrm d}{\mathrm ds_0}
-\left[T(s_0)\frac{\mathbf r'(s_0)}{\|\mathbf r'(s_0)\|}\right]
-+\mathbf q_0(s_0)=\mathbf0,
+<p><span class="math display">\[
+\frac{\mathrm d}{\mathrm ds_0}
+\left[T(s_0)\frac{\mathbf r'(s_0)}{\|\mathbf r'(s_0)\|}\right]
++\mathbf q_0(s_0)=\mathbf0,
 \]</span></p>
 <p>式中，<span class="math inline">\(T\)</span> 为索轴力，单位为 <span class="math inline">\(\mathrm N\)</span>；<span class="math inline">\(\mathbf q_0\)</span> 为按无应力长度分布的荷载，单位为 <span class="math inline">\(\mathrm{N/m}\)</span>；<span class="math inline">\(\mathbf r'\)</span> 为对 <span class="math inline">\(s_0\)</span> 的导数。材料相容关系在小应变弹性范围可写为</p>
-<p><span class="math display">\[
-\frac{\mathrm ds}{\mathrm ds_0}
-=1+\frac{T(s_0)}{EA}+\alpha\Delta T_c(s_0),
+<p><span class="math display">\[
+\frac{\mathrm ds}{\mathrm ds_0}
+=1+\frac{T(s_0)}{EA}+\alpha\Delta T_c(s_0),
 \]</span></p>
 <p>其中，<span class="math inline">\(s\)</span> 为当前弧长坐标；<span class="math inline">\(E\)</span> 为弹性模量，单位为 <span class="math inline">\(\mathrm{Pa}\)</span>；<span class="math inline">\(A\)</span> 为金属有效面积，单位为 <span class="math inline">\(\mathrm{m^2}\)</span>；<span class="math inline">\(\alpha\)</span> 为线膨胀系数，单位为 <span class="math inline">\(\mathrm{K^{-1}}\)</span>；<span class="math inline">\(\Delta T_c\)</span> 为相对参考温度的索温，单位为 <span class="math inline">\(\mathrm K\)</span>。高应力、松弛、护套与填充体系、锚具滑移等影响需按所采用模型另行处理。</p>
 <p>给定两端坐标与无应力长度时，未知量是端力和空间索形；给定端力与两端坐标时，可反求无应力长度。两类边值问题不能通过同一输入表同时强制。数值求解通常采用射击法、悬链线单元或有限元迭代，残差至少包括端点坐标误差和长度相容误差。</p>
@@ -2751,33 +2751,33 @@ g_k(b,\mathbf x)\le0,
 <section class="level4" data-number="6.10.1.2" id="二维悬链线与抛物线近似">
 <h4 class="anchored" data-anchor-id="二维悬链线与抛物线近似" data-number="6.10.1.2"><span class="header-section-number">6.10.1.2</span> 二维悬链线与抛物线近似</h4>
 <p>均布自重按水平投影为 <span class="math inline">\(w\)</span>、水平分力为 <span class="math inline">\(H\)</span> 时，水平坐标 <span class="math inline">\(x\)</span> 下的理想悬链线可写为</p>
-<p><span class="math display">\[
-y(x)=\frac{H}{w}
-\cosh\!\left(\frac{w}{H}(x-x_0)\right)+C,
+<p><span class="math display">\[
+y(x)=\frac{H}{w}
+\cosh\!\left(\frac{w}{H}(x-x_0)\right)+C,
 \]</span></p>
 <p>其中 <span class="math inline">\(w\)</span> 的单位为 <span class="math inline">\(\mathrm{N/m}\)</span>，<span class="math inline">\(H\)</span> 为 <span class="math inline">\(\mathrm N\)</span>，<span class="math inline">\(x,y,H/w\)</span> 均为 <span class="math inline">\(\mathrm m\)</span>；<span class="math inline">\(x_0,C\)</span> 由端点条件确定。当垂度相对跨长较小、斜率变化有限时，可采用抛物线近似解释垂度与水平力关系，但长索、显著高差、三维风偏或低张力状态应回到一般索形。</p>
 <p>索弧长为</p>
-<p><span class="math display">\[
-L=\int_{x_A}^{x_B}
-\sqrt{1+\left(\frac{\mathrm dy}{\mathrm dx}\right)^2}\,\mathrm dx.
+<p><span class="math display">\[
+L=\int_{x_A}^{x_B}
+\sqrt{1+\left(\frac{\mathrm dy}{\mathrm dx}\right)^2}\,\mathrm dx.
 \]</span></p>
 <p>弧长与弦长之差虽然可能只占较小比例，但对制造长度、索力和频率识别可产生可观影响。交互工具应同时显示绝对差值（mm）和相对差值，不宜只将变形放大绘图而不标比例。</p>
 </section>
 <section class="level4" data-number="6.10.1.3" id="等效弹性模量的使用边界">
 <h4 class="anchored" data-anchor-id="等效弹性模量的使用边界" data-number="6.10.1.3"><span class="header-section-number">6.10.1.3</span> 等效弹性模量的使用边界</h4>
 <p>概念设计中常用等效模量表示垂度引起的轴向柔度增加。其形式依索形、荷载定义和推导假定而异，可抽象写为</p>
-<p><span class="math display">\[
-E_{eq}=\frac{E}{1+\Psi(E,A,w,L,H)},
+<p><span class="math display">\[
+E_{eq}=\frac{E}{1+\Psi(E,A,w,L,H)},
 \]</span></p>
 <p>其中 <span class="math inline">\(\Psi\)</span> 为无量纲垂度柔度项。该表达适合解释“长索、低水平分力时轴向等效刚度下降”，但不能代替制造索长、低张力松弛、三维索形和动力分析。教材数字资源不内置一个无来源公式作为所有索的通用模型，而允许教师导入经回查的具体表达并显示其假定。</p>
 </section>
 <section class="level4" data-number="6.10.1.4" id="锚固与边界柔度">
 <h4 class="anchored" data-anchor-id="锚固与边界柔度" data-number="6.10.1.4"><span class="header-section-number">6.10.1.4</span> 锚固与边界柔度</h4>
 <p>索的端到端伸长不仅来自自由段，还来自锚具、塔内锚固构件、梁端锚箱和连接区。线性化时可写为</p>
-<p><span class="math display">\[
-\Delta L_{sys}=
-\int_0^{L_0}\frac{T(s_0)}{EA}\,\mathrm ds_0
-+C_A\Delta T_A+C_B\Delta T_B+\Delta L_{seat},
+<p><span class="math display">\[
+\Delta L_{sys}=
+\int_0^{L_0}\frac{T(s_0)}{EA}\,\mathrm ds_0
++C_A\Delta T_A+C_B\Delta T_B+\Delta L_{seat},
 \]</span></p>
 <p>式中，<span class="math inline">\(C_A,C_B\)</span> 为两端锚固体系的柔度，单位为 <span class="math inline">\(\mathrm{m/N}\)</span>；<span class="math inline">\(\Delta T_A,\Delta T_B\)</span> 为端部索力增量，单位为 <span class="math inline">\(\mathrm N\)</span>；<span class="math inline">\(\Delta L_{seat}\)</span> 为锚具回缩或就位引起的长度变化，单位为 <span class="math inline">\(\mathrm m\)</span>。若锚固柔度在张拉和卸载时不同，或存在摩擦与间隙，应采用分段关系。</p>
 <p>锚具工作长度还影响频率法的有效长度。若用两锚点几何弦长替代真实振动长度，短索误差可能显著。频率识别报告应把几何弦长、假定有效长度、边界刚度和弯曲刚度列为不确定性参数。</p>
@@ -2785,8 +2785,8 @@ E_{eq}=\frac{E}{1+\Psi(E,A,w,L,H)},
 <section class="level4" data-number="6.10.1.5" id="温度弹性与制造量的分栏">
 <h4 class="anchored" data-anchor-id="温度弹性与制造量的分栏" data-number="6.10.1.5"><span class="header-section-number">6.10.1.5</span> 温度、弹性与制造量的分栏</h4>
 <p>索长表建议至少包含：两端三维坐标、弦长、目标状态弧长、参考温度下无应力长度、锚具工作长度、安装温度、索温、锚具回缩、张拉端位移、目标索力和数据来源。任何“修正索长”都应拆回这些物理分量。若用</p>
-<p><span class="math display">\[
-L_{cut}=L_0+L_{anchor}+L_{operation},
+<p><span class="math display">\[
+L_{cut}=L_0+L_{anchor}+L_{operation},
 \]</span></p>
 <p>表示下料或制造控制长度，则 <span class="math inline">\(L_{anchor}\)</span> 和 <span class="math inline">\(L_{operation}\)</span> 的定义、正负号与制造工艺必须由供货与施工文件明确。本式不提供通用构造余量。</p>
 </section>
@@ -2807,53 +2807,53 @@ L_{cut}=L_0+L_{anchor}+L_{operation},
 <section class="level4" data-number="6.10.2.1" id="成桥状态的数据合同">
 <h4 class="anchored" data-anchor-id="成桥状态的数据合同" data-number="6.10.2.1"><span class="header-section-number">6.10.2.1</span> 成桥状态的数据合同</h4>
 <p>目标状态记为</p>
-<p><span class="math display">\[
-\mathcal S^*=\{\mathbf X^*,\mathbf T^*,\mathbf R^*,
-\boldsymbol\sigma^*,\boldsymbol\varepsilon^*,
-\mathcal B^*,\Theta^*,t^*\},
+<p><span class="math display">\[
+\mathcal S^*=\{\mathbf X^*,\mathbf T^*,\mathbf R^*,
+\boldsymbol\sigma^*,\boldsymbol\varepsilon^*,
+\mathcal B^*,\Theta^*,t^*\},
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathbf X^*\)</span> 为节点与构件几何坐标，单位为 <span class="math inline">\(\mathrm m\)</span>；<span class="math inline">\(\mathbf T^*\)</span> 为索力，单位为 <span class="math inline">\(\mathrm N\)</span>；<span class="math inline">\(\mathbf R^*\)</span> 为支承反力；<span class="math inline">\(\boldsymbol\sigma^*\)</span>、<span class="math inline">\(\boldsymbol\varepsilon^*\)</span> 分别为应力与应变；<span class="math inline">\(\mathcal B^*\)</span> 为边界与连接状态；<span class="math inline">\(\Theta^*\)</span> 为温度场；<span class="math inline">\(t^*\)</span> 为目标龄期。混凝土桥还需明确收缩徐变、预应力损失和湿度历史的表示。没有共同的 <span class="math inline">\(t^*\)</span> 与 <span class="math inline">\(\Theta^*\)</span>，两组“成桥索力”可能不可直接比较。</p>
 <p>成桥状态的第一项检查是非线性平衡：</p>
-<p><span class="math display">\[
-\mathbf R(\mathbf X^*,\mathbf T^*,\mathbf p,
-\mathbf f_G,\Theta^*,t^*)=\mathbf0,
+<p><span class="math display">\[
+\mathbf R(\mathbf X^*,\mathbf T^*,\mathbf p,
+\mathbf f_G,\Theta^*,t^*)=\mathbf0,
 \]</span></p>
 <p>式中，<span class="math inline">\(\mathbf p\)</span> 为材料与截面参数；<span class="math inline">\(\mathbf f_G\)</span> 为纳入目标状态的恒载及其他永久作用。残差向量同时含力和力矩，需要按代表性尺度归一化。平衡满足并不表示截面、索、支座或线形均满足要求，后续还需性能与构造约束。</p>
 </section>
 <section class="level4" data-number="6.10.2.2" id="索力影响矩阵与状态切线">
 <h4 class="anchored" data-anchor-id="索力影响矩阵与状态切线" data-number="6.10.2.2"><span class="header-section-number">6.10.2.2</span> 索力影响矩阵与状态切线</h4>
 <p>若控制量选择无应力长度增量 <span class="math inline">\(\Delta\mathbf L_0\)</span>，响应向量为 <span class="math inline">\(\mathbf r\)</span>，在线性化点 <span class="math inline">\(\mathcal S_0\)</span> 附近有</p>
-<p><span class="math display">\[
-\Delta\mathbf r
-=\mathbf A_L\Delta\mathbf L_0,
-\qquad
-\mathbf A_L=
-\left.\frac{\partial\mathbf r}{\partial\mathbf L_0}
-\right|_{\mathcal S_0}.
+<p><span class="math display">\[
+\Delta\mathbf r
+=\mathbf A_L\Delta\mathbf L_0,
+\qquad
+\mathbf A_L=
+\left.\frac{\partial\mathbf r}{\partial\mathbf L_0}
+\right|_{\mathcal S_0}.
 \]</span></p>
 <p>若控制量选择索力增量，则矩阵为 <span class="math inline">\(\mathbf A_T=\partial\mathbf r/\partial\mathbf T\)</span>。两者不是同一矩阵，因为改变无应力长度后全桥需要重新平衡，实际索力增量受索刚度、塔梁变形和几何非线性影响。教学中应优先采用与施工可控量一致的矩阵。</p>
 <p>有限差分第 <span class="math inline">\(i\)</span> 列可写为</p>
-<p><span class="math display">\[
-\mathbf A_{L,i}\approx
-\frac{\mathbf r(\mathbf L_0+h_i\mathbf e_i)
--\mathbf r(\mathbf L_0-h_i\mathbf e_i)}{2h_i}.
+<p><span class="math display">\[
+\mathbf A_{L,i}\approx
+\frac{\mathbf r(\mathbf L_0+h_i\mathbf e_i)
+-\mathbf r(\mathbf L_0-h_i\mathbf e_i)}{2h_i}.
 \]</span></p>
 <p><span class="math inline">\(h_i\)</span> 的单位与 <span class="math inline">\(L_{0,i}\)</span> 相同。步长过小会放大求解容差与输出舍入，步长过大又会越出线性区。应至少用两级步长检验列方向和量级稳定，并记录重新平衡是否收敛。若单根索扰动触发接触启闭或索进入低张力状态，矩阵只在该分支局部有效。</p>
 </section>
 <section class="level4" data-number="6.10.2.3" id="约束活动集与物理含义">
 <h4 class="anchored" data-anchor-id="约束活动集与物理含义" data-number="6.10.2.3"><span class="header-section-number">6.10.2.3</span> 约束、活动集与物理含义</h4>
 <p>设目标响应为 <span class="math inline">\(\mathbf r_t\)</span>，尺度矩阵为 <span class="math inline">\(\mathbf W_r\)</span>，基本问题可写为</p>
-<p><span class="math display">\[
-\min_{\Delta\mathbf q}
-\frac12\|\mathbf W_r(
-\mathbf r_0+\mathbf A\Delta\mathbf q-\mathbf r_t)\|_2^2
-+\frac{\lambda}{2}\|\mathbf W_q\Delta\mathbf q\|_2^2,
+<p><span class="math display">\[
+\min_{\Delta\mathbf q}
+\frac12\|\mathbf W_r(
+\mathbf r_0+\mathbf A\Delta\mathbf q-\mathbf r_t)\|_2^2
++\frac{\lambda}{2}\|\mathbf W_q\Delta\mathbf q\|_2^2,
 \]</span></p>
 <p>满足</p>
-<p><span class="math display">\[
-\mathbf q_{min}\le\mathbf q_0+\Delta\mathbf q\le\mathbf q_{max},
-\qquad
-\mathbf C\Delta\mathbf q\le\mathbf d.
+<p><span class="math display">\[
+\mathbf q_{min}\le\mathbf q_0+\Delta\mathbf q\le\mathbf q_{max},
+\qquad
+\mathbf C\Delta\mathbf q\le\mathbf d.
 \]</span></p>
 <p><span class="math inline">\(\mathbf q\)</span> 可为索力（N）、无应力长度（m）或张拉端位移（m），同一次求解需统一定义；<span class="math inline">\(\mathbf r\)</span> 可含弯矩、位移、反力和索应力，必须尺度化。上下界和 <span class="math inline">\(\mathbf C\Delta\mathbf q\le\mathbf d\)</span> 分别表达索力、设备行程、塔顶位移、端反力、相邻索差与对称施工等约束。约束值来自项目设计、设备和标准，不在本教材中预置。</p>
 <p>求解后应报告活动约束。若某一索达到上界，表示目标继续改善将受该索能力或控制范围限制；若端支点反力约束活动，可能说明边跨平衡而非主跨弯矩控制方案；若大量相邻索差约束同时活动，目标或变量选择可能与可实施调整不相容。只报告最终索力而不报告活动约束，会丢失重要设计信息。</p>
@@ -2862,32 +2862,32 @@ L_{cut}=L_0+L_{anchor}+L_{operation},
 <h4 class="anchored" data-anchor-id="病态性正则化与可控方向" data-number="6.10.2.4"><span class="header-section-number">6.10.2.4</span> 病态性、正则化与可控方向</h4>
 <p>对尺度化矩阵作奇异值分解 <span class="math inline">\(\widetilde{\mathbf A}=\mathbf U\boldsymbol\Sigma\mathbf V^{\mathsf T}\)</span>。条件数较大提示某些响应方向需要很大的控制量才能改变，但不能单独据此判定“矩阵不可用”。审查应结合小奇异值对应的结构模式、有限差分噪声、可接受目标误差和控制量上限。</p>
 <p>截断奇异值解可写为</p>
-<p><span class="math display">\[
-\Delta\widetilde{\mathbf q}_r
-=\sum_{k=1}^{r}
-\frac{\mathbf u_k^{\mathsf T}\Delta\widetilde{\mathbf r}}
-{\sigma_k}\mathbf v_k,
+<p><span class="math display">\[
+\Delta\widetilde{\mathbf q}_r
+=\sum_{k=1}^{r}
+\frac{\mathbf u_k^{\mathsf T}\Delta\widetilde{\mathbf r}}
+{\sigma_k}\mathbf v_k,
 \]</span></p>
 <p>其中 <span class="math inline">\(r\)</span> 为保留的有效方向数。增大 <span class="math inline">\(r\)</span> 可降低名义目标残差，却可能放大观测和模型误差。教学交互应让学生看到每加入一个小奇异值方向，索力调整幅度、目标残差和扰动敏感性如何共同变化。</p>
 <p>对于矩阵扰动 <span class="math inline">\(\Delta\mathbf A\)</span> 和响应误差 <span class="math inline">\(\boldsymbol\varepsilon_r\)</span>，名义方案需在情景集合内复算：</p>
-<p><span class="math display">\[
-\mathbf r^{(s)}=
-(\mathbf A+\Delta\mathbf A^{(s)})
-\Delta\mathbf q+\mathbf r_0+
-\boldsymbol\varepsilon_r^{(s)}.
+<p><span class="math display">\[
+\mathbf r^{(s)}=
+(\mathbf A+\Delta\mathbf A^{(s)})
+\Delta\mathbf q+\mathbf r_0+
+\boldsymbol\varepsilon_r^{(s)}.
 \]</span></p>
 <p>情景可由梁塔刚度、边界、索温、节段重量和垂度模型的合理范围构成。若某一方案在小扰动下产生索力反号或端支点反力越界，应调整控制子空间、增加观测或重新定义目标。</p>
 </section>
 <section class="level4" data-number="6.10.2.5" id="从候选解回到非线性模型">
 <h4 class="anchored" data-anchor-id="从候选解回到非线性模型" data-number="6.10.2.5"><span class="header-section-number">6.10.2.5</span> 从候选解回到非线性模型</h4>
 <p>影响矩阵解只形成候选。必须在完整模型中更新实际控制量，重新求解几何非线性平衡，并核对：索力、塔顶位移、主梁弯矩和轴力、支点反力、锚点偏心矩、稳定与构造。若候选调整量较大，可分步更新并重建切线矩阵，形成序列线性化：</p>
-<p><span class="math display">\[
-\mathcal S_{k+1}=
-\mathcal F(\mathcal S_k,\Delta\mathbf q_k),
-\qquad
-\mathbf A_{k+1}=
-\left.\frac{\partial\mathbf r}{\partial\mathbf q}
-\right|_{\mathcal S_{k+1}}.
+<p><span class="math display">\[
+\mathcal S_{k+1}=
+\mathcal F(\mathcal S_k,\Delta\mathbf q_k),
+\qquad
+\mathbf A_{k+1}=
+\left.\frac{\partial\mathbf r}{\partial\mathbf q}
+\right|_{\mathcal S_{k+1}}.
 \]</span></p>
 <p>停止条件同时包含归一化响应残差、控制增量、非线性平衡和活动约束稳定。达到很小目标函数但平衡残差未收敛，不能接受。</p>
 <div class="digital-note">
@@ -2901,14 +2901,14 @@ L_{cut}=L_0+L_{anchor}+L_{operation},
 <section class="level4" data-number="6.10.3.1" id="阶段状态与事件算子">
 <h4 class="anchored" data-anchor-id="阶段状态与事件算子" data-number="6.10.3.1"><span class="header-section-number">6.10.3.1</span> 阶段状态与事件算子</h4>
 <p>令第 <span class="math inline">\(k\)</span> 阶段状态为</p>
-<p><span class="math display">\[
-\mathcal S_k=\{\mathbf X_k,\mathbf u_k,
-\boldsymbol\eta_k,\mathcal A_k,\mathcal B_k,t_k,\Theta_k\},
+<p><span class="math display">\[
+\mathcal S_k=\{\mathbf X_k,\mathbf u_k,
+\boldsymbol\eta_k,\mathcal A_k,\mathcal B_k,t_k,\Theta_k\},
 \]</span></p>
 <p>其中 <span class="math inline">\(\mathcal A_k\)</span> 为激活构件集合，<span class="math inline">\(\mathcal B_k\)</span> 为边界与接触状态，<span class="math inline">\(\boldsymbol\eta_k\)</span> 为材料和几何历史变量。施工事件 <span class="math inline">\(e_{k+1}\)</span> 通过</p>
-<p><span class="math display">\[
-\mathcal S_{k+1}=\mathcal E_{k+1}
-(\mathcal S_k;e_{k+1})
+<p><span class="math display">\[
+\mathcal S_{k+1}=\mathcal E_{k+1}
+(\mathcal S_k;e_{k+1})
 \]</span></p>
 <p>实现。事件包括梁段安装或浇筑、索安装与张拉、支架卸载、吊机移动、压重、临时索、合龙、体系转换和铺装。每个事件必须注明发生时间、温度、施加方式和状态继承规则。</p>
 <p>新梁段被激活时，它不应承担激活前已由结构平衡的荷载；湿混凝土、模板和挂篮的重量由当时体系承担，混凝土硬化后材料刚度和自重归属按施工方法定义。拉索以无应力长度激活、以目标力激活或以张拉端位移激活会产生不同状态，字段必须互斥。</p>
@@ -2917,23 +2917,23 @@ L_{cut}=L_0+L_{anchor}+L_{operation},
 <h4 class="anchored" data-anchor-id="倒拆的非可逆来源" data-number="6.10.3.2"><span class="header-section-number">6.10.3.2</span> 倒拆的非可逆来源</h4>
 <p>在线弹性、小位移、无龄期和无接触变化的理想体系中，逐步卸载可能近似为正装逆过程。实际非可逆来源包括：几何刚度随状态改变；混凝土收缩徐变与弹性模量随龄期变化；支座摩擦和间隙具有路径依赖；索锚固回缩与设备控制不同；焊接或湿接缝锁定几何；临时构件的安装与拆除发生在不同受力状态。</p>
 <p>因此，倒拆只产生制造坐标、立模标高、初始索长和张拉量的第一轮候选。将候选输入正装后，定义目标误差向量</p>
-<p><span class="math display">\[
-\mathbf e_c=
-\begin{bmatrix}
-\mathbf X_N-\mathbf X^*\\
-\mathbf T_N-\mathbf T^*\\
-\mathbf R_N-\mathbf R^*
-\end{bmatrix},
+<p><span class="math display">\[
+\mathbf e_c=
+\begin{bmatrix}
+\mathbf X_N-\mathbf X^*\\
+\mathbf T_N-\mathbf T^*\\
+\mathbf R_N-\mathbf R^*
+\end{bmatrix},
 \]</span></p>
 <p>其中下标 <span class="math inline">\(N\)</span> 表示正装终态。三组误差单位不同，需要尺度化。根据可控变量修正制造几何或索长，再进行下一轮正装，直至满足项目规定的状态要求。</p>
 </section>
 <section class="level4" data-number="6.10.3.3" id="梁段制造线形">
 <h4 class="anchored" data-anchor-id="梁段制造线形" data-number="6.10.3.3"><span class="header-section-number">6.10.3.3</span> 梁段制造线形</h4>
 <p>梁段制造几何不仅是一条竖向预拱曲线。对空间箱梁，每个控制截面至少有三向坐标和三向转角；梁段长度、端面转角、扭转、横坡和锚点位置共同控制拼装。制造坐标可写为</p>
-<p><span class="math display">\[
-\mathbf X_{fab}=\mathbf X^*
--\mathbf u_G-\mathbf u_P-\mathbf u_T
--\mathbf u_{cr}+\mathbf c_m,
+<p><span class="math display">\[
+\mathbf X_{fab}=\mathbf X^*
+-\mathbf u_G-\mathbf u_P-\mathbf u_T
+-\mathbf u_{cr}+\mathbf c_m,
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathbf u_G\)</span>、<span class="math inline">\(\mathbf u_P\)</span>、<span class="math inline">\(\mathbf u_T\)</span>、<span class="math inline">\(\mathbf u_{cr}\)</span> 分别表示在明确模型下恒载、预应力或索力、温度与收缩徐变引起的位移贡献；<span class="math inline">\(\mathbf c_m\)</span> 为制造与拼装控制修正。对于几何非线性体系，各贡献不满足严格线性叠加，此式只作账目组织，最终坐标由阶段正装求解。</p>
 <p>工厂制造、堆放、运输和现场拼装采用不同支承状态。节段在胎架上的测量坐标不能直接等同于自由状态无应力几何；需要记录支点、姿态和温度。数字模型应允许从制造测量状态转换到安装状态，并保存转换矩阵。</p>
@@ -2941,8 +2941,8 @@ L_{cut}=L_0+L_{anchor}+L_{operation},
 <section class="level4" data-number="6.10.3.4" id="合龙的六自由度与锁定内力">
 <h4 class="anchored" data-anchor-id="合龙的六自由度与锁定内力" data-number="6.10.3.4"><span class="header-section-number">6.10.3.4</span> 合龙的六自由度与锁定内力</h4>
 <p>合龙端相对状态用三向间隙和三向转角表示。若强制闭合相对自由度 <span class="math inline">\(\Delta\mathbf g\)</span>，线性化锁定内力可写为</p>
-<p><span class="math display">\[
-\Delta\mathbf Q_c=\mathbf K_c\Delta\mathbf g,
+<p><span class="math display">\[
+\Delta\mathbf Q_c=\mathbf K_c\Delta\mathbf g,
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathbf Q_c\)</span> 含轴力、两向剪力、扭矩和两向弯矩；<span class="math inline">\(\mathbf K_c\)</span> 为合龙界面的凝聚刚度，单位随分量而变。该关系用于说明小的转角差也可能产生显著弯矩，不能把合龙控制缩减为竖向高差。</p>
 <p>温度修正应至少区分主梁平均温度、竖向梯度、桥塔温度和索温。合龙观测需在稳定窗口重复，记录日照、风和施工设备位置。若通过配重、临时索或顶推调整合龙口，必须将这些事件写入阶段模型；合龙后撤除临时措施时重新平衡。</p>
@@ -2950,8 +2950,8 @@ L_{cut}=L_0+L_{anchor}+L_{operation},
 <section class="level4" data-number="6.10.3.5" id="正装监测更新">
 <h4 class="anchored" data-anchor-id="正装监测更新" data-number="6.10.3.5"><span class="header-section-number">6.10.3.5</span> 正装—监测—更新</h4>
 <p>每一施工阶段形成预测区间而非单一点。观测到达后先做时间、坐标、仪器和施工事件核对，再更新少量可识别参数。若模型预测为 <span class="math inline">\(\hat{\mathbf y}_k(\mathbf p)\)</span>，观测为 <span class="math inline">\(\mathbf y_k\)</span>，残差为</p>
-<p><span class="math display">\[
-\mathbf v_k=\mathbf y_k-\hat{\mathbf y}_k(\mathbf p).
+<p><span class="math display">\[
+\mathbf v_k=\mathbf y_k-\hat{\mathbf y}_k(\mathbf p).
 \]</span></p>
 <p>残差需按线形、索力、塔偏位、应变等物理量分栏，不能只给一个总误差。更新参数后用未参与拟合的测点和下一个阶段验证。任何索力或立模调整候选均从当前实测状态正装至目标，而不是回到原始计划状态重新算。</p>
 <div class="digital-note">
@@ -2965,27 +2965,27 @@ L_{cut}=L_0+L_{anchor}+L_{operation},
 <section class="level4" data-number="6.10.4.1" id="移动荷载影响面">
 <h4 class="anchored" data-anchor-id="移动荷载影响面" data-number="6.10.4.1"><span class="header-section-number">6.10.4.1</span> 移动荷载影响面</h4>
 <p>对桥面位置 <span class="math inline">\((x,y)\)</span> 施加单位竖向荷载，响应 <span class="math inline">\(r\)</span> 的影响面为</p>
-<p><span class="math display">\[
-\eta_r(x,y)=r\,[P_z=1\text{ at }(x,y)].
+<p><span class="math display">\[
+\eta_r(x,y)=r\,[P_z=1\text{ at }(x,y)].
 \]</span></p>
 <p>若实际车辆第 <span class="math inline">\(a\)</span> 个轴重为 <span class="math inline">\(P_a\)</span>，位置为 <span class="math inline">\((x_a,y_a)\)</span>，在线性范围内响应为</p>
-<p><span class="math display">\[
-r=\sum_aP_a\eta_r(x_a,y_a)+r_{lane},
+<p><span class="math display">\[
+r=\sum_aP_a\eta_r(x_a,y_a)+r_{lane},
 \]</span></p>
 <p>其中 <span class="math inline">\(r_{lane}\)</span> 为相应车道分布作用贡献。<span class="math inline">\(\eta_r\)</span> 的单位为响应单位除以力单位。主梁弯矩、索力、塔底弯矩、端反力、梁端位移和扭矩均可建立影响面。</p>
 <p>双索面桥的偏载分析需要横向坐标 <span class="math inline">\(y\)</span>。将二维影响面压成桥轴上的一条影响线可能漏掉左右索力差、主梁扭转和横向塔力。车道布置、横向位置、轮迹与桥面系分配应按项目标准和模型层级建立。搜索最不利车位后，保存车辆身份、轴位、车道和响应符号，不能只保存峰值。</p>
 <p>影响面依赖初始索力和几何状态。若活载引起显著索力变化、支座接触变化或大位移，可用线性影响面筛查控制位置，再对若干候选车位进行非线性直接分析。比较</p>
-<p><span class="math display">\[
-\delta_{NL}=
-\frac{r_{NL}-r_{IL}}{\max(|r_{NL}|,r_{ref})},
+<p><span class="math display">\[
+\delta_{NL}=
+\frac{r_{NL}-r_{IL}}{\max(|r_{NL}|,r_{ref})},
 \]</span></p>
 <p>其中 <span class="math inline">\(r_{NL}\)</span> 为非线性直接结果，<span class="math inline">\(r_{IL}\)</span> 为影响面线性预测，<span class="math inline">\(r_{ref}\)</span> 为防止分母接近零的有来源尺度。<span class="math inline">\(\delta_{NL}\)</span> 只用于模型差异诊断，不是统一允许误差。</p>
 </section>
 <section class="level4" data-number="6.10.4.2" id="温度作用的多场输入">
 <h4 class="anchored" data-anchor-id="温度作用的多场输入" data-number="6.10.4.2"><span class="header-section-number">6.10.4.2</span> 温度作用的多场输入</h4>
 <p>斜拉桥温度至少区分均匀温变、主梁竖横向梯度、塔柱梯度、索温与支承温度。自由热应变为</p>
-<p><span class="math display">\[
-\boldsymbol\varepsilon_T=\alpha\Delta T\mathbf I,
+<p><span class="math display">\[
+\boldsymbol\varepsilon_T=\alpha\Delta T\mathbf I,
 \]</span></p>
 <p>但结构内力由不同构件温度场、连接与边界约束共同产生。索温变化引起索长和垂度改变，塔梁温差改变锚点相对位置，支座初始位置决定剩余位移能力。气温、表面温度和截面代表温度不可混用。</p>
 <p>施工监控中的温度归一应以同一时刻的梁、塔、索温数据为基础。若只有少量传感器，可建立温度场的不确定性范围，并把索力和线形预测给成区间。用单一气温线性回归消除所有日变化，可能误删结构真实响应。</p>
@@ -3008,10 +3008,10 @@ r=\sum_aP_a\eta_r(x_a,y_a)+r_{lane},
 <section class="level4" data-number="6.10.4.6" id="索塔梁局部模型的接口">
 <h4 class="anchored" data-anchor-id="索塔梁局部模型的接口" data-number="6.10.4.6"><span class="header-section-number">6.10.4.6</span> 索—塔—梁局部模型的接口</h4>
 <p>锚固区局部模型应由总体模型截面切口和索端共同加载。边界合力检查为</p>
-<p><span class="math display">\[
-\sum\mathbf F_{cut}+\sum\mathbf F_{stay}=\mathbf0,
-\qquad
-\sum(\mathbf r\times\mathbf F)+\sum\mathbf M=\mathbf0.
+<p><span class="math display">\[
+\sum\mathbf F_{cut}+\sum\mathbf F_{stay}=\mathbf0,
+\qquad
+\sum(\mathbf r\times\mathbf F)+\sum\mathbf M=\mathbf0.
 \]</span></p>
 <p>力用 <span class="math inline">\(\mathrm N\)</span>，力矩用 <span class="math inline">\(\mathrm{N\,m}\)</span>，位置向量用 <span class="math inline">\(\mathrm m\)</span>。局部网格的坐标、索端方向和偏心必须与总体模型一致。对混凝土塔锚区，应区分承压、劈裂与横向拉力路径；对钢锚箱，应区分面板、隔板、加劲肋、焊缝和塔壁传力；对梁上锚点，还要检查索力如何进入腹板、顶底板和横隔构件。</p>
 <p>局部模型的峰值应力可能受尖角、约束或网格奇异影响。评价时需采用与规范、试验或疲劳方法相匹配的名义、结构或热点应力口径。网格加密后峰值不收敛，不得直接与材料强度比较。</p>
@@ -3026,23 +3026,23 @@ r=\sum_aP_a\eta_r(x_a,y_a)+r_{lane},
 <section class="level4" data-number="6.10.5.1" id="索的频率垂度和边界">
 <h4 class="anchored" data-anchor-id="索的频率垂度和边界" data-number="6.10.5.1"><span class="header-section-number">6.10.5.1</span> 索的频率、垂度和边界</h4>
 <p>理想弦两端简支、张力恒定时，第 <span class="math inline">\(n\)</span> 阶频率为</p>
-<p><span class="math display">\[
-f_n=\frac{n}{2L_e}\sqrt{\frac{T}{m_l}},
+<p><span class="math display">\[
+f_n=\frac{n}{2L_e}\sqrt{\frac{T}{m_l}},
 \]</span></p>
 <p>式中，<span class="math inline">\(f_n\)</span> 单位为 <span class="math inline">\(\mathrm{Hz}\)</span>；<span class="math inline">\(L_e\)</span> 为有效振动长度，单位为 <span class="math inline">\(\mathrm m\)</span>；<span class="math inline">\(T\)</span> 为索力，单位为 <span class="math inline">\(\mathrm N\)</span>；<span class="math inline">\(m_l\)</span> 为单位长度质量，单位为 <span class="math inline">\(\mathrm{kg/m}\)</span>。该式适用于垂度和弯曲刚度可忽略、边界近似铰接的情况。短索、粗护套、锚固柔度和外置阻尼器会改变频率，长索的垂度和多模态也会使频率不再严格成整数比。</p>
 <p>含弯曲刚度的简化频率可写成张力项与弯曲项共同作用的形式：</p>
-<p><span class="math display">\[
-\omega_n^2\approx
-\frac{T}{m_l}\left(\frac{n\pi}{L_e}\right)^2
-+\frac{EI_c}{m_l}\left(\frac{n\pi}{L_e}\right)^4,
+<p><span class="math display">\[
+\omega_n^2\approx
+\frac{T}{m_l}\left(\frac{n\pi}{L_e}\right)^2
++\frac{EI_c}{m_l}\left(\frac{n\pi}{L_e}\right)^4,
 \]</span></p>
 <p>其中，<span class="math inline">\(EI_c\)</span> 为索的等效弯曲刚度，单位为 <span class="math inline">\(\mathrm{N\,m^2}\)</span>；<span class="math inline">\(\omega_n=2\pi f_n\)</span>，单位为 <span class="math inline">\(\mathrm{rad/s}\)</span>。此式仍采用理想边界。实际索力识别可用多阶频率同时估计 <span class="math inline">\(T\)</span>、<span class="math inline">\(EI_c\)</span> 和边界参数，但若参数列高度相关，应报告不可辨识性。</p>
 </section>
 <section class="level4" data-number="6.10.5.2" id="涡激振动与锁定区">
 <h4 class="anchored" data-anchor-id="涡激振动与锁定区" data-number="6.10.5.2"><span class="header-section-number">6.10.5.2</span> 涡激振动与锁定区</h4>
 <p>圆柱绕流的特征涡脱频率常用</p>
-<p><span class="math display">\[
-f_s=St\frac{U}{D},
+<p><span class="math display">\[
+f_s=St\frac{U}{D},
 \]</span></p>
 <p>式中，<span class="math inline">\(St\)</span> 为斯特劳哈尔数，无量纲；<span class="math inline">\(U\)</span> 为来流速度，单位为 <span class="math inline">\(\mathrm{m/s}\)</span>；<span class="math inline">\(D\)</span> 为索外径，单位为 <span class="math inline">\(\mathrm m\)</span>。当 <span class="math inline">\(f_s\)</span> 接近某阶索频率时可能出现锁定，但实际 <span class="math inline">\(St\)</span>、气动力、表面粗糙度、倾角、湍流与雷诺数均影响响应。由单一频谱峰接近 <span class="math inline">\(f_s\)</span> 不能独立确认涡振；还需风速区间、幅值随风速演化和运动轨迹等证据。</p>
 <p>涡振通常在有限风速区间出现，响应振幅受结构与气动阻尼平衡控制。教学资源可显示振幅—折算风速曲线，但不内置某一桥的允许振幅。若用外部风洞数据，必须保存模型尺度、表面、阻尼、倾角、湍流和相似准则。</p>
@@ -3056,21 +3056,21 @@ f_s=St\frac{U}{D},
 <h4 class="anchored" data-anchor-id="尾流干扰与群索" data-number="6.10.5.4"><span class="header-section-number">6.10.5.4</span> 尾流干扰与群索</h4>
 <p>当一根索位于另一根索或塔柱的尾流区，来流湍流度、平均速度和气动力可能显著改变。控制变量包括索间距、前后相对位置、风向、频率比和阻尼。单索风洞试验无法覆盖全部群索尾流问题。数字实验应允许旋转风向，显示上游构件与下游索的相对位置，并标注“机制筛查，需专项试验或资料”。</p>
 <p>交叉索把独立拉索连接成索网。在线性化状态下可写为</p>
-<p><span class="math display">\[
-\mathbf M_c\ddot{\mathbf q}+
-\mathbf C_c\dot{\mathbf q}+
-(\mathbf K_T+\mathbf K_x)\mathbf q
-=\mathbf f_a(t),
+<p><span class="math display">\[
+\mathbf M_c\ddot{\mathbf q}+
+\mathbf C_c\dot{\mathbf q}+
+(\mathbf K_T+\mathbf K_x)\mathbf q
+=\mathbf f_a(t),
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathbf K_T\)</span> 为索张力形成的刚度，<span class="math inline">\(\mathbf K_x\)</span> 为交叉索及连接刚度。连接位置和预张力改变整体与局部模态。不能只比较最低频率提高多少，还要检查交叉索力、连接疲劳和某些短段局部振动。</p>
 </section>
 <section class="level4" data-number="6.10.5.5" id="参数振动与端点运动">
 <h4 class="anchored" data-anchor-id="参数振动与端点运动" data-number="6.10.5.5"><span class="header-section-number">6.10.5.5</span> 参数振动与端点运动</h4>
 <p>桥面或塔端运动会周期性改变索的张力或几何边界。单模态近似可写为</p>
-<p><span class="math display">\[
-\ddot q+2\zeta\omega_0\dot q+
-\omega_0^2[1+h\cos(\Omega t)]q
-=p(t),
+<p><span class="math display">\[
+\ddot q+2\zeta\omega_0\dot q+
+\omega_0^2[1+h\cos(\Omega t)]q
+=p(t),
 \]</span></p>
 <p>式中，<span class="math inline">\(q\)</span> 为模态坐标；<span class="math inline">\(\zeta\)</span> 为阻尼比；<span class="math inline">\(\omega_0\)</span> 为索的基准圆频率；<span class="math inline">\(h\)</span> 为无量纲参数激励幅；<span class="math inline">\(\Omega\)</span> 为端点或张力调制频率；<span class="math inline">\(p(t)\)</span> 为直接强迫项。特定频率关系下可能出现参数不稳定，但实际阈值受阻尼、非线性、模态耦合和端点运动影响。看到索频率接近桥面频率的某一比例，只能作为进一步分析线索。</p>
 <p>主桥模型应向索动力模型提供锚点三向位移和索力时程；索动力分析向主桥与局部锚固模型返回索端循环力、位移和阻尼器反力。若仅固定两端分析单索，会漏掉桥面运动输入。</p>
@@ -3078,8 +3078,8 @@ f_s=St\frac{U}{D},
 <section class="level4" data-number="6.10.5.6" id="阻尼器的效率与验证">
 <h4 class="anchored" data-anchor-id="阻尼器的效率与验证" data-number="6.10.5.6"><span class="header-section-number">6.10.5.6</span> 阻尼器的效率与验证</h4>
 <p>线性黏性阻尼器理想力为</p>
-<p><span class="math display">\[
-F_d=c_d\dot u_d,
+<p><span class="math display">\[
+F_d=c_d\dot u_d,
 \]</span></p>
 <p>式中，<span class="math inline">\(F_d\)</span> 单位为 <span class="math inline">\(\mathrm N\)</span>；<span class="math inline">\(c_d\)</span> 为阻尼系数，单位为 <span class="math inline">\(\mathrm{N\,s/m}\)</span>；<span class="math inline">\(u_d\)</span> 为阻尼器两端相对位移。实际装置可能有密封摩擦、温度、幅值、频率和速度依赖，安装支架柔度使装置实际行程小于索在该点的位移。</p>
 <p>装置评价至少核对目标模态形状在安装点的位移、装置行程与速度、连接反力、环境温度、长期密封和检查更换。现场自由衰减识别的阻尼比应带拟合区间和置信范围，安装前后试验采用可比激励与信号处理。阻尼比提高并不直接证明所有风速和机制下振幅满足要求。</p>
@@ -3088,8 +3088,8 @@ F_d=c_d\dot u_d,
 <section class="level4" data-number="6.10.5.7" id="疲劳腐蚀与多重防护">
 <h4 class="anchored" data-anchor-id="疲劳腐蚀与多重防护" data-number="6.10.5.7"><span class="header-section-number">6.10.5.7</span> 疲劳、腐蚀与多重防护</h4>
 <p>索的名义应力时程为</p>
-<p><span class="math display">\[
-\sigma_n(t)=\frac{T(t)}{A_m},
+<p><span class="math display">\[
+\sigma_n(t)=\frac{T(t)}{A_m},
 \]</span></p>
 <p>其中 <span class="math inline">\(A_m\)</span> 为参与受力的金属面积，单位为 <span class="math inline">\(\mathrm{m^2}\)</span>。锚端转角、弯曲、丝间接触和局部偏心使局部应力不同于名义轴向应力。用于疲劳的应力口径必须与试验和疲劳抗力一致。</p>
 <p>腐蚀防护应形成从钢丝或钢绞线表面、填充或单丝护套、外护套、锚具密封、排水与检修的多道屏障。屏障状态不是一个“完好/损坏”标签，应记录位置、范围、水分通道、密封、护套裂纹、锚头积水、内部检测能力和修复历史。发现外护套损伤不等同于已发生钢丝截面损失，但说明屏障链需要调查与恢复。</p>
@@ -3109,27 +3109,27 @@ F_d=c_d\dot u_d,
 <section class="level4" data-number="6.10.6.1" id="参数观测灵敏度与可识别性">
 <h4 class="anchored" data-anchor-id="参数观测灵敏度与可识别性" data-number="6.10.6.1"><span class="header-section-number">6.10.6.1</span> 参数—观测灵敏度与可识别性</h4>
 <p>设参数向量为 <span class="math inline">\(\mathbf p\)</span>，观测为 <span class="math inline">\(\mathbf y\)</span>，在参考点线性化：</p>
-<p><span class="math display">\[
-\Delta\mathbf y=\mathbf S_p\Delta\mathbf p+
-\boldsymbol\varepsilon,
-\qquad
-\mathbf S_p=\frac{\partial\mathbf h}{\partial\mathbf p}.
+<p><span class="math display">\[
+\Delta\mathbf y=\mathbf S_p\Delta\mathbf p+
+\boldsymbol\varepsilon,
+\qquad
+\mathbf S_p=\frac{\partial\mathbf h}{\partial\mathbf p}.
 \]</span></p>
 <p>参数可以是节段重量修正、主梁刚度、塔梁边界、索无应力长度、索温修正或锚固柔度。观测可含梁面高程、塔顶坐标、索力、应变与支点反力。不同单位必须以观测协方差或有物理含义的尺度处理。</p>
 <p>Fisher信息的线性高斯近似为</p>
-<p><span class="math display">\[
-\mathbf I_p=\mathbf S_p^{\mathsf T}
-\mathbf R_y^{-1}\mathbf S_p,
+<p><span class="math display">\[
+\mathbf I_p=\mathbf S_p^{\mathsf T}
+\mathbf R_y^{-1}\mathbf S_p,
 \]</span></p>
 <p>其中 <span class="math inline">\(\mathbf R_y\)</span> 为观测误差协方差。<span class="math inline">\(\mathbf I_p\)</span> 接近奇异表示某些参数组合不能由现有观测区分。增加同类型、同位置的测点未必改善识别；增加对不同参数灵敏度方向的索力、塔偏位或温度观测可能更有效。</p>
 </section>
 <section class="level4" data-number="6.10.6.2" id="温度归一与同步">
 <h4 class="anchored" data-anchor-id="温度归一与同步" data-number="6.10.6.2"><span class="header-section-number">6.10.6.2</span> 温度归一与同步</h4>
 <p>索力、梁面高程和塔顶坐标具有显著日照与温度响应。简单线性模型可写为</p>
-<p><span class="math display">\[
-y(t)=y_{ref}+\boldsymbol\beta^{\mathsf T}
-[\boldsymbol\Theta(t)-\boldsymbol\Theta_{ref}]
-+r(t),
+<p><span class="math display">\[
+y(t)=y_{ref}+\boldsymbol\beta^{\mathsf T}
+[\boldsymbol\Theta(t)-\boldsymbol\Theta_{ref}]
++r(t),
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol\Theta\)</span> 包含梁、塔、索及环境温度；<span class="math inline">\(\boldsymbol\beta\)</span> 为温度响应系数；<span class="math inline">\(r(t)\)</span> 为施工事件与其他响应。<span class="math inline">\(\boldsymbol\beta\)</span> 只能在相应阶段、边界和温度范围内使用。若在张拉、吊机移动或混凝土硬化期间拟合温度关系，会把施工效应混入温度系数。</p>
 <p>所有观测使用统一时钟。索振加速度、气象和桥面运动可能需要亚秒级同步；施工线形与索力至少应能够对应同一温度窗口和事件状态。缺少同步时，应扩大不确定性或停止联合识别。</p>
@@ -3137,9 +3137,9 @@ y(t)=y_{ref}+\boldsymbol\beta^{\mathsf T}
 <section class="level4" data-number="6.10.6.3" id="识别预测与独立验证">
 <h4 class="anchored" data-anchor-id="识别预测与独立验证" data-number="6.10.6.3"><span class="header-section-number">6.10.6.3</span> 识别、预测与独立验证</h4>
 <p>参数后验概念上写为</p>
-<p><span class="math display">\[
-p(\mathbf p\mid\mathbf y)
-\propto p(\mathbf y\mid\mathbf p)p(\mathbf p).
+<p><span class="math display">\[
+p(\mathbf p\mid\mathbf y)
+\propto p(\mathbf y\mid\mathbf p)p(\mathbf p).
 \]</span></p>
 <p>更新后不仅报告均值，还报告相关性、区间和后验预测。拟合观测与验证观测分开：例如用部分梁面标高与索力识别节段重量和索长，用塔顶坐标和未参与拟合的下一阶段响应验证。若验证残差增加，应拒绝更新或修正模型形式。</p>
 <p>AI可辅助生成数据质量清单、候选差异来源和参数相关图，但不能越过“计算候选—工程复核—现场指令”的权限边界。现场调整必须由项目责任体系批准，并包含稳定回退状态、操作级数和复测条件。</p>
@@ -3148,9 +3148,9 @@ p(\mathbf p\mid\mathbf y)
 <h4 class="anchored" data-anchor-id="换索前的状态评估" data-number="6.10.6.4"><span class="header-section-number">6.10.6.4</span> 换索前的状态评估</h4>
 <p>换索前先确认旧索、相邻索、塔梁、锚固区和临时体系状态。旧索名义索力并非唯一输入：若存在断丝、护套损伤、锚具腐蚀或阻尼器失效，卸载路径与设备连接可能受影响。现场调查需明确旧索是否可控卸载、锚固区能否承受临时力、交通与风环境如何限制工序。</p>
 <p>换索设计以当前状态而非原设计状态为基线。设当前状态估计为 <span class="math inline">\(\hat{\mathcal S}_0\)</span>，换索事件序列为 <span class="math inline">\(\mathcal E_1,\ldots,\mathcal E_N\)</span>，则</p>
-<p><span class="math display">\[
-\mathcal S_j=\mathcal E_j(\mathcal S_{j-1}),
-\qquad j=1,\ldots,N.
+<p><span class="math display">\[
+\mathcal S_j=\mathcal E_j(\mathcal S_{j-1}),
+\qquad j=1,\ldots,N.
 \]</span></p>
 <p>每一稳定状态检查主梁线形、塔偏位、相邻索力、临时构件力、锚固区和设备行程。环境条件或观测失效时，系统停留在可恢复状态，不自动进入下一事件。</p>
 </section>
@@ -3241,27 +3241,27 @@ p(\mathbf p\mid\mathbf y)
 </tbody>
 </table>
 <p>代表索弦长为</p>
-<p><span class="math display">\[
-L_c=\sqrt{120^2+90^2}=150\ \mathrm m,
+<p><span class="math display">\[
+L_c=\sqrt{120^2+90^2}=150\ \mathrm m,
 \]</span></p>
 <p>方向余弦为 <span class="math inline">\(n_x=0.80\)</span>、<span class="math inline">\(n_z=0.60\)</span>。为提供 <span class="math inline">\(V=4200\ \mathrm{kN}\)</span> 的竖向分力，教学索力为</p>
-<p><span class="math display">\[
-T=\frac{V}{n_z}=7000\ \mathrm{kN},
-\qquad H_x=Tn_x=5600\ \mathrm{kN}.
+<p><span class="math display">\[
+T=\frac{V}{n_z}=7000\ \mathrm{kN},
+\qquad H_x=Tn_x=5600\ \mathrm{kN}.
 \]</span></p>
 <p>该水平分力进入主梁与桥塔平衡，不能在截面选择时遗漏。多根索的水平分力沿梁累积，使主梁同时承受弯曲、轴压与局部锚固作用。</p>
 </section>
 <section class="level5" data-number="6.11.0.1.2" id="偏载和索面比较">
 <h5 class="anchored" data-anchor-id="偏载和索面比较" data-number="6.11.0.1.2"><span class="header-section-number">6.11.0.1.2</span> 偏载和索面比较</h5>
 <p>偏载外扭矩为</p>
-<p><span class="math display">\[
-M_x=Pe_P=6000\times6.0
-=36000\ \mathrm{kN\,m}.
+<p><span class="math display">\[
+M_x=Pe_P=6000\times6.0
+=36000\ \mathrm{kN\,m}.
 \]</span></p>
 <p>方案B两索面中心距取教学值 <span class="math inline">\(b_c=24\ \mathrm m\)</span>，若仅由左右索面竖向分力差平衡，需</p>
-<p><span class="math display">\[
-\Delta V\approx\frac{M_x}{b_c}
-=1500\ \mathrm{kN}.
+<p><span class="math display">\[
+\Delta V\approx\frac{M_x}{b_c}
+=1500\ \mathrm{kN}.
 \]</span></p>
 <p>实际空间模型中，主梁扭转、横隔体系、支座和塔横向变形共同分担，<span class="math inline">\(1500\ \mathrm{kN}\)</span> 只是自由体量级。方案A单索面不能形成同样的索面力偶，必须由箱梁扭转和横向构造闭合。由此，方案A若继续保留，需要以截面扭转刚度、畸变、桥面横向传力和塔梁连接为重点；方案B则需要检查梁缘锚固、塔横梁和两索面不同步张拉。</p>
 </section>
@@ -3290,43 +3290,43 @@ M_x=Pe_P=6000\times6.0
 <section class="level5" data-number="6.11.0.2.1" id="任务与尺度化响应">
 <h5 class="anchored" data-anchor-id="任务与尺度化响应" data-number="6.11.0.2.1"><span class="header-section-number">6.11.0.2.1</span> 任务与尺度化响应</h5>
 <p>某双塔斜拉桥在目标合龙前的教学状态中，选择靠近跨中的索组1和靠近塔侧的索组2作为主要控制量，其余两组用于对称性和备用。响应取跨中弯矩偏差 <span class="math inline">\(r_M\)</span> 与塔顶纵向偏位 <span class="math inline">\(r_u\)</span>。为便于矩阵审查，令弯矩尺度为 <span class="math inline">\(10^4\ \mathrm{kN\,m}\)</span>，位移尺度为1 mm，索力调整尺度为100 kN。当前尺度化响应为</p>
-<p><span class="math display">\[
-\widetilde{\mathbf r}_0=
-\begin{bmatrix}6\\5\end{bmatrix},
+<p><span class="math display">\[
+\widetilde{\mathbf r}_0=
+\begin{bmatrix}6\\5\end{bmatrix},
 \]</span></p>
 <p>目标为零。有限差分得到教学矩阵</p>
-<p><span class="math display">\[
-\widetilde{\mathbf A}=
-\begin{bmatrix}
--0.8&amp;-0.3\\
-0.2&amp;-0.5
-\end{bmatrix},
+<p><span class="math display">\[
+\widetilde{\mathbf A}=
+\begin{bmatrix}
+-0.8&amp;-0.3\\
+0.2&amp;-0.5
+\end{bmatrix},
 \]</span></p>
 <p>矩阵列单位已由尺度化消除。第一列说明增加索组1索力主要降低跨中弯矩，但使塔顶偏位略增加；第二列同时降低二者。该符号应通过单索扰动自由体和完整模型核对。</p>
 </section>
 <section class="level5" data-number="6.11.0.2.2" id="无约束解与活动约束">
 <h5 class="anchored" data-anchor-id="无约束解与活动约束" data-number="6.11.0.2.2"><span class="header-section-number">6.11.0.2.2</span> 无约束解与活动约束</h5>
 <p>求解 <span class="math inline">\(\widetilde{\mathbf A}\Delta\widetilde{\mathbf T}=-\widetilde{\mathbf r}_0\)</span> 得</p>
-<p><span class="math display">\[
-\Delta\widetilde T_1=3.26,
-\qquad
-\Delta\widetilde T_2=11.30,
+<p><span class="math display">\[
+\Delta\widetilde T_1=3.26,
+\qquad
+\Delta\widetilde T_2=11.30,
 \]</span></p>
 <p>即索组调整约为326 kN与1130 kN。教学设备和相邻索差约束使第二组一次允许调整范围设为不超过800 kN；该800 kN只是本案例设备状态，不是规范限值。无约束解不可实施，第二组上界成为活动约束。</p>
 <p>固定 <span class="math inline">\(\Delta\widetilde T_2=8\)</span> 后，按等权最小二乘选取 <span class="math inline">\(\Delta\widetilde T_1\)</span>。由</p>
-<p><span class="math display">\[
-\min_x(-0.8x+3.6)^2+(0.2x+1)^2
+<p><span class="math display">\[
+\min_x(-0.8x+3.6)^2+(0.2x+1)^2
 \]</span></p>
 <p>得 <span class="math inline">\(x=3.94\)</span>，即约394 kN。线性预测残差为弯矩尺度量0.447、位移尺度量1.788，说明设备约束下不能同时把两项目标调至零。工程决策需要接受部分残差、引入第三索组或修改配重，而不是绕过设备约束。</p>
 </section>
 <section class="level5" data-number="6.11.0.2.3" id="无应力长度换算">
 <h5 class="anchored" data-anchor-id="无应力长度换算" data-number="6.11.0.2.3"><span class="header-section-number">6.11.0.2.3</span> 无应力长度换算</h5>
 <p>索组1代表索无应力长度为 <span class="math inline">\(L_0=180\ \mathrm m\)</span>，<span class="math inline">\(EA=2.0\times10^6\ \mathrm{kN}\)</span>。忽略垂度与锚固柔度，仅作直杆量级估算，增加索力394 kN所需缩短无应力长度约为</p>
-<p><span class="math display">\[
-\Delta L_0\approx-
-\frac{\Delta T L_0}{EA}
-=-\frac{394\times180}{2.0\times10^6}
-=-0.0355\ \mathrm m.
+<p><span class="math display">\[
+\Delta L_0\approx-
+\frac{\Delta T L_0}{EA}
+=-\frac{394\times180}{2.0\times10^6}
+=-0.0355\ \mathrm m.
 \]</span></p>
 <p>35.5 mm不是现场张拉端位移，因为实际还包含塔梁变形、垂度、锚固柔度、回缩和温度。它用于检查索力调整与长度控制的量级。完整索单元计算后输出无应力长度候选，并明确参考温度。</p>
 </section>
@@ -3355,30 +3355,30 @@ M_x=Pe_P=6000\times6.0
 <section class="level5" data-number="6.11.0.3.1" id="基线与频率量级">
 <h5 class="anchored" data-anchor-id="基线与频率量级" data-number="6.11.0.3.1"><span class="header-section-number">6.11.0.3.1</span> 基线与频率量级</h5>
 <p>某代表长索教学参数为有效长度 <span class="math inline">\(L_e=180\ \mathrm m\)</span>、单位长度质量 <span class="math inline">\(m_l=60\ \mathrm{kg/m}\)</span>、索力 <span class="math inline">\(T=8.0\ \mathrm{MN}\)</span>、外径 <span class="math inline">\(D=0.18\ \mathrm m\)</span>。理想弦第一频率为</p>
-<p><span class="math display">\[
-f_1=\frac{1}{2\times180}
-\sqrt{\frac{8.0\times10^6}{60}}
-=1.014\ \mathrm{Hz},
+<p><span class="math display">\[
+f_1=\frac{1}{2\times180}
+\sqrt{\frac{8.0\times10^6}{60}}
+=1.014\ \mathrm{Hz},
 \]</span></p>
 <p>第二阶约为2.028 Hz。现场合成记录在有雨、平均风速约9 <span class="math inline">\(\mathrm{m/s}\)</span> 时出现2.03 Hz窄带响应，运动幅值明显增大。频率与第二阶接近只说明结构模态，不足以确认气动机制。</p>
 <p>若取教学 <span class="math inline">\(St=0.20\)</span>，以涡脱关系反算2.03 Hz对应风速为</p>
-<p><span class="math display">\[
-U_{vs}=\frac{fD}{St}
-=\frac{2.03\times0.18}{0.20}
-=1.83\ \mathrm{m/s},
+<p><span class="math display">\[
+U_{vs}=\frac{fD}{St}
+=\frac{2.03\times0.18}{0.20}
+=1.83\ \mathrm{m/s},
 \]</span></p>
 <p>与观测9 <span class="math inline">\(\mathrm{m/s}\)</span> 不一致。考虑倾角、表面和实际 <span class="math inline">\(St\)</span> 后仍需专项核对，但单纯涡激振动的证据较弱。有雨、特定风向与大幅响应支持雨风振候选；同时检查桥面运动，未发现接近参数激励关系的稳定频率。结论为“雨风振优先候选，需表面水线和更广风速区间证据”，而不是自动分类。</p>
 </section>
 <section class="level5" data-number="6.11.0.3.2" id="阻尼识别">
 <h5 class="anchored" data-anchor-id="阻尼识别" data-number="6.11.0.3.2"><span class="header-section-number">6.11.0.3.2</span> 阻尼识别</h5>
 <p>一次受控激励的自由衰减中，第1个与第6个同向峰值分别为20 mm和14 mm，间隔5周期。对数衰减率为</p>
-<p><span class="math display">\[
-\delta=\frac15\ln\frac{20}{14}=0.0713,
+<p><span class="math display">\[
+\delta=\frac15\ln\frac{20}{14}=0.0713,
 \]</span></p>
 <p>阻尼比</p>
-<p><span class="math display">\[
-\zeta=\frac{0.0713}
-{\sqrt{4\pi^2+0.0713^2}}=0.0113.
+<p><span class="math display">\[
+\zeta=\frac{0.0713}
+{\sqrt{4\pi^2+0.0713^2}}=0.0113.
 \]</span></p>
 <p>安装教学阻尼装置后，相同定义的峰值由20 mm降至8 mm，得 <span class="math inline">\(\delta=0.1833\)</span>、<span class="math inline">\(\zeta=0.0292\)</span>。两次试验的温度、激励幅、模态和信号处理保持一致。数值表明目标模态衰减加快，但不直接证明雨风、尾流和其他模态均得到控制。</p>
 </section>
@@ -3407,9 +3407,9 @@ U_{vs}=\frac{fD}{St}
 <section class="level5" data-number="6.11.0.4.1" id="当前状态与传力">
 <h5 class="anchored" data-anchor-id="当前状态与传力" data-number="6.11.0.4.1"><span class="header-section-number">6.11.0.4.1</span> 当前状态与传力</h5>
 <p>某代表索现状索力教学值为 <span class="math inline">\(T_o=6000\ \mathrm{kN}\)</span>。其梁端至塔端几何差为 <span class="math inline">\(\Delta x=160\ \mathrm m\)</span>、<span class="math inline">\(\Delta z=120\ \mathrm m\)</span>，忽略横向差，弦长200 m，方向余弦为0.8与0.6。因此旧索作用于梁端的水平和竖向分量量级分别为</p>
-<p><span class="math display">\[
-H_o=4800\ \mathrm{kN},
-\qquad V_o=3600\ \mathrm{kN}.
+<p><span class="math display">\[
+H_o=4800\ \mathrm{kN},
+\qquad V_o=3600\ \mathrm{kN}.
 \]</span></p>
 <p>旧索退出时，两个分量均需由相邻索、主梁、桥塔和临时体系重新闭合。只补偿竖向3600 kN会漏掉主梁轴力与塔不平衡力。</p>
 <p>现状调查给出：索力识别标准差教学值为120 kN；一侧锚具附近护套损伤，但尚无充分证据量化钢丝损失；梁端锚箱外观可检查，内部状态需进一步NDE；阻尼器连接可拆。以上观测、推断和未知分别列入状态表。</p>
@@ -3464,15 +3464,15 @@ H_o=4800\ \mathrm{kN},
 <section class="level4" data-number="6.11.2.1" id="锚点六分量与偏心传递">
 <h4 class="anchored" data-anchor-id="锚点六分量与偏心传递" data-number="6.11.2.1"><span class="header-section-number">6.11.2.1</span> 锚点六分量与偏心传递</h4>
 <p>总体模型在锚点输出索端力 <span class="math inline">\(\mathbf F_s=(F_x,F_y,F_z)^{\mathsf T}\)</span>。若索节点到局部模型参考点的偏心为 <span class="math inline">\(\mathbf e\)</span>，则参考点合力矩为</p>
-<p><span class="math display">\[
-\mathbf M_s=\mathbf M_0+\mathbf e\times\mathbf F_s,
+<p><span class="math display">\[
+\mathbf M_s=\mathbf M_0+\mathbf e\times\mathbf F_s,
 \]</span></p>
 <p>其中 <span class="math inline">\(\mathbf M_0\)</span> 为索单元端部可能传递的弯矩；理想索单元通常 <span class="math inline">\(\mathbf M_0=\mathbf0\)</span>，含端部弯曲刚度或连接构件时则需按模型确定。力单位为 <span class="math inline">\(\mathrm N\)</span>，偏心单位为 <span class="math inline">\(\mathrm m\)</span>，力矩单位为 <span class="math inline">\(\mathrm{N\,m}\)</span>。</p>
 <p>总体模型的桥梁坐标、构件局部坐标和局部子模型坐标之间用正交变换矩阵 <span class="math inline">\(\mathbf Q\)</span> 映射：</p>
-<p><span class="math display">\[
-\mathbf F^{(l)}=\mathbf Q\mathbf F^{(g)},
-\qquad
-\mathbf M^{(l)}=\mathbf Q\mathbf M^{(g)}.
+<p><span class="math display">\[
+\mathbf F^{(l)}=\mathbf Q\mathbf F^{(g)},
+\qquad
+\mathbf M^{(l)}=\mathbf Q\mathbf M^{(g)}.
 \]</span></p>
 <p>力与力矩必须使用同一旋转，不允许只按视觉方向重排分量。输出接口保存 <span class="math inline">\(\mathbf Q\)</span>、锚点坐标和右手系说明。通过单位轴向力测试，可以核对三维方向与符号。</p>
 </section>
@@ -3480,11 +3480,11 @@ H_o=4800\ \mathrm{kN},
 <h4 class="anchored" data-anchor-id="子模型边界的两种方式" data-number="6.11.2.2"><span class="header-section-number">6.11.2.2</span> 子模型边界的两种方式</h4>
 <p>力控制边界将总体模型截面合力分配为局部边界结点力；位移控制边界则把总体位移场插值到切口。力边界易于检查合力，但可能不能重现截面翘曲；位移边界保留总体变形模式，但若切口过近或总体模型自由度不足，可能施加过强约束。两者可作为互校。</p>
 <p>对局部边界 <span class="math inline">\(\Gamma\)</span>，力边界需满足</p>
-<p><span class="math display">\[
-\int_\Gamma\mathbf t\,\mathrm dA=\mathbf F_{cut},
-\qquad
-\int_\Gamma\mathbf r\times\mathbf t\,\mathrm dA
-=\mathbf M_{cut},
+<p><span class="math display">\[
+\int_\Gamma\mathbf t\,\mathrm dA=\mathbf F_{cut},
+\qquad
+\int_\Gamma\mathbf r\times\mathbf t\,\mathrm dA
+=\mathbf M_{cut},
 \]</span></p>
 <p>其中 <span class="math inline">\(\mathbf t\)</span> 为边界面力，单位为 <span class="math inline">\(\mathrm{Pa}\)</span>；<span class="math inline">\(\mathbf F_{cut}\)</span>、<span class="math inline">\(\mathbf M_{cut}\)</span> 为总体模型切口合力。切口应位于局部扰动逐渐衰减且截面定义清楚的位置。若切口穿过锚箱或横隔板，传统梁截面合力可能不足以表示真实分布。</p>
 <p>位移边界下，应比较局部模型边界反力积分与总体切口合力。差异较大时检查坐标、刚臂、截面翘曲、切口位置和总体模型偏置。不能通过任意缩放局部结果来强制匹配。</p>
@@ -3512,35 +3512,35 @@ H_o=4800\ \mathrm{kN},
 <section class="level3" data-number="6.11.3" id="数字监控识别算例测点增加是否改善可识别性">
 <h3 class="anchored" data-anchor-id="数字监控识别算例测点增加是否改善可识别性" data-number="6.11.3"><span class="header-section-number">6.11.3</span> 数字监控识别算例：测点增加是否改善可识别性</h3>
 <p>本算例补充前述施工案例中的参数识别。待识别参数为节段重量相对偏差 <span class="math inline">\(p_w\)</span> 与主梁等效刚度相对偏差 <span class="math inline">\(p_E\)</span>，两者均无量纲。只使用两个相邻梁面高程时，尺度化灵敏度矩阵教学值为</p>
-<p><span class="math display">\[
-\mathbf S_2=
-\begin{bmatrix}
-1.00&amp;0.90\\
-0.80&amp;0.72
-\end{bmatrix}.
+<p><span class="math display">\[
+\mathbf S_2=
+\begin{bmatrix}
+1.00&amp;0.90\\
+0.80&amp;0.72
+\end{bmatrix}.
 \]</span></p>
 <p>第二行是第一行的0.8倍，矩阵秩为1。重量增加与刚度降低对两点高程产生近似同方向影响，无法分别识别。无论优化器返回多少小数，都存在一族等效解。</p>
 <p>增加塔顶纵向位移或代表索力组合后，第三行灵敏度教学值取 <span class="math inline">\((0.20,-0.60)\)</span>，矩阵为</p>
-<p><span class="math display">\[
-\mathbf S_3=
-\begin{bmatrix}
-1.00&amp;0.90\\
-0.80&amp;0.72\\
-0.20&amp;-0.60
-\end{bmatrix}.
+<p><span class="math display">\[
+\mathbf S_3=
+\begin{bmatrix}
+1.00&amp;0.90\\
+0.80&amp;0.72\\
+0.20&amp;-0.60
+\end{bmatrix}.
 \]</span></p>
 <p>构造真实教学参数 <span class="math inline">\(p_w=0.04\)</span>、<span class="math inline">\(p_E=-0.03\)</span>，无噪声观测增量为</p>
-<p><span class="math display">\[
-\Delta\mathbf y=
-\mathbf S_3
-\begin{bmatrix}0.04\\-0.03\end{bmatrix}
-=\begin{bmatrix}0.013\\0.0104\\0.026\end{bmatrix}.
+<p><span class="math display">\[
+\Delta\mathbf y=
+\mathbf S_3
+\begin{bmatrix}0.04\\-0.03\end{bmatrix}
+=\begin{bmatrix}0.013\\0.0104\\0.026\end{bmatrix}.
 \]</span></p>
 <p>前两项仍只约束同一参数组合，第三项提供不同方向信息。在加入观测误差后，采用加权最小二乘</p>
-<p><span class="math display">\[
-\widehat{\mathbf p}=
-(\mathbf S_3^{\mathsf T}\mathbf R^{-1}\mathbf S_3)^{-1}
-\mathbf S_3^{\mathsf T}\mathbf R^{-1}\Delta\mathbf y.
+<p><span class="math display">\[
+\widehat{\mathbf p}=
+(\mathbf S_3^{\mathsf T}\mathbf R^{-1}\mathbf S_3)^{-1}
+\mathbf S_3^{\mathsf T}\mathbf R^{-1}\Delta\mathbf y.
 \]</span></p>
 <p><span class="math inline">\(\mathbf R\)</span> 为观测误差协方差。若第三项噪声很大或时间不同步，其理论灵敏度方向虽不同，实际信息贡献仍可能有限。测点设计需同时考虑灵敏度和数据质量。</p>
 <section class="level4" data-number="6.11.3.1" id="拟合与验证的分离">
@@ -3556,8 +3556,8 @@ H_o=4800\ \mathrm{kN},
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-提示
+<div class="callout-title-container flex-fill">
+提示
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -3582,10 +3582,10 @@ H_o=4800\ \mathrm{kN},
 <section class="level3" data-number="6.12.1" id="分析问题模型许可证据矩阵">
 <h3 class="anchored" data-anchor-id="分析问题模型许可证据矩阵" data-number="6.12.1"><span class="header-section-number">6.12.1</span> 分析问题—模型许可—证据矩阵</h3>
 <p>斜拉桥同一几何模型可以派生多种分析模型，但不能用一个模型回答全部问题。模型许可应明确分析对象、可接受输入域、输出口径、验证证据和退出条件。建议将模型许可写成</p>
-<p><span class="math display">\[
-\mathcal L_M=
-\{Q,\mathcal S,\mathcal X,\mathcal O,
-\mathcal V,\mathcal U,\mathcal T\},
+<p><span class="math display">\[
+\mathcal L_M=
+\{Q,\mathcal S,\mathcal X,\mathcal O,
+\mathcal V,\mathcal U,\mathcal T\},
 \]</span></p>
 <p>其中，<span class="math inline">\(Q\)</span> 为问题；<span class="math inline">\(\mathcal S\)</span> 为结构与施工状态；<span class="math inline">\(\mathcal X\)</span> 为输入范围；<span class="math inline">\(\mathcal O\)</span> 为允许输出；<span class="math inline">\(\mathcal V\)</span> 为验证证据；<span class="math inline">\(\mathcal U\)</span> 为不确定性说明；<span class="math inline">\(\mathcal T\)</span> 为退出或升级触发条件。</p>
 <table class="caption-top table">
@@ -4060,410 +4060,410 @@ H_o=4800\ \mathrm{kN},
 </section>
 <p class="public-edition-note"><a href="../publication-images.html">公开预览 · 图片来源与版本说明</a></p></main> <!-- /main -->
 
-<script>
-(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
-
+<script>
+(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+
 </script>
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "已复制");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "已复制");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
-          }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
-  });
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
   </script>
 <nav class="page-navigation">
 <div class="nav-page nav-page-previous">

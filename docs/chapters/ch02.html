@@ -5,21 +5,21 @@
 <meta content="quarto-1.9.38" name="generator"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
 <title>3  桥梁上的作用、作用组合与可靠度 – 桥梁工程智能设计</title>
-<style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
 </style>
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
@@ -39,61 +39,61 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
 <link append-hash="true" data-mode="light" href="../site_libs/bootstrap/bootstrap-c614dc152840027ed1d225942eae4f22.min.css" id="quarto-bootstrap" rel="stylesheet"/>
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "没有结果",
-    "search-matching-documents-text": "匹配的文档",
-    "search-copy-link-title": "复制搜索链接",
-    "search-hide-matches-text": "隐藏其它匹配结果",
-    "search-more-match-text": "更多匹配结果",
-    "search-more-matches-text": "更多匹配结果",
-    "search-clear-button-title": "清除",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "取消",
-    "search-submit-button-title": "提交",
-    "search-label": "搜索"
-  }
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
 </script>
 <link href="../styles.css" rel="stylesheet"/>
 
@@ -273,7 +273,7 @@ window.Quarto = {
 <li class="sidebar-item">
 <div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../legacy-tools.html">
-<span class="menu-text">从旧版接续的两个实验</span></a>
+<span class="menu-text">从旧版接续的实验与游戏</span></a>
 </div>
 </li>
 </ul>
@@ -339,185 +339,185 @@ window.Quarto = {
 <div class="core-route" id="core-route">
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry">
-<p>
-先从一个看得见的问题开始
+<p>
+先从一个看得见的问题开始
 </p>
-<h3 class="anchored">
-只盯住桥上的一个位置，车停在哪里最不利？
+<h3 class="anchored">
+只盯住桥上的一个位置，车停在哪里最不利？
 </h3>
-<p>
-选择左跨跨中弯矩，切换正向最大或反向最小目标，再在桥上布置荷载并验证。
+<p>
+选择左跨跨中弯矩，切换正向最大或反向最小目标，再在桥上布置荷载并验证。
 </p>
 <a href="../interactive/learning-map.html?chapter=ch02">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
-<h2 class="anchored">
-本章的核心思考
+<h2 class="anchored">
+本章的核心思考
 </h2>
-<p class="core-thesis">
-先定义输出，再组织作用与概率。
+<p class="core-thesis">
+先定义输出，再组织作用与概率。
 </p>
 <ol>
-<li>
-组合的是同一目标的有符号效应。
+<li>
+组合的是同一目标的有符号效应。
 </li>
-<li>
-区分内力图和影响线的输入、输出角色。
+<li>
+区分内力图和影响线的输入、输出角色。
 </li>
-<li>
-把平均余量与不确定性同时带入判断。
+<li>
+把平均余量与不确定性同时带入判断。
 </li>
 </ol>
 <div class="core-analogy">
-<h3 class="anchored">
-跨课程类比
+<h3 class="anchored">
+跨课程类比
 </h3>
-<p>
-结构力学单位作用 → 移动加载；概率论余量分布 → 可靠度
+<p>
+结构力学单位作用 → 移动加载；概率论余量分布 → 可靠度
 </p>
 <p>
-<strong>反例与边界：</strong>不同工况的各自极值不一定同时发生；正态线性模型不能包办全部尾部风险。
+<strong>反例与边界：</strong>不同工况的各自极值不一定同时发生；正态线性模型不能包办全部尾部风险。
 </p>
 </div>
-<p>
-建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
+<p>
+建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
 </p>
 <div class="core-unit-grid">
 <article>
-<p class="core-tag">
-C03U01 · 课前/课后迁移
+<p class="core-tag">
+C03U01 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-作用大小与响应大小之间隔着模型
+<h3 class="anchored">
+作用大小与响应大小之间隔着模型
 </h3>
-<p>
-荷载加倍时线性模型的反力加倍，但比例系数由位置和边界决定。
+<p>
+荷载加倍时线性模型的反力加倍，但比例系数由位置和边界决定。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C03U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U01&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C03U02 · 课前/课后迁移
+<p class="core-tag">
+C03U02 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-等效荷载同时保留力和矩
+<h3 class="anchored">
+等效荷载同时保留力和矩
 </h3>
-<p>
-把点荷载分配到相邻节点，要同时保留合力与一阶矩。
+<p>
+把点荷载分配到相邻节点，要同时保留合力与一阶矩。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C03U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U02&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C03U03 · 课堂核心
+<p class="core-tag">
+C03U03 · 课堂核心
 </p>
-<h3 class="anchored">
-组合不是把所有最大值相加
+<h3 class="anchored">
+组合不是把所有最大值相加
 </h3>
-<p>
-伴随作用的贡献随组合系数改变，负贡献也必须保留符号。
+<p>
+伴随作用的贡献随组合系数改变，负贡献也必须保留符号。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C03U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U03&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C03U04 · 课前/课后迁移
+<p class="core-tag">
+C03U04 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-瀑布图读的是代数贡献
+<h3 class="anchored">
+瀑布图读的是代数贡献
 </h3>
-<p>
-反向作用可以减小某个目标响应，但对另一个截面未必有利。
+<p>
+反向作用可以减小某个目标响应，但对另一个截面未必有利。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C03U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U04&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C03U05 · 课堂核心
+<p class="core-tag">
+C03U05 · 课堂核心
 </p>
-<h3 class="anchored">
-从安全余量走到失效概率
+<h3 class="anchored">
+从安全余量走到失效概率
 </h3>
-<p>
-抗力均值不变时，提高效应均值会减少可靠指标。
+<p>
+抗力均值不变时，提高效应均值会减少可靠指标。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C03U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U05&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C03U06 · 课前/课后迁移
+<p class="core-tag">
+C03U06 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-不确定性本身也改变结论
+<h3 class="anchored">
+不确定性本身也改变结论
 </h3>
-<p>
-均值差相同时，效应离散程度增加通常降低本模型的可靠指标。
+<p>
+均值差相同时，效应离散程度增加通常降低本模型的可靠指标。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C03U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U06&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C03U07 · 课前/课后迁移
+<p class="core-tag">
+C03U07 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-相关性进入余量的方差
+<h3 class="anchored">
+相关性进入余量的方差
 </h3>
-<p>
-抗力与效应之差的方差包含相关项，不能只把两个方差相加。
+<p>
+抗力与效应之差的方差包含相关项，不能只把两个方差相加。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C03U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U07&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C03U08 · 课堂核心
+<p class="core-tag">
+C03U08 · 课堂核心
 </p>
-<h3 class="anchored">
-移动荷载：固定输出再移动输入
+<h3 class="anchored">
+移动荷载：固定输出再移动输入
 </h3>
-<p>
-影响线的横坐标是荷载位置，不是正在查看的截面位置。
+<p>
+影响线的横坐标是荷载位置，不是正在查看的截面位置。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C03U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U08&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C03U09 · 课前/课后迁移
+<p class="core-tag">
+C03U09 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-正、负区段要分别构造不利布载
+<h3 class="anchored">
+正、负区段要分别构造不利布载
 </h3>
-<p>
-连续梁同一截面影响线存在正负区，求最大与最小值必须改变允许布载区段。
+<p>
+连续梁同一截面影响线存在正负区，求最大与最小值必须改变允许布载区段。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C03U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U09&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C03U10 · 课前/课后迁移
+<p class="core-tag">
+C03U10 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-可靠度模型先做可解释的核验
+<h3 class="anchored">
+可靠度模型先做可解释的核验
 </h3>
-<p>
-提高抗力均值会增大余量；公式方向检查是程序核验的第一步。
+<p>
+提高抗力均值会增大余量；公式方向检查是程序核验的第一步。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C03U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C03U10&amp;view=video" target="_blank">观看短视频</a>
@@ -539,8 +539,8 @@ C03U10 · 课前/课后迁移
 <figure class="chapter-video-card figure">
 <video controls="" playsinline="" poster="../assets/videos/manim/posters/M05_combination_waterfall.png" preload="metadata" src="../assets/videos/manim/M05_combination_waterfall.mp4">
 </video>
-<figcaption>
-M05　作用组合与瀑布图
+<figcaption>
+M05　作用组合与瀑布图
 </figcaption>
 </figure>
 </div>
@@ -554,8 +554,8 @@ M05　作用组合与瀑布图
 <div aria-describedby="fig-ch02-action-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch02/bridge_action_base_v2.png" style="width:88.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-action-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 3.1: 桥梁作用及基本传递路径
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-action-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 3.1: 桥梁作用及基本传递路径
 </figcaption>
 </figure>
 </div>
@@ -566,8 +566,8 @@ M05　作用组合与瀑布图
 <section class="level4" data-number="3.1.0.1" id="与结构设计原理课程的衔接">
 <h4 class="anchored" data-anchor-id="与结构设计原理课程的衔接" data-number="3.1.0.1"><span class="header-section-number">3.1.0.1</span> 与结构设计原理课程的衔接</h4>
 <p>“桥梁工程”重点解决桥位环境、结构体系、施工与运营条件如何转化为作用模型，输出控制截面的作用效应 <span class="math inline">\(S\)</span>；“结构设计原理”重点研究材料和截面如何形成抗力 <span class="math inline">\(R\)</span>，以及构件在弯曲、受剪、受压、受拉和扭转等状态下如何验算。两门课程在极限状态函数处衔接：</p>
-<p><span class="math display">\[
-g(\mathbf X)=R(\mathbf X_R)-S(\mathbf X_S).
+<p><span class="math display">\[
+g(\mathbf X)=R(\mathbf X_R)-S(\mathbf X_S).
 \]</span></p>
 <p>完整设计链为“设计状况—作用—结构模型—作用效应—截面抗力—极限状态验算”。桥梁课程不能用未经说明的“总荷载”替代作用分析，结构设计课程也不能脱离具体组合只讨论截面承载力。</p>
 </section>
@@ -625,8 +625,8 @@ g(\mathbf X)=R(\mathbf X_R)-S(\mathbf X_S).
 <div aria-describedby="fig-ch02-action-categories-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch02/combination_components.png" style="width:92.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-action-categories-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 3.2: 作用类别及其计算属性
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-action-categories-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 3.2: 作用类别及其计算属性
 </figcaption>
 </figure>
 </div>
@@ -644,19 +644,19 @@ g(\mathbf X)=R(\mathbf X_R)-S(\mathbf X_S).
 <span>面或体上的分布作用</span><span>按位移插值分配</span><span>节点上的等效作用</span>
 </div>
 <details>
-<summary>
-这组符号分别指什么？
+<summary>
+这组符号分别指什么？
 </summary>
-<p>
-fₑ 是单元的节点作用；b 是体内分布力，t 是表面分布力；Ωₑ 是单元内部，Γₑ 是受力边界。N 描述节点之间如何移动，转置号不是材料参数。先检查合力与合矩；梁单元的等效节点作用还可能含端弯矩。
+<p>
+fₑ 是单元的节点作用；b 是体内分布力，t 是表面分布力；Ωₑ 是单元内部，Γₑ 是受力边界。N 描述节点之间如何移动，转置号不是材料参数。先检查合力与合矩；梁单元的等效节点作用还可能含端弯矩。
 </p>
 </details>
 </div>
 <!-- FORMULA-SCAFFOLD ch02 END -->
 <p>作用可表示为集中作用、线分布作用、面分布作用或体积作用。汽车轮载是局部集中作用，经过桥面铺装和桥面板扩散后可转化为板或梁的等效作用；栏杆、人行道、防撞护栏常沿桥纵向表示为线分布作用；风压力和水压力作用于结构表面；结构重力来自材料密度与构件体积。离散模型中的等效节点荷载应保持合力和合力矩一致。对单元域 <span class="math inline">\(\Omega_e\)</span> 内的分布作用 <span class="math inline">\(\mathbf b\)</span>，一致节点荷载可写为</p>
-<p><span class="math display">\[
-\mathbf f_e=\int_{\Omega_e}\mathbf N^{\mathrm T}\mathbf b\,\mathrm d\Omega
-+\int_{\Gamma_e}\mathbf N^{\mathrm T}\mathbf t\,\mathrm d\Gamma,
+<p><span class="math display">\[
+\mathbf f_e=\int_{\Omega_e}\mathbf N^{\mathrm T}\mathbf b\,\mathrm d\Omega
++\int_{\Gamma_e}\mathbf N^{\mathrm T}\mathbf t\,\mathrm d\Gamma,
 \]</span></p>
 <p>其中 <span class="math inline">\(\mathbf N\)</span> 为形函数矩阵，<span class="math inline">\(\mathbf t\)</span> 为边界分布力。杆系模型采用等效线荷载时，应说明从桥面面荷载到主梁线荷载所用的横向分配假定。</p>
 </section>
@@ -669,10 +669,10 @@ fₑ 是单元的节点作用；b 是体内分布力，t 是表面分布力；Ω
 <section class="level4" data-number="3.2.1.1" id="标准值与伴随值">
 <h4 class="anchored" data-anchor-id="标准值与伴随值" data-number="3.2.1.1"><span class="header-section-number">3.2.1.1</span> 标准值与伴随值</h4>
 <p>作用标准值是作用的基本代表值。可变作用在组合中还可能采用组合值、频遇值和准永久值：</p>
-<p><span class="math display">\[
-Q_{\mathrm c}=\psi_{\mathrm c}Q_k,\qquad
-Q_{\mathrm f}=\psi_{\mathrm f}Q_k,\qquad
-Q_{\mathrm q}=\psi_{\mathrm q}Q_k.
+<p><span class="math display">\[
+Q_{\mathrm c}=\psi_{\mathrm c}Q_k,\qquad
+Q_{\mathrm f}=\psi_{\mathrm f}Q_k,\qquad
+Q_{\mathrm q}=\psi_{\mathrm q}Q_k.
 \]</span></p>
 <p><span class="math inline">\(Q_k\)</span> 为标准值；<span class="math inline">\(\psi_{\mathrm c}\)</span>、<span class="math inline">\(\psi_{\mathrm f}\)</span>、<span class="math inline">\(\psi_{\mathrm q}\)</span> 分别为组合值、频遇值和准永久值系数。三者反映不同组合情景和持续水平，不能只按大小互相替代。作用设计值通常写为</p>
 <p><span class="math display">\[F_d=\gamma_FF_{\mathrm{rep}},\]</span></p>
@@ -690,10 +690,10 @@ Q_{\mathrm q}=\psi_{\mathrm q}Q_k.
 <section class="level4" data-number="3.2.1.3" id="预加力与基础变位">
 <h4 class="anchored" data-anchor-id="预加力与基础变位" data-number="3.2.1.3"><span class="header-section-number">3.2.1.3</span> 预加力与基础变位</h4>
 <p>预加力既产生直接轴力和弯矩，也可能在超静定结构中形成次内力。模型应记录钢束线形、张拉批次、锚固端、摩阻与损失假定。基础变位属于间接作用。若自由度分为未知位移 <span class="math inline">\(\mathbf u_f\)</span> 和给定位移 <span class="math inline">\(\mathbf u_p\)</span>，则</p>
-<p><span class="math display">\[
-\begin{bmatrix}\mathbf K_{ff}&amp;\mathbf K_{fp}\\\mathbf K_{pf}&amp;\mathbf K_{pp}\end{bmatrix}
-\begin{bmatrix}\mathbf u_f\\\mathbf u_p\end{bmatrix}
-=\begin{bmatrix}\mathbf P_f\\\mathbf P_p\end{bmatrix},
+<p><span class="math display">\[
+\begin{bmatrix}\mathbf K_{ff}&amp;\mathbf K_{fp}\\\mathbf K_{pf}&amp;\mathbf K_{pp}\end{bmatrix}
+\begin{bmatrix}\mathbf u_f\\\mathbf u_p\end{bmatrix}
+=\begin{bmatrix}\mathbf P_f\\\mathbf P_p\end{bmatrix},
 \]</span></p>
 <p>从而 <span class="math inline">\(\mathbf K_{ff}\mathbf u_f=\mathbf P_f-\mathbf K_{fp}\mathbf u_p\)</span>。给定位移通过约束转化为等效作用。静定和超静定体系对支座沉降的敏感性不同，必须由约束与冗余联系判断。</p>
 </section>
@@ -756,12 +756,12 @@ Q_{\mathrm q}=\psi_{\mathrm q}Q_k.
 <h4 class="anchored" data-anchor-id="同时出现与主导作用轮换" data-number="3.3.1.1"><span class="header-section-number">3.3.1.1</span> 同时出现与主导作用轮换</h4>
 <p>作用组合首先是工程情景判断。可能同时出现的作用才进入同一组合；物理上互斥的状态必须排除；由另一作用派生的从属项要保持关联。可用兼容矩阵 <span class="math inline">\(C_{ij}\)</span> 表示作用关系：<span class="math inline">\(C_{ij}=1\)</span> 表示允许同时出现，<span class="math inline">\(C_{ij}=0\)</span> 表示互斥，另设规则记录“若 A 出现则 B 随之出现”。</p>
 <p>设第 <span class="math inline">\(k\)</span> 个可变作用为主导项，在线性效应下候选组合可概括为</p>
-<p><span class="math display">\[
-S_d^{(k)}=\gamma_0\left[
-\sum_i\gamma_{G_i}S_{G_i}
-+\gamma_{Q_k}\gamma_{L_k}S_{Q_k}
-+\sum_{j\ne k}\psi_{c,j}\gamma_{Q_j}\gamma_{L_j}S_{Q_j}
-\right].
+<p><span class="math display">\[
+S_d^{(k)}=\gamma_0\left[
+\sum_i\gamma_{G_i}S_{G_i}
++\gamma_{Q_k}\gamma_{L_k}S_{Q_k}
++\sum_{j\ne k}\psi_{c,j}\gamma_{Q_j}\gamma_{L_j}S_{Q_j}
+\right].
 \]</span></p>
 <p>所有单项效应均须对应同一控制位置和响应分量。控制包络为</p>
 <p><span class="math display">\[S_d^+=\max_kS_d^{(k)},\qquad S_d^-=\min_kS_d^{(k)}.\]</span></p>
@@ -772,20 +772,20 @@ S_d^{(k)}=\gamma_0\left[
 <section class="level3" data-number="3.3.2" id="承载能力与正常使用组合">
 <h3 class="anchored" data-anchor-id="承载能力与正常使用组合" data-number="3.3.2"><span class="header-section-number">3.3.2</span> 承载能力与正常使用组合</h3>
 <p>持久和短暂设计状况的基本组合可用下列一般结构表示：</p>
-<p><span class="math display">\[
-S_{\mathrm{ud}}=\gamma_0S\!\left(
-\sum_i\gamma_{G_i}G_{ik},\;
-\gamma_{Q_1}\gamma_{L_1}Q_{1k},\;
-\sum_{j=2}^{n}\psi_{c,j}\gamma_{Q_j}\gamma_{L_j}Q_{jk}
-\right).
+<p><span class="math display">\[
+S_{\mathrm{ud}}=\gamma_0S\!\left(
+\sum_i\gamma_{G_i}G_{ik},\;
+\gamma_{Q_1}\gamma_{L_1}Q_{1k},\;
+\sum_{j=2}^{n}\psi_{c,j}\gamma_{Q_j}\gamma_{L_j}Q_{jk}
+\right).
 \]</span></p>
 <p><span class="math inline">\(S_{\mathrm{ud}}\)</span> 为承载能力极限状态组合效应；<span class="math inline">\(\gamma_0\)</span>、<span class="math inline">\(\gamma_G\)</span>、<span class="math inline">\(\gamma_Q\)</span>、<span class="math inline">\(\gamma_L\)</span> 和 <span class="math inline">\(\psi_c\)</span> 的定义、取值及适用条件按现行规范核定。偶然和地震作用不作为普通伴随变量加入持久状况基本组合，而应按相应设计状况处理。</p>
 <p>正常使用极限状态的频遇组合和准永久组合可概括为</p>
-<p><span class="math display">\[
-S_{\mathrm{fd}}=S\!\left(\sum_iG_{ik},\;\psi_{f,1}Q_{1k},\;\sum_{j=2}^{n}\psi_{q,j}Q_{jk}\right),
+<p><span class="math display">\[
+S_{\mathrm{fd}}=S\!\left(\sum_iG_{ik},\;\psi_{f,1}Q_{1k},\;\sum_{j=2}^{n}\psi_{q,j}Q_{jk}\right),
 \]</span></p>
-<p><span class="math display">\[
-S_{\mathrm{qd}}=S\!\left(\sum_iG_{ik},\;\sum_{j=1}^{n}\psi_{q,j}Q_{jk}\right).
+<p><span class="math display">\[
+S_{\mathrm{qd}}=S\!\left(\sum_iG_{ik},\;\sum_{j=1}^{n}\psi_{q,j}Q_{jk}\right).
 \]</span></p>
 <p>频遇组合描述较为频繁出现的作用水平，准永久组合反映较长期持续的水平。预应力混凝土桥的施工与使用阶段应力、抗裂、裂缝及长期挠度可能采用不同组合，须逐项建立验算清单。</p>
 </section>
@@ -798,8 +798,8 @@ S_{\mathrm{qd}}=S\!\left(\sum_iG_{ik},\;\sum_{j=1}^{n}\psi_{q,j}Q_{jk}\right).
 <div aria-describedby="fig-ch02-waterfall-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch02/combination_waterfall.png" style="width:86.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-waterfall-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 3.3: 作用效应组合瀑布图
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-waterfall-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 3.3: 作用效应组合瀑布图
 </figcaption>
 </figure>
 </div>
@@ -876,9 +876,9 @@ S_{\mathrm{qd}}=S\!\left(\sum_iG_{ik},\;\sum_{j=1}^{n}\psi_{q,j}Q_{jk}\right).
 <p>令抗力为 <span class="math inline">\(R\)</span>、作用效应为 <span class="math inline">\(S\)</span>，极限状态函数为</p>
 <p><span class="math display">\[g(R,S)=R-S.\]</span></p>
 <p><span class="math inline">\(g&gt;0\)</span> 为安全域，<span class="math inline">\(g=0\)</span> 为极限状态边界，<span class="math inline">\(g&lt;0\)</span> 为失效域。这里的“失效”表示达到所定义的极限状态，不必然等于桥梁整体倒塌。抗弯可采用 <span class="math inline">\(g=M_R-M_S\)</span>，挠度可采用 <span class="math inline">\(g=f_{\mathrm{lim}}-f\)</span>，裂缝宽度可采用 <span class="math inline">\(g=w_{\mathrm{lim}}-w\)</span>。</p>
-<p><span class="math display">\[
-P_f=P[g(\mathbf X)\le0]
-=\int_{g(\mathbf x)\le0}f_{\mathbf X}(\mathbf x)\,\mathrm d\mathbf x.
+<p><span class="math display">\[
+P_f=P[g(\mathbf X)\le0]
+=\int_{g(\mathbf x)\le0}f_{\mathbf X}(\mathbf x)\,\mathrm d\mathbf x.
 \]</span></p>
 <p>失效概率由极限状态边界、变量联合分布和相关性共同决定，只比较 <span class="math inline">\(R\)</span> 与 <span class="math inline">\(S\)</span> 的平均值不能得到 <span class="math inline">\(P_f\)</span>。</p>
 <section class="level4" data-number="3.5.0.1" id="边缘分布">
@@ -889,8 +889,8 @@ P_f=P[g(\mathbf X)\le0]
 <div aria-describedby="fig-ch02-marginals-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch02/marginal_distributions.png" style="width:88.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-marginals-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 3.4: 抗力与作用效应的边缘概率密度及失效重叠
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-marginals-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 3.4: 抗力与作用效应的边缘概率密度及失效重叠
 </figcaption>
 </figure>
 </div>
@@ -912,8 +912,8 @@ P_f=P[g(\mathbf X)\le0]
 <div aria-describedby="fig-ch02-joint-2d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch02/joint_density.png" style="width:90.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-joint-2d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 3.5: 抗力—作用效应平面中的联合密度、极限状态边界与失效点
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-joint-2d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 3.5: 抗力—作用效应平面中的联合密度、极限状态边界与失效点
 </figcaption>
 </figure>
 </div>
@@ -931,8 +931,8 @@ P_f=P[g(\mathbf X)\le0]
 <div aria-describedby="fig-ch02-joint-3d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch02/joint_density_3d.png" style="width:88.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-joint-3d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 3.6: 抗力与作用效应的三维联合概率密度
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-joint-3d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 3.6: 抗力与作用效应的三维联合概率密度
 </figcaption>
 </figure>
 </div>
@@ -946,8 +946,8 @@ P_f=P[g(\mathbf X)\le0]
 <div aria-describedby="fig-ch02-parameter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="img-fluid figure-img" src="../assets/generated/ch02/parameter_reliability.png" style="width:90.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-parameter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 3.7: 作用与抗力参数变化对可靠度的影响
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-parameter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 3.7: 作用与抗力参数变化对可靠度的影响
 </figcaption>
 </figure>
 </div>
@@ -977,16 +977,16 @@ P_f=P[g(\mathbf X)\le0]
 <h3 class="anchored" data-anchor-id="作用组合的程序实现" data-number="3.5.2"><span class="header-section-number">3.5.2</span> 作用组合的程序实现</h3>
 <p>作用表可用结构化数据表示。每个工况至少含 <code>case_id</code>、<code>category</code>、<code>direction</code>、<code>representative_value</code>、<code>design_situation</code>、<code>exclusive_group</code> 和 <code>source_clause</code>。单项效应表以构件、截面、阶段和响应分量为索引。程序先验证字段和单位，再生成组合，不把缺失值自动视为零。</p>
 <p>组合枚举的伪代码为：</p>
-<pre class="text"><code>for design_situation in situations:
-    active_cases = select_cases(design_situation)
-    for limit_state in required_limit_states:
-        rules = load_rules(standard_version, limit_state)
-        for leading_case in eligible_variable_actions:
-            combination = permanent_actions
-            combination += leading_action(leading_case)
-            combination += accompanying_actions(rules)
-            if compatible(combination):
-                evaluate_and_store(combination)
+<pre class="text"><code>for design_situation in situations:
+    active_cases = select_cases(design_situation)
+    for limit_state in required_limit_states:
+        rules = load_rules(standard_version, limit_state)
+        for leading_case in eligible_variable_actions:
+            combination = permanent_actions
+            combination += leading_action(leading_case)
+            combination += accompanying_actions(rules)
+            if compatible(combination):
+                evaluate_and_store(combination)
 envelope(results, by=[member, section, stage, response])</code></pre>
 <p><code>load_rules</code> 必须绑定规范版本，不能把系数散落在脚本多处。<code>compatible</code> 执行互斥和从属规则。<code>evaluate_and_store</code> 保存每项贡献和代数和。<code>envelope</code> 在同一响应分量内取包络，同时保留控制组合全部成组效应。</p>
 <p>程序测试至少包括：只有一个永久作用的最小例；两个互斥作用不得同现；两个可变作用轮换主导项；正负效应包络；有利作用取舍；单位不一致时中止；相同工况不得重复；程序结果与手算表一致。更换规范版本后，全部基准测试重新执行。</p>
@@ -1043,12 +1043,12 @@ envelope(results, by=[member, section, stage, response])</code></pre>
 </table>
 <p>包络后，<span class="math inline">\(M_c\)</span>、<span class="math inline">\(M_p\)</span> 与 <span class="math inline">\(R_a\)</span> 可由三行分别控制，但任一构件截面验算使用的轴力、剪力和弯矩应来自同一控制行。瀑布图针对一个控制量展示贡献，组合明细表则保留同一行的全部响应，二者共同避免“峰值拼接”。</p>
 <p>从联合分布抽取 <span class="math inline">\(N\)</span> 组样本，可估计</p>
-<p><span class="math display">\[
-\widehat P_f=\frac{1}{N}\sum_{i=1}^{N}I[g(\mathbf X^{(i)})\le0],
+<p><span class="math display">\[
+\widehat P_f=\frac{1}{N}\sum_{i=1}^{N}I[g(\mathbf X^{(i)})\le0],
 \]</span></p>
 <p>简单独立抽样的标准误差近似为</p>
-<p><span class="math display">\[
-\operatorname{SE}(\widehat P_f)=\sqrt{\frac{\widehat P_f(1-\widehat P_f)}{N}}.
+<p><span class="math display">\[
+\operatorname{SE}(\widehat P_f)=\sqrt{\frac{\widehat P_f(1-\widehat P_f)}{N}}.
 \]</span></p>
 <p>失效概率很小时，直接模拟需要很大样本量。若没有观察到失效点，不能断言 <span class="math inline">\(P_f=0\)</span>；只能说明当前样本量下未观测到失效。采用重要抽样或子集模拟时，应说明抽样分布、权重和收敛检查。</p>
 <div class="embed-wrap tall">
@@ -1077,8 +1077,8 @@ envelope(results, by=[member, section, stage, response])</code></pre>
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-提示
+<div class="callout-title-container flex-fill">
+提示
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1289,15 +1289,15 @@ envelope(results, by=[member, section, stage, response])</code></pre>
 <section class="level4" data-number="3.6.2.1" id="影响线的计算对象">
 <h4 class="anchored" data-anchor-id="影响线的计算对象" data-number="3.6.2.1"><span class="header-section-number">3.6.2.1</span> 影响线的计算对象</h4>
 <p>影响线表示单位移动作用位置变化时某一指定响应的变化。设单位竖向力位于桥面路径坐标 <span class="math inline">\(x\)</span>，控制响应为截面弯矩、剪力、支座反力或构件轴力，则影响线写为 <span class="math inline">\(\eta_r(x)\)</span>。集中轴载 <span class="math inline">\(P_i\)</span> 位于 <span class="math inline">\(x_i\)</span>、均布荷载 <span class="math inline">\(q(x)\)</span> 作用于区间 <span class="math inline">\(\Omega_q\)</span> 时，线性响应为</p>
-<p><span class="math display">\[
-S_r=\sum_i P_i\eta_r(x_i)+\int_{\Omega_q}q(x)\eta_r(x)\,\mathrm dx.
+<p><span class="math display">\[
+S_r=\sum_i P_i\eta_r(x_i)+\int_{\Omega_q}q(x)\eta_r(x)\,\mathrm dx.
 \]</span></p>
 <p><span class="math inline">\(\eta_r\)</span> 的量纲随响应而变。单位集中力引起的弯矩影响线纵坐标具有长度量纲，支座反力影响线纵坐标为无量纲。程序接口应保存响应类型、截面位置、加载路径、车道方向、单位力大小和纵坐标单位，不能只导出一串无标题数值。</p>
 <p>车辆最不利布载遵循“把作用放到使目标响应增大的影响区”这一原则，但实际荷载模型还包含车道、车辆轴组、规定间距、横向折减、冲击或动力效应等约束。均布部分按相应规则覆盖同号影响区；集中部分在允许范围内移动，使轴组与影响线峰值协调。对于连续梁，正、负影响区可能交替出现；最大跨中正弯矩、最大支点负弯矩和最大支座反力通常对应不同车辆位置。</p>
 <p>移动加载计算建议输出成组结果：</p>
-<p><span class="math display">\[
-\boldsymbol S(x)=
-[M_1(x),V_1(x),N_1(x),M_2(x),\ldots,R_a(x)]^{\mathrm T}.
+<p><span class="math display">\[
+\boldsymbol S(x)=
+[M_1(x),V_1(x),N_1(x),M_2(x),\ldots,R_a(x)]^{\mathrm T}.
 \]</span></p>
 <p>包络可以对每个分量分别取极值，但截面复合验算应回查控制位置 <span class="math inline">\(x^*\)</span> 对应的整组 <span class="math inline">\(N\)</span>、<span class="math inline">\(M\)</span>、<span class="math inline">\(V\)</span>、<span class="math inline">\(T\)</span>，避免把不同车辆位置的最大轴力、最大弯矩和最大剪力拼成一个物理上不存在的状态。</p>
 </section>
@@ -1315,25 +1315,25 @@ S_r=\sum_i P_i\eta_r(x_i)+\int_{\Omega_q}q(x)\eta_r(x)\,\mathrm dx.
 <h4 class="anchored" data-anchor-id="规则与效应分离" data-number="3.6.3.1"><span class="header-section-number">3.6.3.1</span> 规则与效应分离</h4>
 <p>自动组合系统可分为三层。第一层是作用事实：工况、类别、代表值、方向、阶段和单项效应；第二层是规则：设计状况、极限状态、主导资格、伴随系数、分项系数、互斥和从属关系；第三层是结果：组合编号、每项乘子、贡献、代数和及控制包络。规则不应写死在单项效应文件中，更换规范版本时只替换受控规则集并重新运行基准测试。</p>
 <p>若有 <span class="math inline">\(m\)</span> 个可担任主导项的可变作用，并含若干互斥模式，候选组合生成可表示为</p>
-<p><span class="math display">\[
-\mathcal C=\bigcup_{k=1}^{m}
-\left\{\boldsymbol c^{(k,p)}:\ p\in\mathcal P_k,
-\ A\boldsymbol z^{(k,p)}\le\boldsymbol b\right\},
+<p><span class="math display">\[
+\mathcal C=\bigcup_{k=1}^{m}
+\left\{\boldsymbol c^{(k,p)}:\ p\in\mathcal P_k,
+\ A\boldsymbol z^{(k,p)}\le\boldsymbol b\right\},
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol c\)</span> 为组合乘子，<span class="math inline">\(\boldsymbol z\)</span> 为工况是否出现的0—1向量，<span class="math inline">\(A\boldsymbol z\le\boldsymbol b\)</span> 表示互斥、最多选一项和从属规则，<span class="math inline">\(\mathcal P_k\)</span> 为主导项 <span class="math inline">\(k\)</span> 下允许的模式集合。公式仅表示程序结构，具体规则必须从项目采用标准查取。</p>
 <p>组合数量较多时，可先用逻辑约束删除不可能情景，再计算效应；不得按“效应看起来较小”提前删除合法工况。对线性模型，单项效应矩阵 <span class="math inline">\(H\)</span> 与组合向量 <span class="math inline">\(\boldsymbol c\)</span> 相乘：</p>
-<p><span class="math display">\[
-\boldsymbol S=H\boldsymbol c.
+<p><span class="math display">\[
+\boldsymbol S=H\boldsymbol c.
 \]</span></p>
 <p><span class="math inline">\(H\)</span> 的行对应同一位置和响应分量，列对应工况。程序应检查列单位一致、模型版本一致、工况不重复。每个包络结果保存控制列向量，而不是只保存 <span class="math inline">\(\max\boldsymbol S\)</span>。</p>
 </section>
 <section class="level4" data-number="3.6.3.2" id="自动组合的审计记录">
 <h4 class="anchored" data-anchor-id="自动组合的审计记录" data-number="3.6.3.2"><span class="header-section-number">3.6.3.2</span> 自动组合的审计记录</h4>
 <p>一条可追溯组合记录至少包含：</p>
-<pre class="text"><code>combination_id; standard_version; design_situation; limit_state;
-leading_case; accompanying_cases; excluded_cases;
-member_id; section_id; stage_id; response_component;
-base_effects; multipliers; signed_contributions; total;
+<pre class="text"><code>combination_id; standard_version; design_situation; limit_state;
+leading_case; accompanying_cases; excluded_cases;
+member_id; section_id; stage_id; response_component;
+base_effects; multipliers; signed_contributions; total;
 model_hash; rule_set_hash; reviewer; review_time</code></pre>
 <p>单元测试应覆盖：全为零效应、单一永久作用、可变作用主导轮换、正负温度互斥、车辆派生项随主工况出现、有利永久作用、单位冲突、模型版本冲突和非线性模型禁止线性叠加。对任一版本，至少选取一个控制截面完成手算，核对程序的每项贡献和总和。</p>
 </section>
@@ -1392,10 +1392,10 @@ model_hash; rule_set_hash; reviewer; review_time</code></pre>
 <li><strong>从属动力作用</strong>：气动力、车辆—桥梁相互作用等可能随结构响应改变。</li>
 </ol>
 <p>在这些情形下，不能先计算所有单项效应再用代数式相加。应对每个有效组合直接施加作用历程并求解，结果写为</p>
-<p><span class="math display">\[
-\boldsymbol S^{(k)}=\mathcal N
-\!\left(\boldsymbol F^{(k)},\boldsymbol u_0,
-\boldsymbol q_0,\mathcal H\right),
+<p><span class="math display">\[
+\boldsymbol S^{(k)}=\mathcal N
+\!\left(\boldsymbol F^{(k)},\boldsymbol u_0,
+\boldsymbol q_0,\mathcal H\right),
 \]</span></p>
 <p>其中 <span class="math inline">\(\mathcal N\)</span> 为非线性求解，<span class="math inline">\(\boldsymbol u_0\)</span> 和 <span class="math inline">\(\boldsymbol q_0\)</span> 是初始位移与内力状态，<span class="math inline">\(\mathcal H\)</span> 表示加载历史。组合枚举仍负责生成物理情景，但每个情景需要独立计算。若为提高效率采用线性筛选后再对控制组合非线性复算，应说明筛选可能遗漏的边界并进行敏感性检查。</p>
 </section>
@@ -1403,10 +1403,10 @@ model_hash; rule_set_hash; reviewer; review_time</code></pre>
 <h3 class="anchored" data-anchor-id="可靠度与分项系数设计的衔接" data-number="3.6.5"><span class="header-section-number">3.6.5</span> 可靠度与分项系数设计的衔接</h3>
 <p>可靠度分析研究随机变量、模型和极限状态共同作用下的失效概率；分项系数设计把经校准的安全水平转化为工程中易操作的代表值、作用分项系数、组合系数和抗力处理。两者处于同一逻辑链的不同层次，而不是要求每个构件同时做两套互不相干的验算。</p>
 <p>以 <span class="math inline">\(g=R-S\)</span> 为例，在标准正态空间的设计点附近，可将设计点对应的抗力和效应概念性写为</p>
-<p><span class="math display">\[
-R^*=\mu_R-\alpha_R\beta\sigma_R,
-\qquad
-S^*=\mu_S+\alpha_S\beta\sigma_S,
+<p><span class="math display">\[
+R^*=\mu_R-\alpha_R\beta\sigma_R,
+\qquad
+S^*=\mu_S+\alpha_S\beta\sigma_S,
 \]</span></p>
 <p>其中，<span class="math inline">\(\alpha_R\)</span>、<span class="math inline">\(\alpha_S\)</span> 表示设计点方向贡献，<span class="math inline">\(\beta\)</span> 为目标可靠水平对应的指标。若标准值或特征值分别为 <span class="math inline">\(R_k\)</span>、<span class="math inline">\(S_k\)</span>，分项形式可理解为把 <span class="math inline">\(R^*\)</span> 和 <span class="math inline">\(S^*\)</span> 映射为设计抗力与设计效应。实际规范校准还需考虑变量分布、时间变异、模型不确定性、不同极限状态和工程经验，不能由上式自行反推工程分项系数。</p>
 <p>分项系数方法的使用顺序为：按规范识别设计状况和极限状态；选取代表值；应用规定组合和作用系数得到 <span class="math inline">\(S_d\)</span>；按材料规范得到 <span class="math inline">\(R_d\)</span>；完成 <span class="math inline">\(S_d\le R_d\)</span> 或相应验算。可靠度模块用于解释参数来源、比较不确定性、研究非常规结构或更新既有桥梁状态。教材中的 <span class="math inline">\(\beta\)</span> 和 <span class="math inline">\(P_f\)</span> 示例不提供规范目标值，目标可靠水平须从采用的可靠度标准、桥梁规范及项目要求回查。</p>
@@ -1420,32 +1420,32 @@ S^*=\mu_S+\alpha_S\beta\sigma_S,
 <section class="level4" data-number="3.7.0.1" id="已知教学模型">
 <h4 class="anchored" data-anchor-id="已知教学模型" data-number="3.7.0.1"><span class="header-section-number">3.7.0.1</span> 已知教学模型</h4>
 <p>取计算跨径 <span class="math inline">\(L=30\,\mathrm m\)</span> 的简支梁，考察跨中正弯矩。数值仅用于验证影响线、组合程序和可靠度图，<strong>不是规范荷载或规范系数</strong>。梁的跨中弯矩影响线为</p>
-<p><span class="math display">\[
-\eta_M(x)=
-\begin{cases}
-x/2,&amp;0\le x\le15\,\mathrm m,\\
-(30-x)/2,&amp;15&lt;x\le30\,\mathrm m.
-\end{cases}
+<p><span class="math display">\[
+\eta_M(x)=
+\begin{cases}
+x/2,&amp;0\le x\le15\,\mathrm m,\\
+(30-x)/2,&amp;15&lt;x\le30\,\mathrm m.
+\end{cases}
 \]</span></p>
 <p>纵坐标单位为 m，峰值为 <span class="math inline">\(7.5\,\mathrm m\)</span>。设置教学均布荷载 <span class="math inline">\(q=10\,\mathrm{kN/m}\)</span> 覆盖正影响区，两个教学轴载分别为 <span class="math inline">\(120\,\mathrm{kN}\)</span> 和 <span class="math inline">\(160\,\mathrm{kN}\)</span>，轴距 <span class="math inline">\(4\,\mathrm m\)</span>；将较大轴置于跨中 <span class="math inline">\(x=15\,\mathrm m\)</span>，另一轴位于 <span class="math inline">\(x=11\,\mathrm m\)</span>。</p>
 </section>
 <section class="level4" data-number="3.7.0.2" id="第一步计算车辆单项效应">
 <h4 class="anchored" data-anchor-id="第一步计算车辆单项效应" data-number="3.7.0.2"><span class="header-section-number">3.7.0.2</span> 第一步：计算车辆单项效应</h4>
 <p>正影响线面积为</p>
-<p><span class="math display">\[
-A_\eta=\frac12\times30\times7.5=112.5\,\mathrm{m^2},
+<p><span class="math display">\[
+A_\eta=\frac12\times30\times7.5=112.5\,\mathrm{m^2},
 \]</span></p>
 <p>均布项和轴载项分别为</p>
-<p><span class="math display">\[
-M_q=qA_\eta=1125\,\mathrm{kN\cdot m},
+<p><span class="math display">\[
+M_q=qA_\eta=1125\,\mathrm{kN\cdot m},
 \]</span></p>
-<p><span class="math display">\[
-M_P=120\times5.5+160\times7.5
-=1860\,\mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_P=120\times5.5+160\times7.5
+=1860\,\mathrm{kN\cdot m}.
 \]</span></p>
 <p>因此静力教学效应为 <span class="math inline">\(2985\,\mathrm{kN\cdot m}\)</span>。为检查程序乘子层级，另设教学动力乘子 <span class="math inline">\(1.04\)</span>，则</p>
-<p><span class="math display">\[
-M_Q=1.04\times2985=3104.4\,\mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_Q=1.04\times2985=3104.4\,\mathrm{kN\cdot m}.
 \]</span></p>
 <p>实际工程中，荷载模式、加载范围、轴重、间距、车道和动力效应均应从采用规范查取；本例的 <span class="math inline">\(1.04\)</span> 仅用于检验“动力乘子是否被重复施加”。</p>
 </section>
@@ -1505,60 +1505,60 @@ M_Q=1.04\times2985=3104.4\,\mathrm{kN\cdot m}.
 <h4 class="anchored" data-anchor-id="第三步枚举两组教学承载组合" data-number="3.7.0.4"><span class="header-section-number">3.7.0.4</span> 第三步：枚举两组教学承载组合</h4>
 <p>为展示计算过程，设置一组<strong>程序测试乘子</strong>：永久重力项 <span class="math inline">\(1.20\)</span>，预加力和变位项 <span class="math inline">\(1.00\)</span>，车辆主导项 <span class="math inline">\(1.35\)</span>，温度主导项 <span class="math inline">\(1.25\)</span>；车辆作为伴随项时再乘 <span class="math inline">\(0.70\)</span>，温度作为伴随项时再乘 <span class="math inline">\(0.60\)</span>。这些数值不是任何规范条文取值。</p>
 <p>车辆主导时：</p>
-<p><span class="math display">\[
-\begin{aligned}
-M_{U,Q}={}&amp;1.20(6200+1450)-900
-+1.35(3104.4)\\
-&amp;+1.25\times0.60\times420-260\\
-={}&amp;12525.94\,\mathrm{kN\cdot m}.
-\end{aligned}
+<p><span class="math display">\[
+\begin{aligned}
+M_{U,Q}={}&amp;1.20(6200+1450)-900
++1.35(3104.4)\\
+&amp;+1.25\times0.60\times420-260\\
+={}&amp;12525.94\,\mathrm{kN\cdot m}.
+\end{aligned}
 \]</span></p>
 <p>温度主导时：</p>
-<p><span class="math display">\[
-\begin{aligned}
-M_{U,T}={}&amp;1.20(6200+1450)-900
-+1.35\times0.70\times3104.4\\
-&amp;+1.25\times420-260\\
-={}&amp;11478.66\,\mathrm{kN\cdot m}.
-\end{aligned}
+<p><span class="math display">\[
+\begin{aligned}
+M_{U,T}={}&amp;1.20(6200+1450)-900
++1.35\times0.70\times3104.4\\
+&amp;+1.25\times420-260\\
+={}&amp;11478.66\,\mathrm{kN\cdot m}.
+\end{aligned}
 \]</span></p>
 <p>本教学规则下车辆主导组合控制最大正弯矩。瀑布图依次显示 <span class="math inline">\(+7440\)</span>、<span class="math inline">\(+1740\)</span>、<span class="math inline">\(-900\)</span>、<span class="math inline">\(+4190.94\)</span>、<span class="math inline">\(+315\)</span> 和 <span class="math inline">\(-260\,\mathrm{kN\cdot m}\)</span>，累计值应与 <span class="math inline">\(12525.94\,\mathrm{kN\cdot m}\)</span> 一致。</p>
 </section>
 <section class="level4" data-number="3.7.0.5" id="第四步比较三种教学使用组合">
 <h4 class="anchored" data-anchor-id="第四步比较三种教学使用组合" data-number="3.7.0.5"><span class="header-section-number">3.7.0.5</span> 第四步：比较三种教学使用组合</h4>
 <p>再设置仅用于测试界面的代表值乘子：特征情景中车辆取 <span class="math inline">\(1.00\)</span>、温度取 <span class="math inline">\(0.60\)</span>；频遇情景中车辆取 <span class="math inline">\(0.75\)</span>、温度取 <span class="math inline">\(0.40\)</span>；准永久情景中车辆取 <span class="math inline">\(0.25\)</span>、温度取 <span class="math inline">\(0.30\)</span>。永久项均取 <span class="math inline">\(1.00\)</span>。得到</p>
-<p><span class="math display">\[
-M_{S,1}=6200+1450-900+3104.4+0.60\times420-260
-=9846.4\,\mathrm{kN\cdot m},
+<p><span class="math display">\[
+M_{S,1}=6200+1450-900+3104.4+0.60\times420-260
+=9846.4\,\mathrm{kN\cdot m},
 \]</span></p>
-<p><span class="math display">\[
-M_{S,2}=6200+1450-900+0.75\times3104.4+0.40\times420-260
-=8986.3\,\mathrm{kN\cdot m},
+<p><span class="math display">\[
+M_{S,2}=6200+1450-900+0.75\times3104.4+0.40\times420-260
+=8986.3\,\mathrm{kN\cdot m},
 \]</span></p>
-<p><span class="math display">\[
-M_{S,3}=6200+1450-900+0.25\times3104.4+0.30\times420-260
-=7392.1\,\mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_{S,3}=6200+1450-900+0.25\times3104.4+0.30\times420-260
+=7392.1\,\mathrm{kN\cdot m}.
 \]</span></p>
 <p>三个结果只说明代表值变化会改变效应水平。正式设计需针对具体应力、裂缝、挠度或其他项目，回查应采用的组合、代表值和长期模型。</p>
 </section>
 <section class="level4" data-number="3.7.0.6" id="第五步形成截面验算接口">
 <h4 class="anchored" data-anchor-id="第五步形成截面验算接口" data-number="3.7.0.6"><span class="header-section-number">3.7.0.6</span> 第五步：形成截面验算接口</h4>
 <p>程序输出控制弯矩 <span class="math inline">\(M_{U,Q}\)</span> 及同一组合行的轴力、剪力和扭矩，并附组合编号。材料课程或下一步设计模块读取这组成组效应计算设计抗力。若教学设定某截面设计抗弯能力为 <span class="math inline">\(R_d=14000\,\mathrm{kN\cdot m}\)</span>，则本程序测试有</p>
-<p><span class="math display">\[
-M_{U,Q}=12525.94&lt;R_d=14000\,\mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_{U,Q}=12525.94&lt;R_d=14000\,\mathrm{kN\cdot m}.
 \]</span></p>
 <p><span class="math inline">\(R_d\)</span> 同样为教学输入，只用于检查接口和不等式方向，不代表可据此确定截面。工程 <span class="math inline">\(R_d\)</span> 应按材料、截面、配筋或钢构造及相应现行规范计算。</p>
 </section>
 <section class="level4" data-number="3.7.0.7" id="第六步可靠度图的独立解释">
 <h4 class="anchored" data-anchor-id="第六步可靠度图的独立解释" data-number="3.7.0.7"><span class="header-section-number">3.7.0.7</span> 第六步：可靠度图的独立解释</h4>
 <p>为说明分项设计与概率模型不能直接混用，另设随机模型：<span class="math inline">\(R\)</span>、<span class="math inline">\(S\)</span> 的均值分别为 <span class="math inline">\(15000\)</span> 和 <span class="math inline">\(11000\,\mathrm{kN\cdot m}\)</span>，标准差分别为 <span class="math inline">\(1500\)</span> 和 <span class="math inline">\(1200\,\mathrm{kN\cdot m}\)</span>，相关系数 <span class="math inline">\(\rho_{RS}=0.10\)</span>。全部为教学统计参数。则</p>
-<p><span class="math display">\[
-\sigma_{R-S}=\sqrt{1500^2+1200^2-2\times0.10\times1500\times1200}
-=1824.83\,\mathrm{kN\cdot m},
+<p><span class="math display">\[
+\sigma_{R-S}=\sqrt{1500^2+1200^2-2\times0.10\times1500\times1200}
+=1824.83\,\mathrm{kN\cdot m},
 \]</span></p>
-<p><span class="math display">\[
-\beta=\frac{15000-11000}{1824.83}=2.19,
-\qquad P_f\approx\Phi(-2.19)\approx1.42\times10^{-2}.
+<p><span class="math display">\[
+\beta=\frac{15000-11000}{1824.83}=2.19,
+\qquad P_f\approx\Phi(-2.19)\approx1.42\times10^{-2}.
 \]</span></p>
 <p>这里的 <span class="math inline">\(P_f\)</span> 仅对应所设线性正态模型，不能与规范目标可靠水平比较。交互页面分别改变 <span class="math inline">\(\mu_R\)</span>、<span class="math inline">\(\sigma_R\)</span>、<span class="math inline">\(\mu_S\)</span>、<span class="math inline">\(\sigma_S\)</span> 和 <span class="math inline">\(\rho_{RS}\)</span>，观察密度峰、失效域和 <span class="math inline">\(\beta\)</span> 的变化，同时保持分项组合表不变，从而区分“规范化设计计算”和“概率解释”两个层次。</p>
 </section>
@@ -1586,10 +1586,10 @@ M_{U,Q}=12525.94&lt;R_d=14000\,\mathrm{kN\cdot m}.
 </ol>
 <p>四张表通过唯一 <code>action_id</code> 关联。一个物理来源可形成多个模型工况，例如整体升温和降温、正负温度梯度、不同车辆路径；一个模型工况也可能由多个原始数据项计算，例如构件重力由材料重度、截面面积和长度共同生成。程序不得用显示名称作为唯一键，因为名称可以修改、翻译或重复。</p>
 <p>物理作用记录的推荐结构为</p>
-<p><span class="math display">\[
-\mathcal A_i=
-\{o_i,t_i,\Omega_i,d_i,v_i,u_i,r_i,
-\mathcal R_i,s_i,e_i\},
+<p><span class="math display">\[
+\mathcal A_i=
+\{o_i,t_i,\Omega_i,d_i,v_i,u_i,r_i,
+\mathcal R_i,s_i,e_i\},
 \]</span></p>
 <p>其中，<span class="math inline">\(o_i\)</span> 为来源对象，<span class="math inline">\(t_i\)</span> 为发生时间或阶段，<span class="math inline">\(\Omega_i\)</span> 为作用空间，<span class="math inline">\(d_i\)</span> 为方向或空间模式，<span class="math inline">\(v_i\)</span> 与 <span class="math inline">\(u_i\)</span> 分别为数值和单位，<span class="math inline">\(r_i\)</span> 为代表值类型，<span class="math inline">\(\mathcal R_i\)</span> 为与其他作用的互斥、从属或共同来源关系，<span class="math inline">\(s_i\)</span> 为设计状况，<span class="math inline">\(e_i\)</span> 为证据来源。该集合是数据字段说明，不替代规范对作用的正式分类。</p>
 </section>
@@ -1651,13 +1651,13 @@ M_{U,Q}=12525.94&lt;R_d=14000\,\mathrm{kN\cdot m}.
 </tbody>
 </table>
 <p>数据处理不得只保留最终值。例如桥面铺装线荷载由厚度 <span class="math inline">\(t_p\)</span>、宽度 <span class="math inline">\(b_p\)</span> 和材料重度 <span class="math inline">\(\gamma_p\)</span> 得到</p>
-<p><span class="math display">\[
-q_p=\gamma_p b_p t_p.
+<p><span class="math display">\[
+q_p=\gamma_p b_p t_p.
 \]</span></p>
 <p>若 <span class="math inline">\(\gamma_p\)</span> 的单位为 kN/m³，<span class="math inline">\(b_p\)</span> 与 <span class="math inline">\(t_p\)</span> 的单位为 m，则 <span class="math inline">\(q_p\)</span> 的单位为 kN/m。记录中应保留三个原始参数、公式、截面适用区间和计算脚本版本。桥宽或铺装厚度改变后自动更新 <span class="math inline">\(q_p\)</span>，同时检查其是否已在实体自重或另一个附加工况中计入。</p>
 <p>从面压力 <span class="math inline">\(p(x,y)\)</span> 转换为某根主梁的等效线作用时，可概括为</p>
-<p><span class="math display">\[
-q_j(x)=\int_{B}p(x,y)\,\lambda_j(x,y)\,\mathrm dy,
+<p><span class="math display">\[
+q_j(x)=\int_{B}p(x,y)\,\lambda_j(x,y)\,\mathrm dy,
 \]</span></p>
 <p>其中，<span class="math inline">\(p\)</span> 的单位为 kN/m²，<span class="math inline">\(q_j\)</span> 的单位为 kN/m，<span class="math inline">\(B\)</span> 为桥面横向积分范围，<span class="math inline">\(\lambda_j\)</span> 为第 <span class="math inline">\(j\)</span> 根主梁的无量纲分配函数。<span class="math inline">\(\lambda_j\)</span> 来自何种横向分布方法、梁格或板壳分析，必须与桥面体系和边界匹配；不能把计算结果脱离假定写成永久固定的“分配系数”。</p>
 </section>
@@ -1681,9 +1681,9 @@ q_j(x)=\int_{B}p(x,y)\,\lambda_j(x,y)\,\mathrm dy,
 <section class="level4" data-number="3.7.2.1" id="先确定验算任务">
 <h4 class="anchored" data-anchor-id="先确定验算任务" data-number="3.7.2.1"><span class="header-section-number">3.7.2.1</span> 先确定验算任务</h4>
 <p>代表值和设计值只有在具体验算任务中才有意义。开始计算前先写出任务元组</p>
-<p><span class="math display">\[
-\mathcal T=
-\{O,S,L,C,M,Y,K\},
+<p><span class="math display">\[
+\mathcal T=
+\{O,S,L,C,M,Y,K\},
 \]</span></p>
 <p>其中，<span class="math inline">\(O\)</span> 为对象及位置，<span class="math inline">\(S\)</span> 为设计状况，<span class="math inline">\(L\)</span> 为极限状态或性能项目，<span class="math inline">\(C\)</span> 为组合类型，<span class="math inline">\(M\)</span> 为分析模型，<span class="math inline">\(Y\)</span> 为所需响应，<span class="math inline">\(K\)</span> 为验算依据。比如“成桥持久状况下某中支点截面的承载能力抗弯验算”和“同一联主跨长期挠度验算”是两个不同任务，其代表值、组合、材料状态和结果分量不能共享一个笼统设置。</p>
 <p>设计状况首先决定结构状态。持久状况通常采用完整成桥体系，但仍需区分长期材料、设施安装和运营边界；短暂状况按施工、顶升、维修或交通转换的具体阶段建模；偶然状况应说明事件发生前状态、事件作用和允许的损伤或替代路径；地震状况应按项目抗震标准确定输入、性能目标与非线性范围。设计状况不是组合表的标题，而是模型、作用和性能要求的共同索引。</p>
@@ -1691,27 +1691,27 @@ q_j(x)=\int_{B}p(x,y)\,\lambda_j(x,y)\,\mathrm dy,
 <section class="level4" data-number="3.7.2.2" id="代表值之间的关系">
 <h4 class="anchored" data-anchor-id="代表值之间的关系" data-number="3.7.2.2"><span class="header-section-number">3.7.2.2</span> 代表值之间的关系</h4>
 <p>永久作用和可变作用均先确定标准值或相应基本代表。可变作用在不同共同出现和持续情景中使用组合值、频遇值或准永久值。一般写为</p>
-<p><span class="math display">\[
-F_{\mathrm{rep},i}=\psi_iF_{k,i},
+<p><span class="math display">\[
+F_{\mathrm{rep},i}=\psi_iF_{k,i},
 \]</span></p>
 <p>其中，<span class="math inline">\(F_{k,i}\)</span> 为第 <span class="math inline">\(i\)</span> 项作用标准值，单位随作用类型而定；<span class="math inline">\(\psi_i\)</span> 为无量纲代表值系数。当标准值直接作为代表值时可理解为相应乘子为1，但实际表达和适用条件仍按采用规范书写。不同代表值不是同一随机过程的随意缩放，而对应规范为特定设计情景建立的工程化水平。</p>
 <p>作用设计值的符号表达为</p>
-<p><span class="math display">\[
-F_{d,i}=\gamma_{F,i}F_{\mathrm{rep},i},
+<p><span class="math display">\[
+F_{d,i}=\gamma_{F,i}F_{\mathrm{rep},i},
 \]</span></p>
 <p><span class="math inline">\(\gamma_{F,i}\)</span> 为无量纲作用分项系数。若结构分析为线性，亦可对单项标准效应施加等效乘子；若效应与作用非线性，则应对设计作用组直接求解。任何时候都需记录系数施加在荷载输入、单项效应还是组合层，避免同一因子重复使用。</p>
 <p>结构分析得到作用效应</p>
-<p><span class="math display">\[
-S_d=\mathcal H(\boldsymbol F_d;
-\mathcal M,\mathcal B,\mathcal S_0),
+<p><span class="math display">\[
+S_d=\mathcal H(\boldsymbol F_d;
+\mathcal M,\mathcal B,\mathcal S_0),
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathcal H\)</span> 为分析算子，<span class="math inline">\(\mathcal M\)</span> 为材料与构件模型，<span class="math inline">\(\mathcal B\)</span> 为边界，<span class="math inline">\(\mathcal S_0\)</span> 为初始几何、内力和历史状态。<span class="math inline">\(S_d\)</span> 可以是 kN、kN·m、mm、MPa 或其他与验算量相符的单位。若用线性单项效应相加代替 <span class="math inline">\(\mathcal H\)</span> 的直接求解，应在计算单中勾选并证明叠加条件。</p>
 </section>
 <section class="level4" data-number="3.7.2.3" id="有利与不利效应">
 <h4 class="anchored" data-anchor-id="有利与不利效应" data-number="3.7.2.3"><span class="header-section-number">3.7.2.3</span> 有利与不利效应</h4>
 <p>有利或不利的判断对象是某一作用对某一验算函数的影响，而不是作用本身。对极限状态函数 <span class="math inline">\(g(\boldsymbol F)\)</span>，可用局部导数方向辅助判断：</p>
-<p><span class="math display">\[
-\frac{\partial g}{\partial F_i}&lt;0
+<p><span class="math display">\[
+\frac{\partial g}{\partial F_i}&lt;0
 \]</span></p>
 <p>表示在当前模型和状态附近增大 <span class="math inline">\(F_i\)</span> 会使安全裕度降低，但真实判断还要考虑作用上下界、符号模式、非线性和构造。结构重力对抗浮、抗倾覆可能有利，对梁截面弯矩可能不利；预加力对跨中拉应力可能有利，对锚固区或某施工阶段可能不利；支座沉降的正负方向可分别控制不同截面。</p>
 <p>因此作用主表不设置永久的 <code>favorable=true</code>。有利性写入任务关系表，键值至少包含 <code>task_id</code>、<code>action_id</code>、方向模式、采用规则和复核人。对于同一永久作用产生有利与不利效应的不同构件，组合程序分别处理并保存理由。</p>
@@ -1728,9 +1728,9 @@ S_d=\mathcal H(\boldsymbol F_d;
 <section class="level4" data-number="3.7.3.1" id="温度作用的分层建模">
 <h4 class="anchored" data-anchor-id="温度作用的分层建模" data-number="3.7.3.1"><span class="header-section-number">3.7.3.1</span> 温度作用的分层建模</h4>
 <p>温度作用至少区分整体温度变化、沿截面高度的温度梯度、横向温差和局部温度场。整体均匀温差在自由构件中主要产生长度变化，在线弹性小变形假定下</p>
-<p><span class="math display">\[
-\varepsilon_T=\alpha_T\Delta T,
-\qquad \Delta L=\alpha_TL\Delta T,
+<p><span class="math display">\[
+\varepsilon_T=\alpha_T\Delta T,
+\qquad \Delta L=\alpha_TL\Delta T,
 \]</span></p>
 <p>其中，<span class="math inline">\(\varepsilon_T\)</span> 为无量纲自由热应变，<span class="math inline">\(\alpha_T\)</span> 的单位为 1/K，<span class="math inline">\(\Delta T\)</span> 的单位为 K，<span class="math inline">\(L\)</span> 和 <span class="math inline">\(\Delta L\)</span> 使用相同长度单位。是否形成内力取决于约束；不能把自由伸长公式直接解释为固定墩水平力。</p>
 <p>温度梯度 <span class="math inline">\(\Delta T(z)\)</span> 形成随截面坐标 <span class="math inline">\(z\)</span> 变化的自由应变。对线弹性、平截面等教学假定，可通过轴向应变和曲率分量拟合自由温度应变，再计算受到约束的自平衡应力。实际梯度模式、基准温度、材料线膨胀系数及组合方式由项目采用标准确定。钢—混凝土组合截面还需考虑不同材料、连接和温度场差异。</p>
@@ -1751,9 +1751,9 @@ S_d=\mathcal H(\boldsymbol F_d;
 <section class="level4" data-number="3.7.3.4" id="施工阶段事件账本">
 <h4 class="anchored" data-anchor-id="施工阶段事件账本" data-number="3.7.3.4"><span class="header-section-number">3.7.3.4</span> 施工阶段事件账本</h4>
 <p>施工阶段应采用事件账本而不是一串无法解释的步号。每一事件记录：时间或相对顺序；激活构件；连接和边界变化；新增、转移或移除作用；预应力或索力操作；材料龄期；目标几何；测量结果；允许偏差来源；异常和设计确认。事件后的模型状态由上一状态和本事件共同得到：</p>
-<p><span class="math display">\[
-\mathcal S_k=\mathcal U
-(\mathcal S_{k-1},\mathcal E_k),
+<p><span class="math display">\[
+\mathcal S_k=\mathcal U
+(\mathcal S_{k-1},\mathcal E_k),
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathcal S_{k-1}\)</span> 为前一状态，<span class="math inline">\(\mathcal E_k\)</span> 为第 <span class="math inline">\(k\)</span> 个施工事件，<span class="math inline">\(\mathcal U\)</span> 为状态更新算子。公式强调历史依赖，不规定某一软件算法。若回退或修改中间事件，所有下游状态重新计算并生成新版本。</p>
 <p>事件账本能够解决三类常见错误：把尚未形成的组合截面用于承担早期湿重；在解除临时支承时没有转移其反力；把桥面铺装、自重或预应力在两个阶段重复施加。每一阶段输出总外力、总反力、关键位移、控制内力和前后增量，便于发现突跳与遗漏。</p>
@@ -1767,12 +1767,12 @@ S_d=\mathcal H(\boldsymbol F_d;
 <section class="level4" data-number="3.7.4.1" id="纵向布载的可复核算法">
 <h4 class="anchored" data-anchor-id="纵向布载的可复核算法" data-number="3.7.4.1"><span class="header-section-number">3.7.4.1</span> 纵向布载的可复核算法</h4>
 <p>影响线布载的输入不是一幅图片，而是一组按路径坐标排序的数据。设离散点为 <span class="math inline">\((x_j,\eta_j)\)</span>，应保存 <span class="math inline">\(x_j\)</span> 的单位、控制响应、插值方法和正负号。连续均布作用的积分可用与影响线精度相适应的数值积分；轴组以某一参考轴位置 <span class="math inline">\(a\)</span> 参数化，第 <span class="math inline">\(i\)</span> 轴位置为</p>
-<p><span class="math display">\[
-x_i(a)=a+\delta_i,
+<p><span class="math display">\[
+x_i(a)=a+\delta_i,
 \]</span></p>
 <p>其中，<span class="math inline">\(a\)</span> 与轴距偏移 <span class="math inline">\(\delta_i\)</span> 的单位为 m。轴组效应为</p>
-<p><span class="math display">\[
-S_P(a)=\sum_iP_i\eta[x_i(a)],
+<p><span class="math display">\[
+S_P(a)=\sum_iP_i\eta[x_i(a)],
 \]</span></p>
 <p><span class="math inline">\(P_i\)</span> 的单位为 kN；若控制响应为弯矩，则 <span class="math inline">\(\eta\)</span> 的单位为 m，<span class="math inline">\(S_P\)</span> 的单位为 kN·m。搜索范围受桥面加载路径、轴组完整性和采用荷载模型约束。不得为了得到更大结果而把轴距、轴重或轴组截断规则改成自由变量。</p>
 <p>可复核搜索先生成允许的 <span class="math inline">\(a\)</span> 区间，随后在影响线折点、轴位与折点对齐的位置以及必要的离散点计算，最后在候选极值附近细化。程序输出最优 <span class="math inline">\(a^*\)</span>、每个轴位置、影响线纵坐标、单轴贡献和总和。若采用商业软件移动荷载功能，应以一个简化梁和一个手工布载位置核对其路径方向、车道起终点、轴序和结果符号。</p>
@@ -1780,8 +1780,8 @@ S_P(a)=\sum_iP_i\eta[x_i(a)],
 <section class="level4" data-number="3.7.4.2" id="横向位置和主梁效应">
 <h4 class="anchored" data-anchor-id="横向位置和主梁效应" data-number="3.7.4.2"><span class="header-section-number">3.7.4.2</span> 横向位置和主梁效应</h4>
 <p>车辆纵向位置决定某控制响应沿跨的影响，横向位置决定桥面作用怎样进入各主梁或箱梁。对线性教学模型，可将第 <span class="math inline">\(i\)</span> 个轮载对第 <span class="math inline">\(j\)</span> 个主梁响应写为</p>
-<p><span class="math display">\[
-S_j=\sum_i P_i\eta_x(x_i)\lambda_j(y_i),
+<p><span class="math display">\[
+S_j=\sum_i P_i\eta_x(x_i)\lambda_j(y_i),
 \]</span></p>
 <p>其中，<span class="math inline">\(y_i\)</span> 为轮载横向坐标，单位为 m；<span class="math inline">\(\eta_x\)</span> 为纵向影响函数；<span class="math inline">\(\lambda_j\)</span> 为无量纲横向分配函数。乘积可分离只是教学近似，真实斜交、曲线、宽桥、箱梁扭转和板壳体系可能需要二维影响面或直接移动荷载分析。</p>
 <p>采用杠杆法、偏心压力法、横向铰接板法、刚接梁法或其他教材方法时，应分别说明结构横向联系、主梁刚度、桥面板、扭转和边界假定。方法名称不能脱离适用条件形成固定按钮。数字资源选择方法后，先显示其假定，再显示分配结果；一旦桥型参数超出模型许可，界面应要求切换梁格或板壳分析，而不是继续输出精确小数。</p>
@@ -1803,10 +1803,10 @@ S_j=\sum_i P_i\eta_x(x_i)\lambda_j(y_i),
 <section class="level4" data-number="3.7.5.1" id="叠加的必要条件">
 <h4 class="anchored" data-anchor-id="叠加的必要条件" data-number="3.7.5.1"><span class="header-section-number">3.7.5.1</span> 叠加的必要条件</h4>
 <p>单项效应线性组合要求：平衡方程在线性化后不随位移改变；材料和截面刚度不随荷载历史改变；接触、支座和连接状态不发生切换；各工况使用相同结构拓扑、边界、材料、坐标和结果定义；初始状态相同。满足这些条件时，作用向量 <span class="math inline">\(\boldsymbol F=\sum_ic_i\boldsymbol F_i\)</span> 对应</p>
-<p><span class="math display">\[
-\boldsymbol u=\mathbf K^{-1}\boldsymbol F
-=\sum_ic_i\mathbf K^{-1}\boldsymbol F_i
-=\sum_ic_i\boldsymbol u_i.
+<p><span class="math display">\[
+\boldsymbol u=\mathbf K^{-1}\boldsymbol F
+=\sum_ic_i\mathbf K^{-1}\boldsymbol F_i
+=\sum_ic_i\boldsymbol u_i.
 \]</span></p>
 <p><span class="math inline">\(\mathbf K\)</span> 为在所有工况中相同的线性刚度矩阵，<span class="math inline">\(c_i\)</span> 为无量纲组合乘子。内力等线性恢复量同样可以叠加。若不同工况的 <span class="math inline">\(\mathbf K\)</span>、边界或初始内力不同，上式不成立。</p>
 <p>叠加前的程序检查包括模型哈希一致、阶段一致、边界一致、单元激活集合一致、材料状态一致、结果坐标一致和单位一致。检查通过只证明数据结构满足线性组合前提，仍需由工程人员判断材料开裂、几何变形或接触是否可忽略。</p>
@@ -1814,10 +1814,10 @@ S_j=\sum_i P_i\eta_x(x_i)\lambda_j(y_i),
 <section class="level4" data-number="3.7.5.2" id="非线性组合的情景化表达">
 <h4 class="anchored" data-anchor-id="非线性组合的情景化表达" data-number="3.7.5.2"><span class="header-section-number">3.7.5.2</span> 非线性组合的情景化表达</h4>
 <p>存在非线性时，组合规则仍决定哪些作用可以同时出现以及各自的设计输入，但计算单位从“单项效应列”变为“完整作用情景”。对候选情景 <span class="math inline">\(c\)</span>，直接求解</p>
-<p><span class="math display">\[
-\boldsymbol R_c=
-\mathcal N(\boldsymbol F_c,
-\boldsymbol q_{0,c},\mathcal H_c),
+<p><span class="math display">\[
+\boldsymbol R_c=
+\mathcal N(\boldsymbol F_c,
+\boldsymbol q_{0,c},\mathcal H_c),
 \]</span></p>
 <p>其中，<span class="math inline">\(\boldsymbol F_c\)</span> 为该情景完整作用历程，<span class="math inline">\(\boldsymbol q_{0,c}\)</span> 为初始几何、内力和材料状态，<span class="math inline">\(\mathcal H_c\)</span> 为加载路径。<span class="math inline">\(\boldsymbol R_c\)</span> 为成组响应，不由不同情景的极值拼接。</p>
 <p>典型情形包括：斜拉索或主缆几何刚度随索力变化；大位移导致平衡位置改变；混凝土开裂、钢材屈服或连接滑移改变刚度；支座摩擦、脱空、限位碰撞和接缝开闭切换边界；施工张拉、卸架和合龙具有路径依赖；温度、车辆与风致响应通过结构状态相互影响。不同非线性需要不同本构和求解控制，不能用“打开非线性”一个选项概括。</p>
@@ -1835,8 +1835,8 @@ S_j=\sum_i P_i\eta_x(x_i)\lambda_j(y_i),
 <h4 class="anchored" data-anchor-id="随机变量统计参数和极限状态" data-number="3.7.6.1"><span class="header-section-number">3.7.6.1</span> 随机变量、统计参数和极限状态</h4>
 <p>可靠度计算的输入包括极限状态函数、基本变量联合分布和模型不确定性。随机变量应尽量选为具有明确物理来源的基本量，如材料强度、几何、作用和模型系数，而不是把多个已相关的效应再次假定独立。变量表包含分布类型、参数定义、单位、样本与统计期间、截断、相关性、模型来源和适用对象。</p>
 <p>变异系数</p>
-<p><span class="math display">\[
-V_X=\frac{\sigma_X}{\mu_X}
+<p><span class="math display">\[
+V_X=\frac{\sigma_X}{\mu_X}
 \]</span></p>
 <p>为无量纲量，适用于均值不接近零且其含义合理的变量。不能仅凭同一个变异系数为所有作用指定同类分布。正态、对数正态、极值或其他分布的选择应有数据与物理边界依据；作用最大值的统计期间还需与设计基准或验算时间一致。</p>
 <p>极限状态函数必须与确定性验算同一语义。例如弯曲承载可写为 <span class="math inline">\(g=M_R-M_S\)</span>，二者单位均为 kN·m；位移限值可写为 <span class="math inline">\(g=u_{\lim}-u\)</span>，单位均为 mm 或 m；多响应相互作用可能形成非线性 <span class="math inline">\(g(\boldsymbol X)\)</span>。将规范利用率简单写为概率函数前，应检查其中分项系数、代表值和特征值是否已含安全度处理，避免把设计值体系与随机变量体系未经转换地混用。</p>
@@ -1844,10 +1844,10 @@ V_X=\frac{\sigma_X}{\mu_X}
 <section class="level4" data-number="3.7.6.2" id="form的步骤和限制">
 <h4 class="anchored" data-anchor-id="form的步骤和限制" data-number="3.7.6.2"><span class="header-section-number">3.7.6.2</span> FORM的步骤和限制</h4>
 <p>一阶可靠度方法通常包括：定义原变量联合分布；变换到独立标准正态空间；在 <span class="math inline">\(G(\boldsymbol u)=0\)</span> 上寻找距原点最近点 <span class="math inline">\(\boldsymbol u^*\)</span>；在设计点处线性化；由 <span class="math inline">\(\beta=\|\boldsymbol u^*\|\)</span> 近似 <span class="math inline">\(P_f\)</span>。设计点方向可写为</p>
-<p><span class="math display">\[
-\boldsymbol\alpha=
--\frac{\nabla G(\boldsymbol u^*)}
-{\|\nabla G(\boldsymbol u^*)\|},
+<p><span class="math display">\[
+\boldsymbol\alpha=
+-\frac{\nabla G(\boldsymbol u^*)}
+{\|\nabla G(\boldsymbol u^*)\|},
 \]</span></p>
 <p>符号方向需与采用算法的约定一致。<span class="math inline">\(\boldsymbol\alpha\)</span> 为无量纲局部方向信息，不是各变量的全局重要性百分比。</p>
 <p>教学实现必须显示迭代轨迹、收敛准则、极限状态残差和最终设计点，并用已知线性正态模型验证。若变量相关、非正态，所用概率变换及相关矩阵正定性应记录。多个设计点、边界高度弯曲、不连续极限状态和数值噪声会使一阶近似或梯度搜索不稳定；此时需要多初值、其他可靠度方法或模拟比较。</p>
@@ -1856,15 +1856,15 @@ V_X=\frac{\sigma_X}{\mu_X}
 <section class="level4" data-number="3.7.6.3" id="蒙特卡罗模拟的步骤和限制">
 <h4 class="anchored" data-anchor-id="蒙特卡罗模拟的步骤和限制" data-number="3.7.6.3"><span class="header-section-number">3.7.6.3</span> 蒙特卡罗模拟的步骤和限制</h4>
 <p>直接蒙特卡罗模拟从联合分布生成 <span class="math inline">\(N\)</span> 个样本，计算指标 <span class="math inline">\(I_i=I[g(\boldsymbol X_i)\le0]\)</span>，估计</p>
-<p><span class="math display">\[
-\widehat P_f=\frac{N_f}{N},
-\qquad N_f=\sum_{i=1}^NI_i.
+<p><span class="math display">\[
+\widehat P_f=\frac{N_f}{N},
+\qquad N_f=\sum_{i=1}^NI_i.
 \]</span></p>
 <p><span class="math inline">\(N\)</span> 和 <span class="math inline">\(N_f\)</span> 为计数，无量纲；<span class="math inline">\(\widehat P_f\)</span> 为无量纲概率。独立同分布抽样下的标准误差近似式只在相应条件下使用。报告应给出随机数发生器、种子、样本量、失效数、估计值、标准误差或置信信息、收敛曲线和计算失败样本。</p>
 <p>若 <span class="math inline">\(N_f=0\)</span>，估计式给出零但不证明真实失效概率为零。教学页面应显示“未观测到失效”并提示当前样本量的分辨能力。为了让图中出现红点而任意放大失效概率，会改变教学问题；正确做法是分别设置明确标记的高、低失效教学情景，并解释稀有事件模拟为何需要更高效的方法。</p>
 <p>采用重要抽样时，从辅助密度 <span class="math inline">\(h(\boldsymbol x)\)</span> 抽样并使用权重</p>
-<p><span class="math display">\[
-w(\boldsymbol x)=\frac{f_{\boldsymbol X}(\boldsymbol x)}{h(\boldsymbol x)},
+<p><span class="math display">\[
+w(\boldsymbol x)=\frac{f_{\boldsymbol X}(\boldsymbol x)}{h(\boldsymbol x)},
 \]</span></p>
 <p>估计器必须保留权重和辅助分布。若辅助分布未覆盖重要失效域，结果可能有严重偏差。子集模拟、响应面或代理模型同样需要独立验证；教材只说明方法入口，不把一段自动生成代码视为可靠度结论。</p>
 </section>
@@ -1893,22 +1893,22 @@ w(\boldsymbol x)=\frac{f_{\boldsymbol X}(\boldsymbol x)}{h(\boldsymbol x)},
 <h4 class="anchored" data-anchor-id="作用与模型页" data-number="3.7.7.2"><span class="header-section-number">3.7.7.2</span> 作用与模型页</h4>
 <p>作用页逐项列出 <code>action_id</code>、中文名称、规范类别、物理来源、代表值类型、原始值与单位、空间形式、作用范围、方向、阶段、互斥/从属关系、来源和复核状态。模型页列出分析类型、构件单元、材料和截面状态、支承边界、初始状态、施工阶段、网格或离散精度及模型许可。</p>
 <p>每项作用到模型的转换公式单独显示。例如体积与重度生成重力、面压力生成线作用、温差生成初应变、基础沉降生成给定位移、车辆路径生成移动荷载。转换后校核合力与合力矩：</p>
-<p><span class="math display">\[
-\boldsymbol F_{\mathrm{eq}}=
-\int_{\Omega}\boldsymbol f\,\mathrm d\Omega,
-\qquad
-\boldsymbol M_{\mathrm{eq}}=
-\int_{\Omega}\boldsymbol r\times\boldsymbol f\,\mathrm d\Omega.
+<p><span class="math display">\[
+\boldsymbol F_{\mathrm{eq}}=
+\int_{\Omega}\boldsymbol f\,\mathrm d\Omega,
+\qquad
+\boldsymbol M_{\mathrm{eq}}=
+\int_{\Omega}\boldsymbol r\times\boldsymbol f\,\mathrm d\Omega.
 \]</span></p>
 <p>力的单位为 kN，力矩的单位为 kN·m，<span class="math inline">\(\boldsymbol r\)</span> 的单位为 m；实际单位制可不同，但积分两侧必须一致。等效节点荷载或线荷载应在规定容差内保持整体合力和力矩。</p>
 </section>
 <section class="level4" data-number="3.7.7.3" id="单项效应与组合页">
 <h4 class="anchored" data-anchor-id="单项效应与组合页" data-number="3.7.7.3"><span class="header-section-number">3.7.7.3</span> 单项效应与组合页</h4>
 <p>单项效应表的行按构件、截面、阶段和响应分量组织，列为工况。每列附模型哈希和单位。组合页不只列最终乘子，而把乘子拆成代表值、分项、主导/伴随和其他规定因子所在层级；对每一项显示</p>
-<p><span class="math display">\[
-\Delta S_i=c_iS_i,
-\qquad
-S^{(r)}=\sum_{i=1}^{r}\Delta S_i.
+<p><span class="math display">\[
+\Delta S_i=c_iS_i,
+\qquad
+S^{(r)}=\sum_{i=1}^{r}\Delta S_i.
 \]</span></p>
 <p><span class="math inline">\(S_i\)</span> 与 <span class="math inline">\(\Delta S_i\)</span> 单位相同，<span class="math inline">\(c_i\)</span> 无量纲。瀑布图读取这张表，只显示带符号增量和合计；详细计算单保留 <span class="math inline">\(S_i\)</span>、<span class="math inline">\(c_i\)</span> 的分解、来源和是否已在模型层应用。合计值同时由独立表格公式复算，发现差异则禁止形成包络。</p>
 <p>组合记录还列出未进入本组合的作用及原因，如不适用该设计状况、与主导模式互斥、由规则排除或未达到相应验算条件。这样，审查者不仅看到“加了什么”，也能判断“为何没有加”。程序不得用效应为零代替逻辑排除，因为零可能来自模型施加错误。</p>
@@ -1922,9 +1922,9 @@ S^{(r)}=\sum_{i=1}^{r}\Delta S_i.
 <h4 class="anchored" data-anchor-id="独立核查页" data-number="3.7.7.5"><span class="header-section-number">3.7.7.5</span> 独立核查页</h4>
 <p>完整计算单必须包含至少一项独立核查。可选择简化静力平衡、简支梁影响线手算、对称性、另一个程序、网格或时间步敏感性、选定组合的人工代数和。独立核查的模型可以更简单，但应覆盖控制结论的主要物理机制。</p>
 <p>总反力核查写为</p>
-<p><span class="math display">\[
-\left\|\sum\boldsymbol R-\sum\boldsymbol F\right\|
-\le \varepsilon_F,
+<p><span class="math display">\[
+\left\|\sum\boldsymbol R-\sum\boldsymbol F\right\|
+\le \varepsilon_F,
 \]</span></p>
 <p>其中，<span class="math inline">\(\varepsilon_F\)</span> 是与输入规模和数值精度相适应的力平衡容差，单位与力一致；其取值由软件精度、模型规模和项目质控要求确定，本教材不提供通用数值。力矩平衡采用同一参考点并说明坐标。</p>
 </section>
@@ -1994,8 +1994,8 @@ S^{(r)}=\sum_{i=1}^{r}\Delta S_i.
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-提示
+<div class="callout-title-container flex-fill">
+提示
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -2216,9 +2216,9 @@ S^{(r)}=\sum_{i=1}^{r}\Delta S_i.
 <section class="level4" data-number="3.7.11.1" id="间接作用先定义自由变形">
 <h4 class="anchored" data-anchor-id="间接作用先定义自由变形" data-number="3.7.11.1"><span class="header-section-number">3.7.11.1</span> 间接作用先定义自由变形</h4>
 <p>温度、收缩、徐变、支座与基础位移、制造或安装偏差等间接作用，首先定义结构在无约束时希望发生的应变或位移，再由实际约束求得效应。设自由应变场为 <span class="math inline">\(\boldsymbol\varepsilon^0\)</span>，线弹性材料中的应力可概括为</p>
-<p><span class="math display">\[
-\boldsymbol\sigma
-=\mathbf D(\boldsymbol\varepsilon-\boldsymbol\varepsilon^0),
+<p><span class="math display">\[
+\boldsymbol\sigma
+=\mathbf D(\boldsymbol\varepsilon-\boldsymbol\varepsilon^0),
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathbf D\)</span> 为材料刚度矩阵，<span class="math inline">\(\boldsymbol\varepsilon\)</span> 为约束后的总应变。应变均无量纲，应力单位与 <span class="math inline">\(\mathbf D\)</span> 相应。若结构能够完全自由变形，<span class="math inline">\(\boldsymbol\varepsilon=\boldsymbol\varepsilon^0\)</span>，不产生该项约束应力；若部分受限，效应由全桥刚度和边界分配。</p>
 <p>支点给定位移可在有限元方程中通过已知自由度处理。模型记录位移发生前已经形成的构件和内力；同一沉降在简支、连续、刚构以及施工合龙前后产生不同效应。线性叠加仅在边界、刚度和初始状态一致时成立。</p>
@@ -2226,10 +2226,10 @@ S^{(r)}=\sum_{i=1}^{r}\Delta S_i.
 <section class="level4" data-number="3.7.11.2" id="设计状况决定模型快照">
 <h4 class="anchored" data-anchor-id="设计状况决定模型快照" data-number="3.7.11.2"><span class="header-section-number">3.7.11.2</span> 设计状况决定模型快照</h4>
 <p>持久状况采用运营期结构与相应长期状态；短暂状况按架设、浇筑、合龙、顶升、更换或交通转换建立；偶然状况按特定事件前后状态；地震状况按抗震输入和性能目标。每个状况形成模型快照</p>
-<p><span class="math display">\[
-\mathcal M_s=
-\{\Omega_s,\mathbf K_s,\mathcal B_s,
-\boldsymbol q_{0,s},\mathcal A_s\},
+<p><span class="math display">\[
+\mathcal M_s=
+\{\Omega_s,\mathbf K_s,\mathcal B_s,
+\boldsymbol q_{0,s},\mathcal A_s\},
 \]</span></p>
 <p>其中，<span class="math inline">\(\Omega_s\)</span> 为构件集合，<span class="math inline">\(\mathbf K_s\)</span> 为相应刚度，<span class="math inline">\(\mathcal B_s\)</span> 为边界，<span class="math inline">\(\boldsymbol q_{0,s}\)</span> 为初始状态，<span class="math inline">\(\mathcal A_s\)</span> 为允许作用。不同快照的单项效应不能直接列在同一线性组合矩阵中。</p>
 <p>设计状况表还要连接性能要求。短暂施工可能允许与持久使用不同的构造状态，但仍需满足相应承载、稳定和变形要求；偶然状况可能允许局部损伤，但需满足规定的整体目标；地震状况具有专门性能层级。具体要求从采用标准读取，不由程序根据名称推断。</p>
@@ -2245,8 +2245,8 @@ S^{(r)}=\sum_{i=1}^{r}\Delta S_i.
 <section class="level4" data-number="3.7.12.1" id="算例来源和数据边界">
 <h4 class="anchored" data-anchor-id="算例来源和数据边界" data-number="3.7.12.1"><span class="header-section-number">3.7.12.1</span> 算例来源和数据边界</h4>
 <p>本例承接第4章“完整数值链”的24 m直线简支多梁桥。第4章通过跨中弯矩影响线、教学轴组与均布作用得到全桥车辆单项效应</p>
-<p><span class="math display">\[
-M_{Q,k}=2136.0\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_{Q,k}=2136.0\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>该数值来自教学轴载 <span class="math inline">\(120\)</span>、<span class="math inline">\(180\ \mathrm{kN}\)</span>、轴距 <span class="math inline">\(4.0\ \mathrm m\)</span>、均布作用 <span class="math inline">\(8.0\ \mathrm{kN/m}\)</span> 和跨中影响线，<strong>不是规范车辆荷载</strong>。本章不重复横向分配，而将其作为 <code>Q-TRAFFIC-MID</code> 的标准效应输入，演示作用清单、设计状况、主导轮换、ULS/SLS和疲劳接口。</p>
 <p>另设以下<strong>教学单项效应</strong>，均针对同一跨中截面、同一正弯矩方向和同一线弹性成桥模型：结构重力 <span class="math inline">\(M_{G1}=4200.0\ \mathrm{kN\cdot m}\)</span>；桥面附加重力 <span class="math inline">\(M_{G2}=850.0\ \mathrm{kN\cdot m}\)</span>；有效预加力效应 <span class="math inline">\(M_P=-600.0\ \mathrm{kN\cdot m}\)</span>；正温度模式 <span class="math inline">\(M_{T+}=+280.0\ \mathrm{kN\cdot m}\)</span>；负温度模式 <span class="math inline">\(M_{T-}=-240.0\ \mathrm{kN\cdot m}\)</span>。简支理想模型在均匀温度自由伸缩时弯矩应为零，<span class="math inline">\(T\pm\)</span> 在此代表经过明确截面温度梯度教学模型得到的效应。</p>
@@ -2328,49 +2328,49 @@ M_{Q,k}=2136.0\ \mathrm{kN\cdot m}.
 <section class="level4" data-number="3.7.12.3" id="第二步无系数效应校核和与符号检查">
 <h4 class="anchored" data-anchor-id="第二步无系数效应校核和与符号检查" data-number="3.7.12.3"><span class="header-section-number">3.7.12.3</span> 第二步：无系数效应校核和与符号检查</h4>
 <p>在调用规范规则前，组合程序可执行“全部乘子为1”的调试，但该结果<strong>不是设计组合</strong>。选正温度模式时，代数和为</p>
-<p><span class="math display">\[
-M_{\mathrm{debug},+}
-=4200.0+850.0-600.0+2136.0+280.0
-=6866.0\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_{\mathrm{debug},+}
+=4200.0+850.0-600.0+2136.0+280.0
+=6866.0\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>选负温度模式时为</p>
-<p><span class="math display">\[
-M_{\mathrm{debug},-}
-=4200.0+850.0-600.0+2136.0-240.0
-=6346.0\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_{\mathrm{debug},-}
+=4200.0+850.0-600.0+2136.0-240.0
+=6346.0\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>调试用于确认符号、互斥和代数和。若程序同时加入 <span class="math inline">\(T+\)</span> 与 <span class="math inline">\(T-\)</span>，兼容规则错误；若 <span class="math inline">\(M_P\)</span> 被取绝对值，效应方向错误；若车辆数值再次乘入第4章已经包含的教学轴或均布作用，出现重复。</p>
 </section>
 <section class="level4" data-number="3.7.12.4" id="第三步承载能力组合结构">
 <h4 class="anchored" data-anchor-id="第三步承载能力组合结构" data-number="3.7.12.4"><span class="header-section-number">3.7.12.4</span> 第三步：承载能力组合结构</h4>
 <p>持久状况承载能力组合中，分别以车辆和允许担任主导的温度模式生成候选。由于具体分项和组合值系数由项目规范确定，本例用符号表示。车辆主导、正温度伴随时：</p>
-<p><span class="math display">\[
-\begin{aligned}
-M_{U,Q}^{(+)}={}&amp;
-c_{G1}M_{G1}+c_{G2}M_{G2}+c_PM_P\\
-&amp;+c_{Q,\mathrm{lead}}M_{Q,k}\\
-&amp;+c_{T,\mathrm{acc}}M_{T+}.
-\end{aligned}
+<p><span class="math display">\[
+\begin{aligned}
+M_{U,Q}^{(+)}={}&amp;
+c_{G1}M_{G1}+c_{G2}M_{G2}+c_PM_P\\
+&amp;+c_{Q,\mathrm{lead}}M_{Q,k}\\
+&amp;+c_{T,\mathrm{acc}}M_{T+}.
+\end{aligned}
 \]</span></p>
 <p>正温度主导、车辆伴随时：</p>
-<p><span class="math display">\[
-\begin{aligned}
-M_{U,T+}={}&amp;
-c_{G1}M_{G1}+c_{G2}M_{G2}+c_PM_P\\
-&amp;+c_{T,\mathrm{lead}}M_{T+}\\
-&amp;+c_{Q,\mathrm{acc}}M_{Q,k}.
-\end{aligned}
+<p><span class="math display">\[
+\begin{aligned}
+M_{U,T+}={}&amp;
+c_{G1}M_{G1}+c_{G2}M_{G2}+c_PM_P\\
+&amp;+c_{T,\mathrm{lead}}M_{T+}\\
+&amp;+c_{Q,\mathrm{acc}}M_{Q,k}.
+\end{aligned}
 \]</span></p>
 <p><span class="math inline">\(c\)</span> 为将适用的结构重要性、分项、代表值或其他规范因子按受控规则合成后的无量纲乘子。工程程序应保存其分解和条款，不只保存 <span class="math inline">\(c\)</span>。负温度模式另行枚举，并针对最大正弯矩和最小弯矩分别包络。有利或不利的永久效应按照采用规范和验算任务处理，不由表中正负号自动决定。</p>
 </section>
 <section class="level4" data-number="3.7.12.5" id="第四步正常使用组合">
 <h4 class="anchored" data-anchor-id="第四步正常使用组合" data-number="3.7.12.5"><span class="header-section-number">3.7.12.5</span> 第四步：正常使用组合</h4>
 <p>正常使用任务分别建立规定的作用代表值和长期模型。跨中短期应力、抗裂、裂缝或挠度所用组合可能不同；本例只给通用结构：</p>
-<p><span class="math display">\[
-M_{S,r}=
-M_{G1}+M_{G2}+M_P
-+\psi_{r,Q}M_{Q,k}
-+\psi_{r,T}M_{T\pm},
+<p><span class="math display">\[
+M_{S,r}=
+M_{G1}+M_{G2}+M_P
++\psi_{r,Q}M_{Q,k}
++\psi_{r,T}M_{T\pm},
 \]</span></p>
 <p>其中，下标 <span class="math inline">\(r\)</span> 表示具体使用性能任务，<span class="math inline">\(\psi_{r,Q}\)</span>、<span class="math inline">\(\psi_{r,T}\)</span> 为由采用规范确定的无量纲代表值系数。若研究长期变形，<span class="math inline">\(M_{G1}\)</span>、<span class="math inline">\(M_{G2}\)</span> 和 <span class="math inline">\(M_P\)</span> 还需进入收缩徐变及预应力损失模型，不能仅在弹性弯矩上乘一个长期系数。</p>
 <p>每个SLS结果保存任务名称、代表值类型、材料/截面状态、时间点和限值来源。承载能力控制弯矩不能直接用于裂缝或长期挠度，SLS组合也不能作为抗弯设计效应。</p>
@@ -2378,11 +2378,11 @@ M_{G1}+M_{G2}+M_P
 <section class="level4" data-number="3.7.12.6" id="第五步疲劳接口">
 <h4 class="anchored" data-anchor-id="第五步疲劳接口" data-number="3.7.12.6"><span class="header-section-number">3.7.12.6</span> 第五步：疲劳接口</h4>
 <p>疲劳计算首先保留车辆移动引起的响应历程，而不只保留最大正弯矩。设某一名义应力提取点在线弹性教学模型中由截面模量 <span class="math inline">\(W=1.50\ \mathrm{m^3}\)</span> 映射，车辆从桥外到控制位置再离开时，该教学单次应力范围若以零至峰值近似，则</p>
-<p><span class="math display">\[
-\Delta\sigma_{\mathrm{teach}}
-=\frac{M_{Q,k}}{W}
-=\frac{2136.0}{1.50}\ \mathrm{kN/m^2}
-=1.424\ \mathrm{MPa}.
+<p><span class="math display">\[
+\Delta\sigma_{\mathrm{teach}}
+=\frac{M_{Q,k}}{W}
+=\frac{2136.0}{1.50}\ \mathrm{kN/m^2}
+=1.424\ \mathrm{MPa}.
 \]</span></p>
 <p>该值只验证“移动效应—名义应力范围”的单位接口，不是规范疲劳荷载或设计应力范围。真实疲劳需采用规定荷载模型、动力处理、横向位置、应力历程、循环计数和细节类别；局部焊接、连接件或钢筋应力不能由总体毛截面 <span class="math inline">\(W\)</span> 直接得到。</p>
 <p>疲劳结果记录控制车辆路径、最大与最小位置、应力定义、截面/细节、循环模型和规范来源。若最小值不为零或影响线含正负区，应使用完整历程求范围，不能从包络绝对值相加。</p>
@@ -2401,24 +2401,24 @@ M_{G1}+M_{G2}+M_P
 <section class="level4" data-number="3.7.13.1" id="二元联合密度">
 <h4 class="anchored" data-anchor-id="二元联合密度" data-number="3.7.13.1"><span class="header-section-number">3.7.13.1</span> 二元联合密度</h4>
 <p>设抗力 <span class="math inline">\(R\)</span> 和作用效应 <span class="math inline">\(S\)</span> 服从二元正态教学模型，均值为 <span class="math inline">\(\mu_R,\mu_S\)</span>，标准差为 <span class="math inline">\(\sigma_R,\sigma_S\)</span>，相关系数为 <span class="math inline">\(\rho\)</span>。联合概率密度为</p>
-<p><span class="math display">\[
-\begin{aligned}
-f_{R,S}(r,s)={}&amp;
-\frac{1}{2\pi\sigma_R\sigma_S\sqrt{1-\rho^2}}\\
-&amp;\times\exp\left\{-\frac{1}{2(1-\rho^2)}
-\left[
-\left(\frac{r-\mu_R}{\sigma_R}\right)^2
--2\rho\frac{(r-\mu_R)(s-\mu_S)}{\sigma_R\sigma_S}
-+\left(\frac{s-\mu_S}{\sigma_S}\right)^2
-\right]\right\}.
-\end{aligned}
+<p><span class="math display">\[
+\begin{aligned}
+f_{R,S}(r,s)={}&amp;
+\frac{1}{2\pi\sigma_R\sigma_S\sqrt{1-\rho^2}}\\
+&amp;\times\exp\left\{-\frac{1}{2(1-\rho^2)}
+\left[
+\left(\frac{r-\mu_R}{\sigma_R}\right)^2
+-2\rho\frac{(r-\mu_R)(s-\mu_S)}{\sigma_R\sigma_S}
++\left(\frac{s-\mu_S}{\sigma_S}\right)^2
+\right]\right\}.
+\end{aligned}
 \]</span></p>
 <p><span class="math inline">\(r,s,\mu\)</span> 与 <span class="math inline">\(\sigma\)</span> 使用相同的效应或抗力单位，例如 kN·m；密度单位为该单位的负二次方。<span class="math inline">\(|\rho|&lt;1\)</span>，相关矩阵必须正定。二维等密度线呈椭圆，三维曲面高度是概率密度，不是抗力、安全裕度或失效概率。</p>
 <p>对于 <span class="math inline">\(g=R-S\)</span>，极限状态边界为 <span class="math inline">\(r=s\)</span>，失效域为 <span class="math inline">\(s\ge r\)</span>。失效概率是联合密度在该半平面上的积分：</p>
-<p><span class="math display">\[
-P_f=\int_{-\infty}^{+\infty}
-\int_{-\infty}^{s}
-f_{R,S}(r,s)\,\mathrm dr\,\mathrm ds.
+<p><span class="math display">\[
+P_f=\int_{-\infty}^{+\infty}
+\int_{-\infty}^{s}
+f_{R,S}(r,s)\,\mathrm dr\,\mathrm ds.
 \]</span></p>
 <p>二维图用底面坐标显示密度等高线、边界和失效样本；三维图显示同一密度曲面，并在底面投影边界。两个图必须共享参数和坐标范围，避免同一情景因自动缩放而造成失效域视觉比例不可比。</p>
 </section>
@@ -2426,9 +2426,9 @@ f_{R,S}(r,s)\,\mathrm dr\,\mathrm ds.
 <h4 class="anchored" data-anchor-id="两组教学情景" data-number="3.7.13.2"><span class="header-section-number">3.7.13.2</span> 两组教学情景</h4>
 <p>情景A设 <span class="math inline">\(\mu_R=9000\)</span>、<span class="math inline">\(\sigma_R=900\)</span>、<span class="math inline">\(\mu_S=6500\)</span>、<span class="math inline">\(\sigma_S=650\ \mathrm{kN\cdot m}\)</span>，<span class="math inline">\(\rho=0.20\)</span>；情景B设 <span class="math inline">\(\mu_R=8200\)</span>、<span class="math inline">\(\sigma_R=1100\)</span>、<span class="math inline">\(\mu_S=6800\)</span>、<span class="math inline">\(\sigma_S=900\ \mathrm{kN\cdot m}\)</span>，<span class="math inline">\(\rho=-0.10\)</span>。全部为概率可视化教学参数，不代表桥梁统计、规范目标或前述确定性算例。</p>
 <p>差变量标准差为</p>
-<p><span class="math display">\[
-\sigma_g=
-\sqrt{\sigma_R^2+\sigma_S^2-2\rho\sigma_R\sigma_S}.
+<p><span class="math display">\[
+\sigma_g=
+\sqrt{\sigma_R^2+\sigma_S^2-2\rho\sigma_R\sigma_S}.
 \]</span></p>
 <p>情景A得到 <span class="math inline">\(\sigma_g=999.25\ \mathrm{kN\cdot m}\)</span>、<span class="math inline">\(\beta=2.502\)</span>；情景B得到 <span class="math inline">\(\sigma_g=1489.30\ \mathrm{kN\cdot m}\)</span>、<span class="math inline">\(\beta=0.940\)</span>。在线性正态假定下，相应 <span class="math inline">\(P_f=\Phi(-\beta)\)</span>，约为 <span class="math inline">\(6.2\times10^{-3}\)</span> 和 <span class="math inline">\(1.74\times10^{-1}\)</span>。数值只用于检验图形与算法，高失效情景有意设置为便于观察失效点，不能用于工程评价。</p>
 <p>两个情景采用相同抽样数和随机种子绘图。情景B的均值差较小、离散性较大且相关性不同，密度更多跨越 <span class="math inline">\(r=s\)</span> 边界。比较时分别改变一个参数，再做组合变化；若同时改变全部参数，只能比较整体情景，不能把差异归因于某一个变量。</p>
@@ -2437,12 +2437,12 @@ f_{R,S}(r,s)\,\mathrm dr\,\mathrm ds.
 <h4 class="anchored" data-anchor-id="相关性的物理与数值检查" data-number="3.7.13.3"><span class="header-section-number">3.7.13.3</span> 相关性的物理与数值检查</h4>
 <p>相关性应来自共同来源或统计证据。例如几何尺寸可能同时影响重力效应和截面抗力，模型误差可能共享输入，交通与环境也可能具有条件相关。不能为了提高或降低 <span class="math inline">\(P_f\)</span> 任意选择 <span class="math inline">\(\rho\)</span>。变量定义改变时，相关结构也需重建。</p>
 <p>在 <span class="math inline">\(g=R-S\)</span> 中，正相关减小差变量方差，负相关增大差变量方差；该结论来自本线性差值公式，不能推广到任意非线性极限状态。交互页面应显示协方差矩阵</p>
-<p><span class="math display">\[
-\mathbf\Sigma=
-\begin{bmatrix}
-\sigma_R^2&amp;\rho\sigma_R\sigma_S\\
-\rho\sigma_R\sigma_S&amp;\sigma_S^2
-\end{bmatrix}
+<p><span class="math display">\[
+\mathbf\Sigma=
+\begin{bmatrix}
+\sigma_R^2&amp;\rho\sigma_R\sigma_S\\
+\rho\sigma_R\sigma_S&amp;\sigma_S^2
+\end{bmatrix}
 \]</span></p>
 <p>的正定检查。扩展到多个变量时，逐对相关系数都位于有效范围并不保证整个相关矩阵正定。</p>
 </section>
@@ -2460,24 +2460,24 @@ f_{R,S}(r,s)\,\mathrm dr\,\mathrm ds.
 <section class="level4" data-number="3.7.14.1" id="运行均值和批次收敛">
 <h4 class="anchored" data-anchor-id="运行均值和批次收敛" data-number="3.7.14.1"><span class="header-section-number">3.7.14.1</span> 运行均值和批次收敛</h4>
 <p>对第 <span class="math inline">\(n\)</span> 个样本后的累计估计为</p>
-<p><span class="math display">\[
-\widehat P_f(n)=
-\frac{1}{n}\sum_{i=1}^{n}I[g(\boldsymbol X_i)\le0].
+<p><span class="math display">\[
+\widehat P_f(n)=
+\frac{1}{n}\sum_{i=1}^{n}I[g(\boldsymbol X_i)\le0].
 \]</span></p>
 <p>收敛图横轴使用样本量 <span class="math inline">\(n\)</span> 的对数或线性尺度，纵轴显示累计估计及不确定性。曲线变平只表示在当前样本序列中变化较小，不证明模型或尾部分布正确。至少使用若干独立随机种子重复运行，比较批次间差异。</p>
 <p>独立伯努利抽样下，估计方差近似为</p>
-<p><span class="math display">\[
-\operatorname{Var}(\widehat P_f)
-\approx\frac{P_f(1-P_f)}{N}.
+<p><span class="math display">\[
+\operatorname{Var}(\widehat P_f)
+\approx\frac{P_f(1-P_f)}{N}.
 \]</span></p>
 <p>用估计值代入可得标准误差。相对误差近似随 <span class="math inline">\(1/\sqrt{NP_f}\)</span> 变化，失效概率越小，直接模拟所需样本越多。若失效数为零，不能报告 <span class="math inline">\(P_f=0\)</span>；应报告“当前 <span class="math inline">\(N\)</span> 个样本未观测到失效”并给出方法分辨能力或更高效抽样需求。</p>
 </section>
 <section class="level4" data-number="3.7.14.2" id="生成相关样本">
 <h4 class="anchored" data-anchor-id="生成相关样本" data-number="3.7.14.2"><span class="header-section-number">3.7.14.2</span> 生成相关样本</h4>
 <p>对于正态变量，可从独立标准正态向量 <span class="math inline">\(\boldsymbol z\)</span> 出发，使用协方差矩阵分解生成</p>
-<p><span class="math display">\[
-\boldsymbol x=\boldsymbol\mu+\mathbf L\boldsymbol z,
-\qquad \mathbf L\mathbf L^{\mathsf T}=\mathbf\Sigma.
+<p><span class="math display">\[
+\boldsymbol x=\boldsymbol\mu+\mathbf L\boldsymbol z,
+\qquad \mathbf L\mathbf L^{\mathsf T}=\mathbf\Sigma.
 \]</span></p>
 <p><span class="math inline">\(\mathbf L\)</span> 可由适当矩阵分解得到。程序先检查 <span class="math inline">\(\mathbf\Sigma\)</span> 对称和正定，再抽样；生成后用样本均值、标准差和相关系数检查是否在随机误差范围内接近目标。非正态相关变量需要与采用的概率变换或联合模型一致，不能先独立抽样再简单排序而不说明方法。</p>
 <p>抽样算法、发生器和种子写入运行记录。相同种子用于图形对比可以控制随机差异，但正式不确定性评价不应只运行一个种子。并行计算若改变随机数流，也需保存分流方式以便复现。</p>
@@ -2516,9 +2516,9 @@ f_{R,S}(r,s)\,\mathrm dr\,\mathrm ds.
 <section class="level4" data-number="3.7.15.3" id="计算单字段审计">
 <h4 class="anchored" data-anchor-id="计算单字段审计" data-number="3.7.15.3"><span class="header-section-number">3.7.15.3</span> 计算单字段审计</h4>
 <p>两套计算单共享审计框架但不共享数值体系。A处理规范化确定性设计，B处理教学概率模型。审计记录包括：</p>
-<pre class="text"><code>run_id; task_id; data_version; model_hash; rule_hash;
-coordinate_system; unit_system; source_status;
-input_digest; calculation_digest; output_digest;
+<pre class="text"><code>run_id; task_id; data_version; model_hash; rule_hash;
+coordinate_system; unit_system; source_status;
+input_digest; calculation_digest; output_digest;
 tests_passed; unresolved_items; compiler; reviewer; timestamp</code></pre>
 <p>哈希用于发现文件变化，不替代内容审查。任一上游输入改变，运行编号更新，旧结果保留并标为已替代。程序测试包括最小永久作用、互斥温度、主导轮换、符号、单位冲突、非线性禁止叠加、闭式可靠度、相关样本和零失效提示。</p>
 </section>
@@ -2599,16 +2599,16 @@ tests_passed; unresolved_items; compiler; reviewer; timestamp</code></pre>
 <p>持久状况的车辆对象引用第4章输出的车辆效应包。效应包至少含桥梁模型版本、车道或横向位置、轴重序列、轴距、纵向控制位置、冲击或动力处理状态、横向分配方法、控制截面、成组 <span class="math inline">\(N,M,V,T\)</span> 和适用边界。第3章组合程序不重新移动轴组，也不从不同车辆位置分别抽取最大 <span class="math inline">\(M\)</span>、最大 <span class="math inline">\(V\)</span> 与最大 <span class="math inline">\(T\)</span> 拼成不存在的同时状态。</p>
 <p>处理流程分为六步：第一，确认影响线或直接分析的响应量、正负号和位置；第二，按采用规则确定车辆模型与可加载区域；第三，搜索纵向控制位置并保存轴位；第四，按横向模型确定车道/横向位置及成组响应；第五，把车辆效应包作为一个可变作用记录接入兼容关系；第六，在相应设计状况内轮换主导作用并生成完整组合行。任何一步发生版本变化，下游组合状态转为待更新。</p>
 <p>可用下列符号检查组合接口：设车辆控制包为</p>
-<p><span class="math display">\[
-\boldsymbol E_{Q,v}=
-\begin{bmatrix}N_v&amp;M_v&amp;V_v&amp;T_v\end{bmatrix}^{\mathsf T},
+<p><span class="math display">\[
+\boldsymbol E_{Q,v}=
+\begin{bmatrix}N_v&amp;M_v&amp;V_v&amp;T_v\end{bmatrix}^{\mathsf T},
 \]</span></p>
 <p>各分量分别采用kN、kN·m、kN和kN·m。对满足线性叠加条件的单一模型，某候选组合可写为</p>
-<p><span class="math display">\[
-\boldsymbol E_d=
-\sum_i c_i\boldsymbol E_{G,i}
-+c_v\boldsymbol E_{Q,v}
-+\sum_j c_j\boldsymbol E_{Q,j}.
+<p><span class="math display">\[
+\boldsymbol E_d=
+\sum_i c_i\boldsymbol E_{G,i}
++c_v\boldsymbol E_{Q,v}
++\sum_j c_j\boldsymbol E_{Q,j}.
 \]</span></p>
 <p><span class="math inline">\(c_i\)</span>、<span class="math inline">\(c_v\)</span>、<span class="math inline">\(c_j\)</span>是由指定规范规则展开的乘子，本节不给数值。组合行必须保留向量，不得在进入抗力验算前只保留某一个分量。若某构件的验算由 <span class="math inline">\(M\)</span>—<span class="math inline">\(V\)</span>、<span class="math inline">\(N\)</span>—<span class="math inline">\(M\)</span> 或 <span class="math inline">\(M\)</span>—<span class="math inline">\(T\)</span>共同控制，成组响应是保持物理一致性的必要条件。</p>
 </section>
@@ -2705,22 +2705,22 @@ tests_passed; unresolved_items; compiler; reviewer; timestamp</code></pre>
 <section class="level4" data-number="3.8.0.1" id="结构自重与几何对象">
 <h4 class="anchored" data-anchor-id="结构自重与几何对象" data-number="3.8.0.1"><span class="header-section-number">3.8.0.1</span> 结构自重与几何对象</h4>
 <p>对密度在构件域内可变的三维对象，结构重力可写为</p>
-<p><span class="math display">\[
-\boldsymbol G
-=\int_{\Omega}\rho(\boldsymbol x)\,\boldsymbol g\,\mathrm d\Omega,
+<p><span class="math display">\[
+\boldsymbol G
+=\int_{\Omega}\rho(\boldsymbol x)\,\boldsymbol g\,\mathrm d\Omega,
 \]</span></p>
 <p>其中，<span class="math inline">\(\rho\)</span> 为质量密度，单位为 <span class="math inline">\(\mathrm{kg/m^3}\)</span>；<span class="math inline">\(\boldsymbol g\)</span> 为重力加速度向量，单位为 <span class="math inline">\(\mathrm{m/s^2}\)</span>；<span class="math inline">\(\boldsymbol G\)</span> 的单位为 N。工程中也常直接采用材料重度 <span class="math inline">\(\gamma=\rho g\)</span>，其单位为 <span class="math inline">\(\mathrm{N/m^3}\)</span> 或 <span class="math inline">\(\mathrm{kN/m^3}\)</span>。质量密度和重度不能混用；若有限元软件要求质量密度并自动施加重力加速度，输入重度将造成量纲错误。</p>
 <p>对沿桥轴线变化的梁，单位长度重力为</p>
-<p><span class="math display">\[
-q_G(x)=\sum_{m=1}^{n_m}\gamma_m A_m(x),
+<p><span class="math display">\[
+q_G(x)=\sum_{m=1}^{n_m}\gamma_m A_m(x),
 \]</span></p>
 <p>式中，<span class="math inline">\(A_m(x)\)</span> 为第 <span class="math inline">\(m\)</span> 种材料在坐标 <span class="math inline">\(x\)</span> 处的实际截面面积，单位为 <span class="math inline">\(\mathrm{m^2}\)</span>；<span class="math inline">\(q_G\)</span> 的单位为 <span class="math inline">\(\mathrm{kN/m}\)</span>。变高度箱梁不能用一个跨中面积覆盖全跨。空腔、预留孔、横隔板、齿块、锚块和局部加厚应根据模型层级处理：总体杆系模型可将规则分布部分并入 <span class="math inline">\(A(x)\)</span>，将局部实体按等效集中或分段线荷载施加；板壳或实体模型若已显式建模，则不得再次外加同一重量。</p>
 <p>自重生成至少经历“设计几何—计量几何—计算几何”三种状态。设计几何用于表达构造意图，计量几何用于核算体积和重量，计算几何用于结构离散。三者可以具有不同的细节程度，但总质量与重心应在规定容差内一致。截面参数更新后，程序应同时检查自重、质量矩阵、抗力几何和图纸工程量；只更新惯性矩而保留旧自重，会使结构刚度与作用来源脱节。</p>
 <p>自重审计不只比较总量，还应比较分区和力矩。设离散的第 <span class="math inline">\(i\)</span> 个对象重量为 <span class="math inline">\(G_i\)</span>，其参考坐标为 <span class="math inline">\(x_i,y_i,z_i\)</span>，则至少核对</p>
-<p><span class="math display">\[
-G_\Sigma=\sum_iG_i,
-\qquad
-\boldsymbol M_O=\sum_i\boldsymbol r_i\times\boldsymbol G_i.
+<p><span class="math display">\[
+G_\Sigma=\sum_iG_i,
+\qquad
+\boldsymbol M_O=\sum_i\boldsymbol r_i\times\boldsymbol G_i.
 \]</span></p>
 <p><span class="math inline">\(G_\Sigma\)</span> 的单位为 kN，<span class="math inline">\(\boldsymbol M_O\)</span> 的单位为 <span class="math inline">\(\mathrm{kN\cdot m}\)</span>。总重量相同而横向重心不同，会改变箱梁扭转、支座反力和地震质量分布。因此，数字资源在更新防撞护栏、检修道或偏置管线时，应同步显示总量、纵横向重心和受影响工况。</p>
 </section>
@@ -2734,8 +2734,8 @@ G_\Sigma=\sum_iG_i,
 <h4 class="anchored" data-anchor-id="预加力的三重接口" data-number="3.8.0.3"><span class="header-section-number">3.8.0.3</span> 预加力的三重接口</h4>
 <p>预应力在本章至少具有三个接口。第一，在结构分析中，钢束张拉通过端部力、等效荷载、初应变或组合单元形成结构效应；第二，在施工阶段中，张拉批次、混凝土龄期、体系转换和损失决定每个时点的有效状态；第三，在构件验算中，预应力钢材、普通钢筋和混凝土共同形成截面抗力。三个接口共享钢束几何和材料信息，但使用的物理量不能互相替代。</p>
 <p>对曲线钢束，在小曲率、线弹性教学模型中可用等效横向作用说明其传力。设有效预应力为 <span class="math inline">\(P_e(x)\)</span>，束线相对参考轴的偏心为 <span class="math inline">\(e(x)\)</span>，当 <span class="math inline">\(P_e\)</span> 近似常量时，等效分布作用可概括为</p>
-<p><span class="math display">\[
-q_p(x)\approx P_e\frac{\mathrm d^2 e}{\mathrm dx^2}.
+<p><span class="math display">\[
+q_p(x)\approx P_e\frac{\mathrm d^2 e}{\mathrm dx^2}.
 \]</span></p>
 <p><span class="math inline">\(P_e\)</span> 以 kN 计，<span class="math inline">\(e\)</span>、<span class="math inline">\(x\)</span> 以 m 计，<span class="math inline">\(q_p\)</span> 以 <span class="math inline">\(\mathrm{kN/m}\)</span> 计。符号取决于坐标与偏心约定。该式用于解释束线曲率和等效作用之间的联系，不替代锚端力、摩阻、局部效应或实际钢束单元。超静定体系中还需区分由截面偏心形成的主效应与约束变形形成的次效应。</p>
 <p>数据中至少保存张拉控制、锚固状态、钢束路径、张拉端、批次、损失模型、有效时间点和所属阶段。一个名为“预应力完成”的单值不能回答施工应力、成桥应力、长期变形和承载能力四类任务。若钢束模型更新，组合程序应拒绝继续使用旧的预加力单项效应，直至阶段分析重新生成并签认。</p>
@@ -2744,8 +2744,8 @@ q_p(x)\approx P_e\frac{\mathrm d^2 e}{\mathrm dx^2}.
 <h4 class="anchored" data-anchor-id="土压力水浮力与水位边界" data-number="3.8.0.4"><span class="header-section-number">3.8.0.4</span> 土压力、水浮力与水位边界</h4>
 <p>桥台、承台、基础和地下结构可能受到土重、土侧压力、水压力及水浮力影响。它们的分类与代表值须依据项目采用标准确定；本节只说明数据边界。土压力模型记录土层、重度、地下水、计算状态、墙体位移条件、填土表面作用和接触方向。静止、主动或被动状态不是可随意切换的三个系数，而是由结构位移和土体状态决定的模型选择。</p>
 <p>对以静水压力为基础的教学检查，深度 <span class="math inline">\(z\)</span> 处压力可写为</p>
-<p><span class="math display">\[
-p_w(z)=\rho_w g z,
+<p><span class="math display">\[
+p_w(z)=\rho_w g z,
 \]</span></p>
 <p>其中 <span class="math inline">\(\rho_w\)</span> 为水密度，单位为 <span class="math inline">\(\mathrm{kg/m^3}\)</span>；<span class="math inline">\(z\)</span> 为距自由水面的竖向深度，单位为 m；<span class="math inline">\(p_w\)</span> 的单位为 Pa。作用于封闭排水体积 <span class="math inline">\(V_d\)</span> 的理想浮力为 <span class="math inline">\(F_b=\rho_wgV_d\)</span>。实际设计需根据排水、渗流、孔压、结构开孔和规定水位确定，不能在有水压力的同时无条件施加全部理论浮力。</p>
 <p>水位变化可同时改变浮力、侧向水压力、流水力、基础有效应力和船舶通航状态。应将水位定义为上游环境状态，由各作用对象读取，而不是为每个工况分别复制一个可能不一致的水位数值。若某一水位只适用于施工围堰阶段，不能带入成桥持久状况。</p>
@@ -2754,8 +2754,8 @@ p_w(z)=\rho_w g z,
 <h4 class="anchored" data-anchor-id="收缩徐变与基础变位" data-number="3.8.0.5"><span class="header-section-number">3.8.0.5</span> 收缩、徐变与基础变位</h4>
 <p>混凝土收缩和徐变属于时变变形问题。输入包括构件形成时间、加载龄期、环境、名义尺寸、材料模型、应力历程和计算时点；输出包括应变、曲率、预应力变化、内力重分配和变形。对分阶段形成的组合结构，同一材料参数在不同构件上具有不同龄期。把全部构件设为同龄，会改变约束和内力转移。</p>
 <p>基础变位和支座位移应以位移模式定义。设 <span class="math inline">\(n_s\)</span> 个支点可能发生沉降，可写成</p>
-<p><span class="math display">\[
-\boldsymbol\Delta_s=\mathbf B_s\boldsymbol a_s,
+<p><span class="math display">\[
+\boldsymbol\Delta_s=\mathbf B_s\boldsymbol a_s,
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathbf B_s\)</span> 的每一列为一个空间位移模式，<span class="math inline">\(\boldsymbol a_s\)</span> 为相应幅值；位移统一使用 m 或 mm。共同沉降、差异沉降、倾斜和水平位移应采用不同模式。只给“沉降10 mm”而不说明支点、方向和相关模式，无法形成可复核的结构输入。</p>
 <p>永久作用至少执行五项检查：对象是否真实存在于该阶段；自动自重与外加作用是否重复；重度、密度与重力加速度的量纲是否一致；永久作用的有利或不利是否针对具体验算判断；时变或位移输入是否使用与结构状态一致的模型快照。</p>
@@ -2770,14 +2770,14 @@ p_w(z)=\rho_w g z,
 <p>交通作用首先是一个受规则约束的空间对象，而不是跨中集中力。一个完整对象至少包含荷载模型名称和版本、适用桥面区域、车道划分、轮迹或轴线、轴重与轴距、分布作用范围、纵横向允许位置、车辆派生作用、动力处理状态及对应代表值。上述字段从项目采用的现行标准读取，本章不写入默认工程数值。</p>
 <p>规范荷载模型与真实单车、称重样本和施工车辆属于不同数据来源。规范模型用于规定设计验算；实测交通可用于监测评估、模型研究或专项分析；施工车辆在短暂状况下按施工方案管理。三者不能只因单位相同而混在同一个 <code>vehicle_load</code> 表中。数据记录应设置 <code>purpose</code> 字段，至少区分 <code>code_design</code>、<code>measured_traffic</code>、<code>construction</code> 与 <code>teaching</code>。</p>
 <p>对轴组 <span class="math inline">\(P_i\)</span> 沿纵向路径移动，线性结构某一标量响应可写为</p>
-<p><span class="math display">\[
-S_Q(x_0)=\sum_{i=1}^{n_a}P_i\eta(x_0+d_i)
-+\int_{\mathcal L(x_0)}q(\xi)\eta(\xi)\,\mathrm d\xi,
+<p><span class="math display">\[
+S_Q(x_0)=\sum_{i=1}^{n_a}P_i\eta(x_0+d_i)
++\int_{\mathcal L(x_0)}q(\xi)\eta(\xi)\,\mathrm d\xi,
 \]</span></p>
 <p>其中，<span class="math inline">\(x_0\)</span> 为轴组参考位置，<span class="math inline">\(d_i\)</span> 为第 <span class="math inline">\(i\)</span> 轴相对坐标，单位均为 m；<span class="math inline">\(P_i\)</span> 以 kN 计；<span class="math inline">\(q\)</span> 以 <span class="math inline">\(\mathrm{kN/m}\)</span> 计；<span class="math inline">\(\eta\)</span> 为目标响应的影响线。若目标为弯矩，<span class="math inline">\(\eta\)</span> 的单位为 m，<span class="math inline">\(S_Q\)</span> 为 <span class="math inline">\(\mathrm{kN\cdot m}\)</span>；若目标为反力或剪力，<span class="math inline">\(\eta\)</span> 无量纲，<span class="math inline">\(S_Q\)</span> 为 kN。分布作用积分范围 <span class="math inline">\(\mathcal L\)</span> 必须由加载规则与影响线符号共同确定。</p>
 <p>车轮作用在桥面板上还具有横向坐标和接触区域。若采用影响面 <span class="math inline">\(\eta(x,y)\)</span>，集中轮载效应为 <span class="math inline">\(P_i\eta(x_i,y_i)\)</span>，面分布作用为</p>
-<p><span class="math display">\[
-S_Q=\iint_A q(x,y)\eta(x,y)\,\mathrm dA.
+<p><span class="math display">\[
+S_Q=\iint_A q(x,y)\eta(x,y)\,\mathrm dA.
 \]</span></p>
 <p>当目标为板弯矩时，影响面量纲随单位作用定义而定，应在资源中明确。梁格法、板壳法和横向分布简化方法提供不同层级的近似；从板壳影响面降阶为某片主梁效应时，要验证总竖向反力与绕桥轴力矩守恒。</p>
 </section>
@@ -2785,9 +2785,9 @@ S_Q=\iint_A q(x,y)\eta(x,y)\,\mathrm dA.
 <h4 class="anchored" data-anchor-id="车道横向位置与成组响应" data-number="3.8.1.2"><span class="header-section-number">3.8.1.2</span> 车道、横向位置与成组响应</h4>
 <p>车道数、车道宽度、横向折减或多车道规则必须从采用规范和桥面几何共同确定。数字程序的顺序应为：识别可加载区域；生成合法车道或车辆横向状态；在每个状态内完成纵向移动；计算同一车辆位置对应的整组响应；最后进入组合和包络。若先分别求各主梁最大值再把它们相加，会把不同横向位置拼接成一个不存在的车辆状态。</p>
 <p>对一个控制构件，车辆状态宜输出</p>
-<p><span class="math display">\[
-\boldsymbol E_v(x_0,y_0)
-=\begin{bmatrix}N&amp;M_y&amp;M_z&amp;V_y&amp;V_z&amp;T&amp;R_1&amp;\cdots&amp;R_{n_s}\end{bmatrix}^{\mathsf T}.
+<p><span class="math display">\[
+\boldsymbol E_v(x_0,y_0)
+=\begin{bmatrix}N&amp;M_y&amp;M_z&amp;V_y&amp;V_z&amp;T&amp;R_1&amp;\cdots&amp;R_{n_s}\end{bmatrix}^{\mathsf T}.
 \]</span></p>
 <p>轴力、剪力和支反力以 kN 计，弯矩与扭矩以 <span class="math inline">\(\mathrm{kN\cdot m}\)</span> 计。最大 <span class="math inline">\(M_y\)</span> 的车辆位置可以与最大 <span class="math inline">\(V_z\)</span> 不同，但当抗力验算需要 <span class="math inline">\(M_y\)</span>—<span class="math inline">\(V_z\)</span> 联合作用时，应读取最大 <span class="math inline">\(M_y\)</span> 所在状态下的 <span class="math inline">\(V_z\)</span>，而不是另取 <span class="math inline">\(V_z\)</span> 包络峰值。程序把“响应分量包络”和“物理状态向量”同时保存，前者用于检索，后者用于验算。</p>
 </section>
@@ -2801,8 +2801,8 @@ S_Q=\iint_A q(x,y)\eta(x,y)\,\mathrm dA.
 <p>冲击或动力增大不能被处理为与车辆作用无关的一项随机加数。采用规范以系数或其他规则反映动力效应时，数据应记录其作用对象、适用构件、适用长度或频率参数、是否已包含在车辆效应以及条款来源。若移动荷载分析已显式进行车辆—桥梁动力求解，是否再使用简化动力增大必须按任务规定判断，不能重复计入。</p>
 <p>制动力与车辆纵向状态相关，其路径受桥面、梁体、支座、墩台和基础约束控制。数据中用 <code>parent_case_id</code> 连接对应交通工况，并保存方向、施加高度、纵向分配、固定或活动支承状态。制动力导致的支座反力、墩底弯矩和梁体轴力需要来自同一边界模型。</p>
 <p>曲线桥离心作用与车辆竖向作用、速度和曲线半径相关。教学上可用</p>
-<p><span class="math display">\[
-F_c=m\frac{v^2}{R_c}
+<p><span class="math display">\[
+F_c=m\frac{v^2}{R_c}
 \]</span></p>
 <p>说明变量关系，其中 <span class="math inline">\(m\)</span> 为质量，单位 kg；<span class="math inline">\(v\)</span> 为速度，单位 <span class="math inline">\(\mathrm{m/s}\)</span>；<span class="math inline">\(R_c\)</span> 为曲线半径，单位 m；<span class="math inline">\(F_c\)</span> 为 N。工程设计采用的计算模型、折减、作用高度和组合关系均按现行规范确定。公式不授权学生把任意速度代入生成工程离心力。竖向车辆、离心、制动和冲击之间应通过父子关系与互斥方向管理，避免派生项脱离母状态。</p>
 </section>
@@ -2860,10 +2860,10 @@ F_c=m\frac{v^2}{R_c}
 <h4 class="anchored" data-anchor-id="任务卡先于组合式" data-number="3.8.3.1"><span class="header-section-number">3.8.3.1</span> 任务卡先于组合式</h4>
 <p>组合计算开始前建立验算任务卡。任务卡至少包含：结构对象与构件位置、设计状况、极限状态或性能任务、分析时点、结构与边界版本、作用集合、结果分量、正负方向、抗力或限值接口、适用规范与审定人。任务卡回答“为什么组合、为谁组合、组合后送往何处”，组合式只回答“如何由已审定输入形成结果”。</p>
 <p>可将任务记为</p>
-<p><span class="math display">\[
-\mathcal T=
-\{\mathcal O,s,t,\mathcal M,\mathcal A,
-\mathcal R,\mathcal C,\mathcal V\},
+<p><span class="math display">\[
+\mathcal T=
+\{\mathcal O,s,t,\mathcal M,\mathcal A,
+\mathcal R,\mathcal C,\mathcal V\},
 \]</span></p>
 <p>其中，<span class="math inline">\(\mathcal O\)</span> 为结构对象和位置，<span class="math inline">\(s\)</span> 为设计状况，<span class="math inline">\(t\)</span> 为分析时点，<span class="math inline">\(\mathcal M\)</span> 为模型快照，<span class="math inline">\(\mathcal A\)</span> 为允许作用集合，<span class="math inline">\(\mathcal R\)</span> 为所需响应，<span class="math inline">\(\mathcal C\)</span> 为组合规则集，<span class="math inline">\(\mathcal V\)</span> 为验算接口。集合表达没有单位；集合中的每项数值仍保存自身单位。</p>
 <p>同一座桥的中支点负弯矩ULS、跨中裂缝SLS、支座位移SLS和钢构件疲劳是四张不同任务卡。它们可能共享几何和部分单项工况，却不必共享代表值、材料状态、结果处理或控制车辆位置。以一个名为“最不利组合”的结果覆盖四张任务卡，会丢失这些差异。</p>
@@ -2871,8 +2871,8 @@ F_c=m\frac{v^2}{R_c}
 <section class="level4" data-number="3.8.3.2" id="基本输入标准值与代表值">
 <h4 class="anchored" data-anchor-id="基本输入标准值与代表值" data-number="3.8.3.2"><span class="header-section-number">3.8.3.2</span> 基本输入、标准值与代表值</h4>
 <p>基本输入可以是几何与重度、车辆荷载模型、水位与流速、温度场、支点位移或地震动。标准值是按采用规范确定的基本代表值；组合值、频遇值与准永久值用于规定的共同出现或持续情景。以可变作用 <span class="math inline">\(Q\)</span> 为例，可用一般形式写成</p>
-<p><span class="math display">\[
-Q_{\mathrm{rep},r}=\psi_r Q_k,
+<p><span class="math display">\[
+Q_{\mathrm{rep},r}=\psi_r Q_k,
 \]</span></p>
 <p>其中，<span class="math inline">\(Q_k\)</span> 为标准值，<span class="math inline">\(\psi_r\)</span> 为与代表值类型 <span class="math inline">\(r\)</span> 对应的无量纲系数。<span class="math inline">\(r\)</span> 可以指组合、频遇或准永久等规定类型。具体符号、取值和适用任务从采用规范读取。本式只表达层级关系，不说明任何一个 <span class="math inline">\(\psi_r\)</span> 的数值，也不保证不同作用具有相同取值。</p>
 <p>代表值选择反映时间占有、共同出现和性能目标，不是简单按数值从大到小排序。频遇值与准永久值服务于不同使用性能任务；伴随作用采用的组合值反映它与主导作用共同达到较高水平的可能性。将所有可变作用均取标准值相加，既忽略共同出现规则，也破坏规范校准的安全度体系。</p>
@@ -2881,21 +2881,21 @@ Q_{\mathrm{rep},r}=\psi_r Q_k,
 <section class="level4" data-number="3.8.3.3" id="乘子层级与量纲">
 <h4 class="anchored" data-anchor-id="乘子层级与量纲" data-number="3.8.3.3"><span class="header-section-number">3.8.3.3</span> 乘子层级与量纲</h4>
 <p>对满足线性叠加的单项效应，候选组合可写为</p>
-<p><span class="math display">\[
-S_d^{(c)}=\sum_{i=1}^{n}m_i^{(c)}S_{i,k},
+<p><span class="math display">\[
+S_d^{(c)}=\sum_{i=1}^{n}m_i^{(c)}S_{i,k},
 \]</span></p>
 <p>其中，<span class="math inline">\(S_{i,k}\)</span> 是第 <span class="math inline">\(i\)</span> 个标准或基本代表状态在统一模型上的效应，<span class="math inline">\(m_i^{(c)}\)</span> 为候选 <span class="math inline">\(c\)</span> 中的总乘子。为了审计，总乘子不能作为唯一数据，而应分解为</p>
-<p><span class="math display">\[
-m_i^{(c)}=\gamma_{0,i}^{(c)}
-\gamma_{F,i}^{(c)}
-\psi_i^{(c)}
-\lambda_i^{(c)}.
+<p><span class="math display">\[
+m_i^{(c)}=\gamma_{0,i}^{(c)}
+\gamma_{F,i}^{(c)}
+\psi_i^{(c)}
+\lambda_i^{(c)}.
 \]</span></p>
 <p>式中各因子均为无量纲；它们分别代表项目规则中适用的结构、作用、代表值或其他规定层级，具体含义以采用规范为准。若某层级不适用，不应为了表格整齐虚构数值；可显式标记为 <code>not_applicable</code>。动力增大、空间折减或模型转换若已经包含在 <span class="math inline">\(S_{i,k}\)</span> 中，则相应乘子层不得再次出现。</p>
 <p>单项效应和组合效应的单位必须相同。组合弯矩不能直接加入位移，轴力与弯矩也不能在组合表中相加。程序内部宜按响应向量处理：</p>
-<p><span class="math display">\[
-\boldsymbol S_d^{(c)}=
-\sum_i m_i^{(c)}\boldsymbol S_i,
+<p><span class="math display">\[
+\boldsymbol S_d^{(c)}=
+\sum_i m_i^{(c)}\boldsymbol S_i,
 \]</span></p>
 <p>其中 <span class="math inline">\(\boldsymbol S_i\)</span> 的每个分量均携带单位元数据。显示层可将 <span class="math inline">\(N,V\)</span> 以 kN、<span class="math inline">\(M,T\)</span> 以 <span class="math inline">\(\mathrm{kN\cdot m}\)</span>、位移以 mm 分栏；机器层不得去除量纲标签。</p>
 </section>
@@ -2967,8 +2967,8 @@ m_i^{(c)}=\gamma_{0,i}^{(c)}
 <section class="level4" data-number="3.8.3.5" id="有利与不利的响应相关性">
 <h4 class="anchored" data-anchor-id="有利与不利的响应相关性" data-number="3.8.3.5"><span class="header-section-number">3.8.3.5</span> 有利与不利的响应相关性</h4>
 <p>有利或不利是相对于某个极限状态与控制方向而言。设抗倾覆极限状态为</p>
-<p><span class="math display">\[
-g=M_{\mathrm{stb}}-M_{\mathrm{ot}},
+<p><span class="math display">\[
+g=M_{\mathrm{stb}}-M_{\mathrm{ot}},
 \]</span></p>
 <p>稳定力矩 <span class="math inline">\(M_{\mathrm{stb}}\)</span> 增大为有利，倾覆力矩 <span class="math inline">\(M_{\mathrm{ot}}\)</span> 增大为不利；但同一自重对承台地基承载或桩轴力又可能不利。程序应为每个候选行保留原始带符号效应，在验算函数中判断方向。先对所有效应取绝对值会破坏平衡关系。</p>
 <p>同一作用还可能对两个响应方向产生相反影响。温度模式可能减小一个支点负弯矩，同时增大另一跨正弯矩；基础沉降可能使一根支座卸载而使另一根支座增载。因此，有利与不利不能作为作用对象的全局布尔字段，而应至少绑定 <code>task_id</code>、<code>response_component</code> 与 <code>control_direction</code>。</p>
@@ -2989,8 +2989,8 @@ g=M_{\mathrm{stb}}-M_{\mathrm{ot}},
 <section class="level4" data-number="3.9.0.2" id="轴组移动的候选位置">
 <h4 class="anchored" data-anchor-id="轴组移动的候选位置" data-number="3.9.0.2"><span class="header-section-number">3.9.0.2</span> 轴组移动的候选位置</h4>
 <p>对固定轴距的轴组，目标函数为</p>
-<p><span class="math display">\[
-S(x_0)=\sum_iP_i\eta(x_0+d_i).
+<p><span class="math display">\[
+S(x_0)=\sum_iP_i\eta(x_0+d_i).
 \]</span></p>
 <p>若 <span class="math inline">\(\eta(x)\)</span> 为分段线性函数，<span class="math inline">\(S(x_0)\)</span> 也是分段线性函数；其斜率只在某一车轴经过影响线折点、边界或不连续点时改变。因此，精确搜索可以枚举“各车轴与全部折点对齐”的有限候选位置，并检查允许区间端点。均匀步长扫描便于演示，但可能漏掉窄峰值；若使用扫描，应报告步长并用候选对齐或局部优化复核。</p>
 <p>分布作用的最不利范围与影响线符号有关。若规则允许只在有利于目标极值的区段加载，求最大正效应时对正区积分，求最小效应时对负区积分；若加载长度、车道连续性或作用模型另有规定，则按正式规则建立可加载区间。程序不得看到负影响线就自行删除荷载，加载规则和影响线数学最优是两个不同来源。</p>
@@ -2999,8 +2999,8 @@ S(x_0)=\sum_iP_i\eta(x_0+d_i).
 <section class="level4" data-number="3.9.0.3" id="影响面和车道区域">
 <h4 class="anchored" data-anchor-id="影响面和车道区域" data-number="3.9.0.3"><span class="header-section-number">3.9.0.3</span> 影响面和车道区域</h4>
 <p>桥面板、梁格或空间模型中的响应可用影响面 <span class="math inline">\(\eta_r(x,y)\)</span> 表示。对矩形或一般加载区域 <span class="math inline">\(A_L\)</span>，面作用效应为</p>
-<p><span class="math display">\[
-S_A=\iint_{A_L}q(x,y)\eta_r(x,y)\,\mathrm dx\mathrm dy.
+<p><span class="math display">\[
+S_A=\iint_{A_L}q(x,y)\eta_r(x,y)\,\mathrm dx\mathrm dy.
 \]</span></p>
 <p><span class="math inline">\(q\)</span> 以 <span class="math inline">\(\mathrm{kN/m^2}\)</span> 计时，<span class="math inline">\(S_A\)</span> 的量纲由 <span class="math inline">\(\eta_r\)</span> 决定。集中轮载需在合法轮迹范围内移动；车道边界、中央分隔、检修道和护栏区域来自桥面几何。曲线桥应使用路径坐标或线路里程与横向偏距，不把全桥简单投影到一条直线后忽略曲率。</p>
 <p>数值影响面通常来自节点或积分点结果。对网格内任一点插值时，应采用与单元场一致的形函数或经验证的插值方法。轮载靠近单元边界、支承、横梁或局部刚度突变处，响应可能对网格敏感。至少用两个网格层级比较控制值、控制位置和响应梯度；只比较彩图外观不能证明收敛。</p>
@@ -3009,8 +3009,8 @@ S_A=\iint_{A_L}q(x,y)\eta_r(x,y)\,\mathrm dx\mathrm dy.
 <section class="level4" data-number="3.9.0.4" id="多目标和成组状态">
 <h4 class="anchored" data-anchor-id="多目标和成组状态" data-number="3.9.0.4"><span class="header-section-number">3.9.0.4</span> 多目标和成组状态</h4>
 <p>最不利布载是针对目标函数的优化。令响应向量为 <span class="math inline">\(\boldsymbol E_v(x,y)\)</span>，若目标为最大弯矩，优化问题为</p>
-<p><span class="math display">\[
-(x_M,y_M)=\arg\max_{(x,y)\in\mathcal D}M(x,y).
+<p><span class="math display">\[
+(x_M,y_M)=\arg\max_{(x,y)\in\mathcal D}M(x,y).
 \]</span></p>
 <p>在该状态下应保存完整向量 <span class="math inline">\(\boldsymbol E_v(x_M,y_M)\)</span>。最大剪力状态 <span class="math inline">\((x_V,y_V)\)</span> 另行保存。若后续验算采用相互作用函数 <span class="math inline">\(h(M,V,T)\)</span>，可以直接以 <span class="math inline">\(h\)</span> 为目标重新搜索，也可以按规定的若干控制状态评价；不能把 <span class="math inline">\(M_{\max}\)</span>、<span class="math inline">\(V_{\max}\)</span>、<span class="math inline">\(T_{\max}\)</span>拼成同一向量。</p>
 <p>对多个构件和截面，结果组织为“状态库—响应矩阵—包络索引”。状态库保存每个合法轴位、车道和派生作用；响应矩阵保存所有目标量；包络索引只指向控制状态。这样既能快速查询最大值，又能追溯同一状态的共存效应。</p>
@@ -3018,32 +3018,32 @@ S_A=\iint_{A_L}q(x,y)\eta_r(x,y)\,\mathrm dx\mathrm dy.
 <section class="level4" data-number="3.9.0.5" id="新增完整计算单一30-m简支梁的轴组与均布作用">
 <h4 class="anchored" data-anchor-id="新增完整计算单一30-m简支梁的轴组与均布作用" data-number="3.9.0.5"><span class="header-section-number">3.9.0.5</span> 新增完整计算单一：30 m简支梁的轴组与均布作用</h4>
 <p>本例只用于校验影响线算法，全部荷载为<strong>课程组教学值</strong>，不是规范车辆模型。取跨径 <span class="math inline">\(L=30.0\ \mathrm m\)</span> 的简支梁，目标为跨中 <span class="math inline">\(a=15.0\ \mathrm m\)</span> 处正弯矩。单位竖向力的影响线为</p>
-<p><span class="math display">\[
-\eta_M(x)=
-\begin{cases}
-x/2,&amp;0\le x\le15,\\
-(30-x)/2,&amp;15&lt;x\le30.
-\end{cases}
+<p><span class="math display">\[
+\eta_M(x)=
+\begin{cases}
+x/2,&amp;0\le x\le15,\\
+(30-x)/2,&amp;15&lt;x\le30.
+\end{cases}
 \]</span></p>
 <p><span class="math inline">\(x\)</span> 和 <span class="math inline">\(\eta_M\)</span> 的单位均为 m。教学轴组由 <span class="math inline">\(180\ \mathrm{kN}\)</span> 和 <span class="math inline">\(120\ \mathrm{kN}\)</span> 两轴组成，轴距 <span class="math inline">\(4.0\ \mathrm m\)</span>。设180 kN轴在 <span class="math inline">\(x_0\)</span>，120 kN轴在 <span class="math inline">\(x_0-4\)</span>。当两轴均在跨中左侧时，<span class="math inline">\(S'(x_0)=(180+120)/2&gt;0\)</span>；180 kN轴越过跨中而120 kN轴仍在左侧时，<span class="math inline">\(S'(x_0)=(-180+120)/2&lt;0\)</span>。因此控制位置是重轴位于 <span class="math inline">\(x_0=15.0\ \mathrm m\)</span>，轻轴位于 <span class="math inline">\(11.0\ \mathrm m\)</span>。</p>
 <p>两轴产生的跨中弯矩为</p>
-<p><span class="math display">\[
-M_P=180\times7.5+120\times5.5
-=2010\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_P=180\times7.5+120\times5.5
+=2010\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>再设教学均布作用 <span class="math inline">\(q=8.0\ \mathrm{kN/m}\)</span> 可布满正影响区。影响线面积为</p>
-<p><span class="math display">\[
-A_\eta=\frac12\times30\times7.5
-=112.5\ \mathrm{m^2},
+<p><span class="math display">\[
+A_\eta=\frac12\times30\times7.5
+=112.5\ \mathrm{m^2},
 \]</span></p>
 <p>故 <span class="math inline">\(M_q=qA_\eta=900\ \mathrm{kN\cdot m}\)</span>，总教学车辆效应为</p>
-<p><span class="math display">\[
-M_Q=M_P+M_q=2910\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_Q=M_P+M_q=2910\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>同一车辆位置下，左支反力影响线为 <span class="math inline">\(\eta_{R_A}=1-x/L\)</span>。轴组贡献为</p>
-<p><span class="math display">\[
-R_{A,P}=180(1-15/30)+120(1-11/30)
-=166\ \mathrm{kN},
+<p><span class="math display">\[
+R_{A,P}=180(1-15/30)+120(1-11/30)
+=166\ \mathrm{kN},
 \]</span></p>
 <p>均布作用贡献为 <span class="math inline">\(R_{A,q}=qL/2=120\ \mathrm{kN}\)</span>，故共存反力为 <span class="math inline">\(286\ \mathrm{kN}\)</span>。计算单输出的是状态 <code>(重轴15 m，轻轴11 m，均布全跨)</code> 下的 <span class="math inline">\((M_Q,R_A)=(2910\ \mathrm{kN\cdot m},286\ \mathrm{kN})\)</span>，并不声称 <span class="math inline">\(286\ \mathrm{kN}\)</span> 是左支反力自身的最大包络。</p>
 <p>独立复核包括：影响线两端为零、跨中纵坐标为 <span class="math inline">\(L/4=7.5\ \mathrm m\)</span>；交换轻重轴后轴组弯矩为 <span class="math inline">\(120\times7.5+180\times5.5=1890\ \mathrm{kN\cdot m}\)</span>，小于控制值；分布作用可由静力公式 <span class="math inline">\(qL^2/8=900\ \mathrm{kN\cdot m}\)</span> 复核；单位分别保持为 kN、m和 <span class="math inline">\(\mathrm{kN\cdot m}\)</span>。</p>
@@ -3051,25 +3051,25 @@ R_{A,P}=180(1-15/30)+120(1-11/30)
 <section class="level4" data-number="3.9.0.6" id="新增完整计算单二变截面自重与二期恒载">
 <h4 class="anchored" data-anchor-id="新增完整计算单二变截面自重与二期恒载" data-number="3.9.0.6"><span class="header-section-number">3.9.0.6</span> 新增完整计算单二：变截面自重与二期恒载</h4>
 <p>本例检验从几何生成永久作用的过程，参数均为<strong>教学值</strong>。取一段长 <span class="math inline">\(30.0\ \mathrm m\)</span> 的对称变截面箱梁，截面实体面积从两端 <span class="math inline">\(6.20\ \mathrm{m^2}\)</span> 线性增加至跨中 <span class="math inline">\(9.00\ \mathrm{m^2}\)</span>，教学重度取 <span class="math inline">\(25.0\ \mathrm{kN/m^3}\)</span>。由于面积图关于跨中对称，平均面积为</p>
-<p><span class="math display">\[
-\bar A=\frac{6.20+9.00}{2}=7.60\ \mathrm{m^2}.
+<p><span class="math display">\[
+\bar A=\frac{6.20+9.00}{2}=7.60\ \mathrm{m^2}.
 \]</span></p>
 <p>主体重量为</p>
-<p><span class="math display">\[
-G_1=\gamma\bar A L
-=25.0\times7.60\times30.0
-=5700.0\ \mathrm{kN}.
+<p><span class="math display">\[
+G_1=\gamma\bar A L
+=25.0\times7.60\times30.0
+=5700.0\ \mathrm{kN}.
 \]</span></p>
 <p>若错误地把端部面积 <span class="math inline">\(6.20\ \mathrm{m^2}\)</span> 用于全段，得到 <span class="math inline">\(4650.0\ \mathrm{kN}\)</span>，少计 <span class="math inline">\(1050.0\ \mathrm{kN}\)</span>，相对正确教学值少计 <span class="math inline">\(18.42\%\)</span>。该差异不是“安全系数”可以弥补的数据错误。</p>
 <p>再设桥面铺装宽 <span class="math inline">\(12.0\ \mathrm m\)</span>、厚 <span class="math inline">\(0.12\ \mathrm m\)</span>、教学重度 <span class="math inline">\(23.0\ \mathrm{kN/m^3}\)</span>，两侧设施线重各为 <span class="math inline">\(12.0\ \mathrm{kN/m}\)</span>。铺装线作用为</p>
-<p><span class="math display">\[
-q_s=23.0\times12.0\times0.12
-=33.12\ \mathrm{kN/m},
+<p><span class="math display">\[
+q_s=23.0\times12.0\times0.12
+=33.12\ \mathrm{kN/m},
 \]</span></p>
 <p>设施线作用为 <span class="math inline">\(q_f=24.0\ \mathrm{kN/m}\)</span>，二期恒载总量为</p>
-<p><span class="math display">\[
-G_2=(33.12+24.0)\times30.0
-=1713.6\ \mathrm{kN}.
+<p><span class="math display">\[
+G_2=(33.12+24.0)\times30.0
+=1713.6\ \mathrm{kN}.
 \]</span></p>
 <p>成桥时该段总永久重量为 <span class="math inline">\(G_1+G_2=7413.6\ \mathrm{kN}\)</span>。施工阶段模型先在主体形成状态施加 <span class="math inline">\(G_1\)</span>，再在铺装与设施安装状态施加 <span class="math inline">\(G_2\)</span>；两个阶段对应的刚度与边界由实际施工方案确定。本算例只核对重量生成，不提供该段弯矩或支反力设计值。</p>
 <p>计算单保存面积函数、材料重度、积分长度、铺装面积、设施线重、激活阶段和总量。独立审查以几何积分复核 <span class="math inline">\(G_1\)</span>、以面层体积复核 <span class="math inline">\(G_2\)</span>，并确认显式建模的横隔板或设施未被自动自重重复计算。</p>
@@ -3083,9 +3083,9 @@ G_2=(33.12+24.0)\times30.0
 <h4 class="anchored" data-anchor-id="承载能力任务的对象" data-number="3.9.1.1"><span class="header-section-number">3.9.1.1</span> 承载能力任务的对象</h4>
 <p>承载能力极限状态关注结构或构件是否丧失承载、稳定或整体平衡能力。桥梁分析阶段应把作用效应按验算对象输出，而不是直接给出一个不分机制的“安全系数”。梁、墩、支座、连接和基础可能分别需要轴力、弯矩、剪力、扭矩、支反力、位移或接触力；整体稳定和局部稳定还需要初始缺陷、几何非线性或材料状态。</p>
 <p>以构件截面为例，作用模块可输出</p>
-<p><span class="math display">\[
-\boldsymbol S_d=
-\begin{bmatrix}N_d&amp;M_{y,d}&amp;M_{z,d}&amp;V_{y,d}&amp;V_{z,d}&amp;T_d\end{bmatrix}^{\mathsf T},
+<p><span class="math display">\[
+\boldsymbol S_d=
+\begin{bmatrix}N_d&amp;M_{y,d}&amp;M_{z,d}&amp;V_{y,d}&amp;V_{z,d}&amp;T_d\end{bmatrix}^{\mathsf T},
 \]</span></p>
 <p>其中力分量以 kN 计，力矩分量以 <span class="math inline">\(\mathrm{kN\cdot m}\)</span> 计。抗力模块依据截面、材料、构造和相应规范计算承载边界。若验算是 <span class="math inline">\(N\)</span>—<span class="math inline">\(M\)</span> 相互作用或弯剪扭共同作用，必须使用同一候选组合和同一车辆状态下的共存分量。</p>
 <p>整体平衡问题的作用对象可能是总水平力、倾覆力矩和稳定力矩；稳定问题的作用对象可能是预应力、轴力分布和初始变形；支座问题还涉及压反力、剪力、位移与转角。组合引擎为每张任务卡选择对应响应，不把所有任务压缩为“最大弯矩”。</p>
@@ -3094,11 +3094,11 @@ G_2=(33.12+24.0)\times30.0
 <h4 class="anchored" data-anchor-id="正常使用任务的分流" data-number="3.9.1.2"><span class="header-section-number">3.9.1.2</span> 正常使用任务的分流</h4>
 <p>正常使用极限状态包括应力、裂缝、变形、振动、支座位移或其他影响正常使用和耐久的性能。不同任务对应不同代表值组合、材料状态与结果处理。短期应力可以采用某一时点的有效预应力和弹性截面；长期挠度需要施工历程、收缩徐变、预应力损失和铺装时点；裂缝验算涉及截面受拉状态；振动舒适度又需要频率、阻尼和时程或频域响应。</p>
 <p>对长期响应，不宜把短期弹性结果统一乘一个“长期放大系数”。一般可将时刻 <span class="math inline">\(t\)</span> 的响应写为历史作用的算子叠加：</p>
-<p><span class="math display">\[
-\boldsymbol r(t)=
-\sum_{k=1}^{n_s}
-\mathcal H(t,t_k;\mathcal M_k,\mathcal Z_k)
-\Delta\boldsymbol P_k,
+<p><span class="math display">\[
+\boldsymbol r(t)=
+\sum_{k=1}^{n_s}
+\mathcal H(t,t_k;\mathcal M_k,\mathcal Z_k)
+\Delta\boldsymbol P_k,
 \]</span></p>
 <p>其中，<span class="math inline">\(t_k\)</span> 为第 <span class="math inline">\(k\)</span> 次事件时刻，<span class="math inline">\(\mathcal M_k\)</span> 为当时结构模型，<span class="math inline">\(\mathcal Z_k\)</span> 为材料与内部状态，<span class="math inline">\(\mathcal H\)</span> 为从该事件到目标时刻的响应算子。<span class="math inline">\(\Delta\boldsymbol P_k\)</span> 的单位按作用类型确定，<span class="math inline">\(\boldsymbol r\)</span> 可为内力、应力或位移。该表达强调历程依赖；实际收缩徐变与预应力分析采用经验证的材料和阶段模型。</p>
 <p>SLS计算单必须显示任务名称和限值来源。挠度、裂缝宽度、应力和加速度的单位不同，不能用一条“利用率”遮蔽原始量。若提供利用率，只能在保存需求、限值、条款和单位的基础上派生。</p>
@@ -3106,8 +3106,8 @@ G_2=(33.12+24.0)\times30.0
 <section class="level4" data-number="3.9.1.3" id="疲劳任务保留历程">
 <h4 class="anchored" data-anchor-id="疲劳任务保留历程" data-number="3.9.1.3"><span class="header-section-number">3.9.1.3</span> 疲劳任务保留历程</h4>
 <p>疲劳由重复作用引起，核心输入是应力或内力范围及循环，而不是某个ULS峰值。在线性模型中，移动荷载历程可由影响线和轴组位置生成：</p>
-<p><span class="math display">\[
-\sigma(t)=\sum_iP_i\eta_\sigma[x_i(t)],
+<p><span class="math display">\[
+\sigma(t)=\sum_iP_i\eta_\sigma[x_i(t)],
 \]</span></p>
 <p>其中，<span class="math inline">\(\eta_\sigma\)</span> 为目标细节名义应力或结构应力的影响函数，量纲取决于单位荷载定义；<span class="math inline">\(P_i\)</span> 以 kN 计。应力范围为历程中适用循环的极大值与极小值之差，而不是正负包络绝对值之和。多车辆、不同车道和交通谱的循环计数、疲劳荷载模型与细节分类均按采用规范或专项方法确定。</p>
 <p>总体梁弯矩转换为局部焊趾、横隔连接、剪力连接件或钢筋应力时，需要局部模型或经验证的名义应力关系。疲劳计算单保存提取位置、应力定义、网格或截面、车辆路径、动力处理、历程采样、循环计数方法和规范细节。若只有一张最大弯矩云图，不能形成可审查的疲劳输入。</p>
@@ -3115,15 +3115,15 @@ G_2=(33.12+24.0)\times30.0
 <section class="level4" data-number="3.9.1.4" id="线性叠加的许可条件">
 <h4 class="anchored" data-anchor-id="线性叠加的许可条件" data-number="3.9.1.4"><span class="header-section-number">3.9.1.4</span> 线性叠加的许可条件</h4>
 <p>线性组合成立至少需要：结构几何在分析过程中保持小变形；材料关系在线性范围；支承和连接状态不随作用改变；接触不发生开闭或滑移；构件激活、预应力与时变状态相同；单项效应使用同一参考构形和符号。可用</p>
-<p><span class="math display">\[
-\mathbf K\boldsymbol u_i=\boldsymbol P_i,
-\qquad
-\boldsymbol u=\sum_im_i\boldsymbol u_i
+<p><span class="math display">\[
+\mathbf K\boldsymbol u_i=\boldsymbol P_i,
+\qquad
+\boldsymbol u=\sum_im_i\boldsymbol u_i
 \]</span></p>
 <p>表示线性条件，其中 <span class="math inline">\(\mathbf K\)</span> 在所有单项工况中必须相同。若 <span class="math inline">\(\mathbf K=\mathbf K(\boldsymbol u,\boldsymbol z)\)</span> 随位移或内部状态 <span class="math inline">\(\boldsymbol z\)</span> 改变，则一般有</p>
-<p><span class="math display">\[
-\mathcal S\!\left(\sum_im_i\boldsymbol P_i\right)
-\ne\sum_im_i\mathcal S(\boldsymbol P_i).
+<p><span class="math display">\[
+\mathcal S\!\left(\sum_im_i\boldsymbol P_i\right)
+\ne\sum_im_i\mathcal S(\boldsymbol P_i).
 \]</span></p>
 <p>这里 <span class="math inline">\(\mathcal S\)</span> 是非线性求解算子。右侧把多个独立状态相加，通常不代表任何真实平衡路径。</p>
 <p>常见需要情景直接求解的情况包括：支座脱空或摩擦滑移；拉索松弛；墩梁接触与限位碰撞；几何二阶效应；材料开裂、屈服或损伤；施工激活和体系转换；地震装置非线性；偶然事件后的构件失效。程序应为每种作用包保存 <code>analysis_license</code>，组合引擎只对标记为可线性叠加且模型一致的结果执行代数运算。</p>
@@ -3131,10 +3131,10 @@ G_2=(33.12+24.0)\times30.0
 <section class="level4" data-number="3.9.1.5" id="非线性情景的组合组织">
 <h4 class="anchored" data-anchor-id="非线性情景的组合组织" data-number="3.9.1.5"><span class="header-section-number">3.9.1.5</span> 非线性情景的组合组织</h4>
 <p>非线性并不取消作用规则，而是改变计算顺序。线性流程是“单项求解—效应组合”；非线性流程是“依据规则生成完整加载情景—按路径施加—直接求解—对情景结果包络”。设第 <span class="math inline">\(c\)</span> 个情景的加载历程为 <span class="math inline">\(\boldsymbol P^{(c)}(\lambda)\)</span>，则求解</p>
-<p><span class="math display">\[
-\boldsymbol R_{\mathrm{int}}
-(\boldsymbol u,\boldsymbol z)
-=\boldsymbol P^{(c)}(\lambda),
+<p><span class="math display">\[
+\boldsymbol R_{\mathrm{int}}
+(\boldsymbol u,\boldsymbol z)
+=\boldsymbol P^{(c)}(\lambda),
 \]</span></p>
 <p>其中，<span class="math inline">\(\lambda\)</span> 为加载或时间参数，<span class="math inline">\(\boldsymbol R_{\mathrm{int}}\)</span> 为内力向量，<span class="math inline">\(\boldsymbol z\)</span> 为材料、接触和装置状态。结果不仅包括最终内力，还包括收敛路径、状态切换、残余变形和失败类型。</p>
 <p>非线性包络必须区分结构失效与数值不收敛。若计算因迭代容差、网格畸变或接触设置失败，不能把该情景自动标记为结构失效；反之，通过增大容差得到“收敛”也不能证明物理结果可靠。每个失败保存最后收敛步、残差、状态变量和复核结论。</p>
@@ -3148,12 +3148,12 @@ G_2=(33.12+24.0)\times30.0
 <section class="level4" data-number="3.9.2.1" id="作用关系图">
 <h4 class="anchored" data-anchor-id="作用关系图" data-number="3.9.2.1"><span class="header-section-number">3.9.2.1</span> 作用关系图</h4>
 <p>自动组合可以看作受约束的状态枚举。设作用节点集合为 <span class="math inline">\(\mathcal A\)</span>，节点属性包括类别、设计状况、代表值资格、方向和模型版本；边表示互斥、依赖、派生或共同状态。对候选集合 <span class="math inline">\(C\subseteq\mathcal A\)</span>，合法性函数可写为</p>
-<p><span class="math display">\[
-I(C)=I_{\mathrm{situation}}
-I_{\mathrm{compatibility}}
-I_{\mathrm{dependency}}
-I_{\mathrm{model}}
-I_{\mathrm{source}},
+<p><span class="math display">\[
+I(C)=I_{\mathrm{situation}}
+I_{\mathrm{compatibility}}
+I_{\mathrm{dependency}}
+I_{\mathrm{model}}
+I_{\mathrm{source}},
 \]</span></p>
 <p>每个指标取0或1。只有 <span class="math inline">\(I(C)=1\)</span> 的候选才进入乘子与效应计算。将非法候选计算后再删除会浪费求解，也容易在缓存和包络中残留错误结果。</p>
 <p>互斥表示两个状态不能同时出现，例如同一温度模式的正、负分支或同一车道上同一车辆的两个纵向位置。依赖表示子作用必须随父状态出现，例如制动力依赖相应车辆状态。派生表示一个数值已经由另一个状态的计算生成，例如含动力增大的车辆效应；派生关系用于防止重复放大。共同状态表示多个响应必须作为整体保存。</p>
@@ -3163,19 +3163,19 @@ I_{\mathrm{source}},
 <p>在允许主导的可变作用中依次选择一个主导项，并对其他作用应用相应伴随规则。不能按单项效应最大者预先确定主导，因为不同乘子、符号和共同出现关系可能改变控制结果。对于每张任务卡，枚举器输出最大和最小方向的候选，并保留完整组合行。</p>
 <p>候选削减只能依据严格逻辑。例如，物理互斥、设计状况不适用、缺少父状态或模型版本冲突可以直接排除；仅因某单项效应较小，不能在不知道乘子和响应相互作用的情况下删除。对线性标量响应，若能够证明候选A在全部相关方向上不可能超过候选B，可以标记为支配删除，并保存证明条件。</p>
 <p>自动枚举的伪代码可写为：</p>
-<pre class="text"><code>for task in approved_tasks:
-    model = bind_snapshot(task.situation, task.time)
-    actions = eligible_actions(task, model)
-    for leader in allowed_leaders(actions, task.rule_set):
-        states = expand_compatible_states(actions, leader)
-        for state in states:
-            multipliers = resolve_rule_layers(state, task)
-            assert source_complete(state, multipliers)
-            if all_linear_and_same_model(state):
-                response = signed_vector_sum(state, multipliers)
-            else:
-                response = solve_full_scenario(state, multipliers)
-            save_candidate(task, state, multipliers, response)
+<pre class="text"><code>for task in approved_tasks:
+    model = bind_snapshot(task.situation, task.time)
+    actions = eligible_actions(task, model)
+    for leader in allowed_leaders(actions, task.rule_set):
+        states = expand_compatible_states(actions, leader)
+        for state in states:
+            multipliers = resolve_rule_layers(state, task)
+            assert source_complete(state, multipliers)
+            if all_linear_and_same_model(state):
+                response = signed_vector_sum(state, multipliers)
+            else:
+                response = solve_full_scenario(state, multipliers)
+            save_candidate(task, state, multipliers, response)
     build_envelopes_without_losing_state(task)</code></pre>
 <p>伪代码中的 <code>resolve_rule_layers</code> 只读取经审定的规则文件，不根据作用名称推定系数。<code>build_envelopes_without_losing_state</code> 为每个包络值保存候选编号，并允许反查同一状态的全部响应。</p>
 </section>
@@ -3183,13 +3183,13 @@ I_{\mathrm{source}},
 <h4 class="anchored" data-anchor-id="包络的三个层级" data-number="3.9.2.3"><span class="header-section-number">3.9.2.3</span> 包络的三个层级</h4>
 <p>第一个层级是单一响应的数值包络，例如各截面的最大和最小弯矩；第二个层级是控制状态包络，即对每个峰值保存对应作用、车辆位置和共存响应；第三个层级是验算函数包络，即直接搜索 <span class="math inline">\(h(\boldsymbol S)\)</span> 的控制状态。三者用途不同。</p>
 <p>设候选响应矩阵为</p>
-<p><span class="math display">\[
-\mathbf E=
-\begin{bmatrix}
-N^{(1)}&amp;M^{(1)}&amp;V^{(1)}&amp;T^{(1)}\\
-\vdots&amp;\vdots&amp;\vdots&amp;\vdots\\
-N^{(n_c)}&amp;M^{(n_c)}&amp;V^{(n_c)}&amp;T^{(n_c)}
-\end{bmatrix}.
+<p><span class="math display">\[
+\mathbf E=
+\begin{bmatrix}
+N^{(1)}&amp;M^{(1)}&amp;V^{(1)}&amp;T^{(1)}\\
+\vdots&amp;\vdots&amp;\vdots&amp;\vdots\\
+N^{(n_c)}&amp;M^{(n_c)}&amp;V^{(n_c)}&amp;T^{(n_c)}
+\end{bmatrix}.
 \]</span></p>
 <p>逐列最大值得到的向量一般不等于 <span class="math inline">\(\mathbf E\)</span> 的任何一行。因此，逐列包络只用于绘图和筛选，不得未经检查直接送入截面相互作用验算。若验算函数为 <span class="math inline">\(h(N,M,V,T)\)</span>，应对每一合法行计算 <span class="math inline">\(h^{(c)}\)</span> 再取控制值。</p>
 </section>
@@ -3202,39 +3202,39 @@ N^{(n_c)}&amp;M^{(n_c)}&amp;V^{(n_c)}&amp;T^{(n_c)}
 <section class="level4" data-number="3.9.2.5" id="新增完整计算单三向量组合与控制状态">
 <h4 class="anchored" data-anchor-id="新增完整计算单三向量组合与控制状态" data-number="3.9.2.5"><span class="header-section-number">3.9.2.5</span> 新增完整计算单三：向量组合与控制状态</h4>
 <p>本例使用<strong>算法测试乘子</strong>验证主导轮换和成组响应，不对应任何规范系数。响应列依次为跨中弯矩 <span class="math inline">\(M\)</span>（<span class="math inline">\(\mathrm{kN\cdot m}\)</span>）、剪力 <span class="math inline">\(V\)</span>（kN）、扭矩 <span class="math inline">\(T\)</span>（<span class="math inline">\(\mathrm{kN\cdot m}\)</span>）和某支反力 <span class="math inline">\(R\)</span>（kN）。永久作用带符号合计为</p>
-<p><span class="math display">\[
-\boldsymbol E_G=
-\begin{bmatrix}4450&amp;410&amp;0&amp;555\end{bmatrix}^{\mathsf T}.
+<p><span class="math display">\[
+\boldsymbol E_G=
+\begin{bmatrix}4450&amp;410&amp;0&amp;555\end{bmatrix}^{\mathsf T}.
 \]</span></p>
 <p>三个可变作用教学效应为</p>
-<p><span class="math display">\[
-\begin{aligned}
-\boldsymbol E_Q&amp;=[2100,240,80,300]^{\mathsf T},\\
-\boldsymbol E_W&amp;=[-180,15,260,-20]^{\mathsf T},\\
-\boldsymbol E_T&amp;=[280,5,40,10]^{\mathsf T}.
-\end{aligned}
+<p><span class="math display">\[
+\begin{aligned}
+\boldsymbol E_Q&amp;=[2100,240,80,300]^{\mathsf T},\\
+\boldsymbol E_W&amp;=[-180,15,260,-20]^{\mathsf T},\\
+\boldsymbol E_T&amp;=[280,5,40,10]^{\mathsf T}.
+\end{aligned}
 \]</span></p>
 <p>下标 <span class="math inline">\(Q,W,T\)</span> 分别表示教学车辆、横风和正温度模式。为检查算法，暂定永久乘子1.00、主导项乘子1.30、伴随项乘子0.70；这些数字以 <code>teaching_test_only</code> 标记，<strong>不得作为设计系数使用</strong>。三项均假定通过兼容检查，可依次担任主导。</p>
 <p>车辆主导时：</p>
-<p><span class="math display">\[
-\boldsymbol E^{(Q)}=
-\boldsymbol E_G+1.30\boldsymbol E_Q
-+0.70\boldsymbol E_W+0.70\boldsymbol E_T
-=[7250,736,314,938]^{\mathsf T}.
+<p><span class="math display">\[
+\boldsymbol E^{(Q)}=
+\boldsymbol E_G+1.30\boldsymbol E_Q
++0.70\boldsymbol E_W+0.70\boldsymbol E_T
+=[7250,736,314,938]^{\mathsf T}.
 \]</span></p>
 <p>风主导时：</p>
-<p><span class="math display">\[
-\boldsymbol E^{(W)}=
-\boldsymbol E_G+0.70\boldsymbol E_Q
-+1.30\boldsymbol E_W+0.70\boldsymbol E_T
-=[5882,601,422,746]^{\mathsf T}.
+<p><span class="math display">\[
+\boldsymbol E^{(W)}=
+\boldsymbol E_G+0.70\boldsymbol E_Q
++1.30\boldsymbol E_W+0.70\boldsymbol E_T
+=[5882,601,422,746]^{\mathsf T}.
 \]</span></p>
 <p>温度主导时：</p>
-<p><span class="math display">\[
-\boldsymbol E^{(T)}=
-\boldsymbol E_G+0.70\boldsymbol E_Q
-+0.70\boldsymbol E_W+1.30\boldsymbol E_T
-=[6158,595,290,764]^{\mathsf T}.
+<p><span class="math display">\[
+\boldsymbol E^{(T)}=
+\boldsymbol E_G+0.70\boldsymbol E_Q
++0.70\boldsymbol E_W+1.30\boldsymbol E_T
+=[6158,595,290,764]^{\mathsf T}.
 \]</span></p>
 <p>计算表明，最大跨中弯矩和最大剪力由车辆主导行控制，最大扭矩由风主导行控制，最大支反力仍由车辆主导行控制。风主导行中与最大扭矩共存的弯矩是 <span class="math inline">\(5882\ \mathrm{kN\cdot m}\)</span>，不是弯矩包络 <span class="math inline">\(7250\ \mathrm{kN\cdot m}\)</span>。若某验算需要 <span class="math inline">\(M\)</span>—<span class="math inline">\(T\)</span> 共同作用，应逐行计算，不能使用 <span class="math inline">\((7250,422)\)</span> 这一不存在的拼接状态。</p>
 <p>本计算单的独立检查为：逐项人工复算每列代数和；将所有乘子置1时三行应退化为同一向量；删除风作用后扭矩控制状态应改变；交换响应列单位时程序必须阻断。导入工程规则时，教学乘子全部清空并由已核对规则集替代。</p>
@@ -3243,21 +3243,21 @@ N^{(n_c)}&amp;M^{(n_c)}&amp;V^{(n_c)}&amp;T^{(n_c)}
 <h4 class="anchored" data-anchor-id="新增完整计算单四两跨连续梁的支点沉降" data-number="3.9.2.6"><span class="header-section-number">3.9.2.6</span> 新增完整计算单四：两跨连续梁的支点沉降</h4>
 <p>本例说明间接作用、单位与模型边界，参数均为<strong>教学值</strong>。取两跨等跨、等刚度连续梁，每跨 <span class="math inline">\(L=30.0\ \mathrm m\)</span>；两端支点A、C和中间支点B仅约束竖向位移、允许转动；梁弹性模量 <span class="math inline">\(E=34.0\ \mathrm{GPa}\)</span>，截面惯性矩 <span class="math inline">\(I=5.00\ \mathrm{m^4}\)</span>。中间支点向下沉降 <span class="math inline">\(\delta=10.0\ \mathrm{mm}=0.0100\ \mathrm m\)</span>，不施加其他作用。</p>
 <p>对Euler—Bernoulli线弹性梁，用两个等长梁单元建立位移—转角刚度方程。消去三个自由转角后，得到</p>
-<p><span class="math display">\[
-\theta_A=-\frac{3\delta}{2L},
-\qquad \theta_B=0,
-\qquad \theta_C=+\frac{3\delta}{2L}.
+<p><span class="math display">\[
+\theta_A=-\frac{3\delta}{2L},
+\qquad \theta_B=0,
+\qquad \theta_C=+\frac{3\delta}{2L}.
 \]</span></p>
 <p>代入教学参数，<span class="math inline">\(\theta_A=-5.00\times10^{-4}\ \mathrm{rad}\)</span>，<span class="math inline">\(\theta_C=+5.00\times10^{-4}\ \mathrm{rad}\)</span>。中支点相邻梁端弯矩的物理幅值为</p>
-<p><span class="math display">\[
-|M_B|=\frac{3EI\delta}{L^2}
-=\frac{3\times34.0\times10^9\times5.00\times0.0100}{30.0^2}
-=5666.7\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+|M_B|=\frac{3EI\delta}{L^2}
+=\frac{3\times34.0\times10^9\times5.00\times0.0100}{30.0^2}
+=5666.7\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>两端竖向反力幅值为</p>
-<p><span class="math display">\[
-|R_A|=|R_C|=\frac{3EI\delta}{L^3}
-=188.9\ \mathrm{kN},
+<p><span class="math display">\[
+|R_A|=|R_C|=\frac{3EI\delta}{L^3}
+=188.9\ \mathrm{kN},
 \]</span></p>
 <p>中支点反力方向相反、幅值为 <span class="math inline">\(377.8\ \mathrm{kN}\)</span>，三个反力的代数和为零，符合无外加竖向力条件。成员端力在各自局部坐标下符号相反，计算单应保存统一的全桥正负约定，避免把同一中支点端弯矩误加两次。</p>
 <p>该结果对 <span class="math inline">\(EI\)</span> 和 <span class="math inline">\(\delta\)</span> 呈线性比例，可用 <span class="math inline">\(1\ \mathrm{mm}\)</span> 单位沉降结果乘10复核。若支座只能承压而计算出现脱空、基础刚度随反力变化、梁发生开裂或沉降在施工合龙前已经完成，则线性公式不再代表实际状态，需要更新边界、阶段或非线性模型。工程沉降模式和幅值来自勘察、监测及规范要求，本例不提供取值建议。</p>
@@ -3277,12 +3277,12 @@ N^{(n_c)}&amp;M^{(n_c)}&amp;V^{(n_c)}&amp;T^{(n_c)}
 <h4 class="anchored" data-anchor-id="概率模型从物理变量开始" data-number="3.10.0.1"><span class="header-section-number">3.10.0.1</span> 概率模型从物理变量开始</h4>
 <p>可靠度分析中的随机变量应由物理对象、数据和模型建立，不能把已经乘过分项系数的设计效应直接当作随机变量均值。对桥梁作用—抗力问题，可将基本变量分为几何、材料、作用、环境、模型不确定性和测量误差等。每个变量保存定义、单位、分布或样本、参数估计方法、数据时段、适用对象及相关关系。</p>
 <p>设基本变量向量为</p>
-<p><span class="math display">\[
-\boldsymbol X=
-\begin{bmatrix}
-\boldsymbol X_R&amp;\boldsymbol X_G&amp;\boldsymbol X_Q&amp;
-\boldsymbol X_E&amp;\boldsymbol X_M
-\end{bmatrix}^{\mathsf T},
+<p><span class="math display">\[
+\boldsymbol X=
+\begin{bmatrix}
+\boldsymbol X_R&amp;\boldsymbol X_G&amp;\boldsymbol X_Q&amp;
+\boldsymbol X_E&amp;\boldsymbol X_M
+\end{bmatrix}^{\mathsf T},
 \]</span></p>
 <p>各子向量分别对应抗力、永久作用、可变作用、环境与模型因素。极限状态函数为 <span class="math inline">\(g(\boldsymbol X)\)</span>，失效域定义为 <span class="math inline">\(g\le0\)</span>，安全域定义为 <span class="math inline">\(g&gt;0\)</span>。<span class="math inline">\(g\)</span> 的符号约定必须在模型卡中固定；不同性能问题分别建立极限状态，不能用一个 <span class="math inline">\(g=R-S\)</span> 覆盖疲劳、变形、稳定和撞击后的功能保持。</p>
 <p>随机性与认知不确定性宜在解释中区分。交通、风或材料强度的自然变异属于统计描述；样本不足、模型简化和参数估计误差属于知识与模型的不确定。二者在某些方法中都可概率化处理，但数据来源、更新方式和决策含义不同。数字教材将“样本”“拟合分布”“模型误差”和“设计规则”分栏，避免把一个标准差解释为所有不确定性的总和。</p>
@@ -3296,14 +3296,14 @@ N^{(n_c)}&amp;M^{(n_c)}&amp;V^{(n_c)}&amp;T^{(n_c)}
 <section class="level4" data-number="3.10.0.3" id="相关性与共同来源">
 <h4 class="anchored" data-anchor-id="相关性与共同来源" data-number="3.10.0.3"><span class="header-section-number">3.10.0.3</span> 相关性与共同来源</h4>
 <p>两个变量相关可能源于共同几何、共同环境、同一测量误差或物理耦合。相关系数应连接来源说明，而不是仅提供一个滑块。设 <span class="math inline">\(R\)</span> 与 <span class="math inline">\(S\)</span> 的协方差为</p>
-<p><span class="math display">\[
-\operatorname{Cov}(R,S)=\rho_{RS}\sigma_R\sigma_S,
+<p><span class="math display">\[
+\operatorname{Cov}(R,S)=\rho_{RS}\sigma_R\sigma_S,
 \]</span></p>
 <p>其中 <span class="math inline">\(\rho_{RS}\in[-1,1]\)</span> 无量纲，<span class="math inline">\(\sigma_R\)</span>、<span class="math inline">\(\sigma_S\)</span> 与各变量单位一致。线性极限状态 <span class="math inline">\(g=R-S\)</span> 的方差为</p>
-<p><span class="math display">\[
-\sigma_g^2
-=\sigma_R^2+\sigma_S^2
--2\rho_{RS}\sigma_R\sigma_S.
+<p><span class="math display">\[
+\sigma_g^2
+=\sigma_R^2+\sigma_S^2
+-2\rho_{RS}\sigma_R\sigma_S.
 \]</span></p>
 <p>相关性对结果的方向由极限状态中的符号决定。对 <span class="math inline">\(R-S\)</span>，正相关降低差值方差；对 <span class="math inline">\(X_1+X_2\)</span>，正相关提高和的方差。不能把“相关越大越危险”作为普遍结论。</p>
 <p>多变量相关矩阵 <span class="math inline">\(\mathbf C\)</span> 应对称、对角为1并且半正定。用于Cholesky分解生成样本时通常要求正定；若估计矩阵不满足，应查找变量重复、样本不足或不一致的相关输入，而不静默修改。采用Copula或其他依赖模型时，需说明边缘分布、依赖参数和尾部相关，不能把Pearson相关系数等同于完整联合分布。</p>
@@ -3311,8 +3311,8 @@ N^{(n_c)}&amp;M^{(n_c)}&amp;V^{(n_c)}&amp;T^{(n_c)}
 <section class="level4" data-number="3.10.0.4" id="极限状态的维度和尺度">
 <h4 class="anchored" data-anchor-id="极限状态的维度和尺度" data-number="3.10.0.4"><span class="header-section-number">3.10.0.4</span> 极限状态的维度和尺度</h4>
 <p>极限状态函数各项必须具有一致单位。若 <span class="math inline">\(g=R-S\)</span>，<span class="math inline">\(R\)</span> 与 <span class="math inline">\(S\)</span> 均可用 kN、<span class="math inline">\(\mathrm{kN\cdot m}\)</span> 或其他一致响应单位；若采用无量纲利用形式</p>
-<p><span class="math display">\[
-g=1-\frac{S}{R},
+<p><span class="math display">\[
+g=1-\frac{S}{R},
 \]</span></p>
 <p>则需保证 <span class="math inline">\(R&gt;0\)</span> 且明确两者对应同一机制。两种函数的失效边界可能相同，但梯度尺度和数值迭代表现不同。程序应把函数定义、变量顺序、单位和求导方法保存到运行记录。</p>
 <p>非线性性能函数可能包含多个失效模式。例如桥墩可以有抗弯、抗剪、稳定和位移性能；系统失效域可能是多个模式的并集或交集。直接取各模式最小可靠指标不能自动给出系统失效概率，因为模式间相关性和重叠域尚未处理。本章的二维基准只训练联合密度与边界判断，复杂系统可靠度属于后续专项内容。</p>
@@ -3325,11 +3325,11 @@ g=1-\frac{S}{R},
 <section class="level4" data-number="3.10.1.1" id="标准空间和设计点">
 <h4 class="anchored" data-anchor-id="标准空间和设计点" data-number="3.10.1.1"><span class="header-section-number">3.10.1.1</span> 标准空间和设计点</h4>
 <p>一阶可靠度方法通常把基本变量变换到独立标准正态空间 <span class="math inline">\(\boldsymbol U\)</span>，在失效边界 <span class="math inline">\(G(\boldsymbol U)=0\)</span> 上寻找距原点最近的点</p>
-<p><span class="math display">\[
-\boldsymbol u^*=
-\arg\min_{G(\boldsymbol u)=0}\|\boldsymbol u\|,
-\qquad
-\beta=\|\boldsymbol u^*\|.
+<p><span class="math display">\[
+\boldsymbol u^*=
+\arg\min_{G(\boldsymbol u)=0}\|\boldsymbol u\|,
+\qquad
+\beta=\|\boldsymbol u^*\|.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol u^*\)</span> 为设计点，<span class="math inline">\(\beta\)</span> 为可靠指标，均无量纲。在单一、光滑且设计点明确的边界附近，用切平面近似失效面，并据此估计 <span class="math inline">\(P_f\approx\Phi(-\beta)\)</span>。变换必须反映边缘分布和相关性；不能把非正态变量仅按均值和标准差线性标准化后称为完整FORM。</p>
 <p>设计点表示标准空间中对所定义失效事件贡献显著的邻域，不等同于某个真实桥梁必然出现的荷载组合。映射回物理空间后，应检查变量是否位于数据与模型的有效范围。若设计点落在未经试验支持的材料区间或代理模型外推区，数值收敛不能弥补证据不足。</p>
@@ -3337,10 +3337,10 @@ g=1-\frac{S}{R},
 <section class="level4" data-number="3.10.1.2" id="方向余弦与敏感性">
 <h4 class="anchored" data-anchor-id="方向余弦与敏感性" data-number="3.10.1.2"><span class="header-section-number">3.10.1.2</span> 方向余弦与敏感性</h4>
 <p>在设计点处，可用归一化梯度描述局部方向：</p>
-<p><span class="math display">\[
-\boldsymbol\alpha
-=-\frac{\nabla G(\boldsymbol u^*)}
-{\|\nabla G(\boldsymbol u^*)\|}.
+<p><span class="math display">\[
+\boldsymbol\alpha
+=-\frac{\nabla G(\boldsymbol u^*)}
+{\|\nabla G(\boldsymbol u^*)\|}.
 \]</span></p>
 <p><span class="math inline">\(\boldsymbol\alpha\)</span> 无量纲，其分量反映标准空间中变量对最短方向的局部贡献。它适合用于理解和筛选复核重点，但不是因果贡献率，也不能直接作为调整分项系数的依据。变量变换、极限状态重写或相关模型变化时，<span class="math inline">\(\boldsymbol\alpha\)</span> 的解释也会改变。</p>
 <p>数值梯度应报告步长并进行尺度检查。变量量级相差很大时，在物理空间直接使用统一差分步长可能导致截断或舍入误差。优先在标准空间求梯度，并用解析、自动微分或不同差分步长交叉核验。迭代记录至少包含点位、函数值、梯度范数、步长和终止原因。</p>
@@ -3356,19 +3356,19 @@ g=1-\frac{S}{R},
 <section class="level4" data-number="3.10.2.1" id="基本估计量">
 <h4 class="anchored" data-anchor-id="基本估计量" data-number="3.10.2.1"><span class="header-section-number">3.10.2.1</span> 基本估计量</h4>
 <p>从联合分布抽取 <span class="math inline">\(N\)</span> 个独立样本 <span class="math inline">\(\boldsymbol X^{(j)}\)</span>，定义失效指示量</p>
-<p><span class="math display">\[
-I_j=
-\begin{cases}
-1,&amp;g(\boldsymbol X^{(j)})\le0,\\
-0,&amp;g(\boldsymbol X^{(j)})&gt;0.
-\end{cases}
+<p><span class="math display">\[
+I_j=
+\begin{cases}
+1,&amp;g(\boldsymbol X^{(j)})\le0,\\
+0,&amp;g(\boldsymbol X^{(j)})&gt;0.
+\end{cases}
 \]</span></p>
 <p>直接模拟估计为</p>
-<p><span class="math display">\[
-\widehat P_f=\frac1N\sum_{j=1}^{N}I_j,
-\qquad
-\widehat{\operatorname{SE}}(\widehat P_f)
-=\sqrt{\frac{\widehat P_f(1-\widehat P_f)}{N}}.
+<p><span class="math display">\[
+\widehat P_f=\frac1N\sum_{j=1}^{N}I_j,
+\qquad
+\widehat{\operatorname{SE}}(\widehat P_f)
+=\sqrt{\frac{\widehat P_f(1-\widehat P_f)}{N}}.
 \]</span></p>
 <p><span class="math inline">\(P_f\)</span> 和标准误差均无量纲。标准误差随 <span class="math inline">\(N^{-1/2}\)</span> 下降，要把误差约缩小一半通常需要约四倍独立样本。对很小的失效概率，直接模拟可能长期观察不到失效，显示“0”只表示本次样本中无失效，不表示真实概率为零。</p>
 <p>近似正态置信区间在失效数很少或接近边界时表现不佳。数字资源默认给出二项比例的Wilson区间或适当的精确区间，并明确置信水平。若 <span class="math inline">\(N\)</span> 次独立抽样观察到零失效，一侧置信上界可用二项模型计算；常用近似 <span class="math inline">\(-\ln(\alpha)/N\)</span> 只在相应小概率条件下使用，并标出近似性质。</p>
@@ -3376,8 +3376,8 @@ I_j=
 <section class="level4" data-number="3.10.2.2" id="收敛图和批次检查">
 <h4 class="anchored" data-anchor-id="收敛图和批次检查" data-number="3.10.2.2"><span class="header-section-number">3.10.2.2</span> 收敛图和批次检查</h4>
 <p>运行均值</p>
-<p><span class="math display">\[
-\widehat P_f(n)=\frac1n\sum_{j=1}^{n}I_j
+<p><span class="math display">\[
+\widehat P_f(n)=\frac1n\sum_{j=1}^{n}I_j
 \]</span></p>
 <p>随 <span class="math inline">\(n\)</span> 的曲线能显示早期波动，但“曲线看起来平”不是充分收敛判据。报告最终样本量、失效数、区间宽度、多个随机种子结果和计算失败数。可把样本分为 <span class="math inline">\(B\)</span> 个批次，比较批次估计的离散程度；若样本由马尔可夫链或其他相关算法生成，还需使用有效样本量而非原始样本数。</p>
 <p>随机种子用于重现一次运行，不应只选择给出理想结果的种子。教学比较A/B情景时固定同一随机数基础，有助于降低比较噪声；最终不确定性评估仍需多个独立运行。并行计算时记录随机数流的拆分方式，避免多个进程重复同一序列。</p>
@@ -3385,8 +3385,8 @@ I_j=
 <section class="level4" data-number="3.10.2.3" id="相关样本生成">
 <h4 class="anchored" data-anchor-id="相关样本生成" data-number="3.10.2.3"><span class="header-section-number">3.10.2.3</span> 相关样本生成</h4>
 <p>对标准正态独立样本 <span class="math inline">\(\boldsymbol Z\sim N(\boldsymbol0,\mathbf I)\)</span>，若相关矩阵 <span class="math inline">\(\mathbf C=\mathbf L\mathbf L^{\mathsf T}\)</span>，可令</p>
-<p><span class="math display">\[
-\boldsymbol Y=\mathbf L\boldsymbol Z
+<p><span class="math display">\[
+\boldsymbol Y=\mathbf L\boldsymbol Z
 \]</span></p>
 <p>得到相关标准正态样本。再依据边缘分布变换到物理变量。<span class="math inline">\(\mathbf L\)</span> 为Cholesky因子，无量纲。该方法适用于给定相关正态或相应变换框架；对一般非正态依赖结构，需要与Copula或联合模型一致的方法。</p>
 <p>生成后应对样本均值、标准差和相关矩阵做统计回归检查，并允许合理的抽样容差。把样本相关系数强制调到输入值会破坏随机性。输入矩阵非正定时阻断抽样，不能自动把负特征值截为零而不报告。</p>
@@ -3394,15 +3394,15 @@ I_j=
 <section class="level4" data-number="3.10.2.4" id="重要抽样的边界">
 <h4 class="anchored" data-anchor-id="重要抽样的边界" data-number="3.10.2.4"><span class="header-section-number">3.10.2.4</span> 重要抽样的边界</h4>
 <p>当直接模拟效率过低时，可从更靠近失效域的提议密度 <span class="math inline">\(q(\boldsymbol x)\)</span> 抽样，并用权重</p>
-<p><span class="math display">\[
-w(\boldsymbol x)=\frac{f_{\boldsymbol X}(\boldsymbol x)}
-{q(\boldsymbol x)}
+<p><span class="math display">\[
+w(\boldsymbol x)=\frac{f_{\boldsymbol X}(\boldsymbol x)}
+{q(\boldsymbol x)}
 \]</span></p>
 <p>修正，估计量为</p>
-<p><span class="math display">\[
-\widehat P_{f,\mathrm{IS}}
-=\frac1N\sum_{j=1}^{N}
-I[g(\boldsymbol X_q^{(j)})\le0]w(\boldsymbol X_q^{(j)}).
+<p><span class="math display">\[
+\widehat P_{f,\mathrm{IS}}
+=\frac1N\sum_{j=1}^{N}
+I[g(\boldsymbol X_q^{(j)})\le0]w(\boldsymbol X_q^{(j)}).
 \]</span></p>
 <p><span class="math inline">\(f_{\boldsymbol X}\)</span> 与 <span class="math inline">\(q\)</span> 具有相同密度量纲，因此 <span class="math inline">\(w\)</span> 无量纲。提议分布必须覆盖全部重要失效域；若只围绕一个FORM设计点而遗漏另一失效区，估计会产生严重偏差。报告应给出提议分布、权重范围、有效样本量和多起点检查。</p>
 <p>重要抽样、子集模拟或代理模型可以作为高级扩展，但数字教材先用可解析基准验证实现。方差缩减方法的目标是提高估计效率，不是改变原始概率模型，也不提供规避样本证据不足的途径。</p>
@@ -3410,25 +3410,25 @@ I[g(\boldsymbol X_q^{(j)})\le0]w(\boldsymbol X_q^{(j)}).
 <section class="level4" data-number="3.10.2.5" id="新增完整计算单五相关性对线性可靠度的影响">
 <h4 class="anchored" data-anchor-id="新增完整计算单五相关性对线性可靠度的影响" data-number="3.10.2.5"><span class="header-section-number">3.10.2.5</span> 新增完整计算单五：相关性对线性可靠度的影响</h4>
 <p>本例采用<strong>教学概率参数</strong>校验闭式、FORM和模拟。设抗力 <span class="math inline">\(R\)</span> 与作用效应 <span class="math inline">\(S\)</span> 服从二元正态，单位均为 <span class="math inline">\(\mathrm{kN\cdot m}\)</span>：</p>
-<p><span class="math display">\[
-\mu_R=10000,\quad \sigma_R=1000,\qquad
-\mu_S=7000,\quad \sigma_S=800,\qquad
-\rho_{RS}=0.20.
+<p><span class="math display">\[
+\mu_R=10000,\quad \sigma_R=1000,\qquad
+\mu_S=7000,\quad \sigma_S=800,\qquad
+\rho_{RS}=0.20.
 \]</span></p>
 <p>极限状态为 <span class="math inline">\(g=R-S\)</span>，故</p>
-<p><span class="math display">\[
-\mu_g=3000\ \mathrm{kN\cdot m},
+<p><span class="math display">\[
+\mu_g=3000\ \mathrm{kN\cdot m},
 \]</span></p>
-<p><span class="math display">\[
-\sigma_g=
-\sqrt{1000^2+800^2-2\times0.20\times1000\times800}
-=1148.913\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+\sigma_g=
+\sqrt{1000^2+800^2-2\times0.20\times1000\times800}
+=1148.913\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>可靠指标与失效概率为</p>
-<p><span class="math display">\[
-\beta=\frac{3000}{1148.913}=2.6112,
-\qquad
-P_f=\Phi(-2.6112)\approx0.004512.
+<p><span class="math display">\[
+\beta=\frac{3000}{1148.913}=2.6112,
+\qquad
+P_f=\Phi(-2.6112)\approx0.004512.
 \]</span></p>
 <p>在线性二元正态条件下，闭式结果与正确实现的FORM应一致。若直接模拟采用 <span class="math inline">\(N=10^6\)</span>，按理论 <span class="math inline">\(P_f\)</span> 估计的标准误差约为 <span class="math inline">\(6.70\times10^{-5}\)</span>，约95%正态近似半宽为 <span class="math inline">\(1.31\times10^{-4}\)</span>；实际报告使用观察失效数计算的Wilson区间。</p>
 <p>为检查相关性方向，保持边缘分布不变。取 <span class="math inline">\(\rho=-0.20\)</span> 时，<span class="math inline">\(\sigma_g=1400.0\ \mathrm{kN\cdot m}\)</span>、<span class="math inline">\(\beta=2.1429\)</span>、<span class="math inline">\(P_f\approx0.01606\)</span>；取 <span class="math inline">\(\rho=0.60\)</span> 时，<span class="math inline">\(\sigma_g=824.621\ \mathrm{kN\cdot m}\)</span>、<span class="math inline">\(\beta=3.6380\)</span>、<span class="math inline">\(P_f\approx1.374\times10^{-4}\)</span>。在本特定 <span class="math inline">\(R-S\)</span> 模型中正相关降低差值方差，但这不是所有极限状态的普遍规律。三个相关系数都只是教学情景，工程相关性必须有共同来源或数据依据。</p>
@@ -3462,10 +3462,10 @@ P_f=\Phi(-2.6112)\approx0.004512.
 <section class="level4" data-number="3.10.3.4" id="低失效与高失效情景比较">
 <h4 class="anchored" data-anchor-id="低失效与高失效情景比较" data-number="3.10.3.4"><span class="header-section-number">3.10.3.4</span> 低失效与高失效情景比较</h4>
 <p>比较情景时一次只改变一个主要参数，并保持坐标范围、色标、网格、样本量和随机数基础一致。沿用完整计算单五的 <span class="math inline">\(\sigma_R\)</span>、<span class="math inline">\(\sigma_S\)</span> 和 <span class="math inline">\(\rho=0.20\)</span>，设情景A为 <span class="math inline">\(\mu_R=10000\)</span>、<span class="math inline">\(\mu_S=7000\ \mathrm{kN\cdot m}\)</span>，有 <span class="math inline">\(P_f\approx0.004512\)</span>；情景B仅把教学抗力均值改为 <span class="math inline">\(8500\ \mathrm{kN\cdot m}\)</span>，则</p>
-<p><span class="math display">\[
-\beta_B=\frac{8500-7000}{1148.913}=1.3056,
-\qquad
-P_{f,B}\approx0.09585.
+<p><span class="math display">\[
+\beta_B=\frac{8500-7000}{1148.913}=1.3056,
+\qquad
+P_{f,B}\approx0.09585.
 \]</span></p>
 <p>情景B的密度中心更靠近边界，失效域样本明显增多。两个情景都只是为了使变化可见，不对应某座桥的可靠水平。页面仅显示参数、边界、<span class="math inline">\(\beta\)</span>、<span class="math inline">\(P_f\)</span>、样本量和区间，不另设未经定义的安全量。</p>
 <p>比较相关性时保持两条边缘曲线不变，只改变二维等高线倾斜与差值方差；比较 <span class="math inline">\(\sigma_S\)</span> 时同时观察作用效应边缘展宽和联合密度；比较非线性边界时固定联合分布，只改变 <span class="math inline">\(g=0\)</span> 曲线。这样的单变量比较减少无关视觉变化，有利于建立参数—分布—失效域之间的因果链。</p>
@@ -3524,14 +3524,14 @@ P_{f,B}\approx0.09585.
 <p>一个可交付的本章证据包至少包含七层：作用对象与来源；设计状况和任务卡；单项模型与效应；兼容、从属和代表值规则；候选组合与控制状态；ULS/SLS/疲劳验算接口；概率模型与算法验证。每层既有可读说明，也有机器可读数据，并通过标识符连接。</p>
 <p>确定性设计与概率教学数据分库存放。确定性库保存标准值、代表值、分项与组合规则及设计效应；概率库保存随机变量、样本、分布、相关性和极限状态。两库可以引用同一物理对象，但不得把设计值自动复制为随机均值，也不得从教学 <span class="math inline">\(\beta\)</span> 反推规范乘子。</p>
 <p>证据包的目录可采用：</p>
-<pre class="text"><code>manifest/
-objects_actions/
-design_tasks/
-models_effects/
-rules_combinations/
-envelopes_interfaces/
-probability_validation/
-figures_interactive/
+<pre class="text"><code>manifest/
+objects_actions/
+design_tasks/
+models_effects/
+rules_combinations/
+envelopes_interfaces/
+probability_validation/
+figures_interactive/
 tests_reviews/</code></pre>
 <p><code>manifest</code> 记录项目、章节资源、版本、文件校验值和依赖关系。每个目录包含数据、说明和审查状态。文件名不承担全部语义，关键字段写入数据本身；修改文件名不会改变模型版本。</p>
 <p>交付前依次执行完整性、可重现性和表达检查。完整性检查缺失对象、来源、任务或接口；可重现性检查能否从原始输入重新生成组合与图；表达检查确认公式、图表和网页使用相同参数、单位及术语。若规范版本、模型或规则更新，证据包生成差异报告并使相关结论转为待复核。</p>
@@ -3544,8 +3544,8 @@ tests_reviews/</code></pre>
 <h4 class="anchored" data-anchor-id="坐标与作用方向" data-number="3.11.1.1"><span class="header-section-number">3.11.1.1</span> 坐标与作用方向</h4>
 <p>桥梁作用常同时使用全桥坐标、线路坐标、构件局部坐标和车道坐标。全桥坐标便于总体平衡，线路坐标随曲线里程变化，构件局部坐标用于单元内力，车道坐标用于移动荷载。任何荷载记录都应保存输入坐标系、方向基向量和变换版本。只写“横向风”而不说明横向相对于线路还是全局轴，在曲线桥上会产生系统性错误。</p>
 <p>设局部作用向量为 <span class="math inline">\(\boldsymbol p_l\)</span>，由正交变换矩阵 <span class="math inline">\(\mathbf T\)</span> 转到全局坐标：</p>
-<p><span class="math display">\[
-\boldsymbol p_g=\mathbf T^{\mathsf T}\boldsymbol p_l.
+<p><span class="math display">\[
+\boldsymbol p_g=\mathbf T^{\mathsf T}\boldsymbol p_l.
 \]</span></p>
 <p><span class="math inline">\(\mathbf T\)</span> 无量纲，<span class="math inline">\(\boldsymbol p_l\)</span> 与 <span class="math inline">\(\boldsymbol p_g\)</span> 具有相同的力或力矩单位。节点力和节点力矩的变换需与有限元自由度排列一致；不能只旋转力而遗漏力矩。曲线构件沿程方向变化时，分布作用在各积分点转换，再形成一致节点荷载。</p>
 <p>正负号说明应同时提供文字和图形。例如：全桥竖向 <span class="math inline">\(Z\)</span> 轴向上，车辆重力沿 <span class="math inline">\(-Z\)</span>；线路切向为纵向，左法向为横向；梁单元正弯矩按局部坐标右手规则。响应表保存原始带符号数值，显示界面可另提供“上缘受拉”等物理解释，但不得修改底层符号。</p>
@@ -3553,10 +3553,10 @@ tests_reviews/</code></pre>
 <section class="level4" data-number="3.11.1.2" id="分布作用的一致节点荷载">
 <h4 class="anchored" data-anchor-id="分布作用的一致节点荷载" data-number="3.11.1.2"><span class="header-section-number">3.11.1.2</span> 分布作用的一致节点荷载</h4>
 <p>面作用、线作用和体作用通过有限元形函数映射为节点荷载。对单元域内体作用 <span class="math inline">\(\boldsymbol b\)</span> 和边界力 <span class="math inline">\(\boldsymbol t\)</span>，一致节点荷载为</p>
-<p><span class="math display">\[
-\boldsymbol f_e=
-\int_{\Omega_e}\mathbf N^{\mathsf T}\boldsymbol b\,\mathrm d\Omega
-+\int_{\Gamma_e}\mathbf N^{\mathsf T}\boldsymbol t\,\mathrm d\Gamma.
+<p><span class="math display">\[
+\boldsymbol f_e=
+\int_{\Omega_e}\mathbf N^{\mathsf T}\boldsymbol b\,\mathrm d\Omega
++\int_{\Gamma_e}\mathbf N^{\mathsf T}\boldsymbol t\,\mathrm d\Gamma.
 \]</span></p>
 <p><span class="math inline">\(\mathbf N\)</span> 为形函数矩阵，无量纲；第一项和第二项分别按体域与边界积分，<span class="math inline">\(\boldsymbol f_e\)</span> 的分量单位与节点自由度功共轭。等效节点荷载必须保持虚功一致。仅把总力平均分给节点，可能保持合力却破坏合力矩和单元变形。</p>
 <p>从桥面面作用降阶到梁格线作用时，至少保持单位桥长上的总竖向力和关于参考轴的横向力矩。若进一步把线作用施加到节点，还需保持纵向区段的合力与弯矩。每一步记录源区域、目标对象、映射方法、积分阶次与残差。</p>
@@ -3565,24 +3565,24 @@ tests_reviews/</code></pre>
 <section class="level4" data-number="3.11.1.3" id="合力与合力矩不变量">
 <h4 class="anchored" data-anchor-id="合力与合力矩不变量" data-number="3.11.1.3"><span class="header-section-number">3.11.1.3</span> 合力与合力矩不变量</h4>
 <p>设原始作用由离散力 <span class="math inline">\(\boldsymbol F_i\)</span> 和力矩 <span class="math inline">\(\boldsymbol M_i\)</span> 构成，相对于参考点O的合力和合力矩为</p>
-<p><span class="math display">\[
-\boldsymbol F_\Sigma=\sum_i\boldsymbol F_i,
-\qquad
-\boldsymbol M_{O,\Sigma}=
-\sum_i(\boldsymbol r_i-\boldsymbol r_O)\times\boldsymbol F_i
-+\sum_i\boldsymbol M_i.
+<p><span class="math display">\[
+\boldsymbol F_\Sigma=\sum_i\boldsymbol F_i,
+\qquad
+\boldsymbol M_{O,\Sigma}=
+\sum_i(\boldsymbol r_i-\boldsymbol r_O)\times\boldsymbol F_i
++\sum_i\boldsymbol M_i.
 \]</span></p>
 <p>映射前后应在数值容差内保持这两个量。力以 kN 计，位置以 m 计，力矩以 <span class="math inline">\(\mathrm{kN\cdot m}\)</span> 计。对曲面压力还要检查法向和面积；对自重检查质量中心；对温度或初应变则使用自由变形与约束反力作为相应不变量，不能用外力合力检查替代。</p>
 <p>归一化平衡残差可写为</p>
-<p><span class="math display">\[
-e_F=\frac{\|\boldsymbol F_\Sigma^{\mathrm{target}}
--\boldsymbol F_\Sigma^{\mathrm{source}}\|}
-{\max(\|\boldsymbol F_\Sigma^{\mathrm{source}}\|,F_{\mathrm{ref}})},
+<p><span class="math display">\[
+e_F=\frac{\|\boldsymbol F_\Sigma^{\mathrm{target}}
+-\boldsymbol F_\Sigma^{\mathrm{source}}\|}
+{\max(\|\boldsymbol F_\Sigma^{\mathrm{source}}\|,F_{\mathrm{ref}})},
 \]</span></p>
-<p><span class="math display">\[
-e_M=\frac{\|\boldsymbol M_{O,\Sigma}^{\mathrm{target}}
--\boldsymbol M_{O,\Sigma}^{\mathrm{source}}\|}
-{\max(\|\boldsymbol M_{O,\Sigma}^{\mathrm{source}}\|,M_{\mathrm{ref}})}.
+<p><span class="math display">\[
+e_M=\frac{\|\boldsymbol M_{O,\Sigma}^{\mathrm{target}}
+-\boldsymbol M_{O,\Sigma}^{\mathrm{source}}\|}
+{\max(\|\boldsymbol M_{O,\Sigma}^{\mathrm{source}}\|,M_{\mathrm{ref}})}.
 \]</span></p>
 <p><span class="math inline">\(F_{\mathrm{ref}}\)</span>、<span class="math inline">\(M_{\mathrm{ref}}\)</span> 是防止近零分母的审计参考量，单位分别为kN和 <span class="math inline">\(\mathrm{kN\cdot m}\)</span>；具体容差由计算精度和模型流程确定，不在教材中给统一工程数值。若原始合力理论为零，应重点检查绝对残差和成对作用，而不依赖相对误差。</p>
 </section>
@@ -3601,30 +3601,30 @@ e_M=\frac{\|\boldsymbol M_{O,\Sigma}^{\mathrm{target}}
 <h4 class="anchored" data-anchor-id="新增完整计算单六偏置面作用到两主梁线作用" data-number="3.11.1.6"><span class="header-section-number">3.11.1.6</span> 新增完整计算单六：偏置面作用到两主梁线作用</h4>
 <p>本例只检验横向合力与力矩守恒，采用<strong>教学值</strong>和刚性横向分配假定，不代表真实桥面板受力。取单位纵向桥长，桥面宽 <span class="math inline">\(B=10.0\ \mathrm m\)</span>，横向坐标原点位于桥面中心。左右两条等效主梁线位于 <span class="math inline">\(y_L=-2.0\ \mathrm m\)</span>、<span class="math inline">\(y_R=+2.0\ \mathrm m\)</span>。</p>
 <p>全宽承受教学面作用 <span class="math inline">\(q_0=6.0\ \mathrm{kN/m^2}\)</span>，换算为单位桥长总线作用</p>
-<p><span class="math display">\[
-Q_0=q_0B=60.0\ \mathrm{kN/m},
+<p><span class="math display">\[
+Q_0=q_0B=60.0\ \mathrm{kN/m},
 \]</span></p>
 <p>其横向合力矩为零。另在右侧 <span class="math inline">\(y=3.0\)</span> 至 <span class="math inline">\(5.0\ \mathrm m\)</span> 宽度内施加教学维修面作用 <span class="math inline">\(q_m=4.0\ \mathrm{kN/m^2}\)</span>，其单位桥长合力为</p>
-<p><span class="math display">\[
-Q_m=q_m(5.0-3.0)=8.0\ \mathrm{kN/m},
+<p><span class="math display">\[
+Q_m=q_m(5.0-3.0)=8.0\ \mathrm{kN/m},
 \]</span></p>
 <p>作用线位于 <span class="math inline">\(y_m=4.0\ \mathrm m\)</span>。总作用与关于中心的横向力矩为</p>
-<p><span class="math display">\[
-Q_\Sigma=68.0\ \mathrm{kN/m},
-\qquad
-M_{x,\Sigma}=Q_my_m=32.0\ \mathrm{kN\cdot m/m}.
+<p><span class="math display">\[
+Q_\Sigma=68.0\ \mathrm{kN/m},
+\qquad
+M_{x,\Sigma}=Q_my_m=32.0\ \mathrm{kN\cdot m/m}.
 \]</span></p>
 <p><span class="math inline">\(\mathrm{kN\cdot m/m}\)</span> 在数值上可约为kN，但计算单保留其“每单位纵向长度的横向力矩”含义。令左右主梁等效线作用为 <span class="math inline">\(q_L\)</span>、<span class="math inline">\(q_R\)</span>，由</p>
-<p><span class="math display">\[
-q_L+q_R=68.0,
-\qquad
-(-2.0)q_L+(2.0)q_R=32.0
+<p><span class="math display">\[
+q_L+q_R=68.0,
+\qquad
+(-2.0)q_L+(2.0)q_R=32.0
 \]</span></p>
 <p>解得</p>
-<p><span class="math display">\[
-q_L=26.0\ \mathrm{kN/m},
-\qquad
-q_R=42.0\ \mathrm{kN/m}.
+<p><span class="math display">\[
+q_L=26.0\ \mathrm{kN/m},
+\qquad
+q_R=42.0\ \mathrm{kN/m}.
 \]</span></p>
 <p>复核得到总线作用 <span class="math inline">\(26+42=68\ \mathrm{kN/m}\)</span>，横向力矩 <span class="math inline">\(-2\times26+2\times42=32\ \mathrm{kN\cdot m/m}\)</span>。若只按两梁平均分配为各34 kN/m，合力正确但横向力矩变为零，丢失偏载信息。</p>
 <p>该计算单只能说明全桥总体映射。在实际两梁或多梁桥中，横向柔度、横梁、桥面板、扭转刚度和支承条件决定真实分配；位于主梁线外侧的维修作用还会产生桥面板局部效应。进入工程模型时应采用第4章所述横向分布、梁格或板壳方法，并用本例的合力与力矩作为最低层级检查。</p>
@@ -3875,410 +3875,410 @@ q_R=42.0\ \mathrm{kN/m}.
 </section>
 <p class="public-edition-note"><a href="../publication-images.html">公开预览 · 图片来源与版本说明</a></p></main> <!-- /main -->
 
-<script>
-(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
-
+<script>
+(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+
 </script>
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "已复制");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "已复制");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
-          }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
-  });
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
   </script>
 <nav class="page-navigation">
 <div class="nav-page nav-page-previous">

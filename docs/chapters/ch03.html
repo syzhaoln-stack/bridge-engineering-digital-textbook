@@ -5,21 +5,21 @@
 <meta content="quarto-1.9.38" name="generator"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport"/>
 <title>4  梁式桥设计与计算 – 桥梁工程智能设计</title>
-<style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
 </style>
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
@@ -39,61 +39,61 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet"/>
 <link append-hash="true" data-mode="light" href="../site_libs/bootstrap/bootstrap-c614dc152840027ed1d225942eae4f22.min.css" id="quarto-bootstrap" rel="stylesheet"/>
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "没有结果",
-    "search-matching-documents-text": "匹配的文档",
-    "search-copy-link-title": "复制搜索链接",
-    "search-hide-matches-text": "隐藏其它匹配结果",
-    "search-more-match-text": "更多匹配结果",
-    "search-more-matches-text": "更多匹配结果",
-    "search-clear-button-title": "清除",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "取消",
-    "search-submit-button-title": "提交",
-    "search-label": "搜索"
-  }
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "没有结果",
+    "search-matching-documents-text": "匹配的文档",
+    "search-copy-link-title": "复制搜索链接",
+    "search-hide-matches-text": "隐藏其它匹配结果",
+    "search-more-match-text": "更多匹配结果",
+    "search-more-matches-text": "更多匹配结果",
+    "search-clear-button-title": "清除",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "取消",
+    "search-submit-button-title": "提交",
+    "search-label": "搜索"
+  }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
 </script>
 <link href="../styles.css" rel="stylesheet"/>
 
@@ -273,7 +273,7 @@ window.Quarto = {
 <li class="sidebar-item">
 <div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../legacy-tools.html">
-<span class="menu-text">从旧版接续的两个实验</span></a>
+<span class="menu-text">从旧版接续的实验与游戏</span></a>
 </div>
 </li>
 </ul>
@@ -339,185 +339,185 @@ window.Quarto = {
 <div class="core-route" id="core-route">
 <!-- VISUAL-ENTRY START -->
 <div class="chapter-visual-entry">
-<p>
-先从一个看得见的问题开始
+<p>
+先从一个看得见的问题开始
 </p>
-<h3 class="anchored">
-车靠一侧开，哪根梁分得更多？
+<h3 class="anchored">
+车靠一侧开，哪根梁分得更多？
 </h3>
-<p>
-横向挪动车辆，观察桥下每根主梁的分担量；再切换主梁数量。
+<p>
+横向挪动车辆，观察桥下每根主梁的分担量；再切换主梁数量。
 </p>
 <a href="../interactive/learning-map.html?chapter=ch03">看图进入实验 →</a>
 </div>
 <!-- VISUAL-ENTRY END -->
-<h2 class="anchored">
-本章的核心思考
+<h2 class="anchored">
+本章的核心思考
 </h2>
-<p class="core-thesis">
-抓住截面效率、横向分工和初始应力三件事。
+<p class="core-thesis">
+抓住截面效率、横向分工和初始应力三件事。
 </p>
 <ol>
-<li>
-比较材料位置对惯性矩、应力与挠度的不同影响。
+<li>
+比较材料位置对惯性矩、应力与挠度的不同影响。
 </li>
-<li>
-从平均项与偏心项解释刚性横梁法。
+<li>
+从平均项与偏心项解释刚性横梁法。
 </li>
-<li>
-把预应力的轴力、偏心矩与等效荷载对应起来。
+<li>
+把预应力的轴力、偏心矩与等效荷载对应起来。
 </li>
 </ol>
 <div class="core-analogy">
-<h3 class="anchored">
-跨课程类比
+<h3 class="anchored">
+跨课程类比
 </h3>
-<p>
-偏心受压的线性分布 → 多梁横向分配；预压 → 使用阶段应力调整
+<p>
+偏心受压的线性分布 → 多梁横向分配；预压 → 使用阶段应力调整
 </p>
 <p>
-<strong>反例与边界：</strong>横向刚性、等刚度、未开裂等假定改变时要重算；不能截掉负反力继续使用旧模型。
+<strong>反例与边界：</strong>横向刚性、等刚度、未开裂等假定改变时要重算；不能截掉负反力继续使用旧模型。
 </p>
 </div>
-<p>
-建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
+<p>
+建议课堂集中完成标为“课堂核心”的3个单元，其余单元用于课前观察和课后迁移。每个单元配独立短视频、操作实验、目标检验与开放论证题。
 </p>
 <div class="core-unit-grid">
 <article>
-<p class="core-tag">
-C04U01 · 课前/课后迁移
+<p class="core-tag">
+C04U01 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-从简支反力到梁的整体平衡
+<h3 class="anchored">
+从简支反力到梁的整体平衡
 </h3>
-<p>
-移动荷载改变反力分配，平衡提供最快的独立核验。
+<p>
+移动荷载改变反力分配，平衡提供最快的独立核验。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C04U01" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U01&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C04U02 · 课前/课后迁移
+<p class="core-tag">
+C04U02 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-弯矩、应力、挠度是三个输出
+<h3 class="anchored">
+弯矩、应力、挠度是三个输出
 </h3>
-<p>
-在线性范围内三者随荷载同比变化，但对应不同的验算问题。
+<p>
+在线性范围内三者随荷载同比变化，但对应不同的验算问题。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C04U02" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U02&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C04U03 · 课堂核心
+<p class="core-tag">
+C04U03 · 课堂核心
 </p>
-<h3 class="anchored">
-箱梁的效率来自材料位置
+<h3 class="anchored">
+箱梁的效率来自材料位置
 </h3>
-<p>
-相同外包尺寸下挖空会减少面积和惯性矩，但二者减少比例不同。
+<p>
+相同外包尺寸下挖空会减少面积和惯性矩，但二者减少比例不同。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C04U03" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U03&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C04U04 · 课前/课后迁移
+<p class="core-tag">
+C04U04 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-影响线换一种方式组织计算
+<h3 class="anchored">
+影响线换一种方式组织计算
 </h3>
-<p>
-固定跨中弯矩响应后，移动单位力可建立一条供重复加载使用的曲线。
+<p>
+固定跨中弯矩响应后，移动单位力可建立一条供重复加载使用的曲线。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C04U04" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U04&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C04U05 · 课堂核心
+<p class="core-tag">
+C04U05 · 课堂核心
 </p>
-<h3 class="anchored">
-横向分配就是平均加偏心修正
+<h3 class="anchored">
+横向分配就是平均加偏心修正
 </h3>
-<p>
-等刚度刚性横梁模型可拆成平均分配和偏心力矩分配。
+<p>
+等刚度刚性横梁模型可拆成平均分配和偏心力矩分配。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C04U05" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U05&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C04U06 · 课前/课后迁移
+<p class="core-tag">
+C04U06 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-不同刚度，分配系数就要重算
+<h3 class="anchored">
+不同刚度，分配系数就要重算
 </h3>
-<p>
-兼容位移和转角配合各梁刚度，决定不等刚度体系的反力分配。
+<p>
+兼容位移和转角配合各梁刚度，决定不等刚度体系的反力分配。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C04U06" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U06&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C04U07 · 课堂核心
+<p class="core-tag">
+C04U07 · 课堂核心
 </p>
-<h3 class="anchored">
-预应力的轴力与弯矩同时存在
+<h3 class="anchored">
+预应力的轴力与弯矩同时存在
 </h3>
-<p>
-只增加偏心会增强反向弯矩，却不增加平均预压。
+<p>
+只增加偏心会增强反向弯矩，却不增加平均预压。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C04U07" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U07&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C04U08 · 课前/课后迁移
+<p class="core-tag">
+C04U08 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-束形是把轴力变成分布作用
+<h3 class="anchored">
+束形是把轴力变成分布作用
 </h3>
-<p>
-抛物线束的等效横向荷载与预应力和矢高成正比，与跨径平方成反比。
+<p>
+抛物线束的等效横向荷载与预应力和矢高成正比，与跨径平方成反比。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C04U08" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U08&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C04U09 · 课前/课后迁移
+<p class="core-tag">
+C04U09 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-只增跨径与整体放大不同
+<h3 class="anchored">
+只增跨径与整体放大不同
 </h3>
-<p>
-截面和线荷载不变时，跨径增加使弯矩按平方、挠度按四次方增加。
+<p>
+截面和线荷载不变时，跨径增加使弯矩按平方、挠度按四次方增加。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C04U09" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U09&amp;view=video" target="_blank">观看短视频</a>
 </p>
 </article>
 <article>
-<p class="core-tag">
-C04U10 · 课前/课后迁移
+<p class="core-tag">
+C04U10 · 课前/课后迁移
 </p>
-<h3 class="anchored">
-横梁刚性假定也有失效边界
+<h3 class="anchored">
+横梁刚性假定也有失效边界
 </h3>
-<p>
-偏心加大可能算出负反力，若支承不能抗拔，线性全接触模型失效。
+<p>
+偏心加大可能算出负反力，若支承不能抗拔，线性全接触模型失效。
 </p>
 <p>
 <a href="../interactive/core-learning.html?unit=C04U10" target="_blank">操作与迁移任务</a> · <a href="../interactive/core-learning.html?unit=C04U10&amp;view=video" target="_blank">观看短视频</a>
@@ -539,15 +539,15 @@ C04U10 · 课前/课后迁移
 <figure class="chapter-video-card figure">
 <video controls="" playsinline="" poster="../assets/videos/manim/posters/M06_influence_line.png" preload="metadata" src="../assets/videos/manim/M06_influence_line.mp4">
 </video>
-<figcaption>
-M06　影响线与移动加载
+<figcaption>
+M06　影响线与移动加载
 </figcaption>
 </figure>
 <figure class="chapter-video-card figure">
 <video controls="" playsinline="" poster="../assets/videos/manim/posters/M07_box_efficiency.png" preload="metadata" src="../assets/videos/manim/M07_box_efficiency.mp4">
 </video>
-<figcaption>
-M07　箱梁挖空与截面效率
+<figcaption>
+M07　箱梁挖空与截面效率
 </figcaption>
 </figure>
 </div>
@@ -562,8 +562,8 @@ M07　箱梁挖空与截面效率
 <div aria-describedby="fig-ch03-load-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.1: 梁式桥竖向荷载的基本传递路径。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-load-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.1: 梁式桥竖向荷载的基本传递路径
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-load-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.1: 梁式桥竖向荷载的基本传递路径
 </figcaption>
 </figure>
 </div>
@@ -587,8 +587,8 @@ M07　箱梁挖空与截面效率
 <div aria-describedby="fig-ch03-continuous-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.2: 连续梁常见跨径布置示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-continuous-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.2: 连续梁常见跨径布置示意
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-continuous-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.2: 连续梁常见跨径布置示意
 </figcaption>
 </figure>
 </div>
@@ -668,8 +668,8 @@ M07　箱梁挖空与截面效率
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-提示
+<div class="callout-title-container flex-fill">
+提示
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -679,8 +679,8 @@ M07　箱梁挖空与截面效率
 </div>
 <p>跨径布置首先服从通航、行洪、道路交叉、地形地质和既有设施等桥位条件，其次与材料性能、标准梁型、运输架设能力、结构高度和全寿命维护条件协调。跨径不是孤立的几何参数：跨径增大通常提高恒载效应和结构高度需求，也可能使墩台数量减少；边跨过短可能产生支座负反力或使边跨刚度偏大，边跨过长则削弱其对中跨的有利约束。</p>
 <p>施工方法决定恒载在什么体系上形成。设第 <span class="math inline">\(k\)</span> 个施工阶段新增荷载为 <span class="math inline">\(\Delta\mathbf{P}_k\)</span>，该阶段结构刚度和边界对应的响应算子为 <span class="math inline">\(\mathbf{H}_k\)</span>，在线弹性、不考虑时变效应的教学模型中，阶段响应可写成</p>
-<p><span class="math display">\[
-\mathbf{r}=\sum_{k=1}^{m}\mathbf{H}_k\Delta\mathbf{P}_k.
+<p><span class="math display">\[
+\mathbf{r}=\sum_{k=1}^{m}\mathbf{H}_k\Delta\mathbf{P}_k.
 \]</span></p>
 <p>该式说明：即使最终几何和支承相同，只要荷载施加时的体系不同，恒载弯矩也可能不同。实际预应力混凝土桥还需考虑混凝土龄期、弹性模量发展、收缩徐变、预应力损失和合龙温度等时间因素，不能把所有作用一次施加在成桥模型上替代施工阶段分析。</p>
 <p>常见施工方法与分析关注点如下：</p>
@@ -754,8 +754,8 @@ M07　箱梁挖空与截面效率
 <div aria-describedby="fig-ch03-assembled-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.3: 装配式梁桥横截面的连接形式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-assembled-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.3: 装配式梁桥横截面的连接形式
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-assembled-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.3: 装配式梁桥横截面的连接形式
 </figcaption>
 </figure>
 </div>
@@ -768,8 +768,8 @@ M07　箱梁挖空与截面效率
 <div aria-describedby="fig-ch03-box-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.4: 单箱单室、单箱双室与单箱多室截面。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.4: 单箱单室、单箱双室与单箱多室截面
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-sections-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.4: 单箱单室、单箱双室与单箱多室截面
 </figcaption>
 </figure>
 </div>
@@ -786,8 +786,8 @@ M07　箱梁挖空与截面效率
 <div aria-describedby="fig-ch03-box-width-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.5: 箱形截面布置随桥面宽度变化的示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-width-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.5: 箱形截面布置随桥面宽度变化的示意
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-width-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.5: 箱形截面布置随桥面宽度变化的示意
 </figcaption>
 </figure>
 </div>
@@ -798,39 +798,39 @@ M07　箱梁挖空与截面效率
 <section class="level4" data-number="4.3.0.3" id="截面几何效率">
 <h4 class="anchored" data-anchor-id="截面几何效率" data-number="4.3.0.3"><span class="header-section-number">4.3.0.3</span> 截面几何效率</h4>
 <p>在概念设计阶段，可先用面积、惯性矩和截面模量比较同一外轮廓下的材料布置效率。对外轮廓宽 <span class="math inline">\(B\)</span>、高 <span class="math inline">\(H\)</span>，顶板厚 <span class="math inline">\(t_t\)</span>、底板厚 <span class="math inline">\(t_b\)</span>、两腹板厚 <span class="math inline">\(t_w\)</span> 的矩形教学箱梁，忽略承托和倒角时，截面面积为</p>
-<p><span class="math display">\[
-A=B(t_t+t_b)+2t_w(H-t_t-t_b).
+<p><span class="math display">\[
+A=B(t_t+t_b)+2t_w(H-t_t-t_b).
 \]</span></p>
 <p>将顶板、底板和腹板分块，取统一参考轴，可得形心</p>
-<p><span class="math display">\[
-\bar z=\frac{\sum_i A_i z_i}{\sum_i A_i},
+<p><span class="math display">\[
+\bar z=\frac{\sum_i A_i z_i}{\sum_i A_i},
 \]</span></p>
 <p>以及关于形心水平轴的惯性矩</p>
-<p><span class="math display">\[
-I=\sum_i\left(I_{i,c}+A_i(z_i-\bar z)^2\right).
+<p><span class="math display">\[
+I=\sum_i\left(I_{i,c}+A_i(z_i-\bar z)^2\right).
 \]</span></p>
 <p>上、下缘截面模量分别为</p>
-<p><span class="math display">\[
-W_t=\frac{I}{H-\bar z},\qquad W_b=\frac{I}{\bar z}.
+<p><span class="math display">\[
+W_t=\frac{I}{H-\bar z},\qquad W_b=\frac{I}{\bar z}.
 \]</span></p>
 <p>单位长度自重近似为 <span class="math inline">\(q_g=\gamma_c A\)</span>。由此可用 <span class="math inline">\(I/A\)</span> 或 <span class="math inline">\(W/A\)</span> 比较单位材料所形成的弹性截面性能。将靠近中性轴的材料移至顶、底板，通常能够在面积减少的同时保持较高的弯曲刚度；但“空腔越大越优”并不成立，因为顶、底板横向弯曲、腹板剪切、截面扭转与畸变、局部稳定、预应力管道、锚固区和施工最小空间都会形成约束。</p>
 <p>为避免把“减重”和“提高承载能力”混为一谈，可同时记录三个无量纲几何指标：</p>
-<p><span class="math display">\[
-\rho_A=\frac{A}{A_0},\qquad
-\eta_b=\frac{I}{AH^2},\qquad
-\eta_t=\frac{J_t}{AH^2},
+<p><span class="math display">\[
+\rho_A=\frac{A}{A_0},\qquad
+\eta_b=\frac{I}{AH^2},\qquad
+\eta_t=\frac{J_t}{AH^2},
 \]</span></p>
 <p>其中 <span class="math inline">\(A_0=BH\)</span> 为同外轮廓实心矩形面积，<span class="math inline">\(\rho_A\)</span> 为面积保留率，<span class="math inline">\(\eta_b\)</span> 为单位面积的弯曲几何效率，<span class="math inline">\(J_t\)</span> 为与扭转刚度有关的截面常数，<span class="math inline">\(\eta_t\)</span> 为单位面积的扭转几何效率。<span class="math inline">\(A\)</span> 的单位为 <span class="math inline">\(\mathrm{m^2}\)</span>，<span class="math inline">\(I\)</span>、<span class="math inline">\(J_t\)</span> 的单位为 <span class="math inline">\(\mathrm{m^4}\)</span>，因此三个比值均无量纲。它们只适用于同一材料、相近外轮廓和明确的线弹性比较，不能替代抗剪、局部板件、开裂、稳定和极限承载力计算。</p>
 </section>
 <section class="level4" data-number="4.3.0.4" id="空腔自重与扭转的联动">
 <h4 class="anchored" data-anchor-id="空腔自重与扭转的联动" data-number="4.3.0.4"><span class="header-section-number">4.3.0.4</span> 空腔、自重与扭转的联动</h4>
 <p>闭口箱形截面的优势不仅来自把材料布置在远离中性轴的位置，还来自封闭薄壁对扭转剪流的组织能力。对单室、壁厚较薄且沿周边连续的闭口截面，在Saint-Venant扭转的教学近似下，可写成</p>
-<p><span class="math display">\[
-J_t\approx\frac{4A_m^2}{\displaystyle\oint\frac{\mathrm ds}{t(s)}},
+<p><span class="math display">\[
+J_t\approx\frac{4A_m^2}{\displaystyle\oint\frac{\mathrm ds}{t(s)}},
 \]</span></p>
 <p>其中 <span class="math inline">\(A_m\)</span> 为壁厚中线所围面积，单位为 <span class="math inline">\(\mathrm{m^2}\)</span>；<span class="math inline">\(s\)</span> 为沿壁厚中线的周向坐标，单位为 <span class="math inline">\(\mathrm m\)</span>；<span class="math inline">\(t(s)\)</span> 为局部壁厚，单位为 <span class="math inline">\(\mathrm m\)</span>。当扭矩为 <span class="math inline">\(T\)</span>，且可采用单室闭口薄壁近似时，周向剪流为</p>
-<p><span class="math display">\[
-q_T=\frac{T}{2A_m},\qquad \tau_T(s)=\frac{q_T}{t(s)},
+<p><span class="math display">\[
+q_T=\frac{T}{2A_m},\qquad \tau_T(s)=\frac{q_T}{t(s)},
 \]</span></p>
 <p>其中 <span class="math inline">\(q_T\)</span> 的单位为 <span class="math inline">\(\mathrm{N/m}\)</span>，<span class="math inline">\(\tau_T\)</span> 的单位为 <span class="math inline">\(\mathrm{Pa}\)</span>。公式表明，在壁厚没有过度减小且箱室保持封闭时，扩大有效箱室面积能够显著提高扭转效率；但某一腹板或顶底板继续减薄会增大局部剪应力，并可能引起开裂、屈曲或畸变。多室箱梁的各室剪流还需满足整体平衡和扭转变形协调，不能把单室公式分别套用后简单相加。</p>
 <p>截面参数实验宜按以下三条路径分别进行：</p>
@@ -849,8 +849,8 @@ q_T=\frac{T}{2A_m},\qquad \tau_T(s)=\frac{q_T}{t(s)},
 <div aria-describedby="fig-ch03-box-tradeoff-fallback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/box-girder.svg" style="width:90.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-tradeoff-fallback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.6: 固定外轮廓下箱梁空腔、面积与惯性矩比较
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-tradeoff-fallback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.6: 固定外轮廓下箱梁空腔、面积与惯性矩比较
 </figcaption>
 </figure>
 </div>
@@ -868,8 +868,8 @@ q_T=\frac{T}{2A_m},\qquad \tau_T(s)=\frac{q_T}{t(s)},
 <div aria-describedby="fig-ch03-wsdot-girder-family-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.7: WSDOT预应力混凝土I梁与宽翼缘梁截面族。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-wsdot-girder-family-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.7: WSDOT预应力混凝土I梁与宽翼缘梁截面族
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-wsdot-girder-family-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.7: WSDOT预应力混凝土I梁与宽翼缘梁截面族
 </figcaption>
 </figure>
 </div>
@@ -889,8 +889,8 @@ q_T=\frac{T}{2A_m},\qquad \tau_T(s)=\frac{q_T}{t(s)},
 <div aria-describedby="fig-ch03-diaphragm-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.8: 箱梁横隔构件的三种构造形式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-diaphragm-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.8: 箱梁横隔构件的三种构造形式
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-diaphragm-types-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.8: 箱梁横隔构件的三种构造形式
 </figcaption>
 </figure>
 </div>
@@ -905,11 +905,11 @@ q_T=\frac{T}{2A_m},\qquad \tau_T(s)=\frac{q_T}{t(s)},
 <section class="level4" data-number="4.4.0.1" id="永久作用的基本计算">
 <h4 class="anchored" data-anchor-id="永久作用的基本计算" data-number="4.4.0.1"><span class="header-section-number">4.4.0.1</span> 永久作用的基本计算</h4>
 <p>对于跨径 <span class="math inline">\(L\)</span>、均布永久作用集度 <span class="math inline">\(g\)</span> 的简支梁，距左支点 <span class="math inline">\(x\)</span> 处的剪力和弯矩为</p>
-<p><span class="math display">\[
-V_g(x)=\frac{gL}{2}-gx,
+<p><span class="math display">\[
+V_g(x)=\frac{gL}{2}-gx,
 \]</span></p>
-<p><span class="math display">\[
-M_g(x)=\frac{gLx}{2}-\frac{gx^2}{2}=\frac{gx(L-x)}{2}.
+<p><span class="math display">\[
+M_g(x)=\frac{gLx}{2}-\frac{gx^2}{2}=\frac{gx(L-x)}{2}.
 \]</span></p>
 <p>其跨中弯矩为 <span class="math inline">\(gL^2/8\)</span>，支点剪力绝对值为 <span class="math inline">\(gL/2\)</span>。这些结果不仅用于初步估算，也是有限元模型最直接的平衡校核。若模型中自重由软件自动生成，应核对材料重度、截面面积、重力方向和重复施加情况，并检查全部竖向支反力之和是否等于总竖向荷载。</p>
 <p><a class="quarto-xref" href="#fig-ch03-dead-load-freebody">图 <span>4.9</span></a> 展示均布永久作用下简支梁的截面内力图式。</p>
@@ -918,8 +918,8 @@ M_g(x)=\frac{gLx}{2}-\frac{gx^2}{2}=\frac{gx(L-x)}{2}.
 <div aria-describedby="fig-ch03-dead-load-freebody-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.9: 均布永久作用下简支梁的截面内力图式。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-dead-load-freebody-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.9: 均布永久作用下简支梁的截面内力图式
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-dead-load-freebody-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.9: 均布永久作用下简支梁的截面内力图式
 </figcaption>
 </figure>
 </div>
@@ -931,28 +931,28 @@ M_g(x)=\frac{gLx}{2}-\frac{gx^2}{2}=\frac{gx(L-x)}{2}.
 <h4 class="anchored" data-anchor-id="影响线" data-number="4.4.0.2"><span class="header-section-number">4.4.0.2</span> 影响线</h4>
 <p>影响线表示单位移动荷载沿规定路径移动时，某一指定响应量随荷载位置的变化。它回答的是“荷载放在哪里，该响应最不利”，而弯矩图或剪力图回答的是“在给定荷载位置下，各截面的响应是多少”。二者的自变量和用途不同。</p>
 <p>对跨径为 <span class="math inline">\(L\)</span> 的简支梁，在距左支点 <span class="math inline">\(a\)</span> 的截面求弯矩影响线。单位荷载位于 <span class="math inline">\(x\)</span> 时，影响线纵标为</p>
-<p><span class="math display">\[
-\eta_M(x)=
-\begin{cases}
-\dfrac{x(L-a)}{L}, &amp; 0\le x\le a,\\[6pt]
-\dfrac{a(L-x)}{L}, &amp; a\le x\le L.
-\end{cases}
+<p><span class="math display">\[
+\eta_M(x)=
+\begin{cases}
+\dfrac{x(L-a)}{L}, &amp; 0\le x\le a,\\[6pt]
+\dfrac{a(L-x)}{L}, &amp; a\le x\le L.
+\end{cases}
 \]</span></p>
 <p>在 <span class="math inline">\(x=a\)</span> 处纵标达到 <span class="math inline">\(a(L-a)/L\)</span>。若有若干集中荷载 <span class="math inline">\(P_k\)</span> 位于 <span class="math inline">\(x_k\)</span>，指定截面的效应为</p>
-<p><span class="math display">\[
-S_P=\sum_k P_k\eta(x_k).
+<p><span class="math display">\[
+S_P=\sum_k P_k\eta(x_k).
 \]</span></p>
 <p>对分布荷载 <span class="math inline">\(q(x)\)</span>，效应为</p>
-<p><span class="math display">\[
-S_q=\int_{\Omega_q}q(x)\eta(x)\,\mathrm{d}x.
+<p><span class="math display">\[
+S_q=\int_{\Omega_q}q(x)\eta(x)\,\mathrm{d}x.
 \]</span></p>
 <p>当 <span class="math inline">\(q\)</span> 为常量时，结果等于荷载集度与相应加载区段影响线面积的乘积。最不利加载的基本规则是：对所求最大正效应在影响线正区段加载，对最小负效应在负区段加载；实际车道荷载、车辆荷载及其纵横向布置必须按采用的现行规范执行。</p>
 </section>
 <section class="level4" data-number="4.4.0.3" id="车辆荷载组的移动与控制位置">
 <h4 class="anchored" data-anchor-id="车辆荷载组的移动与控制位置" data-number="4.4.0.3"><span class="header-section-number">4.4.0.3</span> 车辆荷载组的移动与控制位置</h4>
 <p>设车辆由 <span class="math inline">\(r\)</span> 个轴组成，第 <span class="math inline">\(k\)</span> 个轴重为 <span class="math inline">\(P_k\)</span>，其相对车辆参考点的纵向坐标为 <span class="math inline">\(d_k\)</span>。当参考点位于 <span class="math inline">\(x_0\)</span> 时，目标响应为</p>
-<p><span class="math display">\[
-S(x_0)=\sum_{k=1}^{r}P_k\eta(x_0+d_k),
+<p><span class="math display">\[
+S(x_0)=\sum_{k=1}^{r}P_k\eta(x_0+d_k),
 \]</span></p>
 <p>其中超出规定加载路径的车轴不计入求和；<span class="math inline">\(P_k\)</span> 的单位为力，弯矩影响线纵标的单位为长度，故求得的弯矩单位为力乘长度。若同时存在均布车道作用，则应按相应规范模型在允许区段积分，并按规定处理集中作用、均布作用、多车道折减和动态效应。教材交互不得自行设定这些规范参数，可提供“教学单位荷载”模式和“规范数据导入”模式，二者在界面上必须明确区分。</p>
 <p>移动荷载的数值遍历可按如下次序实施：</p>
@@ -974,8 +974,8 @@ S(x_0)=\sum_{k=1}^{r}P_k\eta(x_0+d_k),
 <div aria-describedby="fig-ch03-influence-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/influence.svg" style="width:88.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-influence-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.10: 简支梁固定响应的影响线静态基准图
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-influence-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.10: 简支梁固定响应的影响线静态基准图
 </figcaption>
 </figure>
 </div>
@@ -991,8 +991,8 @@ S(x_0)=\sum_{k=1}^{r}P_k\eta(x_0+d_k),
 <div aria-describedby="fig-ch03-envelope-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.11: 梁桥弯矩与剪力包络线示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-envelope-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.11: 梁桥弯矩与剪力包络线示意
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-envelope-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.11: 梁桥弯矩与剪力包络线示意
 </figcaption>
 </figure>
 </div>
@@ -1013,8 +1013,8 @@ S(x_0)=\sum_{k=1}^{r}P_k\eta(x_0+d_k),
 <section class="level4" data-number="4.5.0.1" id="空间问题的工程分解">
 <h4 class="anchored" data-anchor-id="空间问题的工程分解" data-number="4.5.0.1"><span class="header-section-number">4.5.0.1</span> 空间问题的工程分解</h4>
 <p>多主梁桥由桥面板、横隔构件和各片主梁共同组成空间结构。单位荷载位于桥面坐标 <span class="math inline">\((x,y)\)</span> 时，第 <span class="math inline">\(i\)</span> 片主梁指定截面的响应可写为二维影响面 <span class="math inline">\(\eta_i(x,y)\)</span>。传统实用计算常将其近似分解为纵向与横向两个问题：</p>
-<p><span class="math display">\[
-S_i=P\eta_i(x,y)\approx P\eta_{1}(x)\eta_{2,i}(y),
+<p><span class="math display">\[
+S_i=P\eta_i(x,y)\approx P\eta_{1}(x)\eta_{2,i}(y),
 \]</span></p>
 <p>其中 <span class="math inline">\(\eta_1(x)\)</span> 为单梁指定响应的纵向影响线，<span class="math inline">\(\eta_{2,i}(y)\)</span> 表示荷载沿横桥向移动时分配给第 <span class="math inline">\(i\)</span> 片梁的比例。该分解把“哪一片梁分到多少荷载”与“荷载沿纵向放在哪里最不利”分别处理，但前提是所采用的横向分布模型能够反映桥面结构的主要横向刚度特征。</p>
 <p><a class="quarto-xref" href="#fig-ch03-spatial-decomposition">图 <span>4.12</span></a> 展示空间受力向纵向与横向计算的分解。</p>
@@ -1023,8 +1023,8 @@ S_i=P\eta_i(x,y)\approx P\eta_{1}(x)\eta_{2,i}(y),
 <div aria-describedby="fig-ch03-spatial-decomposition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.12: 空间受力向纵向与横向计算的分解。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-spatial-decomposition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.12: 空间受力向纵向与横向计算的分解
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-spatial-decomposition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.12: 空间受力向纵向与横向计算的分解
 </figcaption>
 </figure>
 </div>
@@ -1035,16 +1035,16 @@ S_i=P\eta_i(x,y)\approx P\eta_{1}(x)\eta_{2,i}(y),
 <section class="level4" data-number="4.5.0.2" id="横向分布系数">
 <h4 class="anchored" data-anchor-id="横向分布系数" data-number="4.5.0.2"><span class="header-section-number">4.5.0.2</span> 横向分布系数</h4>
 <p>设一根车轴总重为 <span class="math inline">\(P_a\)</span>，两侧车轮的轮重分别为 <span class="math inline">\(P_{w1}\)</span>、<span class="math inline">\(P_{w2}\)</span>，横向位置为 <span class="math inline">\(y_1\)</span>、<span class="math inline">\(y_2\)</span>。分配至第 <span class="math inline">\(i\)</span> 片主梁的等效荷载为</p>
-<p><span class="math display">\[
-P_i=P_{w1}\eta_{2,i}(y_1)+P_{w2}\eta_{2,i}(y_2),
+<p><span class="math display">\[
+P_i=P_{w1}\eta_{2,i}(y_1)+P_{w2}\eta_{2,i}(y_2),
 \]</span></p>
 <p>对应横向分布系数定义为</p>
-<p><span class="math display">\[
-m_i=\frac{P_i}{P_a}.
+<p><span class="math display">\[
+m_i=\frac{P_i}{P_a}.
 \]</span></p>
 <p>若两个轮重均为 <span class="math inline">\(P_a/2\)</span>，则</p>
-<p><span class="math display">\[
-m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
+<p><span class="math display">\[
+m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 \]</span></p>
 <p>横向分布系数与桥面横向刚度、主梁间距、荷载横向位置、所求主梁以及荷载沿纵向的位置有关。对车辆荷载、人群荷载或不同车道布置，应分别按相应荷载图式确定，不应把一个系数无条件用于所有截面和作用类型。</p>
 <p>横向分布计算应区分三个对象。第一是<strong>轮重如何通过桥面板扩散至相邻腹板或主梁</strong>，属于局部板与横向结构问题；第二是<strong>同一横截面上各主梁承担的总体比例</strong>，可用横向影响线或梁格模型描述；第三是<strong>各梁获得荷载后沿纵向产生的弯矩和剪力</strong>，需与纵向影响线组合。若把三者压缩为一个固定系数，至少应说明该系数对应的纵向位置、目标效应、桥面连接状态和车辆横向布置。</p>
@@ -1057,8 +1057,8 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 <div aria-describedby="fig-ch03-transverse-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/transverse.svg" style="width:88.0%"/>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-transverse-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.13: 四片主梁刚性横梁教学模型的横向反力分配
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-transverse-baseline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.13: 四片主梁刚性横梁教学模型的横向反力分配
 </figcaption>
 </figure>
 </div>
@@ -1069,8 +1069,8 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 <div aria-describedby="fig-ch03-wheel-distribution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.14: 车轮荷载经横向分布后作用于指定主梁。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-wheel-distribution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.14: 车轮荷载经横向分布后作用于指定主梁
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-wheel-distribution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.14: 车轮荷载经横向分布后作用于指定主梁
 </figcaption>
 </figure>
 </div>
@@ -1088,8 +1088,8 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 <div aria-describedby="fig-ch03-box-lever-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.15: 无中间横隔梁装配式箱梁的横向影响线示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-lever-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.15: 无中间横隔梁装配式箱梁的横向影响线示意
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-box-lever-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.15: 无中间横隔梁装配式箱梁的横向影响线示意
 </figcaption>
 </figure>
 </div>
@@ -1100,19 +1100,19 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 <section class="level4" data-number="4.5.0.4" id="偏心压力法">
 <h4 class="anchored" data-anchor-id="偏心压力法" data-number="4.5.0.4"><span class="header-section-number">4.5.0.4</span> 偏心压力法</h4>
 <p>当横隔构件的刚度相对较大，可近似认为同一横截面保持直线，各主梁竖向刚度相等。单位荷载作用于距桥梁横向刚度中心 <span class="math inline">\(e\)</span> 处时，截面发生整体竖向位移和转动。若第 <span class="math inline">\(i\)</span> 片梁到刚度中心的距离为 <span class="math inline">\(y_i\)</span>，其分配比例可写为</p>
-<p><span class="math display">\[
-\eta_i(e)=\frac{1}{n}+\frac{e y_i}{\sum_{j=1}^{n}y_j^2}.
+<p><span class="math display">\[
+\eta_i(e)=\frac{1}{n}+\frac{e y_i}{\sum_{j=1}^{n}y_j^2}.
 \]</span></p>
 <p>第一项是中心加载引起的均匀分配，第二项是偏心矩引起的线性增减。该式满足</p>
-<p><span class="math display">\[
-\sum_{i=1}^{n}\eta_i=1,\qquad
-\sum_{i=1}^{n}\eta_i y_i=e,
+<p><span class="math display">\[
+\sum_{i=1}^{n}\eta_i=1,\qquad
+\sum_{i=1}^{n}\eta_i y_i=e,
 \]</span></p>
 <p>分别对应竖向合力平衡与关于横向刚度中心的力矩平衡。出现某片梁的计算纵标为负时，表示理想刚性横梁模型需要该位置提供向下约束或发生脱空趋势；是否允许负反力必须结合支座、连接和整体模型判断，不能简单取零而不重新建立平衡。</p>
 <p>当各片主梁竖向线刚度不同时，可用 <span class="math inline">\(k_i\)</span> 表示第 <span class="math inline">\(i\)</span> 片梁在所研究位置的等效竖向刚度，并把横向坐标原点取在刚度中心，使 <span class="math inline">\(\sum k_i y_i=0\)</span>。在同样的刚性横截面假定下，分配比例可推广为</p>
-<p><span class="math display">\[
-\eta_i(e)=\frac{k_i}{\sum_j k_j}
-+\frac{e k_i y_i}{\sum_j k_jy_j^2}.
+<p><span class="math display">\[
+\eta_i(e)=\frac{k_i}{\sum_j k_j}
++\frac{e k_i y_i}{\sum_j k_jy_j^2}.
 \]</span></p>
 <p>该式仍应满足 <span class="math inline">\(\sum\eta_i=1\)</span> 和 <span class="math inline">\(\sum\eta_i y_i=e\)</span>。这里的 <span class="math inline">\(k_i\)</span> 不是任意调整系数，而应由相同边界和相同纵向位置下的主梁变形特性确定。若主梁扭转、桥面板剪切变形或横隔构件柔度不可忽略，“横截面保持直线”的前提失效，应改用更合适的空间模型。</p>
 <p><a class="quarto-xref" href="#fig-ch03-eccentric-compression">图 <span>4.16</span></a> 展示偏心压力法的空间模型与主梁反力分配。</p>
@@ -1121,8 +1121,8 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 <div aria-describedby="fig-ch03-eccentric-compression-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.16: 偏心压力法的空间模型与主梁反力分配。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-eccentric-compression-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.16: 偏心压力法的空间模型与主梁反力分配
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-eccentric-compression-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.16: 偏心压力法的空间模型与主梁反力分配
 </figcaption>
 </figure>
 </div>
@@ -1203,8 +1203,8 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 <div aria-describedby="fig-ch03-tendon-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <span class="reference-image-note">参考图位：图 4.17: 不同施工体系下连续梁预应力筋布置示意。原图保留在内部资料库；公开预览暂不转载，待授权或依据参数独立重绘。</span>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-tendon-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.17: 不同施工体系下连续梁预应力筋布置示意
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch03-tendon-layout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.17: 不同施工体系下连续梁预应力筋布置示意
 </figcaption>
 </figure>
 </div>
@@ -1389,16 +1389,16 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 <h4 class="anchored" data-anchor-id="组合截面的形成阶段" data-number="4.7.2.1"><span class="header-section-number">4.7.2.1</span> 组合截面的形成阶段</h4>
 <p>组合梁至少应区分钢梁架设、桥面板浇筑、混凝土达到规定强度、拆除临时支撑以及后续恒载和车辆作用等阶段。若桥面湿混凝土由未支撑钢梁承担，则该部分恒载应按钢梁截面计算；形成组合后增加的铺装、护栏及可变作用可按组合截面计算。若采用临时支撑，作用路径又会改变。把全部恒载施加在最终组合截面上，通常会高估施工阶段刚度并错误分配钢梁与混凝土板的应力。</p>
 <p>在线弹性概念分析中，可选一种材料作为换算基准。若换算为钢材，弹性模量比可记为</p>
-<p><span class="math display">\[
-n=\frac{E_s}{E_c},
+<p><span class="math display">\[
+n=\frac{E_s}{E_c},
 \]</span></p>
 <p>其中 <span class="math inline">\(E_s\)</span>、<span class="math inline">\(E_c\)</span> 分别为钢材和混凝土在相应阶段采用的弹性模量，单位均为 <span class="math inline">\(\mathrm{Pa}\)</span>。混凝土板换算面积和惯性矩需按所采用方法处理；徐变、收缩、开裂和龄期会使长期等效刚度不再由一个固定 <span class="math inline">\(n\)</span> 完整描述。换算截面只是一种线弹性分析工具，不能取代材料各自的强度和正常使用验算。</p>
 </section>
 <section class="level4" data-number="4.7.2.2" id="界面纵向剪力与连接">
 <h4 class="anchored" data-anchor-id="界面纵向剪力与连接" data-number="4.7.2.2"><span class="header-section-number">4.7.2.2</span> 界面纵向剪力与连接</h4>
 <p>梁截面弯矩沿纵向变化时，钢梁与混凝土板之间需要通过连接件传递纵向剪力。在完全组合、线弹性且截面参数明确的简化条件下，单位长度界面剪力可用剪流关系表示为</p>
-<p><span class="math display">\[
-v_L=\frac{VQ}{I},
+<p><span class="math display">\[
+v_L=\frac{VQ}{I},
 \]</span></p>
 <p>其中 <span class="math inline">\(V\)</span> 为该截面竖向剪力，单位为 <span class="math inline">\(\mathrm N\)</span>；<span class="math inline">\(Q\)</span> 为界面一侧换算面积对组合截面中性轴的一次矩，单位为 <span class="math inline">\(\mathrm{m^3}\)</span>；<span class="math inline">\(I\)</span> 为换算截面惯性矩，单位为 <span class="math inline">\(\mathrm{m^4}\)</span>；<span class="math inline">\(v_L\)</span> 为单位梁长需要传递的纵向剪力，单位为 <span class="math inline">\(\mathrm{N/m}\)</span>。连接件布置还应考虑局部集中、疲劳、施工缝、板端和负弯矩区开裂，具体承载力与构造按现行组合结构规范确定。</p>
 <p>连续组合梁内支点负弯矩区，混凝土桥面板受拉后可能开裂，钢梁上翼缘、纵向钢筋和剪力连接共同参与受力。分析可按规范要求采用开裂截面、考虑纵向钢筋的有效截面或更精细非线性模型。支点区不能沿用跨中正弯矩区的未开裂组合刚度而不作说明。</p>
@@ -1421,8 +1421,8 @@ v_L=\frac{VQ}{I},
 <section class="level4" data-number="4.7.4.1" id="变形的分项记录">
 <h4 class="anchored" data-anchor-id="变形的分项记录" data-number="4.7.4.1"><span class="header-section-number">4.7.4.1</span> 变形的分项记录</h4>
 <p>为避免把不同阶段和不同方向的变形混在一个“总挠度”中，可在统一符号约定下写成</p>
-<p><span class="math display">\[
-w(x,t)=w_g+w_{sg}+w_p+w_q+w_T+w_s+w_{cr},
+<p><span class="math display">\[
+w(x,t)=w_g+w_{sg}+w_p+w_q+w_T+w_s+w_{cr},
 \]</span></p>
 <p>其中各项依次表示结构自重、附加恒载、预应力、可变作用、温度、支承变位以及收缩徐变等时变效应引起的竖向位移；<span class="math inline">\(w\)</span> 的单位为 <span class="math inline">\(\mathrm m\)</span> 或 <span class="math inline">\(\mathrm{mm}\)</span>。该式只表示结果分项，不意味着各项在任何情况下均可线性叠加。开裂、几何非线性、接触、施工体系转换或材料时变耦合显著时，应采用与问题相适应的分析方法。</p>
 <p>若规定向下位移为正，目标时点预计净下挠为 <span class="math inline">\(w_f(x)&gt;0\)</span>，则施工预拱可在概念上设置为向上的 <span class="math inline">\(w_f(x)\)</span>；若预应力上拱或温度使预计净变形方向改变，则应按代数符号处理。实际立模标高还要加上挂篮、支架和模板变形修正，并结合测量基准。预拱度的依据应是“从当前施工状态到目标状态的预计净变形”，不是任意采用跨中一个最大值后画抛物线。</p>
@@ -1495,13 +1495,13 @@ w(x,t)=w_g+w_{sg}+w_p+w_q+w_T+w_s+w_{cr},
 <section class="level3" data-number="4.7.6" id="极限状态与验算接口">
 <h3 class="anchored" data-anchor-id="极限状态与验算接口" data-number="4.7.6"><span class="header-section-number">4.7.6</span> 极限状态与验算接口</h3>
 <p>梁桥总体分析的输出通常包括内力、位移、支反力、应力结果或施工阶段状态；构件设计则把这些作用效应与相应抗力或限值比较。两类课程的接口可写为</p>
-<p><span class="math display">\[
-\text{总体模型}\longrightarrow S_d
-\longrightarrow
-\begin{cases}
-R_d &amp; \text{承载能力极限状态},\\
-C_{\mathrm{lim}} &amp; \text{正常使用极限状态}.
-\end{cases}
+<p><span class="math display">\[
+\text{总体模型}\longrightarrow S_d
+\longrightarrow
+\begin{cases}
+R_d &amp; \text{承载能力极限状态},\\
+C_{\mathrm{lim}} &amp; \text{正常使用极限状态}.
+\end{cases}
 \]</span></p>
 <p>其中 <span class="math inline">\(S_d\)</span> 为按规定组合得到的设计作用效应，<span class="math inline">\(R_d\)</span> 为构件设计抗力，<span class="math inline">\(C_{\mathrm{lim}}\)</span> 为应力、裂缝、变形或其他正常使用限值。承载能力极限状态关注结构或构件达到最大承载能力、失稳或不适于继续承载的状态；正常使用极限状态关注正常运营条件下的应力、裂缝、变形、振动和耐久性相关要求。具体组合、分项系数、材料强度设计值与限值必须查用项目适用的现行规范，本章不以教学示例数值替代条文。</p>
 <p>截至本稿编写时，公路桥涵作用、组合和总体原则应查用《公路桥涵设计通用规范》JTG D60—2015；混凝土及预应力混凝土构件设计应查用《公路钢筋混凝土及预应力混凝土桥涵设计规范》JTG 3362—2018及其现行配套规定。交通运输部2025年发布了JTG 3362—2018英文版，并明确中英文技术内容有异议时以中文版为准。教材定稿和再版时还应再次核对标准状态。</p>
@@ -1627,8 +1627,8 @@ C_{\mathrm{lim}} &amp; \text{正常使用极限状态}.
 <h4 class="anchored" data-anchor-id="截面参数比较" data-number="4.9.0.4"><span class="header-section-number">4.9.0.4</span> 截面参数比较</h4>
 <p>在外轮廓不变时设置三组截面：A组为较厚腹板与底板，B组适度减薄，C组继续扩大空腔。数字实验依次计算 <span class="math inline">\(A\)</span>、<span class="math inline">\(I\)</span>、<span class="math inline">\(W_t\)</span>、<span class="math inline">\(W_b\)</span> 和 <span class="math inline">\(I/A\)</span>。若从B组到C组的自重继续下降，而顶板横向净跨、腹板剪应力或构造空间已不满足要求，则C组不能因几何效率较高而被选用。概念设计的输出应是“候选方案及排除理由”，而不是单一指标排序。</p>
 <p>截面沿纵向至少设跨中标准截面、支点加高截面和两者之间的过渡截面。每一截面填写顶板、底板、外/内腹板、承托与空腔的分块表，计算面积、形心、<span class="math inline">\(I\)</span>、<span class="math inline">\(W_t\)</span>、<span class="math inline">\(W_b\)</span> 和薄壁教学近似下的 <span class="math inline">\(J_t\)</span>。单位长度结构自重取</p>
-<p><span class="math display">\[
-g_1(x)=\gamma_c A(x),
+<p><span class="math display">\[
+g_1(x)=\gamma_c A(x),
 \]</span></p>
 <p>其中 <span class="math inline">\(\gamma_c\)</span> 为采用的混凝土重度，单位为 <span class="math inline">\(\mathrm{N/m^3}\)</span>，<span class="math inline">\(A(x)\)</span> 的单位为 <span class="math inline">\(\mathrm{m^2}\)</span>，故 <span class="math inline">\(g_1\)</span> 的单位为 <span class="math inline">\(\mathrm{N/m}\)</span>。附加恒载 <span class="math inline">\(g_2(x)\)</span> 单独输入，不能通过增大材料重度与结构自重混合。</p>
 <p>对A、B、C三组方案建立比较矩阵：自重、弯曲刚度、顶板横向净跨、腹板平均剪应力指标、扭转常数、钢束可布置区、箱内检查净空、施工模板复杂度。任何一项触发构造或分析边界，即进入“需修改”而不是继续用加权总分掩盖。最终保留A或B等候选，应写明其相对优势、控制约束及仍待规范验算的项目。</p>
@@ -1789,11 +1789,11 @@ g_1(x)=\gamma_c A(x),
 <section class="level4" data-number="4.9.2.1" id="教学模型与坐标">
 <h4 class="anchored" data-anchor-id="教学模型与坐标" data-number="4.9.2.1"><span class="header-section-number">4.9.2.1</span> 教学模型与坐标</h4>
 <p>采用一跨计算跨径 <span class="math inline">\(L=24.0\ \mathrm m\)</span> 的直线简支多梁桥，考察跨中正弯矩。横向设置四片等刚度主梁，其相对桥面中心线坐标为</p>
-<p><span class="math display">\[
-y_1=-4.50\ \mathrm m,\quad
-y_2=-1.50\ \mathrm m,\quad
-y_3=+1.50\ \mathrm m,\quad
-y_4=+4.50\ \mathrm m.
+<p><span class="math display">\[
+y_1=-4.50\ \mathrm m,\quad
+y_2=-1.50\ \mathrm m,\quad
+y_3=+1.50\ \mathrm m,\quad
+y_4=+4.50\ \mathrm m.
 \]</span></p>
 <p>纵向作用采用教学轴组 <span class="math inline">\(P_1=120\ \mathrm{kN}\)</span>、<span class="math inline">\(P_2=180\ \mathrm{kN}\)</span>，轴距 <span class="math inline">\(d=4.0\ \mathrm m\)</span>；另有教学均布作用 <span class="math inline">\(q=8.0\ \mathrm{kN/m}\)</span>。横向合力作用线的教学偏心为 <span class="math inline">\(e=+2.00\ \mathrm m\)</span>。所有数值仅用于验证影响线积分、移动位置与横向平衡，不是任何规范车辆、车道或横向折减规定。</p>
 <p>本例先把纵向和横向分开：纵向影响线求全桥指定响应，横向刚性分配近似再把该响应分配给四片主梁。真实桥梁的车轮具有各自纵横坐标，纵横行为可能耦合；本例结束后必须用梁格或板壳模型复核。</p>
@@ -1801,89 +1801,89 @@ y_4=+4.50\ \mathrm m.
 <section class="level4" data-number="4.9.2.2" id="第一步跨中弯矩影响线">
 <h4 class="anchored" data-anchor-id="第一步跨中弯矩影响线" data-number="4.9.2.2"><span class="header-section-number">4.9.2.2</span> 第一步：跨中弯矩影响线</h4>
 <p>单位竖向移动力位于距左支点 <span class="math inline">\(x\)</span> 处时，跨中弯矩影响线为</p>
-<p><span class="math display">\[
-\eta_M(x)=
-\begin{cases}
-x/2, &amp; 0\le x\le L/2,\\
-(L-x)/2, &amp; L/2&lt;x\le L.
-\end{cases}
+<p><span class="math display">\[
+\eta_M(x)=
+\begin{cases}
+x/2, &amp; 0\le x\le L/2,\\
+(L-x)/2, &amp; L/2&lt;x\le L.
+\end{cases}
 \]</span></p>
 <p><span class="math inline">\(x\)</span> 与 <span class="math inline">\(\eta_M\)</span> 的单位均为 m；单位力乘以纵标后得到弯矩。影响线在支点为零、跨中峰值为</p>
-<p><span class="math display">\[
-\eta_{\max}=L/4=6.0\ \mathrm m,
+<p><span class="math display">\[
+\eta_{\max}=L/4=6.0\ \mathrm m,
 \]</span></p>
 <p>全跨均为正。这三个特征先由平衡方程核对，再与有限元单位移动荷载结果比较。</p>
 <p>影响线离散表至少保存 <code>path_x_m</code>、<code>eta_M_m</code>、截面编号、响应正号、单位力方向和模型版本。若使用有限元移动荷载模块，先选择 <span class="math inline">\(x=8.0\ \mathrm m\)</span> 的单个单位力，手算</p>
-<p><span class="math display">\[
-\eta_M(8)=4.0\ \mathrm m
+<p><span class="math display">\[
+\eta_M(8)=4.0\ \mathrm m
 \]</span></p>
 <p>并核对软件结果，然后才进行轴组搜索。</p>
 </section>
 <section class="level4" data-number="4.9.2.3" id="第二步轴组最不利位置">
 <h4 class="anchored" data-anchor-id="第二步轴组最不利位置" data-number="4.9.2.3"><span class="header-section-number">4.9.2.3</span> 第二步：轴组最不利位置</h4>
 <p>取较重轴 <span class="math inline">\(P_2\)</span> 的位置为 <span class="math inline">\(a\)</span>，较轻轴位于 <span class="math inline">\(a-d\)</span>。轴组响应为</p>
-<p><span class="math display">\[
-M_P(a)=P_2\eta_M(a)+P_1\eta_M(a-d).
+<p><span class="math display">\[
+M_P(a)=P_2\eta_M(a)+P_1\eta_M(a-d).
 \]</span></p>
 <p>在本例允许两轴均位于桥面路径的条件下，分段考察 <span class="math inline">\(a\)</span> 可知最优位置为较重轴位于跨中，即 <span class="math inline">\(a=12.0\ \mathrm m\)</span>，较轻轴位于 <span class="math inline">\(x=8.0\ \mathrm m\)</span>。因此</p>
-<p><span class="math display">\[
-M_P=180\times6.0+120\times4.0
-=1560.0\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_P=180\times6.0+120\times4.0
+=1560.0\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>程序输出不能只写“最不利弯矩1560”。应同时保存轴序、轴重、轴距、两轴坐标、两处影响线纵标和单轴贡献 <span class="math inline">\(1080\)</span>、<span class="math inline">\(480\ \mathrm{kN\cdot m}\)</span>。轴组方向反转时应重新搜索；若荷载模型规定轴组、间距或进入/离开桥面的条件，不得由优化器改变。</p>
 </section>
 <section class="level4" data-number="4.9.2.4" id="第三步均布作用积分">
 <h4 class="anchored" data-anchor-id="第三步均布作用积分" data-number="4.9.2.4"><span class="header-section-number">4.9.2.4</span> 第三步：均布作用积分</h4>
 <p>由于跨中正弯矩影响线全跨为正，本教学均布作用覆盖全跨。影响线面积为</p>
-<p><span class="math display">\[
-A_\eta=\frac12L\eta_{\max}
-=\frac12\times24.0\times6.0
-=72.0\ \mathrm{m^2}.
+<p><span class="math display">\[
+A_\eta=\frac12L\eta_{\max}
+=\frac12\times24.0\times6.0
+=72.0\ \mathrm{m^2}.
 \]</span></p>
 <p>均布作用效应为</p>
-<p><span class="math display">\[
-M_q=qA_\eta
-=8.0\times72.0
-=576.0\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_q=qA_\eta
+=8.0\times72.0
+=576.0\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>纵向总教学效应为</p>
-<p><span class="math display">\[
-M_{\mathrm{tot}}=M_P+M_q
-=2136.0\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_{\mathrm{tot}}=M_P+M_q
+=2136.0\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>本例未施加冲击、车道折减或组合系数。若项目规则在车辆作用层加入相应因子，应明确施加位置并避免在第3章组合层重复。均布作用是否与集中轴同时使用、覆盖何种影响区及取值，必须按项目采用规范确定。</p>
 </section>
 <section class="level4" data-number="4.9.2.5" id="第四步横向刚性分配近似">
 <h4 class="anchored" data-anchor-id="第四步横向刚性分配近似" data-number="4.9.2.5"><span class="header-section-number">4.9.2.5</span> 第四步：横向刚性分配近似</h4>
 <p>为演示横向合力和力矩平衡，假定横向结构足够刚、四片主梁纵向刚度相同、支承和几何对称，并忽略扭转柔度、桥面板局部和横隔离散。第 <span class="math inline">\(j\)</span> 片梁的分配系数写为</p>
-<p><span class="math display">\[
-m_j=\frac1n+\frac{e y_j}{\sum_{i=1}^{n}y_i^2},
-\qquad n=4.
+<p><span class="math display">\[
+m_j=\frac1n+\frac{e y_j}{\sum_{i=1}^{n}y_i^2},
+\qquad n=4.
 \]</span></p>
 <p><span class="math inline">\(e\)</span>、<span class="math inline">\(y_j\)</span> 单位均为 m，故 <span class="math inline">\(m_j\)</span> 无量纲。本例</p>
-<p><span class="math display">\[
-\sum y_i^2
-=(-4.5)^2+(-1.5)^2+(1.5)^2+(4.5)^2
-=45.0\ \mathrm{m^2}.
+<p><span class="math display">\[
+\sum y_i^2
+=(-4.5)^2+(-1.5)^2+(1.5)^2+(4.5)^2
+=45.0\ \mathrm{m^2}.
 \]</span></p>
 <p>得到</p>
-<p><span class="math display">\[
-[m_1,m_2,m_3,m_4]
-=[0.0500,\ 0.1833,\ 0.3167,\ 0.4500].
+<p><span class="math display">\[
+[m_1,m_2,m_3,m_4]
+=[0.0500,\ 0.1833,\ 0.3167,\ 0.4500].
 \]</span></p>
 <p>分配结果满足</p>
-<p><span class="math display">\[
-\sum_{j=1}^{4}m_j=1,
-\qquad
-\sum_{j=1}^{4}m_jy_j=e=2.00\ \mathrm m.
+<p><span class="math display">\[
+\sum_{j=1}^{4}m_j=1,
+\qquad
+\sum_{j=1}^{4}m_jy_j=e=2.00\ \mathrm m.
 \]</span></p>
 <p>第一式检查竖向合力，第二式检查关于桥面中心的横向力矩。若输入镜像偏心 <span class="math inline">\(e=-2.00\ \mathrm m\)</span>，系数应反序；这一镜像关系是对称桥模型的重要测试。</p>
 </section>
 <section class="level4" data-number="4.9.2.6" id="第五步各梁跨中弯矩">
 <h4 class="anchored" data-anchor-id="第五步各梁跨中弯矩" data-number="4.9.2.6"><span class="header-section-number">4.9.2.6</span> 第五步：各梁跨中弯矩</h4>
 <p>在本教学分离近似下，各梁跨中弯矩为</p>
-<p><span class="math display">\[
-M_j=m_jM_{\mathrm{tot}}.
+<p><span class="math display">\[
+M_j=m_jM_{\mathrm{tot}}.
 \]</span></p>
 <table class="caption-top table">
 <thead>
@@ -1927,10 +1927,10 @@ M_j=m_jM_{\mathrm{tot}}.
 <h4 class="anchored" data-anchor-id="第六步适用条件和空间模型复核" data-number="4.9.2.7"><span class="header-section-number">4.9.2.7</span> 第六步：适用条件和空间模型复核</h4>
 <p>刚性横向分配忽略了主梁扭转、桥面板柔度、横隔间距、斜交、曲率、支座位置和截面差异。梁格模型至少显式建立四片纵梁、横梁或等效桥面联系、真实支座横向坐标和车辆轮迹。板壳模型进一步表示桥面板、翼缘、腹板与局部轮载。</p>
 <p>空间模型复核采用同一教学轴组和横向合力位置，输出四片梁在跨中的截面弯矩及全桥合力。先检查镜像加载结果，再比较分配系数</p>
-<p><span class="math display">\[
-m_{j,\mathrm{FE}}=
-\frac{M_{j,\mathrm{FE}}}
-{\sum_iM_{i,\mathrm{FE}}}.
+<p><span class="math display">\[
+m_{j,\mathrm{FE}}=
+\frac{M_{j,\mathrm{FE}}}
+{\sum_iM_{i,\mathrm{FE}}}.
 \]</span></p>
 <p>若与简化方法有差异，依次检查横向构件刚度、主梁扭转、支点横向约束、荷载施加与结果积分，不以“取大值”代替原因分析。简化方法可以作为初算和校核，最终采用方式按桥型、跨径、横向构造和适用规范确定。</p>
 </section>
@@ -1981,10 +1981,10 @@ m_{j,\mathrm{FE}}=
 <section class="level4" data-number="4.9.4.3" id="线形与预拱度工作表">
 <h4 class="anchored" data-anchor-id="线形与预拱度工作表" data-number="4.9.4.3"><span class="header-section-number">4.9.4.3</span> 线形与预拱度工作表</h4>
 <p>线形控制按时间记录，不把全部挠度一次相加。对施工断面 <span class="math inline">\(i\)</span>，目标立模或制造高程可概括为</p>
-<p><span class="math display">\[
-z_{i,\mathrm{set}}=
-z_{i,\mathrm{target}}-
-\sum_k\Delta z_{i,k},
+<p><span class="math display">\[
+z_{i,\mathrm{set}}=
+z_{i,\mathrm{target}}-
+\sum_k\Delta z_{i,k},
 \]</span></p>
 <p>其中，<span class="math inline">\(z_{i,\mathrm{target}}\)</span> 为目标状态高程，单位为 m 或 mm；<span class="math inline">\(\Delta z_{i,k}\)</span> 为从设置时刻到目标时刻预计由结构重力、预应力、支架、收缩徐变、温度及后续施工产生的带符号变化。各项使用同一竖向正号和时间基准。</p>
 <p>预测值与实测值并列保存。实测偏差可能来自节段重量、材料刚度、预应力有效值、温度、支架和测量误差，更新时只调整有证据的参数，并用未参与更新的测点验证。已发生阶段的实测状态作为历史保留，不反向修改以得到“完美”计算曲线。</p>
@@ -1996,16 +1996,16 @@ z_{i,\mathrm{target}}-
 <h4 class="anchored" data-anchor-id="组合形成和截面换算" data-number="4.9.5.1"><span class="header-section-number">4.9.5.1</span> 组合形成和截面换算</h4>
 <p>钢—混凝土组合梁分析首先确定组合界面何时有效。若无临时支撑，钢梁自重和湿混凝土通常由未组合钢梁承担，桥面板达到规定条件后的附加作用才由组合截面承担；若采用临时支撑、预顶升或分段桥面板，初始应力和阶段需相应建模。</p>
 <p>在线弹性教学换算中，可选择参考材料并用模量比换算截面。若以钢材为参考，某阶段的模量比可写为</p>
-<p><span class="math display">\[
-n=\frac{E_s}{E_c},
+<p><span class="math display">\[
+n=\frac{E_s}{E_c},
 \]</span></p>
 <p><span class="math inline">\(E_s\)</span>、<span class="math inline">\(E_c\)</span> 使用相同单位，<span class="math inline">\(n\)</span> 无量纲。混凝土有效宽度、开裂、收缩徐变、温差与模量随时间变化均影响换算结果，具体处理按项目采用规范。不能以毛截面全宽混凝土板无条件参与所有阶段。</p>
 </section>
 <section class="level4" data-number="4.9.5.2" id="界面剪力和连接件">
 <h4 class="anchored" data-anchor-id="界面剪力和连接件" data-number="4.9.5.2"><span class="header-section-number">4.9.5.2</span> 界面剪力和连接件</h4>
 <p>组合截面弯矩沿桥变化时，钢梁与混凝土板之间需要纵向剪力传递。在线弹性梁理论的一个接口形式为</p>
-<p><span class="math display">\[
-q_L=\frac{VQ}{I},
+<p><span class="math display">\[
+q_L=\frac{VQ}{I},
 \]</span></p>
 <p>其中，<span class="math inline">\(q_L\)</span> 为界面单位长度剪力，单位 N/m 或 kN/m；<span class="math inline">\(V\)</span> 为截面剪力；<span class="math inline">\(Q\)</span> 为界面一侧换算面积对中性轴的一次矩，单位 m³；<span class="math inline">\(I\)</span> 为换算截面二次矩，单位 m⁴。公式用于说明界面剪流来源，实际连接件设计还需考虑连接刚度、间距、构造、疲劳、负弯矩区和采用规范。</p>
 <p>数值模型可采用完全组合、部分相互作用或显式连接件。完全组合梁单元不能输出单个剪力连接件的局部作用；显式非线性连接模型需要可靠本构和网格。模型层级由设计问题决定，并以界面总剪力、相对滑移和截面合力相互校核。</p>
@@ -2013,8 +2013,8 @@ q_L=\frac{VQ}{I},
 <section class="level4" data-number="4.9.5.3" id="疲劳作用效应">
 <h4 class="anchored" data-anchor-id="疲劳作用效应" data-number="4.9.5.3"><span class="header-section-number">4.9.5.3</span> 疲劳作用效应</h4>
 <p>疲劳关注重复作用引起的应力范围和循环，而不是仅检查一次最大设计应力。对某细节，教学上记录应力历程中的范围</p>
-<p><span class="math display">\[
-\Delta\sigma=\sigma_{\max}-\sigma_{\min},
+<p><span class="math display">\[
+\Delta\sigma=\sigma_{\max}-\sigma_{\min},
 \]</span></p>
 <p>或相应剪应力范围。<span class="math inline">\(\Delta\sigma\)</span> 的单位为 MPa。交通疲劳模型、动力处理、细节类别、循环计数和验算曲线必须按项目采用的现行规范确定，本章不提供通用类别或限值。</p>
 <p>疲劳效应提取的位置应对应真实细节和局部应力定义。总体梁单元名义应力适用于相应规范名义应力方法，不能直接代表焊趾、开孔或连接件热点。使用壳或实体模型时，需说明应力线性化、网格与热点外推方法，不能把单元角点奇异峰值当成应力范围。</p>
@@ -2328,12 +2328,12 @@ q_L=\frac{VQ}{I},
 <section class="level4" data-number="4.10.1.1" id="薄板基本关系">
 <h4 class="anchored" data-anchor-id="薄板基本关系" data-number="4.10.1.1"><span class="header-section-number">4.10.1.1</span> 薄板基本关系</h4>
 <p>均质各向同性薄板的弯曲刚度为</p>
-<p><span class="math display">\[
-D=\frac{Eh^3}{12(1-\nu^2)},
+<p><span class="math display">\[
+D=\frac{Eh^3}{12(1-\nu^2)},
 \]</span></p>
 <p><span class="math inline">\(D\)</span>单位N·m；<span class="math inline">\(E\)</span>单位Pa；<span class="math inline">\(h\)</span>为板厚，单位m；<span class="math inline">\(\nu\)</span>为泊松比，无量纲。小挠度Kirchhoff板在适用条件下满足</p>
-<p><span class="math display">\[
-D\nabla^4 w=p(x,y),
+<p><span class="math display">\[
+D\nabla^4 w=p(x,y),
 \]</span></p>
 <p><span class="math inline">\(w\)</span>为板中面挠度，单位m；<span class="math inline">\(p\)</span>为面荷载，单位N/m²；<span class="math inline">\(x,y\)</span>为板面坐标。该式说明板弯曲同时依赖两个方向曲率和扭曲，不应把所有桥面板都简化为互不联系的一维条带。</p>
 <p>厚板、短板或局部作用附近横向剪切可能显著，需要采用含横向剪切的板理论或适当壳单元。钢筋混凝土板的开裂、配筋方向和有效刚度又会改变线弹性板结果。板理论用于作用效应，承载和裂缝验算仍按相应材料规范。</p>
@@ -2374,13 +2374,13 @@ D\nabla^4 w=p(x,y),
 <section class="level4" data-number="4.10.2.1" id="影响线的量纲与定义">
 <h4 class="anchored" data-anchor-id="影响线的量纲与定义" data-number="4.10.2.1"><span class="header-section-number">4.10.2.1</span> 影响线的量纲与定义</h4>
 <p>设单位集中力位于纵向坐标<span class="math inline">\(\xi\)</span>，目标响应为<span class="math inline">\(E\)</span>，影响线记为<span class="math inline">\(\eta_E(\xi)\)</span>。若实际集中力为<span class="math inline">\(P\)</span>，线性体系中的贡献为</p>
-<p><span class="math display">\[
-E_P=P\eta_E(\xi).
+<p><span class="math display">\[
+E_P=P\eta_E(\xi).
 \]</span></p>
 <p>当<span class="math inline">\(E\)</span>为支反力时，<span class="math inline">\(\eta\)</span>无量纲；当<span class="math inline">\(E\)</span>为弯矩时，<span class="math inline">\(\eta\)</span>单位m；当<span class="math inline">\(E\)</span>为位移时，若单位力以N定义，<span class="math inline">\(\eta\)</span>单位m/N。图轴和导出数据必须保留量纲，不能把所有影响线纵标都称为“系数”。</p>
 <p>分布作用<span class="math inline">\(q(\xi)\)</span>对响应的贡献为</p>
-<p><span class="math display">\[
-E_q=\int_{\Omega_q}q(\xi)\eta_E(\xi)\,\mathrm d\xi,
+<p><span class="math display">\[
+E_q=\int_{\Omega_q}q(\xi)\eta_E(\xi)\,\mathrm d\xi,
 \]</span></p>
 <p><span class="math inline">\(q\)</span>单位N/m，积分区间<span class="math inline">\(\Omega_q\)</span>由允许加载范围和目标最大/最小决定。若<span class="math inline">\(q\)</span>为常数，贡献等于<span class="math inline">\(q\)</span>乘加载区影响线面积。正效应通常在正纵标区加载，负效应在负纵标区加载，但是否需要同时加载其他区域由采用的车辆/车道规则确定。</p>
 </section>
@@ -2392,8 +2392,8 @@ E_q=\int_{\Omega_q}q(\xi)\eta_E(\xi)\,\mathrm d\xi,
 <section class="level4" data-number="4.10.2.3" id="轴组与车道作用">
 <h4 class="anchored" data-anchor-id="轴组与车道作用" data-number="4.10.2.3"><span class="header-section-number">4.10.2.3</span> 轴组与车道作用</h4>
 <p>具有<span class="math inline">\(n\)</span>个轴的车辆组在参考位置<span class="math inline">\(s\)</span>时，目标响应为</p>
-<p><span class="math display">\[
-E_v(s)=\sum_{i=1}^{n}P_i\eta_E(s+d_i),
+<p><span class="math display">\[
+E_v(s)=\sum_{i=1}^{n}P_i\eta_E(s+d_i),
 \]</span></p>
 <p><span class="math inline">\(P_i\)</span>为第<span class="math inline">\(i\)</span>轴力，单位N；<span class="math inline">\(d_i\)</span>为轴相对参考点的纵向偏移，单位m；<span class="math inline">\(s\)</span>单位m。算法在允许范围内移动整组轴距，不得分别把各轴放到自身最大纵标。控制位置记录<span class="math inline">\(s\)</span>和全部轴坐标，便于重现。</p>
 <p>车道均布作用与集中轴组是否同时使用、加载长度、车道数、横向位置、折减或增大关系，必须从项目采用的现行规范规则取得。本章不内置数值。规则引擎输出的是候选加载状态，结构程序输出相应成组<span class="math inline">\(N,M,V,T\)</span>；两者分离便于规范更新和回归审计。</p>
@@ -2431,10 +2431,10 @@ E_v(s)=\sum_{i=1}^{n}P_i\eta_E(s+d_i),
 <section class="level4" data-number="4.10.3.1" id="杠杆法的物理基础">
 <h4 class="anchored" data-anchor-id="杠杆法的物理基础" data-number="4.10.3.1"><span class="header-section-number">4.10.3.1</span> 杠杆法的物理基础</h4>
 <p>当横向联系只在局部支承或端部起作用，或研究靠近支点的反力分配时，可把横向结构简化为支承在若干主梁上的横向梁。对落在相邻两条理想支承线之间的集中力<span class="math inline">\(P\)</span>，两反力由</p>
-<p><span class="math display">\[
-R_1+R_2=P,
-\qquad
-R_1a_1=R_2a_2
+<p><span class="math display">\[
+R_1+R_2=P,
+\qquad
+R_1a_1=R_2a_2
 \]</span></p>
 <p>或等价力矩方程求得，<span class="math inline">\(R_1,R_2,P\)</span>单位N，<span class="math inline">\(a_1,a_2\)</span>为相对距离，单位m。该关系保证局部合力和力矩，不包含远处主梁通过桥面板刚度共同承担的效应。</p>
 <p>使用杠杆法需画出横向自由体、支承线和轮载接触位置。护栏或轮载位于外梁之外的悬臂区时，外梁反力可能大于单个作用，另一相邻梁出现反向增量；这并不自动违反平衡，但需检查连接能否传递相应方向和简化边界是否成立。</p>
@@ -2442,8 +2442,8 @@ R_1a_1=R_2a_2
 <section class="level4" data-number="4.10.3.2" id="刚性横梁与偏心受压思路">
 <h4 class="anchored" data-anchor-id="刚性横梁与偏心受压思路" data-number="4.10.3.2"><span class="header-section-number">4.10.3.2</span> 刚性横梁与偏心受压思路</h4>
 <p>若横向构件足够刚，各主梁在同一截面处可近似具有共同竖向平移加绕纵向轴的刚体转动。第<span class="math inline">\(i\)</span>片梁的反力可分为合力平移项与偏心扭转项。对于等竖向刚度、梁位坐标<span class="math inline">\(a_i\)</span>以刚度中心为原点的教学模型，常写成</p>
-<p><span class="math display">\[
-R_i=P\left(\frac{1}{n}+\frac{ea_i}{\sum_{j=1}^{n}a_j^2}\right),
+<p><span class="math display">\[
+R_i=P\left(\frac{1}{n}+\frac{ea_i}{\sum_{j=1}^{n}a_j^2}\right),
 \]</span></p>
 <p><span class="math inline">\(n\)</span>为主梁数，<span class="math inline">\(e\)</span>为作用相对刚度中心偏心，<span class="math inline">\(e,a_i\)</span>单位m。该式满足<span class="math inline">\(\sum R_i=P\)</span>和<span class="math inline">\(\sum R_ia_i=Pe\)</span>。不等刚度时应按主梁竖向/扭转刚度建立相容方程，不能继续使用等刚度式。</p>
 <p>某些<span class="math inline">\(R_i\)</span>在大偏心下可能为负，数学上表示刚性横向体系需要该梁提供反向增量。实际桥面连接、支座和接触能否实现，必须另行检查。若负值来自假定过强的无限刚横梁，应升级模型，而不是简单截为零后保持其他反力不变。</p>
@@ -2485,13 +2485,13 @@ R_i=P\left(\frac{1}{n}+\frac{ea_i}{\sum_{j=1}^{n}a_j^2}\right),
 <h4 class="anchored" data-anchor-id="剪力滞的力学来源" data-number="4.10.4.1"><span class="header-section-number">4.10.4.1</span> 剪力滞的力学来源</h4>
 <p>初等梁理论假定同一截面内纵向应变按竖向坐标线性分布，并常把整个翼缘宽度视为共同参与。实际宽翼缘中的纵向力从腹板或主梁通过板内剪流向横向传递，靠近腹板和远离腹板处的纵向应变可能不同。应力沿横向的非均匀程度与翼缘宽度、板厚、跨径、截面变化、作用位置和支承条件有关。</p>
 <p>设翼缘横向坐标为<span class="math inline">\(y\)</span>，纵向正应力为<span class="math inline">\(\sigma_x(y)\)</span>。翼缘承担的纵向合力为</p>
-<p><span class="math display">\[
-N_f=\int_{b_f}\sigma_x(y)t_f(y)\,\mathrm dy,
+<p><span class="math display">\[
+N_f=\int_{b_f}\sigma_x(y)t_f(y)\,\mathrm dy,
 \]</span></p>
 <p><span class="math inline">\(N_f\)</span>单位N，<span class="math inline">\(b_f\)</span>为积分宽度，<span class="math inline">\(t_f\)</span>为翼缘厚度，单位m。若采用等效均匀应力<span class="math inline">\(\sigma_{\mathrm{ref}}\)</span>，可定义与相同合力对应的有效宽度</p>
-<p><span class="math display">\[
-b_{\mathrm{eff}}=
-\frac{N_f}{\sigma_{\mathrm{ref}}t_f}
+<p><span class="math display">\[
+b_{\mathrm{eff}}=
+\frac{N_f}{\sigma_{\mathrm{ref}}t_f}
 \]</span></p>
 <p>（对常厚板）。<span class="math inline">\(b_{\mathrm{eff}}\)</span>单位m，<span class="math inline">\(\sigma_{\mathrm{ref}}\)</span>如何选取必须与采用的设计方法一致。本章不给出规范有效宽度数值；设计时由相应材料桥梁规范确定。</p>
 <p>剪力滞可能随截面位置和作用类型改变。跨中正弯矩、支点负弯矩、集中作用附近和变截面过渡区的分布不同。一个跨中有效宽度不能无说明地用于全桥刚度、应力和疲劳。板壳模型输出应沿共同截面路径提取<span class="math inline">\(\sigma_x(y)\)</span>，再积分回收轴力与弯矩，防止仅比较云图峰值。</p>
@@ -2499,8 +2499,8 @@ b_{\mathrm{eff}}=
 <section class="level4" data-number="4.10.4.2" id="整体扭转与截面畸变">
 <h4 class="anchored" data-anchor-id="整体扭转与截面畸变" data-number="4.10.4.2"><span class="header-section-number">4.10.4.2</span> 整体扭转与截面畸变</h4>
 <p>整体扭转把截面近似视为保持形状并绕某轴旋转，扭矩与扭转率在自由扭转近似下满足</p>
-<p><span class="math display">\[
-T=GJ\frac{\mathrm d\varphi}{\mathrm ds},
+<p><span class="math display">\[
+T=GJ\frac{\mathrm d\varphi}{\mathrm ds},
 \]</span></p>
 <p><span class="math inline">\(T\)</span>单位N·m；<span class="math inline">\(G\)</span>单位Pa；<span class="math inline">\(J\)</span>单位m⁴；<span class="math inline">\(\varphi\)</span>单位rad；<span class="math inline">\(s\)</span>为梁轴坐标，单位m。闭口箱梁通过环形剪流传递扭矩，开口截面<span class="math inline">\(J\)</span>通常显著降低。施工孔洞、未闭合顶板或大开口会改变剪流路径。</p>
 <p>畸变是截面相对形状改变，例如矩形箱室趋向菱形。横隔板、横向框架和板件自身弯曲刚度抵抗畸变。若一维梁单元仅有<span class="math inline">\(EI\)</span>和<span class="math inline">\(GJ\)</span>，即使整体扭转角正确，也不能给出畸变应力。可采用畸变自由度的专门梁理论、梁格/框架模型或板壳模型。</p>
@@ -2543,8 +2543,8 @@ T=GJ\frac{\mathrm d\varphi}{\mathrm ds},
 <section class="level4" data-number="4.10.5.1" id="三维束形和等效作用">
 <h4 class="anchored" data-anchor-id="三维束形和等效作用" data-number="4.10.5.1"><span class="header-section-number">4.10.5.1</span> 三维束形和等效作用</h4>
 <p>设钢束中心线为<span class="math inline">\(\mathbf r_p(s)\)</span>，切向单位向量为<span class="math inline">\(\mathbf t\)</span>，钢束力为<span class="math inline">\(P(s,t)\)</span>。微段平衡表明钢束方向变化会向混凝土传递转向作用。平面小斜率、<span class="math inline">\(P\)</span>近似常数时，可写成</p>
-<p><span class="math display">\[
-q_p(x)=P\frac{\mathrm d^2e}{\mathrm dx^2},
+<p><span class="math display">\[
+q_p(x)=P\frac{\mathrm d^2e}{\mathrm dx^2},
 \]</span></p>
 <p><span class="math inline">\(q_p\)</span>单位N/m，<span class="math inline">\(P\)</span>单位N，<span class="math inline">\(e,x\)</span>单位m；方向由偏心正号和钢束对梁的作用约定确定。三维束形应以曲率向量计算转向力，不能把水平与竖向曲率分别处理后忽略共同切向。</p>
 <p>锚端力、沿程转向力和局部偏转器共同满足钢束自由体平衡。使用等效作用时全部纳入；使用显式钢束单元时不再重复施加。每个阶段输出钢束对梁的总合力和关于指定参考点的力矩，与截面<span class="math inline">\(P\)</span>和<span class="math inline">\(Pe\)</span>核对。</p>
@@ -2562,10 +2562,10 @@ q_p(x)=P\frac{\mathrm d^2e}{\mathrm dx^2},
 <section class="level4" data-number="4.10.5.4" id="长期损失与时间依赖">
 <h4 class="anchored" data-anchor-id="长期损失与时间依赖" data-number="4.10.5.4"><span class="header-section-number">4.10.5.4</span> 长期损失与时间依赖</h4>
 <p>混凝土收缩产生与外力无关的自由应变，徐变与持续应力历史相关，钢筋松弛与钢筋应力和时间相关。在线性黏弹概念模型中，时刻<span class="math inline">\(t\)</span>的徐变应变可表示为历史应力增量的叠加：</p>
-<p><span class="math display">\[
-\varepsilon_{cr}(t)=
-\sum_j\frac{\Delta\sigma_c(t_j)}{E_c(t_j)}
-\phi(t,t_j),
+<p><span class="math display">\[
+\varepsilon_{cr}(t)=
+\sum_j\frac{\Delta\sigma_c(t_j)}{E_c(t_j)}
+\phi(t,t_j),
 \]</span></p>
 <p><span class="math inline">\(\varepsilon_{cr}\)</span>无量纲；<span class="math inline">\(\Delta\sigma_c\)</span>单位Pa；<span class="math inline">\(E_c\)</span>单位Pa；<span class="math inline">\(\phi(t,t_j)\)</span>为无量纲徐变系数。该离散表达只说明路径依赖，具体模型、龄期、湿度、构件尺寸和加载时间按采用规范或经核验模型确定。</p>
 <p>组合截面形成、桥面板分段浇筑和多批张拉使应力历史不同。只用成桥最终应力乘一个徐变系数，不能恢复各阶段应力增量。时间分析应记录构件激活、材料龄期、环境、钢束状态和每个作用的施加时刻。</p>
@@ -2573,9 +2573,9 @@ q_p(x)=P\frac{\mathrm d^2e}{\mathrm dx^2},
 <section class="level4" data-number="4.10.5.5" id="主次内力和重分布">
 <h4 class="anchored" data-anchor-id="主次内力和重分布" data-number="4.10.5.5"><span class="header-section-number">4.10.5.5</span> 主次内力和重分布</h4>
 <p>钢束相对截面形心的偏心形成主效应；超静定约束为满足相容产生次反力和次内力。可写为</p>
-<p><span class="math display">\[
-\mathbf E_p=\mathbf E_{p,\mathrm{primary}}
-+\mathbf E_{p,\mathrm{secondary}},
+<p><span class="math display">\[
+\mathbf E_p=\mathbf E_{p,\mathrm{primary}}
++\mathbf E_{p,\mathrm{secondary}},
 \]</span></p>
 <p>各向量包含相同截面和状态下的<span class="math inline">\(N,M,V,T\)</span>。分解方法需要说明，设计使用的总效应与等效作用分析一致。不得把<span class="math inline">\(Pe\)</span>主弯矩与等效作用得到的总弯矩再次相加。</p>
 <p>收缩徐变可引起连续梁、刚构和组合截面的内力重分布。支座沉降、合龙温度与墩柱刚度也影响长期次内力。长期结果应以时间曲线或若干控制时刻报告，而不是只给一个“最终”值却无计算龄期。</p>
@@ -2583,10 +2583,10 @@ q_p(x)=P\frac{\mathrm d^2e}{\mathrm dx^2},
 <section class="level4" data-number="4.10.5.6" id="截面应力与开裂接口">
 <h4 class="anchored" data-anchor-id="截面应力与开裂接口" data-number="4.10.5.6"><span class="header-section-number">4.10.5.6</span> 截面应力与开裂接口</h4>
 <p>线弹性未开裂截面可用</p>
-<p><span class="math display">\[
-\sigma(y,t)=-\frac{P(t)}{A(t)}
--\frac{M_p(t)y}{I(t)}
-+\sigma_G(y,t)+\sigma_Q(y,t)
+<p><span class="math display">\[
+\sigma(y,t)=-\frac{P(t)}{A(t)}
+-\frac{M_p(t)y}{I(t)}
++\sigma_G(y,t)+\sigma_Q(y,t)
 \]</span></p>
 <p>组织应力贡献。<span class="math inline">\(P\)</span>单位N，<span class="math inline">\(A\)</span>单位m²，<span class="math inline">\(M_p\)</span>单位N·m，<span class="math inline">\(y\)</span>单位m，<span class="math inline">\(I\)</span>单位m⁴，应力单位Pa。各项必须对应同一阶段截面和坐标。开裂后需要采用相应截面分析和材料关系，不能继续用毛截面线性应力作为最终结论。</p>
 <p>正常使用验算需要区分施工、传力、运营和长期状态；承载能力验算需把预应力钢筋和普通钢筋纳入截面抗力，而不仅作为外作用。具体抗力、裂缝和应力限值属于结构设计原理与材料桥梁规范接口。</p>
@@ -2659,17 +2659,17 @@ q_p(x)=P\frac{\mathrm d^2e}{\mathrm dx^2},
 <p>在线弹性分析中，可选参考材料并以模量比换算截面。例如以钢为参考时，混凝土换算系数可写为<span class="math inline">\(n_c=E_c/E_s\)</span>；以混凝土为参考则采用相反比值。两种表示在假定一致时应得到相同物理应变与应力，但不能混用面积和模量。</p>
 <p><span class="math inline">\(E_c\)</span>随龄期、持续时间和开裂状态变化。短期、长期和负弯矩区可能需要不同截面。截面卡记录参考材料、模量、有效宽度、开裂、钢筋、板龄期和阶段。钢梁自重作用于钢截面，湿混凝土作用于当时钢梁及临时体系，形成组合后的铺装和车辆才作用于组合截面。</p>
 <p>应力累加按阶段进行。设第<span class="math inline">\(j\)</span>阶段在材料<span class="math inline">\(i\)</span>中产生应力增量<span class="math inline">\(\Delta\sigma_i^{(j)}\)</span>，目标时刻的线性累积可写为</p>
-<p><span class="math display">\[
-\sigma_i(t)=\sigma_{i,0}
-+\sum_{j\le t}\Delta\sigma_i^{(j)}(t),
+<p><span class="math display">\[
+\sigma_i(t)=\sigma_{i,0}
++\sum_{j\le t}\Delta\sigma_i^{(j)}(t),
 \]</span></p>
 <p>单位Pa。时间相关项需按相应徐变收缩模型演化。不能把全部弯矩一次作用于最终换算截面后，再按材料模量比分配，以此替代阶段应力。</p>
 </section>
 <section class="level4" data-number="4.10.7.2" id="界面纵向剪力">
 <h4 class="anchored" data-anchor-id="界面纵向剪力" data-number="4.10.7.2"><span class="header-section-number">4.10.7.2</span> 界面纵向剪力</h4>
 <p>完全组合的线弹性梁中，界面单位长度剪力可由</p>
-<p><span class="math display">\[
-q_L=\frac{VQ}{I}
+<p><span class="math display">\[
+q_L=\frac{VQ}{I}
 \]</span></p>
 <p>理解。<span class="math inline">\(q_L\)</span>单位N/m；<span class="math inline">\(V\)</span>单位N；<span class="math inline">\(Q\)</span>为界面一侧换算面积对整体中性轴的一次矩，单位m³；<span class="math inline">\(I\)</span>为换算截面二次矩，单位m⁴。该式给出沿梁连续剪流，连接件把一定长度内的剪流离散传递。</p>
 <p><span class="math inline">\(q_L\)</span>随剪力和截面变化，在集中作用、截面突变和支点附近还需考虑局部传力。连接件设计把界面剪流、单个连接抗力、间距、疲劳和构造按采用规范处理；本章不提供通用间距或抗力。若连接件柔度显著，界面滑移使应变不再完全相容，需要部分相互作用模型。</p>
@@ -2677,8 +2677,8 @@ q_L=\frac{VQ}{I}
 <section class="level4" data-number="4.10.7.3" id="部分相互作用">
 <h4 class="anchored" data-anchor-id="部分相互作用" data-number="4.10.7.3"><span class="header-section-number">4.10.7.3</span> 部分相互作用</h4>
 <p>可用界面相对滑移<span class="math inline">\(s(x)=u_s(x)-u_c(x)\)</span>描述钢梁与混凝土板纵向位移差，<span class="math inline">\(s\)</span>单位m。连续连接本构可概念性写为</p>
-<p><span class="math display">\[
-q_L=k_s s,
+<p><span class="math display">\[
+q_L=k_s s,
 \]</span></p>
 <p><span class="math inline">\(k_s\)</span>为单位长度界面刚度，单位N/m²，使<span class="math inline">\(q_L\)</span>单位N/m。实际连接可能非线性、离散且受循环退化，该式只用于说明完全组合与无组合之间的连续过渡。模型参数需由连接试验、规范或经核验资料获得。</p>
 <p>部分相互作用模型应检查钢、混凝土轴力之和、截面总弯矩、界面剪流积分和端部边界。若端部无外部纵向界面力，剪流积分与材料轴力变化相对应。把连接刚度设得极大应趋近完全组合，设为很小应趋近独立构件；极限测试可发现单位错误。</p>
@@ -2691,12 +2691,12 @@ q_L=k_s s,
 <section class="level4" data-number="4.10.7.5" id="疲劳历程与循环计数">
 <h4 class="anchored" data-anchor-id="疲劳历程与循环计数" data-number="4.10.7.5"><span class="header-section-number">4.10.7.5</span> 疲劳历程与循环计数</h4>
 <p>疲劳需要目标细节处的应力历程。名义应力范围为</p>
-<p><span class="math display">\[
-\Delta\sigma=\sigma_{\max}-\sigma_{\min},
+<p><span class="math display">\[
+\Delta\sigma=\sigma_{\max}-\sigma_{\min},
 \]</span></p>
 <p>单位MPa。变幅历程可通过规定方法转换为若干应力范围与循环数。Palmgren—Miner线性累积的概念式为</p>
-<p><span class="math display">\[
-D_f=\sum_i\frac{n_i}{N_i},
+<p><span class="math display">\[
+D_f=\sum_i\frac{n_i}{N_i},
 \]</span></p>
 <p><span class="math inline">\(n_i\)</span>为实际循环数，<span class="math inline">\(N_i\)</span>为相应应力范围下的允许或预测循环数，二者均无量纲计数，<span class="math inline">\(D_f\)</span>无量纲。是否采用该方法、疲劳曲线、截止限和判定按现行规范；本章不设允许<span class="math inline">\(D_f\)</span>。</p>
 <p>细节应力定义与模型一致。总体梁名义应力不能直接代表焊趾热点；壳模型热点方法需规定外推路径、网格和板厚；实体模型峰值可能含奇异性。剪力连接件、横隔端部、加劲肋、拼接和正交异性板细节分别建立提取对象。</p>
@@ -2727,11 +2727,11 @@ D_f=\sum_i\frac{n_i}{N_i},
 <section class="level4" data-number="4.10.8.2" id="成组作用效应">
 <h4 class="anchored" data-anchor-id="成组作用效应" data-number="4.10.8.2"><span class="header-section-number">4.10.8.2</span> 成组作用效应</h4>
 <p>控制状态输出向量</p>
-<p><span class="math display">\[
-\mathbf E_d=
-\begin{bmatrix}
-N&amp;M_y&amp;M_z&amp;V_y&amp;V_z&amp;T
-\end{bmatrix}^{\mathsf T},
+<p><span class="math display">\[
+\mathbf E_d=
+\begin{bmatrix}
+N&amp;M_y&amp;M_z&amp;V_y&amp;V_z&amp;T
+\end{bmatrix}^{\mathsf T},
 \]</span></p>
 <p><span class="math inline">\(N,V_y,V_z\)</span>单位N，<span class="math inline">\(M_y,M_z,T\)</span>单位N·m。向量附设计状况、组合编号、车辆位置、横向位置、施工阶段和模型版本。同一行分量共同进入截面或连接验算。</p>
 <p>包络表可以分别按某个主响应排序，但每个包络点保留整行伴随分量。若<span class="math inline">\(M_y\)</span>最大与<span class="math inline">\(V_z\)</span>最大来自不同状态，形成两行验算，而不是拼为一行。截面设计程序若只接收标量，需明确其验算不考虑相互作用或另建相互作用接口。</p>
@@ -2740,9 +2740,9 @@ N&amp;M_y&amp;M_z&amp;V_y&amp;V_z&amp;T
 <h4 class="anchored" data-anchor-id="从内力到应力和抗力" data-number="4.10.8.3"><span class="header-section-number">4.10.8.3</span> 从内力到应力和抗力</h4>
 <p>在线弹性初步检查中，轴力和双向弯矩可通过截面几何恢复正应力，剪力和扭矩通过剪流/截面理论恢复。该步骤用于核查方向和数量级。钢筋混凝土与预应力混凝土的开裂、非线性应变分布、钢筋/钢束和材料强度，钢构件的屈服、局部稳定及组合截面的材料协同，均由相应截面模型和规范处理。</p>
 <p>极限状态函数可概念性写为</p>
-<p><span class="math display">\[
-g(\mathbf R,\mathbf E)=
-R(\mathbf R)-S(\mathbf E),
+<p><span class="math display">\[
+g(\mathbf R,\mathbf E)=
+R(\mathbf R)-S(\mathbf E),
 \]</span></p>
 <p><span class="math inline">\(\mathbf R\)</span>包含材料、几何和抗力模型参数，<span class="math inline">\(\mathbf E\)</span>为作用效应；两侧单位必须一致。工程分项系数表达式由现行规范给定，本章不从教学可靠度或经验自行生成。</p>
 </section>
@@ -2774,55 +2774,55 @@ R(\mathbf R)-S(\mathbf E),
 <section class="level4" data-number="4.10.9.2" id="截面和板刚度">
 <h4 class="anchored" data-anchor-id="截面和板刚度" data-number="4.10.9.2"><span class="header-section-number">4.10.9.2</span> 截面和板刚度</h4>
 <p>板带截面二次矩为</p>
-<p><span class="math display">\[
-I_b=\frac{bh^3}{12}
-=\frac{1.00\times0.220^3}{12}
-=8.8733\times10^{-4}\ \mathrm{m^4}.
+<p><span class="math display">\[
+I_b=\frac{bh^3}{12}
+=\frac{1.00\times0.220^3}{12}
+=8.8733\times10^{-4}\ \mathrm{m^4}.
 \]</span></p>
 <p>梁式板带弯曲刚度为</p>
-<p><span class="math display">\[
-EI_b=30.1693\ \mathrm{MN\cdot m^2}.
+<p><span class="math display">\[
+EI_b=30.1693\ \mathrm{MN\cdot m^2}.
 \]</span></p>
 <p>若建立二维各向同性薄板，其单位宽度板弯曲刚度为</p>
-<p><span class="math display">\[
-D=\frac{Eh^3}{12(1-\nu^2)}
-=31.4264\ \mathrm{MN\cdot m}.
+<p><span class="math display">\[
+D=\frac{Eh^3}{12(1-\nu^2)}
+=31.4264\ \mathrm{MN\cdot m}.
 \]</span></p>
 <p><span class="math inline">\(EI_b\)</span>与<span class="math inline">\(D\)</span>量纲不同：前者用于宽度<span class="math inline">\(b\)</span>的梁条，单位N·m²；后者为板的弯曲刚度，单位N·m。二者不能作为同一数值直接比较。</p>
 </section>
 <section class="level4" data-number="4.10.9.3" id="反力和弯矩">
 <h4 class="anchored" data-anchor-id="反力和弯矩" data-number="4.10.9.3"><span class="header-section-number">4.10.9.3</span> 反力和弯矩</h4>
 <p>集中力和均布作用均对称，两个支承反力分别为</p>
-<p><span class="math display">\[
-R_A=R_B=\frac{P+ql}{2}
-=\frac{120+5.50\times2.40}{2}
-=66.60\ \mathrm{kN}.
+<p><span class="math display">\[
+R_A=R_B=\frac{P+ql}{2}
+=\frac{120+5.50\times2.40}{2}
+=66.60\ \mathrm{kN}.
 \]</span></p>
 <p>跨中弯矩由两项组成：</p>
-<p><span class="math display">\[
-M_P=\frac{Pl}{4}=72.00\ \mathrm{kN\cdot m},
+<p><span class="math display">\[
+M_P=\frac{Pl}{4}=72.00\ \mathrm{kN\cdot m},
 \]</span></p>
-<p><span class="math display">\[
-M_q=\frac{ql^2}{8}=3.96\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_q=\frac{ql^2}{8}=3.96\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>总教学弯矩为<span class="math inline">\(M=75.96\ \mathrm{kN\cdot m}\)</span>，对1 m宽板带也可写成<span class="math inline">\(75.96\ \mathrm{kN\cdot m/m}\)</span>。采用后一单位时必须说明这是单位宽度结果，不能与整块板的总弯矩混用。</p>
 </section>
 <section class="level4" data-number="4.10.9.4" id="弹性挠度">
 <h4 class="anchored" data-anchor-id="弹性挠度" data-number="4.10.9.4"><span class="header-section-number">4.10.9.4</span> 弹性挠度</h4>
 <p>简支梁跨中集中力与全跨均布作用的跨中挠度分别为</p>
-<p><span class="math display">\[
-\delta_P=\frac{Pl^3}{48EI_b}
-=1.1455\ \mathrm{mm},
+<p><span class="math display">\[
+\delta_P=\frac{Pl^3}{48EI_b}
+=1.1455\ \mathrm{mm},
 \]</span></p>
-<p><span class="math display">\[
-\delta_q=\frac{5ql^4}{384EI_b}
-=0.0788\ \mathrm{mm}.
+<p><span class="math display">\[
+\delta_q=\frac{5ql^4}{384EI_b}
+=0.0788\ \mathrm{mm}.
 \]</span></p>
 <p>线性叠加得到<span class="math inline">\(\delta=1.2243\ \mathrm{mm}\)</span>。该值基于未开裂、简支、1 m板带和点作用假定，不用于正常使用限值比较。实际铺装扩散、板的二维作用、连续边界和开裂刚度都会改变结果。</p>
 <p>按毛截面线弹性关系，板带边缘应力数量级为</p>
-<p><span class="math display">\[
-|\sigma|=\frac{M(h/2)}{I_b}
-=9.42\ \mathrm{MPa}.
+<p><span class="math display">\[
+|\sigma|=\frac{M(h/2)}{I_b}
+=9.42\ \mathrm{MPa}.
 \]</span></p>
 <p>该应力只用于验证单位和弯曲方向。钢筋混凝土桥面板不能据此用未开裂弹性边缘应力完成承载或裂缝验算，需进入结构设计原理和材料规范的板截面模型。</p>
 </section>
@@ -2850,14 +2850,14 @@ M_q=\frac{ql^2}{8}=3.96\ \mathrm{kN\cdot m}.
 <section class="level4" data-number="4.10.10.1" id="结构作用与边界">
 <h4 class="anchored" data-anchor-id="结构作用与边界" data-number="4.10.10.1"><span class="header-section-number">4.10.10.1</span> 结构、作用与边界</h4>
 <p>取一跨<span class="math inline">\(L=30.0\ \mathrm m\)</span>的直线简支五梁桥，考察跨中正弯矩。五条主梁相对桥面刚度中心的横坐标为</p>
-<p><span class="math display">\[
-[a_1,a_2,a_3,a_4,a_5]
-=[-4.0,-2.0,0,2.0,4.0]\ \mathrm m.
+<p><span class="math display">\[
+[a_1,a_2,a_3,a_4,a_5]
+=[-4.0,-2.0,0,2.0,4.0]\ \mathrm m.
 \]</span></p>
 <p>五梁竖向等效刚度比为</p>
-<p><span class="math display">\[
-[k_1,k_2,k_3,k_4,k_5]/k_0
-=[1.0,1.2,1.4,1.2,1.0],
+<p><span class="math display">\[
+[k_1,k_2,k_3,k_4,k_5]/k_0
+=[1.0,1.2,1.4,1.2,1.0],
 \]</span></p>
 <p><span class="math inline">\(k_0\)</span>为任意共同刚度基准，单位N/m。教学作用由跨中集中力<span class="math inline">\(P=200\ \mathrm{kN}\)</span>和全跨均布线荷载<span class="math inline">\(q=10.0\ \mathrm{kN/m}\)</span>组成，横向合力偏心<span class="math inline">\(e=+1.50\ \mathrm m\)</span>。全部作用为算法教学值，不对应规范车辆或车道。</p>
 <p>本例纵向采用全桥等效简支梁，横向采用刚性横梁加不等竖向弹簧。它比现有四片等刚度算例增加刚度权重，但仍忽略主梁扭转、横梁有限刚度、轮迹离散和局部板效应。</p>
@@ -2865,20 +2865,20 @@ M_q=\frac{ql^2}{8}=3.96\ \mathrm{kN\cdot m}.
 <section class="level4" data-number="4.10.10.2" id="纵向跨中影响线效应">
 <h4 class="anchored" data-anchor-id="纵向跨中影响线效应" data-number="4.10.10.2"><span class="header-section-number">4.10.10.2</span> 纵向跨中影响线效应</h4>
 <p>简支梁跨中弯矩影响线峰值为<span class="math inline">\(L/4=7.50\ \mathrm m\)</span>，全跨面积为<span class="math inline">\(L^2/8=112.50\ \mathrm{m^2}\)</span>。集中力位于跨中时贡献</p>
-<p><span class="math display">\[
-M_P=P\frac{L}{4}
-=200\times7.50
-=1500\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_P=P\frac{L}{4}
+=200\times7.50
+=1500\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>均布教学作用贡献</p>
-<p><span class="math display">\[
-M_q=q\frac{L^2}{8}
-=10.0\times112.50
-=1125\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_q=q\frac{L^2}{8}
+=10.0\times112.50
+=1125\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>全桥跨中教学弯矩为</p>
-<p><span class="math display">\[
-M_{\mathrm{tot}}=2625\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_{\mathrm{tot}}=2625\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>这一步只获得全桥目标响应，尚未确定每片梁。集中力和均布作用被假定具有同一横向合力线；若实际二者横向位置不同，应分别分配后相加。</p>
 </section>
@@ -2891,57 +2891,57 @@ M_{\mathrm{tot}}=2625\ \mathrm{kN\cdot m}.
 <span>一起下沉</span><span>叠加横向转动</span><span>各梁位移与分担</span>
 </div>
 <details>
-<summary>
-这组符号分别指什么？
+<summary>
+这组符号分别指什么？
 </summary>
-<p>
-aᵢ 是第 i 根梁到所选横向原点的距离，v₀ 是该原点的竖向位移，θ 是小转角，kᵢ 是等效竖向刚度。Pₜ 是总力，e 是作用线偏心。矩阵第一行守合力，第二行守合矩。刚度中心与总位移为零的位置不同。
+<p>
+aᵢ 是第 i 根梁到所选横向原点的距离，v₀ 是该原点的竖向位移，θ 是小转角，kᵢ 是等效竖向刚度。Pₜ 是总力，e 是作用线偏心。矩阵第一行守合力，第二行守合矩。刚度中心与总位移为零的位置不同。
 </p>
 </details>
 </div>
 <!-- FORMULA-SCAFFOLD ch03 END -->
 <p>刚性横梁在目标截面处发生平移<span class="math inline">\(v_0\)</span>和小转角<span class="math inline">\(\theta\)</span>，第<span class="math inline">\(i\)</span>梁位移为</p>
-<p><span class="math display">\[
-v_i=v_0+\theta a_i,
+<p><span class="math display">\[
+v_i=v_0+\theta a_i,
 \]</span></p>
 <p>反力为<span class="math inline">\(R_i=k_i v_i\)</span>。合力与横向力矩方程写成</p>
-<p><span class="math display">\[
-\begin{bmatrix}
-\sum k_i&amp;\sum k_i a_i\\
-\sum k_i a_i&amp;\sum k_i a_i^2
-\end{bmatrix}
-\begin{bmatrix}v_0\\\theta\end{bmatrix}
-=
-\begin{bmatrix}P_t\\P_t e\end{bmatrix},
+<p><span class="math display">\[
+\begin{bmatrix}
+\sum k_i&amp;\sum k_i a_i\\
+\sum k_i a_i&amp;\sum k_i a_i^2
+\end{bmatrix}
+\begin{bmatrix}v_0\\\theta\end{bmatrix}
+=
+\begin{bmatrix}P_t\\P_t e\end{bmatrix},
 \]</span></p>
 <p><span class="math inline">\(P_t\)</span>为任一待分配的横向合力，单位N；<span class="math inline">\(v_0\)</span>单位m，<span class="math inline">\(\theta\)</span>无量纲。该对称刚度布置满足<span class="math inline">\(\sum k_i a_i=0\)</span>，故平移和转动方程解耦。</p>
 <p>本例</p>
-<p><span class="math display">\[
-\sum k_i=5.8k_0,
-\qquad
-\sum k_i a_i^2=41.6k_0\ \mathrm{m^2}.
+<p><span class="math display">\[
+\sum k_i=5.8k_0,
+\qquad
+\sum k_i a_i^2=41.6k_0\ \mathrm{m^2}.
 \]</span></p>
 <p>第<span class="math inline">\(i\)</span>梁分配系数为</p>
-<p><span class="math display">\[
-m_i=\frac{R_i}{P_t}
-=\frac{k_i}{\sum k_j}
-+\frac{k_i e a_i}{\sum k_j a_j^2}.
+<p><span class="math display">\[
+m_i=\frac{R_i}{P_t}
+=\frac{k_i}{\sum k_j}
++\frac{k_i e a_i}{\sum k_j a_j^2}.
 \]</span></p>
 <p>代入得到未舍入结果</p>
-<p><span class="math display">\[
-[m_1,m_2,m_3,m_4,m_5]
-=[0.028183,0.120358,0.241379,0.293435,0.316645].
+<p><span class="math display">\[
+[m_1,m_2,m_3,m_4,m_5]
+=[0.028183,0.120358,0.241379,0.293435,0.316645].
 \]</span></p>
 </section>
 <section class="level4" data-number="4.10.10.4" id="守恒核查">
 <h4 class="anchored" data-anchor-id="守恒核查" data-number="4.10.10.4"><span class="header-section-number">4.10.10.4</span> 守恒核查</h4>
 <p>系数和满足</p>
-<p><span class="math display">\[
-\sum_i m_i=1.000000,
+<p><span class="math display">\[
+\sum_i m_i=1.000000,
 \]</span></p>
 <p>横向一阶矩满足</p>
-<p><span class="math display">\[
-\sum_i m_i a_i=1.500000\ \mathrm m=e.
+<p><span class="math display">\[
+\sum_i m_i a_i=1.500000\ \mathrm m=e.
 \]</span></p>
 <p>第一式检查竖向合力，第二式检查偏心力矩。若把刚度比全部误设为1，系数仍可能满足两式，却不再满足实际不等刚度相容；因此守恒是必要而非充分条件。</p>
 <p>将<span class="math inline">\(e\)</span>改为<span class="math inline">\(-1.50\ \mathrm m\)</span>且保持结构镜像，系数应按梁号反序。将<span class="math inline">\(e=0\)</span>时，系数变为刚度份额<span class="math inline">\(k_i/\sum k\)</span>，中梁因刚度较大承担更多。该结果与等刚度体系中心加载各梁<span class="math inline">\(1/5\)</span>不同。</p>
@@ -3003,9 +3003,9 @@ m_i=\frac{R_i}{P_t}
 <h4 class="anchored" data-anchor-id="梁格复核" data-number="4.10.10.6"><span class="header-section-number">4.10.10.6</span> 梁格复核</h4>
 <p>梁格模型建立五条纵梁和若干横梁。纵梁相对弯曲刚度采用上述比例，真实横梁刚度从小到大参数化。横梁刚度趋于很大时，跨中分配应接近刚性横梁结果；刚度减小时，分配将与作用附近的局部梁和桥面传力有关。</p>
 <p>集中力和均布作用分别运行，再验证线性叠加。偏心<span class="math inline">\(+1.50\)</span>和<span class="math inline">\(-1.50\ \mathrm m\)</span>做镜像测试。梁格结果按物理主梁回收跨中弯矩，计算</p>
-<p><span class="math display">\[
-m_{i,\mathrm{grid}}=
-\frac{M_{i,\mathrm{grid}}}{\sum_jM_{j,\mathrm{grid}}}.
+<p><span class="math display">\[
+m_{i,\mathrm{grid}}=
+\frac{M_{i,\mathrm{grid}}}{\sum_jM_{j,\mathrm{grid}}}.
 \]</span></p>
 <p>若梁格总弯矩与<span class="math inline">\(2625\ \mathrm{kN\cdot m}\)</span>不一致，先检查目标截面、轮载分配、支承和结果符号，而不比较分配系数。</p>
 </section>
@@ -3032,52 +3032,52 @@ m_{i,\mathrm{grid}}=
 <section class="level4" data-number="4.10.11.2" id="结构重力作用">
 <h4 class="anchored" data-anchor-id="结构重力作用" data-number="4.10.11.2"><span class="header-section-number">4.10.11.2</span> 结构重力作用</h4>
 <p>两等跨连续梁在两跨同时承受均布作用时，中支点弯矩为</p>
-<p><span class="math display">\[
-M_{B,G}^{(A)}=-\frac{q_GL^2}{8}
-=-11.25\ \mathrm{MN\cdot m},
+<p><span class="math display">\[
+M_{B,G}^{(A)}=-\frac{q_GL^2}{8}
+=-11.25\ \mathrm{MN\cdot m},
 \]</span></p>
 <p>每跨跨中弯矩为</p>
-<p><span class="math display">\[
-M_{m,G}^{(A)}=\frac{q_GL^2}{16}
-=+5.625\ \mathrm{MN\cdot m}.
+<p><span class="math display">\[
+M_{m,G}^{(A)}=\frac{q_GL^2}{16}
+=+5.625\ \mathrm{MN\cdot m}.
 \]</span></p>
 <p>路径A的两个外支反力各为<span class="math inline">\(3q_GL/8=1125\ \mathrm{kN}\)</span>，中支反力为<span class="math inline">\(5q_GL/4=3750\ \mathrm{kN}\)</span>，总和<span class="math inline">\(6000\ \mathrm{kN}\)</span>。</p>
 <p>路径B中，结构重力施加时两跨独立简支，每跨跨中弯矩为</p>
-<p><span class="math display">\[
-M_{m,G}^{(B)}=\frac{q_GL^2}{8}
-=11.25\ \mathrm{MN\cdot m},
+<p><span class="math display">\[
+M_{m,G}^{(B)}=\frac{q_GL^2}{8}
+=11.25\ \mathrm{MN\cdot m},
 \]</span></p>
 <p>梁端弯矩为零。形成连续构造时，已经由简支梁承担的重力不自动重新分配；在本教学理想化中，连续后没有因强迫转角或支座调整引入新增连接弯矩。实际连接施工、收缩和徐变可能产生重分布，需要时间分析。</p>
 </section>
 <section class="level4" data-number="4.10.11.3" id="预应力等效作用">
 <h4 class="anchored" data-anchor-id="预应力等效作用" data-number="4.10.11.3"><span class="header-section-number">4.10.11.3</span> 预应力等效作用</h4>
 <p>每跨抛物线束的等效均布作用大小为</p>
-<p><span class="math display">\[
-|q_p|=\frac{8Pf_p}{L^2}
-=\frac{8\times10.0\times10^6\times0.75}{30.0^2}
-=66.667\ \mathrm{kN/m}.
+<p><span class="math display">\[
+|q_p|=\frac{8Pf_p}{L^2}
+=\frac{8\times10.0\times10^6\times0.75}{30.0^2}
+=66.667\ \mathrm{kN/m}.
 \]</span></p>
 <p>方向向上，按向下为正取<span class="math inline">\(q_p=-66.667\ \mathrm{kN/m}\)</span>。两条路径张拉时均已形成连续体系，因此预应力总弯矩相同：中支点</p>
-<p><span class="math display">\[
-M_{B,p}=-\frac{q_pL^2}{8}
-=+7.50\ \mathrm{MN\cdot m},
+<p><span class="math display">\[
+M_{B,p}=-\frac{q_pL^2}{8}
+=+7.50\ \mathrm{MN\cdot m},
 \]</span></p>
 <p>跨中</p>
-<p><span class="math display">\[
-M_{m,p}=\frac{q_pL^2}{16}
-=-3.75\ \mathrm{MN\cdot m}.
+<p><span class="math display">\[
+M_{m,p}=\frac{q_pL^2}{16}
+=-3.75\ \mathrm{MN\cdot m}.
 \]</span></p>
 <p>预应力等效作用的外支反力各为<span class="math inline">\(-750\ \mathrm{kN}\)</span>，中支反力为<span class="math inline">\(-2500\ \mathrm{kN}\)</span>；负号表示支承对梁的竖向作用方向与结构重力反力相反。实际支座是否允许该增量与总反力共同判断。</p>
 </section>
 <section class="level4" data-number="4.10.11.4" id="路径结果比较">
 <h4 class="anchored" data-anchor-id="路径结果比较" data-number="4.10.11.4"><span class="header-section-number">4.10.11.4</span> 路径结果比较</h4>
 <p>路径A把两项均作为连续体系增量，得到中支点总教学弯矩</p>
-<p><span class="math display">\[
-M_B^{(A)}=-11.25+7.50=-3.75\ \mathrm{MN\cdot m},
+<p><span class="math display">\[
+M_B^{(A)}=-11.25+7.50=-3.75\ \mathrm{MN\cdot m},
 \]</span></p>
 <p>跨中总教学弯矩</p>
-<p><span class="math display">\[
-M_m^{(A)}=5.625-3.75=1.875\ \mathrm{MN\cdot m}.
+<p><span class="math display">\[
+M_m^{(A)}=5.625-3.75=1.875\ \mathrm{MN\cdot m}.
 \]</span></p>
 <p>总外支反力各为<span class="math inline">\(375\ \mathrm{kN}\)</span>，中支反力<span class="math inline">\(1250\ \mathrm{kN}\)</span>，合计<span class="math inline">\(2000\ \mathrm{kN}\)</span>，等于净均布作用<span class="math inline">\((100-66.667)\times60\)</span>的舍入值。</p>
 <p>路径B保留结构重力的简支历史，再叠加连续体系中的预应力：中支点总弯矩为<span class="math inline">\(+7.50\ \mathrm{MN\cdot m}\)</span>，跨中为<span class="math inline">\(11.25-3.75=7.50\ \mathrm{MN\cdot m}\)</span>。若两个简支跨在中间分别提供<span class="math inline">\(1500\ \mathrm{kN}\)</span>重力反力，叠加预应力后外支反力各<span class="math inline">\(750\ \mathrm{kN}\)</span>、中支反力<span class="math inline">\(500\ \mathrm{kN}\)</span>，总和同样为<span class="math inline">\(2000\ \mathrm{kN}\)</span>。</p>
@@ -3148,40 +3148,40 @@ M_m^{(A)}=5.625-3.75=1.875\ \mathrm{MN\cdot m}.
 <section class="level4" data-number="4.10.12.2" id="组合前作用">
 <h4 class="anchored" data-anchor-id="组合前作用" data-number="4.10.12.2"><span class="header-section-number">4.10.12.2</span> 组合前作用</h4>
 <p>组合前总均布作用为</p>
-<p><span class="math display">\[
-q_1=q_s+q_w=63.0\ \mathrm{kN/m}.
+<p><span class="math display">\[
+q_1=q_s+q_w=63.0\ \mathrm{kN/m}.
 \]</span></p>
 <p>简支梁跨中弯矩和每端反力为</p>
-<p><span class="math display">\[
-M_1=\frac{q_1L^2}{8}
-=8064\ \mathrm{kN\cdot m},
+<p><span class="math display">\[
+M_1=\frac{q_1L^2}{8}
+=8064\ \mathrm{kN\cdot m},
 \]</span></p>
-<p><span class="math display">\[
-R_1=\frac{q_1L}{2}=1008\ \mathrm{kN}.
+<p><span class="math display">\[
+R_1=\frac{q_1L}{2}=1008\ \mathrm{kN}.
 \]</span></p>
 <p>按教学钢梁毛截面模量，底缘线弹性应力增量数量级为</p>
-<p><span class="math display">\[
-\sigma_{s,1}=\frac{M_1}{W_s}
-=40.32\ \mathrm{MPa}.
+<p><span class="math display">\[
+\sigma_{s,1}=\frac{M_1}{W_s}
+=40.32\ \mathrm{MPa}.
 \]</span></p>
 <p>该值未考虑施工侧向稳定、残余应力、局部屈曲和应力符号，仅用于说明湿混凝土不能由尚未形成的组合截面承担。</p>
 </section>
 <section class="level4" data-number="4.10.12.3" id="组合后增量">
 <h4 class="anchored" data-anchor-id="组合后增量" data-number="4.10.12.3"><span class="header-section-number">4.10.12.3</span> 组合后增量</h4>
 <p>附加均布作用的跨中弯矩为</p>
-<p><span class="math display">\[
-M_{q,a}=\frac{q_aL^2}{8}
-=2560\ \mathrm{kN\cdot m},
+<p><span class="math display">\[
+M_{q,a}=\frac{q_aL^2}{8}
+=2560\ \mathrm{kN\cdot m},
 \]</span></p>
 <p>跨中集中力贡献为</p>
-<p><span class="math display">\[
-M_P=\frac{PL}{4}
-=2400\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+M_P=\frac{PL}{4}
+=2400\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>组合后新增跨中弯矩<span class="math inline">\(M_2=4960\ \mathrm{kN\cdot m}\)</span>。按教学组合截面对钢梁底缘截面模量，钢梁底缘新增应力数量级为</p>
-<p><span class="math display">\[
-\Delta\sigma_{s,2}=\frac{M_2}{W_{c,b}}
-=14.17\ \mathrm{MPa}.
+<p><span class="math display">\[
+\Delta\sigma_{s,2}=\frac{M_2}{W_{c,b}}
+=14.17\ \mathrm{MPa}.
 \]</span></p>
 <p>若两阶段应力方向一致，教学累计为<span class="math inline">\(54.49\ \mathrm{MPa}\)</span>。这不是把总弯矩<span class="math inline">\(13024\ \mathrm{kN\cdot m}\)</span>除以某一个截面模量；正确累积保留组合前、后的承担截面。</p>
 <p>混凝土板应力需用换算截面形心、模量比和混凝土位置恢复，本例未给出这些数据，保持为待计算。截面设计不能以钢梁底缘两个数值代替全截面应力。</p>
@@ -3189,15 +3189,15 @@ M_P=\frac{PL}{4}
 <section class="level4" data-number="4.10.12.4" id="组合后界面剪流">
 <h4 class="anchored" data-anchor-id="组合后界面剪流" data-number="4.10.12.4"><span class="header-section-number">4.10.12.4</span> 组合后界面剪流</h4>
 <p>组合后新增作用在支点处的剪力为</p>
-<p><span class="math display">\[
-V_2=\frac{q_aL}{2}+\frac{P}{2}
-=320+150=470\ \mathrm{kN}.
+<p><span class="math display">\[
+V_2=\frac{q_aL}{2}+\frac{P}{2}
+=320+150=470\ \mathrm{kN}.
 \]</span></p>
 <p>按完全组合线弹性教学截面，支点附近界面剪流为</p>
-<p><span class="math display">\[
-q_L=\frac{V_2Q_c}{I_c}
-=\frac{470\times0.300}{1.50}
-=94.0\ \mathrm{kN/m}.
+<p><span class="math display">\[
+q_L=\frac{V_2Q_c}{I_c}
+=\frac{470\times0.300}{1.50}
+=94.0\ \mathrm{kN/m}.
 \]</span></p>
 <p>若仅为离散化检查，取教学连接分组长度<span class="math inline">\(s_c=0.50\ \mathrm m\)</span>，该长度内需传递的纵向剪力为<span class="math inline">\(q_Ls_c=47.0\ \mathrm{kN}\)</span>。这不是连接件设计抗力或间距结论；实际连接件数量、抗力、疲劳、构造和纵向变化按现行规范确定。</p>
 <p>组合前<span class="math inline">\(q_1\)</span>不应进入已形成组合截面的界面剪流计算，因为湿混凝土作用时界面尚未传递组合内力。若施工中通过模板或临时连接产生其他界面作用，应作为施工对象另行记录。</p>
@@ -3226,48 +3226,48 @@ q_L=\frac{V_2Q_c}{I_c}
 <h4 class="anchored" data-anchor-id="截面和作用" data-number="4.10.13.1"><span class="header-section-number">4.10.13.1</span> 截面和作用</h4>
 <p>取跨度<span class="math inline">\(L=40.0\ \mathrm m\)</span>的教学箱梁，壁厚中线形成宽<span class="math inline">\(5.0\ \mathrm m\)</span>、高<span class="math inline">\(2.0\ \mathrm m\)</span>的单室矩形，围成面积<span class="math inline">\(A_m=10.0\ \mathrm{m^2}\)</span>，周长<span class="math inline">\(14.0\ \mathrm m\)</span>，各壁教学厚度均为<span class="math inline">\(t=0.200\ \mathrm m\)</span>。剪切模量取<span class="math inline">\(G=14.0\ \mathrm{GPa}\)</span>。</p>
 <p>跨中竖向教学集中力<span class="math inline">\(V=400\ \mathrm{kN}\)</span>作用线距截面剪切中心<span class="math inline">\(e_s=2.00\ \mathrm m\)</span>，产生外扭矩</p>
-<p><span class="math display">\[
-T_0=Ve_s=800\ \mathrm{kN\cdot m}.
+<p><span class="math display">\[
+T_0=Ve_s=800\ \mathrm{kN\cdot m}.
 \]</span></p>
 <p>两端假定提供对称扭转约束，因此每端扭矩反力<span class="math inline">\(400\ \mathrm{kN\cdot m}\)</span>，梁的每半跨内扭矩大小<span class="math inline">\(T=400\ \mathrm{kN\cdot m}\)</span>。参数为教学值，截面不代表实际构造。</p>
 </section>
 <section class="level4" data-number="4.10.13.2" id="闭口状态">
 <h4 class="anchored" data-anchor-id="闭口状态" data-number="4.10.13.2"><span class="header-section-number">4.10.13.2</span> 闭口状态</h4>
 <p>单室闭口薄壁截面的扭转常数近似为</p>
-<p><span class="math display">\[
-J_c=\frac{4A_m^2}{\displaystyle\oint\frac{\mathrm ds}{t}}
-=\frac{4\times10.0^2}{14.0/0.200}
-=5.7143\ \mathrm{m^4}.
+<p><span class="math display">\[
+J_c=\frac{4A_m^2}{\displaystyle\oint\frac{\mathrm ds}{t}}
+=\frac{4\times10.0^2}{14.0/0.200}
+=5.7143\ \mathrm{m^4}.
 \]</span></p>
 <p>每半跨的近似恒定环流为</p>
-<p><span class="math display">\[
-q_T=\frac{T}{2A_m}
-=20.0\ \mathrm{kN/m},
+<p><span class="math display">\[
+q_T=\frac{T}{2A_m}
+=20.0\ \mathrm{kN/m},
 \]</span></p>
 <p>壁板平均扭转切应力为</p>
-<p><span class="math display">\[
-\tau_T=\frac{q_T}{t}=0.100\ \mathrm{MPa}.
+<p><span class="math display">\[
+\tau_T=\frac{q_T}{t}=0.100\ \mathrm{MPa}.
 \]</span></p>
 <p>扭转率为</p>
-<p><span class="math display">\[
-\frac{\mathrm d\varphi}{\mathrm dx}
-=\frac{T}{GJ_c}
-=5.00\times10^{-6}\ \mathrm{rad/m}.
+<p><span class="math display">\[
+\frac{\mathrm d\varphi}{\mathrm dx}
+=\frac{T}{GJ_c}
+=5.00\times10^{-6}\ \mathrm{rad/m}.
 \]</span></p>
 <p>从端部至跨中长度<span class="math inline">\(20\ \mathrm m\)</span>，若忽略翘曲和畸变，扭转角为<span class="math inline">\(1.00\times10^{-4}\ \mathrm{rad}=0.100\ \mathrm{mrad}\)</span>。</p>
 </section>
 <section class="level4" data-number="4.10.13.3" id="开口施工状态">
 <h4 class="anchored" data-anchor-id="开口施工状态" data-number="4.10.13.3"><span class="header-section-number">4.10.13.3</span> 开口施工状态</h4>
 <p>假设施工阶段沿顶板中线形成贯通开口，截面按四块狭长矩形板的开口薄壁近似。扭转常数为</p>
-<p><span class="math display">\[
-J_o\approx\sum_i\frac{b_it^3}{3}
-=\frac{14.0\times0.200^3}{3}
-=0.03733\ \mathrm{m^4}.
+<p><span class="math display">\[
+J_o\approx\sum_i\frac{b_it^3}{3}
+=\frac{14.0\times0.200^3}{3}
+=0.03733\ \mathrm{m^4}.
 \]</span></p>
 <p>同样内扭矩下，开口近似扭转率为</p>
-<p><span class="math display">\[
-\frac{T}{GJ_o}
-=7.65\times10^{-4}\ \mathrm{rad/m},
+<p><span class="math display">\[
+\frac{T}{GJ_o}
+=7.65\times10^{-4}\ \mathrm{rad/m},
 \]</span></p>
 <p>半跨扭转角约<span class="math inline">\(0.0153\ \mathrm{rad}=15.3\ \mathrm{mrad}\)</span>，约为闭口自由扭转结果的153倍。该比值只说明剪流闭合的量级作用；开口截面还可能发生翘曲、局部板变形和边界约束，不能用此简化角作为施工设计结果。</p>
 </section>
@@ -3304,50 +3304,50 @@ J_o\approx\sum_i\frac{b_it^3}{3}
 <section class="level4" data-number="4.10.14.2" id="自由温度伸长">
 <h4 class="anchored" data-anchor-id="自由温度伸长" data-number="4.10.14.2"><span class="header-section-number">4.10.14.2</span> 自由温度伸长</h4>
 <p>完全自由时，梁体温度应变为</p>
-<p><span class="math display">\[
-\varepsilon_T=\alpha\Delta T
-=3.00\times10^{-4},
+<p><span class="math display">\[
+\varepsilon_T=\alpha\Delta T
+=3.00\times10^{-4},
 \]</span></p>
 <p>自由伸长为</p>
-<p><span class="math display">\[
-\Delta_0=\alpha\Delta TL
-=0.0270\ \mathrm m=27.0\ \mathrm{mm}.
+<p><span class="math display">\[
+\Delta_0=\alpha\Delta TL
+=0.0270\ \mathrm m=27.0\ \mathrm{mm}.
 \]</span></p>
 <p>自由状态温度应力为零。只要支承允许27 mm相对变形且没有摩擦、间隙或其他约束，均匀升温不因材料本身产生轴向应力。实际桥梁还需考虑温度基准、非均匀温度和支承方向。</p>
 </section>
 <section class="level4" data-number="4.10.14.3" id="梁体与弹簧协调">
 <h4 class="anchored" data-anchor-id="梁体与弹簧协调" data-number="4.10.14.3"><span class="header-section-number">4.10.14.3</span> 梁体与弹簧协调</h4>
 <p>约束后产生轴向压力<span class="math inline">\(N_T\)</span>。温度自由伸长由弹簧变形和梁体弹性压缩共同抵消：</p>
-<p><span class="math display">\[
-\Delta_0=
-\frac{N_T}{K_s}
-+\frac{N_TL}{EA}.
+<p><span class="math display">\[
+\Delta_0=
+\frac{N_T}{K_s}
++\frac{N_TL}{EA}.
 \]</span></p>
 <p><span class="math inline">\(N_T\)</span>单位N；<span class="math inline">\(K_s\)</span>单位N/m；<span class="math inline">\(L/(EA)\)</span>和<span class="math inline">\(1/K_s\)</span>单位m/N。求得</p>
-<p><span class="math display">\[
-N_T=
-\frac{\Delta_0}
-{\dfrac{1}{K_s}+\dfrac{L}{EA}}
-=1.0582\ \mathrm{MN}.
+<p><span class="math display">\[
+N_T=
+\frac{\Delta_0}
+{\dfrac{1}{K_s}+\dfrac{L}{EA}}
+=1.0582\ \mathrm{MN}.
 \]</span></p>
 <p>等效弹簧变形为</p>
-<p><span class="math display">\[
-\Delta_s=\frac{N_T}{K_s}
-=26.456\ \mathrm{mm},
+<p><span class="math display">\[
+\Delta_s=\frac{N_T}{K_s}
+=26.456\ \mathrm{mm},
 \]</span></p>
 <p>梁体弹性压缩为</p>
-<p><span class="math display">\[
-\Delta_b=\frac{N_TL}{EA}
-=0.544\ \mathrm{mm}.
+<p><span class="math display">\[
+\Delta_b=\frac{N_TL}{EA}
+=0.544\ \mathrm{mm}.
 \]</span></p>
 <p>两者之和<span class="math inline">\(27.000\ \mathrm{mm}\)</span>，满足相容。梁体平均压应力数量级为<span class="math inline">\(N_T/A=0.212\ \mathrm{MPa}\)</span>，只用于单位检查。</p>
 </section>
 <section class="level4" data-number="4.10.14.4" id="两个边界极限">
 <h4 class="anchored" data-anchor-id="两个边界极限" data-number="4.10.14.4"><span class="header-section-number">4.10.14.4</span> 两个边界极限</h4>
 <p>当<span class="math inline">\(K_s\rightarrow0\)</span>时，弹簧几乎不提供约束，<span class="math inline">\(N_T\rightarrow0\)</span>，体系趋近自由伸长。当<span class="math inline">\(K_s\rightarrow\infty\)</span>时，梁体完全不能伸长，</p>
-<p><span class="math display">\[
-N_{T,\mathrm{fixed}}=EA\alpha\Delta T
-=52.5\ \mathrm{MN},
+<p><span class="math display">\[
+N_{T,\mathrm{fixed}}=EA\alpha\Delta T
+=52.5\ \mathrm{MN},
 \]</span></p>
 <p>相应平均应力<span class="math inline">\(E\alpha\Delta T=10.5\ \mathrm{MPa}\)</span>。实际连续刚构位于两种极限之间，并由多个墩柱、基础和梁体共同分配。极限测试用于发现弹簧单位和约束错误，不把完全固定值作为设计上限直接采用。</p>
 </section>
@@ -3809,12 +3809,12 @@ N_{T,\mathrm{fixed}}=EA\alpha\Delta T
 <h4 class="anchored" data-anchor-id="静载试验对象" data-number="4.11.4.1"><span class="header-section-number">4.11.4.1</span> 静载试验对象</h4>
 <p>静载试验首先确定目标响应，如跨中挠度、控制截面应变、支点反力或多梁横向分配。试验车辆或加载设备的轴重、轴距、轮距、纵横坐标和停放时间进入作用对象；测点具有构件编号、坐标、方向、量程、标定和采样时间。实际加载状态应能在分析模型中复现。</p>
 <p>试验效应可写为观测向量</p>
-<p><span class="math display">\[
-\mathbf y_{\mathrm{obs}}=
-\begin{bmatrix}
-\delta_1&amp;\cdots&amp;\delta_m&amp;
-\varepsilon_1&amp;\cdots&amp;\varepsilon_n
-\end{bmatrix}^{\mathsf T},
+<p><span class="math display">\[
+\mathbf y_{\mathrm{obs}}=
+\begin{bmatrix}
+\delta_1&amp;\cdots&amp;\delta_m&amp;
+\varepsilon_1&amp;\cdots&amp;\varepsilon_n
+\end{bmatrix}^{\mathsf T},
 \]</span></p>
 <p><span class="math inline">\(\delta\)</span>单位m或mm，<span class="math inline">\(\varepsilon\)</span>为无量纲应变。模型预测<span class="math inline">\(\mathbf y_{\mathrm{pred}}(\boldsymbol\theta)\)</span>依参数向量<span class="math inline">\(\boldsymbol\theta\)</span>，可包括截面刚度、支承刚度、横向连接或附属质量。观测和预测必须在相同荷载、温度、坐标和零点下比较。</p>
 <p>加载前记录零点和环境，分级加载并在每级保持至读数满足试验程序要求，卸载后检查残余。具体加载等级、允许值和判定按项目试验标准制定，本章不提供通用比例。教学数据若模拟试验，显著标为合成数据。</p>
@@ -3833,13 +3833,13 @@ N_{T,\mathrm{fixed}}=EA\alpha\Delta T
 <section class="level4" data-number="4.11.4.4" id="参数更新与可识别性">
 <h4 class="anchored" data-anchor-id="参数更新与可识别性" data-number="4.11.4.4"><span class="header-section-number">4.11.4.4</span> 参数更新与可识别性</h4>
 <p>模型更新可通过最小化加权残差</p>
-<p><span class="math display">\[
-J(\boldsymbol\theta)=
-\left[\mathbf y_{\mathrm{obs}}-
-\mathbf y_{\mathrm{pred}}(\boldsymbol\theta)\right]^{\mathsf T}
-\mathbf W
-\left[\mathbf y_{\mathrm{obs}}-
-\mathbf y_{\mathrm{pred}}(\boldsymbol\theta)\right]
+<p><span class="math display">\[
+J(\boldsymbol\theta)=
+\left[\mathbf y_{\mathrm{obs}}-
+\mathbf y_{\mathrm{pred}}(\boldsymbol\theta)\right]^{\mathsf T}
+\mathbf W
+\left[\mathbf y_{\mathrm{obs}}-
+\mathbf y_{\mathrm{pred}}(\boldsymbol\theta)\right]
 \]</span></p>
 <p>组织。<span class="math inline">\(\mathbf W\)</span>为反映量纲、测量不确定性或权重的矩阵；<span class="math inline">\(J\)</span>无量纲或具有所定义尺度。权重不能用于强迫某个期望结论。参数范围来自图纸、检测、材料试验或构造知识，未观测参数不应无限制调整。</p>
 <p>若两个参数对观测具有相似灵敏度，单组试验无法唯一识别。可增加不同位置加载、支座位移、模态或局部应变，或保持参数为范围。模型与试验吻合不证明参数唯一正确；更新报告给出残差、敏感性、参数相关和未识别项。</p>
@@ -4039,410 +4039,410 @@ J(\boldsymbol\theta)=
 </section>
 <p class="public-edition-note"><a href="../publication-images.html">公开预览 · 图片来源与版本说明</a></p></main> <!-- /main -->
 
-<script>
-(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
-const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
-
+<script>
+(()=>{const route=document.querySelector('.core-route');if(!route)return;const main=route.closest('main');if(!main)return;const rootChild=[...main.children].find(c=>c===route||c.contains(route));for(const c of [...main.children])if(c!==rootChild&&c.tagName!=='HEADER')c.classList.add('reference-only');
+const bar=document.createElement('div');bar.className='reading-mode-bar';bar.innerHTML='<button type="button" data-mode="core">核心思路</button><button type="button" data-mode="reference">查阅正文</button><button type="button" data-mode="author">备课与选图</button><span>课堂抓原理；构造、桥例与长篇推导可按需查阅。</span>';main.insertBefore(bar,rootChild);function set(mode){document.body.dataset.reading=mode;bar.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));}bar.querySelectorAll('button').forEach(b=>b.onclick=()=>set(b.dataset.mode));const cards=[...route.querySelectorAll('.core-unit-grid article')];for(const card of cards){if(!card.querySelector('.core-tag')?.textContent.includes('课堂核心'))card.classList.add('extra-unit');}const more=document.createElement('button');more.className='more-core-units';more.textContent='展开其余实验';more.setAttribute('aria-expanded','false');more.onclick=()=>{const open=route.classList.toggle('show-extra-units');more.textContent=open?'收起其余实验':'展开其余实验';more.setAttribute('aria-expanded',String(open));};route.querySelector('.core-unit-grid')?.after(more);const fromHash=()=>set(location.hash&&location.hash!=='#core-route'?'reference':'core');window.addEventListener('hashchange',fromHash);fromHash();})();
+
 </script>
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "已复制");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "已复制");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
-        },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
-        }
-      }
-    }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
-          }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
-  });
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "已复制");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "已复制");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
   </script>
 <nav class="page-navigation">
 <div class="nav-page nav-page-previous">

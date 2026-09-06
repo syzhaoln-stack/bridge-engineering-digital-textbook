@@ -1,6 +1,6 @@
-# 从旧版接续的两个实验 {.unnumbered}
+# 从旧版接续的实验与游戏 {.unnumbered}
 
-有些问题，旧版已经形成了值得继续使用的学习路径：先把图看懂，再找到最容易求解的关系；实际方案选定后，重新回到平衡检查。本页把核对后的入口接到这本数字教材。
+这里可以选钢筋、练习三视图，也可以让小汽车驶过自己搭出的桥。先选一个想尝试的问题，再用计算或图形检查判断。
 
 ## 把一根钢筋混凝土梁配出来 {.unnumbered}
 
@@ -13,9 +13,9 @@
 模型只覆盖给定参数下的单筋矩形截面抗弯。超出适用受压区时，页面会停止给出通过结论；不能据此代替整根梁的抗剪、裂缝、挠度等检查。
 
 <details>
-<summary>旧版来源与本次接续</summary>
+<summary>来源与模型说明</summary>
 
-来源：[旧版完整算例](https://syzhaoln-stack.github.io/bridge-engineering-textbook/appendices/rc-bending-worked-example.html)，代码基于旧仓库提交`389fe553846cc08fa4060a2d8cea532d7bb5f499`。这次保留求解顺序、实际选筋复核和方案对比，修正内力方向与力臂图示、超出模型范围的结果提示，以及有效高度模式切换。不是新增的AI绘CAD案例。
+来源：[旧版完整算例](https://syzhaoln-stack.github.io/bridge-engineering-textbook/appendices/rc-bending-worked-example.html)。本页使用给定材料参数下的单筋矩形截面模型；比较结果时，注意有效高度、受压区和实际钢筋面积。
 
 </details>
 
@@ -25,6 +25,14 @@
 
 [**打开已有的空间投影工作台**](https://syzhaoln-stack.github.io/projection-master/)
 
-这是既有项目的在线入口，需要联网，功能与发布版本由原项目维护。可以用它做三视图和空间关系练习。本教材的板、梁和横向分担场景继续使用自己的参数与力学模型。
+这是既有项目的在线入口，需要联网。可以用它练习三视图和空间关系；几何投影练习不计算桥梁的荷载与变形。
+
+## 这座桥，能让小汽车开过去吗？ {.unnumbered}
+
+[**打开桥梁建造游戏 SpanCraft**](https://syzhaoln-stack.github.io/spancraft-bridge-game/){target="_blank" rel="noopener"}
+
+先点“开始建造 · 装载示范桥”，等桥面和构件出现，再点“加载：小汽车”，观察荷载进度和主梁抗弯利用率怎样变化。
+
+这是既有项目的在线游戏，需要联网。游戏中的试载与受力反馈用于理解和比较方案，不代替真实桥梁的设计验算。
 
 [返回本书学习入口](interactive/learning-map.html) · [读公众课首讲](interactive/public-course.html) · [查看旧版本](https://github.com/syzhaoln-stack/bridge-engineering-textbook)
