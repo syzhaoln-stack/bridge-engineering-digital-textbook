@@ -1,6 +1,6 @@
 {
   "schema": "bridge-public-export/v1",
-  "source_commit": "2bf6e1f83d430afa9d63c411c35f964be5b9e2bb",
+  "source_commit": "e188a4ce3174299d88d37ee10b2632b51adf581a",
   "date": "2026-09-07",
   "excluded_categories": [
     "application documents and original repository history",
@@ -13,5 +13,5 @@
     "withheld_reference_figures": 45,
     "excluded_files": 843
   },
-  "search_sections": 197
+  "search_sections": 204
 }

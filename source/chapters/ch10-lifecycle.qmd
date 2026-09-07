@@ -537,6 +537,14 @@ $$
 #### 钢构件腐蚀至截面性能
 
 
+<!-- AUTHOR-SELECTED G08-A START -->
+**涂层脱落之后，怎样知道钢梁还剩多少材料？**
+
+![涂层破损与表面锈蚀的局部情境。颜色和纹理提示需要检查的位置。](../assets/publication/imagegen-samples/G08-A.png){#fig-author-g08-a width=100%}
+
+<details class="figure-method"><summary>图像来源与本例条件</summary><p>AI 生成写实插画，非病害现场照片。这里是工字形钢梁局部锈蚀，下一幅F36另用矩形钢条上下均匀减薄；截面和损伤模式均不同。锈色不能换算为厚度损失，F36的减薄量是明确给定的教学条件。</p><p>作者选样：G08-A · 2026-09-07 · <a href="../assets/publication/imagegen-samples/public-records/G08-A.json">制作记录</a></p></details>
+<!-- AUTHOR-SELECTED G08-A END -->
+
 <!-- PRIORITY-FIGURE F36 START -->
 ![同宽矩形钢条上下表面减薄的几何比较：高度减少10%，面积减少10%，惯性矩减少27.1%，同边界同荷载下线弹性挠度增加约37.2%。防护列只是指定剩余厚度的比较，不是预报寿命。](../assets/publication/priority-40/F36.svg){#fig-priority-F36 width=100% fig-alt="少了十分之一厚度，梁就只软十分之一吗？。同宽矩形钢条上下表面减薄的几何比较：高度减少10%，面积减少10%，惯性矩减少27.1%，同边界同荷载下线弹性挠度增加约37.2%。防护列只是指定剩余厚度的比较，不是预报寿命。"}
 

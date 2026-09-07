@@ -1,0 +1,213 @@
+{
+  "schema": "author-image-selection/v1",
+  "date": "2026-09-07",
+  "source_export_sha256": "fc25a2601269cf3698f3ccaa82c968b9d0898cd47002bb3f54fb62f3e935b491",
+  "selected_count": 8,
+  "reserve_count": 16,
+  "context_insertions": 5,
+  "selected_needs_geometry_revision": [
+    "G03-A",
+    "G05-C",
+    "G07-A"
+  ],
+  "style_counts": {
+    "三维教具": 3,
+    "写实场景": 3,
+    "线稿淡彩": 2
+  },
+  "original_parameter_figures_retained": 40,
+  "items": [
+    {
+      "id": "G01-A",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G01-A-v2.png",
+      "chapter": null
+    },
+    {
+      "id": "G01-B",
+      "selected": true,
+      "needs_revision": false,
+      "action": "正文情境图试排",
+      "image": "G01-B.png",
+      "chapter": "ch01"
+    },
+    {
+      "id": "G01-C",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G01-C.png",
+      "chapter": null
+    },
+    {
+      "id": "G02-A",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G02-A.png",
+      "chapter": null
+    },
+    {
+      "id": "G02-B",
+      "selected": true,
+      "needs_revision": false,
+      "action": "正文情境图试排",
+      "image": "G02-B.png",
+      "chapter": "ch02-foundations"
+    },
+    {
+      "id": "G02-C",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G02-C.png",
+      "chapter": null
+    },
+    {
+      "id": "G03-A",
+      "selected": true,
+      "needs_revision": true,
+      "action": "保留画法，构造待修正",
+      "image": "G03-A.png",
+      "chapter": null
+    },
+    {
+      "id": "G03-B",
+      "selected": false,
+      "needs_revision": true,
+      "action": "收进备选，保留原文件",
+      "image": "G03-B.png",
+      "chapter": null
+    },
+    {
+      "id": "G03-C",
+      "selected": false,
+      "needs_revision": true,
+      "action": "收进备选，保留原文件",
+      "image": "G03-C.png",
+      "chapter": null
+    },
+    {
+      "id": "G04-A",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G04-A.png",
+      "chapter": null
+    },
+    {
+      "id": "G04-B",
+      "selected": true,
+      "needs_revision": false,
+      "action": "正文情境图试排",
+      "image": "G04-B.png",
+      "chapter": "ch03"
+    },
+    {
+      "id": "G04-C",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G04-C.png",
+      "chapter": null
+    },
+    {
+      "id": "G05-A",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G05-A.png",
+      "chapter": null
+    },
+    {
+      "id": "G05-B",
+      "selected": false,
+      "needs_revision": true,
+      "action": "收进备选，保留原文件",
+      "image": "G05-B.png",
+      "chapter": null
+    },
+    {
+      "id": "G05-C",
+      "selected": true,
+      "needs_revision": true,
+      "action": "保留画法，构造待修正",
+      "image": "G05-C.png",
+      "chapter": null
+    },
+    {
+      "id": "G06-A",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G06-A.png",
+      "chapter": null
+    },
+    {
+      "id": "G06-B",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G06-B.png",
+      "chapter": null
+    },
+    {
+      "id": "G06-C",
+      "selected": true,
+      "needs_revision": false,
+      "action": "正文情境图试排",
+      "image": "G06-C.png",
+      "chapter": "ch06"
+    },
+    {
+      "id": "G07-A",
+      "selected": true,
+      "needs_revision": true,
+      "action": "保留画法，构造待修正",
+      "image": "G07-A.png",
+      "chapter": null
+    },
+    {
+      "id": "G07-B",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G07-B.png",
+      "chapter": null
+    },
+    {
+      "id": "G07-C",
+      "selected": false,
+      "needs_revision": true,
+      "action": "收进备选，保留原文件",
+      "image": "G07-C.png",
+      "chapter": null
+    },
+    {
+      "id": "G08-A",
+      "selected": true,
+      "needs_revision": false,
+      "action": "正文情境图试排",
+      "image": "G08-A.png",
+      "chapter": "ch10-lifecycle"
+    },
+    {
+      "id": "G08-B",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G08-B.png",
+      "chapter": null
+    },
+    {
+      "id": "G08-C",
+      "selected": false,
+      "needs_revision": false,
+      "action": "收进备选，保留原文件",
+      "image": "G08-C.png",
+      "chapter": null
+    }
+  ]
+}

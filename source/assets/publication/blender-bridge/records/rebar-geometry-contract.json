@@ -1,0 +1,430 @@
+{
+  "units": "m",
+  "source": "原模型08_Rebar为representative non-design rebar cage，本次为教学几何修正",
+  "girder": "C1_S2_Girder1",
+  "girder_axis_y_m": -11.65,
+  "ordinary_section_x_m": 44.73,
+  "counts": {
+    "longitudinal": 15,
+    "lower_longitudinal": 5,
+    "web_longitudinal": 4,
+    "flange_longitudinal": 4,
+    "upper_erection": 2,
+    "main_stirrup": 143,
+    "flange_tie": 143,
+    "prestress_duct": 3,
+    "anchor": 6
+  },
+  "longitudinal": [
+    {
+      "object": "Rebar_Longitudinal0",
+      "group": "lower_longitudinal",
+      "y_offset_m": -0.23,
+      "z_m": 10.6,
+      "diameter_m": 0.028,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal1",
+      "group": "lower_longitudinal",
+      "y_offset_m": 0,
+      "z_m": 10.6,
+      "diameter_m": 0.028,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal2",
+      "group": "lower_longitudinal",
+      "y_offset_m": 0.23,
+      "z_m": 10.6,
+      "diameter_m": 0.028,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal3",
+      "group": "lower_longitudinal",
+      "y_offset_m": -0.18,
+      "z_m": 10.76,
+      "diameter_m": 0.028,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal4",
+      "group": "lower_longitudinal",
+      "y_offset_m": 0.18,
+      "z_m": 10.76,
+      "diameter_m": 0.028,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal5",
+      "group": "web_longitudinal",
+      "y_offset_m": -0.046,
+      "z_m": 11.15,
+      "diameter_m": 0.012,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal6",
+      "group": "web_longitudinal",
+      "y_offset_m": 0.046,
+      "z_m": 11.15,
+      "diameter_m": 0.012,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal7",
+      "group": "web_longitudinal",
+      "y_offset_m": -0.046,
+      "z_m": 11.65,
+      "diameter_m": 0.012,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal8",
+      "group": "web_longitudinal",
+      "y_offset_m": 0.046,
+      "z_m": 11.65,
+      "diameter_m": 0.012,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal9",
+      "group": "flange_longitudinal",
+      "y_offset_m": -0.7,
+      "z_m": 12.42,
+      "diameter_m": 0.02,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal10",
+      "group": "flange_longitudinal",
+      "y_offset_m": -0.35,
+      "z_m": 12.42,
+      "diameter_m": 0.02,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal11",
+      "group": "upper_erection",
+      "y_offset_m": -0.044,
+      "z_m": 12.444,
+      "diameter_m": 0.02,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal12",
+      "group": "flange_longitudinal",
+      "y_offset_m": 0.35,
+      "z_m": 12.42,
+      "diameter_m": 0.02,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal13",
+      "group": "flange_longitudinal",
+      "y_offset_m": 0.7,
+      "z_m": 12.42,
+      "diameter_m": 0.02,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    },
+    {
+      "object": "Rebar_Longitudinal14",
+      "group": "upper_erection",
+      "y_offset_m": 0.044,
+      "z_m": 12.444,
+      "diameter_m": 0.02,
+      "x_range_m": [
+        30.42,
+        59.58
+      ]
+    }
+  ],
+  "main_stirrup": {
+    "centerline_yz_m": [
+      [
+        -0.27,
+        10.55
+      ],
+      [
+        0.27,
+        10.55
+      ],
+      [
+        0.27,
+        10.68
+      ],
+      [
+        0.06,
+        10.97
+      ],
+      [
+        0.06,
+        12.46
+      ],
+      [
+        -0.06,
+        12.46
+      ],
+      [
+        -0.06,
+        10.97
+      ],
+      [
+        -0.27,
+        10.68
+      ]
+    ],
+    "radius_m": 0.006,
+    "stations_m": [
+      30.53,
+      30.73,
+      30.93,
+      31.130000000000003,
+      31.330000000000002,
+      31.53,
+      31.73,
+      31.93,
+      32.13,
+      32.33,
+      32.53,
+      32.730000000000004,
+      32.93,
+      33.13,
+      33.33,
+      33.53,
+      33.730000000000004,
+      33.93,
+      34.13,
+      34.33,
+      34.53,
+      34.730000000000004,
+      34.93,
+      35.13,
+      35.33,
+      35.53,
+      35.730000000000004,
+      35.93,
+      36.13,
+      36.33,
+      36.53,
+      36.730000000000004,
+      36.93,
+      37.13,
+      37.33,
+      37.53,
+      37.730000000000004,
+      37.93,
+      38.13,
+      38.33,
+      38.53,
+      38.730000000000004,
+      38.93,
+      39.13,
+      39.33,
+      39.53,
+      39.730000000000004,
+      39.93,
+      40.13,
+      40.33,
+      40.53,
+      40.730000000000004,
+      40.93,
+      41.13,
+      41.33,
+      41.53,
+      41.730000000000004,
+      41.93,
+      42.13,
+      42.33,
+      42.53,
+      42.730000000000004,
+      42.93,
+      43.13,
+      43.33,
+      43.53,
+      43.730000000000004,
+      43.93,
+      44.13,
+      44.33,
+      44.53,
+      44.730000000000004,
+      44.93,
+      45.13,
+      45.33,
+      45.53,
+      45.730000000000004,
+      45.93,
+      46.13,
+      46.33,
+      46.53,
+      46.730000000000004,
+      46.93000000000001,
+      47.13,
+      47.33,
+      47.53,
+      47.730000000000004,
+      47.93000000000001,
+      48.13,
+      48.33,
+      48.53,
+      48.730000000000004,
+      48.93000000000001,
+      49.13,
+      49.33,
+      49.53,
+      49.730000000000004,
+      49.93000000000001,
+      50.13,
+      50.33,
+      50.53,
+      50.730000000000004,
+      50.93000000000001,
+      51.13,
+      51.33,
+      51.53,
+      51.730000000000004,
+      51.93000000000001,
+      52.13,
+      52.33,
+      52.53,
+      52.730000000000004,
+      52.93000000000001,
+      53.13,
+      53.33,
+      53.53,
+      53.730000000000004,
+      53.93000000000001,
+      54.13,
+      54.33,
+      54.53,
+      54.730000000000004,
+      54.93000000000001,
+      55.13,
+      55.33,
+      55.53,
+      55.730000000000004,
+      55.93000000000001,
+      56.13,
+      56.33,
+      56.53,
+      56.730000000000004,
+      56.93000000000001,
+      57.13,
+      57.33,
+      57.53,
+      57.730000000000004,
+      57.93000000000001,
+      58.13,
+      58.33,
+      58.53,
+      58.730000000000004,
+      58.93000000000001
+    ],
+    "closed": true
+  },
+  "flange_tie": {
+    "centerline_yz_m": [
+      [
+        -0.75,
+        12.34
+      ],
+      [
+        0.75,
+        12.34
+      ],
+      [
+        0.75,
+        12.46
+      ],
+      [
+        -0.75,
+        12.46
+      ]
+    ],
+    "radius_m": 0.006,
+    "x_offset_from_main_stirrup_m": 0.04,
+    "closed": true
+  },
+  "ducts": {
+    "diameter_m": 0.062,
+    "y_offset_m": 0,
+    "centerline_bases_z_m": [
+      10.8,
+      10.94,
+      11.08
+    ],
+    "rise_m": 0.98,
+    "equation": "x=30.47+29.06*t; z=z_base+0.98*(2*t-1)^2; 0<=t<=1",
+    "representation": "孔道外包络，不是钢绞线"
+  },
+  "cover_reference": {
+    "source": "TL30_source.pdf第8页§6.3.2(3)",
+    "minimum_net_cover_m": 0.03,
+    "scope": "梁体钢筋净保护层；本次实体几何检查不等于配筋设计验证"
+  },
+  "disclosures": [
+    "新增1根架立筋，纵筋14→15根",
+    "腹板4根构造筋φ20→教学φ12，以消除原纵筋与箍肢穿插并给孔道留空间",
+    "下部第2排纵筋内收；主箍提前收窄并包围上部架立筋",
+    "143道翼缘闭合联系筋为新增教学构造，独立于腹板双肢箍",
+    "三孔道从横向布置改为腹板中央竖向错层，修复原孔道实体穿出薄腹板问题",
+    "闭合路径只表达包围关系；弯钩、弯曲半径、锚固长度、施工净距与完整配筋表均未设计",
+    "孔道端块仅锚具外形示意；不表达真实锚固区设计"
+  ],
+  "labels": {
+    "lower_longitudinal": "下部纵向普通钢筋",
+    "web_longitudinal": "腹板纵向构造钢筋",
+    "flange_longitudinal": "翼缘纵向分布钢筋",
+    "upper_erection": "上部纵向架立钢筋",
+    "main_stirrup": "腹板闭合双肢箍",
+    "flange_tie": "翼缘横向闭合联系筋",
+    "prestress_duct": "预应力孔道",
+    "anchor": "孔道端部锚具外形示意"
+  },
+  "status": "passed_independent_geometry_review_with_documented_limitations",
+  "independent_audit": "independent-check.json",
+  "glb_sha256": "864ddba7c6644abd82adb83843f80c1d00858cbdddcbab0324a598a68a923e14"
+}

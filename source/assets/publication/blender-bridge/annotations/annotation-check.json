@@ -1,0 +1,21 @@
+{
+  "section_image_sha256": "bc09c4d8912b638fa561088d629fde96ef3ff860cfa421dd6f78e3301f1604fd",
+  "projected_bridge_edge_pixels": [
+    156.52043,
+    2243.47695
+  ],
+  "recorded_content_alpha_bounds_px": [
+    156,
+    291,
+    2244,
+    659
+  ],
+  "projected_beam_height_pixels": 333.91304,
+  "beam_height_from_projection_m": 2.0,
+  "pile_count": 6,
+  "source_raster_unchanged": true,
+  "outputs": [
+    "annotations/section-dimensions.svg",
+    "annotations/pile-plan.svg"
+  ]
+}

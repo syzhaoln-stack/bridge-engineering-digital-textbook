@@ -293,6 +293,12 @@ window.Quarto = {
 </li>
 <li class="sidebar-item">
 <div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="../blender-model-review.html">
+<span class="menu-text">从模型里取图：把一座桥看清楚</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../resources.html">
 <span class="menu-text">数字资源索引</span></a>
 </div>
@@ -1367,6 +1373,101 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 <section class="level4" data-number="4.7.0.2" id="t梁与小箱梁">
 <h4 class="anchored" data-anchor-id="t梁与小箱梁" data-number="4.7.0.2"><span class="header-section-number">4.7.0.2</span> T梁与小箱梁</h4>
 <p>装配式T梁由腹板、翼缘、横隔梁和湿接缝组成。预制阶段单梁承担自重与张拉作用，横向连接和桥面整体化后才形成共同工作。分析应区分预制截面、组合截面和长期有效截面。横隔梁提高横向联系，但其实际作用取决于数量、位置和连接刚度。</p>
+<!-- BLENDER-BRIDGE-CASE START -->
+<section class="level5" data-number="4.7.0.2.1" id="bridge-assembly-case">
+<h5 class="anchored" data-anchor-id="bridge-assembly-case" data-number="4.7.0.2.1"><span class="header-section-number">4.7.0.2.1</span> 从路面往下看，一座T梁桥是怎样拼起来的？</h5>
+<p>先看整座桥，再点“一幅桥的中间一跨”。转到梁底，找到沿桥长的主梁和横向的连接。这个三跨案例每跨名义跨径30 m，每幅宽12.50 m，每跨每幅有5片主梁；梁距2.575 m，梁高2.00 m。</p>
+<iframe allow="fullscreen" loading="lazy" src="../interactive/bridge-assembly/viewer.html" style="width:100%;height:760px;border:1px solid #d9e1e3;border-radius:12px" title="三跨T梁桥：从整桥到梁片的三维观察">
+</iframe>
+<p><a href="../interactive/bridge-assembly/viewer.html">单独打开，旋转或保存视角</a> · <a href="../blender-model-review.html#fig-blender-section">带尺寸的横断面与更多取景</a></p>
+<details class="figure-method">
+<summary>
+这个案例与前面的算例有什么区别？
+</summary>
+<p>
+这里使用单幅12.50 m、名义3×30 m的装配式预应力连续T梁教学模型；前文20 m、10.8 m宽的五梁案例仍保留自己的荷载与尺寸。构件的识别方法可以借鉴，反力、内力和分配比例不能直接照搬。
+</p>
+<p>
+上部主要尺寸参照公开图册，墩台基础与部分细部为教学补充。端台落座范围和横隔板站位已在教材副本中修正；<a href="../blender-model-review.html">查看来源和检查范围</a>。
+</p>
+</details>
+<!-- BLENDER-BRIDGE-CASE END -->
+<!-- BLENDER-REBAR-CASE START -->
+</section>
+<section class="level5" data-number="4.7.0.2.2" id="t-girder-rebar">
+<h5 class="anchored" data-anchor-id="t-girder-rebar" data-number="4.7.0.2.2"><span class="header-section-number">4.7.0.2.2</span> 混凝土里面，哪些钢筋沿梁长走，哪些围成一圈？</h5>
+<p>隐藏混凝土，再从横断面看一段梁。沿梁长延伸的是纵向普通钢筋：腹板箍筋围住梁身内的纵筋，翼缘的横向联系筋另外包住较宽的翼缘纵筋。随梁长改变高低的管状构件是预应力孔道，用来为钢束留出通道。</p>
+<iframe allow="fullscreen" loading="lazy" src="../interactive/bridge-assembly/rebar.html" style="width:100%;height:800px;border:1px solid #d9e1e3;border-radius:12px" title="一片T梁中的纵筋、箍筋和预应力孔道">
+</iframe>
+<p><a href="../interactive/bridge-assembly/rebar.html">单独打开钢筋观察页</a></p>
+<details class="figure-method">
+<summary>
+这些名称分别指什么？
+</summary>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>看到了什么</th>
+<th>名称</th>
+<th>先理解什么</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>腹板上方、箍筋顶部内侧的一对纵筋</td>
+<td>上部架立纵筋</td>
+<td>在本教学骨架中联系、定位主箍；它们也在箍环以内</td>
+</tr>
+<tr class="even">
+<td>梁下部、沿梁长走的钢筋</td>
+<td>下部纵向普通钢筋</td>
+<td>“下部”说的是位置</td>
+</tr>
+<tr class="odd">
+<td>腹板两侧、沿梁长走的钢筋</td>
+<td>腹板纵向普通钢筋</td>
+<td>不要把侧面的纵筋漏看成箍筋</td>
+</tr>
+<tr class="even">
+<td>翼缘内、沿梁长走的钢筋</td>
+<td>翼缘纵筋</td>
+<td>翼缘比腹板宽，配筋的观察范围也不同</td>
+</tr>
+<tr class="odd">
+<td>沿腹板高度围住纵筋的闭合钢筋</td>
+<td>腹板箍筋</td>
+<td>注意上部架立筋也处于箍环内部；箍筋还参与抗剪等作用</td>
+</tr>
+<tr class="even">
+<td>沿翼缘宽度围住纵筋的钢筋</td>
+<td>翼缘横向联系筋</td>
+<td>本模型单列这一组，不把它误画成穿出腹板的大方箍</td>
+</tr>
+<tr class="odd">
+<td>弯曲的管状通道</td>
+<td>预应力孔道</td>
+<td>孔道与穿在其中的预应力钢束是两种对象</td>
+</tr>
+</tbody>
+</table>
+</details>
+<details class="figure-method">
+<summary>
+能直接把上排叫受压钢筋、下排叫受拉钢筋吗？
+</summary>
+<p>
+先看荷载和所在截面。向下荷载使简支梁跨中产生正弯矩时，下缘有受拉趋势；连续梁中间支点附近出现负弯矩时，上缘可能有受拉趋势。预应力还会叠加轴压和弯矩。“受拉钢筋、受压钢筋”需要结合具体工况和截面设计判断，不能只按上下位置命名。
+</p>
+<p>
+本模型仅表示一片梁的代表性钢筋骨架和孔道。为看清各组包裹关系，教材副本调整了原示意中的纵筋、箍筋与孔道布置；未完整表达施工图中的弯钩、搭接、锚固和全部配筋，不用于照图下料。图中的孔道没有代替实际预应力钢绞线。
+</p>
+</details>
+<!-- BLENDER-REBAR-CASE END -->
 <p>预制小箱梁具有闭口截面和较好抗扭性能，梁间通过湿接缝和横梁连接。单箱制造、运输和架设受重量与宽度限制。端部、支点和预应力锚固区常有加厚和横隔构造，总体标准截面不能代表这些局部区域。</p>
 <p>T梁各组成部分的受力职责较为清楚：翼缘板扩大受压区并参与桥面横向受力，腹板承担纵向弯曲形成的主拉压应力传递及剪力，横隔梁和湿接缝组织梁间协同。外梁还承担桥面悬臂板、护栏和偏心轮载，其截面与内梁即使几何相同，作用组合和横向分配也可能不同。建模时，预制翼缘和现浇桥面板的有效宽度、材料龄期及连接形成时间应与施工顺序一致。</p>
 <p>小箱梁的闭口截面可提高单梁运输、架设及成桥后的抗扭能力，但“单片箱梁抗扭较强”不等于梁间无需可靠连接。车辆偏载时，各箱梁仍需通过湿接缝、桥面现浇层和端/中横梁协调变形。若接缝开裂或刚度退化，外侧单箱可能承担更高轮载并出现较大的梁间挠度差。既有桥评估宜将接缝刚度作为可变参数，而不是把全部梁片永久绑定为理想刚体横截面。</p>
@@ -1418,6 +1519,7 @@ m_i=\frac{1}{2}\left[\eta_{2,i}(y_1)+\eta_{2,i}(y_2)\right].
 </tr>
 </tbody>
 </table>
+</section>
 </section>
 <section class="level3" data-number="4.7.1" id="连续箱梁的体系与构造">
 <h3 class="anchored" data-anchor-id="连续箱梁的体系与构造" data-number="4.7.1"><span class="header-section-number">4.7.1</span> 连续箱梁的体系与构造</h3>
@@ -2757,6 +2859,30 @@ q_p(x)=P\frac{\mathrm d^2e}{\mathrm dx^2},
 </section>
 <section class="level4" data-number="4.10.6.4" id="顶推施工">
 <h4 class="anchored" data-anchor-id="顶推施工" data-number="4.10.6.4"><span class="header-section-number">4.10.6.4</span> 顶推施工</h4>
+<!-- AUTHOR-SELECTED G04-B START -->
+<p><strong>桥头还没碰到前方的桥墩，这一段由哪里托着？</strong></p>
+<div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-author-g04-b">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-author-g04-b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img class="img-fluid figure-img" src="../assets/publication/imagegen-samples/G04-B.png" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-author-g04-b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 4.23: 桥梁向前移动时的施工情境。前端橙色构件为导梁，尚未接触前方支点。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+图像来源与本例条件
+</summary>
+<p>
+AI 生成教具插画。本情境含导梁；下一幅 F19 刻意采用不含导梁的静定教学模型，不能把其中内力数值直接标到这幅插画上。
+</p>
+<p>
+作者选样：G04-B · 2026-09-07 · <a href="../assets/publication/imagegen-samples/public-records/G04-B.json">制作记录</a>
+</p>
+</details>
+<!-- AUTHOR-SELECTED G04-B END -->
 <!-- PRIORITY-FIGURE F19 START -->
 <div alt="桥还没碰到下一个支点，悬空越长会怎样？。悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F19">
 <figure class="quarto-float quarto-float-fig figure">
@@ -2764,7 +2890,7 @@ q_p(x)=P\frac{\mathrm d^2e}{\mathrm dx^2},
 <img alt="桥还没碰到下一个支点，悬空越长会怎样？。悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。" class="img-fluid figure-img" src="../assets/publication/priority-40/F19.svg" style="width:100.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.23: 悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。
+图 4.24: 悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。
 </figcaption>
 </figure>
 </div>
@@ -3046,7 +3172,7 @@ M_{\mathrm{tot}}=2625\ \mathrm{kN\cdot m}.
 <img alt="某根梁的活载增量为负，就已经离开支承了吗？。已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。" class="img-fluid figure-img" src="../assets/publication/priority-40/F17.svg" style="width:100.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 4.24: 已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。
+图 4.25: 已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。
 </figcaption>
 </figure>
 </div>

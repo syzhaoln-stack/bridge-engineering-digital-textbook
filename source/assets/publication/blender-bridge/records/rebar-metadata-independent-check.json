@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-09-07",
+  "artifact": "models/highway_t_girder.glb",
+  "sha256": "864ddba7c6644abd82adb83843f80c1d00858cbdddcbab0324a598a68a923e14",
+  "geometry_audited_sha256": "5dc3cebb552c475704051c4504e1499cef8d0cbfec57c027cbf6976234a4c974",
+  "reconstructed_previous_sha256": "5dc3cebb552c475704051c4504e1499cef8d0cbfec57c027cbf6976234a4c974",
+  "bin_and_following_chunks_sha256": "256f4db2ad3c349a0cdde3cb617a8cabc2e9e4196d65577823cb755e260bdd0e",
+  "changed_component_ids": 144,
+  "checks": [
+    {
+      "name": "All rebar semantic IDs equal their node names",
+      "passed": true
+    },
+    {
+      "name": "All component IDs unique throughout GLB",
+      "passed": true
+    },
+    {
+      "name": "144 expected copied IDs corrected",
+      "passed": true
+    },
+    {
+      "name": "Reversing only IDs reconstructs exact previously audited GLB SHA",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "method": "Reverse only 143 flange-tie IDs and the additional upper erection-bar ID in memory, serialize identically, then compare the entire reconstructed GLB SHA to the independently audited pre-ID-edit file. This proves all other JSON fields and BIN bytes are unchanged."
+}

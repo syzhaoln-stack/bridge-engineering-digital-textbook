@@ -293,6 +293,12 @@ window.Quarto = {
 </li>
 <li class="sidebar-item">
 <div class="sidebar-item-container">
+<a class="sidebar-item-text sidebar-link" href="../blender-model-review.html">
+<span class="menu-text">从模型里取图：把一座桥看清楚</span></a>
+</div>
+</li>
+<li class="sidebar-item">
+<div class="sidebar-item-container">
 <a class="sidebar-item-text sidebar-link" href="../resources.html">
 <span class="menu-text">数字资源索引</span></a>
 </div>
@@ -1031,6 +1037,30 @@ g(\mathbf X)=R(\mathbf X)-S(\mathbf X),
 </section>
 <section class="level4" data-number="2.4.0.2" id="形心截面二次矩与截面模量">
 <h4 class="anchored" data-anchor-id="形心截面二次矩与截面模量" data-number="2.4.0.2"><span class="header-section-number">2.4.0.2</span> 形心、截面二次矩与截面模量</h4>
+<!-- AUTHOR-SELECTED G02-B START -->
+<p><strong>同一块木条换个放法，承受同样的重量时会怎样？</strong></p>
+<div class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-author-g02-b">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-author-g02-b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img class="img-fluid figure-img" src="../assets/publication/imagegen-samples/G02-B.png" style="width:100.0%"/>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-author-g02-b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+图 2.5: 平放和竖放的木条。图中先看截面方向，尚未画加载后的变形。
+</figcaption>
+</figure>
+</div>
+<details class="figure-method">
+<summary>
+图像来源与本例条件
+</summary>
+<p>
+AI 生成教具插画；比较需保持材料、跨度和荷载相同。本图底稿的木条截面为0.10×0.020 m，转向后二次矩比为25；下一幅F06另用0.20×0.60 m矩形截面，比值为9，不能把9倍套到这根木条。实际弯曲程度看对应交互计算，不能从未变形的插画判断。
+</p>
+<p>
+作者选样：G02-B · 2026-09-07 · <a href="../assets/publication/imagegen-samples/public-records/G02-B.json">制作记录</a>
+</p>
+</details>
+<!-- AUTHOR-SELECTED G02-B END -->
 <!-- PRIORITY-FIGURE F06 START -->
 <div alt="同一块板竖着放、横着放，为什么弯起来不一样？。明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。" class="quarto-float quarto-figure quarto-figure-center anchored" id="fig-priority-F06">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1038,7 +1068,7 @@ g(\mathbf X)=R(\mathbf X)-S(\mathbf X),
 <img alt="同一块板竖着放、横着放，为什么弯起来不一样？。明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。" class="img-fluid figure-img" src="../assets/publication/priority-40/F06.svg" style="width:100.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F06-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 2.5: 明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。
+图 2.6: 明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。
 </figcaption>
 </figure>
 </div>
@@ -1288,7 +1318,7 @@ P_{\mathrm{cr}}=\frac{\pi^2EI}{(K L)^2},
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/buckling.svg" style="width:72.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-euler-modes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 2.6: 不同端部条件下的理想压杆屈曲形态
+图 2.7: 不同端部条件下的理想压杆屈曲形态
 </figcaption>
 </figure>
 </div>
@@ -1382,7 +1412,7 @@ q_p(x)\approx P\frac{\mathrm d^2e(x)}{\mathrm dx^2}.
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/prestress.svg" style="width:90.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-prestress-fallback-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 2.7: 预应力钢束、等效作用与截面应力三种视图
+图 2.8: 预应力钢束、等效作用与截面应力三种视图
 </figcaption>
 </figure>
 </div>
@@ -1470,7 +1500,7 @@ f_n=\frac{1}{2\pi}\sqrt{\frac{k}{m}}.
 <img class="static-fallback img-fluid figure-img" src="../assets/generated/interactive-diagrams/modal.svg" style="width:70.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch02-modal-relation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 2.8: 单自由度质量—刚度—频率静态基准图
+图 2.9: 单自由度质量—刚度—频率静态基准图
 </figcaption>
 </figure>
 </div>
@@ -2748,7 +2778,7 @@ q_j=\frac{\partial U}{\partial Q_j}.
 <img alt="同样长的压杆，端部能不能转动有多大影响？。实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。" class="img-fluid figure-img" src="../assets/publication/priority-40/F07.svg" style="width:100.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F07-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 2.9: 实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。
+图 2.10: 实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。
 </figcaption>
 </figure>
 </div>
@@ -2878,7 +2908,7 @@ k\frac{\pi^2E}{12(1-\nu^2)}
 <img alt="普通钢筋和预应力，分别在什么时候开始起作用？。左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。" class="img-fluid figure-img" src="../assets/publication/priority-40/F08.svg" style="width:100.0%"/>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-priority-F08-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-图 2.10: 左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。
+图 2.11: 左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。
 </figcaption>
 </figure>
 </div>

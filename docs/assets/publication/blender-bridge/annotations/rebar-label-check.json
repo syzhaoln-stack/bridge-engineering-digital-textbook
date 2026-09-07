@@ -1,0 +1,121 @@
+{
+  "source_image": "renders/rebar_section.png",
+  "source_sha256": "17f62d840decc7dbde95cc02ef727a71c3bb0cbc3b6971f80ab0e4fed419fc6b",
+  "source_raster_unchanged": true,
+  "method": "Blender world_to_camera_view coordinates supplied with the final render",
+  "labels": [
+    {
+      "label": "翼缘纵向分布钢筋",
+      "world_m": [
+        44.71,
+        -12.0,
+        12.42
+      ],
+      "source_image_px": [
+        1401.3,
+        209.3
+      ],
+      "svg_anchor_px": [
+        1801.3,
+        354.3
+      ]
+    },
+    {
+      "label": "翼缘横向闭合联系筋",
+      "world_m": [
+        44.77,
+        -12.4,
+        12.4
+      ],
+      "source_image_px": [
+        1723.3,
+        225.4
+      ],
+      "svg_anchor_px": [
+        2123.3,
+        370.4
+      ]
+    },
+    {
+      "label": "腹板纵向构造钢筋",
+      "world_m": [
+        44.71,
+        -11.696,
+        11.65
+      ],
+      "source_image_px": [
+        1156.5,
+        829.2
+      ],
+      "svg_anchor_px": [
+        1556.5,
+        974.2
+      ]
+    },
+    {
+      "label": "下部纵向普通钢筋",
+      "world_m": [
+        44.71,
+        -11.88,
+        10.6
+      ],
+      "source_image_px": [
+        1304.7,
+        1674.6
+      ],
+      "svg_anchor_px": [
+        1704.7,
+        1819.6
+      ]
+    },
+    {
+      "label": "上部纵向架立钢筋",
+      "world_m": [
+        44.72,
+        -11.694,
+        12.444
+      ],
+      "source_image_px": [
+        1154.9,
+        190.0
+      ],
+      "svg_anchor_px": [
+        1554.9,
+        335.0
+      ]
+    },
+    {
+      "label": "腹板闭合双肢箍",
+      "world_m": [
+        44.73,
+        -11.71,
+        11.7
+      ],
+      "source_image_px": [
+        1167.8,
+        789.0
+      ],
+      "svg_anchor_px": [
+        1567.8,
+        934.0
+      ]
+    },
+    {
+      "label": "预应力孔道",
+      "world_m": [
+        44.71,
+        -11.65,
+        10.94
+      ],
+      "source_image_px": [
+        1119.5,
+        1400.9
+      ],
+      "svg_anchor_px": [
+        1519.5,
+        1545.9
+      ]
+    }
+  ],
+  "output": "annotations/rebar-section-labels.svg"
+}

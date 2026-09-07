@@ -49,6 +49,14 @@
 #### 桥梁的基本组成
 
 
+<!-- AUTHOR-SELECTED G01-B START -->
+**从桥面往下找：主梁、支座和墩台分别在哪里？**
+
+![整桥与车辆的空间位置。AI 生成情境插画；传力方向见下一幅原理图。](../assets/publication/imagegen-samples/G01-B.png){#fig-author-g01-b width=100%}
+
+<details class="figure-method"><summary>图像来源与本例条件</summary><p>两跨 20 m、桥宽 10.8 m 是本组底稿的教学约定。生成插画不用于量取尺寸，也不是后文三跨 30 m 的 Blender 案例。</p><p>作者选样：G01-B · 2026-09-07 · <a href="../assets/publication/imagegen-samples/public-records/G01-B.json">制作记录</a></p></details>
+<!-- AUTHOR-SELECTED G01-B END -->
+
 <!-- PRIORITY-FIGURE F01 START -->
 ![由车辆、桥面板、主梁、支座、墩台、基础到地基的竖向传力路径。基础处向上箭头表示地基对基础的反力。](../assets/publication/priority-40/F01.svg){#fig-priority-F01 width=100% fig-alt="车的重量，最后传到了哪里？。由车辆、桥面板、主梁、支座、墩台、基础到地基的竖向传力路径。基础处向上箭头表示地基对基础的反力。"}
 

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="625" viewBox="0 0 1400 1250" role="img" aria-label="同一承台下的六根桩">
+<title>同一承台下的六根桩</title>
+<metadata>{&quot;date&quot;: &quot;2026-09-07&quot;, &quot;units&quot;: &quot;m&quot;, &quot;status&quot;: &quot;teaching substructure supplement, not a verified foundation design&quot;, &quot;cap_size_xy&quot;: [5.3, 10.2], &quot;pile_diameter&quot;: 1.2, &quot;pile_x&quot;: [-1.6, 1.6], &quot;pile_y&quot;: [-3.4, 0, 3.4], &quot;pier_column_diameter&quot;: 1.6, &quot;pier_column_x&quot;: [0, 0], &quot;pier_column_y&quot;: [-3.65, 3.65], &quot;coordinate_mapping&quot;: &quot;screen right = transverse y; screen up = longitudinal x; local origin at pile-cap center&quot;}</metadata>
+<defs><marker id="arrow" markerWidth="12" markerHeight="10" refX="10" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 4 L 0 8" fill="none" stroke="#52718c" stroke-width="2"/></marker></defs>
+<style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',Arial,sans-serif;fill:#24384a}.title{font-size:42px;font-weight:600}.sub{font-size:27px;fill:#667584}.dim{font-size:31px;font-weight:500}.note{font-size:26px;fill:#667584}.line{fill:none;stroke:#52718c;stroke-width:2.4}.extension{fill:none;stroke:#8c9ba8;stroke-width:1.8}.dimension{fill:none;stroke:#52718c;stroke-width:2.4;marker-start:url(#arrow);marker-end:url(#arrow)}.direction{fill:none;stroke:#52718c;stroke-width:2.4;marker-end:url(#arrow)}</style>
+<rect width="1400" height="1250" fill="white"/>
+<text x="105.000" y="75.000" class="title" text-anchor="start" >同一承台下的六根桩</text>
+<text x="105.000" y="122.000" class="sub" text-anchor="start" >俯视：沿桥向两排，每排三根</text>
+<rect x="201.00000000000006" y="401.5" width="917.9999999999999" height="477.0" rx="3" fill="#f5f8fb" stroke="#52718c" stroke-width="3"/>
+<circle cx="331.5" cy="640" r="72.0" fill="#f6eddc" fill-opacity="0.75" stroke="#ad8142" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="331.500" y="648.000" class="note" text-anchor="middle" >墩柱投影</text>
+<circle cx="988.5" cy="640" r="72.0" fill="#f6eddc" fill-opacity="0.75" stroke="#ad8142" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="988.500" y="648.000" class="note" text-anchor="middle" >墩柱投影</text>
+<circle cx="354.0" cy="496.0" r="54.0" fill="#dfedf8" stroke="#52718c" stroke-width="3"/>
+<text x="354.000" y="506.000" class="dim" text-anchor="middle" >1</text>
+<circle cx="660" cy="496.0" r="54.0" fill="#dfedf8" stroke="#52718c" stroke-width="3"/>
+<text x="660.000" y="506.000" class="dim" text-anchor="middle" >2</text>
+<circle cx="966.0" cy="496.0" r="54.0" fill="#dfedf8" stroke="#52718c" stroke-width="3"/>
+<text x="966.000" y="506.000" class="dim" text-anchor="middle" >3</text>
+<circle cx="354.0" cy="784.0" r="54.0" fill="#dfedf8" stroke="#52718c" stroke-width="3"/>
+<text x="354.000" y="794.000" class="dim" text-anchor="middle" >4</text>
+<circle cx="660" cy="784.0" r="54.0" fill="#dfedf8" stroke="#52718c" stroke-width="3"/>
+<text x="660.000" y="794.000" class="dim" text-anchor="middle" >5</text>
+<circle cx="966.0" cy="784.0" r="54.0" fill="#dfedf8" stroke="#52718c" stroke-width="3"/>
+<text x="966.000" y="794.000" class="dim" text-anchor="middle" >6</text>
+<path d="M 201.000 393.500 L 201.000 309.000" class="extension"/>
+<path d="M 1119.000 393.500 L 1119.000 309.000" class="extension"/>
+<path d="M 201.000 322.000 L 1119.000 322.000" class="dimension"/>
+<text x="660.000" y="300.000" class="dim" text-anchor="middle" >10.20 m</text>
+<path d="M 1126.000 401.500 L 1248.000 401.500" class="extension"/>
+<path d="M 1126.000 878.500 L 1248.000 878.500" class="extension"/>
+<path d="M 1235.000 401.500 L 1235.000 878.500" class="dimension"/>
+<text x="1289.000" y="640.000" class="dim" text-anchor="middle" transform="rotate(-90 1289 640)">5.30 m</text>
+<path d="M 115.000 275.000 L 115.000 195.000" class="direction"/>
+<text x="115.000" y="171.000" class="note" text-anchor="middle" >桥向 x</text>
+<path d="M 215.000 223.000 L 380.000 223.000" class="direction"/>
+<text x="402.000" y="231.000" class="note" text-anchor="start" >横桥向 y</text>
+<text x="105.000" y="994.000" class="dim" text-anchor="start" >6 根桩，直径均为 D = 1.20 m。</text>
+<circle cx="118" cy="1057" r="14" fill="#f6eddc" stroke="#ad8142" stroke-width="2.5" stroke-dasharray="6 4"/>
+<text x="151.000" y="1066.000" class="note" text-anchor="start" >虚线圆表示上方两根墩柱的位置。</text>
+<text x="105.000" y="1140.000" class="note" text-anchor="start" >下部结构为教学补充；此图用于认识布置，不作为基础设计图。</text>
+</svg>

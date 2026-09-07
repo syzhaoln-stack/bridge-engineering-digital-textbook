@@ -2,7 +2,7 @@
 
 <div class="visual-batch-hero"><p class="batch-kicker">桥梁思维 · 新一批图与实验</p><p class="batch-lead">一辆车停在桥上，五根梁一定平均分吗？先听两个人争论，再亲手改变条件，看看自己的判断能不能站住。</p><div class="batch-actions"><a class="batch-primary" href="#dialogues">先听一段对话</a><a href="interactive/course-package.html">选一个实验动手</a><a href="#forty-figures">翻看 40 幅新图</a><a href="#notebooks">边读边算</a></div></div>
 
-**新增选样：**[8 处内容 × 3 种画法，比较 24 张 GPT 生成候选图](interactive/imagegen-review.html)。每处可对照参数底稿、放大图片并记录选择。7 张有明确构造待修项，已单独标出；原有 40 幅参数图继续保留。
+**选样已同步：**[查看作者选定的 8 张图](interactive/imagegen-review.html)，其余 16 张收进可恢复的备选。5 张已插入正文试排，3 张保留画法并等待构造修正；原有 40 幅参数图继续保留。[看 Blender 模型的六幅构造图与两幅钢筋图](blender-model-review.html)，也可以直接[旋转整桥](interactive/bridge-assembly/viewer.html)，或[单独看梁里的钢筋与名称](chapters/ch03.html#t-girder-rebar)。
 
 ## 先听一段对话 {#dialogues}
 

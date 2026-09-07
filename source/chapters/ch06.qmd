@@ -24,6 +24,14 @@
 ## 组成、体系与荷载路径
 
 
+<!-- AUTHOR-SELECTED G06-C START -->
+**沿着主缆看过去，它的两端接到了哪里？**
+
+![地锚式悬索桥的整体形态。细竖线为吊索，两端主缆通向岸上的锚碇。](../assets/publication/imagegen-samples/G06-C.png){#fig-author-g06-c width=100%}
+
+<details class="figure-method"><summary>图像来源与本例条件</summary><p>AI 生成线稿淡彩插画，用于辨认构件与相互位置；力的方向见 F27，数值和尺寸以对应算例为准。</p><p>作者选样：G06-C · 2026-09-07 · <a href="../assets/publication/imagegen-samples/public-records/G06-C.json">制作记录</a></p></details>
+<!-- AUTHOR-SELECTED G06-C END -->
+
 <!-- PRIORITY-FIGURE F27 START -->
 ![地锚式悬索桥中，桥面经加劲梁、吊索和主缆传力，索塔与锚碇共同承担主缆传来的作用。自锚式的主缆水平分力路径不同，不能套用本图。](../assets/publication/priority-40/F27.svg){#fig-priority-F27 width=100% fig-alt="悬索桥的重量，最后交给了谁？。地锚式悬索桥中，桥面经加劲梁、吊索和主缆传力，索塔与锚碇共同承担主缆传来的作用。自锚式的主缆水平分力路径不同，不能套用本图。"}
 

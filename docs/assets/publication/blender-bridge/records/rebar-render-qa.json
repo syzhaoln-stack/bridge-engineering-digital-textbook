@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "image": "renders/rebar_overview.png",
+      "alpha_bbox_px": [
+        250,
+        225,
+        2152,
+        419
+      ],
+      "minimum_edge_margin_fraction": 0.1033,
+      "rgba_decodes": true,
+      "labels_inside_frame": true
+    },
+    {
+      "image": "renders/rebar_section.png",
+      "alpha_bbox_px": [
+        395,
+        145,
+        2005,
+        1755
+      ],
+      "minimum_edge_margin_fraction": 0.0763,
+      "rgba_decodes": true,
+      "labels_inside_frame": true
+    }
+  ],
+  "original_six_images_sha256_unchanged": true,
+  "geometry_glb_sha256": "864ddba7c6644abd82adb83843f80c1d00858cbdddcbab0324a598a68a923e14",
+  "manual_review": "逐张查看：全长完整，15纵筋/闭合主箍/翼缘联系筋分组可辨；截面普通钢筋为实心、孔道为空心显示环，保留真实T形外边界；透明背景用于白底书页。"
+}

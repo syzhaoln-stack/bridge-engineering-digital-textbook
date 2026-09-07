@@ -251,6 +251,18 @@
     "references/G07-plan-reference.png",
     "references/G07-reference.png",
     "references/G08-dimensions.json",
-    "references/G08-reference.png"
-  ]
+    "references/G08-reference.png",
+    "selection/author-selection-20260907.json",
+    "selection/application-ledger.json",
+    "selection/image-decisions.csv",
+    "selection/style-guide.md"
+  ],
+  "author_selection": {
+    "record": "selection/author-selection-20260907.json",
+    "ledger": "selection/application-ledger.json",
+    "selected": 8,
+    "reserve": 16,
+    "context_insertions": 5,
+    "selected_needs_revision": 3
+  }
 }

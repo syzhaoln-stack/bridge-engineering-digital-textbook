@@ -1,0 +1,80 @@
+{
+  "checked_on": "2026-09-07",
+  "artifact": "models/highway_t_girder.glb",
+  "sha256": "864ddba7c6644abd82adb83843f80c1d00858cbdddcbab0324a598a68a923e14",
+  "method": "Independent parser of final GLB vertex positions and hierarchy transforms; glTF Y-up transformed to bridge x-longitudinal/y-transverse/z-up. No reliance on revision claims for pass status. Reinforcement: independent read-only final-mesh glTF import, watertight topology, radius-aware containment and cover sampling, exact 3D centreline-segment distances minus outer radii. Final ID-only metadata correction validated by reconstructing exact prior whole-file SHA.",
+  "units": "m",
+  "tolerance_m": 0.0001,
+  "numeric_assertions": 1357,
+  "passed_assertions": 1357,
+  "passed": true,
+  "scope": [
+    "30 primary girders: 2.00 m depth, 29.57 m edge-span precast length and 29.30 m central-span precast length",
+    "6 deck panels: 30.00 m by 12.50 m by 0.10 m; overall double-carriageway deck width 25.50 m",
+    "120 transverse diaphragm segments and 120 closure blocks: updated bridge-coordinate stations",
+    "20 end bearing pedestals: elevation contact and bottom-face extents within beveled abutment flat-top extents",
+    "4 amended abutment stems: contained by footing plan and in vertical contact with footing",
+    "Only structural category roots 01 to 09; no road vehicle, train, track or landscape named meshes",
+    "15 ordinary longitudinal bars grouped as 5 lower, 4 web, 4 flange and 2 upper erection bars; assigned closed-tie solid enclosure",
+    "143 main stirrups and 143 flange ties: actual solid loop closure, stations, diameters and final-concrete outer-envelope cover",
+    "3 prestress duct envelopes: concrete containment and clearance from ordinary bars, closed ties and one another",
+    "All component IDs unique; 144 copied IDs corrected, with geometry identity independently established"
+  ],
+  "diaphragm_stations_m": [
+    [
+      0.6,
+      7.78,
+      14.98,
+      22.18,
+      29.36
+    ],
+    [
+      30.64,
+      37.82,
+      45,
+      52.18,
+      59.36
+    ],
+    [
+      60.64,
+      67.82,
+      75.02,
+      82.22,
+      89.4
+    ]
+  ],
+  "minimum_end_pedestal_to_abutment_flat_top_x_margin_m": 0.129999,
+  "limitations": [
+    "Geometry and documented teaching dimensions only; no bearing capacity, structural strength, foundation, traffic, or code-compliance validation.",
+    "Flat-face extent containment applies to the modeled rectangular abutment and pedestal; this is not a general surface-contact solver.",
+    "Reinforcement, bearings and substructure include representational teaching assumptions.",
+    "Numeric pass applies to the identified GLB checksum; screenshot composition is reviewed separately.",
+    "Reinforcement cover uses final vertices and finite dense radius-aware sampling, not an exact continuous solid Boolean proof.",
+    "The revised cage changes teaching bar sizes/count/layout and is not a reproduction of the full original bar schedule.",
+    "A 9 mm positive duct-to-bar geometric gap does not certify concrete placing, aggregate passage, minimum construction spacing or reinforcement design.",
+    "Asserted counts expand checks across individual objects; they are not distinct engineering design verifications."
+  ],
+  "assertion_groups": {
+    "primary_structure": 372,
+    "reinforcement_geometry": 981,
+    "metadata_identity_and_equivalence": 4
+  },
+  "reinforcement_results": {
+    "ordinary_longitudinal_bars": 15,
+    "main_stirrups": 143,
+    "flange_ties": 143,
+    "prestress_ducts": 3,
+    "minimum_main_and_flange_tie_circular_envelope_cover_m": 0.033999961853027345,
+    "minimum_ordinary_longitudinal_bar_cover_m": 0.045999755859375,
+    "minimum_duct_to_concrete_outer_surface_gap_m": 0.06899942779541016,
+    "minimum_duct_to_ordinary_bar_swept_gap_m": 0.00899990844726598,
+    "minimum_duct_to_main_stirrup_swept_gap_lower_bound_m": 0.0230000000000005,
+    "minimum_duct_pair_swept_gap_m": 0.07676806624917157,
+    "note": "Positive geometric clearances are not construction clear-spacing approval. Ducts are outer void envelopes, not strands. Closed loops omit hooks and bend-radius/anchorage detailing."
+  },
+  "detailed_records": [
+    "geometry-independent-audit.json",
+    "rebar-independent-audit.json",
+    "rebar-metadata-independent-check.json"
+  ]
+}

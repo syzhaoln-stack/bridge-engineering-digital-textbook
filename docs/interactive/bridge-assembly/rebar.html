@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>把一片梁的钢筋看清楚</title>
+<script type="importmap">{"imports":{"three":"./vendor/three/three.module.js","three/addons/":"./vendor/three/addons/"}}</script>
+<link href="rebar.css" rel="stylesheet"/></head>
+<body>
+<header><div><p class="eyebrow">一片预应力 T 梁 · 配筋观察</p><h1>把梁里面的钢筋看清楚</h1></div><button disabled="" id="save">保存当前视角 PNG</button></header>
+<nav aria-label="观察范围"><button aria-pressed="true" data-preset="segment">看一段</button><button aria-pressed="false" data-preset="whole">整片梁</button><button aria-pressed="false" data-preset="section">横断面</button><button disabled="" id="reset">复位</button></nav>
+<div class="layout"><main id="stage"><canvas aria-label="旋转查看梁内钢筋，单击构件看名称" id="canvas" tabindex="0"></canvas><svg aria-hidden="true" id="leaders"></svg><div aria-hidden="true" id="labels"></div><div id="cover"><p>先看一小段，再沿着整片梁找一遍。</p><button id="load">打开配筋模型</button><small>只载入这一座桥的模型，在其中单独观察一片梁。</small></div><p id="status" role="status">尚未载入</p><p class="hint">拖动旋转 · 滚轮缩放 · 右键平移 · 单击看名称</p></main>
+<aside><h2 id="view-title">看一段</h2><p id="view-note">只看中间 3 m，看看纵筋和箍筋怎样放在一起。</p><label class="concrete"><input checked="" disabled="" id="concrete" type="checkbox"/>半透明混凝土 / 截面轮廓</label><p class="small muted">颜色区分类别。点“靠近”查看对应名称与引线。</p><div id="legend"></div><p id="detail" role="status">单击钢筋或孔道，查看名称。</p><button disabled="" id="focus">靠近所选构件</button><details><summary>这张模型怎样理解？</summary><p>第 1 幅桥、第 2 跨、第 1 片预应力 T 梁。上部架立筋放在腹板主箍内，翼缘纵筋由翼缘联系筋围住。两类横向钢筋分别表示。</p><p>横断面视角沿梁轴观察一小段，同时显示纵向相距 40 mm 的主箍和翼缘联系筋；两环并非位于同一截面。剖面补面只为看清内部，原构件位置不变。</p><p>孔道不是钢绞线。此处是代表性配筋的教学展示，不是配筋施工图。</p><p>上部或下部并不固定对应受拉或受压，受力性质随荷载、支承和施工阶段改变。</p><p>PNG 保存三维画面和当前名称引线；不含页面按钮，不作为尺寸测量图。</p></details></aside></div>
+<script src="rebar.js" type="module"></script></body></html>

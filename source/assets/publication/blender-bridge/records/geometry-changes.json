@@ -1,0 +1,1293 @@
+{
+  "source_case": "三维案例_公路桥与复兴号_20260907",
+  "source_blend": "blender/Highway_3x30m_T_girder.blend",
+  "source_blend_sha256": "b2cc47d571dbfbd4dfc75374f44c17359a3d7864119b1caa26e94bb1c40e5ec7",
+  "units": "m",
+  "changes": [
+    {
+      "object": "C1_S1_Diaphragm1_1",
+      "old_station_m": 0.5999999940395355,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "DiaphragmClosure_0_0_0_0",
+      "old_station_m": 0.6000000238418579,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "C1_S1_Diaphragm1_2",
+      "old_station_m": 0.5999999940395355,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "DiaphragmClosure_0_0_0_1",
+      "old_station_m": 0.6000000238418579,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "C1_S1_Diaphragm1_3",
+      "old_station_m": 0.5999999940395355,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "DiaphragmClosure_0_0_0_2",
+      "old_station_m": 0.6000000238418579,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "C1_S1_Diaphragm1_4",
+      "old_station_m": 0.5999999940395355,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "DiaphragmClosure_0_0_0_3",
+      "old_station_m": 0.6000000238418579,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "C1_S1_Diaphragm2_1",
+      "old_station_m": 7.7799999713897705,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "DiaphragmClosure_0_0_1_0",
+      "old_station_m": 7.78000020980835,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "C1_S1_Diaphragm2_2",
+      "old_station_m": 7.7799999713897705,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "DiaphragmClosure_0_0_1_1",
+      "old_station_m": 7.78000020980835,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "C1_S1_Diaphragm2_3",
+      "old_station_m": 7.7799999713897705,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "DiaphragmClosure_0_0_1_2",
+      "old_station_m": 7.78000020980835,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "C1_S1_Diaphragm2_4",
+      "old_station_m": 7.7799999713897705,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "DiaphragmClosure_0_0_1_3",
+      "old_station_m": 7.78000020980835,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "C1_S1_Diaphragm3_1",
+      "old_station_m": 14.865000247955322,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "DiaphragmClosure_0_0_2_0",
+      "old_station_m": 14.864999771118164,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "C1_S1_Diaphragm3_2",
+      "old_station_m": 14.865000247955322,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "DiaphragmClosure_0_0_2_1",
+      "old_station_m": 14.864999771118164,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "C1_S1_Diaphragm3_3",
+      "old_station_m": 14.865000247955322,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "DiaphragmClosure_0_0_2_2",
+      "old_station_m": 14.864999771118164,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "C1_S1_Diaphragm3_4",
+      "old_station_m": 14.865000247955322,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "DiaphragmClosure_0_0_2_3",
+      "old_station_m": 14.864999771118164,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "C1_S1_Diaphragm4_1",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "DiaphragmClosure_0_0_3_0",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "C1_S1_Diaphragm4_2",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "DiaphragmClosure_0_0_3_1",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "C1_S1_Diaphragm4_3",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "DiaphragmClosure_0_0_3_2",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "C1_S1_Diaphragm4_4",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "DiaphragmClosure_0_0_3_3",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "C1_S1_Diaphragm5_1",
+      "old_station_m": 29.359999656677246,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "DiaphragmClosure_0_0_4_0",
+      "old_station_m": 29.360000610351562,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "C1_S1_Diaphragm5_2",
+      "old_station_m": 29.359999656677246,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "DiaphragmClosure_0_0_4_1",
+      "old_station_m": 29.360000610351562,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "C1_S1_Diaphragm5_3",
+      "old_station_m": 29.359999656677246,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "DiaphragmClosure_0_0_4_2",
+      "old_station_m": 29.360000610351562,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "C1_S1_Diaphragm5_4",
+      "old_station_m": 29.359999656677246,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "DiaphragmClosure_0_0_4_3",
+      "old_station_m": 29.360000610351562,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "C1_S2_Diaphragm1_1",
+      "old_station_m": 30.869999885559082,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "DiaphragmClosure_0_1_0_0",
+      "old_station_m": 30.8700008392334,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "C1_S2_Diaphragm1_2",
+      "old_station_m": 30.869999885559082,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "DiaphragmClosure_0_1_0_1",
+      "old_station_m": 30.8700008392334,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "C1_S2_Diaphragm1_3",
+      "old_station_m": 30.869999885559082,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "DiaphragmClosure_0_1_0_2",
+      "old_station_m": 30.8700008392334,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "C1_S2_Diaphragm1_4",
+      "old_station_m": 30.869999885559082,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "DiaphragmClosure_0_1_0_3",
+      "old_station_m": 30.8700008392334,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "C1_S2_Diaphragm2_1",
+      "old_station_m": 38.05000114440918,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "DiaphragmClosure_0_1_1_0",
+      "old_station_m": 38.04999923706055,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "C1_S2_Diaphragm2_2",
+      "old_station_m": 38.05000114440918,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "DiaphragmClosure_0_1_1_1",
+      "old_station_m": 38.04999923706055,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "C1_S2_Diaphragm2_3",
+      "old_station_m": 38.05000114440918,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "DiaphragmClosure_0_1_1_2",
+      "old_station_m": 38.04999923706055,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "C1_S2_Diaphragm2_4",
+      "old_station_m": 38.05000114440918,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "DiaphragmClosure_0_1_1_3",
+      "old_station_m": 38.04999923706055,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "C1_S2_Diaphragm3_1",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "DiaphragmClosure_0_1_2_0",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "C1_S2_Diaphragm3_2",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "DiaphragmClosure_0_1_2_1",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "C1_S2_Diaphragm3_3",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "DiaphragmClosure_0_1_2_2",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "C1_S2_Diaphragm3_4",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "DiaphragmClosure_0_1_2_3",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "C1_S2_Diaphragm4_1",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "DiaphragmClosure_0_1_3_0",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "C1_S2_Diaphragm4_2",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "DiaphragmClosure_0_1_3_1",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "C1_S2_Diaphragm4_3",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "DiaphragmClosure_0_1_3_2",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "C1_S2_Diaphragm4_4",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "DiaphragmClosure_0_1_3_3",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "C1_S2_Diaphragm5_1",
+      "old_station_m": 59.35999870300293,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "DiaphragmClosure_0_1_4_0",
+      "old_station_m": 59.36000061035156,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "C1_S2_Diaphragm5_2",
+      "old_station_m": 59.35999870300293,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "DiaphragmClosure_0_1_4_1",
+      "old_station_m": 59.36000061035156,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "C1_S2_Diaphragm5_3",
+      "old_station_m": 59.35999870300293,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "DiaphragmClosure_0_1_4_2",
+      "old_station_m": 59.36000061035156,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "C1_S2_Diaphragm5_4",
+      "old_station_m": 59.35999870300293,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "DiaphragmClosure_0_1_4_3",
+      "old_station_m": 59.36000061035156,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "C1_S3_Diaphragm1_1",
+      "old_station_m": 60.8700008392334,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "DiaphragmClosure_0_2_0_0",
+      "old_station_m": 60.869998931884766,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "C1_S3_Diaphragm1_2",
+      "old_station_m": 60.8700008392334,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "DiaphragmClosure_0_2_0_1",
+      "old_station_m": 60.869998931884766,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "C1_S3_Diaphragm1_3",
+      "old_station_m": 60.8700008392334,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "DiaphragmClosure_0_2_0_2",
+      "old_station_m": 60.869998931884766,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "C1_S3_Diaphragm1_4",
+      "old_station_m": 60.8700008392334,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "DiaphragmClosure_0_2_0_3",
+      "old_station_m": 60.869998931884766,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "C1_S3_Diaphragm2_1",
+      "old_station_m": 68.04999923706055,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "DiaphragmClosure_0_2_1_0",
+      "old_station_m": 68.05000305175781,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "C1_S3_Diaphragm2_2",
+      "old_station_m": 68.04999923706055,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "DiaphragmClosure_0_2_1_1",
+      "old_station_m": 68.05000305175781,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "C1_S3_Diaphragm2_3",
+      "old_station_m": 68.04999923706055,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "DiaphragmClosure_0_2_1_2",
+      "old_station_m": 68.05000305175781,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "C1_S3_Diaphragm2_4",
+      "old_station_m": 68.04999923706055,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "DiaphragmClosure_0_2_1_3",
+      "old_station_m": 68.05000305175781,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "C1_S3_Diaphragm3_1",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "DiaphragmClosure_0_2_2_0",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "C1_S3_Diaphragm3_2",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "DiaphragmClosure_0_2_2_1",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "C1_S3_Diaphragm3_3",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "DiaphragmClosure_0_2_2_2",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "C1_S3_Diaphragm3_4",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "DiaphragmClosure_0_2_2_3",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "C1_S3_Diaphragm4_1",
+      "old_station_m": 82.45000076293945,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "DiaphragmClosure_0_2_3_0",
+      "old_station_m": 82.44999694824219,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "C1_S3_Diaphragm4_2",
+      "old_station_m": 82.45000076293945,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "DiaphragmClosure_0_2_3_1",
+      "old_station_m": 82.44999694824219,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "C1_S3_Diaphragm4_3",
+      "old_station_m": 82.45000076293945,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "DiaphragmClosure_0_2_3_2",
+      "old_station_m": 82.44999694824219,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "C1_S3_Diaphragm4_4",
+      "old_station_m": 82.45000076293945,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "DiaphragmClosure_0_2_3_3",
+      "old_station_m": 82.44999694824219,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "C1_S3_Diaphragm5_1",
+      "old_station_m": 89.63000106811523,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "DiaphragmClosure_0_2_4_0",
+      "old_station_m": 89.62999725341797,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "C1_S3_Diaphragm5_2",
+      "old_station_m": 89.63000106811523,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "DiaphragmClosure_0_2_4_1",
+      "old_station_m": 89.62999725341797,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "C1_S3_Diaphragm5_3",
+      "old_station_m": 89.63000106811523,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "DiaphragmClosure_0_2_4_2",
+      "old_station_m": 89.62999725341797,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "C1_S3_Diaphragm5_4",
+      "old_station_m": 89.63000106811523,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "DiaphragmClosure_0_2_4_3",
+      "old_station_m": 89.62999725341797,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "C2_S1_Diaphragm1_1",
+      "old_station_m": 0.5999999940395355,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "DiaphragmClosure_1_0_0_0",
+      "old_station_m": 0.6000000238418579,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "C2_S1_Diaphragm1_2",
+      "old_station_m": 0.5999999940395355,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "DiaphragmClosure_1_0_0_1",
+      "old_station_m": 0.6000000238418579,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "C2_S1_Diaphragm1_3",
+      "old_station_m": 0.5999999940395355,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "DiaphragmClosure_1_0_0_2",
+      "old_station_m": 0.6000000238418579,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "C2_S1_Diaphragm1_4",
+      "old_station_m": 0.5999999940395355,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "DiaphragmClosure_1_0_0_3",
+      "old_station_m": 0.6000000238418579,
+      "new_station_m": 0.6
+    },
+    {
+      "object": "C2_S1_Diaphragm2_1",
+      "old_station_m": 7.7799999713897705,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "DiaphragmClosure_1_0_1_0",
+      "old_station_m": 7.78000020980835,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "C2_S1_Diaphragm2_2",
+      "old_station_m": 7.7799999713897705,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "DiaphragmClosure_1_0_1_1",
+      "old_station_m": 7.78000020980835,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "C2_S1_Diaphragm2_3",
+      "old_station_m": 7.7799999713897705,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "DiaphragmClosure_1_0_1_2",
+      "old_station_m": 7.78000020980835,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "C2_S1_Diaphragm2_4",
+      "old_station_m": 7.7799999713897705,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "DiaphragmClosure_1_0_1_3",
+      "old_station_m": 7.78000020980835,
+      "new_station_m": 7.78
+    },
+    {
+      "object": "C2_S1_Diaphragm3_1",
+      "old_station_m": 14.865000247955322,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "DiaphragmClosure_1_0_2_0",
+      "old_station_m": 14.864999771118164,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "C2_S1_Diaphragm3_2",
+      "old_station_m": 14.865000247955322,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "DiaphragmClosure_1_0_2_1",
+      "old_station_m": 14.864999771118164,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "C2_S1_Diaphragm3_3",
+      "old_station_m": 14.865000247955322,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "DiaphragmClosure_1_0_2_2",
+      "old_station_m": 14.864999771118164,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "C2_S1_Diaphragm3_4",
+      "old_station_m": 14.865000247955322,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "DiaphragmClosure_1_0_2_3",
+      "old_station_m": 14.864999771118164,
+      "new_station_m": 14.98
+    },
+    {
+      "object": "C2_S1_Diaphragm4_1",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "DiaphragmClosure_1_0_3_0",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "C2_S1_Diaphragm4_2",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "DiaphragmClosure_1_0_3_1",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "C2_S1_Diaphragm4_3",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "DiaphragmClosure_1_0_3_2",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "C2_S1_Diaphragm4_4",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "DiaphragmClosure_1_0_3_3",
+      "old_station_m": 22.18000030517578,
+      "new_station_m": 22.18
+    },
+    {
+      "object": "C2_S1_Diaphragm5_1",
+      "old_station_m": 29.359999656677246,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "DiaphragmClosure_1_0_4_0",
+      "old_station_m": 29.360000610351562,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "C2_S1_Diaphragm5_2",
+      "old_station_m": 29.359999656677246,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "DiaphragmClosure_1_0_4_1",
+      "old_station_m": 29.360000610351562,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "C2_S1_Diaphragm5_3",
+      "old_station_m": 29.359999656677246,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "DiaphragmClosure_1_0_4_2",
+      "old_station_m": 29.360000610351562,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "C2_S1_Diaphragm5_4",
+      "old_station_m": 29.359999656677246,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "DiaphragmClosure_1_0_4_3",
+      "old_station_m": 29.360000610351562,
+      "new_station_m": 29.36
+    },
+    {
+      "object": "C2_S2_Diaphragm1_1",
+      "old_station_m": 30.869999885559082,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "DiaphragmClosure_1_1_0_0",
+      "old_station_m": 30.8700008392334,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "C2_S2_Diaphragm1_2",
+      "old_station_m": 30.869999885559082,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "DiaphragmClosure_1_1_0_1",
+      "old_station_m": 30.8700008392334,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "C2_S2_Diaphragm1_3",
+      "old_station_m": 30.869999885559082,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "DiaphragmClosure_1_1_0_2",
+      "old_station_m": 30.8700008392334,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "C2_S2_Diaphragm1_4",
+      "old_station_m": 30.869999885559082,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "DiaphragmClosure_1_1_0_3",
+      "old_station_m": 30.8700008392334,
+      "new_station_m": 30.64
+    },
+    {
+      "object": "C2_S2_Diaphragm2_1",
+      "old_station_m": 38.05000114440918,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "DiaphragmClosure_1_1_1_0",
+      "old_station_m": 38.04999923706055,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "C2_S2_Diaphragm2_2",
+      "old_station_m": 38.05000114440918,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "DiaphragmClosure_1_1_1_1",
+      "old_station_m": 38.04999923706055,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "C2_S2_Diaphragm2_3",
+      "old_station_m": 38.05000114440918,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "DiaphragmClosure_1_1_1_2",
+      "old_station_m": 38.04999923706055,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "C2_S2_Diaphragm2_4",
+      "old_station_m": 38.05000114440918,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "DiaphragmClosure_1_1_1_3",
+      "old_station_m": 38.04999923706055,
+      "new_station_m": 37.82
+    },
+    {
+      "object": "C2_S2_Diaphragm3_1",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "DiaphragmClosure_1_1_2_0",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "C2_S2_Diaphragm3_2",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "DiaphragmClosure_1_1_2_1",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "C2_S2_Diaphragm3_3",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "DiaphragmClosure_1_1_2_2",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "C2_S2_Diaphragm3_4",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "DiaphragmClosure_1_1_2_3",
+      "old_station_m": 45.0,
+      "new_station_m": 45
+    },
+    {
+      "object": "C2_S2_Diaphragm4_1",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "DiaphragmClosure_1_1_3_0",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "C2_S2_Diaphragm4_2",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "DiaphragmClosure_1_1_3_1",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "C2_S2_Diaphragm4_3",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "DiaphragmClosure_1_1_3_2",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "C2_S2_Diaphragm4_4",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "DiaphragmClosure_1_1_3_3",
+      "old_station_m": 52.18000030517578,
+      "new_station_m": 52.18
+    },
+    {
+      "object": "C2_S2_Diaphragm5_1",
+      "old_station_m": 59.35999870300293,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "DiaphragmClosure_1_1_4_0",
+      "old_station_m": 59.36000061035156,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "C2_S2_Diaphragm5_2",
+      "old_station_m": 59.35999870300293,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "DiaphragmClosure_1_1_4_1",
+      "old_station_m": 59.36000061035156,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "C2_S2_Diaphragm5_3",
+      "old_station_m": 59.35999870300293,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "DiaphragmClosure_1_1_4_2",
+      "old_station_m": 59.36000061035156,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "C2_S2_Diaphragm5_4",
+      "old_station_m": 59.35999870300293,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "DiaphragmClosure_1_1_4_3",
+      "old_station_m": 59.36000061035156,
+      "new_station_m": 59.36
+    },
+    {
+      "object": "C2_S3_Diaphragm1_1",
+      "old_station_m": 60.8700008392334,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "DiaphragmClosure_1_2_0_0",
+      "old_station_m": 60.869998931884766,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "C2_S3_Diaphragm1_2",
+      "old_station_m": 60.8700008392334,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "DiaphragmClosure_1_2_0_1",
+      "old_station_m": 60.869998931884766,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "C2_S3_Diaphragm1_3",
+      "old_station_m": 60.8700008392334,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "DiaphragmClosure_1_2_0_2",
+      "old_station_m": 60.869998931884766,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "C2_S3_Diaphragm1_4",
+      "old_station_m": 60.8700008392334,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "DiaphragmClosure_1_2_0_3",
+      "old_station_m": 60.869998931884766,
+      "new_station_m": 60.64
+    },
+    {
+      "object": "C2_S3_Diaphragm2_1",
+      "old_station_m": 68.04999923706055,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "DiaphragmClosure_1_2_1_0",
+      "old_station_m": 68.05000305175781,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "C2_S3_Diaphragm2_2",
+      "old_station_m": 68.04999923706055,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "DiaphragmClosure_1_2_1_1",
+      "old_station_m": 68.05000305175781,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "C2_S3_Diaphragm2_3",
+      "old_station_m": 68.04999923706055,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "DiaphragmClosure_1_2_1_2",
+      "old_station_m": 68.05000305175781,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "C2_S3_Diaphragm2_4",
+      "old_station_m": 68.04999923706055,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "DiaphragmClosure_1_2_1_3",
+      "old_station_m": 68.05000305175781,
+      "new_station_m": 67.82
+    },
+    {
+      "object": "C2_S3_Diaphragm3_1",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "DiaphragmClosure_1_2_2_0",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "C2_S3_Diaphragm3_2",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "DiaphragmClosure_1_2_2_1",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "C2_S3_Diaphragm3_3",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "DiaphragmClosure_1_2_2_2",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "C2_S3_Diaphragm3_4",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "DiaphragmClosure_1_2_2_3",
+      "old_station_m": 75.13500213623047,
+      "new_station_m": 75.02
+    },
+    {
+      "object": "C2_S3_Diaphragm4_1",
+      "old_station_m": 82.45000076293945,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "DiaphragmClosure_1_2_3_0",
+      "old_station_m": 82.44999694824219,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "C2_S3_Diaphragm4_2",
+      "old_station_m": 82.45000076293945,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "DiaphragmClosure_1_2_3_1",
+      "old_station_m": 82.44999694824219,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "C2_S3_Diaphragm4_3",
+      "old_station_m": 82.45000076293945,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "DiaphragmClosure_1_2_3_2",
+      "old_station_m": 82.44999694824219,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "C2_S3_Diaphragm4_4",
+      "old_station_m": 82.45000076293945,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "DiaphragmClosure_1_2_3_3",
+      "old_station_m": 82.44999694824219,
+      "new_station_m": 82.22
+    },
+    {
+      "object": "C2_S3_Diaphragm5_1",
+      "old_station_m": 89.63000106811523,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "DiaphragmClosure_1_2_4_0",
+      "old_station_m": 89.62999725341797,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "C2_S3_Diaphragm5_2",
+      "old_station_m": 89.63000106811523,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "DiaphragmClosure_1_2_4_1",
+      "old_station_m": 89.62999725341797,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "C2_S3_Diaphragm5_3",
+      "old_station_m": 89.63000106811523,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "DiaphragmClosure_1_2_4_2",
+      "old_station_m": 89.62999725341797,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "C2_S3_Diaphragm5_4",
+      "old_station_m": 89.63000106811523,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "DiaphragmClosure_1_2_4_3",
+      "old_station_m": 89.62999725341797,
+      "new_station_m": 89.4
+    },
+    {
+      "object": "C1_Abutment0_Stem",
+      "old_x": [
+        -1.75,
+        0.34999996423721313
+      ],
+      "new_x": [
+        -1.75,
+        1.2
+      ],
+      "bevel_m": 0.045,
+      "scope": "教学台身支承几何修正；保留y/z"
+    },
+    {
+      "object": "C1_Abutment90_Stem",
+      "old_x": [
+        89.64999389648438,
+        91.75
+      ],
+      "new_x": [
+        88.8,
+        91.75
+      ],
+      "bevel_m": 0.045,
+      "scope": "教学台身支承几何修正；保留y/z"
+    },
+    {
+      "object": "C2_Abutment0_Stem",
+      "old_x": [
+        -1.75,
+        0.34999996423721313
+      ],
+      "new_x": [
+        -1.75,
+        1.2
+      ],
+      "bevel_m": 0.045,
+      "scope": "教学台身支承几何修正；保留y/z"
+    },
+    {
+      "object": "C2_Abutment90_Stem",
+      "old_x": [
+        89.64999389648438,
+        91.75
+      ],
+      "new_x": [
+        88.8,
+        91.75
+      ],
+      "bevel_m": 0.045,
+      "scope": "教学台身支承几何修正；保留y/z"
+    }
+  ],
+  "diaphragm_stations_m": [
+    [
+      0.6,
+      7.78,
+      14.98,
+      22.18,
+      29.36
+    ],
+    [
+      30.64,
+      37.82,
+      45,
+      52.18,
+      59.36
+    ],
+    [
+      60.64,
+      67.82,
+      75.02,
+      82.22,
+      89.4
+    ]
+  ],
+  "no_original_files_modified": true,
+  "excluded_groups": [
+    "90_Set",
+    "91_Traffic",
+    "99_Studio"
+  ],
+  "status": "passed_independent_geometry_review_with_documented_limitations",
+  "reinforcement_changes": "rebar-geometry-contract.json",
+  "independent_audit": "independent-check.json",
+  "glb_sha256": "864ddba7c6644abd82adb83843f80c1d00858cbdddcbab0324a598a68a923e14"
+}

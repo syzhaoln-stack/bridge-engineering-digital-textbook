@@ -17,6 +17,7 @@ project:
     - notebooks/course-packages/**
     - notebooks/vendor/katex/**
     - scripts/priority-figures/*.py
+    - scripts/blender-bridge/*.py
     - scripts/dialogue-pilot/*.py
     - scripts/dialogue-pilot/*.md
     - scripts/dialogue-pilot/*.json
@@ -56,6 +57,7 @@ book:
         - legacy-tools.qmd
     - core-resources.qmd
     - visual-update.qmd
+    - blender-model-review.qmd
     - resources.qmd
     - publication-images.qmd
     - references.qmd

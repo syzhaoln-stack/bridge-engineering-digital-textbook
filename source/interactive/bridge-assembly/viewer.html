@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>从整座桥看到一片梁</title>
+<script type="importmap">{"imports":{"three":"./vendor/three/three.module.js","three/addons/":"./vendor/three/addons/"}}</script>
+<link href="viewer.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<div><p class="eyebrow">桥梁构造 · 三维观察</p><h1>从整座桥看到一片梁</h1></div>
+<button disabled="" id="save">保存当前视角 PNG</button>
+</header>
+<nav aria-label="选择观察范围" class="presets">
+<button aria-pressed="true" data-preset="whole">整座桥</button>
+<button aria-pressed="false" data-preset="span">一幅桥的中间一跨</button>
+<button aria-pressed="false" data-preset="underside">从梁底看</button>
+<button aria-pressed="false" data-preset="pier">墩与基础</button>
+</nav>
+<div class="layout">
+<main id="stage">
+<canvas aria-label="拖动旋转桥梁，单击构件进行选择" id="canvas" tabindex="0"></canvas>
+<div class="cover" id="cover">
+<img alt="三跨 T 梁公路桥的 Blender 渲染预览" src="../../assets/publication/blender-bridge/original/bridge_overview.png"/>
+<div><p>换个角度，看看桥面下面有什么。</p><button id="load">打开三维模型</button><small>点击后载入，可旋转和拆看构件</small></div>
+</div>
+<div id="status" role="status">尚未载入</div>
+<div class="hint">拖动旋转 · 滚轮缩放 · 右键平移 · 单击选构件</div>
+</main>
+<aside>
+<p class="view-title" id="view-title">整座桥</p>
+<p class="view-note" id="view-note">先看桥面、主梁和墩柱的位置，再选择一个局部。</p>
+<div class="main-actions"><button disabled="" id="reset">恢复整座桥</button><button disabled="" id="focus">靠近所选构件</button></div>
+<p aria-live="polite" id="detail">单击模型中的构件，查看它的名称。</p>
+<details id="parts">
+<summary>隐藏或显示构件</summary>
+<div class="section-title">当前观察范围 <button class="quiet" disabled="" id="all">全部构件</button></div>
+<div id="groups">打开模型后可选择</div>
+<button disabled="" id="isolate">仅看所选构件</button>
+</details>
+<details id="tools">
+<summary>拆开看 · 调整视角</summary>
+<label class="section-title" for="explode">拉开各层构件 <output id="amount">0%</output></label>
+<input disabled="" id="explode" max="100" min="0" step="1" type="range" value="0"/>
+<p class="muted small">拉开距离只用于观察，不代表实际间距。</p>
+<div class="buttons"><button disabled="" id="side">侧面</button><button disabled="" id="top">上方</button><button aria-pressed="false" disabled="" id="spin">自动旋转</button></div>
+</details>
+<p class="scope-note">三跨，每跨 30 m；每幅桥宽 12.5 m，每跨每幅 5 片主梁。此模型用于构造展示。</p>
+<details class="small"><summary>模型与截图说明</summary><p>此教材副本修正了端台台面范围及横隔板站位，主要尺寸和端部落座范围已作独立几何检查。墩台、基础、支座细部和代表性配筋含教学假定。</p><p>保存的是当前三维画面，不含页面按钮，也不含尺寸标注。不能据截图直接量取工程尺寸。</p><p><a href="../../blender-model-review.html" rel="noopener" target="_blank">图文说明与复核记录</a></p></details>
+</aside>
+</div>
+<script src="viewer.js" type="module"></script>
+</body>
+</html>

@@ -4,6 +4,7 @@
   const storageKey = 'bridge-imagegen-review:v1:' + location.pathname;
   const REDO = '__redo__';
   const raw = window.IMAGEGEN_REVIEW;
+  const baseline = window.IMAGEGEN_APPROVED_SELECTION;
   const groups = Array.isArray(raw?.groups) ? raw.groups.filter(g => g && typeof g.id === 'string' && Array.isArray(g.variants)) : [];
   const state = Object.create(null);
   let storageAvailable = true;
@@ -11,6 +12,8 @@
   const cardMap = new Map();
   const navMap = new Map();
   const redoMap = new Map();
+  const emptyMap = new Map();
+  let viewMode = 'selected';
   const dialog = $('image-dialog');
 
   function el(tag, className, text) {
@@ -50,11 +53,14 @@
     try { saved = JSON.parse(localStorage.getItem(storageKey) || 'null'); }
     catch { storageAvailable = false; }
     for (const group of groups) {
-      const entry = saved?.groups?.[group.id];
+      // A local entry, including an explicit null choice, is an author's later edit.
+      const hasLocal = saved?.groups && Object.prototype.hasOwnProperty.call(saved.groups,group.id);
+      const entry = hasLocal ? saved.groups[group.id] : baseline?.groups?.[group.id];
       const valid = entry?.choice === REDO || group.variants.some(v => v.id === entry?.choice);
       state[group.id] = {choice: valid ? entry.choice : null, notes: typeof entry?.notes === 'string' ? entry.notes : '', updated_at: entry?.updated_at || null};
     }
     if (!storageAvailable) status('本浏览器暂不能保存记录；请在离开前导出 JSON。', true);
+    else if (saved?.groups) status('已保留当前浏览器的选择与备注；没有本地记录的组沿用 2026-09-07 选样。');
   }
   function save() {
     try {
@@ -91,6 +97,7 @@
         if (item) {
           item.card.classList.toggle('is-selected',choice === variant.id);
           item.input.checked = choice === variant.id;
+          item.card.hidden = viewMode === 'selected' && choice !== variant.id;
         }
       }
       const redo = redoMap.get(group.id);
@@ -102,7 +109,17 @@
       nav.classList.toggle('is-decided',Boolean(choice) && choice !== REDO);
       nav.classList.toggle('is-redo',choice === REDO);
       nav.setAttribute('aria-label',group.title + (choice === REDO ? '，已标记都待重做' : choice ? '，已有选择' : '，未决定'));
+      const empty = emptyMap.get(group.id);
+      empty.hidden = viewMode === 'all' || Boolean(choice && choice !== REDO);
+      empty.querySelector('p').textContent = choice === REDO ? '本组已标记都待重做。可以展开候选，重新选择或补充备注。' : '本组尚未选择。可以展开候选，再选一张。';
     }
+    const totalVariants=groups.reduce((total,group)=>total+group.variants.length,0);
+    $('view-selected').textContent=count.selected+' 张选样';
+    $('view-all').textContent=totalVariants+' 张对比';
+    $('view-selected').setAttribute('aria-pressed',String(viewMode==='selected'));
+    $('view-all').setAttribute('aria-pressed',String(viewMode==='all'));
+    $('groups').classList.toggle('selected-view',viewMode==='selected');
+    $('view-description').textContent=viewMode==='selected' ? `另外 ${totalVariants-count.selected} 张已收起，随时可以展开比较。` : `正在比较全部 ${totalVariants} 张；选中后可返回选样视图。`;
     $('export').disabled = !groups.length;
     $('clear').disabled = !groups.some(g => state[g.id].choice || state[g.id].notes);
   }
@@ -210,6 +227,9 @@
       const radioName = 'choice-'+groupIndex;
       group.variants.forEach((variant,index) => grid.append(renderVariant(group,variant,index,radioName)));
       fieldset.append(grid);
+      const empty=el('div','selection-empty');empty.append(el('p'));
+      const expand=el('button','button','展开全部候选');expand.type='button';
+      expand.addEventListener('click',()=>setView('all'));empty.append(expand);fieldset.append(empty);emptyMap.set(group.id,empty);
       const decision = el('div','group-decision');
       const redoLabel = el('label','redo-label');const redo = el('input');
       redo.type='radio';redo.name=radioName;redo.value=REDO;
@@ -230,6 +250,9 @@
       fieldset.append(decision);section.append(fieldset,references(group));$('groups').append(section);
     });
   }
+  function setView(mode){viewMode=mode;refresh();}
+  $('view-selected').addEventListener('click',()=>setView('selected'));
+  $('view-all').addEventListener('click',()=>setView('all'));
   $('export').addEventListener('click',() => {
     const output = {schema_version:1, exported_at:new Date().toISOString(), purpose:'画法选样；不表示结构、尺寸或出版审查通过', counts:totals(), groups:groups.map(group => {
       const entry=state[group.id], variant=group.variants.find(v=>v.id===entry.choice);
@@ -244,7 +267,8 @@
   $('clear').addEventListener('click',() => {
     if(!window.confirm('清空本页全部选择和备注？已经导出的 JSON 文件不会被删除。'))return;
     for(const group of groups)state[group.id]={choice:null,notes:'',updated_at:null};
-    try{localStorage.removeItem(storageKey);storageAvailable=true;}catch{storageAvailable=false;}
+    // Persist the clear explicitly so a reload does not silently restore the baseline.
+    try{localStorage.setItem(storageKey,JSON.stringify({schema_version:1,groups:state}));storageAvailable=true;}catch{storageAvailable=false;}
     document.querySelectorAll('.note-field textarea').forEach(note=>{note.value='';});
     refresh();status(storageAvailable?'本页选择和备注已清空。':'当前页面已清空；浏览器存储不可用，请另行检查旧记录。',!storageAvailable);
   });

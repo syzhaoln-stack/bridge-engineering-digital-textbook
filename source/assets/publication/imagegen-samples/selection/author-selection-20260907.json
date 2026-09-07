@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "exported_at": "2026-09-07T08:42:29.457Z",
+  "purpose": "画法选样；不表示结构、尺寸或出版审查通过",
+  "counts": {
+    "total": 8,
+    "selected": 8,
+    "redo": 0,
+    "undecided": 0
+  },
+  "groups": [
+    {
+      "id": "G01",
+      "title": "整座桥与一辆车",
+      "figure": "F01",
+      "status": "selected",
+      "selected_variant": {
+        "id": "G01-B",
+        "style": "三维教具",
+        "image": "../assets/publication/imagegen-samples/G01-B.png",
+        "needs_revision": false,
+        "metadata_url": "../assets/publication/imagegen-samples/public-records/G01-B.json"
+      },
+      "notes": "",
+      "updated_at": "2026-09-07T08:41:15.249Z"
+    },
+    {
+      "id": "G02",
+      "title": "同一块木条，换个放法",
+      "figure": "F06",
+      "status": "selected",
+      "selected_variant": {
+        "id": "G02-B",
+        "style": "三维教具",
+        "image": "../assets/publication/imagegen-samples/G02-B.png",
+        "needs_revision": false,
+        "metadata_url": "../assets/publication/imagegen-samples/public-records/G02-B.json"
+      },
+      "notes": "",
+      "updated_at": "2026-09-07T08:41:24.571Z"
+    },
+    {
+      "id": "G03",
+      "title": "桥面下面，梁怎样连在一起",
+      "figure": "F13",
+      "status": "selected",
+      "selected_variant": {
+        "id": "G03-A",
+        "style": "写实场景",
+        "image": "../assets/publication/imagegen-samples/G03-A.png",
+        "needs_revision": true,
+        "metadata_url": "../assets/publication/imagegen-samples/public-records/G03-A.json"
+      },
+      "notes": "",
+      "updated_at": "2026-09-07T08:41:27.887Z"
+    },
+    {
+      "id": "G04",
+      "title": "桥还没接到下一个桥墩",
+      "figure": "F19",
+      "status": "selected",
+      "selected_variant": {
+        "id": "G04-B",
+        "style": "三维教具",
+        "image": "../assets/publication/imagegen-samples/G04-B.png",
+        "needs_revision": false,
+        "metadata_url": "../assets/publication/imagegen-samples/public-records/G04-B.json"
+      },
+      "notes": "",
+      "updated_at": "2026-09-07T08:41:38.229Z"
+    },
+    {
+      "id": "G05",
+      "title": "斜拉桥：先看塔、索和桥面",
+      "figure": "F24",
+      "status": "selected",
+      "selected_variant": {
+        "id": "G05-C",
+        "style": "线稿淡彩",
+        "image": "../assets/publication/imagegen-samples/G05-C.png",
+        "needs_revision": true,
+        "metadata_url": "../assets/publication/imagegen-samples/public-records/G05-C.json"
+      },
+      "notes": "",
+      "updated_at": "2026-09-07T08:42:05.230Z"
+    },
+    {
+      "id": "G06",
+      "title": "悬索桥的主缆一直通向哪里",
+      "figure": "F27",
+      "status": "selected",
+      "selected_variant": {
+        "id": "G06-C",
+        "style": "线稿淡彩",
+        "image": "../assets/publication/imagegen-samples/G06-C.png",
+        "needs_revision": false,
+        "metadata_url": "../assets/publication/imagegen-samples/public-records/G06-C.json"
+      },
+      "notes": "",
+      "updated_at": "2026-09-07T08:42:06.566Z"
+    },
+    {
+      "id": "G07",
+      "title": "桥墩下面，还有多深",
+      "figure": "F32",
+      "status": "selected",
+      "selected_variant": {
+        "id": "G07-A",
+        "style": "写实场景",
+        "image": "../assets/publication/imagegen-samples/G07-A.png",
+        "needs_revision": true,
+        "metadata_url": "../assets/publication/imagegen-samples/public-records/G07-A.json"
+      },
+      "notes": "",
+      "updated_at": "2026-09-07T08:42:18.880Z"
+    },
+    {
+      "id": "G08",
+      "title": "涂层下面，钢材发生了什么",
+      "figure": "F36",
+      "status": "selected",
+      "selected_variant": {
+        "id": "G08-A",
+        "style": "写实场景",
+        "image": "../assets/publication/imagegen-samples/G08-A.png",
+        "needs_revision": false,
+        "metadata_url": "../assets/publication/imagegen-samples/public-records/G08-A.json"
+      },
+      "notes": "",
+      "updated_at": "2026-09-07T08:42:23.943Z"
+    }
+  ]
+}

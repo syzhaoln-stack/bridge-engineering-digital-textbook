@@ -341,6 +341,14 @@ $$
 #### 形心、截面二次矩与截面模量
 
 
+<!-- AUTHOR-SELECTED G02-B START -->
+**同一块木条换个放法，承受同样的重量时会怎样？**
+
+![平放和竖放的木条。图中先看截面方向，尚未画加载后的变形。](../assets/publication/imagegen-samples/G02-B.png){#fig-author-g02-b width=100%}
+
+<details class="figure-method"><summary>图像来源与本例条件</summary><p>AI 生成教具插画；比较需保持材料、跨度和荷载相同。本图底稿的木条截面为0.10×0.020 m，转向后二次矩比为25；下一幅F06另用0.20×0.60 m矩形截面，比值为9，不能把9倍套到这根木条。实际弯曲程度看对应交互计算，不能从未变形的插画判断。</p><p>作者选样：G02-B · 2026-09-07 · <a href="../assets/publication/imagegen-samples/public-records/G02-B.json">制作记录</a></p></details>
+<!-- AUTHOR-SELECTED G02-B END -->
+
 <!-- PRIORITY-FIGURE F06 START -->
 ![明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。](../assets/publication/priority-40/F06.svg){#fig-priority-F06 width=100% fig-alt="同一块板竖着放、横着放，为什么弯起来不一样？。明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。"}
 

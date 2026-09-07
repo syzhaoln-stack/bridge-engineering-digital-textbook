@@ -8,6 +8,7 @@
 <title>图像选样 · 桥梁工程教材</title>
 <link href="imagegen-review.css" rel="stylesheet"/>
 <script defer="" src="imagegen-review-data.js"></script>
+<script defer="" src="imagegen-approved-selection.js"></script>
 <script defer="" src="imagegen-review.js"></script>
 </head>
 <body>
@@ -15,11 +16,18 @@
 <header class="page-header">
 <div class="header-main">
 <p class="eyebrow">桥梁工程教材 · 作者选样</p>
-<h1>同一处内容，<br class="mobile-break"/>三种画法</h1>
-<p class="lead">点图片放大，选一张留下，或记下重做的方向。</p>
+<h1>先看选中的 8 张，<br class="mobile-break"/>再把细节做好</h1>
+<p class="lead">已接收 2026-09-07 选样：三维教具 3 张、写实场景 3 张、线稿淡彩 2 张。</p>
+<p class="received-note">其中 3 张仍待修正。当前浏览器里的后续改选和备注会优先保留。</p>
+<div class="source-links"><a download="" href="../assets/publication/imagegen-samples/selection/author-selection-20260907.json">下载已接收的原始选样</a><a href="../blender-model-review.html">查看新增 Blender 模型取景 ↗</a></div>
 </div>
 <div class="header-note"><span aria-hidden="true" class="sheet-mark">A / B / C</span><p>先选画法，再修细节。<br/>选中不表示结构与尺寸审查通过。</p></div>
 </header>
+<div aria-label="选择显示范围" class="view-switch" role="group">
+<button aria-pressed="true" class="button" id="view-selected" type="button">8 张选样</button>
+<button aria-pressed="false" class="button" id="view-all" type="button">24 张对比</button>
+<p id="view-description" role="status">另外 16 张已收起，随时可以展开比较。</p>
+</div>
 <div class="review-bar">
 <div class="review-bar-inner">
 <p aria-atomic="true" aria-live="polite" class="progress" id="progress">正在载入选样…</p>
@@ -28,7 +36,7 @@
 <button class="button quiet" disabled="" id="clear" type="button">清空记录</button>
 </div>
 </div>
-<p class="save-status" id="save-status" role="status">选择和备注仅保存在当前浏览器；导出可留一份文件。</p>
+<p class="save-status" id="save-status" role="status">此处显示已接收的选样；后续改选和备注保存在当前浏览器，可再次导出。</p>
 </div>
 <nav aria-label="跳到一组选样" class="group-nav" id="group-nav"></nav>
 <main id="groups" tabindex="-1">
