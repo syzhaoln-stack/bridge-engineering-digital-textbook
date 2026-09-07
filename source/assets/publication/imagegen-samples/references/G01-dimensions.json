@@ -1,0 +1,77 @@
+{
+  "units": "m",
+  "evidence_type": "teaching_assumption",
+  "source_figure_ids": [
+    "F01"
+  ],
+  "bridge": {
+    "type": "girder",
+    "spans": [
+      20,
+      20
+    ],
+    "total_length": 40,
+    "deck_width": 10.8,
+    "girder_depth": 1.2,
+    "girder_count": 5,
+    "girder_y": [
+      -4.8,
+      -2.4,
+      0,
+      2.4,
+      4.8
+    ]
+  },
+  "road": {
+    "lane_widths": [
+      3.5,
+      3.5
+    ],
+    "other_widths": [
+      1.9,
+      1.9
+    ]
+  },
+  "assets": [
+    {
+      "id": "truck",
+      "kind": "truck",
+      "target_size_m": [
+        6,
+        2.2,
+        3
+      ],
+      "measured_size_m": [
+        6.0,
+        2.2,
+        3.0
+      ],
+      "import_scale_xyz": [
+        1,
+        1,
+        1
+      ],
+      "transverse_center_m": 1.75,
+      "yaw_deg": 0,
+      "measurement_method": "union of actual scene part bounding boxes, prior to camera projection"
+    }
+  ],
+  "extra": {
+    "deck_level": 8,
+    "central_pier_width_xy": [
+      2,
+      2.5
+    ],
+    "footing_size": [
+      7,
+      6,
+      1.2
+    ],
+    "footing_top_z": -1
+  },
+  "notes": [
+    "New scene model inspired by F01, not a real bridge.",
+    "Six-meter truck is 0.15 of total bridge length and 0.30 of one span.",
+    "No force magnitude inferred from this geometry."
+  ]
+}

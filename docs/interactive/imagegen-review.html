@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="light" name="color-scheme"/>
+<title>图像选样 · 桥梁工程教材</title>
+<link href="imagegen-review.css" rel="stylesheet"/>
+<script defer="" src="imagegen-review-data.js"></script>
+<script defer="" src="imagegen-review.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#groups">跳到候选图</a>
+<header class="page-header">
+<div class="header-main">
+<p class="eyebrow">桥梁工程教材 · 作者选样</p>
+<h1>同一处内容，<br class="mobile-break"/>三种画法</h1>
+<p class="lead">点图片放大，选一张留下，或记下重做的方向。</p>
+</div>
+<div class="header-note"><span aria-hidden="true" class="sheet-mark">A / B / C</span><p>先选画法，再修细节。<br/>选中不表示结构与尺寸审查通过。</p></div>
+</header>
+<div class="review-bar">
+<div class="review-bar-inner">
+<p aria-atomic="true" aria-live="polite" class="progress" id="progress">正在载入选样…</p>
+<div class="actions">
+<button class="button primary" disabled="" id="export" type="button">导出选样 JSON</button>
+<button class="button quiet" disabled="" id="clear" type="button">清空记录</button>
+</div>
+</div>
+<p class="save-status" id="save-status" role="status">选择和备注仅保存在当前浏览器；导出可留一份文件。</p>
+</div>
+<nav aria-label="跳到一组选样" class="group-nav" id="group-nav"></nav>
+<main id="groups" tabindex="-1">
+<div class="empty-state"><h2>正在读取候选图</h2><p>候选图与选样数据应和本页放在同一套教材文件中。</p></div>
+</main>
+<footer class="page-footer">
+<p>这些候选图为 AI 生成的虚构渲染或插画，不是实桥纪实照片。尺寸、构造和受力表达以核实后的参数底稿及工程图为准。</p>
+<p>本页记录画法选择与修改意见；待修正标记不会因选中而消失。</p>
+</footer>
+<dialog aria-labelledby="dialog-title" class="image-dialog" id="image-dialog">
+<div class="dialog-shell">
+<header class="dialog-header"><h2 id="dialog-title">查看大图</h2><button class="button quiet" id="close-dialog" type="button">关闭 <span aria-hidden="true">×</span></button></header>
+<div class="dialog-image-area"><img alt="" id="dialog-image"/></div>
+<p class="dialog-note" id="dialog-note"></p>
+<a class="dialog-original" id="dialog-original" rel="noopener" target="_blank">单独打开原图</a>
+</div>
+</dialog>
+<noscript><p class="noscript">需要开启浏览器 JavaScript 才能记录选择。图片与数据均可在本地文件中查看。</p></noscript>
+</body>
+</html>

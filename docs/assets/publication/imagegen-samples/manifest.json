@@ -1,0 +1,256 @@
+{
+  "schema": "imagegen-candidates/v1",
+  "date": "2026-09-07",
+  "count": 24,
+  "groups": 8,
+  "variants_per_group": 3,
+  "needs_revision_count": 7,
+  "scope": "AI context/style candidates; not calibrated engineering images; original F01-F40 retained",
+  "items": [
+    {
+      "id": "G01-A",
+      "image": "G01-A-v2.png",
+      "metadata": "public-records/G01-A.json",
+      "needs_revision": false,
+      "sha256": "f95c0833cb9a839e5b90bb654d8a0fc21303ed2fd2c4a2e0bb82f7e512112c9e"
+    },
+    {
+      "id": "G01-B",
+      "image": "G01-B.png",
+      "metadata": "public-records/G01-B.json",
+      "needs_revision": false,
+      "sha256": "61dc2b87fdf9d7e96741f94a9310ef723a16117fb30c24e269bfc9e1c1d4065e"
+    },
+    {
+      "id": "G01-C",
+      "image": "G01-C.png",
+      "metadata": "public-records/G01-C.json",
+      "needs_revision": false,
+      "sha256": "7faf19f5a57d010e193a0499692f7131e2a19e873215df10da3fcbf28d4277f1"
+    },
+    {
+      "id": "G02-A",
+      "image": "G02-A.png",
+      "metadata": "public-records/G02-A.json",
+      "needs_revision": false,
+      "sha256": "74233b43f653a1420da42d4ee230579ecaf243924c5022f3dd866cfa81eed0a9"
+    },
+    {
+      "id": "G02-B",
+      "image": "G02-B.png",
+      "metadata": "public-records/G02-B.json",
+      "needs_revision": false,
+      "sha256": "5425fc748e3550dd6ed1238a4329ee9f91263f4b2c8e4075cd9657aacf37b353"
+    },
+    {
+      "id": "G02-C",
+      "image": "G02-C.png",
+      "metadata": "public-records/G02-C.json",
+      "needs_revision": false,
+      "sha256": "94efe8230f919e4500643424934544a2c2410cab88194a341c0666eb00a9c5f5"
+    },
+    {
+      "id": "G03-A",
+      "image": "G03-A.png",
+      "metadata": "public-records/G03-A.json",
+      "needs_revision": true,
+      "sha256": "313ca7f66ba4d526b2917cda91b7caaed4281eb79e4dc8f6e8da452cab7488bc"
+    },
+    {
+      "id": "G03-B",
+      "image": "G03-B.png",
+      "metadata": "public-records/G03-B.json",
+      "needs_revision": true,
+      "sha256": "a043d192721329eeadbfdd1c8f491bf371b7bfe9481e2bd297686a16554e3228"
+    },
+    {
+      "id": "G03-C",
+      "image": "G03-C.png",
+      "metadata": "public-records/G03-C.json",
+      "needs_revision": true,
+      "sha256": "1522a65695d0f731d7967f41543278b89fdc5fd24cf618fb6ef25acda1261f95"
+    },
+    {
+      "id": "G04-A",
+      "image": "G04-A.png",
+      "metadata": "public-records/G04-A.json",
+      "needs_revision": false,
+      "sha256": "958ca3398a2e8a300a47b5b25ffbdbd0d441556ba885b512d51e6429d964f362"
+    },
+    {
+      "id": "G04-B",
+      "image": "G04-B.png",
+      "metadata": "public-records/G04-B.json",
+      "needs_revision": false,
+      "sha256": "1a43f25d37c4c8c7564a6737dac01c5d9fcc1420f532acce813298769c0e0d3a"
+    },
+    {
+      "id": "G04-C",
+      "image": "G04-C.png",
+      "metadata": "public-records/G04-C.json",
+      "needs_revision": false,
+      "sha256": "acd260bd959cc1a419e1770a03b0e3497c6b416386c9e73763232184f3440220"
+    },
+    {
+      "id": "G05-A",
+      "image": "G05-A.png",
+      "metadata": "public-records/G05-A.json",
+      "needs_revision": false,
+      "sha256": "16a6ac272361b5e266f8bf0e70f214a9c600379aa8c99687379d2e3f5fa7f8ed"
+    },
+    {
+      "id": "G05-B",
+      "image": "G05-B.png",
+      "metadata": "public-records/G05-B.json",
+      "needs_revision": true,
+      "sha256": "1dac2a967ff3abae8bdf18334c415afa57b68fca5851cc930af2206850660cb5"
+    },
+    {
+      "id": "G05-C",
+      "image": "G05-C.png",
+      "metadata": "public-records/G05-C.json",
+      "needs_revision": true,
+      "sha256": "00113b4d68c36452acc6de6da02935a39b063af65631ed812031dc86a252d48c"
+    },
+    {
+      "id": "G06-A",
+      "image": "G06-A.png",
+      "metadata": "public-records/G06-A.json",
+      "needs_revision": false,
+      "sha256": "b25929661a45a55722454cd5ad24c1f8b3dca091012465f1a38c284b4b5de32e"
+    },
+    {
+      "id": "G06-B",
+      "image": "G06-B.png",
+      "metadata": "public-records/G06-B.json",
+      "needs_revision": false,
+      "sha256": "371f539acca7ee6d1fdf1ce5b55057884bbf334f11e5afb625414d95b9e7816c"
+    },
+    {
+      "id": "G06-C",
+      "image": "G06-C.png",
+      "metadata": "public-records/G06-C.json",
+      "needs_revision": false,
+      "sha256": "ea4845daa63f0db1c07907878fb63003cc9b4bf6f74d1590fcb684280ce005c3"
+    },
+    {
+      "id": "G07-A",
+      "image": "G07-A.png",
+      "metadata": "public-records/G07-A.json",
+      "needs_revision": true,
+      "sha256": "0a2c9a85cc93575360d55301947936e394fd639118b445198290efd0702cdfd0"
+    },
+    {
+      "id": "G07-B",
+      "image": "G07-B.png",
+      "metadata": "public-records/G07-B.json",
+      "needs_revision": false,
+      "sha256": "e37cef3dd47e4c045ae8932e970a8e8d33864aa5323cbfb79b832a7bb3cd8579"
+    },
+    {
+      "id": "G07-C",
+      "image": "G07-C.png",
+      "metadata": "public-records/G07-C.json",
+      "needs_revision": true,
+      "sha256": "d12dd617b7b25ba094c3212db64ea68dcfe028e9b60c58c5677543cc8ba4ee7b"
+    },
+    {
+      "id": "G08-A",
+      "image": "G08-A.png",
+      "metadata": "public-records/G08-A.json",
+      "needs_revision": false,
+      "sha256": "0c47bd61b222e59be5a95de285fd28f814342736177f8ed75ce2ca73ebcc3879"
+    },
+    {
+      "id": "G08-B",
+      "image": "G08-B.png",
+      "metadata": "public-records/G08-B.json",
+      "needs_revision": false,
+      "sha256": "bfe8c96299d2d0a62f7b27d95dcdb80c7a550269aebda2d36e4e2a9ac9ad7496"
+    },
+    {
+      "id": "G08-C",
+      "image": "G08-C.png",
+      "metadata": "public-records/G08-C.json",
+      "needs_revision": false,
+      "sha256": "a0148c79661bc410740cdbf25c0ccbe9998b089ac8909db7a2dcf9bb31edf12f"
+    }
+  ],
+  "public_files": [
+    "G01-A-v2.png",
+    "G01-B.png",
+    "G01-C.png",
+    "G02-A.png",
+    "G02-B.png",
+    "G02-C.png",
+    "G02-dimension_contract.json",
+    "G02-geometry-reference.png",
+    "G03-A.png",
+    "G03-B.png",
+    "G03-C.png",
+    "G04-A.png",
+    "G04-B.png",
+    "G04-C.png",
+    "G04-dimension_contract.json",
+    "G04-geometry-reference.png",
+    "G05-A.png",
+    "G05-B.png",
+    "G05-C.png",
+    "G05-dimension_contract.json",
+    "G05-geometry-reference.png",
+    "G06-A.png",
+    "G06-B.png",
+    "G06-C.png",
+    "G07-A.png",
+    "G07-B.png",
+    "G07-C.png",
+    "G08-A.png",
+    "G08-B.png",
+    "G08-C.png",
+    "manifest.json",
+    "public-records/G01-A.json",
+    "public-records/G01-B.json",
+    "public-records/G01-C.json",
+    "public-records/G02-A.json",
+    "public-records/G02-B.json",
+    "public-records/G02-C.json",
+    "public-records/G03-A.json",
+    "public-records/G03-B.json",
+    "public-records/G03-C.json",
+    "public-records/G04-A.json",
+    "public-records/G04-B.json",
+    "public-records/G04-C.json",
+    "public-records/G05-A.json",
+    "public-records/G05-B.json",
+    "public-records/G05-C.json",
+    "public-records/G06-A.json",
+    "public-records/G06-B.json",
+    "public-records/G06-C.json",
+    "public-records/G07-A.json",
+    "public-records/G07-B.json",
+    "public-records/G07-C.json",
+    "public-records/G08-A.json",
+    "public-records/G08-B.json",
+    "public-records/G08-C.json",
+    "references/G01-dimensions.json",
+    "references/G01-elevation.png",
+    "references/G01-geometry.json",
+    "references/G01-plan.png",
+    "references/G01-reference.png",
+    "references/G01-section.png",
+    "references/G03-dimensions.json",
+    "references/G03-elevation.png",
+    "references/G03-geometry.json",
+    "references/G03-plan.png",
+    "references/G03-reference.png",
+    "references/G03-section.png",
+    "references/G06-dimensions.json",
+    "references/G06-reference.png",
+    "references/G07-B-fixed-geometry-reference.png",
+    "references/G07-dimensions.json",
+    "references/G07-plan-reference.png",
+    "references/G07-reference.png",
+    "references/G08-dimensions.json",
+    "references/G08-reference.png"
+  ]
+}

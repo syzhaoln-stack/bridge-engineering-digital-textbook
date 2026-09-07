@@ -1,0 +1,91 @@
+{
+  "id": "G08-B",
+  "source_figure_ids": [
+    "F36"
+  ],
+  "generation_tool": "built-in image_gen",
+  "style": "浅底三维教具",
+  "prompt": "Use case: scientific-educational. G08-B. One polished pale-background three-dimensional physical teaching model of a short steel I-beam specimen, 3:2 landscape, full object visible. No lettering. Original invented specimen for corrosion observation, not a real bridge photograph.\nFollow the input original meter-scaled geometry: total length1.80m, section depth0.90m, symmetrical flange width0.45m, both flange plate thickness0.020m, one center web thickness0.008m. The object is a short deep member with length/depth TWO and depth/flange-width TWO. Do not stretch it into a thin long girder. Preserve the exact three-plate I topology and the thin exposed plate edges, no ribs, bolts, holes, cutouts or additional parts.\nView in a clear oblique studio angle that shows the entire broad web, top flange and near end. Place the lower flange directly on a warm ivory plane with a soft contact shadow. Calm bright background and generous margins, understated soft physical-material rendering.\nUse a matte muted blue-grey protective coating with a few localized rusty ochre patches and peeling paint edges at the lower web and adjoining lower flange. Make these surface features easy to distinguish but not dramatic damage. Majority remains coated. No missing chunks, penetrations, bent plates or cracking; do not invent a measurable remaining section or stress result.\nThe teaching point is only visible surface condition. This I-section illustration is separate from F36's rectangular-section ten-percent thinning calculation. No measurement claims from texture.\nNo people, hands, tools, rulers, instruments, letters, numbers, captions, marks, arrows, labels, dimension lines, load diagrams, stress colors, charts, logos or watermarks.",
+  "workspace_image": "assets/publication/imagegen-samples/G08-B.png",
+  "reference_image_paths": [
+    "assets/publication/imagegen-samples/references/G08-reference.png"
+  ],
+  "dimensions_contract": {
+    "source_figure_ids": [
+      "F36"
+    ],
+    "units": "m",
+    "model_status": "corrosion context image; NOT the rectangular 10-percent thinning calculation in F36",
+    "coordinate_convention": "x member length, y flange width, z section depth",
+    "beam_length": 1.8,
+    "section_depth": 0.9,
+    "flange_width": 0.45,
+    "flange_thickness": 0.02,
+    "web_thickness": 0.008,
+    "length_to_depth_ratio": 2,
+    "depth_to_width_ratio": 2,
+    "flange_to_depth_ratio": 0.022222222222222223,
+    "web_to_depth_ratio": 0.008888888888888889,
+    "surface_condition": "local surface rust and coating peeling only; do not infer material loss, remaining thickness, strength or service life",
+    "no_hands": true,
+    "no_instruments": true
+  },
+  "visual_review": {
+    "status": "reviewed_context_candidate",
+    "acceptable_for_textbook_structure": "context_only",
+    "checks": [
+      {
+        "item": "完整I梁：上下翼缘与单腹板",
+        "result": "pass_visible_topology"
+      },
+      {
+        "item": "短而高、长度约为截面高度两倍",
+        "result": "visually_consistent_not_metrology"
+      },
+      {
+        "item": "局部锈蚀/涂层剥落，仍有完整涂层",
+        "result": "pass"
+      },
+      {
+        "item": "无穿孔、弯折、缺失大块及假应力云图",
+        "result": "pass"
+      },
+      {
+        "item": "无文字数字箭头、人物或测量工具",
+        "result": "pass"
+      }
+    ],
+    "observations": [
+      "浅底模型、薄板边缘和下部局部剥漆清楚；适合作为与参数截面图并列的情境教具。",
+      "腐蚀斑块克制，未用颜色伪装数值应力。"
+    ],
+    "limitations": [
+      "生成图不能像CAD那样证明翼缘20mm、腹板8mm的像素精确厚度，也不应用透视量取实尺寸。",
+      "锈斑面积、颜色及剥漆纹理不是减薄量、承载力或寿命测量。",
+      "这是I梁情境配图，不是F36矩形截面10%减薄算例的同一构件。"
+    ]
+  },
+  "file_checks": {
+    "format": "PNG",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "aspect_ratio": "3:2",
+    "bytes": 1846844,
+    "sha256": "bfe8c96299d2d0a62f7b27d95dcdb80c7a550269aebda2d36e4e2a9ac9ad7496",
+    "same_bytes_as_original": true,
+    "checked_at_utc": "2026-09-07T04:06:27.408224+00:00",
+    "note": "File integrity and format checks only; geometric/visual review is recorded separately."
+  },
+  "status": "context_candidate_for_author_selection",
+  "needs_revision": false,
+  "scale_status": "外观关系已复看；精确尺寸以参数底稿为准",
+  "original_filename": "exec-c303246b-f6f5-4234-aba0-d8210e92489c.png",
+  "image": "G08-B.png",
+  "sha256": "bfe8c96299d2d0a62f7b27d95dcdb80c7a550269aebda2d36e4e2a9ac9ad7496",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

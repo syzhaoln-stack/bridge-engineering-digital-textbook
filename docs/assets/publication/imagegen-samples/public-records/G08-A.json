@@ -1,0 +1,91 @@
+{
+  "id": "G08-A",
+  "source_figure_ids": [
+    "F36"
+  ],
+  "generation_tool": "built-in image_gen",
+  "style": "写实教学情境",
+  "prompt": "Use case: scientific-educational. G08-A, one original photorealistic studio illustration of a short weathered steel I-beam specimen for a bridge-engineering textbook. 3:2 landscape composition, no labels. This is an invented teaching specimen, not a photograph of a named bridge.\nThe input is the original meter-scaled geometry reference. Preserve the same one-piece I-beam proportions: length1.80m, total section depth0.90m, flange width0.45m, top and bottom flange thickness0.020m, central web thickness0.008m. Length is only TWO times section depth; this is a short deep specimen, not a long shallow stock girder. Both flanges extend symmetrically on both sides of the single thin center web. No extra plates, ribs, bolts, holes, structural cutouts or supports.\nCompose an oblique view showing the full length, broad web surface, top flange and the I-shaped near end clearly. Place the bottom flange on a neutral matte studio floor with gentle contact shadows. Frame generously with the entire specimen visible. Preserve true thin plate edges; do not thicken the web or turn it into a solid rectangular block.\nSurface: mostly faded blue-grey protective coating with LOCAL orange-brown surface rust and a few clearly peeling paint edges concentrated near one portion of the lower web and bottom flange. Several unaffected coated areas remain. Fine subtle believable steel/paint surface detail, restrained color, soft natural side lighting and a warm light-grey background. Local visible discoloration and peeling only, no deep pits or missing structural chunks. This texture cannot be interpreted as measured thickness loss or remaining strength.\nNo people, hands, rulers, calipers, tools, labels, letters, numbers, symbols, arrows, captions, dimension lines, stress clouds, diagrams, logos or watermarks. The image is corrosion context only and is NOT the original F36 rectangular-section ten-percent-thinning numerical example.",
+  "workspace_image": "assets/publication/imagegen-samples/G08-A.png",
+  "reference_image_paths": [
+    "assets/publication/imagegen-samples/references/G08-reference.png"
+  ],
+  "dimensions_contract": {
+    "source_figure_ids": [
+      "F36"
+    ],
+    "units": "m",
+    "model_status": "corrosion context image; NOT the rectangular 10-percent thinning calculation in F36",
+    "coordinate_convention": "x member length, y flange width, z section depth",
+    "beam_length": 1.8,
+    "section_depth": 0.9,
+    "flange_width": 0.45,
+    "flange_thickness": 0.02,
+    "web_thickness": 0.008,
+    "length_to_depth_ratio": 2,
+    "depth_to_width_ratio": 2,
+    "flange_to_depth_ratio": 0.022222222222222223,
+    "web_to_depth_ratio": 0.008888888888888889,
+    "surface_condition": "local surface rust and coating peeling only; do not infer material loss, remaining thickness, strength or service life",
+    "no_hands": true,
+    "no_instruments": true
+  },
+  "visual_review": {
+    "status": "reviewed_context_candidate",
+    "acceptable_for_textbook_structure": "context_only",
+    "checks": [
+      {
+        "item": "完整I梁：上下翼缘与单腹板",
+        "result": "pass_visible_topology"
+      },
+      {
+        "item": "短而高、长度约为截面高度两倍",
+        "result": "visually_consistent_not_metrology"
+      },
+      {
+        "item": "局部锈蚀/涂层剥落，仍有完整涂层",
+        "result": "pass"
+      },
+      {
+        "item": "无穿孔、弯折、缺失大块及假应力云图",
+        "result": "pass"
+      },
+      {
+        "item": "无文字数字箭头、人物或测量工具",
+        "result": "pass"
+      }
+    ],
+    "observations": [
+      "下部腹板—下翼缘附近出现橙褐锈蚀与清楚剥漆边界；大面积蓝灰涂层仍完整。",
+      "右端能看到薄腹板与上下翼缘，物件完整落在中性地面。"
+    ],
+    "limitations": [
+      "生成图不能像CAD那样证明翼缘20mm、腹板8mm的像素精确厚度，也不应用透视量取实尺寸。",
+      "锈斑面积、颜色及剥漆纹理不是减薄量、承载力或寿命测量。",
+      "这是I梁情境配图，不是F36矩形截面10%减薄算例的同一构件。"
+    ]
+  },
+  "file_checks": {
+    "format": "PNG",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "aspect_ratio": "3:2",
+    "bytes": 2225075,
+    "sha256": "0c47bd61b222e59be5a95de285fd28f814342736177f8ed75ce2ca73ebcc3879",
+    "same_bytes_as_original": true,
+    "checked_at_utc": "2026-09-07T04:06:27.387404+00:00",
+    "note": "File integrity and format checks only; geometric/visual review is recorded separately."
+  },
+  "status": "context_candidate_for_author_selection",
+  "needs_revision": false,
+  "scale_status": "外观关系已复看；精确尺寸以参数底稿为准",
+  "original_filename": "exec-28df5946-3b5f-4025-baea-6d8f44637cf0.png",
+  "image": "G08-A.png",
+  "sha256": "0c47bd61b222e59be5a95de285fd28f814342736177f8ed75ce2ca73ebcc3879",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

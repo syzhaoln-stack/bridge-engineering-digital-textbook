@@ -1,0 +1,27 @@
+{
+  "id": "G03-B",
+  "group": "G03",
+  "source_figure_ids": [
+    "F13"
+  ],
+  "style": "B · 三维教具",
+  "tool": "built-in image_gen",
+  "image": "G03-B.png",
+  "prompt": "Use case: scientific-educational sketch-to-render. One landscape 3:2 textbook illustration, high-quality realistic material cutaway. The attached image is an exact meter-based geometry reference. Preserve its camera and topology, do NOT redesign. One 20 m long x 10.8 m wide bridge deck slab 0.20 m thick, FIVE parallel longitudinal T-girders at transverse centers -4.8,-2.4,0,2.4,4.8 m (spacing 2.4 m), depth 1.2 m below the slab. EXACTLY THREE interior transverse diaphragms along length x=5,10,15 m, plus TWO end crossbeams x=0,20 m. Each interior diaphragm is a thin vertical concrete wall, 0.24 m thick along bridge length, connecting all five girders; it is not a thick bar sitting on top of roadway. Their tops meet the slab underside. Keep this five-by-four bay layout identical. Deck is ghosted translucent pale cyan solely to reveal the underlying concrete, not literal glass, and has NO opaque asphalt hiding the grid. Truck remains exactly 6.00 m long x 2.20 m wide x 3.00 m high, about 30% of one span, standing on slab at same position as reference; convert block truck to believable yellow two-axle delivery truck, realistic windows, tires in contact with slab, original wheel positions. Realistic pale concrete texture with quiet blue-gray structural surfaces, naturally lit on warm white studio background, crisp edges, full model in frame, generous margin. No piers, ground, river, buildings, people, other vehicles, road furniture, extra beams, exploded offsets, bend shapes, arrows, labels, dimensions, text, logos or false colored stress fields. Make interior three crosswalls and five longitudinal girders legible without thickening them. Geometry and object scale take priority over realism.\nVARIANT B STYLE OVERRIDE: a matte pale-blue-gray physical teaching model, very clean studio 3D render, no photographic concrete texture. Render the EXACT shapes of the input, changing only shading and upgrading the primitive truck. Critical: these are FIVE separate T-girders with narrow vertical webs underneath, NOT a box girder or a closed waffle tray. There is NO bottom slab, NO base panel, NO bottom floor, NO floor in the grid cells. White background is visible below between girders. The long NEAR edge has a vertical outer girder web, as shown in reference; do not remove its web. Three intermediate transverse diaphragm webs are perpendicular to the five longitudinal webs. Keep the original solid blue-gray beam profiles and semi-transparent ghost deck. No new geometry.",
+  "reference_geometry_path": "references/G03-reference.png",
+  "dimension_contract": "references/G03-dimensions.json",
+  "status": "needs_revision_style_reference_only",
+  "needs_revision": true,
+  "scale_status": "画风参考；结构细节待修正",
+  "visual_review": "五纵梁、三道内部横隔与开放底部可辨；下缘被画成类似钢I梁的下翼缘，车辆朝向也与底稿相反，需按混凝土T梁截面重绘。",
+  "limitations": [
+    "仅供选择材质与画风，不宜直接插作构造定稿",
+    "精确五梁、横隔位置、T形截面与荷载图继续由参数模型绘制"
+  ],
+  "original_filename": "exec-0217b7bd-a0c0-43d7-82de-6eb160dab4e7.png",
+  "sha256": "a043d192721329eeadbfdd1c8f491bf371b7bfe9481e2bd297686a16554e3228",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

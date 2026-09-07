@@ -1,0 +1,138 @@
+{
+  "id": "G06-B",
+  "source_figure_ids": [
+    "F27"
+  ],
+  "generation_tool": "built-in image_gen",
+  "style": "浅底三维教具",
+  "prompt": "Use case: scientific-educational. G06-B, a refined pale-background three-dimensional teaching model for a bridge engineering textbook. One complete 3:2 landscape image, no writing.\nInput image 1 is a meter-scaled geometric reference. Keep the SAME topology, proportions, two tower positions and ground anchorages, render as a beautifully made miniature object with restrained matte grey concrete, pale blue-grey steel, clearly separated teal-grey main cables and very thin vertical hangers. Studio-like diffuse lighting, ivory background, soft contact shadows, minimal pale river ribbon and small bank blocks only to locate the two independent ground anchorages. No real-project claims. Not a toy with thick oversized cables.\nExact geometry contract in meters, do NOT print these numbers: deck spans 150+500+150=800, total width 24, deck top z25 above water z0; towers at x0 and500, cable saddles z87.5, main-span lowest cable z37.5 so sag50 and sag/span0.1. Two main cable planes y=-11.5,+11.5, diameter0.6. Thin VERTICAL main-span hangers diameter0.08, approximately10m spacing; no radiating stays. Main-span cable is a shallow parabola. Two portal towers have legs centered y±13.5, each3m wide outside traffic. The upper crosshead supports the two cable saddles. Cable end anchor blocks are independent of deck at x-150 and650,z8 on both banks. Main cables pass over tower tops and continue down to these anchors; never terminate at deck ends. Approach deck has simple pier supports as in reference.\nDeck allocation width24: four traffic lanes each3.5, central median2, side strips3 each, outer edging1 each. Deck girder depth2.2. Render real relative proportions: the entire bridge is very long compared with tower height and VERY long compared with deck width. Do not inflate towers, deck width, cable thickness or hanger diameter to fill frame.\n\nComposition: full bridge centered across nearly all image width, generous but controlled white margin, slight high three-quarter perspective so both cable planes are distinguishable. The actual bridge is 800m long and deck only24m wide: preserve that slender proportion, never widen the deck or shorten spans to look compact. No vehicles or people. Keep both anchor blocks on each bank visibly separate from the deck.\nAvoid text, numbers, dimensions, arrows, legends, labels, watermarks, logos, stress colors, diagonal fan stays, extra towers, floating cable ends, cables anchored into the deck.",
+  "workspace_image": "assets/publication/imagegen-samples/G06-B.png",
+  "reference_image_paths": [
+    "assets/publication/imagegen-samples/references/G06-reference.png"
+  ],
+  "reference_role": "meter-scale original parameter geometry; not a real bridge photograph",
+  "dimensions_contract": {
+    "source_figure_ids": [
+      "F27"
+    ],
+    "units": "m",
+    "model_status": "teaching geometry, not a named real bridge or design result",
+    "coordinate_convention": "x longitudinal, y transverse, z vertical; water z=0",
+    "spans": [
+      150,
+      500,
+      150
+    ],
+    "deck_x_range": [
+      -150,
+      650
+    ],
+    "tower_x": [
+      0,
+      500
+    ],
+    "deck_width": 24,
+    "deck_surface_z": 25,
+    "saddle_z": 87.5,
+    "main_cable_low_z": 37.5,
+    "main_cable_sag": 50,
+    "main_span_sag_ratio": 0.1,
+    "side_to_main_span_ratio": 0.3,
+    "main_cable_planes_y": [
+      -11.5,
+      11.5
+    ],
+    "tower_leg_centres_y": [
+      -13.5,
+      13.5
+    ],
+    "tower_leg_width": 3,
+    "lane_widths": [
+      3.5,
+      3.5,
+      3.5,
+      3.5
+    ],
+    "median_width": 2,
+    "side_strip_widths": [
+      3,
+      3
+    ],
+    "outer_strip_widths": [
+      1,
+      1
+    ],
+    "main_cable_diameter": 0.6,
+    "hanger_diameter": 0.08,
+    "anchorage_cable_end_x": [
+      -150,
+      650
+    ],
+    "anchorage_cable_end_z": 8,
+    "visual_detail_assumptions": {
+      "deck_girder_depth": 2.2,
+      "tower_leg_x_depth": 4,
+      "tower_top_z": 91,
+      "tower_crosshead_top_z": 87.5,
+      "tower_crosshead_depth": 4,
+      "hanger_spacing": 10,
+      "anchorage_block_xyz_size": [
+        20,
+        10,
+        12
+      ],
+      "no_vehicles": true,
+      "approach_pier_x": [
+        -145,
+        -75,
+        575,
+        645
+      ]
+    },
+    "notes": [
+      "Two ground-anchored main cables pass over both tower saddles to independent bank anchorage blocks.",
+      "Vertical main-span hangers; no fan stays.",
+      "Main-span cable z=37.5+50*((x-250)/250)^2. Side-span cable represented straight to separate anchor, not a solved cable profile.",
+      "Diameters are visual teaching assumptions; force cannot be read from thickness.",
+      "Parent supplied JTG ratio check; this generation script does not certify a code design."
+    ]
+  },
+  "visual_review": {
+    "status": "reviewed_context_candidate",
+    "checks": [
+      "可辨两座桥塔，主跨有垂直吊杆，未画成斜拉索扇形",
+      "双主缆可沿塔顶追踪到岸上独立锚碇，未止于桥面",
+      "主缆跨中最低处仍高于桥面；全桥呈长跨、窄桥面的相对比例",
+      "未见文字、数值、力箭头、云图、车辆或人物"
+    ],
+    "observations": "浅底实体模型，主梁、双塔、吊杆与两岸锚碇可辨；索面受透视影响部分重合。",
+    "limitations": [
+      "生成图不是CAD尺寸验证。跨度比、垂跨比、24m桥宽和毫米级构件直径不能仅凭像素认证；精确值以合同/参数参照为准。",
+      "吊杆条数及间距无法从整桥成图逐根可靠测量；仅作构造情境，不替代力学计算图。",
+      "地形、材料表面、附属构造为生成视觉细节，不代表实桥勘察或设计。"
+    ]
+  },
+  "file_checks": {
+    "format": "PNG",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "aspect_ratio": "3:2",
+    "bytes": 1309826,
+    "sha256": "371f539acca7ee6d1fdf1ce5b55057884bbf334f11e5afb625414d95b9e7816c",
+    "same_bytes_as_original": true,
+    "checked_at_utc": "2026-09-07T04:06:27.287581+00:00",
+    "note": "File integrity and format checks only; geometric/visual review is recorded separately."
+  },
+  "status": "context_candidate_for_author_selection",
+  "needs_revision": false,
+  "scale_status": "外观关系已复看；精确尺寸以参数底稿为准",
+  "original_filename": "exec-5912f6a8-649c-44c1-98c5-1e46d512bfdd.png",
+  "image": "G06-B.png",
+  "sha256": "371f539acca7ee6d1fdf1ce5b55057884bbf334f11e5afb625414d95b9e7816c",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

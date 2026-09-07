@@ -1,0 +1,53 @@
+{
+  "units": "m",
+  "beam_count": 2,
+  "same_stock_dimensions": [
+    1,
+    0.1,
+    0.02
+  ],
+  "volume_each_m3": 0.002,
+  "relative_rotation_about_longitudinal_axis_deg": 90,
+  "support_center_span_m": 0.8,
+  "overhang_to_support_center_m": 0.1,
+  "each_support_dimensions_x_y_z_m": [
+    0.06,
+    0.14,
+    0.1
+  ],
+  "support_count": 4,
+  "objects": [
+    {
+      "orientation": "flat",
+      "beam_x_bounds_m": [
+        -1.13,
+        -0.13
+      ],
+      "beam_width_y_m": 0.1,
+      "beam_height_z_m": 0.02,
+      "beam_base_z_m": 0.1,
+      "support_center_x_m": [
+        -1.03,
+        -0.22999999999999998
+      ]
+    },
+    {
+      "orientation": "edge",
+      "beam_x_bounds_m": [
+        0.13,
+        1.13
+      ],
+      "beam_width_y_m": 0.02,
+      "beam_height_z_m": 0.1,
+      "beam_base_z_m": 0.1,
+      "support_center_x_m": [
+        0.22999999999999998,
+        1.03
+      ]
+    }
+  ],
+  "load": "none",
+  "deformation": "none",
+  "people": "none",
+  "role": "Dimensioned deterministic reference only; final generated candidates omit all text/diagrams."
+}

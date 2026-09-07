@@ -1,0 +1,44 @@
+{
+  "id": "G05-C",
+  "group": "G05",
+  "variant": "C",
+  "source_figure_ids": [
+    "F24"
+  ],
+  "title": "两塔斜拉桥的桥塔、拉索与桥面",
+  "style": "教材钢笔淡彩插画",
+  "prompt": "Use case: scientific-educational. G05-C, landscape3:2.\nInput image1 is the checked proportional geometry. Reinterpret this same TWO-TOWER CABLE-STAYED bridge in precise restrained PEN-AND-WATERCOLOR: fine gray-blue engineering linework, pale cool concrete washes, faint muted water/shore indications fading into warm ivory paper. Direct structural forms, no comic distortions. Fine stay lines and light deck contours; full bridge silhouette, both ends in frame. Oblique side view, similar to reference.\nAll dimensions are explicitly TEACHING ASSUMPTIONS in metres, not a real project: spans120+300+120, total540; towersx120/420; deckwidth22.5; main girderdepth2.0 only; decksurface30abovewater; towerheight90above deck, top120above water. Keep reference's dimensional ratios. The main structural girder depth is1/45 of the above-deck towerheight: draw its vertical edge extremely shallow, around5pixels for a225pixel tower. The horizontal view of deck width must not be mistaken for the vertical beam depth.\nH-towerlegcentersy±13, eachleg transversewidth2.5; innerfaces±11.75 stayoutside deckedges±11.25. Do not plant towers in traffic lanes. Four3.5m lanes with remaining8.5m totalfor median/sidebands/barriers. No people or cars. No need to exaggerate road stripes to be legible.\nTwo planes of straight stays join tower legs directly to deck edges, farther deckanchor higher on tower, ordered semi-fan without within-plane crossing. No sagging suspension main cable, no suspended vertical hanger series, no floating cable ends. Cable count and exact anchorage spacing are illustrative, not a design assertion. Preserve a continuous deck and contact at tower positions and both end abutments.\nNo words, numbers, equations, dimensions, force arrows, stress contours, logos or watermark. An understated bridge textbook context illustration, not a measured engineering drawing, not the same numerical case as F24. Make watercolor hand-drawn in texture and line, distinctly different from a3D CGI model or a site photograph.",
+  "edit_prompt": "Precise-object-edit G05-C. Image1 is the pen-watercolor bridge illustration to edit. Image2 is the checked geometry reference. Correct the erroneous crossing of the left and right tower's innermost stays ABOVE THE MAIN-SPAN CENTRE. In the target there are clear long diagonal lines crossing like an X near the middle of the bridge. Remove only those central overextended stay segments, and redraw their termination so the LAST STAY FROM THE LEFT TOWER lands on the deck BEFORE the midpoint, while the LAST STAY FROM THE RIGHT TOWER lands on the deck AFTER the midpoint. Leave a short clear uncabled central deck interval,30m equivalent within a300m mainspan. No left-tower stay may cross into the right half-span, and no right-tower stay may cross into the left half-span. Both stay planes obey this. Each cable is a single straight segment directly from tower leg to a deck anchor; farther deckanchor uses higher toweranchor. No dangling ends, no X connecting the two towers.\nKeep the original bridge body, very shallow assumed2m girder, two towers90m above deck, span120+300+120m,22.5m deck width, deck30m above water, external tower legs, pale watercolor setting and fine penwork unchanged. Preserve full-bridge framing. This edit corrects only central stay connectivity; do not redesign geometry or add giant details. No labels, text, numbers, dimension marks, arrows, cars or people. Landscape3:2.",
+  "tool": "built-in image_gen",
+  "image": "G05-C.png",
+  "width": 1536,
+  "height": 1024,
+  "dimension_contract": "G05-dimension_contract.json",
+  "reference_image": "G05-geometry-reference.png",
+  "visual_review": {
+    "observed": [
+      "细线淡彩风格明确，两塔三跨整体与水面情境可辨。",
+      "直斜索仍由塔连向桥面，没有变成悬索桥，但跨中仍有两塔斜索互穿形成X。",
+      "一次定向编辑未消除跨中互穿；还存在底稿没有的中部塔横梁。"
+    ],
+    "proportion_review": "图像保持长桥整体轮廓，但跨度比例、塔高与车道净距均不能用此透视图作精确认证。",
+    "limitations": [
+      "跨中斜索连接不符合本组合同：左右塔最远索应各止于跨中之前/之后，保留约30m中间间隔，而非互穿。",
+      "工程拓扑问题未解决，不能作为当前斜拉桥教学图直接采用。",
+      "钢笔淡彩风格可供选择借鉴，内容需重绘或重新生成后另审。"
+    ],
+    "review_status": "未通过结构连接目视审查，暂不宜入教材",
+    "targeted_retry": true,
+    "edit_reason": "跨中X形互穿拉索；工具定向编辑未修复",
+    "requires_revision_before_use": true
+  },
+  "status": "needs_revision_style_reference_only",
+  "needs_revision": true,
+  "scale_status": "画风参考；结构细节待修正",
+  "original_filename": "exec-40f88b94-d941-4573-abb4-8bb5d8f32647.png",
+  "sha256": "00113b4d68c36452acc6de6da02935a39b063af65631ed812031dc86a252d48c",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

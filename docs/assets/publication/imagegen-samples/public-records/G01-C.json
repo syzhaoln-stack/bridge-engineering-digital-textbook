@@ -1,0 +1,27 @@
+{
+  "id": "G01-C",
+  "group": "G01",
+  "source_figure_ids": [
+    "F01"
+  ],
+  "style": "C · 线稿淡彩",
+  "tool": "built-in image_gen",
+  "image": "G01-C.png",
+  "prompt": "Use case: scientific-educational, sketch-to-render. Create one landscape 3:2 realistic architectural scene candidate for a Chinese bridge textbook. Input image is a calibrated meter-based geometry reference, NOT an inspiration to redesign. Preserve camera, TWO equal 20 m spans (40 m deck total), 10.8 m deck width, 1.2 m deep girders, one central pier and end abutments. Deck level 8 m, central cap/bearings/pier/footing connected exactly as shown. Preserve FIVE parallel longitudinal girders. Truck is a small 6.00 m long x 2.20 m wide x 3.00 m high two-axle box truck, 15% of entire deck length; do not enlarge it. Turn its primitive geometry into a plausible yellow delivery truck with cab glazing, rubber tires and cargo box, maintaining envelope and wheel positions; wheels touch deck. Bridge has two 3.5 m traffic lanes inside total width; subtle white road markings may be added at true scale. Convert surfaces to believable pale concrete, steel railings and muted asphalt, overcast daylight, restrained editorial realism, crisp useful teaching detail. Keep both abutments and the full central footing visible; add only a shallow cutaway soil edge around footing, no large ground plane hiding structure, no additional piers or tall scenery. Blank warm pale background, generous margins. No labels, text, arrows, dimensions, logos, people, other vehicles, waterways, false stress colors or dramatic damage. This is a fictional rendering, not a photograph of a real project. Structural proportions and visible connections take precedence over beauty.\nSTYLE OVERRIDE FOR VARIANT C: Hand-drawn architectural textbook illustration using fine restrained graphite/ink outlines with quiet watercolor washes. Warm white paper, pale concrete, cool blue-gray shadows, small muted yellow delivery truck. No photographic textures, no heavy vintage filter, no dramatic effects. Keep the exact same connected geometry and small vehicle scale as the reference. Do not add soil/landscape; show the complete central footing and all supports. Camera unchanged.",
+  "reference_geometry_path": "references/G01-reference.png",
+  "dimension_contract": "references/G01-dimensions.json",
+  "status": "context_candidate_for_author_selection",
+  "scale_status": "参照底稿已校核，生成图已作外观比例复核；非精密尺寸图",
+  "visual_review": "两跨和基础连接保留；右端五个支承与小货车的尺度关系可辨，适合章节引图。线条和材质有手绘自由度，不能从本图量尺寸。",
+  "limitations": [
+    "正式尺寸、荷载箭头保留参数图层",
+    "虚构插画，不是真实工程照片"
+  ],
+  "needs_revision": false,
+  "original_filename": "exec-84b8af5c-63b1-4420-9056-405e31e3e10b.png",
+  "sha256": "7faf19f5a57d010e193a0499692f7131e2a19e873215df10da3fcbf28d4277f1",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

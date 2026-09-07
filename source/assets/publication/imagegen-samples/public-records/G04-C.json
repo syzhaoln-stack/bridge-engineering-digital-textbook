@@ -1,0 +1,44 @@
+{
+  "id": "G04-C",
+  "group": "G04",
+  "variant": "C",
+  "source_figure_ids": [
+    "F19"
+  ],
+  "title": "箱梁推出与尚未接触的前方桥墩",
+  "style": "教材钢笔淡彩插画",
+  "prompt": "Use case: scientific-educational. G04-C bridge textbook contextual artwork, landscape3:2.\nInput image1 is a geometrically checked reference, not a style reference. Preserve its whole ordinary bridge at the same construction stage, and produce a restrained textbook PEN AND WATERCOLOR illustration: precise fine warm-gray pen contours, pale gray concrete washes, rusty orange steel launching nose, very light ochre ground indications that fade into unpainted ivory paper. This is an engineering illustration, not a comic or an epic landscape. Clean oblique side view, complete structural silhouette, airy composition.\nGeometry is a declared teaching assumption in metres, not a real project: continuous concrete box girder x=-45..110, width12, depth2.5, deck elevation15 above ground. Existing support bearings at x=0,45,90. Fourth future pier at135. Twin tapered longitudinal steel nose girders firmly connected at concrete front110, extending to130, exactly20m long; a5m gap remains to next pier. Preserve all ratios of the reference; uniform overall scale, no stylized shortening of deck or enlargement of piers. Show the three supporting contacts and the detached future pier clearly. Retain cross bracing between the two orange steel beams. No cars or people.\nThis is a contextual image only, different from F19's numerical model, not a dimensioned drawing or proof of construction feasibility. No writing inside image. No labels, dimension marks, numbers, formulas, force arrows, symbols, fake stress clouds, watermarks or logos. Do not merge into suspension bridge, do not invent an extra support, do not close the nose-to-pier gap, do not float disconnected structure. Distinct hand-drawn pen-and-wash finish rather than3D CGI.",
+  "tool": "built-in image_gen",
+  "image": "G04-C.png",
+  "width": 1536,
+  "height": 1024,
+  "dimension_contract": "G04-dimension_contract.json",
+  "reference_image": "G04-geometry-reference.png",
+  "visual_review": {
+    "observed": [
+      "后方浅色连续台座置于岸台上，承托后段梁底，消除了45m后悬臂的表达。",
+      "第一墩在岸台右侧部分可见，前方两墩和待接触墩仍可识别。",
+      "前端双导梁、横向联系和空隙保留；全图无文字、人物、车辆或力箭头。"
+    ],
+    "proportion_review": "教具/线绘中后段台座终点位于原第一支点附近，长细比例与参考大体一致；仍不能从透视生成图验证精确45m、2.5m和5m。",
+    "limitations": [
+      "为新教学情境，与F19原计算模型不同；导梁/支座/台座连接均未作承载或施工验算。",
+      "尺寸合同为生成约束，不是从生成图测得的尺寸认证；箱梁内腔及局部连接不可据图施工。"
+    ],
+    "review_status": "可供情境配图选择；台座与支承关系比原版清楚",
+    "targeted_retry": true,
+    "edit_reason": "按主任务审核补充后方岸上预制/顶推台座，避免45m后悬臂误导",
+    "style_preserved": true
+  },
+  "status": "context_candidate_for_author_selection",
+  "edit_prompt": "Precise-object-edit G04-C. Image1 is the pen-and-watercolor teaching illustration to edit, image2 is the corrected proportional reference. Add a single structural context correction: rear left45m concrete girder segment, x=-45..0, rests CONTINUOUSLY on an ONSHORE CASTING / LAUNCHING BED. Draw a restrained pale ochre retained bank block with a thin light concrete bed meeting the underside of the rear girder; its right face ends at the FIRST original pier x=0, not at the second pier45. First pier can be partly visible beside that bank. Make bed contact unambiguous. Bank topz12m, bed top12.5m matching girder underside, rear bed45m long and9m wide; shore blockabout16m wide. No free45m rear cantilever, no added slender pier.\nKeep original warm-gray fine penwork, pale washes, ivory paper, oblique projection, all original girder geometry and four piers in place. Existing spans45m between0,45,90 and future135, girderx=-45..110 width12m depth2.5m decktop15m, twin orange steel nose110..130m. Keep5m air gap before the future pier, preserve cross bracing, no nose relocation. Keep far-left deck end within canvas, no cropping. No vehicles, people, text, dimension labels, arrows, symbols or formulas. Landscape3:2. Model is a hypothetical teaching context only, not a dimensioned engineering drawing.",
+  "revision": "rear_onshore_launching_bed_20260907",
+  "needs_revision": false,
+  "scale_status": "可供情境配图选择；台座与支承关系比原版清楚",
+  "original_filename": "exec-d1bda909-1646-436f-9755-2d8b63ffde5d.png",
+  "sha256": "acd260bd959cc1a419e1770a03b0e3497c6b416386c9e73763232184f3440220",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

@@ -2,6 +2,8 @@
 
 <div class="visual-batch-hero"><p class="batch-kicker">桥梁思维 · 新一批图与实验</p><p class="batch-lead">一辆车停在桥上，五根梁一定平均分吗？先听两个人争论，再亲手改变条件，看看自己的判断能不能站住。</p><div class="batch-actions"><a class="batch-primary" href="#dialogues">先听一段对话</a><a href="interactive/course-package.html">选一个实验动手</a><a href="#forty-figures">翻看 40 幅新图</a><a href="#notebooks">边读边算</a></div></div>
 
+**新增选样：**[8 处内容 × 3 种画法，比较 24 张 GPT 生成候选图](interactive/imagegen-review.html)。每处可对照参数底稿、放大图片并记录选择。7 张有明确构造待修项，已单独标出；原有 40 幅参数图继续保留。
+
 ## 先听一段对话 {#dialogues}
 
 小周从生活里的经验出发，阿宁和他一起拆开看。有时直觉有道理，有时还少了一个条件。看完之后，换一个条件再试。

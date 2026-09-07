@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><meta charset="utf-8"/><title>Meter geometry reference</title>
+<style>body{margin:0;background:#fafaf7}canvas{display:block}</style>
+<script type="module">
+import * as THREE from '../../interactive/vendor/three.module.js';
+const params=new URLSearchParams(location.search), group=params.get('group')||'G01', view=params.get('view')||'perspective';
+const parts=await (await fetch(`../../assets/publication/imagegen-samples/references/${group}-geometry.json`)).json();
+const V=(x,y,z)=>new THREE.Vector3(x,z,-y);
+const scene=new THREE.Scene();scene.background=new THREE.Color('#fafaf7');
+const renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
+renderer.setSize(1800,1200);renderer.setPixelRatio(1);document.body.appendChild(renderer.domElement);
+renderer.outputColorSpace=THREE.SRGBColorSpace;
+scene.add(new THREE.HemisphereLight(0xffffff,0x61727a,2.3));
+const light=new THREE.DirectionalLight(0xffffff,2.2);light.position.set(-20,50,30);scene.add(light);
+for(const p of parts){
+ const geometry=p.shape==='box'?new THREE.BoxGeometry(p.size[0],p.size[2],p.size[1]):new THREE.CylinderGeometry(p.radius,p.radius,p.width,36);
+ const mesh=new THREE.Mesh(geometry,new THREE.MeshStandardMaterial({color:p.color,roughness:.8,metalness:.05,transparent:p.alpha<1,opacity:p.alpha,depthWrite:p.alpha>=1}));
+ mesh.position.copy(V(...p.center));if(p.shape==='wheel')mesh.rotation.x=Math.PI/2;
+ scene.add(mesh);
+ if(p.alpha>=1&&p.shape==='box'){
+  const edge=new THREE.LineSegments(new THREE.EdgesGeometry(geometry),new THREE.LineBasicMaterial({color:0x46616b,transparent:true,opacity:.28}));edge.position.copy(mesh.position);scene.add(edge);
+ }
+}
+const isWhole=group==='G01',center=isWhole?V(20,0,4):V(10,0,2.2);
+const half=isWhole?20:12.5;
+const camera=new THREE.OrthographicCamera(-half*1.5,half*1.5,half,-half,.01,1000);
+const views={perspective:new THREE.Vector3(30,24,50),elevation:new THREE.Vector3(0,0,100),plan:new THREE.Vector3(0,100,0),section:new THREE.Vector3(100,0,0)};
+camera.position.copy(center).add(views[view]);if(view==='plan')camera.up.set(0,0,-1);camera.lookAt(center);camera.updateProjectionMatrix();
+renderer.render(scene,camera);
+window.referenceReady={group,view,parts:parts.length,units:'m',bbox:new THREE.Box3().setFromObject(scene).getSize(new THREE.Vector3()).toArray()};
+</script></html>

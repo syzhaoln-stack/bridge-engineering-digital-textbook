@@ -1,0 +1,44 @@
+{
+  "id": "G04-A",
+  "group": "G04",
+  "variant": "A",
+  "source_figure_ids": [
+    "F19"
+  ],
+  "title": "箱梁推出与尚未到墩的钢导梁",
+  "style": "写实工程情境",
+  "prompt": "Use case: scientific-educational. Asset G04-A: bridge textbook contextual illustration, landscape 3:2.\nInput image is a checked proportional geometry reference. Render its SAME bridge geometry as a realistic, quiet engineering construction scene, with realistic concrete, rust-orange painted steel, muted dry ground and pale sky, ordinary site rather than spectacle. Keep entire bridge, all four piers and the small gap ahead of the steel nose in frame. Readable slightly elevated oblique side view, clean light.\nFixed TEACHING SCENARIO ASSUMPTIONS, not a built real bridge or the F19 numerical example: coordinates in metres, x longitudinal. Concrete box girder runs x=-45 to110, width12m, total depth2.5m, deck surface15m above ground. It is continuously and visibly supported at x=0,45,90m. The fourth future pier is at x=135m. Two tapered longitudinal steel launching-nose girders, with credible transverse bracing, run x=110 to130m, firmly attached to the concrete front; their tip remains5m SHORT of the next pier, not yet touching it. Nose length20m. All proportions must follow reference, including45m support spacing, small2.5m girder depth relative to spans, real contact at the first three bearings. Do not add extra supports or detach the nose. Keep the two steel girders distinct and connected, not a decorative ramp.\nNo road traffic. Prefer no people; if any worker is included, height1.70m at exactly the same world scale, tiny compared with15m piers. Do not enlarge people for readability.\nThis is an AI-generated hypothetical teaching scene only; communicate that via metadata, NOT printed text. It cannot replace an engineering diagram, analysis, construction verification, or the F19 model.\nNo words, numbers, captions, dimension marks, force arrows, false stress contours, logos or watermark. No suspension cables, no floating unsupported half-bridge, no dramatic exaggerated sag. Keep geometry faithful while adding realistic materials and restrained surroundings.",
+  "tool": "built-in image_gen",
+  "image": "G04-A.png",
+  "width": 1536,
+  "height": 1024,
+  "dimension_contract": "G04-dimension_contract.json",
+  "reference_image": "G04-geometry-reference.png",
+  "visual_review": {
+    "observed": [
+      "后方已改为岸上土台与顶推台座承托，未再显示45m后悬臂。",
+      "两个前方承重墩、橙色双导梁和独立待接触墩清楚，导梁前方保留空隙。",
+      "写实材质与原构图基本保留；左端延伸出画面，岸台遮挡第一个支点。"
+    ],
+    "proportion_review": "写实编辑扩大了左侧岸土范围，后端出画、第一支点被遮挡，台座起止位置无法逐一比对；不得把此版用作支点位置或45m台座长度图。",
+    "limitations": [
+      "为新教学情境，与F19原计算模型不同；导梁/支座/台座连接均未作承载或施工验算。",
+      "尺寸合同为生成约束，不是从生成图测得的尺寸认证；箱梁内腔及局部连接不可据图施工。"
+    ],
+    "review_status": "仅作宽泛工程情境候选；精确位置教学优先使用B/C或可计算底稿",
+    "targeted_retry": true,
+    "edit_reason": "按主任务审核补充后方岸上预制/顶推台座，避免45m后悬臂误导",
+    "style_preserved": true
+  },
+  "status": "context_candidate_for_author_selection",
+  "edit_prompt": "Precise-object-edit G04-A. Image1 is the realistic image to edit, image2 is the CORRECTED geometry reference. Make one structural context correction only: the rear/leftmost45m of concrete girder, from x=-45 to the first support x=0, must be continuously SUPPORTED BY AN ONSHORE CASTING AND LAUNCHING BED. It must NOT remain a45m rear cantilever. Add a credible low-profile concrete launching bed on top of a tall retained earthen bank at the left, with bed top meeting the girder underside at z=12.5m continuously along the rear45m. Shore platform is roughly16m wide, bank top12m above ground, concrete bed0.5m deep and9m wide. This is a bank/abutment and construction platform, NOT a fourth new river pier. Integrate earthy bank texture and a retaining face naturally into the existing dry site; some first pier may be occluded by bank, but do not remove or shift it.\nPreserve all other structure and the existing realistic style/camera: concrete girder x=-45..110, width12m, depth2.5m, deck elevation15m; supports x=0,45,90m; next pier135m; twin orange steel launching nose110..130m with5m air gap to next pier. Keep the three original bearing positions, the two front visible supporting piers, the nose and future pier exactly in place. No cars, no people, no new load arrows, no text, no labels or dimensions. Landscape3:2. The new bank must visibly reach the full rear girder underside; do not merely put a small block under its far-left tip or leave the rear span floating.",
+  "revision": "rear_onshore_launching_bed_20260907",
+  "needs_revision": false,
+  "scale_status": "仅作宽泛工程情境候选；精确位置教学优先使用B/C或可计算底稿",
+  "original_filename": "exec-51e650f9-b834-4184-9f55-17d3f6229402.png",
+  "sha256": "958ca3398a2e8a300a47b5b25ffbdbd0d441556ba885b512d51e6429d964f362",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

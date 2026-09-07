@@ -1,0 +1,44 @@
+{
+  "id": "G04-B",
+  "group": "G04",
+  "variant": "B",
+  "source_figure_ids": [
+    "F19"
+  ],
+  "title": "箱梁推出与钢导梁的三维教具",
+  "style": "浅底三维教具模型",
+  "prompt": "Use case: scientific-educational. Asset G04-B, landscape3:2.\nInput image1 is the checked dimensionally proportional geometry reference. Create a clean professional THREE-DIMENSIONAL CLASSROOM TEACHING MODEL on warm-white seamless background, soft contact shadows, matte pale concrete and restrained orange steel. Preserve reference topology and all relative sizes; this is the same teaching construction phase, not a different bridge. Fill more of the horizontal canvas, keep the whole model and all four piers fully visible. Crisp oblique side view, slightly elevated to reveal deck width and twin steel nose girders, visually understandable connections, no scenery.\nFixed hypothetical teaching geometry in metres: continuous concrete box girder x=-45..110, deck width12m, depth2.5m, deck top15m above foundation datum. Three actual supporting pier bearings at x=0,45,90; future fourth pier at135. Two connected tapered steel launching-nose plate girders x=110..130, length20, firmly attached to the concrete girder front with credible cross bracing. Nose ends5m before the next pier; there is a clear air gap. The15m pier height and2.5m girder depth must not become chunky toy proportions. Maintain all scale ratios when uniformly miniaturizing this as a model. Do not add a hidden support or join the final gap. Do not invent another road below. No people or vehicles.\nThis is only a contextual teaching asset, not F19's different analytical example and not construction verification. Do not print this note inside the artwork.\nNo lettering, measurements, equations, symbols, force arrows, fake stress coloring, labels, logos or watermark. No exploded parts, no cutaway removal or detached floating deck. Physical clean model, NOT photoreal site, not flat2D diagram, no dramatic sag.",
+  "tool": "built-in image_gen",
+  "image": "G04-B.png",
+  "width": 1536,
+  "height": 1024,
+  "dimension_contract": "G04-dimension_contract.json",
+  "reference_image": "G04-geometry-reference.png",
+  "visual_review": {
+    "observed": [
+      "后方浅色连续台座置于岸台上，承托后段梁底，消除了45m后悬臂的表达。",
+      "第一墩在岸台右侧部分可见，前方两墩和待接触墩仍可识别。",
+      "前端双导梁、横向联系和空隙保留；全图无文字、人物、车辆或力箭头。"
+    ],
+    "proportion_review": "教具/线绘中后段台座终点位于原第一支点附近，长细比例与参考大体一致；仍不能从透视生成图验证精确45m、2.5m和5m。",
+    "limitations": [
+      "为新教学情境，与F19原计算模型不同；导梁/支座/台座连接均未作承载或施工验算。",
+      "尺寸合同为生成约束，不是从生成图测得的尺寸认证；箱梁内腔及局部连接不可据图施工。"
+    ],
+    "review_status": "可供情境配图选择；台座与支承关系比原版清楚",
+    "targeted_retry": true,
+    "edit_reason": "按主任务审核补充后方岸上预制/顶推台座，避免45m后悬臂误导",
+    "style_preserved": true
+  },
+  "status": "context_candidate_for_author_selection",
+  "edit_prompt": "Precise-object-edit G04-B. Image1 is the light-background three-dimensional teaching model to edit; image2 is the corrected same-scale geometry reference. Add only the corrected REAR SHORE CASTING / LAUNCHING BED beneath the left45m segment from x=-45 to x=0. This segment must be continuously supported, not a rear45m cantilever. Render a simple matte tan retained-shore block from x=-48 to0, width16m, topz=12m, with a pale concrete bed from x=-45 to0, width9m, topz=12.5m flush against girder underside. Its right end is exactly at the LEFTMOST original support, not the second support. The original first pier can be partly occluded by the shore block. Do not extend this block under the next45m span. This is a coherent educational model of an onshore bank and continuous casting bed, NOT an additional slender river pier.\nPreserve every other model coordinate, perspective, clean ivory background, shadows and material style: girder x=-45..110, width12, depth2.5, deckz15; existing supporting piersx0/45/90, futurepierx135; attached twin orange steel nosex110..130 and5m gap before next pier. Keep the far-left deck end in frame. Do not move, widen or shorten the bridge. Keep all geometry uniform scale. No vehicles, people, text, labels, arrows, dimensions or symbols. Landscape3:2.",
+  "revision": "rear_onshore_launching_bed_20260907",
+  "needs_revision": false,
+  "scale_status": "可供情境配图选择；台座与支承关系比原版清楚",
+  "original_filename": "exec-4c7e738d-a7f4-4d03-a01d-fffc240b4cf8.png",
+  "sha256": "1a43f25d37c4c8c7564a6737dac01c5d9fcc1420f532acce813298769c0e0d3a",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

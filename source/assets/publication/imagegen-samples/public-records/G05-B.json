@@ -1,0 +1,44 @@
+{
+  "id": "G05-B",
+  "group": "G05",
+  "variant": "B",
+  "source_figure_ids": [
+    "F24"
+  ],
+  "title": "两塔斜拉桥的桥塔、拉索与桥面",
+  "style": "浅底三维教具模型",
+  "prompt": "Use case: scientific-educational. G05-B, landscape3:2. Input image1 is the geometrically checked reference. Produce a clean professional3D CLASSROOM MODEL of this exact two-tower cable-stayed bridge on an ivory seamless studio background, matte pale concrete towers, slender light-gray deck and fine blue-gray cable lines, soft contact shadows. Slightly elevated oblique side view, the whole540m-equivalent bridge uniformly scaled to a model, clear both tower legs and direct cable-deck connections. No real scenery, no water or terrain; a simple subtle base is fine. This must look like a refined physical teaching model, not a photograph and not chunky toy proportions.\nFixed teaching assumptions in metres before uniform scaling: span120+300+120, tower stations120/420, deck width22.5, beam structural depth ONLY2.0m. Deck surface30m above base datum; tower top120m, tower height90m above deck. Thus tower above deck is45 TIMES girder vertical depth. Preserve this slender beam! If towers are250 pixels above deck, vertical girder side face is about5.5pixels, not a20pixel wall. Distinguish horizontal22.5m deck width from2m vertical depth.\nTwo H-type towers, leg centersy=±13m, leg transversewidth2.5m; inner faces±11.75 remain outside deckedges±11.25. Four lanes each3.5m wide and remaining8.5m totalmedian/sidebands/barriers; any lane marking is subtle and four lanes only. No cars or people.\nTwo planes of fine straight stay cables connect tower legs directly to both deckedges. Farther deckanchors attachhigheron tower. Ordered semi-fan, no crossing in each plane, no hanging vertical suspenders or catenary main cable. Stay spacing/number is illustrative and not a calculation. Do not enlarge anchorage hardware to toy scale. Show structural contacts, not exploded parts.\nNo text, figures, captions, labels, dimension marks, force arrows, stress maps, logos or watermark. A hypothetical teaching scene only, not a real bridge or an engineering design certification. Preserve the geometry and ends of the reference, no extra towers or supports.",
+  "edit_prompt": "Precise-object-edit of G05-B. Image1 is the clean3D model edit target, image2 is the checked geometry reference. Correct the structural deck thickness without moving the deck top or changing horizontal width: the long front-facing vertical girder fascia in image1 is much too deep. Make it only ONE QUARTER of its current vertical depth by raising its underside, while leaving the road surface and22.5m deck width in place. This is a2m-deep shallow girder against90m above-deck towers, ratio1:45; it must be a slim slab-like beam edge, not a deep rectangular wall. Fine side edges perhaps5pixels tall versus250pixel above-deck tower, plus separate tiny rails if present. Do not mistakenly shrink the width of the horizontal top face. Ensure bearings/support connections still meet the shallower girder underside. Remove the invented intermediate crossbar half way up each tower; keep each tower's top crossbeam and two continuous external legs. Preserve tower positions, heights,540m overall length and120+300+120 spans, four-lane roadway and external legs, all ordered direct stays, overall physical-model style, ivory background and base. No people, cars, words, arrows or dimension labels. Do not add any new components. Landscape3:2.",
+  "tool": "built-in image_gen",
+  "image": "G05-B.png",
+  "width": 1536,
+  "height": 1024,
+  "dimension_contract": "G05-dimension_contract.json",
+  "reference_image": "G05-geometry-reference.png",
+  "visual_review": {
+    "observed": [
+      "浅底三维教具风格、两塔和两端桥台完整入画，直斜索连接塔与桥面。",
+      "塔腿位于桥面两侧，没有夸大人物和车辆；连续主梁与塔、端支承相接。",
+      "经过一次定向修改，主梁外观变薄，但没有严格完成提示中的深度比例和中部塔横梁移除。"
+    ],
+    "proportion_review": "长细梁相较初稿有改善；全桥透视仍不能核定120+300+120m及2m梁高，竖向腹板仍可能被渲染加厚。桥面车道线不足以清晰逐条核验四条车道。",
+    "limitations": [
+      "生成器添加了参考底稿没有的中部塔横梁，定向编辑仍保留；不能当作锁定构造的准确三维模型。",
+      "部分索线投影叠合，锚点和0.5m塔腿净距不能逐个测量。",
+      "只作桥型与教具风格候选；需要精确尺寸和模型拓扑的教学应使用可计算模型底稿。"
+    ],
+    "review_status": "有条件的情境与风格候选，尺寸和局部构造不作通过结论",
+    "targeted_retry": true,
+    "edit_reason": "主梁初稿偏厚及新增中部塔横梁，进行一次修正；仅主梁视觉厚度改善",
+    "requires_detail_redraw": true
+  },
+  "status": "needs_revision_style_reference_only",
+  "needs_revision": true,
+  "scale_status": "画风参考；结构细节待修正",
+  "original_filename": "exec-432aa519-6166-4c37-a305-90ff3d616592.png",
+  "sha256": "1dac2a967ff3abae8bdf18334c415afa57b68fca5851cc930af2206850660cb5",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

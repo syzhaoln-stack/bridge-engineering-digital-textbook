@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-07T02:58:54.647356+00:00",
+  "status": "locked_teaching_scenario_assumptions",
+  "generation_authorized_now": true,
+  "instruction": "Each variant must reference the checked proportional geometry substrate. Renderings remain scene candidates, not dimensioned engineering drawings.",
+  "units": "m (full-size equivalents; all scene objects use one consistent scale)",
+  "coordinate_convention": {
+    "x": "bridge longitudinal direction",
+    "y": "bridge transverse direction",
+    "z": "vertical above a stated datum"
+  },
+  "purpose": "教材情境候选配图；非实桥摄影记录、非CAD尺寸图、非计算结果、非可直接施工构造",
+  "image_constraints": {
+    "aspect_ratio": "3:2 landscape",
+    "text": false,
+    "formulas": false,
+    "force_arrows": false,
+    "invented_stress_clouds": false,
+    "real_project_claim": false
+  },
+  "variants": {
+    "A": "写实工程场景，平实记录视角，构造清楚，不冒充实桥实拍",
+    "B": "白底或浅底三维教具模型；整体同比例缩放，不独立放大人物车辆",
+    "C": "克制的教材钢笔淡彩插画；保留同一构造与尺度，线条清楚"
+  },
+  "human_vehicle_reference_m": {
+    "person_height": 1.7,
+    "passenger_car_length": 4.6,
+    "passenger_car_width": 1.8,
+    "passenger_car_height": 1.5,
+    "person_in_reference": false,
+    "car_count_in_reference": 1
+  },
+  "source_registry": [
+    {
+      "path": "assets/publication/priority-40/manifest.json",
+      "sha256": "3e8ae8525c5e1879cbdf89afdbfe7979ac1057728be2bb7b788d15e4feab1498"
+    }
+  ],
+  "review_rules": [
+    "先核对提示词中的尺寸、单位与比值，再检查图中连接与比例；提示词尺寸不是生成图的实测尺寸。",
+    "同一平面、相近景深中的车辆/人物才可用于粗略投影比例比较；不能拿远景小车与近景梁高直接量比。",
+    "核对桥跨/桥宽/梁高/塔高、车长/桥宽、车宽/车道宽、人物/车辆的相互关系；明显不合理须一次定向修改。",
+    "支承、主构件和连接完整性作为独立项，不能因画面美观而判定通过。",
+    "每幅visual_review写具体可见事实和未能确认的尺寸，不写无依据的“工程验证通过”。",
+    "出现无法由单张透视图确认的局部细节，记录unknown_or_not_resolvable，不猜测施工可行。"
+  ],
+  "group": "G05",
+  "source_figure_ids": [
+    "F24"
+  ],
+  "title": "斜拉桥的桥塔、拉索与桥面怎样在空间中连接",
+  "reference_model": {
+    "source_figure": "F24",
+    "classification": "unscaled_spatial_schematic",
+    "source_script": "scripts/priority-figures/group_b.py",
+    "source_script_sha256": "f3b85996fb967127b5870abbeb91642b894c976caa9fe05a80f99c9e39f74198",
+    "drawing_coordinates": {
+      "deck_x": [
+        0,
+        10
+      ],
+      "deck_y": [
+        -0.65,
+        0.65
+      ],
+      "deck_z": 0,
+      "tower_x": 5,
+      "tower_top_z": 3.9
+    },
+    "physical_units_declared": false,
+    "reuse_as_image_dimensions": false,
+    "reason": "原脚本仅用于轴测图面布局，未声明这些坐标为米；不可据此声称10 m跨度、3.9 m塔高实桥。"
+  },
+  "geometry_m": {
+    "tower_count": 2,
+    "span_arrangement": [
+      120,
+      300,
+      120
+    ],
+    "total_deck_length": 540,
+    "tower_x": [
+      120,
+      420
+    ],
+    "main_span_between_towers": 300,
+    "side_span_left": 120,
+    "side_span_right": 120,
+    "deck_width": 22.5,
+    "deck_girder_depth": 2,
+    "tower_height_above_deck": 90,
+    "deck_height_above_water": 30,
+    "tower_leg_center_y": [
+      -13,
+      13
+    ],
+    "tower_leg_transverse_width": 2.5,
+    "tower_leg_clear_spacing": 23.5,
+    "tower_leg_longitudinal_depth": 4,
+    "stay_deck_anchor_spacing": 15,
+    "lane_width": 3.5,
+    "lane_count": 4,
+    "non_lane_total_width": 8.5
+  },
+  "preferred_system_pending_confirmation": null,
+  "required_visible_topology": [
+    "用直斜拉索直接连接桥塔锚固区与桥面边缘锚块/横梁，不画悬索桥的下垂主缆加竖向吊索。",
+    "桥塔立在可信的墩身/基础上；桥面连续通过或连接塔区，不能让塔脚悬空或穿透车道。",
+    "双索面的位置与桥塔两侧锚固区对齐；塔腿位于行车区域之外。",
+    "每一索面内，离塔更远的桥面锚点对应更高的塔锚点；索线不互相穿越、不断头、不浮在塔旁。",
+    "主跨与边跨的拉索成完整体系，不只画一侧稀疏装饰索；桥面锚固点真实落在构件上。",
+    "塔顶横梁位于高处，桥面车道留出连续可通过的净空。",
+    "车辆人物使用同一全桥尺度；不放巨车或巨人来填画面，不把钢索画成直径接近车宽的粗管。"
+  ],
+  "algebraic_checks_after_dimensions_locked": [
+    "tower_height_above_deck / main_span, deck_width / main_span and deck_girder_depth / main_span are recorded separately",
+    "tower_leg_clear_spacing >= carriageway_clear_width; if deck_width includes sidewalks, state the chosen relation",
+    "0 < stay_anchor_zone_bottom_above_deck < stay_anchor_zone_top_above_deck <= tower_height_above_deck",
+    "stay pairs are ordered by deck distance and tower anchorage elevation; farther deck anchor corresponds to higher tower anchor",
+    "main_span/deck_width and vehicle_width/deck_width use the same explicit units; no unitless F24 drawing coordinate is silently converted to metres"
+  ],
+  "publication_note_required": "本图为按声明教学尺度生成的斜拉桥情境/教具候选，不是某一真实桥梁的测绘模型，也不提供索力或全桥实算结果。",
+  "ancillary_dimensions_m": {
+    "center_median_width": 2,
+    "each_lateral_band_width": 3.25,
+    "tower_top_crossbeam_height": 3,
+    "stay_deck_anchor_y": [
+      -11,
+      11
+    ],
+    "tower_stay_anchor_inner_face_y": [
+      -11.75,
+      11.75
+    ],
+    "stay_anchor_height_above_deck_range": [
+      39,
+      85
+    ],
+    "car_center": [
+      275,
+      2.75,
+      30
+    ]
+  },
+  "proportions": {
+    "side_over_main_span": 0.4,
+    "tower_height_above_deck_over_main_span": 0.3,
+    "main_span_over_deck_width": 13.333333333333334,
+    "main_span_over_girder_depth": 150,
+    "vehicle_width_over_deck_width": 0.08,
+    "vehicle_length_over_total_bridge_length": 0.008518518518518517
+  },
+  "source_note": "主任务已核JTG/T 3365-01-2020 5.2.4的双塔边主跨比0.3—0.5及桥面以上塔高/主跨1/6—1/3，本教学假设采用0.4和0.3；这不是全部构造尺寸的规范核定。",
+  "system": "two H-shaped towers; two stay planes; four traffic lanes; no suspension main cable or vertical hangers",
+  "locked_at_utc": "2026-09-07T03:06:08.569239+00:00",
+  "dimensions_provenance": {
+    "type": "parent_verified_teaching_scenario_assumptions",
+    "message_date": "2026-09-07",
+    "not_a_real_project": true,
+    "ancillary_dimensions": "declared drawing assumptions used to connect visible geometry; not asserted regulatory or engineered design values"
+  },
+  "reference_image": "assets/publication/imagegen-samples/G05-geometry-reference.png"
+}

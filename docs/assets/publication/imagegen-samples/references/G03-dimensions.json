@@ -1,0 +1,83 @@
+{
+  "units": "m",
+  "evidence_type": "teaching_assumption",
+  "source_figure_ids": [
+    "F13"
+  ],
+  "bridge": {
+    "type": "girder",
+    "spans": [
+      20
+    ],
+    "total_length": 20,
+    "deck_width": 10.8,
+    "girder_depth": 1.2,
+    "girder_count": 5,
+    "girder_y": [
+      -4.8,
+      -2.4,
+      0,
+      2.4,
+      4.8
+    ],
+    "diaphragm_x": [
+      5,
+      10,
+      15
+    ],
+    "expected_diaphragm_x": [
+      5,
+      10,
+      15
+    ]
+  },
+  "road": {
+    "lane_widths": [
+      3.5,
+      3.5
+    ],
+    "other_widths": [
+      1.9,
+      1.9
+    ]
+  },
+  "assets": [
+    {
+      "id": "truck",
+      "kind": "truck",
+      "target_size_m": [
+        6,
+        2.2,
+        3
+      ],
+      "measured_size_m": [
+        6.0,
+        2.2,
+        3.0
+      ],
+      "import_scale_xyz": [
+        1,
+        1,
+        1
+      ],
+      "transverse_center_m": 1.75,
+      "yaw_deg": 0,
+      "measurement_method": "union of actual scene part bounding boxes, prior to camera projection"
+    }
+  ],
+  "extra": {
+    "deck_thickness": 0.2,
+    "end_crossbeams": [
+      0,
+      20
+    ],
+    "deck_level": 2,
+    "wheel_track": 1.75,
+    "wheelbase": 4
+  },
+  "notes": [
+    "F13 core dimensions preserved: span 20m, deck width 10.8m, girder spacing 2.4m and three interior diaphragms. The original figure uses d for girder spacing; it is not girder depth.",
+    "Vehicle is a new teaching envelope, not a calibrated axle-load model.",
+    "Deck transparency is display-only; do not change any girder or diaphragm station."
+  ]
+}

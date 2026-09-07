@@ -1,0 +1,27 @@
+{
+  "id": "G01-B",
+  "group": "G01",
+  "source_figure_ids": [
+    "F01"
+  ],
+  "style": "B · 三维教具",
+  "tool": "built-in image_gen",
+  "image": "G01-B.png",
+  "prompt": "Use case: scientific-educational, sketch-to-render. Create one landscape 3:2 realistic architectural scene candidate for a Chinese bridge textbook. Input image is a calibrated meter-based geometry reference, NOT an inspiration to redesign. Preserve camera, TWO equal 20 m spans (40 m deck total), 10.8 m deck width, 1.2 m deep girders, one central pier and end abutments. Deck level 8 m, central cap/bearings/pier/footing connected exactly as shown. Preserve FIVE parallel longitudinal girders. Truck is a small 6.00 m long x 2.20 m wide x 3.00 m high two-axle box truck, 15% of entire deck length; do not enlarge it. Turn its primitive geometry into a plausible yellow delivery truck with cab glazing, rubber tires and cargo box, maintaining envelope and wheel positions; wheels touch deck. Bridge has two 3.5 m traffic lanes inside total width; subtle white road markings may be added at true scale. Convert surfaces to believable pale concrete, steel railings and muted asphalt, overcast daylight, restrained editorial realism, crisp useful teaching detail. Keep both abutments and the full central footing visible; add only a shallow cutaway soil edge around footing, no large ground plane hiding structure, no additional piers or tall scenery. Blank warm pale background, generous margins. No labels, text, arrows, dimensions, logos, people, other vehicles, waterways, false stress colors or dramatic damage. This is a fictional rendering, not a photograph of a real project. Structural proportions and visible connections take precedence over beauty.\nSTYLE OVERRIDE FOR VARIANT B: Render as a premium physical teaching model, soft studio lighting, warm ivory backdrop, matte blue-gray concrete components, subtle contact shadows, simplified clean surfaces and yellow truck. No soil or landscaping in this variant: expose full central footing as the reference. Keep the bridge visually dominant; no tiny illegible text. Camera and geometry unchanged.",
+  "reference_geometry_path": "references/G01-reference.png",
+  "dimension_contract": "references/G01-dimensions.json",
+  "status": "context_candidate_for_author_selection",
+  "scale_status": "参照底稿已校核，生成图已作外观比例复核；非精密尺寸图",
+  "visual_review": "两跨、中央桥墩与下方独立基础、梁端五个支承保留；货车占整桥长度接近底稿，基础无土壤遮挡。栏杆和车身细节仅作示意。",
+  "limitations": [
+    "正式尺寸、荷载箭头保留参数图层",
+    "虚构模型渲染，不是真实工程照片"
+  ],
+  "needs_revision": false,
+  "original_filename": "exec-26001f3a-4e26-43a1-b81a-c9ce64ea3418.png",
+  "sha256": "61dc2b87fdf9d7e96741f94a9310ef723a16117fb30c24e269bfc9e1c1d4065e",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

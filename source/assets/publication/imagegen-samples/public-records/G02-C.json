@@ -1,0 +1,77 @@
+{
+  "id": "G02-C",
+  "related_figure": "F06",
+  "status": "context_candidate_for_author_selection",
+  "style": "C 教材钢笔淡彩插画",
+  "tool": "image_gen__imagegen (built-in)",
+  "project_path": "assets/publication/imagegen-samples/G02-C.png",
+  "prompt": "Use case: scientific-educational, illustration-story. Create ONE horizontal 3:2 textbook pen-and-light-watercolor illustration of two small everyday bending-experiment setups, absolutely NO text, dimension lines, letters, numerical labels, force arrows, graphs, logos or watermarks. Input image 1 is the strict dimensioned GEOMETRY REFERENCE. Render ONLY its upper three-dimensional perspective scene in elegant fine dark pen outlines with restrained light watercolor washes. Do NOT repeat its lower diagrams or any lettering. Exactly TWO identical rectangular timber strips with overall stock dimensions 1.00 m long ×0.100 m wide ×0.020 m thick. LEFT strip lies flat, broad 100 mm top face horizontal and 20 mm vertical thickness. RIGHT strip is the very same stock rotated exactly 90° about its LONG axis, so its top is only20 mm wide and its vertical depth100 mm. The two long edges must have the SAME projected length in this shared near-orthographic view: do not shorten the right strip. Draw clear end-grain rectangles so the 5-to-1 cross-section proportion and the 90° change are visible. Use the reference camera/world scale. There are exactly FOUR identical block supports, two per strip. Every block is 60 mm along strip length ×140 mm across ×100 mm tall. Support centers 0.80 m apart for EACH strip, both strips extend0.10 m from each support center to each end. Thus support height equals the standing strip's100 mm depth, whereas the flat strip is only one fifth as thick. Maintain these shared proportions faithfully; none of the objects may be giant. Both complete independent setups sit side by side on one simple ordinary worktop; all objects visible and uncropped. Warm natural timber, muted blue-gray support blocks, pale cream worktop on clean off-white paper, a little realistic woodgrain, very light grounding shadows. Refined restrained editorial illustration, precise readable edges, appealing tactile quality, not a cartoon toy scene. No load, no hands or people, no bending, no deformation, no fake stress heatmap, no exploded elements. The illustration invites the observation that the same material can be turned over; it does not show a tested engineering result.",
+  "reference_image": "assets/publication/imagegen-samples/G02-geometry-reference.png",
+  "dimension_contract_file": "G02-dimension_contract.json",
+  "dimension_contract": {
+    "units": "m",
+    "wood_stock": [
+      1,
+      0.1,
+      0.02
+    ],
+    "flat_section_y_z": [
+      0.1,
+      0.02
+    ],
+    "edge_section_y_z": [
+      0.02,
+      0.1
+    ],
+    "support_center_span": 0.8,
+    "support_block_x_y_z": [
+      0.06,
+      0.14,
+      0.1
+    ],
+    "wood_count": 2,
+    "support_count": 4,
+    "load": "none",
+    "deformation": "none"
+  },
+  "visual_review": {
+    "reviewed": true,
+    "findings": [
+      "钢笔轮廓配浅淡水彩，两根木条和四个支承完整，画面无字、无力箭头。",
+      "平放的宽顶面和立放的宽侧面区分清楚；端面方向对应90°旋转，两根长边目视近似等长。",
+      "条材无夸张挠曲、浮空或荷载，适合作为提出生活问题的场景。"
+    ],
+    "limitations": [
+      "图像生成保留的是可见关系，不是CAD约束；单张图不能认证1.00m长度、0.80m支承中心距、0.020m厚度或两木条的精确同体积。",
+      "支承与端部悬出长度有视觉近似，不能从图片反推实验测量值；需要精确尺寸时使用随附确定性底稿。",
+      "没有施加载荷，不能据图宣称刚度、挠度或承载力比较已经验证。"
+    ],
+    "dimension_status": "visual orientation and approximate scale checked; exact metric preservation not certified",
+    "repair_count": 0
+  },
+  "generated_on": "2026-09-07",
+  "rights_note": "AI生成教学场景候选，非真实实验照片；原始生成文件保留，待作者选用。",
+  "image_size_px": [
+    1536,
+    1024
+  ],
+  "sha256": "94efe8230f919e4500643424934544a2c2410cab88194a341c0666eb00a9c5f5",
+  "copy_check": {
+    "identical_to_original": true,
+    "original_retained": true
+  },
+  "scale_status": "参照底稿已校核，生成图已作外观比例复核；非精确尺寸图",
+  "reference_geometry_path": "assets/publication/imagegen-samples/G02-geometry-reference.png",
+  "skills_read": [
+    "imagegen",
+    "bridge-modeler Phase 0",
+    "bridge-modeler/references/dimensions-and-scale.md"
+  ],
+  "needs_revision": false,
+  "original_filename": "exec-7184342b-8c1a-4e5b-be21-c65a087b2e51.png",
+  "image": "G02-C.png",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

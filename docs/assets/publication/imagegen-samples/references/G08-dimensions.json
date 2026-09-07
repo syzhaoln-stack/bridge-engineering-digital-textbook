@@ -1,0 +1,20 @@
+{
+  "source_figure_ids": [
+    "F36"
+  ],
+  "units": "m",
+  "model_status": "corrosion context image; NOT the rectangular 10-percent thinning calculation in F36",
+  "coordinate_convention": "x member length, y flange width, z section depth",
+  "beam_length": 1.8,
+  "section_depth": 0.9,
+  "flange_width": 0.45,
+  "flange_thickness": 0.02,
+  "web_thickness": 0.008,
+  "length_to_depth_ratio": 2,
+  "depth_to_width_ratio": 2,
+  "flange_to_depth_ratio": 0.022222222222222223,
+  "web_to_depth_ratio": 0.008888888888888889,
+  "surface_condition": "local surface rust and coating peeling only; do not infer material loss, remaining thickness, strength or service life",
+  "no_hands": true,
+  "no_instruments": true
+}

@@ -1,0 +1,43 @@
+{
+  "id": "G05-A",
+  "group": "G05",
+  "variant": "A",
+  "source_figure_ids": [
+    "F24"
+  ],
+  "title": "两塔三跨斜拉桥的空间关系",
+  "style": "写实工程情境",
+  "prompt": "Use case: scientific-educational. G05-A, bridge engineering textbook contextual artwork, landscape3:2.\nInput image1 is a checked proportional3D geometry reference. Render this SAME TWO-TOWER CABLE-STAYED bridge as a realistic but hypothetical engineering scene spanning calm water between low banks. Soft daylight, plain atmosphere, believable pale concrete pylons, fine steel stay cables and restrained gray deck. Whole bridge both end abutments visible, long-lens slightly elevated side-oblique view, no spectacular mountains or dramatic lens distortion. Make the direct tower-to-deck structural relationships easy to see.\nLocked TEACHING ASSUMPTIONS, not any existing real bridge: spans120+300+120m, total540m; tower x=120 and420. Deck width22.5m and assumed main-girder depth2.0m. Deck surface30m above water; towers90m above deck, thus top120m above water. Above-deck tower height/main span0.30, side/main span0.40. Preserve the entire scale and tower-height-to-span ratio of the reference; no short stubby span or oversized vehicles.\nEach H-type tower has two vertical legs outside the roadway, center y=±13m, transverse leg width2.5m; deck edges y=±11.25m, so legs do NOT intrude onto deck or lanes. Four traffic lanes each3.5m wide; remaining8.5m in total for median, side bands and barriers. Four lanes only. Prefer NO vehicles or people. If a tiny passenger car is present it must be4.6×1.8×1.5m, legitimately tiny compared with540m bridge, never enlarged.\nThin straight stay cables attach to tower legs and both outer deck edges in two planes, ordered semi-fan layout: farther deck anchor uses higher tower anchor, no crossing within each plane, no sagging main cable and no vertical hangers of a suspension bridge. Reference stay spacing is an illustrative arrangement, not a count-based structural design. Show tower and deck connections rather than floating ends.\nThis is an AI-generated teaching scenario, not an actual project photograph, not F24's dimensionless sketch's numerical case, not proof of structural adequacy. Do not put this note in image. No text, numbers, dimensions, arrows, equations, false stress contours, logo or watermark. Avoid chunky toy cables, giant vehicles, towers planted in traffic lanes, unconnected cable ends or bridges blending with suspension bridges.",
+  "edit_prompt": "Precise-object-edit, G05-A final correction. Image1 is the edit target; image2 is the checked proportional bridge geometry. Change ONE issue: reduce the visible vertical structural depth of the main bridge girder to its assumed2.0m depth. Keep the deck surface, total deck width22.5m, four lanes, stay anchor positions, two towers, all spans120+300+120m, background, realistic light and composition unchanged. The current near-side girder fascia looks too deep: make its actual vertical web about two-fifths the current depth while preserving structural continuity, supports and deck-road level. In this image the90m above-deck towers are around240pixels tall, so a2m structural web should be only about5pixels vertically, NOT a15–20pixel wall. The railing is separate, light, around1.2m equivalent. Do not confuse the oblique view of the22.5m horizontal deck width with its2m vertical structural depth.\nPreserve all existing tower-to-deck stay connections and tower legs outside traffic, not a suspension bridge. Preserve direct straight thin stays with farther deck anchors higher on towers. No cars or people. This remains a hypothetical teaching scene, not engineering dimensional proof. Landscape3:2, no text, no labels, no arrows, no dimension lines, no watermark.",
+  "tool": "built-in image_gen",
+  "image": "G05-A.png",
+  "width": 1536,
+  "height": 1024,
+  "dimension_contract": "G05-dimension_contract.json",
+  "reference_image": "G05-geometry-reference.png",
+  "visual_review": {
+    "observed": [
+      "完整两塔三跨桥梁入画，直斜索连向桥塔和桥面，未混入悬索桥的悬垂主缆。",
+      "塔腿跨于桥面外侧，两岸桥台与塔下部可见；无放大车辆或人物。",
+      "已针对初版主梁偏厚作一次定向修改，梁身竖向厚度减小。"
+    ],
+    "proportion_review": "主跨长于两侧边跨，塔高相对主跨不呈现塔过低的极端比例；仍不能凭透视图核定120+300+120m、90m或2m，主梁竖向外观仍受护栏和斜视影响。",
+    "limitations": [
+      "桥面为侧视，四车道及0.5m塔腿净距无法逐项看清；不得当成车道布置或净距详图。",
+      "索数、索径、锚具及塔梁连接不可由此进行计算或施工；索距只是图形教学假设。",
+      "为虚构情境，不是实桥摄影，不与F24原无量纲绘图认作同一尺寸算例。"
+    ],
+    "review_status": "可供桥型与空间关系情境选择；尺寸核对仍用参数底稿",
+    "targeted_retry": true,
+    "edit_reason": "初版主梁竖向腹板偏厚，已定向修薄；不声称生成图满足精密尺寸"
+  },
+  "status": "context_candidate_for_author_selection",
+  "needs_revision": false,
+  "scale_status": "可供桥型与空间关系情境选择；尺寸核对仍用参数底稿",
+  "original_filename": "exec-2c7e4eca-6be8-47ae-a453-ab7fec3b4f70.png",
+  "sha256": "16a6ac272361b5e266f8bf0e70f214a9c600379aa8c99687379d2e3f5fa7f8ed",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

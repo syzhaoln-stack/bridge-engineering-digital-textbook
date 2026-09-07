@@ -1,0 +1,120 @@
+{
+  "id": "G07-C",
+  "source_figure_ids": [
+    "F32"
+  ],
+  "generation_tool": "built-in image_gen",
+  "style": "教材钢笔淡彩",
+  "prompt": "Use case: scientific-educational. G07-C. Create one original refined textbook illustration in precise fine pen and restrained pale watercolor, 3:2 landscape. No words or diagrams around it. A teaching pile-group foundation shown in an oblique geological cutaway, fully in frame, beautifully readable on warm white paper.\nReference1 is an original meter-scaled 3D model. Reference2 is its exact top plan: EIGHT pile circles in TWO parallel rows of FOUR. Preserve the structure and true proportions from both. They are constraints, not extra panels to place in the image.\nConcrete foundation: one rectangular cap8 x6 x2m, topz-1, bottomz-3, groundz0. A single central pier2 x2.5m rises from captopz-1 toz8. Under the cap precisely EIGHT concrete cylindrical piles, two rows at y=-1.8 and+1.8, with four positions per row x=-2.7,-.9,.9,2.7m. Every pile diameter1m and length20m, topz-3 bottomz-23. Thus pile length is TEN cap thicknesses and TWENTY diameters. Maintain these slender long proportions. Do not invent a five-pile front row or an additional middle pile. Use oblique perspective where both four-pile rows are distinguishable as far as real occlusion permits.\nThe cap connects all pile heads; the bottom pile ends meet the remaining soil bed. No gaps below cap and no floating tips. Remove a front wedge of soil to make the long pile shafts visible while leaving lightly painted stratified soil behind and beside the group. Three understated beige/taupe/grey layers, arbitrary teaching layers, no measured geology. Full pier and pile tips must remain in frame.\nFine crisp structural contours with delicate pale concrete wash, paper white and light earth washes, subtle contact shadows. Mostly straight precise geometry, no comic exaggeration. No people, machinery, tools, extra reinforcement or footings.\nNo labels, text, letters, numerals, dimensions, arrows, leader lines, scales, load diagrams, colored stress fields, symbols, logos or watermarks. The final image illustrates geometry and soil contact only, never numerical side friction or pile-end load shares.",
+  "workspace_image": "assets/publication/imagegen-samples/G07-C.png",
+  "reference_image_paths": [
+    "assets/publication/imagegen-samples/references/G07-reference.png",
+    "assets/publication/imagegen-samples/references/G07-plan-reference.png"
+  ],
+  "dimensions_contract": {
+    "source_figure_ids": [
+      "F32"
+    ],
+    "units": "m",
+    "model_status": "teaching pile-group cutaway, not a named real foundation",
+    "coordinate_convention": "z up, ground z=0",
+    "cap_size_xyz": [
+      8,
+      6,
+      2
+    ],
+    "cap_top_z": -1,
+    "cap_bottom_z": -3,
+    "pile_count": 8,
+    "pile_rows": 2,
+    "piles_per_row": 4,
+    "pile_x": [
+      -2.7,
+      -0.9,
+      0.9,
+      2.7
+    ],
+    "pile_y": [
+      -1.8,
+      1.8
+    ],
+    "pile_diameter": 1,
+    "pile_length": 20,
+    "pile_top_z": -3,
+    "pile_bottom_z": -23,
+    "pier_size_xy": [
+      2,
+      2.5
+    ],
+    "pier_top_z": 8,
+    "pier_bottom_z": -1,
+    "soil_layer_z": [
+      0,
+      -7,
+      -15,
+      -24
+    ],
+    "soil_note": "schematic layers for contact context only, no measured geology, strength, side/end load share or stresses",
+    "no_people": true,
+    "visual_detail_assumptions": {
+      "soil_cutaway_xy_size": [
+        10,
+        8
+      ]
+    }
+  },
+  "visual_review": {
+    "status": "needs_geometry_revision_style_reference_only",
+    "acceptable_for_textbook_structure": false,
+    "checks": [
+      {
+        "item": "画面无文字、数值、箭头和云图",
+        "result": "pass"
+      },
+      {
+        "item": "所见桩头与承台相接、桩端与保留土体相接",
+        "result": "pass_visible_parts"
+      },
+      {
+        "item": "八根桩、两排四根可核验",
+        "result": "not_passed"
+      },
+      {
+        "item": "20m桩长、1m桩径和2m承台厚度比例",
+        "result": "visible_discrepancy"
+      }
+    ],
+    "observations": [
+      "只清楚看到六根，不能把其余假定为已正确绘出。",
+      "桩身长度相对直径视觉上偏短，未保持合同20倍桩径；不应推荐作八桩教具。"
+    ],
+    "limitations": [
+      "本图不得代替F32参数图或用作八桩数量/尺寸教学证据。",
+      "土层是教学剖切假设，不能解释为真实勘察或已经计算的桩侧、桩端分担。",
+      "像素审查没有证明实际尺寸；合同是生成约束而非成图实测结果。"
+    ]
+  },
+  "file_checks": {
+    "format": "PNG",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "aspect_ratio": "3:2",
+    "bytes": 2704030,
+    "sha256": "d12dd617b7b25ba094c3212db64ea68dcfe028e9b60c58c5677543cc8ba4ee7b",
+    "same_bytes_as_original": true,
+    "checked_at_utc": "2026-09-07T04:06:27.365888+00:00",
+    "note": "File integrity and format checks only; geometric/visual review is recorded separately."
+  },
+  "status": "needs_revision_style_reference_only",
+  "needs_revision": true,
+  "scale_status": "画风参考；结构细节待修正",
+  "original_filename": "exec-c57c718f-32fd-4af5-bf5c-c2525d747716.png",
+  "image": "G07-C.png",
+  "sha256": "d12dd617b7b25ba094c3212db64ea68dcfe028e9b60c58c5677543cc8ba4ee7b",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

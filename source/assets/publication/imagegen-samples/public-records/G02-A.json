@@ -1,0 +1,76 @@
+{
+  "id": "G02-A",
+  "related_figure": "F06",
+  "status": "context_candidate_for_author_selection",
+  "style": "A 自然写实工作台摄影场景",
+  "tool": "image_gen__imagegen (built-in)",
+  "project_path": "assets/publication/imagegen-samples/G02-A.png",
+  "prompt": "Use case: scientific-educational, photorealistic-natural. Create ONE horizontal 3:2 editorial photograph for a bridge-engineering textbook, with absolutely no text, numbers, labels, dimension lines, force arrows, logos or watermarks. Image 1 is a GEOMETRY REFERENCE, not a style reference: use only its upper perspective arrangement as the final scene; the lower dimensioned diagrams explain exact geometry and must NOT appear in the final image. Show two independent small tabletop experiments side by side on a normal carpenter's workbench. Exactly TWO identical straight wooden strips, each actual size length 1.00 m, width 0.10 m, thickness 0.020 m, the same wood and exactly the same volume. LEFT strip lies FLAT, broad 100 mm face horizontal, vertical thickness only 20 mm. RIGHT strip has been rotated exactly 90 degrees around its own longitudinal axis, stands ON EDGE, vertical depth 100 mm, horizontal top width only 20 mm. Both strips have exactly the same 1 metre length and aligned longitudinal directions; changing orientation must not make the right strip shorter, thicker, squarer or bulkier. Their rectangular END GRAIN faces are visible enough to distinguish a horizontal 100×20 mm rectangle at left versus the same rectangle rotated vertically at right. Each strip rests on exactly TWO identical plain block supports, total FOUR support blocks. Each support block is 60 mm long along strip direction ×140 mm across ×100 mm tall; support centers are 0.80 m apart, leaving exactly 0.10 m from each support center to each end. Both use the same support dimensions and spacing. Beams touch support top surfaces without floating. One clean long workbench under both assemblies, not two attached beams. No external load, no hands, no whole person, no bending or exaggerated deflection. Real honey-colored straight-grained wood, softly worn workbench, neutral blurred workshop background, natural daylight, believable ordinary household scale. Camera eye level slightly above the tabletop, mild elevated three-quarter long-lens view similar to upper reference, showing top and front faces without wide-angle distortion. The two complete experiment assemblies must be visible uncropped with air around them. The purpose is the everyday starting observation 'same material, change its orientation', not a simulated engineering result. Preserve the reference geometry strictly; change only the material, illumination and photographic environment.",
+  "reference_image": "assets/publication/imagegen-samples/G02-geometry-reference.png",
+  "dimension_contract_file": "G02-dimension_contract.json",
+  "dimension_contract": {
+    "units": "m",
+    "wood_stock": [
+      1,
+      0.1,
+      0.02
+    ],
+    "flat_section_y_z": [
+      0.1,
+      0.02
+    ],
+    "edge_section_y_z": [
+      0.02,
+      0.1
+    ],
+    "support_center_span": 0.8,
+    "support_block_x_y_z": [
+      0.06,
+      0.14,
+      0.1
+    ],
+    "wood_count": 2,
+    "support_count": 4,
+    "load": "none",
+    "deformation": "none"
+  },
+  "visual_review": {
+    "reviewed": true,
+    "findings": [
+      "画面含两根直木条，左侧大面水平、右侧窄边水平，旋转90°的区别明显。",
+      "四块支承分别承托两根木条，端部有悬出；未见浮空、手部、荷载箭头或虚假变形。",
+      "木纹和普通工作台场景自然，两块材料长度在透视画面中近似相当。"
+    ],
+    "limitations": [
+      "生成照片不是摄影测量结果；仅能确认相同长度与旋转关系大体呈现，无法从单一透视图认证毫米级尺寸、0.80m支承中心距及同体积。",
+      "未施加载荷，不能据此比较挠度或验证受弯承载力；精确尺寸仍以几何底稿和参数合同为准。"
+    ],
+    "dimension_status": "qualitative geometry consistent; exact metric preservation not certified",
+    "repair_required": false
+  },
+  "generated_on": "2026-09-07",
+  "rights_note": "AI生成场景候选，非真实实验照片；原始生成文件保留，需作者选用并结合确定性图解。",
+  "image_size_px": [
+    1536,
+    1024
+  ],
+  "sha256": "74233b43f653a1420da42d4ee230579ecaf243924c5022f3dd866cfa81eed0a9",
+  "copy_check": {
+    "identical_to_original": true,
+    "original_retained": true
+  },
+  "scale_status": "参照底稿已校核，生成图已作外观比例复核；非精确尺寸图",
+  "reference_geometry_path": "assets/publication/imagegen-samples/G02-geometry-reference.png",
+  "skills_read": [
+    "imagegen",
+    "bridge-modeler Phase 0",
+    "bridge-modeler/references/dimensions-and-scale.md"
+  ],
+  "needs_revision": false,
+  "original_filename": "exec-ca9aac77-ded3-44f9-95c9-48fc41737982.png",
+  "image": "G02-A.png",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

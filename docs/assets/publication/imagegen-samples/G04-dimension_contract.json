@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-07T02:58:54.647356+00:00",
+  "status": "locked_teaching_scenario_assumptions",
+  "generation_authorized_now": true,
+  "instruction": "Each variant must reference the checked proportional geometry substrate. Renderings remain scene candidates, not dimensioned engineering drawings.",
+  "units": "m (full-size equivalents; all scene objects use one consistent scale)",
+  "coordinate_convention": {
+    "x": "bridge longitudinal direction",
+    "y": "bridge transverse direction",
+    "z": "vertical above a stated datum"
+  },
+  "purpose": "教材情境候选配图；非实桥摄影记录、非CAD尺寸图、非计算结果、非可直接施工构造",
+  "image_constraints": {
+    "aspect_ratio": "3:2 landscape",
+    "text": false,
+    "formulas": false,
+    "force_arrows": false,
+    "invented_stress_clouds": false,
+    "real_project_claim": false
+  },
+  "variants": {
+    "A": "写实工程场景，平实记录视角，构造清楚，不冒充实桥实拍",
+    "B": "白底或浅底三维教具模型；整体同比例缩放，不独立放大人物车辆",
+    "C": "克制的教材钢笔淡彩插画；保留同一构造与尺度，线条清楚"
+  },
+  "human_vehicle_reference_m": {
+    "person_height": 1.7,
+    "passenger_car_length": null,
+    "passenger_car_width": null,
+    "passenger_car_height": null,
+    "traffic_vehicles_allowed": false,
+    "person_in_reference": false
+  },
+  "source_registry": [
+    {
+      "path": "assets/publication/priority-40/manifest.json",
+      "sha256": "3e8ae8525c5e1879cbdf89afdbfe7979ac1057728be2bb7b788d15e4feab1498"
+    }
+  ],
+  "review_rules": [
+    "先核对提示词中的尺寸、单位与比值，再检查图中连接与比例；提示词尺寸不是生成图的实测尺寸。",
+    "同一平面、相近景深中的车辆/人物才可用于粗略投影比例比较；不能拿远景小车与近景梁高直接量比。",
+    "核对桥跨/桥宽/梁高/塔高、车长/桥宽、车宽/车道宽、人物/车辆的相互关系；明显不合理须一次定向修改。",
+    "支承、主构件和连接完整性作为独立项，不能因画面美观而判定通过。",
+    "每幅visual_review写具体可见事实和未能确认的尺寸，不写无依据的“工程验证通过”。",
+    "出现无法由单张透视图确认的局部细节，记录unknown_or_not_resolvable，不猜测施工可行。"
+  ],
+  "group": "G04",
+  "source_figure_ids": [
+    "F19"
+  ],
+  "title": "混凝土箱梁向前推出、钢导梁尚未到达下一个桥墩",
+  "reference_model": {
+    "source_figure": "F19",
+    "classification": "analytical_teaching_excerpt_not_launching_design",
+    "support_x_m": [
+      -12,
+      0
+    ],
+    "next_support_x_m": 12,
+    "cantilever_a_m": [
+      3,
+      6,
+      9
+    ],
+    "q_kN_per_m": 10,
+    "includes_launching_nose": false,
+    "reuse_as_image_dimensions": false,
+    "reason": "F19未计钢导梁、摩擦和完整后方梁体；G04明确含钢导梁与实际支承，只借用尚未接触下一支点的情境。"
+  },
+  "geometry_m": {
+    "support_x": [
+      0,
+      45,
+      90
+    ],
+    "next_support_x": 135,
+    "concrete_girder_x": [
+      -45,
+      110
+    ],
+    "span_between_piers": 45,
+    "deck_width": 12,
+    "concrete_box_girder_depth": 2.5,
+    "girder_length_already_supported_behind_front_pier": 135,
+    "concrete_front_cantilever_from_front_pier": 20,
+    "steel_launching_nose_x": [
+      110,
+      130
+    ],
+    "steel_launching_nose_length": 20,
+    "steel_launching_nose_depth_at_connection": 2.3,
+    "gap_nose_tip_to_next_pier": 5,
+    "deck_height_above_ground": 15,
+    "support_bearing_contact_z": 12.5,
+    "pier_cap_top_z": 12.3,
+    "launching_support_bearing_height": 0.2
+  },
+  "required_visible_topology": [
+    "单一普通混凝土箱梁推出施工场景；完整连续梁体从后方施工场地/已成支承区延伸到当前前墩。",
+    "梁体后方至少有两处清楚可见的真实支承（墩台或施工台座），不让整段梁体漂浮。",
+    "混凝土梁前端与轻型钢导梁通过可辨认的连接区连接；导梁属于同一推出系统。",
+    "下一个实体桥墩位于钢导梁前方；鼻端与该墩支承处仍有正的水平间隙，没有伪接触或穿透。",
+    "当前前墩/滑移支座承托的是同一连续梁体；墩柱落到基础或地面。",
+    "施工情境不画正常通行车辆；必要比例车辆停在后方施工场地，人员不站在无防护悬空尖端。"
+  ],
+  "algebraic_checks_after_dimensions_locked": [
+    "0 < concrete_front_cantilever_from_front_pier < span_between_piers",
+    "0 < steel_launching_nose_length < span_between_piers",
+    "gap_nose_tip_to_next_pier = span_between_piers - concrete_front_cantilever_from_front_pier - steel_launching_nose_length > 0",
+    "girder_length_already_supported_behind_front_pier provides visible rear supports; no isolated cantilever with floating tail",
+    "deck_width / concrete_box_girder_depth, span_between_piers / concrete_box_girder_depth and launching_nose_length / span are recorded as visual proportions, not design acceptance criteria"
+  ],
+  "publication_note_required": "本图为带钢导梁的推出施工情境配图，不等同于F19无导梁的静定截取模型，不能从图中读取或验证F19弯矩数值。",
+  "ancillary_dimensions_m": {
+    "box_bottom_width": 6.6,
+    "box_top_web_spacing": 8,
+    "top_plate_thickness": 0.3,
+    "bottom_plate_thickness": 0.25,
+    "web_visual_thickness": 0.3,
+    "nose_girder_y": [
+      -3,
+      3
+    ],
+    "nose_tip_depth": 0.8,
+    "pier_shaft_x_width": 2.5,
+    "pier_shaft_y_width": 3,
+    "pier_cap_x_width": 3,
+    "pier_cap_y_width": 9
+  },
+  "proportions": {
+    "span_over_deck_width": 3.75,
+    "span_over_girder_depth": 18,
+    "nose_length_over_span": 0.4444444444444444,
+    "gap_over_span": 0.1111111111111111,
+    "deck_width_over_girder_depth": 4.8
+  },
+  "calculation_boundary": "G04只绘指定施工情境，未验完整推出状态的内力/稳定/施工可行性；后方梁尾与F19静定截取边界不同，无导梁F19数值不得迁移。",
+  "locked_at_utc": "2026-09-07T03:06:08.560620+00:00",
+  "dimensions_provenance": {
+    "type": "parent_verified_teaching_scenario_assumptions",
+    "message_date": "2026-09-07",
+    "not_a_real_project": true,
+    "ancillary_dimensions": "declared drawing assumptions used to connect visible geometry; not asserted regulatory or engineered design values"
+  },
+  "reference_image": "assets/publication/imagegen-samples/G04-geometry-reference.png",
+  "rear_support_revision": {
+    "date": "2026-09-07",
+    "reason": "后段不作为45m后悬臂示意",
+    "shore_casting_launching_bed_x_m": [
+      -45,
+      0
+    ],
+    "continuous_contact_z_m": 12.5,
+    "bed_width_m": 9,
+    "bank_platform_extent_x_m": [
+      -48,
+      0
+    ],
+    "bank_platform_width_m": 16,
+    "bank_top_z_m": 12.0,
+    "classification": "岸上预制/顶推台座连续承托，不增加河中墩",
+    "visual_invariant": "x=-45..0梁底与台座连续相接；原0/45/90墩及135待接墩、110..130导梁不动"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "source_figure_ids": [
+    "F27"
+  ],
+  "units": "m",
+  "model_status": "teaching geometry, not a named real bridge or design result",
+  "coordinate_convention": "x longitudinal, y transverse, z vertical; water z=0",
+  "spans": [
+    150,
+    500,
+    150
+  ],
+  "deck_x_range": [
+    -150,
+    650
+  ],
+  "tower_x": [
+    0,
+    500
+  ],
+  "deck_width": 24,
+  "deck_surface_z": 25,
+  "saddle_z": 87.5,
+  "main_cable_low_z": 37.5,
+  "main_cable_sag": 50,
+  "main_span_sag_ratio": 0.1,
+  "side_to_main_span_ratio": 0.3,
+  "main_cable_planes_y": [
+    -11.5,
+    11.5
+  ],
+  "tower_leg_centres_y": [
+    -13.5,
+    13.5
+  ],
+  "tower_leg_width": 3,
+  "lane_widths": [
+    3.5,
+    3.5,
+    3.5,
+    3.5
+  ],
+  "median_width": 2,
+  "side_strip_widths": [
+    3,
+    3
+  ],
+  "outer_strip_widths": [
+    1,
+    1
+  ],
+  "main_cable_diameter": 0.6,
+  "hanger_diameter": 0.08,
+  "anchorage_cable_end_x": [
+    -150,
+    650
+  ],
+  "anchorage_cable_end_z": 8,
+  "visual_detail_assumptions": {
+    "deck_girder_depth": 2.2,
+    "tower_leg_x_depth": 4,
+    "tower_top_z": 91,
+    "tower_crosshead_top_z": 87.5,
+    "tower_crosshead_depth": 4,
+    "hanger_spacing": 10,
+    "anchorage_block_xyz_size": [
+      20,
+      10,
+      12
+    ],
+    "no_vehicles": true
+  },
+  "notes": [
+    "Two ground-anchored main cables pass over both tower saddles to independent bank anchorage blocks.",
+    "Vertical main-span hangers; no fan stays.",
+    "Main-span cable z=37.5+50*((x-250)/250)^2. Side-span cable represented straight to separate anchor, not a solved cable profile.",
+    "Diameters are visual teaching assumptions; force cannot be read from thickness.",
+    "Parent supplied JTG ratio check; this generation script does not certify a code design."
+  ]
+}

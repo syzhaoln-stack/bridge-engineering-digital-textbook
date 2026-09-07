@@ -4,6 +4,7 @@
 
 - [在线阅读整本教材](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/)
 - [新增40幅图、5段双人对话、100个独立交互及3本Notebook](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/visual-update.html)
+- [8处内容、24张GPT生成图选样与比例复核](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/imagegen-review.html)
 - [先试公众课第一讲](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/public-course.html)
 - [图片数量、来源与出版制作计划](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/publication-images.html)
 - [各章实验入口](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/learning-map.html)
@@ -29,4 +30,4 @@
 
 安装Quarto和Python后，运行`quarto render source --to html`；构建结果在`source/_site/`。当前Pages从`main`分支的`docs/`发布，更新时应先检查构建结果再同步到该目录。默认交互可本地运行；外部课程与投影工作台需要联网，部分正文公式使用在线MathJax。
 
-来源工作版本：`e4fbaa7b51f22c4c6e82fa121728a354b4a2898e`。这是不携带内部资料与旧历史的公开导出，不能将此仓库的首次提交误认为教材首次写作。
+来源工作版本：`2bf6e1f83d430afa9d63c411c35f964be5b9e2bb`。这是不携带内部资料与旧历史的公开导出，不能将此仓库的首次提交误认为教材首次写作。

@@ -1,0 +1,91 @@
+{
+  "id": "G08-C",
+  "source_figure_ids": [
+    "F36"
+  ],
+  "generation_tool": "built-in image_gen",
+  "style": "教材钢笔淡彩",
+  "prompt": "Use case: scientific-educational. G08-C, one original textbook pen-and-watercolor illustration of a short corroded steel I-beam specimen, warm white paper, 3:2 landscape, no typography.\nUse the supplied original meter-scaled geometry as the structural reference. Preserve a 1.80m long I-section, 0.90m total depth, 0.45m symmetrical flange width, 0.020m flange plates and a single 0.008m thin center web. Length/depth=2 and depth/width=2; a short deep teaching sample. Two flanges on opposite edges joined by a centered web, no additional steel ribs, bolts, holes, missing pieces or invented structural details.\nDraw precise fine dark grey outlines and quiet light blue-grey watercolor on the coated steel, with restrained warm rust and peeling paint patches concentrated near one portion of the lower web and lower flange. Keep much of the protective coating visibly intact. This is surface texture, not a diagram of section loss, cracking, failure or residual capacity. Avoid exaggerated thickness, warped steel and cartoon damage.\nOblique three-quarter view of the full member, visible near I-shaped end and broad web; neutral paper-like floor with a delicate contact shadow beneath the bottom flange. Complete object with clear white margins. No extra inset, caption box or measuring equipment.\nThis invented teaching illustration accompanies F36 as a corrosion context example; it is NOT the rectangular-section ten-percent thinning calculation, and neither remaining thickness nor strength can be read from the rust.\nNo people, hands, tools, rulers, numbers, words, letters, arrows, labels, dimensions, scale bars, symbols, stress clouds, diagrams, logos or watermarks.",
+  "workspace_image": "assets/publication/imagegen-samples/G08-C.png",
+  "reference_image_paths": [
+    "assets/publication/imagegen-samples/references/G08-reference.png"
+  ],
+  "dimensions_contract": {
+    "source_figure_ids": [
+      "F36"
+    ],
+    "units": "m",
+    "model_status": "corrosion context image; NOT the rectangular 10-percent thinning calculation in F36",
+    "coordinate_convention": "x member length, y flange width, z section depth",
+    "beam_length": 1.8,
+    "section_depth": 0.9,
+    "flange_width": 0.45,
+    "flange_thickness": 0.02,
+    "web_thickness": 0.008,
+    "length_to_depth_ratio": 2,
+    "depth_to_width_ratio": 2,
+    "flange_to_depth_ratio": 0.022222222222222223,
+    "web_to_depth_ratio": 0.008888888888888889,
+    "surface_condition": "local surface rust and coating peeling only; do not infer material loss, remaining thickness, strength or service life",
+    "no_hands": true,
+    "no_instruments": true
+  },
+  "visual_review": {
+    "status": "reviewed_context_candidate",
+    "acceptable_for_textbook_structure": "context_only",
+    "checks": [
+      {
+        "item": "完整I梁：上下翼缘与单腹板",
+        "result": "pass_visible_topology"
+      },
+      {
+        "item": "短而高、长度约为截面高度两倍",
+        "result": "visually_consistent_not_metrology"
+      },
+      {
+        "item": "局部锈蚀/涂层剥落，仍有完整涂层",
+        "result": "pass"
+      },
+      {
+        "item": "无穿孔、弯折、缺失大块及假应力云图",
+        "result": "pass"
+      },
+      {
+        "item": "无文字数字箭头、人物或测量工具",
+        "result": "pass"
+      }
+    ],
+    "observations": [
+      "钢笔线与淡蓝灰水彩保持I梁完整轮廓，下部局部锈蚀与剥漆可区分。",
+      "纸面表现适合教材情境插图；边缘线宽有艺术放大。"
+    ],
+    "limitations": [
+      "生成图不能像CAD那样证明翼缘20mm、腹板8mm的像素精确厚度，也不应用透视量取实尺寸。",
+      "锈斑面积、颜色及剥漆纹理不是减薄量、承载力或寿命测量。",
+      "这是I梁情境配图，不是F36矩形截面10%减薄算例的同一构件。"
+    ]
+  },
+  "file_checks": {
+    "format": "PNG",
+    "pixel_size": [
+      1536,
+      1024
+    ],
+    "aspect_ratio": "3:2",
+    "bytes": 2285011,
+    "sha256": "a0148c79661bc410740cdbf25c0ccbe9998b089ac8909db7a2dcf9bb31edf12f",
+    "same_bytes_as_original": true,
+    "checked_at_utc": "2026-09-07T04:06:27.429304+00:00",
+    "note": "File integrity and format checks only; geometric/visual review is recorded separately."
+  },
+  "status": "context_candidate_for_author_selection",
+  "needs_revision": false,
+  "scale_status": "外观关系已复看；精确尺寸以参数底稿为准",
+  "original_filename": "exec-ea51593e-d7ed-4632-95be-e1cd562655ef.png",
+  "image": "G08-C.png",
+  "sha256": "a0148c79661bc410740cdbf25c0ccbe9998b089ac8909db7a2dcf9bb31edf12f",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}

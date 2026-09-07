@@ -1,0 +1,96 @@
+{
+  "id": "G02-B",
+  "related_figure": "F06",
+  "status": "context_candidate_for_author_selection",
+  "style": "B 浅背景三维教学模型",
+  "tool": "image_gen__imagegen (built-in)",
+  "project_path": "assets/publication/imagegen-samples/G02-B.png",
+  "prompt": "Use case: scientific-educational. Make ONE horizontal 3:2 polished three-dimensional educational model illustration on a very pale warm-gray background, NO text, NO dimension annotations, NO arrows, no graphs, no logos. Image 1 is a strict GEOMETRY REFERENCE. Re-render only its upper perspective assembly; do not include the bottom drawings, any captions, or additional objects. Exactly two physically identical wooden strips are presented as independent experiments side by side on one simple light worktop: LEFT rests flat, RIGHT is rotated exactly 90 degrees about its long axis and rests on edge. Both strips are 1.00 m long × 0.100 m wide × 0.020 m thick before rotation. Their lengths must stay equal. The left strip is 100 mm wide across its top and 20 mm thick vertically; the right strip is 20 mm across its narrow top and 100 mm tall vertically. Distinct exposed rectangular end faces must demonstrate those two orientations; the vertical board must not become a square stick, must not become taller than 100 mm, and its length must not shrink. Each strip rests on two separate identical support blocks, four total, their actual dimensions 60 mm along the beam ×140 mm across ×100 mm high. Both pairs have exactly 0.80 m between support centers; each wood end projects 0.10 m past its support center. SUPPORT HEIGHT EQUALS the vertical board depth, and is FIVE TIMES the flat board thickness. Preserve all these proportions as in the upper reference. Use the same orthographic camera and world scale for both assemblies, gently elevated view so broad and narrow top faces plus end-grain rectangles remain visible. Fully show both assemblies and all four blocks, no cropping. Honey colored lightly textured wood, muted blue-gray matte blocks, off-white tabletop, soft ambient occlusion and restrained soft shadows. Clean precise physical objects, no glossy toy effect. No hands, people, loads, weights, curved boards, bending, deformations, stress maps or exploded parts. Aim for a calm attractive student-facing scientific model whose only difference is the orientation of the SAME stock.",
+  "reference_image": "assets/publication/imagegen-samples/G02-geometry-reference.png",
+  "dimension_contract_file": "G02-dimension_contract.json",
+  "dimension_contract": {
+    "units": "m",
+    "wood_stock": [
+      1,
+      0.1,
+      0.02
+    ],
+    "flat_section_y_z": [
+      0.1,
+      0.02
+    ],
+    "edge_section_y_z": [
+      0.02,
+      0.1
+    ],
+    "support_center_span": 0.8,
+    "support_block_x_y_z": [
+      0.06,
+      0.14,
+      0.1
+    ],
+    "wood_count": 2,
+    "support_count": 4,
+    "load": "none",
+    "deformation": "none"
+  },
+  "visual_review": {
+    "reviewed": true,
+    "findings": [
+      "两根木条为平放与立放，四块支承分别承托；没有增加荷载、人物、文字或变形。",
+      "初版立放木条长边目视较平放木条短约8%–10%，已按同一几何底稿进行一次定向修正。",
+      "修正后两根长边在共同视图中的长度更接近，立放截面的窄顶边、宽侧面辨识清楚，支承接触关系可见。"
+    ],
+    "limitations": [
+      "图像生成保留的是可见关系，不是CAD约束；单张图不能认证1.00m长度、0.80m支承中心距、0.020m厚度或两木条的精确同体积。",
+      "支承与端部悬出长度有视觉近似，不能从图片反推实验测量值；需要精确尺寸时使用随附确定性底稿。",
+      "没有施加载荷，不能据图宣称刚度、挠度或承载力比较已经验证。"
+    ],
+    "dimension_status": "visual orientation and approximate scale checked; exact metric preservation not certified",
+    "repair_count": 1
+  },
+  "generated_on": "2026-09-07",
+  "rights_note": "AI生成教学场景候选，非真实实验照片；原始生成文件保留，待作者选用。",
+  "repair": {
+    "prompt": "Precise geometry correction only. Image1 is the EDIT TARGET, a pale-background 3D educational illustration. Image2 is the dimensioned geometry reference. Preserve image1's style, colors, materials, camera, tabletop, left assembly, no-text format and four support blocks. Correct ONLY the longitudinal length and supporting positions of the RIGHT upright strip: it currently appears about 8–10 percent shorter than the left strip. Both strips must have EXACTLY the same projected longitudinal edge length and be parallel in this shared orthographic view, representing two identical 1.00 m long wooden strips. Extend the right strip longitudinally to match the left strip's length, without making its narrow 20 mm top any wider or its 100 mm vertical depth any taller. Reposition its two support centers to 0.10 m and0.90 m along that corrected1.00 m strip, leaving symmetric100 mm end overhangs; do not change the support blocks' size. Keep all objects uncropped. Geometry contract: left section100mm horizontal×20mm vertical, right section20mm horizontal×100mm vertical, each support60×140×100mm, both support-center distances800mm. Same wooden stock, only a90degree rotation. No other changes, no text, arrows, dimensions, loads, people or deformations. Do not reproduce the bottom diagrams from image2.",
+    "reason": "初版立放木条目视偏短。",
+    "corrected_original_path": "exec-0b0c4d2a-654c-4d1f-85d9-bc744717a0c5.png"
+  },
+  "call_history": [
+    {
+      "attempt": 1,
+      "result": "connection failed; no image generated"
+    },
+    {
+      "attempt": 2,
+      "result": "initial candidate generated"
+    },
+    {
+      "attempt": 3,
+      "result": "one targeted geometry correction"
+    }
+  ],
+  "image_size_px": [
+    1536,
+    1024
+  ],
+  "sha256": "5425fc748e3550dd6ed1238a4329ee9f91263f4b2c8e4075cd9657aacf37b353",
+  "copy_check": {
+    "identical_to_original": true,
+    "original_retained": true
+  },
+  "scale_status": "参照底稿已校核，生成图已作外观比例复核；非精确尺寸图",
+  "reference_geometry_path": "assets/publication/imagegen-samples/G02-geometry-reference.png",
+  "skills_read": [
+    "imagegen",
+    "bridge-modeler Phase 0",
+    "bridge-modeler/references/dimensions-and-scale.md"
+  ],
+  "needs_revision": false,
+  "original_filename": "exec-0b0c4d2a-654c-4d1f-85d9-bc744717a0c5.png",
+  "image": "G02-B.png",
+  "pixel_size": [
+    1536,
+    1024
+  ]
+}
