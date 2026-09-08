@@ -18,6 +18,7 @@ const canvas=$('#canvas'),stage=$('#stage');
 let renderer,scene,camera,controls,root,selected,oldMaterial,boxHelper,loadPromise;
 let currentPreset='whole',isolatedMesh=null,framePending=false,lastFrame=0,startPointer,loading=false;
 const groups=new Map(),meshes=[],originalGroupPositions=new Map(),originalMeshPositions=new Map(),enabledGroups=new Map();
+const hiddenMeshes=new Set();
 const raycaster=new THREE.Raycaster();
 function init(){
  if(renderer)return;
@@ -54,7 +55,7 @@ function applyVisibility(){
  if(!root)return;
  // Reset every parent and child first: a previous isolation must never survive reset.
  root.traverse(node=>node.visible=true);
- for(const mesh of meshes)mesh.visible=scopeAccepts(mesh)&&enabledGroups.get(groupOf(mesh))!==false&&(!isolatedMesh||mesh===isolatedMesh);
+ for(const mesh of meshes)mesh.visible=scopeAccepts(mesh)&&enabledGroups.get(groupOf(mesh))!==false&&!hiddenMeshes.has(mesh)&&(!isolatedMesh||mesh===isolatedMesh);
  if(selected&&!isVisible(selected))clearSelected();
  syncGroups();requestRender();
 }
@@ -81,7 +82,7 @@ async function loadModel(){
    init();const gltf=await new GLTFLoader().loadAsync(MODEL,event=>{if(event.total)$('#status').textContent=`读取模型 ${Math.round(100*event.loaded/event.total)}%`;});
    root=gltf.scene;scene.add(root);
    root.traverse(object=>{if(LABELS[object.name]){groups.set(object.name,object);originalGroupPositions.set(object.name,object.position.clone());enabledGroups.set(object.name,true);}if(object.isMesh){meshes.push(object);originalMeshPositions.set(object.uuid,object.position.clone());}});
-   buildGroups();for(const id of ['save','reset','all','explode','side','top','spin'])$('#'+id).disabled=false;
+   buildGroups();for(const id of ['save','reset','all','explode','side','top','end','fit','spin'])$('#'+id).disabled=false;
    $('#cover').classList.add('hidden');$('#status').textContent='模型已打开';applyPreset(currentPreset);requestRender();return true;
   }catch(error){$('#load').disabled=false;$('#load').textContent='重试载入';$('#status').textContent='载入失败，请通过教材网站或本地网页服务打开';console.error(error);return false;}
   finally{loading=false;loadPromise=null;}
@@ -91,7 +92,7 @@ function clearSelected(){
  if(selected){for(const material of Array.isArray(selected.material)?selected.material:[selected.material])material.dispose();selected.material=oldMaterial;}
  selected=null;oldMaterial=null;
  if(boxHelper){scene.remove(boxHelper);boxHelper.dispose();boxHelper=null;}
- $('#focus').disabled=true;$('#isolate').disabled=true;$('#detail').textContent='单击模型中的构件，查看它的名称。';
+ $('#focus').disabled=true;$('#isolate').disabled=true;$('#hide').disabled=true;$('#detail').textContent='单击模型中的构件，查看它的名称。';
 }
 function visibleBounds(){const box=new THREE.Box3();root?.updateMatrixWorld(true);for(const mesh of meshes)if(isVisible(mesh))box.expandByObject(mesh);return box;}
 function frameBox(box,direction){
@@ -119,7 +120,7 @@ function applyPreset(key){
  currentPreset=key;$('#view-title').textContent=PRESETS[key].title;$('#view-note').textContent=PRESETS[key].note;
  for(const button of document.querySelectorAll('[data-preset]'))button.setAttribute('aria-pressed',String(button.dataset.preset===key));
  if(!root)return;
- clearSelected();isolatedMesh=null;for(const key of groups.keys())enabledGroups.set(key,true);
+ clearSelected();isolatedMesh=null;hiddenMeshes.clear();for(const key of groups.keys())enabledGroups.set(key,true);
  controls.autoRotate=false;$('#spin').setAttribute('aria-pressed','false');setExplosion(0);applyVisibility();frameBox(visibleBounds(),new THREE.Vector3(...PRESETS[key].direction));
 }
 function friendlyName(name){
@@ -134,7 +135,7 @@ function selectMesh(mesh){
  const highlight=material=>{const copy=material.clone();if(copy.emissive){copy.emissive.set('#b7770c');copy.emissiveIntensity=.42;}else copy.color?.set('#dfab39');return copy;};
  mesh.material=Array.isArray(oldMaterial)?oldMaterial.map(highlight):highlight(oldMaterial);
  boxHelper=new THREE.BoxHelper(mesh,0xc78c21);scene.add(boxHelper);
- $('#detail').textContent=friendlyName(meshName(mesh));$('#detail').title=meshName(mesh);$('#focus').disabled=false;$('#isolate').disabled=false;requestRender();
+ $('#detail').textContent=friendlyName(meshName(mesh));$('#detail').title=meshName(mesh);$('#focus').disabled=false;$('#isolate').disabled=false;$('#hide').disabled=false;requestRender();
 }
 function pick(x,y){
  if(!root)return;const rect=canvas.getBoundingClientRect(),point=new THREE.Vector2((x-rect.left)/rect.width*2-1,-(y-rect.top)/rect.height*2+1);
@@ -157,8 +158,11 @@ $('#reset').onclick=()=>applyPreset('whole');$('#all').onclick=()=>applyPreset('
 $('#explode').oninput=event=>setExplosion(event.target.value);
 $('#side').onclick=()=>frameBox(visibleBounds(),new THREE.Vector3(0,.03,1));
 $('#top').onclick=()=>frameBox(visibleBounds(),new THREE.Vector3(0,1,.001));
+$('#end').onclick=()=>frameBox(visibleBounds(),new THREE.Vector3(1,0,0));
+$('#fit').onclick=()=>frameBox(visibleBounds(),camera.position.clone().sub(controls.target));
 $('#focus').onclick=()=>{if(selected)frameBox(new THREE.Box3().setFromObject(selected),camera.position.clone().sub(controls.target));};
 $('#isolate').onclick=()=>{if(selected){isolatedMesh=selected;applyVisibility();}};
+$('#hide').onclick=()=>{if(selected){hiddenMeshes.add(selected);isolatedMesh=null;clearSelected();applyVisibility();}};
 $('#spin').onclick=event=>{controls.autoRotate=!controls.autoRotate;event.currentTarget.setAttribute('aria-pressed',String(controls.autoRotate));requestRender();};
 $('#save').onclick=savePNG;
 

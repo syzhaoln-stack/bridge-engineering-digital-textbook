@@ -1,0 +1,95 @@
+{
+  "checked_on": "2026-09-08",
+  "passed": true,
+  "checks": [
+    {
+      "name": "manifest and chunks are lazy",
+      "passed": true
+    },
+    {
+      "name": "failed chunk exposes retry",
+      "passed": true
+    },
+    {
+      "name": "retry loads successfully",
+      "passed": true
+    },
+    {
+      "name": "decompressed source hash unchanged",
+      "passed": true
+    },
+    {
+      "name": "four chunks and exact original bytes",
+      "passed": true
+    },
+    {
+      "name": "2552 meshes and 10 groups preserved",
+      "passed": true
+    },
+    {
+      "name": "whole renders nonempty actual scope",
+      "passed": true
+    },
+    {
+      "name": "nose renders nonempty actual scope",
+      "passed": true
+    },
+    {
+      "name": "bogie renders nonempty actual scope",
+      "passed": true
+    },
+    {
+      "name": "interior renders nonempty actual scope",
+      "passed": true
+    },
+    {
+      "name": "four scopes retain expected component counts",
+      "passed": true
+    },
+    {
+      "name": "no public raw GLB request",
+      "passed": true
+    },
+    {
+      "name": "existing explosion works after streamed parsing",
+      "passed": true
+    },
+    {
+      "name": "existing reset remains exact",
+      "passed": true
+    },
+    {
+      "name": "mobile layout remains within 390 pixels",
+      "passed": true
+    }
+  ],
+  "transport": {
+    "encoding": "gzip",
+    "parts": 4,
+    "download_bytes": 12224267,
+    "original_bytes": 36794256,
+    "original_sha256": "fc79245723f38d7e56ed99e8b132492c964e7f9dcdf4beecfba25f4f9c3ca637",
+    "sha256_verified": true
+  },
+  "preset_visible_counts": [
+    {
+      "preset": "whole",
+      "visible_count": 1766
+    },
+    {
+      "preset": "nose",
+      "visible_count": 660
+    },
+    {
+      "preset": "bogie",
+      "visible_count": 95
+    },
+    {
+      "preset": "interior",
+      "visible_count": 197
+    }
+  ],
+  "intentional_failure": "First part mocked as HTTP 503 once to verify retry; restored before successful load",
+  "geometry_source": "train-source-check.json",
+  "visual_review": "无损分块载入后四预设与原界面形态一致；车头、转向架、内装可辨；手机390px无横向溢出。"
+}

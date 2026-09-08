@@ -1,0 +1,729 @@
+{
+  "checked_on": "2026-09-08",
+  "source_artifact": "models/cr400af_two_car.glb",
+  "sha256": "fc79245723f38d7e56ed99e8b132492c964e7f9dcdf4beecfba25f4f9c3ca637",
+  "bytes": 36794256,
+  "size_MiB": 35.08973693847656,
+  "method": "Direct final GLB POSITION accessors transformed through complete node matrices. glTF Y-up converted back to x-longitudinal/y-transverse/z-up; dimensions are measured from actual vertices, not accessor min/max or source claims. No original or publication model modified.",
+  "units": "m",
+  "coordinate_system": "x longitudinal, y transverse, z up",
+  "tolerance_m": 0.0001,
+  "checks": [
+    {
+      "name": "C1_BodyShell length",
+      "actual": 27.90999984741211,
+      "expected": 27.91,
+      "passed": true
+    },
+    {
+      "name": "C1_BodyShell width",
+      "actual": 3.359999895095825,
+      "expected": 3.36,
+      "passed": true
+    },
+    {
+      "name": "C1_BodyShell roof above rail",
+      "actual": 4.050000190734863,
+      "expected": 4.05,
+      "passed": true
+    },
+    {
+      "name": "C1_BodyShell x start",
+      "actual": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "C2_BodyShell length",
+      "actual": 25.000001907348633,
+      "expected": 25.0,
+      "passed": true
+    },
+    {
+      "name": "C2_BodyShell width",
+      "actual": 3.359999895095825,
+      "expected": 3.36,
+      "passed": true
+    },
+    {
+      "name": "C2_BodyShell roof above rail",
+      "actual": 4.050000190734863,
+      "expected": 4.05,
+      "passed": true
+    },
+    {
+      "name": "C2_BodyShell x start",
+      "actual": 28.559999465942383,
+      "expected": 28.56,
+      "passed": true
+    },
+    {
+      "name": "Two body shells plus intervening gap length",
+      "actual": 53.560001373291016,
+      "expected": 53.56,
+      "passed": true
+    },
+    {
+      "name": "Model inter-car body gap",
+      "actual": 0.6499996185302734,
+      "expected": 0.65,
+      "passed": true
+    },
+    {
+      "name": "Rail-head inner-face gauge",
+      "actual": 1.434999942779541,
+      "expected": 1.435,
+      "passed": true
+    },
+    {
+      "name": "Wheel solids",
+      "actual": 16,
+      "expected": 16,
+      "passed": true
+    },
+    {
+      "name": "Axle solids",
+      "actual": 8,
+      "expected": 8,
+      "passed": true
+    },
+    {
+      "name": "Bogie identifiers",
+      "actual": 4,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "name": "Source group roots exactly 01 through 10",
+      "actual": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10"
+      ],
+      "expected": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10"
+      ],
+      "passed": true
+    },
+    {
+      "name": "Every mesh component has an ID",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Component IDs unique",
+      "actual": 2552,
+      "expected": 2552,
+      "passed": true
+    },
+    {
+      "name": "Mesh IDs equal mesh node names",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "No external GLB buffer or image URI",
+      "actual": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "Embedded image0 valid declared image signature",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Embedded image1 valid declared image signature",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "All original textures embedded",
+      "actual": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "GLB binary chunk contains declared buffer bytes",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Original source file unchanged during audit",
+      "actual": "fc79245723f38d7e56ed99e8b132492c964e7f9dcdf4beecfba25f4f9c3ca637",
+      "expected": "fc79245723f38d7e56ed99e8b132492c964e7f9dcdf4beecfba25f4f9c3ca637",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "dimension_contract_train": {
+    "reference": "CR400AF, original silver/red family exterior",
+    "head_car_length": 27.91,
+    "intermediate_car_body_length": 25,
+    "model_intercar_gap": 0.65,
+    "model_length": 53.56,
+    "maximum_body_width": 3.36,
+    "maximum_body_height_above_rail": 4.05,
+    "standard_gauge": 1.435,
+    "displayed_cars": 2,
+    "full_train": false,
+    "primary_source": "https://pubs.cstam.org.cn/em/article/Y2021/I4/150",
+    "primary_source_location": "Section 1.1, printed page 151; Cao et al., Engineering Mechanics 2021, 38(4)",
+    "manufacturer": "https://www.crrcgc.cc/sfgf/2015-11/04/article_E7691BD1DADD4C799E29B682C86DADD3.html",
+    "assumptions": [
+      "photo-fitted nose control sections; no manufacturer Class-A CAD surfaces available",
+      "reference images include AF-A/AF-B members with the same original nose family",
+      "wheel diameter 0.92 m, bogie wheelbase 2.5 m, bogie center spacing 17.8 m are modeling assumptions here, not verified assembly drawings",
+      "door and window stations fitted visually",
+      "bogie components, underfloor devices, pantograph and seat layout are representational, not a manufacturing replica",
+      "raised pantograph exceeds 4.05 m body height; explicitly separate roof equipment envelope",
+      "two-car study assembly, not a complete operational 8-car consist"
+    ]
+  },
+  "body_shells": {
+    "C1_BodyShell": {
+      "min_m": [
+        0.0,
+        -1.6799999475479126,
+        0.5
+      ],
+      "max_m": [
+        27.90999984741211,
+        1.6799999475479126,
+        4.050000190734863
+      ],
+      "size_m": [
+        27.90999984741211,
+        3.359999895095825,
+        3.5500001907348633
+      ]
+    },
+    "C2_BodyShell": {
+      "min_m": [
+        28.559999465942383,
+        -1.6799999475479126,
+        0.5
+      ],
+      "max_m": [
+        53.560001373291016,
+        1.6799999475479126,
+        4.050000190734863
+      ],
+      "size_m": [
+        25.000001907348633,
+        3.359999895095825,
+        3.5500001907348633
+      ]
+    }
+  },
+  "both_body_shells": {
+    "min_m": [
+      0.0,
+      -1.6799999475479126,
+      0.5
+    ],
+    "max_m": [
+      53.560001373291016,
+      1.6799999475479126,
+      4.050000190734863
+    ],
+    "size_m": [
+      53.560001373291016,
+      3.359999895095825,
+      3.5500001907348633
+    ]
+  },
+  "model_intercar_gap_m": 0.6499996185302734,
+  "rail_top_z_m": 0.0,
+  "rail_gauge_m": 1.434999942779541,
+  "all_train_components_without_track": {
+    "min_m": [
+      0.0,
+      -1.7458841260522604,
+      -0.0209999680519104
+    ],
+    "max_m": [
+      53.560001373291016,
+      1.7458841260522604,
+      6.042499981820583
+    ],
+    "size_m": [
+      53.560001373291016,
+      3.491768252104521,
+      6.063499949872494
+    ]
+  },
+  "whole_GLB_including_track": {
+    "min_m": [
+      -8.0,
+      -1.7458841260522604,
+      -0.3999999910593033
+    ],
+    "max_m": [
+      63.0,
+      1.7458841260522604,
+      6.042499981820583
+    ],
+    "size_m": [
+      71.0,
+      3.491768252104521,
+      6.442499972879887
+    ]
+  },
+  "raised_pantograph": {
+    "all_parts": {
+      "min_m": [
+        40.30000150203705,
+        -1.1250920295715332,
+        4.125000059604645
+      ],
+      "max_m": [
+        42.500001549720764,
+        1.1250920295715332,
+        6.042499981820583
+      ],
+      "size_m": [
+        2.200000047683716,
+        2.2501840591430664,
+        1.9174999222159386
+      ]
+    },
+    "contact_strips": {
+      "min_m": [
+        40.720000457018614,
+        -0.8299999833106995,
+        5.997499980032444
+      ],
+      "max_m": [
+        41.11999969556928,
+        0.8299999833106995,
+        6.042499981820583
+      ],
+      "size_m": [
+        0.399999238550663,
+        1.659999966621399,
+        0.04500000178813934
+      ]
+    },
+    "contact_strip_top_above_rail_m": 6.042499981820583
+  },
+  "mesh_nodes": 2552,
+  "triangles": 1027338,
+  "material_count": 15,
+  "group_count": 10,
+  "groups": [
+    {
+      "name": "01_Body",
+      "label": "车体与鼻锥",
+      "mesh_count": 5,
+      "triangle_count": 319598,
+      "bounds": {
+        "min_m": [
+          0.0,
+          -1.6799999475479126,
+          0.5
+        ],
+        "max_m": [
+          53.560001373291016,
+          1.6799999475479126,
+          4.050000190734863
+        ],
+        "size_m": [
+          53.560001373291016,
+          3.359999895095825,
+          3.5500001907348633
+        ]
+      }
+    },
+    {
+      "name": "02_Livery",
+      "label": "涂装与标识",
+      "mesh_count": 41,
+      "triangle_count": 219060,
+      "bounds": {
+        "min_m": [
+          1.2000000476837158,
+          -1.7034252882003784,
+          1.3003969192504883
+        ],
+        "max_m": [
+          53.47999954223633,
+          1.7034252882003784,
+          4.029453277587891
+        ],
+        "size_m": [
+          52.27999949455261,
+          3.406850576400757,
+          2.7290563583374023
+        ]
+      }
+    },
+    {
+      "name": "03_Glass",
+      "label": "车窗与风挡",
+      "mesh_count": 131,
+      "triangle_count": 83108,
+      "bounds": {
+        "min_m": [
+          3.549999952316284,
+          -1.7198988199234009,
+          2.0457956790924072
+        ],
+        "max_m": [
+          52.18000030517578,
+          1.7198988199234009,
+          3.9721267223358154
+        ],
+        "size_m": [
+          48.6300003528595,
+          3.4397976398468018,
+          1.9263310432434082
+        ]
+      }
+    },
+    {
+      "name": "04_Doors",
+      "label": "车门与密封",
+      "mesh_count": 72,
+      "triangle_count": 13696,
+      "bounds": {
+        "min_m": [
+          9.70241928100586,
+          -1.7458841260522604,
+          1.0249999519437551
+        ],
+        "max_m": [
+          52.5075798034668,
+          1.7458841260522604,
+          3.506438732147217
+        ],
+        "size_m": [
+          42.80516052246094,
+          3.491768252104521,
+          2.4814387802034616
+        ]
+      }
+    },
+    {
+      "name": "05_Bogies",
+      "label": "转向架与轮对",
+      "mesh_count": 380,
+      "triangle_count": 74224,
+      "bounds": {
+        "min_m": [
+          3.968999832868576,
+          -1.1469999551773071,
+          -0.0209999680519104
+        ],
+        "max_m": [
+          51.69099906086922,
+          1.1469999551773071,
+          1.2000000774860382
+        ],
+        "size_m": [
+          47.72199922800064,
+          2.2939999103546143,
+          1.2210000455379486
+        ]
+      }
+    },
+    {
+      "name": "06_Underfloor",
+      "label": "车下设备",
+      "mesh_count": 460,
+      "triangle_count": 136528,
+      "bounds": {
+        "min_m": [
+          8.0,
+          -1.6554373502731323,
+          0.37000003457069397
+        ],
+        "max_m": [
+          48.560001373291016,
+          1.6554373502731323,
+          1.45539391040802
+        ],
+        "size_m": [
+          40.560001373291016,
+          3.3108747005462646,
+          1.085393875837326
+        ]
+      }
+    },
+    {
+      "name": "07_Roof",
+      "label": "受电弓与车顶设备",
+      "mesh_count": 123,
+      "triangle_count": 19188,
+      "bounds": {
+        "min_m": [
+          15.174999952316284,
+          -1.1250920295715332,
+          3.9850000590085983
+        ],
+        "max_m": [
+          48.825000047683716,
+          1.1250920295715332,
+          6.042499981820583
+        ],
+        "size_m": [
+          33.65000009536743,
+          2.2501840591430664,
+          2.057499922811985
+        ]
+      }
+    },
+    {
+      "name": "08_Interior",
+      "label": "示意内装与驾驶室",
+      "mesh_count": 538,
+      "triangle_count": 81992,
+      "bounds": {
+        "min_m": [
+          6.549999833106995,
+          -1.4850000143051147,
+          1.1650000289082527
+        ],
+        "max_m": [
+          53.310001373291016,
+          1.4850000143051147,
+          2.520000070333481
+        ],
+        "size_m": [
+          46.76000154018402,
+          2.9700000286102295,
+          1.3550000414252281
+        ]
+      }
+    },
+    {
+      "name": "09_Gangway",
+      "label": "车间连接",
+      "mesh_count": 16,
+      "triangle_count": 1232,
+      "bounds": {
+        "min_m": [
+          27.660000920295715,
+          -1.1242061853408813,
+          0.6950108408927917
+        ],
+        "max_m": [
+          28.81000030040741,
+          1.1242061853408813,
+          3.537726640701294
+        ],
+        "size_m": [
+          1.1499993801116943,
+          2.2484123706817627,
+          2.842715799808502
+        ]
+      }
+    },
+    {
+      "name": "10_Track",
+      "label": "钢轨、扣件与轨枕",
+      "mesh_count": 786,
+      "triangle_count": 78712,
+      "bounds": {
+        "min_m": [
+          -8.0,
+          -1.2999999523162842,
+          -0.3999999910593033
+        ],
+        "max_m": [
+          63.0,
+          1.2999999523162842,
+          0.0
+        ],
+        "size_m": [
+          71.0,
+          2.5999999046325684,
+          0.3999999910593033
+        ]
+      }
+    }
+  ],
+  "wheel_count": 16,
+  "axle_count": 8,
+  "bogie_count": 4,
+  "images": [
+    {
+      "name": "nor_gl",
+      "mime_type": "image/jpeg",
+      "storage": "GLB bufferView",
+      "bytes": 4939794,
+      "sha256": "22bd9c17a6dfe3441f671cba1b40e2329767c79b6472004d1633aeac368d5210"
+    },
+    {
+      "name": "Rough",
+      "mime_type": "image/png",
+      "storage": "GLB bufferView",
+      "bytes": 2526688,
+      "sha256": "ca7a817ef12b6ea577ea505d528ef0bbc5d6440310129bbf72ab43e986e57bc8"
+    }
+  ],
+  "external_uris": [],
+  "self_contained_GLb": true,
+  "extensions_used": [
+    "KHR_materials_clearcoat",
+    "KHR_materials_emissive_strength"
+  ],
+  "extensions_required": [],
+  "animation_count": 0,
+  "skin_count": 0,
+  "original_blend_audit_train_rows": [
+    {
+      "check": "C1_BodyShell length",
+      "actual": 27.90999984741211,
+      "expected": 27.91,
+      "passed": true
+    },
+    {
+      "check": "C1_BodyShell width",
+      "actual": 3.359999895095825,
+      "expected": 3.36,
+      "passed": true
+    },
+    {
+      "check": "C1_BodyShell height above rail",
+      "actual": 4.050000190734863,
+      "expected": 4.05,
+      "passed": true
+    },
+    {
+      "check": "C1_BodyShell start",
+      "actual": 0.0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "check": "C2_BodyShell length",
+      "actual": 25.000001907348633,
+      "expected": 25,
+      "passed": true
+    },
+    {
+      "check": "C2_BodyShell width",
+      "actual": 3.359999895095825,
+      "expected": 3.36,
+      "passed": true
+    },
+    {
+      "check": "C2_BodyShell height above rail",
+      "actual": 4.050000190734863,
+      "expected": 4.05,
+      "passed": true
+    },
+    {
+      "check": "C2_BodyShell start",
+      "actual": 28.559999465942383,
+      "expected": 28.56,
+      "passed": true
+    },
+    {
+      "check": "Train wheels",
+      "actual": 16,
+      "expected": 16,
+      "passed": true
+    },
+    {
+      "check": "Train axles",
+      "actual": 8,
+      "expected": 8,
+      "passed": true
+    },
+    {
+      "check": "Rail gauge between head inner faces",
+      "actual": 1.434999942779541,
+      "expected": 1.435,
+      "passed": true
+    },
+    {
+      "check": "Train external image dependencies packed",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "direct_GLb_vs_original_body_audit": [
+    {
+      "original_check": "C1_BodyShell length",
+      "original_actual": 27.90999984741211,
+      "GLB_actual": 27.90999984741211,
+      "difference": 0.0
+    },
+    {
+      "original_check": "C1_BodyShell width",
+      "original_actual": 3.359999895095825,
+      "GLB_actual": 3.359999895095825,
+      "difference": 0.0
+    },
+    {
+      "original_check": "C1_BodyShell height above rail",
+      "original_actual": 4.050000190734863,
+      "GLB_actual": 4.050000190734863,
+      "difference": 0.0
+    },
+    {
+      "original_check": "C1_BodyShell start",
+      "original_actual": 0.0,
+      "GLB_actual": 0.0,
+      "difference": 0.0
+    },
+    {
+      "original_check": "C2_BodyShell length",
+      "original_actual": 25.000001907348633,
+      "GLB_actual": 25.000001907348633,
+      "difference": 0.0
+    },
+    {
+      "original_check": "C2_BodyShell width",
+      "original_actual": 3.359999895095825,
+      "GLB_actual": 3.359999895095825,
+      "difference": 0.0
+    },
+    {
+      "original_check": "C2_BodyShell height above rail",
+      "original_actual": 4.050000190734863,
+      "GLB_actual": 4.050000190734863,
+      "difference": 0.0
+    },
+    {
+      "original_check": "C2_BodyShell start",
+      "original_actual": 28.559999465942383,
+      "GLB_actual": 28.559999465942383,
+      "difference": 0.0
+    }
+  ],
+  "limitations": [
+    "Two-car study assembly (one head car plus intermediate car), not a complete operational consist.",
+    "53.56 m is the combined body-shell x extent including the 0.65 m teaching inter-car gap. It is not the entire GLB bounding length or a verified coupler-to-coupler consist length.",
+    "4.05 m means rail top to body-shell roof. Body-shell mesh z thickness and raised pantograph height are different values.",
+    "Nose/control sections and door/window locations are photo-fitted; body family references include original-head AF-A/AF-B. Not manufacturer Class-A CAD.",
+    "Wheel diameter, bogie wheelbase/centre spacing, underfloor equipment, pantograph, seats and mechanical details are teaching assumptions. No vehicle engineering, dynamics, collision, gauge-envelope or manufacturing approval.",
+    "GLB has no animation clips or rig. Rotation, exploded display and isolation are viewer interactions, not authored mechanical motion.",
+    "Environment and offline renderer lighting/shader graphs are not all preserved in glTF; self-contained loading does not promise matching Cycles images.",
+    "Functional category roots do not form complete per-car assemblies. Moving body-shell C1/C2 nodes alone leaves bogies/devices behind."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "encoding": "gzip",
+  "original_sha256": "fc79245723f38d7e56ed99e8b132492c964e7f9dcdf4beecfba25f4f9c3ca637",
+  "original_bytes": 36794256,
+  "compressed_sha256": "b99d56def5016f24497659dee5967943403f55796488c89648e41b766d1b3b78",
+  "compressed_bytes": 12224267,
+  "parts": [
+    {
+      "file": "cr400af_two_car.glb.gz.part01.bin",
+      "bytes": 3145728,
+      "sha256": "dce897eab15693affcfd1f00a728f315bc11b07c34a3e320cdbb60f076abe5a7"
+    },
+    {
+      "file": "cr400af_two_car.glb.gz.part02.bin",
+      "bytes": 3145728,
+      "sha256": "ee0685572514602407af1fe63133c54ff4201edc732f484107975e82cdac43a9"
+    },
+    {
+      "file": "cr400af_two_car.glb.gz.part03.bin",
+      "bytes": 3145728,
+      "sha256": "19060cb1ed9c3ee80f6810c7029e2bd85e0f48c79e686a2862487d940509269d"
+    },
+    {
+      "file": "cr400af_two_car.glb.gz.part04.bin",
+      "bytes": 2787083,
+      "sha256": "be433566b309188976ecb90a2316a01efd1e14424c270419255ec8f7a6563bd5"
+    }
+  ],
+  "note": "Ordered lossless transport chunks; decompress to the original GLB without geometry changes"
+}

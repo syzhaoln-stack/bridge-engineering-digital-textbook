@@ -1,0 +1,144 @@
+{
+  "checked_on": "2026-09-08",
+  "url": "../../../interactive/bridge-assembly/train.html",
+  "checks": [
+    {
+      "name": "GLB is not requested before explicit load",
+      "passed": true
+    },
+    {
+      "name": "2552 meshes and 10 groups",
+      "passed": true
+    },
+    {
+      "name": "track hidden initially",
+      "passed": true
+    },
+    {
+      "name": "nose moves camera to actual front features",
+      "passed": true
+    },
+    {
+      "name": "one bogie only",
+      "passed": true
+    },
+    {
+      "name": "no misleading explode control for one functional group",
+      "passed": true
+    },
+    {
+      "name": "actual canvas click selects a part",
+      "passed": true
+    },
+    {
+      "name": "hide one component",
+      "passed": true
+    },
+    {
+      "name": "restore hidden component",
+      "passed": true
+    },
+    {
+      "name": "Chinese part search selects wheel",
+      "passed": true
+    },
+    {
+      "name": "isolate selected mesh",
+      "passed": true
+    },
+    {
+      "name": "restore isolation",
+      "passed": true
+    },
+    {
+      "name": "group visibility can hide all in current view",
+      "passed": true
+    },
+    {
+      "name": "group visibility restores current scope",
+      "passed": true
+    },
+    {
+      "name": "interior preset really removes exterior",
+      "passed": true
+    },
+    {
+      "name": "shell button hides body group",
+      "passed": true
+    },
+    {
+      "name": "shell button restores exterior",
+      "passed": true
+    },
+    {
+      "name": "explosion changes only group offsets",
+      "passed": true
+    },
+    {
+      "name": "assembly positions fully reset",
+      "passed": true
+    },
+    {
+      "name": "side view changes camera",
+      "passed": true
+    },
+    {
+      "name": "top view looks vertically down",
+      "passed": true
+    },
+    {
+      "name": "mouse drag rotates view",
+      "passed": true
+    },
+    {
+      "name": "right drag pans view",
+      "passed": true
+    },
+    {
+      "name": "wheel changes zoom",
+      "passed": true
+    },
+    {
+      "name": "PNG export downloads image",
+      "passed": true
+    },
+    {
+      "name": "automatic rotation moves camera",
+      "passed": true
+    },
+    {
+      "name": "automatic rotation can stop",
+      "passed": true
+    },
+    {
+      "name": "390 px viewport has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile canvas remains usable",
+      "passed": true
+    },
+    {
+      "name": "mobile full reset restores transform and visibility",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "layout": {
+    "width": 390,
+    "scrollWidth": 390,
+    "canvas": {
+      "x": 0,
+      "y": 187.25,
+      "width": 390,
+      "height": 447.3125,
+      "top": 187.25,
+      "right": 390,
+      "bottom": 634.5625,
+      "left": 0
+    }
+  },
+  "source_sha256": "fc79245723f38d7e56ed99e8b132492c964e7f9dcdf4beecfba25f4f9c3ca637",
+  "note": "Actual Chromium button, checkbox, keyboard slider, canvas pointer, pan, zoom and download actions; snapshots read only.",
+  "visual_review": "桌面整车、车头、单副转向架、内装、拆分图和390px手机图均已逐张查看；导出PNG已解码检查，构件形态可辨。"
+}
