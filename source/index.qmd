@@ -6,6 +6,10 @@
 
 ## 使用方式
 
+[数字教材成果展示：图片、交互、三维与视频](interactive/showcase.html){.btn .btn-primary}
+
+[供合作者与出版社审阅：文稿与资源组合样章](interactive/reading-preview.html){.btn .btn-outline-primary}
+
 [本轮新增：40 幅图、5 段双人对话、100 个动手实验](visual-update.qmd){.btn .btn-primary}
 
 从一个问题开始，看图、听对话，再亲手改变条件。需要复算时，可打开配套的 3 份 Notebook，连着阅读文字、公式、代码和运行结果。

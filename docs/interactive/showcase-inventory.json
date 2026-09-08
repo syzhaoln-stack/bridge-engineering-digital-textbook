@@ -1,0 +1,2860 @@
+{
+  "date": "2026-09-08",
+  "images": [
+    {
+      "id": "G01-B",
+      "title": "整桥与传力路径",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G01-B.png",
+      "note": "B · 三维教具 · 正文情境图试排",
+      "selected": true,
+      "revision": false
+    },
+    {
+      "id": "G02-B",
+      "title": "搁板与尺度变化",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G02-B.png",
+      "note": "B 浅背景三维教学模型 · 正文情境图试排",
+      "selected": true,
+      "revision": false
+    },
+    {
+      "id": "G04-B",
+      "title": "桥梁施工场景",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G04-B.png",
+      "note": "浅底三维教具模型 · 正文情境图试排",
+      "selected": true,
+      "revision": false
+    },
+    {
+      "id": "G06-C",
+      "title": "悬索桥与主缆",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G06-C.png",
+      "note": "教材钢笔淡彩 · 正文情境图试排",
+      "selected": true,
+      "revision": false
+    },
+    {
+      "id": "G08-A",
+      "title": "钢梁腐蚀与耐久",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G08-A.png",
+      "note": "写实教学情境 · 正文情境图试排",
+      "selected": true,
+      "revision": false
+    },
+    {
+      "id": "G03-A",
+      "title": "桥面下面的构造",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G03-A.png",
+      "note": "A · 写实剖视 · 保留画法，构造待修正",
+      "selected": true,
+      "revision": true
+    },
+    {
+      "id": "G05-C",
+      "title": "斜拉桥与拉索",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G05-C.png",
+      "note": "教材钢笔淡彩插画 · 保留画法，构造待修正",
+      "selected": true,
+      "revision": true
+    },
+    {
+      "id": "G07-A",
+      "title": "桥墩与地下基础",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G07-A.png",
+      "note": "写实教学情境 · 保留画法，构造待修正",
+      "selected": true,
+      "revision": true
+    },
+    {
+      "id": "G01-A",
+      "title": "整桥与传力路径",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G01-A-v2.png",
+      "note": "A · 写实场景 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G01-C",
+      "title": "整桥与传力路径",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G01-C.png",
+      "note": "C · 线稿淡彩 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G02-A",
+      "title": "搁板与尺度变化",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G02-A.png",
+      "note": "A 自然写实工作台摄影场景 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G02-C",
+      "title": "搁板与尺度变化",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G02-C.png",
+      "note": "C 教材钢笔淡彩插画 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G04-A",
+      "title": "桥梁施工场景",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G04-A.png",
+      "note": "写实工程情境 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G04-C",
+      "title": "桥梁施工场景",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G04-C.png",
+      "note": "教材钢笔淡彩插画 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G05-A",
+      "title": "斜拉桥与拉索",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G05-A.png",
+      "note": "写实工程情境 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G06-A",
+      "title": "悬索桥与主缆",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G06-A.png",
+      "note": "写实教学情境 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G06-B",
+      "title": "悬索桥与主缆",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G06-B.png",
+      "note": "浅底三维教具 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G07-B",
+      "title": "桥墩与地下基础",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G07-B.png",
+      "note": "浅底三维教具 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G08-B",
+      "title": "钢梁腐蚀与耐久",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G08-B.png",
+      "note": "浅底三维教具 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G08-C",
+      "title": "钢梁腐蚀与耐久",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G08-C.png",
+      "note": "教材钢笔淡彩 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": false
+    },
+    {
+      "id": "G03-B",
+      "title": "桥面下面的构造",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G03-B.png",
+      "note": "B · 三维教具 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": true
+    },
+    {
+      "id": "G03-C",
+      "title": "桥面下面的构造",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G03-C.png",
+      "note": "C · 线稿淡彩 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": true
+    },
+    {
+      "id": "G05-B",
+      "title": "斜拉桥与拉索",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G05-B.png",
+      "note": "浅底三维教具模型 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": true
+    },
+    {
+      "id": "G07-C",
+      "title": "桥墩与地下基础",
+      "kind": "ai",
+      "src": "../assets/publication/imagegen-samples/G07-C.png",
+      "note": "教材钢笔淡彩 · 收进备选，保留原文件",
+      "selected": false,
+      "revision": true
+    },
+    {
+      "id": "F01",
+      "title": "车的重量，最后传到了哪里？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F01.svg",
+      "note": "由车辆、桥面板、主梁、支座、墩台、基础到地基的竖向传力路径。基础处向上箭头表示地基对基础的反力。",
+      "link": "../chapters/ch01.html#fig-priority-F01"
+    },
+    {
+      "id": "F02",
+      "title": "同样向下的重量，为什么需要不同的支承？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F02.svg",
+      "note": "同一竖向均布荷载下，理想梁以弯曲平衡，抛物线拱需要向内水平反力，抛物线索需要向外水平反力。相同的反力量级不代表结构性能相同。",
+      "link": "../chapters/ch01.html#fig-priority-F02"
+    },
+    {
+      "id": "F03",
+      "title": "把一座桥原样放大两倍，还能照搬原来的判断吗？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F03.svg",
+      "note": "几何相似、材料和重度相同的梁，将尺度乘2后面积、自重和二次矩分别乘4、8和16，而自重弯曲应力乘2。",
+      "link": "../chapters/ch01.html#fig-priority-F03"
+    },
+    {
+      "id": "F04",
+      "title": "同一个偏心压力，为什么一边压得更多？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F04.svg",
+      "note": "把同一偏心压力分为中心压力和等效弯矩。三幅应力箭头使用同一比例；正值为压应力，负值为拉应力。",
+      "link": "../chapters/ch02-foundations.html#fig-priority-F04"
+    },
+    {
+      "id": "F05",
+      "title": "压力移到哪里，截面边缘才开始出现拉应力？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F05.svg",
+      "note": "移动同一个压力作用点，比较矩形截面的均匀、三角形和带拉区的线性应力图。绿色带仅标示本方向的中间三分之一核心范围。",
+      "link": "../chapters/ch02-foundations.html#fig-priority-F05"
+    },
+    {
+      "id": "F06",
+      "title": "同一块板竖着放、横着放，为什么弯起来不一样？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F06.svg",
+      "note": "明确指出弯曲轴后比较矩形转向前后的二次矩。面积相同不表示抗弯刚度相同。",
+      "link": "../chapters/ch02-foundations.html#fig-priority-F06"
+    },
+    {
+      "id": "F07",
+      "title": "同样长的压杆，端部能不能转动有多大影响？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F07.svg",
+      "note": "实际长度相同，理想端部约束不同，计算长度和理想临界力不同。图中L始终是实际长度，Le=KL是计算长度。",
+      "link": "../chapters/ch02-foundations.html#fig-priority-F07"
+    },
+    {
+      "id": "F08",
+      "title": "普通钢筋和预应力，分别在什么时候开始起作用？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F08.svg",
+      "note": "左侧普通钢筋随构件变形承担拉力，为机制示意；右侧中心预压力先形成均匀压应力，再叠加外弯矩，是明确参数的截面计算。",
+      "link": "../chapters/ch02-foundations.html#fig-priority-F08"
+    },
+    {
+      "id": "F09",
+      "title": "同一辆车换个位置，跨中弯矩会怎样变？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F09.svg",
+      "note": "移动力相同，跨中弯矩随影响线纵标变化。6 m、15 m、24 m三个位置分别得到300、750、300 kN·m。",
+      "link": "../chapters/ch02.html#fig-priority-F09"
+    },
+    {
+      "id": "F10",
+      "title": "想让同一截面的剪力最大，荷载该放在哪一边？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F10.svg",
+      "note": "固定截面剪力影响线在C处有单位跃变。覆盖右侧正区得到+54 kN，覆盖左侧负区得到−24 kN。改变目标符号，需要改变加载区段。",
+      "link": "../chapters/ch02.html#fig-priority-F10"
+    },
+    {
+      "id": "F11",
+      "title": "两根车轴一起上桥，怎样把各自的作用加起来？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F11.svg",
+      "note": "两轴保持实际间距，在同一目标截面的影响线上分别读取纵标，再以轴重乘纵标后相加。120 kN轴贡献660，180 kN轴贡献1350 kN·m。",
+      "link": "../chapters/ch02.html#fig-priority-F11"
+    },
+    {
+      "id": "F12",
+      "title": "平均抗力比平均作用大，为什么还不能只看两个平均数？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F12.svg",
+      "note": "联合正态教学模型以g=R−S转化为一维余量分布；红色尾部为g<0的概率。联合图的阴影只是失效域，不是按几何面积计算概率。",
+      "link": "../chapters/ch02.html#fig-priority-F12"
+    },
+    {
+      "id": "F13",
+      "title": "车轮下面，桥面板靠哪些构件支承？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F13.svg",
+      "note": "轴测整桥以5根纵向主梁、3道跨内横隔板和两端横梁定位桥面板的空间支承。透明桥面仅为揭示内部构造；车辆轮载向下。",
+      "link": "../chapters/ch03.html#fig-priority-F13"
+    },
+    {
+      "id": "F14",
+      "title": "一块板能向两边传力，取成梁以后保留了什么？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F14.svg",
+      "note": "俯视四边简支板与侧视两端简支板带分别展示保留的运动和支承。两图不宣称自动等价，也没有用未经计算的彩色云图表示应力。",
+      "link": "../chapters/ch03.html#fig-priority-F14"
+    },
+    {
+      "id": "F15",
+      "title": "只用力的平衡，什么时候能算出每个支点分担？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F15.svg",
+      "note": "两支点静定板段用相反力臂计算反力；若保留三支承连续横梁，则需额外的变形协调。图中特别区分简化后的图式和未释放的连续图式。",
+      "link": "../chapters/ch03.html#fig-priority-F15"
+    },
+    {
+      "id": "F16",
+      "title": "车偏到一侧，总重量怎样分到五根梁？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F16.svg",
+      "note": "平均分担24 kN/梁与偏心分量−24、−12、0、12、24 kN相加，得到0、12、24、36、48 kN。合力和合矩均与外作用一致。",
+      "link": "../chapters/ch03.html#fig-priority-F16"
+    },
+    {
+      "id": "F17",
+      "title": "某根梁的活载增量为负，就已经离开支承了吗？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F17.svg",
+      "note": "已有恒载、新增活载与总反力分别列示。梁1的活载增量为−12 kN，但总反力为+48 kN，不能把负增量直接解释为已脱空。",
+      "link": "../chapters/ch03.html#fig-priority-F17"
+    },
+    {
+      "id": "F18",
+      "title": "把两跨接成一根梁，弯矩和下沉会怎样改变？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F18.svg",
+      "note": "统一荷载和刚度下，连续性改变弯矩和变形：中支点产生负弯矩，跨内最大正弯矩减小。实际解析挠度曲线使用相同放大比例。",
+      "link": "../chapters/ch03.html#fig-priority-F18"
+    },
+    {
+      "id": "F19",
+      "title": "桥还没碰到下一个支点，悬空越长会怎样？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F19.svg",
+      "note": "悬出长度3、6、9 m时，根部负弯矩分别为−45、−180、−405 kN·m。图中同时列出全梁最大绝对弯矩，避免将短悬臂阶段根部错误当作全梁控制点。",
+      "link": "../chapters/ch03.html#fig-priority-F19"
+    },
+    {
+      "id": "F20",
+      "title": "把拱压低，拱脚要多推多少？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F20.svg",
+      "note": "相同跨度和竖向均布荷载下，三铰抛物线拱矢高由20 m增至30 m，水平推力由16.2 MN降至10.8 MN；竖向反力不变。",
+      "link": "../chapters/ch04.html#fig-priority-F20"
+    },
+    {
+      "id": "F21",
+      "title": "压力线离开拱轴，弯矩从哪里来？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F21.svg",
+      "note": "同一左半跨均布荷载下，压力线作图与拱轴出现偏离。在左四分点，竖向差6 m对应M=HΔy=40.5 MN·m；沿截面法向计算的压力中心偏心为M/N，二者不可混用。",
+      "link": "../chapters/ch04.html#fig-priority-F21"
+    },
+    {
+      "id": "F22",
+      "title": "荷载只放一半，拱就一定更轻松吗？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F22.svg",
+      "note": "抛物线拱在满跨均布荷载下弯矩为零；仅在左半跨加载会形成一正一负的弯矩。总竖向荷载减小并不意味着每个截面弯矩减小。",
+      "link": "../chapters/ch04.html#fig-priority-F22"
+    },
+    {
+      "id": "F23",
+      "title": "桥墩“动了十毫米”，到底是哪一种动？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F23.svg",
+      "note": "相同“10 mm”可以是共同沉降、差异沉降或相对水平张开。必须先定义运动对象、方向与边界，再计算三铰、两铰或无铰拱的附加响应。",
+      "link": "../chapters/ch04.html#fig-priority-F23"
+    },
+    {
+      "id": "F24",
+      "title": "车的重量，怎样经过拉索到达桥塔？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F24.svg",
+      "note": "双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。",
+      "link": "../chapters/ch05.html#fig-priority-F24"
+    },
+    {
+      "id": "F25",
+      "title": "只调一组索，怎样得到矩阵的一列？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F25.svg",
+      "note": "固定模型状态和输出定义，仅将第二索组增大1 MN时，三项响应增量就是影响矩阵第二列；矩阵沿用正文明确声明的教学测试数据，构件定位图不冒充矩阵来源模型。",
+      "link": "../chapters/ch05.html#fig-priority-F25"
+    },
+    {
+      "id": "F26",
+      "title": "合龙以后，桥还是刚才那个受力体系吗？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F26.svg",
+      "note": "合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。",
+      "link": "../chapters/ch05.html#fig-priority-F26"
+    },
+    {
+      "id": "F27",
+      "title": "悬索桥的重量，最后交给了谁？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F27.svg",
+      "note": "地锚式悬索桥中，桥面经加劲梁、吊索和主缆传力，索塔与锚碇共同承担主缆传来的作用。自锚式的主缆水平分力路径不同，不能套用本图。",
+      "link": "../chapters/ch06.html#fig-priority-F27"
+    },
+    {
+      "id": "F28",
+      "title": "缆索垂得更深，锚碇要拉住的力会变多少？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F28.svg",
+      "note": "在水平投影均布荷载的理想索模型中，垂度由40 m增至80 m，水平分力H从50 MN减至25 MN，竖向分力仍各20 MN。H是水平分量，不是支点索力总值。",
+      "link": "../chapters/ch06.html#fig-priority-F28"
+    },
+    {
+      "id": "F29",
+      "title": "一根绳拉紧以后，为什么更难横向拨动？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F29.svg",
+      "note": "同长、同一小横向荷载下，提高初张力会提高拉直绳的横向切线刚度，线性扰动位移近似反比于初张力。图示变形放大20倍，斜拉方向只作示意。",
+      "link": "../chapters/ch06.html#fig-priority-F29"
+    },
+    {
+      "id": "F30",
+      "title": "温度一样升高，为什么有的伸长、有的受压？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F30.svg",
+      "note": "同样均匀温升下，自由伸缩产生7.2 mm轴向伸长；完全限制该伸长则在本一维弹性模型中产生72 MPa压应力、1440 kN压力。支座约束改变的是允许发生的运动。",
+      "link": "../chapters/ch07.html#fig-priority-F30"
+    },
+    {
+      "id": "F31",
+      "title": "“固定支座”到底固定了哪些方向？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F31.svg",
+      "note": "理想固定、纵向活动和多向活动支座的平移约束对照。青色双箭头代表可移动方向，红色标记代表被约束的平移；固定支座不等于梁固端。",
+      "link": "../chapters/ch07.html#fig-priority-F31"
+    },
+    {
+      "id": "F32",
+      "title": "基础把桥的重量交给哪一层土？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F32.svg",
+      "note": "浅基础与桩基础的竖向荷载路径对照。桩基础通过桩侧摩阻及桩端阻力传力；箭头只示方向，实际分担与群桩效应取决于土层、桩、承台和荷载状态。",
+      "link": "../chapters/ch07.html#fig-priority-F32"
+    },
+    {
+      "id": "F33",
+      "title": "风速翻倍，推桥面的力也只翻倍吗？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F33.svg",
+      "note": "固定气密度、阻力系数和面积时，风速10、20、40 m/s对应静力阻力0.735、2.940、11.760 kN；速度翻倍，动压和阻力均变为4倍。蓝色箭头示来流，橙色箭头示阻力。",
+      "link": "../chapters/ch09-wind.html#fig-priority-F33"
+    },
+    {
+      "id": "F34",
+      "title": "同样大小的周期力，为什么能激起更大的振动？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F34.svg",
+      "note": "单自由度简谐稳态响应随频率比与阻尼改变。阻尼比0.02、0.05、0.10在r=1时的位移放大系数分别为25、10、5；该模型不直接描述桥梁颤振。",
+      "link": "../chapters/ch09-wind.html#fig-priority-F34"
+    },
+    {
+      "id": "F35",
+      "title": "桥面两边一起动，和一上一下，是同一种振动吗？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F35.svg",
+      "note": "参数化桥面带的纯竖弯与纯扭转形状对照，以及同一横截面的观察方式。真实桥梁可能有耦合模态；需同一断面同步测量才可用两侧位移分解。",
+      "link": "../chapters/ch09-wind.html#fig-priority-F35"
+    },
+    {
+      "id": "F36",
+      "title": "少了十分之一厚度，梁就只软十分之一吗？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F36.svg",
+      "note": "同宽矩形钢条上下表面减薄的几何比较：高度减少10%，面积减少10%，惯性矩减少27.1%，同边界同荷载下线弹性挠度增加约37.2%。防护列只是指定剩余厚度的比较，不是预报寿命。",
+      "link": "../chapters/ch10-lifecycle.html#fig-priority-F36"
+    },
+    {
+      "id": "F37",
+      "title": "把地震力降下来，还要为哪一种变化留空间？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F37.svg",
+      "note": "在本图明确指定的两组教学谱读数下，较长周期方案的等效力需求降低，但谱位移需求增大；隔震选择必须同时核查梁端位移、限位、管线和防落梁空间。图中的弹簧表示等效水平刚度。",
+      "link": "../chapters/ch10-lifecycle.html#fig-priority-F37"
+    },
+    {
+      "id": "F38",
+      "title": "电脑里的一个节点，对应桥上的什么位置？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F38.svg",
+      "note": "同一20 m简支梁从构件轴线到四个梁单元、五个节点的映射；跨中集中力施加在节点3。节点既有位置也携带自由度，单元连接节点并使用材料与截面刚度。",
+      "link": "../chapters/ch10-fem.html#fig-priority-F38"
+    },
+    {
+      "id": "F39",
+      "title": "网格越来越细，为什么答案仍可能错？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F39.svg",
+      "note": "以真实三次Hermite梁单元计算同一均布荷载：两端固支的错误边界也随网格加密收敛，但收敛值不等于任务要求的简支梁答案。",
+      "link": "../chapters/ch10-fem.html#fig-priority-F39"
+    },
+    {
+      "id": "F40",
+      "title": "AI给了一个数，怎样知道它算的是你的问题？",
+      "kind": "figure",
+      "src": "../assets/publication/priority-40/F40.svg",
+      "note": "同一等效梁任务的正确模型、弹性模量单位错误、两端固支边界错误对照。单位错的5882 mm只是超出小变形适用域的线性公式形式值，不能采纳；反力平衡也不能单独识别错误边界。",
+      "link": "../chapters/ch10-fem.html#fig-priority-F40"
+    },
+    {
+      "id": "B01",
+      "title": "这座桥从桥面一直延伸到地下",
+      "kind": "blender",
+      "src": "../assets/publication/blender-bridge/renders/bridge_overall.png",
+      "note": "3×30 m；双幅每幅12.50 m；全宽25.50 m；每跨每幅5片T梁，共30片；梁高2 m"
+    },
+    {
+      "id": "B02",
+      "title": "沿桥长的主梁由横隔板联系起来",
+      "kind": "blender",
+      "src": "../assets/publication/blender-bridge/renders/bridge_single_span_top.png",
+      "note": "一幅第一跨；跨度30 m，5片主梁，梁间距2.575 m；横隔板站位0.600、7.780、14.980、22.180、29.360 m"
+    },
+    {
+      "id": "B03",
+      "title": "一幅桥面下面有五片T梁",
+      "kind": "blender",
+      "src": "../assets/publication/blender-bridge/renders/bridge_five_girder_section.png",
+      "note": "单幅宽12.50 m；4×2.575+2×1.10=12.50 m；梁高2 m；铺装混凝土0.10 m+沥青0.10 m"
+    },
+    {
+      "id": "B04",
+      "title": "从桥底区分主梁和横隔板",
+      "kind": "blender",
+      "src": "../assets/publication/blender-bridge/renders/bridge_underside_diaphragms.png",
+      "note": "第一跨单幅；5片主梁；横隔板按修正站位布置"
+    },
+    {
+      "id": "B05",
+      "title": "梁、支座、垫石和盖梁在哪里接触",
+      "kind": "blender",
+      "src": "../assets/publication/blender-bridge/renders/bridge_support_connection.png",
+      "note": "梁底z=10.50 m，支座顶板顶z=10.50 m；永久支承线x=30 m；垫石顶z=10.08 m"
+    },
+    {
+      "id": "B06",
+      "title": "桥墩下面的承台把六根桩联系起来",
+      "kind": "blender",
+      "src": "../assets/publication/blender-bridge/renders/bridge_single_pier_foundation.png",
+      "note": "承台5.30×10.20×1.90 m；六桩2×3布置；桩径1.20 m；模型桩端z=-12.00 m、桩顶z=-0.65 m；两根墩柱直径1.60 m；本下部结构为教学假设"
+    },
+    {
+      "id": "R01",
+      "title": "把混凝土变透明，看一片梁里的钢筋和孔道",
+      "kind": "blender",
+      "src": "../assets/publication/blender-bridge/renders/rebar_overview.png",
+      "note": "单片中跨边梁，模型梁长29.30 m，梁高2.00 m；15根普通纵筋；143道腹板主箍和143道独立翼缘联系筋；三条φ62 mm孔道为外包络示意，不含钢绞线"
+    },
+    {
+      "id": "R02",
+      "title": "上部钢筋由什么围住",
+      "kind": "blender",
+      "src": "../assets/publication/blender-bridge/renders/rebar_section.png",
+      "note": "单片中跨边梁，模型梁长29.30 m，梁高2.00 m；15根普通纵筋；143道腹板主箍和143道独立翼缘联系筋；三条φ62 mm孔道为外包络示意，不含钢绞线"
+    }
+  ],
+  "videos": [
+    {
+      "id": "D01",
+      "title": "车放正中间，五根梁就一定平均分？",
+      "kind": "dialogue",
+      "src": "../assets/videos/dialogue-pilot/D01-dialogue.mp4",
+      "poster": "../assets/videos/dialogue-pilot/D01-poster.jpg",
+      "duration": 171.370667,
+      "subtitle": "../assets/videos/dialogue-pilot/D01-dialogue.vtt",
+      "script": "../assets/videos/dialogue-pilot/D01-script.md"
+    },
+    {
+      "id": "D02",
+      "title": "把搁板放大一倍，为什么不是重一倍？",
+      "kind": "dialogue",
+      "src": "../assets/videos/dialogue-pilot/D02-dialogue.mp4",
+      "poster": "../assets/videos/dialogue-pilot/D02-poster.jpg",
+      "duration": 93.376,
+      "subtitle": "../assets/videos/dialogue-pilot/D02-dialogue.vtt",
+      "script": "../assets/videos/dialogue-pilot/D02-script.md"
+    },
+    {
+      "id": "D03",
+      "title": "本来怕被拉开，为什么还要先拉钢索？",
+      "kind": "dialogue",
+      "src": "../assets/videos/dialogue-pilot/D03-dialogue.mp4",
+      "poster": "../assets/videos/dialogue-pilot/D03-poster.jpg",
+      "duration": 88.725333,
+      "subtitle": "../assets/videos/dialogue-pilot/D03-dialogue.vtt",
+      "script": "../assets/videos/dialogue-pilot/D03-script.md"
+    },
+    {
+      "id": "D04",
+      "title": "车越多，桥的每一处都更不利吗？",
+      "kind": "dialogue",
+      "src": "../assets/videos/dialogue-pilot/D04-dialogue.mp4",
+      "poster": "../assets/videos/dialogue-pilot/D04-poster.jpg",
+      "duration": 86.314667,
+      "subtitle": "../assets/videos/dialogue-pilot/D04-dialogue.vtt",
+      "script": "../assets/videos/dialogue-pilot/D04-script.md"
+    },
+    {
+      "id": "D05",
+      "title": "网格都这么细了，怎么还可能算错？",
+      "kind": "dialogue",
+      "src": "../assets/videos/dialogue-pilot/D05-dialogue.mp4",
+      "poster": "../assets/videos/dialogue-pilot/D05-poster.jpg",
+      "duration": 79.658667,
+      "subtitle": "../assets/videos/dialogue-pilot/D05-dialogue.vtt",
+      "script": "../assets/videos/dialogue-pilot/D05-script.md"
+    },
+    {
+      "id": "M01",
+      "title": "结构体系与力流",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M01_force_path.mp4",
+      "poster": "../assets/videos/manim/posters/M01_force_path.png",
+      "duration": 54.73
+    },
+    {
+      "id": "M02",
+      "title": "跨径与尺度效应",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M02_scale_effect.mp4",
+      "poster": "../assets/videos/manim/posters/M02_scale_effect.png",
+      "duration": 44.67
+    },
+    {
+      "id": "M03",
+      "title": "偏心受压与截面核心",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M03_eccentric_core.mp4",
+      "poster": "../assets/videos/manim/posters/M03_eccentric_core.png",
+      "duration": 54.67
+    },
+    {
+      "id": "M04",
+      "title": "预应力的三种等价表示",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M04_prestress_views.mp4",
+      "poster": "../assets/videos/manim/posters/M04_prestress_views.png",
+      "duration": 52.47
+    },
+    {
+      "id": "M05",
+      "title": "作用组合与瀑布图",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M05_combination_waterfall.mp4",
+      "poster": "../assets/videos/manim/posters/M05_combination_waterfall.png",
+      "duration": 51.8
+    },
+    {
+      "id": "M06",
+      "title": "影响线与移动加载",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M06_influence_line.mp4",
+      "poster": "../assets/videos/manim/posters/M06_influence_line.png",
+      "duration": 56.67
+    },
+    {
+      "id": "M07",
+      "title": "箱梁挖空与截面效率",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M07_box_efficiency.mp4",
+      "poster": "../assets/videos/manim/posters/M07_box_efficiency.png",
+      "duration": 54.67
+    },
+    {
+      "id": "M08",
+      "title": "拱轴、压力线与偏心",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M08_arch_thrust_line.mp4",
+      "poster": "../assets/videos/manim/posters/M08_arch_thrust_line.png",
+      "duration": 45.8
+    },
+    {
+      "id": "M09",
+      "title": "斜拉索影响矩阵与成桥状态",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M09_stay_matrix.mp4",
+      "poster": "../assets/videos/manim/posters/M09_stay_matrix.png",
+      "duration": 50.6
+    },
+    {
+      "id": "M10",
+      "title": "悬索线型、矢跨比与水平分力",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M10_suspension_sag.mp4",
+      "poster": "../assets/videos/manim/posters/M10_suspension_sag.png",
+      "duration": 55.67
+    },
+    {
+      "id": "M11",
+      "title": "温度变形与纵向约束",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M11_thermal_restraint.mp4",
+      "poster": "../assets/videos/manim/posters/M11_thermal_restraint.png",
+      "duration": 48.6
+    },
+    {
+      "id": "M12",
+      "title": "模态、频比与共振",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M12_modal_resonance.mp4",
+      "poster": "../assets/videos/manim/posters/M12_modal_resonance.png",
+      "duration": 45.67
+    },
+    {
+      "id": "M13",
+      "title": "风速平方律与风致现象",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M13_wind_phenomena.mp4",
+      "poster": "../assets/videos/manim/posters/M13_wind_phenomena.png",
+      "duration": 57.27
+    },
+    {
+      "id": "M14",
+      "title": "性能退化与时变可靠度",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M14_time_reliability.mp4",
+      "poster": "../assets/videos/manim/posters/M14_time_reliability.png",
+      "duration": 55.2
+    },
+    {
+      "id": "M15",
+      "title": "有限元模型层级与可验证性",
+      "kind": "manim",
+      "src": "../assets/videos/manim/M15_model_hierarchy.mp4",
+      "poster": "../assets/videos/manim/posters/M15_model_hierarchy.png",
+      "duration": 49.4
+    },
+    {
+      "id": "C01U01",
+      "title": "移动荷载，先守住平衡",
+      "kind": "core",
+      "chapter": 1,
+      "src": "../assets/videos/core/C01U01.mp4",
+      "poster": "../assets/videos/core/posters/C01U01.jpg",
+      "duration": 46.533333,
+      "subtitle": "../assets/videos/core/C01U01.vtt",
+      "script": "../notebooks/course-data/C01U01.txt"
+    },
+    {
+      "id": "C01U02",
+      "title": "从梁式弯曲到拱的轴向传力",
+      "kind": "core",
+      "chapter": 1,
+      "src": "../assets/videos/core/C01U02.mp4",
+      "poster": "../assets/videos/core/posters/C01U02.jpg",
+      "duration": 48.566667,
+      "subtitle": "../assets/videos/core/C01U02.vtt",
+      "script": "../notebooks/course-data/C01U02.txt"
+    },
+    {
+      "id": "C01U03",
+      "title": "模型为何必须声明边界",
+      "kind": "core",
+      "chapter": 1,
+      "src": "../assets/videos/core/C01U03.mp4",
+      "poster": "../assets/videos/core/posters/C01U03.jpg",
+      "duration": 47.333333,
+      "subtitle": "../assets/videos/core/C01U03.vtt",
+      "script": "../notebooks/course-data/C01U03.txt"
+    },
+    {
+      "id": "C01U04",
+      "title": "长度、面积、体积不是同一种增长",
+      "kind": "core",
+      "chapter": 1,
+      "src": "../assets/videos/core/C01U04.mp4",
+      "poster": "../assets/videos/core/posters/C01U04.jpg",
+      "duration": 48.866667,
+      "subtitle": "../assets/videos/core/C01U04.vtt",
+      "script": "../notebooks/course-data/C01U04.txt"
+    },
+    {
+      "id": "C01U05",
+      "title": "截面惯性矩不等于整体刚度",
+      "kind": "core",
+      "chapter": 1,
+      "src": "../assets/videos/core/C01U05.mp4",
+      "poster": "../assets/videos/core/posters/C01U05.jpg",
+      "duration": 47.733333,
+      "subtitle": "../assets/videos/core/C01U05.vtt",
+      "script": "../notebooks/course-data/C01U05.txt"
+    },
+    {
+      "id": "C01U06",
+      "title": "自重为何惩罚大跨度",
+      "kind": "core",
+      "chapter": 1,
+      "src": "../assets/videos/core/C01U06.mp4",
+      "poster": "../assets/videos/core/posters/C01U06.jpg",
+      "duration": 46.766667,
+      "subtitle": "../assets/videos/core/C01U06.vtt",
+      "script": "../notebooks/course-data/C01U06.txt"
+    },
+    {
+      "id": "C01U07",
+      "title": "同样放大，换荷载便换结论",
+      "kind": "core",
+      "chapter": 1,
+      "src": "../assets/videos/core/C01U07.mp4",
+      "poster": "../assets/videos/core/posters/C01U07.jpg",
+      "duration": 47.2,
+      "subtitle": "../assets/videos/core/C01U07.vtt",
+      "script": "../notebooks/course-data/C01U07.txt"
+    },
+    {
+      "id": "C01U08",
+      "title": "同一荷载，刚度决定分工",
+      "kind": "core",
+      "chapter": 1,
+      "src": "../assets/videos/core/C01U08.mp4",
+      "poster": "../assets/videos/core/posters/C01U08.jpg",
+      "duration": 44.366667,
+      "subtitle": "../assets/videos/core/C01U08.vtt",
+      "script": "../notebooks/course-data/C01U08.txt"
+    },
+    {
+      "id": "C01U09",
+      "title": "方案比较先看敏感性",
+      "kind": "core",
+      "chapter": 1,
+      "src": "../assets/videos/core/C01U09.mp4",
+      "poster": "../assets/videos/core/posters/C01U09.jpg",
+      "duration": 45.566667,
+      "subtitle": "../assets/videos/core/C01U09.vtt",
+      "script": "../notebooks/course-data/C01U09.txt"
+    },
+    {
+      "id": "C01U10",
+      "title": "把复杂模型交给一个极限情形",
+      "kind": "core",
+      "chapter": 1,
+      "src": "../assets/videos/core/C01U10.mp4",
+      "poster": "../assets/videos/core/posters/C01U10.jpg",
+      "duration": 47.533333,
+      "subtitle": "../assets/videos/core/C01U10.vtt",
+      "script": "../notebooks/course-data/C01U10.txt"
+    },
+    {
+      "id": "C02U01",
+      "title": "偏心荷载等价为轴力加弯矩",
+      "kind": "core",
+      "chapter": 2,
+      "src": "../assets/videos/core/C02U01.mp4",
+      "poster": "../assets/videos/core/posters/C02U01.jpg",
+      "duration": 45.633333,
+      "subtitle": "../assets/videos/core/C02U01.vtt",
+      "script": "../notebooks/course-data/C02U01.txt"
+    },
+    {
+      "id": "C02U02",
+      "title": "截面核心是怎样出现的",
+      "kind": "core",
+      "chapter": 2,
+      "src": "../assets/videos/core/C02U02.mp4",
+      "poster": "../assets/videos/core/posters/C02U02.jpg",
+      "duration": 46.133333,
+      "subtitle": "../assets/videos/core/C02U02.vtt",
+      "script": "../notebooks/course-data/C02U02.txt"
+    },
+    {
+      "id": "C02U03",
+      "title": "核心条件不等于大、小偏心分界",
+      "kind": "core",
+      "chapter": 2,
+      "src": "../assets/videos/core/C02U03.mp4",
+      "poster": "../assets/videos/core/posters/C02U03.jpg",
+      "duration": 49.833333,
+      "subtitle": "../assets/videos/core/C02U03.vtt",
+      "script": "../notebooks/course-data/C02U03.txt"
+    },
+    {
+      "id": "C02U04",
+      "title": "固定外包尺寸，比较空心截面效率",
+      "kind": "core",
+      "chapter": 2,
+      "src": "../assets/videos/core/C02U04.mp4",
+      "poster": "../assets/videos/core/posters/C02U04.jpg",
+      "duration": 49.5,
+      "subtitle": "../assets/videos/core/C02U04.vtt",
+      "script": "../notebooks/course-data/C02U04.txt"
+    },
+    {
+      "id": "C02U05",
+      "title": "截面加高为什么比加宽敏感",
+      "kind": "core",
+      "chapter": 2,
+      "src": "../assets/videos/core/C02U05.mp4",
+      "poster": "../assets/videos/core/posters/C02U05.jpg",
+      "duration": 44.966667,
+      "subtitle": "../assets/videos/core/C02U05.vtt",
+      "script": "../notebooks/course-data/C02U05.txt"
+    },
+    {
+      "id": "C02U06",
+      "title": "稳定是平衡路径问题",
+      "kind": "core",
+      "chapter": 2,
+      "src": "../assets/videos/core/C02U06.mp4",
+      "poster": "../assets/videos/core/posters/C02U06.jpg",
+      "duration": 47.466667,
+      "subtitle": "../assets/videos/core/C02U06.vtt",
+      "script": "../notebooks/course-data/C02U06.txt"
+    },
+    {
+      "id": "C02U07",
+      "title": "预应力先改变初始状态",
+      "kind": "core",
+      "chapter": 2,
+      "src": "../assets/videos/core/C02U07.mp4",
+      "poster": "../assets/videos/core/posters/C02U07.jpg",
+      "duration": 46.133333,
+      "subtitle": "../assets/videos/core/C02U07.vtt",
+      "script": "../notebooks/course-data/C02U07.txt"
+    },
+    {
+      "id": "C02U08",
+      "title": "热胀受阻才产生温度内力",
+      "kind": "core",
+      "chapter": 2,
+      "src": "../assets/videos/core/C02U08.mp4",
+      "poster": "../assets/videos/core/posters/C02U08.jpg",
+      "duration": 47.433333,
+      "subtitle": "../assets/videos/core/C02U08.vtt",
+      "script": "../notebooks/course-data/C02U08.txt"
+    },
+    {
+      "id": "C02U09",
+      "title": "质量、刚度与频率不是单独变化",
+      "kind": "core",
+      "chapter": 2,
+      "src": "../assets/videos/core/C02U09.mp4",
+      "poster": "../assets/videos/core/posters/C02U09.jpg",
+      "duration": 45.866667,
+      "subtitle": "../assets/videos/core/C02U09.vtt",
+      "script": "../notebooks/course-data/C02U09.txt"
+    },
+    {
+      "id": "C02U10",
+      "title": "线性叠加的边界在哪里",
+      "kind": "core",
+      "chapter": 2,
+      "src": "../assets/videos/core/C02U10.mp4",
+      "poster": "../assets/videos/core/posters/C02U10.jpg",
+      "duration": 48.4,
+      "subtitle": "../assets/videos/core/C02U10.vtt",
+      "script": "../notebooks/course-data/C02U10.txt"
+    },
+    {
+      "id": "C03U01",
+      "title": "作用大小与响应大小之间隔着模型",
+      "kind": "core",
+      "chapter": 3,
+      "src": "../assets/videos/core/C03U01.mp4",
+      "poster": "../assets/videos/core/posters/C03U01.jpg",
+      "duration": 46.2,
+      "subtitle": "../assets/videos/core/C03U01.vtt",
+      "script": "../notebooks/course-data/C03U01.txt"
+    },
+    {
+      "id": "C03U02",
+      "title": "等效荷载同时保留力和矩",
+      "kind": "core",
+      "chapter": 3,
+      "src": "../assets/videos/core/C03U02.mp4",
+      "poster": "../assets/videos/core/posters/C03U02.jpg",
+      "duration": 46.866667,
+      "subtitle": "../assets/videos/core/C03U02.vtt",
+      "script": "../notebooks/course-data/C03U02.txt"
+    },
+    {
+      "id": "C03U03",
+      "title": "组合不是把所有最大值相加",
+      "kind": "core",
+      "chapter": 3,
+      "src": "../assets/videos/core/C03U03.mp4",
+      "poster": "../assets/videos/core/posters/C03U03.jpg",
+      "duration": 44.566667,
+      "subtitle": "../assets/videos/core/C03U03.vtt",
+      "script": "../notebooks/course-data/C03U03.txt"
+    },
+    {
+      "id": "C03U04",
+      "title": "瀑布图读的是代数贡献",
+      "kind": "core",
+      "chapter": 3,
+      "src": "../assets/videos/core/C03U04.mp4",
+      "poster": "../assets/videos/core/posters/C03U04.jpg",
+      "duration": 47.4,
+      "subtitle": "../assets/videos/core/C03U04.vtt",
+      "script": "../notebooks/course-data/C03U04.txt"
+    },
+    {
+      "id": "C03U05",
+      "title": "从安全余量走到失效概率",
+      "kind": "core",
+      "chapter": 3,
+      "src": "../assets/videos/core/C03U05.mp4",
+      "poster": "../assets/videos/core/posters/C03U05.jpg",
+      "duration": 44.233333,
+      "subtitle": "../assets/videos/core/C03U05.vtt",
+      "script": "../notebooks/course-data/C03U05.txt"
+    },
+    {
+      "id": "C03U06",
+      "title": "不确定性本身也改变结论",
+      "kind": "core",
+      "chapter": 3,
+      "src": "../assets/videos/core/C03U06.mp4",
+      "poster": "../assets/videos/core/posters/C03U06.jpg",
+      "duration": 45.8,
+      "subtitle": "../assets/videos/core/C03U06.vtt",
+      "script": "../notebooks/course-data/C03U06.txt"
+    },
+    {
+      "id": "C03U07",
+      "title": "相关性进入余量的方差",
+      "kind": "core",
+      "chapter": 3,
+      "src": "../assets/videos/core/C03U07.mp4",
+      "poster": "../assets/videos/core/posters/C03U07.jpg",
+      "duration": 46.7,
+      "subtitle": "../assets/videos/core/C03U07.vtt",
+      "script": "../notebooks/course-data/C03U07.txt"
+    },
+    {
+      "id": "C03U08",
+      "title": "移动荷载：固定输出再移动输入",
+      "kind": "core",
+      "chapter": 3,
+      "src": "../assets/videos/core/C03U08.mp4",
+      "poster": "../assets/videos/core/posters/C03U08.jpg",
+      "duration": 48.4,
+      "subtitle": "../assets/videos/core/C03U08.vtt",
+      "script": "../notebooks/course-data/C03U08.txt"
+    },
+    {
+      "id": "C03U09",
+      "title": "正、负区段要分别构造不利布载",
+      "kind": "core",
+      "chapter": 3,
+      "src": "../assets/videos/core/C03U09.mp4",
+      "poster": "../assets/videos/core/posters/C03U09.jpg",
+      "duration": 51.7,
+      "subtitle": "../assets/videos/core/C03U09.vtt",
+      "script": "../notebooks/course-data/C03U09.txt"
+    },
+    {
+      "id": "C03U10",
+      "title": "可靠度模型先做可解释的核验",
+      "kind": "core",
+      "chapter": 3,
+      "src": "../assets/videos/core/C03U10.mp4",
+      "poster": "../assets/videos/core/posters/C03U10.jpg",
+      "duration": 45.066667,
+      "subtitle": "../assets/videos/core/C03U10.vtt",
+      "script": "../notebooks/course-data/C03U10.txt"
+    },
+    {
+      "id": "C04U01",
+      "title": "从简支反力到梁的整体平衡",
+      "kind": "core",
+      "chapter": 4,
+      "src": "../assets/videos/core/C04U01.mp4",
+      "poster": "../assets/videos/core/posters/C04U01.jpg",
+      "duration": 46.866667,
+      "subtitle": "../assets/videos/core/C04U01.vtt",
+      "script": "../notebooks/course-data/C04U01.txt"
+    },
+    {
+      "id": "C04U02",
+      "title": "弯矩、应力、挠度是三个输出",
+      "kind": "core",
+      "chapter": 4,
+      "src": "../assets/videos/core/C04U02.mp4",
+      "poster": "../assets/videos/core/posters/C04U02.jpg",
+      "duration": 47.033333,
+      "subtitle": "../assets/videos/core/C04U02.vtt",
+      "script": "../notebooks/course-data/C04U02.txt"
+    },
+    {
+      "id": "C04U03",
+      "title": "箱梁的效率来自材料位置",
+      "kind": "core",
+      "chapter": 4,
+      "src": "../assets/videos/core/C04U03.mp4",
+      "poster": "../assets/videos/core/posters/C04U03.jpg",
+      "duration": 47.833333,
+      "subtitle": "../assets/videos/core/C04U03.vtt",
+      "script": "../notebooks/course-data/C04U03.txt"
+    },
+    {
+      "id": "C04U04",
+      "title": "影响线换一种方式组织计算",
+      "kind": "core",
+      "chapter": 4,
+      "src": "../assets/videos/core/C04U04.mp4",
+      "poster": "../assets/videos/core/posters/C04U04.jpg",
+      "duration": 48.633333,
+      "subtitle": "../assets/videos/core/C04U04.vtt",
+      "script": "../notebooks/course-data/C04U04.txt"
+    },
+    {
+      "id": "C04U05",
+      "title": "横向分配就是平均加偏心修正",
+      "kind": "core",
+      "chapter": 4,
+      "src": "../assets/videos/core/C04U05.mp4",
+      "poster": "../assets/videos/core/posters/C04U05.jpg",
+      "duration": 45.833333,
+      "subtitle": "../assets/videos/core/C04U05.vtt",
+      "script": "../notebooks/course-data/C04U05.txt"
+    },
+    {
+      "id": "C04U06",
+      "title": "不同刚度，分配系数就要重算",
+      "kind": "core",
+      "chapter": 4,
+      "src": "../assets/videos/core/C04U06.mp4",
+      "poster": "../assets/videos/core/posters/C04U06.jpg",
+      "duration": 48.966667,
+      "subtitle": "../assets/videos/core/C04U06.vtt",
+      "script": "../notebooks/course-data/C04U06.txt"
+    },
+    {
+      "id": "C04U07",
+      "title": "预应力的轴力与弯矩同时存在",
+      "kind": "core",
+      "chapter": 4,
+      "src": "../assets/videos/core/C04U07.mp4",
+      "poster": "../assets/videos/core/posters/C04U07.jpg",
+      "duration": 45.9,
+      "subtitle": "../assets/videos/core/C04U07.vtt",
+      "script": "../notebooks/course-data/C04U07.txt"
+    },
+    {
+      "id": "C04U08",
+      "title": "束形是把轴力变成分布作用",
+      "kind": "core",
+      "chapter": 4,
+      "src": "../assets/videos/core/C04U08.mp4",
+      "poster": "../assets/videos/core/posters/C04U08.jpg",
+      "duration": 48.466667,
+      "subtitle": "../assets/videos/core/C04U08.vtt",
+      "script": "../notebooks/course-data/C04U08.txt"
+    },
+    {
+      "id": "C04U09",
+      "title": "只增跨径与整体放大不同",
+      "kind": "core",
+      "chapter": 4,
+      "src": "../assets/videos/core/C04U09.mp4",
+      "poster": "../assets/videos/core/posters/C04U09.jpg",
+      "duration": 45.266667,
+      "subtitle": "../assets/videos/core/C04U09.vtt",
+      "script": "../notebooks/course-data/C04U09.txt"
+    },
+    {
+      "id": "C04U10",
+      "title": "横梁刚性假定也有失效边界",
+      "kind": "core",
+      "chapter": 4,
+      "src": "../assets/videos/core/C04U10.mp4",
+      "poster": "../assets/videos/core/posters/C04U10.jpg",
+      "duration": 47.366667,
+      "subtitle": "../assets/videos/core/C04U10.vtt",
+      "script": "../notebooks/course-data/C04U10.txt"
+    },
+    {
+      "id": "C05U01",
+      "title": "拱通过推力抵消梁式弯矩",
+      "kind": "core",
+      "chapter": 5,
+      "src": "../assets/videos/core/C05U01.mp4",
+      "poster": "../assets/videos/core/posters/C05U01.jpg",
+      "duration": 44.833333,
+      "subtitle": "../assets/videos/core/C05U01.vtt",
+      "script": "../notebooks/course-data/C05U01.txt"
+    },
+    {
+      "id": "C05U02",
+      "title": "合理拱轴只对应指定荷载",
+      "kind": "core",
+      "chapter": 5,
+      "src": "../assets/videos/core/C05U02.mp4",
+      "poster": "../assets/videos/core/posters/C05U02.jpg",
+      "duration": 49.033333,
+      "subtitle": "../assets/videos/core/C05U02.vtt",
+      "script": "../notebooks/course-data/C05U02.txt"
+    },
+    {
+      "id": "C05U03",
+      "title": "整体弯矩转成截面偏心",
+      "kind": "core",
+      "chapter": 5,
+      "src": "../assets/videos/core/C05U03.mp4",
+      "poster": "../assets/videos/core/posters/C05U03.jpg",
+      "duration": 46.666667,
+      "subtitle": "../assets/videos/core/C05U03.vtt",
+      "script": "../notebooks/course-data/C05U03.txt"
+    },
+    {
+      "id": "C05U04",
+      "title": "无拉应力与压力线位置",
+      "kind": "core",
+      "chapter": 5,
+      "src": "../assets/videos/core/C05U04.mp4",
+      "poster": "../assets/videos/core/posters/C05U04.jpg",
+      "duration": 44.6,
+      "subtitle": "../assets/videos/core/C05U04.vtt",
+      "script": "../notebooks/course-data/C05U04.txt"
+    },
+    {
+      "id": "C05U05",
+      "title": "矢跨比改变水平推力",
+      "kind": "core",
+      "chapter": 5,
+      "src": "../assets/videos/core/C05U05.mp4",
+      "poster": "../assets/videos/core/posters/C05U05.jpg",
+      "duration": 46.3,
+      "subtitle": "../assets/videos/core/C05U05.vtt",
+      "script": "../notebooks/course-data/C05U05.txt"
+    },
+    {
+      "id": "C05U06",
+      "title": "拱与悬索是受力的对应形态",
+      "kind": "core",
+      "chapter": 5,
+      "src": "../assets/videos/core/C05U06.mp4",
+      "poster": "../assets/videos/core/posters/C05U06.jpg",
+      "duration": 49.8,
+      "subtitle": "../assets/videos/core/C05U06.vtt",
+      "script": "../notebooks/course-data/C05U06.txt"
+    },
+    {
+      "id": "C05U07",
+      "title": "拱肋变细，稳定不会自动跟上",
+      "kind": "core",
+      "chapter": 5,
+      "src": "../assets/videos/core/C05U07.mp4",
+      "poster": "../assets/videos/core/posters/C05U07.jpg",
+      "duration": 48.7,
+      "subtitle": "../assets/videos/core/C05U07.vtt",
+      "script": "../notebooks/course-data/C05U07.txt"
+    },
+    {
+      "id": "C05U08",
+      "title": "合龙相当于锁定自由变形",
+      "kind": "core",
+      "chapter": 5,
+      "src": "../assets/videos/core/C05U08.mp4",
+      "poster": "../assets/videos/core/posters/C05U08.jpg",
+      "duration": 45.9,
+      "subtitle": "../assets/videos/core/C05U08.vtt",
+      "script": "../notebooks/course-data/C05U08.txt"
+    },
+    {
+      "id": "C05U09",
+      "title": "梁拱组合靠刚度分担作用",
+      "kind": "core",
+      "chapter": 5,
+      "src": "../assets/videos/core/C05U09.mp4",
+      "poster": "../assets/videos/core/posters/C05U09.jpg",
+      "duration": 47.066667,
+      "subtitle": "../assets/videos/core/C05U09.vtt",
+      "script": "../notebooks/course-data/C05U09.txt"
+    },
+    {
+      "id": "C05U10",
+      "title": "半跨荷载是检验类比的反例",
+      "kind": "core",
+      "chapter": 5,
+      "src": "../assets/videos/core/C05U10.mp4",
+      "poster": "../assets/videos/core/posters/C05U10.jpg",
+      "duration": 48.033333,
+      "subtitle": "../assets/videos/core/C05U10.vtt",
+      "script": "../notebooks/course-data/C05U10.txt"
+    },
+    {
+      "id": "C06U01",
+      "title": "拉索把竖向荷载传给塔与梁",
+      "kind": "core",
+      "chapter": 6,
+      "src": "../assets/videos/core/C06U01.mp4",
+      "poster": "../assets/videos/core/posters/C06U01.jpg",
+      "duration": 45.933333,
+      "subtitle": "../assets/videos/core/C06U01.vtt",
+      "script": "../notebooks/course-data/C06U01.txt"
+    },
+    {
+      "id": "C06U02",
+      "title": "调整一根索会影响多个输出",
+      "kind": "core",
+      "chapter": 6,
+      "src": "../assets/videos/core/C06U02.mp4",
+      "poster": "../assets/videos/core/posters/C06U02.jpg",
+      "duration": 44.833333,
+      "subtitle": "../assets/videos/core/C06U02.vtt",
+      "script": "../notebooks/course-data/C06U02.txt"
+    },
+    {
+      "id": "C06U03",
+      "title": "成桥目标是多个条件的共同满足",
+      "kind": "core",
+      "chapter": 6,
+      "src": "../assets/videos/core/C06U03.mp4",
+      "poster": "../assets/videos/core/posters/C06U03.jpg",
+      "duration": 46.533333,
+      "subtitle": "../assets/videos/core/C06U03.vtt",
+      "script": "../notebooks/course-data/C06U03.txt"
+    },
+    {
+      "id": "C06U04",
+      "title": "影响列接近时，控制就不稳定",
+      "kind": "core",
+      "chapter": 6,
+      "src": "../assets/videos/core/C06U04.mp4",
+      "poster": "../assets/videos/core/posters/C06U04.jpg",
+      "duration": 50.566667,
+      "subtitle": "../assets/videos/core/C06U04.vtt",
+      "script": "../notebooks/course-data/C06U04.txt"
+    },
+    {
+      "id": "C06U05",
+      "title": "主梁轴压仍要和弯矩共同判断",
+      "kind": "core",
+      "chapter": 6,
+      "src": "../assets/videos/core/C06U05.mp4",
+      "poster": "../assets/videos/core/posters/C06U05.jpg",
+      "duration": 46.566667,
+      "subtitle": "../assets/videos/core/C06U05.vtt",
+      "script": "../notebooks/course-data/C06U05.txt"
+    },
+    {
+      "id": "C06U06",
+      "title": "索越平，水平力越大",
+      "kind": "core",
+      "chapter": 6,
+      "src": "../assets/videos/core/C06U06.mp4",
+      "poster": "../assets/videos/core/posters/C06U06.jpg",
+      "duration": 44.833333,
+      "subtitle": "../assets/videos/core/C06U06.vtt",
+      "script": "../notebooks/course-data/C06U06.txt"
+    },
+    {
+      "id": "C06U07",
+      "title": "温度与约束改变成桥状态",
+      "kind": "core",
+      "chapter": 6,
+      "src": "../assets/videos/core/C06U07.mp4",
+      "poster": "../assets/videos/core/posters/C06U07.jpg",
+      "duration": 47.133333,
+      "subtitle": "../assets/videos/core/C06U07.vtt",
+      "script": "../notebooks/course-data/C06U07.txt"
+    },
+    {
+      "id": "C06U08",
+      "title": "阻尼与刚度解决不同问题",
+      "kind": "core",
+      "chapter": 6,
+      "src": "../assets/videos/core/C06U08.mp4",
+      "poster": "../assets/videos/core/posters/C06U08.jpg",
+      "duration": 44.866667,
+      "subtitle": "../assets/videos/core/C06U08.vtt",
+      "script": "../notebooks/course-data/C06U08.txt"
+    },
+    {
+      "id": "C06U09",
+      "title": "施工阶段不能沿用成桥有效长度",
+      "kind": "core",
+      "chapter": 6,
+      "src": "../assets/videos/core/C06U09.mp4",
+      "poster": "../assets/videos/core/posters/C06U09.jpg",
+      "duration": 47.466667,
+      "subtitle": "../assets/videos/core/C06U09.vtt",
+      "script": "../notebooks/course-data/C06U09.txt"
+    },
+    {
+      "id": "C06U10",
+      "title": "调索必须留下输入输出证据",
+      "kind": "core",
+      "chapter": 6,
+      "src": "../assets/videos/core/C06U10.mp4",
+      "poster": "../assets/videos/core/posters/C06U10.jpg",
+      "duration": 47.466667,
+      "subtitle": "../assets/videos/core/C06U10.vtt",
+      "script": "../notebooks/course-data/C06U10.txt"
+    },
+    {
+      "id": "C07U01",
+      "title": "索形由荷载与边界共同决定",
+      "kind": "core",
+      "chapter": 7,
+      "src": "../assets/videos/core/C07U01.mp4",
+      "poster": "../assets/videos/core/posters/C07U01.jpg",
+      "duration": 47.233333,
+      "subtitle": "../assets/videos/core/C07U01.vtt",
+      "script": "../notebooks/course-data/C07U01.txt"
+    },
+    {
+      "id": "C07U02",
+      "title": "小垂度不是免费减小位移",
+      "kind": "core",
+      "chapter": 7,
+      "src": "../assets/videos/core/C07U02.mp4",
+      "poster": "../assets/videos/core/posters/C07U02.jpg",
+      "duration": 45.566667,
+      "subtitle": "../assets/videos/core/C07U02.vtt",
+      "script": "../notebooks/course-data/C07U02.txt"
+    },
+    {
+      "id": "C07U03",
+      "title": "主缆张力与截面应力分开看",
+      "kind": "core",
+      "chapter": 7,
+      "src": "../assets/videos/core/C07U03.mp4",
+      "poster": "../assets/videos/core/posters/C07U03.jpg",
+      "duration": 47.466667,
+      "subtitle": "../assets/videos/core/C07U03.vtt",
+      "script": "../notebooks/course-data/C07U03.txt"
+    },
+    {
+      "id": "C07U04",
+      "title": "缆索与拱的类比保留了什么",
+      "kind": "core",
+      "chapter": 7,
+      "src": "../assets/videos/core/C07U04.mp4",
+      "poster": "../assets/videos/core/posters/C07U04.jpg",
+      "duration": 47.4,
+      "subtitle": "../assets/videos/core/C07U04.vtt",
+      "script": "../notebooks/course-data/C07U04.txt"
+    },
+    {
+      "id": "C07U05",
+      "title": "吊索传力不等于加劲梁不受弯",
+      "kind": "core",
+      "chapter": 7,
+      "src": "../assets/videos/core/C07U05.mp4",
+      "poster": "../assets/videos/core/posters/C07U05.jpg",
+      "duration": 47.066667,
+      "subtitle": "../assets/videos/core/C07U05.vtt",
+      "script": "../notebooks/course-data/C07U05.txt"
+    },
+    {
+      "id": "C07U06",
+      "title": "几何放大后，频率下降",
+      "kind": "core",
+      "chapter": 7,
+      "src": "../assets/videos/core/C07U06.mp4",
+      "poster": "../assets/videos/core/posters/C07U06.jpg",
+      "duration": 47.333333,
+      "subtitle": "../assets/videos/core/C07U06.vtt",
+      "script": "../notebooks/course-data/C07U06.txt"
+    },
+    {
+      "id": "C07U07",
+      "title": "锚碇是水平力的终点",
+      "kind": "core",
+      "chapter": 7,
+      "src": "../assets/videos/core/C07U07.mp4",
+      "poster": "../assets/videos/core/posters/C07U07.jpg",
+      "duration": 49.9,
+      "subtitle": "../assets/videos/core/C07U07.vtt",
+      "script": "../notebooks/course-data/C07U07.txt"
+    },
+    {
+      "id": "C07U08",
+      "title": "支承柔度参与体系刚度",
+      "kind": "core",
+      "chapter": 7,
+      "src": "../assets/videos/core/C07U08.mp4",
+      "poster": "../assets/videos/core/posters/C07U08.jpg",
+      "duration": 44.366667,
+      "subtitle": "../assets/videos/core/C07U08.vtt",
+      "script": "../notebooks/course-data/C07U08.txt"
+    },
+    {
+      "id": "C07U09",
+      "title": "周期荷载不只是更大的静载",
+      "kind": "core",
+      "chapter": 7,
+      "src": "../assets/videos/core/C07U09.mp4",
+      "poster": "../assets/videos/core/posters/C07U09.jpg",
+      "duration": 47.633333,
+      "subtitle": "../assets/videos/core/C07U09.vtt",
+      "script": "../notebooks/course-data/C07U09.txt"
+    },
+    {
+      "id": "C07U10",
+      "title": "用拱轴反例理解找形与使用状态",
+      "kind": "core",
+      "chapter": 7,
+      "src": "../assets/videos/core/C07U10.mp4",
+      "poster": "../assets/videos/core/posters/C07U10.jpg",
+      "duration": 54.0,
+      "subtitle": "../assets/videos/core/C07U10.vtt",
+      "script": "../notebooks/course-data/C07U10.txt"
+    },
+    {
+      "id": "C08U01",
+      "title": "支座首先定义自由度",
+      "kind": "core",
+      "chapter": 8,
+      "src": "../assets/videos/core/C08U01.mp4",
+      "poster": "../assets/videos/core/posters/C08U01.jpg",
+      "duration": 46.066667,
+      "subtitle": "../assets/videos/core/C08U01.vtt",
+      "script": "../notebooks/course-data/C08U01.txt"
+    },
+    {
+      "id": "C08U02",
+      "title": "均匀温升：自由与完全约束",
+      "kind": "core",
+      "chapter": 8,
+      "src": "../assets/videos/core/C08U02.mp4",
+      "poster": "../assets/videos/core/posters/C08U02.jpg",
+      "duration": 49.066667,
+      "subtitle": "../assets/videos/core/C08U02.vtt",
+      "script": "../notebooks/course-data/C08U02.txt"
+    },
+    {
+      "id": "C08U03",
+      "title": "刚度分配解释多墩水平力",
+      "kind": "core",
+      "chapter": 8,
+      "src": "../assets/videos/core/C08U03.mp4",
+      "poster": "../assets/videos/core/posters/C08U03.jpg",
+      "duration": 43.066667,
+      "subtitle": "../assets/videos/core/C08U03.vtt",
+      "script": "../notebooks/course-data/C08U03.txt"
+    },
+    {
+      "id": "C08U04",
+      "title": "偏心传力也发生在基础底面",
+      "kind": "core",
+      "chapter": 8,
+      "src": "../assets/videos/core/C08U04.mp4",
+      "poster": "../assets/videos/core/posters/C08U04.jpg",
+      "duration": 45.333333,
+      "subtitle": "../assets/videos/core/C08U04.vtt",
+      "script": "../notebooks/course-data/C08U04.txt"
+    },
+    {
+      "id": "C08U05",
+      "title": "墩高通过三次方影响侧向刚度",
+      "kind": "core",
+      "chapter": 8,
+      "src": "../assets/videos/core/C08U05.mp4",
+      "poster": "../assets/videos/core/posters/C08U05.jpg",
+      "duration": 49.633333,
+      "subtitle": "../assets/videos/core/C08U05.vtt",
+      "script": "../notebooks/course-data/C08U05.txt"
+    },
+    {
+      "id": "C08U06",
+      "title": "地基与墩柱串联共同变形",
+      "kind": "core",
+      "chapter": 8,
+      "src": "../assets/videos/core/C08U06.mp4",
+      "poster": "../assets/videos/core/posters/C08U06.jpg",
+      "duration": 44.566667,
+      "subtitle": "../assets/videos/core/C08U06.vtt",
+      "script": "../notebooks/course-data/C08U06.txt"
+    },
+    {
+      "id": "C08U07",
+      "title": "约束改变，内力就重新分配",
+      "kind": "core",
+      "chapter": 8,
+      "src": "../assets/videos/core/C08U07.mp4",
+      "poster": "../assets/videos/core/posters/C08U07.jpg",
+      "duration": 47.4,
+      "subtitle": "../assets/videos/core/C08U07.vtt",
+      "script": "../notebooks/course-data/C08U07.txt"
+    },
+    {
+      "id": "C08U08",
+      "title": "脱空不是把负反力删掉",
+      "kind": "core",
+      "chapter": 8,
+      "src": "../assets/videos/core/C08U08.mp4",
+      "poster": "../assets/videos/core/posters/C08U08.jpg",
+      "duration": 45.8,
+      "subtitle": "../assets/videos/core/C08U08.vtt",
+      "script": "../notebooks/course-data/C08U08.txt"
+    },
+    {
+      "id": "C08U09",
+      "title": "顶升用单位响应建立调整规律",
+      "kind": "core",
+      "chapter": 8,
+      "src": "../assets/videos/core/C08U09.mp4",
+      "poster": "../assets/videos/core/posters/C08U09.jpg",
+      "duration": 47.066667,
+      "subtitle": "../assets/videos/core/C08U09.vtt",
+      "script": "../notebooks/course-data/C08U09.txt"
+    },
+    {
+      "id": "C08U10",
+      "title": "同温差放大结构，力和应力不同步",
+      "kind": "core",
+      "chapter": 8,
+      "src": "../assets/videos/core/C08U10.mp4",
+      "poster": "../assets/videos/core/posters/C08U10.jpg",
+      "duration": 46.866667,
+      "subtitle": "../assets/videos/core/C08U10.vtt",
+      "script": "../notebooks/course-data/C08U10.txt"
+    },
+    {
+      "id": "C09U01",
+      "title": "风力为什么跟风速平方有关",
+      "kind": "core",
+      "chapter": 9,
+      "src": "../assets/videos/core/C09U01.mp4",
+      "poster": "../assets/videos/core/posters/C09U01.jpg",
+      "duration": 44.433333,
+      "subtitle": "../assets/videos/core/C09U01.vtt",
+      "script": "../notebooks/course-data/C09U01.txt"
+    },
+    {
+      "id": "C09U02",
+      "title": "改变尺寸也改变受风面积",
+      "kind": "core",
+      "chapter": 9,
+      "src": "../assets/videos/core/C09U02.mp4",
+      "poster": "../assets/videos/core/posters/C09U02.jpg",
+      "duration": 49.466667,
+      "subtitle": "../assets/videos/core/C09U02.vtt",
+      "script": "../notebooks/course-data/C09U02.txt"
+    },
+    {
+      "id": "C09U03",
+      "title": "气动系数是条件，不是常数真理",
+      "kind": "core",
+      "chapter": 9,
+      "src": "../assets/videos/core/C09U03.mp4",
+      "poster": "../assets/videos/core/posters/C09U03.jpg",
+      "duration": 46.966667,
+      "subtitle": "../assets/videos/core/C09U03.vtt",
+      "script": "../notebooks/course-data/C09U03.txt"
+    },
+    {
+      "id": "C09U04",
+      "title": "质量与刚度共同决定频率",
+      "kind": "core",
+      "chapter": 9,
+      "src": "../assets/videos/core/C09U04.mp4",
+      "poster": "../assets/videos/core/posters/C09U04.jpg",
+      "duration": 42.9,
+      "subtitle": "../assets/videos/core/C09U04.vtt",
+      "script": "../notebooks/course-data/C09U04.txt"
+    },
+    {
+      "id": "C09U05",
+      "title": "共振用频率比辨认",
+      "kind": "core",
+      "chapter": 9,
+      "src": "../assets/videos/core/C09U05.mp4",
+      "poster": "../assets/videos/core/posters/C09U05.jpg",
+      "duration": 46.966667,
+      "subtitle": "../assets/videos/core/C09U05.vtt",
+      "script": "../notebooks/course-data/C09U05.txt"
+    },
+    {
+      "id": "C09U06",
+      "title": "阻尼降低共振附近的稳态放大",
+      "kind": "core",
+      "chapter": 9,
+      "src": "../assets/videos/core/C09U06.mp4",
+      "poster": "../assets/videos/core/posters/C09U06.jpg",
+      "duration": 44.633333,
+      "subtitle": "../assets/videos/core/C09U06.vtt",
+      "script": "../notebooks/course-data/C09U06.txt"
+    },
+    {
+      "id": "C09U07",
+      "title": "涡脱落频率也有尺度关系",
+      "kind": "core",
+      "chapter": 9,
+      "src": "../assets/videos/core/C09U07.mp4",
+      "poster": "../assets/videos/core/posters/C09U07.jpg",
+      "duration": 47.1,
+      "subtitle": "../assets/videos/core/C09U07.vtt",
+      "script": "../notebooks/course-data/C09U07.txt"
+    },
+    {
+      "id": "C09U08",
+      "title": "几何相似不等于动力相似",
+      "kind": "core",
+      "chapter": 9,
+      "src": "../assets/videos/core/C09U08.mp4",
+      "poster": "../assets/videos/core/posters/C09U08.jpg",
+      "duration": 46.5,
+      "subtitle": "../assets/videos/core/C09U08.vtt",
+      "script": "../notebooks/course-data/C09U08.txt"
+    },
+    {
+      "id": "C09U09",
+      "title": "气动措施与结构措施分开比较",
+      "kind": "core",
+      "chapter": 9,
+      "src": "../assets/videos/core/C09U09.mp4",
+      "poster": "../assets/videos/core/posters/C09U09.jpg",
+      "duration": 45.766667,
+      "subtitle": "../assets/videos/core/C09U09.vtt",
+      "script": "../notebooks/course-data/C09U09.txt"
+    },
+    {
+      "id": "C09U10",
+      "title": "从风洞到计算都要验证假定",
+      "kind": "core",
+      "chapter": 9,
+      "src": "../assets/videos/core/C09U10.mp4",
+      "poster": "../assets/videos/core/posters/C09U10.jpg",
+      "duration": 46.966667,
+      "subtitle": "../assets/videos/core/C09U10.vtt",
+      "script": "../notebooks/course-data/C09U10.txt"
+    },
+    {
+      "id": "C10U01",
+      "title": "今天的余量不是全寿命余量",
+      "kind": "core",
+      "chapter": 10,
+      "src": "../assets/videos/core/C10U01.mp4",
+      "poster": "../assets/videos/core/posters/C10U01.jpg",
+      "duration": 45.366667,
+      "subtitle": "../assets/videos/core/C10U01.vtt",
+      "script": "../notebooks/course-data/C10U01.txt"
+    },
+    {
+      "id": "C10U02",
+      "title": "抗震需求先区分静力与动力",
+      "kind": "core",
+      "chapter": 10,
+      "src": "../assets/videos/core/C10U02.mp4",
+      "poster": "../assets/videos/core/posters/C10U02.jpg",
+      "duration": 49.133333,
+      "subtitle": "../assets/videos/core/C10U02.vtt",
+      "script": "../notebooks/course-data/C10U02.txt"
+    },
+    {
+      "id": "C10U03",
+      "title": "同一阻尼措施跨灾种迁移有边界",
+      "kind": "core",
+      "chapter": 10,
+      "src": "../assets/videos/core/C10U03.mp4",
+      "poster": "../assets/videos/core/posters/C10U03.jpg",
+      "duration": 46.2,
+      "subtitle": "../assets/videos/core/C10U03.vtt",
+      "script": "../notebooks/course-data/C10U03.txt"
+    },
+    {
+      "id": "C10U04",
+      "title": "劣化速率比初始值更值得追问",
+      "kind": "core",
+      "chapter": 10,
+      "src": "../assets/videos/core/C10U04.mp4",
+      "poster": "../assets/videos/core/posters/C10U04.jpg",
+      "duration": 46.1,
+      "subtitle": "../assets/videos/core/C10U04.vtt",
+      "script": "../notebooks/course-data/C10U04.txt"
+    },
+    {
+      "id": "C10U05",
+      "title": "截面损失要通过模型映射到性能",
+      "kind": "core",
+      "chapter": 10,
+      "src": "../assets/videos/core/C10U05.mp4",
+      "poster": "../assets/videos/core/posters/C10U05.jpg",
+      "duration": 49.5,
+      "subtitle": "../assets/videos/core/C10U05.vtt",
+      "script": "../notebooks/course-data/C10U05.txt"
+    },
+    {
+      "id": "C10U06",
+      "title": "疲劳由循环与幅值共同累积",
+      "kind": "core",
+      "chapter": 10,
+      "src": "../assets/videos/core/C10U06.mp4",
+      "poster": "../assets/videos/core/posters/C10U06.jpg",
+      "duration": 45.266667,
+      "subtitle": "../assets/videos/core/C10U06.vtt",
+      "script": "../notebooks/course-data/C10U06.txt"
+    },
+    {
+      "id": "C10U07",
+      "title": "新证据改变参数判断",
+      "kind": "core",
+      "chapter": 10,
+      "src": "../assets/videos/core/C10U07.mp4",
+      "poster": "../assets/videos/core/posters/C10U07.jpg",
+      "duration": 46.066667,
+      "subtitle": "../assets/videos/core/C10U07.vtt",
+      "script": "../notebooks/course-data/C10U07.txt"
+    },
+    {
+      "id": "C10U08",
+      "title": "监测精度决定证据的权重",
+      "kind": "core",
+      "chapter": 10,
+      "src": "../assets/videos/core/C10U08.mp4",
+      "poster": "../assets/videos/core/posters/C10U08.jpg",
+      "duration": 46.033333,
+      "subtitle": "../assets/videos/core/C10U08.vtt",
+      "script": "../notebooks/course-data/C10U08.txt"
+    },
+    {
+      "id": "C10U09",
+      "title": "比较方案同时展示不确定性",
+      "kind": "core",
+      "chapter": 10,
+      "src": "../assets/videos/core/C10U09.mp4",
+      "poster": "../assets/videos/core/posters/C10U09.jpg",
+      "duration": 44.166667,
+      "subtitle": "../assets/videos/core/C10U09.vtt",
+      "script": "../notebooks/course-data/C10U09.txt"
+    },
+    {
+      "id": "C10U10",
+      "title": "扩散时间也受尺寸平方控制",
+      "kind": "core",
+      "chapter": 10,
+      "src": "../assets/videos/core/C10U10.mp4",
+      "poster": "../assets/videos/core/posters/C10U10.jpg",
+      "duration": 49.4,
+      "subtitle": "../assets/videos/core/C10U10.vtt",
+      "script": "../notebooks/course-data/C10U10.txt"
+    },
+    {
+      "id": "C11U01",
+      "title": "从问题选择模型，而不是反过来",
+      "kind": "core",
+      "chapter": 11,
+      "src": "../assets/videos/core/C11U01.mp4",
+      "poster": "../assets/videos/core/posters/C11U01.jpg",
+      "duration": 47.333333,
+      "subtitle": "../assets/videos/core/C11U01.vtt",
+      "script": "../notebooks/course-data/C11U01.txt"
+    },
+    {
+      "id": "C11U02",
+      "title": "最小模型也要保留力和矩",
+      "kind": "core",
+      "chapter": 11,
+      "src": "../assets/videos/core/C11U02.mp4",
+      "poster": "../assets/videos/core/posters/C11U02.jpg",
+      "duration": 48.133333,
+      "subtitle": "../assets/videos/core/C11U02.vtt",
+      "script": "../notebooks/course-data/C11U02.txt"
+    },
+    {
+      "id": "C11U03",
+      "title": "离散细化改变误差而非物理对象",
+      "kind": "core",
+      "chapter": 11,
+      "src": "../assets/videos/core/C11U03.mp4",
+      "poster": "../assets/videos/core/posters/C11U03.jpg",
+      "duration": 47.3,
+      "subtitle": "../assets/videos/core/C11U03.vtt",
+      "script": "../notebooks/course-data/C11U03.txt"
+    },
+    {
+      "id": "C11U04",
+      "title": "刚度矩阵由平衡与协调组成",
+      "kind": "core",
+      "chapter": 11,
+      "src": "../assets/videos/core/C11U04.mp4",
+      "poster": "../assets/videos/core/posters/C11U04.jpg",
+      "duration": 47.033333,
+      "subtitle": "../assets/videos/core/C11U04.vtt",
+      "script": "../notebooks/course-data/C11U04.txt"
+    },
+    {
+      "id": "C11U05",
+      "title": "边界错误可以伪装成漂亮结果",
+      "kind": "core",
+      "chapter": 11,
+      "src": "../assets/videos/core/C11U05.mp4",
+      "poster": "../assets/videos/core/posters/C11U05.jpg",
+      "duration": 47.066667,
+      "subtitle": "../assets/videos/core/C11U05.vtt",
+      "script": "../notebooks/course-data/C11U05.txt"
+    },
+    {
+      "id": "C11U06",
+      "title": "求解之前先检查守恒",
+      "kind": "core",
+      "chapter": 11,
+      "src": "../assets/videos/core/C11U06.mp4",
+      "poster": "../assets/videos/core/posters/C11U06.jpg",
+      "duration": 46.733333,
+      "subtitle": "../assets/videos/core/C11U06.vtt",
+      "script": "../notebooks/course-data/C11U06.txt"
+    },
+    {
+      "id": "C11U07",
+      "title": "数值收敛与模型正确分两步证明",
+      "kind": "core",
+      "chapter": 11,
+      "src": "../assets/videos/core/C11U07.mp4",
+      "poster": "../assets/videos/core/posters/C11U07.jpg",
+      "duration": 47.466667,
+      "subtitle": "../assets/videos/core/C11U07.vtt",
+      "script": "../notebooks/course-data/C11U07.txt"
+    },
+    {
+      "id": "C11U08",
+      "title": "病态问题不会被更多小数解决",
+      "kind": "core",
+      "chapter": 11,
+      "src": "../assets/videos/core/C11U08.mp4",
+      "poster": "../assets/videos/core/posters/C11U08.jpg",
+      "duration": 48.866667,
+      "subtitle": "../assets/videos/core/C11U08.vtt",
+      "script": "../notebooks/course-data/C11U08.txt"
+    },
+    {
+      "id": "C11U09",
+      "title": "AI输出也必须经过方向与量纲检查",
+      "kind": "core",
+      "chapter": 11,
+      "src": "../assets/videos/core/C11U09.mp4",
+      "poster": "../assets/videos/core/posters/C11U09.jpg",
+      "duration": 47.766667,
+      "subtitle": "../assets/videos/core/C11U09.vtt",
+      "script": "../notebooks/course-data/C11U09.txt"
+    },
+    {
+      "id": "C11U10",
+      "title": "从单位影响到优化与反算",
+      "kind": "core",
+      "chapter": 11,
+      "src": "../assets/videos/core/C11U10.mp4",
+      "poster": "../assets/videos/core/posters/C11U10.jpg",
+      "duration": 47.5,
+      "subtitle": "../assets/videos/core/C11U10.vtt",
+      "script": "../notebooks/course-data/C11U10.txt"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "C01U01",
+      "title": "移动荷载，先守住平衡",
+      "chapter": 1,
+      "chapter_title": "体系与规模",
+      "insight": "荷载移动时左右反力改变，合力与合矩仍须守恒。",
+      "src": "../interactive/lessons/C01U01.html"
+    },
+    {
+      "id": "C01U02",
+      "title": "从梁式弯曲到拱的轴向传力",
+      "chapter": 1,
+      "chapter_title": "体系与规模",
+      "insight": "抬高拱轴可以减少给定均布荷载下所需水平推力，但拱脚仍要传递水平力。",
+      "src": "../interactive/lessons/C01U02.html"
+    },
+    {
+      "id": "C01U03",
+      "title": "模型为何必须声明边界",
+      "chapter": 1,
+      "chapter_title": "体系与规模",
+      "insight": "相同温升下，从自由伸长到完全约束，变形逐渐转换为内力。",
+      "src": "../interactive/lessons/C01U03.html"
+    },
+    {
+      "id": "C01U04",
+      "title": "长度、面积、体积不是同一种增长",
+      "chapter": 1,
+      "chapter_title": "体系与规模",
+      "insight": "全尺寸放大时，长度、面积与体积分别按一次、二次和三次方变化。",
+      "src": "../interactive/lessons/C01U04.html"
+    },
+    {
+      "id": "C01U05",
+      "title": "截面惯性矩不等于整体刚度",
+      "chapter": 1,
+      "chapter_title": "体系与规模",
+      "insight": "惯性矩按四次方增长，但几何相似梁的横向位移刚度只按一次方增长。",
+      "src": "../interactive/lessons/C01U05.html"
+    },
+    {
+      "id": "C01U06",
+      "title": "自重为何惩罚大跨度",
+      "chapter": 1,
+      "chapter_title": "体系与规模",
+      "insight": "相似放大时，自重应力随尺度一次增长，相对挠度也随一次增长。",
+      "src": "../interactive/lessons/C01U06.html"
+    },
+    {
+      "id": "C01U07",
+      "title": "同样放大，换荷载便换结论",
+      "chapter": 1,
+      "chapter_title": "体系与规模",
+      "insight": "保持集中力不变时，相似放大的应力反而按尺度平方的倒数下降。",
+      "src": "../interactive/lessons/C01U07.html"
+    },
+    {
+      "id": "C01U09",
+      "title": "方案比较先看敏感性",
+      "chapter": 1,
+      "chapter_title": "体系与规模",
+      "insight": "梁高增加同时改变惯性矩、应力与挠度，不能只比较一个尺寸。",
+      "src": "../interactive/lessons/C01U09.html"
+    },
+    {
+      "id": "C01U10",
+      "title": "把复杂模型交给一个极限情形",
+      "chapter": 1,
+      "chapter_title": "体系与规模",
+      "insight": "网格加密使数值误差减小，但不能证明原来的边界条件正确。",
+      "src": "../interactive/lessons/C01U10.html"
+    },
+    {
+      "id": "C02U01",
+      "title": "偏心荷载等价为轴力加弯矩",
+      "chapter": 2,
+      "chapter_title": "力学基础的桥梁迁移",
+      "insight": "平均压力与线性弯曲应力叠加，合力位置决定两边应力差。",
+      "src": "../interactive/lessons/C02U01.html"
+    },
+    {
+      "id": "C02U02",
+      "title": "截面核心是怎样出现的",
+      "chapter": 2,
+      "chapter_title": "力学基础的桥梁迁移",
+      "insight": "矩形截面偏心达到高度六分之一时，一侧边缘应力恰好为零。",
+      "src": "../interactive/lessons/C02U02.html"
+    },
+    {
+      "id": "C02U03",
+      "title": "核心条件不等于大、小偏心分界",
+      "chapter": 2,
+      "chapter_title": "力学基础的桥梁迁移",
+      "insight": "越出核心仅说明未开裂线弹性计算出现拉应力，不能直接判定钢筋混凝土破坏类型。",
+      "src": "../interactive/lessons/C02U03.html"
+    },
+    {
+      "id": "C02U04",
+      "title": "固定外包尺寸，比较空心截面效率",
+      "chapter": 2,
+      "chapter_title": "力学基础的桥梁迁移",
+      "insight": "把材料移离中性轴可以提高单位面积惯性矩，但薄壁局部问题需要另查。",
+      "src": "../interactive/lessons/C02U04.html"
+    },
+    {
+      "id": "C02U05",
+      "title": "截面加高为什么比加宽敏感",
+      "chapter": 2,
+      "chapter_title": "力学基础的桥梁迁移",
+      "insight": "矩形惯性矩随高度三次方变化，随宽度一次变化。",
+      "src": "../interactive/lessons/C02U05.html"
+    },
+    {
+      "id": "C02U06",
+      "title": "稳定是平衡路径问题",
+      "chapter": 2,
+      "chapter_title": "力学基础的桥梁迁移",
+      "insight": "有效长度加倍，欧拉临界力降为四分之一；强度够不等于稳定够。",
+      "src": "../interactive/lessons/C02U06.html"
+    },
+    {
+      "id": "C02U07",
+      "title": "预应力先改变初始状态",
+      "chapter": 2,
+      "chapter_title": "力学基础的桥梁迁移",
+      "insight": "预压力和偏心矩可抵消使用荷载的拉应力，也可能使另一侧出现新的控制条件。",
+      "src": "../interactive/lessons/C02U07.html"
+    },
+    {
+      "id": "C02U09",
+      "title": "质量、刚度与频率不是单独变化",
+      "chapter": 2,
+      "chapter_title": "力学基础的桥梁迁移",
+      "insight": "刚度一定时，质量增加使频率按质量平方根的倒数下降。",
+      "src": "../interactive/lessons/C02U09.html"
+    },
+    {
+      "id": "C02U10",
+      "title": "线性叠加的边界在哪里",
+      "chapter": 2,
+      "chapter_title": "力学基础的桥梁迁移",
+      "insight": "线弹性未开裂条件下可叠加轴力与弯矩；开裂、脱空或大变形后必须重建关系。",
+      "src": "../interactive/lessons/C02U10.html"
+    },
+    {
+      "id": "C03U01",
+      "title": "作用大小与响应大小之间隔着模型",
+      "chapter": 3,
+      "chapter_title": "作用、组合与可靠度",
+      "insight": "荷载加倍时线性模型的反力加倍，但比例系数由位置和边界决定。",
+      "src": "../interactive/lessons/C03U01.html"
+    },
+    {
+      "id": "C03U02",
+      "title": "等效荷载同时保留力和矩",
+      "chapter": 3,
+      "chapter_title": "作用、组合与可靠度",
+      "insight": "把点荷载分配到相邻节点，要同时保留合力与一阶矩。",
+      "src": "../interactive/lessons/C03U02.html"
+    },
+    {
+      "id": "C03U03",
+      "title": "组合不是把所有最大值相加",
+      "chapter": 3,
+      "chapter_title": "作用、组合与可靠度",
+      "insight": "伴随作用的贡献随组合系数改变，负贡献也必须保留符号。",
+      "src": "../interactive/lessons/C03U03.html"
+    },
+    {
+      "id": "C03U04",
+      "title": "瀑布图读的是代数贡献",
+      "chapter": 3,
+      "chapter_title": "作用、组合与可靠度",
+      "insight": "反向作用可以减小某个目标响应，但对另一个截面未必有利。",
+      "src": "../interactive/lessons/C03U04.html"
+    },
+    {
+      "id": "C03U05",
+      "title": "从安全余量走到失效概率",
+      "chapter": 3,
+      "chapter_title": "作用、组合与可靠度",
+      "insight": "抗力均值不变时，提高效应均值会减少可靠指标。",
+      "src": "../interactive/lessons/C03U05.html"
+    },
+    {
+      "id": "C03U06",
+      "title": "不确定性本身也改变结论",
+      "chapter": 3,
+      "chapter_title": "作用、组合与可靠度",
+      "insight": "均值差相同时，效应离散程度增加通常降低本模型的可靠指标。",
+      "src": "../interactive/lessons/C03U06.html"
+    },
+    {
+      "id": "C03U07",
+      "title": "相关性进入余量的方差",
+      "chapter": 3,
+      "chapter_title": "作用、组合与可靠度",
+      "insight": "抗力与效应之差的方差包含相关项，不能只把两个方差相加。",
+      "src": "../interactive/lessons/C03U07.html"
+    },
+    {
+      "id": "C03U09",
+      "title": "正、负区段要分别构造不利布载",
+      "chapter": 3,
+      "chapter_title": "作用、组合与可靠度",
+      "insight": "连续梁同一截面影响线存在正负区，求最大与最小值必须改变允许布载区段。",
+      "src": "../interactive/lessons/C03U09.html"
+    },
+    {
+      "id": "C03U10",
+      "title": "可靠度模型先做可解释的核验",
+      "chapter": 3,
+      "chapter_title": "作用、组合与可靠度",
+      "insight": "提高抗力均值会增大余量；公式方向检查是程序核验的第一步。",
+      "src": "../interactive/lessons/C03U10.html"
+    },
+    {
+      "id": "C04U01",
+      "title": "从简支反力到梁的整体平衡",
+      "chapter": 4,
+      "chapter_title": "梁桥的核心判断",
+      "insight": "移动荷载改变反力分配，平衡提供最快的独立核验。",
+      "src": "../interactive/lessons/C04U01.html"
+    },
+    {
+      "id": "C04U02",
+      "title": "弯矩、应力、挠度是三个输出",
+      "chapter": 4,
+      "chapter_title": "梁桥的核心判断",
+      "insight": "在线性范围内三者随荷载同比变化，但对应不同的验算问题。",
+      "src": "../interactive/lessons/C04U02.html"
+    },
+    {
+      "id": "C04U04",
+      "title": "影响线换一种方式组织计算",
+      "chapter": 4,
+      "chapter_title": "梁桥的核心判断",
+      "insight": "固定跨中弯矩响应后，移动单位力可建立一条供重复加载使用的曲线。",
+      "src": "../interactive/lessons/C04U04.html"
+    },
+    {
+      "id": "C04U05",
+      "title": "横向分配就是平均加偏心修正",
+      "chapter": 4,
+      "chapter_title": "梁桥的核心判断",
+      "insight": "等刚度刚性横梁模型可拆成平均分配和偏心力矩分配。",
+      "src": "../interactive/lessons/C04U05.html"
+    },
+    {
+      "id": "C04U06",
+      "title": "不同刚度，分配系数就要重算",
+      "chapter": 4,
+      "chapter_title": "梁桥的核心判断",
+      "insight": "兼容位移和转角配合各梁刚度，决定不等刚度体系的反力分配。",
+      "src": "../interactive/lessons/C04U06.html"
+    },
+    {
+      "id": "C04U07",
+      "title": "预应力的轴力与弯矩同时存在",
+      "chapter": 4,
+      "chapter_title": "梁桥的核心判断",
+      "insight": "只增加偏心会增强反向弯矩，却不增加平均预压。",
+      "src": "../interactive/lessons/C04U07.html"
+    },
+    {
+      "id": "C04U08",
+      "title": "束形是把轴力变成分布作用",
+      "chapter": 4,
+      "chapter_title": "梁桥的核心判断",
+      "insight": "抛物线束的等效横向荷载与预应力和矢高成正比，与跨径平方成反比。",
+      "src": "../interactive/lessons/C04U08.html"
+    },
+    {
+      "id": "C04U09",
+      "title": "只增跨径与整体放大不同",
+      "chapter": 4,
+      "chapter_title": "梁桥的核心判断",
+      "insight": "截面和线荷载不变时，跨径增加使弯矩按平方、挠度按四次方增加。",
+      "src": "../interactive/lessons/C04U09.html"
+    },
+    {
+      "id": "C04U10",
+      "title": "横梁刚性假定也有失效边界",
+      "chapter": 4,
+      "chapter_title": "梁桥的核心判断",
+      "insight": "偏心加大可能算出负反力，若支承不能抗拔，线性全接触模型失效。",
+      "src": "../interactive/lessons/C04U10.html"
+    },
+    {
+      "id": "C05U01",
+      "title": "拱通过推力抵消梁式弯矩",
+      "chapter": 5,
+      "chapter_title": "拱桥：几何与力流",
+      "insight": "拱的水平推力乘以拱高，可以抵消对应梁的弯矩。",
+      "src": "../interactive/lessons/C05U01.html"
+    },
+    {
+      "id": "C05U02",
+      "title": "合理拱轴只对应指定荷载",
+      "chapter": 5,
+      "chapter_title": "拱桥：几何与力流",
+      "insight": "对称均布荷载下的合理拱轴，遇到不对称活载后会产生剩余弯矩。",
+      "src": "../interactive/lessons/C05U02.html"
+    },
+    {
+      "id": "C05U03",
+      "title": "整体弯矩转成截面偏心",
+      "chapter": 5,
+      "chapter_title": "拱桥：几何与力流",
+      "insight": "用偏心等于弯矩除以轴力，把拱的整体受力转成局部截面应力问题。",
+      "src": "../interactive/lessons/C05U03.html"
+    },
+    {
+      "id": "C05U04",
+      "title": "无拉应力与压力线位置",
+      "chapter": 5,
+      "chapter_title": "拱桥：几何与力流",
+      "insight": "未开裂矩形截面无拉应力要求压力合力位于核心内。",
+      "src": "../interactive/lessons/C05U04.html"
+    },
+    {
+      "id": "C05U05",
+      "title": "矢跨比改变水平推力",
+      "chapter": 5,
+      "chapter_title": "拱桥：几何与力流",
+      "insight": "同跨度同均布荷载下，拱矢高降低，水平推力按矢高倒数增加。",
+      "src": "../interactive/lessons/C05U05.html"
+    },
+    {
+      "id": "C05U06",
+      "title": "拱与悬索是受力的对应形态",
+      "chapter": 5,
+      "chapter_title": "拱桥：几何与力流",
+      "insight": "在水平投影均布荷载模型中，悬索与合理拱均呈抛物线平衡关系，但轴力符号相反。",
+      "src": "../interactive/lessons/C05U06.html"
+    },
+    {
+      "id": "C05U07",
+      "title": "拱肋变细，稳定不会自动跟上",
+      "chapter": 5,
+      "chapter_title": "拱桥：几何与力流",
+      "insight": "提高惯性矩可以提高理想压杆临界力，实际拱仍需检查空间稳定。",
+      "src": "../interactive/lessons/C05U07.html"
+    },
+    {
+      "id": "C05U08",
+      "title": "合龙相当于锁定自由变形",
+      "chapter": 5,
+      "chapter_title": "拱桥：几何与力流",
+      "insight": "约束建立前后，同一自由变形会对应不同的内力。",
+      "src": "../interactive/lessons/C05U08.html"
+    },
+    {
+      "id": "C05U09",
+      "title": "梁拱组合靠刚度分担作用",
+      "chapter": 5,
+      "chapter_title": "拱桥：几何与力流",
+      "insight": "共同变形的构件按刚度分担作用，不能仅凭名称判断谁承担更多荷载。",
+      "src": "../interactive/lessons/C05U09.html"
+    },
+    {
+      "id": "C06U01",
+      "title": "拉索把竖向荷载传给塔与梁",
+      "chapter": 6,
+      "chapter_title": "斜拉桥：耦合与控制",
+      "insight": "相同竖向分量下，索倾角减小会提高索力和水平分量。",
+      "src": "../interactive/lessons/C06U01.html"
+    },
+    {
+      "id": "C06U02",
+      "title": "调整一根索会影响多个输出",
+      "chapter": 6,
+      "chapter_title": "斜拉桥：耦合与控制",
+      "insight": "索力增量通过影响矩阵同时改变多个控制点响应。",
+      "src": "../interactive/lessons/C06U02.html"
+    },
+    {
+      "id": "C06U03",
+      "title": "成桥目标是多个条件的共同满足",
+      "chapter": 6,
+      "chapter_title": "斜拉桥：耦合与控制",
+      "insight": "不同控制变量对应不同响应方向，必须同时查看耦合输出。",
+      "src": "../interactive/lessons/C06U03.html"
+    },
+    {
+      "id": "C06U04",
+      "title": "影响列接近时，控制就不稳定",
+      "chapter": 6,
+      "chapter_title": "斜拉桥：耦合与控制",
+      "insight": "两个控制变量作用方向越接近，为实现某些目标所需调整量越大。",
+      "src": "../interactive/lessons/C06U04.html"
+    },
+    {
+      "id": "C06U05",
+      "title": "主梁轴压仍要和弯矩共同判断",
+      "chapter": 6,
+      "chapter_title": "斜拉桥：耦合与控制",
+      "insight": "索的水平分量产生轴压，不能因此省略主梁弯矩与稳定校核。",
+      "src": "../interactive/lessons/C06U05.html"
+    },
+    {
+      "id": "C06U06",
+      "title": "索越平，水平力越大",
+      "chapter": 6,
+      "chapter_title": "斜拉桥：耦合与控制",
+      "insight": "竖向承载需求固定时，降低倾角显著提高水平分量。",
+      "src": "../interactive/lessons/C06U06.html"
+    },
+    {
+      "id": "C06U07",
+      "title": "温度与约束改变成桥状态",
+      "chapter": 6,
+      "chapter_title": "斜拉桥：耦合与控制",
+      "insight": "温度变形能否自由发生由体系约束决定，成桥状态依赖相应条件。",
+      "src": "../interactive/lessons/C06U07.html"
+    },
+    {
+      "id": "C06U08",
+      "title": "阻尼与刚度解决不同问题",
+      "chapter": 6,
+      "chapter_title": "斜拉桥：耦合与控制",
+      "insight": "增加阻尼主要降低共振附近的动力放大，不能等同于提高静力刚度。",
+      "src": "../interactive/lessons/C06U08.html"
+    },
+    {
+      "id": "C06U09",
+      "title": "施工阶段不能沿用成桥有效长度",
+      "chapter": 6,
+      "chapter_title": "斜拉桥：耦合与控制",
+      "insight": "临时横向支承改变有效长度，从而显著改变理想临界力。",
+      "src": "../interactive/lessons/C06U09.html"
+    },
+    {
+      "id": "C07U01",
+      "title": "索形由荷载与边界共同决定",
+      "chapter": 7,
+      "chapter_title": "悬索桥：找形与刚度",
+      "insight": "指定荷载模型和端点后，索的垂度与水平分力相互联系。",
+      "src": "../interactive/lessons/C07U01.html"
+    },
+    {
+      "id": "C07U02",
+      "title": "小垂度不是免费减小位移",
+      "chapter": 7,
+      "chapter_title": "悬索桥：找形与刚度",
+      "insight": "减小垂度会提高水平分力，锚碇和索的需求随之增加。",
+      "src": "../interactive/lessons/C07U02.html"
+    },
+    {
+      "id": "C07U03",
+      "title": "主缆张力与截面应力分开看",
+      "chapter": 7,
+      "chapter_title": "悬索桥：找形与刚度",
+      "insight": "荷载增加会提高索力，截面应力还要除以有效面积。",
+      "src": "../interactive/lessons/C07U03.html"
+    },
+    {
+      "id": "C07U04",
+      "title": "缆索与拱的类比保留了什么",
+      "chapter": 7,
+      "chapter_title": "悬索桥：找形与刚度",
+      "insight": "拱和索可以共用平衡几何的思路，但受压构件还必须检查稳定。",
+      "src": "../interactive/lessons/C07U04.html"
+    },
+    {
+      "id": "C07U05",
+      "title": "吊索传力不等于加劲梁不受弯",
+      "chapter": 7,
+      "chapter_title": "悬索桥：找形与刚度",
+      "insight": "加劲梁仍承担荷载不均匀引起的弯曲，不能用主缆受拉替代梁的计算。",
+      "src": "../interactive/lessons/C07U05.html"
+    },
+    {
+      "id": "C07U06",
+      "title": "几何放大后，频率下降",
+      "chapter": 7,
+      "chapter_title": "悬索桥：找形与刚度",
+      "insight": "几何、材料和质量分布相似时，梁型体系的频率随尺度倒数变化。",
+      "src": "../interactive/lessons/C07U06.html"
+    },
+    {
+      "id": "C07U08",
+      "title": "支承柔度参与体系刚度",
+      "chapter": 7,
+      "chapter_title": "悬索桥：找形与刚度",
+      "insight": "串联系统由较柔的环节控制整体位移，局部加硬可能收益有限。",
+      "src": "../interactive/lessons/C07U08.html"
+    },
+    {
+      "id": "C07U09",
+      "title": "周期荷载不只是更大的静载",
+      "chapter": 7,
+      "chapter_title": "悬索桥：找形与刚度",
+      "insight": "接近固有频率时，稳态动力响应受频比和阻尼共同控制。",
+      "src": "../interactive/lessons/C07U09.html"
+    },
+    {
+      "id": "C07U10",
+      "title": "用拱轴反例理解找形与使用状态",
+      "chapter": 7,
+      "chapter_title": "悬索桥：找形与刚度",
+      "insight": "这里用固定合理拱轴承受非对称荷载作类比：一种荷载下的平衡形状，不能代替另一荷载下的状态。",
+      "src": "../interactive/lessons/C07U10.html"
+    },
+    {
+      "id": "C08U01",
+      "title": "支座首先定义自由度",
+      "chapter": 8,
+      "chapter_title": "支承、墩台与边界",
+      "insight": "支座释放位移可以减少温度内力，但还必须安排可靠的水平力路径。",
+      "src": "../interactive/lessons/C08U01.html"
+    },
+    {
+      "id": "C08U02",
+      "title": "均匀温升：自由与完全约束",
+      "chapter": 8,
+      "chapter_title": "支承、墩台与边界",
+      "insight": "温升增大时自由伸长与完全约束应力均线性增加，二者属于不同边界情形。",
+      "src": "../interactive/lessons/C08U02.html"
+    },
+    {
+      "id": "C08U03",
+      "title": "刚度分配解释多墩水平力",
+      "chapter": 8,
+      "chapter_title": "支承、墩台与边界",
+      "insight": "共同侧移时，较硬的墩分担更多水平力。",
+      "src": "../interactive/lessons/C08U03.html"
+    },
+    {
+      "id": "C08U04",
+      "title": "偏心传力也发生在基础底面",
+      "chapter": 8,
+      "chapter_title": "支承、墩台与边界",
+      "insight": "平均底压与偏心弯曲项叠加，压力合力位置改变接触状态。",
+      "src": "../interactive/lessons/C08U04.html"
+    },
+    {
+      "id": "C08U05",
+      "title": "墩高通过三次方影响侧向刚度",
+      "chapter": 8,
+      "chapter_title": "支承、墩台与边界",
+      "insight": "同截面悬臂墩柱的顶部侧向刚度为3EI除以H的三次方，墩高加倍时刚度降为八分之一。",
+      "src": "../interactive/lessons/C08U05.html"
+    },
+    {
+      "id": "C08U06",
+      "title": "地基与墩柱串联共同变形",
+      "chapter": 8,
+      "chapter_title": "支承、墩台与边界",
+      "insight": "总柔度是串联柔度之和，基础柔度可能控制整体变形。",
+      "src": "../interactive/lessons/C08U06.html"
+    },
+    {
+      "id": "C08U08",
+      "title": "脱空不是把负反力删掉",
+      "chapter": 8,
+      "chapter_title": "支承、墩台与边界",
+      "insight": "负反力与只能受压的支承条件冲突，需要重新确定接触区。",
+      "src": "../interactive/lessons/C08U08.html"
+    },
+    {
+      "id": "C08U09",
+      "title": "顶升用单位响应建立调整规律",
+      "chapter": 8,
+      "chapter_title": "支承、墩台与边界",
+      "insight": "多个顶升点的位移调整同时影响各控制响应，适合用影响矩阵组织。",
+      "src": "../interactive/lessons/C08U09.html"
+    },
+    {
+      "id": "C08U10",
+      "title": "同温差放大结构，力和应力不同步",
+      "chapter": 8,
+      "chapter_title": "支承、墩台与边界",
+      "insight": "完全约束热应力不随几何尺度改变，但热轴力随面积增长。",
+      "src": "../interactive/lessons/C08U10.html"
+    },
+    {
+      "id": "C09U01",
+      "title": "风力为什么跟风速平方有关",
+      "chapter": 9,
+      "chapter_title": "风与动力：无量纲判断",
+      "insight": "固定气动系数、空气密度与迎风面积时，风力随风速平方变化。",
+      "src": "../interactive/lessons/C09U01.html"
+    },
+    {
+      "id": "C09U02",
+      "title": "改变尺寸也改变受风面积",
+      "chapter": 9,
+      "chapter_title": "风与动力：无量纲判断",
+      "insight": "保持面压力不变而几何相似放大时，线荷载随桥宽一次增长，而弯曲应力保持不变。",
+      "src": "../interactive/lessons/C09U02.html"
+    },
+    {
+      "id": "C09U03",
+      "title": "气动系数是条件，不是常数真理",
+      "chapter": 9,
+      "chapter_title": "风与动力：无量纲判断",
+      "insight": "系数变化能显著改变风力，固定系数平方律只是在指定条件下的模型。",
+      "src": "../interactive/lessons/C09U03.html"
+    },
+    {
+      "id": "C09U04",
+      "title": "质量与刚度共同决定频率",
+      "chapter": 9,
+      "chapter_title": "风与动力：无量纲判断",
+      "insight": "质量固定时，频率随刚度平方根增加。",
+      "src": "../interactive/lessons/C09U04.html"
+    },
+    {
+      "id": "C09U05",
+      "title": "共振用频率比辨认",
+      "chapter": 9,
+      "chapter_title": "风与动力：无量纲判断",
+      "insight": "响应峰值靠近频比为一的位置，位置和高度还受阻尼影响。",
+      "src": "../interactive/lessons/C09U05.html"
+    },
+    {
+      "id": "C09U06",
+      "title": "阻尼降低共振附近的稳态放大",
+      "chapter": 9,
+      "chapter_title": "风与动力：无量纲判断",
+      "insight": "增加阻尼可以降低稳态放大峰，但静力柔度仍由刚度决定。",
+      "src": "../interactive/lessons/C09U06.html"
+    },
+    {
+      "id": "C09U07",
+      "title": "涡脱落频率也有尺度关系",
+      "chapter": 9,
+      "chapter_title": "风与动力：无量纲判断",
+      "insight": "固定斯特劳哈尔数的模型中，脱落频率与流速成正比、与特征尺寸成反比。",
+      "src": "../interactive/lessons/C09U07.html"
+    },
+    {
+      "id": "C09U08",
+      "title": "几何相似不等于动力相似",
+      "chapter": 9,
+      "chapter_title": "风与动力：无量纲判断",
+      "insight": "在同流速下改变尺寸，会同时改变雷诺数与弗劳德数。",
+      "src": "../interactive/lessons/C09U08.html"
+    },
+    {
+      "id": "C09U10",
+      "title": "从风洞到计算都要验证假定",
+      "chapter": 9,
+      "chapter_title": "风与动力：无量纲判断",
+      "insight": "数值加密只检查离散误差，不能证明湍流模型与边界条件已经真实。",
+      "src": "../interactive/lessons/C09U10.html"
+    },
+    {
+      "id": "C10U01",
+      "title": "今天的余量不是全寿命余量",
+      "chapter": 10,
+      "chapter_title": "时间、不确定性与决策",
+      "insight": "简化劣化模型中抗力随时间降低，固定效应下余量逐步减小。",
+      "src": "../interactive/lessons/C10U01.html"
+    },
+    {
+      "id": "C10U02",
+      "title": "抗震需求先区分静力与动力",
+      "chapter": 10,
+      "chapter_title": "时间、不确定性与决策",
+      "insight": "单自由度频响只解释动力敏感性，地震峰值还需相应时程或反应谱方法。",
+      "src": "../interactive/lessons/C10U02.html"
+    },
+    {
+      "id": "C10U04",
+      "title": "劣化速率比初始值更值得追问",
+      "chapter": 10,
+      "chapter_title": "时间、不确定性与决策",
+      "insight": "初始抗力相同，劣化速率不同会导致显著不同的长期余量。",
+      "src": "../interactive/lessons/C10U04.html"
+    },
+    {
+      "id": "C10U05",
+      "title": "截面损失要通过模型映射到性能",
+      "chapter": 10,
+      "chapter_title": "时间、不确定性与决策",
+      "insight": "面积损失与惯性矩损失并不总是同一比例，损失位置也重要。",
+      "src": "../interactive/lessons/C10U05.html"
+    },
+    {
+      "id": "C10U06",
+      "title": "疲劳由循环与幅值共同累积",
+      "chapter": 10,
+      "chapter_title": "时间、不确定性与决策",
+      "insight": "教学幂律模型中应力幅增加会使单次循环损伤快速增大。",
+      "src": "../interactive/lessons/C10U06.html"
+    },
+    {
+      "id": "C10U07",
+      "title": "新证据改变参数判断",
+      "chapter": 10,
+      "chapter_title": "时间、不确定性与决策",
+      "insight": "相同先验下，测量结果改变后验均值；测量不确定性控制更新幅度。",
+      "src": "../interactive/lessons/C10U07.html"
+    },
+    {
+      "id": "C10U08",
+      "title": "监测精度决定证据的权重",
+      "chapter": 10,
+      "chapter_title": "时间、不确定性与决策",
+      "insight": "观测噪声越大，后验越依赖先验，不能把所有数据当成同等可靠。",
+      "src": "../interactive/lessons/C10U08.html"
+    },
+    {
+      "id": "C10U09",
+      "title": "比较方案同时展示不确定性",
+      "chapter": 10,
+      "chapter_title": "时间、不确定性与决策",
+      "insight": "平均性能相同的方案，离散程度不同会改变模型中的可靠性。",
+      "src": "../interactive/lessons/C10U09.html"
+    },
+    {
+      "id": "C10U10",
+      "title": "扩散时间也受尺寸平方控制",
+      "chapter": 10,
+      "chapter_title": "时间、不确定性与决策",
+      "insight": "固定扩散系数下，到达相似无量纲状态的时间随特征深度平方增加。",
+      "src": "../interactive/lessons/C10U10.html"
+    },
+    {
+      "id": "C11U01",
+      "title": "从问题选择模型，而不是反过来",
+      "chapter": 11,
+      "chapter_title": "建模、有限元与审计",
+      "insight": "梁模型可以解释整体弯曲，却不能自动回答局部锚固应力问题。",
+      "src": "../interactive/lessons/C11U01.html"
+    },
+    {
+      "id": "C11U02",
+      "title": "最小模型也要保留力和矩",
+      "chapter": 11,
+      "chapter_title": "建模、有限元与审计",
+      "insight": "节点化荷载必须保留合力和一阶矩，才能避免人为改变传力。",
+      "src": "../interactive/lessons/C11U02.html"
+    },
+    {
+      "id": "C11U03",
+      "title": "离散细化改变误差而非物理对象",
+      "chapter": 11,
+      "chapter_title": "建模、有限元与审计",
+      "insight": "本例线性插值误差随网格细化下降，可与已知二次函数直接对照。",
+      "src": "../interactive/lessons/C11U03.html"
+    },
+    {
+      "id": "C11U04",
+      "title": "刚度矩阵由平衡与协调组成",
+      "chapter": 11,
+      "chapter_title": "建模、有限元与审计",
+      "insight": "相同位移条件下弹簧力按刚度分配，说明矩阵关系有可追溯的物理来源。",
+      "src": "../interactive/lessons/C11U04.html"
+    },
+    {
+      "id": "C11U05",
+      "title": "边界错误可以伪装成漂亮结果",
+      "chapter": 11,
+      "chapter_title": "建模、有限元与审计",
+      "insight": "错误释放或锁定自由度会改变内力，网格再细也不会修复边界。",
+      "src": "../interactive/lessons/C11U05.html"
+    },
+    {
+      "id": "C11U06",
+      "title": "求解之前先检查守恒",
+      "chapter": 11,
+      "chapter_title": "建模、有限元与审计",
+      "insight": "加载映射若破坏合力或合矩，求解器仍可能顺利得到错误结果。",
+      "src": "../interactive/lessons/C11U06.html"
+    },
+    {
+      "id": "C11U07",
+      "title": "数值收敛与模型正确分两步证明",
+      "chapter": 11,
+      "chapter_title": "建模、有限元与审计",
+      "insight": "对已知解析函数的收敛检验只证明离散实现，应再对照独立物理证据。",
+      "src": "../interactive/lessons/C11U07.html"
+    },
+    {
+      "id": "C11U08",
+      "title": "病态问题不会被更多小数解决",
+      "chapter": 11,
+      "chapter_title": "建模、有限元与审计",
+      "insight": "控制方向接近时，小误差会造成较大的参数反算变化。",
+      "src": "../interactive/lessons/C11U08.html"
+    },
+    {
+      "id": "C11U09",
+      "title": "AI输出也必须经过方向与量纲检查",
+      "chapter": 11,
+      "chapter_title": "建模、有限元与审计",
+      "insight": "用尺度指数和极限情形，可以快速发现漏掉长度因子的计算式。",
+      "src": "../interactive/lessons/C11U09.html"
+    },
+    {
+      "id": "C11U10",
+      "title": "从单位影响到优化与反算",
+      "chapter": 11,
+      "chapter_title": "建模、有限元与审计",
+      "insight": "影响矩阵连接控制量与输出，优化之前要知道它的适用范围与条件数。",
+      "src": "../interactive/lessons/C11U10.html"
+    }
+  ],
+  "notebooks": [
+    {
+      "title": "车靠边走，五根梁怎样重新分担？",
+      "src": "../notebooks/A-transverse.html",
+      "download": "../notebooks/A-transverse.ipynb"
+    },
+    {
+      "title": "跨度都变成两倍，为什么挠度有两种答案？",
+      "src": "../notebooks/B-scaling.html",
+      "download": "../notebooks/B-scaling.ipynb"
+    },
+    {
+      "title": "网格越来越细，能把错误的支座修好吗？",
+      "src": "../notebooks/C-beam-fem.html",
+      "download": "../notebooks/C-beam-fem.ipynb"
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "title": "体系与规模"
+    },
+    {
+      "id": 2,
+      "title": "力学基础的桥梁迁移"
+    },
+    {
+      "id": 3,
+      "title": "作用、组合与可靠度"
+    },
+    {
+      "id": 4,
+      "title": "梁桥的核心判断"
+    },
+    {
+      "id": 5,
+      "title": "拱桥：几何与力流"
+    },
+    {
+      "id": 6,
+      "title": "斜拉桥：耦合与控制"
+    },
+    {
+      "id": 7,
+      "title": "悬索桥：找形与刚度"
+    },
+    {
+      "id": 8,
+      "title": "支承、墩台与边界"
+    },
+    {
+      "id": 9,
+      "title": "风与动力：无量纲判断"
+    },
+    {
+      "id": 10,
+      "title": "时间、不确定性与决策"
+    },
+    {
+      "id": 11,
+      "title": "建模、有限元与审计"
+    }
+  ],
+  "counts": {
+    "ai_images": 24,
+    "selected_ai_images": 8,
+    "ai_in_text": 5,
+    "selected_ai_revision": 3,
+    "parameter_figures": 40,
+    "blender_figures": 8,
+    "dialogue_videos": 5,
+    "early_manim_videos": 15,
+    "core_manim_videos": 110,
+    "standalone_interactives": 100,
+    "shared_model_types": 29,
+    "three_d_cases": 3,
+    "notebooks": 3,
+    "chapters": 11
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>文稿与数字资源组合样章 · 桥梁工程</title><link href="../favicon.ico" rel="icon"/><link href="showcase.css" rel="stylesheet"/></head><body>
+<header class="top"><a class="brand" href="showcase.html">桥梁工程<span>文稿与数字资源组合样章</span></a><a href="showcase.html">返回展示厅 ↗</a></header>
+<main class="wrap reading-doc">
+<div class="article-head"><p class="eyebrow">梁式桥 · 横向分布 · 组合阅读示例</p><h1>车靠边走，<br/>五根梁怎样分担？</h1><p class="lead">同一辆车，停在桥面中央和靠近一侧时，桥下各根梁承担的力会一样吗？</p><p class="caption">本页将已有正文主题与配套资源重新编排，供审阅文字、图像、交互与代码的衔接方式。<a href="../chapters/ch03.html">阅读梁式桥完整章节 ↗</a></p></div>
+<article>
+<div class="body-text"><p>先从桥底看一眼：这段桥面由五根并排的主梁支承。车辆压在桥面上，荷载会通过桥面板和横向连接传给主梁。要算其中一根梁，首先得知道它分到了多少。</p><p>如果车辆正好居中，五根梁就一定平均分吗？还要看它们的刚度，以及横向连接能否让各根梁共同工作。下面先讨论一个简单模型：五根主梁的刚度相同，用一根足够刚的横梁把它们联系起来。把主梁抵抗竖向位移的作用，暂时想成五个相同的弹簧。</p></div>
+<figure><a href="../assets/publication/priority-40/F16.svg" rel="noopener" target="_blank"><img alt="120千牛偏心荷载的平均分量、偏心分量与五梁合成分担" src="../assets/publication/priority-40/F16.svg"/></a><figcaption>图 F16 · 自制参数化原理图。主梁横向位置为 −4.8、−2.4、0、2.4、4.8 m；120 kN 荷载位于中心右侧 2.4 m。这里计算这份新增荷载带来的分担量。</figcaption></figure>
+<h2>把“压下去”和“转起来”分开看</h2>
+<div class="body-text"><p>车放在中央时，在上述模型内，五个相同的弹簧一起压缩，每根分担 24 kN。把车向右移，总重量没有变，但它还会使横梁产生转动。右边的弹簧多压一些，左边少压一些。因此，可以把这次作用拆成两部分：一份居中的竖向力，加上一份由偏心产生的力矩。</p><p>这个拆法与偏心受压截面的应力分析有相通之处：都先求均匀分布的部分，再叠加随位置变化的部分。但这里分配的是各根梁的作用增量，不是直接套用截面应力。</p></div>
+<details class="catalog"><summary>展开公式：图中的 0、12、24、36、48 kN 从哪里来？</summary><div class="catalog-body body-text"><p class="equation">Rᵢ = P / n + P e yᵢ / Σyⱼ²</p><p>P 是新增竖向荷载，n 是梁的根数，e 是荷载到桥面中心的横向距离，yᵢ 是第 i 根梁到中心的有符号距离。本例向右为正，Σyⱼ² = 57.6 m²。</p><p>平均项是 24 kN，偏心项依次为 −24、−12、0、12、24 kN。相加得到图中的五个结果。它们的总和仍是 120 kN，对中心的力矩仍是 288 kN·m。</p><p>这要求横梁近似刚性、五根主梁等刚度且响应在线性范围内。横向连接柔度、主梁刚度或支承接触状态改变后，需要重新建立关系。</p></div></details>
+<h2>先讨论，再把车挪到另一边</h2>
+<p class="body-text">从“居中是不是就平均分”开始，听两个人怎样追问。然后打开同主题实验，把车移到两侧，观察梁的分担和变形；注意图形放大后的位移，不是桥梁实际下沉的比例。</p>
+<video aria-label="车放正中间五根梁就一定平均分，双人讨论" controls="" playsinline="" poster="../assets/videos/dialogue-pilot/D01-poster.jpg" preload="none"><source src="../assets/videos/dialogue-pilot/D01-dialogue.mp4" type="video/mp4"/><track kind="subtitles" label="中文字幕" src="../assets/videos/dialogue-pilot/D01-dialogue.vtt" srclang="zh"/></video>
+<p class="caption">D01 · 双人讨论 Manim 样片 · 合成配音 · 约 2 分 51 秒。<a href="../assets/videos/dialogue-pilot/D01-script.md">阅读完整对话稿 ↗</a></p>
+<div class="actions"><button class="primary" id="embed-experiment">在本页打开实验 ↓</button><a class="secondary" href="transverse-bridge.html" rel="noopener" target="_blank">在独立窗口操作 ↗</a></div>
+<div id="experiment-slot"></div>
+<details class="catalog"><summary>实验后想一想：某根梁的分担量为负，意味着什么？</summary><div class="catalog-body body-text"><p>先分清新增荷载带来的变化，与支座原来已经承担的恒载。某根梁的活载增量为负，表示这次车辆作用减少了它的支承力；是否真的离开支座，还要看叠加恒载后的总反力以及接触条件。</p><p><a href="../chapters/ch03.html#fig-priority-F17">接着读：负增量与支座脱空的区别 ↗</a></p></div></details>
+<h2>让数字回到可以检查的计算</h2>
+<p class="body-text">这组数值不必只靠图形来判断。用下面几行代码，可以检查五根梁分担量的总和，以及它们对中心产生的力矩。完整 Notebook 还保留了参数修改、公式和图形。</p>
+<details class="catalog"><summary>查看本例的简短计算代码</summary><div class="catalog-body"><pre><code>P, e = 120.0, 2.4  # kN, m；向右为正
+y = [-4.8, -2.4, 0.0, 2.4, 4.8]  # m
+sum_y2 = sum(v * v for v in y)
+R = [P / len(y) + P * e * v / sum_y2 for v in y]
+print(R)                         # [0, 12, 24, 36, 48] kN
+assert abs(sum(R) - P) &lt; 1e-9
+assert abs(sum(r*v for r, v in zip(R, y)) - P*e) &lt; 1e-9</code></pre></div></details>
+<div class="actions"><a class="primary" href="../notebooks/A-transverse.html" rel="noopener" target="_blank">打开完整 Notebook ↗</a><a class="secondary" download="" href="../notebooks/A-transverse.ipynb">下载可运行文件 ↓</a></div>
+<aside class="review-note"><h2>这组内容在教材里怎样使用？</h2><p>纸面保留问题、文字、原理图、关键公式与适用条件；线上补充可变参数的实验、讨论视频和可复算代码。读者可以先顺着正文阅读，也可以在疑问出现的位置打开资源。</p><p>当前已有完整章节网页、配套图像、可操作页面和视频文件。上述示例展示了同一主题的编排方式；正式出版前仍需统一全书的叙述、图号和资源编号，核对跨资源参数，完成专业与图像来源审阅，并确定纸书二维码和数字平台的承载方式。</p><p><a href="../chapters/ch03.html">审阅完整章节</a> · <a href="../contents.html">查看全书目录</a> · <a href="showcase.html#status">核对资源现状与来源</a></p></aside>
+</article></main><footer class="wrap footer"><a href="showcase.html">← 回到成果展示总入口</a><a href="../index.html">进入数字教材 ↗</a></footer>
+<script>
+document.getElementById('embed-experiment').addEventListener('click',function(){const slot=document.getElementById('experiment-slot');if(slot.firstChild){slot.replaceChildren();this.textContent='在本页打开实验 ↓';return;}const frame=document.createElement('iframe');frame.src='transverse-bridge.html';frame.title='横向分布：车辆位置、五梁分担与变形';frame.allowFullscreen=true;slot.append(frame);this.textContent='收起实验 ↑';});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)document.querySelector('video').pause();});
+</script></body></html>
