@@ -8,7 +8,8 @@
       "src": "../assets/publication/imagegen-samples/G01-B.png",
       "note": "B · 三维教具 · 正文情境图试排",
       "selected": true,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G01-B.webp"
     },
     {
       "id": "G02-B",
@@ -17,7 +18,8 @@
       "src": "../assets/publication/imagegen-samples/G02-B.png",
       "note": "B 浅背景三维教学模型 · 正文情境图试排",
       "selected": true,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G02-B.webp"
     },
     {
       "id": "G04-B",
@@ -26,7 +28,8 @@
       "src": "../assets/publication/imagegen-samples/G04-B.png",
       "note": "浅底三维教具模型 · 正文情境图试排",
       "selected": true,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G04-B.webp"
     },
     {
       "id": "G06-C",
@@ -35,7 +38,8 @@
       "src": "../assets/publication/imagegen-samples/G06-C.png",
       "note": "教材钢笔淡彩 · 正文情境图试排",
       "selected": true,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G06-C.webp"
     },
     {
       "id": "G08-A",
@@ -44,7 +48,8 @@
       "src": "../assets/publication/imagegen-samples/G08-A.png",
       "note": "写实教学情境 · 正文情境图试排",
       "selected": true,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G08-A.webp"
     },
     {
       "id": "G03-A",
@@ -53,7 +58,8 @@
       "src": "../assets/publication/imagegen-samples/G03-A.png",
       "note": "A · 写实剖视 · 保留画法，构造待修正",
       "selected": true,
-      "revision": true
+      "revision": true,
+      "thumb": "../assets/publication/showcase-thumbnails/G03-A.webp"
     },
     {
       "id": "G05-C",
@@ -62,7 +68,8 @@
       "src": "../assets/publication/imagegen-samples/G05-C.png",
       "note": "教材钢笔淡彩插画 · 保留画法，构造待修正",
       "selected": true,
-      "revision": true
+      "revision": true,
+      "thumb": "../assets/publication/showcase-thumbnails/G05-C.webp"
     },
     {
       "id": "G07-A",
@@ -71,7 +78,8 @@
       "src": "../assets/publication/imagegen-samples/G07-A.png",
       "note": "写实教学情境 · 保留画法，构造待修正",
       "selected": true,
-      "revision": true
+      "revision": true,
+      "thumb": "../assets/publication/showcase-thumbnails/G07-A.webp"
     },
     {
       "id": "G01-A",
@@ -80,7 +88,8 @@
       "src": "../assets/publication/imagegen-samples/G01-A-v2.png",
       "note": "A · 写实场景 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G01-A.webp"
     },
     {
       "id": "G01-C",
@@ -89,7 +98,8 @@
       "src": "../assets/publication/imagegen-samples/G01-C.png",
       "note": "C · 线稿淡彩 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G01-C.webp"
     },
     {
       "id": "G02-A",
@@ -98,7 +108,8 @@
       "src": "../assets/publication/imagegen-samples/G02-A.png",
       "note": "A 自然写实工作台摄影场景 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G02-A.webp"
     },
     {
       "id": "G02-C",
@@ -107,7 +118,8 @@
       "src": "../assets/publication/imagegen-samples/G02-C.png",
       "note": "C 教材钢笔淡彩插画 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G02-C.webp"
     },
     {
       "id": "G04-A",
@@ -116,7 +128,8 @@
       "src": "../assets/publication/imagegen-samples/G04-A.png",
       "note": "写实工程情境 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G04-A.webp"
     },
     {
       "id": "G04-C",
@@ -125,7 +138,8 @@
       "src": "../assets/publication/imagegen-samples/G04-C.png",
       "note": "教材钢笔淡彩插画 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G04-C.webp"
     },
     {
       "id": "G05-A",
@@ -134,7 +148,8 @@
       "src": "../assets/publication/imagegen-samples/G05-A.png",
       "note": "写实工程情境 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G05-A.webp"
     },
     {
       "id": "G06-A",
@@ -143,7 +158,8 @@
       "src": "../assets/publication/imagegen-samples/G06-A.png",
       "note": "写实教学情境 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G06-A.webp"
     },
     {
       "id": "G06-B",
@@ -152,7 +168,8 @@
       "src": "../assets/publication/imagegen-samples/G06-B.png",
       "note": "浅底三维教具 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G06-B.webp"
     },
     {
       "id": "G07-B",
@@ -161,7 +178,8 @@
       "src": "../assets/publication/imagegen-samples/G07-B.png",
       "note": "浅底三维教具 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G07-B.webp"
     },
     {
       "id": "G08-B",
@@ -170,7 +188,8 @@
       "src": "../assets/publication/imagegen-samples/G08-B.png",
       "note": "浅底三维教具 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G08-B.webp"
     },
     {
       "id": "G08-C",
@@ -179,7 +198,8 @@
       "src": "../assets/publication/imagegen-samples/G08-C.png",
       "note": "教材钢笔淡彩 · 收进备选，保留原文件",
       "selected": false,
-      "revision": false
+      "revision": false,
+      "thumb": "../assets/publication/showcase-thumbnails/G08-C.webp"
     },
     {
       "id": "G03-B",
@@ -188,7 +208,8 @@
       "src": "../assets/publication/imagegen-samples/G03-B.png",
       "note": "B · 三维教具 · 收进备选，保留原文件",
       "selected": false,
-      "revision": true
+      "revision": true,
+      "thumb": "../assets/publication/showcase-thumbnails/G03-B.webp"
     },
     {
       "id": "G03-C",
@@ -197,7 +218,8 @@
       "src": "../assets/publication/imagegen-samples/G03-C.png",
       "note": "C · 线稿淡彩 · 收进备选，保留原文件",
       "selected": false,
-      "revision": true
+      "revision": true,
+      "thumb": "../assets/publication/showcase-thumbnails/G03-C.webp"
     },
     {
       "id": "G05-B",
@@ -206,7 +228,8 @@
       "src": "../assets/publication/imagegen-samples/G05-B.png",
       "note": "浅底三维教具模型 · 收进备选，保留原文件",
       "selected": false,
-      "revision": true
+      "revision": true,
+      "thumb": "../assets/publication/showcase-thumbnails/G05-B.webp"
     },
     {
       "id": "G07-C",
@@ -215,7 +238,8 @@
       "src": "../assets/publication/imagegen-samples/G07-C.png",
       "note": "教材钢笔淡彩 · 收进备选，保留原文件",
       "selected": false,
-      "revision": true
+      "revision": true,
+      "thumb": "../assets/publication/showcase-thumbnails/G07-C.webp"
     },
     {
       "id": "F01",
@@ -542,56 +566,64 @@
       "title": "这座桥从桥面一直延伸到地下",
       "kind": "blender",
       "src": "../assets/publication/blender-bridge/renders/bridge_overall.png",
-      "note": "3×30 m；双幅每幅12.50 m；全宽25.50 m；每跨每幅5片T梁，共30片；梁高2 m"
+      "note": "3×30 m；双幅每幅12.50 m；全宽25.50 m；每跨每幅5片T梁，共30片；梁高2 m",
+      "thumb": "../assets/publication/showcase-thumbnails/B01.webp"
     },
     {
       "id": "B02",
       "title": "沿桥长的主梁由横隔板联系起来",
       "kind": "blender",
       "src": "../assets/publication/blender-bridge/renders/bridge_single_span_top.png",
-      "note": "一幅第一跨；跨度30 m，5片主梁，梁间距2.575 m；横隔板站位0.600、7.780、14.980、22.180、29.360 m"
+      "note": "一幅第一跨；跨度30 m，5片主梁，梁间距2.575 m；横隔板站位0.600、7.780、14.980、22.180、29.360 m",
+      "thumb": "../assets/publication/showcase-thumbnails/B02.webp"
     },
     {
       "id": "B03",
       "title": "一幅桥面下面有五片T梁",
       "kind": "blender",
       "src": "../assets/publication/blender-bridge/renders/bridge_five_girder_section.png",
-      "note": "单幅宽12.50 m；4×2.575+2×1.10=12.50 m；梁高2 m；铺装混凝土0.10 m+沥青0.10 m"
+      "note": "单幅宽12.50 m；4×2.575+2×1.10=12.50 m；梁高2 m；铺装混凝土0.10 m+沥青0.10 m",
+      "thumb": "../assets/publication/showcase-thumbnails/B03.webp"
     },
     {
       "id": "B04",
       "title": "从桥底区分主梁和横隔板",
       "kind": "blender",
       "src": "../assets/publication/blender-bridge/renders/bridge_underside_diaphragms.png",
-      "note": "第一跨单幅；5片主梁；横隔板按修正站位布置"
+      "note": "第一跨单幅；5片主梁；横隔板按修正站位布置",
+      "thumb": "../assets/publication/showcase-thumbnails/B04.webp"
     },
     {
       "id": "B05",
       "title": "梁、支座、垫石和盖梁在哪里接触",
       "kind": "blender",
       "src": "../assets/publication/blender-bridge/renders/bridge_support_connection.png",
-      "note": "梁底z=10.50 m，支座顶板顶z=10.50 m；永久支承线x=30 m；垫石顶z=10.08 m"
+      "note": "梁底z=10.50 m，支座顶板顶z=10.50 m；永久支承线x=30 m；垫石顶z=10.08 m",
+      "thumb": "../assets/publication/showcase-thumbnails/B05.webp"
     },
     {
       "id": "B06",
       "title": "桥墩下面的承台把六根桩联系起来",
       "kind": "blender",
       "src": "../assets/publication/blender-bridge/renders/bridge_single_pier_foundation.png",
-      "note": "承台5.30×10.20×1.90 m；六桩2×3布置；桩径1.20 m；模型桩端z=-12.00 m、桩顶z=-0.65 m；两根墩柱直径1.60 m；本下部结构为教学假设"
+      "note": "承台5.30×10.20×1.90 m；六桩2×3布置；桩径1.20 m；模型桩端z=-12.00 m、桩顶z=-0.65 m；两根墩柱直径1.60 m；本下部结构为教学假设",
+      "thumb": "../assets/publication/showcase-thumbnails/B06.webp"
     },
     {
       "id": "R01",
       "title": "把混凝土变透明，看一片梁里的钢筋和孔道",
       "kind": "blender",
       "src": "../assets/publication/blender-bridge/renders/rebar_overview.png",
-      "note": "单片中跨边梁，模型梁长29.30 m，梁高2.00 m；15根普通纵筋；143道腹板主箍和143道独立翼缘联系筋；三条φ62 mm孔道为外包络示意，不含钢绞线"
+      "note": "单片中跨边梁，模型梁长29.30 m，梁高2.00 m；15根普通纵筋；143道腹板主箍和143道独立翼缘联系筋；三条φ62 mm孔道为外包络示意，不含钢绞线",
+      "thumb": "../assets/publication/showcase-thumbnails/R01.webp"
     },
     {
       "id": "R02",
       "title": "上部钢筋由什么围住",
       "kind": "blender",
       "src": "../assets/publication/blender-bridge/renders/rebar_section.png",
-      "note": "单片中跨边梁，模型梁长29.30 m，梁高2.00 m；15根普通纵筋；143道腹板主箍和143道独立翼缘联系筋；三条φ62 mm孔道为外包络示意，不含钢绞线"
+      "note": "单片中跨边梁，模型梁长29.30 m，梁高2.00 m；15根普通纵筋；143道腹板主箍和143道独立翼缘联系筋；三条φ62 mm孔道为外包络示意，不含钢绞线",
+      "thumb": "../assets/publication/showcase-thumbnails/R02.webp"
     }
   ],
   "videos": [

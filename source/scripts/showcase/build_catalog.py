@@ -29,6 +29,15 @@ for x in units['units']:
  if x['standalone']:
   D['lessons'].append(dict(id=x['id'],title=x['title'],chapter=x['chapter'],chapter_title=x['chapter_title'],insight=x['insight'],src=exists(x['interaction']['path'])))
 for x in units['notebooks']:D['notebooks'].append(dict(title=x['title'],src=exists(x['html']),download=exists(x['ipynb'])))
+from PIL import Image
+thumb_dir=ROOT/'assets/publication/showcase-thumbnails'
+thumb_dir.mkdir(exist_ok=True)
+for x in D['images']:
+ if x['kind'] in {'ai','blender'}:
+  source=(ROOT/'interactive'/x['src']).resolve(); dest=thumb_dir/(x['id']+'.webp')
+  with Image.open(source) as im:
+   im.thumbnail((900,600));im.convert('RGB').save(dest,'WEBP',quality=82)
+  x['thumb']=exists(dest.relative_to(ROOT).as_posix())
 D['chapters']=[{'id':x['chapter'],'title':x['chapter_title']} for x in units['units'][::10]]
 assert len(D['videos'])==len(list((ROOT/'assets/videos').rglob('*.mp4')))==130
 assert len(D['lessons'])==len(list((ROOT/'interactive/lessons').glob('*.html')))==100
