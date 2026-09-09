@@ -423,6 +423,9 @@ func _request_new(kind: String, relative: String) -> HTTPRequest:
     var request := HTTPRequest.new()
     request.name = "HTTP_" + kind
     request.use_threads = false
+    # Web Fetch already decompresses gzip/deflate. Keeping HTTPRequest's own
+    # decompressor enabled would decode the same body twice on a gzip CDN.
+    request.accept_gzip = not OS.has_feature("web")
     request.timeout = 120
     request.body_size_limit = 100 * 1024 * 1024
     add_child(request)

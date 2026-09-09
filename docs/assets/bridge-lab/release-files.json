@@ -44,7 +44,7 @@
     {
       "path": "app/index.html",
       "bytes": 6637,
-      "sha256": "4731d6b461ce0c4baf4122808b1fc6ffa254a431e4efde8ccdccbc80c1bec87d"
+      "sha256": "bc12dd65f08d36d12305e6e05a8bcf16067145cdba970c37c7c884e57785029d"
     },
     {
       "path": "app/index.js",
@@ -53,8 +53,8 @@
     },
     {
       "path": "app/index.pck",
-      "bytes": 257580,
-      "sha256": "8c0eb34b34e223235a27da9213d6b01181840d2ed550d1edf22c87d978d7e3fd"
+      "bytes": 257532,
+      "sha256": "6d9f403b81bb310895703f4e9d2f74d6d789d8ff2d6b6c8cb68703bf596e944c"
     },
     {
       "path": "app/index.png",
@@ -147,5 +147,5 @@
       "sha256": "29c76f8c663bb02ff041529806b02e211c64e1bd7dae4ae99effd035d1d1327f"
     }
   ],
-  "bytes": 99311561
+  "bytes": 99311513
 }

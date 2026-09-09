@@ -1,0 +1,619 @@
+{
+  "initial": {
+    "analysis_ready": false,
+    "analysis_visible": true,
+    "bridge_id": "",
+    "camera_distance": 100,
+    "camera_far": 400,
+    "camera_focus": [
+      0,
+      0,
+      0
+    ],
+    "camera_near": 2,
+    "camera_pitch": 0.34,
+    "camera_yaw": 1.1,
+    "chooser_scroll": 0,
+    "chooser_visible": true,
+    "component_count": 0,
+    "drawer_open": false,
+    "drawer_scroll": 0,
+    "environment_available": false,
+    "environment_checked": false,
+    "environment_loaded": false,
+    "environment_loading": false,
+    "environment_quality": "",
+    "explosion": 0,
+    "failure": "",
+    "fps": 12,
+    "hidden_count": 0,
+    "isolated_id": "",
+    "layout_size": [
+      390,
+      844
+    ],
+    "loading": false,
+    "manifest_count": 4,
+    "mobile_layout": true,
+    "msaa": 1,
+    "requests": [
+      {
+        "kind": "manifest",
+        "time_ms": 620,
+        "url": "http://127.0.0.1:8767/manifest.json"
+      }
+    ],
+    "selected_id": "",
+    "stage": 0,
+    "stage_count": 1,
+    "static_memory": 0,
+    "triangle_cache_count": 0,
+    "ui_scale": 3,
+    "viewport": [
+      1170,
+      2532
+    ],
+    "visible_count": 0,
+    "webkit": false
+  },
+  "results": [
+    {
+      "analysis_ready": true,
+      "analysis_visible": false,
+      "bridge_id": "girder",
+      "camera_distance": 424.164103860623,
+      "camera_far": 744.164123535156,
+      "camera_focus": [
+        45,
+        5,
+        0
+      ],
+      "camera_near": 8.4832820892334,
+      "camera_pitch": 0.34,
+      "camera_yaw": 1.1,
+      "chooser_scroll": 0,
+      "chooser_visible": false,
+      "component_count": 2424,
+      "drawer_open": false,
+      "drawer_scroll": 0,
+      "environment_available": true,
+      "environment_checked": true,
+      "environment_loaded": true,
+      "environment_loading": false,
+      "environment_quality": "low",
+      "explosion": 0,
+      "failure": "",
+      "fps": 30,
+      "hidden_count": 0,
+      "isolated_id": "",
+      "layout_size": [
+        390,
+        844
+      ],
+      "loading": false,
+      "manifest_count": 4,
+      "mobile_layout": true,
+      "msaa": 1,
+      "requests": [
+        {
+          "kind": "manifest",
+          "time_ms": 620,
+          "url": "http://127.0.0.1:8767/manifest.json"
+        },
+        {
+          "kind": "model",
+          "time_ms": 1668,
+          "url": "http://127.0.0.1:8767/assets/models/girder.glb"
+        },
+        {
+          "kind": "analysis",
+          "time_ms": 3608,
+          "url": "http://127.0.0.1:8767/analysis/girder.json"
+        },
+        {
+          "kind": "environment",
+          "time_ms": 4328,
+          "url": "http://127.0.0.1:8767/assets/environments/girder_low.glb"
+        }
+      ],
+      "selected_id": "",
+      "stage": 4,
+      "stage_count": 5,
+      "static_memory": 0,
+      "triangle_cache_count": 0,
+      "ui_scale": 3,
+      "viewport": [
+        1170,
+        2532
+      ],
+      "visible_count": 2424,
+      "webkit": false
+    },
+    {
+      "analysis_ready": true,
+      "analysis_visible": false,
+      "bridge_id": "arch",
+      "camera_distance": 2573.42543227631,
+      "camera_far": 4867.9052734375,
+      "camera_focus": [
+        299.079986572266,
+        77,
+        0
+      ],
+      "camera_near": 51.4685096740723,
+      "camera_pitch": 0.34,
+      "camera_yaw": 1.1,
+      "chooser_scroll": 0,
+      "chooser_visible": false,
+      "component_count": 1843,
+      "drawer_open": false,
+      "drawer_scroll": 0,
+      "environment_available": true,
+      "environment_checked": true,
+      "environment_loaded": true,
+      "environment_loading": false,
+      "environment_quality": "low",
+      "explosion": 0,
+      "failure": "",
+      "fps": 38,
+      "hidden_count": 0,
+      "isolated_id": "",
+      "layout_size": [
+        390,
+        844
+      ],
+      "loading": false,
+      "manifest_count": 4,
+      "mobile_layout": true,
+      "msaa": 1,
+      "requests": [
+        {
+          "kind": "manifest",
+          "time_ms": 620,
+          "url": "http://127.0.0.1:8767/manifest.json"
+        },
+        {
+          "kind": "model",
+          "time_ms": 1668,
+          "url": "http://127.0.0.1:8767/assets/models/girder.glb"
+        },
+        {
+          "kind": "analysis",
+          "time_ms": 3608,
+          "url": "http://127.0.0.1:8767/analysis/girder.json"
+        },
+        {
+          "kind": "environment",
+          "time_ms": 4328,
+          "url": "http://127.0.0.1:8767/assets/environments/girder_low.glb"
+        },
+        {
+          "kind": "model",
+          "time_ms": 8649,
+          "url": "http://127.0.0.1:8767/assets/models/arch.glb"
+        },
+        {
+          "kind": "analysis",
+          "time_ms": 10255,
+          "url": "http://127.0.0.1:8767/analysis/arch.json"
+        },
+        {
+          "kind": "environment",
+          "time_ms": 10787,
+          "url": "http://127.0.0.1:8767/assets/environments/arch_low.glb"
+        }
+      ],
+      "selected_id": "",
+      "stage": 9,
+      "stage_count": 10,
+      "static_memory": 0,
+      "triangle_cache_count": 0,
+      "ui_scale": 3,
+      "viewport": [
+        1170,
+        2532
+      ],
+      "visible_count": 1771,
+      "webkit": false
+    },
+    {
+      "analysis_ready": true,
+      "analysis_visible": false,
+      "bridge_id": "cable_stayed",
+      "camera_distance": 1900.25518529559,
+      "camera_far": 3316.05346679688,
+      "camera_focus": [
+        224,
+        37.9496002197266,
+        0
+      ],
+      "camera_near": 38.0051040649414,
+      "camera_pitch": 0.34,
+      "camera_yaw": 1.1,
+      "chooser_scroll": 0,
+      "chooser_visible": false,
+      "component_count": 1782,
+      "drawer_open": false,
+      "drawer_scroll": 0,
+      "environment_available": true,
+      "environment_checked": true,
+      "environment_loaded": true,
+      "environment_loading": false,
+      "environment_quality": "low",
+      "explosion": 0,
+      "failure": "",
+      "fps": 36,
+      "hidden_count": 0,
+      "isolated_id": "",
+      "layout_size": [
+        390,
+        844
+      ],
+      "loading": false,
+      "manifest_count": 4,
+      "mobile_layout": true,
+      "msaa": 1,
+      "requests": [
+        {
+          "kind": "manifest",
+          "time_ms": 620,
+          "url": "http://127.0.0.1:8767/manifest.json"
+        },
+        {
+          "kind": "model",
+          "time_ms": 1668,
+          "url": "http://127.0.0.1:8767/assets/models/girder.glb"
+        },
+        {
+          "kind": "analysis",
+          "time_ms": 3608,
+          "url": "http://127.0.0.1:8767/analysis/girder.json"
+        },
+        {
+          "kind": "environment",
+          "time_ms": 4328,
+          "url": "http://127.0.0.1:8767/assets/environments/girder_low.glb"
+        },
+        {
+          "kind": "model",
+          "time_ms": 8649,
+          "url": "http://127.0.0.1:8767/assets/models/arch.glb"
+        },
+        {
+          "kind": "analysis",
+          "time_ms": 10255,
+          "url": "http://127.0.0.1:8767/analysis/arch.json"
+        },
+        {
+          "kind": "environment",
+          "time_ms": 10787,
+          "url": "http://127.0.0.1:8767/assets/environments/arch_low.glb"
+        },
+        {
+          "kind": "model",
+          "time_ms": 13580,
+          "url": "http://127.0.0.1:8767/assets/models/cable_stayed.glb"
+        },
+        {
+          "kind": "analysis",
+          "time_ms": 14921,
+          "url": "http://127.0.0.1:8767/analysis/cable_stayed.json"
+        },
+        {
+          "kind": "environment",
+          "time_ms": 15505,
+          "url": "http://127.0.0.1:8767/assets/environments/cable_stayed_low.glb"
+        }
+      ],
+      "selected_id": "",
+      "stage": 14,
+      "stage_count": 15,
+      "static_memory": 0,
+      "triangle_cache_count": 0,
+      "ui_scale": 3,
+      "viewport": [
+        1170,
+        2532
+      ],
+      "visible_count": 1678,
+      "webkit": false
+    },
+    {
+      "analysis_ready": true,
+      "analysis_visible": false,
+      "bridge_id": "suspension",
+      "camera_distance": 7617.86611559283,
+      "camera_far": 13316.6298828125,
+      "camera_focus": [
+        911,
+        72,
+        0
+      ],
+      "camera_near": 152.357315063477,
+      "camera_pitch": 0.34,
+      "camera_yaw": 1.1,
+      "chooser_scroll": 0,
+      "chooser_visible": false,
+      "component_count": 4749,
+      "drawer_open": false,
+      "drawer_scroll": 0,
+      "environment_available": true,
+      "environment_checked": true,
+      "environment_loaded": true,
+      "environment_loading": false,
+      "environment_quality": "low",
+      "explosion": 0,
+      "failure": "",
+      "fps": 19,
+      "hidden_count": 0,
+      "isolated_id": "",
+      "layout_size": [
+        390,
+        844
+      ],
+      "loading": false,
+      "manifest_count": 4,
+      "mobile_layout": true,
+      "msaa": 1,
+      "requests": [
+        {
+          "kind": "manifest",
+          "time_ms": 620,
+          "url": "http://127.0.0.1:8767/manifest.json"
+        },
+        {
+          "kind": "model",
+          "time_ms": 1668,
+          "url": "http://127.0.0.1:8767/assets/models/girder.glb"
+        },
+        {
+          "kind": "analysis",
+          "time_ms": 3608,
+          "url": "http://127.0.0.1:8767/analysis/girder.json"
+        },
+        {
+          "kind": "environment",
+          "time_ms": 4328,
+          "url": "http://127.0.0.1:8767/assets/environments/girder_low.glb"
+        },
+        {
+          "kind": "model",
+          "time_ms": 8649,
+          "url": "http://127.0.0.1:8767/assets/models/arch.glb"
+        },
+        {
+          "kind": "analysis",
+          "time_ms": 10255,
+          "url": "http://127.0.0.1:8767/analysis/arch.json"
+        },
+        {
+          "kind": "environment",
+          "time_ms": 10787,
+          "url": "http://127.0.0.1:8767/assets/environments/arch_low.glb"
+        },
+        {
+          "kind": "model",
+          "time_ms": 13580,
+          "url": "http://127.0.0.1:8767/assets/models/cable_stayed.glb"
+        },
+        {
+          "kind": "analysis",
+          "time_ms": 14921,
+          "url": "http://127.0.0.1:8767/analysis/cable_stayed.json"
+        },
+        {
+          "kind": "environment",
+          "time_ms": 15505,
+          "url": "http://127.0.0.1:8767/assets/environments/cable_stayed_low.glb"
+        },
+        {
+          "kind": "model",
+          "time_ms": 18518,
+          "url": "http://127.0.0.1:8767/assets/models/suspension.glb"
+        },
+        {
+          "kind": "analysis",
+          "time_ms": 21827,
+          "url": "http://127.0.0.1:8767/analysis/suspension.json"
+        },
+        {
+          "kind": "environment",
+          "time_ms": 22761,
+          "url": "http://127.0.0.1:8767/assets/environments/suspension_low.glb"
+        }
+      ],
+      "selected_id": "",
+      "stage": 9,
+      "stage_count": 10,
+      "static_memory": 0,
+      "triangle_cache_count": 0,
+      "ui_scale": 3,
+      "viewport": [
+        1170,
+        2532
+      ],
+      "visible_count": 4381,
+      "webkit": false
+    }
+  ],
+  "headers": [
+    {
+      "url": "http://127.0.0.1:8767/manifest.json",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "2877",
+        "content-type": "application/json",
+        "date": "Wed, 09 Sep 2026 02:32:00 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/assets/models/girder.glb",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "1461771",
+        "content-type": "application/octet-stream",
+        "date": "Wed, 09 Sep 2026 02:32:01 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/analysis/girder.json",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "1251",
+        "content-type": "application/json",
+        "date": "Wed, 09 Sep 2026 02:32:03 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/assets/environments/girder_low.glb",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "2746122",
+        "content-type": "application/octet-stream",
+        "date": "Wed, 09 Sep 2026 02:32:03 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/assets/models/arch.glb",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "2698512",
+        "content-type": "application/octet-stream",
+        "date": "Wed, 09 Sep 2026 02:32:08 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/analysis/arch.json",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "1379",
+        "content-type": "application/json",
+        "date": "Wed, 09 Sep 2026 02:32:10 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/assets/environments/arch_low.glb",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "2356832",
+        "content-type": "application/octet-stream",
+        "date": "Wed, 09 Sep 2026 02:32:10 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/assets/models/cable_stayed.glb",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "2367414",
+        "content-type": "application/octet-stream",
+        "date": "Wed, 09 Sep 2026 02:32:13 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/analysis/cable_stayed.json",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "1331",
+        "content-type": "application/json",
+        "date": "Wed, 09 Sep 2026 02:32:14 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/assets/environments/cable_stayed_low.glb",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "2318224",
+        "content-type": "application/octet-stream",
+        "date": "Wed, 09 Sep 2026 02:32:14 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/assets/models/suspension.glb",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "3973401",
+        "content-type": "application/octet-stream",
+        "date": "Wed, 09 Sep 2026 02:32:17 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/analysis/suspension.json",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "1365",
+        "content-type": "application/json",
+        "date": "Wed, 09 Sep 2026 02:32:21 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:8767/assets/environments/suspension_low.glb",
+      "status": 200,
+      "headers": {
+        "cache-control": "no-store",
+        "content-encoding": "gzip",
+        "content-length": "2320341",
+        "content-type": "application/octet-stream",
+        "date": "Wed, 09 Sep 2026 02:32:22 GMT",
+        "server": "SimpleHTTP/0.6 Python/3.13.5",
+        "vary": "Accept-Encoding"
+      }
+    }
+  ],
+  "errors": [],
+  "pck": [
+    {
+      "url": "http://127.0.0.1:8767/app/index.pck",
+      "decoded": 257532,
+      "encoded": 253561
+    }
+  ],
+  "all_gzip": true
+}
