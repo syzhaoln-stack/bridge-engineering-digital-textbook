@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bridge force overlay version 1",
+  "type": "object",
+  "required": ["schema", "model_id", "kind", "title", "coordinate_system", "units", "load_case", "display_scale", "curves"],
+  "properties": {
+    "schema": {"const": "bridge-force-overlay/1"},
+    "model_id": {"type": "string", "minLength": 1},
+    "kind": {"enum": ["teaching_demo", "analysis_result"]},
+    "title": {"type": "string"},
+    "coordinate_system": {"const": "bridge_xyz_z_up"},
+    "units": {
+      "type": "object",
+      "required": ["length", "moment"],
+      "properties": {"length": {"const": "m"}, "moment": {"type": "string", "minLength": 1}}
+    },
+    "load_case": {"type": "string"},
+    "display_scale": {"type": "number", "exclusiveMinimum": 0},
+    "curves": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["label", "quantity", "points"],
+        "anyOf": [{"required": ["component_id"]}, {"required": ["category"]}],
+        "properties": {
+          "label": {"type": "string"},
+          "quantity": {"type": "string"},
+          "component_id": {"type": "string", "minLength": 1},
+          "category": {"type": "string", "minLength": 1},
+          "points": {
+            "type": "array", "minItems": 2,
+            "items": {
+              "type": "object", "required": ["position", "value"],
+              "properties": {
+                "position": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}},
+                "value": {"type": "number"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

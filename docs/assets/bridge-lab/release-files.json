@@ -1,0 +1,151 @@
+{
+  "schema": "bridge-lab-release/1",
+  "files": [
+    {
+      "path": "ABOUT.html",
+      "bytes": 4931,
+      "sha256": "974ffe4142e8a9b78d512279bd6352da407864d2924e0e9841dc46c79ca5bd0e"
+    },
+    {
+      "path": "analysis/arch.json",
+      "bytes": 8432,
+      "sha256": "7e94005410c2fc60f2bdd75dcb36f6bf1b7353a523d2f9a38b0930a2d4a83bf6"
+    },
+    {
+      "path": "analysis/cable_stayed.json",
+      "bytes": 8500,
+      "sha256": "adeed1261e1b34ddf0197f61ad46db839fe46186317993e9ed3ccc40f8d69685"
+    },
+    {
+      "path": "analysis/girder.json",
+      "bytes": 8263,
+      "sha256": "dd7b1ae1e271640e80ecce8f6b601f28b426b5f65f40bb0e396eb8928ebf3c5b"
+    },
+    {
+      "path": "analysis/schema.json",
+      "bytes": 1670,
+      "sha256": "c1a968f17c1f4b501e65a2f334967d12cc95618f3475d1f56f054b98b53412f4"
+    },
+    {
+      "path": "analysis/suspension.json",
+      "bytes": 8501,
+      "sha256": "eba86d1f5cf010e20f8bb912bc47ee6e78c9de93cdb25503a3fd40f8954a5044"
+    },
+    {
+      "path": "app/index.audio.position.worklet.js",
+      "bytes": 2973,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+    },
+    {
+      "path": "app/index.audio.worklet.js",
+      "bytes": 7298,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+    },
+    {
+      "path": "app/index.html",
+      "bytes": 6637,
+      "sha256": "4731d6b461ce0c4baf4122808b1fc6ffa254a431e4efde8ccdccbc80c1bec87d"
+    },
+    {
+      "path": "app/index.js",
+      "bytes": 279815,
+      "sha256": "68586d6daafc93c6e697b3fb258976874aa7459b8931165ebb1dc3c9614cc42c"
+    },
+    {
+      "path": "app/index.pck",
+      "bytes": 257580,
+      "sha256": "8c0eb34b34e223235a27da9213d6b01181840d2ed550d1edf22c87d978d7e3fd"
+    },
+    {
+      "path": "app/index.png",
+      "bytes": 21443,
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
+    },
+    {
+      "path": "app/index.wasm",
+      "bytes": 39509339,
+      "sha256": "7eda98958eb09135a1acb54a4323a00b1a55af1997f15fa1cdc2b93e3df46656"
+    },
+    {
+      "path": "assets/environments/arch_low.glb",
+      "bytes": 2540512,
+      "sha256": "6776500d11b20166a0c3d841e921feb9668a4e50f2cf01c335fd8132982fb159"
+    },
+    {
+      "path": "assets/environments/arch_standard.glb",
+      "bytes": 4153652,
+      "sha256": "29b76e824bcbe4a4c03b2f2a1075646265afd847ead798843015bfd18fe2cca5"
+    },
+    {
+      "path": "assets/environments/cable_stayed_low.glb",
+      "bytes": 2399888,
+      "sha256": "df02e98673ae5d0feae4de0ea287415f8a10fb0884bb4603cb1e569aae00dadc"
+    },
+    {
+      "path": "assets/environments/cable_stayed_standard.glb",
+      "bytes": 4013032,
+      "sha256": "2f51e7cbbd3aec4fe3eebc5d5109a13e8a45c1d34d85965433d8ead48d5b77e9"
+    },
+    {
+      "path": "assets/environments/girder_low.glb",
+      "bytes": 3548348,
+      "sha256": "4c81a0f9d8a1b2a501a2689329b5f41e38b5442746eb8f9a8156c8add10ad4ae"
+    },
+    {
+      "path": "assets/environments/girder_standard.glb",
+      "bytes": 5161488,
+      "sha256": "1de85ea95de56770badf31b31bac868cfd56265664b210b30468d11d1a7de82a"
+    },
+    {
+      "path": "assets/environments/suspension_low.glb",
+      "bytes": 2399892,
+      "sha256": "14cabf7fe999fc611b4b411436a7557ba4f3a73134d8832d9358ac1339530280"
+    },
+    {
+      "path": "assets/environments/suspension_standard.glb",
+      "bytes": 4013036,
+      "sha256": "458383cc177b81811204c4b38b2e9cdb19285a50bc32934986ed3d56b29617bf"
+    },
+    {
+      "path": "assets/models/arch.glb",
+      "bytes": 6236256,
+      "sha256": "91c940694e7f319157586b9e210f59777c72ef5c860b6681c8a1d4bcce4c44bc"
+    },
+    {
+      "path": "assets/models/cable_stayed.glb",
+      "bytes": 4564460,
+      "sha256": "24e66587a286006fd4e79ca96c7a37995c6c508776efc37862dabecd8198f964"
+    },
+    {
+      "path": "assets/models/girder.glb",
+      "bytes": 7150008,
+      "sha256": "5235ea09c47c4d64298d84e253f13c1274c1d2bf614d240c073a0bf0dc8f7acc"
+    },
+    {
+      "path": "assets/models/suspension.glb",
+      "bytes": 12888056,
+      "sha256": "ac85455eef15823563d26a29438f856847202bc3519b61e69ce8af4fef8a8a7d"
+    },
+    {
+      "path": "licenses/GODOT_COPYRIGHT.txt",
+      "bytes": 100108,
+      "sha256": "cb1980c88089573bcacd7221d777c689bb8bbd778799f24c27fca0fe5f774d6d"
+    },
+    {
+      "path": "licenses/GODOT_LICENSE.txt",
+      "bytes": 1149,
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"
+    },
+    {
+      "path": "licenses/OFL.txt",
+      "bytes": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 11906,
+      "sha256": "29c76f8c663bb02ff041529806b02e211c64e1bd7dae4ae99effd035d1d1327f"
+    }
+  ],
+  "bytes": 99311561
+}

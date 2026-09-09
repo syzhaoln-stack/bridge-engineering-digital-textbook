@@ -5,6 +5,16 @@
 *.woff -text
 *.woff2 -text
 *.ico -text
+*.glb -text
+*.wasm -text
+*.pck -text
+*.webp -text
+*.ttf -text
+# Preserve generated runtime bytes and their release manifest checksums.
+source/assets/bridge-lab/** -text -whitespace
+docs/assets/bridge-lab/** -text -whitespace
+# Keep the supplied font license verbatim, including its spacing.
+tools/bridge-lab/**/OFL.txt -whitespace
 *.obj -text -whitespace
 *.mtl -text -whitespace
 *.bundle.js -whitespace

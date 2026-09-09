@@ -3,6 +3,7 @@
 本仓库是本轮数字教材的独立版本，包含11个专业章节、交互实验与桥梁思维公众课样讲。它与[旧版《我所理解的桥梁工程》](https://github.com/syzhaoln-stack/bridge-engineering-textbook)分开维护；旧仓库保持原状。
 
 - [在线阅读整本教材](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/)
+- [四类桥梁三维实验室：梁、拱、斜拉、悬索](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/bridge-lab/)
 - [数字教材成果展示总入口](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/showcase.html)
 - [文稿与资源组合样章 · 供合作者与出版社审阅](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/reading-preview.html)
 - [新增40幅图、5段双人对话、100个独立交互及3本Notebook](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/visual-update.html)
@@ -31,6 +32,10 @@
 作者申报材料、内部参考图与筛图记录、原始工作仓库历史未进入本仓库。图像来源见站内说明；第三方程序和Kenney车辆资产保留相应许可。公开访问不代表全书和所有素材统一采用某一种开源许可。
 
 ## 本地构建
+
+四类桥梁实验室放在第一篇第1章“结构体系与传力”的四类体系比较之后。预览页点击才启动 Godot 单线程 Web 程序，四桥及其背景按需加载；支持手机竖屏、触摸旋转/缩放/平移、爆炸、构件消隐和施工顺序。原四桥GLB共112.59 MB，拆分与压缩后主体共30.84 MB，环境单独按需加载，保留构件和结构几何；T梁另补可选河岸环境。弯矩叠加目前标为教学示意，未接入实桥分析结果。
+
+可编辑的Godot工程与重建说明见 [tools/bridge-lab](tools/bridge-lab/README.md)。网页运行文件在 `source/assets/bridge-lab/`，公开快照在 `docs/assets/bridge-lab/`。Blender高精度原始工程和内部图纸副本保留在作者本地，公开网页提供出处链接。
 
 安装Quarto和Python后，运行`quarto render source --to html`；构建结果在`source/_site/`。当前Pages从`main`分支的`docs/`发布，更新时应先检查构建结果再同步到该目录。默认交互可本地运行；外部课程与投影工作台需要联网，部分正文公式使用在线MathJax。
 

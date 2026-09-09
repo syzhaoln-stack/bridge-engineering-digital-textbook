@@ -1,0 +1,8 @@
+{
+  "source": "https://github.com/google/fonts/tree/main/ofl/notosanssc",
+  "license": "SIL Open Font License 1.1",
+  "characters_requested": 1205,
+  "glyphs_retained": 1077,
+  "bytes": 269400,
+  "purpose": "All shipped model labels and interface text; original full font retained locally."
+}

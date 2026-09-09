@@ -1,0 +1,513 @@
+{
+  "source_statistics": {
+    "girder": {
+      "file_bytes": 19744520,
+      "sha256": "bd2797169ecffe46d85bfb61df0caa9d5fbfcdbf04a5d4c23e5ade94c3fd8610",
+      "json_bytes": 2046396,
+      "bin_bytes": 17698096,
+      "geometry_buffer_view_bytes": 17698096,
+      "image_buffer_view_bytes": 0,
+      "bin_padding_or_other_bytes": 0,
+      "node_count": 2433,
+      "mesh_count": 2424,
+      "mesh_node_count": 2424,
+      "image_count": 0,
+      "images": [],
+      "environment_node_count": 0
+    },
+    "cable_stayed": {
+      "file_bytes": 24968624,
+      "sha256": "b1a6da076a1a78de3bcd4ca582d4819eea971f65659fcbceb9bbe0be32a2b30a",
+      "json_bytes": 1732692,
+      "bin_bytes": 23235904,
+      "geometry_buffer_view_bytes": 14874072,
+      "image_buffer_view_bytes": 8361818,
+      "bin_padding_or_other_bytes": 14,
+      "node_count": 1799,
+      "mesh_count": 1789,
+      "mesh_node_count": 1789,
+      "image_count": 10,
+      "images": [
+        {
+          "index": 0,
+          "name": "nor_gl",
+          "format": "JPEG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 241121,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "1f5e8c35aa0af0aba7c52e12e07c8eeb16e50fa9883afd279287609fa95c51a1"
+        },
+        {
+          "index": 1,
+          "name": "concrete_wall_006_albedo",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 1705665,
+          "roles": [
+            "baseColorTexture"
+          ],
+          "sha256": "c18996017eb43ab2c1a6abb3e241a11a4595a92faa221b772ce122d274ed7c1d"
+        },
+        {
+          "index": 2,
+          "name": "Rough",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 568802,
+          "roles": [
+            "metallicRoughnessTexture"
+          ],
+          "sha256": "cc226cb7d8050ad650641ae0b433d9cc3f511f859607bea088a13f7cc7e2e3ab"
+        },
+        {
+          "index": 3,
+          "name": "nor_gl",
+          "format": "JPEG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 159991,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "1e70b188383f18e4aba33974041aa8df75a2df58bde59762864e618beda6070e"
+        },
+        {
+          "index": 4,
+          "name": "asphalt_04_albedo",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 1313947,
+          "roles": [
+            "baseColorTexture"
+          ],
+          "sha256": "17f5a75a63eadd63da003d90fd95c5a9c98d7c29f4c8b16585db4311bce1d09b"
+        },
+        {
+          "index": 5,
+          "name": "Rough",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 896864,
+          "roles": [
+            "metallicRoughnessTexture"
+          ],
+          "sha256": "ed065a3149c37eb73f324db05b6320e0b5104401059ebf101b566fa1ecd58dc6"
+        },
+        {
+          "index": 6,
+          "name": "nor_gl",
+          "format": "JPEG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 209219,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "77993e681c96ad52e168e55b00f9a9f2df2dbcd8113a8bf1c593cde782604575"
+        },
+        {
+          "index": 7,
+          "name": "aerial_grass_rock_albedo",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 2005795,
+          "roles": [
+            "baseColorTexture"
+          ],
+          "sha256": "64b5967ca87a05e16c8855caf51cda1ec332eb2b3df87cf5b38e151de35458e6"
+        },
+        {
+          "index": 8,
+          "name": "Rough",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 1066799,
+          "roles": [
+            "metallicRoughnessTexture"
+          ],
+          "sha256": "120ab83e8af3b8538cc4b801df5bc5c9d068ee9516a323fde7a3677f042b9e20"
+        },
+        {
+          "index": 9,
+          "name": "Seamless_river_ripple_normal",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 512,
+          "height": 512,
+          "has_alpha": false,
+          "bytes": 193615,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "718e9e97f38ee0e80df3754b638143d0a39d8795d902f38c04c0afd2ff4d1b58"
+        }
+      ],
+      "environment_node_count": 8
+    },
+    "suspension": {
+      "file_bytes": 42701812,
+      "sha256": "4578517de3d5cb5d68e4c3fe7ca1c17646757fabc8f8794325a0785e25b58b27",
+      "json_bytes": 4938816,
+      "bin_bytes": 37762968,
+      "geometry_buffer_view_bytes": 29401136,
+      "image_buffer_view_bytes": 8361818,
+      "bin_padding_or_other_bytes": 14,
+      "node_count": 4766,
+      "mesh_count": 4756,
+      "mesh_node_count": 4756,
+      "image_count": 10,
+      "images": [
+        {
+          "index": 0,
+          "name": "nor_gl",
+          "format": "JPEG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 241121,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "1f5e8c35aa0af0aba7c52e12e07c8eeb16e50fa9883afd279287609fa95c51a1"
+        },
+        {
+          "index": 1,
+          "name": "concrete_wall_006_albedo",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 1705665,
+          "roles": [
+            "baseColorTexture"
+          ],
+          "sha256": "c18996017eb43ab2c1a6abb3e241a11a4595a92faa221b772ce122d274ed7c1d"
+        },
+        {
+          "index": 2,
+          "name": "Rough",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 568802,
+          "roles": [
+            "metallicRoughnessTexture"
+          ],
+          "sha256": "cc226cb7d8050ad650641ae0b433d9cc3f511f859607bea088a13f7cc7e2e3ab"
+        },
+        {
+          "index": 3,
+          "name": "nor_gl",
+          "format": "JPEG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 159991,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "1e70b188383f18e4aba33974041aa8df75a2df58bde59762864e618beda6070e"
+        },
+        {
+          "index": 4,
+          "name": "asphalt_04_albedo",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 1313947,
+          "roles": [
+            "baseColorTexture"
+          ],
+          "sha256": "17f5a75a63eadd63da003d90fd95c5a9c98d7c29f4c8b16585db4311bce1d09b"
+        },
+        {
+          "index": 5,
+          "name": "Rough",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 896864,
+          "roles": [
+            "metallicRoughnessTexture"
+          ],
+          "sha256": "ed065a3149c37eb73f324db05b6320e0b5104401059ebf101b566fa1ecd58dc6"
+        },
+        {
+          "index": 6,
+          "name": "nor_gl",
+          "format": "JPEG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 209219,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "77993e681c96ad52e168e55b00f9a9f2df2dbcd8113a8bf1c593cde782604575"
+        },
+        {
+          "index": 7,
+          "name": "aerial_grass_rock_albedo",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 2005795,
+          "roles": [
+            "baseColorTexture"
+          ],
+          "sha256": "64b5967ca87a05e16c8855caf51cda1ec332eb2b3df87cf5b38e151de35458e6"
+        },
+        {
+          "index": 8,
+          "name": "Rough",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 1066799,
+          "roles": [
+            "metallicRoughnessTexture"
+          ],
+          "sha256": "120ab83e8af3b8538cc4b801df5bc5c9d068ee9516a323fde7a3677f042b9e20"
+        },
+        {
+          "index": 9,
+          "name": "Seamless_river_ripple_normal",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 512,
+          "height": 512,
+          "has_alpha": false,
+          "bytes": 193615,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "718e9e97f38ee0e80df3754b638143d0a39d8795d902f38c04c0afd2ff4d1b58"
+        }
+      ],
+      "environment_node_count": 8
+    },
+    "arch": {
+      "file_bytes": 25174344,
+      "sha256": "e62974bf7a4f75656aa5cdf5611092efe56da15e3d5d01ddd86512d20d8fdb80",
+      "json_bytes": 1972756,
+      "bin_bytes": 23201560,
+      "geometry_buffer_view_bytes": 14627896,
+      "image_buffer_view_bytes": 8573649,
+      "bin_padding_or_other_bytes": 15,
+      "node_count": 1861,
+      "mesh_count": 1851,
+      "mesh_node_count": 1851,
+      "image_count": 11,
+      "images": [
+        {
+          "index": 0,
+          "name": "nor_gl",
+          "format": "JPEG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 241121,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "1f5e8c35aa0af0aba7c52e12e07c8eeb16e50fa9883afd279287609fa95c51a1"
+        },
+        {
+          "index": 1,
+          "name": "concrete_wall_006_albedo",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 1705665,
+          "roles": [
+            "baseColorTexture"
+          ],
+          "sha256": "c18996017eb43ab2c1a6abb3e241a11a4595a92faa221b772ce122d274ed7c1d"
+        },
+        {
+          "index": 2,
+          "name": "Rough",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 568802,
+          "roles": [
+            "metallicRoughnessTexture"
+          ],
+          "sha256": "cc226cb7d8050ad650641ae0b433d9cc3f511f859607bea088a13f7cc7e2e3ab"
+        },
+        {
+          "index": 3,
+          "name": "weathering_steel_patina",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 512,
+          "height": 512,
+          "has_alpha": false,
+          "bytes": 211831,
+          "roles": [
+            "baseColorTexture"
+          ],
+          "sha256": "6e9688aa1d7a3a54f60d628e391ea9e93d6d74519ccf13cdb586b835063ae257"
+        },
+        {
+          "index": 4,
+          "name": "nor_gl",
+          "format": "JPEG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 159991,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "1e70b188383f18e4aba33974041aa8df75a2df58bde59762864e618beda6070e"
+        },
+        {
+          "index": 5,
+          "name": "asphalt_04_albedo",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 1313947,
+          "roles": [
+            "baseColorTexture"
+          ],
+          "sha256": "17f5a75a63eadd63da003d90fd95c5a9c98d7c29f4c8b16585db4311bce1d09b"
+        },
+        {
+          "index": 6,
+          "name": "Rough",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 896864,
+          "roles": [
+            "metallicRoughnessTexture"
+          ],
+          "sha256": "ed065a3149c37eb73f324db05b6320e0b5104401059ebf101b566fa1ecd58dc6"
+        },
+        {
+          "index": 7,
+          "name": "nor_gl",
+          "format": "JPEG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 209219,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "77993e681c96ad52e168e55b00f9a9f2df2dbcd8113a8bf1c593cde782604575"
+        },
+        {
+          "index": 8,
+          "name": "aerial_grass_rock_albedo",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 2005795,
+          "roles": [
+            "baseColorTexture"
+          ],
+          "sha256": "64b5967ca87a05e16c8855caf51cda1ec332eb2b3df87cf5b38e151de35458e6"
+        },
+        {
+          "index": 9,
+          "name": "Rough",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 1024,
+          "height": 1024,
+          "has_alpha": false,
+          "bytes": 1066799,
+          "roles": [
+            "metallicRoughnessTexture"
+          ],
+          "sha256": "120ab83e8af3b8538cc4b801df5bc5c9d068ee9516a323fde7a3677f042b9e20"
+        },
+        {
+          "index": 10,
+          "name": "Seamless_river_ripple_normal",
+          "format": "PNG",
+          "mode": "RGB",
+          "width": 512,
+          "height": 512,
+          "has_alpha": false,
+          "bytes": 193615,
+          "roles": [
+            "normalTexture"
+          ],
+          "sha256": "718e9e97f38ee0e80df3754b638143d0a39d8795d902f38c04c0afd2ff4d1b58"
+        }
+      ],
+      "environment_node_count": 9
+    }
+  },
+  "totals": {
+    "original_bytes": 112589300,
+    "body_bytes": 30838780,
+    "environment_standard_bytes": 17341208,
+    "environment_low_bytes": 10888640
+  },
+  "all_geometry_and_semantic_comparisons_passed": true,
+  "new_girder_environment": {
+    "standard_bytes": 5161488,
+    "low_bytes": 3548348,
+    "audit": "asset-girder-environment.json"
+  }
+}

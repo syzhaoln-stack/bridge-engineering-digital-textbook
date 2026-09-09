@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "message": "four bridge manifest",
+      "passed": true
+    },
+    {
+      "message": "390px portrait layout",
+      "passed": true
+    },
+    {
+      "message": "distance-scaled depth precision",
+      "passed": true
+    },
+    {
+      "message": "drawer moves on vertical touch drag",
+      "passed": true
+    },
+    {
+      "message": "scroll does not toggle checkbox",
+      "passed": true
+    },
+    {
+      "message": "scroll preserves stage",
+      "passed": true
+    },
+    {
+      "message": "scroll preserves explosion",
+      "passed": true
+    },
+    {
+      "message": "scroll does not rotate bridge",
+      "passed": true
+    },
+    {
+      "message": "touch release clears UI gesture",
+      "passed": true
+    },
+    {
+      "message": "construction controls ignore asynchronous loading window",
+      "passed": true
+    }
+  ],
+  "failure_count": 0,
+  "limitations": "Native engine event dispatch; browser mobile touch is verified separately."
+}

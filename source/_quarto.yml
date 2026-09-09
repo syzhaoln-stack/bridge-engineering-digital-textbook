@@ -8,6 +8,7 @@ project:
     - assets/videos/**
     - assets/generated/**
     - assets/publication/**
+    - assets/bridge-lab/**
     - notebooks/*.html
     - notebooks/*.ipynb
     - notebooks/*.py

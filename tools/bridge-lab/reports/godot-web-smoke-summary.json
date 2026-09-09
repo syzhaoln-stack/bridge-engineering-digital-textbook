@@ -1,0 +1,7 @@
+{
+  "source": "Godot native HTTP runtime smoke with external web assets",
+  "checks": 11407,
+  "passed": 11407,
+  "failures": [],
+  "scope": "Four bridges, semantic IDs, visibility, construction, explosion and environment loading. Browser verification recorded separately."
+}

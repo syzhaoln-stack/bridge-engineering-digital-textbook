@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "errors": [],
+  "same_geometry_id_stage_between_tiers": {
+    "passed": true,
+    "errors": [],
+    "node_signatures_checked": 11,
+    "component_id_count": 10,
+    "nodes_with_stage_fields": 11,
+    "instance_vertex_count_unchanged": 19498,
+    "instance_triangle_count_unchanged": 37728,
+    "checks": [
+      "exact POSITION/NORMAL/UV/all attribute and index element bytes",
+      "node names, full extras including component_id/stage/end_stage",
+      "entire ancestor transform chain",
+      "material colors, factors, alpha modes, clearcoat and UV/sampler settings"
+    ],
+    "not_claimed": [
+      "identical image encoding/pixels after approved color compression or environment resize",
+      "smaller GPU draw count from unchanged component nodes",
+      "Godot browser frame rate or screenshot quality"
+    ]
+  },
+  "environment_bounds_m": [
+    [
+      -60.0,
+      -85.0,
+      -2.0498640537261963
+    ],
+    [
+      150.0,
+      85.0,
+      12.699999809265137
+    ]
+  ],
+  "body_measurements": {
+    "coordinate_system": "physical metres: X bridge length, Y transverse, Z up",
+    "body_bounds_m": [
+      [
+        -7.0,
+        -13.099999904632568,
+        -12.0
+      ],
+      [
+        97.0,
+        13.099999904632568,
+        13.678115844726562
+      ]
+    ],
+    "road_bounds_m": [
+      [
+        0.0,
+        -12.25,
+        12.599999617785215
+      ],
+      [
+        90.0,
+        12.25,
+        12.699999619275331
+      ]
+    ],
+    "carriageway_y_m": [
+      [
+        -12.25,
+        -0.75
+      ],
+      [
+        0.75,
+        12.25
+      ]
+    ],
+    "bearing_bounds_m": [
+      [
+        0.15000003576278687,
+        -12.089999616146088,
+        9.92000000178814
+      ],
+      [
+        89.85000151395798,
+        12.089999616146088,
+        10.500000266358256
+      ]
+    ],
+    "bearing_mesh_nodes": 680
+  },
+  "terrain_highest_below_bridge_m": 6.0,
+  "bearing_lowest_m": 9.92000000178814,
+  "minimum_vertical_terrain_to_bearings_m": 3.9200000017881393,
+  "road_connectors": [
+    {
+      "name": "Approach_-1_1_Road",
+      "bridge_join_x_m": 0.0,
+      "road_surface_z_m": 12.699999809265137,
+      "height_gap_m": 1.8998980522155762e-07,
+      "transverse_edges_y_m": [
+        -12.25,
+        -0.75
+      ]
+    },
+    {
+      "name": "Approach_-1_2_Road",
+      "bridge_join_x_m": 0.0,
+      "road_surface_z_m": 12.699999809265137,
+      "height_gap_m": 1.8998980522155762e-07,
+      "transverse_edges_y_m": [
+        0.75,
+        12.25
+      ]
+    },
+    {
+      "name": "Approach_1_1_Road",
+      "bridge_join_x_m": 90.0,
+      "road_surface_z_m": 12.699999809265137,
+      "height_gap_m": 1.8998980522155762e-07,
+      "transverse_edges_y_m": [
+        -12.25,
+        -0.75
+      ]
+    },
+    {
+      "name": "Approach_1_2_Road",
+      "bridge_join_x_m": 90.0,
+      "road_surface_z_m": 12.699999809265137,
+      "height_gap_m": 1.8998980522155762e-07,
+      "transverse_edges_y_m": [
+        0.75,
+        12.25
+      ]
+    }
+  ],
+  "all_environment_node_transforms_identity": true,
+  "mesh_components": 10,
+  "triangles": 37728,
+  "not_claimed": [
+    "surveyed terrain, hydrology, earthwork design or approach slab structural design",
+    "unchanged scenery compared with the original: this is newly authorized teaching scenery"
+  ],
+  "all_four_body_files_byte_unchanged": true,
+  "body_sha256_before": {
+    "girder": "5235ea09c47c4d64298d84e253f13c1274c1d2bf614d240c073a0bf0dc8f7acc",
+    "cable_stayed": "24e66587a286006fd4e79ca96c7a37995c6c508776efc37862dabecd8198f964",
+    "suspension": "ac85455eef15823563d26a29438f856847202bc3519b61e69ce8af4fef8a8a7d",
+    "arch": "91c940694e7f319157586b9e210f59777c72ef5c860b6681c8a1d4bcce4c44bc"
+  },
+  "body_sha256_after": {
+    "girder": "5235ea09c47c4d64298d84e253f13c1274c1d2bf614d240c073a0bf0dc8f7acc",
+    "cable_stayed": "24e66587a286006fd4e79ca96c7a37995c6c508776efc37862dabecd8198f964",
+    "suspension": "ac85455eef15823563d26a29438f856847202bc3519b61e69ce8af4fef8a8a7d",
+    "arch": "91c940694e7f319157586b9e210f59777c72ef5c860b6681c8a1d4bcce4c44bc"
+  },
+  "body_hashes_match_approved_optimized_manifest": true,
+  "generated_at_utc": "2026-09-09T01:24:00.024339+00:00",
+  "assumptions": [
+    "新建教学布景，不是原型测量地形或引道施工图。",
+    "沿用旧梁桥源码的河道中心 X≈45 m、水面 Z=0.32 m 和两幅引道关系；简化岸坡与路基，不复用树草粒子。",
+    "桥下地形控制在 Z≤6 m，便于查看最低约 Z=9.92 m 的支座组件。关闭背景可完整观察埋置桩基。",
+    "两端引道 X=-60..0、90..150 m；两幅路面宽均11.5 m，Z=12.7 m。坐标取自实际主体GLB。",
+    "标准/低档均直接复用已优化斜拉桥环境的CC0材料图像；标准最大1024、低档512，无新增或放大纹理。",
+    "环境根组90_Environment，所有节点恒等变换；环境单独按需加载，主体无任何几何/颜色/变换修改。"
+  ]
+}

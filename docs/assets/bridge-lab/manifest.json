@@ -1,0 +1,333 @@
+{
+  "schema": "bridge-web-manifest/1",
+  "models": [
+    {
+      "id": "girder",
+      "name": "梁桥 · 现有 3 × 30 m",
+      "subtitle": "原梁桥模型对照 · 双幅 30 片 T 梁 / 推定教学施工阶段",
+      "filename": "girder.glb",
+      "length": 90,
+      "deck_z": 12.5,
+      "focus": [
+        45,
+        0,
+        5
+      ],
+      "distance": 140,
+      "stages": [
+        {
+          "title": "基础与承台",
+          "description": "保留现有梁桥几何。阶段由构件类型推定，用于教学演示。"
+        },
+        {
+          "title": "墩台与支座",
+          "description": "完成墩台、盖梁、垫石与支座，为主梁架设建立支承。"
+        },
+        {
+          "title": "预制 T 梁架设",
+          "description": "展示主梁安装完成状态；未模拟架桥机运动或逐片架设稳定验算。"
+        },
+        {
+          "title": "横向连接",
+          "description": "完成横隔板、连续段及代表性连接构造。"
+        },
+        {
+          "title": "桥面与附属",
+          "description": "完成桥面、护栏与标线，展示原梁桥成桥状态。"
+        }
+      ],
+      "groups": {
+        "01_Foundations": "桩基 / 承台",
+        "02_Towers": "墩台 / 盖梁",
+        "03_Deck": "预制 T 梁",
+        "05_Secondary": "支座 / 横隔板 / 配筋",
+        "06_Furniture": "护栏 / 排水 / 伸缩缝",
+        "07_Surface": "桥面 / 道路标线"
+      },
+      "model_url": "assets/models/girder.glb",
+      "model_bytes": 7150008,
+      "analysis_url": "analysis/girder.json",
+      "environments": {
+        "standard": {
+          "url": "assets/environments/girder_standard.glb",
+          "bytes": 5161488,
+          "texture_size": 1024
+        },
+        "low": {
+          "url": "assets/environments/girder_low.glb",
+          "bytes": 3548348,
+          "texture_size": 512
+        }
+      }
+    },
+    {
+      "id": "arch",
+      "name": "拱桥 · New River Gorge",
+      "subtitle": "主拱 518.16 m · 上承式耐候钢桁拱",
+      "filename": "arch.glb",
+      "length": 598.16,
+      "deck_z": 125.0,
+      "focus": [
+        299.08,
+        0,
+        77
+      ],
+      "distance": 849.3871999999999,
+      "stages": [
+        {
+          "title": "拱座与基础",
+          "description": "建立两岸拱座，承担拱肋水平推力；岸坡为教学地形。"
+        },
+        {
+          "title": "临时索塔与锚固",
+          "description": "建立两岸临时扣索塔、背索及锚固。"
+        },
+        {
+          "title": "拱脚起拱",
+          "description": "从两岸对称安装拱肋首批节段，临时扣索提供支承。"
+        },
+        {
+          "title": "下部拱肋悬臂",
+          "description": "左右两岸均衡推进，逐节连接横撑与风撑。"
+        },
+        {
+          "title": "中部拱肋悬臂",
+          "description": "继续架设并调整临时扣索，控制两岸悬臂状态。"
+        },
+        {
+          "title": "接近拱顶",
+          "description": "两岸拱肋接近拱顶，保留合龙口。"
+        },
+        {
+          "title": "主拱合龙",
+          "description": "连接拱顶节段和横撑，使主拱形成连续受压体系。"
+        },
+        {
+          "title": "拱上立柱与体系转换",
+          "description": "架设拱上立柱、卸载并拆除临时扣索设施。"
+        },
+        {
+          "title": "桥面桁梁",
+          "description": "按立柱支承位置连接上部桥面桁梁。"
+        },
+        {
+          "title": "铺装及附属工程",
+          "description": "完成桥面铺装、护栏和交通设施。"
+        }
+      ],
+      "groups": {
+        "01_Foundations": "基础 / 锚碇 / 拱座",
+        "02_Towers": "桥塔 / 主拱肋",
+        "03_Deck": "主梁 / 加劲梁",
+        "04_Cables": "斜拉索 / 主缆 / 吊索",
+        "05_Secondary": "横梁 / 横撑 / 支座",
+        "06_Furniture": "栏杆 / 灯具 / 检修道",
+        "07_Surface": "铺装 / 道路标线",
+        "08_Temporary": "施工临时设施",
+        "90_Environment": "水面 / 两岸环境",
+        "91_Traffic": "真实比例车辆"
+      },
+      "model_url": "assets/models/arch.glb",
+      "model_bytes": 6236256,
+      "analysis_url": "analysis/arch.json",
+      "environments": {
+        "standard": {
+          "url": "assets/environments/arch_standard.glb",
+          "bytes": 4153652,
+          "texture_size": 1024
+        },
+        "low": {
+          "url": "assets/environments/arch_low.glb",
+          "bytes": 2540512,
+          "texture_size": 512
+        }
+      }
+    },
+    {
+      "id": "cable_stayed",
+      "name": "斜拉桥 · Bago",
+      "subtitle": "112 + 224 + 112 m · 中央单索面钢塔 / 钢箱梁",
+      "filename": "cable_stayed.glb",
+      "length": 448.0,
+      "deck_z": 17.9496,
+      "focus": [
+        224.0,
+        0,
+        37.949600000000004
+      ],
+      "distance": 627.1999999999999,
+      "stages": [
+        {
+          "title": "基础与承台",
+          "description": "建立塔基础和两端支承；地下尺寸为教学补充。"
+        },
+        {
+          "title": "下塔柱与支承",
+          "description": "安装钢塔下段和支座。"
+        },
+        {
+          "title": "桥塔与零号梁段",
+          "description": "完成钢塔，安装塔旁起始钢箱梁及临时设备。"
+        },
+        {
+          "title": "对称悬臂 · 1/10",
+          "description": "每次从两座塔向两侧同步架设梁段，再张拉对应斜拉索。阶段表示关键完成状态。"
+        },
+        {
+          "title": "对称悬臂 · 2/10",
+          "description": "每次从两座塔向两侧同步架设梁段，再张拉对应斜拉索。阶段表示关键完成状态。"
+        },
+        {
+          "title": "对称悬臂 · 3/10",
+          "description": "每次从两座塔向两侧同步架设梁段，再张拉对应斜拉索。阶段表示关键完成状态。"
+        },
+        {
+          "title": "对称悬臂 · 4/10",
+          "description": "每次从两座塔向两侧同步架设梁段，再张拉对应斜拉索。阶段表示关键完成状态。"
+        },
+        {
+          "title": "对称悬臂 · 5/10",
+          "description": "每次从两座塔向两侧同步架设梁段，再张拉对应斜拉索。阶段表示关键完成状态。"
+        },
+        {
+          "title": "对称悬臂 · 6/10",
+          "description": "每次从两座塔向两侧同步架设梁段，再张拉对应斜拉索。阶段表示关键完成状态。"
+        },
+        {
+          "title": "对称悬臂 · 7/10",
+          "description": "每次从两座塔向两侧同步架设梁段，再张拉对应斜拉索。阶段表示关键完成状态。"
+        },
+        {
+          "title": "对称悬臂 · 8/10",
+          "description": "每次从两座塔向两侧同步架设梁段，再张拉对应斜拉索。阶段表示关键完成状态。"
+        },
+        {
+          "title": "对称悬臂 · 9/10",
+          "description": "每次从两座塔向两侧同步架设梁段，再张拉对应斜拉索。阶段表示关键完成状态。"
+        },
+        {
+          "title": "对称悬臂 · 10/10",
+          "description": "每次从两座塔向两侧同步架设梁段，再张拉对应斜拉索。阶段表示关键完成状态。"
+        },
+        {
+          "title": "边跨及中跨合龙",
+          "description": "连接端部梁段和中央合龙段，完成体系转换。"
+        },
+        {
+          "title": "铺装与附属工程",
+          "description": "拆除临时起重设施，完成铺装、护栏及道路标线。"
+        }
+      ],
+      "groups": {
+        "01_Foundations": "基础 / 锚碇 / 拱座",
+        "02_Towers": "桥塔 / 主拱肋",
+        "03_Deck": "主梁 / 加劲梁",
+        "04_Cables": "斜拉索 / 主缆 / 吊索",
+        "05_Secondary": "横梁 / 横撑 / 支座",
+        "06_Furniture": "栏杆 / 灯具 / 检修道",
+        "07_Surface": "铺装 / 道路标线",
+        "08_Temporary": "施工临时设施",
+        "90_Environment": "水面 / 两岸环境",
+        "91_Traffic": "真实比例车辆"
+      },
+      "model_url": "assets/models/cable_stayed.glb",
+      "model_bytes": 4564460,
+      "analysis_url": "analysis/cable_stayed.json",
+      "environments": {
+        "standard": {
+          "url": "assets/environments/cable_stayed_standard.glb",
+          "bytes": 4013032,
+          "texture_size": 1024
+        },
+        "low": {
+          "url": "assets/environments/cable_stayed_low.glb",
+          "bytes": 2399888,
+          "texture_size": 512
+        }
+      }
+    },
+    {
+      "id": "suspension",
+      "name": "悬索桥 · Forth Road",
+      "subtitle": "408 + 1006 + 408 m · 地锚式双主缆 / 钢桁加劲梁",
+      "filename": "suspension.glb",
+      "length": 1822.0,
+      "deck_z": 58.191,
+      "focus": [
+        911.0,
+        0,
+        72
+      ],
+      "distance": 2514.3599999999997,
+      "stages": [
+        {
+          "title": "锚碇与塔基",
+          "description": "建立地锚式主缆锚碇和独立桥塔基础。"
+        },
+        {
+          "title": "塔柱下段",
+          "description": "安装两岸钢桥塔下部节段。"
+        },
+        {
+          "title": "桥塔与鞍座",
+          "description": "完成门形钢塔及塔顶主缆鞍座。"
+        },
+        {
+          "title": "先导索与猫道",
+          "description": "设置临时猫道和牵引系统，供主缆施工使用。"
+        },
+        {
+          "title": "主缆架设与紧缆",
+          "description": "架设连续主缆，连接两岸锚碇；抛物线为成桥线形教学近似。"
+        },
+        {
+          "title": "索夹与吊索",
+          "description": "安装索夹、吊索和梁段吊装连接件。"
+        },
+        {
+          "title": "塔旁对称吊梁",
+          "description": "从塔旁向跨中及边跨平衡推进吊梁；展示关键完成状态。"
+        },
+        {
+          "title": "分段连接加劲桁梁",
+          "description": "推进主跨、边跨加劲桁梁连接。"
+        },
+        {
+          "title": "加劲梁合龙",
+          "description": "完成各节段与中央梁段连接。"
+        },
+        {
+          "title": "桥面与通行设施",
+          "description": "铺装和检修道完成，拆除猫道等临时设施。"
+        }
+      ],
+      "groups": {
+        "01_Foundations": "基础 / 锚碇 / 拱座",
+        "02_Towers": "桥塔 / 主拱肋",
+        "03_Deck": "主梁 / 加劲梁",
+        "04_Cables": "斜拉索 / 主缆 / 吊索",
+        "05_Secondary": "横梁 / 横撑 / 支座",
+        "06_Furniture": "栏杆 / 灯具 / 检修道",
+        "07_Surface": "铺装 / 道路标线",
+        "08_Temporary": "施工临时设施",
+        "90_Environment": "水面 / 两岸环境",
+        "91_Traffic": "真实比例车辆"
+      },
+      "model_url": "assets/models/suspension.glb",
+      "model_bytes": 12888056,
+      "analysis_url": "analysis/suspension.json",
+      "environments": {
+        "standard": {
+          "url": "assets/environments/suspension_standard.glb",
+          "bytes": 4013036,
+          "texture_size": 1024
+        },
+        "low": {
+          "url": "assets/environments/suspension_low.glb",
+          "bytes": 2399892,
+          "texture_size": 512
+        }
+      }
+    }
+  ]
+}
