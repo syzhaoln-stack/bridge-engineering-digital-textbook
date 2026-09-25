@@ -4,6 +4,8 @@
 
 - [在线阅读整本教材](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/)
 - [四类桥梁三维实验室：梁、拱、斜拉、悬索](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/bridge-lab/)
+- [钢与混凝土：两个新增施工专题](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/construction-methods.html)
+- [组合梁两阶段受力](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/concrete/composite-beam-3d.html?focus=second) · [钢管混凝土拱桥](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/concrete/cfst-arch-3d.html)
 - [数字教材成果展示总入口](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/showcase.html)
 - [文稿与资源组合样章 · 供合作者与出版社审阅](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/interactive/reading-preview.html)
 - [新增40幅图、5段双人对话、100个独立交互及3本Notebook](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/visual-update.html)
@@ -21,6 +23,8 @@
 教材有11个专业章节；公众课有12讲提纲及第1讲样页，未录制12讲课程视频。已有关联教具可直接操作。几何展示、教学模型和工程设计结果各自说明适用范围。AI辅助CAD尚未形成新版教学单元，没有作为已完成功能列入。
 
 原资料库统计为781个外部参考候选文件、31个自制静态图文件及125张视频海报。本轮另新增40幅原创参数图（SVG+PNG）、5个双人Manim样片和100个独立HTML实验页；100页复用29类模型，3本Notebook已执行验证。公开包不包含参考原图，只提供[元数据登记表](docs/assets/publication/image-reference-register.csv)和数量说明；正式出版采用数量尚未确定。
+
+2026-09-24 新增两个组合材料专题，并接入三维模型库、施工专题库及对应章节。组合梁提供短期线弹性简支梁的分阶段解析值，显示应变累加、混凝土压应力与合力；钢管混凝土拱桥采用 60 m 跨有支架教学方案，定性展示空管、灌注、硬化卸架和桥面形成，不输出应力或有限元结果。原四类整桥模型保留；当前公开施工专题库只有这两个新增模块，不包含作者本地其他未发布工法。
 
 ## 文件目录
 

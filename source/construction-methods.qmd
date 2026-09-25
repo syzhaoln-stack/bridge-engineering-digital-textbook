@@ -1,0 +1,24 @@
+# 钢与混凝土：从施工认识共同受力 {.unnumbered}
+
+[打开施工三维专题库](interactive/construction-methods.html){.btn .btn-primary}
+
+本页新增 **2 个组合材料专题：钢—混凝土组合梁与钢管混凝土拱桥**。[原有四类桥梁模型库](interactive/bridge-lab/index.html)继续保留梁、拱、斜拉、悬索整桥模型。两个专题都从施工顺序出发，辨认钢构件先承担哪些作用、混凝土何时参与共同工作，以及临时支承退出时发生什么。
+
+| 专题 | 施工观察顺序 | 当前计算范围 |
+|---|---|---|
+| [钢—混凝土组合梁](interactive/construction-methods.html#girder_steel_concrete_composite) | 钢梁架设与自重 → 浇筑湿混凝土 → 硬化 → 拆模 → 铺装与车辆 | 简支梁短期线弹性分阶段解析；应变、应力、材料合力与挠度随加载变化 |
+| [钢管混凝土拱桥](interactive/construction-methods.html#arch_cfst_staged) | 支架上空管架设 → 合龙横联 → 从拱脚向拱顶对称灌注 → 硬化并卸架 → 桥面与使用 | 构造、材料状态与施工顺序的定性演示；不输出应力、拱脚推力或有限元结果 |
+
+## 组合梁：在已有变形上再加载 {#girder-methods .unnumbered}
+
+[打开完整组合梁受力课堂](interactive/concrete/composite-beam-3d.html?focus=second)，分别观察一期钢截面、二期组合截面与钢材累计应变。教学路径采用钢梁自承模板、无地面临时支架：钢梁先承担自身与湿混凝土自重，混凝土在已有变形形状上硬化；模板不计质量，拆模不触发拆撑荷载转移。完全组合假定下，二期新增应变在界面协调，钢材保留一期历史并叠加二期，混凝土只承担硬化后的新增作用。
+
+默认跨度 8 m，钢梁 H600×250×12×20 mm，混凝土板宽 1.5 m、厚 0.16 m，钢与混凝土弹性模量分别为 200 GPa、30 GPa，二期均布荷载为 18 kN/m。该组教学参数下，跨中板顶压应力 −1.579 MPa、混凝土合压力约 227.8 kN。混凝土独立刻度详图便于读清板内压应力，原同刻度图用于比较材料应力量级；显示放大不改变计算结果。
+
+这是一套短期线弹性简支梁解析教学模型，不包含设备、施工稳定、连接件承载力、疲劳及长期效应验算。两阶段分析可对照 [Autodesk 组合截面算例](https://help.autodesk.com/cloudhelp/ENU/ASBD-Tutorials/files/section_analysis/ASBD_Tutorials_section_analysis_StagedConstructionOfACompositeSection_html.html)和 [FHWA 组合钢板梁桥算例](https://www.fhwa.dot.gov/bridge/lrfd/us_ds3.cfm)，不直接移用其工程参数。进一步阅读[梁桥正文](chapters/ch03.qmd)。
+
+## 钢管混凝土拱桥：先架管，再形成组合拱 {#arch-methods .unnumbered}
+
+[打开完整钢管混凝土拱桥专题](interactive/concrete/cfst-arch-3d.html)，先辨认空钢管、横向联系与临时支架，再观察湿混凝土灌入、核心硬化和卸架。模型为自拟的有支架教学方案，采用跨径 60 m、矢高 12 m、桥宽 8 m、钢管外径 1.2 m、壁厚 20 mm。灌注阶段保留支架，达到相应施工要求后才卸架；两端对称灌注用来展示推进方向，不作为真实工程泵送与卸架方案。
+
+本专题没有计算钢管与核心混凝土应力、拱脚推力、变形或稳定承载力。颜色区分材料，箭头说明传力路径，均非应力云图。组合梁的无地面支架拆模与拱桥卸架具有不同的荷载转移过程；不能把简支组合梁的解析式或 MPa 数值移用于拱桥。进一步阅读[拱桥正文](chapters/ch04.qmd)。

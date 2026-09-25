@@ -1,0 +1,219 @@
+{
+  "schema": "bridge-construction-methods/1",
+  "coordinate_system": "Geometry units and axes are declared by each teaching module; dimensions metadata uses m unless explicitly stated.",
+  "methods": [
+    {
+      "id": "girder_steel_concrete_composite",
+      "bridge": "girder",
+      "title": "钢混组合梁：浇筑、硬化与两阶段受力",
+      "renderer": "composite",
+      "page": "concrete/composite-beam-3d.html?embed=construction",
+      "lesson": "concrete/composite-beam-3d.html?focus=second",
+      "playbackSeconds": 32,
+      "description": "钢梁先承受自重与湿混凝土重量；混凝土硬化后，钢与混凝土共同承担铺装、车辆等新增荷载。观察已有变形如何保留，以及二期应变怎样协调。",
+      "stages": [
+        "架设钢梁，自重逐渐作用",
+        "自承模板内浇筑湿混凝土",
+        "混凝土在已有形状上硬化",
+        "拆除模板，保留一期变形",
+        "铺装与车辆加载，形成二期增量"
+      ],
+      "cueStops": [
+        {
+          "at": 0,
+          "label": "架设钢梁，自重逐渐作用"
+        },
+        {
+          "at": 0.17,
+          "label": "自承模板内浇筑湿混凝土"
+        },
+        {
+          "at": 0.4,
+          "label": "混凝土在已有形状上硬化"
+        },
+        {
+          "at": 0.56,
+          "label": "拆除模板，保留一期变形"
+        },
+        {
+          "at": 0.67,
+          "label": "铺装与车辆加载，形成二期增量"
+        },
+        {
+          "at": 1,
+          "label": "投入使用：看最终两期叠加"
+        }
+      ],
+      "segments": [
+        {
+          "at": 0,
+          "to": 0.17,
+          "beat": "composite_stage_0",
+          "stage": 0,
+          "view": "construction"
+        },
+        {
+          "at": 0.17,
+          "to": 0.4,
+          "beat": "composite_stage_1",
+          "stage": 1,
+          "view": "construction"
+        },
+        {
+          "at": 0.4,
+          "to": 0.56,
+          "beat": "composite_stage_2",
+          "stage": 2,
+          "view": "construction"
+        },
+        {
+          "at": 0.56,
+          "to": 0.67,
+          "beat": "composite_stage_3",
+          "stage": 3,
+          "view": "construction"
+        },
+        {
+          "at": 0.67,
+          "to": 1,
+          "beat": "composite_stage_4",
+          "stage": 4,
+          "view": "construction"
+        }
+      ],
+      "dimensions": {
+        "unit": "m",
+        "status": "teaching_assumption",
+        "span": 8,
+        "summary": "单根简支组合梁，跨度8 m；钢 H600×250×12×20 mm；混凝土有效宽1500 mm、厚160 mm；二期线荷载18 kN/m。"
+      },
+      "scope": "短期线弹性、完全组合、均布荷载下的简支梁解析教学算例。施工中由钢梁自承模板，无落地支架；模板质量忽略，拆模不引起荷载转移。未进行整体桥梁、连接件或施工稳定验算。",
+      "visual_scope": "位移教学放大：一期250倍、二期750倍；MPa、kN及毫米读数为解析真值。完整课堂提供混凝土应力局部独立刻度图及一期、二期、累计应变对照。",
+      "progress": {
+        "min": 0,
+        "max": 1,
+        "reversible": true,
+        "time_basis": "normalized teaching sequence, not curing time or actual schedule"
+      },
+      "sources": [
+        {
+          "title": "FHWA：钢梁与组合截面的分阶段受力",
+          "url": "https://www.fhwa.dot.gov/bridge/lrfd/us_ds3.cfm",
+          "supports": "先期恒载由钢截面承担，后期荷载由组合截面承担。"
+        },
+        {
+          "title": "Autodesk：组合截面的分阶段施工算例3.8",
+          "url": "https://help.autodesk.com/cloudhelp/ENU/ASBD-Tutorials/files/section_analysis/ASBD_Tutorials_section_analysis_StagedConstructionOfACompositeSection_html.html",
+          "supports": "初始钢梁应变进入后续组合截面分析；其30 m原例与本页8 m教学参数不同。"
+        }
+      ]
+    },
+    {
+      "id": "arch_cfst_staged",
+      "bridge": "arch",
+      "title": "钢管混凝土拱桥：空管、灌注与组合成拱",
+      "renderer": "cfst",
+      "page": "concrete/cfst-arch-3d.html?embed=construction",
+      "lesson": "concrete/cfst-arch-3d.html",
+      "playbackSeconds": 36,
+      "description": "先在临时支架上拼成空钢管拱，再向管内灌注混凝土。待核心混凝土达到施工要求后卸架，观察钢管与核心混凝土如何共同承担后续荷载。",
+      "stages": [
+        "支架上架设空钢管拱肋",
+        "拱顶合龙并完成横向联系",
+        "从拱脚向拱顶对称灌注",
+        "混凝土硬化后逐步卸架",
+        "安装桥面，进入使用阶段"
+      ],
+      "cueStops": [
+        {
+          "at": 0,
+          "label": "支架上架设空钢管拱肋"
+        },
+        {
+          "at": 0.22,
+          "label": "拱顶合龙并完成横向联系"
+        },
+        {
+          "at": 0.36,
+          "label": "从拱脚向拱顶对称灌注"
+        },
+        {
+          "at": 0.6,
+          "label": "混凝土硬化后逐步卸架"
+        },
+        {
+          "at": 0.78,
+          "label": "安装桥面，进入使用阶段"
+        },
+        {
+          "at": 1,
+          "label": "成桥：桥面 → 立柱 → 组合拱肋 → 拱脚"
+        }
+      ],
+      "segments": [
+        {
+          "at": 0,
+          "to": 0.22,
+          "beat": "cfst_stage_0",
+          "stage": 0,
+          "view": "construction"
+        },
+        {
+          "at": 0.22,
+          "to": 0.36,
+          "beat": "cfst_stage_1",
+          "stage": 1,
+          "view": "construction"
+        },
+        {
+          "at": 0.36,
+          "to": 0.6,
+          "beat": "cfst_stage_2",
+          "stage": 2,
+          "view": "construction"
+        },
+        {
+          "at": 0.6,
+          "to": 0.78,
+          "beat": "cfst_stage_3",
+          "stage": 3,
+          "view": "construction"
+        },
+        {
+          "at": 0.78,
+          "to": 1,
+          "beat": "cfst_stage_4",
+          "stage": 4,
+          "view": "construction"
+        }
+      ],
+      "dimensions": {
+        "unit": "m",
+        "status": "teaching_assumption",
+        "span": 60,
+        "width": 8,
+        "summary": "上承式双肋教学拱桥，跨度60 m、矢高12 m、桥宽8 m；圆钢管外径1.2 m、壁厚20 mm。尺寸为教学假定，未对应某座实桥。"
+      },
+      "scope": "自拟支架拼装方案的构造与工序示意。钢管、核心混凝土与临时支承分阶段参与；早期荷载历史不能按成桥截面重新分配。未计算实桥应力、位移、承载力或泵送压力。",
+      "visual_scope": "透明管壁用于观察灌注方向；颜色和箭头表示材料及传力路径，不代表应力云图。卸架以达到设计施工要求为前提，进度条不表示养护天数。",
+      "progress": {
+        "min": 0,
+        "max": 1,
+        "reversible": true,
+        "time_basis": "normalized teaching sequence, not actual schedule"
+      },
+      "sources": [
+        {
+          "title": "Engineering：Concrete-Filled Steel Tube Arch Bridges in China",
+          "url": "https://www.engineering.org.cn/engi/EN/PDF/10.1016/j.eng.2017.12.003",
+          "supports": "钢管与核心混凝土的组合作用，以及先架管、后灌注的建造技术。"
+        },
+        {
+          "title": "Automation in Construction：管内混凝土液面跟踪研究",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0926580525002675",
+          "supports": "从拱脚泵送孔向拱顶灌注的工艺方向。"
+        }
+      ]
+    }
+  ]
+}

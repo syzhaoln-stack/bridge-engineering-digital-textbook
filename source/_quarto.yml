@@ -56,6 +56,7 @@ book:
         - bridge-thinking.qmd
         - course-guide.qmd
         - legacy-tools.qmd
+    - construction-methods.qmd
     - core-resources.qmd
     - visual-update.qmd
     - blender-model-review.qmd

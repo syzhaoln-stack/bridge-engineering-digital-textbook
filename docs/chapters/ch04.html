@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
   vertical-align: middle;
 }
 </style>
@@ -867,6 +867,12 @@ H=\frac{ql^2}{8f}.
 <p>截面选择同时比较轴向受压效率、偏心弯矩、稳定、施工、混凝土浇筑或灌注、检查和防腐。闭口箱形截面抗扭和面外刚度较好，但箱内施工维护复杂；桁式拱肋自重较小，节点、杆件稳定和疲劳更突出。</p>
 <p>拱肋轴线、截面形心线、刚度中心线和施工控制线应明确区分。变截面拱肋常在拱脚增大高度，但刚度变化也会改变超静定内力。参数化模型应由统一轴线生成截面与节点，避免构件偏心被无意忽略。</p>
 <p>钢管混凝土拱肋施工初期由空钢管承担架设和湿混凝土作用，管内混凝土形成强度后才共同工作。分仓或分阶段泵送会形成不同刚度与初始应力；界面共同工作、灌注密实度和温度是质量控制重点。</p>
+<div class="digital-note">
+<p><strong>已实现专题：钢管混凝土拱桥怎样形成。</strong> <a href="../interactive/concrete/cfst-arch-3d.html">打开三维模型</a>，或从<a href="../interactive/construction-methods.html#arch_cfst_staged">施工库逐阶段观察</a>。本专题选用自拟的支架施工方案，依次展示“支架上空管架设—合龙与横向联系—两端拱脚向拱顶对称灌注—硬化并卸架—桥面形成与投入使用”。支架在灌注阶段保持承托，核心混凝土满足硬化条件后才进入卸架；空管架设、几何合龙与形成组合截面须分别辨认。</p>
+<p>教学模型采用跨径 60 m、矢高 12 m、桥宽 8 m、钢管外径 1.2 m、壁厚 20 mm；与本章后续 120 m、180 m 数值案例不是同一组参数。该页面提供构造与工序的定性演示，没有计算钢管或混凝土的 MPa 应力、拱脚推力和稳定承载力，也没有接入有限元结果。对称灌注是本例的观察路径，真实工程的分仓、泵送、龄期和卸架控制需另行设计。</p>
+<p>可与<a href="../interactive/concrete/composite-beam-3d.html?focus=second">钢—混凝土组合梁课堂</a>对照：两者都需保留钢构件先前承担作用的历史，混凝土达到条件后参与后续共同工作；组合梁页面提供简支梁短期弹性解析值，拱桥页面仅作阶段定性展示。组合梁的无地面支架拆模与本例拱桥卸架具有不同的荷载转移过程。</p>
+</div>
+
 </section>
 </section>
 <section class="level2" data-number="5.4" id="空间共同工作与稳定">
@@ -4973,7 +4979,7 @@ const bar=document.createElement('div');bar.className='reading-mode-bar';bar.inn
     anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
+        if (clz.startsWith('code-annotation-')) {
           return true;
         }
       }
@@ -4993,11 +4999,11 @@ const bar=document.createElement('div');bar.className='reading-mode-bar';bar.inn
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
         button.setAttribute("data-bs-title", "已复制");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
+        tooltip = new bootstrap.Tooltip(button,
+          { trigger: "manual",
             customClass: "code-copy-button-tooltip",
             offset: [0, -8]});
-        tooltip.show();    
+        tooltip.show();
       }
       setTimeout(function() {
         if (tooltip) {
@@ -5074,7 +5080,7 @@ const bar=document.createElement('div');bar.className='reading-mode-bar';bar.inn
       if (onUntriggerFn) {
         config.onUntrigger = onUntriggerFn;
       }
-      window.tippy(el, config); 
+      window.tippy(el, config);
     }
     const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
     for (var i=0; i<noterefs.length; i++) {
@@ -5149,7 +5155,7 @@ const bar=document.createElement('div');bar.className='reading-mode-bar';bar.inn
       tippyHover(xref, undefined, function(instance) {
         instance.disable();
         let url = xref.getAttribute('href');
-        let hash = undefined; 
+        let hash = undefined;
         if (url.startsWith('#')) {
           hash = url;
         } else {
@@ -5177,7 +5183,7 @@ const bar=document.createElement('div');bar.className='reading-mode-bar';bar.inn
               if (note !== null) {
                 const html = processXRef(id, note);
                 instance.setContent(html);
-              } 
+              }
             }).finally(() => {
               instance.enable();
               instance.show();
@@ -5201,7 +5207,7 @@ const bar=document.createElement('div');bar.className='reading-mode-bar';bar.inn
               }
               const html = processXRef(null, note);
               instance.setContent(html);
-            } 
+            }
           }).finally(() => {
             instance.enable();
             instance.show();
@@ -5241,7 +5247,7 @@ const bar=document.createElement('div');bar.className='reading-mode-bar';bar.inn
               height = bottom - top;
             }
             if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
+              // cook up a div (if necessary) and position it
               let div = window.document.getElementById("code-annotation-line-highlight");
               if (div === null) {
                 div = window.document.createElement("div");

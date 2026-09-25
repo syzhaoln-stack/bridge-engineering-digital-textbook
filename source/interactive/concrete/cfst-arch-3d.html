@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>钢管混凝土拱桥｜桥梁三维课堂</title>
+<link rel="stylesheet" href="cfst-arch.css">
+<script>if(new URLSearchParams(location.search).get('embed')==='construction')document.documentElement.classList.add('book-embedded');</script>
+<script defer src="vendor/three.min.js"></script><script defer src="cfst-arch.js"></script>
+</head>
+<body>
+<nav class="book-nav" aria-label="教材资源导航"><a href="../bridge-lab/index.html#cfst-arch">← 桥梁三维模型库</a><a href="../construction-methods.html#arch_cfst_staged">进入钢管混凝土拱桥施工库</a><a href="../../chapters/ch04.html">回到拱桥正文</a></nav>
+<main>
+<header><div><span class="eyebrow">桥梁三维课堂 / 拱桥专题</span><h1>钢管里填上混凝土，怎样一起成拱？</h1><p>从空钢管、管内泵送到组合拱肋：看清施工顺序、材料协同与拱脚推力。</p></div><span class="teaching-badge">原创教学模型<br>施工与传力示意</span></header>
+<section class="stage-strip" aria-label="施工阶段"><button data-stage="0"><b>01</b>空钢管架设</button><button data-stage="1"><b>02</b>合龙与横联</button><button data-stage="2"><b>03</b>管内对称泵送</button><button data-stage="3"><b>04</b>硬化与卸架</button><button data-stage="4"><b>05</b>桥面与使用</button></section>
+<div class="workspace">
+<section class="model-panel" aria-label="交互三维模型">
+<div class="model-toolbar"><div class="camera-controls"><button id="view-iso">等轴视图</button><button id="view-side">侧视图</button><button id="view-top">俯视图</button></div><label><input id="transparent" type="checkbox" checked> 看管内填芯</label><label><input id="forces" type="checkbox" checked> 传力箭头</label></div>
+<div id="viewport"><div class="viewport-head"><span id="scene-title">空钢管分段架设</span><span id="scene-chip">临时支架先就位</span></div><div class="legend"><span><i class="steel"></i>钢管拱肋</span><span><i class="core"></i>管内混凝土</span><span><i class="temporary"></i>临时支架</span></div><div id="stage-note" class="viewport-note"></div><div class="viewport-footer"><span>拖动旋转 · 滚轮缩放</span><span>箭头表示传力方向，不表示数值大小</span></div></div>
+<div class="player"><button id="play" class="primary">播放全过程</button><input id="progress" type="range" min="0" max="1" step="0.001" value="0" aria-label="当前阶段进度"><output id="progress-value">0%</output><button id="restart">从头开始</button></div>
+</section>
+<aside class="lesson-panel">
+<div class="lesson-intro"><span class="eyebrow" id="stage-number">阶段 01 / 05</span><h2 id="stage-title"></h2><p id="stage-description"></p></div>
+<div class="status-grid"><div><small>钢管拱肋</small><strong id="steel-status"></strong></div><div><small>管内混凝土</small><strong id="core-status"></strong></div><div><small>临时支架</small><strong id="support-status"></strong></div><div><small>本阶段关键</small><strong id="key-status"></strong></div></div>
+<div class="section-card"><div><h3>同一根拱肋，两种材料</h3><p id="section-state">空心钢管截面</p></div><svg id="section-svg" viewBox="0 0 270 162" role="img" aria-label="钢管圆环与核心混凝土的截面示意"><defs><pattern id="concrete-hatch" patternUnits="userSpaceOnUse" width="10" height="10"><rect width="10" height="10" fill="#f4c988"/><circle cx="3" cy="4" r="1" fill="#ca9959"/></pattern><marker id="section-arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="#218d91"/></marker></defs><circle cx="78" cy="77" r="55" fill="#228d94"/><circle id="section-core" cx="78" cy="77" r="46" fill="#fff"/><g id="confinement-arrows" stroke="#218d91" stroke-width="2" marker-end="url(#section-arrow)"><path d="M78 12V37"/><path d="M78 142V117"/><path d="M13 77H38"/><path d="M143 77H118"/></g><path d="M113 40L152 26H251" fill="none" stroke="#218d91"/><text x="156" y="20">钢管 D = 1.20 m</text><path d="M107 84L151 104H254" fill="none" stroke="#b98746"/><text x="156" y="96" id="section-label">管内暂为空</text><text x="156" y="127">壁厚 t = 20 mm</text><text x="25" y="159" class="section-fine">截面局部放大；图中壁厚加粗便于辨认</text></svg></div>
+<div class="key-explanation"><h3 id="mechanism-title"></h3><p id="mechanism-text"></p></div>
+</aside>
+</div>
+<section class="learning-row"><article><span class="eyebrow">材料协同</span><h2>外壳约束内芯，内芯支撑管壁</h2><p>受压时钢管约束核心混凝土的横向膨胀；混凝土又为管壁提供内部支撑，抑制向内局部屈曲。施工阶段的钢管还兼作灌注模板。</p></article><article><span class="eyebrow">施工历史</span><h2>先承受的荷载，不会自动重新分配</h2><p>空钢管、湿混凝土与临时支架先经历各自的受力过程。硬化后的卸架及新增桥面、使用荷载使组合拱肋继续受力；不能把钢管先期应变抹去，视作两材料从一开始同时加载。</p></article><article><span class="eyebrow">完整传力</span><h2>桥面 → 立柱 → 拱肋 → 拱脚基础</h2><p>本例是上承式拱桥，桥面由拱上立柱支承。图中拱脚箭头表示基础对拱肋的反力：水平向内、竖直向上。拱肋作用于基础的水平推力方向相反、朝向外侧；两肋间横联维持空间联系。本例没有替代拱脚基础的系杆。</p></article></section>
+<details class="scope"><summary>教学假定、尺寸与参考来源</summary><p>本页为原创上承式双肋钢管混凝土拱桥，不对应某座实桥。几何和施工顺序是为说明原理选取的教学方案：采用临时支架架设、合龙、泵送、硬化卸架、安装拱上结构的顺序，并非所有钢管混凝土拱桥的统一施工方法。填充与卸架动画仅表达过程；未计算泵压、温度、收缩徐变、局部稳定、施工变形及承载力。</p><dl class="dimension-list"><div><dt>拱脚中心水平距离</dt><dd>60 m</dd></div><div><dt>拱轴矢高 / 矢跨比</dt><dd>12 m / 1∶5</dd></div><div><dt>桥面总宽</dt><dd>8 m = 2 × 3.5 m 车道 + 2 × 0.5 m 边带</dd></div><div><dt>拱肋中心横向间距</dt><dd>6 m；两根单圆管拱肋</dd></div><div><dt>管外径 / 壁厚</dt><dd>1.20 m / 20 mm</dd></div><div><dt>教学车辆</dt><dd>4.60 × 1.80 × 1.50 m（不代表计算荷载）</dd></div></dl><p>混凝土泵送按两侧拱脚向拱顶同步推进作理想化演示，实际施工须按具体方案控制。图示颜色按材料分类，箭头仅表示传力方向；本页不提供 MPa 或 kN 等未经计算的数值。</p><ol><li><a href="https://www.engineering.org.cn/engi/EN/PDF/10.1016/j.eng.2017.12.003" target="_blank" rel="noopener">Zheng &amp; Wang, Concrete-Filled Steel Tube Arch Bridges in China, Engineering, 2018</a>：钢管与混凝土协同、先钢后灌注的技术背景。</li><li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0926580525002675" target="_blank" rel="noopener">Automation in Construction, 2025，钢管混凝土拱肋泵送施工研究</a>：由拱脚向上泵送的施工背景。</li></ol></details>
+<footer>桥梁工程数字教材 · 钢管混凝土拱桥专题 · 三维几何与定性施工示意</footer>
+</main>
+</body></html>
