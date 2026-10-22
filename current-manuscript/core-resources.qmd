@@ -1,0 +1,173 @@
+# 按章教学单元 {.unnumbered #核心视频与交互教学单元}
+
+这里保留110个既有编号单元，按10章正文与配套专题组织；编号用于识别原学习单元，不代表正式章号。按正在学习的章节选择任务，可分别打开配套视频或交互页面；完整讲解与章末习题见各章正文。
+
+[综合资源总索引](resources.qmd) · [核心思维与尺度规律](core-thinking.qmd) · [跨课程并排类比](interactive/thinking-analogies.html) · [教学单元总入口](interactive/core-learning.html)
+
+## 第1章　体系与规模 {.unnumbered}
+
+| 编号 | 学习任务 | 视频 | 交互 |
+|---|---|---|---|
+| C01U01 | 简支梁反力 | [观看](interactive/core-learning.html?unit=C01U01&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C01U01) |
+| C01U02 | 拱的水平推力 | [观看](interactive/core-learning.html?unit=C01U02&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C01U02) |
+| C01U03 | 温度约束 | [观看](interactive/core-learning.html?unit=C01U03&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C01U03) |
+| C01U04 | 几何相似 | [观看](interactive/core-learning.html?unit=C01U04&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C01U04) |
+| C01U05 | 位移刚度 | [观看](interactive/core-learning.html?unit=C01U05&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C01U05) |
+| C01U06 | 自重尺度效应 | [观看](interactive/core-learning.html?unit=C01U06&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C01U06) |
+| C01U07 | 固定力尺度效应 | [观看](interactive/core-learning.html?unit=C01U07&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C01U07) |
+| C01U08 | 并联刚度分配 | [观看](interactive/core-learning.html?unit=C01U08&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C01U08) |
+| C01U09 | 梁高敏感性 | [观看](interactive/core-learning.html?unit=C01U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C01U09) |
+| C01U10 | 数值误差与模型边界 | [观看](interactive/core-learning.html?unit=C01U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C01U10) |
+
+## 第2章　力学基础的桥梁迁移 {.unnumbered}
+
+| 编号 | 学习任务 | 视频 | 交互 |
+|---|---|---|---|
+| C02U01 | 偏心受压 | [观看](interactive/core-learning.html?unit=C02U01&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C02U01) |
+| C02U02 | 截面核心与无拉应力条件 | [观看](interactive/core-learning.html?unit=C02U02&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C02U02) |
+| C02U03 | 核心与破坏类型 | [观看](interactive/core-learning.html?unit=C02U03&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C02U03) |
+| C02U04 | 空心截面效率 | [观看](interactive/core-learning.html?unit=C02U04&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C02U04) |
+| C02U05 | 矩形截面惯性矩 | [观看](interactive/core-learning.html?unit=C02U05&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C02U05) |
+| C02U06 | 欧拉稳定 | [观看](interactive/core-learning.html?unit=C02U06&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C02U06) |
+| C02U07 | 预应力初始状态 | [观看](interactive/core-learning.html?unit=C02U07&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C02U07) |
+| C02U08 | 热应变与约束 | [观看](interactive/core-learning.html?unit=C02U08&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C02U08) |
+| C02U09 | 自振频率 | [观看](interactive/core-learning.html?unit=C02U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C02U09) |
+| C02U10 | 线性叠加 | [观看](interactive/core-learning.html?unit=C02U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C02U10) |
+
+## 第3章　作用、组合与可靠度 {.unnumbered}
+
+| 编号 | 学习任务 | 视频 | 交互 |
+|---|---|---|---|
+| C03U01 | 线性作用响应 | [观看](interactive/core-learning.html?unit=C03U01&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C03U01) |
+| C03U02 | 荷载等效映射 | [观看](interactive/core-learning.html?unit=C03U02&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C03U02) |
+| C03U03 | 作用效应组合 | [观看](interactive/core-learning.html?unit=C03U03&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C03U03) |
+| C03U04 | 有符号效应组合 | [观看](interactive/core-learning.html?unit=C03U04&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C03U04) |
+| C03U05 | 可靠指标 | [观看](interactive/core-learning.html?unit=C03U05&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C03U05) |
+| C03U06 | 可靠度不确定性 | [观看](interactive/core-learning.html?unit=C03U06&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C03U06) |
+| C03U07 | 抗力效应相关性 | [观看](interactive/core-learning.html?unit=C03U07&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C03U07) |
+| C03U08 | 影响线 | [观看](interactive/core-learning.html?unit=C03U08&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C03U08) |
+| C03U09 | 影响线负区 | [观看](interactive/core-learning.html?unit=C03U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C03U09) |
+| C03U10 | 可靠度方向核验 | [观看](interactive/core-learning.html?unit=C03U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C03U10) |
+
+## 第4章　梁桥的核心判断 {.unnumbered}
+
+| 编号 | 学习任务 | 视频 | 交互 |
+|---|---|---|---|
+| C04U01 | 简支梁支座反力 | [观看](interactive/core-learning.html?unit=C04U01&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C04U01) |
+| C04U02 | 弯矩、应力与挠度 | [观看](interactive/core-learning.html?unit=C04U02&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C04U02) |
+| C04U03 | 箱梁截面效率 | [观看](interactive/core-learning.html?unit=C04U03&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C04U03) |
+| C04U04 | 弯矩影响线 | [观看](interactive/core-learning.html?unit=C04U04&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C04U04) |
+| C04U05 | 横向分配 | [观看](interactive/core-learning.html?unit=C04U05&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C04U05) |
+| C04U06 | 不等刚度分配 | [观看](interactive/core-learning.html?unit=C04U06&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C04U06) |
+| C04U07 | 偏心预应力 | [观看](interactive/core-learning.html?unit=C04U07&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C04U07) |
+| C04U08 | 曲束等效作用 | [观看](interactive/core-learning.html?unit=C04U08&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C04U08) |
+| C04U09 | 跨径尺度规律 | [观看](interactive/core-learning.html?unit=C04U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C04U09) |
+| C04U10 | 接触模型边界 | [观看](interactive/core-learning.html?unit=C04U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C04U10) |
+
+## 第5章　拱桥：几何与力流 {.unnumbered}
+
+| 编号 | 学习任务 | 视频 | 交互 |
+|---|---|---|---|
+| C05U01 | 水平推力 | [观看](interactive/core-learning.html?unit=C05U01&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C05U01) |
+| C05U02 | 合理拱轴 | [观看](interactive/core-learning.html?unit=C05U02&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C05U02) |
+| C05U03 | 轴力与偏心 | [观看](interactive/core-learning.html?unit=C05U03&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C05U03) |
+| C05U04 | 截面核心与无拉应力条件 | [观看](interactive/core-learning.html?unit=C05U04&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C05U04) |
+| C05U05 | 矢跨比与推力 | [观看](interactive/core-learning.html?unit=C05U05&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C05U05) |
+| C05U06 | 索拱平衡类比 | [观看](interactive/core-learning.html?unit=C05U06&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C05U06) |
+| C05U07 | 空间稳定 | [观看](interactive/core-learning.html?unit=C05U07&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C05U07) |
+| C05U08 | 约束与变形 | [观看](interactive/core-learning.html?unit=C05U08&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C05U08) |
+| C05U09 | 梁拱组合体系的刚度分担 | [观看](interactive/core-learning.html?unit=C05U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C05U09) |
+| C05U10 | 非对称荷载 | [观看](interactive/core-learning.html?unit=C05U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C05U10) |
+
+## 第6章　斜拉桥：耦合与控制 {.unnumbered}
+
+| 编号 | 学习任务 | 视频 | 交互 |
+|---|---|---|---|
+| C06U01 | 索力分解 | [观看](interactive/core-learning.html?unit=C06U01&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C06U01) |
+| C06U02 | 索力影响矩阵 | [观看](interactive/core-learning.html?unit=C06U02&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C06U02) |
+| C06U03 | 成桥状态目标 | [观看](interactive/core-learning.html?unit=C06U03&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C06U03) |
+| C06U04 | 控制变量相关性 | [观看](interactive/core-learning.html?unit=C06U04&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C06U04) |
+| C06U05 | 主梁压弯稳定 | [观看](interactive/core-learning.html?unit=C06U05&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C06U05) |
+| C06U06 | 索角与水平力 | [观看](interactive/core-learning.html?unit=C06U06&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C06U06) |
+| C06U07 | 温度与约束 | [观看](interactive/core-learning.html?unit=C06U07&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C06U07) |
+| C06U08 | 阻尼与刚度 | [观看](interactive/core-learning.html?unit=C06U08&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C06U08) |
+| C06U09 | 施工有效长度 | [观看](interactive/core-learning.html?unit=C06U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C06U09) |
+| C06U10 | 监控复测 | [观看](interactive/core-learning.html?unit=C06U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C06U10) |
+
+## 第7章　悬索桥：找形与刚度 {.unnumbered}
+
+| 编号 | 学习任务 | 视频 | 交互 |
+|---|---|---|---|
+| C07U01 | 主缆线形、荷载与边界条件 | [观看](interactive/core-learning.html?unit=C07U01&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C07U01) |
+| C07U02 | 垂度与水平力 | [观看](interactive/core-learning.html?unit=C07U02&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C07U02) |
+| C07U03 | 有效截面应力 | [观看](interactive/core-learning.html?unit=C07U03&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C07U03) |
+| C07U04 | 索拱类比边界 | [观看](interactive/core-learning.html?unit=C07U04&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C07U04) |
+| C07U05 | 加劲梁作用 | [观看](interactive/core-learning.html?unit=C07U05&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C07U05) |
+| C07U06 | 动力尺度规律 | [观看](interactive/core-learning.html?unit=C07U06&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C07U06) |
+| C07U07 | 锚碇力流 | [观看](interactive/core-learning.html?unit=C07U07&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C07U07) |
+| C07U08 | 支承柔度与整体变形 | [观看](interactive/core-learning.html?unit=C07U08&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C07U08) |
+| C07U09 | 共振与阻尼 | [观看](interactive/core-learning.html?unit=C07U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C07U09) |
+| C07U10 | 主缆找形与受力状态 | [观看](interactive/core-learning.html?unit=C07U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C07U10) |
+
+## 第8章　支承、墩台与边界 {.unnumbered}
+
+| 编号 | 学习任务 | 视频 | 交互 |
+|---|---|---|---|
+| C08U01 | 支座自由度 | [观看](interactive/core-learning.html?unit=C08U01&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C08U01) |
+| C08U02 | 温度变形与约束作用 | [观看](interactive/core-learning.html?unit=C08U02&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C08U02) |
+| C08U03 | 刚度分配 | [观看](interactive/core-learning.html?unit=C08U03&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C08U03) |
+| C08U04 | 偏心受压 | [观看](interactive/core-learning.html?unit=C08U04&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C08U04) |
+| C08U05 | 悬臂墩刚度 | [观看](interactive/core-learning.html?unit=C08U05&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C08U05) |
+| C08U06 | 串联柔度 | [观看](interactive/core-learning.html?unit=C08U06&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C08U06) |
+| C08U07 | 反力重分配 | [观看](interactive/core-learning.html?unit=C08U07&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C08U07) |
+| C08U08 | 支座脱空 | [观看](interactive/core-learning.html?unit=C08U08&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C08U08) |
+| C08U09 | 顶升影响矩阵 | [观看](interactive/core-learning.html?unit=C08U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C08U09) |
+| C08U10 | 温度应力与轴力 | [观看](interactive/core-learning.html?unit=C08U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C08U10) |
+
+## 第9章　风与动力：无量纲判断 {.unnumbered}
+
+| 编号 | 学习任务 | 视频 | 交互 |
+|---|---|---|---|
+| C09U01 | 风速平方律 | [观看](interactive/core-learning.html?unit=C09U01&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C09U01) |
+| C09U02 | 受风尺度 | [观看](interactive/core-learning.html?unit=C09U02&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C09U02) |
+| C09U03 | 气动系数 | [观看](interactive/core-learning.html?unit=C09U03&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C09U03) |
+| C09U04 | 固有频率 | [观看](interactive/core-learning.html?unit=C09U04&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C09U04) |
+| C09U05 | 频率比与共振 | [观看](interactive/core-learning.html?unit=C09U05&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C09U05) |
+| C09U06 | 阻尼与动力放大 | [观看](interactive/core-learning.html?unit=C09U06&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C09U06) |
+| C09U07 | 涡脱落频率 | [观看](interactive/core-learning.html?unit=C09U07&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C09U07) |
+| C09U08 | 风洞相似 | [观看](interactive/core-learning.html?unit=C09U08&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C09U08) |
+| C09U09 | 抗风措施 | [观看](interactive/core-learning.html?unit=C09U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C09U09) |
+| C09U10 | CFD核验 | [观看](interactive/core-learning.html?unit=C09U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C09U10) |
+
+[沿正文连续操作抗风实验](chapters/ch09-wind.qmd#wind-step-record)：风速时程、风谱、空间相关、[桥梁断面与三尺度实验](interactive/bridge-wind-lab-20261017/index.html)、静风三分力、模态响应和自激能量。桥梁绕流页可连续改变单箱风嘴、双箱槽宽与截面转角，并比较计算、风洞和实桥的雷诺数；圆柱与矩形可另做[基础绕流实验](interactive/wind-cfd-20261017/index.html)。
+
+| C10U02 | 地震动力需求 | [观看](interactive/core-learning.html?unit=C10U02&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U02) |
+| C10U03 | 跨灾种减振 | [观看](interactive/core-learning.html?unit=C10U03&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U03) |
+
+## 配套专题　时间、不确定性与决策 {.unnumbered}
+
+| 编号 | 学习任务 | 视频 | 交互 |
+|---|---|---|---|
+| C10U01 | 抗力劣化 | [观看](interactive/core-learning.html?unit=C10U01&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U01) |
+| C10U04 | 劣化速率 | [观看](interactive/core-learning.html?unit=C10U04&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U04) |
+| C10U05 | 截面损失 | [观看](interactive/core-learning.html?unit=C10U05&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U05) |
+| C10U06 | 疲劳幅值效应 | [观看](interactive/core-learning.html?unit=C10U06&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U06) |
+| C10U07 | 贝叶斯更新 | [观看](interactive/core-learning.html?unit=C10U07&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U07) |
+| C10U08 | 观测不确定性 | [观看](interactive/core-learning.html?unit=C10U08&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U08) |
+| C10U09 | 可靠度与离散性 | [观看](interactive/core-learning.html?unit=C10U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U09) |
+| C10U10 | 扩散尺度 | [观看](interactive/core-learning.html?unit=C10U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U10) |
+
+## 第10章　建模、有限元与审计 {.unnumbered}
+
+| 编号 | 学习任务 | 视频 | 交互 |
+|---|---|---|---|
+| C11U01 | 模型层级 | [观看](interactive/core-learning.html?unit=C11U01&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C11U01) |
+| C11U02 | 合力与一阶矩 | [观看](interactive/core-learning.html?unit=C11U02&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C11U02) |
+| C11U03 | 插值误差 | [观看](interactive/core-learning.html?unit=C11U03&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C11U03) |
+| C11U04 | 刚度组装 | [观看](interactive/core-learning.html?unit=C11U04&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C11U04) |
+| C11U05 | 边界条件 | [观看](interactive/core-learning.html?unit=C11U05&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C11U05) |
+| C11U06 | 荷载守恒 | [观看](interactive/core-learning.html?unit=C11U06&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C11U06) |
+| C11U07 | 验证与确认 | [观看](interactive/core-learning.html?unit=C11U07&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C11U07) |
+| C11U08 | 矩阵病态 | [观看](interactive/core-learning.html?unit=C11U08&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C11U08) |
+| C11U09 | 量纲与尺度 | [观看](interactive/core-learning.html?unit=C11U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C11U09) |
+| C11U10 | 线性控制与反算 | [观看](interactive/core-learning.html?unit=C11U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C11U10) |

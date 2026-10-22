@@ -1,0 +1,120 @@
+# 图解、对话与计算练习 {.unnumbered}
+
+<div class="visual-batch-hero"><p class="batch-kicker">桥梁思维 · 对话与练习</p><p class="batch-lead">一辆车停在桥上，五根梁一定平均分吗？先听两个人争论，再亲手改变条件，看看自己的判断能不能站住。</p><div class="batch-actions"><a class="batch-primary" href="#dialogues">先听一段对话</a><a href="interactive/course-package.html">选一个实验动手</a><a href="#forty-figures">查找正文图解</a><a href="#notebooks">边读边算</a></div></div>
+
+图解按正文位置索引；五段对话与计算练习提供另一种观察和复习方式。[整桥与局部构造图集](blender-model-review.qmd)可用于对照同一模型的不同视图。
+
+## 先听一段对话 {#dialogues}
+
+小周从生活里的经验出发，阿宁和他一起拆开看。有时直觉有道理，有时还少了一个条件。看完之后，换一个条件再试。
+
+### 车放正中间，五根梁就一定平均分？ {#d01}
+
+<video class="dialogue-player" controls preload="metadata" playsinline poster="assets/videos/dialogue-pilot/D01-poster.jpg" aria-label="车放正中间，五根梁就一定平均分？"><source src="assets/videos/dialogue-pilot/D01-dialogue.mp4" type="video/mp4"><track kind="captions" src="assets/videos/dialogue-pilot/D01-dialogue.vtt" srclang="zh" label="中文"><a href="assets/videos/dialogue-pilot/D01-dialogue.mp4">下载视频</a></video>
+
+<p class="batch-media-meta">2:51 · 双人合成声音 · <a href="interactive/lessons/C04U06.html">同主题实验（模型条件另列）→</a> · <a href="assets/videos/dialogue-pilot/D01-dialogue.mp4" download>下载视频</a></p>
+
+<details open><summary>文字对话</summary><p><strong>小周：</strong>车停中间还不平均分？那对称性不是白学了？我搬桌子，东西放正中间，两边不就一样使劲？</p><p><strong>阿宁：</strong>左右一样，这一步你没说错。可要是桌子中间那条腿，特别软呢？</p><p><strong>小周：</strong>那它可能使不上劲。等等，左右一样，不等于五根都一样？行，换软。先别讲，让我看。</p><p><strong>阿宁：</strong>看，中间这一根，原来分到五分之一，现在不到一成。其余四根，各分到大约两成三。</p><p><strong>小周：</strong>我有点不服。软的，不就该陷得更深吗？怎么反而分得少？</p><p><strong>阿宁：</strong>因为上边那道横向连接，把它们连着。我们先把它当成很难弯的横杆，不能让每根各沉各的。下沉同样一段，软的那根需要的力更小。这种抗变形的本领，叫刚度。</p><p><strong>小周：</strong>好，五根先换回一样硬。我把车挪到右边，近处多出力，远处就摸鱼了？</p><p><strong>阿宁：</strong>先看比例。最右边，从两成变成四成。最左边，这次车辆带来的分担降到零。车还是那辆车，总重没变；多出来的，要从别处减。</p><p><strong>小周：</strong>这我熟！往一边偏，原来的平均那份还在，再加上一边多、一边少。跟偏心压一个截面，是不是一个思路？</p><p><strong>阿宁：</strong>这条思路能借。我们把它叫作平均部分和弯曲增减的叠加。不过，一边算的是截面里各处的应力，一边算的是几根梁分到的力；还得分别说明材料、连接和变形条件。</p><p><strong>小周：</strong>我再往外挪。怎么还有一根算出负数了？这账还能倒扣？这个数看着别扭，干脆改成零吧。</p><p><strong>阿宁：</strong>先别删。这是这次车压上去带来的变化，还没把桥本身的重量算进去。看到负增量，不等于真实支座已经离开。</p><p><strong>小周：</strong>那我非要试试，只把负的删掉，别的都不动。</p><p><strong>阿宁：</strong>你看，加起来反而比车重还大。原来是一百二十千牛，改完变成一百三十二千牛，连力矩也对不上了。改结果，不能替代改模型。</p><p><strong>小周：</strong>懂了。不是看着对称就随便平均，也不是看着不顺眼就删数。先问它们怎么连、软硬一样不一样，再看加起来对不对。</p><p><strong>阿宁：</strong>对。加起来对，叫平衡；连着的地方怎样一起动，叫变形协调；同样变形要多大的力，要看刚度。换成桌子、搁板或偏心受压，先借这几个问题，别急着照搬答案。</p></details>
+
+### 把搁板放大一倍，为什么不是重一倍？ {#d02}
+
+<video class="dialogue-player" controls preload="metadata" playsinline poster="assets/videos/dialogue-pilot/D02-poster.jpg" aria-label="把搁板放大一倍，为什么不是重一倍？"><source src="assets/videos/dialogue-pilot/D02-dialogue.mp4" type="video/mp4"><track kind="captions" src="assets/videos/dialogue-pilot/D02-dialogue.vtt" srclang="zh" label="中文"><a href="assets/videos/dialogue-pilot/D02-dialogue.mp4">下载视频</a></video>
+
+<p class="batch-media-meta">1:33 · 双人合成声音 · <a href="interactive/lessons/C01U06.html">同主题实验（模型条件另列）→</a> · <a href="assets/videos/dialogue-pilot/D02-dialogue.mp4" download>下载视频</a></p>
+
+<details open><summary>文字对话</summary><p><strong>小周：</strong>一块搁板不够大，我照着原样放大一倍。料多用一倍，总该够了吧？</p><p><strong>阿宁：</strong>你说的放大，是只加长，还是长、宽、厚全都变成两倍？先拿两个盒子比一下。</p><p><strong>小周：</strong>全都两倍嘛，模样还一样。等等，这里面，能塞进去八个小盒子？</p><p><strong>阿宁：</strong>对。同样材料，体积变成八倍，自重也变成八倍。这只是重量，还不是它弯得怎样。</p><p><strong>小周：</strong>那它也变厚、变宽了，扛弯的本事肯定跟着涨。是不是正好抵消？</p><p><strong>阿宁：</strong>在这根只受自重的简支梁里，并没有抵消。按相同比例放大后，弯曲应力变成两倍，下沉量变成四倍。前提是材料相同，而且仍能用线弹性小变形来算。</p><p><strong>小周：</strong>我家的搁板一般不变厚，只是两个支架离远了。那还能套刚才的四倍吗？</p><p><strong>阿宁：</strong>不能。若截面和每米荷载不变，只把跨度加倍，下沉量会变成十六倍。你换了放大的方式，比较的就已经是另一个问题。</p><p><strong>小周：</strong>那问大桥有没有尺度问题，得先问到底什么变大、什么没变，不能只盯着长度。</p><p><strong>阿宁：</strong>是。先说清缩放条件，再看长度、面积、体积和响应各按什么比例变化。这种比较方法，叫尺度分析。</p></details>
+
+### 本来怕被拉开，为什么还要先拉钢索？ {#d03}
+
+<video class="dialogue-player" controls preload="metadata" playsinline poster="assets/videos/dialogue-pilot/D03-poster.jpg" aria-label="本来怕被拉开，为什么还要先拉钢索？"><source src="assets/videos/dialogue-pilot/D03-dialogue.mp4" type="video/mp4"><track kind="captions" src="assets/videos/dialogue-pilot/D03-dialogue.vtt" srclang="zh" label="中文"><a href="assets/videos/dialogue-pilot/D03-dialogue.mp4">下载视频</a></video>
+
+<p class="batch-media-meta">1:29 · 双人合成声音 · <a href="interactive/lessons/C04U07.html">同主题实验（模型条件另列）→</a> · <a href="assets/videos/dialogue-pilot/D03-dialogue.mp4" download>下载视频</a></p>
+
+<details open><summary>文字对话</summary><p><strong>小周：</strong>混凝土怕拉开，我听明白了。可你又说，先使劲拉里面的钢索。这不是跟自己对着干吗？</p><p><strong>阿宁：</strong>先看谁在被拉。钢索拉长后，端头通过锚具把这股力传给梁，梁被往里压。钢索受拉，和混凝土受压，可以同时发生。</p><p><strong>小周：</strong>像把一排书两头夹紧，再托起来？钢索在使劲，书反而挤在一起？</p><p><strong>阿宁：</strong>可以借这个感觉，但真实梁还会弯。车压上来，下边有被拉开的趋势；提前形成的压力，可以抵消其中一部分。这种提前建立的受力状态，叫预应力。</p><p><strong>小周：</strong>那我把钢索拉得越紧，不就越保险？最好哪儿都不出现拉力。</p><p><strong>阿宁：</strong>先别只看车上桥以后。车还没来，梁也已经受到了这股力。索放得偏、拉得太大，另一边也可能先出现拉应力。</p><p><strong>小周：</strong>哦，使用时看着挺好，不代表施工时就没问题。那我得把两个时候都看一遍。</p><p><strong>阿宁：</strong>对。本例只对比两个明示的线弹性工况。设计还要看损失、裂缝、承载力和构造。普通钢筋主要在开裂后的受拉区承担拉力；预应力还主动改变了加载前的状态，不能当成只是多放几根钢筋。</p></details>
+
+### 车越多，桥的每一处都更不利吗？ {#d04}
+
+<video class="dialogue-player" controls preload="metadata" playsinline poster="assets/videos/dialogue-pilot/D04-poster.jpg" aria-label="车越多，桥的每一处都更不利吗？"><source src="assets/videos/dialogue-pilot/D04-dialogue.mp4" type="video/mp4"><track kind="captions" src="assets/videos/dialogue-pilot/D04-dialogue.vtt" srclang="zh" label="中文"><a href="assets/videos/dialogue-pilot/D04-dialogue.mp4">下载视频</a></video>
+
+<p class="batch-media-meta">1:26 · 双人合成声音 · <a href="interactive/lessons/C03U09.html">同主题实验（模型条件另列）→</a> · <a href="assets/videos/dialogue-pilot/D04-dialogue.mp4" download>下载视频</a></p>
+
+<details open><summary>文字对话</summary><p><strong>小周：</strong>车越多，桥越累。要找最危险的时候，那就把能放车的地方全放满，还用算？</p><p><strong>阿宁：</strong>先指一个要看的地方。我们只看这根简支梁，距离左端四米的截面剪力，并约定图上的正方向。你把一个力从左边慢慢移过去。</p><p><strong>小周：</strong>刚过那条线，数就跳到另一边了？同一个东西往下压，怎么这边的影响还会换号？</p><p><strong>阿宁：</strong>因为我们盯着一个截面，并把梁在这里分开来画受力图。荷载在截面左边还是右边，进入哪一块的平衡式不同。把每个车位的影响连起来，就得到这张影响线。</p><p><strong>小周：</strong>所以如果我只想让这个正方向的剪力尽量大，把左边也塞满车，反而可能抵消一些？</p><p><strong>阿宁：</strong>对，在这里的独立可布均布荷载模型中，正号区加载，能把这个响应推大；负号区加载，会往另一个方向推。找最小值就反过来。</p><p><strong>小周：</strong>可真车的轮子连在一起，总不能想把哪个轮子放哪儿，就放哪儿吧？</p><p><strong>阿宁：</strong>这句很关键。影响线告诉你各处怎样影响指定响应；真实车辆还得整体移动，遵守轴距、车道和相应加载规则。找最不利，要先说清看什么，再说允许怎样摆。</p></details>
+
+### 网格都这么细了，怎么还可能算错？ {#d05}
+
+<video class="dialogue-player" controls preload="metadata" playsinline poster="assets/videos/dialogue-pilot/D05-poster.jpg" aria-label="网格都这么细了，怎么还可能算错？"><source src="assets/videos/dialogue-pilot/D05-dialogue.mp4" type="video/mp4"><track kind="captions" src="assets/videos/dialogue-pilot/D05-dialogue.vtt" srclang="zh" label="中文"><a href="assets/videos/dialogue-pilot/D05-dialogue.mp4">下载视频</a></video>
+
+<p class="batch-media-meta">1:20 · 双人合成声音 · <a href="interactive/lessons/C11U07.html">同主题实验（模型条件另列）→</a> · <a href="assets/videos/dialogue-pilot/D05-dialogue.mp4" download>下载视频</a></p>
+
+<details open><summary>文字对话</summary><p><strong>小周：</strong>以前你嫌模型太粗。现在我把网格切得密密麻麻，结果都不怎么变了，这回总该信电脑了吧？</p><p><strong>阿宁：</strong>我们给它同一根梁、同一份荷载。左边允许梁端转动，右边把两头的转角也锁住。先猜，哪根更容易下沉？</p><p><strong>小周：</strong>当然是左边。像搁板搭在支架上，和两头死死夹住，能一样吗？</p><p><strong>阿宁：</strong>看，左边算到大约十一点二七毫米，右边只有二点一三毫米。网格越来越细，两边的结果都稳定下来了。</p><p><strong>小周：</strong>那右边是很稳定地，算了一个我根本没要它算的东西？精细地答错了题？</p><p><strong>阿宁：</strong>正是。网格收敛只说明这个模型的数值近似趋于稳定，不能替你证明支承、荷载和材料选对了。</p><p><strong>小周：</strong>那让人工智能写脚本，也一样。代码能跑、图也漂亮，只能说明它跑完了。还得问，它有没有把我的意思理解错。</p><p><strong>阿宁：</strong>所以先用能手算的小例子核对，再检查力和位移的条件，然后逐步加复杂性。计算越方便，越要讲清楚模型究竟代表什么。</p></details>
+
+## 选一个问题动手
+
+[进入交互练习目录](interactive/course-package.html){.btn .btn-primary}
+
+先猜一个结果，改变参数，再比较眼前的变化。实验保留自由探索，做错后可以调整重试。每页都能查看模型条件和计算代码。
+
+资源的当前数量见[全书统计](book-metrics.qmd)。课程包中的教学单元可以复用同一个计算模型。
+
+## 正文图解索引 {#forty-figures}
+
+以下40个主题直接定位到正文中的图解或更新后的模型。图的条件、符号和解释随正文阅读。
+
+| 图解编号 | 正文位置 |
+|---|---|
+| F01 | [桥梁组成与传力](chapters/ch01.html#ch01-components) |
+| F02 | [同样向下的重量，为什么需要不同的支承？](chapters/ch01.html#结构体系与传力) |
+| F03 | [几何相似与自重](chapters/ch01.html#几何相似与自重尺度) |
+| F04 | [偏心压力的轴力—弯矩分解与两缘应力](chapters/ch02-foundations.html#内力应力偏心与设计接口) |
+| F05 | [截面核心与无拉应力条件](chapters/ch02-foundations.html#内力应力偏心与设计接口) |
+| F06 | [同一块板竖着放、横着放，为什么弯起来不一样？](chapters/ch02-foundations.html#fig-priority-F06) |
+| F07 | [压杆的有效长度与欧拉临界力](chapters/ch02-foundations.html#basic-stability) |
+| F08 | [预应力建立的初始应力与曲线束上托作用](chapters/ch02-foundations.html#预应力索拱平衡与初始状态) |
+| F09 | [同一辆车换个位置，跨中弯矩会怎样变？](chapters/ch02.html#fig-priority-F09) |
+| F10 | [想让同一截面的剪力最大，荷载该放在哪一边？](chapters/ch02.html#fig-priority-F10) |
+| F11 | [两根车轴一起上桥，怎样把各自的作用加起来？](chapters/ch02.html#fig-priority-F11) |
+| F12 | [平均抗力比平均作用大，为什么还不能只看两个平均数？](chapters/ch02.html#fig-priority-F12) |
+| F13 | [车轮下面，桥面板靠哪些构件支承？](chapters/ch03.html#fig-priority-F13) |
+| F14 | [一块板能向两边传力，取成梁以后保留了什么？](chapters/ch03.html#fig-priority-F14) |
+| F15 | [只用力的平衡，什么时候能算出每个支点分担？](chapters/ch03.html#fig-priority-F15) |
+| F16 | [车偏到一侧，总重量怎样分到五根梁？](chapters/ch03.html#fig-priority-F16) |
+| F17 | [某根梁的活载增量为负，就已经离开支承了吗？](chapters/ch03.html#fig-priority-F17) |
+| F18 | [把两跨接成一根梁，弯矩和下沉会怎样改变？](chapters/ch03.html#fig-priority-F18) |
+| F19 | [桥还没碰到下一个支点，悬空越长会怎样？](chapters/ch03.html#fig-priority-F19) |
+| F20 | [把拱压低，拱脚要多推多少？](chapters/ch04.html#fig-priority-F20) |
+| F21 | [压力线离开拱轴，弯矩从哪里来？](chapters/ch04.html#fig-priority-F21) |
+| F22 | [荷载只放一半，拱就一定更轻松吗？](chapters/ch04.html#fig-priority-F22) |
+| F23 | [桥墩“动了十毫米”，到底是哪一种动？](chapters/ch04.html#fig-priority-F23) |
+| F24 | [车的重量，怎样经过拉索到达桥塔？](chapters/ch05.html#fig-priority-F24) |
+| F25 | [只调一组索，怎样得到矩阵的一列？](chapters/ch05.html#fig-priority-F25) |
+| F26 | [合龙以后，桥还是刚才那个受力体系吗？](chapters/ch05.html#fig-priority-F26) |
+| F27 | [悬索桥的重量，最后交给了谁？](chapters/ch06.html#fig-priority-F27) |
+| F28 | [缆索垂得更深，锚碇要拉住的力会变多少？](chapters/ch06.html#fig-priority-F28) |
+| F29 | [一根绳拉紧以后，为什么更难横向拨动？](chapters/ch06.html#fig-priority-F29) |
+| F30 | [温度一样升高，为什么有的伸长、有的受压？](chapters/ch07.html#fig-priority-F30) |
+| F31 | [“固定支座”到底固定了哪些方向？](chapters/ch07.html#fig-priority-F31) |
+| F32 | [基础把桥的重量交给哪一层土？](chapters/ch07.html#fig-priority-F32) |
+| F33 | [风速翻倍，推桥面的力也只翻倍吗？](chapters/wind-advanced.html#fig-priority-F33) |
+| F34 | [同样大小的周期力，为什么能激起更大的振动？](chapters/ch09-wind.html#fig-priority-F34) |
+| F35 | [桥面两边一起动，和一上一下，是同一种振动吗？](chapters/ch09-wind.html#fig-priority-F35) |
+| F36 | [少了十分之一厚度，梁就只软十分之一吗？](chapters/ch10-lifecycle.html#fig-priority-F36) |
+| F37 | [把地震力降下来，还要为哪一种变化留空间？](chapters/ch09-wind.html#fig-priority-F37) |
+| F38 | [电脑里的一个节点，对应桥上的什么位置？](chapters/ch10-fem.html#fig-priority-F38) |
+| F39 | [网格越来越细，为什么答案仍可能错？](chapters/ch10-fem.html#fig-priority-F39) |
+| F40 | [AI给了一个数，怎样知道它算的是你的问题？](chapters/ch10-fem.html#fig-priority-F40) |
+
+## 边读边算 {#notebooks}
+
+每份 Notebook 按“问题 → 图与公式 → 代码 → 结果 → 自己试一试”的顺序组织。网页可直接阅读已执行的结果；下载 `.ipynb` 后可在 Jupyter 中修改参数并重新运行。
+
+| 主题 | 直接阅读 | 下载运行 |
+|---|---|---|
+| 五根梁怎样分担车辆的重量？ | [图文与已运行结果](notebooks/A-transverse.html) | [Notebook](notebooks/A-transverse.ipynb) · [Python](notebooks/A-transverse.py) |
+| “变大一倍”到底改变了什么？ | [图文与已运行结果](notebooks/B-scaling.html) | [Notebook](notebooks/B-scaling.ipynb) · [Python](notebooks/B-scaling.py) |
+| 网格更细，为什么还要查支承？ | [图文与已运行结果](notebooks/C-beam-fem.html) | [Notebook](notebooks/C-beam-fem.ipynb) · [Python](notebooks/C-beam-fem.py) |
+
+普通静态网页不会在后台运行 Python；不安装软件时，可以先使用上方对应的 HTML 实验。课程包中的数值模型与 Notebook 分别列出尺寸和假定，比较前先核对是否同一工况。
+
+## 资料来源与可编辑文件
+
+[图解条件与源文件](assets/publication/priority-40/manifest.json) · [对话文稿、字幕与制作记录](assets/videos/dialogue-pilot/manifest.json) · [Notebook执行记录](notebooks/manifest.json)。教学单元和其他网页的入口统一见[数字资源索引](resources.qmd)。

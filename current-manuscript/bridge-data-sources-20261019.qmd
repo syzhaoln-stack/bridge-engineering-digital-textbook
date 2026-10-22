@@ -1,0 +1,106 @@
+# 中国、日本、美国桥梁数据库与标准图 {.unnumbered}
+
+[返回梁桥参考资料](girder-references-20261019.qmd) · [返回第4章](chapters/ch03.qmd)
+
+核验日期：2026年10月19日。**逐桥数据库用于认识桥型与跨径的工程分布，标准图和项目图纸用于核对截面与梁高。**两类资料分别统计；标准图的型号数量不代表已建桥梁数量。
+
+## 公开数据渠道 {#data-channels}
+
+| 国家、渠道 | 公开范围与获取方式 | 跨径、桥型及梁高能否取得 |
+|---|---|---|
+| 美国：[FHWA NBI年度档案](https://www.fhwa.dot.gov/bridge/nbi/ascii.cfm) | 官方索引列出1992—2025年全国及分州文件，可直接下载。优先选公路桥数据 Highway Bridges | 有最大跨径、全桥长度、材料、主跨结构型式、年代等；**没有梁截面高度** |
+| 美国：[InfoBridge](https://infobridge.fhwa.dot.gov/data)／[BTS NTAD接口](https://services.arcgis.com/xOi1kZaI0eWDREZv/ArcGIS/rest/services/NTAD_National_Bridge_Inventory/FeatureServer/0) | InfoBridge支持筛选与导出；NTAD可按地区、字段分页获取。本轮已读接口小样 | 属于NBI的查询、整理或空间发布渠道，不能与NBI再相加计数；也不能补出梁高 |
+| 中国：国家公路桥梁基础数据库 | [公路科学研究院蓝皮书](https://www.rioh.cn/module/download/downfile.jsp?classid=0&filename=c26c0b319ece42c6a1283eb6e47c1bd0.pdf)确认业务库存在；本轮未核到面向公众的全国逐桥批量下载入口 | 公开报告与[行业统计公报](https://xxgk.mot.gov.cn/2020/jigou/zhghs/202506/t20250610_4170228.html)可用于全国规模、数量及总延长；不能据汇总反推跨径分布 |
+| 中国：[山东邹城国省道桥梁明细](https://data.sd.gov.cn/portal/catalog/4e6e82f150c711ecbc24fa163e78f1bb) | 地方目录标注无条件开放；已匿名取得JSON。当前文件156条、19字段 | 有单孔最大跨径、桥跨组合、全长、上部结构形式、通车日期；**无梁高**。重复、地域、年份及长度单位仍须清洗核实 |
+| 日本：[道路统计年报2025](https://www.mlit.go.jp/road/ir/ir-data/tokei-nen/2025/nenpo03.html) | 免费XLSX汇总表，桥梁现状日为2024年3月31日；桥长≥15 m | 有结构形式、材料和桥长分组的地区统计；**桥长不是最大跨径**，不能生成逐桥跨径散点 |
+| 日本：[2025年度道路维护年报](https://www.mlit.go.jp/road/sisaku/yobohozen/yobohozen_maint_r07.html) | 2026年发布，附当年点检逐桥XLSX；已读取[国土交通省清单](https://www.mlit.go.jp/road/sisaku/yobohozen/xls/r07/01-1.xlsx) | 清单有桥名、桥长、桥宽、架设年度及诊断等级；已读清单无桥型、最大支间、梁高。它是当年点检子集 |
+| 日本：[全国道路设施点检数据库](https://road-structures-db.mlit.go.jp/) | [地图](https://road-structures-map.mlit.go.jp/)免费浏览；详细Web/API须申请，详细数据有费用，见[运营说明](https://www.rirs.or.jp/tenken-db/) | 进一步研究须先核获准访问的字段与使用条件；不能标作免登录全国完整CSV，也不能预设能公开转载详细数据 |
+
+山东文件中的156条记录包含99个不同桥名，**两个数字都不等于已确认的独立桥梁数**。部分年份混入其他字段，部分桥名、路线与目录地域有待核对。该表目前作为公开渠道与字段样例，尚未用于绘制地区或全国分布。
+
+日本可直接利用的统计表包括[结构形式](https://www.mlit.go.jp/road/ir/ir-data/tokei-nen/2025/xlsx/k_genkyou41.xlsx)、[材料](https://www.mlit.go.jp/road/ir/ir-data/tokei-nen/2025/xlsx/k_genkyou52.xlsx)、[桥长分组](https://www.mlit.go.jp/road/ir/ir-data/tokei-nen/2025/xlsx/k_genkyou63.xlsx)和[历年数量与总延长](https://www.mlit.go.jp/road/ir/ir-data/tokei-nen/2025/xlsx/k_genkyou39.xlsx)。这些汇总表适合呈现桥型构成和规模变化。
+
+### 所给Kaggle数据的定位
+
+[NBI Data 1990–2022](https://www.kaggle.com/datasets/cynthiamengyuanli/nbi-data-1990-2022)由Cynthia Mengyuan Li整理，版本1发布于2023年6月27日。其[公开元数据](https://www.kaggle.com/api/v1/datasets/view/cynthiamengyuanli/nbi-data-1990-2022)说明地域为**佐治亚州（Georgia）**，并非全美国。文件约102 MB，42列；实际表头含最大跨长、结构长、材料、桥型及年度，长度单位为**英尺**，没有梁高，也未保留净空列。
+
+可把它作为入门数据，但全国研究优先引用FHWA原始年度文件。Kaggle许可标签为“U.S. Government Works”，不改写为CC0；若采用附加气象字段，还需核其独立来源。本轮仅读取文件头尾小样，未验证每年是否完整，也未得出全州统计结论。
+
+## 标准图与跨度系列 {#standard-series}
+
+以下范围是**所列图集或手册版本的覆盖范围**，不是国家全部桥型的跨度极限，也不是跨国统一推荐值。
+
+| 国家、资料 | 梁型与可核跨度系列 | 版本、梁高及使用边界 |
+|---|---|---|
+| 中国：[重庆预应力混凝土T梁公示图](https://jtysw.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202203/t20220329_10565851.html) | 20、30、40 m，先简支后结构连续；每种跨径有4种路基宽度分册 | 2022年3月公示为总校稿。已核20 m梁高1.50 m、40 m梁高2.50 m；另有[30 m官方图纸](https://jtysw.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202207/W020220715577351583662.pdf)，梁高2.00 m，但本轮未核到该批附件的正式印发通知 |
+| 中国：[重庆装配式小箱梁2024征求意见稿](https://zfcxjw.cq.gov.cn/zwxx_166/gsgg/202407/P020240711655338295008.pdf) | 30、35、40 m；分节段预制简支小箱梁 | 该稿梁高依次1.60、1.80、2.02 m。[2025年正式发布公告](https://zfcxjw.cq.gov.cn/zwxx_166/gsgg/202508/t20250818_14908898.html)另有DJBT50-186／渝25M01；尚未取得正式原图，图谱尺寸仍标2024稿 |
+| 日本：历史标准设计支间系列 | 先张板梁5—24 m；先张T梁18—24 m；后张T梁20—45 m，图列1 m间隔 | 具体手册版本与图页见下文。适用支间与标准设计集录范围须分别读取；未从范围反推梁高 |
+| 美国：[TxDOT预应力混凝土工字梁标准图](https://www.dot.state.tx.us/insdtdot/orgchart/cmd/cserve/standard/bridge-e.htm) | 本轮核读24 ft车行道系列，Tx28/34/40/46/54/62六型，共81个表列组合；40—135 ft，即12.192—41.148 m，各型号范围不同 | [IGSD-24设计表](https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-IGSD24-21.pdf)与[IGD构造图](https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-IGD-23.pdf)配套。梁高为预制工字梁体，不含另浇结构桥面板及梗腋 |
+
+### 日本手册的版本与支间范围
+
+九州地方整备局[公开桥梁设计资料](https://www.qsr.mlit.go.jp/s_top/h22doboku/douro/3-03.pdf#page=174)道2-164、2-165（PDF第174、175页）保留了1996年先张梁、1994年后张梁标准设计摘图：
+
+| 形式 | 图列支间 | 图示范围与资料性质 |
+|---|---|---|
+| 先张PC板梁 | 5、6、…、24 m | 图有A/B活荷载的梁高点，但标注的旧标准设计集录范围仅至21 m |
+| 先张PC T梁 | 18、19、…、24 m | 同样须区分图列范围与旧图集21 m收录边界 |
+| 后张PC简支T梁 | 20、21、…、45 m | 分梁分类、PC钢材组别，并附横向布梁示意 |
+
+东北地方整备局[《设计施工手册·桥梁篇》2023年3月、2024年7月修正版](https://www.thr.mlit.go.jp/bumon/b00097/k00910/h12-hp/R5dourokyou_R6.7ver.pdf#page=47)表1-6则标出先张板/T梁标准设计最大支间24 m、后张板/T梁45 m，并给参考高跨比。该表属于一般适用支间示例，不能把旁列实绩最大值与标准设计最大值混读。这些资料可作为后续提取梁高点的依据；本轮没有从图形估读并追加日本梁高样本，也未把历史摘图称为现行全套配筋图。
+
+### 美国六种工字梁型号
+
+| 型号 | 本次设计表的跨径范围（ft） | 折合跨径（m） | 预制梁体高（m） | 表列组合数 |
+|---|---:|---:|---:|---:|
+| Tx28 | 40—75 | 12.192—22.860 | 0.7112 | 8 |
+| Tx34 | 40—85 | 12.192—25.908 | 0.8636 | 10 |
+| Tx40 | 40—100 | 12.192—30.480 | 1.0160 | 13 |
+| Tx46 | 40—115 | 12.192—35.052 | 1.1684 | 16 |
+| Tx54 | 40—125 | 12.192—38.100 | 1.3716 | 18 |
+| Tx62 | 60—135 | 18.288—41.148 | 1.5748 | 16 |
+
+各型号表列跨径间隔5 ft。跨径按[SIG-24](https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-SIG2400-24.pdf)及[SIG-62-24](https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-SIG622400-24.pdf)取台背墙桥侧面或桥墩中心线间距离，不能统称梁体制造长度或支座中心距。该组条件包括24 ft车行道、4片主梁、8.5 in结构桥面板及HL93荷载。桥面板可按[IGCS](https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-IGCS-24.pdf)连续，不能据此把分跨预制主梁改称连续梁。
+
+同一型号的预制梁体高固定，因此表列跨径增大时$h/L$降低。它不表示每米自重降低：截面面积和重度不变时，$g=\gamma A$近似不变，而总重随梁体长度增加。[IGD第1页截面性质表](https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-IGD-23.pdf#page=1)分别列梁高、面积和每英尺重量；其估重采用155 lb/ft³的混凝土与钢筋合计重度。完整的梁高、名义跨径、梁长与附加桥面板口径见[梁桥来源页](girder-references-20261019.qmd#txdot-height-weight)。
+
+<details>
+<summary>中国另有正式组合梁标准图渠道</summary>
+
+[JTG/T 3911—2021工字组合梁钢桥通用图](https://xxgk.mot.gov.cn/2020/jigou/glj/202112/P020211221411975249767.pdf)与[JTG/T 3912—2022箱形组合梁钢桥通用图](https://xxgk.mot.gov.cn/jigou/glj/202312/P020231211576733061788.pdf)的系列目录均列3×30、3×40、3×50、3×60 m，分四车道、六车道，共8册。链接文件分别为一册，第3页列全系列。它们属于钢—混凝土组合梁，单列为资料渠道，不计入本章混凝土梁高图谱。
+
+</details>
+
+## 在教材中呈现什么 {#textbook-use}
+
+| 图表 | 数据基础 | 图中应直接说明的关系 |
+|---|---|---|
+| 桥型—最大跨径分布 | 同一年、同一覆盖范围的逐桥记录；美国NBI可先行 | 各桥型实际出现在哪些跨径段，显示样本数、分布和尾部；统计频率不等于设计允许范围 |
+| 截面—跨径—梁高 | 有版本和条件的标准图、施工图及项目方案 | 同跨径的梁高与截面为何不同；变高梁分跨中、支点，图中保留材料、体系与尺寸口径 |
+| 桥型与建造年代 | 经过身份核对的年度记录，或明确年份的在册快照 | 最新在册桥梁的建成年分布只表示存续桥的年代构成；不能直接称历年全部新建量 |
+
+第4章当前图谱共**253个尺寸点**：63个实桥实体的126点、87个通用图表列组合（中国6、美国81）、2个项目施工图尺寸点及38个项目方案尺寸点。实桥每个实体分别记录跨中和支点；通用图组合、方案尺寸与桥梁数量不相加。原有中国10—50 m资料38点继续保留；本轮扩充后，50—120 m区间共有31个不同类别的尺寸点，可分别查看，不能当作31座桥。[打开图谱](interactive/girder-proportions-20261019/index.html) · [尺寸表CSV](interactive/girder-proportions-20261019/data.csv) · [逐项图源和版本](interactive/girder-proportions-20261019/source-notes.md)。
+
+本轮比原164点增加89点，来源与查重口径如下：
+
+- **教材表新增79点。**用户提供《桥梁工程（第6版）》第91—93页表2-2-3，共53行。排除石板坡纵向钢—混混合梁1行，识别既有13个实体，其余39个新桥各录跨中、根部两点，共78点；另以该表补充已有高家花园桥根部13.5 m，新增1点而不新增实体。作者、年份和ISBN待版权页核对，原照片不在网站发布。
+- **官方工程文件新增10点。**龙江路南环路60 m、虹桥路70 m、洞口四桥80 m、越溪二桥90 m、三门口南门桥110 m各有两处梁高。其中前四项8点为公开设计指标；南门桥2点有历史建成证据。原文链接、PDF页码与材料依据见[中跨工程来源](girder-references-20261019.qmd#medium-project-sources)。
+
+教材表有6个新实体的原印高跨比与所列跨度、梁高不一致，包含白沙桥较小差异。这12点保留原印值、重算值与异常说明，暂不纳入趋势拟合；不能未经原设计核对便认定只有比值印错。东明桥的新表体系与既有资料不同，保留原连续梁—刚构混合体系分类并记录差异。具体行号与数值见[教材表核验](girder-references-20261019.qmd#textbook-table-audit)。当前图谱属于有来源的工程例和设计文件集合，不是全国随机样本或桥梁普查结果。
+
+## 跨国合并前的口径 {#comparability}
+
+1. **长度分列。**最大跨径、主跨、桥长、标准跨径、预制梁长分别保存。缺失跨径不以桥长或桥长除跨数补填。
+2. **梁高分位置。**预制梁体、完整梁板截面、主跨跨中、主跨支点分列；净空、墩高、桥面距地面高度均不替代梁高。
+3. **范围先对齐。**美国NBIS的桥梁定义采用沿道路中心线量取的规定开口长度大于20 ft（6.096 m），不是最大单跨大于20 ft，涵洞另有规则。日本定期点检范围为桥长2 m以上，统计年报上述表为15 m以上。原始桥数不直接比较。[美国定义](https://www.fhwa.dot.gov/bridge/snbi/errata2_to_snbi_march_2022_publication.pdf#page=122)、[日本点检要领](https://www.mlit.go.jp/road/sisaku/yobohozen/tenken/yobo7_1.pdf)、[统计凡例](https://www.mlit.go.jp/road/ir/ir-data/tokei-nen/2025/pdf/k_hanrei.pdf)。
+4. **桥梁身份和年度分开。**美国旧数据以州码、结构号和提交年组织；地方表无稳定桥号时先核身份。跨年度重复记录是同桥时间序列，既不能累加成独立桥，也不能一概删除。
+5. **单位和版本随数据保存。**旧NBI逗号分隔文件48、49字段为米；所给Kaggle导出为英尺。2025是旧格式最后提交年，2026起SNBI改用JSON并调整字段、单位和一桥多组跨度关系，应按[官方映射](https://www.fhwa.dot.gov/bridge/snbi/datacrosswalk.cfm)处理。
+6. **“最大桥高”不是梁高。**SNBI的B.G.13 Maximum Bridge Height指桥面顶至地面或水面的最大高度；即使新库出现这个字段，也不能计算梁截面的高跨比。定义见[SNBI Errata #2正文第133页（PDF第152页）](https://www.fhwa.dot.gov/bridge/snbi/errata2_to_snbi_march_2022_publication.pdf#page=152)。
+
+桥型映射保留原编码。例如NBI“纵梁／多梁／主梁”类不全部等同工字梁，“板”类不能可靠拆为空心板和实心板；材料、截面、纵向连续性分开记录。依据[旧NBI编码指南](https://www.fhwa.dot.gov/bridge/mtguide.pdf)及[SNBI字段结构](https://www.fhwa.dot.gov/bridge/snbi/schema.cfm)。
+
+## 获取状态与引用
+
+本轮完成来源、字段、版本及小样核验：读到美国接口和CSV小样、中国地方JSON、日本公开统计与点检XLSX，核对了所列标准图。**未下载并清洗三国全国逐桥数据库，未计算跨国分布或时间趋势。**
+
+每次分析保存发布机构、资料名称、版本或数据年度、获取日期、原网址、原单位和清洗方法。中国地方目录的“无条件开放”、Kaggle许可标签、日本数据库的申请条件分别记录；公开浏览不自动等于原图可自由转载。教材引用数值、重绘示意与转载原图分别保留出处。

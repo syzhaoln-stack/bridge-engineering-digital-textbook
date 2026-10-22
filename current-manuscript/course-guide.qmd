@@ -1,0 +1,86 @@
+# 公开课程与延伸阅读 {.unnumbered #从身边的物件走进桥梁思维}
+
+从身边物件开始，可先体验[公众课首讲：挪动同一摞书](interactive/public-course.html)。首讲提供交互、讲解与自测，其余11讲提供主题提纲和已有教具入口；目前没有配套课程视频。
+
+以下课程可按正在学习的问题选读。正式章节给出本书采用的概念与计算条件，外部课程用于补充观察、例题和研究方法。国外课程的荷载、材料与规范取值，应与本书采用的标准区分。
+
+[综合资源总索引](resources.qmd) · [按章教学单元](core-resources.qmd) · [桥梁思维拓展篇](bridge-thinking.qmd)
+
+## 课程与专题导读 {.unnumbered #延伸课程选一个你想弄清的问题}
+
+### V01　桥型方案与跨越条件 {.unnumbered #v01}
+
+同济大学课程团队：[桥梁工程](https://www.icourse163.org/course/TONGJI-1002983010)，中国大学MOOC。
+
+**观察任务：**比较同样河宽下“可设水中墩”与“需保留主通航孔”两种条件，画出两个跨越方案，标明桥墩位置及通航空间。
+
+**对应正文：**[第1章：桥梁工程概论与总体设计](chapters/ch01.qmd)。
+
+### V02　受迫振动与共振 {.unnumbered #v02}
+
+Yen-Jie Lee，MIT OpenCourseWare：[Lecture 3: Driven Oscillators, Transient Phenomena, Resonance](https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/pages/part-i-mechanical-vibrations-and-waves/lecture-3/)。官方页提供视频、讲义和练习；[YouTube视频原址](https://www.youtube.com/watch?v=FCFpaKcpuXQ)。
+
+**观察任务：**保持推力大小不变，比较不同重复频率下的位移。分别记录激励频率、结构运动和阻尼；再说明受迫共振与运动诱发气动力的区别。
+
+**对应正文：**[第9章：桥梁抗风与气动响应](chapters/ch09-wind.qmd)。
+
+### V03　耦合振动与振型 {.unnumbered #v03}
+
+Yen-Jie Lee，MIT OpenCourseWare：[Lecture 4: Coupled Oscillators, Normal Modes](https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/pages/part-i-mechanical-vibrations-and-waves/lecture-4/)。[YouTube视频原址](https://www.youtube.com/watch?v=BX4QPdP7fT8)。
+
+**观察任务：**画出两个相连物体的同向与反向运动，比较中间连接的变形。解释振型图所表示的相对形状，并区分图上放大幅度与实际位移。
+
+**对应正文：**[第9章：结构动力与风致响应](chapters/ch09-wind.qmd)。
+
+### V04　施工阶段与临时支承 {.unnumbered #v04}
+
+Piyali Sengupta，IIT (ISM) Dhanbad：[NOC: Bridge Engineering](https://nptel.ac.in/courses/105105216)，NPTEL；[官方课程大纲](https://archive.nptel.ac.in/content/syllabus_pdf/105105216.pdf)。大纲第6周含平衡悬臂桥，第11周含施工、维护与修复。
+
+**观察任务：**选择一个悬臂架设阶段，标出当时已形成的构件、荷载、永久连接与临时支承，再与成桥状态比较。
+
+**对应正文：**[第4章：施工方法与体系转换](chapters/ch03.qmd#梁怎样制成架起并形成最终体系)。
+
+### V05　支承条件与结构概念 {.unnumbered #v05}
+
+Franz-Josef Ulm、Markus Buehler，MIT OpenCourseWare：[Engineering Mechanics I — Syllabus](https://ocw.mit.edu/courses/1-050-engineering-mechanics-i-fall-2007/pages/syllabus/)，课程大纲与讲义入口。
+
+**观察任务：**为同一块板设置两种支承位置，在受力图上标出外力及允许的运动，分别检查平衡与变形条件。
+
+**对应正文：**[第2章：平衡、约束与计算图式](chapters/ch02-foundations.qmd#平衡约束与计算图式)。
+
+### V06　裂缝图像与结构状态 {.unnumbered #v06}
+
+原收藏报告：[基于计算机视觉技术的桥梁混凝土裂缝智能识别与监测方法研究](https://www.bilibili.com/video/BV1sxVpeaEEq/)，收藏记录署名刘晓刚（北京科技大学）。
+
+**阅读任务：**区分图像识别、尺寸测量与结构性能判断，列出仅凭裂缝照片尚不能确定的信息。
+
+**对应正文：**[配套专题：耐久与全寿命评价](chapters/ch10-lifecycle.qmd)。
+
+### V07　非平稳风与桥梁响应 {.unnumbered #v07}
+
+原收藏报告：[雷暴风作用下大跨度桥梁抖振响应智能预测研究](https://www.bilibili.com/video/BV1qyB5BAEVK/)，收藏记录署名陶天友（东南大学）。
+
+**阅读任务：**比较峰值相同、持续时间及变化节奏不同的两段风速记录，说明单一最大风速遗漏了哪些信息。
+
+**对应正文：**[第9章：桥位风环境与桥梁响应](chapters/ch09-wind.qmd)。
+
+### V08　气动外形与优化目标 {.unnumbered #v08}
+
+原收藏报告：[基于WOA-GRNN代理模型的Π形截面梁风嘴气动外形优化](https://www.bilibili.com/video/BV1iakYBZEPq/)，收藏记录署名刘汉云（长沙理工大学）。
+
+**阅读任务：**列出可变参数、优化目标及限制条件，说明代理模型预测还需要哪些独立检验。
+
+**对应正文：**[第10章：参数化建模与软件应用](chapters/ch10-fem.qmd#参数化建模软件工作流与bridge-modeler)。
+
+V06—V08 为拓展收藏入口。当前平台访问受限，完整题名、署名与视频内容尚未重新核实；可先阅读所列正式章节。
+
+## 其他官方课程与资料 {.unnumbered #official-resources}
+
+| 资料 | 适合继续了解的内容 | 对应正文 |
+|---|---|---|
+| University of Manchester：[Seeing and Touching Structural Concepts](https://epsassets.manchester.ac.uk/structural-concepts/)（旧站入口） | 结构概念实体演示旧站；当前入口未能稳定打开，可先阅读第2章 | [第2章](chapters/ch02-foundations.qmd) |
+| MIT：[Structural Engineering Design](https://ocw.mit.edu/courses/1-051-structural-engineering-design-fall-2003/) | Oral Buyukozturk 的结构设计课程，含混凝土、钢结构与综合设计项目 | [第10章](chapters/ch10-fem.qmd) |
+| MIT：[Finite Element Procedures for Solids and Structures](https://ocw.mit.edu/courses/res-2-002-finite-element-procedures-for-solids-and-structures-spring-2010/) | Klaus-Jürgen Bathe 的线性与非线性有限元课程；视频制作于1982、1986年，适合作理论补充 | [第10章：有限元基本关系](chapters/ch10-fem.qmd#有限元基本关系与离散) |
+| WSDOT：[Tacoma Narrows Bridge History](https://wsdot.wa.gov/TNBhistory/) | 塔科马海峡桥历史档案；网站保留历史版本，部分建设状态资料有时效限制 | [第9章](chapters/ch09-wind.qmd) |
+| FHWA：[FHWA Launches Aerodynamics Webinar Series](https://www.fhwa.dot.gov/publications/focus/13dec/13dec03.cfm) | 2013年发布的气动专题讲座公告，供追溯专题范围 | [第9章](chapters/ch09-wind.qmd) |
+| FHWA：[Bridge Preservation](https://www.fhwa.dot.gov/bridge/preservation/) | 桥梁养护、延寿、修复与培训资料入口 | [配套专题](chapters/ch10-lifecycle.qmd) |

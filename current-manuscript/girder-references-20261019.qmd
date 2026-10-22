@@ -1,0 +1,630 @@
+# 梁桥参考资料与补充计算 {.unnumbered}
+
+[返回第4章](chapters/ch03.qmd)。本页集中列出补充推导、模型适用条件、图源与参考文献；不占正式章号。
+
+[中国、日本、美国桥梁数据库与标准图](bridge-data-sources-20261019.qmd)集中列出公开数据渠道、跨度系列、梁高字段与跨国比较口径。
+
+## 换算截面计算与材料应力 {#elastic-section}
+
+钢筋与混凝土共同变形时，同一高度的应变近似相同，材料应力则由各自的弹性模量确定。截面合力应计入两种材料的贡献。
+
+钢筋与周围混凝土可靠粘结时，同一高度的纵向应变近似相同；在线弹性范围内，应力却还要分别乘各自的弹性模量。取模量比$n=E_s/E_c$，有$\sigma_s=n\sigma_{c,\mathrm{ref}}$。这里的$\sigma_{c,\mathrm{ref}}$是**钢筋所在高度**的混凝土参考应力，不能拿上、下边缘的应力直接代替。换算截面将钢筋的轴向刚度折算为混凝土面积，使合力与变形相容。[\[7\]](#ref-ch03-8)
+
+若矩形毛面积$bh$已经包括钢筋占位，再加入的面积应为$(n-1)A_s$。对两侧配筋，未裂换算面积为
+
+$$
+A_0=bh+(n-1)(A_s+A_s').
+$$
+
+若从混凝土净面积$A_c$出发，则写成$A_0=A_c+n(A_s+A_s')$；两种算法应得到相同结果。换算面积并非真实混凝土增厚，也不是把钢筋真实面积改成$nA_s$。换算形心与惯性矩同样按各材料的位置求取；配筋不对称时，形心可能偏离几何中心。
+
+**读数比较。**取$b\times h=300\times500$ mm、上下各1200 mm²钢筋、两侧钢筋重心距相邻边缘均为45 mm，$E_s=200000$ MPa、$E_c=30000$ MPa。则$n=6.667$，$A_0=163600$ mm²，$I_0=3.69654\times10^9$ mm⁴。取压力为正，$N=600$ kN、$M=40$ kN·m时，上、下缘混凝土应力分别为6.373、0.962 MPa；上、下筋真实应力分别为39.238、9.661 MPa。即使四处都受压，钢筋应力也不等于边缘混凝土应力乘模量比。
+
+保持$N$不变，将$M$改为80 kN·m，未裂模型下缘得到−1.743 MPa，表示受拉。边缘刚刚出现拉应力与达到抗拉强度是两个不同事件。采用已裂弹性近似时，应删除受拉混凝土的拉力贡献，再由平衡重算中性轴与刚度；不能只擦掉原应力图的拉半边。该比较限于短期、平截面、完全粘结与所选弹性状态，不模拟开裂发展和长期效应。
+
+<section class="bridge-experiment"><h3 class="bridge-experiment-title">应力、应变与变形：同一高度为什么有两种应力？</h3><p><a href="interactive/concrete-20261016/elastic-eccentric.html" target="_blank" rel="noopener">打开应力等效与偏心受压课堂 ↗</a></p><iframe data-src="interactive/concrete-20261016/elastic-eccentric.html" title="钢筋混凝土换算截面共同应变真实应力与局部变形"></iframe></section>
+
+## 排筋、双筋与T形截面的补充计算 {#double-tee}
+
+钢筋排不进一层时，通常需要调整根数、直径或排数。有效高度取到受拉钢筋**合力点**；在各排钢筋达到相同应力的计算条件下，它是面积重心，而不是最下面一排钢筋的位置。若$y_i$从受压边向下量取，则
+
+$$
+h_0=\frac{\sum A_{s,i}y_i}{\sum A_{s,i}}.
+$$
+
+例如380 mm高的梁，受拉钢筋有3根直径20 mm布置在距底45 mm处、另2根同径钢筋在距底100 mm处，则钢筋重心距底$(3\times45+2\times100)/5=67$ mm，有效高度$h_0=380-67=313$ mm。若仍只量到最下排，按335 mm计算，将高估力臂。两排的钢筋应力不同时，应进一步按各排实际钢筋力求合力位置，不能继续仅按面积加权。
+
+[双排钢筋重心模型](interactive/concrete-20261016/rebar-centroid.html)把上述两排钢筋与合力线同时显示。先找到两排钢筋中心，核对图中45 mm和100 mm量到哪里，再切换“看配筋”与“看受力”，解释为什么有效高度既不是总高，也不是量到最低一排的距离。两排均在受拉侧，不能只因为有两排就称为双筋截面。
+
+当梁高受到限制，受压钢筋可以参与平衡。在受拉、受压钢筋均达到所取设计应力，且满足压区高度等适用条件时，普通双筋矩形截面满足
+
+$$
+f_{sd}A_s=f_{cd}bx+f'_{sd}A_s',\qquad
+M_u=f_{cd}bx\left(h_0-\frac{x}{2}\right)
++f'_{sd}A_s'(h_0-a_s').
+$$
+
+右侧两项分别是混凝土压力与受压钢筋力对受拉钢筋合力点的力矩。为看清附加力偶，可在课堂上固定$x=x_b$，将总受拉钢筋分为原单筋界限面积$A_{s,b}$和新增部分$\Delta A_s$。当两侧采用相同设计强度，新增上下钢筋面积相同，$\Delta A_s=A_s'$，于是
+
+$$
+M_u=M_b+f_{sd}\Delta A_s(h_0-a_s').
+$$
+
+沿用本节$b=250$ mm、$h_0=460$ mm、$M_b=284.379$ kN·m的教学参数，另取$a_s'=40$ mm，若要比较400 kN·m的目标，新增每侧面积为834.204 mm²；总受拉面积为3383.022 mm²。**相同的是新增面积，上下总面积并不相同。**把这834.204 mm²受压钢筋向下移动，力臂缩小，即使面积不变，新增抗弯贡献也会降低。
+
+此分解采用界限状态作教学参考。JTG 3362—2018第5.2.2条的设计条件写为$x<\xi_bh_0$，本章取等号是求界限值，不能据此宣布完成设计；普通受压钢筋取设计应力还须检查$x\ge2a_s'$等条件。较浅压区、钢筋未达到所取应力时，应回到应变协调或规范相应分支，不能强行使用上述钢筋力偶。[\[1\]](#ref-ch03-1)
+
+
+### T形截面的受压区计算
+
+在正弯矩区，上部翼缘处于受压侧，较宽的压区可以帮助平衡更大的受拉钢筋力。到连续梁墩顶负弯矩区，上部变成受拉侧，不能再把同一上翼缘照搬成受压翼缘。压区处于翼缘内还是进入腹板，改变的是受压面积和压力重心的计算；**$C=T、M=Cz$的原理没有改变**。
+
+先检查上翼缘处于受拉侧还是受压侧，再决定怎样取受压面积。有效翼缘宽度等细则由此展开：真实桥面宽度是几何尺寸，有效宽度则将宽翼缘中的非均匀纵向应力等效为一定宽度内的均匀分布，使等效合力与实际合力一致。计算时根据跨径、梁间距、截面位置和翼缘构造确定有效宽度，再进行截面平衡计算。
+设有效翼缘宽度$b_f'$、翼缘厚度$h_f'$、腹板宽度$b_w$。若受压区全部位于翼缘内，按宽度$b_f'$的矩形截面计算；若$x>h_f'$，则将受压区分为腹板矩形和翼缘外伸部分：
+
+$$
+C=f_{cd}\left[b_wx+(b_f'-b_w)h_f'\right],
+$$
+$$
+M_u=f_{cd}b_wx\left(h_0-\frac{x}{2}\right)
++f_{cd}(b_f'-b_w)h_f'\left(h_0-\frac{h_f'}{2}\right).
+$$
+
+两部分压力具有不同力臂，应分别对钢筋合力点取矩。负弯矩区则依据实际受压侧重新划分截面，不能继续沿用正弯矩下的受压翼缘。
+
+## 一般受压区积分 {#section-integrals}
+
+矩形、T形与空心截面的共同计算对象，都是受压混凝土合力及其作用位置。取$y$从受压边向下，$b(y)$为该高度的净混凝土宽度；在同一等效均匀压应力假定下，
+
+$$
+A_c(x)=\int_0^x b(y)\,\mathrm{d}y,\qquad
+Q_c(x)=\int_0^x yb(y)\,\mathrm{d}y,\qquad
+y_C=\frac{Q_c}{A_c},
+$$
+$$
+C=f_{cd}A_c=\sigma_sA_s,\qquad
+M=C(h_0-y_C)=f_{cd}(h_0A_c-Q_c).
+$$
+
+受拉钢筋屈服时才可取$\sigma_s=f_{sd}$。矩形的$b(y)=b$，便得到$y_C=x/2$；T形在翼缘以下改变宽度；箱孔和圆孔进入压区后，应从相应高度的宽度中扣除孔洞。**只扣面积却沿用原压力重心，会同时破坏合力与力矩的对应。**
+
+在[变宽截面课堂](interactive/concrete/beam-extension-3d.html?mode=tee)中，先固定材料、$h_0$和配筋，只改变上部压区几何，再读$A_c、y_C、z$。压区尚未到孔洞时，孔洞不会改变这套压区积分；孔洞进入后，压区深度和重心一起变化。对T形截面，在受拉钢筋保持屈服、以$A_s$为横轴的$M$—$A_s$曲线上，压区穿过翼缘边界时抗弯能力及一阶斜率连续，改变的是曲率；不能画成承载力突然跳变。
+
+这一积分扩展用于解释几何与平衡。模型里的箱形、菱形和圆孔截面沿用共同教学截断条件，并未逐一完成规范适用性、最小配筋、延性和局部受力验证；各截面也未保持相同用料，不能把曲线高低直接当成材料效率排名。压区以下的混凝土还承担剪切、锚固、保护和传力任务，不能因为未计其抗拉贡献就任意删去。
+
+## 抗剪规范公式与分担条件 {#shear-code}
+
+弹性主应力图用于解释斜向起裂，桁架模型用于理解开裂后的传力。按公路桥规计算抗剪承载力时，还要进入相应的经验计算关系；它的各项定义不能与前面两种模型混用。本节限定**无竖向预应力、无弯起预应力筋的普通钢筋混凝土梁**，将$\gamma_0$并入剪力设计需求$D$，JTG 3362—2018第5.2.9条相应简化为[\[1\]](#ref-ch03-1)
+
+$$
+D\le V_{cs}+V_{sb},
+$$
+$$
+V_{cs}=0.45\times10^{-3}\alpha_1\alpha_2\alpha_3bh_0
+\sqrt{(2+0.6P)\sqrt{f_{cu,k}}\,\rho_{sv}f_{sv}},
+$$
+$$
+V_{sb}=0.75\times10^{-3}f_{sd}\left(\sum A_{sb}\right)\sin\theta_s,
+\qquad P=\min\left(\frac{100A_s}{bh_0},2.5\right),\quad
+\rho_{sv}=\frac{A_{sv}}{bs}.
+$$
+
+这里$V_{cs}$是**混凝土与箍筋共同项**，不能标成单独的箍筋项$V_s$；$V_{sb}$为与该斜截面相交、同一弯起平面内普通弯起钢筋的贡献，上式按相同弯起角写出。$\theta_s$是钢筋与水平线的夹角，不是主应力方向角。$A_{sv}$包含同一截面全部有效箍肢面积。长度用mm、面积用mm²、强度用MPa，结果为kN；$P$用配筋百分数的数值，$\rho_{sv}$用小数比例，两者不能互换。三个$\alpha$分别反映异号弯矩、预应力和受压翼缘影响，应按结构与截面条件选用。
+
+**固定算例：三道不同的判断。**取矩形简支普通钢筋混凝土梁，$b=420$ mm、$h=800$ mm、$h_0=740$ mm，$\alpha_1=\alpha_2=\alpha_3=1$；C30的$f_{cu,k}=30$ MPa，HRB400的$f_{sd}=f_{sv}=330$ MPa。验算位置纵向受拉钢筋为4根直径25 mm，双肢直径10 mm箍筋间距200 mm，同一弯起平面内有2根直径25 mm钢筋以45°与斜截面相交。题定$D=440$ kN，已包括$\gamma_0$；不从前面的弹性应力示例推定这一需求。
+
+先算面积与配筋率：$A_s=1963.495$ mm²，$A_{sv}=157.080$ mm²，$P=0.631755$，$\rho_{sv}=0.001869996$。代入得到$V_{cs}=396.600$ kN，$V_{sb}=171.815$ kN，二项之和为568.415 kN。然后分开判断：
+
+1. **能力与需求分担。**第5.2.13条要求用于抗剪配筋设计的需求至少60%由混凝土与箍筋共同承担，分给弯起钢筋的部分不超过40%。本例若指定60/40分担，弯起筋需176 kN，略高于171.815 kN；若采用90/10分担，分别需396、44 kN，两项均可覆盖。限制的是分配的需求份额，不能因为某组弯起筋的潜在能力超过$0.4D$就判它违规。
+2. **截面限值。**第5.2.11条要求$D\le0.51\times10^{-3}\sqrt{f_{cu,k}}bh_0$。本例上限868.184 kN，应拿440 kN与之比较；二项能力之和不等于实际极限剪力。
+3. **构造与位置。**第9.3.12条规定HRB400箍筋配箍率不小于0.11%；一般梁段间距不大于$h/2$且不大于400 mm，支点向跨内不少于一个梁高范围内间距不大于100 mm。本例@200满足所列一般梁段条件，却不能直接用于近支点800 mm范围。
+
+改变间距可以暴露“和式够了”仍未完成设计的情形：
+
+| 双肢直径10 mm箍筋间距 | $\rho_{sv}$ | $V_{cs}$/kN | $V_{cs}+V_{sb}$/kN | 本例的判断 |
+|---|---:|---:|---:|---|
+| 100 mm | 0.37400% | 560.878 | 732.692 | 所列最小配箍与近支点间距条件均满足 |
+| 200 mm | 0.18700% | 396.600 | 568.415 | 一般段可采用所列构造；近支点须加密 |
+| 400 mm | 0.09350% | 280.439 | 452.253 | 虽大于440 kN，最小配箍率仍不足 |
+
+其余参数不变时，间距减半使$\rho_{sv}$加倍，规范共同项$V_{cs}$增加为$\sqrt2$倍；前述固定角度桁架模型的**单独箍筋项**却增加为2倍。二者计算对象不同，不能合成一条“加密一倍就统一增加多少”的结论。上述表格也未代替斜截面位置、钢筋相交、锚固和全部正截面的验算。
+
+实际配筋应先按第5.2.13条确定控制剪力位置，例如简支梁近支点的配筋设计取距支点$h/2$处的规定剪力，而不是直接照搬支点峰值；再按第5.2.9—5.2.11条逐一验算相应斜截面。第5.2.10条的斜截面水平投影长度与广义剪跨比有关，不是对所有位置固定画一条45°线。
+
+## 弯起钢筋的弯剪联动与模型条件 {#coupled-rebar}
+
+弯起钢筋往往来自原有纵筋，不能在抗剪图上“增加两根弯起筋”而在抗弯图上仍假定所有底筋原位贯通。取同一简支梁，两相等集中力$F$分别作用于$L/3$、$2L/3$，两端反力均为$F$，
+
+$$
+M(x)=F\min(x,L/3,L-x).
+$$
+
+两侧剪跨的$|V|=F$，中间段$V=0$。改变$F$使弯矩、剪力需求同比变化；只改变$L$则增大最大弯矩$FL/3$，不改变两侧剪力$F$。这组图共同来自同一个荷载工况。
+
+<!-- STUDIO-20261016 rc_detail -->
+::: {.studio-plate}
+
+![与前图同一钢筋笼的混凝土剖窗：带肋钢筋、箍筋钩端、绑扎与保护层的空间关系。截面360×700 mm、局部长1.44 m；剖面显示骨料，外表面表示成型面。](assets/publication/field-reviewed-20261017/rc_detail_revised_white.png){#supp-fig-ch03-studio-rc-detail width=100% fig-alt="普通钢筋混凝土局部剖窗，可见箍筋包围纵筋、交点接触与绑扎，混凝土外表面和露骨料剖面相互区别。"}
+
+对照前图，先找回同一根底纵筋，再找围住它的箍筋。保护层应量到最外层钢筋外缘，本样片的30 mm量到箍筋外缘；不能量到纵筋中心。图中的开窗和两端截断用于观察，不代表施工缺口或实际钢筋终点。样片没有展示完整梁端锚固，也没有弯起筋；下面三分点加载与逐根弯折实验采用另设的算例条件。
+
+:::
+
+
+<section class="bridge-experiment"><h3 class="bridge-experiment-title">逐根弯折：一组钢筋、两张需求图</h3><p><a href="interactive/concrete-20261016/shear-rebar-lab.html" target="_blank" rel="noopener">打开逐根弯折与弯剪联动实验 ↗</a></p><iframe data-src="interactive/concrete-20261016/shear-rebar-lab.html" title="逐根弯起纵筋与同一荷载下抗弯抗剪估算覆盖图"></iframe></section>
+
+实验按当前仍在梁底的水平筋面积$A_{s,\mathrm{水平}}(x)$，以固定力臂$z=0.9h_0$作抗弯比较：$M_{\mathrm{水平}}=10^{-6}f_{sd}A_{s,\mathrm{水平}}z$，单位为kN·m。本例$h_0=740$ mm、6根直径25 mm全为直筋时，该估算为647.306 kN·m；在只剩5根、4根水平底筋的位置，分别降为539.421、431.537 kN·m。这不是说斜段真实不受力，而是该比较式没有计入其抗弯作用。
+
+抗剪图则用假定斜面筛选真正相交的钢筋，再按各根角度计算几何贡献。只弯起B5左端且与$x=1$ m的假定斜面相交时，混凝土与箍筋估算项由412.095降到404.422 kN，弯起筋增加85.907 kN；两项变化方向相反。不同位置可能有0、1或2根斜筋相交，不能沿全梁统一叠加全部弯起钢筋。
+
+这组曲线用于识别配筋取舍：固定45°假定斜面、固定抗弯力臂和逐根相交的几何相加，尚不构成规范的完整正、斜截面设计。移动弯起点后，还应按真实压区、各排钢筋、临界斜截面、延伸长度与锚固条件重新验算。图上同时覆盖两张需求图，是进一步校核的起点。
+
+## 连续梁位移协调与次内力补充计算 {#compatibility-example}
+
+<span id="supp-girder-compatibility"></span>
+
+<span id="supp-fig-priority-F18"></span>
+
+把一根40 m连续梁的中间竖向支座暂时取走，只保留两端简支。均布荷载使梁下挠，中点也会下沉。现在不用画一个抽象约束符号，而是在原中支点位置施加向上的未知力$R_B$：力越大，中点被抬回得越多。
+
+真正的中间支座要求这个点处在规定高程。多余反力应使该支点的位移恢复到规定值，其大小由**位移相容条件**确定。这正是力法的基本思想：解除一个多余约束，保留它原来要满足的位移条件，再用未知力恢复该条件。
+
+<section class="bridge-experiment"><h3 class="bridge-experiment-title">亲手调反力：把拆去支座的位置抬回原处</h3><p><a href="interactive/girder-design/compatibility/index.html" target="_blank">完整打开超静定与次内力课堂 ↗</a></p><iframe data-src="interactive/girder-design/compatibility/index.html" title="移去支座以位移协调反求反力的三维课堂"></iframe></section>
+
+沿用页面竖向向上的正号：释放后的荷载位移为$v_q<0$，单位向上力产生的柔度为$f>0$，支座向下沉降量为$s\geq0$。支座要求中点最终位移为$-s$，因而
+
+$$
+v_q+fR_B=-s,\qquad R_B=\frac{-s-v_q}{f}.
+$$
+
+这一个式子同时解释了两个现象：外荷载不变，刚度分布改变会改变位移及柔度，因此反力和弯矩可能变化；外荷载不变，支座高程变化也会改变兼容条件，产生附加内力。连续体系用更多的约束分担弯曲，也因此承担变形不相容的代价。
+
+课堂采用$L=40$ m、$q=100$ kN/m、$E=30$ GPa、$I=0.576$ m⁴的等高教学梁。释放后中点下沉约192.90 mm；单位反力柔度为0.0771605 mm/kN，恢复中点零位移需$R_B=2500$ kN。这不是按三个支点平均分配总荷载。支座向下沉10 mm后，所需中反力降为2370.4 kN；两端反力随整体平衡重算。
+
+### 连续体系中的预应力次内力
+
+已经认识简支梁的预应力截面效应，现在在刚才释放中支座的梁上施加一条向下偏心的直束。它想让梁上拱；如果中间支座限制了这份自由反拱，就需要一个附加支反力，使该点重新满足位移条件。**这份由约束自由变形引起的反力及其弯矩，就是本例预应力次内力的来源。**
+
+本例取有效预力$P=3000$ kN、偏心$e=0.35$ m。偏心锚固在释放体系中给出一次弯矩$M_1=-Pe=-1050$ kN·m；自由反拱的中点值约12.153 mm。中支点位移被约束后，产生$-157.5$ kN的竖向反力**增量**，中墩处二次弯矩为$+1575$ kN·m；该处预应力总弯矩是两者的代数和$+525$ kN·m，不能仍只写$-Pe$。
+
+这个向下的反力增量不等于支座总反力已经向下。在相同的100 kN/m重力工况下，中支座总反力仍为2342.5 kN。若真正的总反力变为负，而支座只能承压，就需要重新处理接触条件。一次、二次、总效应必须分别命名，避免把增量当成总状态。
+
+曲束还通过转向向混凝土施加横向等效作用；连续体系、施工顺序和束形共同决定一次与二次效应。这里先用直束与一个多余约束把原因说透，再将曲束、预应力损失和长期效应接回具体桥梁。
+
+## 梁高、跨径与资料适用范围 {#span-data}
+
+把梁体高度记为 $h$，相应跨度记为 $L$，桥墩高度另记为 $H$。**本组整桥尺度模型将16 m和30 m设为支承中心间距，下面的比值是模型读数。**空心板采用16 m主跨、0.80 m梁高，$h/L=1/20$；30 m T梁采用2.00 m梁高，$h/L=1/15$；同为30 m的小箱梁采用1.60 m梁高，$h/L\approx1/18.75$。这组读数说明同一跨度可以有不同截面与建造方案。人和车始终保留相同尺寸，缩放整个画面时也不能单独放大参照物。
+
+转到真实图纸时，要重新区分名义跨径、梁长和支承中心距。例如QS-13空心板的名义跨径为16 m，板长15.96 m；沿纵向尺寸链，两端支承中心各距板端0.33 m，支承中心距为15.30 m。它的真实断面可以用于本课观察，但不能把“16 m”这个名称直接代入该工程的全部计算。
+
+**高跨比是初选梁高的重要参数。**初步设计先用适合相应梁型和施工方法的比例估计梁高，再通过强度、刚度、抗裂和施工验算调整。下表依据DGJ 08—69—2015第4.8.1条列出该版本的初选参考值；先张、后张、跨中与支点的取值应分别使用。该表用于方案比较，不据此认定为2026年所有项目的现行取值。[\[3\]](#ref-ch03-4)
+
+| 初选对象与位置 | $h/L$ 初选参考 | 主要控制条件 |
+|---|---|---|
+| 后张预应力混凝土简支梁 | $1/20\sim1/15$ | 是否简支，梁高是否受净空、运输与吊装限制 |
+| **先张法**空心板 | $1/25\sim1/20$ | 不能直接套给本课QS-13的后张空心板 |
+| 变截面连续箱梁：跨中 | $1/50\sim1/40$ | 跨中与支点必须分别标出梁高 |
+| 变截面连续箱梁：支点 | $1/25\sim1/16$ | 负弯矩、剪力、锚固和施工阶段共同约束局部高度 |
+| 悬臂浇筑连续梁：支点 | $1/20\sim1/18$ | 这是另有施工条件的参考，不能与上一行任意拼接 |
+
+对变高连续梁，应分别确定跨中和支点截面。支点附近负弯矩和剪力较大，常采用较大梁高；跨中适当减小梁高，有利于减轻自重并满足桥下净空。
+
+提高 $h$ 通常增大拉压力偶的力臂，并显著改变截面刚度；它同时增加自重、占用净空、改变制造和运输条件。对变高梁，应沿纵向追踪 $h(x)$，不能只用一个平均梁高。
+
+桥墩高度 $H$ 主要由地形、桥面标高、桥下通行或泄洪条件决定，同时影响墩的柔度、稳定与基础作用。不存在通用的“墩高等于几倍梁高”。模型中把桥面逐步抬高，是为了看清尺度与结构；真正的桥位中，同样的梁也可能架在矮墩或高墩上。
+
+## 横向荷载分配补充计算 {#transverse-sharing}
+
+**补充例　五片主梁的偏载分担。**五片相同主梁的横向坐标为 $y_i=-4,-2,0,2,4\ \mathrm m$。总荷载 $P=200\ \mathrm{kN}$ 的偏心距为 $e=1\ \mathrm m$。假定横向结构保持刚性直线，各梁在相同纵向位置的竖向柔度相同，忽略主梁抗扭，则分配荷载为
+
+$$
+R_i=P\left(\frac15+\frac{e y_i}{\sum_j y_j^2}\right),
+\qquad \sum_j y_j^2=40\ \mathrm{m^2}.
+$$
+
+各梁从左至右分担 $20、30、40、50、60\ \mathrm{kN}$，合力为 $200\ \mathrm{kN}$，对桥轴的力矩为 $200\ \mathrm{kN\cdot m}$。这里的 $R_i$ 是分到各梁的荷载，尚不是各梁两端的纵向支反力。
+
+## 支承与计算模型补充 {#support-models}
+
+### 支座与温度活动量 {#支座怎样布置允许什么运动把力交给谁}
+
+支座布置应明确竖向承重、水平力传递、转动和伸缩方向。直线连续梁通常设置适当的纵向固定点，其余支座允许所需伸缩；固定点位置影响梁端活动量和水平力传递。墩台柔度、摩阻及曲线几何也会影响约束内力。
+
+**补充例　温度活动量。**长 $L=120\ \mathrm m$ 的直线梁，线膨胀系数 $\alpha=1.0\times10^{-5}/{}^\circ\mathrm C$，均匀升温 $\Delta T=30\,{}^\circ\mathrm C$。忽略摩阻，固定点在端部时另一端活动量为
+
+$$
+\Delta L=\alpha\Delta T L=36\ \mathrm{mm}.
+$$
+
+若固定点在中部，两端分别向外移动 $18\ \mathrm{mm}$。增加固定约束会改变自由伸缩条件，约束力需结合体系刚度计算。支座类型、墩台与基础设计见第8章。
+
+
+
+### 复杂梁桥的模型扩展 {#变高度曲线和斜交方案更复杂时模型保留什么}
+
+<span id="fig-priority-F14"></span><span id="fig-priority-F15"></span><span id="fig-priority-F16"></span><span id="fig-priority-F17"></span>
+
+曲线、斜交、变宽与偏载会产生明显的空间共同作用。整体内力和支反力可采用空间梁或梁格模型；顶底板、腹板和横隔板的共同工作可采用板壳模型；锚固、支承接触等局部问题需另作分析。
+
+箱梁整体扭转是截面绕纵轴转动，畸变是截面轮廓发生变形，剪力滞是宽翼板纵向正应力沿宽度分布不均。横隔板有助于约束畸变和扩散集中力，但不能代替全部空间受力验算。
+
+变高连续梁在支点附近加高，可增大局部刚度和截面抗力，同时增加自重并改变内力分配。比较方案时，应结合内力、截面应力、变形和材料量综合判断。
+
+## 跨径与梁高图谱的数据口径 {#girder-atlas-data}
+
+[交互图谱](interactive/girder-proportions-20261019/index.html)目前含**253个尺寸点**，较原164点增加89点。点数、桥梁数和标准型号数分别统计：
+
+| 资料类别 | 尺寸点数 | 统计口径 |
+|---|---:|---|
+| 实桥资料 | 126 | 63个桥梁实体，每桥各有跨中、支点两个尺寸点；记录历史工程资料，不表示已核2026年运营状态 |
+| 通用图 | 87 | 中国6点；美国TxDOT六种梁型的81个表列组合，均不是实桥数量 |
+| 项目施工图 | 2 | 两份具体项目图纸中的截面尺寸 |
+| 项目方案与设计指标 | 38 | 工可、环评、用海论证及招标文件中的设计参数；未核竣工的工程保留此类 |
+
+原有中国中小跨径资料38点覆盖10、13、15、16、20、22、25、30、35、40、50 m，包含实心板、空心板、T梁、小箱梁及现浇箱梁。本轮增加教材表79点及官方工程文件10点，补入60—110 m的具体工程资料。公开总校稿、征求意见稿及项目文件保留版本和阶段，不互称正式通用图、施工图或已建桥。
+
+实桥主跨现覆盖80—301 m，跨中与支点的高跨比均配同一主跨，不取两处平均值。样本仍以预应力混凝土连续体系箱梁为主，不能作为所有梁桥的抽样分布。原资料中7座纵向钢—混凝土混合梁继续排除；教材表中的石板坡330 m例亦不重新加入，以免将跨中钢梁高度用于混凝土梁比较。
+
+[实桥静态图](interactive/girder-proportions-20261019/girder-proportions.svg)、[中国短跨静态图](interactive/girder-proportions-20261019/short-span-proportions.svg)、[50—120 m中跨静态图](interactive/girder-proportions-20261019/medium-span-proportions.svg)、[逐项CSV数据](interactive/girder-proportions-20261019/data.csv)与[来源及核验说明](interactive/girder-proportions-20261019/source-notes.md)供独立核对。[图示来源与假定](interactive/girder-proportions-20261019/images/source-notes.md)单独记录梁高位置、支承关系和截面轮廓的重绘依据。点形表示截面，默认颜色表示梁高位置；资料类别在来源栏另列。形状示意不代表每条项目的竣工复原，不进行混合回归，不把样本极值写为规范限值。
+
+图中L依据来源取主跨跨度或名义跨径，不等同于所有对象的计算跨径。跨中与支点h均指相应主梁结构高度。正文四种三维模型中的教学布置尺寸，不作为本数据图谱的实桥记录。
+
+### 教材表转录、查重与比值异常 {#textbook-table-audit}
+
+用户提供的《桥梁工程（第6版）》第91—93页表2-2-3，题为“国内预应力混凝土连续体系梁桥的部分资料”，共53行。按桥梁身份核对后，1行石板坡例因纵向钢—混凝土混合材料排除，13行对应已有实体，39行形成39个新桥实体、78个尺寸点。已有高家花园嘉陵江大桥另由第11行补充根部梁高13.5 m，挂接原实体，因此本表合计新增79点。**原照片只作核验留档，不在网站发布；作者、出版年及ISBN待版权页核对，不补猜。**
+
+原印跨度、梁高和高跨比分开保留，展示值按$h/L$重算。下列差异确见于照片；它们说明源表内部不一致，不能据此断定一定是比值错、跨度和梁高一定正确。
+
+| 表中行号、桥名 | 位置 | 原印高跨比 | 按同表跨度、梁高重算 |
+|---|---|---|---|
+| 3，苏通大桥辅航道桥 | 根部／跨中 | $1/16.3$、$1/35.7$ | $1/17.8667$、$1/59.5556$ |
+| 15，南澳跨海大桥 | 根部 | $1/18.6$ | $1/20.0909$ |
+| 22，南京长江二桥北汊桥 | 跨中 | $1/55.6$ | $1/51.5625$ |
+| 23，广湛高速公路九江大桥 | 根部／跨中 | $1/17.8$、$1/53.3$ | $1/18.3333$、$1/55$ |
+| 27，湖南白沙大桥 | 根部 | $1/17.7$ | $1/17.6471$，为较小差异 |
+| 37，广东德庆西江大桥 | 跨中 | $1/47.5$ | $1/45.7143$ |
+
+第23行原印主跨165 m，但其两处高跨比和边中跨比更接近按160 m计算的结果；未经原始设计核实，不把165 m擅改成160 m。上述6个实体的12个尺寸点保留显示并标注异常，暂不纳入趋势拟合。石板坡行也有比值矛盾，但已因材料类别排除。
+
+第49、51行的截面形式为空，保留未知；第53行何山大桥原印“双箱双室”，不改写为“单箱双室”。第45行把东明黄河大桥记为连续刚构，与既有资料所述部分墩梁固结、部分墩设支座的连续梁—刚构混合体系不同；图谱保留既有混合体系分类，并记录来源差异，不用新表覆盖原判断。
+
+### 补充中跨工程文件 {#medium-project-sources}
+
+以下5个工程实体各提供跨中和根部两点，共10点；均已下载原文核读，材料明确为预应力混凝土。前四项属于设计指标，只有三门口南门桥有报告中的历史竣工、运营记载。
+
+| 主跨及工程 | 跨中／根部梁高（m） | 体系 | 原始来源及定位 |
+|---|---:|---|---|
+| 60 m，龙江路南环路跨线桥 | 1.8／3.6 | 连续箱梁 | [江苏省公共资源交易网监测招标公告](https://jsggzy.jszwfw.gov.cn/jyxx/003002/003002001/20260806/addd46b671494df9a7bce250cefe835b.html)，2026-08-06，2.1一、1；40+60+40 m |
+| 70 m，龙江路虹桥路跨线桥 | 2.0／4.2 | 连续箱梁 | 同一公告2.1二、1；52+70+52 m；每组同尺寸桥仅选一座代表 |
+| 80 m，洞口四桥（平溪江大桥） | 2.3／5.0 | 连续箱梁 | [2025年4月环评报批稿](https://hbj.shaoyang.gov.cn/syhbj/xzxk/202504/2f74e594ed1a489ea26d9d16b6d1caa8/files/6e9ac6873c4c4796a2936e8df8446a4b.pdf#page=37)，正文32页/PDF37页；主桥PC材料见正文35—36页/PDF40—41页 |
+| 90 m，越溪二桥 | 2.5／5.5 | 连续刚构 | [2024年5月用海论证公示稿](https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3575/site/attach/0/fd809df34b1e46c38500563f7ce9d527.pdf#page=12)，正文6—7页/PDF12—13页，图2.2-1、2.2-2；55+90+55 m |
+| 110 m，三门口跨海大桥南门桥 | 2.2／6.0 | 连续刚构 | [2023年4月用海论证公示版](https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3507/site/attach/0/064ac219ebfa4456a22a3cf86d04740a.pdf#page=14)，正文10页/PDF14页；竣工状态见正文5页/PDF9页；60+110+110+60 m |
+
+这里的主跨来自孔跨布置，不采用全桥长度；边跨不另套主跨跨中梁高。三门口资料只取南门桥PC连续刚构段，不混入北门、中门拱桥；报告确认2008年竣工并已运营，不代表本轮开展了2026年现场检查。
+
+### TxDOT固定梁高、变化跨径与自重 {#txdot-height-weight}
+
+美国资料为TxDOT同一24 ft车行道条件下的Tx28、Tx34、Tx40、Tx46、Tx54和Tx62六种梁型，共81个离散表行，并非81座实桥。跨径按配套[SIG-24](https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-SIG2400-24.pdf)及[SIG-62-24](https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-SIG622400-24.pdf)取桥台背墙桥侧面或墩中心线间距离；$h$取[IGD第1页](https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-IGD-23.pdf#page=1)尺寸表D列，仅计预制工字梁体，另浇8.5 in（0.2159 m）结构桥面板及梗腋不计入。英尺、英寸分别按0.3048 m和0.0254 m换算。
+
+[IGSD-24](https://ftp.dot.state.tx.us/pub/txdot-info/cmd/cserve/standard/bridge/IG-IGSD24-21.pdf)在同一梁型下列出多个跨径。以Tx40为例，梁高始终为1.016 m；表列跨径从12.192 m增至30.480 m时，$h/L$从$1/12$降为$1/30$。**这是固定截面高度与变化跨径的几何关系，不能读成每米梁体变轻。**
+
+在截面面积$A$和重度$\gamma$不变的近似下，每米梁体自重$g$与总重$W$分别为
+
+$$
+g=\gamma A,\qquad W\approx g\ell.
+$$
+
+$A$用m²、$\gamma$用kN/m³，则$g$为kN/m；$\ell$是预制梁体长度，不能直接等同上述名义跨径$L$。同一梁型的每米自重近似不变，梁体更长则总重增加；桥面板、梗腋及局部加厚还须另计。IGD截面性质表单列每英尺重量，采用155 lb/ft³的混凝土与钢筋合计重度估重口径。不同梁型的面积和高度一同变化，不能仅凭$h$推算自重，也不能将这些标准组合解释成跨径越大就能任意降低梁高。
+
+### 基本梁公式
+
+简支与悬臂梁的基本关系按Euler—Bernoulli梁的小变形线弹性模型；两跨连续梁通过支承边界和中支点变形协调求解。参考[MIT开放课程原教材第268—272页](https://live.ocw.mit.edu/courses/1-050-solid-mechanics-fall-2004/f9a4d5764b9b0f51ffaacbdf69f7aed8_emech10_04.pdf)。两等跨连续梁正弯矩最大位置为距外支点3L/8，不能与最大挠度位置混同。
+
+## 图源、制作与模型说明 {#figure-sources}
+
+
+### 本轮组成图与梁型图
+
+正文组成图中的实桥为加拿大列治文No. 2 Road Bridge。照片作者Cherrybomb，来源：[Wikimedia Commons原始发布页](https://commons.wikimedia.org/wiki/File:Concrete_box_girder_bridge.JPG)，许可：[Creative Commons ShareAlike 1.0](https://creativecommons.org/licenses/sa/1.0/)。使用已存本地原图，网页裁切显示，未改变图像像素。照片只用于辨认箱梁、支座与桥墩；旁列的构造及计算图采用教学简支布置，不是该实桥的计算模型。
+
+[组成图](interactive/girder-composition-20261019/index.html)复用既有小箱梁截面与整桥组装模型；颜色只区分构件身份。简支、连续、悬臂图及传力简图由教材绘制，虚线为放大的定性变形，公式采用各自列明的计算条件。
+
+[四种梁型剖切页](interactive/girder-forms-20261019/index.html)复用来源截面，切开与截面近景保持同一几何对象。常规截面沿纵向延伸的教学组装不表示真实梁端、封锚及局部加厚段；原始图纸、尺寸与显示规则见[模型说明](interactive/girder-forms-20261019/source-notes.md)。
+
+### 原版科罗纳多大桥照片（本轮已由混凝土箱梁照片替换）
+
+<details open class="source-reference"><summary>图片来源与许可</summary><p>作者：Rsparks3。<a href="https://commons.wikimedia.org/wiki/File:View_from_underneath_the_San_Diego-Coronado_bridge.jpg" target="_blank" rel="noopener">原始发布页</a>；<a href="http://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank" rel="noopener">CC0</a>。原图未修改；网页按版面缩放显示。</p></details>
+
+### 撤下的五梁空间组成示意图F13 {#archived-f13}
+
+原图与来源留存如下，正文不再采用此图。
+
+<!-- SUPPLEMENT-20261002 F13 START -->
+![五梁教学桥的空间组成：5根纵向主梁、3道跨内横隔板及两端横梁共同支承桥面板。透明桥面用于显示内部位置，尺寸为教学假定。](assets/publication/priority-40/F13.svg){#fig-supp20261002-f13 width=100% fig-alt="五梁教学桥的空间组成：5根纵向主梁、3道跨内横隔板及两端横梁共同支承桥面板。透明桥面用于显示内部位置，尺寸为教学假定。"}
+
+<details open class="source-reference"><summary>图片来源与许可</summary><p>课程组原创参数化绘图（F13）。<a href="scripts/priority-figures/group_a.py">绘图程序</a>；<a href="assets/publication/priority-40/manifest.json">参数与核验记录</a>。本图仅说明空间构造，不计算荷载分担或板内应力。</p></details>
+<!-- SUPPLEMENT-20261002 F13 END -->
+
+### 配筋图片与模型范围
+
+正文钢筋笼图为课程组制作的局部样片，长1.44 m；不表示整梁配筋、支承或端部锚固。配筋局部图的开窗与截断用于观察，不是施工缺口。三维图形表示空间关系，截面与整桥计算采用各自列出的参数，不应跨模型混用数值。
+
+![钢筋笼局部构造样片](assets/publication/field-reviewed-20261017/rc_detail_revised_white.png){#fig-ch03-studio-rc-detail width=100% fig-alt="普通钢筋混凝土局部剖窗，可见箍筋包围纵筋、交点接触与绑扎，混凝土外表面和露骨料剖面相互区别。"}
+
+### 模型入口与适用条件 {#model-notes}
+
+正文采用直接呈现的简图与单项模型。下表同时保留完整演示页，供需要详细计算或教学演示时独立打开。
+
+| 内容 | 入口与范围 |
+|---|---|
+| 简支与连续体系 | [并列受力图](interactive/girder-systems-20261019/index.html)、[公式与核验说明](interactive/girder-systems-20261019/source-notes.md)：两等跨、等刚度、成桥后全跨均布荷载；不包含先简支后连续的荷载历史 |
+| 单筋截面平衡图 | [应变—压应力—合力图](interactive/girder-systems-20261019/section-equilibrium.svg)：本教材绘制；零轴力、受拉钢筋达到所取设计应力、忽略受拉混凝土。中性轴与等效压区分别表示，不以等效压区边界代替零应变位置 |
+| 普通钢筋与预应力筋 | [配筋构造图](interactive/girder-rebar-20261019/index.html)、[尺寸、简化与来源](interactive/girder-rebar-20261019/source-notes.md)：本教材制作的构造示意，颜色区分身份和传力作用；不表示有限元应力云图，不据此确定实际配筋 |
+| 整桥组成 | [梁型模型](interactive/girder-design/typology/index.html)、[整桥模型](interactive/bridge-assembly/viewer.html?autoload=1)：隐藏构件仅改变显示，不能替代删除构件后的受力分析 |
+| 常用截面 | [四种截面同屏图](interactive/girder-design/sections/gallery.html)、[图纸与完整模型](interactive/girder-design/sections/index.html)：复用按来源图重建的截面；统一正交尺度和0.90 m裁段长度，常规断面不代表梁端、锚固区或局部加厚段 |
+| 本构与平衡 | [应变、应力与力偶完整演示](interactive/concrete/index.html)：均质弹性对照与混凝土裂后、极限压块采用不同材料模型；正文仅保留相关基本关系 |
+| 受弯截面 | [配筋模型](interactive/concrete/beam-extension-3d.html?mode=rect)：设计参考线与超筋应变协调趋势线含义不同，超出设计限值不表示物理抗力恒定 |
+| 弯剪联动 | [抗剪模型](interactive/concrete/shear-3d.html)：弹性起裂、裂后桁架与规范承载公式属于不同分析层次 |
+| 变高连续梁 | [变高模型](interactive/girder-two-lines/line2/index.html)：20+20 m矩形教学梁，实际箱梁应按净截面和真实板厚求截面性质 |
+| 构件细部 | [细部模型及图源](interactive/bridge-office/component-details/index.html)：正文使用单构件版book.html；两版复用原几何。分解、剖切是展示状态；支座等仍需按产品安装图确定接口 |
+| 施工方法 | [单项施工图](interactive/construction-single-20261019/index.html)、[施工方法与资源目录](interactive/construction-methods.html)：复用已有施工设备与阶段模型，只说明主要阶段，不提供现场施工操作顺序 |
+
+
+### 我来资料线索
+
+[关于桥梁隐患和垮塌事故的材料](https://www.wolai.com/2WHCV6X9oGq8jSoCpKf3vw)保存了本次检索的起点资料：文件名《桥梁事故分析-宋锦忠202403报告.pptx》第90页提及无锡市外环高架桥；David Liu的《Lessons Learned from Bridge Failures in US》讲义第14—15页为Pennsylvania Route 1014 / Lake View Drive桥边梁坠落。附件仅作为选例线索，具体桥名、机制与事故结论以上述原始资料为准。讲义文件名含“7-6-2023”，但封面日期为2023-09-21，著录时采用封面日期。本轮选入该讲义第14页的事故照片局部；图片出处与事实核验依据分别列于下表。
+
+## 检测养护的规范与技术依据 {#inspection-maintenance-sources}
+
+本轮核验日期为2026年10月19日。检查、检测、监测、评定与处治分别对应不同工作，正文按构件位置串联，不把机器视觉识别结果当作承载能力结论。
+
+| 文件 | 本章使用范围与定位 |
+|---|---|
+| JTG 5120—2021《公路桥涵养护规范》 | [官方公告](https://xxgk.mot.gov.cn/jigou/glj/202108/t20210825_3616530.html)；[原文](https://xxgk.mot.gov.cn/jigou/glj/202108/P020240129349058736824.pdf)。第3.5.4、3.5.5条，正文第8页：桥面、排水及混凝土梁检查；第4.3.1、4.3.2条，正文第18—19页：混凝土梁与预应力体系维护 |
+| JTG/T 5214—2022《在用公路桥梁现场检测技术规程》 | [公告](https://xxgk.mot.gov.cn/jigou/glj/202209/t20220913_3679697.html)；[原文](https://xxgk.mot.gov.cn/jigou/glj/202209/P020220913522133429294.pdf)。第5.3节：裂缝记录；第6.3节：预应力孔道内部检测。此文件是现场检测规程，不是结构监测规范 |
+| JT/T 1037—2022《公路桥梁结构监测技术规范》 | [官方标准登记](https://jtst.mot.gov.cn/gb/search/gbDetailed?id=1640f03b04664b6daabc7de5824a3156)。本次核到标准状态及适用范围，未引用未取得的全文条款 |
+| JTG/T 5431—2025《公路桥梁加固设计规范》、JTG/T 5531—2025《公路桥梁加固施工技术规范》 | [官方发布公告](https://xxgk.mot.gov.cn/jigou/glj/202601/t20260105_4196388.html)。2026年4月1日起施行，分别替代2008年旧版；用于明确加固设计与施工的现行文件 |
+| 《公路长大桥梁结构监测时空大数据应用指引》 | 交办公路〔2024〕37号，[发布页及原文](https://xxgk.mot.gov.cn/jigou/glj/202410/t20241010_4157594.html)。用于监测信息与管养业务的衔接，不另编规范编号 |
+| FHWA，Use of Small Unmanned Aerial Systems for Bridge Inspection，2021 | [原研究报告](https://www.fhwa.dot.gov/publications/research/infrastructure/structures/bridge/21086/21086.pdf)，正文第36页起的作业条件；[NBIS官方问答Q313-1、Q313-2](https://www.fhwa.dot.gov/bridge/nbis2022/qanda/08.cfm)。影像为检查补充，不能替代规定的近接和接触检查；桥下遮挡、定位、光照与环境影响可达性和影像质量 |
+
+### 支座更换与顶升 {#bearing-replacement-source}
+
+JTG/T 5532—2023《公路桥梁支座和伸缩装置养护与更换技术规范》：[官方公告](https://xxgk.mot.gov.cn/jigou/glj/202310/t20231008_3924625.html)；[原文PDF](https://xxgk.mot.gov.cn/jigou/glj/202310/P020231008519952902974.pdf)。第6.1.1条及图6.1.2（正文第18页）为顶升设计与方案；第6.3.1条（正文第29页）涉及最大顶升高度、同步偏差和复位标高；第7.4.1—7.4.3条（正文第35页）为施工监测与校核测点。正文采用三维六阶段教学动画，依次表达同步顶升、临时支承、取出旧支座、安放新支座、同步落梁与移除设备。模型核验显示接触关系，不据此确定实桥设备数量、位置、规格或顶升量；显示位移与真实工程位移的区别见动画的模型说明。
+
+### 病害与事故照片 {#defect-photo-sources}
+
+图片选自[我来“关于桥梁隐患和垮塌事故的材料”](https://www.wolai.com/2WHCV6X9oGq8jSoCpKf3vw)。只截取照片区域，保持比例与原有现场标记，未作AI修复或补绘。资料原文中的旧限值和仅按裂缝宽度指定加固方式的概括未采用。
+
+| 正文图例 | 原始资料及页码 |
+|---|---|
+| 保护层剥落与露筋 | 《公路桥梁典型病害诊断与处治图解手册》，印刷第019页，图2.1.6-1；PDF第19页 |
+| 梁底受弯裂缝 | 王水龙.《桥梁病害》. 上海大学出版社，2015. 印刷第22页；PDF第30页 |
+| 空心板纵裂与渗水析白 | 浙江省交通运输厅主编.《中小跨径桥梁典型病害防治手册》. 人民交通出版社，2011. 印刷第3页；PDF第13页 |
+| 铰缝材料脱落 | 《公路桥梁典型病害诊断与处治图解手册》，印刷第023页，图2.1.9-1；PDF第23页 |
+| 支承接触异常 | 《桥梁病害》，印刷第36页“脱空、缺失”项；PDF第44页 |
+| 伸缩缝堵塞 | 《中小跨径桥梁典型病害防治手册》，印刷第51页；PDF第61页 |
+| Lake View Drive断梁现场 | David Liu. Lessons Learned from Bridge Failures in US. 2023-09-21，讲义第14页。事故原因另据参考文献[11]中的原调查研究 |
+
+《公路桥梁典型病害诊断与处治图解手册》按实际页眉题名著录，我来附件名为《图说桥梁病害.pdf》；所供文件未含封面、版权页，作者、出版者及年份待核。上述照片现用于本地教材审阅，出版与网络传播授权尚未核明；原始书页和完整附件不随本轮页面复制发布。
+
+### 方案模型与检测模型
+
+[方案初选页](interactive/girder-scheme-20261019/index.html)使用梁桥尺寸图谱的已核记录，按截面、材料和体系检索相邻资料，不拟合统一高跨比或把样本极值作为设计限值。三维、SVG和参数文件共享几何参数；截面板厚、孔室、排梁及支承布置均列出教学假定。筋线只表达受拉侧和纵向方向，未计算实际配筋。[完整模型说明](interactive/girder-scheme-20261019/source-notes.html)。
+
+[T梁桥巡检页](interactive/girder-inspection-20261019/index.html)采用2×30 m、桥宽12 m、梁高1.8 m的五片连续T梁教学模型，无地面遮挡图层。规划190个固定拍摄机位，并逐段检查给定无人机包络与模型实体的相交情况。右侧相机视图与覆盖计算共用70°垂直视角及16:9比例。可见性依次核对视锥、表面朝向和射线首命中点；重复覆盖按不同固定机位计数，不累计动画帧。3170个外表面采样点中3082点可见、2536点至少被两机位看到；302个接触或埋入面采样已剔除。这个比例是离散采样点的几何可见率，不是全表面面积覆盖率或病害检出率。模型未包括实桥定位误差、风、机型性能及全部环境障碍。[参数与模型边界](interactive/girder-inspection-20261019/model-contract.json)。
+
+[体外预应力动画](interactive/girder-strengthening-20261019/index.html)展示锚固、转向构造与索线的连接及张拉顺序；箭头只表达定性传力，不表示已完成有限元计算或可采用的张拉力。[支座更换双视图](interactive/girder-lifting-20261019/index.html)显示千斤顶、临时支承和新旧支座之间的承重转换。尺寸、接触核验与显示假定分别见两页模型说明。
+
+## 补充事故的事实与图源
+
+### 施工临时支架：Riley Road {#riley-construction-source}
+
+Carino等的NBS原调查报告第iii页摘要、第4—8页结构与施工经过、第185—186页结论是正文依据。对象为现浇后张预应力混凝土箱梁，第四、第五单元在事故时尚未张拉；“最可能”指支架腿下垫块破坏这一触发机制，不能把所有共同缺陷改写为同时首先失效。正式报告编号为**NBSIR 82-2593**，以PDF封面、报告编号字段与DOI为准；NIST网页标题存在编号笔误。正文照片取自原报告图2.19（印刷第29页、PDF第41页），其TEMPORARY SUPPORTS标记为事故后支撑，已在图注说明。照片单独摄影者和第三方权利未明，保留出版核权记录。
+
+### 洪水下墩桩失效：严坪村Ⅱ号大桥 {#yanping-flood-source}
+
+官方调查评估报告第5页与脚注3给出18孔20 m、装配式预应力混凝土简支变连续小箱梁；第7页与图2记录局部桥跨垮塌；第9—12页说明流水、漂流物、系梁抬升与墩桩失效关系。正文选图为报告图2（印刷第7页、PDF第10页），明确作为**调查示意图**使用。报告成文于2024年10月28日，应急管理部公布于2025年3月27日。
+
+### “扬州桥”的材料线索
+
+王水龙《桥梁病害》印刷第16页（PDF第24页）的事故表确有“2006.3，江苏省扬州江都胜利桥，拆除时垮塌”记录，目前缺少可核对的原始调查与结构资料，保留为待核案例。它与哈尔滨三环路群力高架匝道侧翻不是同一事故；后者为钢混连续叠合梁，不能移用其照片作为扬州桥。本章先保留已有无锡偏载侧翻案例，避免重复或桥名错配。
+
+## 施工图集与模型范围 {#construction-gallery-sources}
+
+[七种混凝土梁桥施工图集](interactive/girder-construction-atlas-20261019/index.html)复用现有施工库，按桥位现浇、预制构件架设和梁体纵向顶推编组。这个编组便于阅读，不是互斥穷尽的规范分类：现浇与预制描述构件形成方式，逐孔与悬臂描述推进组织，架桥机、移动模架和挂篮描述设备。全书[施工目录](construction-methods.qmd)共14条典型路径，其中混凝土梁桥7条；另有组合梁1条、拱桥4条、斜拉桥1条、悬索桥1条。
+
+### 预览图与操作范围
+
+七幅预览均为2026年10月19日从当前三维场景实际操作后截取，保留模型原有形状与颜色；取景比例不同，不用于比较真实尺寸。[预览记录](interactive/girder-construction-atlas-20261019/previews/preview-manifest.json)列出入口、进度与图像校验值。旧图集保留供资料浏览；正文现按工法顺序嵌入七个独立动画，各自播放、暂停、拖动进度及调整视角。
+
+| 图集入口 | 实际演示范围 |
+|---|---|
+| 支架现浇 | 支架与模板、钢筋、浇筑、阶段张拉、卸架；不求解支架反力或沉降 |
+| 逐孔移动模架现浇 | 墩旁托架承托，合模、浇筑、张拉、落模和设备过孔 |
+| 挂篮悬臂浇筑 | 单墩两向变截面悬臂与两端合龙；不扩展为多墩中跨合龙分析 |
+| 架桥机整片梁架设 | 代表性末片梁的喂梁、提梁、对位、落梁，随后展开支腿交替承托与整机过孔 |
+| 逐孔预制节段拼装 | 节段起吊、吊挂对位、整孔连接与张拉、落梁和设备前移 |
+| 桥面吊机悬臂拼装 | 预制空心箱梁节段提升、接缝、连接与张拉、卸钩、吊机前移 |
+| 导梁辅助顶推 | 岸后梁体沿支点纵移，导梁先到达接收支点，永久梁体随后到达；岸后分段制梁循环作简化，终点导梁尚待拆除 |
+
+这些模型采用教学尺寸，显示关键构件、设备与支承的动作关系，未求解施工应力、设备反力、稳定性或线形控制值。工序依据及原资料链接见[施工目录的梁桥部分](construction-methods.qmd#girder-methods)：FHWA-HRT-13-028第3章、Doka悬臂浇筑与顶推资料、Freyssinet预制节段架设资料，以及架桥机支承转换专利CN109763430A图20—23。动画借鉴工序关系，不作所引工程的实测复原。
+
+### 与计算模型及体系转换动画的区别
+
+[顶推阶段内力页](interactive/13-incremental-launching-moment-lab.html?mode=book)使用自身的理想化梁单元模型计算阶段弯矩、支点反力、截面历程及包络；其几何、荷载和导梁参数不与施工三维场景自动同步。教材模式直接显示模型与计算，省去课堂预测输入，不改变原求解算法。
+
+[先简支后连续动画](interactive/ch03-construction/index.html?scenario=precast)采用两跨20 m、每跨五片T梁的教学构造，呈现临时支承、墩顶及梁间连接、撤除临时支承和桥面施工。它不计算体系转换内力，也不模拟收缩徐变；相应分阶段计算见正文例4-4。
+
+## 规范阅读 {#standards}
+
+混凝土梁的截面、抗剪与构造见JTG 3362—2018第5章及第9章；使用性能见第6章，施工历史与约束效应还应结合第4.1.7、4.3.8条。详细索引见[全书规范阅读](standards-reading_codex.qmd#ch-4)。不同规范的材料系数与验算限值不能混用。
+
+
+## 参考文献 {#references}
+
+::: {.chapter-references}
+
+1. <span id="ref-ch03-1"></span>中华人民共和国交通运输部. 公路钢筋混凝土及预应力混凝土桥涵设计规范：JTG 3362—2018[S/OL]. 2018[2026-10-03]. [原文或正式发布页](https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3312720.html) 本章使用：混凝土与预应力截面、构造及设计验算。 截面公式与构造条件见[官方原文PDF](https://xxgk.mot.gov.cn/jigou/glj/202006/P020230330561291441977.pdf)第5.1.4—5.1.5、5.2.2、5.2.9—5.2.13、9.3.10—9.3.12条及表3.2.3-1（2026-10-16）。
+
+2. <span id="ref-ch03-2"></span>中华人民共和国交通运输部. 公路桥涵设计通用规范：JTG D60—2015[S/OL]. 2015[2026-10-03]. [原文或正式发布页](https://xxgk.mot.gov.cn/2020/jigou/glj/202006/t20200623_3312312.html) 本章使用：作用分类、作用组合及通用设计规定。
+
+
+3. <span id="ref-ch03-4"></span>上海市城乡建设和管理委员会. 预应力混凝土结构设计规程：DGJ 08—69—2015[S/OL]. 2015[2026-10-03]. [原文或正式发布页](https://zjw.sh.gov.cn/cmsres/89/8925525b534e4e63a43c9ab106d0ad8b/b4ae1e5348525166d0d3bf33e4c61d4b.pdf) 本章使用：第4.8.1条的梁高初选资料；限于该版本作比较参考。
+
+4. <span id="ref-ch03-5"></span>重庆市交通局. 预应力混凝土T梁通用图：2021年7月版[EB/OL]. 2021[2026-10-03]. [官方公开图纸](https://jtysw.cq.gov.cn/zwgk_240/zfxxgkml/gggs/tzgg/202207/W020220715577351583662.pdf) 本章使用：标准化跨径、构造与先简支后连续方案；本轮未核到对应正式印发通知。
+
+5. <span id="ref-ch03-6"></span>浙江省交通规划设计研究院有限公司. 规划省道三门至江山公路永康段工程（如春至白窖段）可行性研究报告：报批稿[R/OL]. 2021[2026-10-03]. [原文或正式发布页](https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3586/site/attach/0/8cf398665d3e43bfafa4eb5e654fe77f.pdf) 本章使用：表5-6、表5-7：30 m梁型的梁高和吊重比较；并非已建成桥验收数据。
+
+6. <span id="ref-ch03-7"></span>重庆市交通局. 两合江特大桥工程资料[EB/OL]. 2021[2026-10-03]. [原文或正式发布页](https://jtj.cq.gov.cn/sy_240/bmdt/202109/t20210916_9725437.html) 本章使用：85＋2×160＋85 m孔跨布置与山区建造条件。
+
+7. <span id="ref-ch03-8"></span>Massachusetts Institute of Technology. Solid Mechanics, Chapter 9: Beams in Bending[EB/OL]. 2004[2026-10-16]. [MIT开放课程原始讲义](https://web.mit.edu/1.105/emech9_04.pdf). 本章使用：第9.5节共同曲率与不同材料截面的弹性等效；不借用其规范设计系数。
+
+
+
+8. <span id="ref-ch03-10"></span>Federal Highway Administration. Comprehensive Design Example for Prestressed Concrete Girder Superstructure Bridge: Design Step 5.4, Loss of Prestress[EB/OL]. [2026-10-19]. [原始算例](https://www.fhwa.dot.gov/bridge/lrfd/pscus054.cfm). 本章用于区分弹性压缩、混凝土收缩徐变及钢材松弛等损失来源；后张法还需考虑相应摩阻和锚固因素。
+
+9. <span id="ref-ch03-11"></span>Federal Highway Administration. Comprehensive Design Example for Prestressed Concrete Girder Superstructure Bridge: Design Step 5.6, Flexure Design[EB/OL]. [2026-10-19]. [原始算例](https://www.fhwa.dot.gov/bridge/lrfd/pscus056.cfm). 本章用于比较传力、使用应力、裂缝与挠度的分项检查组织，不以其限值替代我国项目所用规范。
+
+
+10. <span id="ref-ch03-12"></span>无锡市应急管理局. 无锡市“10.10”312国道锡港路上跨桥桥面侧翻较大事故调查报告[R/OL]. 2020-01-23[2026-10-19]. [官方调查报告](https://yjglj.wuxi.gov.cn/doc/2020/01/22/2766917.shtml)。定位：第二部分“侧翻桥梁的相关情况”、第三部分“事故发生经过”、第五部分“事故发生的原因和事故性质”。报告明确将直接原因归于严重超载、荷载集中与偏载引起的支座系统失效和侧向滑移倾覆，并认为原设计总体满足设计期规范。本章不将其改写为“抗弯承载力不足”或“独柱墩必然不安全”。
+
+11. <span id="ref-ch03-13"></span>Naito C, Sause R, Hodgson I, Pessiki S, Desai C. Forensic Evaluation of Prestressed Box Beams from the Lake View Drive over I-70 Bridge: Final Report[R]. ATLSS Report 06-13 / FHWA-PA-2006-017-EMG002. Lehigh University, 2006. [原调查报告作者上传全文](https://www.researchgate.net/publication/326540500_Forensic_Evaluation_of_Prestressed_Box_Beams_from_the_Lake_View_Drive_over_I-70_Bridge_FINAL_REPORT)；[原研究团队及PennDOT项目页](https://www.lehigh.edu/~cjn3/penndot.shtml)。报告第5节“Project Overview”和第11节“Summary and Conclusions”用于核对事故事实与内部损伤。其后续研究论文为：Naito C, Sause R, Hodgson I, Pessiki S, Macioce T. Forensic Examination of a Noncomposite Adjacent Precast Prestressed Concrete Box Beam Bridge[J]. Journal of Bridge Engineering, 2010, 15(4): 408–418. [原论文及摘要](https://ascelibrary.com/doi/10.1061/%28ASCE%29BE.1943-5592.0000110)。事故时没有报告超载或撞击，不意味着该梁在此前使用历史中从未受到损伤。
+
+12. <span id="ref-ch03-14"></span>Federal Highway Administration. Long-Term Bridge Performance (LTBP) Program Protocols, Version 1: Concrete—Cracking[R/OL]. FHWA-HRT-16-007, FLD-DC-VIC-005, 2016[2026-10-19]. [原始检测记录协议](https://www.fhwa.dot.gov/publications/research/infrastructure/structures/ltbp/16007/049.cfm)。定位：3.5—3.7及6.1—6.6，支持记录裂缝位置、方向、尺寸、变化及伴随渗水锈迹，并区分不同可能成因。本章没有将该项目的记录阈值当作我国桥梁设计或安全判定限值。裂缝典型部位另参考Arkansas Department of Transportation, Bridge Inspection Manual, 2020 Edition, revised July 2021, p.71，[交通主管部门原手册](https://www.ardot.gov/wp-content/uploads/2021/11/ARDOT-Bridge-Inspection-Manual-2020-Edition.pdf)。
+
+13. <span id="ref-ch03-15"></span>Florida Department of Transportation. Post-Tensioned Bridge Girder Anchorage Zone, Contract BDB14[R/OL]. [交通主管部门原研究报告](https://www.fdot.gov/docs/default-source/structures/structuresresearchcenter/Final-Reports/BDB14.pdf)。用于核对后张锚固区集中压力扩散、横向劈裂与配筋的关系。先张构件端部开裂机理补充见Okumus P, Oliva M G. Evaluation of Crack Control Methods for End Zone Cracking in Prestressed Concrete Bridge Girders[J]. PCI Journal, 2013, 58(2):91–105. [原研究论文](https://www.pci.org/PCI/Publications/PCI_Journal/Issues/2013/Spring/Evaluation_of_crack_control_methods_for_end_zone_cracking_in_prestressed_concrete_bridge_girders.aspx)。收缩温度及养护影响见Oregon DOT, Bridge Inspection Program Manual, Chapter 12, section 12.8.1，[主管部门原手册](https://www.oregon.gov/odot/Bridge/Documents/Bridge_manuals/brinspecman2013.pdf)。
+
+14. 交通运输部与Federal Highway Administration. 梁桥检查、检测、监测及无人机影像技术资料[S/OL, R/OL]. 本章采用文件、版本与条款定位见[检测养护的规范与技术依据](#inspection-maintenance-sources)。
+
+15. 中华人民共和国交通运输部. 公路桥梁支座和伸缩装置养护与更换技术规范：JTG/T 5532—2023[S/OL]. 2023[2026-10-19]. [官方公告及原文](https://xxgk.mot.gov.cn/jigou/glj/202310/t20231008_3924625.html)；[本章采用条款](#bearing-replacement-source)。
+
+16. Carino N J, Lew H S, Stone W C, Chung R M, Hoblitzell J R. Investigation of Construction Failure of the Riley Road Interchange Ramp, East Chicago, Indiana[R/OL]. NBSIR 82-2593. 1982[2026-10-19]. [NIST书目页](https://www.nist.gov/publications/investigation-construction-failure-riley-road-interchange-ramp-east-chicago-indiana)；[官方原报告](https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir82-2593.pdf)。
+
+17. 陕西商洛“7·19”高速公路桥梁垮塌灾害调查评估组. 陕西商洛“7·19”高速公路桥梁垮塌灾害调查评估报告[R/OL]. 2024-10-28（2025-03-27公布）[2026-10-19]. [应急管理部发布页](https://www.mem.gov.cn/gk/zfxxgkpt/fdzdgknr/202503/t20250327_531682.shtml)；[官方原报告](https://www.mem.gov.cn/gk/zfxxgkpt/fdzdgknr/202503/W020250507619450709564.pdf)。
+
+
+:::
+
+
+## 独立施工动画与阶段受力 {#girder-construction-stage-models}
+
+[第4.5节](chapters/ch03.qmd#girder-construction-gallery)逐项展开七种工法，每种工法有自己的动画。既有施工几何、设备与阶段保留，采用单独导出的浅色天空与照明；页面随阅读位置加载场景并保存各自进度。模型构造与这次图形调整见[独立动画说明](interactive/girder-construction-single-20261019/source-notes.md)。
+
+| 内容 | 模型与资料 |
+|---|---|
+| 有、无导梁的顶推阶段比较 | [动画与计算](interactive/girder-launching-forces-20261019/index.html) · [计算假定与来源](interactive/girder-launching-forces-20261019/source-notes.md) |
+| 悬臂施工的负弯矩、变形和上部配筋 | [阶段计算](interactive/girder-cantilever-forces-20261019/index.html) · [模型与来源](interactive/girder-cantilever-forces-20261019/source-notes.md) |
+| 支座更换的全桥／局部同步视图 | [换座动画](interactive/girder-lifting-20261019/index.html) · [尺寸与支承转换](interactive/girder-lifting-20261019/source-notes.md) |
+| 抬高桥梁与通航净空 | [整体顶升动画](interactive/girder-lifting-20261019/clearance.html) · [工程资料与教学假定](interactive/girder-lifting-20261019/source-notes.md) |
+
+用户提供的早期顶推HTML演示作为本轮改编参考，原件存于本地修订记录。新计算单独记录约束、受压支承、接引状态与验证，不把旧演示直接视为已核验的求解器。七种设备动画与两个受力模型不是同一个有限元工程；数值不得套用到设备模型或实际施工。
+
+
+<!-- site-video-bibliography -->
+## 七种工法的实际施工视频 {#girder-construction-site-videos}
+
+正文按“独立动画—对应实景”的顺序配片。视频由原发布平台提供播放，保留原画面和署名；本地教材未下载、剪辑或重新上传视频文件。现场设备型号、尺寸与作业条件各不相同，视频用于辨认对应工法，不作为上方教学模型的工程参数来源。
+
+### 1. 支架现浇 {#site-video-girder_falsework}
+
+**Waterfront Seattle；Seattle Department of Transportation 发布工程说明**，[Waterfront Seattle Program: Marion Street Bridge Construction Time Lapse](https://sdotblog.seattle.gov/2023/02/21/marion-street-pedestrian-bridge-construction-updates/)。核验日期：2026年10月20日。
+
+**画面与工法。**Marion Street人行桥在临时支架和模板上浇筑混凝土。录像以延时摄影显示泵送、整平及覆盖养护；主管部门原文另给出支架、模板和钢筋施工的先后关系。
+
+**观看定位。**全片较短，可完整观看；泵管与梁面作业在同一视野内。
+
+视频时长：22秒。
+
+**对应范围。**本片聚焦浇筑和养护，没有展示支架搭设、预应力张拉与卸架全过程；桥为人行桥，其尺寸不用于上方公路梁桥模型。
+
+[原始播放页](https://www.youtube.com/watch?v=LpH4QGbgJ34) · [回到正文动画与视频](chapters/ch03.qmd#video-girder_falsework)
+
+### 2. 逐孔移动模架现浇 {#site-video-girder_span_cast}
+
+**BERD, S.A.**，[BERD M60-I](https://www.berd.eu/en/produtos/movable-scaffolding-system/)。核验日期：2026年10月20日。
+
+**画面与工法。**设备厂家公开的M60-I现场录像，用于辨认移动模架、桥墩与已成梁体之间的关系。官网将其列为逐孔桥位现浇设备，与预制节段架桥设备分别介绍。
+
+**观看定位。**1:11附近为支承小车与主桁细节，1:28附近为梁底轨道，1:38附近为底模与已浇梁面。
+
+视频时长：4分41秒。
+
+**对应范围。**现场M60-I设备与教学模型并非同一型号；设备形式和支点构造应分别辨认。
+
+[原始播放页](https://www.youtube.com/watch?v=F0ymQfptzK8) · [回到正文动画与视频](chapters/ch03.qmd#video-girder_span_cast)
+
+### 3. 挂篮悬臂浇筑 {#site-video-girder_cantilever_cast}
+
+**ULMA Construction**，[Projects with CVS Cantilever Formwork Carriage - ULMA Construction [en]](https://www.ulmaconstruction.com/en/ulma/media/videos/project-videos/projects-with-balanced-cantilever-formwork-carriage-cvs)。核验日期：2026年10月20日。
+
+**画面与工法。**ULMA公开的CVS挂篮项目实景。可对照挂篮上部桁架、下部模板吊挂和已成悬臂，辨认新节段浇筑时的施工设备。
+
+**观看定位。**正文播放器从1:45开始：单墩两侧悬臂与端部挂篮的完整侧景，随后为挂篮俯视及高架梁桥全景。原片0:28附近另有泵车与现场作业画面。
+
+视频时长：原片3分钟；正文定位1:45—1:56的梁桥片段。
+
+**对应范围。**该片汇集多个工程，含其他桥型；正文仅定位已核实的梁桥片段，设备型号和尺寸不对应上方教学模型。
+
+[原始播放页](https://www.youtube.com/watch?v=sMdmsHs0pHE) · [回到正文动画与视频](chapters/ch03.qmd#video-girder_cantilever_cast)
+
+### 4. 整片梁架设与架桥机过孔 {#site-video-girder_launching_gantry}
+
+**郑州市华中建机有限公司（华中建机）**，[铁路架桥机几内亚施工现场](https://zzhz.com/video/7282.html)。核验日期：2026年10月20日。
+
+**画面与工法。**厂家发布的几内亚铁路施工现场，能看到运梁车将整片混凝土梁送入架桥机，以及梁体、起吊设备与支腿的相对位置。它对应整片梁架设，与逐块预制节段悬挂拼装分别辨认。
+
+**观看定位。**约1:20附近可见运梁车喂梁和架桥机接梁；可结合后续镜头辨认梁体移动。
+
+视频时长：4分15秒。
+
+**对应范围。**铁路工程设备与上方教学模型并非同一型号，不把视频中的尺寸、支腿构造或作业条件直接套用到模型。未声称本片覆盖架桥机全部过孔工序。
+
+[原始播放页](https://zzhz.com/video/7282.html) · [回到正文动画与视频](chapters/ch03.qmd#video-girder_launching_gantry)
+
+### 5. 逐孔预制节段拼装 {#site-video-girder_span_precast}
+
+**West Gate Tunnel Project**，[Finished Gantry Crane Works at Footscray Road](https://www.youtube.com/watch?v=A1G278KGdrA)。核验日期：2026年10月20日。
+
+**画面与工法。**West Gate Tunnel项目官方现场延时摄影，显示Footscray Road高架施工中架桥机沿桥墩推进和混凝土梁跨形成。承包商Freyssinet公开工程说明明确这些箱梁采用逐跨拼装，主要由上行式架桥机吊装预制节段。
+
+**工法依据。**承包商工程说明及业主事实页均写明逐跨施工（span-by-span）与预制节段的起吊方式。 [工程说明1](https://www.freyssinet.com.au/west-gate-tunnel-melbourne/)、[工程说明2](https://bigbuild.vic.gov.au/__data/assets/pdf_file/0010/544933/WGTP-Launching-Gantry_factsheet.pdf)。
+
+**观看定位。**约0:17—0:22可观察架桥机、桥墩和正在形成的梁跨；0:22附近侧景可对照架桥机下方梁体与吊挂位置。
+
+视频时长：约37秒。
+
+**对应范围。**这是现场延时短片，不能据此观察每个节段的连接细节，也未完整展示一跨的全部吊装、预应力张拉、落梁和检查工序；项目设备与教学模型并非同一型号。
+
+[原始播放页](https://www.youtube.com/watch?v=A1G278KGdrA) · [回到正文动画与视频](chapters/ch03.qmd#video-girder_span_precast)
+
+### 6. 预制节段悬臂拼装 {#site-video-girder_cantilever_precast}
+
+**HS2 Ltd**，[Construction of UK's longest railway bridge passes the half way mark](https://mediacentre.hs2.org.uk/news/hs2-viaduct-build-passes-one-mile-mark-on-journey-to-become-britains-longest)。核验日期：2026年10月20日。
+
+**画面与工法。**HS2业主公开的Colne Valley Viaduct施工进度实景，展示Dominique架桥机、预制节段梁面及桥墩施工现场。官方工程说明明确该架桥机采用平衡悬臂方法，在墩两侧安装预制节段，再向下一墩推进。
+
+**工法依据。**HS2 2024-09-05原文明确160 m launcher used a balanced-cantilever method；2022-05-31原文说明中心墩每侧各安装节段，以悬臂方法平衡结构。新闻稿以half-arches描述外形，不宜据此把结构类型改成拱桥。 [工程说明1](https://mediacentre.hs2.org.uk/news/britain-gets-its-new-longest-rail-bridge-in-major-hs2-milestone)、[工程说明2](https://mediacentre.hs2.org.uk/news/hs2-celebrates-start-of-construction-on-uks-longest-railway-bridge)。
+
+**观看定位。**0:22附近为架桥机与桥面的整体关系，0:34附近为红色主桁内部与预制梁面，0:44附近为已成梁面。原片是施工进度实景，关键帧没有完整展示一个节段从起吊到就位张拉的连续作业。
+
+视频时长：1分27秒。
+
+**对应范围。**该实桥采用大型架桥机起吊，教学动画采用桥面吊机；两者同属预制节段悬臂拼装，但设备支承、临时荷载及施工受力路径不同，不能直接套用动画的设备荷载。录像展示施工进度与设备，平衡悬臂方法的确认同时依据业主工程说明，不仅凭航拍外形判断。
+
+[原始播放页](https://www.youtube.com/watch?v=ANad32aqIag) · [回到正文动画与视频](chapters/ch03.qmd#video-girder_cantilever_precast)
+
+### 7. 导梁辅助顶推 {#site-video-girder_incremental_launch}
+
+**Rijkswaterstaat（荷兰基础设施主管部门）**，[Zo bouwen wij een gloednieuw viaduct bij de A16 Terbregseplein | Timelapse](https://www.youtube.com/watch?v=K56qzyYlb-w)。核验日期：2026年10月20日。
+
+**画面与工法。**A16 Terbregseplein高架桥的实景延时录像。蓝色钢导梁先跨过桥墩，后方混凝土梁跟进；墩顶近景可辨认滑动支点处的操作。
+
+**观看定位。**正文播放器定位0:20—0:55：约0:27看导梁与混凝土梁越墩，约0:47看墩顶滑板操作。原片后段还含其他吊装和收尾画面，可从原始播放页完整观看。
+
+视频时长：原片1分31秒；正文定位0:20—0:55。
+
+**对应范围。**以原平台起止时间定位片段，未剪辑或下载视频；不把片中其他吊装作业归为顶推。
+
+[原始播放页](https://www.youtube.com/watch?v=K56qzyYlb-w) · [回到正文动画与视频](chapters/ch03.qmd#video-girder_incremental_launch)
+
+<!-- /site-video-bibliography -->

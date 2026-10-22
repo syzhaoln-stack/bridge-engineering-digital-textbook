@@ -1,0 +1,31 @@
+# 配筋、投影与桥梁建造实践 {.unnumbered #从旧版接续的实验与游戏}
+
+本页保留旧版的三个实践入口。每项活动都连接本书相应原理，便于带着操作结果回到正文讨论。
+
+## 钢筋混凝土梁配筋 {.unnumbered #把一根钢筋混凝土梁配出来}
+
+[**打开配筋实验**](interactive/rc-bending-design-lab.html)
+
+保持弯矩不变，比较两种梁高；再选实际钢筋根数和直径，检查受压区、力臂及抗弯承载力的变化。记录计算所需面积与实际选配面积，说明重新验算的结果。
+
+**原理与例题：**[第4章：受弯截面分析与配筋设计](chapters/ch03.qmd#从弯曲到截面设计为什么钢筋不是越多越好)。[旧版完整算例](https://syzhaoln-stack.github.io/bridge-engineering-textbook/appendices/rc-bending-worked-example.html)保留供对照。
+
+实验采用给定材料参数的单筋矩形截面抗弯模型。超出适用受压区时，应调整方案；抗剪、裂缝、挠度等检查需另行完成。
+
+## 三视图与空间关系 {.unnumbered #三张平面图能不能想出同一个物体}
+
+[**打开工图投影大师**](https://syzhaoln-stack.github.io/projection-master/)
+
+选择同一个物体，在正视、侧视和俯视图中标出对应的边，再旋转模型检查。将这种对应关系用于辨认桥梁的纵向、横向、截面与整桥位置。
+
+**对应正文：**[第1章：桥梁总体设计](chapters/ch01.qmd)。该在线工具用于几何投影练习，不计算桥梁荷载与变形。
+
+## 桥梁建造与试车 {.unnumbered #这座桥能让小汽车开过去吗}
+
+[**打开桥造计划 SpanCraft**](https://syzhaoln-stack.github.io/spancraft-bridge-game/){target="_blank" rel="noopener"}
+
+点击“开始建造 · 装载示范桥”，再点击“加载：小汽车”。观察最先出现明显受力变化的构件；只改变一处连接或构件后，再次试车比较。游戏反馈用于讨论方案，实际桥梁还需建立相应计算模型并验算。
+
+**对应正文：**[第2章：平衡与计算图式](chapters/ch02-foundations.qmd#平衡约束与计算图式)、[第10章：模型验证与确认](chapters/ch10-fem.qmd#验证确认与不确定性)。
+
+[综合资源总索引](resources.qmd) · [旧版教材源码](https://github.com/syzhaoln-stack/bridge-engineering-textbook)

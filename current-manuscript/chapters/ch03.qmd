@@ -1,0 +1,705 @@
+---
+page-layout: full
+toc: false
+---
+
+# 梁桥设计
+
+**梁桥是以梁作为上部结构主要承重构件的桥梁。**桥面竖向荷载主要通过主梁的弯曲与剪切传至墩台。本章以钢筋混凝土和预应力混凝土梁桥为对象。
+
+<link rel="stylesheet" href="../interactive/girder-design/chapter-embeds.css">
+<link rel="stylesheet" href="../interactive/girder-composition-20261019/chapter.css">
+<link rel="stylesheet" href="../interactive/girder-inspection-20261019/chapter.css">
+
+<!-- site-video-assets -->
+<link rel="stylesheet" href="../interactive/girder-construction-videos-20261020/chapter.css?v=20261020">
+<script src="../interactive/girder-construction-videos-20261020/chapter.js?v=20261020" defer></script>
+<!-- /site-video-assets -->
+
+
+<nav class="girder-map" aria-label="梁桥设计内容图谱">
+<div class="girder-map-title"><strong>梁桥设计</strong><span>体系、构造与计算的对应关系</span></div>
+<ol>
+<li><a href="#从整座梁桥看到主梁截面和连接"><b><em>4.1</em>组成与体系</b><small>主梁与支承 · 简支、连续、悬臂</small></a></li>
+<li><a href="#跨度增长以后为什么要改变梁桥方案"><b><em>4.2</em>布置与截面</b><small>跨径图谱 · 数据辅助初选</small></a></li>
+<li><a href="#girder-load-effects"><b><em>4.3</em>荷载与内力</b><small>横向分担 · 弯矩、剪力与变形</small></a></li>
+<li><a href="#girder-design-principles"><b><em>4.4</em>受力与配筋</b><small>受弯、受剪 · 预应力与使用性能</small></a></li>
+<li><a href="#梁怎样制成架起并形成最终体系"><b><em>4.5</em>施工与转换</b><small>预制、现浇 · 支承与加载阶段</small></a></li>
+<li><a href="#回到方案用一条完整理由说明选择"><b><em>4.6</em>检测与养护</b><small>病害识别 · 智能巡检与处治</small></a></li>
+</ol></nav>
+
+<span id="chapter-goals"></span>
+
+::: {.chapter-objectives}
+完成本章后，学生能够：
+
+1. **组成与体系：**辨认主梁、桥面板、横向联系和支座，区分简支、连续及悬臂的受力特点。
+2. **荷载与构件：**由横向分担计算主梁内力，解释纵筋、箍筋和预应力的作用。
+3. **施工与使用：**说明施工顺序对内力的影响，联系应力、裂缝和变形理解使用性能。
+4. **方案与管养：**依据设计条件和来源资料比较梁桥方案，辨认主要检测部位，并说明病害证据与维护、加固的联系。
+:::
+
+受弯、受剪、预应力与构造要求在第4.4节集中介绍；作用组合沿用第3章，拱、塔和索的专门问题在后续章节展开。
+
+## 梁桥的组成与结构体系 {#从整座梁桥看到主梁截面和连接}
+
+### 主要组成
+
+::: {#fig-girder-composition .girder-wide}
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-composition-20261019/index.html" title="梁桥实桥照片、构造模型与计算简图" style="height:590px"></iframe></section>
+
+梁桥的实桥、构造与计算表达。照片显示箱梁、支座与桥墩；构造模型和计算简图采用一跨简支布置。
+:::
+
+梁桥上部结构主要由主梁、桥面板和横向联系组成。**主梁**沿顺桥向布置，主要承担纵向弯曲与剪切；**桥面板**承受轮载并传给主梁；**横向联系**连接相邻主梁，使各梁共同承担桥面荷载。箱梁的顶板同时参与桥面板和主梁的受力。
+
+支座将上部结构的作用传给墩台，并按其约束方式容许转动或位移；墩台经基础将作用传给地基。横隔梁、横隔板属于横向结构构件，梁内的横向钢筋属于配筋，二者不是同一概念。铺装、护栏和排水等设施满足行车与耐久要求，其自重及相应作用也应计入设计。
+
+<span id="bridge-assembly-case"></span><span id="fig-priority-F13"></span><span id="fig-supp20261002-f13"></span><span id="fig-supp20261002-wc-150638252"></span>
+
+### 简支、连续与悬臂
+
+结构体系由梁的连续关系和支承约束确定。下面三种基本图式用于辨认受力关系。
+
+<div class="girder-basic">
+<article><h4>简支梁</h4><svg viewBox="0 0 260 110" role="img" aria-label="两端铰支与滚动支承的简支梁"><path d="M25 44H235" stroke="#24475b" stroke-width="7"/><g stroke="#24475b" stroke-width="2" fill="#fff"><path d="M30 48l-12 20h24zM230 48l-12 20h24zM12 74h36M212 83h36"/><circle cx="224" cy="75" r="4"/><circle cx="236" cy="75" r="4"/></g><path d="M30 44Q130 100 230 44" stroke="#2992ad" fill="none" stroke-width="2" stroke-dasharray="5 4"/></svg><p>梁端可转动；理想简支条件下端弯矩为零。</p></article>
+<article><h4>连续梁</h4><svg viewBox="0 0 260 110" role="img" aria-label="跨越三个支点的两跨连续梁"><path d="M15 44H245" stroke="#24475b" stroke-width="7"/><g stroke="#24475b" stroke-width="2" fill="#fff"><path d="M20 48l-10 18h20zM130 48l-10 18h20zM240 48l-10 18h20zM7 72h26M117 80h26M227 80h26"/><circle cx="125" cy="72" r="3"/><circle cx="135" cy="72" r="3"/><circle cx="235" cy="72" r="3"/><circle cx="245" cy="72" r="3"/></g><path d="M20 44C60 78 100 44 130 44C160 44 200 78 240 44" stroke="#2992ad" fill="none" stroke-width="2" stroke-dasharray="5 4"/></svg><p>梁跨越中间支点连续；内力同时满足平衡与变形协调。</p></article>
+<article><h4>悬臂梁</h4><svg viewBox="0 0 260 110" role="img" aria-label="左端固定右端自由的悬臂基本计算图式"><path d="M34 44H236" stroke="#24475b" stroke-width="7"/><path d="M33 17V81M16 28l17-10M16 42l17-10M16 56l17-10M16 70l17-10M16 84l17-10" stroke="#24475b" stroke-width="2"/><path d="M34 44C100 44 160 60 236 87" stroke="#2992ad" fill="none" stroke-width="2" stroke-dasharray="5 4"/></svg><p>固定端传递剪力和弯矩，自由端可发生竖向位移和转动。</p></article>
+</div>
+
+图中虚线为竖向荷载下的变形示意，已放大。简支梁在向下荷载作用下主要产生正弯矩，下缘受拉；连续梁中间支点附近通常产生负弯矩，上缘受拉；悬臂梁在向下荷载下根部为负弯矩。
+
+悬臂体系可与挂孔组成悬臂梁桥。连续梁采用悬臂浇筑或拼装时，合龙前也存在悬臂受力阶段，但“悬臂施工”不表示成桥后仍为悬臂梁体系。**连续刚构桥**将主梁与桥墩固结，梁和墩共同受力，其墩顶约束与通过支座连接的连续梁不同。
+
+**桥面连续不等于主梁结构连续。**相邻简支梁可以采用改善行车平顺的桥面连续构造，主梁仍按简支体系受力。只有墩顶连接能够传递相应弯矩且已有效形成，才能按连续体系计算后续作用。横向湿接缝连接相邻梁片，也不等于纵向跨间连续。
+
+## 总体布置与截面选择 {#跨度增长以后为什么要改变梁桥方案}
+
+### 孔跨、净空与主梁截面
+
+总体布置先满足桥位、通航、泄洪、线路和净空要求，再结合制造、运输和吊装条件确定孔跨、主梁截面、梁片数量与间距、横向联系和支承方式。**截面形式与结构体系是两种分类依据**：箱梁可以简支，也可以连续。
+
+::: {#fig-girder-span-comparison .girder-wide}
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-forms-20261019/index.html" title="空心板、T梁、小箱梁和混凝土工字梁：整桥、剖切与常规截面" style="height:1040px"></iframe></section>
+
+四种混凝土梁型的整桥、剖切与常规截面。切开桥体可显示孔洞与板肋关系；各模型的梁高、梁宽和布置尺寸分别标注。
+:::
+
+| 截面 | 主要特点 | 设计关注点 |
+|---|---|---|
+| 实心板、空心板 | 板体具有纵向受弯和横向板作用；孔洞减轻自重 | 板厚、孔间腹板、端部及梁间连接 |
+| T形 | 上部翼缘、腹板与下部配筋区组成截面 | 正弯矩区翼缘受压，腹板传剪；分片制造和架设 |
+| 工字形 | 上、下翼缘与腹板共同形成截面 | 下翼缘提供预应力筋布置空间 |
+| 箱形 | 顶底板与腹板形成闭口截面 | 整体抗扭刚度较大，还需检查各板的局部受力 |
+
+<span id="t-girder-rebar"></span>
+
+纵向钢筋、箍筋与预应力筋承担不同的传力任务。孔道用于穿束和施工，本身不承担钢筋拉力。跨中常规截面不能代替梁端、支点及锚固区的局部加强构造。
+
+### 梁高、跨径与数据图谱 {#梁高是截面变量墩高是桥位与体系变量}
+
+梁高记为 $h$，跨径记为 $L$。高跨比 $h/L$ 是初选梁高的重要参数，取值与截面形式、结构体系、材料和施工方法有关。提高梁高通常增大抗弯力臂和截面刚度，同时增加自重并占用桥下净空。**变高连续梁应分别记录主跨跨中梁高和主跨支点梁高，两个比值均采用同一主跨的 $L$。**图中蓝色表示主跨跨中，红色表示主跨支点，绿色表示等高构件。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-proportions-20261019/index.html" title="混凝土梁桥跨径、梁高和高跨比资料图谱" style="height:1180px"></iframe></section>
+
+图谱按截面形状、结构体系和混凝土材料筛选，并设“50—120 m”“中国通用图”和“美国 TxDOT 通用图”入口。点形表示截面，默认颜色表示梁高位置；也可切换为体系或材料。普通钢筋混凝土记为 RC，预应力混凝土记为 PC。选中数据点可查看同桥跨中与根部梁高、体系和截面示意；资料版本及尺寸定义集中放在来源栏。图纸型号、项目方案与实桥尺寸具有不同的适用条件，样本边界不能直接作为选型限值。
+
+例如重庆通用图的 $30\ \mathrm m$ T梁高 $2.0\ \mathrm m$，对应 $h/L=1/15$；永康工可方案中，$30\ \mathrm m$ 小箱梁高 $1.6\ \mathrm m$，对应 $h/L=1/18.75$。该工可的两方案单片重量分别为 $90\ \mathrm t$ 与 $103\ \mathrm t$，说明梁高较小并不一定吊重较小。[\[4\]](../girder-references-20261019.qmd#ref-ch03-5)[\[5\]](../girder-references-20261019.qmd#ref-ch03-6)
+
+同一 TxDOT 梁型的梁高固定，因此 $h/L$ 随 $L$ 增大而减小；这不表示单位长度梁重减小。其通用图通过钢绞线数量、混凝土强度等条件区分不同跨径。图谱中的型号曲线表示固定梁高的数学关系，不能作为通用的梁高推荐公式。
+
+计算模型中的 $L$ 通常取支承中心距；来源中的名义跨径、梁长和支承中心距应区分。桥墩高度 $H$ 由地形、桥面标高及桥下条件等确定，并影响墩的柔度和稳定，它与梁高没有固定倍数关系。采用标准图还需核对桥宽、材料、荷载、斜交及支承条件。
+
+### 数据辅助的梁桥方案初选 {#girder-intelligent-scheme}
+
+跨径是初选条件之一，还需同时明确桥宽、结构可用高度、通航与泄洪、基础条件和施工限制。数据检索可先列出有相近跨径的梁型及原项目尺寸；参数化模型再把选定的孔跨、桥宽和梁高同步落实到三维外形、立面、平面与横断面。**原项目可作为比较依据，不能只因跨径相近便认定其方案适用于新桥。**
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-scheme-20261019/index.html" title="输入跨径、桥宽与可用梁高，检索梁型资料并生成同参数方案图" style="height:1100px"></iframe></section>
+
+这里的候选来自前面的已核尺寸资料，页面列出原跨径、梁高及其与输入条件的差异。模型图和导出图使用同一组几何参数；截面板厚、横向布置等教学假定与来源尺寸分别记录。有色筋线只表示受拉侧及纵向布置方向，实际数量、直径、锚固和构造仍由第4.4节所述设计过程确定。
+
+智能设计把资料检索、参数更新、作用效应分析和图纸表达连接起来。AI可协助提取条件、检索原文、编写计算与绘图脚本；计算模型、单位、荷载组合、控制状态和引用依据应随结果保留。方案变更后，应同步更新计算与图纸，不能让渲染图、尺寸表和计算模型各自采用不同参数。
+
+## 荷载传递与主梁内力 {#girder-load-effects}
+
+### 桥面板与横向荷载分配
+
+桥面板先承受局部轮载，并将荷载传给相邻梁肋；各主梁再沿桥向将荷载传给支点。两梁之间的板承受跨间弯曲，边梁外侧的悬臂板在根部产生负弯矩。桥面板的局部受力与主梁的纵向受力采用不同的计算对象。
+
+横向荷载分配表示一组桥面荷载由各片主梁分担的比例。先看对称的简化情形：五片相同主梁对称布置，在同一纵向位置的竖向柔度相同；横向结构视为刚性，忽略主梁抗扭。居中的 $200\ \mathrm{kN}$ 荷载使横向结构无转角，各梁等量分担：
+
+$$
+R_i=\frac P5=\frac{200}{5}=40\ \mathrm{kN},\qquad \sum_iR_i=P.
+$$
+
+这里的 $R_i$ 是分到一片主梁的荷载，尚不是该梁两端的支座反力。荷载偏离桥轴时，在上述模型下靠近荷载一侧的梁分担增大。实际分配还受桥面板、横隔梁或横隔板、梁间接缝及主梁刚度影响，不能一律平均分配。杠杆原理法、刚性横梁法等应按适用条件选用；[偏载计算](../girder-references-20261019.qmd#transverse-sharing)列于补充资料。
+
+### 简支梁与悬臂梁的基本关系
+
+下表采用全长恒定刚度 $EI$、小变形、线弹性细长梁模型，忽略剪切变形；$L$ 为单跨长度或悬臂长度。$q$ 为一片梁承担的均布线荷载，$P$ 为集中力；正弯矩使下缘受拉。位移列为向下挠度的大小。
+
+| 图式与荷载 | 控制弯矩 | 最大剪力绝对值 | 控制挠度 |
+|---|---|---|---|
+| 简支梁，全跨均布 $q$ | 跨中 $qL^2/8$ | 支点 $qL/2$ | 跨中 $5qL^4/(384EI)$ |
+| 简支梁，跨中集中力 $P$ | 跨中 $PL/4$ | 两侧 $P/2$ | 跨中 $PL^3/(48EI)$ |
+| 悬臂梁，全长均布 $q$ | 根部 $-qL^2/2$ | 根部 $qL$ | 自由端 $qL^4/(8EI)$ |
+| 悬臂梁，自由端集中力 $P$ | 根部 $-PL$ | 全长 $P$ | 自由端 $PL^3/(3EI)$ |
+
+在 $q$ 与 $EI$ 均不变的简支均布荷载模型中，跨径加倍使弯矩增为4倍、挠度增为16倍。实际跨径增大后常需调整截面、预应力或体系，调整截面还应重新计算自重。
+
+**例4-1　由横向分担到纵向弯矩。**沿用五梁居中分担，计算跨径 $L=30\ \mathrm m$，各梁分得的 $40\ \mathrm{kN}$ 集中力位于跨中；每片梁另有 $q=20\ \mathrm{kN/m}$ 的均布永久荷载，则
+
+$$
+M_P=\frac{40\times30}{4}=300\ \mathrm{kN\cdot m},\qquad
+M_G=\frac{20\times30^2}{8}=2250\ \mathrm{kN\cdot m}.
+$$
+
+以上是未乘分项系数的静力效应，设计时应按相应极限状态形成作用组合。车辆轴组需保持轴距整体移动，最不利位置由相应内力影响线确定。
+
+### 连续梁的弯矩与变形协调 {#多一个支座为什么需要用位移来求力}
+
+<span id="girder-compatibility"></span><span id="fig-priority-F18"></span>
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-systems-20261019/index.html" title="两等跨简支与连续梁的支反力、弯矩和受拉侧配筋" style="height:660px"></iframe></section>
+
+两等跨、全长等刚度的连续梁，两端简支，中支点处梁体连续且无内铰，各支点无沉降。两跨同时承受相同均布荷载 $q$ 时，中支点负弯矩为 $-qL^2/8$；每跨正弯矩最大值为 $9qL^2/128$，位于距外端支点 $3L/8$ 处。几何跨中不是正弯矩最大处。中支点附近上缘受拉，纵向受拉钢筋应相应布置在上部。
+
+连续梁的未知反力多于独立平衡方程，需补充变形协调条件。例如解除中支点后，求出荷载使该点产生的位移，再令附加支反力造成的位移与它相抵；中支点无沉降时，总竖向位移为零。平衡与协调共同确定反力和内力，不能按支点个数平均分配。[协调计算](../girder-references-20261019.qmd#compatibility-example)列于补充资料。
+
+上述数值限于所列等跨、等刚度和全跨布载。实际连续梁还需分别确定跨中正弯矩、中支点负弯矩和支点剪力的控制布载，并计入规定的沉降、温度等作用。
+
+## 混凝土梁的受力与配筋 {#girder-design-principles}
+
+### 材料、工作阶段与设计条件
+
+混凝土主要承担压力，普通纵向钢筋主要承担拉力，箍筋参与传剪。钢筋与混凝土通过粘结和锚固共同工作。预应力筋经张拉向混凝土施加预压，调整荷载作用下的应力与变形；它改变初始受力状态，并不提高混凝土本身的材料强度。
+
+普通适筋受弯构件的主要工作阶段为：未开裂时钢筋与混凝土共同工作；受拉区开裂后，裂缝处拉力主要由钢筋承担，截面刚度改变；受拉钢筋屈服后曲率较快增加；随后达到相应受弯极限状态。少筋、超筋、受剪或锚固破坏可能改变这一过程。
+
+截面计算同时满足**变形协调、材料本构与内力平衡**。常规细长梁段采用平截面假定确定纵向应变分布，本构关系确定应力，截面应力的合力与力矩应与内力平衡。平截面假定不意味着裂后或极限状态的应力仍按直线分布。
+
+承载能力验算比较设计需求与抗力；正常使用验算检查相应组合下的应力、抗裂或裂缝、挠度。保护层、间距、锚固和接头构造保证计算中的传力能够实现。材料强度等级、强度设计值与弹性模量应分别采用，不能混用。
+
+### 普通钢筋与正截面受弯 {#从弯曲到截面设计为什么钢筋不是越多越好}
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-rebar-20261019/index.html?model=rc" title="普通钢筋：受拉纵筋、架立筋与箍筋的位置和作用" style="height:640px"></iframe></section>
+
+<span id="rc-elastic-transformed-20261016"></span>
+
+在线弹性、可靠粘结条件下，同高度钢筋与混凝土的应变近似相等，其应力之比为弹性模量比 $n=E_s/E_c$。换算截面用等效混凝土面积表示钢筋刚度；开裂后应重新确定中性轴和有效刚度。[换算截面](../girder-references-20261019.qmd#elastic-section)用于相应使用状态，以下等效压应力图用于受弯承载力计算。
+
+
+![单筋矩形截面的配筋、应变、等效压应力与抗弯力偶。中性轴深度 $c$ 与等效受压区高度 $x$ 分别表示不同的计算量。](../interactive/girder-systems-20261019/section-equilibrium.svg){#fig-girder-section-equilibrium width=100%}
+
+单筋截面以受拉钢筋和受压混凝土形成抗弯力偶。在受拉钢筋达到所取设计应力、忽略受拉混凝土并采用等效矩形压应力图的条件下，
+
+$$
+T=f_{sd}A_s,\qquad C=f_{cd}bx,\qquad C=T,
+$$
+
+$$
+x=\frac{f_{sd}A_s}{f_{cd}b},\qquad
+M_u=f_{sd}A_s\left(h_0-\frac{x}{2}\right).
+$$
+
+式中，$b$ 为截面宽度；$h_0$ 为受压边至受拉钢筋合力点的距离；$A_s$ 为受拉钢筋面积；$x$ 为等效受压区高度；$f_{sd}$ 为钢筋抗拉强度设计值；本式以 $f_{cd}$ 表示所取等效矩形压应力；$M_u$ 为相应截面抗弯承载力。设计弯矩需求 $M_d$ 应满足 $M_d\le M_u$，两者均为力矩，不是材料应力。
+
+受拉钢筋过少，开裂后可能出现少筋破坏；配筋过多，可能在受拉钢筋充分发挥以前发生混凝土受压破坏。因此，除满足最小配筋与构造要求外，还应按采用的设计方法控制受压区高度。本文按
+
+$$
+x<\xi_b h_0
+$$
+
+检查适筋设计范围；取等号可求界限值。超过界限时，不能继续沿用“受拉钢筋已屈服”的公式。[\[1\]](../girder-references-20261019.qmd#ref-ch03-1)
+
+**例4-2　单筋截面的抗弯承载力。**取 $b=250\ \mathrm{mm}$、$h_0=460\ \mathrm{mm}$、$A_s=1500\ \mathrm{mm^2}$、$f_{cd}=13.8\ \mathrm{MPa}$、$f_{sd}=330\ \mathrm{MPa}$，题定 $\xi_b=0.53$。由平衡得
+
+$$
+x=\frac{330\times1500}{13.8\times250}
+=143.48\ \mathrm{mm}
+<0.53\times460=243.8\ \mathrm{mm},
+$$
+
+$$
+M_u=330\times1500\left(460-\frac{143.48}{2}\right)
+=192.19\times10^6\ \mathrm{N\cdot mm}
+=192.19\ \mathrm{kN\cdot m}.
+$$
+
+增加钢筋会同时增大拉力、加深压区并缩短力臂，故抗弯能力不与钢筋面积简单成正比。截面或配筋调整还应满足净空、间距、锚固和施工条件。
+
+<span id="fig-ch03-studio-rc-cutaway"></span>
+
+<span id="rc-centroid-double-20261016"></span>
+
+**排筋、双筋与T形截面。**
+
+受拉钢筋分为多排时，有效高度量至钢筋合力点。在各排钢筋应力相同的条件下，
+
+$$
+h_0=\frac{\sum_i A_{s,i}y_i}{\sum_i A_{s,i}},
+$$
+
+其中 $y_i$ 从受压边量至第 $i$ 排钢筋中心。两排钢筋均在受拉侧，仍属于单筋截面；**双筋截面**是受拉侧和受压侧均有参与计算的纵向钢筋。梁高受限时，受压钢筋可参与形成附加抗弯力偶。
+
+T形梁正弯矩区的上翼缘受压，负弯矩区的受压侧则可能位于下部。压区位于翼缘内时，可按相应有效翼缘宽度的矩形计算；进入腹板后，应分别计算翼缘外伸部分与腹板的压力及其力臂。有效翼缘宽度应按适用规定确定。
+
+<span id="rc-variable-section-20261016"></span>
+
+双筋及T形截面的补充公式见[配筋补充计算](../girder-references-20261019.qmd#double-tee)，任意压区的面积与重心积分见[一般受压区积分](../girder-references-20261019.qmd#section-integrals)。
+
+
+### 受剪、箍筋与局部传力 {#沿梁移动截面从mv读到主拉应力与配筋}
+
+弯矩和剪力共同形成截面应力。简支梁在常见向下荷载下，跨中以正弯矩为主，支点附近剪力较大。纵向正应力与切应力组合产生主拉应力，可能引起斜裂缝；中性层的弯曲正应力为零，不等于主拉应力为零。
+
+斜裂缝形成后，混凝土斜压杆、箍筋、纵筋和受压弦共同传力。平行弦桁架模型中，竖向箍筋承担的剪力为
+
+$$
+V_s=\frac{A_{sv}}s f_{yv}z\cot\theta.
+$$
+
+$A_{sv}$ 为一个间距内有效箍肢的总面积，$s$ 为纵向间距，$f_{yv}$ 为所取箍筋应力，$z$ 为弦杆力臂，$\theta$ 为混凝土压杆倾角。该式表示箍筋的传力份额，不是构件全部抗剪承载力。
+
+<span id="rc-code-shear-20261016"></span><span id="rc-bending-shear-coupled-20261016"></span><span id="fig-ch03-studio-rc-detail"></span>
+
+抗剪设计需确定控制剪力与验算截面，检查截面尺寸，配置箍筋及必要的弯起钢筋，再检查锚固和构造。减小箍筋间距可提高配箍率，但承载数值满足仍不等于构造满足。弯起筋若来自纵向受拉钢筋，弯起后还应核对沿梁的抗弯作用及锚固，不能同时把它算成原位贯通的底筋。[规范公式与分担条件](../girder-references-20261019.qmd#shear-code)列于补充资料。[\[1\]](../girder-references-20261019.qmd#ref-ch03-1)
+
+<span id="girder-local-transfer"></span>
+
+纵筋通过粘结与锚固传递拉力，后张预应力锚具将集中压力传入梁端，支座反力由局部承压面向梁体扩散。锚固区、支承区和截面突变处常有横向拉力、局部承压或劈裂，需要相应加强配筋；这些局部区域不能仅靠常规梁段的平截面计算描述。
+
+### 预应力筋与截面应力 {#girder-prestress-serviceability}
+
+先张法先张拉预应力筋，再浇筑混凝土；达到规定条件后放张，通过粘结传力。后张法在混凝土达到规定条件后张拉，卸载后由永久锚具保持预力。普通钢筋与预应力筋可同时配置，分别承担受力和构造任务。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-rebar-20261019/index.html?model=pc" title="后张梁的普通钢筋、钢束、孔道与锚具" style="height:680px"></iframe></section>
+
+<span id="预应力的截面效应与次内力"></span>
+
+在简支梁未开裂弹性截面中，有效预力 $P$ 产生平均预压，偏心预力还产生弯曲作用。取拉应力为正，向下偏心距 $e>0$，正弯矩 $M$ 使下缘受拉，则
+
+$$
+\sigma_t=-\frac PA+\frac{Pe c_t}{I}-\frac{M c_t}{I},
+\qquad
+\sigma_b=-\frac PA-\frac{Pe c_b}{I}+\frac{M c_b}{I}.
+$$
+
+$A$、$I$ 应取与计算阶段和所算作用相适应的截面面积及惯性矩；$c_t$、$c_b$ 分别为上、下缘至形心的距离。连续支承约束了预应力引起的自由变形，会形成附加反力和弯矩，即预应力次效应，应与一次效应共同计入。
+
+**例4-3　预应力对边缘应力的影响。**题定对称截面 $A=0.80\ \mathrm{m^2}$、$I=0.25\ \mathrm{m^4}$、$c_t=c_b=0.70\ \mathrm m$，$P=4000\ \mathrm{kN}$、$e=0.35\ \mathrm m$、$M=2500\ \mathrm{kN\cdot m}$。平均预压为 $5.00\ \mathrm{MPa}$，偏心预力和外弯矩的边缘应力幅值分别为 $3.92\ \mathrm{MPa}$ 和 $7.00\ \mathrm{MPa}$，故
+
+$$
+\sigma_t=-8.08\ \mathrm{MPa},\qquad
+\sigma_b=-1.92\ \mathrm{MPa}.
+$$
+
+两缘均受压；无预应力时，下缘为 $7.00\ \mathrm{MPa}$ 拉应力。该例说明预压对使用应力的调整，尚不代表全部阶段和全部验算均已满足。
+
+**预应力损失与阶段应力。**
+
+张拉控制力、传力后的预力和长期有效预力并不相同。后张法的孔道摩阻与锚固回缩，以及混凝土弹性压缩、收缩徐变和钢材松弛，均可能引起预应力损失。损失应按施加方式、沿束位置和时间计算。[\[8\]](../girder-references-20261019.qmd#ref-ch03-10)
+
+张拉、传力、运输架设和使用阶段具有不同的材料强度、截面、支承和外荷载，应分别验算应力。长期有效预力不能替代早期预力，也不能用一个固定损失百分比覆盖所有构件。
+
+### 使用性能：应力、裂缝与挠度 {#girder-service-deflection}
+
+抗裂验算检查规定条件下的开裂控制要求；允许带裂缝工作的构件还需控制裂缝宽度。裂缝宽度与钢筋应力、配筋、粘结、保护层及受拉区特征有关，钢筋未屈服并不代表裂缝满足要求。构件类别、环境和验算组合应按相应设计规定选取。
+
+开裂使中性轴和受拉区贡献发生变化，有效抗弯刚度通常降低。对等刚度简支教学梁，小变形条件下的均布荷载挠度为
+
+$$
+v_{\max}=\frac{5qL^4}{384(EI)_{\mathrm{eff}}}.
+$$
+
+取 $L=20\ \mathrm m$、$q=12\ \mathrm{kN/m}$、$E=30\ \mathrm{GPa}$、$I=0.080\ \mathrm{m^4}$，参考刚度为 $2.40\times10^6\ \mathrm{kN\cdot m^2}$，跨中下挠为 $10.42\ \mathrm{mm}$。仅将有效刚度取为参考值的0.60倍，下挠增至 $17.36\ \mathrm{mm}$。0.60为题定比较比例，不是规范折减系数；该例未计预应力上拱和长期效应。
+
+长期线形受混凝土收缩徐变、预应力损失、后续荷载与施工龄期影响。徐变是持续应力下随时间增加的变形；收缩可在无外荷载时发生；钢材松弛则指总应变基本保持不变时应力随时间降低。承载能力、抗裂或裂缝、挠度及各施工阶段应分别检查。[\[1\]](../girder-references-20261019.qmd#ref-ch03-1)
+
+## 施工方法与体系转换 {#梁怎样制成架起并形成最终体系}
+
+### 主要施工方法与设备 {#girder-construction-gallery}
+
+混凝土梁桥的施工可按**构件形成方式**区分桥位现浇与预制架设，再按**推进方式**区分逐孔、悬臂和梁体纵移。下面把七种典型工法分别展开。每幅动画独立展示构件、设备和支承的变化。各动画下配一段实际施工视频，用于对照现场工序和关键设备。
+
+**移动对象是区分工法的关键。**移动模架与架桥机过孔时，设备前移，已完成的梁体留在桥位；顶推时，永久梁体沿桥轴纵向移动，先后经过不同支点。
+
+#### 支架现浇 {.unnumbered #girder-method-falsework}
+
+**现浇 · 固定支架。**在桥位搭设支架与模板、配置钢筋并浇筑梁体。新浇混凝土重量先由支架承担；本模型采用预应力梁，混凝土及预应力达到阶段要求后，卸落顶托、撤去支架，将自重转交永久支承。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-preload="120" data-retain="400" data-src="../interactive/girder-construction-single-20261019/index.html#girder_falsework" title="支架现浇：独立施工动画" style="height:640px"></iframe></section>
+
+<!-- site-video:girder_falsework -->
+<figure class="girder-site-video" id="video-girder_falsework">
+<div class="site-video-screen"><iframe src="https://www.youtube.com/embed/LpH4QGbgJ34?rel=0" title="桥位浇筑与养护：泵送混凝土、整平与覆盖" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<figcaption><span class="site-video-tag">施工实景 01</span><span>桥位浇筑与养护：泵送混凝土、整平与覆盖</span></figcaption>
+</figure>
+<!-- /site-video -->
+
+
+**施工受力。**浇筑时，湿混凝土荷载通过模板传给支架；达到卸架条件后，梁体才按永久支承体系承担自重。卸架次序、支架沉降与梁体预应力共同影响这一转换。
+
+#### 逐孔移动模架现浇 {.unnumbered #girder-method-span-cast}
+
+**现浇 · 逐孔。**墩旁托架支承移动模架，在本孔合模、浇筑并完成阶段张拉。梁体具备承重条件后落模，模板横向打开以避让桥墩，模架纵移至下一孔。已形成的永久梁体留在原位。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-preload="120" data-retain="400" data-src="../interactive/girder-construction-single-20261019/index.html#girder_span_cast" title="逐孔移动模架现浇：独立施工动画" style="height:640px"></iframe></section>
+
+<!-- site-video:girder_span_cast -->
+<figure class="girder-site-video" id="video-girder_span_cast">
+<div class="site-video-screen"><iframe src="https://www.youtube.com/embed/F0ymQfptzK8?rel=0" title="移动模架施工现场：主桁、支承小车与梁底模板" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<figcaption><span class="site-video-tag">施工实景 02</span><span>移动模架施工现场：主桁、支承小车与梁底模板</span></figcaption>
+</figure>
+<!-- /site-video -->
+
+
+**施工受力。**浇筑时模架承受本孔湿混凝土及施工荷载；落模后，梁体与永久支承接载。模架过孔另有悬臂和支点转换状态，不能用浇筑状态的支承条件代替。
+
+#### 挂篮悬臂浇筑 {.unnumbered #girder-method-cantilever-cast}
+
+**现浇 · 悬臂。**从墩顶零号块向两侧分段浇筑，挂篮承托模板和新浇混凝土，并经前支点、后锚将荷载传给已成梁。完成阶段张拉后卸模、前移挂篮，重复循环至合龙，控制两侧施工不平衡。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-preload="120" data-retain="400" data-src="../interactive/girder-construction-single-20261019/index.html#girder_cantilever_cast" title="挂篮悬臂浇筑：独立施工动画" style="height:640px"></iframe></section>
+
+<!-- site-video:girder_cantilever_cast -->
+<figure class="girder-site-video" id="video-girder_cantilever_cast">
+<div class="site-video-screen"><iframe src="https://www.youtube.com/embed/sMdmsHs0pHE?rel=0&amp;start=105&amp;end=116" title="挂篮施工现场：两侧悬臂、挂篮与模板吊挂" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<figcaption><span class="site-video-tag">施工实景 03</span><span>挂篮施工现场：两侧悬臂、挂篮与模板吊挂</span></figcaption>
+</figure>
+<!-- /site-video -->
+
+
+**施工受力。**悬臂增长使根部负弯矩增大，荷载弯曲使上缘呈受拉趋势，悬臂束主要布置在上部。挂篮承重与前移的支承、后锚条件不同；两侧对称施工可减小墩顶不平衡弯矩，但不消除梁根负弯矩。
+
+#### 整片梁架设与架桥机过孔 {.unnumbered #girder-method-launching-gantry}
+
+**预制 · 整片梁。**运梁车将预制整片梁送入架桥机，双天车完成起吊、纵移和落梁。梁间连接及承载条件满足要求后，架桥机转换支腿、前移主桁至下一孔。架设时移动的是梁，过孔时移动的是设备。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-preload="120" data-retain="400" data-src="../interactive/girder-construction-single-20261019/index.html#girder_launching_gantry" title="整片梁架设与架桥机过孔：独立施工动画" style="height:640px"></iframe></section>
+
+<!-- site-video:girder_launching_gantry -->
+<figure class="girder-site-video" id="video-girder_launching_gantry">
+<div class="site-video-screen"><video controls playsinline preload="metadata" data-src="https://zzhz.com/flv/jny.mp4" aria-label="整片预制梁架设：运梁车喂梁与架桥机接梁"></video><div class="site-video-error" hidden><span>当前网络未能载入视频。</span><a href="../girder-references-20261019.html#site-video-girder_launching_gantry">查看原视频与播放地址</a></div></div>
+<figcaption><span class="site-video-tag">施工实景 04</span><span>整片预制梁架设：运梁车喂梁与架桥机接梁</span></figcaption>
+</figure>
+<!-- /site-video -->
+
+
+**施工受力。**吊点、临时支点与永久支座的位置不同，梁的弯矩分布也随之改变。架桥机过孔时的设备支腿反力、抗倾覆和已架梁段承载条件，需按对应阶段检查。
+
+#### 逐孔预制节段拼装 {.unnumbered #girder-method-span-precast}
+
+**预制 · 逐孔节段。**架桥设备跨越待建桥孔，将预制节段逐块提升并悬挂。节段对位合缝、施加整孔预应力后形成整体，再落梁使永久支座接载，随后解除吊挂并前移设备。单块就位与整孔形成分为不同阶段。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-preload="120" data-retain="400" data-src="../interactive/girder-construction-single-20261019/index.html#girder_span_precast" title="逐孔预制节段拼装：独立施工动画" style="height:640px"></iframe></section>
+
+<!-- site-video:girder_span_precast -->
+<figure class="girder-site-video" id="video-girder_span_precast">
+<div class="site-video-screen"><iframe src="https://www.youtube.com/embed/A1G278KGdrA?rel=0" title="架桥机逐跨推进：预制箱梁跨的形成" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<figcaption><span class="site-video-tag">施工实景 05</span><span>架桥机逐跨推进：预制箱梁跨的形成</span></figcaption>
+</figure>
+<!-- /site-video -->
+
+
+**施工受力。**节段悬挂时由设备承重；接缝、预应力与整孔连接具备条件后，才转为整孔梁承重。落梁、卸吊与设备过孔分别改变荷载传递路径。
+
+#### 预制节段悬臂拼装 {.unnumbered #girder-method-cantilever-precast}
+
+**预制 · 悬臂节段。**下方动画采用桥面吊机，将预制节段提升至悬臂端，完成对位、接缝处理和临时连接，再施加阶段预应力。节段接入梁体并具备承重条件后卸钩，吊机前移，继续两侧拼装。吊具承重与接缝传力分别辨认。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-preload="120" data-retain="400" data-src="../interactive/girder-construction-single-20261019/index.html#girder_cantilever_precast" title="桥面吊机悬臂拼装：独立施工动画" style="height:640px"></iframe></section>
+
+<!-- site-video:girder_cantilever_precast -->
+<figure class="girder-site-video" id="video-girder_cantilever_precast">
+<div class="site-video-screen"><iframe src="https://www.youtube.com/embed/ANad32aqIag?rel=0" title="预制节段悬臂拼装实景：架桥机与节段梁体" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<figcaption><span class="site-video-tag">施工实景 06</span><span>预制节段悬臂拼装实景：架桥机与节段梁体</span></figcaption>
+</figure>
+<!-- /site-video -->
+
+
+**施工受力。**采用桥面吊机时，新节段的起吊荷载经吊机传给已成梁；完成连接和阶段张拉后，节段才成为悬臂的一部分。上部悬臂束、合龙后增加的预应力束及普通构造钢筋具有不同作用。
+
+#### 悬臂长度、根部弯矩与上部配筋 {.unnumbered #girder-cantilever-force-stages}
+
+下图将单墩两侧梁段简化为等刚度、根部固结的悬臂，直接对应悬臂增长、荷载、弯矩与变形。荷载引起的根部负弯矩随悬臂长度显著增大；上部钢筋及悬臂预应力束的位置与这一受力特点相对应。两侧长度或施工荷载不同，还会产生需要由墩与固结体系承担的不平衡作用。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-cantilever-forces-20261019/index.html" title="悬臂施工：长度、弯矩、剪力、变形及上部配筋" style="height:1450px"></iframe></section>
+
+这里显示荷载单独引起的弹性弯曲，并未叠加预应力；上缘受拉趋势不等于预应力混凝土梁的最终拉应力。合龙后支承体系改变，后续荷载的内力应与此前施工历史分别处理。
+
+#### 导梁辅助顶推 {.unnumbered #girder-method-incremental-launch}
+
+**岸后成梁 · 梁体纵移。**梁体在岸后台座形成，前端连接钢导梁，由顶推装置沿滑动支点向桥位纵移。导梁先到前方支点，永久梁体随后跟进；同一截面依次经历不同支承位置，施工内力随顶推位置变化。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-preload="120" data-retain="400" data-src="../interactive/girder-construction-single-20261019/index.html#girder_incremental_launch" title="导梁辅助顶推：独立施工动画" style="height:640px"></iframe></section>
+
+<!-- site-video:girder_incremental_launch -->
+<figure class="girder-site-video" id="video-girder_incremental_launch">
+<div class="site-video-screen"><iframe src="https://www.youtube.com/embed/K56qzyYlb-w?rel=0&amp;start=20&amp;end=55" title="混凝土梁顶推：钢导梁越墩与滑动支点作业" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+<figcaption><span class="site-video-tag">施工实景 07</span><span>混凝土梁顶推：钢导梁越墩与滑动支点作业</span></figcaption>
+</figure>
+<!-- /site-video -->
+
+
+**施工受力。**支点相对梁体不断移动，同一截面可能先承受正弯矩、后承受负弯矩，上下缘受拉位置随之改变。导梁前端到达下一支点前的悬臂状态往往需要重点检查；全程控制位置仍应逐阶段计算确定。
+
+#### 导梁与顶推控制阶段 {.unnumbered #girder-launching-force-stages}
+
+下图同屏比较有、无导梁，给出当前位置的弯矩与变形、同一截面的弯矩历程及各阶段的控制值。蓝色标出正弯矩对应的下缘受拉，橙色标出负弯矩对应的上缘受拉。选择控制阶段即可回到相应梁体位置，辨认梁端悬出、导梁接引和支点转换的影响。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-launching-forces-20261019/index.html?v=labels-20261019" title="顶推施工：有无导梁、正负弯矩与控制阶段" style="height:1660px"></iframe></section>
+
+计算采用独立的理想化梁模型，与前面的设备动画分别设置尺寸。接引前后的支承改变会使阶段结果发生变化；这是准静力状态的转换，不能据此解释冲击或振动。导梁重量、长度和刚度均会改变控制结果。
+
+| 需要核对的施工状态 | 相应设计内容 |
+|---|---|
+| 支架承托、模架过孔与设备换支腿 | 支架基础、临时支承反力、设备稳定及卸载条件 |
+| 整片梁或节段运输、吊装和就位 | 吊重与吊点、局部受力、临时稳定及连接条件 |
+| 悬臂逐段增长与合龙 | 根部弯矩、不平衡作用、阶段预应力及合龙状态 |
+| 梁体顶推经过各支点 | 各阶段支承、同一截面的正负弯矩变化及导梁作用 |
+
+
+<!-- site-video-sources -->
+<p class="girder-video-reference">七段实景的发布者、工程背景、观看片段与原始播放地址统一见<a href="../girder-references-20261019.html#girder-construction-site-videos">施工视频资料</a>。</p>
+<!-- /site-video-sources -->
+
+全书的[施工模型目录](../construction-methods.qmd)另列钢—混凝土组合梁、四种拱桥路径、斜拉桥和悬索桥，共14条典型路径。计算模型、方法资料与动画范围见[独立资料页](../girder-references-20261019.qmd#girder-construction-stage-models)。
+
+### 预制架设与先简支后连续 {#girder-stage-history}
+
+<span id="预制架设与先简支后连续"></span>
+
+预制梁在存梁、运输和吊装阶段的支点位置可能不同，应分别计算弯矩、剪力和局部受力。单片梁落座后还需具备临时支撑或有效横向连接，不能提前采用尚未形成的完整桥面刚度。
+
+[先简支后连续施工动画](../interactive/ch03-construction/index.html?scenario=precast)依次呈现临时支承、墩顶连接与湿接缝、支承转换及桥面施工。动画展示构造和工序；分阶段内力由下例说明。
+
+湿接缝和桥面混凝土刚浇筑时首先增加荷载，达到规定条件后才参与共同工作。先简支后连续梁的早期自重由简支体系承担；墩顶连接和支承转换完成后，新增作用才按连续体系分配。
+
+**例4-4　分阶段内力。**两跨等跨梁每跨 $L=20\ \mathrm m$。简支阶段已施加 $g_1=30\ \mathrm{kN/m}$；在已有变形状态无强迫顶升或转角地形成等刚度连续体系后，再施加 $g_2=10\ \mathrm{kN/m}$。忽略徐变和支点调整，得到：
+
+| 加载状态 | 中支点弯矩 / $\mathrm{kN\cdot m}$ | 每跨几何中点弯矩 / $\mathrm{kN\cdot m}$ |
+|---|---:|---:|
+| 一期简支荷载 $g_1$ | $0$ | $1500$ |
+| 二期连续荷载 $g_2$ | $-500$ | $250$ |
+| 保留历史后叠加 | $-500$ | $1750$ |
+
+一期跨中弯矩为 $g_1L^2/8$；二期中支点及跨中弯矩分别为 $-g_2L^2/8$、$g_2L^2/16$。若将全部 $40\ \mathrm{kN/m}$ 一次施加于成桥连续体系，会得到 $-2000\ \mathrm{kN\cdot m}$ 和 $1000\ \mathrm{kN\cdot m}$，不能反映题设施工历史。
+
+<span id="fig-priority-F19"></span>
+
+### 预拱度与施工线形
+
+预拱度用于补偿从施工阶段至目标时刻的预计净变形，需综合自重、预应力、后续荷载、收缩徐变、温度及支承变位。预制梁还受存梁龄期影响，悬臂施工需考虑挂篮变形与节段测量。成桥弹性挠度的反号不能直接作为所有施工阶段的预拱度。
+
+## 设计案例与检测养护 {#回到方案用一条完整理由说明选择}
+
+### 净空与吊重约束下的方案比较
+
+设一处 $30\ \mathrm m$ 跨越需保持桥下交通，梁高限制为 $1.8\ \mathrm m$，单片吊装能力为 $100\ \mathrm t$。已知T梁方案高 $2.0\ \mathrm m$、单片重 $90\ \mathrm t$；小箱梁方案高 $1.6\ \mathrm m$、单片重 $103\ \mathrm t$。T梁不满足梁高条件，小箱梁不满足吊重条件，两方案均需调整后才能采用。
+
+调整可以涉及截面、分段方式或设备条件，但每一项改变都需落实到相应计算。例如减小梁高会影响抗弯力臂和刚度，分段架设会增加连接与施工阶段验算；不能只修改方案图上的尺寸。
+
+| 设计阶段 | 主要成果 |
+|---|---|
+| 总体布置 | 孔跨、梁型、主梁数量与间距、净空及支承方案 |
+| 作用效应 | 横向分配、纵向控制布载、各组合及阶段内力 |
+| 构件设计 | 截面、纵筋、箍筋、预应力及锚固连接 |
+| 使用性能 | 应力、抗裂或裂缝、短长期挠度及线形 |
+| 施工与维护 | 运输架设、临时支承、体系转换、检查及更换空间 |
+
+方案比较采用相同的设计条件，并同时评价承载、使用、施工与维护要求。本章独立算例各有题定参数，实际贯通设计时应统一几何、材料、荷载和施工条件。
+
+
+
+<span id="支座怎样布置允许什么运动把力交给谁"></span>
+
+支座布置应明确竖向承重、水平力传递、转动和伸缩方向。温度伸缩、支点沉降和偏载可能改变反力与约束状态；单根主梁的截面验算不能代替整联的支承与稳定检查。支座及墩台、基础设计见第8章。
+
+### 常见病害与裂缝
+
+混凝土梁桥的常见病害包括裂缝、渗水与白华、保护层剥落、钢筋或钢束锈蚀，以及支座异常和梁间连接损伤。普通钢筋混凝土构件可在规定裂缝限值内正常工作。裂缝的位置与发展方向同受力、材料和约束条件有关。
+
+::: {#fig-girder-defect-photos}
+<div class="girder-defect-gallery">
+<figure><a href="../interactive/girder-inspection-20261019/photos/W05-corrosion-spalling.png" target="_blank" aria-label="放大：保护层剥落与露筋"><img src="../interactive/girder-inspection-20261019/photos/W05-corrosion-spalling.png" alt="保护层剥落与露筋：梁板底部混凝土缺损，钢筋外露。" loading="lazy"></a><figcaption><b>（1）保护层剥落与露筋</b><span>梁板底部混凝土缺损，钢筋外露。</span></figcaption></figure>
+<figure><a href="../interactive/girder-inspection-20261019/photos/W01-flexural-cracks.png" target="_blank" aria-label="放大：梁底受弯裂缝"><img src="../interactive/girder-inspection-20261019/photos/W01-flexural-cracks.png" alt="梁底受弯裂缝：原图红线标出裂缝位置。" loading="lazy"></a><figcaption><b>（2）梁底受弯裂缝</b><span>原图红线标出裂缝位置。</span></figcaption></figure>
+<figure><a href="../interactive/girder-inspection-20261019/photos/W03-slab-longitudinal-crack-leaching.png" target="_blank" aria-label="放大：纵向裂缝与渗水析白"><img src="../interactive/girder-inspection-20261019/photos/W03-slab-longitudinal-crack-leaching.png" alt="纵向裂缝与渗水析白：空心板底板裂缝附近可见白色析出物。" loading="lazy"></a><figcaption><b>（3）纵向裂缝与渗水析白</b><span>空心板底板裂缝附近可见白色析出物。</span></figcaption></figure>
+<figure><a href="../interactive/girder-inspection-20261019/photos/W04-shear-key-loss.png" target="_blank" aria-label="放大：铰缝材料脱落"><img src="../interactive/girder-inspection-20261019/photos/W04-shear-key-loss.png" alt="铰缝材料脱落：板间接缝损伤，应检查横向连接。" loading="lazy"></a><figcaption><b>（4）铰缝材料脱落</b><span>板间接缝损伤，应检查横向连接。</span></figcaption></figure>
+<figure><a href="../interactive/girder-inspection-20261019/photos/W06-bearing-contact-loss.png" target="_blank" aria-label="放大：支承接触异常"><img src="../interactive/girder-inspection-20261019/photos/W06-bearing-contact-loss.png" alt="支承接触异常：梁底支承处可见空隙，应核查脱空与缺失。" loading="lazy"></a><figcaption><b>（5）支承接触异常</b><span>梁底支承处可见空隙，应核查脱空与缺失。</span></figcaption></figure>
+<figure><a href="../interactive/girder-inspection-20261019/photos/W07-expansion-joint-blockage.png" target="_blank" aria-label="放大：伸缩缝堵塞"><img src="../interactive/girder-inspection-20261019/photos/W07-expansion-joint-blockage.png" alt="伸缩缝堵塞：缝内砂石与杂物占据伸缩空间。" loading="lazy"></a><figcaption><b>（6）伸缩缝堵塞</b><span>缝内砂石与杂物占据伸缩空间。</span></figcaption></figure>
+</div>
+
+混凝土梁桥常见病害的现场图例。原照片中的红线及数字为现场标记，不是本章统一限值；点击照片可放大。
+:::
+
+| 类型 | 典型部位与形态 | 与本章原理的联系 | 判断时还需核对 |
+|---|---|---|---|
+| 弯曲裂缝 | 正弯矩区常由梁底向上发展，负弯矩区常由梁顶向下发展；梁侧裂缝多近似竖向 | 受拉混凝土开裂后，裂缝处拉力主要由纵筋承担，截面刚度改变 | 弯矩区、配筋、预应力和荷载变化，裂缝是否随荷载开合 |
+| 剪切裂缝 | 常见于腹板弯剪区，呈倾斜发展；也可能由弯曲裂缝转折形成 | 主拉应力引起斜裂缝，箍筋、混凝土压杆及纵筋共同传力 | 剪力、箍筋与锚固，以及扭转、支承变位等其他可能因素 |
+| 预应力锚固区裂缝 | 后张梁锚垫板后方或邻近端面，可见沿梁轴方向的劈裂及局部裂缝、剥落 | 集中预压力向截面扩散时产生横向拉应力，需局部承压及抗裂配筋 | 张拉阶段混凝土强度、锚具与孔道位置、局部钢筋、张拉顺序；先张梁应另查放张传力条件 |
+| 收缩与温度裂缝 | 可呈网状、横向或纵向裂缝；在约束、截面突变或新旧混凝土交界处也可能集中 | 收缩或温度变形受内部或外部约束时形成拉应力 | 浇筑与养护记录、龄期、温度变化、约束位置及裂缝发展时间 |
+
+**裂缝形态不能单独确定原因，也不能仅凭宽度判定结构是否安全。**应结合位置、宽度、深度、发展速率、荷载与温度变化，以及渗水、锈迹、剥落等伴随现象综合判断。裂缝还可能成为水和侵蚀介质的通道，使钢筋锈蚀、粘结和截面损伤相互发展。是否允许开裂及裂缝限值，应按构件类型、环境和所用设计规定确定。[\[12\]](../girder-references-20261019.qmd#ref-ch03-14)[\[13\]](../girder-references-20261019.qmd#ref-ch03-15)
+
+### 检测部位与智能巡检 {#girder-inspection}
+
+梁桥检测从传力路径和易受水、盐分及车辆作用的部位展开。跨中梁底侧重弯曲裂缝与变形，支点腹板和梁端侧重斜裂缝及局部损伤，支座侧重接触、活动和位移，接缝与横向联系侧重共同工作状态。排水缺陷还可能把损伤从桥面传到梁端和支座；预应力孔道、箱内和水下基础则需另行安排相应检查。
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-inspection-20261019/index.html" title="T梁桥全桥巡检航线、拍摄机位与同步相机视图" style="height:760px"></iframe></section>
+
+图中以两跨五片T梁桥呈现完整巡检路线：两跨梁底分条拍摄，跨间从桥外绕过中墩，再补拍桥侧、梁端、桥面及墩台。左侧同时显示规划机位，右侧显示当前无人机镜头所见；点击任一机位可切换画面。视场和射线表示拍摄方向，覆盖采样区分重复可见、单次可见和待补检部位。无人机影像用于可达表面的全景记录、疑点定位和近景复拍。遮挡、桥下光线、风、定位条件和电量都会影响可检区域；未拍到的位置须列入待补检清单。影像检查不能替代敲击、近接检查及内部缺陷检测。[\[14\]](../girder-references-20261019.qmd#inspection-maintenance-sources)
+
+| 数据或方法 | 主要提供的证据 | 需要配套确认的内容 |
+|---|---|---|
+| 无人机与近景影像 | 表面裂缝、剥落、锈迹、渗漏及构件外观 | 尺度、光线、分辨率、遮挡和构件位置；不能仅凭像素数直接判定裂缝实际宽度 |
+| 近接检查与现场量测 | 裂缝尺寸、脱空、接触状态、位移和可触及表面的损伤 | 与设计构造、温度、荷载及历史记录对照 |
+| 专项无损检测及必要的局部验证 | 疑似内部脱空、灌浆缺陷、材料或钢束状态 | 方法适用性、空间分辨率、校准及多种证据的一致性 |
+| 结构监测 | 挠度、应变、振动、温度等随时间的变化 | 传感器可靠性与环境、荷载影响；异常响应的原因仍需检查和分析 |
+
+病害记录宜关联**桥梁—跨号—构件—位置—时间—工况—原始影像**，并保留测量尺度与复核结果。机器视觉可标出疑似裂缝或剥落区域，三维模型可定位并比较多期记录；是否构成结构性病害及其影响程度，要回到构造、检测和受力分析。检测模型中的“未发现”与“未覆盖”应采用不同状态。
+
+### 养护、修复与加固 {#girder-maintenance}
+
+养护首先控制损伤继续发展的条件，修复着重恢复局部功能或耐久性，加固则改变或补充结构的受力能力。三者通常相互配合：若渗漏源没有处理，封缝或表面修补后仍可能继续腐蚀；若承载或稳定能力不足，外观修整也不能代替加固。
+
+| 问题与证据 | 可能的处置方向 | 处置后的复核 |
+|---|---|---|
+| 伸缩缝、排水和防水损伤 | 清疏、更换止水或修复防水构造 | 排水是否通畅，下方梁端与支座是否仍渗水 |
+| 经评定可修复的裂缝、剥落与锈蚀 | 按裂缝活动性、损伤深度和钢筋状态选封闭、灌注、修补与防护 | 粘结、修补质量、耐久性及裂缝后续发展 |
+| 经评定存在受力能力不足 | 按具体机制选用截面增大、外贴材料、体外预应力或体系调整等方案 | 新旧材料共同工作、锚固、施工阶段、承载与正常使用 |
+| 支座失效或支承异常 | 维护、修复、更换；确需顶升或纠偏时编制专项设计 | 反力传递、支承接触、标高、活动方向及结构响应 |
+| 墩台、基础沉降或冲刷 | 先查明地基、水流和基础状况，再确定防护与加固 | 下部结构稳定及对上部结构内力、线形和支承的影响 |
+
+**体外预应力加固。**体外索通过锚固构造把力传给梁体，转向构造改变索的方向，并向梁体传递转向力。在正弯矩区将索布置于截面下方，张拉后可对梁体施加轴向预压力和抵抗荷载弯矩的作用。索线位置、锚固区、转向区和施工阶段须共同设计；外加一条索并不等于完成承载能力验算。
+
+<section id="girder-external-strengthening" class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-strengthening-20261019/index.html" title="T梁体外预应力加固：锚固、转向、穿索和张拉" style="height:640px"></iframe></section>
+
+**顶升换座。**先由千斤顶与临时支撑接替原支座承重，取出旧支座、安放新支座后，再同步落梁，使反力回到新支座。左侧全桥显示各支点同步顶升，右侧局部对应同一处支承，显示千斤顶、临时支撑与新旧支座的接触关系。
+
+::: {#fig-girder-bearing-replacement}
+
+<section class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-lifting-20261019/index.html" title="支座更换：全桥与局部同步展示顶升、临时承重、换座和落梁" style="height:640px"></iframe></section>
+
+支座更换的受力转换：同步顶升、临时承重、换座及落梁复位。
+
+:::
+
+支座更换会暂时改变传力路径。顶升前须完成相应设计，顶升与复位过程中控制纵横向同步和标高，并监测顶升力、位移及控制部位的应力、应变和裂缝。支座的正常活动、异常错位和整联纠偏是不同问题，不能共用一个未经分析的位移限值。[\[15\]](../girder-references-20261019.qmd#bearing-replacement-source)
+
+**整体顶升与净空改造。**当桥下净空不足时，抬高梁体还必须同步解决永久支承标高、墩台接长与桥头衔接。下图用独立教学尺寸显示整联顶升、临时承重、支承接长和重新落座，并比较同一水位下的梁底净空。船舶通过只用于说明几何净空的变化；实际通航条件仍由规定水位、船型与航道要求共同确定。
+
+横潦泾大桥的预应力混凝土连续箱梁曾整体抬升 $1.58\ \mathrm m$，用于改善通航条件。下图采用T梁和 $2.00\ \mathrm m$ 提升量说明过程，工程资料与图示假定另见[顶升资料](../girder-references-20261019.qmd#girder-construction-stage-models)。
+
+<section id="girder-whole-bridge-lift" class="bridge-experiment bridge-experiment-compact"><iframe data-auto-height="content" data-src="../interactive/girder-lifting-20261019/clearance.html" title="桥梁整体顶升：全桥与局部同步、支承接长与净空变化" style="height:720px"></iframe></section>
+
+管养形成“建档—检查—评定—处治—复检”的连续记录。设计阶段就应给检查通道、支座更换空间、排水构造和传感器维护留下条件；运行期的检测结果再用于修正维护计划和下一次设计判断。
+
+### 案例：无锡锡港路上跨桥侧翻
+
+2019年10月10日，无锡312国道锡港路上跨桥一联箱梁发生侧翻。调查认定，两辆严重超载车辆近距离沿同侧车道行驶，偏心荷载的失稳效应超过上部结构的稳定效应，支座系统失效后，梁体相对墩柱滑移、转动并倾覆。报告同时指出，原设计总体满足设计期规范。梁桥设计除截面受弯、受剪验算外，还需明确支承约束并检查横向稳定；单片梁的抗弯承载力不能代替整联抗倾覆验算。[\[10\]](../girder-references-20261019.qmd#ref-ch03-12)
+
+### 案例：Lake View Drive桥边梁坠落
+
+2005年12月27日，美国Lake View Drive桥第三跨的一片预应力混凝土边箱梁在跨中附近断落。调查发现梁底混凝土明显剥落，钢绞线严重锈蚀；事故当时未报告桥上超载或桥下车辆撞击。一些梁的内部损伤比外观显示的更严重。钢束锈蚀会改变有效截面和传力条件，因此耐久性、排水防护与检测评估应同承载验算相联系；表面裂缝少，不能证明内部钢束完好。[\[11\]](../girder-references-20261019.qmd#ref-ch03-13)
+
+![2005年Lake View Drive桥第三跨边箱梁断落后的现场。](../interactive/girder-inspection-20261019/photos/W08-lake-view-fallen-girder.png){#fig-girder-lake-view width=75%}
+
+### 案例：Riley Road匝道施工支架失效
+
+1982年4月15日，美国Riley Road匝道现浇后张预应力混凝土箱梁在顶板浇筑阶段坍塌，第四、第五单元尚未张拉。调查认为，最可能的触发因素是支架塔腿下混凝土垫块破坏；垫块、楔块、纵向约束及托座焊接等多项缺陷共同促成失效。张拉前的荷载仍依靠临时支架传递，成桥后的受力体系不能代替施工阶段验算。[\[16\]](../girder-references-20261019.qmd#riley-construction-source)
+
+![Riley Road匝道坍塌后的现场。图中标注的临时支撑为事故后增设。](../interactive/girder-inspection-20261019/photos/riley-1982-failure-photo.png){#fig-girder-riley width=75%}
+
+### 案例：严坪村Ⅱ号大桥洪水下墩桩失效
+
+2024年7月19日，陕西严坪村Ⅱ号大桥在洪水中发生局部垮塌。该桥采用20 m装配式预应力混凝土简支变连续小箱梁。调查认定，大量树木等漂流物壅塞桥墩，流水压力和漂流物推力不断增大，并受系梁违规抬升等因素影响，最终造成墩桩折断，相邻桥跨失去支承。其主要过程是“壅塞与水力作用增大—墩桩折断—上部结构失去支承”，不能简单归为基础被淘空。梁体检查需要与墩桩、河道和漂流物巡查共同进行。[\[17\]](../girder-references-20261019.qmd#yanping-flood-source)
+
+![严坪村Ⅱ号大桥局部垮塌关系，采用调查报告中的示意图。](../interactive/girder-inspection-20261019/photos/yanping-2024-collapse-official-diagram.png){#fig-girder-yanping width=90%}
+
+这四例分别涉及横向稳定、钢束耐久性、施工临时支承和洪水下墩桩承载。识别事故机制，应沿实际传力路径确定先失效的环节，再检查其对相邻构件与桥跨的影响。
+
+<span id="norm-reading-codex"></span><span id="girder-steel-composite"></span><span id="变高度曲线和斜交方案更复杂时模型保留什么"></span>
+
+本章的[补充计算、图源与参考文献](../girder-references-20261019.qmd)集中列于独立资料页。
+
+
+## 本章小结与练习 {#ch04-summary}
+
+梁桥设计从结构体系与总体布置出发，经荷载分配得到主梁内力，再完成截面、构造和使用性能验算。简支、连续与悬臂体现不同的支承和连续关系，普通钢筋混凝土与预应力混凝土决定材料和初始状态；二者应分别识别。施工顺序改变有效截面与支承条件，设计必须保留相应阶段的受力历史。运行期以构件位置为线索记录病害，结合近接检查、专项检测和监测完成评定；维修与加固后还需复检，使设计、检测和管养资料连续对应。
+
+<span id="fig-priority-F14"></span><span id="fig-priority-F15"></span><span id="fig-priority-F16"></span><span id="fig-priority-F17"></span>
+
+<span id="chapter-exercises"></span>
+
+### 本章练习
+
+**1. 桥面连续与结构连续。**相邻两跨预制梁的桥面铺装连续，但墩顶主梁端之间尚无可传递纵向弯矩的结构连接。应怎样确定纵向体系？
+
+**2. 横向分担与纵向弯矩。**五片相同主梁对称布置，取横向刚性、各梁同一纵向位置柔度相同且忽略抗扭的模型。总荷载 $P=200\ \mathrm{kN}$ 居中作用时，各梁分担多少？若每片梁按 $L=30\ \mathrm m$ 简支、分担力位于跨中，求该力产生的最大弯矩。说明横向分担荷载与纵向支座反力的区别。
+
+**3. 配筋与抗弯承载力。**单筋矩形截面 $b=250\ \mathrm{mm}$、$h_0=460\ \mathrm{mm}$、$A_s=2000\ \mathrm{mm^2}$。题定等效压应力 $f_{cd}=13.8\ \mathrm{MPa}$、钢筋应力 $f_{sd}=330\ \mathrm{MPa}$、$\xi_b=0.53$，假定受拉钢筋屈服。计算 $x=f_{sd}A_s/(f_{cd}b)$，检查受压区限值，并求 $M_u=f_{sd}A_s(h_0-x/2)$。
+
+**4. 预应力与使用性能。**题定均质未开裂对称截面 $A=0.80\ \mathrm{m^2}$、$I=0.25\ \mathrm{m^4}$、$c=0.70\ \mathrm m$、$e=0.35\ \mathrm m$、$M=2500\ \mathrm{kN\cdot m}$。有效预力由 $4000\ \mathrm{kN}$ 降为 $3200\ \mathrm{kN}$，取拉应力为正，求下缘应力
+$$
+\sigma_b=-\frac PA-\frac{Pec}I+\frac{Mc}I.
+$$
+下缘受压能否说明整梁设计完成？另解释等荷载、等跨径简支梁的有效刚度降为原值0.60倍后，挠度为何由 $10.42\ \mathrm{mm}$ 增至 $17.36\ \mathrm{mm}$。
+
+**5. 施工历史。**两跨梁每跨 $20\ \mathrm m$，连接前各跨简支并施加 $30\ \mathrm{kN/m}$；无强迫变形地形成等刚度连续梁后，再施加 $10\ \mathrm{kN/m}$。忽略徐变和支点调整，求成桥中支点及各跨几何中点弯矩，并解释为何不能将全部荷载一次施加于成桥体系。
+
+**6. 梁桥方案表达与核验。**按第4.6节的净空和吊重条件，比较T梁与小箱梁方案，并用AI辅助制作同尺度平面、立面和横断面图。标明已知尺寸、支座和净空，未给尺寸须注明图示假定。提出一项调整方向，列出至少两项需重新计算的内容，并独立核验三视图及限制条件。
+
+**7. 多排受拉钢筋。**梁高 $h=380\ \mathrm{mm}$。下排3根、上排2根同直径钢筋，分别距底 $45\ \mathrm{mm}$ 和 $100\ \mathrm{mm}$；两排均受拉且应力相同。求合力点距底距离与有效高度，说明它是否属于双筋截面。
+
+**8. 箍筋与构造。**梁宽 $b=420\ \mathrm{mm}$，采用双肢直径 $10\ \mathrm{mm}$ 箍筋，间距 $s=400\ \mathrm{mm}$。题定最小配箍率为 $0.11\%$，所查近支点范围的最大间距为 $100\ \mathrm{mm}$。计算 $A_{sv}$ 与 $\rho_{sv}=A_{sv}/(bs)$，判断是否满足这两项要求，并说明为何抗剪承载力计算通过后仍要检查构造。
+
+### 参考答案与评价要点 {.unnumbered}
+
+**第1题。**应按当时实际简支条件分析。桥面铺装连续不代表主梁能跨墩传递弯矩；形成有效的墩顶结构连接及相应支承条件后，后续作用才可按连续体系计算。
+
+**第2题。**各梁分担 $R_i=P/5=40\ \mathrm{kN}$，该分担力产生 $M_{\max}=40\times30/4=300\ \mathrm{kN\cdot m}$。分担力是施加在该片主梁上的荷载；该力单独作用时，梁两端的纵向支座反力各为 $20\ \mathrm{kN}$。等分依赖题定横向刚性、相同柔度和居中加载条件。
+
+**第3题。**
+$$
+x=\frac{330\times2000}{13.8\times250}
+=191.304\ \mathrm{mm}<243.8\ \mathrm{mm},
+$$
+$$
+z=460-\frac{x}{2}=364.348\ \mathrm{mm},
+\qquad
+M_u=330\times2000\times364.348
+=240.470\times10^6\ \mathrm{N\cdot mm}
+=240.470\ \mathrm{kN\cdot m}.
+$$
+加筋后必须重算压区和力臂。
+
+**第4题。**
+$$
+\sigma_b=-4.000-3.136+7.000=-0.136\ \mathrm{MPa}.
+$$
+原预力下为 $-1.92\ \mathrm{MPa}$，预力损失使下缘减压。此结果不能替代承载、局部传力、挠度及其他阶段验算。题定等刚度简支模型中 $v\propto1/(EI)_{\mathrm{eff}}$，故 $10.4167/0.60=17.36\ \mathrm{mm}$。
+
+**第5题。**一期简支跨中弯矩为 $30\times20^2/8=1500\ \mathrm{kN\cdot m}$；二期连续中支点为 $-10\times20^2/8=-500\ \mathrm{kN\cdot m}$，几何中点为 $10\times20^2/16=250\ \mathrm{kN\cdot m}$。叠加后分别为 $-500\ \mathrm{kN\cdot m}$ 和 $1750\ \mathrm{kN\cdot m}$。一次加载于连续体系会得到 $-2000\ \mathrm{kN\cdot m}$ 和 $1000\ \mathrm{kN\cdot m}$，不符合施工历史。
+
+**第6题。**T梁超出梁高上限，小箱梁超出吊重上限。可调整截面、分段架设或设备条件，相应复核重量、连接、施工阶段内力或净空。评价以尺寸一致、约束核对和调整后的复核内容为依据；图上修改标签不能替代计算。
+
+**第7题。**
+$$
+a_s=\frac{3\times45+2\times100}{5}=67\ \mathrm{mm},
+\qquad h_0=380-67=313\ \mathrm{mm}.
+$$
+只量至最低排会得到 $335\ \mathrm{mm}$，高估有效高度。两排均在受拉侧，仍为单筋截面；双筋截面的受压侧也有参与计算的纵筋。
+
+**第8题。**
+$$
+A_{sv}=2\times\frac{\pi\times10^2}{4}=157.080\ \mathrm{mm^2},\qquad
+\rho_{sv}=\frac{157.080}{420\times400}=0.09350\%<0.11\%.
+$$
+间距 $400\ \mathrm{mm}$ 也超过题定近支点限值 $100\ \mathrm{mm}$，两项均不满足。箍筋数量、间距及锚固共同保证斜裂缝形成后的传力与构造可靠性，不能只检查一项承载数值。
+
+<span id="ref-ch03-1"></span><span id="ref-ch03-2"></span><span id="ref-ch03-3"></span><span id="ref-ch03-4"></span><span id="ref-ch03-5"></span><span id="ref-ch03-6"></span><span id="ref-ch03-7"></span><span id="ref-ch03-8"></span><span id="ref-ch03-9"></span><span id="ref-ch03-10"></span><span id="ref-ch03-11"></span>
+
+[补充计算与参考文献](../girder-references-20261019.qmd)
+
+<script src="../interactive/girder-design/chapter-embeds.js?v=20261019-independent-construction" defer></script>

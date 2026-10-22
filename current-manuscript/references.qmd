@@ -1,0 +1,50 @@
+# 参考文献与标准 {.unnumbered}
+
+各章末列出该章主要使用的文献，正文在需要处用短标注连接到书目；图像来源仍随图保留。这里集中列出全书通用依据，避免读者在每页反复遇到长网址。书目采用顺序编码、悬挂缩进，区分标准[S]、图书[M]、期刊[J]、报告[R]和网络资源[EB/OL]。
+
+著录规则版次已核对为 **GB/T 7714—2025**，自2026年7月1日起实施，见[国家标准官方登记](https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=C6CE52E55AC09B9C79A20AEA77CEDD14)。未核实的出版项、条号和页码不补造；引用具体计算条款时，以该章实际注明的版本和适用条件为准。
+
+## 全书通用文献 {.unnumbered}
+
+::: {.chapter-references}
+
+1. 肖汝诚. 桥梁结构体系[M]. 北京: 人民交通出版社, 2013.
+2. 中华人民共和国交通运输部. 公路工程结构可靠性设计统一标准: JTG 2120—2020[S]. 2020. [官方发布及标准入口](https://xxgk.mot.gov.cn/2020/jigou/glj/202006/t20200623_3313243.html).
+3. 中华人民共和国交通运输部. 公路桥涵设计通用规范: JTG D60—2015[S]. 2015. [官方发布及标准入口](https://xxgk.mot.gov.cn/2020/jigou/glj/202006/t20200623_3312312.html).
+4. 中华人民共和国交通运输部. 公路钢筋混凝土及预应力混凝土桥涵设计规范: JTG 3362—2018[S]. 2018. [官方发布及标准入口](https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3312720.html).
+5. 中华人民共和国交通运输部. 公路钢结构桥梁设计规范: JTG D64—2015[S]. 2015. [官方发布及标准入口](https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3312425.html).
+6. 中华人民共和国交通运输部. 公路桥梁抗震设计规范: JTG/T 2231-01—2020[S]. 2020. [官方发布及标准入口](https://xxgk.mot.gov.cn/2020/jigou/glj/202006/t20200630_3321370.html).
+7. 中华人民共和国交通运输部. 公路桥梁抗风设计规范: JTG/T 3360-01—2018[S]. 2018. [官方发布及标准入口](https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3313096.html).
+8. 中华人民共和国交通运输部. 公路桥涵地基与基础设计规范: JTG 3363—2019[S]. 2019. [官方发布及标准入口](https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3313201.html).
+9. 中华人民共和国交通运输部. 公路桥涵施工技术规范: JTG/T 3650—2020[S]. 2020. [官方发布及标准入口](https://xxgk.mot.gov.cn/jigou/glj/202006/t20200630_3321368.html).
+10. 中华人民共和国交通运输部. 公路工程混凝土结构耐久性设计规范: JTG/T 3310—2019[S]. 2019. [官方发布及标准入口](https://xxgk.mot.gov.cn/jigou/glj/202006/t20200623_3313135.html).
+11. 中华人民共和国交通运输部. 公路桥涵养护规范: JTG 5120—2021[S]. 2021. [官方发布及标准入口](https://xxgk.mot.gov.cn/jigou/glj/202108/t20210825_3616530.html).
+12. 中华人民共和国交通运输部. 公路桥梁加固设计规范: JTG/T 5431—2025[S]. 2025. [官方发布及标准入口](https://xxgk.mot.gov.cn/2020/jigou/glj/202601/t20260105_4196388.html).
+13. 中华人民共和国交通运输部. 公路桥梁加固施工技术规范: JTG/T 5531—2025[S]. 2025. [官方发布及标准入口](https://xxgk.mot.gov.cn/2020/jigou/glj/202601/t20260105_4196388.html).
+14. 国家市场监督管理总局, 国家标准化管理委员会. 桥梁用结构钢: GB/T 714—2025[S]. 2025. [国家标准登记](https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=F2AD3CB1374400E6213C36819387453D).
+15. Ji T, Bell A, Wu Y. The philosophical basis of Seeing and Touching Structural Concepts[J]. European Journal of Engineering Education, 2021, 46(6): 889–907. DOI: [10.1080/03043797.2021.1936459](https://doi.org/10.1080/03043797.2021.1936459).
+16. University of Manchester. Seeing and Touching Structural Concepts[EB/OL]. [2026-10-03]. [教学资源](https://epsassets.manchester.ac.uk/structural-concepts/).
+17. 刘龄嘉, 王晓明. 桥梁工程: 第2版（网络版）[EB/OL]. [2026-10-03]. [网络教材](https://qlgc.readthedocs.io/).
+18. NPTEL. Bridge Engineering[EB/OL]. [2026-10-03]. [课程入口](https://www.nptel.ac.in/courses/105105216).
+19. Massachusetts Institute of Technology. Structural Engineering Design[EB/OL]. 2003[2026-10-03]. [开放课程](https://ocw.mit.edu/courses/1-051-structural-engineering-design-fall-2003/).
+20. Washington State Department of Transportation. Tacoma Narrows Bridge History[EB/OL]. [2026-10-03]. [历史资料](https://wsdot.wa.gov/TNBhistory/).
+21. Federal Highway Administration. FHWA Launches Aerodynamics Webinar Series[EB/OL]. 2013[2026-10-03]. [专题资料](https://www.fhwa.dot.gov/publications/focus/13dec/13dec03.cfm).
+22. Federal Highway Administration. Bridge Preservation Guide: Maintaining a Resilient Infrastructure to Preserve Mobility[R/OL]. [2026-10-03]. [报告原文](https://www.fhwa.dot.gov/bridge/preservation/guide/guide.pdf).
+
+:::
+
+## 版次与引用说明 {.unnumbered}
+
+公路规范版次以交通运输部[现行目录（截至2025年11月）](https://xxgk.mot.gov.cn/jigou/glj/202511/t20251113_4179759.html)为基础，并检查后续发布公告。JTG/T 5431—2025、JTG/T 5531—2025于2026年4月1日起实施，原JTG/T J22—2008、JTG/T J23—2008同时废止；旧工程报告引用旧版时，应按其当时的设计背景理解，不能直接用于现行设计。
+
+本书原创网页、有限元教学例题与录课资源属于课程组内部教学材料，入口见[核心资源索引](core-resources.qmd)，不列作外部发表文献。照片与原图的署名、许可和出处见图注及[图片来源索引](publication-images.qmd)。首章通航、材料和方案比选的具体条文定位见[首章规范依据页](interactive/ch01-sources/index.html)。
+
+
+## 动力学原始研究与数学基础补充 {.unnumbered #ref-dynamics-primary}
+
+- Ammann, O. H.; von Kármán, T.; Woodruff, G. B. *The failure of the Tacoma Narrows Bridge*. 1941-03-28. [Caltech原始报告馆藏与扫描件](https://authors.library.caltech.edu/records/q1ehq-5e206)。当前据馆藏核定题名、作者与日期；全文扫描件的逐页图文核读另需完成。
+- Theodorsen, T. *General Theory of Aerodynamic Instability and the Mechanism of Flutter*. NACA Report 496. [NASA馆藏](https://ntrs.nasa.gov/citations/19930090935)，[扫描全文](https://ntrs.nasa.gov/api/citations/19930090935/downloads/19930090935.pdf)。本书定位依据NASA标注为1949年的版本，特别是印刷页1、19—21；存档日期不直接代表研究首次发表年份。
+- 赵林、刘丛菊、葛耀君．桥梁结构涡激共振的敏感性．[期刊原始页面，DOI: 10.7638/kqdlxxb-2020.0105](https://kqdlxxb.xml-journal.net/article/doi/10.7638/kqdlxxb-2020.0105)。正文采用其摘要已明确的敏感性论述；未据摘要推定试验细节或处置时间表。
+- NIST. [Extreme Winds: Overview](https://www.itl.nist.gov/div898/winds/overview.htm)。年极值、分块最大值、超阈值与分位值的统计方法入口。
+- USGS. [The 100-Year Flood](https://www.usgs.gov/water-science-school/science/100-year-flood)。用于对读年超越概率的含义，不作为我国桥梁设计重现期的取值标准。
+

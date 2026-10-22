@@ -1,0 +1,51 @@
+# 工程判断方法索引 {.unnumbered}
+
+本页汇集常用判断方法的主讲位置。复习公式、假定与完整算例时进入正式章节；比较实桥或把方法用于其他对象时，再进入拓展专题。
+
+## 知识主讲位置 {.unnumbered}
+
+| 方法 | 核心检查 | 主讲位置 |
+|---|---|---|
+| 合力与合矩 | 简化前后是否保留同一外作用 | [第2章·用平衡检查第一张计算图](chapters/ch02-foundations.qmd#用平衡检查第一张计算图) |
+| 内力、应力与偏心 | 研究对象、输出量与正负号是否一致 | [第2章·偏心压力怎样成为轴力与弯矩](chapters/ch02-foundations.qmd#内力应力偏心与设计接口) |
+| 平衡与位移协调 | 仅靠平衡还缺少什么条件 | [第4章·超静定分析](chapters/ch03.qmd#多一个支座为什么需要用位移来求力) |
+| 截面与材料布置 | 同样用料放在何处，增加何种构造要求 | [第2章·材料放在哪里：面积、惯性矩和截面模量](chapters/ch02-foundations.qmd#截面性质弯曲剪切与扭转) |
+| 初始状态 | 预压力和加载历史怎样改变后续响应 | [第2章·预应力](chapters/ch02-foundations.qmd#预应力索拱平衡与初始状态)、[施工顺序与内力](chapters/ch02-foundations.qmd#阶段加载历史) |
+| 约束与强迫变形 | 哪个方向允许移动，哪个方向传力 | [第4章·支座布置与连接构造](chapters/ch03.qmd#支座怎样布置允许什么运动把力交给谁) |
+| 单位作用与影响线 | 固定哪个输出，移动哪个输入 | [第3章·移动车辆、人群与影响线](chapters/ch02.qmd#移动作用包络与非线性情景) |
+| 尺度比较 | 哪些尺寸一起变，哪些荷载保持不变 | [第4章·总体布置与跨径选择](chapters/ch03.qmd#跨度增长以后为什么要改变梁桥方案) |
+| 刚度、稳定与动力 | 变形、失稳和振动是否分清 | [第2章·从弯矩到挠度](chapters/ch02-foundations.qmd#变形能量与稳定)、[欧拉屈曲](chapters/ch02-foundations.qmd#basic-stability)、[特征值与振型](chapters/ch02-foundations.qmd#math-eigenvector-intuition) |
+| 模型验证与确认 | 计算是否正确，模型是否代表所问对象 | [第10章·模型验证、确认与不确定性](chapters/ch10-fem.qmd#验证确认与不确定性) |
+| 时间与不确定性 | 当前满足的条件在运营中怎样变化 | [第3章·可靠度](chapters/ch02.qmd#可靠度失效域与方法边界)、[配套专题·全寿命评价](chapters/ch10-lifecycle.qmd#全寿命评价韧性与维护决策) |
+
+线性叠加用于与其假定相容的状态；开裂、脱空或显著大变形后，应先核对模型条件。具体边界随上述各节的计算对象说明。
+
+## 设计迁移专题 {.unnumbered}
+
+- [轻型桥梁设计案例](lightweight-design.qmd)：保留实桥照片、原书定位与三个几何模型，比较桥位、构件和支承布置。
+- [桥梁设计方法与跨领域迁移](bridge-thinking.qmd)：将方案取舍、类比和比较试验用于书架、设备台、管道与连廊，并配三道文字练习。
+- [板与梁比较](interactive/plate-chain.html)：观察相同荷载换到另一侧时，局部响应和单梁结果的差别。理论主讲见[第10章·模型层级](chapters/ch10-fem.qmd#模型层级几何连接与边界)。
+
+## 尺度比较 {.unnumbered #尺度规律先声明什么一起变}
+
+只增大跨度与全尺寸相似放大采用不同条件；固定集中力、固定线荷载、固定面压力和自重也应分开。基础梁关系见[第4章相应节](chapters/ch03.qmd#跨度增长以后为什么要改变梁桥方案)，条件对照与生活对象迁移见[拓展专题·尺度与加载条件](bridge-thinking.qmd#scale-comparison)。风洞的动力和流动相似另见[第9章·风洞试验与相似条件](chapters/ch09-wind.qmd#风洞试验相似与不确定性)。
+
+## 数字资源索引 {.unnumbered}
+
+[各章实验入口](interactive/learning-map.html)按主题查找模型。进入模型后先确认参数和输出，再选择与问题对应的观察位置；索引页不另设与正式章节重复的题组。
+
+## 从课堂问题提炼的建模方法 {.unnumbered #course-modeling-methods}
+
+先观察并作出预测，画自由体或定义变量，只改变一个关键条件，再用结果检查原先解释。若结果不一致，应记录它，再决定补充哪一项试验或模型。
+
+| 可迁移的方法 | 本书中的具体问题 | 带走的一句话 |
+|---|---|---|
+| 变量与时间口径 | [数学基础：概率、随机过程与重现期](chapters/ch02-foundations.qmd#math-random-variables) | 先写清“什么事件、多少年”，再计算概率 |
+| 目标与约束 | [由线形目标寻找索力](chapters/ch02-foundations.qmd#优化明确可以调整什么希望改善什么) | 写清能调整什么、要改善什么、哪些状态不允许 |
+| 从测点到向量 | [模态比例](chapters/ch02-foundations.qmd#math-eigenvector-intuition)、[三维振型](chapters/ch09-wind.qmd#dynamics-first-observation) | 形态、节奏与幅值是不同信息 |
+| 改变自由体边界 | [拱桥水平推力闭合](chapters/ch04.qmd#arch-course-method) | 区分外部约束与内部传力 |
+| 几何—连接—刚度 | [斜索的两个分量](chapters/ch05.qmd#cable-stayed-course-method) | 投影给方向，协调给分担 |
+| 分开整体与局部 | [主缆与吊点间主梁](chapters/ch06.qmd#suspension-course-method) | 每个尺度都要有自己的对象与边界 |
+| 用反常结果检查假设 | [虎门桥课堂研究路线](chapters/ch09-wind.qmd#wind-course-investigation) | 不一致要解释，不能只选喜欢的曲线 |
+| 沿一手证据重建问题 | [塔科马报告与早期颤振研究](chapters/ch09-wind.qmd#wind-primary-sources) | 区分观察、当时解释与今天的教学推导 |
+

@@ -1,0 +1,285 @@
+# 数学与力学：桥梁中的应用索引 {.unnumbered}
+
+::: {.mm-index}
+<p class="mm-index-intro">从桥梁问题出发，回到支撑它的数学与力学。正文中的紫色标识与这里互相连接：既可追问“这个公式依据什么”，也可查找“学过的原理用在了哪些桥梁问题里”。</p>
+<p>先按章节或知识类型筛选，再点击应用位置。每处原理回顾都留在实际讲解的位置，原有推导、算例与图表按正文顺序阅读。</p>
+<div class="mm-index-toolbar" role="search" aria-label="筛选数学力学应用"><label>查找知识或桥梁问题<input type="search" placeholder="如：矩阵、支座、概率、索力" aria-label="查找知识或桥梁问题"></label><label>知识类型<select data-filter="kind"><option value="">全部</option><option>数学工具</option><option>力学原理</option></select></label><label>应用章节<select data-filter="chapter"><option value="">全书</option><option value="1">第1章 桥梁工程概论与总体设计</option><option value="2">第2章 桥梁构件的数学与力学基础</option><option value="3">第3章 桥梁上的作用、作用组合与可靠度</option><option value="4">第4章 梁桥设计</option><option value="5">第5章 拱桥设计</option><option value="6">第6章 斜拉桥设计</option><option value="7">第7章 悬索桥设计</option><option value="8">第8章 支座、墩台与基础</option><option value="9">第9章 桥梁动力学与抗风抗震设计</option><option value="10">第10章 数字建模与智能设计</option><option value="extension">配套专题</option></select></label><button type="button">重置筛选</button></div>
+<p class="mm-filter-status" role="status" aria-live="polite"></p><p class="mm-no-match" hidden>没有匹配的应用。可减少关键词或切换到“全书”。</p>
+
+先补共同基础，可直接读[第2章·桥梁分析的数学基础](chapters/ch02-foundations.qmd#bridge-math-foundations)：微积分 → 微分方程及边界条件 → 矩阵、特征值与振型 → 概率与随机过程 → 目标与约束优化。随后沿梁与板、受压构件、拱与索的顺序使用这些工具。
+
+## 几何投影与尺度分析 {#mm-geometry-scale .unnumbered .mm-index-concept}
+
+<span class="mm-kind">数学工具</span>
+<div class="mm-definition"><p>投影关系把斜交方向的长度换算到跨越方向；相似放大时，长度、面积和体积分别按尺度的一次、二次和三次变化。</p><p><strong>桥梁中用来做什么：</strong>确定斜交桥的跨越长度，判断跨径放大后自重与截面需求为何不能只按长度同比增加。</p></div>
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="1"><td><a href="chapters/ch01.html#斜交对跨越长度的影响">第1章 · 斜交对跨越长度的影响</a></td><td>将跨越方向净宽投影到桥轴方向，核对斜交角的定义。</td></tr>
+<tr data-chapter="1"><td><a href="chapters/ch01.html#几何相似与自重尺度">第1章 · 几何相似与自重尺度</a></td><td>通过八个小块拼合，比较相似放大后的长度、截面面积与自重。</td></tr>
+</tbody></table>
+
+## 微分与积分 {#mm-differential-integral .unnumbered .mm-index-concept}
+
+<span class="mm-kind">数学工具</span>
+<div class="mm-definition"><p>微分描述局部变化率，积分将分布量累积为总体量；由导数恢复函数时，需要确定积分常数及相应边界或初始条件。</p><p><strong>桥梁中用来做什么：</strong>连接荷载、剪力、弯矩和变形，并累积分布作用。</p></div>
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#微积分从局部变化到整体结果">第2章 · 位移、速度与加速度</a></td><td>用微段平衡连接荷载、剪力与弯矩，并区分空间变化与时间变化</td></tr>
+<tr data-chapter="3"><td><a href="chapters/ch02.html#集中力与分布力的叠加">第3章 · 集中力与分布力的叠加</a></td><td>沿加载范围积分求效应</td></tr>
+<tr data-chapter="8"><td><a href="chapters/ch07.html#曲线桥自由热变形的积分">第8章 · 曲线桥自由热变形的积分</a></td><td>沿曲线桥轴累计热应变</td></tr>
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#虚功与单元方程选读">第10章 · 虚功与单元方程（选读）</a></td><td>由虚功积分形成单元刚度与等效荷载</td></tr>
+</tbody></table>
+
+## 应力积分与截面合力 {#mm-resultant-integration .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>截面内力是应力对面积的积分，弯矩还包含相对参考轴的力臂。</p><p><strong>桥梁中用来做什么：</strong>连接总体梁内力、截面应力和局部结果。</p></div>
+
+先备知识：微分与积分。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#同一片梁中的四种量">第2章 · 同一片梁中的四种量</a></td><td>区分截面内力、材料点应力与构件位移，由应力积分形成合力与合矩</td></tr>
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#从壳内力到截面应力">第10章 · 从壳内力到截面应力</a></td><td>核对壳与梁的结果层次</td></tr>
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#单元与目标响应">第10章 · 单元与目标响应</a></td><td>由边界面力积分核对截面合力与合矩</td></tr>
+</tbody></table>
+
+## 力与力矩平衡 {#mm-equilibrium .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>静力平衡要求合力与合力矩同时为零，不能只核对总反力。</p><p><strong>桥梁中用来做什么：</strong>判断梁、拱、索、塔和基础的传力闭合。</p></div>
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#用平衡检查第一张计算图">第2章 · 用平衡检查第一张计算图</a></td><td>用同一自由体的合力与合矩核对支座反力</td></tr>
+<tr data-chapter="5"><td><a href="chapters/ch04.html#压力线偏心距与截面核心">第5章 · 压力线、偏心距与截面核心</a></td><td>用内力合力位置解释拱受力</td></tr>
+<tr data-chapter="8"><td><a href="chapters/ch07.html#步骤三三项平衡回代">第8章 · 步骤三：三项平衡回代</a></td><td>各桩轴力恢复承台输入</td></tr>
+<tr data-chapter="7"><td><a href="chapters/ch06.html#从给定图形到平衡索形">第7章 · 从给定图形到平衡索形</a></td><td>区别任意索形与平衡索形</td></tr>
+</tbody></table>
+
+## 自由度、约束与矩阵秩 {#mm-dof-constraints .unnumbered .mm-index-concept}
+
+<span class="mm-kind">数学工具</span>
+<div class="mm-definition"><p>约束矩阵的独立性决定哪些运动被限制；约束数量正确也可能留有刚体运动。</p><p><strong>桥梁中用来做什么：</strong>检查支座布置和整体体系稳定。</p></div>
+
+先备知识：力与力矩平衡。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#连接和支承怎样进入模型">第2章 · 连接和支承怎样进入模型</a></td><td>将支座和连接对应到允许的运动与传递的作用</td></tr>
+<tr data-chapter="8"><td><a href="chapters/ch07.html#体系稳定与约束秩">第8章 · 体系稳定与约束秩</a></td><td>用约束独立性判断刚体运动</td></tr>
+<tr data-chapter="8"><td><a href="chapters/ch07.html#约束秩与刚体模态的数值检查">第8章 · 约束秩与刚体模态的数值检查</a></td><td>用矩阵检验边界布置</td></tr>
+</tbody></table>
+
+## 变形协调与长度相容 {#mm-compatibility .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>连接点的位移关系必须相容；超静定内力由平衡、本构和协调共同决定。</p><p><strong>桥梁中用来做什么：</strong>求连续梁反力、拱水平推力和索桥线形。</p></div>
+
+先备知识：力与力矩平衡。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="4"><td><a href="chapters/ch03.html#超静定反力的变形协调计算">第4章 · 超静定反力的变形协调计算</a></td><td>由中支座位移求多余反力</td></tr>
+<tr data-chapter="5"><td><a href="chapters/ch04.html#两铰拱的水平推力来自变形协调">第5章 · 两铰拱的水平推力来自变形协调</a></td><td>由拱脚间距条件补足方程</td></tr>
+<tr data-chapter="7"><td><a href="chapters/ch06.html#长度相容提供另一个方程">第7章 · 长度相容提供另一个方程</a></td><td>用主缆长度条件求索形</td></tr>
+<tr data-chapter="6"><td><a href="chapters/ch05.html#几何平衡与长度相容">第6章 · 几何、平衡与长度相容</a></td><td>联系斜索垂度索力与伸长</td></tr>
+</tbody></table>
+
+## 材料本构与截面协调 {#mm-constitutive .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>本构将应变映射为应力，再由截面平衡确定受力状态。</p><p><strong>桥梁中用来做什么：</strong>判断受压区、配筋范围和非线性材料状态。</p></div>
+
+先备知识：力与力矩平衡、变形协调与长度相容。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="4"><td><a href="chapters/ch03.html#应变协调材料本构与截面平衡">第4章 · 应变协调、材料本构与截面平衡</a></td><td>明确受弯截面三组关系</td></tr>
+<tr data-chapter="9"><td><a href="chapters/ch09-wind.html#墩柱非线性与截面构件接口">第9章 · 墩柱非线性与截面—构件接口</a></td><td>从截面状态进入塑性铰</td></tr>
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#求解类型与结果恢复">第10章 · 求解类型与结果恢复</a></td><td>由运动学与本构恢复应力，并区分积分点结果和平均显示</td></tr>
+</tbody></table>
+
+## 形心、惯性矩与截面模量 {#mm-section-properties .unnumbered .mm-index-concept}
+
+<span class="mm-kind">数学工具</span>
+<div class="mm-definition"><p>截面面积的一阶和二阶矩描述材料相对参考轴的分布，不能仅用材料量评价效率。</p><p><strong>桥梁中用来做什么：</strong>比较箱梁、T梁和工字梁抗弯效率。</p></div>
+
+先备知识：微分与积分。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#截面性质弯曲剪切与扭转">第2章 · 材料放在哪里：面积、惯性矩和截面模量</a></td><td>由材料分布定义形心、惯性矩和截面模量，并比较矩形梁转向后的刚度与应力</td></tr>
+
+<tr data-chapter="4"><td><a href="chapters/ch03.html#t形截面的受压区计算">第4章 · T形截面的受压区计算</a></td><td>区别真实几何与计算受压区</td></tr>
+</tbody></table>
+
+## 偏心受压与截面核心 {#mm-eccentricity-core .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>轴力和弯矩叠加形成非均匀正应力，核心范围描述线弹性截面的无拉应力条件。</p><p><strong>桥梁中用来做什么：</strong>解释拱肋压力线、桥墩和基础偏压。</p></div>
+
+先备知识：应力积分与截面合力、形心、惯性矩与截面模量。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#内力应力偏心与设计接口">第2章 · 偏心压力怎样成为轴力与弯矩</a></td><td>由偏心压力叠加两缘应力，并以核心距辨认完整线弹性截面的无拉应力条件</td></tr>
+<tr data-chapter="5"><td><a href="chapters/ch04.html#压力线偏心距与截面核心">第5章 · 压力线、偏心距与截面核心</a></td><td>将压力线位置转为应力判断</td></tr>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#截面性质弯曲剪切与扭转">第2章 · 材料放在哪里：面积、惯性矩和截面模量</a></td><td>按上下缘不同的截面模量分别求边缘应力，辨认非对称截面的几何差别</td></tr>
+</tbody></table>
+
+## 应变能、虚功与单位荷载法 {#mm-energy-virtual-work .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>在相应平衡和相容条件下，外力虚功等于内力虚功；单位荷载法通过真实与虚拟内力的积分求位移。</p><p><strong>桥梁中用来做什么：</strong>计算挠度、协调位移并建立有限元方程。</p></div>
+
+先备知识：力与力矩平衡、变形协调与长度相容、微分与积分。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#用能量理解整根梁怎样共同贡献位移">第2章 · 用能量理解整根梁怎样共同贡献位移</a></td><td>累加全梁弯曲的位移贡献，并用单位荷载法复核同一简支梁的跨中挠度</td></tr>
+
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#虚功等效节点荷载与结果可解释性">第10章 · 虚功、等效节点荷载与结果可解释性</a></td><td>等效荷载须保持虚功</td></tr>
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#虚功与单元方程选读">第10章 · 虚功与单元方程（选读）</a></td><td>从内外虚功相等建立单元刚度与荷载关系</td></tr>
+</tbody></table>
+
+## 矩阵、刚度与耦合 {#mm-matrix-stiffness .unnumbered .mm-index-concept}
+
+<span class="mm-kind">数学工具</span>
+<div class="mm-definition"><p>矩阵统一表示多个输入和响应，非对角项反映不同自由度之间的耦合。</p><p><strong>桥梁中用来做什么：</strong>处理调索、多墩分配和有限元组装。</p></div>
+
+先备知识：力与力矩平衡、变形协调与长度相容。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#优化明确可以调整什么希望改善什么">第2章 · 优化：明确可以调整什么、希望改善什么</a></td><td>用索力影响矩阵连接两根索的调整与9个测点位移，并明确目标函数与力的上下限</td></tr>
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#总体组装与直接刚度法">第10章 · 总体组装与直接刚度法</a></td><td>从单元组成整体</td></tr>
+<tr data-chapter="8"><td><a href="chapters/ch07.html#advanced-support-cases">第8章 · 选读算例：偏心力、群桩与同步顶升</a></td><td>偏心纵向力的平移—扭转矩阵分配</td></tr>
+<tr data-chapter="6"><td><a href="chapters/ch05.html#索力影响矩阵">第6章 · 索力影响矩阵</a></td><td>索力调整映射到控制响应</td></tr>
+<tr data-chapter="8"><td><a href="chapters/ch07.html#群桩六自由度凝聚">第8章 · 群桩六自由度凝聚</a></td><td>局部桩群压缩为总体接口</td></tr>
+</tbody></table>
+
+## 影响线与线性叠加 {#mm-influence-superposition .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>影响线记录单位移动作用对固定响应的影响；线性条件下贡献可求和或积分。</p><p><strong>桥梁中用来做什么：</strong>寻找车辆最不利位置和作用组合。</p></div>
+
+先备知识：力与力矩平衡、微分与积分。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="3"><td><a href="chapters/ch02.html#由平衡推导简支梁影响线">第3章 · 由平衡推导简支梁影响线</a></td><td>固定响应而移动单位荷载</td></tr>
+<tr data-chapter="3"><td><a href="chapters/ch02.html#集中力与分布力的叠加">第3章 · 集中力与分布力的叠加</a></td><td>求车列和分布效应</td></tr>
+<tr data-chapter="5"><td><a href="chapters/ch04.html#三铰拱的弯矩影响线">第5章 · 三铰拱的弯矩影响线</a></td><td>迁移到拱桥</td></tr>
+<tr data-chapter="3"><td><a href="chapters/ch02.html#线性叠加何时需要改为重新分析">第3章 · 线性叠加何时需要改为重新分析</a></td><td>识别接触索松弛和几何变化</td></tr>
+</tbody></table>
+
+## 预应力与初始状态 {#mm-initial-state .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>已有应力、无应力长度和阶段是后续分析起点，新增构件不能自动承担过去荷载。</p><p><strong>桥梁中用来做什么：</strong>区别预应力主次效应并追踪施工形成过程。</p></div>
+
+先备知识：力与力矩平衡、变形协调与长度相容。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#阶段加载历史">第2章 · 施工顺序怎样留在内力中</a></td><td>比较先简支后连续与一次加载的内力差别，保留前阶段已形成的状态</td></tr>
+<tr data-chapter="4"><td><a href="chapters/ch03.html#预应力的截面效应与次内力">第4章 · 预应力的截面效应与次内力</a></td><td>区别截面效应与约束次内力</td></tr>
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#fe-stage-inheritance">第10章 · 施工阶段与参考状态</a></td><td>比较预应力输入方式，说明构件激活与上一阶段状态继承</td></tr>
+</tbody></table>
+
+## 变形后平衡与几何非线性 {#mm-geometric-nonlinearity .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>当变形引起的力臂、作用方向或几何刚度变化不可忽略时，需将其计入平衡关系。</p><p><strong>桥梁中用来做什么：</strong>解释索桥找形、索松弛和二阶效应。</p></div>
+
+先备知识：力与力矩平衡、变形协调与长度相容、矩阵、刚度与耦合。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#变形以后压力的力臂也变了">第2章 · 变形以后，压力的力臂也变了</a></td><td>把压力乘以附加横向位移计入平衡，以割线关系观察压弯构件的二阶放大</td></tr>
+<tr data-chapter="7"><td><a href="chapters/ch06.html#deformed-cable-equilibrium">第7章 · 变形后索形的平衡</a></td><td>索形与索力互相依赖</td></tr>
+<tr data-chapter="6"><td><a href="chapters/ch05.html#几何平衡与长度相容">第6章 · 几何、平衡与长度相容</a></td><td>联系索几何和伸长</td></tr>
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#求解类型与结果恢复">第10章 · 求解类型与结果恢复</a></td><td>区分理想弹性屈曲候选与含缺陷、几何及材料非线性的分析</td></tr>
+</tbody></table>
+
+## 屈曲、特征值与稳定 {#mm-stability .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>特征屈曲给出理想化失稳尺度，不能替代含缺陷承载分析。</p><p><strong>桥梁中用来做什么：</strong>判断高墩、拱肋和薄壁板件稳定模式。</p></div>
+
+先备知识：矩阵、刚度与耦合、变形后平衡与几何非线性。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#basic-stability">第2章 · 欧拉屈曲为什么也是特征问题</a></td><td>由边界求欧拉临界力，区分屈曲模态、振型与实际缺陷承载过程</td></tr>
+
+<tr data-chapter="5"><td><a href="chapters/ch04.html#从屈曲模态到承载分析">第5章 · 从屈曲模态到承载分析</a></td><td>将拱模态用于缺陷分析</td></tr>
+</tbody></table>
+
+## 质量、刚度与模态 {#mm-modal-dynamics .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>惯性力、阻尼力与恢复力共同决定动力响应，模态分解描述多自由度运动。</p><p><strong>桥梁中用来做什么：</strong>联系频率、地震谱和抗风响应。</p></div>
+
+先备知识：矩阵、刚度与耦合。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#math-eigenvector-intuition">第2章 · 特征向量是形态，特征值决定频率</a></td><td>沿同一座桥辨认四阶竖弯形态，区分测点比例、固有频率与实际位移</td></tr>
+<tr data-chapter="9"><td><a href="chapters/ch09-wind.html#多自由度与模态">第9章 · 多自由度与模态</a></td><td>从整体进入模态响应</td></tr>
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#求解类型与结果恢复">第10章 · 求解类型与结果恢复</a></td><td>核对质量与重量，按频率、谱需求或时程选择动力求解</td></tr>
+</tbody></table>
+
+## 频响、共振与阻尼 {#mm-frequency-response .unnumbered .mm-index-concept}
+
+<span class="mm-kind">力学原理</span>
+<div class="mm-definition"><p>周期输入下响应随频率比和阻尼变化，共振峰应结合输入幅值及模型条件解释。</p><p><strong>桥梁中用来做什么：</strong>理解风振与索振动对阻尼的敏感性。</p></div>
+
+先备知识：质量、刚度与模态。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#basic-harmonic-response">第2章 · 相同幅值的荷载，不同频率的响应</a></td><td>并排比较等幅不同频率的荷载与位移，在幅频曲线上观察阻尼对峰值的影响</td></tr>
+<tr data-chapter="extension"><td><a href="chapters/wind-advanced.html#模态频响和谱积分">配套专题 · 模态频响和谱积分</a></td><td>从频率输入形成响应谱</td></tr>
+<tr data-chapter="extension"><td><a href="chapters/wind-advanced.html#第六步建立竖弯模态基准">配套专题 · 第六步：建立竖弯模态基准</a></td><td>建立阻尼和模态基准</td></tr>
+</tbody></table>
+
+## 概率、相关性与可靠度 {#mm-reliability .unnumbered .mm-index-concept}
+
+<span class="mm-kind">数学工具</span>
+<div class="mm-definition"><p>失效概率是失效域中的概率质量，相关性通过联合分布影响结果。</p><p><strong>桥梁中用来做什么：</strong>连接抗力和作用的不确定性与安全评价。</p></div>
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#math-random-variables">第2章 · 概率与随机过程：不确定性发生在什么对象上</a></td><td>区分一次随机取值、过程样本函数与时间相关，并说明超越概率不等于结构失效概率</td></tr>
+<tr data-chapter="3"><td><a href="chapters/ch02.html#一次取值与失效事件">第3章 · 一次取值与失效事件</a></td><td>比较同一截面的弯矩需求与抗弯能力</td></tr>
+<tr data-chapter="extension"><td><a href="chapters/ch10-lifecycle.html#随时间变化的极限状态">配套专题 · 随时间变化的极限状态</a></td><td>引入劣化和时变作用</td></tr>
+<tr data-chapter="3"><td><a href="chapters/ch02.html#多次抽样与频率">第3章 · 多次抽样与频率</a></td><td>区别一次结果、样本频率与模型概率</td></tr>
+</tbody></table>
+
+## 极值统计与重现期 {#mm-extreme-statistics .unnumbered .mm-index-concept}
+
+<span class="mm-kind">数学工具</span>
+<div class="mm-definition"><p>平稳模型下，重现期通过年超越概率描述尾部事件；分位值依赖分布、样本和参数，非平稳情形需另作时间条件下的风险分析。</p><p><strong>桥梁中用来做什么：</strong>由风资料形成桥面输入并解释尾部外推。</p></div>
+
+先备知识：概率、相关性与可靠度。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#math-return-period">第2章 · 概率与随机过程：不确定性发生在什么对象上</a></td><td>明确年最大值、年超越概率和时间窗口，由独立年份的补事件计算多年超越概率</td></tr>
+<tr data-chapter="extension"><td><a href="chapters/wind-advanced.html#极值风速与重现期">配套专题 · 极值风速与重现期</a></td><td>由年最大风速模型解释重现期与分位值</td></tr>
+<tr data-chapter="extension"><td><a href="chapters/wind-advanced.html#长期资料与桥位风场">配套专题 · 长期资料与桥位风场</a></td><td>分清长期极值统计与桥位风场换算的资料口径</td></tr>
+<tr data-chapter="extension"><td><a href="chapters/ch10-lifecycle.html#气候非平稳与多灾种情景">配套专题 · 环境变化与多灾种情景（选读）</a></td><td>说明环境变化怎样通过物理量进入桥梁评估情景</td></tr>
+</tbody></table>
+
+## 贝叶斯更新与检测证据 {#mm-bayes .unnumbered .mm-index-concept}
+
+<span class="mm-kind">数学工具</span>
+<div class="mm-definition"><p>先验和似然共同形成后验；未检出不等于不存在，检测能力影响证据强度。</p><p><strong>桥梁中用来做什么：</strong>更新劣化参数、裂纹状态和检查行动。</p></div>
+
+先备知识：概率、相关性与可靠度。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="extension"><td><a href="chapters/ch10-lifecycle.html#正态观测下的简化更新">配套专题 · 正态观测下的简化更新</a></td><td>用均值方差演示参数更新</td></tr>
+<tr data-chapter="extension"><td><a href="chapters/ch10-lifecycle.html#检出概率与阴性结果选读">配套专题 · 检出概率与阴性结果（选读）</a></td><td>结合检出概率和误报率计算阴性检查后的裂纹概率</td></tr>
+</tbody></table>
+
+## 数值离散、收敛与误差 {#mm-numerical-error .unnumbered .mm-index-concept}
+
+<span class="mm-kind">数学工具</span>
+<div class="mm-definition"><p>离散结果应随网格、步长和算法设置核对稳定性；数值收敛不等于模型正确。</p><p><strong>桥梁中用来做什么：</strong>核查有限元、时间积分和谱积分。</p></div>
+
+先备知识：微分与积分、矩阵、刚度与耦合。
+
+<table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
+<tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#验证确认与模型修正">第2章 · 施工顺序怎样留在内力中</a></td><td>对应同一构件、状态与测点核对结果，区分单位或支座设置错误与网格离散误差</td></tr>
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#第三层网格与目标响应">第10章 · 第三层：网格与目标响应</a></td><td>区分单位荷载法的数值积分误差与有限元网格误差</td></tr>
+<tr data-chapter="10"><td><a href="chapters/ch10-fem.html#求解类型与结果恢复">第10章 · 求解类型与结果恢复</a></td><td>分别固定空间网格与时间步检查动力离散的影响</td></tr>
+<tr data-chapter="extension"><td><a href="chapters/wind-advanced.html#网格时间步和统计收敛">配套专题 · 网格、时间步和统计收敛</a></td><td>区分三类收敛</td></tr>
+</tbody></table>
+
+:::

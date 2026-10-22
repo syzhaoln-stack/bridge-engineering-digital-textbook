@@ -1,0 +1,55 @@
+name: Publish current textbook
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [latest-release.json, .github/workflows/current-textbook.yml]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            latest-release.json
+          sparse-checkout-cone-mode: false
+      - name: Download approved public package
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG=$(python -c "import json; print(json.load(open('latest-release.json'))['tag'])")
+          ASSET=$(python -c "import json; print(json.load(open('latest-release.json'))['asset'])")
+          gh release download "$TAG" --pattern "$ASSET" --dir bundle
+      - name: Verify and unpack
+        run: |
+          python - <<'PY'
+          import json,hashlib,zipfile,pathlib
+          m=json.load(open('latest-release.json'));p=pathlib.Path('bundle')/m['asset']
+          assert p.stat().st_size==m['bytes']
+          assert hashlib.file_digest(p.open('rb'),'sha256').hexdigest()==m['sha256']
+          with zipfile.ZipFile(p) as z:
+            assert sum(i.file_size for i in z.infolist())<1_000_000_000
+            for n in z.namelist():
+              q=pathlib.PurePosixPath(n)
+              assert not q.is_absolute() and '..' not in q.parts and ':' not in n and '\\' not in n
+            manifest=json.loads(z.read('release.json'))
+            for f in manifest['files']:
+              data=z.read(f['path']);assert len(data)==f['bytes'] and hashlib.sha256(data).hexdigest()==f['sha256'],f['path']
+            z.extractall('_site')
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - uses: actions/deploy-pages@v4
+        id: deployment

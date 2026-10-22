@@ -1,0 +1,177 @@
+# 从整桥看向构造内部 {.unnumbered}
+
+本图集与第2、4—10章及耐久配套专题配合阅读。整桥图先交代构件和传力路径，局部图再显露材料、连接与剖面；三维图、计算图式和交互实验共同回答同一个工程问题。
+
+[梁桥截面与钢筋](chapters/ch03.qmd#从弯曲到截面设计为什么钢筋不是越多越好) · [桥梁抗风与动力学](chapters/ch09-wind.qmd#结构动力模态与广义响应) · [细部交互观察](interactive/bridge-office/component-details/index.html)
+
+## 先看对象 再建立模型 {.unnumbered}
+
+图中的材料色用于区分实体，不表示应力。实体几何优先沿用已有图纸重构模型；钢筋局部、橡胶支座与风箱为明确参数的教学模型。省略地形、剖去混凝土或裁取局部均是观察操作。
+
+## 梁桥与基础 从桥面一直追到桩端 {.unnumbered}
+
+
+<!-- STUDIO-20261016 girder_studio -->
+::: {.studio-plate}
+
+![三跨30 m双幅T梁教学桥。每跨每幅五片主梁，桥面作用经支座、盖梁、墩柱、承台传入桩基。基础显露仅用于观察，原有下部结构尺寸是教学假设。](assets/publication/studio-20261016/renders/girder_studio.png){#fig-atlas-studio-girder-studio width=100% fig-alt="三跨30 m双幅T梁教学桥。每跨每幅五片主梁，桥面作用经支座、盖梁、墩柱、承台传入桩基。基础显露仅用于观察，原有下部结构尺寸是教学假设。"}
+
+**读图　从桥面一直追到桩端。**五片主梁沿桥向承重；横隔板联系相邻梁；支座处把上、下部结构接起来。
+
+:::
+
+
+## 钢筋笼 纵筋、箍筋与弯钩怎样相接 {.unnumbered}
+
+
+<!-- STUDIO-20261016 rc_cutaway -->
+::: {.studio-plate}
+
+![钢筋混凝土教学梁的局部钢筋笼：截面360×700 mm，展示长1.44 m；四角纵筋、箍筋弯钩、带肋形态和绑扎位置同时显露。两端是观察截断面，未展示完整梁端锚固。](assets/publication/field-reviewed-20261017/rc_cage_revised_white.png){#fig-atlas-studio-rc-cutaway width=100%}
+
+**读图　先追一根纵筋，再看箍筋怎样包住它。**钢筋在接触位置相交与绑扎；相邻箍筋的钩口作交替展示。这个局部没有弯起筋，不能代替整梁正、斜截面设计图。
+
+:::
+
+
+## 钢筋构造细部 把保护层和箍筋包围关系看清楚 {.unnumbered}
+
+
+<!-- STUDIO-20261016 rc_detail -->
+::: {.studio-plate}
+
+![与上一图相同的局部构造。保留混凝土并开观察窗，区分成型面与剖面；保护层30 mm量到箍筋外缘，数值为本图教学取值。](assets/publication/field-reviewed-20261017/rc_detail_revised_white.png){#fig-atlas-studio-rc-detail width=100%}
+
+**读图　同一根钢筋在外观与剖窗中处于同一位置。**把钢筋笼图中的角筋、箍筋弯钩与本图逐一对应。混凝土被剖去是观察操作，不代表施工缺口、开裂或计算压区。
+
+:::
+
+
+## 拱桥 桥面怎样把重量送到主拱 {.unnumbered}
+
+
+<!-- STUDIO-20261016 arch_studio -->
+::: {.studio-plate}
+
+![依据既有图纸重构的New River Gorge上承式钢桁拱教学模型。主拱跨径518.16 m，拱肋、横向联系、拱上立柱与桥面系保留原模型关系；图面采样拱轴与节间离散仍属教学近似。](assets/publication/studio-20261016/renders/arch_studio.png){#fig-atlas-studio-arch-studio width=100% fig-alt="依据既有图纸重构的New River Gorge上承式钢桁拱教学模型。主拱跨径518.16 m，拱肋、横向联系、拱上立柱与桥面系保留原模型关系；图面采样拱轴与节间离散仍属教学近似。"}
+
+**读图　桥面怎样把重量送到主拱。**从桥面沿立柱下行至主拱，再顺拱肋走向两岸拱座。观察拱脚必须承接的水平推力。
+
+:::
+
+
+## 拱桥局部 纵向承重还需要横向联系 {.unnumbered}
+
+
+<!-- STUDIO-20261016 arch_detail -->
+::: {.studio-plate}
+
+![从同一钢桁拱模型截取纵向x=230～355 m。可以区分拱弦杆、腹杆、横撑、立柱和上部桥面桁梁。局部裁切边界不是真实杆件端部。](assets/publication/studio-20261016/renders/arch_detail.png){#fig-atlas-studio-arch-detail width=100% fig-alt="从同一钢桁拱模型截取纵向x=230～355 m。可以区分拱弦杆、腹杆、横撑、立柱和上部桥面桁梁。局部裁切边界不是真实杆件端部。"}
+
+**读图　纵向承重还需要横向联系。**细部先找节点连接，再区分拱肋所在的竖向平面与两片拱肋之间的横向联系。
+
+:::
+
+
+## 斜拉桥 索力汇向同一中央索面 {.unnumbered}
+
+
+<!-- STUDIO-20261016 cable_stayed_studio -->
+::: {.studio-plate}
+
+![Bago桥教学重构：112+224+112 m，桥宽22.9 m，中央单索面、两座独柱钢塔。塔、梁、索的几何沿用既有图纸模型；平桥面、基础与部分细部为教学近似。](assets/publication/studio-20261016/renders/cable_stayed_studio.png){#fig-atlas-studio-cable-stayed-studio width=100% fig-alt="Bago桥教学重构：112+224+112 m，桥宽22.9 m，中央单索面、两座独柱钢塔。塔、梁、索的几何沿用既有图纸模型；平桥面、基础与部分细部为教学近似。"}
+
+**读图　索力汇向同一中央索面。**本例采用中央单索面。把它与双索面方案对照，思考主梁扭转刚度和索锚区传力为何不同。
+
+:::
+
+
+## 斜拉桥塔梁局部 塔附近的几条传力路径 {.unnumbered}
+
+
+<!-- STUDIO-20261016 cable_stayed_detail -->
+::: {.studio-plate}
+
+![同一模型在x=96～130 m的局部裁切。观察中央钢塔、塔旁梁段与下部支承。被裁断的斜索只是取景边界，不是实际索端或锚固端。](assets/publication/studio-20261016/renders/cable_stayed_detail.png){#fig-atlas-studio-cable-stayed-detail width=100% fig-alt="同一模型在x=96～130 m的局部裁切。观察中央钢塔、塔旁梁段与下部支承。被裁断的斜索只是取景边界，不是实际索端或锚固端。"}
+
+**读图　塔附近的几条传力路径。**塔两侧索力的水平分量只有在对应状态下才能相抵；先分别画出两侧索力，再讨论塔柱弯曲。
+
+:::
+
+
+## 悬索桥 主缆把力传到塔与两岸 {.unnumbered}
+
+
+<!-- STUDIO-20261016 suspension_studio -->
+::: {.studio-plate}
+
+![Forth Road悬索桥教学重构：408+1006+408 m，两根主缆、吊索与加劲桁梁。主缆竖向分量经桥塔传下，水平分量沿地锚体系闭合；外露锚块是既有教学简化。](assets/publication/studio-20261016/renders/suspension_studio.png){#fig-atlas-studio-suspension-studio width=100% fig-alt="Forth Road悬索桥教学重构：408+1006+408 m，两根主缆、吊索与加劲桁梁。主缆竖向分量经桥塔传下，水平分量沿地锚体系闭合；外露锚块是既有教学简化。"}
+
+**读图　主缆把力传到塔与两岸。**先找主缆与吊索，再看加劲桁梁；主缆水平分力H与斜向张力T是不同的量。
+
+:::
+
+
+## 悬索桥局部 吊索怎样连接加劲梁 {.unnumbered}
+
+
+<!-- STUDIO-20261016 suspension_detail -->
+::: {.studio-plate}
+
+![从同一悬索桥模型截取x=550～660 m。吊索、加劲桁架、横向构件与桥面系保持原模型关系；主缆与桥面在画面两端被裁切。](assets/publication/studio-20261016/renders/suspension_detail.png){#fig-atlas-studio-suspension-detail width=100% fig-alt="从同一悬索桥模型截取x=550～660 m。吊索、加劲桁架、横向构件与桥面系保持原模型关系；主缆与桥面在画面两端被裁切。"}
+
+**读图　吊索怎样连接加劲梁。**荷载经桥面系、加劲梁和吊索进入主缆。局部图解释连接，不单独代表这个截取段的平衡模型。
+
+:::
+
+
+## 墩台与基础 承台把上面的两根柱与下面的六根桩连起来 {.unnumbered}
+
+
+<!-- STUDIO-20261016 foundation_detail -->
+::: {.studio-plate}
+
+![同一T梁桥模型的一幅墩位。承台5.30×10.20×1.90 m，六桩按2×3排列；墩柱与桩径沿用既有教学参数。省略土体不表示实际基坑或地层。](assets/publication/studio-20261016/renders/foundation_detail.png){#fig-atlas-studio-foundation-detail width=100% fig-alt="同一T梁桥模型的一幅墩位。承台5.30×10.20×1.90 m，六桩按2×3排列；墩柱与桩径沿用既有教学参数。省略土体不表示实际基坑或地层。"}
+
+**读图　承台把上面的两根柱与下面的六根桩连起来。**构件接触关系给出传力起点；桩土刚度、冲刷深度和沉降仍须另由模型与资料确定。
+
+:::
+
+
+## 支座与维护 反力从梁底经过哪些接触面 {.unnumbered}
+
+
+<!-- STUDIO-20261016 bearing_detail -->
+::: {.studio-plate}
+
+![全包胶增强叠层橡胶支座的正常组装外观。外侧为连续保护胶；上下分别为梁底局部与垫层、垫石。支座600×500×90 mm及其层数为教学选值，不对应具体产品型号。](assets/publication/field-reviewed-20261017/elastomeric-assembled.png){#fig-atlas-studio-bearing-detail width=100%}
+
+**读图　先在正常状态中确认接触，再进入剖面。**梁底、橡胶支座、调平垫层和垫石沿竖向接触。正常外观不能看见全部内部钢层。
+
+![同一支座、同一相机的观察剖窗。五层增强钢板只在切面显露，未切部分仍有保护胶；这不是运营中的缺口。](assets/publication/field-reviewed-20261017/elastomeric-cutaway.png){#fig-atlas-elastomeric-cutaway width=100%}
+
+本模型参照[mageba LASTO BLOCK原厂资料](https://www.mageba-group.com/us/data/docs/en_US/2625/BROCHURE-LASTO-BLOCK-us-en.pdf?v=1.8)中的Type B包胶原则重建。材料纹理为程序材质，未进行承载、剪切和转角设计；没有使用球型支座替代橡胶支座。
+
+:::
+
+
+## 抗风与动力学 先看清截面 再讨论风与运动 {.unnumbered}
+
+
+<!-- STUDIO-20261016 wind_box_section -->
+::: {.studio-plate}
+
+![教学钢箱梁短节段：长10 m、宽20 m、高2.4 m，两室主体与两侧封闭风嘴；板厚和加劲肋尺寸为作图假设，横隔板及底板加劲肋省略。它不对应特定桥梁或已验证的风洞模型。](assets/publication/studio-20261016/renders/wind_box_section.png){#fig-atlas-studio-wind-box-section width=100% fig-alt="教学钢箱梁短节段：长10 m、宽20 m、高2.4 m，两室主体与两侧封闭风嘴；板厚和加劲肋尺寸为作图假设，横隔板及底板加劲肋省略。它不对应特定桥梁或已验证的风洞模型。"}
+
+**读图　先看清截面 再讨论风与运动。**外形图帮助辨认迎风边、背风边、桥面与箱室；气动力、气动系数和稳定结论须来自试验或计算。
+
+:::
+
+
+## 图源与制作说明 {.unnumbered}
+
+三类桥梁沿用既有JICA Bago桥图纸、Transport Scotland Forth Road资料、New River Gorge档案形成的教学模型。T梁沿用已核对的三跨30 m双幅五梁模型；基础、局部连接和展示尺寸的假设继续保留。整桥沿用同一模型渲染；钢筋局部与橡胶支座依据后续构造复核另行重建，分别保留模型身份、可编辑场景与逐图记录。
+
+图解表达参考用户提供的施工安全手册，并参考DK [How Everything Works](https://dk.com/products/how-everything-works)与[How Technology Works](https://dk.com/products/9780241356289-how-technology-works)强调的剖开对象、局部观察及原理解释方式。本图集为自行渲染，未复用这些出版物的图像。
+
+具体桥型的来源与边界可查[三维案例原说明](blender-model-review.qmd)和各章图注。
