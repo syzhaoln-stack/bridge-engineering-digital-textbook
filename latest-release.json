@@ -1,9 +1,9 @@
 {
-  "tag": "textbook-20261022",
-  "asset": "bridge-textbook-public-20261022.zip",
-  "sha256": "1a457281022aef79401a4e7d7a6d8d65001711712f7e3a6a617dde7466d61c71",
-  "bytes": 665376079,
-  "source_date": "2026-10-19",
-  "edition": "2026-10-22",
+  "tag": "textbook-20261024",
+  "asset": "bridge-textbook-public-20261024.zip",
+  "sha256": "7f1397a2834170eb082ddd4924bf6ae7504b27d6fde8511b8bad0d6f35add94e",
+  "bytes": 686064124,
+  "source_date": "2026-10-24",
+  "edition": "2026-10-24",
   "entry": "index.html"
 }
