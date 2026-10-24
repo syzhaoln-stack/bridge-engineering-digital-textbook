@@ -1,0 +1,646 @@
+# 斜拉桥参考资料与补充计算 {.unnumbered}
+
+[返回第6章](chapters/ch05.qmd)。本页保留模型推导、独立手算、原有拓展图和史料来源；正文中的九类交互均为课程教学模型，三维组成图在章首、独塔与背索体系、部分地锚三个小节直接嵌入，可按构件开关图层，并与传力步骤分别操作。资料核对截至2026年10月23日。
+
+<link rel="stylesheet" href="interactive/girder-design/chapter-embeds.css">
+<script src="interactive/girder-design/chapter-embeds.js" defer></script>
+
+## 组成、锚固与分支传力 {#components-load-path}
+
+### 从被支承构件追到约束
+
+组成面板的“桥面—主梁—梁锚—拉索—塔锚—基础/支路”是观察顺序。各构件在真实平衡状态中同时工作，不能把逐级显示误读为先由梁独自承重、再逐次转给索和塔。刚度与连接决定实际分担；荷载路径图不规定各支路的百分比。
+
+常规双塔、独塔有背索和双塔三跨部分地锚模式的主梁为两侧纵向I形梁与横梁组成的体系；无背索模式参考Alamillo桥，改用中央箱形主梁脊和两侧悬臂横梁。前者由两侧索面把托力引入边主梁，后者的成对斜索集中锚在中央脊上，桥面横向作用先通过悬臂构件汇入中央。不能把四种模式统称为边主梁体系；宽桥面的扭转仍须结合实际横梁、横隔和主梁构造分析。正文另列混凝土、钢及组合材料等选择，不将其直接当成图中的材料设计。
+
+| 所观察的部位 | 需要辨认的连接与作用 |
+|---|---|
+| 桥面板、纵肋及横梁 | 桥面承受局部荷载，横向构造把不同位置联系起来；箱梁顶板可兼作桥面板 |
+| 主梁 | 沿桥连续承担弯曲、剪力、轴力与扭转；既可向索锚传力，也可向已有支座传力 |
+| 梁端锚固 | 指索位于梁上的端部，不限于桥梁端部；常经锚具、承压板、锚箱或横隔构件向梁截面扩散作用 |
+| 拉索及防护 | 钢丝、钢绞线等受拉，护套、密封、防腐层保护索体；护套不替代主受力钢材 |
+| 塔端锚固 | 将局部索力送入钢锚箱、横隔板或混凝土锚固区；索鞍连续通过与两端终止锚固是不同连接 |
+| 桥塔与背索 | 塔承受压力和不平衡水平作用；背索的另一端还须有边跨或地锚约束 |
+| 支座、墩台与基础 | 按具体约束方向传力，并经承台、桩或扩大基础到地基；塔位有无竖向支座须单独说明 |
+
+### 锚固图不能止于一只锚头
+
+索的集中拉力通过端部锚具和接触承压进入主体；再由局部板件或配筋区向更大截面扩散。对钢梁，应追踪锚固构件与横隔板、腹板、顶底板之间的连接；对混凝土梁，还须检查锚下承压、劈裂或局部拉力的传递。索轴与传力构件偏心会引入附加弯矩。总体模型中的一个节点不提供这些局部应力。
+
+Podolny的原论文列出梁端与塔端的多种真实连接；Strömsund例索端作用通过横向箱形构件传给梁，Galecop与Maxau例用斜横隔构件传递集中索力。它们支持“从索端接着追到主体”的读图方法，不是本三维锚固块的尺寸依据。锚固还须留出张拉、调索、检查和换索空间。[原论文，图10—11、18—19及总结](#ref-stay-connections)
+
+### 独塔、无背索与地锚分别改变什么
+
+独塔仍可有主跨索和背索；倾斜的塔也未必没有背索。无背索模式参考阿拉米略桥（Alamillo，亦译阿拉米罗桥）的后倾单柱塔、中央成对斜索、中央钢箱脊与横向悬臂桥面。取消背索后，索的水平作用与对塔的力矩仍存在，须由塔身、塔梁连接、塔自重和基础约束共同平衡。塔重心偏向索力作用的另一侧，产生反向力矩；其大小与索力作用能否平衡须针对实际工况求解，不能按外形声称基础只受竖向力或塔基弯矩为零。[设计方原文](#ref-stay-alamillo)明确说明以倾塔重量替代一组背索；[Sundial设计方及运营方资料](#ref-stay-sundial)仅作观察其他倾塔、梁桁架及基础组成的补充，不是本次无背索模型的形体依据。
+
+本次部分地锚图采用两塔三跨：主跨在两塔之间，两侧各有边跨。每座塔仍有普通斜索锚入主跨和边跨主梁，另有朝外的长背索直接接独立地锚；两侧地锚均与主梁脱开，不充当辅助墩。[Kim与Won原论文的图1、4—5](#ref-stay-earth-kim)提供双塔三跨、普通梁锚索与两端地锚索并存的图式依据；本图把每端地锚索数量与锚碇构造简化用于辨认连接，不复刻该论文算例。塔数和跨数是本图选定的布置，部分地锚的概念本身不限定为双塔桥。
+
+四种桥形均用于教学辨认连接；无背索模式参照Alamillo的实桥构造特征，其余模式采用概念布置。三维索径、锚具及基础表达不构成实桥制造图或承载力验算。部分地锚图把独立锚碇画在地面附近，展示“主梁—普通斜索—主塔—长背索—锚碇—地基”的支路。它与[轴力积分模型](#partial-earth-model)采用的桥面等高端锚坐标不同；计算上拔力应按实际索角取 $V_A=H_A\tan\theta_A$。两图只共享传力概念，不共享默认数值。
+
+## 刚性支点与斜索弹性支承的同条件比较 {#elastic-supports-model}
+
+本节基于线弹性梁与索的位移协调独立建立对照，比较的是**同一根连续梁、同一荷载和同一组支承位置**。刚性竖向支点规定 $v_i=0$；等效斜索弹簧规定托力增量与位移的关系。两者只改变竖向支承条件，梁在支点处的转角连续，不增加转动约束，也不改成梁内铰。
+
+| 参数 | 本面板约定 |
+|---|---|
+| 主梁与端部 | $L=120$ m，$EI=8\times10^8$ kN·m²；两端简支 |
+| 比较的六个内部支点 | $a_i=15,30,45,75,90,105$ m；$x=60$ m处不另设竖向支座 |
+| 换算索角的固定塔端 | $x_t=60$ m，$h=40$ m；塔端不移动 |
+| 每索材料轴向刚度 | 基准 $EA=6\times10^6$ kN，乘统一刚度倍率 $\alpha$ |
+| 默认荷载与偏载 | $q=80$ kN/m；左半跨 $q(1+\beta)$，右半跨 $q(1-\beta)$，总荷载恒为 $qL$ |
+| 控件范围 | 新增荷载0—200 kN/m；刚度倍率0.03—100；纵向偏载系数 $\beta$ 为−0.8—0.8 |
+
+这里的偏载是沿桥长的左右半跨分配，不是横桥向偏心车道加载。全部荷载及弹簧托力均解释为已建立受拉平衡状态附近的增量；这组图不输出恒载初拉力或合龙状态。它也不采用前文144 m索形图、120 m优化图在中间塔位设置竖向支座的边界。
+
+### 索的两个投影与刚度
+
+梁锚到固定塔锚的水平距离为 $d_i=|a_i-x_t|$，$l_i=\sqrt{d_i^2+h^2}$，$\sin\theta_i=h/l_i$。梁端只有竖向位移，取向下 $v_i$ 为正，则
+
+$$\Delta l_i=v_i\sin\theta_i,\qquad
+\Delta T_i=\alpha\frac{EA}{l_i}\Delta l_i,\qquad
+\Delta V_i=\Delta T_i\sin\theta_i=k_iv_i,$$
+
+$$k_i=\alpha\frac{EA}{l_i}\sin^2\theta_i.$$
+
+这只保留材料轴向刚度。梁水平位移受限、塔端固定、索保持受拉且只作小增量变化是推导条件；索初应力的几何刚度、垂度、塔偏与基础柔度均未包含。$\Delta V_i<0$ 表示相对参考态减拉；是否松弛取决于 $T_{0i}+\Delta T_i$，不能因增量为负就把索改称受压杆。
+
+### 用协调方程比较两种支承
+
+在两端简支基础体系上，令 $F_{ij}$ 为单位向下集中力作用于 $a_j$ 时 $a_i$ 处的向下位移，$\mathbf v_q$ 为所施加荷载产生的自由挠度。若内部支承向上反力增量为 $\mathbf R$，则
+
+$$\mathbf v=\mathbf v_q-\mathbf F\mathbf R.$$
+
+刚性支承令 $\mathbf v=0$，得 $\mathbf F\mathbf R=\mathbf v_q$。正刚度弹簧有 $\mathbf R=\mathbf K\mathbf v$，$\mathbf K=\operatorname{diag}(k_i)$，于是
+
+$$\left(\mathbf F+\mathbf K^{-1}\right)\mathbf R=\mathbf v_q.$$
+
+当全部 $k_i\to\infty$ 时，$\mathbf K^{-1}\to0$，弹性解趋近同位置的刚性解。零刚度则表示该点无托力，须按无支承处理，不能直接对零刚度取倒数。这个极限并没有给梁增加新的塔位支座。
+
+刚性支点之间仍会挠曲；支点反力及支点负弯矩由全梁协调得到。改变某一刚度或半跨荷载会改变多处反力及正负弯矩，不能由“更硬”推出所有内力峰值都下降。各状态还可核对 $R_A+R_B+\sum_iR_i=qL$；此式各量均为增量，两个端支点允许转角，端弯矩增量为零。端支反力增量为负不自动表示支座脱空，应与初态支反力相加后判断总反力。
+
+默认均布新增荷载下，刚性与弹性解的采样最大挠度绝对值分别为0.350956、18.556961 mm，采样最大弯矩绝对值分别为5004.310、11675.979 kN·m。图线在241个等距位置及全部支点取样，所报峰值不是连续函数的解析极值。默认取数点S3的 $k_v=123.133700$ kN/mm、$v=17.125964$ mm，故 $\Delta V\approx2108.783359$ kN；采用mm读数时须使用kN/mm的刚度，不能直接乘以kN/m数值。
+
+计算与验证说明见[弹性支承比较模型](interactive/cable-stayed-lab-20261022/README-support-compare.md)。本文的协调推导与课堂参数为独立教学构造；[资料19](#ref-stay-connections)关于密索接近连续弹性支承的讨论提供结构背景，不是本例数值来源。
+
+## 竖琴形与扇形的比较条件 {#harp-fan}
+
+本章把塔上锚点汇于一个理想点的索形称为**辐射形（集中扇形，fan）**；塔上锚点分布在塔顶一段范围内称为**扇形（semi-fan / modified fan）**；各索平行称为**竖琴形（harp）**。英文资料并不统一：部分较早资料把集中式称为 radiating，而把分散式称为 fan。读文献时需同时看锚点几何。ASBI 2025年设计手册给出 harp、fan、semi-fan 三种图式；AISC 1974年论文采用 radiating、harp、fan 等名称。[资料1](#ref-stay-asbi)[资料2](#ref-stay-aisc)
+
+比较时固定塔顶高度、梁上锚点、每点的竖向托力与索面积。锚点离塔水平距离为 $x_i$、高于梁面 $h_i$，则
+
+$$l_i=\sqrt{x_i^2+h_i^2},\quad \sin\theta_i=h_i/l_i,\quad T_i=V_i/\sin\theta_i,\quad H_i=V_i x_i/h_i.$$
+
+**独立手算。**取最远锚点 $x=100$ m、最高锚点 $h=50$ m。竖琴形保持 $h_i/x_i=0.5$；集中扇形各索均取 $h_i=50$ m。在 $x_i=50$ m处，同为 $V_i=1000$ kN：竖琴形的 $h_i=25$ m、$\theta_i=26.565^\circ$、$T_i=2236.1$ kN、$H_i=2000$ kN；集中扇形的 $\theta_i=45^\circ$、$T_i=1414.2$ kN、$H_i=1000$ kN。最外索在这个比较中的几何相同，不会凭索形名称产生不同的力。本算例与索形面板默认144 m梁长、120 m最外索锚范围、40 m桥面以上塔高采用不同参数。
+
+索材体积的简化比较还需说明定面积还是定应力。若只按同一许用平均应力 $\sigma_0$ 初估面积 $A_i=T_i/\sigma_0$，则 $A_i l_i=V_i(x_i^2+h_i^2)/(\sigma_0h_i)$；这只是轴向应力条件下的几何比较，未包含疲劳、防护、锚固和刚度条件，不能当作工程最优用钢量。
+
+## 主梁轴力的连续积分 {#axial-integral-model}
+
+以下是**本教材基于微段平衡的独立推导**，用于连接单索分力与主梁轴力图；不是把原论文算例的数值移作本桥计算。部分地锚的概念与边界依据见[资料13](#ref-stay-earth-won)、[资料14](#ref-stay-earth-kim)。轴力图与前后给定索力的梁挠度模型分别使用自己的假定。
+
+### 几何、荷载与切口边界
+
+主跨长 $L$，从左塔向跨中取 $x\in[0,a]$，$a=L/2$。最高塔锚高于梁面 $h$。将密索连续化，忽略梁弯曲对竖向荷载分配的影响，令索的竖向分力恰好承担每一微段的 $q\,\mathrm dx$；本推导不解索伸长、垂度、塔偏和二阶效应。讨论整根主梁时，$q$ 是各索面共同承担的总线荷载；若只分析一个索面，须将荷载及对应梁截面按同一范围分配。
+
+等截面梁的自重线荷载为 $\gamma A$。$\gamma$ 为材料重度，单位kN/m³，$A$ 为主梁的材料截面面积，单位m²；附加均布线荷载 $q_0$ 的单位为kN/m，因此
+
+$$q=\gamma A+q_0.$$
+
+$q_0$ 可代表本次教学工况中另计的铺装等荷载，不由 $\gamma$ 重复计入。这里的 $A$ 是梁面积，不能代入单根索的钢丝面积。异质组合梁应分别累计各材料自重；变截面或非均布荷载应保留 $q(x)$。
+
+在 $x$ 处索与水平夹角为 $\theta(x)$，则
+
+$$\mathrm dV=q\,\mathrm dx,\qquad \mathrm dH=q\cot\theta(x)\,\mathrm dx,
+\qquad g(x)=\frac{\mathrm dH}{\mathrm dx}.$$
+
+取切口到跨中的梁段，轴压为正。令跨中截面已有轴力为 $N_c$，水平平衡给出
+
+$$N(x)-N_c=\int_x^a g(s)\,\mathrm ds,\qquad \frac{\mathrm dN}{\mathrm dx}=-g(x).$$
+
+积分只给出轴力之差；$N_c$ 由纵向支承、索的梁端锚固和形成结构的过程确定。几何与荷载对称并不使跨中轴力自动归零。若明确设置不传纵向力的跨中连接，且没有其他跨切口的纵向作用，可取 $N_c=0$；若主梁连续而有纵向约束或锁入轴力，则须由完整体系求得 $N_c$。面板的索形积分模式固定采用 $N_c=0$ 基准，通式保留这个积分常数以说明其他边界。
+
+### fan与竖琴形逐项积分
+
+集中辐射形fan各塔锚均高于梁 $h$，因此 $\cot\theta(s)=s/h$：
+
+$$N_f(x)=N_c+\int_x^a\frac{qs}{h}\,\mathrm ds
+=N_c+\frac{q(a^2-x^2)}{2h}.$$
+
+竖琴形保持索平行，与最远索有同一夹角。塔锚高度为 $z(s)=hs/a$，故 $\cot\theta(s)=a/h$：
+
+$$N_h(x)=N_c+\int_x^a\frac{qa}{h}\,\mathrm ds
+=N_c+\frac{qa(a-x)}{h}.$$
+
+塔旁 $x=0$ 处取连续化极限，不要求在实桥设置零长索。给定 $N_c=0$，两个峰值为
+
+$$N_{f,\max}=\frac{qL^2}{8h},\qquad
+N_{h,\max}=\frac{qL^2}{4h}.$$
+
+半跨上的水平力密度分别呈三角形和矩形，轴力就是从切口到跨中的图下面积。由此得到两种图线及2倍峰值关系；它来自同一 $L,q,h,N_c=0$ 的几何与边界比较，不是所有实际fan、harp桥的统一比值。
+
+一般索形在 $s$ 处的塔锚高为 $z(s)>0$、荷载为 $q(s)$ 时，应使用
+
+$$N(x)=N_c+\int_x^a q(s)\frac{s}{z(s)}\,\mathrm ds.$$
+
+semi-fan须代入实际锚高函数；离散索则以 $\sum V_i\cot\theta_i$ 计算切口外的增量。不能仅按索形名称套用集中fan公式。
+
+### 面积为何在自重应力中消去
+
+取 $N_c=0$，将 $q=\gamma A+q_0$ 代入塔旁平均轴压应力 $\sigma=N/A$：
+
+$$\sigma_{f,\max}=\frac{\gamma L^2}{8h}+\frac{q_0L^2}{8hA},\qquad
+\sigma_{h,\max}=\frac{\gamma L^2}{4h}+\frac{q_0L^2}{4hA}.$$
+
+只有等截面、仅梁自重 $q_0=0$ 的这一项比较中，面积从轴压应力表达式消去。增大 $A$ 同时增加承载面积和自重；有附加荷载、弯矩、局部或整体稳定问题时，截面改变仍影响结果。该式也不提供材料强度或桥梁极限跨径。
+
+面板默认 $L=400$ m、$h=80$ m、$\gamma=25$ kN/m³、$A=8$ m²、$q_0=0$、$N_c=0$。$q=200$ kN/m，fan与竖琴形塔旁轴压力为50000、100000 kN，平均轴压应力分别为6.25、12.50 MPa。单位换算采用 $1000$ kN/m² $=1$ MPa。
+
+## 部分地锚fan模型的传力边界 {#partial-earth-model}
+
+本节使用同一个主跨 $L=2a$、塔高 $h$ 和均布荷载 $q$，两边跨长均为 $b$，$0<b\le a$。各索按集中fan处理。梁端和塔位支座只传竖向及本模型以外的横向约束，不传顺桥向水平力；塔梁之间没有另外施加的集中纵向力。地锚从梁独立出来，改接以后边跨梁外端轴力为零。跨中主梁连续，可传递轴向拉力。
+
+### 从边跨端积分到主跨
+
+先由边跨梁外端的零轴力边界向塔累计，塔旁压力为 $qb^2/(2h)$。经过塔位时没有额外集中纵向梁力，轴力保持连续；进入主跨后，索水平分力逐渐抵消这一压力，所以
+
+$$N_{\mathrm{地锚}}(x)=\frac{qb^2}{2h}-\int_0^x\frac{qs}{h}\,\mathrm ds
+=\frac{q(b^2-x^2)}{2h},\qquad 0\le x\le a.$$
+
+在 $x=b$ 处轴力为零；若 $b<a$，从这里到跨中受拉。以本文压正、拉负的符号，跨中为 $N(a)=-q(a^2-b^2)/(2h)$。Won等的原论文采用拉正符号，比较图线前应先统一正负号。[原文第2节与图2](#ref-stay-earth-won)
+
+### 与具有端锚索的自锚状态比较
+
+取同一侧跨布置的自锚对照：端锚索在梁外端输入朝塔方向的水平分量
+
+$$H_A=\frac{q(a^2-b^2)}{2h}.$$
+
+这一端部作用与边跨其他索的水平作用共同给出塔旁压力 $H_A+qb^2/(2h)=qa^2/(2h)$，主跨跨中轴力恰为零。将这部分端锚索改接独立地锚，保持其水平作用及其他连续索荷载相同，梁外端不再收到 $H_A$，因此
+
+$$N_{\mathrm{地锚}}(x)=N_{\mathrm{自锚}}(x)-H_A.$$
+
+这个比较明确了积分常数为何改变；不能仅在一张既有轴力图上任意减去某个值，而不说明从梁上移走了哪个端部作用。梁端与地锚固结、塔位传递集中水平力、施工临时纵向约束仍未释放等情形，均需按实际边界重建平衡与相容条件。
+
+面板将等效端锚点置于距塔 $b$、与桥面同一高程处，故端锚索的竖向分量为
+
+$$V_A=H_A\frac{h}{b}.$$
+
+自锚时，$H_A$ 与 $V_A$ 作用于梁端。由于本索膜模型已令连续索承担全部 $q$，端锚额外的向上 $V_A$ 还需向下约束或另一条竖向传力路径平衡，普通仅承压支座不能当然提供该作用。部分地锚时，锚碇受到朝塔方向的水平拉力 $H_A$ 和向上的拔力 $V_A$，二者由锚碇—地基共同抵抗。改变地锚真实坐标后应重算索角，不能继续使用原 $V_A$。图中的地锚不是辅助墩：前者接受索力，后者对主梁增加竖向约束。
+
+默认 $a=200$ m、$b=100$ m、$h=80$ m、$q=200$ kN/m，得到 $H_A=37500$ kN、$V_A=30000$ kN；部分地锚塔旁压力12500 kN，跨中拉力37500 kN，零轴力位置距塔100 m。地锚使塔旁压力量值降低，但还须检查梁的受拉区、锚碇和地基、纵向变形及施工过程；不能据此单项指标断言经济性或整体安全更优。[资料14](#ref-stay-earth-kim)讨论施工纵向约束释放，[资料15](#ref-stay-earth-chen)给出带有专门假定的概念分析。
+
+面板实现见[轴力计算源码](interactive/cable-stayed-lab-20261022/axial-mechanics.js)及[公式与独立密索累加核验](interactive/cable-stayed-lab-20261022/README-axial-model.md)。这里的轴力值不由其他梁塔面板的给定索力、支座或优化结果导出。
+
+## 两侧索端作用与主塔内力 {#tower-moment}
+
+索形图默认塔在梁中央，两侧各10根索，可改为每侧6或14根；各侧梁锚点等距分布到距塔60 m处。每侧基准总托力10000 kN，按左右倍率均分到各根。默认左侧100%、右侧110%，即每根分别1000、1100 kN。最高塔锚点高于桥面40 m；harp的锚高与水平距离成正比，fan锚点理想化集中于塔顶，semi-fan锚点分布在塔上部。
+
+梁上每个索锚操作点可上下拖动，向上增大该根 $V_i$，向下减小，实际锚固坐标不动；每索均显示当前 $V_i$。选中后可用滑块、数字框或上下方向键微调，方向键每次10 kN、Shift加方向键每次100 kN，范围为0—4000 kN。逐索调整只改一根，切换索形或塔高保留全部托力；“整侧均分预设”会重设该侧全部索力。改变索数时保留当前各侧总托力并均分，若每索上限使总量无法保留，按界面限幅提示核对。
+
+| 索形面板的梁塔计算量 | 数值与定义 |
+|---|---|
+| 梁长及塔位 | $L=144$ m；从左端起算塔位 $X_t=72$ m |
+| 梁上锚点 | 距塔 $x_i=\pm60i/n$ m，$i=1,\ldots,n$，$n$为每侧索数；从梁左端起算 $a_i=72+x_i$ |
+| 两端长度 | 最外索锚点距梁端各12 m |
+| 梁荷载 | $q=24000/144\approx166.6667$ kN/m，总量24000 kN，向下 |
+| 梁抗弯刚度与约束 | $EI_b=8\times10^8$ kN·m²，两端及塔位竖向支承，主梁连续 |
+| 塔抗弯刚度与约束 | $EI_t=2\times10^8$ kN·m²，塔基固定于桥面下15 m |
+| 塔总高 | 桥面以上最高锚高 $h$ 加15 m，默认55 m |
+
+上述144 m梁专用于索形面板；下一节的索力优化面板仍采用120 m梁和80 kN/m均布荷载。两页分别保留自己的模型条件与记录。
+
+塔位支座使梁的竖向位移为零，不限制梁截面转角；梁连续且转角连续，塔位不是内铰，也不构成梁塔固结。塔作为基底固接的悬臂，承受索端作用，并在桥面高度承受梁传来的塔位支反力。以桥面为 $z=0$、塔基为 $z=-d$，$d=15$ m；图中从塔基起算的坐标为 $Z=z+15$。第 $i$ 根索的梁锚有符号水平坐标为 $x_i$、塔上锚高为 $h_i>0$。每根索向下拉塔的竖向分力为 $V_i\ge0$；向右为正的水平分力为 $H_i=V_i x_i/h_i$。令 $R_{\mathrm{塔}}$ 向上作用于梁为正，则它向下作用于塔，有
+
+$$Q(z)=\sum_{h_i\ge z}H_i,\qquad
+M(z)=\sum_{h_i>z}H_i(h_i-z),\qquad
+N(z)=\sum_{h_i\ge z}V_i+R_{\mathrm{塔}}\mathbf1_{z\le0}.$$
+
+这里用上部外力的合计表示截面效应，压力为正；截面平衡所需的约束作用方向与外力合计相反。$\mathbf1_{z\le0}$ 表示仅在桥面截面下侧及以下计入支座传力。恰在锚点处，剪力与轴力按该锚点下侧取值；索锚集中力使两图出现跳变，弯矩连续。塔位反力在 $Z=15$ m处另使轴力跳变；若 $R_{\mathrm{塔}}<0$，它使塔下段轴压力减小，不能取绝对值加到塔上。右侧总托力较大时产生朝右的不平衡作用；两侧同锚高、同力才可逐对抵消水平作用，索的竖向压力相加。
+
+保持各梁锚点和每根竖向托力不变，$H_ih_i=V_ix_i$，故桥面截面弯矩 $M(0)=\sum V_ix_i$ 不因索形而变；基底效应 $M(-d)=M(0)+d\sum H_i$ 还受塔下段高度及水平合力影响。不能将两个截面的读数互换。
+
+默认每侧10索，$x=6,12,\ldots,60$ m，右侧单索托力1100 kN、左侧1000 kN。harp的水平合力1500 kN，fan为825 kN；两者桥面截面弯矩均为33000 kN·m，塔基分别为55500和45375 kN·m。此处索的 $h_i$ 为桥面以上高度，计算基底力臂时才加15 m，不能把索倾角也按 $h_i+15$ 计算。
+
+主塔侧移用同一组水平索力和 $EI_t$ 计算。令锚点从塔基起算的高度为 $Z_i=h_i+15$，向右位移为正，则
+
+$$u(Z)=\sum_i\frac{H_i}{6EI_t}
+\begin{cases}
+Z^2(3Z_i-Z),& Z\le Z_i,\\
+Z_i^2(3Z-Z_i),& Z\ge Z_i.
+\end{cases}$$
+
+主梁的反力、弯矩和向下挠度采用下一节的柔度消元法，在两端简支基础体系中求出使塔位挠度为零的 $R_{\mathrm{塔}}$。代入本节 $L=144$ m、$t=72$ m、$q=24000/144$ kN/m、$a_i=72+x_i$ 和各索竖向托力。默认左右100%/110%时，$R_A=1437.283$ kN、$R_{\mathrm{塔}}=583.767$ kN、$R_B=978.950$ kN；与索托力21000 kN合计24000 kN。塔位梁挠度为零，梁弯矩仍为 $+1484.375$ kN·m；塔基轴压力为21583.767 kN。
+
+若将右侧整侧预设提高到120%，塔位反力变为 $-102.720$ kN，表示这一给定索力状态需要抗拔约束；塔基轴压力为 $22000-102.720=21897.280$ kN。此时harp与fan的桥面截面弯矩均为66000 kN·m，塔基弯矩分别为111000和90750 kN·m。水平弯矩由索水平分力计算，位于塔轴线的竖向支反力不在本一阶模型中直接增加水平弯矩。
+
+由此，塔与梁的位移、弯矩来自同一组已指定的索力以及相应支反力，主图叠加原位和变形，并将弯矩带分别贴在塔、梁上；显示的变形倍数与弯矩图尺属于绘图尺度，读数仍采用实际单位。保持各点 $V_i$、梁锚位置和荷载不变而只换索形时，本模型的梁响应不变；这一点可用来检查图形是否错误地把索形名称直接映射成梁变形。
+
+这是给定索力的力控模型：先求梁，再将索端作用和塔位竖向支反力传给固定底塔；不通过索伸长重新协调二者的位移，也不将变形后的索角回代更新力。模型未计塔自重、塔梁水平连接作用、风、基础柔度和二阶效应，不能作为完整桥塔设计弯矩。它用于检查每根索的两端作用、不同锚高的力臂以及两侧不对称怎样同时影响梁与塔。
+
+## 密索与四点上托梁的计算模型 {#optimization-model}
+
+交互页的优化模型是一根两端及中间塔位竖向支承的线弹性连续梁；索点以可调竖向集中力上托。默认12索密索模式，另保留4索手算模式。塔位支座不限制截面转角，梁不在此处断开，塔位梁弯矩一般不为零。塔内力按上一节的固定塔模型后处理，轴力计入梁传来的 $R_{\mathrm{塔}}$，不把塔的变形反馈给索力；因此它是调索影响的入门模型，不是完整索—塔—梁有限元桥。
+
+| 量 | 数值与定义 |
+|---|---|
+| 梁长 $L$ 与支点 | 120 m；$x=0,60,120$ m处竖向位移为零，支座不约束截面转角，主梁连续 |
+| 抗弯刚度 $EI$ | $8\times10^8$ kN·m²，沿梁不变 |
+| 均布荷载 $q$ | 80 kN/m，向下 |
+| 12索密索模式 $a_i$ | 8、16、24、32、40、48、72、80、88、96、104、112 m |
+| 4索手算模式 $a_i$ | 24、48、72、96 m |
+| 塔位与高度 | $t=60$ m，塔顶高于梁40 m，塔基低于梁15 m；$EI_t=2\times10^8$ kN·m² |
+| 初始上托力 $V_i$ | 密索多数点640 kN、48和72 m两点各800 kN；四索外侧各1920 kN、内侧各1440 kN |
+| 课堂变量边界 | 密索每点0—2000 kN，四索每点0—3200 kN；均为托力边界，不是索轴拉力的工程容许值 |
+| 梁图采样 | 121个等距位置；变形显示放大 |
+
+初值按相邻分担区的中点估计，端支点和塔位支点均参与划分。例如密索 $a_i=48$ m点的相邻位置为40 m和塔位60 m，故初估 $V_i=80(60-40)/2=800$ kN。塔位附近荷载不再全部交给斜索。四索初值的三个支反力为889.92、1100.16、889.92 kN；密索初值为304.533、990.933、304.533 kN，均按左端、塔位、右端顺序。
+
+令向下位移 $w$ 为正。先释放塔位支座，以两端简支梁为基础体系，单位向下集中力作用于 $a$ 处的柔度为
+
+$$
+f(x,a)=
+\begin{cases}
+\dfrac{(L-a)x}{6LEI}\left[L^2-(L-a)^2-x^2\right], & x\le a,\\[4pt]
+\dfrac{a(L-x)}{6LEI}\left[L^2-a^2-(L-x)^2\right], & x\ge a.
+\end{cases}
+$$
+
+基础体系的均布荷载挠度 $w_q(x)=qx(L^3-2Lx^2+x^3)/(24EI)$。给定索托力后、尚未恢复塔位支座的挠度为
+
+$$w_{\mathrm{free}}(x)=w_q(x)-\sum_i f(x,a_i)V_i.$$
+
+在塔位 $t=L/2$ 恢复向上反力，按 $w(t)=0$ 求得
+
+$$R_{\mathrm{塔}}=\frac{w_{\mathrm{free}}(t)}{f(t,t)},\qquad w(x)=w_{\mathrm{free}}(x)-f(x,t)R_{\mathrm{塔}}.$$
+
+这个条件只限制竖向位移，未在梁内释放转角。也可先构造带塔位支座的柔度与无索荷载响应
+
+$$f_s(x,a)=f(x,a)-\frac{f(x,t)f(t,a)}{f(t,t)},\qquad
+w_{q,s}(x)=w_q(x)-\frac{f(x,t)w_q(t)}{f(t,t)}.$$
+
+则 $w(x)=w_{q,s}(x)-\sum_i f_s(x,a_i)V_i$。索点柔度矩阵 $F_{ij}=f_s(a_i,a_j)$ 应对称，这是同一线弹性体系互等关系的一项独立检查。索点位移为 $\mathbf w=\mathbf w_{q,s}-\mathbf F\mathbf V$；若硬性要求所有索点位移为零，可解 $\mathbf F\mathbf V=\mathbf w_{q,s}$，再检查所得力是否为非负并在边界内。
+
+正弯矩使梁下缘受拉，支座反力向上为正，有
+
+$$R_A=\frac{qL}{2}-\sum_iV_i\frac{L-a_i}{L}-R_{\mathrm{塔}}\frac{L-t}{L},\qquad
+R_B=\frac{qL}{2}-\sum_iV_i\frac{a_i}{L}-R_{\mathrm{塔}}\frac{t}{L},$$
+
+$$M(x)=R_Ax-\frac{qx^2}{2}+\sum_i V_i\max(x-a_i,0)+R_{\mathrm{塔}}\max(x-t,0).$$
+
+独立核验包括 $R_A+R_{\mathrm{塔}}+R_B+\sum_iV_i=qL$、两端弯矩为零、塔位挠度为零，以及对称输入得到对称响应。无索上托时，两个等跨连续梁的精确解为 $R_{\mathrm{塔}}=5qL/8$、$R_A=R_B=3qL/16$、$M(t)=-qL^2/32$；代入120 m模型，分别为6000 kN、1800 kN和−36000 kN·m。塔位零挠度与非零负弯矩同时成立，是区分竖向支座和内铰的直接检查。
+
+**两种目标。**线形目标减小全梁挠度平方积分，弯曲应变能目标减小 $U_b=\int_0^L M(x)^2/(2EI)\,\mathrm dx$。以保留塔位支座、无索上托时的响应 $w_{q,s}$ 和 $U_{b,0}$ 作归一化，并加相同的小正则项，实际目标为
+
+$$J_w=\frac{\int_0^L w^2\,\mathrm dx}{\int_0^L w_{q,s}^2\,\mathrm dx}+\frac{\lambda}{n}\sum_i\left(\frac{V_i-V_{i,0}}{V_{i,0}}\right)^2,\qquad
+J_U=\frac{U_b}{U_{b,0}}+\frac{\lambda}{n}\sum_i\left(\frac{V_i-V_{i,0}}{V_{i,0}}\right)^2,$$
+
+其中 $n$ 为可调索点数，$V_{i,0}$ 为上表按分担宽度取得的初值、$\lambda=10^{-5}$。用分段五点Gauss积分计算目标，再以有边界的坐标下降逐次更新托力；一轮中间结果可能暂时不对称，收敛后的对称工况应恢复对称。曲线显示的121点仅用于读图，最大采样值不冒充连续极值。详见[计算源码](interactive/cable-stayed-lab-20261022/mechanics.js)及[公式与验证记录](interactive/cable-stayed-lab-20261022/README-models.md)。
+
+“优化”只表示在给定变量、目标和边界中改进。这个目标函数没有加入塔弯矩限值、梁轴压、索伸长、垂度、施工阶段和疲劳约束；显示的固定塔内力也不是耦合求解。普通仅受压支座还应满足 $R_A,R_{\mathrm{塔}},R_B\ge0$。页面保留双向理想支承，当算出负反力时应读作需要额外抗拔约束或改变方案的信号。这里的目标值、边界和默认力均为课程设定。
+
+## 双塔三跨与边跨辅助墩 {#twin-model}
+
+双塔面板直接求解一根跨越两塔的连续梁，索仍以给定的竖向托力作用于梁。基本跨径80+160+80 m，总长320 m，塔位为80、240 m；边跨辅助墩可在40、280 m处启用。无辅助墩时，竖向支点为0、80、240、320 m；启用两座辅助墩后，支点为0、40、80、240、280、320 m。所有支点约束竖向位移，不锁定截面转角；梁在塔位和辅助墩处均保持连续。
+
+| 双塔面板计算量 | 数值与定义 |
+|---|---|
+| 主梁 | $L=320$ m，基本跨径80+160+80 m，$EI_b=8\times10^8$ kN·m² |
+| 均布荷载 | $q=80$ kN/m，向下，总量25600 kN |
+| 塔位及竖向支点 | 两塔位于 $x=80,240$ m，两端位于 $x=0,320$ m，均保持竖向支承 |
+| 可选辅助墩 | 左墩 $x=40$ m、右墩 $x=280$ m，分别开关，默认均启用 |
+| 索组与锚点 | 左边跨、左塔主跨、右塔主跨、右边跨共四组，每组8根；距所属塔的水平距离为8、16、24、32、48、56、64、72 m |
+| 索塔锚高 | 各索集中在所属塔桥面以上45 m处；塔基在桥面以下15 m，塔锚从基底计高60 m |
+| 塔抗弯刚度 | $EI_t=2\times10^8$ kN·m²，等截面固定底悬臂 |
+| 初始托力与范围 | 边跨各索600 kN，主跨各索750 kN，合计21600 kN；逐索调整范围0—2000 kN |
+| 图上采样 | 全梁321个等距位置，各跨最大值为该范围内的采样最大值 |
+
+### 多支点的柔度消元
+
+沿用前节两端简支基础体系的柔度 $f(x,a)$。将两塔及启用的辅助墩位置组成内部支点集 $s_1,\ldots,s_m$，这些位置的向上反力为 $r_1,\ldots,r_m$。两端支点已包含在基础体系中，不重复列入柔度矩阵。给定向下均布荷载和索托力后，先求释放内部支点的挠度
+
+$$w_{\mathrm{free}}(x)=w_q(x)-\sum_i f(x,a_i)V_i.$$
+
+每个内部支点满足 $w(s_j)=0$，联立得到
+
+$$\sum_{k=1}^{m} f(s_j,s_k)r_k=w_{\mathrm{free}}(s_j),\qquad
+w(x)=w_{\mathrm{free}}(x)-\sum_{k=1}^{m}f(x,s_k)r_k.$$
+
+这是一组共同求解的相容方程，不能把每个支点按独立单支点公式计算后再相加。求得内部反力后，由整体平衡求两端反力，并沿梁计算弯矩：
+
+$$R_A=\frac{qL}{2}-\sum_iV_i\frac{L-a_i}{L}-\sum_k r_k\frac{L-s_k}{L},\qquad
+R_B=\frac{qL}{2}-\sum_iV_i\frac{a_i}{L}-\sum_k r_k\frac{s_k}{L},$$
+
+$$M(x)=R_Ax-\frac{qx^2}{2}+\sum_iV_i\max(x-a_i,0)+\sum_k r_k\max(x-s_k,0).$$
+
+核验 $R_A+R_B+\sum_k r_k+\sum_i V_i=qL$、全部支点挠度为零、两端弯矩为零及对称性。内部支点的梁弯矩一般不为零。负反力按有符号值保留；若实际支座仅受压，须释放相应接触或提供抗拔连接，再重新求解。
+
+### 默认索力的辅助墩对照
+
+两种状态保持32根索托力及均布荷载不变。两端支点、两塔与启用的辅助墩反力都以对梁向上为正。
+
+| 计算量 | 无辅助墩 | 左右辅助墩均启用 |
+|---|---:|---:|
+| 每个端支点反力 / kN | 676.25 | 408.00 |
+| 每个塔位梁支座反力 / kN | 1323.75 | 1000.00 |
+| 每个辅助墩反力 / kN | — | 592.00 |
+| 全部支反力之和 / kN | 4000.00 | 4000.00 |
+| 每侧边跨最大采样挠度绝对值 / mm | 6.844568 | 0.653813 |
+| 主跨最大采样挠度绝对值 / mm | 5.733333 | 14.613333 |
+| 每侧边跨最大采样弯矩绝对值 / kN·m | 11137.5 | 7680.0 |
+| 主跨最大采样弯矩绝对值 / kN·m | 9900.0 | 8320.0 |
+| 每塔基底轴压力 / kN | 12123.75 | 11800.00 |
+
+支反力合计4000 kN与索托力21600 kN相加，等于均布荷载总量25600 kN。表中边跨挠度减小而主跨挠度增大；弯矩峰值和挠度峰值也不是同一个指标。一次开关辅助墩后的效果应按位置、物理量和支点条件分别解释。只开启一侧辅助墩会破坏支承对称性，即使索托力保持原来的对称分配，梁响应和支反力也不再左右相同。
+
+### 两塔与辅助墩的作用区分
+
+每座塔分别累计锚入本塔的索端水平力、竖向力；相应塔位支反力在桥面高度输入该塔轴力，辅助墩反力则不计入主塔轴力。塔仍采用前节固定底模型，索角按未变形几何求取。保持各索 $V_i$、锚点和塔高不变，只开关辅助墩时，梁响应与各支反力会改变；各塔的水平力、弯矩和侧移不变，因为这里没有通过索伸长重新分配索力。
+
+默认两塔的索竖向分力合计各10800 kN；主跨索比边跨索的托力大，左塔水平合力为 $+1066.667$ kN，右塔为 $-1066.667$ kN。两塔基底弯矩分别为 $+64000$、$-64000$ kN·m，塔顶水平位移分别为 $+384$、$-384$ mm，正方向均向右。全桥对称时，两塔向跨中相对偏移，单塔并非零弯矩。数值取自给定力、未计二阶效应的线弹性模型，不是实际工程容许值。
+
+这组计算用于解释支点增加后的连续梁响应及作用去向。实际辅助墩还可通过边跨梁和背索的变形协调改变索力及塔的约束，须由完整索—塔—梁模型求得，不能直接用这一力控模型量化其全部效果。见[双塔模型源码](interactive/cable-stayed-lab-20261022/twin-mechanics.js)与[独立梁单元核验记录](interactive/cable-stayed-lab-20261022/README-twin-model.md)。下节两内塔弹簧图专门观察水平耦合机制，其刚度和荷载并非由本双塔桥反算，两组数据不互相代用。
+
+## 两个内塔的跨间耦合模型 {#multispan-model}
+
+多塔面板先用可旋转三维图比较汀九纵向稳定索、跨中交叉索及塔梁刚度路径。汀九的基本跨径、三塔、分幅桥面和8根纵向稳定索据[资料16](#ref-stay-tingkau)重构；桥面绘图高程、截面、索数与锚固细节为教学近似。交叉索与刚度图采用同尺度教学几何，不是对Queensferry或米约的尺寸复刻。着色开关只改变辨认重点，不模拟撤索。
+
+下列水平弹簧模型放在面板的“进一步计算”中，独立截取连续多塔体系中的两座内塔；它不是三幅三维图或上一节双塔三跨桥的直接计算简图。两内塔顶向右位移分别为 $u_1,u_2$。每塔自身等效刚度为 $k_t$，通向外侧索梁及端部体系的等效约束为 $k_e$，两内塔之间的等效耦合刚度为 $k_c$。塔顶不平衡水平作用为 $p_1,p_2$。各弹簧只表示当前状态附近的增量关系，不代表一根真实斜索。
+
+$$
+\begin{bmatrix}k_t+k_e+k_c&-k_c\\-k_c&k_t+k_e+k_c\end{bmatrix}
+\begin{bmatrix}u_1\\u_2\end{bmatrix}=
+\begin{bmatrix}p_1\\p_2\end{bmatrix}.
+$$
+
+第一塔平衡为 $(k_t+k_e)u_1+k_c(u_1-u_2)=p_1$；第二塔同理。共同平移 $(u_1=u_2)$ 时中间弹簧不变形，差动位移则受到 $k_c$ 约束。因此**加强跨间联系主要抑制两塔相对移动，不会对所有变形模式同样有效**。
+
+默认 $k_t=k_e=4000$ kN/m、$k_c=12000$ kN/m，$p_1=1000$ kN、$p_2=0$，解得 $u_1=78.125$ mm、$u_2=46.875$ mm。第一塔外侧与塔身共同承担625 kN，中间联系传递375 kN；第二塔的塔身及外侧约束承担375 kN，两式均平衡。若取消跨间耦合，$u_1=125$ mm、$u_2=0$；加入联系减小第一塔移动，同时把作用传到第二塔。
+
+双塔同向各受1000 kN时，两塔均移动125 mm；相反方向各1000 kN时，位移为±31.25 mm。这三种状态的对照比只看对称恒载更能说明多塔体系的刚度问题。完整桥模型需由塔、梁、索、边跨支点及基础共同形成刚度，并考虑索只受拉、几何非线性和施工状态；这里的 $p_i$ 不是桥面车重本身。
+
+## 史料与工程依据 {#sources}
+
+以下以建设、运营、政府、档案机构和专业组织的原始发布为主；来源中的历史记录与本章教学推导分别列出。未下载重用这些网页的照片，本次新增桥型示意由课程组重绘。
+
+历史面板的布鲁克林桥、Strömsund桥和米约高架桥三维图按下列记录重构基本跨度与构件关系，塔门孔型、步道、节点和锚固等细部作教学近似；索形比较另用统一教学几何。材质、阴影和相机视角用于改善空间辨认，模型没有给出史桥的内力或分担比例。布鲁克林的三类索显隐开关只影响显示，不是失效、拆索或重分析开关。
+
+### 索形与早期体系
+
+<span id="ref-stay-asbi"></span>**1. American Segmental Bridge Institute.** *Design Manual for Concrete Segmental Bridges*, 1st edition, 2025，图1-20至1-22。[官方手册PDF](https://asbi-assoc.org/wp-content/uploads/2025/10/ASBI-Design-Manual-for-Concrete-Segmental-Bridges-1st-Edition-2.pdf)。据其示意核对平行 harp、塔顶集中 fan 与塔顶分散 semi-fan；不移植手册的工程设计数值。
+
+<span id="ref-stay-aisc"></span>**2. AISC Engineering Journal.** *Cable-Stayed Bridges*, 1974，第1季度，图13。[论文PDF](https://ej.aisc.org/index.php/engj/article/download/223/222/222)。该文以 radiating 称集中式、fan 称介于集中式和平行式之间的布置，支持本章对术语差异的提醒。发表时间据论文页眉，不采用搜索引擎的网页更新时间。
+
+<span id="ref-stay-brooklyn"></span>**3. New York City Department of Transportation.** *2017 Bridges and Tunnels Annual Condition Report*，“Brooklyn Bridge”，印刷页15。[官方报告PDF](https://www.nyc.gov/html/dot/downloads/pdf/dot_bridgereport17.pdf)。确认1883年完成及 suspension/stay 混合体系。主跨1595.5 ft换算为486.3 m。报告交通量为其历史年度数据，本章未沿用为现状。
+
+<span id="ref-stay-loc"></span>**4. Library of Congress, Historic American Engineering Record.** *Brooklyn Bridge, HAER No. NY-18*，[历史数据PDF](https://tile.loc.gov/storage-services/master/pnp/habshaer/ny/ny1200/ny1234/data/ny1234data.pdf)、[照片目录PDF](https://tile.loc.gov/storage-services/master/pnp/habshaer/ny/ny1200/ny1234/data/ny1234cap.pdf)。档案分列主缆、竖直吊索和斜索；照片NY-18-71说明塔上斜索向梁面辐射。可用来核对构件确实并存，不能据数量推算各体系承担荷载的比例。
+
+<span id="ref-stay-stromsund"></span>**5. Strömsunds kommun.** [Strömsundsbron](https://www.stromsund.se/10703.html)，2026-08-20更新。当地政府记载设计人为Franz Dischinger，钢结构施工发生于1955年，启用于1956-09-27，主跨182.6 m。学术史常以1955作为里程碑年：参见N. J. Gimsing在IABSE 1999年的[历史综述信息页](https://orbit.dtu.dk/en/publications/history-of-cable-stayed-bridges-past-present-and-future/)。本章写作“1955—1956”，同时注明两种事件。
+
+### 多塔与现代发展
+
+<span id="ref-stay-millau"></span>**6. Millau Viaduct运营方CEVM.** [主要尺寸](https://www.leviaducdemillau.com/sites/viaducdemillau/accueil-viaduc-de-millau/le-viaduc/les-chiffres-cles.html)与[施工阶段](https://www.leviaducdemillau.com/sites/viaducdemillau/accueil-viaduc-de-millau/le-viaduc/les-etapes-de-construction.html)。确认七塔八跨、六个342 m常规跨和两端204 m边跨；施工页说明顶推前缘设置部分挂索的塔，另外五塔在梁体合龙后安装。2004年建成由承建方[Eiffage工程记录](https://www.eiffagegeniecivil.com/milau-viaduct)交叉核对。
+
+<span id="ref-stay-queensferry"></span>**7. Transport Scotland.** *Forth Replacement Crossing Main Crossing Bridge Scheme Assessment Report, Development of D2M Alternatives*, §2.1，[方案原文](https://www.transport.gov.scot/publication/forth-replacement-crossing-main-crossing-bridge-scheme-assessment-report-development-of-d2m-alternatives/j10568a-03/)。两主跨与中塔要求专门解决中塔稳定，方案通过跨中交叉斜索提供约束。该方案中的约25%交叠范围是方案参数，本章未把它写成全部多塔桥的规则。运营方[Queensferry Crossing页面](https://www.theforthbridges.org/about-the-forth-bridges/queensferry-crossing/)确认2017-08-30通车及跨中交叉索。
+
+<span id="ref-stay-sutong"></span>**8. 江苏省交通运输厅.** [苏通大桥主桥通过交工验收](https://jtyst.jiangsu.gov.cn/art/2008/4/14/art_41358_7515323.html)，2008-04-14。确认主跨1088 m钢箱梁斜拉桥。项目建设及设计人员论文：游庆仲、何平、董学武等，[苏通大桥——主跨1088米的斜拉桥](https://www.engineering.org.cn/sscae/CN/PDF/Y2009/V11/I3/14)，《中国工程科学》，2009，11(3)：14—19。实际布置为100+100+300+1088+300+100+100 m，说明“七跨”并不等于“七塔”。正式通车日期2008-06-30见[交通主管部门历史资料](https://jtt.hunan.gov.cn/jjzdgz/xxds/dsgs/202206/t20220609_25441686.html)。
+
+### 施工、索振与标准
+
+<span id="ref-stay-temporary"></span>**9. National Steel Bridge Alliance / AISC.** *Steel Bridge Design Handbook*, Chapter 11: *Design for Constructability*，拱桥架设及图15。[官方PDF](https://www.aisc.org/globalassets/nsba/design-resources/steel-bridge-design-handbook/b911_sbdh_chapter11.pdf)。记述临时塔、前向斜索与后锚共同支承未合龙拱段，合龙后退出临时构件。本章据此组织施工体系转换图，不引用具体临时索设计值。
+
+<span id="ref-stay-launching"></span>**10. Freyssinet.** [Millau Viaduct construction](https://www.freyssinet.com/case-study/millau-viaduct-construction/)。参与单位记述其永久拉索也用于顶推阶段。由此说明同一构件可以先服务施工、后服务成桥；临时工作状态与永久设计状态仍须分别计算。
+
+<span id="ref-stay-fhwa"></span>**11. Federal Highway Administration.** [Wind-Induced Vibration of Stay Cables](https://www.fhwa.dot.gov/publications/research/infrastructure/bridge/05083/)，其中[附录G：倾斜索力学](https://www.fhwa.dot.gov/publications/research/infrastructure/bridge/05083/appendg.cfm)用于索垂度与动力学主题核对。旧技术建议[TA 5140.25](https://www.fhwa.dot.gov/bridge/t514025.cfm)已于2020-01-29撤销，仅可作历史资料，不能作为现行设计要求。
+
+<span id="ref-stay-standards"></span>**12. 交通运输部标准。**设计与施工按项目采用的正式文本核对：[JTG/T 3365-01—2020斜拉桥设计规范](https://xxgk.mot.gov.cn/2020/jigou/glj/202006/t20200623_3313239.html)、[JTG/T 3650—2020桥涵施工技术规范](https://xxgk.mot.gov.cn/jigou/glj/202006/t20200630_3321368.html)、[JTG/T 3650-01—2022施工监控技术规程](https://xxgk.mot.gov.cn/2020/jigou/glj/202210/t20221025_3699857.html)。这些链接核对标准身份；课堂模型的托力上限、目标线和弹簧刚度是教学参数，不是规范规定。
+
+### 主梁轴力与部分地锚
+
+<span id="ref-stay-earth-won"></span>**13. Won, J.-H.; Park, S.-J.; Yoon, J.-H.; Kim, S.-H.** *Structural Effects of Partially Earth-anchored Cable System on Medium-span Cable-stayed Bridges*. *Steel Structures*, 2008, 8：225—236。[学会原论文PDF](https://www.kssc.or.kr/wonmun/KSSC_3_2008_8_3_225%28C%29.pdf)。第2节、图1—2及式(1)—(2)讨论部分索改接地锚、纵向自由支承和边跨梁端零轴力；第231页说明减小塔旁压力也会增加主跨受拉。本文采用压正符号，与原文拉正符号相反。
+
+<span id="ref-stay-earth-kim"></span>**14. Kim, S.-H.; Won, J.-H.** *Structural Behavior of a Long-Span Partially Earth-Anchored Cable-Stayed Bridge during Installation of a Key Segment by Thermal Prestressing*. *Applied Sciences*, 2016, 6(8)：231。[原论文](https://www.mdpi.com/2076-3417/6/8/231)、[期刊官方PDF](https://mdpi-res.com/d_attachment/applsci/applsci-06-00231/article_deploy/applsci-06-00231.pdf)、[DOI](https://doi.org/10.3390/app6080231)。图1、4—5显示双塔三跨、普通梁锚索与两端部分地锚索并存；原算例每端的地锚索组多于本章组成图的简化表达。第2.1、3.1节重申锚固与纵向边界决定轴力；施工中塔梁临时纵向约束的释放另作阶段分析。本章据此提醒成桥边界不能直接替代悬臂施工边界，不引用其热预应力施工方法作为通用指令。
+
+<span id="ref-stay-earth-chen"></span>**15. 陈恒大、邬晓光、姚丝思、李铸。**《基于主梁轴力的部分地锚斜拉桥极限跨径及关键部位力学响应》，《北京工业大学学报》，2017，43(6)：905—910。[期刊原文](https://journal.bjut.edu.cn/bjgydxxb/article/doi/10.11936/bjutxb2016080034?viewType=HTML)、[原PDF](https://journal.bjut.edu.cn/bjgydxxb/cn/article/pdf/preview/10.11936/bjutxb2016080034.pdf)。研究采用索膜理论及梁抗拉、抗压强度比较等专门前提，说明概念公式需要连同假定阅读；本章不将其极限跨径比例或锚跨比写成一般工程限值。
+
+### 稳定索与施工类比
+
+<span id="ref-stay-tingkau"></span>**16. 香港路政署、schlaich bergermann partner。**[路政署《Ting Kau Bridge and Approach Viaduct》](https://www.hyd.gov.hk/en/information_corner/hyd_factsheets/doc/e_Ting_Kau_Bridge.pdf)与[设计单位项目页](https://www.sbp.de/en/project/ting-kau-bridge/)分别确认1998年、三塔相邻主跨及中央塔顶通往两侧邻塔桥面附近的纵向稳定索；设计单位明确端点位于邻塔与上部结构交接处。设计者同期论文为Bergermann、Schlaich，*The Ting Kau Bridge in Hong Kong*，*IABSE Reports*, 79, 1998，[原档案入口](https://doi.org/10.5169/seals-59902)。本章不沿用旧资料中的“世界最长”等时点性评价，也不把稳定索端点画成水下基础。
+
+<span id="ref-stay-ni"></span>**17. Ni, Y. Q.; Wang, J. Y.; Lo, L. C.** *Influence of Stabilizing Cables on Seismic Response of a Multispan Cable-Stayed Bridge*. *Computer-Aided Civil and Infrastructure Engineering*, 2005, 20(2)：142—153，[香港理工大学原研究记录](https://research.polyu.edu.hk/en/publications/influence-of-stabilizing-cables-on-seismic-response-of-a-multispa/)，[DOI](https://doi.org/10.1111/j.1467-8667.2005.00383.x)。以汀九桥有限元模型研究稳定索对模态及地震响应的影响，支持按塔、梁、索共同工作解释稳定作用；本章不将其定量结果套入课堂弹簧模型。
+
+<span id="ref-stay-prestress"></span>**18. Federal Highway Administration。**[FHWA-HRT-13-028，体内预应力与对称悬臂施工图例](https://www.fhwa.dot.gov/publications/research/infrastructure/structures/bridge/13028/index.cfm)列出顶板纵向悬臂筋及合龙连续筋；[*Post-Tensioned Box Girder Design Manual*, 2016，第3章、图3.14](https://www.fhwa.dot.gov/bridge/concrete/hif15016.pdf)给出预应力的端部力、偏心作用与曲线等效荷载。前者用于核对构造和工序，后者用于解释 $P$、$Pe$ 与转向作用，未将体内筋等同于梁外斜拉支承。
+
+
+### 组成、锚固与独塔体系的原始资料
+
+<span id="ref-stay-connections"></span>**19. Podolny, W., Jr.** *Cable Connections in Stayed Girder Bridges*. *Engineering Journal*, 1974, 11(4)：99—111。[AISC原论文PDF](https://ej.aisc.org/index.php/engj/article/download/229/228/228)。第99页讨论密索接近连续弹性支承；图10—11分别给出Strömsund与Galecop的梁、塔连接，图18说明Maxau桥通过斜横隔构件向箱梁传力；第110页提出保留检查、调索设备可达空间。用来核对构造传力概念，不沿用其半世纪前的材料或构造细节作为当前标准条文。
+
+<span id="ref-stay-alamillo"></span>**20. Santiago Calatrava — Architects & Engineers。**[*Alamillo Bridge & Cartuja Viaduct / Sevilla*](https://calatrava.com/projects/alamillo-bridge-cartuja-viaduct-seville.html)。阿拉米略桥（亦译阿拉米罗桥）的设计方原文说明：倾塔钢壳内填钢筋混凝土，塔重替代一组背索；成对斜索锚在中央六边形钢箱脊上，两侧桥面由向外悬臂的钢翼支承。正文与无背索三维模式据此采用后倾单柱塔、中央索与中央主梁脊的参考构造，只表达主跨及其支承，不连同Cartuja引桥作全线复原。把塔重写为反向偏心力矩是本章的静力解释，不将设计说明扩大为任意工况下塔基弯矩为零。模型的显示索径、局部锚固和基础仍为教学表达，不称精确复原或实桥验算。
+
+<span id="ref-stay-sundial"></span>**21. Santiago Calatrava；Turtle Bay Exploration Park。**[Sundial设计方项目页](https://calatrava.com/projects/sundial-footbridge-redding.html)及[园区官方桥梁介绍](https://www.turtlebay.org/sundial-bridge)共同确认倾斜钢塔、钢框架桥面、稳定桁架和基础构成，可结合官方照片观察塔、索面与梁的关系。正文不把桁架或基础从其传力体系中省略，也不从倾塔外形直接确定梁塔连接边界。这里不从二手旅游介绍选取塔角、索数或基础尺寸。
+
+## 施工长度相容与斜索垂度 {#length-compatibility}
+
+施工三维面板的三组模型分别为永久斜拉、拱桥临时扣挂和体内预应力梁对称悬臂，每组用六个离散阶段辨认构件安装、合龙和临时设施退出。尺寸为教学设定；“上一阶段”恢复相应几何，不是倒拆力学求解。预应力剖视显示分别建模的顶板、底板和腹板以及体内束路径；束与索为可见性作了加粗，不据其绘图直径计算面积。三维几何未与施工受力模型耦合，不能从播放速度或阶段编号推定真实工期、张拉量或卸扣顺序。[阶段与构件说明](interactive/cable-stayed-lab-20261022/README-construction3d.md)
+
+### 斜索垂度与等效刚度
+
+索在自重下下垂，增加拉力时既发生材料伸长，也会拉直原有垂度，因此其端部等效刚度小于直杆刚度。浅垂度近似中，可用等效弹性模量
+
+$$E_e=\frac{E}{1+E(\gamma l\cos\theta)^2/(12\sigma^3)}$$
+
+修正索的轴向刚度。$\gamma$ 为按有效钢面积折算的单位体积重量，$l$ 为弦长，$\sigma=T/A$ 为当前平均拉应力，$\theta$ 为弦线倾角。使用一致单位时分母中的修正项无量纲。低应力、长缓索的垂度影响更明显；施工中张拉力变化较大时，应随当前状态更新，或直接采用曲线索单元求平衡。
+
+### 几何、平衡与长度相容
+
+给定锚点坐标只能确定索端的弦线，还需要无应力长度和荷载才能求得拉力及垂度。找形与索力计算同时满足索端平衡、索体几何和材料伸长。索端温度变化、锚具回缩和塔梁位移都通过长度相容改变索力。
+
+对于一根 $EA=1.17\,\mathrm{GN}$、长度100 m的直索，若两端固定而无应力长度缩短5 mm，小增量近似给出增拉 $\Delta T=(EA/l)\times0.005=58.5\,\mathrm{kN}$。在全桥中梁、塔会移动，实际增量由共同工作重新分配。这个差异解释了为何张拉设备的伸长量不能直接等同于全桥几何变化。
+
+
+
+## 影响矩阵、两索手算与误差识别 {#matrix-examples}
+
+以下两索矩阵为独立教学数据，不与正文四点梁混用。本节向上位移为正，正文四点梁挠度向下为正。
+
+### 两根索调整的手算例题
+
+设两个梁面控制点向上位移为正，两根索增拉为正。在当前状态附近，位移对索力的影响矩阵为
+
+$$\begin{bmatrix}\Delta v_1\\\Delta v_2\end{bmatrix}
+=\begin{bmatrix}0.020&0.005\\0.004&0.016\end{bmatrix}
+\begin{bmatrix}\Delta T_1\\\Delta T_2\end{bmatrix},$$
+
+矩阵元素单位为mm/kN。希望两个控制点分别抬高5 mm和4 mm，解得
+
+$$\Delta T_1=200\,\mathrm{kN},\qquad \Delta T_2=200\,\mathrm{kN}.$$
+
+代回可得 $0.020\times200+0.005\times200=5$ mm，第二点为4 mm。调索结果还要检查其他截面的弯矩、塔顶位移及索力上下限，两个点达到目标不等于全部响应均有利。
+
+### 多目标调整
+
+控制点多于可调索数时，通常无法精确满足每个目标。可求解
+
+$$\min_{\Delta\mathbf T}\left\|\mathbf W(\mathbf r_0+\mathbf A\Delta\mathbf T-\mathbf r^*)\right\|^2,$$
+
+其中 $\mathbf r_0$ 为当前响应，$\mathbf r^*$ 为目标响应，$\mathbf W$ 将位移、弯矩等量按相应控制尺度无量纲化。约束包括索力正值、索力上限、相邻索力差、塔位移及支座反力。两列影响几乎相同，意味着两根索的作用难以区分，求得的个别调整量容易对测量微小变化敏感；可成组调索、减少控制变量或增加有效测点。
+
+### 从实测偏差识别原因
+
+监控以梁面标高、塔顶位移、索力、关键截面应变和温度为主要观测量。先把实测与计算统一到同一施工阶段和温度，再分析参数影响。以某梁段重量修正 $\Delta w$ 与某索初始长度修正 $\Delta l_0$ 为例，两者都可能降低梁面，但对索力及塔偏位的影响不同；联合多个观测量才能区分原因。
+
+线性化表达为 $\Delta\mathbf y=\mathbf S\Delta\mathbf p$。$\mathbf S$ 的列表示各参数产生的观测模式。新增测点若只是重复原有敏感方向，增加数量并不能显著提高识别能力；应选择对不同参数具有不同响应的测点。参数更新后，用未参与识别的观测量再次检查模型。
+
+### 调索误差的定位 {#扩展算例与教师故障注入}
+
+#### 算例一：测频误差怎样放大到索力
+
+由 $T=4ml^2f_1^2$ 对数微分，得到小误差关系
+
+$$\frac{\Delta T}{T}\approx\frac{\Delta m}{m}+2\frac{\Delta l}{l}+2\frac{\Delta f_1}{f_1}.$$
+
+若质量估计偏高2%、长度偏高1%、基频偏高1%，索力的一阶相对偏差约为6%。精确比例为 $1.02\times1.01^2\times1.01^2=1.0614$，偏高约6.14%。这说明索力识别不仅要提高频率测量精度，也要准确确定有效振动长度和单位长度质量。
+
+#### 算例二：调索影响的独立复核
+
+沿用前节两索影响矩阵，第一根增拉150 kN、第二根减拉100 kN，则 $\Delta v_1=2.5$ mm、$\Delta v_2=-1.0$ mm。若计算程序给出第二点抬高1 mm，应检查位移方向、矩阵行列或索力增减符号，而不是立即改动截面刚度。随后在全桥模型直接施加同一调整，比较线性预测与实际变化；偏差增大时减小调整步长并更新影响矩阵。
+
+#### 算例三：支座抬起趋势
+
+边跨恒载对端支点提供竖向压力900 kN，拉索与活载引起的向上增量为1100 kN。按“支座受压为正”，合成反力为 $900-1100=-200$ kN。普通仅受压支座不能提供这一拉力，应通过边跨压重、调整体系或设置适当的抗拔构造解决，并在改变约束后重算全桥。
+
+#### 算例四：增加测点是否有用
+
+设两个待识别参数对两个测点的影响矩阵为 $\begin{bmatrix}1&1\\2&2\end{bmatrix}$，两个参数总是按相同比例影响观测，矩阵秩为1，无法分别识别。新增一个与原测点同类的 $[3,3]$ 行仍无帮助；新增响应为 $[1,-1]$ 的测点后，两个参数可被区分。施工监控布点应考虑测量方向与位置对参数的不同敏感性。
+
+#### 模型误差与可见征兆 {#课堂诊断任务}
+
+索面积单位错误会改变伸长和刚度量级；自重重复计入会改变总反力；索连错塔端会改变方向与对称性；纵向约束误锁定会改变温度与调索响应。总重、整体平衡、对称性和单索伸长分别提供定位线索，修正输入后需要重算受影响状态。
+
+
+
+## 400 m双塔双索面桥的独立算例 {#scheme-400m}
+
+本算例不与正文120 m模型混用。
+
+### 400 m双塔双索面斜拉桥的初步计算
+
+取主跨400 m、边跨各160 m，塔上长索锚点高于梁面100 m，梁上索距10 m，两索面均分全桥恒载 $q=160\,\mathrm{kN/m}$。每根索按分担长度初估的竖向分力为
+
+$$V=\frac{qa}{2}=800\,\mathrm{kN}.$$
+
+距塔100 m处的索，$\theta=45^\circ$、$l=141.4\,\mathrm m$，初估索力为1131 kN、水平分力800 kN。距塔200 m处的长索，$\theta=26.565^\circ$、$l=223.6\,\mathrm m$，索力为1789 kN、水平分力1600 kN。两根索分担相同竖向荷载，长缓索却需要更大拉力并向梁输入更大轴压。
+
+### 索面积与支承柔度
+
+两索均取 $A=6000\,\mathrm{mm^2}$、$E=195\,\mathrm{GPa}$。平均应力分别为188.6和298.1 MPa；塔端固定且不计垂度的竖向刚度分别为
+
+$$k_{v,100}=4.137\,\mathrm{MN/m},\qquad k_{v,200}=1.046\,\mathrm{MN/m}.$$
+
+相同索面积并不意味着相同支承刚度。若希望远端索提供更强支承，可比较增大索面积、提高塔上锚点、改变索形与增加梁刚度等方案，并观察塔、梁内力的连带变化。
+
+### 索距与主梁局部弯矩
+
+将两索点间一侧主梁暂按简支梁估算，分担均布荷载为80 kN/m，索距10 m时弯矩尺度为 $qa^2/8=1000\,\mathrm{kN\cdot m}$；索距增至15 m时为2250 kN·m。真实连续弹性支承梁的正负弯矩分布需进一步求解，但索距平方的关系已经说明局部梁高不能只由全桥跨径决定。
+
+### 完成一次调索方案
+
+先用连续梁支反力给出全桥初始索力，计算主梁标高、弯矩与塔顶偏位；建立少量控制点的索力影响矩阵，求调整量；再在完整模型施加索长或张拉变化，检查实际增量。最后按梁段施工顺序正装，得到每次安装张拉值，并检查合龙前的间隙与高差。成桥状态与施工指令通过这一计算过程联系起来。
+
+
+
+## 原有二维图与拓展交互 {#legacy-resources}
+
+以下图各有自己的参数和模型条件。
+
+<!-- PRIORITY-FIGURE F24 START -->
+![双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。](assets/publication/priority-40/F24.svg){#fig-priority-F24 width=100% fig-alt="车的重量，怎样经过拉索到达桥塔？。双索面斜拉体系的参数化轴测示意及单根索在梁端的分力。斜拉索向塔传力，也给主梁引入轴向作用；塔的竖向和不平衡水平作用最终需由基础承担。"}
+
+<details open class="figure-method"><summary>图示条件与计算说明</summary><p>构件定位与分力示意，无全桥数值结果；只展示一根索的作用方向，不据箭头比例量取索力；索为受拉构件</p><p>课程组原创参数绘图 · F24 · <a href="scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="assets/publication/priority-40/F24.png" download>下载 PNG</a> · <a href="assets/publication/priority-40/F24.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F24 END -->
+
+
+下面两图分别回答“荷载经过哪些构件”和“每类构件主要承受什么内力”。先沿路径找到主梁、索和塔，再给它们分别取自由体；传力箭头的连接顺序不等于各构件的内力图。
+
+![斜拉桥作用传递路径](assets/source-drafts/ch05/4-1-1.png){#fig-ch05-load-path width=78%}
+
+<details class="source-reference"><summary>图源</summary>
+
+**图源。** 在线教材项目 `longyu8101/qlgc`，原图4-1-1“斜拉桥作用（荷载）传递路径示意”，文件 `source/_static/fig/4-1-1.png`，<https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/4-1-1.png>。用于说明索—塔—梁传力。
+
+</details>
+
+![斜拉桥基本构件受力](assets/source-drafts/ch05/4-1-2.png){#fig-ch05-member-force width=74%}
+
+<details class="source-reference"><summary>图源</summary>
+
+**图源。** 在线教材项目 `longyu8101/qlgc`，原图4-1-2“斜拉桥构件受力示意”，文件 `source/_static/fig/4-1-2.png`，<https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/4-1-2.png>。用于识别主梁弯压、拉索受拉和桥塔压弯。
+
+</details>
+
+把注意力从施工位置转回主梁内力。下面先看多处索支承怎样改变梁的弯矩分布，再看各索水平分力怎样沿梁累积为轴压力。两图说明的效应同时存在，弯矩减小并不意味着主梁只剩很小的内力。
+
+![连续梁与斜拉桥恒载弯矩示意比较](assets/source-drafts/ch05/4-1-3.png){#fig-ch05-moment-compare width=76%}
+
+<details class="source-reference"><summary>图源</summary>
+
+**图源。** 在线教材项目 `longyu8101/qlgc`，原图4-1-3“连续梁桥和斜拉桥恒载弯矩图比较示意”，文件 `source/_static/fig/4-1-3.png`，<https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/4-1-3.png>。用于定性比较多点弹性支承作用，不作为比例或数值依据。
+
+</details>
+
+![斜拉桥主梁轴力分布示意](assets/source-drafts/ch05/4-1-4.png){#fig-ch05-girder-axial width=76%}
+
+<details class="source-reference"><summary>图源</summary>
+
+**图源。** 在线教材项目 `longyu8101/qlgc`，原图4-1-4“斜拉桥主梁轴力图示意”，文件 `source/_static/fig/4-1-4.png`，<https://github.com/longyu8101/qlgc/blob/master/source/_static/fig/4-1-4.png>。用于说明索水平分力沿主梁累积的基本趋势。
+
+</details>
+
+<!-- PRIORITY-FIGURE F26 START -->
+![合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。](assets/publication/priority-40/F26.svg){#fig-priority-F26 width=100% fig-alt="合龙以后，桥还是刚才那个受力体系吗？。合龙前两侧悬臂分别承担施工荷载；合龙后新增连接使体系连续。不能只把成桥模型一次加载，就认为已重现施工状态。"}
+
+<details open class="figure-method"><summary>图示条件与计算说明</summary><p>示意图不含变形和内力结果；施工荷载、临时边界和初始状态需按阶段定义；图中塔基仅作支承定位，不指定实际构造</p><p>课程组原创参数绘图 · F26 · <a href="scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="assets/publication/priority-40/F26.png" download>下载 PNG</a> · <a href="assets/publication/priority-40/F26.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F26 END -->
+
+::: {.digital-note}
+**延伸阅读与操作。**
+
+- [四类桥梁三维实验室](interactive/bridge-lab/index.html)
+:::
+
+<!-- PRIORITY-FIGURE F25 START -->
+下图为独立构造的三行、三列教学矩阵。三行依次为弯矩、位移和反力，与正文四点梁不是同一个模型。只调第二索组1 MN时，逐行读出−1.0 MN·m、−0.6 mm和+0.3 MN，不比较三个数字谁更“大”。
+
+![三种观测量组成的教学影响矩阵。第二索组增拉1 MN时，各响应增量取自第二列；图中构件用于定位，不是该矩阵的全桥求解模型。](assets/publication/priority-40/F25.svg){#fig-priority-F25 width=100% fig-alt="三种观测量组成的教学影响矩阵：列为索组调整，行依次为弯矩、位移和反力，各行具有不同单位。"}
+
+<details open class="figure-method"><summary>图示条件与计算说明</summary><p>教学构造矩阵，不是具体桥的计算；列为索组增量，行依次为弯矩、位移、反力；仅线性局部影响，不直接用于调索设计</p><p>课程组原创参数绘图 · F25 · <a href="scripts/priority-figures/group_b.py">绘图 Python</a> · <a href="scripts/priority-figures/figlib.py">公共绘图函数</a> · <a href="assets/publication/priority-40/F25.png" download>下载 PNG</a> · <a href="assets/publication/priority-40/F25.svg" download>下载 SVG</a></p></details>
+<!-- PRIORITY-FIGURE F25 END -->
+
+
+
+### 构造模型近景与已有视频
+
+<!-- STUDIO-20261016 cable_stayed_detail -->
+::: {.studio-plate}
+
+![同一模型在x=96～130 m的局部裁切。观察中央钢塔、塔旁梁段与下部支承。被裁断的斜索只是取景边界，不是实际索端或锚固端。](assets/publication/studio-20261016/renders/cable_stayed_detail.png){#fig-ch05-studio-cable-stayed-detail width=100% fig-alt="同一模型在x=96～130 m的局部裁切。观察中央钢塔、塔旁梁段与下部支承。被裁断的斜索只是取景边界，不是实际索端或锚固端。"}
+
+**读图　塔附近的几条传力路径。**塔两侧索力的水平分量只有在对应状态下才能相抵；先分别画出两侧索力，再讨论塔柱弯曲。
+
+:::
+体系名称还需与纵向支承、横向限位及阻尼装置的实际布置配合。纵向弹性约束或阻尼器在不同速度和位移下产生不同的力，其作用不能仅由“固定”或“活动”两个词概括。
+
+
+
+<div class="chapter-video-strip"><figure class="chapter-video-card"><video controls preload="metadata" playsinline poster="assets/videos/manim/posters/M09_stay_matrix.png" src="assets/videos/manim/M09_stay_matrix.mp4"></video><figcaption>M09　斜拉索影响矩阵与成桥状态</figcaption></figure></div>
+
+
+
+- [第2章内外索调节](interactive/ch02-stay-adjustment-20261019/index.html?lesson=forces&embed=1&rev=forces-20261019)。
+- [既有塔高、车辆位置与全桥响应](interactive/ch05-stay-lab.html?rev=light20261004)。
+- [独立教学弯矩影响矩阵](interactive/bridge-concept-screen.html?lab=staymatrix)。
+- [跨径与年代观察](interactive/bridge-span-atlas-20261017/index.html)。
+
+- [原有斜拉桥学习路线图](interactive/ch05-ch07-clarity-20261019/stay-route.svg)。
+- [Gahlensche Straße单侧悬挂人行桥](interactive/lightweight-bridges/index.html#L01)：用于跨体系比较。
+- Manchester结构概念示例：[平衡](https://epsassets.manchester.ac.uk/structural-concepts/Statics/equilibrium/equilibrium_con.php)、[预应力](https://epsassets.manchester.ac.uk/structural-concepts/Statics/prestress/prestress_con.php)、[水平移动](https://epsassets.manchester.ac.uk/structural-concepts/Statics/horizontal/horizontal_con.php)。
+- [JICA《Bago River Bridge准备调查最终报告》](https://openjicareport.jica.go.jp/pdf/12183240_01.pdf)：原构造模型与悬臂架设施工图式的工程背景；准备阶段方案不等于最终施工实录，三维显隐不提供实桥张拉力。

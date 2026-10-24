@@ -4,6 +4,27 @@
 
 [综合资源总索引](resources.qmd) · [核心思维与尺度规律](core-thinking.qmd) · [跨课程并排类比](interactive/thinking-analogies.html) · [教学单元总入口](interactive/core-learning.html)
 
+## 新版核心任务与提交结果 {#core-required .unnumbered}
+
+本表按当前章节目标选择核心入口，并列出用于核对理解的结果；不要求遍历下方110个历史单元。原编号及链接继续保留，用于复习和补充练习。
+
+| 章／目标 | 必做任务与入口 | 比较条件 | 应提交的结果 |
+|---|---|---|---|
+| 第1章／目标3、4 | [净空与引桥](interactive/ch01-navigation/index.html?mode=approach&case=cable-stayed&view=plan)；[章末题](chapters/ch01.qmd#chapter-exercises) | 固定桥位，比较两组桥面高度 | 同尺度立面、净空与接线假定；解释桥高与引桥长度的取舍 |
+| 第2章／目标1、3 | [梁中的物理量](interactive/ch02-members-20261019/index.html?lesson=beam)；[章末题](chapters/ch02-foundations.qmd#chapter-exercises) | 只改变荷载，比较同一截面与跨中 | 条件表、弯矩/挠度手算与读数；说明线性比例适用条件 |
+| 第3章／目标3、4 | [移动布载](interactive/moving-load-lab-20261023/index.html)；[章末题](chapters/ch02.qmd#chapter-exercises) | 固定控制截面，比较居中与偏移车位 | 车位、荷载图式、控制响应表；解释合力等效的局限 |
+| 第4章／目标1、3 | [共同梁基准](chapters/ch03.qmd#girder-shared-two-span)；[简支与连续体系](interactive/girder-systems-20261019/index.html)；[章末题](chapters/ch03.qmd#chapter-exercises) | 对照贯通基准的支承与加载阶段 | 参数表、反力与弯矩图；比较一次加载与分阶段加载 |
+| 第5章／目标2 | [满跨与半跨加载](chapters/ch04.qmd#教学案例与参数化分析)；[章末题](chapters/ch04.qmd#chapter-exercises) | 用F22相同20 kN/m比较加载范围 | 两工况反力和四分点弯矩；解释压力线偏离 |
+| 第6章／目标1、3 | [辅助墩与共同受力](interactive/cable-stayed-lab-20261022/index.html?panel=twin)；[章末题](chapters/ch05.qmd#chapter-exercises) | 固定其余条件，比较有无辅助墩 | 模型条件、边跨/主跨响应及塔反力；说明收益与代价 |
+| 第7章／目标1、2 | [主缆平衡](interactive/suspension-mechanics-20261022/force.html)；[章末题](chapters/ch06.qmd#chapter-exercises) | 固定荷载跨度，只改变垂度 | H与端部索力手算、读数；说明几何与锚固需求 |
+| 第8章／目标3、4 | [有限刚度温度约束](interactive/ch08-ch10-clarity-20261019/index.html?lesson=thermal)；[章末题](chapters/ch07.qmd#chapter-exercises) | 比较自由、有限刚度和强约束 | 位移与轴力、等效刚度计算；解释有限约束已有内力 |
+| 第9章／目标1、2、3、6 | [振动机制](interactive/dynamics-gallery-20261023/index.html)；[荷载到响应](chapters/ch09-wind.qmd#wind-speed-load-response)；[章末题](chapters/ch09-wind.qmd#chapter-exercises) | 机制识别、荷载到响应、地震谱比较 | 同一输入条件、幅值或RMS核对、谱读数；辨别示意与求解结果 |
+| 第10章／目标2、3 | [梁离散与边界核验](interactive/ch08-ch10-clarity-20261019/index.html?lesson=mesh)；[章末题](chapters/ch10-fem.qmd#chapter-exercises) | 完成章末梁单元任务，对照网格和边界 | 节点/单元表、约束、反力位移、平衡残差与连接错误定位 |
+
+**共同评价依据。** 每份结果包括对象与假定、参数及单位、一个可独立核对的数值、物理解释和适用边界。基础复现题核对过程与读数；变式题改变一个条件并说明变化；综合实验提交模型表与证据。AI生成结果采用相同标准，不以“必须发现错误”作为评分条件。无需重复提交全部操作截图。
+
+## 既有单元资源库 {.unnumbered}
+
 ## 第1章　体系与规模 {.unnumbered}
 
 | 编号 | 学习任务 | 视频 | 交互 |
@@ -157,7 +178,7 @@
 | C10U09 | 可靠度与离散性 | [观看](interactive/core-learning.html?unit=C10U09&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U09) |
 | C10U10 | 扩散尺度 | [观看](interactive/core-learning.html?unit=C10U10&view=video) | [预测、操作与迁移](interactive/core-learning.html?unit=C10U10) |
 
-## 第10章　建模、有限元与审计 {.unnumbered}
+## 第10章　数字建模与智能设计 {.unnumbered}
 
 | 编号 | 学习任务 | 视频 | 交互 |
 |---|---|---|---|

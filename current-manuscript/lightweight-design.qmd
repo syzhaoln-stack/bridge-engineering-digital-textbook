@@ -14,6 +14,14 @@
 
 ## 实桥案例 {.unnumbered #lightweight-cases}
 
+<div class="lightweight-comparison" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px">
+<figure style="margin:0"><a href="interactive/lightweight-bridges/models/viewer.html?model=gahlensche"><img src="interactive/lightweight-bridges/models/previews/gahlensche_iso.png" alt="L01 · 单侧悬挂的教学重建模型" style="width:100%;height:210px;object-fit:contain"></a><figcaption><strong>L01 · 单侧悬挂</strong><br>曲线桥面由主缆与吊索承托；先找吊索上、下端连接。</figcaption></figure>
+<figure style="margin:0"><a href="interactive/lightweight-bridges/models/viewer.html?model=enzauen_iii"><img src="interactive/lightweight-bridges/models/previews/enzauen_iii_iso.png" alt="L02 · 钢带桥的教学重建模型" style="width:100%;height:210px;object-fit:contain"></a><figcaption><strong>L02 · 钢带桥</strong><br>钢带沿桥面纵向连续受拉，把作用传向两岸锚固。</figcaption></figure>
+<figure style="margin:0"><a href="interactive/lightweight-bridges/models/viewer.html?model=boerstel"><img src="interactive/lightweight-bridges/models/previews/boerstel_iso.png" alt="L03 · 倾斜拱与钢带的教学重建模型" style="width:100%;height:210px;object-fit:contain"></a><figcaption><strong>L03 · 倾斜拱与钢带</strong><br>受压拱与受拉钢带共同组织桥面支承；观察两者的空间连接。</figcaption></figure>
+</div>
+
+三图均为可继续旋转的教学几何重建，可对照实桥照片继续辨认构件；尺寸和工程依据仍以各模型说明为准。
+
 [实桥图像与来源卡](interactive/lightweight-bridges/index.html)收录下列八项桥梁参照。Kelheim属于原书中的关联先例，资料深度低于独立介绍的工程。表中页码保留原书印刷页与本地PDF页序，便于回查。[1](#ref-lightweight-1)
 
 | 案例 | 观察对象 | 原书印刷页 / PDF页 |
@@ -61,7 +69,7 @@ Börstel工程总长为96 m，模型重建的是80 m主体；其余引接部分�
 
 **1. 曲线桥面的布置取舍（对应目标：桥位条件）。** 选L01或L07，画出照片可辨认的步行路线与支承位置；提出一个直线跨越的替代简图。各写一项使用上的收益和一项需要核验的结构问题。无法从照片确定的条件标为未知。
 
-**2. 完整工程与模型范围（对应目标：空间组成）。** Börstel工程总长96 m，当前模型只包括25＋20＋35 m主体。说明未建部分的长度，列出两项当前模型可以观察的关系，以及两项不能由模型画面得出的工程结论。
+**2. 完整工程与模型范围（对应目标：空间组成）。** Börstel工程总长96 m，当前模型只包括25＋20＋35 m主体。说明教学模型尚未重建部分的总长度，列出两项当前模型可以观察的关系，以及两项不能由模型画面得出的工程结论。
 
 **3. AI辅助方案对照（对应目标：方案比较）。** 假定两岸连接点固定、步行净宽3 m、河中不设桥墩，制作直线与曲线两种人行桥的同尺度平面和立面简图。可使用AI辅助。两方案均标出支承与主要承重构件；独立检查两岸连接是否相同、3 m净宽是否保留，并说明各自的一项结构代价。
 
@@ -71,7 +79,7 @@ Börstel工程总长为96 m，模型重建的是80 m主体；其余引接部分�
 
 **第1题。** 合理比较应把步行转折、落地点和支承条件放在一起。曲线布置可能顺应路线，直线布置可能缩短构件或简化施工；具体收益需由选定案例资料支持。结构问题可包括偏置桥面的扭转、横向连接、锚固与基础位置。只改变外形而不交代支承的图，不能完成方案比较。
 
-**第2题。** 未建部分合计16 m，不能凭总差值推定其两端分配。可观察拱与钢带的相对位置、隐藏桥面后的构件关系；不能据此判定实桥索力、承载力、稳定储备或升降过程。应把几何观察与分析结论分开。
+**第2题。** 教学模型尚未重建的引接部分合计16 m，不能凭总差值推定其两端分配。可观察拱与钢带的相对位置、隐藏桥面后的构件关系；不能据此判定实桥索力、承载力、稳定储备或升降过程。应把几何观察与分析结论分开。
 
 **第3题。** 两图应使用相同尺度与两岸条件，平面中的同一支承须在立面对应，3 m为通行净宽。允许多种承重体系；应说明曲线桥面的扭转、悬挂体系的锚固、构件长度或施工条件等具体代价。检查全部通过时，提交核对依据和仍缺的资料，无须人为制造AI错误。
 

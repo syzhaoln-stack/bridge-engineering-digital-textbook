@@ -3,7 +3,7 @@
 ::: {.mm-index}
 <p class="mm-index-intro">从桥梁问题出发，回到支撑它的数学与力学。正文中的紫色标识与这里互相连接：既可追问“这个公式依据什么”，也可查找“学过的原理用在了哪些桥梁问题里”。</p>
 <p>先按章节或知识类型筛选，再点击应用位置。每处原理回顾都留在实际讲解的位置，原有推导、算例与图表按正文顺序阅读。</p>
-<div class="mm-index-toolbar" role="search" aria-label="筛选数学力学应用"><label>查找知识或桥梁问题<input type="search" placeholder="如：矩阵、支座、概率、索力" aria-label="查找知识或桥梁问题"></label><label>知识类型<select data-filter="kind"><option value="">全部</option><option>数学工具</option><option>力学原理</option></select></label><label>应用章节<select data-filter="chapter"><option value="">全书</option><option value="1">第1章 桥梁工程概论与总体设计</option><option value="2">第2章 桥梁构件的数学与力学基础</option><option value="3">第3章 桥梁上的作用、作用组合与可靠度</option><option value="4">第4章 梁桥设计</option><option value="5">第5章 拱桥设计</option><option value="6">第6章 斜拉桥设计</option><option value="7">第7章 悬索桥设计</option><option value="8">第8章 支座、墩台与基础</option><option value="9">第9章 桥梁动力学与抗风抗震设计</option><option value="10">第10章 数字建模与智能设计</option><option value="extension">配套专题</option></select></label><button type="button">重置筛选</button></div>
+<div class="mm-index-toolbar" role="search" aria-label="筛选数学力学应用"><label>查找知识或桥梁问题<input type="search" placeholder="如：矩阵、支座、概率、索力" aria-label="查找知识或桥梁问题"></label><label>知识类型<select data-filter="kind"><option value="">全部</option><option>数学工具</option><option>力学原理</option></select></label><label>应用章节<select data-filter="chapter"><option value="">全书</option><option value="1">第1章 桥梁工程概论与总体设计</option><option value="2">第2章 桥梁构件的数学与力学基础</option><option value="3">第3章 桥梁作用与可靠度</option><option value="4">第4章 梁桥设计</option><option value="5">第5章 拱桥设计</option><option value="6">第6章 斜拉桥设计</option><option value="7">第7章 悬索桥设计</option><option value="8">第8章 支座、墩台与基础</option><option value="9">第9章 桥梁动力学与抗风抗震设计</option><option value="10">第10章 数字建模与智能设计</option><option value="extension">配套专题</option></select></label><button type="button">重置筛选</button></div>
 <p class="mm-filter-status" role="status" aria-live="polite"></p><p class="mm-no-match" hidden>没有匹配的应用。可减少关键词或切换到“全书”。</p>
 
 先补共同基础，可直接读[第2章·桥梁分析的数学基础](chapters/ch02-foundations.qmd#bridge-math-foundations)：微积分 → 微分方程及边界条件 → 矩阵、特征值与振型 → 概率与随机过程 → 目标与约束优化。随后沿梁与板、受压构件、拱与索的顺序使用这些工具。
@@ -52,7 +52,7 @@
 <tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#用平衡检查第一张计算图">第2章 · 用平衡检查第一张计算图</a></td><td>用同一自由体的合力与合矩核对支座反力</td></tr>
 <tr data-chapter="5"><td><a href="chapters/ch04.html#压力线偏心距与截面核心">第5章 · 压力线、偏心距与截面核心</a></td><td>用内力合力位置解释拱受力</td></tr>
 <tr data-chapter="8"><td><a href="chapters/ch07.html#步骤三三项平衡回代">第8章 · 步骤三：三项平衡回代</a></td><td>各桩轴力恢复承台输入</td></tr>
-<tr data-chapter="7"><td><a href="chapters/ch06.html#从给定图形到平衡索形">第7章 · 从给定图形到平衡索形</a></td><td>区别任意索形与平衡索形</td></tr>
+<tr data-chapter="7"><td><a href="chapters/ch06.html#deformed-cable-equilibrium">第7章 · 从给定图形到平衡索形</a></td><td>区别任意索形与平衡索形</td></tr>
 </tbody></table>
 
 ## 自由度、约束与矩阵秩 {#mm-dof-constraints .unnumbered .mm-index-concept}
@@ -76,7 +76,7 @@
 先备知识：力与力矩平衡。
 
 <table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
-<tr data-chapter="4"><td><a href="chapters/ch03.html#超静定反力的变形协调计算">第4章 · 超静定反力的变形协调计算</a></td><td>由中支座位移求多余反力</td></tr>
+<tr data-chapter="4"><td><a href="chapters/ch03.html#多一个支座为什么需要用位移来求力">第4章 · 超静定反力的变形协调计算</a></td><td>由中支座位移求多余反力</td></tr>
 <tr data-chapter="5"><td><a href="chapters/ch04.html#两铰拱的水平推力来自变形协调">第5章 · 两铰拱的水平推力来自变形协调</a></td><td>由拱脚间距条件补足方程</td></tr>
 <tr data-chapter="7"><td><a href="chapters/ch06.html#长度相容提供另一个方程">第7章 · 长度相容提供另一个方程</a></td><td>用主缆长度条件求索形</td></tr>
 <tr data-chapter="6"><td><a href="chapters/ch05.html#几何平衡与长度相容">第6章 · 几何、平衡与长度相容</a></td><td>联系斜索垂度索力与伸长</td></tr>
@@ -90,8 +90,8 @@
 先备知识：力与力矩平衡、变形协调与长度相容。
 
 <table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
-<tr data-chapter="4"><td><a href="chapters/ch03.html#应变协调材料本构与截面平衡">第4章 · 应变协调、材料本构与截面平衡</a></td><td>明确受弯截面三组关系</td></tr>
-<tr data-chapter="9"><td><a href="chapters/ch09-wind.html#墩柱非线性与截面构件接口">第9章 · 墩柱非线性与截面—构件接口</a></td><td>从截面状态进入塑性铰</td></tr>
+<tr data-chapter="4"><td><a href="chapters/ch03.html#从弯曲到截面设计为什么钢筋不是越多越好">第4章 · 应变协调、材料本构与截面平衡</a></td><td>明确受弯截面三组关系</td></tr>
+<tr data-chapter="9"><td><a href="chapters/dynamics-methods-20261023.html#墩柱非线性与截面构件接口">第9章 · 墩柱非线性与截面—构件接口</a></td><td>从截面状态进入塑性铰</td></tr>
 <tr data-chapter="10"><td><a href="chapters/ch10-fem.html#求解类型与结果恢复">第10章 · 求解类型与结果恢复</a></td><td>由运动学与本构恢复应力，并区分积分点结果和平均显示</td></tr>
 </tbody></table>
 
@@ -105,7 +105,7 @@
 <table><thead><tr><th>回到正文</th><th>这里为什么用它</th></tr></thead><tbody>
 <tr data-chapter="2"><td><a href="chapters/ch02-foundations.html#截面性质弯曲剪切与扭转">第2章 · 材料放在哪里：面积、惯性矩和截面模量</a></td><td>由材料分布定义形心、惯性矩和截面模量，并比较矩形梁转向后的刚度与应力</td></tr>
 
-<tr data-chapter="4"><td><a href="chapters/ch03.html#t形截面的受压区计算">第4章 · T形截面的受压区计算</a></td><td>区别真实几何与计算受压区</td></tr>
+<tr data-chapter="4"><td><a href="chapters/ch03.html#从弯曲到截面设计为什么钢筋不是越多越好">第4章 · T形截面的受压区计算</a></td><td>区别真实几何与计算受压区</td></tr>
 </tbody></table>
 
 ## 偏心受压与截面核心 {#mm-eccentricity-core .unnumbered .mm-index-concept}
@@ -283,3 +283,29 @@
 </tbody></table>
 
 :::
+
+
+## 跨章阅读与符号辨认 {#cross-chapter-conventions .unnumbered}
+
+同一原理再次出现时，重点在于新增的对象、边界或求解方法。基础定义不必重复学习，可按下面的位置回查。
+
+| 共同知识 | 基础解释 | 后续用途 |
+|---|---|---|
+| 平衡、协调与本构 | [第2章](chapters/ch02-foundations.qmd) | 第4—8章用于具体构件，第10章用于离散求解 |
+| 移动荷载与影响线 | [第3章](chapters/ch02.qmd) | 第4章选择控制截面，第10章处理荷载映射与端力 |
+| 作用概率与可靠度 | [第3章](chapters/ch02.qmd) | [概率尺度专题](chapters/statistical-risk.qmd)讨论尾部、年率和外推 |
+| 支承与温度约束 | [第8章](chapters/ch07.qmd) | 第10章输入初应变、边界及约束反力 |
+| 振型、频率与响应 | [第9章](chapters/ch09-wind.qmd) | [动力方法选读](chapters/dynamics-methods-20261023.qmd)展开空间积分与非线性接口 |
+| 检测与维护 | 第4—8章按桥型与部位说明 | [全寿命专题](chapters/ch10-lifecycle.qmd)连接状态、风险和维护决策 |
+
+**符号随模型定义，不能只凭字母跨章代入。** 同一图文组、例题与答案使用一致记号；不同领域的惯用符号可以局部复用，但须同时读物理意义、单位和正方向。
+
+| 容易混淆的量 | 辨认依据 |
+|---|---|
+| 跨径与长度 | 第1章区分标准跨径、计算跨径、净跨径与桥长；力学模型中的 $L$ 按该模型定义 |
+| 位移 $u,v,w$ 与转角 | 同时核对全局坐标、局部坐标及正方向；显示放大不改变物理读数 |
+| 弯矩与正应力 | 函数坐标图与结构弯矩图的绘制方向可能不同；拉正或压正由图旁约定决定 |
+| $f,T,\omega$ | $f$ 可为频率或垂度，$T$ 可为周期或索力；频率Hz、圆频率rad/s不能直接互换 |
+| $q,Q_j,q_j$ | 分布荷载、广义力与模态坐标是不同对象，按定义核对单位与振型归一化 |
+| 应力与概率中的 $\sigma$ | 应力、标准差及分布尺度参数含义不同，尺度参数不一定等于标准差 |
+| 总量与每延米量 | N/m积分后才是N；N·m/m与N·m必须区分，质量与重量也须通过重力加速度换算 |

@@ -22,7 +22,7 @@ Yen-Jie Lee，MIT OpenCourseWare：[Lecture 3: Driven Oscillators, Transient Phe
 
 **观察任务：**保持推力大小不变，比较不同重复频率下的位移。分别记录激励频率、结构运动和阻尼；再说明受迫共振与运动诱发气动力的区别。
 
-**对应正文：**[第9章：桥梁抗风与气动响应](chapters/ch09-wind.qmd)。
+**对应正文：**[第9章：桥梁动力学与抗风抗震设计](chapters/ch09-wind.qmd)。
 
 ### V03　耦合振动与振型 {.unnumbered #v03}
 
@@ -30,7 +30,7 @@ Yen-Jie Lee，MIT OpenCourseWare：[Lecture 4: Coupled Oscillators, Normal Modes
 
 **观察任务：**画出两个相连物体的同向与反向运动，比较中间连接的变形。解释振型图所表示的相对形状，并区分图上放大幅度与实际位移。
 
-**对应正文：**[第9章：结构动力与风致响应](chapters/ch09-wind.qmd)。
+**对应正文：**[第9章：桥梁动力学与抗风抗震设计](chapters/ch09-wind.qmd)。
 
 ### V04　施工阶段与临时支承 {.unnumbered #v04}
 
@@ -62,7 +62,7 @@ Franz-Josef Ulm、Markus Buehler，MIT OpenCourseWare：[Engineering Mechanics I
 
 **阅读任务：**比较峰值相同、持续时间及变化节奏不同的两段风速记录，说明单一最大风速遗漏了哪些信息。
 
-**对应正文：**[第9章：桥位风环境与桥梁响应](chapters/ch09-wind.qmd)。
+**对应正文：**[第9章：桥梁动力学与抗风抗震设计](chapters/ch09-wind.qmd)。
 
 ### V08　气动外形与优化目标 {.unnumbered #v08}
 

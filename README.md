@@ -1,6 +1,6 @@
 # 桥梁工程 · 当前公开教材
 
-2026-10-22 更新，依据 2026-10-19 当前主源：10 个专业章节与配套专题。旧 11 章发布说明属于历史版本。
+2026-10-24 更新，依据 2026-10-24 当前主源：10 个专业章节与配套专题，45 项学习目标、82 道习题及 82 份参考答案。旧 11 章发布说明属于历史版本。
 
 - [在线教材](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/)
 - [全书目录](https://syzhaoln-stack.github.io/bridge-engineering-digital-textbook/contents.html)
