@@ -1,8 +1,8 @@
 {
   "tag": "textbook-20261024",
-  "asset": "bridge-textbook-public-20261024-r2.zip",
-  "sha256": "47f9f6e65bd462e747b7330818eacdd2b100885f8210942f77db13f2403b3323",
-  "bytes": 686064083,
+  "asset": "bridge-textbook-public-20261024-girder-r3.zip",
+  "sha256": "5a8e6ffee977429e680b51ea6aaf1cc0fc93dbf27c0ef1b4ed34d7c5a245f722",
+  "bytes": 686419130,
   "source_date": "2026-10-24",
   "edition": "2026-10-24",
   "entry": "index.html"
